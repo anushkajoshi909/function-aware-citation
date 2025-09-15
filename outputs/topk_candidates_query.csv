@@ -1,210 +1,359 @@
 rank,paper_id,title,year,authors,abstract,score,cosine,title_matches,abs_matches,query_terms_used,classifier_functions,retrieval_error,retrieved_at
-0,physics/0101044,"Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,
-  and Ra II",2001,V. A. DzubaV. V. FlambaumJ. S. M. Ginges,"We have performed ab initio mixed-states and sum-over-states calculations of
-parity nonconserving (PNC) electric dipole (E1) transition amplitudes between
-s-d electron states of Cs, Fr, Ba II, and Ra II. For the lower states of these
-atoms we have also calculated energies, E1 transition amplitudes, and
-lifetimes. We have shown that PNC E1 transition amplitudes between s-d states
-can be calculated to high accuracy. Contrary to the Cs 6s-7s transition, in
-these transitions there are no strong cancelations between different terms in
-the sum-over-states approach. In fact, there is one dominating term which
-deviates from the sum by less than 20%. This term corresponds to an s-p_{1/2}
-weak matrix element, which can be calculated to better than 1%, and a
-p_{1/2}-d_{3/2} E1 transition amplitude, which can be measured. Also, the s-d
-amplitudes are about four times larger than the corresponding s-s transitions.
-We have shown that by using a hybrid mixed-states/sum-over-states approach the
-accuracy of the calculations of PNC s-d amplitudes could compete with that of
-Cs 6s-7s if p_{1/2}-d_{3/2} E1 amplitudes are measured to high accuracy.",1.0,0.8880318403244019,,"amplitudes, hybrid, mixed, pnc, states, sum","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-1,hep-ph/0102289,A note on the dispersive treatment of K -> pi pi with the kaon off-shell,2001,M. BuechlerG. ColangeloJ. KamborF. Orellana,"It has been recently suggested that it is possible to calculate the effect of
-final state interactions in K -> pi pi amplitudes by applying dispersive
-methods to the amplitude with the kaon off-shell. We critically reexamine the
-procedure, and point out the effects of the arbitrariness in the choice of the
-off-shell field for the kaon.",0.2946518361568451,0.8578847646713257,,amplitudes,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-2,hep-th/0104234,Simplified Method for Trace Anomaly Calculations in d=6 and d<6,2001,Fiorenzo BastianelliN. D. Hari Dass,"We discuss a simplified method for computing trace anomalies in d=6 and d<6
-dimensions. It is known that in the quantum mechanical approach trace anomalies
-in d dimensions are given by a (1+d/2)-loop computation in an auxiliary 1d
-sigma model with arbitrary geometry. We show how one can obtain the same
-information using a simpler d/2-loop calculation on an arbitrary geometry
-supplemented by a (1+d/2)-loop calculation on the simplified geometry of a
-maximally symmetric space.",0.2753427028656006,0.8570594787597656,,calculation,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-3,nucl-th/0103058,Polarization observables in p-d scattering below 30 MeV,2001,A. KievskyM. VivianiS. Rosati,"Differential and total breakup cross sections as well as vector and tensor
-analyzing powers for p-d scattering are studied for energies above the deuteron
-breakup threshold up to E(lab)=28 MeV. The p-d scattering wave function is
-expanded in terms of the correlated hyperspherical harmonic basis and the
-elastic S-matrix is obtained using the Kohn variational principle in its
-complex form. The effects of the Coulomb interaction, which are expected to be
-important in this energy range, have been rigorously taken into account. The
-Argonne AV18 interaction and the Urbana URIX three-nucleon potential have been
-used to perform a comparison to the available experimental data.",0.2723667025566101,0.8569322824478149,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-4,nucl-th/0104053,Final state interactions in the eta-d system,2001,S. WycechA. M. Green,"The eta-deuteron scattering amplitude is calculated with a recent K-matrix
-model of eta-N interactions. The existence of a narrow virtual state in the
-eta-deuteron system is inferred. This state couples strongly to the eta-d
-channel but its effect on final state interactions in the pn --> eta-d reaction
-is shown to be rather weak. Fairly large eta-N scattering lengths are allowed
-by the experimental data.",0.2619325816631317,0.8564863204956055,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-5,hep-ph/0104155,The color dipole approach to the Drell-Yan process in pA collisions,2001,B. Z. KopeliovichJ. RaufeisenA. V. Tarasov,"In the target rest frame and at high energies, Drell-Yan (DY) dilepton
-production looks like bremsstrahlung of massive photons, rather than parton
-annihilation. The projectile quark is decomposed into a series of Fock states.
-Configurations with fixed transverse separations are interaction eigenstates
-for pp scattering. The DY cross section can then be expressed in terms of the
-same color dipole cross section as DIS. This approach is especially suitable to
-describe nuclear effects, since it allows to apply Glauber multiple scattering
-theory. We go beyond the Glauber eikonal approximation by taking into account
-transitions between interaction eigenstates. We calculate nuclear shadowing at
-large Feynman-x_F for DY in proton-nucleus collisions, compare to existing data
-from E772 and make predictions for RHIC. Nuclear effects on the transverse
-momentum distribution are also investigated.",0.2572636008262634,0.8562867641448975,,"compare, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-6,hep-ph/0102308,Towards An Accurate Calculation of the Neutralino Relic Density,2001,Takeshi NiheiLeszek RoszkowskiRoberto Ruiz de Austri,"We compute the neutralino relic density in the minimal supersymmetric
-standard model by using exact expressions for the neutralino annihilation cross
-section into all tree-level final states, including all contributions and
-interference terms. We find that several final states may give comparable
-contributions to the relic density, which illustrates the importance of
-performing a complete calculation. We compare the exact results with those of
-the usual expansion method and demonstrate a sizeable discrepancy (of more than
-10%) over a significant range of the neutralino mass of up to several tens of
-GeV which is caused by the presence of resonances and new final-state
-thresholds. We perform several related checks and comparisons. In particular,
-we find that the often employed approximate iterative procedure of computing
-the neutralino freeze-out temperature gives generally very accurate results,
-except when the expansion method is used near resonances and thresholds.",0.24984729290008545,0.8559697866439819,calculation,"calculation, compare, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-7,hep-ph/0101297,"Bilocal expansion of the Borel amplitude and the hadronic tau decay
-  width",2001,Gorazd CveticTaekoon Lee,"The singular part of Borel transform of a QCD amplitude near the infrared
-renormalon can be expanded in terms of higher order Wilson coefficients of the
-operators associated with the renormalon. In this paper we observe that this
-expansion gives nontrivial constraints on the Borel amplitude that can be used
-to improve the accuracy of the ordinary perturbative expansion of the Borel
-amplitude. In particular, we consider the Borel transform of the Adler function
-and its expansion around the first infrared renormalon due to the gluon
-condensate. Using the next-to-leading order Wilson coefficient of the gluon
-condensate operator, we obtain an exact constraint on the Borel amplitude at
-the first IR renormalon. We then extrapolate, using judiciously chosen
-conformal transformations and Pade approximants, the ordinary perturbative
-expansion of the Borel amplitude in such a way that this constraint is
-satisfied. This procedure allows us to predict the $O(\alpha_s^4)$ coefficient
-of the Adler function, which gives a result consistent with the estimate by
-Kataev and Starshenko using a completely different method. We then apply this
-improved Borel amplitude to the tau decay width, and obtain the strong coupling
-constant $\alpha_s(M_Z) =0.1193 \pm 0.0007_{exp.} \pm 0.0010_{EW+CKM} \pm
-0.0009_{meth.} \pm 0.0003_{evol.}$. We then compare this result with those of
-other resummation methods.",0.24775823950767517,0.8558804988861084,,compare,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-8,hep-ph/0101227,Introduction to QCD Sum Rule Approach,2001,A. V. Radyushkin,"In these lectures, I describe the techniques used within the QCD sum rule
-approach. The basic concepts of the approach are introduced using a simple
-model of quantum-mechanical oscillator in 2+1 dimensions. Then I discuss their
-field-theoretical extension and the construction of the operator product
-expansion for current correlators in QCD. The calculation of static parameters
-is illustrated on the example of sum rules in the vector and axial meson
-channels. Finally, the QCD sum rule calculation of the pion electromagnetic
-form factor is presented as an example of application of the method to dynamic
-characteristics of the hadrons.",0.24194569885730743,0.8556320667266846,sum,"calculation, sum","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-9,hep-ph/0102240,Melosh Construction Of Relativistic Three-Quark Baryon Wave Functions,2001,Xuepeng SunHans J. Weber,"A method for constructing a complete set of relativistic three-quark states
-in light front dynamics is implemented for the nucleon, N$^*$(1520) and
-N$^*$(1535). This approach facilitates constructing states containing virtual
-antiquarks. A physical interpretation is provided in terms of transition
-amplitudes from quark to quark-gluon or quark-Goldstone boson Fock states of
-chiral dynamics generated by flux tube breaking expected in QCD at intermediate
-distances.",0.22467541694641113,0.8548939228057861,,"amplitudes, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-10,hep-ph/0104290,On a QCD-based pion distribution amplitude vs. recent experimental data,2001,A. P. BakulevS. V. MikhailovN. G. Stefanis,"Using QCD sum rules with nonlocal condensates the twist-2 pion distribution
-amplitude is determined by means of its moments and their confidence intervals,
-including also radiative corrections. An admissible set of pion distribution
-amplitudes is constructed in the a_2, a_4 plane of the Gegenbauer polynomial
-expansion coefficients. The determined a_2, a_4 region strongly overlaps with
-that extracted from the CLEO data by Schmedding and Yakovlev. Comparisons are
-given with results from Fermilab experiment E791 and recent lattice
-calculations.",0.2031126618385315,0.853972315788269,,"amplitudes, sum","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-11,hep-ph/0104206,Model-independent approach as a tool of studying chiral symmetry,2001,Yu. S. SurovtsevD. KrupaM. Nagy,"A simultaneous analysis (in the model-independent approach) of the $\pi\pi$
-scattering (from the threshold to 1.9 GeV) and of the $\pi\pi\to K\overline{K}$
-process (from the threshold to $\sim$ 1.46 GeV) is carried out in channel with
-$I^GJ^{PC}=0^+0^{++}$. The existence of the $f_0(665)$ state with properies of
-the $\sigma$-meson is proved. An indication for the glueball nature of the
-$f_0(1500)$ is obtained. A minimum scenario of the simultaneous description of
-the processes $\pi\pi\to\pi\pi,K\overline{K}$ does without the ${f_0}(1370)$
-resonance. A version including this state is also considered. In this case the
-${f_0}(1370)$ resonance has the dominant $s{\bar s}$ component (the ratio of
-its coupling constant with the $\pi\pi$ channel to the one with the
-$K\overline{K}$ channel is 0.12). The coupling constants of the observed states
-with the $\pi\pi$ and $K\overline{K}$ systems and the $\pi\pi$ and
-$K\overline{K}$ scattering lengths are obtained. A parameterless description of
-the $\pi\pi$ background is given by allowance for the left-hand branch-point in
-the uniformizing variable. On the basis of this and of the fact that all the
-adjusted parameters for the $\pi\pi$ scattering are only the positions of poles
-describing resonances, it is concluded that our model-independent approach is a
-valuable tool for studying the realization schemes of chiral symmetry. The
-existence of the $f_0(665)$ state and the obtained $\pi\pi$-scattering length
-($a_0^0\approx 0.27 m_{\pi^+}^{-1}$) seem to suggest the linear realization of
-chiral symmetry.",0.1799350082874298,0.852981686592102,,states,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-12,hep-ph/0102287,Dispersion relations and soft pion theorems for K -> pi pi,2001,M. BuechlerG. ColangeloJ. KamborF. Orellana,"We propose a new method to obtain the K -> pi pi amplitude from K -> pi which
-allows one to fully account for the effects of final state interactions. The
-method is based on a set of dispersion relations for the K -> pi pi amplitude
-in which the weak Hamiltonian carries momentum. The soft pion theorem, which
-relates this amplitude to the K -> pi amplitude, can be used to determine one
-of the two subtraction constants - the second constant is at present known only
-to leading order in chiral perturbation theory. We solve the dispersion
-relations numerically and express the result in terms of the unknown higher
-order corrections to this subtraction constant.",0.17992106080055237,0.8529810905456543,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-13,hep-ph/0104048,"The check of QCD based on the tau-decay data analysis in the complex
-  q^2-plane",2001,B. V. GeshkenbeinB. L. IoffeK. N. Zyablyuk,"The thorough analysis of the ALEPH data on hadronic tau-decay is performed in
-the framework of QCD. The perturbative calculations are performed in 3 and
-4-loop approximations. The terms of the operator product expansion (OPE) are
-accounted up to dimension D=8. The value of the QCD coupling constant
-alpha_s(m_tau^2)=0.355 pm 0.025 was found from hadronic branching ratio R_tau.
-The V+A and V spectral function are analyzed using analytical properties of
-polarization operators in the whole complex q^2-plane. Borel sum rules in the
-complex q^2 plane along the rays, starting from the origin, are used. It was
-demonstrated that QCD with OPE terms is in agreement with the data for the
-coupling constant close to the lower error edge alpha_s(m_tau^2)=0.330. The
-restriction on the value of the gluonic condensate was found
-<(alpha_s/pi)G^2>=0.006 pm 0.012 GeV^2. The analytical perturbative QCD was
-compared with the data. It is demonstrated to be in strong contradiction with
-experiment. The restrictions on the renormalon contribution were found. The
-instanton contributions to the polarization operator are analyzed in various
-sum rules. In Borel transformation they appear to be small, but not in spectral
-moments sum rules.",0.17908990383148193,0.8529455661773682,,sum,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-14,quant-ph/0103104,Reply to Comment,2001,Ping-Xing ChenLin-Mei LiangCheng-Zu LiMing-Qiu Huang,"In the comment(quant-ph/0103003) Eggeling,Vollbrecht and Wolf suspect our
-method in quant-ph/0102133 is not practical. Here we explain our result and
-method and show that our example can tell one how to judge a separable state,
-and so our method is practical, at least for many mixed states.",0.17134729027748108,0.8526146411895752,,"mixed, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-15,nucl-th/0104057,Benchmark Test Calculation of a Four-Nucleon Bound State,2001,H. KamadaA. NoggaW. GloeckleE. HiyamaM. KamimuraK. VargaY. SuzukiM. VivianiA. KievskyS. RosatiJ. CarlsonSteven C. PieperR. B. WiringaP. NavratilB. R. BarrettN. BarneaW. LeidemannG. Orlandini,"In the past, several efficient methods have been developed to solve the
-Schroedinger equation for four-nucleon bound states accurately. These are the
-Faddeev-Yakubovsky, the coupled-rearrangement-channel Gaussian-basis
-variational, the stochastic variational, the hyperspherical variational, the
-Green's function Monte Carlo, the no-core shell model and the effective
-interaction hyperspherical harmonic methods. In this article we compare the
-energy eigenvalue results and some wave function properties using the realistic
-AV8' NN interaction. The results of all schemes agree very well showing the
-high accuracy of our present ability to calculate the four-nucleon bound state.",0.16448184847831726,0.852321207523346,calculation,"compare, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-16,astro-ph/0103396,"A New Model for the Thermal X-ray Composites and the Neutral Pion Decay
-  Gamma-Rays from Supernova Remnants",2001,O. Petruk,"Recent nonthermal X-ray and gamma-ray observations, attributed to electron
-emission processes, for the first time give an experimental confirmation that
-electrons are accelerated on SNR shocks up to the energy 10^{14} eV. We have no
-direct observational confirmations about proton acceleration by SNR. Different
-models of gamma-emission from SNRs predict different emission mechanisms as
-dominating. Only decays of neutral pion created in proton-nucleon interactions
-allow us to look inside the CR nuclear component acceleration processes. A new
-model for the thermal X-ray composites strongly suggest that thermal X-ray peak
-inside the radio shell of SNR tells us about entering of one part of SNR shock
-into a denser medium compared with other parts of the shell. This makes a TXCs
-promising sites for gamma-ray generation via neutral pion decays. Detailed
-consideration of SNR-cloud interaction allows to increase an expected proton
-induced gamma-ray flux from SNR at least on an order of magnitude, that allows
-to adjust the theoretical proton origin gamma-luminosities with observed fluxes
-at least for a few SNRs even for low density (n=10-100 cm^{-3}) cloud.",0.15202142298221588,0.8517886400222778,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-17,quant-ph/0104098,Separable approximation for mixed states of composite quantum systems,2001,Thomas WellensMarek Kus,"We describe a purely algebraic method for finding the best separable
-approximation to a mixed state of a composite 2x2 quantum system, consisting of
-a decomposition of the state into a linear combination of a mixed separable
-part and a pure entangled one. We prove that, in a generic case, the weight of
-the pure part in the decomposition equals the concurrence of the state.",0.1401369422674179,0.851280689239502,"mixed, states",mixed,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-18,hep-ph/0104015,Total Cross Sections,2001,Rohini M. GodboleA. GrauG. PancheriY. Srivastava,"A unified approach to total cross-sections, based on the QCD contribution to
-the rise with energy, is presented for the processes $pp$, $p{\bar p}$, $\gamma
-p, \gamma \gamma, e^+e^- \to hadrons$. For proton processes, a discussion of
-the role played by soft gluon summation in taming the fast rise due to
-mini-jets is presented. For photon-photon processes, a comparison with other
-models indicates the need for precision measurements in both the low and high
-energy region, likely only with measurements at future Linear Colliders.",0.1177123561501503,0.8503222465515137,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
-19,cond-mat/0103455,An Analysis of the Quasicontinuum Method,2001,J. KnapM. Ortiz,"The aim of this paper is to present a streamlined and fully three-dimensional
-version of the quasicontinuum (QC) theory of Tadmor et al. and to analyze its
-accuracy and convergence characteristics. Specifically, we assess the effect of
-the summation rules on accuracy; we determine the rate of convergence of the
-method in the presence of strong singularities, such as point loads; and we
-assess the effect of the refinement tolerance, which controls the rate at which
-new nodes are inserted in the model, on the development of dislocation
-microstructures.",0.11068375408649445,0.8500218391418457,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-14T16:10:59.359625
+0,astro-ph/0102090,"Internal color gradients and the color-magnitude relation of early-type
+  galaxies",2001,Marco Scodeggio,"The traditional use of fixed apertures in determining the well known
+color-magnitude (CM) relation of early type galaxies, coupled with the presence
+of radial color gradients within these systems, introduces a bias in the CM
+relation itself. The effect of this bias is studied here deriving a CM relation
+which is based on color measurements carried out homogeneously within an
+aperture of radius equal to that of the galaxy effective radius. A sample of 48
+giant early-type galaxies in the Coma cluster, with CCD observations in the U-
+and V-band, is used for this derivation. It is found that internal radial color
+gradients in early-type galaxies cannot be neglected when discussing the colors
+of these systems, and that the CM relation derived using color measurements
+within the effective radius is significantly flatter than those based on
+fixed-aperture color measurements. With the presently available data it is
+impossible to determine whether the relation is completely flat, or whether a
+small correlation is still present between galaxy color and luminosity.",1.0,0.8978575468063354,"color, early, galaxies, magnitude, relation, type","apertures, bias, color, determining, early, fixed, galaxies, magnitude, relation, type","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+1,astro-ph/0104084,On the Origin of the Colour-Magnitude Relation in the Virgo Cluster,2001,Alexandre VazdekisHarald KuntschnerRoger L. DaviesNobuo ArimotoOsamu NakamuraReynier Peletier,"We explore the origin of the colour-magnitude relation (CMR) of early type
+galaxies in the Virgo cluster using spectra of very high S/N ratio for six
+elliptical galaxies selected along the CMR. The data are analysed using a new
+evolutionary stellar population synthesis model to generate galaxy spectra at
+the resolution given by their velocity dispersions. In particular we use a new
+age indicator that is virtually free of the effects of metallicity. We find
+that the luminosity weighted mean ages of Virgo ellipticals are greater than ~8
+Gyr, and show no clear trend with galaxy luminosity. We also find a positive
+correlation of metallicity with luminosity, colour and velocity dispersion. We
+conclude that the CMR is driven primarily by a luminosity-metallicity
+correlation. However, not all elements increase equally with the total
+metallicity and we speculate that the CMR may be driven by both a total
+metallicity increase and by a systematic departure from solar abundance ratios
+of some elements along the CMR. A full understanding of the role played by the
+total metallicity, abundance ratios and age in generating the CMR requires the
+analysis of spectra of very high quality, such as those reported here, for a
+larger number of galaxies in Virgo and other clusters.",0.4066191017627716,0.8685129284858704,"magnitude, relation","early, galaxies, magnitude, relation, type","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+2,astro-ph/0102393,On the estimation of galaxy structural parameters: the Sersic Model,2001,Ignacio TrujilloAlister W. GrahamNicola Caon,"This paper addresses some questions which have arisen from the use of the
+S\'ersic r^{1/n} law in modelling the luminosity profiles of early type
+galaxies. The first issue deals with the trend between the half-light radius
+and the structural parameter n. We show that the correlation between these two
+parameters is not only real, but is a natural consequence from the previous
+relations found to exist between the model-independent parameters: total
+luminosity, effective radius and effective surface brightness. We also define a
+new galaxy concentration index which is largely independent of the image
+exposure depth, and monotonically related with n. The second question concerns
+the curious coincidence between the form of the Fundamental Plane and the
+coupling between <I>_e and r_e when modelling a light profile. We explain,
+through a mathematical analysis of the S\'ersic law, why the quantity
+r_e<I>_e^{0.7} appears almost constant for an individual galaxy, regardless of
+the value of n (over a large range) adopted in the fit to the light profile.
+Consequently, Fundamental Planes of the form r_e<I>_e^{0.7} propto sigma_0^x
+(for any x, and where sigma_0 is the central galaxy velocity dispersion) are
+insensitive to galaxy structure. Finally, we address the problematic issue of
+the use of model-dependent galaxy light profile parameters versus
+model-independent quantities for the half-light radii, mean surface brightness
+and total galaxy magnitude. The former implicitly assume that the light profile
+model can be extrapolated to infinity, while the latter quantities, in general,
+are derived from a signal-to-noise truncated profile. We quantify
+(mathematically) how these parameters change as one reduces the outer radius of
+an r^{1/n} profile, and reveal how these can vary substantially when n>4.",0.29948365688323975,0.8632147312164307,,"early, galaxies, magnitude, previous, type","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+3,astro-ph/0103092,The evolution of the galaxy distribution,2001,A. J. BensonC. S. FrenkC. M. BaughS. ColeC. G. Lacey,"We follow the evolution of the galaxy population in a Lambda-CDM cosmology by
+means of high-resolution N-body simulations in which the formation of galaxies
+and their observable properties are calculated using a semi-analytic model. We
+display images of the spatial distribution of galaxies in the simulations that
+illustrate its evolution and provide a qualitative understanding of the
+processes responsible for various biases that develop. We consider three
+specific statistical measures of clustering at z=1 and z=0: the correlation
+length (in real- and redshift-space) of galaxies of different luminosity, the
+morphology-density relation and the genus curve of the topology of galaxy
+isodensity surfaces. For galaxies with luminosity below L*, the z=0 correlation
+length depends very little on the luminosity of the sample, but for brighter
+galaxies it increases very rapidly, reaching values in excess of 10Mpc/h. The
+""accelerated"" dynamical evolution experienced by galaxies in rich clusters,
+which is partly responsible for this effect, also results in a strong
+morphology-density relation. Remarkably, this relation is already
+well-established at z=1. The genus curves of the galaxies are significantly
+different from the genus curves of the dark matter but this is not due to
+genuine topological differences but rather to the sparse sampling of the
+density field provided by galaxies. The predictions of our model at z=0 will be
+tested by forthcoming data from the 2dF and Sloan galaxy surveys, and those at
+z=1 by the DEEP and VIRMOS surveys.",0.28353309631347656,0.8624259233474731,,"galaxies, relation","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+4,astro-ph/0102214,"The Tolman Surface Brightness Test for the Reality of the Expansion. II.
+  The Effect of the Point-Spread Function and Galaxy Ellipticity on the Derived
+  Photometric Parameters",2001,Lori M. LubinAllan Sandage,"To complete the Tolman surface brightness test on the reality of the
+expansion of the Universe, we need to measure accurately the surface brightness
+profiles of the high-redshift galaxy sample. We, therefore, investigate the
+effects of various sizes of point-spread-functions composed of telescope
+diffraction, CCD pixel resolutions, and ground-based seeing on the measurements
+of mean surface brightness. We have done the calculations using two synthetic
+galaxies of effective radii of 0.70"" and 0.25"" with point-spread functions of
+0.1, 0.3, and 0.9 arcseconds. We have also compared actual observations of
+three high-redshift galaxies in the cluster Cl 1324 + 3011 (z = 0.76) made both
+with the Keck telescopes in seeing of about 0.9"" and with HST which has a PSF
+that is approximately ten times smaller. The conclusion is that HST data can be
+used as far into the galaxy image as a Petrosian metric radius of eta = 1.3
+magnitudes, whereas the ground-based data will have systematic errors of up to
+2.9 magnitudes in the mean surface brightness at eta values of less than 2.2
+magnitudes. In the final section, we compare the differences in derived average
+surface brightness for nearly circular galaxy images compared with highly
+flattened images. The comparison is made by using the two reduction procedures
+of (1) integrating the profile curves using circular apertures, and (2)
+approximating an ``equivalent circular'' galaxy that is highly elongated by
+using an ``effective'' radius of sqrt{ab}, where a and b are the semi-major and
+semi-minor axis, respectively, of the best-fitting ellipse. The conclusion is
+that the two methods of reduction give nearly identical results and that either
+method can be used to analyze the low and high-redshift galaxy samples used in
+the Tolman test.",0.28043070435523987,0.8622725009918213,,"apertures, galaxies","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+5,astro-ph/0102260,"Surface Photometric Calibration of the Infrared Tully-Fisher Relation
+  Using Cepheid-based Distances of Galaxies",2001,Masaru WatanabeNaoki YasudaNobunari Itoh,"Infrared J and H surface photometry are carried out for nearby 12 galaxies
+whose distances have been accurately measured via HST Cepheid observations.
+Using the total, isophotal, and surface-photometric aperture magnitudes we
+calibrate the infrared luminosity-line width relation (IRTF). It is found that
+IRTF changes its slope at log W_{20}^c=2.45 in all the examined magnitude
+systems. The apparent scatter of IRTF is not significantly reduced when surface
+photometric magnitudes are used instead of the conventionally used synthetic
+aperture magnitude H_{-0.5}. It is also shown that the color (I-H)_T of the
+nearby calibrator galaxies is redder by 0.2mag than the Coma cluster galaxies,
+but such a trend is not clearly visible for the Ursa Major mostly because of
+poor statistics. The color offset of the Coma is analogous to that previously
+found in I_T-H_{-0.5}. From the present calibration of H-band IRTF, we obtain
+the distance to the Coma cluster to be m-M=34.94 +/- 0.13mag, where no account
+is taken of the I-H color problem. Using the CMB-rest recession velocity of the
+Coma cluster we obtain H_0=73 +/- 4 km/s/Mpc.",0.23782916367053986,0.8601657152175903,"galaxies, relation","color, galaxies, magnitude, relation","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+6,astro-ph/0102358,The cosmological evolution of colour gradients in spheroids,2001,Amancio FriacaRoberto Terlevich,"The analysis of the four-colour maps of galaxies in the Hubble Deep Field has
+revealed in the sample of 0.4<z<1 early-type field galaxies the existence of
+ellipticals with a predominantly old coeval stellar population. However, there
+is another, unexpected, category of HDF early-type galaxies, in which the
+galaxy core is significantly bluer than the outer regions. We demonstrate that
+these colour gradients are predicted by the multi-zone chemodynamical model for
+the evolution of elliptical galaxies. We suggest that the colour gradient could
+be used as a chronometer of the evolution of elliptical galaxies: galaxies
+younger than a few Gyr exhibit cores bluer than the surrounding galaxy, due to
+ongoing star formation, while more evolved galaxies have redder cores, due to
+metallicity gradients increasing towards the centre.",0.22045756876468658,0.8593066334724426,,"early, galaxies, type","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+7,astro-ph/0101472,Cosmological History of Stars and Metals,2001,R. SadatB. GuiderdoniJ Silk,"We study the evolution of stellar content and the chemical enrichment of the
+universe averaged over the whole population of galaxies by means of a series of
+chemo-spectrophotometric models that take into account the metallicity and dust
+obscuration effects. We investigate various classes of cosmic star formation
+rates (CSFR) histories consistent with current estimations. We are able to
+reproduce a variety of observational constraints such as the emissivities at
+rest-frame 0.44, 25, 60 and 100 $\mu$m of the local universe and also the
+overall shape of the extragalactic background light from UV/NIR galaxy counts
+and the cosmic infrared background (CIB) from DIRBE/FIRAS measurements. We find
+that the CIB at 140 $\mu$m is crucial for discriminating between the CSFR
+histories. The best-fit model to this constraint seems to favour mid-infrared
+derived CSFR at low-$z$ and a flat CSFR at higher $z$ consistent with the most
+recent estimations, although the shape of the CSFR at high redshifts has little
+impact on the FIR/submm part of extragalactic background. We suggest that the
+bulk of the CIB energy is produced by a population of moderately obscured
+normal galaxies lying at $0\le z \le 1$. We then derive the global chemical
+enrichment and stellar content of the universe and find that this model
+predicts metallicities in good agreement with the metallicity in DLAs given
+that some outflow of metal-enriched gas from galaxies is assumed, but it
+overproduces the current present-day stellar mass density and NIR luminosity
+density.",0.19816967844963074,0.8582044243812561,,galaxies,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+8,astro-ph/0104284,"Deep near-IR observations of the Chandra Deep Field and of the HDF-South
+  - Color and Number Counts",2001,P. SaraccoE. GiallongoS. CristianiS. D'OdoricoA. FontanaA. IovinoF. PoliE. Vanzella,"We present near-IR (J and Ks) number counts and colors of galaxies detected
+in deep VLT-ISAAC images centered on the Chandra Deep Field and Hubble Deep
+Field-South for a total area of 13.6 arcmin$^2$. The limiting surface
+brightness obtained is Ks$\simeq$22.8 mag/arcsec$^2$ and J$\simeq$24.5
+(1$\sigma$) on both fields. A d$log$N/dm relation with a slope of $\sim0.34$ in
+J and $\sim0.28$ in Ks is found in both fields with no evidence of decline near
+the magnitude limit. The median J-Ks color of galaxies becomes bluer at
+magnitudes fainter than Ks$\sim18$, in agreement with the different number
+counts slope observed in the two bands. We find a fraction ($\le5%$ of the
+total sample) of sources with color redder than J-Ks=2.3 at magnitudes Ks$>20$.
+Most of them appear as isolated sources, possibly elliptical or dusty starburst
+galaxies at redshift $z>2$. The comparison of the observed number counts with
+models shows that our J-band and Ks-band counts are consistent with the
+prediction of a model based on a small amount of merging in a $\Omega=1$
+cosmology. On the other hand, we fail to reproduce the observed counts if we do
+not consider merging independently of the parameters defining the universe.",0.19043423235416412,0.8578218817710876,color,"color, galaxies, magnitude, relation","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+9,astro-ph/0101544,Dark energy and the epoch of galaxy formation,2001,J. S. AlcanizJ. A. S. Lima,"The influence of a dark component on the first epoch of galaxy formation is
+analysed by using the ages of the three oldest high-redshift galaxies known in
+the literature. Our results, based on a spatially flat accelerated Universe
+driven by a ""quintessence"" component ($p_x = \omega\rho_x$), show that if the
+inferred ages of these objects are correct the first formation era is pushed
+back to extremely high redshifts. For the present best-fit quintessence model
+($\Omega_{x}= 0.7$, $\omega < -0.6$), we find a lower bound of $z_f \geq 7.7$,
+whereas in the extreme case of $\Lambda$CDM model ($\omega = -1$) the limit is
+slightly smaller ($z_f \geq 5.8$). The case for open cold dark matter models
+(OCDM) has also been discussed. For $\Omega_m \simeq 0.3$, the formation
+redshift is restricted by $z_f \geq 18$. As a general result, if $\Omega_m \geq
+0.37$, these galaxies are not formed in FRW cosmologies with no dark energy
+since for all these cases $z_f \to \infty$.",0.186966672539711,0.8576503992080688,,galaxies,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+10,astro-ph/0104162,Early-universe constraints on a Primordial Scaling Field,2001,Rachel BeanSteen H. HansenAlessandro Melchiorri,"In the past years 'quintessence' models have been considered which can
+produce the accelerated expansion in the universe suggested by recent
+astronomical observations. One of the key differences between quintessence and
+a cosmological constant is that the energy density in quintessence,
+$\Omega_\phi$, could be a significant fraction of the overall energy even in
+the early universe, while the cosmological constant will be dynamically
+relevant only at late times. We use standard Big Bang Nucleosynthesis and the
+observed abundances of primordial nuclides to put constraints on $\Omega_\phi$
+at temperatures near $T \sim 1MeV$. We point out that current experimental data
+does not support the presence of such a field, providing the strong constraint
+$\Omega_\phi(MeV) < 0.045$ at $2\sigma$ C.L. and strengthening previous
+results. We also consider the effect a scaling field has on CMB anisotropies
+using the recent data from Boomerang and DASI, providing the CMB constraint
+$\Omega_\phi \le 0.39$ at $2\sigma$ during the radiation dominated epoch.",0.15456654131412506,0.8560481071472168,early,"early, previous","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+11,astro-ph/0103364,The radio galaxy K-z relation to z ~ 4.5,2001,Matt J. JarvisSteve RawlingsSteve EalesKatherine M. BlundellChris J. Willott,"Using a new radio sample, 6C* designed to find radio galaxies at z > 4 along
+with the complete 3CRR and 6CE sample we extend the radio galaxy K-z relation
+to z~4.5. The 6C* K-z data significantly improve delineation of the K-z
+relation for radio galaxies at high redshift (z > 2). Accounting for
+non-stellar contamination, and for correlations between radio luminosity and
+estimates of stellar mass, we find little support for previous claims that the
+underlying scatter in the stellar luminosity of radio galaxies increases
+significantly at z > 2. This indicates that we are not probing into the
+formation epoch until at least z > 3.",0.14505332708358765,0.8555776476860046,relation,"extend, galaxies, previous, relation","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+12,astro-ph/0102213,"The Tolman Surface Brightness Test for the Reality of the Expansion. I.
+  Calibration of the Necessary Local Parameters",2001,Allan SandageLori M. Lubin,"The extensive CCD photometry by Postman & Lauer (1995, ApJ, 440, 28) in the
+Cape/Cousins R photometric band for first ranked cluster elliptical and S0
+galaxies in 118 low redshift clusters is analyzed for the correlations between
+average surface brightness, linear radius, and absolute magnitude. The purpose
+is to calibrate the correlations between these three parameters in the limit of
+zero redshift. These local correlations provide the comparisons to be made in
+Paper IV with the sample of early-type galaxies at high redshift in search of
+the Tolman surface brightness signal of (1 + z)^4 if the expansion is real.
+Surface brightness averages are calculated at various metric radii in each
+galaxy in the sample. The definition of such radii by Petrosian (1976, ApJ,
+209, L1) uses ratios of observed surface photometric data. The observed surface
+brightnesses are listed for 118 first ranked cluster galaxies at Petrosian eta
+radii of 1.0, 1.3, 1.5, 1.7, 2.0, and 2.5 mag. The three local diagnostic
+correlation diagrams are defined and discussed. We review the Tolman test and
+show that, although recipes from the standard cosmological model that already
+have the Tolman signal incorporated are required to calculate linear radii and
+absolute magnitudes from the observed data, the test is nevertheless free from
+the hermeneutical circularity dilemma occasionally claimed in the literature.
+The reasons are the observed mean surface brightness (1) is independent of any
+assumptions of cosmological model, (2) does not depend on the existence of a
+Tolman signal because it is calculated directly from the data using only
+angular radii and apparent magnitudes, and (3) can be used to search for the
+Tolman signal because it carries the bulk of that signal.",0.1420244723558426,0.8554278612136841,,"early, galaxies, magnitude, type","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+13,astro-ph/0103113,"The Evolution of the Luminosity Function in Deep Fields: A Comparison
+  with CDM Models",2001,F. PoliN. MenciE. GiallongoA. FontanaS. CristianiS. D' Odorico,"The galaxy Luminosity Function (LF) has been estimated in the rest frame B
+luminosity at 0<z<1.25 and at 1700 {\AA} for 2.5<z<4.5 from deep multicolor
+surveys in the HDF-N, HDF-S, NTT-DF. The results have been compared with a
+recent version of galaxy formation models in the framework of hierarchical
+clustering in a flat Cold Dark Matter Universe with cosmological constant. The
+results show a general agreement for z<= 1, although the model LF has a steeper
+average slope at the faint end; at z~3 such feature results in an
+overprediction of the number of faint (I_{AB}~ 27) galaxies, while the
+agreement at the bright end becomes critically sensitive to the details of dust
+absorption at such redshifts. The discrepancies at the faint end show that a
+refined treatement of the physical processes involving smaller galaxies is to
+be pursued in the models, in terms of aggregation processes and/or stellar
+feedback heavily affecting the luminosity of the low luminosity objects. The
+implications of our results on the evolution of the cosmological star formation
+rate are discussed.",0.13920775055885315,0.855288565158844,,galaxies,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+14,astro-ph/0103017,"Large-Scale Structure, Theory and Statistics",2001,Peter Coles,"I review the standard paradigm for understanding the formation and evolution
+of cosmic structure, based on the gravitational instability of dark matter, but
+many variations on this basic theme are viable. Despite the great progress that
+has undoubtedly been made, steps are difficult because of uncertainties in the
+cosmological parameters, in the modelling of relevant physical processes
+involved in galaxy formation, and perhaps most fundamentally in the
+relationship between galaxies and the underlying distribution of matter. For
+the foreseeable future, therefore, this field will be led by observational
+developments allowing model parameters to be tuned and, hopefully, particular
+scenarios falsified. In these lectures I focus on two ingredients in this class
+of models: (i) the role of galaxy bias in interpreting clustering data; and
+(ii) the statistical properties of the initial fluctuations. In the later case,
+I discuss some ideas as to how the standard assumption - that the primordial
+density fluctuations constitute a Gaussian random field - can be tested using
+measurements galaxy clustering and the cosmic microwave background.",0.12740090489387512,0.8547046780586243,,"bias, galaxies","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+15,astro-ph/0103500,Constraining the Cosmological Parameters using Strong Lensing,2001,G. GolseJ. -P. KneibG. Soucail,"We investigate the potentiality of using strong lensing clusters to constrain
+the cosmological parameters Omega_m and Omega_lambda. The existence of a
+multiple image system with known redshift allows, for a given (Omega_m,
+Omega_lambda) cosmology, absolute calibration of the total mass deduced from
+lens modelling. Recent Hubble Space Telescope (HST) observations of galaxy
+clusters reveal a large number of multiple images, which are predicted to be at
+different redshifts. If it is possible to measure spectroscopically the
+redshifts of many multiple images then one can in principle constrain
+(Omega_m,Omega_lambda) through ratios of angular diameter distances,
+independently of any external assumptions. For a regular/relaxed cluster
+observed by HST with 3 multiple image systems, each with different
+spectroscopic redshifts, we show by analytic calculation that the following
+uncertainties can be expected: Omega_m=0.30 +/- 0.11, Omega_lambda=0.70 +/-
+0.23 or Omega_m=1.00 +/- 0.17, Omega_lambda=0.00 +/- 0.48 for the two most
+popular world models. Numerical tests on simulated data confirm these good
+constraints, even in the case of more realistic cluster potentials, such as
+bimodal clusters, or when including perturbations by galaxies. To investigate
+the sensitivity of the method to different mass profiles, we also use an
+analytic ``pseudo-elliptical'' Navarro, Frenk & White profile in the
+simulations. These constraints can be improved if more than 3 multiple images
+with spectroscopic redshifts are observed, or by combining the results from
+different clusters. Some prospects on the determination of the cosmological
+parameters with gravitational lensing are given.",0.11424053460359573,0.8540538549423218,,galaxies,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+16,astro-ph/0102276,"The Pearson-Readhead Survey of Compact Extragalactic Radio Sources From
+  Space. II. Analysis of Source Properties",2001,M. L. ListerS. J. TingayR. A. Preston,"We have performed a multi-dimensional correlation analysis on the observed
+properties of a statistically complete core-selected sample of compact
+radio-loud active galactic nuclei, based on data from the VLBI Space Observing
+Programme (Paper I) and previously published studies. Our sample is drawn from
+the well-studied Pearson-Readhead (PR) survey, and is ideally suited for
+investigating the general effects of relativistic beaming in compact radio
+sources. In addition to confirming many previously known correlations, we have
+discovered several new trends that lend additional support to the beaming
+model. These trends suggest that the most highly beamed sources in
+core-selected samples tend to have a) high optical polarizations; b) large
+pc/kpc-scale jet misalignments; c) prominent VLBI core components; d)
+one-sided, core, or halo radio morphology on kiloparsec scales; e) narrow
+emission line equivalent widths; and f) a strong tendency for intraday
+variability at radio wavelengths. We have used higher resolution space and
+ground-based VLBI maps to confirm the bi-modality of the jet misalignment
+distribution for the PR survey, and find that the sources with aligned parsec-
+and kiloparsec-scale jets generally have arcsecond-scale radio emission on both
+sides of the core. The aligned sources also have broader emission line widths.
+We find evidence that the BL Lacertae objects in the PR survey are all highly
+beamed, and have very similar properties to the high-optically polarized
+quasars, with the exception of smaller redshifts. A cluster analysis on our
+data shows that after partialing out the effects of redshift, the luminosities
+of our sample objects in various wave bands are generally well-correlated with
+each other, but not with other source properties.",0.1141730397939682,0.8540505170822144,,studies,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+17,astro-ph/0102180,"Evolution of the Luminosity Function and Colors of Galaxies in a
+  Lambda-CDM Universe",2001,Kentaro NagamineMasataka FukugitaRenyue CenJeremiah P. Ostriker,"The luminosity function of galaxies is derived from a cosmological
+hydrodynamic simulation of a Lambda cold dark matter (CDM) universe with the
+aid of a stellar population synthesis model. At z=0, the resulting B band
+luminosity function has a flat faint end slope of \alpha \approx -1.15 with the
+characteristic luminosity and the normalization in a fair agreement with
+observations, while the dark matter halo mass function is steep with a slope of
+\alpha \approx -2. The colour distribution of galaxies also agrees well with
+local observations. We also discuss the evolution of the luminosity function,
+and the colour distribution of galaxies from z=0 to 5. A large evolution of the
+characteristic mass in the stellar mass function due to number evolution is
+compensated by luminosity evolution; the characteristic luminosity increases
+only by 0.8 mag from z=0 to 2, and then declines towards higher redshift, while
+the B band luminosity density continues to increase from z=0 to 5 (but only
+slowly at z>3).",0.11189627647399902,0.8539379239082336,galaxies,galaxies,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+18,astro-ph/0102450,Cepheid and SNIa Distance Scales,2001,T. ShanksP. D. AllenF. HoyleN. R. Tanvir,"We first discuss why there remains continuing, strong motivation to
+investigate Hubble's Constant. Then we review new evidence from an
+investigation of the Galactic Open Clusters containing Cepheids by Hoyle et al.
+that the metallicity dependence of the Cepheid P-L relation is stronger than
+expected. This result is supported by a new analysis of mainly HST Distance
+Scale Key Project data which shows a correlation between host galaxy
+metallicity and the rms scatter around the Cepheid P-L relation. If Cepheids do
+have a significant metallicity dependence then an already existing scale error
+for Tully-Fisher distances becomes worse and the distances of the Virgo and
+Fornax clusters extend to more than 20Mpc, decreasing the value of H_0.
+Finally, if the Cepheids have a metallicity dependence then so do Type Ia
+Supernovae since the metallicity corrected Cepheid distances to eight galaxies
+with SNIa now suggests that the SNIa peak luminosity is fainter in metal poor
+galaxies. As well as having important implications for H_0, this would also
+imply that the evidence for a non-zero cosmological constant from the SNIa
+Hubble Diagram may be subject to corrections for metallicity which are as big
+as the effects of cosmology.",0.10218539834022522,0.8534576892852783,,"extend, galaxies, relation, type","bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
+19,astro-ph/0101143,On the trispectrum as a gaussian test for cosmology,2001,Licia VerdeAlan F. Heavens,"In the standard model for structure formation, bound objects originate from
+the gravitational collapse of small perturbations arising from quantum
+fluctuations with random phases. In other scenarios, based on defects,
+structures are seeded by localized energy density. In principle, it is possible
+to differentiate between these models on the basis of their statistical
+properties; only in the former case is the initial density field an
+almost-perfect random gaussian field. In this paper, we investigate the use of
+the trispectrum of the galaxy density field, which is the connected four-point
+function in Fourier space, as a discriminant between gaussian and non-gaussian
+models. It has the advantage of having only weak non-linear growth. We define a
+related statistic $\tau$ which, as a test of the gaussian hypothesis, is
+independent of cosmology, the power spectrum and biasing, in real space, and
+which is, in principle, a measure of the departure from gaussian statistics.
+For galaxy redshift surveys, the statistic depends on cosmology and bias only
+through the potentially observable parameter $\beta$. We compute the expected
+errors on the estimate of $\tau$, and demonstrate with numerical simulations
+that it can be a useful discriminant of models, with the important proviso that
+any bias is linear on large scales. Whether it is the most effective method is
+uncertain and depends on the nature of the departure from gaussianity.",0.10060649365186691,0.8533796072006226,,bias,"bias, introduced, fixed, apertures, determining, color, magnitude, relation, early, type, galaxies, motivate, extend, previous, studies, topic","Motivation, Extends",,2025-09-15T14:25:10.823959
