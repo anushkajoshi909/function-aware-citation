@@ -19,7 +19,7 @@ from string import Template
 CLASSIFIED_PATH = "classified_outputs.jsonl"
 TOPK_PATH = "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl"
 OUT_DIR = "outputs"
-DEFAULT_MODEL = "meta-llama/Llama-3.3-70B-Instruct"
+DEFAULT_MODEL = "openai/gpt-oss-120b"
 API_KEY_FILE = os.path.join(os.path.expanduser("~"), ".scadsai-api-key")
 
 # ========= LLM client =========
