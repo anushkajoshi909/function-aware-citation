@@ -9,7 +9,7 @@ RAG    = ROOT / "RetrievalAugmentedGeneration"
 CLASSIFIER = RAG / "classifying_question.py"
 NB_IPYNB   = RAG / "Retreival_query_based.ipynb"
 NB_PY      = RAG / "Retreival_query_based.py"      # produced by nbconvert
-FUNCTION   = RAG / "function_based_final.py"
+FUNCTION   = RAG / "function_based_answer.py"
 FUNCTION_PATCHED = RAG / "function_based_final_patched.py"
 
 CLASSIFIED = RAG / "classified_outputs.jsonl"

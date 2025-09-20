@@ -19,7 +19,7 @@ from string import Template
 CLASSIFIED_PATH = "classified_outputs.jsonl"
 TOPK_PATH = "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl"
 OUT_DIR = "outputs"
-DEFAULT_MODEL = "meta-llama/Llama-3.3-70B-Instruct"
+DEFAULT_MODEL = "openai/gpt-oss-120b"
 API_KEY_FILE = os.path.join(os.path.expanduser("~"), ".scadsai-api-key")
 
 # ========= LLM client =========
@@ -47,7 +47,9 @@ def llm_chat(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 
         temperature=temperature,
         max_tokens=max_tokens
     )
-    return resp.choices[0].message.content.strip()
+    # be tolerant to None content
+    content = getattr(resp.choices[0].message, "content", None) or getattr(resp.choices[0], "text", "") or ""
+    return str(content).strip()
 
 def llm_text(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 0.25, max_tokens: int = 180) -> str:
     resp = CLIENT.chat.completions.create(
@@ -59,7 +61,8 @@ def llm_text(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 
         temperature=temperature,
         max_tokens=max_tokens
     )
-    return resp.choices[0].message.content.strip()
+    content = getattr(resp.choices[0].message, "content", None) or getattr(resp.choices[0], "text", "") or ""
+    return str(content).strip()
 
 # ========= Small utils / debug =========
 def ts() -> str:
@@ -74,6 +77,26 @@ def sanitize_query(q: str) -> str:
     if q.endswith('"') and not q.startswith('"'): q = q[:-1]
     if q.startswith('"') and not q.endswith('"'): q = q[1:]
     return re.sub(r"\s+", " ", q)
+
+# --- Normalization helpers (topic-agnostic) ---
+_word_pat = re.compile(r"[^\w\s]", re.UNICODE)
+_ws_pat = re.compile(r"\s+")
+
+def _norm_text(s: str) -> str:
+    t = unicodedata.normalize("NFKC", (s or "")).lower()
+    t = t.replace("-", " ").replace("/", " ")   # hyphen & slash insensitive
+    t = _word_pat.sub(" ", t)
+    t = _ws_pat.sub(" ", t).strip()
+    return t
+
+def _lex_tokens(s: str):
+    return [w for w in _norm_text(s).split() if len(w) >= 3]
+
+def overlap_frac(a: str, b: str) -> float:
+    A = set(_lex_tokens(a))
+    if not A: return 0.0
+    B = set(_lex_tokens(b))
+    return len(A & B) / len(A)
 
 CANON_FUNCS = {
     "background": "Background",
@@ -96,7 +119,7 @@ def parse_json_strict(text: str) -> Dict[str, Any]:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        s = text.strip().strip("`").strip()
+        s = (text or "").strip().strip("`").strip()
         start = s.find("{")
         if start == -1:
             return {"supports": False, "fit": 0, "topicality": 0, "quote": "", "why": "JSON parse failed"}
@@ -176,6 +199,7 @@ def extract_core_entities(query: str) -> Dict[str, List[str]]:
     return {"core": keep[:6]}
 
 def extract_special_core_from_query(query: str) -> List[str]:
+    """Pull acronyms and special tokens like PNC, s-d, 6s-7s, Cs, mixed-states, sum-over-states."""
     q = query or ""
     toks = re.findall(r"[A-Za-z0-9]+(?:[-/][A-Za-z0-9]+)+|[A-Z]{2,}|\d+[A-Za-z]+|\bCs\b", q)
     seen=set(); kept=[]
@@ -186,8 +210,8 @@ def extract_special_core_from_query(query: str) -> List[str]:
     return kept
 
 def abstract_mentions_core(abstract: str, core_terms: List[str]) -> bool:
-    a = (abstract or "").lower()
-    return any(t.lower() in a for t in (core_terms or []))
+    a = _norm_text(abstract or "")
+    return any(ct in a for ct in (ct for ct in core_terms or []))
 
 # ========= Function descriptions (semantic guidance) =========
 CITATION_FUNCTION_DESCRIPTIONS = """Possible citation functions:
@@ -275,6 +299,7 @@ PAPER TITLE: $TITLE
 PAPER ABSTRACT: $ABSTRACT
 """)
 
+# Function-specific instruction lines inserted into the unified template
 FUNCTION_INSTRUCTIONS = {
     "Background": "State only the empirical/definitional facts relevant to the query; avoid causal or prescriptive language.",
     "Uses": "Describe how a known method/tool/dataset is applied in this work (who uses what for which purpose).",
@@ -284,20 +309,38 @@ FUNCTION_INSTRUCTIONS = {
     "FutureWork": "State explicit future directions or open problems mentioned by the abstract.",
 }
 
+# ========= Soft cue lists (used for ranking, not rejection) =========
 FUNCTION_CUES = {
-    "Background": ["we present","we report","we find","we show","we study","is defined","we analyze","we provide","we identify","is identified"],
-    "Uses": ["we use","we utilize","we apply","using","based on","leverage","adopt","employ"],
-    "Compares": ["compare","compared","comparison","versus","vs.","relative to","contrast","benchmark","compares favorably","favorable comparison","in contrast to","unlike","as compared to","avoid cancellation","avoids cancellation","reduces cancellation","vs","versus"],
-    "Motivation": ["challenge","problem","gap","issue","crisis","tension","discrepanc","conflict","need","motivat"],
-    "Extends": ["extend","extends","extended","generalize","improve","build on","refine","enhance","extends to","generalizes to","allows calculation of","enables calculation of","achieves higher accuracy","permits higher accuracy","broadens","pushes beyond"],
-    "FutureWork": ["future work","we plan","we will","will investigate","left for future","beyond the scope","in the future","further study","remains to","open question","to be addressed"],
+    "Background": [
+        "we present", "we report", "we find", "we show", "we study", "is defined", "we analyze", "we provide", "we identify", "is identified"
+    ],
+    "Uses": [
+        "we use", "we utilize", "we apply", "using", "based on", "leverage", "adopt", "employ"
+    ],
+    "Compares": [
+        "compare", "compared", "comparison", "versus", "vs.", "relative to", "contrast", "benchmark",
+        "compares favorably", "favorable comparison", "in contrast to", "unlike", "as compared to",
+        "avoid cancellation", "avoids cancellation", "reduces cancellation", "vs", "versus"
+    ],
+    "Motivation": [
+        "challenge", "problem", "gap", "issue", "crisis", "tension", "discrepanc", "conflict", "need", "motivat"
+    ],
+    "Extends": [
+        "extend", "extends", "extended", "generalize", "improve", "build on", "refine", "enhance",
+        "extends to", "generalizes to", "allows calculation of", "enables calculation of",
+        "achieves higher accuracy", "permits higher accuracy", "broadens", "pushes beyond"
+    ],
+    "FutureWork": [
+        "future work", "we plan", "we will", "will investigate", "left for future", "beyond the scope",
+        "in the future", "further study", "remains to", "open question", "to be addressed"
+    ],
 }
 
 def has_function_cue(text: str, func_norm: str) -> bool:
     cues = FUNCTION_CUES.get(func_norm, [])
-    t = (text or "").lower()
+    T = _norm_text(text or "")
     for cue in cues:
-        if cue in t:
+        if _norm_text(cue) in T:
             return True
     return False
 
@@ -317,6 +360,7 @@ class Verdict:
     year: str
     retrieval_score: float = 0.0
     invalid_reason: str = ""
+    # diagnostics
     evidence_ok: bool = False
     on_topic_ok: bool = False
     cue_hint: bool = False
@@ -326,7 +370,7 @@ def clamp01(x) -> float:
     except Exception: v = 0.0
     return max(0.0, min(1.0, v))
 
-def evidence_in_text_enforce(v: Verdict) -> Verdict:
+def enforce_evidence(v: Verdict) -> Verdict:
     if not v.quote:
         v.supports = False; v.fit = 0.0; v.invalid_reason = "no_quote"; return v
     if not evidence_in_text(v.quote, v.title, v.abstract):
@@ -382,8 +426,8 @@ def dynamic_cosine_cut(cands: List[Dict[str, Any]], keep_frac: float = 0.6, min_
     return max(t, min_floor)
 
 def core_hits_in_text(txt: str, core_terms: List[str]) -> int:
-    t = (txt or "").lower()
-    return sum(1 for ct in set(x.lower() for x in core_terms or []) if ct in t)
+    T = _norm_text(txt or "")
+    return sum(1 for ct in set(core_terms or []) if ct in T)
 
 def has_func_cue_in_text(txt: str, func: str) -> bool:
     return has_function_cue(txt, normalize_function(func))
@@ -391,31 +435,25 @@ def has_func_cue_in_text(txt: str, func: str) -> bool:
 def quick_string_bonus(cand: dict, core_terms: List[str]) -> float:
     bonus = 0.0
     for fld in ("title_matches", "abs_matches"):
-        s = (cand.get(fld) or "").lower()
-        if any(ct.lower() in s for ct in core_terms or []):
+        s = _norm_text(cand.get(fld) or "")
+        if any(ct in s for ct in core_terms or []):
             bonus += 0.02
     return min(bonus, 0.04)
 
-def subject_bias(pid: str, core_terms: List[str]) -> float:
-    pid = (pid or "").lower()
-    key = " ".join(core_terms).lower()
-    if any(k in key for k in ["pnc", "s-d", "6s-7s", "cs "]):
-        if pid.startswith("physics/"):
-            return 0.04
-    return 0.0
 
 def blended_relevance(cand: dict, core_terms: List[str], func: str) -> float:
     cos = cosine_of(cand)
     txt = f"{cand.get('title','')} {(cand.get('abstract_full') or cand.get('abstract') or '')}"
-    ch = core_hits_in_text(txt, core_terms)
+    ch = core_hits_in_text(txt, core_terms)              # 0,1,2,...
     cue = 1.0 if has_func_cue_in_text(txt, func) else 0.0
+    # weights: stronger core emphasis to prioritize on-topic
     w_cos, w_core, w_cue = 0.60, 0.35, 0.05
-    core_bonus = min(ch, 3) / 3.0
+    core_bonus = min(ch, 3) / 3.0  # 0..1
     base = w_cos*cos + w_core*core_bonus + w_cue*cue + quick_string_bonus(cand, core_terms)
     if ch == 0:
-        base -= 0.10
-    base += subject_bias(cand.get("paper_id",""), core_terms)
+        base -= 0.10  # demote clearly off-topic items
     return base
+
 
 # ========= Final topicality arbiter =========
 ON_TOPIC_ARBITER_PROMPT_TPL = Template("""Return strict JSON:
@@ -466,7 +504,7 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
     abs_txt = cand.get("abstract_full") or cand.get("abstract") or ""
     pid_cand = cand.get("paper_id") or cand.get("arxiv_id") or cand.get("id") or "unknown"
 
-    # optional soft floor in strict mode (still counts as checked)
+    # optional soft floor in strict mode
     cos = cosine_of(cand)
     if strict and cos < 0.2:
         return Verdict(False, 0.0, 0.0, "", "cosine_too_low", pid_cand,
@@ -509,10 +547,11 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
         retrieval_score=cos
     )
 
-    v = evidence_in_text_enforce(v)
+    v = enforce_evidence(v)
 
+    # On-topic hybrid guard (strict vs relaxed)
     if v.supports:
-        quote_has_core = any(t.lower() in (v.quote or "").lower() for t in (core_terms or []))
+        quote_has_core = any(ct in _norm_text(v.quote or "") for ct in (core_terms or []))
         abstract_has_core = abstract_mentions_core(abs_txt, core_terms)
         if strict:
             v.on_topic_ok = quote_has_core
@@ -527,6 +566,7 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
                 v.fit = 0.0
                 v.invalid_reason = "off_topic_no_core_in_abstract"
 
+    # Soft cue hint (ranking, not rejection)
     v.cue_hint = has_function_cue(v.quote, func_norm)
 
     dbg(debug, "verify | result supports=", v.supports, "fit=", f"{v.fit:.2f}",
@@ -537,6 +577,7 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
 def synthesize_answer(query: str, func: str, title: str, abstract: str,
                       paper_id: str, suppress_restate: bool=False) -> str:
     func_norm = normalize_function(func)
+
     func_instr = FUNCTION_INSTRUCTIONS.get(func_norm, "")
     avoid_restate_instr = ""
     if func_norm == "Motivation" and suppress_restate:
@@ -553,14 +594,17 @@ def synthesize_answer(query: str, func: str, title: str, abstract: str,
 
     ans = llm_text(prompt, model=DEFAULT_MODEL, temperature=0.15, max_tokens=180).strip()
 
+    # Always end with (paper_id).
     if not ans.endswith(f"({paper_id})."):
-        ans = re.sub(r"\s*\([^)]*\)\.?$", "", ans)
+        ans = re.sub(r"\s*\([^)]*\)\.?$", "", ans)  # strip any old () citation
         ans = ans.rstrip(".") + f" ({paper_id})."
 
+    # Enforce 1–2 sentences max
     parts = re.split(r"(?<=\.)\s+", ans)
     if len(parts) > 2:
         ans = " ".join(parts[:2])
 
+    # Keep Background strictly factual and one sentence
     if func_norm == "Background":
         first = re.split(r"(?<=\.)\s+", ans)[0].rstrip(".")
         ans = first + f" ({paper_id})."
@@ -574,11 +618,13 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
     dbg(debug, "select | function=", func, "| candidates_in=", len(candidates))
     dbg(debug, "select | core_terms=", core_terms)
 
-    # ---- NO PRUNING: keep all retrieved candidates ----
-    cand_pool0 = candidates[:]  # consider everything we have
-    dbg(debug, f"select | no cosine prune; kept={len(cand_pool0)}/{len(candidates)}")
+    # Early cosine gate
+    thr = dynamic_cosine_cut(candidates, keep_frac=0.6, min_floor=0.25)
+    cand_pool0 = [c for c in candidates if cosine_of(c) >= thr]
+    if not cand_pool0:
+        cand_pool0 = candidates[:]
 
-    # Rank all candidates by blended relevance, then take up to max_check
+    # Rank pruned candidates by blended relevance
     ranked = sorted(cand_pool0, key=lambda c: blended_relevance(c, core_terms, func), reverse=True)
     cand_pool = ranked[:max_check]
 
@@ -596,11 +642,11 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
     supported.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0), v.topicality, v.retrieval_score), reverse=True)
     winner = supported[0] if supported else None
 
-    # Pass 2: relaxed if needed — check the full pool
+    # Pass 2: relaxed if needed
     if winner is None:
         dbg(debug, "select | strict pass found 0 winners → trying relaxed")
         verdicts_relaxed: List[Verdict] = []
-        K = len(cand_pool)
+        K = min(6, len(cand_pool))
         for i, c in enumerate(cand_pool[:K], 1):
             dbg(debug, f"select | verify relaxed {i}/{K}")
             verdicts_relaxed.append(verify_candidate_for_function(query, func, c, core_terms=core_terms, debug=debug, strict=False))
@@ -609,12 +655,21 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
         supported2.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0), v.topicality, v.retrieval_score), reverse=True)
         winner = supported2[0] if supported2 else None
 
-    # Arbiter
+    # --- Early-accept guard before arbiter ---
+    # Accept if strong support + modest lexical overlap with the query
     if winner:
-        if not arbiter_on_topic(query, core_terms, winner.title, winner.abstract):
-            dbg(debug, "arbiter | rejected off-topic winner:", winner.paper_id)
-            winner = None
+        q_txt = query
+        doc_txt = f"{winner.title} {winner.abstract}"
+        ov = overlap_frac(q_txt, doc_txt)
+        if winner.fit >= 0.80 and ov >= 0.12:
+            dbg(debug, f"arbiter | early-accept: pid={winner.paper_id} fit={winner.fit:.2f} overlap={ov:.2f}")
+        else:
+            # Arbiter: reject off-topic winners even if earlier checks passed
+            if not arbiter_on_topic(query, core_terms, winner.title, winner.abstract):
+                dbg(debug, "arbiter | rejected off-topic winner:", winner.paper_id)
+                winner = None
 
+    # Build answer via LLM synthesis from the winner's abstract (or fallback)
     if winner and winner.quote:
         answer_sentence = synthesize_answer(
             query, func, winner.title, winner.abstract,
@@ -624,6 +679,7 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
     else:
         answer_sentence = f"The abstract does not provide information relevant to {normalize_function(func)}."
 
+    # Bundle
     return {
         "function": normalize_function(func),
         "winner": ({
@@ -651,7 +707,7 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
 # ========= Main =========
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--max-check", type=int, default=200, help="Max candidates to verify per function.")
+    ap.add_argument("--max-check", type=int, default=10, help="Max candidates to verify per function.")
     ap.add_argument("--debug", action="store_true", help="Print debug logs.")
     args = ap.parse_args()
     debug = args.debug
@@ -670,13 +726,19 @@ def main():
     funcs = [f for f in funcs if f in ALL_FUNCS]
     dbg(debug, "main | query='{}' | funcs={}".format(query, funcs))
 
-    # core terms
+    # LLM-extracted core entities + special token fallback
     core = extract_core_entities(query)
     special = extract_special_core_from_query(query)
-    core_terms = (core.get("core", []) or []) + special
-    seen=set(); core_terms = [t for t in core_terms if not (t.lower() in seen or seen.add(t.lower()))]
+    core_terms_raw = (core.get("core", []) or []) + special
+    # widen & normalize core terms (split hyphen/slash compounds)
+    core_terms: List[str] = []
+    seen = set()
+    for t in core_terms_raw:
+        for w in _lex_tokens(t):
+            if w not in seen:
+                seen.add(w); core_terms.append(w)
     if not core_terms:
-        core_terms = content_terms_from_query(query)
+        core_terms = _lex_tokens(query) or content_terms_from_query(query)
     dbg(debug, "main | core_terms=", core_terms)
 
     cands = load_topk_jsonl(TOPK_PATH, debug=debug)
@@ -686,6 +748,7 @@ def main():
 
     bundle = []
     answer_lines = []
+
     processed_funcs: Set[str] = set()
 
     for func in funcs:
@@ -709,7 +772,9 @@ def main():
             print("- No supporting candidate with sufficient evidence.")
         print(f"- ANSWER: {result['answer_sentence'] or '[no answer — insufficient concrete facts]'}")
 
+        # answers-only: just answer + [Function] (no duplicate paper_id)
         answer_lines.append(f"{result['answer_sentence']} [{func}]")
+
         processed_funcs.add(func)
 
     with open(out_pretty, "w", encoding="utf-8") as f:
@@ -724,90 +789,6 @@ def main():
     print(f"\n📄 Saved: {out_pretty}")
     print(f"📄 Saved: {out_jsonl}")
     print(f"📝 Answers-only: {out_answers}")
-# ==== Injected by run_pipeline.py: Robust llm_chat override (self-contained) ====
-import os as _rp_os
-import time as _rp_time
-
-try:
-    from openai import OpenAI as _RP_OpenAI
-except Exception:
-    _RP_OpenAI = None  # will raise if needed
-
-def _rp_get_client():
-    # reuse existing client if present
-    if "client" in globals() and globals().get("client") is not None:
-        return globals()["client"]
-    if _RP_OpenAI is None:
-        raise RuntimeError("OpenAI client not available for injected llm_chat.")
-    # try to build a client from env/file
-    api_key = (_rp_os.getenv("SCADS_API_KEY")
-               or (_rp_os.path.exists(_rp_os.path.expanduser("~/.scadsai-api-key")) and
-                   open(_rp_os.path.expanduser("~/.scadsai-api-key")).read().strip())
-               or _rp_os.getenv("OPENAI_API_KEY"))
-    base_url = _rp_os.getenv("SCADS_BASE_URL", "https://llm.scads.ai/v1")
-    c = _RP_OpenAI(base_url=base_url, api_key=api_key) if base_url else _RP_OpenAI(api_key=api_key)
-    globals()["client"] = c
-    return c
-
-def _rp_model_fallback():
-    return globals().get("DEFAULT_MODEL") or _rp_os.getenv("MODEL_NAME") or "openai/gpt-oss-120b"
-
-def _extract_choice_text(resp):
-    try:
-        if not resp or not getattr(resp, "choices", None):
-            return None
-        ch = resp.choices[0]
-        msg = getattr(ch, "message", None)
-        if msg is not None:
-            content = getattr(msg, "content", None)
-            if content:
-                return content if isinstance(content, str) else str(content)
-        txt = getattr(ch, "text", None)
-        if txt:
-            return txt if isinstance(txt, str) else str(txt)
-        cnt = getattr(ch, "content", None)
-        if cnt:
-            return cnt if isinstance(cnt, str) else str(cnt)
-    except Exception:
-        return None
-    return None
-
-def llm_chat(prompt, model=None, max_tokens=512, temperature=0.2, retries=2, sleep_s=0.7):
-    """
-    Safe chat wrapper:
-    - creates client if missing
-    - tolerates None/empty content
-    - supports both chat and text-style responses
-    - light retry to dodge transient empties under load
-    """
-    _rp_debug = bool(globals().get("DEBUG", False))
-    if model is None:
-        model = _rp_model_fallback()
-    last_err = None
-    for attempt in range(retries + 1):
-        try:
-            _c = _rp_get_client()
-            resp = _c.chat.completions.create(
-                model=model,
-                messages=[{"role": "user", "content": prompt}],
-                max_tokens=max_tokens,
-                temperature=temperature,
-            )
-            text = _extract_choice_text(resp)
-            if text and text.strip():
-                return text.strip()
-            if _rp_debug:
-                print(f"[llm_chat] Empty content (attempt {attempt+1}/{retries+1}); resp={getattr(resp, 'id', 'no-id')}", flush=True)
-        except Exception as e:
-            last_err = e
-            if _rp_debug:
-                print(f"[llm_chat] API error (attempt {attempt+1}/{retries+1}): {e}", flush=True)
-        _rp_time.sleep(sleep_s)
-        temperature = 0.1  # nudge on retry
-    if _rp_debug:
-        print(f"[llm_chat] Giving up after {retries+1} attempts. Last error: {last_err}", flush=True)
-    return ""  # never crash
-# ==== End injected override ====
 
 if __name__ == "__main__":
     main()

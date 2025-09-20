@@ -1,201 +1,259 @@
 rank,paper_id,title,year,authors,abstract,score,cosine,title_matches,abs_matches,query_terms_used,classifier_functions,retrieval_error,retrieved_at
-0,nucl-ex/0101003,Anti-flow of K$^0_s$ Mesons in 6 AGeV Au + Au Collisions,2001,P. ChungN. N. AjitanandJ. M. AlexanderM. AndersonD. BestF. P. BradyT. CaseW. CaskeyD. CebraJ. L. ChanceB. ColeK. CroweA. DasJ. E. DraperM. L. GilkesS. GushueM. HeffnerA. S. HirschE. L. HjortL. HuoM. JusticeM. KaplanD. KeaneJ. C. KintnerJ. KlayD. KrofcheckR. A. LaceyJ. LauretM. A. LisaH. LiuY. M. LiuR. McGrathZ. MilosevichG. OdyniecD. L. OlsonS. Y. PanitkinC. PinkenburgN. T. PorileG. RaiH. G. RitterJ. L. RomeroR. ScharenbergL. SchroederB. SrivastavaN. T. BStoneT. J. M. SymonsT. WienoldR. Witt J. WhitfieldL. WoodW. N. Zhang,"We have measured the sideward flow of neutral strange ($K^0_s$) mesons in 6
-AGeV Au + Au collisions. A prominent anti-flow signal is observed for an impact
-parameter range (b $\lesssim 7$ fm) which spans central and mid-central events.
-Since the $K^0_s$ scattering cross section is relatively small in nuclear
-matter, this observation suggests that the in-medium kaon vector potential
-plays an important role in high density nuclear matter.",1.0,0.9061841368675232,"anti, flow, mesons","anti, density, flow, high, kaon, matter, medium, mesons, neutral, nuclear, observation, potential, signal, strange, vector","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-1,hep-ph/0104230,High p_T Higgs signal for the LHC,2001,V. A. KhozeA. D. MartinM. G. Ryskin,"We show that the broad transverse momentum distribution of the Higgs boson
-produced by WW fusion can provide a viable way to identify H --> b anti-b
-decays at the LHC, if particular kinematical configurations with large rapidity
-gaps are selected. We estimate the event rate of the signal and of the QCD b
-anti-b background. We also discuss Higgs boson detection via the H --> tau tau
-and H --> WW* decay modes.",0.35987478494644165,0.8720468282699585,"high, signal","anti, signal","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-2,nucl-ex/0104025,"Production and collective behavior of strange particles in Au + Au
-  collisions at 2--8 AGeV",2001,C. Pinkenburg,"The E895 experiment at the AGS measured strange particle production and
-collective behavior in Au+Au collisions between 2--8 AGeV. The production of
-$\Lambda$ Baryons and K$^0$ Mesons as function of energy rises smoothly and
-exhibits a nonlinear impact parameter dependence. Neutral and positively
-charged Kaons exhibit a strong anti-flow behavior. $\Lambda$ Baryons show a
-smaller flow signal than protons.",0.35754552483558655,0.8719226121902466,strange,"anti, flow, mesons, neutral, signal, strange","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-3,astro-ph/0103048,Polarization Insights for Active Galactic Nuclei,2001,R. R. J. Antonucci,"Optical spectropolarimetry and broadband polarimetry in other wavebands has
-been a key to understanding many diverse aspects of AGN. In some cases
-polarization is due to synchrotron radiation, and in other cases it's due to
-scattering. Recognition of relativistically beamed optical synchrotron emission
-by polarization was vital for understanding blazars (BL Lacs and Optically
-Violently Variable quasars), both physically and geometrically. Radio
-polarimetry of quiescent AGN is equally important, again for both purposes.
-Scattering polarization was central to the Unified Model for Seyferts, Radio
-Galaxies and (high ionization) Ultraluminous Infrared Galaxies. It provides a
-periscope for viewing AGN from other directions. Finally, if we could
-understand its message, polarization would also provide major insights
-regarding the nature of the AGN ""Featureless Continuum"" and Broad (emission)
-Line Region. I point out that high ionization ULIRGs have all the exact right
-properties to be called Quasar 2s. Mid-IR observations generally don't
-penetrate to the nucleus, greatly reducing their ability to diagnose the energy
-source. In particular, LINER ULIRGs aren't necessarily starburst-dominated, as
-has been claimed.",0.29161274433135986,0.8684064745903015,,"high, understanding","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-4,hep-ph/0103121,Exploring New Physics in the $B\to \phi K$ System,2001,Robert FleischerThomas Mannel,"Employing the SU(2) isospin symmetry of strong interactions and estimates
-borrowed from effective field theory, we explore the impact of new physics on
-the decays $B^\pm\to \phi K^\pm$ and $B_d\to \phi K_S$ in a model-independent
-manner. To this end, we introduce - in addition to the usual mixing-induced CP
-asymmetry in $B_d\to \phi K_S$ - a set of three observables, which may not only
-provide smoking-gun signals for new-physics contributions to different isospin
-channels, but also valuable insights into hadron dynamics. Imposing dynamical
-hierarchies of amplitudes, we discuss various patterns of these observables,
-including also scenarios with small and large rescattering processes. Whereas
-the $B\to\phi K$ system provides, in general, a powerful tool to search for
-indications of new physics, there is also an unfortunate case, where such
-effects cannot be distinguished from those of the Standard Model.",0.2776898443698883,0.8676639795303345,,,"observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-5,nucl-th/0104068,Asymmetries in phi photoproduction and the OZI violation,2001,Yongseok OhH. C. Bhang,"We study the vector meson density matrix and the associated polarization
-asymmetries in $\phi$ photoproduction near threshold. In order to study the OZI
-violating processes, we consider the direct $\phi NN$ coupling as well as the
-knockout processes arising from the non-vanishing $s\bar{s}$ sea quarks in the
-nucleon. The polarization asymmetries in $\phi$ meson decays are found to be
-very useful to constrain the $\phi NN$ coupling constant. The hidden
-strangeness of the nucleon can also be studied by these asymmetries, but mostly
-at large $|t|$ region.",0.24662071466445923,0.8660070896148682,,"density, vector","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-6,nucl-th/0101031,Antikaons in nuclei and dense nuclear matter,2001,A. RamosS. HirenzakiS. S. KamalovT. T. S. KuoY. OkumuraE. OsetA. PollsH. TokiL. Tolos,"We present recent progress on the properties of antikaons in nuclei and dense
-nuclear matter as obtained from two {\bar K}N interaction models: one based on
-the lowest-order meson-baryon chiral lagrangian and the other derived from a
-meson-exchange picture.",0.24012254178524017,0.865660548210144,"matter, nuclear","matter, nuclear","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-7,hep-ph/0102028,Extrapolation of K to \pi\pi decay amplitude,2001,Mahiko Suzuki,"We examine the uncertainties involved in the off-mass-shell extrapolation of
-the $K\rightarrow \pi\pi$ decay amplitude with emphasis on those aspects that
-have so far been overlooked or ignored. Among them are initial-state
-interactions, choice of the extrapolated kaon field, and the relation between
-the asymptotic behavior and the zeros of the decay amplitude. In the inelastic
-region the phase of the decay amplitude cannot be determined by strong
-interaction alone and even its asymptotic value cannot be deduced from
-experiment. More a fundamental issue is intrinsic nonuniqueness of off-shell
-values of hadronic matrix elements in general. Though we are hampered with
-complexity of intermediate-energy meson interactions, we attempt to obtain a
-quantitative idea of the uncertainties due to the inelastic region and find
-that they can be much larger than more optimistic views portray.",0.22270467877388,0.8647316694259644,,kaon,"observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-8,nucl-th/0103059,Vector Meson Decay of Baryon Resonances,2001,U. MoselM. Post,"We investigate the coupling of vector mesons with nucleons to nucleon
-resonances in an isospin-selective VMD approach and explore the in-medium
-properties of vector mesons.",0.21996638178825378,0.8645856380462646,vector,"medium, mesons, vector","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-9,hep-ph/0102171,"Interpretation of SAMPLE and HAPPEX Experimental Results on Strange
-  Nucleon Form Factors",2001,Stanislav DubnickaAnna Zuzana DubnickovaPeter Weisenpacher,"A behaviour of strange nucleon form factors is predicted by means of Jaffe's
-idea about the relations of $\omega$ and $\phi$ vector-meson coupling constant
-ratios. Its application to a specific eight-resonance unitary and analytic
-model of nucleon electromagnetic structure, describing also the time-like
-nucleon electromagnetic form factor data, explains the positive central values
-from recent SAMPLE and HAPPEX experiments.",0.21304796636104584,0.864216685295105,strange,"strange, vector","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-10,nucl-th/0101047,Current Status of Quark Gluon Plasma Signals,2001,D. ZschiescheS. BassM. BleicherJ. BrachmannL. GerlandK. PaechS. SchererS. SoffC. SpielesH. WeberH. StöckerW. Greiner,"Compelling evidence for the creation of a new form of matter has been claimed
-to be found in Pb+Pb collisions at SPS. We discuss the uniqueness of often
-proposed experimental signatures for quark matter formation in relativistic
-heavy ion collisions. It is demonstrated that so far none of the proposed
-signals like J\psi meson production/suppression, strangeness enhancement,
-dileptons, and directed flow unambigiously show that a phase of deconfined
-matter has been formed in SPS Pb+Pb collisions. We emphasize the need for
-systematic future measurements to search for simultaneous irregularities in the
-excitation functions of several observables in order to come close to pinning
-the properties of hot, dense QCD matter from data.",0.19146564602851868,0.8630657196044922,,"flow, matter","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-11,hep-ph/0104234,A proposal on the possibility of detecting D-particles,2001,Elias GravanisNick E. Mavromatos,"In a previous study we showed that D0-branes (particles) can operate as
-sources of very-high-energy radiation, as a result of an unstable spacetime
-distortion that follows a D0-particle/closed string state scattering. The
-effect can happen only if the energy of the incident particle/closed string
-state exceeds a certain threshold, which is of order of the subsequently
-radiated energy. In this letter we speculate on the possibility of detection of
-the D-particles due to this phenomenon. The energies of the emitted radiation
-range in a narrow window of size less than one order of magnitude.
-Observation-wise, this radiation will appear as an excess of photons in a
-narrow band in the spectrum of high energy cosmic rays. From their energy we
-can then read off the value of the product of the string mass scale times the
-string coupling. We speculate on the possibility that high energy neutrinos
-from GRB's play the r\^ole of the necessary high energy flux that triggers the
-effect, by striking D-particles lying inside the mean free path of the photons
-as measured from Earth. The possibilty of this effect operating as a mechanism
-of GZK cutoff violation is also pointed out.",0.14193809032440186,0.8604244589805603,,"high, observation","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-12,hep-ph/0104001,The strange border of the QCD phases,2001,Sonja Kabana,"We address the flavour composition along the border between the hadronic and
-the quark-gluon plasma phases of QCD. The ratio of strange to up and down
-antiquarks ($\lambda_s$) produced in partic le and nuclear collisions, is found
-to increase in collisions with initially reached energy density ($\epsilon_i$)
-up to $\epsilon_{crit}$ $\sim$ 1 GeV/$fm^3$. Above this value it decreases
-approximately linearly and reaches its asymptotic value at zero baryon chemical
-potential ($\mu_B$). We demonstrate that $\lambda_s$ in nuclear collisions is
-approaching its asymptotic value at $\epsilon_i$ $\sim$ 8-9 GeV/$fm^3$,
-corresponding to $\sqrt{s}$ $\sim$ 3-8 TeV per nucleon+nucleon pair which will
-be reached at the LHC. After correcting for the difference in the chemical
-potentials of various colliding systems, $\lambda_s$ universally saturates
-across the QCD phase boundary, following the temperature. Recent experimental
-puzzles as the increase in the $K/\pi$ ratio in Pb+Pb collisions at 40 GeV per
-nucleon, its different behaviour at midrapidity, the decrease of the double
-ratio of $K/\pi$(A+A/p+p) in nucleus nucleus over p+p collisions with
-increasing $\sqrt{s}$, and the increase of $\lambda_s$ in p+A over p+p
-collisions at the same $\sqrt{s}$, are naturally explained. We study the
-approach of thermodynamic observables at $\mu_B=0$ to the transition point and
-extract an estimate of the critical temperature.",0.12315220385789871,0.8594226241111755,strange,"density, nuclear, potential, strange","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-13,hep-ph/0103113,The flavour asymmetry of polarized anti-quarks in the nucleon,2001,Fu-Guang CaoA. I. Signal,"We present a study of the flavour asymmetry of polarized anti-quarks in the
-nucleon using the meson cloud model. We include contributions both from the
-vector mesons and the interference terms of pseudoscalar and vector mesons.
-Employing the bag model, we first give the polarized valence quark distribution
-of the $\rho$ meson and the interference distributions. Our calculations show
-that the interference effect mildly increases the prediction for $\Delta
-\dbar(x)-\Delta \ubar(x)$ at intermediate $x$ region. We also discuss the
-contribution of `Pauli blocking' to the asymmetry.",0.1215885728597641,0.8593392372131348,anti,"anti, mesons, vector","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-14,hep-lat/0104002,The QCD spectrum with three quark flavors,2001,Claude BernardTom BurchThomas A. DeGrandSaumen DattaCarleton DeTarSteven GottliebUrs M. HellerKostas OrginosRobert SugarDoug Toussaint,"We present results from a lattice hadron spectrum calculation using three
-flavors of dynamical quarks - two light and one strange, and quenched
-simulations for comparison. These simulations were done using a one-loop
-Symanzik improved gauge action and an improved Kogut-Susskind quark action. The
-lattice spacings, and hence also the physical volumes, were tuned to be the
-same in all the runs to better expose differences due to flavor number. Lattice
-spacings were tuned using the static quark potential, so as a byproduct we
-obtain updated results for the effect of sea quarks on the static quark
-potential. We find indications that the full QCD meson spectrum is in better
-agreement with experiment than the quenched spectrum. For the 0++ (a0) meson we
-see a coupling to two pseudoscalar mesons, or a meson decay on the lattice.",0.1199500635266304,0.859251856803894,,"mesons, potential, strange","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-15,hep-ph/0104069,A Microscopic View of Parton $k_T$ Effects In High $p_T$ Processes,2001,R. K. ShivpuriB. M. SodermarkA. N. Mitra,"A microscopic mechanism is proposed for understanding the rather large $k_T$
-effects ($<k_T>$ = $1-1.5 GeV/c$, as yet unaccounted for by hard QCD), found by
-the Fermilab E706 Collaboration for 530 and 800 GeV/c protons incident on light
-nuclear targets (mass $A$) like Be. The essential idea is that such high
-incident projectile momenta tend to break up the confinement barriers for the
-quark-partons residing in the individual nucleonic constituents of the target
-nucleus that fall in a tube-like zone around the projectile's path, so that
-these particles tend to behave as a collection of quark-partons confronting the
-beam. Using simple combinatorial principles, the resultant $<k_T>^2$ value
-works out as $(3A_{eff}-1) \beta^2$, where $A_{eff}$ is the number of affected
-nucleons in the tube-like zone, and $\beta$ is a scale parameter derived from
-the basic quark-pair interaction. Using the previously found results of a
-Bethe-Salpeter model (attuned to $q{\bar q}$ and $qqq$ spectroscopy), one in
-which a key ingredient is the infrared part of the gluon propagator, giving
-$\beta^2= 0.068 GeV^2$, the desired $<k_T>$ range is reproduced, suggesting the
-persistence of $soft$ QCD effects even at high $p_T$. Keywords: Direct photon;
-high-$p_T$ reaction; parton $k_T$ distribution; soft-QCD effect.",0.11839984357357025,0.8591691851615906,high,"high, nuclear, understanding","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-16,hep-ph/0102150,"Semileptonic Decays of $B_c$ Meson to a P-Wave Charmonium State $\chi_c$
-  or $h_c$",2001,Chao-Hsi ChangYu-Qi ChenGuo-Li WangHong-Shi Zong,"The semileptonic decays of meson $B_c$ to a P-wave charmonium state
-$\chi_c(^3P_J)$ or $h_c(^1P_1)$ are computed. The results show that the decays
-are sizable so they are accessible in Tevatron and in LHC, especially, with the
-detectors LHCB and BTeV in the foreseeable future, and of them, the one to the
-$^1P_1$ charmonium state potentially offers us a novel window to see the
-unconfirmed $h_c$ particle. In addition, it is pointed out that since the two
-charmonium radiative decays $\chi_c(^3P_{1,2}) \to J/\psi+\gamma$ have sizable
-branching ratios, the cascade decays of the concerned decays and the charmonium
-radiative decays may affect the result of the observing the $B_c$ meson through
-the semileptonic decays $B_{c}\to {J/\psi}+{l}+\nu_{l}$ substantially.",0.11406214535236359,0.8589378595352173,,,"observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-17,nucl-th/0103056,The sigma meson and chiral restoration in nuclear medium,2001,Teiji Kunihiro,"After giving brief discussions on the chiral condensate in hot and/or dense
-hadronic matter and the significance of the $\sigma$ meson in QCD, we discuss
-the importance of experiments using nuclear targets including ones with
-electro-magnetic probes for obtaining clearer confirmation of the existence of
-the $\sigma$ meson and for exploring the possible restoration of chiral
-symmetry in nuclear medium.",0.11131825298070908,0.8587915301322937,"medium, nuclear","matter, medium, nuclear","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-18,hep-ph/0101070,"High-energy interaction with the nucleus in the perturbative QCD with
-  $N_c\to\infty$",2001,M. A. Braun,"The BFKL fan diagram equation for the scattering on the nucleus is solved
-numerically with the eikonalized initial condition and for a realistic nuclear
-density. The gluon density has a soliton-like form in the $\log q - y$ space.
-Inclusive cross-sections for jet production in hA and AB collisions are
-calculated.",0.10257579386234283,0.8583253026008606,high,"density, nuclear","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
-19,hep-ph/0102269,"Strangeness in the nucleon: neutrino-nucleon and polarized
-  electron-nucleon scattering",2001,W. M. AlbericoS. M. BilenkyC. Maieron,"After the EMC and subsequent experiments at CERN, SLAC and DESY on the deep
-inelastic scattering of polarized leptons on polarized nucleons, it is now
-established that the Q^2=0 value of the axial strange form factor of the
-nucleon, a quantity which is connected with the spin of the proton and is quite
-relevant from the theoretical point of view, is relatively large.
-  In this review we consider different methods and observables that allow to
-obtain information on the strange axial and vector form factors of the nucleon
-at different values of Q^2. These methods are based on the investigation of the
-Neutral Current induced effects such as the P-odd asymmetry in the scattering
-of polarized electrons on protons and nuclei, the elastic neutrino
-(antineutrino) scattering on protons and the quasi-elastic neutrino
-(antineutrino) scattering on nuclei. We discuss in details the phenomenology of
-these processes and the existing experimental data.",0.10137093812227249,0.8582610487937927,,"neutral, strange, vector","observation, anti, flow, signal, neutral, strange, mesons, motivate, extend, understanding, medium, kaon, vector, potential, high, density, nuclear, matter","Motivation, Extends",,2025-09-19T10:44:30.754803
+0,physics/0101025,Global stability of systems related to the Navier-Stokes equations,2001,Alexander Rauh,"A generalized Lyapunov method is outlined which predicts global stability of
+a broad class of dissipative dynamical systems. The method is applied to the
+complex Lorenz model and to the Navier-Stokes equations. In both cases one
+finds compact domains in phase space which contain the omega sets of all
+trajectories, in particular the fixed points, limit cycles, and strange
+attractors.",1.0,0.8902639746665955,"equations, navier, stokes, systems","complex, dynamical, equations, generalized, lorenz, lyapunov, model, navier, stokes, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+1,cond-mat/0103086,Towards a Landau-Ginzburg-type Theory for Granular Fluids,2001,J. WakouR. BritoM. H. Ernst,"In this paper we show how, under certain restrictions, the hydrodynamic
+equations for the freely evolving granular fluid fit within the framework of
+the time dependent Landau-Ginzburg (LG) models for critical and unstable fluids
+(e.g. spinodal decomposition). The granular fluid, which is usually modeled as
+a fluid of inelastic hard spheres (IHS), exhibits two instabilities: the
+spontaneous formation of vortices and of high density clusters. We suppress the
+clustering instability by imposing constraints on the system sizes, in order to
+illustrate how LG-equations can be derived for the order parameter, being the
+rate of deformation or shear rate tensor, which controls the formation of
+vortex patterns. From the shape of the energy functional we obtain the
+stationary patterns in the flow field. Quantitative predictions of this theory
+for the stationary states agree well with molecular dynamics simulations of a
+fluid of inelastic hard disks.",0.5446478128433228,0.8617522716522217,,"equations, models","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+2,nlin/0104044,"Analytical and Numerical Studies of Noise-induced Synchronization of
+  Chaotic Systems",2001,Raul ToralClaudio R. MirassoEmilio Hernandez-GarciaOreste Piro,"We study the effect that the injection of a common source of noise has on the
+trajectories of chaotic systems, addressing some contradictory results present
+in the literature. We present particular examples of 1-d maps and the Lorenz
+system, both in the chaotic region, and give numerical evidence showing that
+the addition of a common noise to different trajectories, which start from
+different initial conditions, leads eventually to their perfect
+synchronization. When synchronization occurs, the largest Lyapunov exponent
+becomes negative. For a simple map we are able to show this phenomenon
+analytically. Finally, we analyze the structural stability of the phenomenon.",0.427323579788208,0.8544060587882996,systems,"lorenz, lyapunov, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+3,gr-qc/0102071,Relativistic Lagrange Formulation,2001,Robert GerochGabriel NagyOscar Reula,"It is well-known that the equations for a simple fluid can be cast into what
+is called their Lagrange formulation. We introduce a notion of a generalized
+Lagrange formulation, which is applicable to a wide variety of systems of
+partial differential equations. These include numerous systems of physical
+interest, in particular, those for various material media in general
+relativity. There is proved a key theorem, to the effect that, if the original
+(Euler) system admits an initial-value formulation, then so does its
+generalized Lagrange formulation.",0.357784241437912,0.8500518798828125,,"equations, generalized, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+4,nlin/0101029,Predictability: a way to characterize Complexity,2001,G. BoffettaM. CenciniM. FalcioniA. Vulpiani,"Different aspects of the predictability problem in dynamical systems are
+reviewed. The deep relation among Lyapunov exponents, Kolmogorov-Sinai entropy,
+Shannon entropy and algorithmic complexity is discussed. In particular, we
+emphasize how a characterization of the unpredictability of a system gives a
+measure of its complexity. Adopting this point of view, we review some
+developments in the characterization of the predictability of systems showing
+different kind of complexity: from low-dimensional systems to high-dimensional
+ones with spatio-temporal chaos and to fully developed turbulence. A special
+attention is devoted to finite-time and finite-resolution effects on
+predictability, which can be accounted with suitable generalization of the
+standard indicators. The problems involved in systems with intrinsic randomness
+is discussed, with emphasis on the important problems of distinguishing chaos
+from noise and of modeling the system. The characterization of irregular
+behavior in systems with discrete phase space is also considered.",0.32371091842651367,0.8479183912277222,,"dynamical, lyapunov, problem, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+5,physics/0103076,Complexity Through Nonextensivity,2001,William BialekIlya NemenmanNaftali Tishby,"The problem of defining and studying complexity of a time series has
+interested people for years. In the context of dynamical systems, Grassberger
+has suggested that a slow approach of the entropy to its extensive asymptotic
+limit is a sign of complexity. We investigate this idea further by information
+theoretic and statistical mechanics techniques and show that these arguments
+can be made precise, and that they generalize many previous approaches to
+complexity, in particular unifying ideas from the physics literature with ideas
+from learning and coding theory; there are even connections of this statistical
+approach to algorithmic or Kolmogorov complexity. Moreover, a set of simple
+axioms similar to those used by Shannon in his development of information
+theory allows us to prove that the divergent part of the subextensive component
+of the entropy is a unique complexity measure. We classify time series by their
+complexities and demonstrate that beyond the `logarithmic' complexity classes
+widely anticipated in the literature there are qualitatively more complex,
+`power--law' classes which deserve more attention.",0.306797057390213,0.846859335899353,,"complex, development, dynamical, information, problem, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+6,math-ph/0102001,"Methods for Derivation of Generalized Equations in the (S,0)+(0,S)
+  Representations of the Lorentz Group",2001,Valeriy V. Dvoeglazov,"We continue the discussion of several explicit examples of generalizations in
+relativistic quantum mechanics. We discussed the generalized spin-1/2 equations
+for neutrinos and the spin-1 equations for photon. The equations obtained by
+means of the Gersten-Sakurai method and those of Weinberg for spin-1 particles
+have been mentioned. Thus, we generalized the Maxwell and Weyl equations.
+Particularly, we found connections of the well-known solutions and the dark
+4-spinors in the Ahluwalia-Grumiller elko model. They are also not the
+eigenstates of the chirality and helicity. The equations may lead to the
+dynamics which are different from those accepted at the present time. For
+instance, the photon may have non-transverse components and the neutrino may be
+{\it not} in the energy states and in the chirality states. The second-order
+equations have been considered too. They have been obtained by the Ryder
+method.",0.29785653948783875,0.8462995290756226,"equations, generalized","equations, generalized, model","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+7,cond-mat/0103467,Non Linear Kinetics underlying Generalized Statistics,2001,G. Kaniadakis,"The purpose of the present effort is threefold. Firstly, it is shown that
+there exists a principle, that we call Kinetical Interaction Principle (KIP),
+underlying the non linear kinetics in particle systems, independently on the
+picture (Kramers, Boltzmann) used to describe their time evolution. Secondly,
+the KIP imposes the form of the generalized entropy associated to the system
+and permits to obtain the particle statistical distribution, both as stationary
+solution of the non linear evolution equation and as the state which maximizes
+the generalized entropy. Thirdly, the KIP allows, on one hand, to treat all the
+classical or quantum statistical distributions already known in the literature
+in a unifying scheme and, on the other hand, suggests how we can introduce
+naturally new distributions. Finally, as a working example of the approach to
+the non linear kinetics here presented, a new non extensive statistics is
+constructed and studied starting from a one-parameter deformation of the
+exponential function holding the relation $f(-x)f(x)=1$.",0.29100266098976135,0.8458703756332397,generalized,"generalized, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+8,math/0101203,"Well-posedness and global attractors for liquid crystals on Riemannian
+  manifolds",2001,Steve Shkoller,"We study the coupled Navier-Stokes Ginzburg-Landau model of nematic liquid
+crystals introduced by F.H. Lin, which is a simplified version of the
+Ericksen-Leslie system. We generalize the model to compact n-dimensional
+Riemannian manifolds, and show that the system comes from a variational
+principle. We present a new simple proof for the local well-posedness of this
+coupled system without using the higher-order energy law. We then prove that
+this system is globally well-posed and has compact global attractors when the
+dimension of the manifold M is two.Finally, we introduce the Lagrangian
+averaged liquid crystal equations, which arise from averaging the Navier-Stokes
+fluid motion over small spatial scales in the variational principle. We show
+that this averaged system is globally well-posed and has compact global
+attractors even when M is three-dimensional.",0.2892339825630188,0.8457596302032471,,"equations, model, navier, stokes","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+9,nlin/0101049,Exact solutions to chaotic and stochastic systems,2001,J. A. GonzalezL. I. ReyesL. E. Guerrero,"We investigate functions that are exact solutions to chaotic dynamical
+systems. A generalization of these functions can produce truly random numbers.
+For the first time, we present solutions to random maps. This allows us to
+check, analytically, some recent results about the complexity of random
+dynamical systems. We confirm the result that a negative Lyapunov exponent does
+not imply predictability in random systems. We test the effectiveness of
+forecasting methods in distinguishing between chaotic and random time-series.
+Using the explicit random functions, we can give explicit analytical formulas
+for the output signal in some systems with stochastic resonance. We study the
+influence of chaos on the stochastic resonance. We show, theoretically, the
+existence of a new type of solitonic stochastic resonance, where the shape of
+the kink is crucial. Using our models we can predict specific patterns in the
+output signal of stochastic resonance systems.",0.22056566178798676,0.8414599895477295,systems,"dynamical, lyapunov, models, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+10,astro-ph/0101222,"Damping time and stability of density fermion perturbations in the
+  expanding universe",2001,Costantino SigismondiSimonetta FilippiLuis Alberto SanchezRemo Ruffini,"The classic problem of the growth of density perturbations in an expanding
+Newtonian universe is revisited following the work of Bisnovatyi-Kogan and
+Zel'dovich. We propose a more general analytical approach: a system of free
+particles satisfying semi-degenerate Fermi-Dirac statistics on the background
+of an exact expanding solution is examined in the linear approximation. This
+differs from the corresponding work of Bisnovatyi-Kogan and Zel'dovich where
+classical particles fulfilling Maxwell-Boltzmann statistics were considered.
+The solutions of the Boltzmann equation are obtained by the method of
+characteristics. An expression for the damping time of a decaying solution is
+discussed and a zone in which free streaming is hampered is found,
+corresponding to wavelengths less than the Jeans one. In the evolution of the
+system, due to the decrease of the Jeans length, those perturbations may lead
+to gravitational collapse. At variance with current opinions, we deduce that
+perturbations with lambda >=lambda_(J Max)/1.48 are able to generate structures
+and the lower limit for substructures mass is M = M_(J max)/(1.48)^3 ~ M_(J
+max)/3, where M_(J max) is the maximum value of the Jeans mass.",0.21176031231880188,0.8409086465835571,,"background, problem","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+11,nlin/0104005,Geometric Approach to Lyapunov Analysis in Hamiltonian Dynamics,2001,Yamaguchi Y. YoshiyukiIwai Toshihiro,"As is widely recognized in Lyapunov analysis, linearized Hamilton's equations
+of motion have two marginal directions for which the Lyapunov exponents vanish.
+Those directions are the tangent one to a Hamiltonian flow and the gradient one
+of the Hamiltonian function. To separate out these two directions and to apply
+Lyapunov analysis effectively in directions for which Lyapunov exponents are
+not trivial, a geometric method is proposed for natural Hamiltonian systems, in
+particular. In this geometric method, Hamiltonian flows of a natural
+Hamiltonian system are regarded as geodesic flows on the cotangent bundle of a
+Riemannian manifold with a suitable metric. Stability/instability of the
+geodesic flows is then analyzed by linearized equations of motion which are
+related to the Jacobi equations on the Riemannian manifold. On some geometric
+setting on the cotangent bundle, it is shown that along a geodesic flow in
+question, there exist Lyapunov vectors such that two of them are in the two
+marginal directions and the others orthogonal to the marginal directions. It is
+also pointed out that Lyapunov vectors with such properties can not be obtained
+in general by the usual method which uses linearized Hamilton's equations of
+motion. Furthermore, it is observed from numerical calculation for a model
+system that Lyapunov exponents calculated in both methods, geometric and usual,
+coincide with each other, independently of the choice of the methods.",0.16233332455158234,0.8378137946128845,lyapunov,"apply, equations, lyapunov, model, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+12,cond-mat/0102272,"Supervised Learning with Restricted Training Sets: a Generating
+  Functional Analysis",2001,J. A. F. HeimelA. C. C. Coolen,"We study the dynamics of supervised on-line learning of realizable tasks in
+feed-forward neural networks. We focus on the regime where the number of
+examples used for training is proportional to the number of input channels N.
+Using generating function techniques from spin glass theory, we are able to
+average over the composition of the training set and transform the problem for
+N to infinity to an effective single pattern system, described completely by
+the student autocovariance, the student-teacher overlap and the student
+response function, with exact closed equations. Our method applies to arbitrary
+learning rules, i.e. not necessarily of a gradient-descent type. The resulting
+exact macroscopic dynamical equations can be integrated without finite-size
+effects up to any degree of accuracy, but their main value is in providing an
+exact and simple starting point for analytical approximation schemes. Finally,
+we show how, in the region of absent anomalous response and using the
+hypothesis that (as in detailed balance systems) the short-time part of the
+various operators can be transformed away, one can describe the stationary
+state of the network succesfully by a set of coupled equations involving only
+four scalar order parameters.",0.1496812403202057,0.8370215892791748,,"dynamical, equations, problem, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+13,math-ph/0104023,Scattering and radiation damping in gyroscopic Lorentz electrodynamic,2001,Walter AppelMichael K. -H. Kiessling,"Relativistic massive Lorentz electrodynamics (LED) is studied in a
+``gyroscopic setup'' where the electromagnetic fields and the particle spin are
+the only dynamical degrees of freedom.
+  A rigorous proof of the global existence and uniqueness of the dynamics is
+given for essentially the whole range of field strengths reasonable for a
+classical theory.
+  For a class of rotation-reflection symmetric field data it is shown that the
+dynamics also satisfies the world-line equations for a non-moving Lorentz
+electron, thus furnishing rigorous solutions of the full system of nonlinear
+equations of LED.
+  The previously proven soliton dynamics of the Lorentz electron is further
+illucidated by showing that rotation-reflection symmetric deviations from the
+soliton state of the renormalized particle die out exponentially fast through
+radiation damping if the electrostatic mass is smaller than the bare rest mass.",0.1476479321718216,0.8368942737579346,,"dynamical, equations","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+14,nlin/0103054,Imperfect Homoclinic Bifurcations,2001,Paul GlendinningJan AbshagenTom Mullin,"Experimental observations of an almost symmetric electronic circuit show
+complicated sequences of bifurcations. These results are discussed in the light
+of a theory of imperfect global bifurcations. It is shown that much of the
+dynamics observed in the circuit can be understood by reference to imperfect
+homoclinic bifurcations without constructing an explicit mathematical model of
+the system.",0.14653512835502625,0.8368245959281921,,model,"problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+15,nlin/0103039,"The Three Dimensional Viscous Camassa-Holm Equations, and Their Relation
+  to the Navier-Stokes Equations and Turbulence Theory",2001,C. FoiasD. D. HolmE. S. Titi,"We show here the global, in time, regularity of the three dimensional viscous
+Camassa-Holm (Lagrangian Averaged Navier-Stokes-alpha) equations. We also
+provide estimates, in terms of the physical parameters of the equations, for
+the Hausdorff and fractal dimensions of their global attractor. In analogy with
+the Kolmogorov theory of turbulence, we define a small spatial scale,
+\ell_{\epsilon}, as the scale at which the balance occurs in the mean rates of
+nonlinear transport of energy and viscous dissipation of energy. Furthermore,
+we show that the number of degrees of freedom in the long-time behavior of the
+solutions to these equations is bounded from above by (L/\ell_{epsilon})^3,
+where L is a typical large spatial scale (e.g., the size of the domain). This
+estimate suggests that the Landau-Lifshitz classical theory of turbulence is
+suitable for interpreting the solutions of the NS-alpha equations. Hence, one
+may consider these equations as a closure model for the Reynolds averaged
+Navier-Stokes equations (NSE). We study this approach, further, in other
+related papers. Finally, we discuss the relation of the NS-alpha model to the
+NSE by proving a convergence theorem, that as the length scale alpha tends to
+zero a subsequence of solutions of the NS-alpha equations converges to a weak
+solution of the three dimensional NSE.",0.13886544108390808,0.8363443613052368,"equations, navier, stokes","equations, model, navier, stokes","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+16,math/0102207,An Accurate Lubrication Model of Contaminated Coating Flows,2001,A. J. RobertsM. E. Simpson,"The levelling of short-wave irregularities on a thin film of fluid is
+primarily due to the action of surface tension. Surface tension gradients are
+often created by a number of different factor including evaporation, thermal
+gradients or deposition of surfactants. Lubrication theory, which ignores
+inertia terms in favour of viscous terms, produces a system of two nonlinear
+pde's for the unsteady flow of a thin viscous Newtonian fluid containing an
+insoluble surfactant. A complex model, which systematically includes all
+relevant effects to these pde's, is developed using centre manifold techniques.
+The benefits of using these techniques to develop accurate models are in their
+application. Subtle variations in parameters or assumptions are able to be
+catered for by including or deleting the relevant terms rather than having to
+redevelop these models.",0.13885781168937683,0.8363438844680786,model,"complex, model, models","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+17,physics/0102041,"Quasilinearization Approach to Nonlinear Problems in Physics with
+  Application to Nonlinear ODEs",2001,V. B. MandelzweigF. Tabakin,"The general conditions under which the quadratic, uniform and monotonic
+convergence in the quasilinearization method of solving nonlinear ordinary
+differential equations could be proved are formulated and elaborated. The
+generalization of the proof to partial differential equations is straight
+forward. The method, whose mathematical basis in physics was discussed recently
+by one of the present authors (VBM), approximates the solution of a nonlinear
+differential equation by treating the nonlinear terms as a perturbation about
+the linear ones, and unlike perturbation theories is not based on the existence
+of some kind of a small parameter.
+  It is shown that the quasilinearization method gives excellent results when
+applied to different nonlinear ordinary differential equations in physics, such
+as the Blasius, Duffing, Lane-Emden and Thomas-Fermi equations. The first few
+quasilinear iterations already provide extremely accurate and numerically
+stable answers.",0.13281212747097015,0.8359653353691101,,equations,"problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+18,nlin/0103017,Experimental evidence of chaotic advection in a convective flow,2001,G. BoffettaM. CenciniS. EspaG. Querzoli,"Lagrangian chaos is experimentally investigated in a convective flow by means
+of Particle Tracking Velocimetry. The Fnite Size Lyapunov Exponent analysis is
+applied to quantify dispersion properties at different scales. In the range of
+parameters of the experiment, Lagrangian motion is found to be chaotic.
+Moreover, the Lyapunov depends on the Rayleigh number as ${\cal R}a^{1/2}$. A
+simple dimensional argument for explaining the observed power law scaling is
+proposed.",0.1309320628643036,0.8358476161956787,,lyapunov,"problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383
+19,nlin/0101038,Modeling Nonlinear Dynamical Systems with Delay-differential Equations,2001,Alexander N. Jourjine,"We describe a method to model nonlinear dynamical systems using periodic
+solutions of delay-differential equations. We show that any finite-time
+trajectory of a nonlinear dynamical system can be loaded approximately into the
+initial condition of a linear delay-differential system. It is further shown
+that the initial condition can be extended to a periodic solution of the
+delay-differential system if an appropriate choice of its parameters is made.
+As a result, any finite set of trajectories of a nonlinear dynamical system can
+be modeled with arbitrarily small error via a set of periodic solutions of a
+linear delay-differential equation. These results can be extended to some
+non-linear delay differential systems. One application of the method is for
+modeling memory and perception.",0.12063029408454895,0.8352025747299194,"dynamical, equations, systems","dynamical, equations, model, systems","problem, understanding, dynamical, systems, motivates, development, generalized, lyapunov, background, information, necessary, apply, complex, models, like, lorenz, model, navier, stokes, equations","Background, Motivation",,2025-09-20T11:33:53.654383

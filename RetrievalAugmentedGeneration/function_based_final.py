@@ -47,7 +47,8 @@ def llm_chat(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 
         temperature=temperature,
         max_tokens=max_tokens
     )
-    return resp.choices[0].message.content.strip()
+    content = getattr(resp.choices[0].message, "content", None) or getattr(resp.choices[0], "text", "") or ""
+    return str(content).strip()
 
 def llm_text(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 0.25, max_tokens: int = 180) -> str:
     resp = CLIENT.chat.completions.create(
@@ -59,7 +60,8 @@ def llm_text(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 
         temperature=temperature,
         max_tokens=max_tokens
     )
-    return resp.choices[0].message.content.strip()
+    content = getattr(resp.choices[0].message, "content", None) or getattr(resp.choices[0], "text", "") or ""
+    return str(content).strip()
 
 # ========= Small utils / debug =========
 def ts() -> str:
@@ -74,6 +76,26 @@ def sanitize_query(q: str) -> str:
     if q.endswith('"') and not q.startswith('"'): q = q[:-1]
     if q.startswith('"') and not q.endswith('"'): q = q[1:]
     return re.sub(r"\s+", " ", q)
+
+# --- Normalization helpers (topic-agnostic) ---
+_word_pat = re.compile(r"[^\w\s]", re.UNICODE)
+_ws_pat = re.compile(r"\s+")
+
+def _norm_text(s: str) -> str:
+    t = unicodedata.normalize("NFKC", (s or "")).lower()
+    t = t.replace("-", " ").replace("/", " ")   # hyphen & slash insensitive
+    t = _word_pat.sub(" ", t)
+    t = _ws_pat.sub(" ", t).strip()
+    return t
+
+def _lex_tokens(s: str):
+    return [w for w in _norm_text(s).split() if len(w) >= 3]
+
+def overlap_frac(a: str, b: str) -> float:
+    A = set(_lex_tokens(a))
+    if not A: return 0.0
+    B = set(_lex_tokens(b))
+    return len(A & B) / len(A)
 
 CANON_FUNCS = {
     "background": "Background",
@@ -96,7 +118,7 @@ def parse_json_strict(text: str) -> Dict[str, Any]:
     try:
         return json.loads(text)
     except json.JSONDecodeError:
-        s = text.strip().strip("`").strip()
+        s = (text or "").strip().strip("`").strip()
         start = s.find("{")
         if start == -1:
             return {"supports": False, "fit": 0, "topicality": 0, "quote": "", "why": "JSON parse failed"}
@@ -131,7 +153,7 @@ def cand_safe(text: str, max_chars: int) -> str:
     if not text: return ""
     return text.replace("\u0000", " ").strip()[:max_chars]
 
-# ========= Domain-term extraction fallback =========
+# ========= Query term extraction (for ranking only) =========
 STOP = set("""
 a an and the of to in on for with by as at or but if than then from into over under between within without
 about via per through across is are was were be been being have has had do does did can could may might
@@ -142,53 +164,6 @@ his her them they we you i such thus there here where when which who whom whose 
 def content_terms_from_query(q: str, min_len=3):
     toks = re.findall(r"\b[\w-]+\b", (q or "").lower())
     return [t for t in toks if len(t) >= min_len and t not in STOP]
-
-# ========= LLM-based CORE ENTITIES extraction =========
-CORE_ENTITIES_PROMPT_TPL = Template("""Extract the core scientific entities and concepts that MUST appear (exactly or via clear synonyms) for a result to be on-topic for the QUERY.
-
-Return strict JSON:
-{
-  "entities": ["...", "..."],
-  "concepts": ["...", "..."]
-}
-
-Rules:
-- Keep it short (<=6 total items total across both lists).
-- Include symbols/abbreviations if present (e.g., "NG boson", "Nambu–Goldstone").
-- Prefer specific technical terms; avoid generic words like "model", "method", "framework".
-- If the query names a phenomenon, observable, transition, or amplitude (e.g., "Lorentz symmetry breaking", "6s-7s", "s-d"), include it as-is.
-
-QUERY: $QUERY
-""")
-
-def extract_core_entities(query: str) -> Dict[str, List[str]]:
-    raw = llm_chat(CORE_ENTITIES_PROMPT_TPL.substitute(QUERY=query),
-                   model=DEFAULT_MODEL, temperature=0.0, max_tokens=200)
-    obj = parse_json_strict(raw)
-    ents = obj.get("entities") or []
-    conc = obj.get("concepts") or []
-    # de-dup preserve order
-    seen=set(); keep=[]
-    for x in (ents + conc):
-        s = str(x).strip()
-        if s and s.lower() not in seen:
-            seen.add(s.lower()); keep.append(s)
-    return {"core": keep[:6]}
-
-def extract_special_core_from_query(query: str) -> List[str]:
-    """Pull acronyms and special tokens like PNC, s-d, 6s-7s, Cs, mixed-states, sum-over-states."""
-    q = query or ""
-    toks = re.findall(r"[A-Za-z0-9]+(?:[-/][A-Za-z0-9]+)+|[A-Z]{2,}|\d+[A-Za-z]+|\bCs\b", q)
-    seen=set(); kept=[]
-    for t in toks:
-        k=t.lower()
-        if k not in seen:
-            seen.add(k); kept.append(t)
-    return kept
-
-def abstract_mentions_core(abstract: str, core_terms: List[str]) -> bool:
-    a = (abstract or "").lower()
-    return any(t.lower() in a for t in (core_terms or []))
 
 # ========= Function descriptions (semantic guidance) =========
 CITATION_FUNCTION_DESCRIPTIONS = """Possible citation functions:
@@ -201,18 +176,17 @@ CITATION_FUNCTION_DESCRIPTIONS = """Possible citation functions:
 """
 
 # ========= Prompts (Template-based) =========
+# (No CORE entities; LLM judges topic + function semantically with a verbatim quote.)
 FUNC_EVAL_PROMPT_TPL = Template("""You are a scientific function checker.
 
 Task: Decide if the PAPER's TITLE/ABSTRACT contain enough information to answer the QUERY **for the given FUNCTION**.
-Use the function definitions below; judge semantically (do not rely only on keywords).
 
 $FUNC_DEFS
 
 STRICT RULES:
-- Provide a direct quote from TITLE or ABSTRACT (<= 40 words).
-- The quote must be copied VERBATIM (exact substring). Do not paraphrase.
-- The quote MUST include at least one item (exact or clear synonym) from CORE ENTITIES.
-- If the paper is off-topic (CORE ENTITIES absent in the quote), set "supports": false and "why": "off_topic".
+- Provide a direct quote from TITLE or ABSTRACT (<= 40 words), copied VERBATIM.
+- The quote must substantively support the FUNCTION for the QUERY.
+- If the paper appears off-topic for the QUERY, set "supports": false and "why": "off_topic".
 - If you cannot find a suitable exact quote, set "supports": false.
 
 Return strict JSON:
@@ -226,42 +200,12 @@ Return strict JSON:
 }
 
 QUERY: $QUERY
-CORE ENTITIES: $CORE
 FUNCTION: $FUNCTION
 TITLE: $TITLE
 ABSTRACT: $ABSTRACT
 """)
 
-RELAXED_FUNC_EVAL_PROMPT_TPL = Template("""You are a scientific function checker.
-
-Task: Decide if the PAPER's TITLE/ABSTRACT contain enough information to answer the QUERY **for the given FUNCTION**.
-Use the function definitions below; judge semantically (do not rely only on keywords).
-
-$FUNC_DEFS
-
-Rules (relaxed but safe):
-- Provide a direct quote from TITLE or ABSTRACT (<= 40 words).
-- The quote must be copied VERBATIM (exact substring). Do not paraphrase.
-- Prefer a quote that includes at least one CORE ENTITY; if no such quote exists, you may select the best function-relevant quote **only if** the ABSTRACT elsewhere clearly mentions at least one CORE ENTITY (exact or clear synonym), and your chosen quote is substantively tied to that context.
-- If the paper appears off-topic (no CORE ENTITIES anywhere), set "supports": false ("off_topic").
-- If you cannot find a suitable exact quote, set "supports": false.
-
-Return strict JSON:
-{
-  "supports": true/false,
-  "fit": 0-1,
-  "topicality": 0-1,
-  "quote": "<<=40 words from TITLE or ABSTRACT>>",
-  "why": "off_topic | no_function_evidence | sufficient",
-  "paper_id": "$PAPER_ID"
-}
-
-QUERY: $QUERY
-CORE ENTITIES: $CORE
-FUNCTION: $FUNCTION
-TITLE: $TITLE
-ABSTRACT: $ABSTRACT
-""")
+RELAXED_FUNC_EVAL_PROMPT_TPL = FUNC_EVAL_PROMPT_TPL
 
 # ---- Unified answer template for all functions ----
 ANSWER_TPL = Template("""Answer the user's QUERY using ONLY the PAPER TITLE/ABSTRACT below.
@@ -315,9 +259,9 @@ FUNCTION_CUES = {
 
 def has_function_cue(text: str, func_norm: str) -> bool:
     cues = FUNCTION_CUES.get(func_norm, [])
-    t = (text or "").lower()
+    T = _norm_text(text or "")
     for cue in cues:
-        if cue in t:
+        if _norm_text(cue) in T:
             return True
     return False
 
@@ -337,7 +281,6 @@ class Verdict:
     year: str
     retrieval_score: float = 0.0
     invalid_reason: str = ""
-    # diagnostics
     evidence_ok: bool = False
     on_topic_ok: bool = False
     cue_hint: bool = False
@@ -387,7 +330,7 @@ def load_topk_jsonl(path: str, debug=False) -> List[Dict[str, Any]]:
             "abs_len=", abs_len)
     return rows
 
-# ========= Scoring helpers (cosine + blended) =========
+# ========= Scoring helpers (cosine + blended, using QUERY TERMS only) =========
 def cosine_of(c: dict) -> float:
     try:
         return float(c.get("cosine", c.get("score", 0.0)) or 0.0)
@@ -402,59 +345,46 @@ def dynamic_cosine_cut(cands: List[Dict[str, Any]], keep_frac: float = 0.6, min_
     t = vals[k-1]
     return max(t, min_floor)
 
-def core_hits_in_text(txt: str, core_terms: List[str]) -> int:
-    t = (txt or "").lower()
-    return sum(1 for ct in set(x.lower() for x in core_terms or []) if ct in t)
+def token_hits_in_text(txt: str, terms: List[str]) -> int:
+    T = _norm_text(txt or "")
+    return sum(1 for ct in set(_norm_text(x) for x in terms or []) if ct and ct in T)
+
+def quick_string_bonus_by_terms(cand: dict, terms: List[str]) -> float:
+    bonus = 0.0
+    for fld in ("title_matches", "abs_matches"):
+        s = _norm_text(cand.get(fld) or "")
+        if any(_norm_text(ct) in s for ct in terms or []):
+            bonus += 0.02
+    return min(bonus, 0.04)
 
 def has_func_cue_in_text(txt: str, func: str) -> bool:
     return has_function_cue(txt, normalize_function(func))
 
-def quick_string_bonus(cand: dict, core_terms: List[str]) -> float:
-    bonus = 0.0
-    for fld in ("title_matches", "abs_matches"):
-        s = (cand.get(fld) or "").lower()
-        if any(ct.lower() in s for ct in core_terms or []):
-            bonus += 0.02
-    return min(bonus, 0.04)
-
-def subject_bias(pid: str, core_terms: List[str]) -> float:
-    pid = (pid or "").lower()
-    key = " ".join(core_terms).lower()
-    if any(k in key for k in ["pnc", "s-d", "6s-7s", "cs "]):
-        if pid.startswith("physics/"):
-            return 0.04
-    return 0.0
-
-def blended_relevance(cand: dict, core_terms: List[str], func: str) -> float:
+def blended_relevance(cand: dict, query_terms: List[str], func: str) -> float:
     cos = cosine_of(cand)
     txt = f"{cand.get('title','')} {(cand.get('abstract_full') or cand.get('abstract') or '')}"
-    ch = core_hits_in_text(txt, core_terms)              # 0,1,2,...
+    ch = token_hits_in_text(txt, query_terms)            # 0,1,2,...
     cue = 1.0 if has_func_cue_in_text(txt, func) else 0.0
-    # weights: stronger core emphasis to prioritize on-topic
-    w_cos, w_core, w_cue = 0.60, 0.35, 0.05
-    core_bonus = min(ch, 3) / 3.0  # 0..1
-    base = w_cos*cos + w_core*core_bonus + w_cue*cue + quick_string_bonus(cand, core_terms)
-    if ch == 0:
-        base -= 0.10  # demote clearly off-topic items
-    base += subject_bias(cand.get("paper_id",""), core_terms)
+    # weights: retrieval-heavy, but reward overlap & cues
+    w_cos, w_overlap, w_cue = 0.65, 0.30, 0.05
+    overlap_bonus = min(ch, 3) / 3.0  # 0..1
+    base = w_cos*cos + w_overlap*overlap_bonus + w_cue*cue + quick_string_bonus_by_terms(cand, query_terms)
     return base
 
-# ========= Final topicality arbiter =========
+# ========= Final topicality arbiter (independent of CORE) =========
 ON_TOPIC_ARBITER_PROMPT_TPL = Template("""Return strict JSON:
 { "on_topic": true/false, "reason": "short" }
 
-A paper is ON-TOPIC for the QUERY only if its TITLE/ABSTRACT clearly relate to the CORE ENTITIES (exactly or via obvious synonyms).
+A paper is ON-TOPIC for the QUERY only if its TITLE/ABSTRACT substantively address the scientific concepts in the QUERY.
 
 QUERY: $QUERY
-CORE ENTITIES: $CORE
 TITLE: $TITLE
 ABSTRACT: $ABSTRACT
 """)
 
-def arbiter_on_topic(query: str, core_terms: List[str], title: str, abstract: str) -> bool:
+def arbiter_on_topic(query: str, title: str, abstract: str) -> bool:
     prompt = ON_TOPIC_ARBITER_PROMPT_TPL.substitute(
         QUERY=cand_safe(query, 800),
-        CORE=", ".join(core_terms[:6]),
         TITLE=cand_safe(title, 600),
         ABSTRACT=cand_safe(abstract, 3000),
     )
@@ -484,6 +414,7 @@ class Verdict:
 
 def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
                                   core_terms: List[str], debug: bool=False, strict: bool=True) -> Verdict:
+    # NOTE: core_terms are ignored in Option B; kept in signature for minimal diff.
     func_norm = normalize_function(func)
     abs_txt = cand.get("abstract_full") or cand.get("abstract") or ""
     pid_cand = cand.get("paper_id") or cand.get("arxiv_id") or cand.get("id") or "unknown"
@@ -496,10 +427,9 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
                        abs_txt, cand.get("authors",""), str(cand.get("year","")),
                        retrieval_score=cos)
 
-    prompt_tpl = FUNC_EVAL_PROMPT_TPL if strict else RELAXED_FUNC_EVAL_PROMPT_TPL
+    prompt_tpl = FUNC_EVAL_PROMPT_TPL  # relaxed template is identical now
     prompt = prompt_tpl.substitute(
         QUERY=cand_safe(query, 1500),
-        CORE=", ".join(core_terms[:6]),
         FUNCTION=func_norm,
         TITLE=cand_safe(cand.get("title",""), 900),
         ABSTRACT=cand_safe(abs_txt, 8000),
@@ -533,22 +463,14 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
 
     v = enforce_evidence(v)
 
-    # On-topic hybrid guard (strict vs relaxed)
+    # On-topic check (LLM-only, no CORE list)
     if v.supports:
-        quote_has_core = any(t.lower() in (v.quote or "").lower() for t in (core_terms or []))
-        abstract_has_core = abstract_mentions_core(abs_txt, core_terms)
-        if strict:
-            v.on_topic_ok = quote_has_core
-            if not v.on_topic_ok:
-                v.supports = False
-                v.fit = 0.0
-                v.invalid_reason = "missing_core_in_quote"
-        else:
-            v.on_topic_ok = (quote_has_core or abstract_has_core)
-            if not v.on_topic_ok:
-                v.supports = False
-                v.fit = 0.0
-                v.invalid_reason = "off_topic_no_core_in_abstract"
+        is_on_topic = arbiter_on_topic(query, v.title, v.abstract)
+        v.on_topic_ok = bool(is_on_topic)
+        if not is_on_topic:
+            v.supports = False
+            v.fit = 0.0
+            v.invalid_reason = "off_topic"
 
     # Soft cue hint (ranking, not rejection)
     v.cue_hint = has_function_cue(v.quote, func_norm)
@@ -599,8 +521,9 @@ def synthesize_answer(query: str, func: str, title: str, abstract: str,
 def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[str, Any]],
                                  core_terms: List[str], max_check: int, debug: bool=False,
                                  suppress_restate: bool=False) -> Dict[str, Any]:
+    # NOTE: 'core_terms' here are actually query_terms now (kept name for minimal code churn)
     dbg(debug, "select | function=", func, "| candidates_in=", len(candidates))
-    dbg(debug, "select | core_terms=", core_terms)
+    dbg(debug, "select | rank_terms=", core_terms)
 
     # Early cosine gate
     thr = dynamic_cosine_cut(candidates, keep_frac=0.6, min_floor=0.25)
@@ -608,7 +531,7 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
     if not cand_pool0:
         cand_pool0 = candidates[:]
 
-    # Rank pruned candidates by blended relevance
+    # Rank pruned candidates by blended relevance (retrieval + query-term overlap + function cues)
     ranked = sorted(cand_pool0, key=lambda c: blended_relevance(c, core_terms, func), reverse=True)
     cand_pool = ranked[:max_check]
 
@@ -626,7 +549,7 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
     supported.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0), v.topicality, v.retrieval_score), reverse=True)
     winner = supported[0] if supported else None
 
-    # Pass 2: relaxed if needed
+    # Pass 2: relaxed if needed (template is same, but we try a smaller slice again)
     if winner is None:
         dbg(debug, "select | strict pass found 0 winners → trying relaxed")
         verdicts_relaxed: List[Verdict] = []
@@ -639,11 +562,17 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
         supported2.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0), v.topicality, v.retrieval_score), reverse=True)
         winner = supported2[0] if supported2 else None
 
-    # Arbiter: reject off-topic winners even if earlier checks passed
+    # --- Early-accept guard before arbiter ---
     if winner:
-        if not arbiter_on_topic(query, core_terms, winner.title, winner.abstract):
-            dbg(debug, "arbiter | rejected off-topic winner:", winner.paper_id)
-            winner = None
+        q_txt = query
+        doc_txt = f"{winner.title} {winner.abstract}"
+        ov = overlap_frac(q_txt, doc_txt)
+        if winner.fit >= 0.80 and ov >= 0.12:
+            dbg(debug, f"arbiter | early-accept: pid={winner.paper_id} fit={winner.fit:.2f} overlap={ov:.2f}")
+        else:
+            if not arbiter_on_topic(query, winner.title, winner.abstract):
+                dbg(debug, "arbiter | rejected off-topic winner:", winner.paper_id)
+                winner = None
 
     # Build answer via LLM synthesis from the winner's abstract (or fallback)
     if winner and winner.quote:
@@ -702,15 +631,9 @@ def main():
     funcs = [f for f in funcs if f in ALL_FUNCS]
     dbg(debug, "main | query='{}' | funcs={}".format(query, funcs))
 
-    # LLM-extracted core entities + special token fallback
-    core = extract_core_entities(query)
-    special = extract_special_core_from_query(query)
-    core_terms = (core.get("core", []) or []) + special
-    # unique preserving order
-    seen=set(); core_terms = [t for t in core_terms if not (t.lower() in seen or seen.add(t.lower()))]
-    if not core_terms:
-        core_terms = content_terms_from_query(query)
-    dbg(debug, "main | core_terms=", core_terms)
+    # Option B: NO CORE extraction — use simple query terms only (for ranking).
+    query_terms = content_terms_from_query(query)
+    dbg(debug, "main | query_terms=", query_terms)
 
     cands = load_topk_jsonl(TOPK_PATH, debug=debug)
     if not cands:
@@ -727,7 +650,7 @@ def main():
         suppress_restate = (func == "Motivation" and "Background" in processed_funcs)
 
         result = pick_and_answer_for_function(
-            query, func, cands, core_terms=core_terms, max_check=args.max_check, debug=debug,
+            query, func, cands, core_terms=query_terms, max_check=args.max_check, debug=debug,
             suppress_restate=suppress_restate
         )
         bundle.append({"query": query, "function": func, "result": result})
