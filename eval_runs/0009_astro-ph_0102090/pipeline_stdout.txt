@@ -1,0 +1,334 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query seeks a comparative assessment of the new method against prior approaches and asks about the data employed, reflecting both comparison and usage aspects."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.21 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 129it [00:00, 1280.46it/s]
+Reading arXiv_src_0101_001.jsonl: 280it [00:00, 1410.50it/s]
+Reading arXiv_src_0101_001.jsonl: 422it [00:00, 996.08it/s] 
+Reading arXiv_src_0101_001.jsonl: 533it [00:00, 691.53it/s]
+Reading arXiv_src_0101_001.jsonl: 617it [00:00, 719.23it/s]
+Reading arXiv_src_0101_001.jsonl: 723it [00:00, 802.29it/s]
+Reading arXiv_src_0101_001.jsonl: 834it [00:00, 882.25it/s]
+Reading arXiv_src_0101_001.jsonl: 939it [00:01, 926.41it/s]
+Reading arXiv_src_0101_001.jsonl: 1049it [00:01, 971.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1179it [00:01, 1064.47it/s]
+Reading arXiv_src_0101_001.jsonl: 1301it [00:01, 1107.88it/s]
+Reading arXiv_src_0101_001.jsonl: 1418it [00:01, 1125.58it/s]
+Reading arXiv_src_0101_001.jsonl: 1549it [00:01, 1178.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1682it [00:01, 1223.09it/s]
+Reading arXiv_src_0101_001.jsonl: 1806it [00:01, 1214.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1961it [00:01, 1313.02it/s]
+Reading arXiv_src_0101_001.jsonl: 2130it [00:01, 1422.39it/s]
+Reading arXiv_src_0101_001.jsonl: 2291it [00:02, 1477.76it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1110.63it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1333.79it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1358.95it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 857.65it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 534.56it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 568.81it/s]
+Reading arXiv_src_0102_001.jsonl: 682it [00:00, 638.79it/s]
+Reading arXiv_src_0102_001.jsonl: 798it [00:01, 760.48it/s]
+Reading arXiv_src_0102_001.jsonl: 932it [00:01, 903.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1040it [00:01, 946.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1159it [00:01, 1005.82it/s]
+Reading arXiv_src_0102_001.jsonl: 1285it [00:01, 1071.84it/s]
+Reading arXiv_src_0102_001.jsonl: 1433it [00:01, 1187.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1559it [00:01, 1198.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1699it [00:01, 1255.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1843it [00:01, 1307.95it/s]
+Reading arXiv_src_0102_001.jsonl: 1999it [00:01, 1379.80it/s]
+Reading arXiv_src_0102_001.jsonl: 2156it [00:02, 1432.41it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1032.62it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1377.52it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1537.17it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1125.19it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 731.90it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 795.95it/s]
+Reading arXiv_src_0103_001.jsonl: 778it [00:00, 823.50it/s]
+Reading arXiv_src_0103_001.jsonl: 887it [00:00, 884.82it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 945.00it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 997.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1040.89it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1060.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1493it [00:01, 1183.69it/s]
+Reading arXiv_src_0103_001.jsonl: 1629it [00:01, 1233.92it/s]
+Reading arXiv_src_0103_001.jsonl: 1773it [00:01, 1292.94it/s]
+Reading arXiv_src_0103_001.jsonl: 1922it [00:01, 1350.85it/s]
+Reading arXiv_src_0103_001.jsonl: 2060it [00:01, 1358.24it/s]
+Reading arXiv_src_0103_001.jsonl: 2197it [00:01, 1356.26it/s]
+Reading arXiv_src_0103_001.jsonl: 2352it [00:02, 1412.76it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1147.15it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 149it [00:00, 1489.09it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1551.65it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 994.92it/s] 
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 554.05it/s]
+Reading arXiv_src_0104_001.jsonl: 690it [00:00, 649.17it/s]
+Reading arXiv_src_0104_001.jsonl: 782it [00:01, 703.28it/s]
+Reading arXiv_src_0104_001.jsonl: 885it [00:01, 776.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1004it [00:01, 877.70it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 944.71it/s]
+Reading arXiv_src_0104_001.jsonl: 1245it [00:01, 1020.90it/s]
+Reading arXiv_src_0104_001.jsonl: 1357it [00:01, 1021.23it/s]
+Reading arXiv_src_0104_001.jsonl: 1488it [00:01, 1098.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1634it [00:01, 1198.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1764it [00:01, 1227.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1911it [00:01, 1297.86it/s]
+Reading arXiv_src_0104_001.jsonl: 2068it [00:02, 1376.46it/s]
+Reading arXiv_src_0104_001.jsonl: 2208it [00:02, 1023.89it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 991.17it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?
+[debug] classifier labels: ['Compares', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T11:42:07.955561       Compares, Uses
+1     1  0.801442  ...  2025-09-21T11:42:07.955561       Compares, Uses
+2     2  0.640932  ...  2025-09-21T11:42:07.955561       Compares, Uses
+3     3  0.613337  ...  2025-09-21T11:42:07.955561       Compares, Uses
+4     4  0.564330  ...  2025-09-21T11:42:07.955561       Compares, Uses
+5     5  0.541767  ...  2025-09-21T11:42:07.955561       Compares, Uses
+6     6  0.540794  ...  2025-09-21T11:42:07.955561       Compares, Uses
+7     7  0.500187  ...  2025-09-21T11:42:07.955561       Compares, Uses
+8     8  0.466112  ...  2025-09-21T11:42:07.955561       Compares, Uses
+9     9  0.463579  ...  2025-09-21T11:42:07.955561       Compares, Uses
+
+[10 rows x 12 columns]
+[13:42:16] main | args: Namespace(max_check=20, debug=True)
+[13:42:16] read_last_jsonl | path= classified_outputs.jsonl
+[13:42:16] read_last_jsonl | total_lines= 1
+[13:42:16] main | query='How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?' | funcs=['Compares', 'Uses']
+[13:42:18] main | core_terms= ['color-magnitude relation', 'deriving', 'comparison', 'data', 'color-magnitude']
+[13:42:18] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:42:18] load_topk_jsonl | rows= 20
+[13:42:18] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102090 title_snip='Internal color gradients and the color-magnitude relation of early-typ…' abs_len= 1070
+[13:42:18] main | running function= Compares
+[13:42:18] select | function= Compares | candidates_in= 20
+[13:42:18] select | core_terms= ['color-magnitude relation', 'deriving', 'comparison', 'data', 'color-magnitude']
+[13:42:18] select | no cosine prune; kept=20/20
+[13:42:18] select | pool_size= 20 | ranks= [0, 13, 12, 15, 6, 18, 2, 3, 5, 7, 8, 9, 10, 16, 17, 1, 4, 11, 14, 19] | pids= ['astro-ph/0102090', 'hep-ph/0104290', 'astro-ph/0104284', 'hep-ph/0104155', 'astro-ph/0101463', 'astro-ph/0101040', 'astro-ph/0104084', 'astro-ph/0103188', 'astro-ph/0104366', 'hep-ph/0101071', 'astro-ph/0104427', 'hep-ex/0101044', 'cond-mat/0103235', 'hep-ex/0101042', 'astro-ph/0104411', 'hep-ph/0102103', 'nucl-th/0103002', 'hep-ph/0104066', 'astro-ph/0102260', 'cond-mat/0101236']
+[13:42:18] select | verify strict 1/20
+[13:42:18] verify | func= Compares | rank= 0 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[13:42:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:42:21] select | verify strict 2/20
+[13:42:21] verify | func= Compares | rank= 13 | pid= hep-ph/0104290 | title_snip='On a QCD-based pion distribution amplitude vs. recent experimental dat…' | abs_len= 547
+[13:42:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:23] select | verify strict 3/20
+[13:42:23] verify | func= Compares | rank= 12 | pid= astro-ph/0104284 | title_snip='Deep near-IR observations of the Chandra Deep Field and of the HDF-Sou…' | abs_len= 1213
+[13:42:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:42:26] select | verify strict 4/20
+[13:42:26] verify | func= Compares | rank= 15 | pid= hep-ph/0104155 | title_snip='The color dipole approach to the Drell-Yan process in pA collisions' | abs_len= 896
+[13:42:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:29] select | verify strict 5/20
+[13:42:29] verify | func= Compares | rank= 6 | pid= astro-ph/0101463 | title_snip='Color Transformations for the 2MASS Second Incremental Data Release' | abs_len= 552
+[13:42:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:42:32] select | verify strict 6/20
+[13:42:32] verify | func= Compares | rank= 18 | pid= astro-ph/0101040 | title_snip='Measuring Time-Dependence of Dark Energy Density from Type Ia Supernov…' | abs_len= 1330
+[13:42:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:35] select | verify strict 7/20
+[13:42:35] verify | func= Compares | rank= 2 | pid= astro-ph/0104084 | title_snip='On the Origin of the Colour-Magnitude Relation in the Virgo Cluster' | abs_len= 1278
+[13:42:38] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:42:38] select | verify strict 8/20
+[13:42:38] verify | func= Compares | rank= 3 | pid= astro-ph/0103188 | title_snip='Empirical relations for cluster RR Lyrae stars revisited' | abs_len= 1352
+[13:42:41] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:42:41] select | verify strict 9/20
+[13:42:41] verify | func= Compares | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[13:42:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:44] select | verify strict 10/20
+[13:42:44] verify | func= Compares | rank= 7 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[13:42:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:46] select | verify strict 11/20
+[13:42:46] verify | func= Compares | rank= 8 | pid= astro-ph/0104427 | title_snip='Near-infrared template spectra of normal galaxies: k-corrections, gala…' | abs_len= 1499
+[13:42:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:42:49] select | verify strict 12/20
+[13:42:49] verify | func= Compares | rank= 9 | pid= hep-ex/0101044 | title_snip='A Simultaneous Measurement of the QCD Colour Factors and the Strong
+  …' | abs_len= 876
+[13:42:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:52] select | verify strict 13/20
+[13:42:52] verify | func= Compares | rank= 10 | pid= cond-mat/0103235 | title_snip='Full Current Statistics in Diffusive Normal-Superconductor Structures' | abs_len= 767
+[13:42:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:54] select | verify strict 14/20
+[13:42:54] verify | func= Compares | rank= 16 | pid= hep-ex/0101042 | title_snip='Status of the BNL Muon g-2 Experiment' | abs_len= 580
+[13:42:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:57] select | verify strict 15/20
+[13:42:57] verify | func= Compares | rank= 17 | pid= astro-ph/0104411 | title_snip='Statistical evaluation of the observational information on $\Omega_m$
+…' | abs_len= 852
+[13:42:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:42:59] select | verify strict 16/20
+[13:42:59] verify | func= Compares | rank= 1 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[13:43:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:02] select | verify strict 17/20
+[13:43:02] verify | func= Compares | rank= 4 | pid= nucl-th/0103002 | title_snip='Tensor Analyzing Power and Current Conservation in the d+p->3He+g
+  re…' | abs_len= 480
+[13:43:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:04] select | verify strict 18/20
+[13:43:04] verify | func= Compares | rank= 11 | pid= hep-ph/0104066 | title_snip='Absolute determination of D_s branching ratios and f_{D_s} extraction …' | abs_len= 343
+[13:43:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:07] select | verify strict 19/20
+[13:43:07] verify | func= Compares | rank= 14 | pid= astro-ph/0102260 | title_snip='Surface Photometric Calibration of the Infrared Tully-Fisher Relation
+…' | abs_len= 1128
+[13:43:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:43:11] select | verify strict 20/20
+[13:43:11] verify | func= Compares | rank= 19 | pid= cond-mat/0101236 | title_snip='Spectral Determinant Method for Interacting N-body Systems Including
+ …' | abs_len= 847
+[13:43:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?
+- WINNER: astro-ph/0104284 | Deep near-IR observations of the Chandra Deep Field and of the HDF-South
+  - Color and Number Counts
+- QUOTE : The comparison of the observed number counts with models
+- WHY   : sufficient
+- ANSWER: The current work's method of deriving the color-magnitude relation is compared to previous models based on the observed number counts in the J and Ks bands. It uses deep VLT-ISAAC images of the Chandra Deep Field and Hubble Deep Field-South to compare its results with model predictions, particularly those based on a small amount of merging in a specific cosmology (astro-ph/0104284).
+[13:43:20] main | running function= Uses
+[13:43:20] select | function= Uses | candidates_in= 20
+[13:43:20] select | core_terms= ['color-magnitude relation', 'deriving', 'comparison', 'data', 'color-magnitude']
+[13:43:20] select | no cosine prune; kept=20/20
+[13:43:20] select | pool_size= 20 | ranks= [0, 13, 18, 2, 5, 9, 10, 12, 6, 3, 7, 8, 15, 16, 17, 1, 11, 14, 4, 19] | pids= ['astro-ph/0102090', 'hep-ph/0104290', 'astro-ph/0101040', 'astro-ph/0104084', 'astro-ph/0104366', 'hep-ex/0101044', 'cond-mat/0103235', 'astro-ph/0104284', 'astro-ph/0101463', 'astro-ph/0103188', 'hep-ph/0101071', 'astro-ph/0104427', 'hep-ph/0104155', 'hep-ex/0101042', 'astro-ph/0104411', 'hep-ph/0102103', 'hep-ph/0104066', 'astro-ph/0102260', 'nucl-th/0103002', 'cond-mat/0101236']
+[13:43:20] select | verify strict 1/20
+[13:43:20] verify | func= Uses | rank= 0 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[13:43:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:43:23] select | verify strict 2/20
+[13:43:23] verify | func= Uses | rank= 13 | pid= hep-ph/0104290 | title_snip='On a QCD-based pion distribution amplitude vs. recent experimental dat…' | abs_len= 547
+[13:43:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:25] select | verify strict 3/20
+[13:43:25] verify | func= Uses | rank= 18 | pid= astro-ph/0101040 | title_snip='Measuring Time-Dependence of Dark Energy Density from Type Ia Supernov…' | abs_len= 1330
+[13:43:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:28] select | verify strict 4/20
+[13:43:28] verify | func= Uses | rank= 2 | pid= astro-ph/0104084 | title_snip='On the Origin of the Colour-Magnitude Relation in the Virgo Cluster' | abs_len= 1278
+[13:43:31] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= True
+[13:43:31] select | verify strict 5/20
+[13:43:31] verify | func= Uses | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[13:43:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:33] select | verify strict 6/20
+[13:43:33] verify | func= Uses | rank= 9 | pid= hep-ex/0101044 | title_snip='A Simultaneous Measurement of the QCD Colour Factors and the Strong
+  …' | abs_len= 876
+[13:43:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:36] select | verify strict 7/20
+[13:43:36] verify | func= Uses | rank= 10 | pid= cond-mat/0103235 | title_snip='Full Current Statistics in Diffusive Normal-Superconductor Structures' | abs_len= 767
+[13:43:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:39] select | verify strict 8/20
+[13:43:39] verify | func= Uses | rank= 12 | pid= astro-ph/0104284 | title_snip='Deep near-IR observations of the Chandra Deep Field and of the HDF-Sou…' | abs_len= 1213
+[13:43:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:43:42] select | verify strict 9/20
+[13:43:42] verify | func= Uses | rank= 6 | pid= astro-ph/0101463 | title_snip='Color Transformations for the 2MASS Second Incremental Data Release' | abs_len= 552
+[13:43:45] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:43:45] select | verify strict 10/20
+[13:43:45] verify | func= Uses | rank= 3 | pid= astro-ph/0103188 | title_snip='Empirical relations for cluster RR Lyrae stars revisited' | abs_len= 1352
+[13:43:48] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:43:48] select | verify strict 11/20
+[13:43:48] verify | func= Uses | rank= 7 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[13:43:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:50] select | verify strict 12/20
+[13:43:50] verify | func= Uses | rank= 8 | pid= astro-ph/0104427 | title_snip='Near-infrared template spectra of normal galaxies: k-corrections, gala…' | abs_len= 1499
+[13:43:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:43:53] select | verify strict 13/20
+[13:43:53] verify | func= Uses | rank= 15 | pid= hep-ph/0104155 | title_snip='The color dipole approach to the Drell-Yan process in pA collisions' | abs_len= 896
+[13:43:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:56] select | verify strict 14/20
+[13:43:56] verify | func= Uses | rank= 16 | pid= hep-ex/0101042 | title_snip='Status of the BNL Muon g-2 Experiment' | abs_len= 580
+[13:43:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:43:58] select | verify strict 15/20
+[13:43:58] verify | func= Uses | rank= 17 | pid= astro-ph/0104411 | title_snip='Statistical evaluation of the observational information on $\Omega_m$
+…' | abs_len= 852
+[13:44:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:01] select | verify strict 16/20
+[13:44:01] verify | func= Uses | rank= 1 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[13:44:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:03] select | verify strict 17/20
+[13:44:03] verify | func= Uses | rank= 11 | pid= hep-ph/0104066 | title_snip='Absolute determination of D_s branching ratios and f_{D_s} extraction …' | abs_len= 343
+[13:44:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:06] select | verify strict 18/20
+[13:44:06] verify | func= Uses | rank= 14 | pid= astro-ph/0102260 | title_snip='Surface Photometric Calibration of the Infrared Tully-Fisher Relation
+…' | abs_len= 1128
+[13:44:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:44:09] select | verify strict 19/20
+[13:44:09] verify | func= Uses | rank= 4 | pid= nucl-th/0103002 | title_snip='Tensor Analyzing Power and Current Conservation in the d+p->3He+g
+  re…' | abs_len= 480
+[13:44:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:12] select | verify strict 20/20
+[13:44:12] verify | func= Uses | rank= 19 | pid= cond-mat/0101236 | title_snip='Spectral Determinant Method for Interacting N-body Systems Including
+ …' | abs_len= 847
+[13:44:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?
+- WINNER: astro-ph/0102090 | Internal color gradients and the color-magnitude relation of early-type
+  galaxies
+- QUOTE : deriving a CM relation which is based on color measurements
+- WHY   : sufficient
+- ANSWER: The current work uses a sample of 48 giant early-type galaxies in the Coma cluster with CCD observations in the U- and V-band to derive the color-magnitude relation. This derivation is based on color measurements within an aperture equal to the galaxy's effective radius, differing from traditional methods that use fixed apertures (astro-ph/0102090).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

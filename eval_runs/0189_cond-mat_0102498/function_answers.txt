@@ -1,0 +1,2 @@
+The current work uses a high-resolution transmission electron microscope (HRTEM) to investigate the microstructure of the MgB2 superconductor. This method aims to solve the problem of understanding the material's density and porosity by examining its microstructure at high resolution (cond-mat/0102498). [Uses]
+The abstract does not provide information relevant to Motivation. [Motivation]

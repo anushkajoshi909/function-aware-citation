@@ -1,0 +1,403 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks foundational information (background) about the DIRECT project and asks why it was initiated (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.59 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.15it/s]
+Reading arXiv_src_0101_001.jsonl: 71it [00:00, 218.83it/s]
+Reading arXiv_src_0101_001.jsonl: 222it [00:00, 614.24it/s]
+Reading arXiv_src_0101_001.jsonl: 332it [00:00, 761.84it/s]
+Reading arXiv_src_0101_001.jsonl: 431it [00:00, 710.02it/s]
+Reading arXiv_src_0101_001.jsonl: 517it [00:00, 594.14it/s]
+Reading arXiv_src_0101_001.jsonl: 589it [00:01, 591.29it/s]
+Reading arXiv_src_0101_001.jsonl: 694it [00:01, 700.89it/s]
+Reading arXiv_src_0101_001.jsonl: 793it [00:01, 774.46it/s]
+Reading arXiv_src_0101_001.jsonl: 906it [00:01, 855.64it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 898.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1146it [00:01, 1016.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1279it [00:01, 1104.96it/s]
+Reading arXiv_src_0101_001.jsonl: 1394it [00:01, 1084.27it/s]
+Reading arXiv_src_0101_001.jsonl: 1529it [00:01, 1157.49it/s]
+Reading arXiv_src_0101_001.jsonl: 1667it [00:02, 1220.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1791it [00:02, 1184.19it/s]
+Reading arXiv_src_0101_001.jsonl: 1947it [00:02, 1290.52it/s]
+Reading arXiv_src_0101_001.jsonl: 2123it [00:02, 1425.72it/s]
+Reading arXiv_src_0101_001.jsonl: 2275it [00:02, 1453.31it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 939.62it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1318.51it/s]
+Reading arXiv_src_0102_001.jsonl: 268it [00:00, 1340.18it/s]
+Reading arXiv_src_0102_001.jsonl: 403it [00:00, 854.43it/s] 
+Reading arXiv_src_0102_001.jsonl: 504it [00:00, 512.52it/s]
+Reading arXiv_src_0102_001.jsonl: 588it [00:00, 575.10it/s]
+Reading arXiv_src_0102_001.jsonl: 665it [00:00, 600.55it/s]
+Reading arXiv_src_0102_001.jsonl: 778it [00:01, 721.56it/s]
+Reading arXiv_src_0102_001.jsonl: 907it [00:01, 860.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1021it [00:01, 929.14it/s]
+Reading arXiv_src_0102_001.jsonl: 1140it [00:01, 998.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1249it [00:01, 1023.59it/s]
+Reading arXiv_src_0102_001.jsonl: 1393it [00:01, 1140.27it/s]
+Reading arXiv_src_0102_001.jsonl: 1527it [00:01, 1192.27it/s]
+Reading arXiv_src_0102_001.jsonl: 1651it [00:01, 1205.85it/s]
+Reading arXiv_src_0102_001.jsonl: 1803it [00:01, 1297.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1944it [00:02, 1328.46it/s]
+Reading arXiv_src_0102_001.jsonl: 2088it [00:02, 1359.69it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1010.31it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1350.45it/s]
+Reading arXiv_src_0103_001.jsonl: 299it [00:00, 1511.91it/s]
+Reading arXiv_src_0103_001.jsonl: 451it [00:00, 1136.29it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 736.26it/s] 
+Reading arXiv_src_0103_001.jsonl: 666it [00:00, 768.14it/s]
+Reading arXiv_src_0103_001.jsonl: 756it [00:00, 786.04it/s]
+Reading arXiv_src_0103_001.jsonl: 874it [00:00, 883.86it/s]
+Reading arXiv_src_0103_001.jsonl: 975it [00:01, 916.82it/s]
+Reading arXiv_src_0103_001.jsonl: 1080it [00:01, 949.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1207it [00:01, 1037.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1315it [00:01, 1027.27it/s]
+Reading arXiv_src_0103_001.jsonl: 1452it [00:01, 1123.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1587it [00:01, 1185.31it/s]
+Reading arXiv_src_0103_001.jsonl: 1739it [00:01, 1282.09it/s]
+Reading arXiv_src_0103_001.jsonl: 1877it [00:01, 1309.00it/s]
+Reading arXiv_src_0103_001.jsonl: 2013it [00:01, 1322.47it/s]
+Reading arXiv_src_0103_001.jsonl: 2158it [00:01, 1358.75it/s]
+Reading arXiv_src_0103_001.jsonl: 2305it [00:02, 1388.72it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1129.71it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  4.84it/s]
+Reading arXiv_src_0104_001.jsonl: 5it [00:00, 19.17it/s]
+Reading arXiv_src_0104_001.jsonl: 140it [00:00, 507.89it/s]
+Reading arXiv_src_0104_001.jsonl: 300it [00:00, 883.08it/s]
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 934.03it/s]
+Reading arXiv_src_0104_001.jsonl: 507it [00:00, 680.84it/s]
+Reading arXiv_src_0104_001.jsonl: 590it [00:01, 459.23it/s]
+Reading arXiv_src_0104_001.jsonl: 696it [00:01, 567.16it/s]
+Reading arXiv_src_0104_001.jsonl: 788it [00:01, 639.17it/s]
+Reading arXiv_src_0104_001.jsonl: 889it [00:01, 722.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1005it [00:01, 828.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 901.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1240it [00:01, 974.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1346it [00:01, 986.32it/s]
+Reading arXiv_src_0104_001.jsonl: 1472it [00:01, 1061.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1608it [00:02, 1146.56it/s]
+Reading arXiv_src_0104_001.jsonl: 1731it [00:02, 1169.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1875it [00:02, 1246.16it/s]
+Reading arXiv_src_0104_001.jsonl: 2023it [00:02, 1313.66it/s]
+Reading arXiv_src_0104_001.jsonl: 2156it [00:02, 920.88it/s] 
+Reading arXiv_src_0104_001.jsonl: 2307it [00:02, 1053.52it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 844.62it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?
+[debug] classifier labels: ['Background', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T14:51:35.554464  Background, Motivation
+1     1  0.415468  ...  2025-09-21T14:51:35.554464  Background, Motivation
+2     2  0.363099  ...  2025-09-21T14:51:35.554464  Background, Motivation
+3     3  0.361300  ...  2025-09-21T14:51:35.554464  Background, Motivation
+4     4  0.348347  ...  2025-09-21T14:51:35.554464  Background, Motivation
+5     5  0.313540  ...  2025-09-21T14:51:35.554464  Background, Motivation
+6     6  0.303573  ...  2025-09-21T14:51:35.554464  Background, Motivation
+7     7  0.301258  ...  2025-09-21T14:51:35.554464  Background, Motivation
+8     8  0.294026  ...  2025-09-21T14:51:35.554464  Background, Motivation
+9     9  0.292765  ...  2025-09-21T14:51:35.554464  Background, Motivation
+
+[10 rows x 12 columns]
+[16:51:41] main | args: Namespace(max_check=20, debug=True)
+[16:51:41] read_last_jsonl | path= classified_outputs.jsonl
+[16:51:41] read_last_jsonl | total_lines= 1
+[16:51:41] main | query='What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?' | funcs=['Background', 'Motivation']
+[16:51:43] main | core_terms= ['DIRECT project', 'dark matter', 'direct detection', 'DIRECT']
+[16:51:43] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:51:43] load_topk_jsonl | rows= 20
+[16:51:43] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103441 title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' abs_len= 550
+[16:51:43] main | running function= Background
+[16:51:43] select | function= Background | candidates_in= 20
+[16:51:43] select | core_terms= ['DIRECT project', 'dark matter', 'direct detection', 'DIRECT']
+[16:51:43] select | no cosine prune; kept=20/20
+[16:51:43] select | pool_size= 20 | ranks= [0, 7, 12, 1, 2, 4, 8, 3, 5, 6, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19] | pids= ['astro-ph/0103441', 'astro-ph/0102274', 'nucl-th/0104052', 'gr-qc/0102009', 'astro-ph/0104258', 'hep-ph/0102051', 'gr-qc/0103075', 'math/0104020', 'hep-ph/0101182', 'cs/0104011', 'gr-qc/0102051', 'gr-qc/0103067', 'math/0103059', 'cs/0102030', 'hep-ph/0101346', 'math/0101069', 'math/0101021', 'hep-lat/0102011', 'hep-ph/0102149', 'math/0104151']
+[16:51:43] select | verify strict 1/20
+[16:51:43] verify | func= Background | rank= 0 | pid= astro-ph/0103441 | title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' | abs_len= 550
+[16:51:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:51:47] select | verify strict 2/20
+[16:51:47] verify | func= Background | rank= 7 | pid= astro-ph/0102274 | title_snip='DIRECT Distances to Nearby Galaxies Using Detached Eclipsing Binaries
+…' | abs_len= 1592
+[16:51:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:51:50] select | verify strict 3/20
+[16:51:50] verify | func= Background | rank= 12 | pid= nucl-th/0104052 | title_snip='Coupled-channel study of gamma p --> K+ Lambda' | abs_len= 664
+[16:51:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:51:53] select | verify strict 4/20
+[16:51:53] verify | func= Background | rank= 1 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[16:51:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:51:55] select | verify strict 5/20
+[16:51:55] verify | func= Background | rank= 2 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[16:51:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:51:58] select | verify strict 6/20
+[16:51:58] verify | func= Background | rank= 4 | pid= hep-ph/0102051 | title_snip='Hadronic Light-Front Wavefunctions and QCD Phenomenology' | abs_len= 1463
+[16:52:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:00] select | verify strict 7/20
+[16:52:00] verify | func= Background | rank= 8 | pid= gr-qc/0103075 | title_snip='Space missions to detect the cosmic gravitational-wave background' | abs_len= 968
+[16:52:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:03] select | verify strict 8/20
+[16:52:03] verify | func= Background | rank= 3 | pid= math/0104020 | title_snip='Self-scaled barriers for irreducible symmetric cones' | abs_len= 871
+[16:52:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:05] select | verify strict 9/20
+[16:52:05] verify | func= Background | rank= 5 | pid= hep-ph/0101182 | title_snip='Wavelets and their use' | abs_len= 1279
+[16:52:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:08] select | verify strict 10/20
+[16:52:08] verify | func= Background | rank= 6 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[16:52:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:11] select | verify strict 11/20
+[16:52:11] verify | func= Background | rank= 9 | pid= gr-qc/0102051 | title_snip='2d manifold-independent spinfoam theory' | abs_len= 1092
+[16:52:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:13] select | verify strict 12/20
+[16:52:13] verify | func= Background | rank= 10 | pid= gr-qc/0103067 | title_snip='Principles of Equivalence: Their Role in Gravitation Physics and
+  Exp…' | abs_len= 810
+[16:52:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:16] select | verify strict 13/20
+[16:52:16] verify | func= Background | rank= 11 | pid= math/0103059 | title_snip='Multiple polylogarithms and mixed Tate motives' | abs_len= 242
+[16:52:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:18] select | verify strict 14/20
+[16:52:18] verify | func= Background | rank= 13 | pid= cs/0102030 | title_snip='Soundness, Idempotence and Commutativity of Set-Sharing' | abs_len= 962
+[16:52:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:21] select | verify strict 15/20
+[16:52:21] verify | func= Background | rank= 14 | pid= hep-ph/0101346 | title_snip='Zero-dimensional field theory' | abs_len= 487
+[16:52:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:23] select | verify strict 16/20
+[16:52:23] verify | func= Background | rank= 15 | pid= math/0101069 | title_snip='A unifying approach to software and hardware design for scientific
+  c…' | abs_len= 274
+[16:52:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:26] select | verify strict 17/20
+[16:52:26] verify | func= Background | rank= 16 | pid= math/0101021 | title_snip='Correspondence principle for idempotent calculus and some computer
+  a…' | abs_len= 971
+[16:52:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:28] select | verify strict 18/20
+[16:52:28] verify | func= Background | rank= 17 | pid= hep-lat/0102011 | title_snip='apenext: A Multi-Tflops LQCD Computing Project' | abs_len= 506
+[16:52:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:30] select | verify strict 19/20
+[16:52:30] verify | func= Background | rank= 18 | pid= hep-ph/0102149 | title_snip='Breit-Wigner formalism for non-Abelian theories' | abs_len= 747
+[16:52:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:33] select | verify strict 20/20
+[16:52:33] verify | func= Background | rank= 19 | pid= math/0104151 | title_snip='Cluster algebras I: Foundations' | abs_len= 176
+[16:52:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?
+- WINNER: astro-ph/0103441 | The DIRECT project: Catalogs of stellar objects in nearby galaxies. II.
+  Eastern arm and NGC 206 in M31
+- QUOTE : DIRECT is a project to directly obtain the distances
+- WHY   : sufficient
+- ANSWER: The DIRECT project is motivated by the need to directly obtain distances to the galaxies M31 and M33, which are crucial in the cosmological distance ladder (astro-ph/0103441).
+[16:52:40] main | running function= Motivation
+[16:52:40] select | function= Motivation | candidates_in= 20
+[16:52:40] select | core_terms= ['DIRECT project', 'dark matter', 'direct detection', 'DIRECT']
+[16:52:40] select | no cosine prune; kept=20/20
+[16:52:40] select | pool_size= 20 | ranks= [0, 7, 1, 4, 12, 2, 3, 5, 8, 16, 17, 18, 6, 9, 10, 11, 13, 14, 15, 19] | pids= ['astro-ph/0103441', 'astro-ph/0102274', 'gr-qc/0102009', 'hep-ph/0102051', 'nucl-th/0104052', 'astro-ph/0104258', 'math/0104020', 'hep-ph/0101182', 'gr-qc/0103075', 'math/0101021', 'hep-lat/0102011', 'hep-ph/0102149', 'cs/0104011', 'gr-qc/0102051', 'gr-qc/0103067', 'math/0103059', 'cs/0102030', 'hep-ph/0101346', 'math/0101069', 'math/0104151']
+[16:52:40] select | verify strict 1/20
+[16:52:40] verify | func= Motivation | rank= 0 | pid= astro-ph/0103441 | title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' | abs_len= 550
+[16:52:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:52:43] select | verify strict 2/20
+[16:52:43] verify | func= Motivation | rank= 7 | pid= astro-ph/0102274 | title_snip='DIRECT Distances to Nearby Galaxies Using Detached Eclipsing Binaries
+…' | abs_len= 1592
+[16:52:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:46] select | verify strict 3/20
+[16:52:46] verify | func= Motivation | rank= 1 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[16:52:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:48] select | verify strict 4/20
+[16:52:48] verify | func= Motivation | rank= 4 | pid= hep-ph/0102051 | title_snip='Hadronic Light-Front Wavefunctions and QCD Phenomenology' | abs_len= 1463
+[16:52:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:51] select | verify strict 5/20
+[16:52:51] verify | func= Motivation | rank= 12 | pid= nucl-th/0104052 | title_snip='Coupled-channel study of gamma p --> K+ Lambda' | abs_len= 664
+[16:52:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:53] select | verify strict 6/20
+[16:52:53] verify | func= Motivation | rank= 2 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[16:52:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:56] select | verify strict 7/20
+[16:52:56] verify | func= Motivation | rank= 3 | pid= math/0104020 | title_snip='Self-scaled barriers for irreducible symmetric cones' | abs_len= 871
+[16:52:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:52:58] select | verify strict 8/20
+[16:52:58] verify | func= Motivation | rank= 5 | pid= hep-ph/0101182 | title_snip='Wavelets and their use' | abs_len= 1279
+[16:53:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:01] select | verify strict 9/20
+[16:53:01] verify | func= Motivation | rank= 8 | pid= gr-qc/0103075 | title_snip='Space missions to detect the cosmic gravitational-wave background' | abs_len= 968
+[16:53:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:03] select | verify strict 10/20
+[16:53:03] verify | func= Motivation | rank= 16 | pid= math/0101021 | title_snip='Correspondence principle for idempotent calculus and some computer
+  a…' | abs_len= 971
+[16:53:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:06] select | verify strict 11/20
+[16:53:06] verify | func= Motivation | rank= 17 | pid= hep-lat/0102011 | title_snip='apenext: A Multi-Tflops LQCD Computing Project' | abs_len= 506
+[16:53:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:08] select | verify strict 12/20
+[16:53:08] verify | func= Motivation | rank= 18 | pid= hep-ph/0102149 | title_snip='Breit-Wigner formalism for non-Abelian theories' | abs_len= 747
+[16:53:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:11] select | verify strict 13/20
+[16:53:11] verify | func= Motivation | rank= 6 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[16:53:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:13] select | verify strict 14/20
+[16:53:13] verify | func= Motivation | rank= 9 | pid= gr-qc/0102051 | title_snip='2d manifold-independent spinfoam theory' | abs_len= 1092
+[16:53:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:16] select | verify strict 15/20
+[16:53:16] verify | func= Motivation | rank= 10 | pid= gr-qc/0103067 | title_snip='Principles of Equivalence: Their Role in Gravitation Physics and
+  Exp…' | abs_len= 810
+[16:53:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:18] select | verify strict 16/20
+[16:53:18] verify | func= Motivation | rank= 11 | pid= math/0103059 | title_snip='Multiple polylogarithms and mixed Tate motives' | abs_len= 242
+[16:53:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:21] select | verify strict 17/20
+[16:53:21] verify | func= Motivation | rank= 13 | pid= cs/0102030 | title_snip='Soundness, Idempotence and Commutativity of Set-Sharing' | abs_len= 962
+[16:53:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:23] select | verify strict 18/20
+[16:53:23] verify | func= Motivation | rank= 14 | pid= hep-ph/0101346 | title_snip='Zero-dimensional field theory' | abs_len= 487
+[16:53:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:26] select | verify strict 19/20
+[16:53:26] verify | func= Motivation | rank= 15 | pid= math/0101069 | title_snip='A unifying approach to software and hardware design for scientific
+  c…' | abs_len= 274
+[16:53:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:28] select | verify strict 20/20
+[16:53:28] verify | func= Motivation | rank= 19 | pid= math/0104151 | title_snip='Cluster algebras I: Foundations' | abs_len= 176
+[16:53:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:31] select | strict pass found 0 winners → trying relaxed
+[16:53:31] select | verify relaxed 1/20
+[16:53:31] verify | func= Motivation | rank= 0 | pid= astro-ph/0103441 | title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' | abs_len= 550
+[16:53:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:53:34] select | verify relaxed 2/20
+[16:53:34] verify | func= Motivation | rank= 7 | pid= astro-ph/0102274 | title_snip='DIRECT Distances to Nearby Galaxies Using Detached Eclipsing Binaries
+…' | abs_len= 1592
+[16:53:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:36] select | verify relaxed 3/20
+[16:53:36] verify | func= Motivation | rank= 1 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[16:53:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:39] select | verify relaxed 4/20
+[16:53:39] verify | func= Motivation | rank= 4 | pid= hep-ph/0102051 | title_snip='Hadronic Light-Front Wavefunctions and QCD Phenomenology' | abs_len= 1463
+[16:53:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:41] select | verify relaxed 5/20
+[16:53:41] verify | func= Motivation | rank= 12 | pid= nucl-th/0104052 | title_snip='Coupled-channel study of gamma p --> K+ Lambda' | abs_len= 664
+[16:53:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:44] select | verify relaxed 6/20
+[16:53:44] verify | func= Motivation | rank= 2 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[16:53:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:46] select | verify relaxed 7/20
+[16:53:46] verify | func= Motivation | rank= 3 | pid= math/0104020 | title_snip='Self-scaled barriers for irreducible symmetric cones' | abs_len= 871
+[16:53:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:49] select | verify relaxed 8/20
+[16:53:49] verify | func= Motivation | rank= 5 | pid= hep-ph/0101182 | title_snip='Wavelets and their use' | abs_len= 1279
+[16:53:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:51] select | verify relaxed 9/20
+[16:53:51] verify | func= Motivation | rank= 8 | pid= gr-qc/0103075 | title_snip='Space missions to detect the cosmic gravitational-wave background' | abs_len= 968
+[16:53:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:54] select | verify relaxed 10/20
+[16:53:54] verify | func= Motivation | rank= 16 | pid= math/0101021 | title_snip='Correspondence principle for idempotent calculus and some computer
+  a…' | abs_len= 971
+[16:53:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:56] select | verify relaxed 11/20
+[16:53:56] verify | func= Motivation | rank= 17 | pid= hep-lat/0102011 | title_snip='apenext: A Multi-Tflops LQCD Computing Project' | abs_len= 506
+[16:53:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:53:59] select | verify relaxed 12/20
+[16:53:59] verify | func= Motivation | rank= 18 | pid= hep-ph/0102149 | title_snip='Breit-Wigner formalism for non-Abelian theories' | abs_len= 747
+[16:54:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:01] select | verify relaxed 13/20
+[16:54:01] verify | func= Motivation | rank= 6 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[16:54:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:04] select | verify relaxed 14/20
+[16:54:04] verify | func= Motivation | rank= 9 | pid= gr-qc/0102051 | title_snip='2d manifold-independent spinfoam theory' | abs_len= 1092
+[16:54:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:06] select | verify relaxed 15/20
+[16:54:06] verify | func= Motivation | rank= 10 | pid= gr-qc/0103067 | title_snip='Principles of Equivalence: Their Role in Gravitation Physics and
+  Exp…' | abs_len= 810
+[16:54:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:09] select | verify relaxed 16/20
+[16:54:09] verify | func= Motivation | rank= 11 | pid= math/0103059 | title_snip='Multiple polylogarithms and mixed Tate motives' | abs_len= 242
+[16:54:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:11] select | verify relaxed 17/20
+[16:54:11] verify | func= Motivation | rank= 13 | pid= cs/0102030 | title_snip='Soundness, Idempotence and Commutativity of Set-Sharing' | abs_len= 962
+[16:54:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:13] select | verify relaxed 18/20
+[16:54:13] verify | func= Motivation | rank= 14 | pid= hep-ph/0101346 | title_snip='Zero-dimensional field theory' | abs_len= 487
+[16:54:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:16] select | verify relaxed 19/20
+[16:54:16] verify | func= Motivation | rank= 15 | pid= math/0101069 | title_snip='A unifying approach to software and hardware design for scientific
+  c…' | abs_len= 274
+[16:54:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:54:18] select | verify relaxed 20/20
+[16:54:18] verify | func= Motivation | rank= 19 | pid= math/0104151 | title_snip='Cluster algebras I: Foundations' | abs_len= 176
+[16:54:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Motivation.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,414 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query asks for a comparison between the empirical model and observed counts, and it focuses on how the model is used to evaluate the contribution of star\u2011forming galaxies to faint radio sources."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.82 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.98it/s]
+Reading arXiv_src_0101_001.jsonl: 27it [00:00, 79.79it/s]
+Reading arXiv_src_0101_001.jsonl: 166it [00:00, 471.59it/s]
+Reading arXiv_src_0101_001.jsonl: 296it [00:00, 718.86it/s]
+Reading arXiv_src_0101_001.jsonl: 391it [00:00, 783.34it/s]
+Reading arXiv_src_0101_001.jsonl: 486it [00:00, 612.43it/s]
+Reading arXiv_src_0101_001.jsonl: 563it [00:01, 560.77it/s]
+Reading arXiv_src_0101_001.jsonl: 669it [00:01, 673.72it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 754.68it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 844.35it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 919.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1104it [00:01, 960.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1233it [00:01, 1053.30it/s]
+Reading arXiv_src_0101_001.jsonl: 1343it [00:01, 1044.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1478it [00:01, 1130.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1611it [00:02, 1188.34it/s]
+Reading arXiv_src_0101_001.jsonl: 1738it [00:02, 1211.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1861it [00:02, 1179.91it/s]
+Reading arXiv_src_0101_001.jsonl: 2036it [00:02, 1344.37it/s]
+Reading arXiv_src_0101_001.jsonl: 2193it [00:02, 1409.84it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 914.28it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  3.81it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 464.17it/s]
+Reading arXiv_src_0102_001.jsonl: 268it [00:00, 762.59it/s]
+Reading arXiv_src_0102_001.jsonl: 372it [00:00, 722.37it/s]
+Reading arXiv_src_0102_001.jsonl: 462it [00:00, 434.52it/s]
+Reading arXiv_src_0102_001.jsonl: 528it [00:01, 470.28it/s]
+Reading arXiv_src_0102_001.jsonl: 593it [00:01, 498.34it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:01, 576.73it/s]
+Reading arXiv_src_0102_001.jsonl: 789it [00:01, 705.37it/s]
+Reading arXiv_src_0102_001.jsonl: 916it [00:01, 849.47it/s]
+Reading arXiv_src_0102_001.jsonl: 1025it [00:01, 912.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1133it [00:01, 958.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1239it [00:01, 986.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1379it [00:01, 1104.79it/s]
+Reading arXiv_src_0102_001.jsonl: 1515it [00:02, 1176.09it/s]
+Reading arXiv_src_0102_001.jsonl: 1636it [00:02, 1173.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1784it [00:02, 1263.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1931it [00:02, 1321.08it/s]
+Reading arXiv_src_0102_001.jsonl: 2074it [00:02, 1352.66it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 878.81it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  4.32it/s]
+Reading arXiv_src_0103_001.jsonl: 27it [00:00, 101.73it/s]
+Reading arXiv_src_0103_001.jsonl: 165it [00:00, 551.64it/s]
+Reading arXiv_src_0103_001.jsonl: 312it [00:00, 857.16it/s]
+Reading arXiv_src_0103_001.jsonl: 419it [00:00, 924.63it/s]
+Reading arXiv_src_0103_001.jsonl: 522it [00:00, 658.52it/s]
+Reading arXiv_src_0103_001.jsonl: 605it [00:01, 633.66it/s]
+Reading arXiv_src_0103_001.jsonl: 702it [00:01, 712.11it/s]
+Reading arXiv_src_0103_001.jsonl: 787it [00:01, 744.38it/s]
+Reading arXiv_src_0103_001.jsonl: 890it [00:01, 815.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 890.31it/s]
+Reading arXiv_src_0103_001.jsonl: 1112it [00:01, 950.24it/s]
+Reading arXiv_src_0103_001.jsonl: 1228it [00:01, 1009.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1333it [00:01, 1013.95it/s]
+Reading arXiv_src_0103_001.jsonl: 1470it [00:01, 1116.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1599it [00:01, 1165.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1748it [00:02, 1255.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1884it [00:02, 1285.41it/s]
+Reading arXiv_src_0103_001.jsonl: 2020it [00:02, 1306.78it/s]
+Reading arXiv_src_0103_001.jsonl: 2159it [00:02, 1328.45it/s]
+Reading arXiv_src_0103_001.jsonl: 2304it [00:02, 1361.85it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 970.20it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.75it/s]
+Reading arXiv_src_0104_001.jsonl: 11it [00:00, 52.53it/s]
+Reading arXiv_src_0104_001.jsonl: 156it [00:00, 628.41it/s]
+Reading arXiv_src_0104_001.jsonl: 314it [00:00, 978.16it/s]
+Reading arXiv_src_0104_001.jsonl: 418it [00:00, 981.14it/s]
+Reading arXiv_src_0104_001.jsonl: 521it [00:00, 688.41it/s]
+Reading arXiv_src_0104_001.jsonl: 604it [00:01, 471.25it/s]
+Reading arXiv_src_0104_001.jsonl: 706it [00:01, 572.64it/s]
+Reading arXiv_src_0104_001.jsonl: 794it [00:01, 636.53it/s]
+Reading arXiv_src_0104_001.jsonl: 894it [00:01, 719.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1013it [00:01, 835.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1123it [00:01, 902.83it/s]
+Reading arXiv_src_0104_001.jsonl: 1243it [00:01, 982.98it/s]
+Reading arXiv_src_0104_001.jsonl: 1349it [00:01, 984.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1479it [00:01, 1072.17it/s]
+Reading arXiv_src_0104_001.jsonl: 1618it [00:02, 1162.94it/s]
+Reading arXiv_src_0104_001.jsonl: 1744it [00:02, 1189.25it/s]
+Reading arXiv_src_0104_001.jsonl: 1890it [00:02, 1266.23it/s]
+Reading arXiv_src_0104_001.jsonl: 2036it [00:02, 1322.47it/s]
+Reading arXiv_src_0104_001.jsonl: 2170it [00:02, 926.18it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 867.42it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the use of the empirical infrared galaxy number count model of Takeuchi et al. (2001) compare to the observed source counts in terms of evaluating the contribution of star forming galaxies to the faint radio galaxies?
+[debug] classifier labels: ['Compares', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T13:33:56.053663       Compares, Uses
+1     1  0.649955  ...  2025-09-21T13:33:56.053663       Compares, Uses
+2     2  0.577666  ...  2025-09-21T13:33:56.053663       Compares, Uses
+3     3  0.569056  ...  2025-09-21T13:33:56.053663       Compares, Uses
+4     4  0.501085  ...  2025-09-21T13:33:56.053663       Compares, Uses
+5     5  0.500076  ...  2025-09-21T13:33:56.053663       Compares, Uses
+6     6  0.431248  ...  2025-09-21T13:33:56.053663       Compares, Uses
+7     7  0.430807  ...  2025-09-21T13:33:56.053663       Compares, Uses
+8     8  0.406123  ...  2025-09-21T13:33:56.053663       Compares, Uses
+9     9  0.402394  ...  2025-09-21T13:33:56.053663       Compares, Uses
+
+[10 rows x 12 columns]
+[15:34:03] main | args: Namespace(max_check=20, debug=True)
+[15:34:03] read_last_jsonl | path= classified_outputs.jsonl
+[15:34:03] read_last_jsonl | total_lines= 1
+[15:34:03] main | query='How does the use of the empirical infrared galaxy number count model of Takeuchi et al. (2001) compare to the observed source counts in terms of evaluating the contribution of star forming galaxies to the faint radio galaxies?' | funcs=['Compares', 'Uses']
+[15:34:07] main | core_terms= ['galaxies', 'Takeuchi et al. (2001) model', 'infrared galaxy number count', 'star forming galaxies', 'faint radio galaxies']
+[15:34:07] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:34:07] load_topk_jsonl | rows= 20
+[15:34:07] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101555 title_snip='Impact of Future Submillimeter and Millimeter Large Facilities on the
+…' abs_len= 1462
+[15:34:07] main | running function= Compares
+[15:34:07] select | function= Compares | candidates_in= 20
+[15:34:07] select | core_terms= ['galaxies', 'Takeuchi et al. (2001) model', 'infrared galaxy number count', 'star forming galaxies', 'faint radio galaxies']
+[15:34:07] select | no cosine prune; kept=20/20
+[15:34:07] select | pool_size= 20 | ranks= [0, 2, 13, 7, 15, 19, 6, 8, 11, 14, 4, 10, 12, 16, 17, 1, 18, 3, 5, 9] | pids= ['astro-ph/0101555', 'astro-ph/0101158', 'astro-ph/0103167', 'astro-ph/0104425', 'astro-ph/0103238', 'astro-ph/0102333', 'astro-ph/0102297', 'astro-ph/0101445', 'astro-ph/0104284', 'astro-ph/0103434', 'astro-ph/0101095', 'astro-ph/0101137', 'astro-ph/0102397', 'astro-ph/0102323', 'astro-ph/0104183', 'astro-ph/0103078', 'astro-ph/0103394', 'astro-ph/0102206', 'astro-ph/0104310', 'astro-ph/0102276']
+[15:34:07] select | verify strict 1/20
+[15:34:07] verify | func= Compares | rank= 0 | pid= astro-ph/0101555 | title_snip='Impact of Future Submillimeter and Millimeter Large Facilities on the
+…' | abs_len= 1462
+[15:34:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[15:34:10] select | verify strict 2/20
+[15:34:10] verify | func= Compares | rank= 2 | pid= astro-ph/0101158 | title_snip='The Far-Infrared/Radio Correlation in Nearby Abell Clusters' | abs_len= 1764
+[15:34:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:34:13] select | verify strict 3/20
+[15:34:13] verify | func= Compares | rank= 13 | pid= astro-ph/0103167 | title_snip='Recent star formation in very luminous infrared galaxies' | abs_len= 822
+[15:34:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:16] select | verify strict 4/20
+[15:34:16] verify | func= Compares | rank= 7 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[15:34:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:18] select | verify strict 5/20
+[15:34:18] verify | func= Compares | rank= 15 | pid= astro-ph/0103238 | title_snip='The Host Galaxies of Radio-Loud and Radio-Quiet Quasars' | abs_len= 1554
+[15:34:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:21] select | verify strict 6/20
+[15:34:21] verify | func= Compares | rank= 19 | pid= astro-ph/0102333 | title_snip='Dust emission from 3C radio galaxies and quasars: New ISO observations…' | abs_len= 1678
+[15:34:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:23] select | verify strict 7/20
+[15:34:23] verify | func= Compares | rank= 6 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[15:34:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:26] select | verify strict 8/20
+[15:34:26] verify | func= Compares | rank= 8 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[15:34:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:29] select | verify strict 9/20
+[15:34:29] verify | func= Compares | rank= 11 | pid= astro-ph/0104284 | title_snip='Deep near-IR observations of the Chandra Deep Field and of the HDF-Sou…' | abs_len= 1213
+[15:34:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:31] select | verify strict 10/20
+[15:34:31] verify | func= Compares | rank= 14 | pid= astro-ph/0103434 | title_snip='FIRBACK: III. Catalog, Source counts, and cosmological implications of…' | abs_len= 1163
+[15:34:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:34:34] select | verify strict 11/20
+[15:34:34] verify | func= Compares | rank= 4 | pid= astro-ph/0101095 | title_snip='Faint field galaxies: an explanation of the faint blue excess using
+  …' | abs_len= 1461
+[15:34:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:37] select | verify strict 12/20
+[15:34:37] verify | func= Compares | rank= 10 | pid= astro-ph/0101137 | title_snip='Millimeter observations of radio-loud active galaxies' | abs_len= 641
+[15:34:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:39] select | verify strict 13/20
+[15:34:39] verify | func= Compares | rank= 12 | pid= astro-ph/0102397 | title_snip='A Near-Infrared Stellar Census of Blue Compact Dwarf Galaxies: The
+  W…' | abs_len= 1230
+[15:34:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:42] select | verify strict 14/20
+[15:34:42] verify | func= Compares | rank= 16 | pid= astro-ph/0102323 | title_snip='NICMOS observations of high redshift radio galaxies: witnessing the
+  …' | abs_len= 1641
+[15:34:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:44] select | verify strict 15/20
+[15:34:44] verify | func= Compares | rank= 17 | pid= astro-ph/0104183 | title_snip='On The Parent Population of Radio Galaxies and the FRI - FRII Dichotom…' | abs_len= 1197
+[15:34:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:47] select | verify strict 16/20
+[15:34:47] verify | func= Compares | rank= 1 | pid= astro-ph/0103078 | title_snip='The Cosmic Infrared Background at 1.25 microns and 2.2 microns using
+ …' | abs_len= 865
+[15:34:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:50] select | verify strict 17/20
+[15:34:50] verify | func= Compares | rank= 18 | pid= astro-ph/0103394 | title_snip='An X-ray selected sample of radio-loud quasars' | abs_len= 1114
+[15:34:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:52] select | verify strict 18/20
+[15:34:52] verify | func= Compares | rank= 3 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[15:34:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:55] select | verify strict 19/20
+[15:34:55] verify | func= Compares | rank= 5 | pid= astro-ph/0104310 | title_snip='The environments of radio-loud quasars' | abs_len= 815
+[15:34:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:57] select | verify strict 20/20
+[15:34:57] verify | func= Compares | rank= 9 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[15:35:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:00] select | strict pass found 0 winners → trying relaxed
+[15:35:00] select | verify relaxed 1/20
+[15:35:00] verify | func= Compares | rank= 0 | pid= astro-ph/0101555 | title_snip='Impact of Future Submillimeter and Millimeter Large Facilities on the
+…' | abs_len= 1462
+[15:35:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[15:35:04] select | verify relaxed 2/20
+[15:35:04] verify | func= Compares | rank= 2 | pid= astro-ph/0101158 | title_snip='The Far-Infrared/Radio Correlation in Nearby Abell Clusters' | abs_len= 1764
+[15:35:07] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[15:35:07] select | verify relaxed 3/20
+[15:35:07] verify | func= Compares | rank= 13 | pid= astro-ph/0103167 | title_snip='Recent star formation in very luminous infrared galaxies' | abs_len= 822
+[15:35:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:10] select | verify relaxed 4/20
+[15:35:10] verify | func= Compares | rank= 7 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[15:35:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:13] select | verify relaxed 5/20
+[15:35:13] verify | func= Compares | rank= 15 | pid= astro-ph/0103238 | title_snip='The Host Galaxies of Radio-Loud and Radio-Quiet Quasars' | abs_len= 1554
+[15:35:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:16] select | verify relaxed 6/20
+[15:35:16] verify | func= Compares | rank= 19 | pid= astro-ph/0102333 | title_snip='Dust emission from 3C radio galaxies and quasars: New ISO observations…' | abs_len= 1678
+[15:35:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:19] select | verify relaxed 7/20
+[15:35:19] verify | func= Compares | rank= 6 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[15:35:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:22] select | verify relaxed 8/20
+[15:35:22] verify | func= Compares | rank= 8 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[15:35:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:24] select | verify relaxed 9/20
+[15:35:24] verify | func= Compares | rank= 11 | pid= astro-ph/0104284 | title_snip='Deep near-IR observations of the Chandra Deep Field and of the HDF-Sou…' | abs_len= 1213
+[15:35:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[15:35:27] select | verify relaxed 10/20
+[15:35:27] verify | func= Compares | rank= 14 | pid= astro-ph/0103434 | title_snip='FIRBACK: III. Catalog, Source counts, and cosmological implications of…' | abs_len= 1163
+[15:35:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= True
+[15:35:31] select | verify relaxed 11/20
+[15:35:31] verify | func= Compares | rank= 4 | pid= astro-ph/0101095 | title_snip='Faint field galaxies: an explanation of the faint blue excess using
+  …' | abs_len= 1461
+[15:35:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:34] select | verify relaxed 12/20
+[15:35:34] verify | func= Compares | rank= 10 | pid= astro-ph/0101137 | title_snip='Millimeter observations of radio-loud active galaxies' | abs_len= 641
+[15:35:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:37] select | verify relaxed 13/20
+[15:35:37] verify | func= Compares | rank= 12 | pid= astro-ph/0102397 | title_snip='A Near-Infrared Stellar Census of Blue Compact Dwarf Galaxies: The
+  W…' | abs_len= 1230
+[15:35:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:39] select | verify relaxed 14/20
+[15:35:39] verify | func= Compares | rank= 16 | pid= astro-ph/0102323 | title_snip='NICMOS observations of high redshift radio galaxies: witnessing the
+  …' | abs_len= 1641
+[15:35:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:42] select | verify relaxed 15/20
+[15:35:42] verify | func= Compares | rank= 17 | pid= astro-ph/0104183 | title_snip='On The Parent Population of Radio Galaxies and the FRI - FRII Dichotom…' | abs_len= 1197
+[15:35:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:45] select | verify relaxed 16/20
+[15:35:45] verify | func= Compares | rank= 1 | pid= astro-ph/0103078 | title_snip='The Cosmic Infrared Background at 1.25 microns and 2.2 microns using
+ …' | abs_len= 865
+[15:35:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:48] select | verify relaxed 17/20
+[15:35:48] verify | func= Compares | rank= 18 | pid= astro-ph/0103394 | title_snip='An X-ray selected sample of radio-loud quasars' | abs_len= 1114
+[15:35:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:50] select | verify relaxed 18/20
+[15:35:50] verify | func= Compares | rank= 3 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[15:35:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:53] select | verify relaxed 19/20
+[15:35:53] verify | func= Compares | rank= 5 | pid= astro-ph/0104310 | title_snip='The environments of radio-loud quasars' | abs_len= 815
+[15:35:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:35:55] select | verify relaxed 20/20
+[15:35:55] verify | func= Compares | rank= 9 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[15:35:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the use of the empirical infrared galaxy number count model of Takeuchi et al. (2001) compare to the observed source counts in terms of evaluating the contribution of star forming galaxies to the faint radio galaxies?
+- WINNER: astro-ph/0101555 | Impact of Future Submillimeter and Millimeter Large Facilities on the
+  Studies of Galaxy Formation and Evolution
+- QUOTE : compare the observed 1.4, 5, and 8-GHz source counts with our model counts
+- WHY   : sufficient
+- ANSWER: The empirical infrared galaxy number count model of Takeuchi et al. (2001) is compared to the observed 1.4, 5, and 8-GHz source counts to evaluate the contribution of star forming galaxies to the faint radio galaxies.
+[15:36:09] main | running function= Uses
+[15:36:09] select | function= Uses | candidates_in= 20
+[15:36:09] select | core_terms= ['galaxies', 'Takeuchi et al. (2001) model', 'infrared galaxy number count', 'star forming galaxies', 'faint radio galaxies']
+[15:36:09] select | no cosine prune; kept=20/20
+[15:36:09] select | pool_size= 20 | ranks= [0, 2, 13, 4, 12, 16, 1, 6, 8, 11, 7, 10, 15, 17, 19, 14, 3, 9, 5, 18] | pids= ['astro-ph/0101555', 'astro-ph/0101158', 'astro-ph/0103167', 'astro-ph/0101095', 'astro-ph/0102397', 'astro-ph/0102323', 'astro-ph/0103078', 'astro-ph/0102297', 'astro-ph/0101445', 'astro-ph/0104284', 'astro-ph/0104425', 'astro-ph/0101137', 'astro-ph/0103238', 'astro-ph/0104183', 'astro-ph/0102333', 'astro-ph/0103434', 'astro-ph/0102206', 'astro-ph/0102276', 'astro-ph/0104310', 'astro-ph/0103394']
+[15:36:09] select | verify strict 1/20
+[15:36:09] verify | func= Uses | rank= 0 | pid= astro-ph/0101555 | title_snip='Impact of Future Submillimeter and Millimeter Large Facilities on the
+…' | abs_len= 1462
+[15:36:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[15:36:13] select | verify strict 2/20
+[15:36:13] verify | func= Uses | rank= 2 | pid= astro-ph/0101158 | title_snip='The Far-Infrared/Radio Correlation in Nearby Abell Clusters' | abs_len= 1764
+[15:36:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:36:16] select | verify strict 3/20
+[15:36:16] verify | func= Uses | rank= 13 | pid= astro-ph/0103167 | title_snip='Recent star formation in very luminous infrared galaxies' | abs_len= 822
+[15:36:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:18] select | verify strict 4/20
+[15:36:18] verify | func= Uses | rank= 4 | pid= astro-ph/0101095 | title_snip='Faint field galaxies: an explanation of the faint blue excess using
+  …' | abs_len= 1461
+[15:36:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:21] select | verify strict 5/20
+[15:36:21] verify | func= Uses | rank= 12 | pid= astro-ph/0102397 | title_snip='A Near-Infrared Stellar Census of Blue Compact Dwarf Galaxies: The
+  W…' | abs_len= 1230
+[15:36:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:23] select | verify strict 6/20
+[15:36:23] verify | func= Uses | rank= 16 | pid= astro-ph/0102323 | title_snip='NICMOS observations of high redshift radio galaxies: witnessing the
+  …' | abs_len= 1641
+[15:36:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:26] select | verify strict 7/20
+[15:36:26] verify | func= Uses | rank= 1 | pid= astro-ph/0103078 | title_snip='The Cosmic Infrared Background at 1.25 microns and 2.2 microns using
+ …' | abs_len= 865
+[15:36:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:36:29] select | verify strict 8/20
+[15:36:29] verify | func= Uses | rank= 6 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[15:36:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:31] select | verify strict 9/20
+[15:36:31] verify | func= Uses | rank= 8 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[15:36:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:34] select | verify strict 10/20
+[15:36:34] verify | func= Uses | rank= 11 | pid= astro-ph/0104284 | title_snip='Deep near-IR observations of the Chandra Deep Field and of the HDF-Sou…' | abs_len= 1213
+[15:36:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:36] select | verify strict 11/20
+[15:36:36] verify | func= Uses | rank= 7 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[15:36:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:39] select | verify strict 12/20
+[15:36:39] verify | func= Uses | rank= 10 | pid= astro-ph/0101137 | title_snip='Millimeter observations of radio-loud active galaxies' | abs_len= 641
+[15:36:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:41] select | verify strict 13/20
+[15:36:41] verify | func= Uses | rank= 15 | pid= astro-ph/0103238 | title_snip='The Host Galaxies of Radio-Loud and Radio-Quiet Quasars' | abs_len= 1554
+[15:36:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:44] select | verify strict 14/20
+[15:36:44] verify | func= Uses | rank= 17 | pid= astro-ph/0104183 | title_snip='On The Parent Population of Radio Galaxies and the FRI - FRII Dichotom…' | abs_len= 1197
+[15:36:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:46] select | verify strict 15/20
+[15:36:46] verify | func= Uses | rank= 19 | pid= astro-ph/0102333 | title_snip='Dust emission from 3C radio galaxies and quasars: New ISO observations…' | abs_len= 1678
+[15:36:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:49] select | verify strict 16/20
+[15:36:49] verify | func= Uses | rank= 14 | pid= astro-ph/0103434 | title_snip='FIRBACK: III. Catalog, Source counts, and cosmological implications of…' | abs_len= 1163
+[15:36:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:36:52] select | verify strict 17/20
+[15:36:52] verify | func= Uses | rank= 3 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[15:36:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:55] select | verify strict 18/20
+[15:36:55] verify | func= Uses | rank= 9 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[15:36:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:36:57] select | verify strict 19/20
+[15:36:57] verify | func= Uses | rank= 5 | pid= astro-ph/0104310 | title_snip='The environments of radio-loud quasars' | abs_len= 815
+[15:37:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:37:00] select | verify strict 20/20
+[15:37:00] verify | func= Uses | rank= 18 | pid= astro-ph/0103394 | title_snip='An X-ray selected sample of radio-loud quasars' | abs_len= 1114
+[15:37:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the use of the empirical infrared galaxy number count model of Takeuchi et al. (2001) compare to the observed source counts in terms of evaluating the contribution of star forming galaxies to the faint radio galaxies?
+- WINNER: astro-ph/0101555 | Impact of Future Submillimeter and Millimeter Large Facilities on the
+  Studies of Galaxy Formation and Evolution
+- QUOTE : using the empirical infrared galaxy number count model of Takeuchi et al. (2001)
+- WHY   : sufficient
+- ANSWER: The empirical infrared galaxy number count model of Takeuchi et al. (2001) is used to calculate source counts and evaluate the contribution of star forming galaxies to the faint radio galaxies, in comparison to observed source counts.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,405 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly requests a comparison with prior work and asks about suggested future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.78 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  6.72it/s]
+Reading arXiv_src_0101_001.jsonl: 65it [00:00, 315.74it/s]
+Reading arXiv_src_0101_001.jsonl: 218it [00:00, 809.22it/s]
+Reading arXiv_src_0101_001.jsonl: 326it [00:00, 908.25it/s]
+Reading arXiv_src_0101_001.jsonl: 423it [00:00, 793.55it/s]
+Reading arXiv_src_0101_001.jsonl: 509it [00:00, 630.54it/s]
+Reading arXiv_src_0101_001.jsonl: 580it [00:00, 607.45it/s]
+Reading arXiv_src_0101_001.jsonl: 680it [00:01, 704.41it/s]
+Reading arXiv_src_0101_001.jsonl: 780it [00:01, 781.12it/s]
+Reading arXiv_src_0101_001.jsonl: 889it [00:01, 864.69it/s]
+Reading arXiv_src_0101_001.jsonl: 999it [00:01, 928.87it/s]
+Reading arXiv_src_0101_001.jsonl: 1106it [00:01, 968.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1237it [00:01, 1066.43it/s]
+Reading arXiv_src_0101_001.jsonl: 1347it [00:01, 1059.45it/s]
+Reading arXiv_src_0101_001.jsonl: 1480it [00:01, 1137.28it/s]
+Reading arXiv_src_0101_001.jsonl: 1613it [00:01, 1192.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1740it [00:01, 1212.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1863it [00:02, 1183.13it/s]
+Reading arXiv_src_0101_001.jsonl: 2038it [00:02, 1346.37it/s]
+Reading arXiv_src_0101_001.jsonl: 2196it [00:02, 1414.74it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 995.05it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  5.11it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 561.01it/s]
+Reading arXiv_src_0102_001.jsonl: 272it [00:00, 865.42it/s]
+Reading arXiv_src_0102_001.jsonl: 377it [00:00, 741.47it/s]
+Reading arXiv_src_0102_001.jsonl: 465it [00:00, 461.19it/s]
+Reading arXiv_src_0102_001.jsonl: 531it [00:01, 491.76it/s]
+Reading arXiv_src_0102_001.jsonl: 595it [00:01, 521.58it/s]
+Reading arXiv_src_0102_001.jsonl: 681it [00:01, 599.91it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 731.71it/s]
+Reading arXiv_src_0102_001.jsonl: 913it [00:01, 851.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1025it [00:01, 922.62it/s]
+Reading arXiv_src_0102_001.jsonl: 1144it [00:01, 996.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1253it [00:01, 1022.14it/s]
+Reading arXiv_src_0102_001.jsonl: 1397it [00:01, 1142.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1527it [00:01, 1186.45it/s]
+Reading arXiv_src_0102_001.jsonl: 1651it [00:02, 1197.89it/s]
+Reading arXiv_src_0102_001.jsonl: 1801it [00:02, 1285.19it/s]
+Reading arXiv_src_0102_001.jsonl: 1948it [00:02, 1339.54it/s]
+Reading arXiv_src_0102_001.jsonl: 2093it [00:02, 1371.19it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 916.24it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1379.93it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1516.93it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1122.32it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 740.36it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 789.15it/s]
+Reading arXiv_src_0103_001.jsonl: 764it [00:00, 809.65it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 901.47it/s]
+Reading arXiv_src_0103_001.jsonl: 990it [00:01, 948.72it/s]
+Reading arXiv_src_0103_001.jsonl: 1094it [00:01, 973.69it/s]
+Reading arXiv_src_0103_001.jsonl: 1219it [00:01, 1049.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1329it [00:01, 1050.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1475it [00:01, 1167.31it/s]
+Reading arXiv_src_0103_001.jsonl: 1612it [00:01, 1224.58it/s]
+Reading arXiv_src_0103_001.jsonl: 1755it [00:01, 1283.69it/s]
+Reading arXiv_src_0103_001.jsonl: 1898it [00:01, 1324.41it/s]
+Reading arXiv_src_0103_001.jsonl: 2041it [00:01, 1351.74it/s]
+Reading arXiv_src_0103_001.jsonl: 2183it [00:01, 1369.85it/s]
+Reading arXiv_src_0103_001.jsonl: 2340it [00:02, 1429.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1146.67it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 151it [00:00, 1507.55it/s]
+Reading arXiv_src_0104_001.jsonl: 311it [00:00, 1559.39it/s]
+Reading arXiv_src_0104_001.jsonl: 467it [00:00, 720.09it/s] 
+Reading arXiv_src_0104_001.jsonl: 572it [00:00, 484.22it/s]
+Reading arXiv_src_0104_001.jsonl: 661it [00:01, 551.80it/s]
+Reading arXiv_src_0104_001.jsonl: 755it [00:01, 626.14it/s]
+Reading arXiv_src_0104_001.jsonl: 851it [00:01, 697.59it/s]
+Reading arXiv_src_0104_001.jsonl: 961it [00:01, 790.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1084it [00:01, 901.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1191it [00:01, 943.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1308it [00:01, 996.36it/s]
+Reading arXiv_src_0104_001.jsonl: 1438it [00:01, 1080.02it/s]
+Reading arXiv_src_0104_001.jsonl: 1577it [00:01, 1162.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1702it [00:01, 1181.60it/s]
+Reading arXiv_src_0104_001.jsonl: 1850it [00:02, 1266.68it/s]
+Reading arXiv_src_0104_001.jsonl: 2009it [00:02, 1355.52it/s]
+Reading arXiv_src_0104_001.jsonl: 2147it [00:02, 926.51it/s] 
+Reading arXiv_src_0104_001.jsonl: 2302it [00:02, 1065.07it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 919.15it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the findings of this study compare to previous work and what future research directions do they suggest?
+[debug] classifier labels: ['Compares', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+1     1  0.915934  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+2     2  0.888820  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+3     3  0.873757  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+4     4  0.834667  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+5     5  0.641102  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+6     6  0.632530  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+7     7  0.563487  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+8     8  0.552227  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+9     9  0.384825  ...  2025-09-21T11:20:33.056176  Compares, FutureWork
+
+[10 rows x 12 columns]
+[13:20:38] main | args: Namespace(max_check=20, debug=True)
+[13:20:38] read_last_jsonl | path= classified_outputs.jsonl
+[13:20:38] read_last_jsonl | total_lines= 1
+[13:20:38] main | query='How do the findings of this study compare to previous work and what future research directions do they suggest?' | funcs=['Compares', 'FutureWork']
+[13:20:43] main | core_terms= ['previous work', 'future research directions']
+[13:20:43] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:20:43] load_topk_jsonl | rows= 20
+[13:20:43] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102276 title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' abs_len= 1783
+[13:20:43] main | running function= Compares
+[13:20:43] select | function= Compares | candidates_in= 20
+[13:20:43] select | core_terms= ['previous work', 'future research directions']
+[13:20:43] select | no cosine prune; kept=20/20
+[13:20:43] select | pool_size= 20 | ranks= [9, 3, 4, 7, 10, 12, 14, 15, 18, 0, 1, 2, 5, 6, 8, 11, 13, 16, 17, 19] | pids= ['quant-ph/0102110', 'cond-mat/0103166', 'hep-ex/0103048', 'astro-ph/0104063', 'astro-ph/0101075', 'hep-ph/0104177', 'hep-ex/0101022', 'hep-ph/0102103', 'nucl-th/0101012', 'astro-ph/0102276', 'hep-ph/0102015', 'hep-ph/0103296', 'hep-ph/0101295', 'hep-ph/0102068', 'hep-ph/0102159', 'gr-qc/0104063', 'astro-ph/0103028', 'hep-ph/0103002', 'nucl-th/0101047', 'hep-ph/0101057']
+[13:20:43] select | verify strict 1/20
+[13:20:43] verify | func= Compares | rank= 9 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[13:20:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:20:46] select | verify strict 2/20
+[13:20:46] verify | func= Compares | rank= 3 | pid= cond-mat/0103166 | title_snip='Comparison between Theory and Some Recent Experiments on Quantum
+  Dep…' | abs_len= 312
+[13:20:49] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[13:20:49] select | verify strict 3/20
+[13:20:49] verify | func= Compares | rank= 4 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[13:20:52] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:20:52] select | verify strict 4/20
+[13:20:52] verify | func= Compares | rank= 7 | pid= astro-ph/0104063 | title_snip='A Study of Wavelength Calibration of NEWSIPS High-Dispersion Spectra' | abs_len= 1843
+[13:20:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:20:56] select | verify strict 5/20
+[13:20:56] verify | func= Compares | rank= 10 | pid= astro-ph/0101075 | title_snip='New Results from a Survey of Galactic Outflows in Nearby Active Galact…' | abs_len= 627
+[13:20:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:20:59] select | verify strict 6/20
+[13:20:59] verify | func= Compares | rank= 12 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[13:21:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:21:01] select | verify strict 7/20
+[13:21:01] verify | func= Compares | rank= 14 | pid= hep-ex/0101022 | title_snip='New results on alpha_s and optimized scales' | abs_len= 290
+[13:21:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:21:05] select | verify strict 8/20
+[13:21:05] verify | func= Compares | rank= 15 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[13:21:08] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:21:08] select | verify strict 9/20
+[13:21:08] verify | func= Compares | rank= 18 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[13:21:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:21:11] select | verify strict 10/20
+[13:21:11] verify | func= Compares | rank= 0 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:21:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:21:14] select | verify strict 11/20
+[13:21:14] verify | func= Compares | rank= 1 | pid= hep-ph/0102015 | title_snip='Future Measurements of Transversity' | abs_len= 74
+[13:21:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:21:17] select | verify strict 12/20
+[13:21:17] verify | func= Compares | rank= 2 | pid= hep-ph/0103296 | title_snip='Summary Talk: First Workshop on Forward Physics and Luminosity
+  Deter…' | abs_len= 1168
+[13:21:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:21:20] select | verify strict 13/20
+[13:21:20] verify | func= Compares | rank= 5 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[13:21:23] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[13:21:23] select | verify strict 14/20
+[13:21:23] verify | func= Compares | rank= 6 | pid= hep-ph/0102068 | title_snip='Phenomenological Issues in the Determination of Delta Gamma_D' | abs_len= 623
+[13:21:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:21:26] select | verify strict 15/20
+[13:21:26] verify | func= Compares | rank= 8 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[13:21:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:21:29] select | verify strict 16/20
+[13:21:29] verify | func= Compares | rank= 11 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[13:21:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:21:32] select | verify strict 17/20
+[13:21:32] verify | func= Compares | rank= 13 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[13:21:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:21:35] select | verify strict 18/20
+[13:21:35] verify | func= Compares | rank= 16 | pid= hep-ph/0103002 | title_snip='Next-to-leading resummed coefficient function for the shape function' | abs_len= 339
+[13:21:38] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:21:38] select | verify strict 19/20
+[13:21:38] verify | func= Compares | rank= 17 | pid= nucl-th/0101047 | title_snip='Current Status of Quark Gluon Plasma Signals' | abs_len= 734
+[13:21:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:21:41] select | verify strict 20/20
+[13:21:41] verify | func= Compares | rank= 19 | pid= hep-ph/0101057 | title_snip='Old and new parton distribution and fragmentation functions' | abs_len= 427
+[13:21:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the findings of this study compare to previous work and what future research directions do they suggest?
+- WINNER: quant-ph/0102110 | Addendum to "Nonlinear quantum evolution with maximal entropy
+  production"
+- QUOTE : previous work with related results
+- WHY   : sufficient
+- ANSWER: The study's findings are compared to previous work with related results, which had not been thoroughly examined before. The comparison suggests future research directions that build upon the related results from the previous work (quant-ph/0102110).
+[13:21:47] main | running function= FutureWork
+[13:21:47] select | function= FutureWork | candidates_in= 20
+[13:21:47] select | core_terms= ['previous work', 'future research directions']
+[13:21:47] select | no cosine prune; kept=20/20
+[13:21:47] select | pool_size= 20 | ranks= [9, 5, 6, 0, 1, 2, 3, 4, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] | pids= ['quant-ph/0102110', 'hep-ph/0101295', 'hep-ph/0102068', 'astro-ph/0102276', 'hep-ph/0102015', 'hep-ph/0103296', 'cond-mat/0103166', 'hep-ex/0103048', 'astro-ph/0104063', 'hep-ph/0102159', 'astro-ph/0101075', 'gr-qc/0104063', 'hep-ph/0104177', 'astro-ph/0103028', 'hep-ex/0101022', 'hep-ph/0102103', 'hep-ph/0103002', 'nucl-th/0101047', 'nucl-th/0101012', 'hep-ph/0101057']
+[13:21:47] select | verify strict 1/20
+[13:21:47] verify | func= FutureWork | rank= 9 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[13:21:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:21:50] select | verify strict 2/20
+[13:21:50] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[13:21:53] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:21:53] select | verify strict 3/20
+[13:21:53] verify | func= FutureWork | rank= 6 | pid= hep-ph/0102068 | title_snip='Phenomenological Issues in the Determination of Delta Gamma_D' | abs_len= 623
+[13:21:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[13:21:56] select | verify strict 4/20
+[13:21:56] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:21:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:21:59] select | verify strict 5/20
+[13:21:59] verify | func= FutureWork | rank= 1 | pid= hep-ph/0102015 | title_snip='Future Measurements of Transversity' | abs_len= 74
+[13:22:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:02] select | verify strict 6/20
+[13:22:02] verify | func= FutureWork | rank= 2 | pid= hep-ph/0103296 | title_snip='Summary Talk: First Workshop on Forward Physics and Luminosity
+  Deter…' | abs_len= 1168
+[13:22:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:04] select | verify strict 7/20
+[13:22:04] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103166 | title_snip='Comparison between Theory and Some Recent Experiments on Quantum
+  Dep…' | abs_len= 312
+[13:22:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:07] select | verify strict 8/20
+[13:22:07] verify | func= FutureWork | rank= 4 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[13:22:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:10] select | verify strict 9/20
+[13:22:10] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104063 | title_snip='A Study of Wavelength Calibration of NEWSIPS High-Dispersion Spectra' | abs_len= 1843
+[13:22:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:12] select | verify strict 10/20
+[13:22:12] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[13:22:15] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:15] select | verify strict 11/20
+[13:22:15] verify | func= FutureWork | rank= 10 | pid= astro-ph/0101075 | title_snip='New Results from a Survey of Galactic Outflows in Nearby Active Galact…' | abs_len= 627
+[13:22:18] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:22:18] select | verify strict 12/20
+[13:22:18] verify | func= FutureWork | rank= 11 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[13:22:21] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:21] select | verify strict 13/20
+[13:22:21] verify | func= FutureWork | rank= 12 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[13:22:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:23] select | verify strict 14/20
+[13:22:23] verify | func= FutureWork | rank= 13 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[13:22:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:26] select | verify strict 15/20
+[13:22:26] verify | func= FutureWork | rank= 14 | pid= hep-ex/0101022 | title_snip='New results on alpha_s and optimized scales' | abs_len= 290
+[13:22:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:29] select | verify strict 16/20
+[13:22:29] verify | func= FutureWork | rank= 15 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[13:22:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:32] select | verify strict 17/20
+[13:22:32] verify | func= FutureWork | rank= 16 | pid= hep-ph/0103002 | title_snip='Next-to-leading resummed coefficient function for the shape function' | abs_len= 339
+[13:22:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:22:35] select | verify strict 18/20
+[13:22:35] verify | func= FutureWork | rank= 17 | pid= nucl-th/0101047 | title_snip='Current Status of Quark Gluon Plasma Signals' | abs_len= 734
+[13:22:38] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:38] select | verify strict 19/20
+[13:22:38] verify | func= FutureWork | rank= 18 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[13:22:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:22:41] select | verify strict 20/20
+[13:22:41] verify | func= FutureWork | rank= 19 | pid= hep-ph/0101057 | title_snip='Old and new parton distribution and fragmentation functions' | abs_len= 427
+[13:22:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:22:44] select | strict pass found 0 winners → trying relaxed
+[13:22:44] select | verify relaxed 1/20
+[13:22:44] verify | func= FutureWork | rank= 9 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[13:22:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:22:47] select | verify relaxed 2/20
+[13:22:47] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[13:22:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[13:22:50] select | verify relaxed 3/20
+[13:22:50] verify | func= FutureWork | rank= 6 | pid= hep-ph/0102068 | title_snip='Phenomenological Issues in the Determination of Delta Gamma_D' | abs_len= 623
+[13:22:53] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[13:22:53] select | verify relaxed 4/20
+[13:22:53] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:22:55] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:22:55] select | verify relaxed 5/20
+[13:22:55] verify | func= FutureWork | rank= 1 | pid= hep-ph/0102015 | title_snip='Future Measurements of Transversity' | abs_len= 74
+[13:22:58] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:22:58] select | verify relaxed 6/20
+[13:22:58] verify | func= FutureWork | rank= 2 | pid= hep-ph/0103296 | title_snip='Summary Talk: First Workshop on Forward Physics and Luminosity
+  Deter…' | abs_len= 1168
+[13:23:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:23:01] select | verify relaxed 7/20
+[13:23:01] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103166 | title_snip='Comparison between Theory and Some Recent Experiments on Quantum
+  Dep…' | abs_len= 312
+[13:23:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:23:04] select | verify relaxed 8/20
+[13:23:04] verify | func= FutureWork | rank= 4 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[13:23:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:23:08] select | verify relaxed 9/20
+[13:23:08] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104063 | title_snip='A Study of Wavelength Calibration of NEWSIPS High-Dispersion Spectra' | abs_len= 1843
+[13:23:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:23:10] select | verify relaxed 10/20
+[13:23:10] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[13:23:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:23:13] select | verify relaxed 11/20
+[13:23:13] verify | func= FutureWork | rank= 10 | pid= astro-ph/0101075 | title_snip='New Results from a Survey of Galactic Outflows in Nearby Active Galact…' | abs_len= 627
+[13:23:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:23:16] select | verify relaxed 12/20
+[13:23:16] verify | func= FutureWork | rank= 11 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[13:23:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:23:20] select | verify relaxed 13/20
+[13:23:20] verify | func= FutureWork | rank= 12 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[13:23:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:23:22] select | verify relaxed 14/20
+[13:23:22] verify | func= FutureWork | rank= 13 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[13:23:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:23:25] select | verify relaxed 15/20
+[13:23:25] verify | func= FutureWork | rank= 14 | pid= hep-ex/0101022 | title_snip='New results on alpha_s and optimized scales' | abs_len= 290
+[13:23:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:23:28] select | verify relaxed 16/20
+[13:23:28] verify | func= FutureWork | rank= 15 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[13:23:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:23:31] select | verify relaxed 17/20
+[13:23:31] verify | func= FutureWork | rank= 16 | pid= hep-ph/0103002 | title_snip='Next-to-leading resummed coefficient function for the shape function' | abs_len= 339
+[13:23:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:23:34] select | verify relaxed 18/20
+[13:23:34] verify | func= FutureWork | rank= 17 | pid= nucl-th/0101047 | title_snip='Current Status of Quark Gluon Plasma Signals' | abs_len= 734
+[13:23:37] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:23:37] select | verify relaxed 19/20
+[13:23:37] verify | func= FutureWork | rank= 18 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[13:23:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[13:23:40] select | verify relaxed 20/20
+[13:23:40] verify | func= FutureWork | rank= 19 | pid= hep-ph/0101057 | title_snip='Old and new parton distribution and fragmentation functions' | abs_len= 427
+[13:23:43] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the findings of this study compare to previous work and what future research directions do they suggest?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

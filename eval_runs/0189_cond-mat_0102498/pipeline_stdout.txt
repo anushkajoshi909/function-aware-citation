@@ -1,0 +1,401 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "Motivation"
+  ],
+  "justification": "The query seeks the specific method employed (usage) and the problem the work aims to address (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.01 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.52it/s]
+Reading arXiv_src_0101_001.jsonl: 139it [00:00, 806.80it/s]
+Reading arXiv_src_0101_001.jsonl: 287it [00:00, 1108.63it/s]
+Reading arXiv_src_0101_001.jsonl: 399it [00:00, 963.79it/s] 
+Reading arXiv_src_0101_001.jsonl: 498it [00:00, 710.61it/s]
+Reading arXiv_src_0101_001.jsonl: 579it [00:00, 657.76it/s]
+Reading arXiv_src_0101_001.jsonl: 686it [00:00, 757.18it/s]
+Reading arXiv_src_0101_001.jsonl: 788it [00:01, 824.72it/s]
+Reading arXiv_src_0101_001.jsonl: 903it [00:01, 910.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 932.85it/s]
+Reading arXiv_src_0101_001.jsonl: 1130it [00:01, 1028.19it/s]
+Reading arXiv_src_0101_001.jsonl: 1262it [00:01, 1111.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1377it [00:01, 1102.86it/s]
+Reading arXiv_src_0101_001.jsonl: 1510it [00:01, 1167.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1651it [00:01, 1236.64it/s]
+Reading arXiv_src_0101_001.jsonl: 1777it [00:01, 1206.23it/s]
+Reading arXiv_src_0101_001.jsonl: 1927it [00:01, 1289.52it/s]
+Reading arXiv_src_0101_001.jsonl: 2104it [00:02, 1428.65it/s]
+Reading arXiv_src_0101_001.jsonl: 2261it [00:02, 1467.83it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1071.04it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1329.15it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1368.22it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 848.75it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 530.69it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 561.97it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:00, 623.10it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 744.32it/s]
+Reading arXiv_src_0102_001.jsonl: 919it [00:01, 875.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 933.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1150it [00:01, 1006.77it/s]
+Reading arXiv_src_0102_001.jsonl: 1259it [00:01, 1029.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1406it [00:01, 1154.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1198.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1232.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1824it [00:01, 1310.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1371.39it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1401.82it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1020.16it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1371.01it/s]
+Reading arXiv_src_0103_001.jsonl: 302it [00:00, 1527.87it/s]
+Reading arXiv_src_0103_001.jsonl: 455it [00:00, 1122.93it/s]
+Reading arXiv_src_0103_001.jsonl: 578it [00:00, 733.44it/s] 
+Reading arXiv_src_0103_001.jsonl: 677it [00:00, 788.09it/s]
+Reading arXiv_src_0103_001.jsonl: 771it [00:00, 817.57it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 890.16it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 952.92it/s]
+Reading arXiv_src_0103_001.jsonl: 1105it [00:01, 984.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1223it [00:01, 1036.19it/s]
+Reading arXiv_src_0103_001.jsonl: 1331it [00:01, 1045.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1476it [00:01, 1161.80it/s]
+Reading arXiv_src_0103_001.jsonl: 1612it [00:01, 1218.58it/s]
+Reading arXiv_src_0103_001.jsonl: 1758it [00:01, 1288.40it/s]
+Reading arXiv_src_0103_001.jsonl: 1903it [00:01, 1335.95it/s]
+Reading arXiv_src_0103_001.jsonl: 2044it [00:01, 1357.02it/s]
+Reading arXiv_src_0103_001.jsonl: 2185it [00:01, 1369.74it/s]
+Reading arXiv_src_0103_001.jsonl: 2342it [00:02, 1429.17it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1144.41it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 149it [00:00, 1485.41it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1549.96it/s]
+Reading arXiv_src_0104_001.jsonl: 464it [00:00, 1022.12it/s]
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 554.67it/s] 
+Reading arXiv_src_0104_001.jsonl: 689it [00:00, 648.22it/s]
+Reading arXiv_src_0104_001.jsonl: 781it [00:01, 702.15it/s]
+Reading arXiv_src_0104_001.jsonl: 885it [00:01, 775.83it/s]
+Reading arXiv_src_0104_001.jsonl: 1004it [00:01, 876.41it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 943.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1244it [00:01, 1017.05it/s]
+Reading arXiv_src_0104_001.jsonl: 1355it [00:01, 1018.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1478it [00:01, 1076.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1619it [00:01, 1169.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1751it [00:01, 1210.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1898it [00:01, 1286.25it/s]
+Reading arXiv_src_0104_001.jsonl: 2052it [00:02, 1360.76it/s]
+Reading arXiv_src_0104_001.jsonl: 2190it [00:02, 950.65it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 975.09it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What method does the current work use to investigate the microstructure of the MgB2 superconductor and what problem does it aim to solve by doing so?
+[debug] classifier labels: ['Uses', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+1     1  0.909344  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+2     2  0.904320  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+3     3  0.854342  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+4     4  0.779456  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+5     5  0.755723  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+6     6  0.633960  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+7     7  0.620241  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+8     8  0.596377  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+9     9  0.596230  ...  2025-09-21T22:39:21.553827     Uses, Motivation
+
+[10 rows x 12 columns]
+[00:39:29] main | args: Namespace(max_check=20, debug=True)
+[00:39:29] read_last_jsonl | path= classified_outputs.jsonl
+[00:39:29] read_last_jsonl | total_lines= 1
+[00:39:29] main | query='What method does the current work use to investigate the microstructure of the MgB2 superconductor and what problem does it aim to solve by doing so?' | funcs=['Uses', 'Motivation']
+[00:39:36] main | core_terms= ['MgB2 superconductor', 'microstructure']
+[00:39:36] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:39:36] load_topk_jsonl | rows= 20
+[00:39:36] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0102312 title_snip='Scanning Tunneling Spectroscopy in MgB2' abs_len= 664
+[00:39:36] main | running function= Uses
+[00:39:36] select | function= Uses | candidates_in= 20
+[00:39:36] select | core_terms= ['MgB2 superconductor', 'microstructure']
+[00:39:36] select | no cosine prune; kept=20/20
+[00:39:36] select | pool_size= 20 | ranks= [4, 2, 3, 5, 6, 8, 9, 10, 13, 15, 16, 18, 19, 0, 1, 7, 11, 12, 14, 17] | pids= ['cond-mat/0102498', 'cond-mat/0102507', 'cond-mat/0103157', 'cond-mat/0103431', 'cond-mat/0103006', 'cond-mat/0102289', 'cond-mat/0102242', 'cond-mat/0102264', 'cond-mat/0104489', 'cond-mat/0104253', 'cond-mat/0104216', 'cond-mat/0102290', 'cond-mat/0102522', 'cond-mat/0102312', 'cond-mat/0103390', 'cond-mat/0103154', 'cond-mat/0102432', 'cond-mat/0103469', 'cond-mat/0103164', 'cond-mat/0103536']
+[00:39:36] select | verify strict 1/20
+[00:39:36] verify | func= Uses | rank= 4 | pid= cond-mat/0102498 | title_snip='Microstructure of the highly dense MgB2 Superconductor by transmission…' | abs_len= 1004
+[00:39:39] verify | result supports= True fit= 0.80 top= 1.00 invalid= — cue_hint= False
+[00:39:39] select | verify strict 2/20
+[00:39:39] verify | func= Uses | rank= 2 | pid= cond-mat/0102507 | title_snip='Compressibility of the MgB2 Superconductor' | abs_len= 966
+[00:39:43] verify | result supports= False fit= 0.00 top= 1.00 invalid= missing_core_in_quote cue_hint= False
+[00:39:43] select | verify strict 3/20
+[00:39:43] verify | func= Uses | rank= 3 | pid= cond-mat/0103157 | title_snip='Electronic structure of superconducting MgB2 and related binary and
+  …' | abs_len= 1015
+[00:39:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[00:39:47] select | verify strict 4/20
+[00:39:47] verify | func= Uses | rank= 5 | pid= cond-mat/0103431 | title_snip='Two-Band-Type Superconducting Instability in MgB2' | abs_len= 1160
+[00:39:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:39:50] select | verify strict 5/20
+[00:39:50] verify | func= Uses | rank= 6 | pid= cond-mat/0103006 | title_snip='Superconductivity Driven by the Interband Coulomb Interaction and
+  Im…' | abs_len= 1033
+[00:39:54] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:39:54] select | verify strict 6/20
+[00:39:54] verify | func= Uses | rank= 8 | pid= cond-mat/0102289 | title_snip='Superconductivity in Dense $MgB_2$ Wires' | abs_len= 897
+[00:39:57] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:39:57] select | verify strict 7/20
+[00:39:57] verify | func= Uses | rank= 9 | pid= cond-mat/0102242 | title_snip='Tunneling spectroscopy in small grains of superconducting MgB2' | abs_len= 430
+[00:40:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:40:01] select | verify strict 8/20
+[00:40:01] verify | func= Uses | rank= 10 | pid= cond-mat/0102264 | title_snip='High Pressure Study on MgB2' | abs_len= 649
+[00:40:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:40:04] select | verify strict 9/20
+[00:40:04] verify | func= Uses | rank= 13 | pid= cond-mat/0104489 | title_snip='Direct evidence for a multiple superconducting gap in MgB2 from
+  high…' | abs_len= 567
+[00:40:08] verify | result supports= False fit= 0.00 top= 1.00 invalid= missing_core_in_quote cue_hint= True
+[00:40:08] select | verify strict 10/20
+[00:40:08] verify | func= Uses | rank= 15 | pid= cond-mat/0104253 | title_snip='Detailed electronic structure studies on superconducting MgB$_2$ and
+ …' | abs_len= 1809
+[00:40:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:40:11] select | verify strict 11/20
+[00:40:11] verify | func= Uses | rank= 16 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[00:40:15] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[00:40:15] select | verify strict 12/20
+[00:40:15] verify | func= Uses | rank= 18 | pid= cond-mat/0102290 | title_snip='Nature of bonding and electronic structure in MgB2, a boron
+  intercal…' | abs_len= 886
+[00:40:19] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:40:19] select | verify strict 13/20
+[00:40:19] verify | func= Uses | rank= 19 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[00:40:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:40:22] select | verify strict 14/20
+[00:40:22] verify | func= Uses | rank= 0 | pid= cond-mat/0102312 | title_snip='Scanning Tunneling Spectroscopy in MgB2' | abs_len= 664
+[00:40:25] verify | result supports= False fit= 0.00 top= 1.00 invalid= missing_core_in_quote cue_hint= False
+[00:40:25] select | verify strict 15/20
+[00:40:25] verify | func= Uses | rank= 1 | pid= cond-mat/0103390 | title_snip='Synthesis and Processing of $MgB_2$ powders and wires' | abs_len= 825
+[00:40:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:40:29] select | verify strict 16/20
+[00:40:29] verify | func= Uses | rank= 7 | pid= cond-mat/0103154 | title_snip='The upper critical field problem in MgB2' | abs_len= 667
+[00:40:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:40:33] select | verify strict 17/20
+[00:40:33] verify | func= Uses | rank= 11 | pid= cond-mat/0102432 | title_snip='Heat Capacity of MgB_2: Evidence for Moderately Strong Coupling Behavi…' | abs_len= 600
+[00:40:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:40:36] select | verify strict 18/20
+[00:40:36] verify | func= Uses | rank= 12 | pid= cond-mat/0103469 | title_snip='Giant anharmonicity and non-linear electron-phonon coupling in
+  MgB$_…' | abs_len= 736
+[00:40:39] verify | result supports= False fit= 0.00 top= 1.00 invalid= missing_core_in_quote cue_hint= False
+[00:40:39] select | verify strict 19/20
+[00:40:39] verify | func= Uses | rank= 14 | pid= cond-mat/0103164 | title_snip='Optical measurements of the superconducting gap in MgB2' | abs_len= 417
+[00:40:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:40:43] select | verify strict 20/20
+[00:40:43] verify | func= Uses | rank= 17 | pid= cond-mat/0103536 | title_snip='Two-band model and MgB$_2$ superconductivity' | abs_len= 277
+[00:40:46] verify | result supports= False fit= 0.00 top= 1.00 invalid= missing_core_in_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : What method does the current work use to investigate the microstructure of the MgB2 superconductor and what problem does it aim to solve by doing so?
+- WINNER: cond-mat/0102498 | Microstructure of the highly dense MgB2 Superconductor by transmission
+  electron microscope
+- QUOTE : MgB2 superconductor by transmission electron microscope
+- WHY   : sufficient
+- ANSWER: The current work uses a high-resolution transmission electron microscope (HRTEM) to investigate the microstructure of the MgB2 superconductor. This method aims to solve the problem of understanding the material's density and porosity by examining its microstructure at high resolution (cond-mat/0102498).
+[00:40:50] main | running function= Motivation
+[00:40:50] select | function= Motivation | candidates_in= 20
+[00:40:50] select | core_terms= ['MgB2 superconductor', 'microstructure']
+[00:40:50] select | no cosine prune; kept=20/20
+[00:40:50] select | pool_size= 20 | ranks= [4, 2, 0, 5, 7, 9, 13, 14, 15, 1, 3, 6, 8, 10, 11, 12, 16, 17, 18, 19] | pids= ['cond-mat/0102498', 'cond-mat/0102507', 'cond-mat/0102312', 'cond-mat/0103431', 'cond-mat/0103154', 'cond-mat/0102242', 'cond-mat/0104489', 'cond-mat/0103164', 'cond-mat/0104253', 'cond-mat/0103390', 'cond-mat/0103157', 'cond-mat/0103006', 'cond-mat/0102289', 'cond-mat/0102264', 'cond-mat/0102432', 'cond-mat/0103469', 'cond-mat/0104216', 'cond-mat/0103536', 'cond-mat/0102290', 'cond-mat/0102522']
+[00:40:50] select | verify strict 1/20
+[00:40:50] verify | func= Motivation | rank= 4 | pid= cond-mat/0102498 | title_snip='Microstructure of the highly dense MgB2 Superconductor by transmission…' | abs_len= 1004
+[00:40:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:40:53] select | verify strict 2/20
+[00:40:53] verify | func= Motivation | rank= 2 | pid= cond-mat/0102507 | title_snip='Compressibility of the MgB2 Superconductor' | abs_len= 966
+[00:40:57] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:40:57] select | verify strict 3/20
+[00:40:57] verify | func= Motivation | rank= 0 | pid= cond-mat/0102312 | title_snip='Scanning Tunneling Spectroscopy in MgB2' | abs_len= 664
+[00:41:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:00] select | verify strict 4/20
+[00:41:00] verify | func= Motivation | rank= 5 | pid= cond-mat/0103431 | title_snip='Two-Band-Type Superconducting Instability in MgB2' | abs_len= 1160
+[00:41:03] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[00:41:03] select | verify strict 5/20
+[00:41:03] verify | func= Motivation | rank= 7 | pid= cond-mat/0103154 | title_snip='The upper critical field problem in MgB2' | abs_len= 667
+[00:41:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= True
+[00:41:06] select | verify strict 6/20
+[00:41:06] verify | func= Motivation | rank= 9 | pid= cond-mat/0102242 | title_snip='Tunneling spectroscopy in small grains of superconducting MgB2' | abs_len= 430
+[00:41:09] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:09] select | verify strict 7/20
+[00:41:09] verify | func= Motivation | rank= 13 | pid= cond-mat/0104489 | title_snip='Direct evidence for a multiple superconducting gap in MgB2 from
+  high…' | abs_len= 567
+[00:41:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:12] select | verify strict 8/20
+[00:41:12] verify | func= Motivation | rank= 14 | pid= cond-mat/0103164 | title_snip='Optical measurements of the superconducting gap in MgB2' | abs_len= 417
+[00:41:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:16] select | verify strict 9/20
+[00:41:16] verify | func= Motivation | rank= 15 | pid= cond-mat/0104253 | title_snip='Detailed electronic structure studies on superconducting MgB$_2$ and
+ …' | abs_len= 1809
+[00:41:19] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:41:19] select | verify strict 10/20
+[00:41:19] verify | func= Motivation | rank= 1 | pid= cond-mat/0103390 | title_snip='Synthesis and Processing of $MgB_2$ powders and wires' | abs_len= 825
+[00:41:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:22] select | verify strict 11/20
+[00:41:22] verify | func= Motivation | rank= 3 | pid= cond-mat/0103157 | title_snip='Electronic structure of superconducting MgB2 and related binary and
+  …' | abs_len= 1015
+[00:41:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[00:41:25] select | verify strict 12/20
+[00:41:25] verify | func= Motivation | rank= 6 | pid= cond-mat/0103006 | title_snip='Superconductivity Driven by the Interband Coulomb Interaction and
+  Im…' | abs_len= 1033
+[00:41:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:41:29] select | verify strict 13/20
+[00:41:29] verify | func= Motivation | rank= 8 | pid= cond-mat/0102289 | title_snip='Superconductivity in Dense $MgB_2$ Wires' | abs_len= 897
+[00:41:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[00:41:32] select | verify strict 14/20
+[00:41:32] verify | func= Motivation | rank= 10 | pid= cond-mat/0102264 | title_snip='High Pressure Study on MgB2' | abs_len= 649
+[00:41:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:35] select | verify strict 15/20
+[00:41:35] verify | func= Motivation | rank= 11 | pid= cond-mat/0102432 | title_snip='Heat Capacity of MgB_2: Evidence for Moderately Strong Coupling Behavi…' | abs_len= 600
+[00:41:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:38] select | verify strict 16/20
+[00:41:38] verify | func= Motivation | rank= 12 | pid= cond-mat/0103469 | title_snip='Giant anharmonicity and non-linear electron-phonon coupling in
+  MgB$_…' | abs_len= 736
+[00:41:42] verify | result supports= False fit= 0.00 top= 1.00 invalid= missing_core_in_quote cue_hint= False
+[00:41:42] select | verify strict 17/20
+[00:41:42] verify | func= Motivation | rank= 16 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[00:41:45] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:41:45] select | verify strict 18/20
+[00:41:45] verify | func= Motivation | rank= 17 | pid= cond-mat/0103536 | title_snip='Two-band model and MgB$_2$ superconductivity' | abs_len= 277
+[00:41:48] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:48] select | verify strict 19/20
+[00:41:48] verify | func= Motivation | rank= 18 | pid= cond-mat/0102290 | title_snip='Nature of bonding and electronic structure in MgB2, a boron
+  intercal…' | abs_len= 886
+[00:41:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:51] select | verify strict 20/20
+[00:41:51] verify | func= Motivation | rank= 19 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[00:41:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:41:55] select | strict pass found 0 winners → trying relaxed
+[00:41:55] select | verify relaxed 1/20
+[00:41:55] verify | func= Motivation | rank= 4 | pid= cond-mat/0102498 | title_snip='Microstructure of the highly dense MgB2 Superconductor by transmission…' | abs_len= 1004
+[00:41:58] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:41:58] select | verify relaxed 2/20
+[00:41:58] verify | func= Motivation | rank= 2 | pid= cond-mat/0102507 | title_snip='Compressibility of the MgB2 Superconductor' | abs_len= 966
+[00:42:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:42:01] select | verify relaxed 3/20
+[00:42:01] verify | func= Motivation | rank= 0 | pid= cond-mat/0102312 | title_snip='Scanning Tunneling Spectroscopy in MgB2' | abs_len= 664
+[00:42:04] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:42:04] select | verify relaxed 4/20
+[00:42:04] verify | func= Motivation | rank= 5 | pid= cond-mat/0103431 | title_snip='Two-Band-Type Superconducting Instability in MgB2' | abs_len= 1160
+[00:42:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[00:42:07] select | verify relaxed 5/20
+[00:42:07] verify | func= Motivation | rank= 7 | pid= cond-mat/0103154 | title_snip='The upper critical field problem in MgB2' | abs_len= 667
+[00:42:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[00:42:11] select | verify relaxed 6/20
+[00:42:11] verify | func= Motivation | rank= 9 | pid= cond-mat/0102242 | title_snip='Tunneling spectroscopy in small grains of superconducting MgB2' | abs_len= 430
+[00:42:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:42:14] select | verify relaxed 7/20
+[00:42:14] verify | func= Motivation | rank= 13 | pid= cond-mat/0104489 | title_snip='Direct evidence for a multiple superconducting gap in MgB2 from
+  high…' | abs_len= 567
+[00:42:17] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:42:17] select | verify relaxed 8/20
+[00:42:17] verify | func= Motivation | rank= 14 | pid= cond-mat/0103164 | title_snip='Optical measurements of the superconducting gap in MgB2' | abs_len= 417
+[00:42:21] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:42:21] select | verify relaxed 9/20
+[00:42:21] verify | func= Motivation | rank= 15 | pid= cond-mat/0104253 | title_snip='Detailed electronic structure studies on superconducting MgB$_2$ and
+ …' | abs_len= 1809
+[00:42:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:42:24] select | verify relaxed 10/20
+[00:42:24] verify | func= Motivation | rank= 1 | pid= cond-mat/0103390 | title_snip='Synthesis and Processing of $MgB_2$ powders and wires' | abs_len= 825
+[00:42:28] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:42:28] select | verify relaxed 11/20
+[00:42:28] verify | func= Motivation | rank= 3 | pid= cond-mat/0103157 | title_snip='Electronic structure of superconducting MgB2 and related binary and
+  …' | abs_len= 1015
+[00:42:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[00:42:31] select | verify relaxed 12/20
+[00:42:31] verify | func= Motivation | rank= 6 | pid= cond-mat/0103006 | title_snip='Superconductivity Driven by the Interband Coulomb Interaction and
+  Im…' | abs_len= 1033
+[00:42:34] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:42:34] select | verify relaxed 13/20
+[00:42:34] verify | func= Motivation | rank= 8 | pid= cond-mat/0102289 | title_snip='Superconductivity in Dense $MgB_2$ Wires' | abs_len= 897
+[00:42:38] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[00:42:38] select | verify relaxed 14/20
+[00:42:38] verify | func= Motivation | rank= 10 | pid= cond-mat/0102264 | title_snip='High Pressure Study on MgB2' | abs_len= 649
+[00:42:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:42:41] select | verify relaxed 15/20
+[00:42:41] verify | func= Motivation | rank= 11 | pid= cond-mat/0102432 | title_snip='Heat Capacity of MgB_2: Evidence for Moderately Strong Coupling Behavi…' | abs_len= 600
+[00:42:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:42:44] select | verify relaxed 16/20
+[00:42:44] verify | func= Motivation | rank= 12 | pid= cond-mat/0103469 | title_snip='Giant anharmonicity and non-linear electron-phonon coupling in
+  MgB$_…' | abs_len= 736
+[00:42:48] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:42:48] select | verify relaxed 17/20
+[00:42:48] verify | func= Motivation | rank= 16 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[00:42:52] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:42:52] select | verify relaxed 18/20
+[00:42:52] verify | func= Motivation | rank= 17 | pid= cond-mat/0103536 | title_snip='Two-band model and MgB$_2$ superconductivity' | abs_len= 277
+[00:42:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:42:55] select | verify relaxed 19/20
+[00:42:55] verify | func= Motivation | rank= 18 | pid= cond-mat/0102290 | title_snip='Nature of bonding and electronic structure in MgB2, a boron
+  intercal…' | abs_len= 886
+[00:42:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:42:58] select | verify relaxed 20/20
+[00:42:58] verify | func= Motivation | rank= 19 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[00:43:01] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What method does the current work use to investigate the microstructure of the MgB2 superconductor and what problem does it aim to solve by doing so?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Motivation.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

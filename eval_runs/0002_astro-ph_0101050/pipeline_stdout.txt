@@ -1,0 +1,330 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query requests foundational context about NGC\u202f3065 (background) and asks why its study is important (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.42 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.51it/s]
+Reading arXiv_src_0101_001.jsonl: 48it [00:00, 186.87it/s]
+Reading arXiv_src_0101_001.jsonl: 202it [00:00, 672.18it/s]
+Reading arXiv_src_0101_001.jsonl: 313it [00:00, 808.83it/s]
+Reading arXiv_src_0101_001.jsonl: 407it [00:00, 780.62it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 630.42it/s]
+Reading arXiv_src_0101_001.jsonl: 567it [00:00, 585.33it/s]
+Reading arXiv_src_0101_001.jsonl: 673it [00:01, 696.60it/s]
+Reading arXiv_src_0101_001.jsonl: 776it [00:01, 780.53it/s]
+Reading arXiv_src_0101_001.jsonl: 887it [00:01, 867.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1001it [00:01, 941.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1109it [00:01, 980.27it/s]
+Reading arXiv_src_0101_001.jsonl: 1241it [00:01, 1076.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1352it [00:01, 1069.19it/s]
+Reading arXiv_src_0101_001.jsonl: 1486it [00:01, 1144.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:01, 1197.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1223.43it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1206.65it/s]
+Reading arXiv_src_0101_001.jsonl: 2057it [00:02, 1385.91it/s]
+Reading arXiv_src_0101_001.jsonl: 2211it [00:02, 1427.56it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 970.48it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1326.15it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1367.12it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 846.92it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 513.75it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 550.70it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 610.81it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 736.72it/s]
+Reading arXiv_src_0102_001.jsonl: 923it [00:01, 876.49it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 934.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 996.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1267it [00:01, 1041.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1399it [00:01, 1119.84it/s]
+Reading arXiv_src_0102_001.jsonl: 1531it [00:01, 1173.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1659it [00:01, 1204.60it/s]
+Reading arXiv_src_0102_001.jsonl: 1809it [00:01, 1287.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1962it [00:02, 1356.75it/s]
+Reading arXiv_src_0102_001.jsonl: 2115it [00:02, 1406.42it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1010.09it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1371.71it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1531.46it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1118.51it/s]
+Reading arXiv_src_0103_001.jsonl: 579it [00:00, 725.21it/s] 
+Reading arXiv_src_0103_001.jsonl: 681it [00:00, 790.76it/s]
+Reading arXiv_src_0103_001.jsonl: 776it [00:00, 818.00it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 883.47it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 947.30it/s]
+Reading arXiv_src_0103_001.jsonl: 1105it [00:01, 980.97it/s]
+Reading arXiv_src_0103_001.jsonl: 1224it [00:01, 1037.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1333it [00:01, 1046.90it/s]
+Reading arXiv_src_0103_001.jsonl: 1480it [00:01, 1168.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1614it [00:01, 1216.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1760it [00:01, 1285.39it/s]
+Reading arXiv_src_0103_001.jsonl: 1907it [00:01, 1339.82it/s]
+Reading arXiv_src_0103_001.jsonl: 2048it [00:01, 1355.41it/s]
+Reading arXiv_src_0103_001.jsonl: 2187it [00:01, 1358.75it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1416.08it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1142.12it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 12.02it/s]
+Reading arXiv_src_0104_001.jsonl: 126it [00:00, 579.23it/s]
+Reading arXiv_src_0104_001.jsonl: 284it [00:00, 976.01it/s]
+Reading arXiv_src_0104_001.jsonl: 401it [00:00, 1040.08it/s]
+Reading arXiv_src_0104_001.jsonl: 515it [00:00, 712.92it/s] 
+Reading arXiv_src_0104_001.jsonl: 604it [00:01, 489.23it/s]
+Reading arXiv_src_0104_001.jsonl: 707it [00:01, 587.70it/s]
+Reading arXiv_src_0104_001.jsonl: 797it [00:01, 652.24it/s]
+Reading arXiv_src_0104_001.jsonl: 897it [00:01, 730.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1022it [00:01, 857.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1129it [00:01, 911.57it/s]
+Reading arXiv_src_0104_001.jsonl: 1256it [00:01, 1007.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1366it [00:01, 1004.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1502it [00:01, 1103.82it/s]
+Reading arXiv_src_0104_001.jsonl: 1643it [00:01, 1188.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1773it [00:02, 1220.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1919it [00:02, 1289.30it/s]
+Reading arXiv_src_0104_001.jsonl: 2075it [00:02, 1367.81it/s]
+Reading arXiv_src_0104_001.jsonl: 2214it [00:02, 935.69it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 895.47it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What motivates the study of NGC 3065 and what background information is necessary to understand its classification as a LINER with broad, variable Balmer lines?
+[debug] classifier labels: ['Background', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T11:14:55.356748  Background, Motivation
+1     1  0.231229  ...  2025-09-21T11:14:55.356748  Background, Motivation
+2     2  0.221519  ...  2025-09-21T11:14:55.356748  Background, Motivation
+3     3  0.173421  ...  2025-09-21T11:14:55.356748  Background, Motivation
+4     4  0.162021  ...  2025-09-21T11:14:55.356748  Background, Motivation
+5     5  0.157046  ...  2025-09-21T11:14:55.356748  Background, Motivation
+6     6  0.147111  ...  2025-09-21T11:14:55.356748  Background, Motivation
+7     7  0.144847  ...  2025-09-21T11:14:55.356748  Background, Motivation
+8     8  0.144578  ...  2025-09-21T11:14:55.356748  Background, Motivation
+9     9  0.139020  ...  2025-09-21T11:14:55.356748  Background, Motivation
+
+[10 rows x 12 columns]
+[13:15:06] main | args: Namespace(max_check=20, debug=True)
+[13:15:06] read_last_jsonl | path= classified_outputs.jsonl
+[13:15:06] read_last_jsonl | total_lines= 1
+[13:15:06] main | query='What motivates the study of NGC 3065 and what background information is necessary to understand its classification as a LINER with broad, variable Balmer lines?' | funcs=['Background', 'Motivation']
+[13:15:08] main | core_terms= ['NGC 3065', 'LINER', 'Balmer lines', 'NGC']
+[13:15:08] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:15:08] load_topk_jsonl | rows= 20
+[13:15:08] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101050 title_snip='NGC 3065: A Certified LINER With Broad, Variable Balmer Lines' abs_len= 1503
+[13:15:08] main | running function= Background
+[13:15:08] select | function= Background | candidates_in= 20
+[13:15:08] select | core_terms= ['NGC 3065', 'LINER', 'Balmer lines', 'NGC']
+[13:15:08] select | no cosine prune; kept=20/20
+[13:15:08] select | pool_size= 20 | ranks= [0, 10, 19, 5, 1, 3, 4, 6, 7, 8, 12, 16, 17, 18, 2, 9, 11, 13, 14, 15] | pids= ['astro-ph/0101050', 'astro-ph/0101543', 'astro-ph/0103438', 'astro-ph/0101117', 'astro-ph/0104151', 'astro-ph/0103351', 'astro-ph/0103368', 'astro-ph/0103303', 'astro-ph/0102228', 'astro-ph/0104300', 'astro-ph/0103503', 'astro-ph/0102276', 'astro-ph/0103205', 'astro-ph/0102160', 'astro-ph/0102460', 'astro-ph/0104453', 'astro-ph/0101203', 'astro-ph/0102137', 'astro-ph/0103511', 'astro-ph/0101399']
+[13:15:08] select | verify strict 1/20
+[13:15:08] verify | func= Background | rank= 0 | pid= astro-ph/0101050 | title_snip='NGC 3065: A Certified LINER With Broad, Variable Balmer Lines' | abs_len= 1503
+[13:15:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:15:11] select | verify strict 2/20
+[13:15:11] verify | func= Background | rank= 10 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[13:15:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:14] select | verify strict 3/20
+[13:15:14] verify | func= Background | rank= 19 | pid= astro-ph/0103438 | title_snip='X-rays and accretion discs as probes of the strong gravity of black
+  …' | abs_len= 489
+[13:15:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:16] select | verify strict 4/20
+[13:15:16] verify | func= Background | rank= 5 | pid= astro-ph/0101117 | title_snip='The Variable Diffuse Continuum Emission of Broad Line Clouds' | abs_len= 1547
+[13:15:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:19] select | verify strict 5/20
+[13:15:19] verify | func= Background | rank= 1 | pid= astro-ph/0104151 | title_snip='A spectrophotometric atlas of Narrow-Line Seyfert 1 galaxies' | abs_len= 1577
+[13:15:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:21] select | verify strict 6/20
+[13:15:21] verify | func= Background | rank= 3 | pid= astro-ph/0103351 | title_snip='The Evolution of Balmer Absorption Line Strengths in E/S0 Galaxies fro…' | abs_len= 1232
+[13:15:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:24] select | verify strict 7/20
+[13:15:24] verify | func= Background | rank= 4 | pid= astro-ph/0103368 | title_snip='The ROSAT Deep Survey: VI. X-ray sources and Optical identifications o…' | abs_len= 1325
+[13:15:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:26] select | verify strict 8/20
+[13:15:26] verify | func= Background | rank= 6 | pid= astro-ph/0103303 | title_snip='Size-Mass-luminosity relations in AGN and the role of the accretion di…' | abs_len= 1514
+[13:15:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:29] select | verify strict 9/20
+[13:15:29] verify | func= Background | rank= 7 | pid= astro-ph/0102228 | title_snip='The evolution of emission lines in HII galaxies' | abs_len= 1484
+[13:15:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:31] select | verify strict 10/20
+[13:15:31] verify | func= Background | rank= 8 | pid= astro-ph/0104300 | title_snip='The discriminating power of wavelets to detect non-Gaussianity in the
+…' | abs_len= 917
+[13:15:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:34] select | verify strict 11/20
+[13:15:34] verify | func= Background | rank= 12 | pid= astro-ph/0103503 | title_snip='MLAPM - a C code for cosmological simulations' | abs_len= 1536
+[13:15:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:36] select | verify strict 12/20
+[13:15:36] verify | func= Background | rank= 16 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:15:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:39] select | verify strict 13/20
+[13:15:39] verify | func= Background | rank= 17 | pid= astro-ph/0103205 | title_snip='The Evolution of Stellar Exponential Discs' | abs_len= 1740
+[13:15:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:42] select | verify strict 14/20
+[13:15:42] verify | func= Background | rank= 18 | pid= astro-ph/0102160 | title_snip='Measuring the galaxy power spectrum with multiresolution decomposition…' | abs_len= 1745
+[13:15:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:44] select | verify strict 15/20
+[13:15:44] verify | func= Background | rank= 2 | pid= astro-ph/0102460 | title_snip='Variable line profiles due to non-axisymmetric patterns in an accretio…' | abs_len= 649
+[13:15:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:47] select | verify strict 16/20
+[13:15:47] verify | func= Background | rank= 9 | pid= astro-ph/0104453 | title_snip='Chandra Detects a Rapid Flare in the Gravitationally Lensed Mini-BALQS…' | abs_len= 1244
+[13:15:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:49] select | verify strict 17/20
+[13:15:49] verify | func= Background | rank= 11 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[13:15:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:52] select | verify strict 18/20
+[13:15:52] verify | func= Background | rank= 13 | pid= astro-ph/0102137 | title_snip='Non-axisymmetric accretion on the classical TTS RW Aur A' | abs_len= 1645
+[13:15:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:54] select | verify strict 19/20
+[13:15:54] verify | func= Background | rank= 14 | pid= astro-ph/0103511 | title_snip='Detached Eclipsing Binaries for Parallax Measurement' | abs_len= 405
+[13:15:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:15:57] select | verify strict 20/20
+[13:15:57] verify | func= Background | rank= 15 | pid= astro-ph/0101399 | title_snip='The spectral characteristics of the 2dFGRS-NVSS galaxies' | abs_len= 692
+[13:15:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What motivates the study of NGC 3065 and what background information is necessary to understand its classification as a LINER with broad, variable Balmer lines?
+- WINNER: astro-ph/0101050 | NGC 3065: A Certified LINER With Broad, Variable Balmer Lines
+- QUOTE : Motivated by the X-ray properties of the galaxy NGC 3065
+- WHY   : sufficient
+- ANSWER: The study of NGC 3065 is motivated by its X-ray properties, and understanding its classification as a LINER with broad, variable Balmer lines requires background knowledge of active galactic nuclei and low-ionization nuclear emission-line regions (astro-ph/0101050).
+[13:16:05] main | running function= Motivation
+[13:16:05] select | function= Motivation | candidates_in= 20
+[13:16:05] select | core_terms= ['NGC 3065', 'LINER', 'Balmer lines', 'NGC']
+[13:16:05] select | no cosine prune; kept=20/20
+[13:16:05] select | pool_size= 20 | ranks= [0, 10, 19, 5, 4, 7, 12, 17, 18, 1, 2, 3, 6, 8, 9, 11, 13, 14, 15, 16] | pids= ['astro-ph/0101050', 'astro-ph/0101543', 'astro-ph/0103438', 'astro-ph/0101117', 'astro-ph/0103368', 'astro-ph/0102228', 'astro-ph/0103503', 'astro-ph/0103205', 'astro-ph/0102160', 'astro-ph/0104151', 'astro-ph/0102460', 'astro-ph/0103351', 'astro-ph/0103303', 'astro-ph/0104300', 'astro-ph/0104453', 'astro-ph/0101203', 'astro-ph/0102137', 'astro-ph/0103511', 'astro-ph/0101399', 'astro-ph/0102276']
+[13:16:05] select | verify strict 1/20
+[13:16:05] verify | func= Motivation | rank= 0 | pid= astro-ph/0101050 | title_snip='NGC 3065: A Certified LINER With Broad, Variable Balmer Lines' | abs_len= 1503
+[13:16:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:16:09] select | verify strict 2/20
+[13:16:09] verify | func= Motivation | rank= 10 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[13:16:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:11] select | verify strict 3/20
+[13:16:11] verify | func= Motivation | rank= 19 | pid= astro-ph/0103438 | title_snip='X-rays and accretion discs as probes of the strong gravity of black
+  …' | abs_len= 489
+[13:16:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:14] select | verify strict 4/20
+[13:16:14] verify | func= Motivation | rank= 5 | pid= astro-ph/0101117 | title_snip='The Variable Diffuse Continuum Emission of Broad Line Clouds' | abs_len= 1547
+[13:16:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:16] select | verify strict 5/20
+[13:16:16] verify | func= Motivation | rank= 4 | pid= astro-ph/0103368 | title_snip='The ROSAT Deep Survey: VI. X-ray sources and Optical identifications o…' | abs_len= 1325
+[13:16:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:19] select | verify strict 6/20
+[13:16:19] verify | func= Motivation | rank= 7 | pid= astro-ph/0102228 | title_snip='The evolution of emission lines in HII galaxies' | abs_len= 1484
+[13:16:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:21] select | verify strict 7/20
+[13:16:21] verify | func= Motivation | rank= 12 | pid= astro-ph/0103503 | title_snip='MLAPM - a C code for cosmological simulations' | abs_len= 1536
+[13:16:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:24] select | verify strict 8/20
+[13:16:24] verify | func= Motivation | rank= 17 | pid= astro-ph/0103205 | title_snip='The Evolution of Stellar Exponential Discs' | abs_len= 1740
+[13:16:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:26] select | verify strict 9/20
+[13:16:26] verify | func= Motivation | rank= 18 | pid= astro-ph/0102160 | title_snip='Measuring the galaxy power spectrum with multiresolution decomposition…' | abs_len= 1745
+[13:16:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:29] select | verify strict 10/20
+[13:16:29] verify | func= Motivation | rank= 1 | pid= astro-ph/0104151 | title_snip='A spectrophotometric atlas of Narrow-Line Seyfert 1 galaxies' | abs_len= 1577
+[13:16:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:31] select | verify strict 11/20
+[13:16:31] verify | func= Motivation | rank= 2 | pid= astro-ph/0102460 | title_snip='Variable line profiles due to non-axisymmetric patterns in an accretio…' | abs_len= 649
+[13:16:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:34] select | verify strict 12/20
+[13:16:34] verify | func= Motivation | rank= 3 | pid= astro-ph/0103351 | title_snip='The Evolution of Balmer Absorption Line Strengths in E/S0 Galaxies fro…' | abs_len= 1232
+[13:16:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:36] select | verify strict 13/20
+[13:16:36] verify | func= Motivation | rank= 6 | pid= astro-ph/0103303 | title_snip='Size-Mass-luminosity relations in AGN and the role of the accretion di…' | abs_len= 1514
+[13:16:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:39] select | verify strict 14/20
+[13:16:39] verify | func= Motivation | rank= 8 | pid= astro-ph/0104300 | title_snip='The discriminating power of wavelets to detect non-Gaussianity in the
+…' | abs_len= 917
+[13:16:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:41] select | verify strict 15/20
+[13:16:41] verify | func= Motivation | rank= 9 | pid= astro-ph/0104453 | title_snip='Chandra Detects a Rapid Flare in the Gravitationally Lensed Mini-BALQS…' | abs_len= 1244
+[13:16:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:44] select | verify strict 16/20
+[13:16:44] verify | func= Motivation | rank= 11 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[13:16:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:46] select | verify strict 17/20
+[13:16:46] verify | func= Motivation | rank= 13 | pid= astro-ph/0102137 | title_snip='Non-axisymmetric accretion on the classical TTS RW Aur A' | abs_len= 1645
+[13:16:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:49] select | verify strict 18/20
+[13:16:49] verify | func= Motivation | rank= 14 | pid= astro-ph/0103511 | title_snip='Detached Eclipsing Binaries for Parallax Measurement' | abs_len= 405
+[13:16:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:51] select | verify strict 19/20
+[13:16:51] verify | func= Motivation | rank= 15 | pid= astro-ph/0101399 | title_snip='The spectral characteristics of the 2dFGRS-NVSS galaxies' | abs_len= 692
+[13:16:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:16:54] select | verify strict 20/20
+[13:16:54] verify | func= Motivation | rank= 16 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:16:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the study of NGC 3065 and what background information is necessary to understand its classification as a LINER with broad, variable Balmer lines?
+- WINNER: astro-ph/0101050 | NGC 3065: A Certified LINER With Broad, Variable Balmer Lines
+- QUOTE : Motivated by the X-ray properties of the galaxy NGC 3065
+- WHY   : sufficient
+- ANSWER: The study of NGC 3065 is motivated by its unique X-ray properties, which led to the discovery of its LINER classification with broad, variable Balmer lines. Understanding its classification requires background information on the characteristics of LINERs and active galactic nuclei, as well as the properties of accretion disks and black holes (astro-ph/0101050).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

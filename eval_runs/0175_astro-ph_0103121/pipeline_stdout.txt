@@ -1,0 +1,254 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.88 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 11it [00:00, 109.11it/s]
+Reading arXiv_src_0101_001.jsonl: 96it [00:00, 542.96it/s]
+Reading arXiv_src_0101_001.jsonl: 245it [00:00, 969.32it/s]
+Reading arXiv_src_0101_001.jsonl: 356it [00:00, 1018.97it/s]
+Reading arXiv_src_0101_001.jsonl: 458it [00:00, 749.04it/s] 
+Reading arXiv_src_0101_001.jsonl: 542it [00:00, 602.36it/s]
+Reading arXiv_src_0101_001.jsonl: 648it [00:00, 705.36it/s]
+Reading arXiv_src_0101_001.jsonl: 757it [00:01, 795.82it/s]
+Reading arXiv_src_0101_001.jsonl: 868it [00:01, 875.31it/s]
+Reading arXiv_src_0101_001.jsonl: 978it [00:01, 935.07it/s]
+Reading arXiv_src_0101_001.jsonl: 1083it [00:01, 965.06it/s]
+Reading arXiv_src_0101_001.jsonl: 1218it [00:01, 1063.18it/s]
+Reading arXiv_src_0101_001.jsonl: 1328it [00:01, 1059.22it/s]
+Reading arXiv_src_0101_001.jsonl: 1469it [00:01, 1159.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1597it [00:01, 1193.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1729it [00:01, 1226.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1853it [00:01, 1197.46it/s]
+Reading arXiv_src_0101_001.jsonl: 2026it [00:02, 1351.53it/s]
+Reading arXiv_src_0101_001.jsonl: 2190it [00:02, 1431.73it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1043.41it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1314.40it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1352.43it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 847.96it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 512.87it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 554.80it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:01, 611.94it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 737.21it/s]
+Reading arXiv_src_0102_001.jsonl: 909it [00:01, 844.61it/s]
+Reading arXiv_src_0102_001.jsonl: 1022it [00:01, 918.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1143it [00:01, 996.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1252it [00:01, 1022.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1397it [00:01, 1143.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1528it [00:01, 1191.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1651it [00:01, 1202.42it/s]
+Reading arXiv_src_0102_001.jsonl: 1801it [00:01, 1288.19it/s]
+Reading arXiv_src_0102_001.jsonl: 1949it [00:02, 1344.33it/s]
+Reading arXiv_src_0102_001.jsonl: 2103it [00:02, 1401.35it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1008.74it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1353.95it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1517.90it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1080.89it/s]
+Reading arXiv_src_0103_001.jsonl: 573it [00:00, 734.16it/s] 
+Reading arXiv_src_0103_001.jsonl: 663it [00:00, 763.67it/s]
+Reading arXiv_src_0103_001.jsonl: 752it [00:00, 791.64it/s]
+Reading arXiv_src_0103_001.jsonl: 861it [00:00, 868.10it/s]
+Reading arXiv_src_0103_001.jsonl: 963it [00:01, 908.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1069it [00:01, 950.23it/s]
+Reading arXiv_src_0103_001.jsonl: 1193it [00:01, 1032.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1301it [00:01, 1033.74it/s]
+Reading arXiv_src_0103_001.jsonl: 1437it [00:01, 1126.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1584it [00:01, 1221.82it/s]
+Reading arXiv_src_0103_001.jsonl: 1723it [00:01, 1267.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1872it [00:01, 1328.98it/s]
+Reading arXiv_src_0103_001.jsonl: 2006it [00:01, 1316.66it/s]
+Reading arXiv_src_0103_001.jsonl: 2154it [00:01, 1362.07it/s]
+Reading arXiv_src_0103_001.jsonl: 2296it [00:02, 1375.04it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1130.06it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 147it [00:00, 1467.53it/s]
+Reading arXiv_src_0104_001.jsonl: 308it [00:00, 1548.17it/s]
+Reading arXiv_src_0104_001.jsonl: 463it [00:00, 1009.59it/s]
+Reading arXiv_src_0104_001.jsonl: 580it [00:00, 546.11it/s] 
+Reading arXiv_src_0104_001.jsonl: 687it [00:00, 640.27it/s]
+Reading arXiv_src_0104_001.jsonl: 778it [00:01, 693.69it/s]
+Reading arXiv_src_0104_001.jsonl: 881it [00:01, 768.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1000it [00:01, 870.48it/s]
+Reading arXiv_src_0104_001.jsonl: 1112it [00:01, 934.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1226it [00:01, 989.15it/s]
+Reading arXiv_src_0104_001.jsonl: 1334it [00:01, 1000.85it/s]
+Reading arXiv_src_0104_001.jsonl: 1470it [00:01, 1099.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1608it [00:01, 1177.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1735it [00:01, 1199.25it/s]
+Reading arXiv_src_0104_001.jsonl: 1886it [00:01, 1289.90it/s]
+Reading arXiv_src_0104_001.jsonl: 2035it [00:02, 1347.24it/s]
+Reading arXiv_src_0104_001.jsonl: 2172it [00:02, 932.24it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 966.03it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the detection of upper main sequence stars and red giant branch stars in the halo of an amorphous galaxy relate to previous work on galaxy interactions and distance measurements?
+[debug] classifier labels: ['Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:51:34.755048           Background
+1     1  0.473952  ...  2025-09-21T21:51:34.755048           Background
+2     2  0.410429  ...  2025-09-21T21:51:34.755048           Background
+3     3  0.306074  ...  2025-09-21T21:51:34.755048           Background
+4     4  0.290118  ...  2025-09-21T21:51:34.755048           Background
+5     5  0.250269  ...  2025-09-21T21:51:34.755048           Background
+6     6  0.233178  ...  2025-09-21T21:51:34.755048           Background
+7     7  0.219315  ...  2025-09-21T21:51:34.755048           Background
+8     8  0.217098  ...  2025-09-21T21:51:34.755048           Background
+9     9  0.160119  ...  2025-09-21T21:51:34.755048           Background
+
+[10 rows x 12 columns]
+[23:51:40] main | args: Namespace(max_check=20, debug=True)
+[23:51:40] read_last_jsonl | path= classified_outputs.jsonl
+[23:51:40] read_last_jsonl | total_lines= 1
+[23:51:40] main | query='How does the detection of upper main sequence stars and red giant branch stars in the halo of an amorphous galaxy relate to previous work on galaxy interactions and distance measurements?' | funcs=['Background']
+[23:51:43] main | core_terms= ['upper main sequence stars', 'red giant branch stars', 'halo', 'galaxy interactions', 'distance measurements']
+[23:51:43] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:51:43] load_topk_jsonl | rows= 20
+[23:51:43] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103121 title_snip='Observation of the Halo of NGC 3077 Near the "Garland" Region Using th…' abs_len= 1197
+[23:51:43] main | running function= Background
+[23:51:43] select | function= Background | candidates_in= 20
+[23:51:43] select | core_terms= ['upper main sequence stars', 'red giant branch stars', 'halo', 'galaxy interactions', 'distance measurements']
+[23:51:43] select | no cosine prune; kept=20/20
+[23:51:43] select | pool_size= 20 | ranks= [0, 6, 4, 17, 8, 11, 9, 2, 7, 10, 1, 3, 5, 12, 13, 14, 15, 16, 18, 19] | pids= ['astro-ph/0103121', 'astro-ph/0101436', 'astro-ph/0101271', 'astro-ph/0104242', 'astro-ph/0102436', 'astro-ph/0101134', 'astro-ph/0101323', 'astro-ph/0101338', 'astro-ph/0104037', 'astro-ph/0104139', 'astro-ph/0102397', 'astro-ph/0103502', 'astro-ph/0103518', 'astro-ph/0103364', 'astro-ph/0103037', 'astro-ph/0104425', 'astro-ph/0102125', 'astro-ph/0103188', 'astro-ph/0102263', 'astro-ph/0102090']
+[23:51:43] select | verify strict 1/20
+[23:51:43] verify | func= Background | rank= 0 | pid= astro-ph/0103121 | title_snip='Observation of the Halo of NGC 3077 Near the "Garland" Region Using th…' | abs_len= 1197
+[23:51:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:51:46] select | verify strict 2/20
+[23:51:46] verify | func= Background | rank= 6 | pid= astro-ph/0101436 | title_snip='Photometry and the Metallicity Distribution of the Outer Halo of M31' | abs_len= 1815
+[23:51:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:51:50] select | verify strict 3/20
+[23:51:50] verify | func= Background | rank= 4 | pid= astro-ph/0101271 | title_snip='The X-ray Emission in Post-Merger Ellipticals' | abs_len= 909
+[23:51:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:51:52] select | verify strict 4/20
+[23:51:52] verify | func= Background | rank= 17 | pid= astro-ph/0104242 | title_snip='The Thick Disk-Halo Interface' | abs_len= 940
+[23:51:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:51:55] select | verify strict 5/20
+[23:51:55] verify | func= Background | rank= 8 | pid= astro-ph/0102436 | title_snip='The Host Haloes of Lyman Break Galaxies and Sub-millimeter Sources' | abs_len= 1580
+[23:51:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:51:57] select | verify strict 6/20
+[23:51:57] verify | func= Background | rank= 11 | pid= astro-ph/0101134 | title_snip='Astrophysical Limits on Massive Dark Matter' | abs_len= 818
+[23:52:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:00] select | verify strict 7/20
+[23:52:00] verify | func= Background | rank= 9 | pid= astro-ph/0101323 | title_snip='Lithium-Beryllium-Boron Evolution: From Meneguzzi, Audouze and Reeves
+…' | abs_len= 595
+[23:52:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:02] select | verify strict 8/20
+[23:52:02] verify | func= Background | rank= 2 | pid= astro-ph/0101338 | title_snip='Observational Signatures of the First Stars' | abs_len= 569
+[23:52:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:05] select | verify strict 9/20
+[23:52:05] verify | func= Background | rank= 7 | pid= astro-ph/0104037 | title_snip='Faint End of the Galaxy Luminosity Function: A Chronometer for Structu…' | abs_len= 1418
+[23:52:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:07] select | verify strict 10/20
+[23:52:07] verify | func= Background | rank= 10 | pid= astro-ph/0104139 | title_snip='Observational tests of the delta_c-M_vir relation in hierarchical
+  cl…' | abs_len= 995
+[23:52:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:10] select | verify strict 11/20
+[23:52:10] verify | func= Background | rank= 1 | pid= astro-ph/0102397 | title_snip='A Near-Infrared Stellar Census of Blue Compact Dwarf Galaxies: The
+  W…' | abs_len= 1230
+[23:52:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:12] select | verify strict 12/20
+[23:52:12] verify | func= Background | rank= 3 | pid= astro-ph/0103502 | title_snip='Abundances in Stars from the Red Giant Branch Tip to the Near the Main…' | abs_len= 546
+[23:52:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:15] select | verify strict 13/20
+[23:52:15] verify | func= Background | rank= 5 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[23:52:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:17] select | verify strict 14/20
+[23:52:17] verify | func= Background | rank= 12 | pid= astro-ph/0103364 | title_snip='The radio galaxy K-z relation to z ~ 4.5' | abs_len= 634
+[23:52:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:20] select | verify strict 15/20
+[23:52:20] verify | func= Background | rank= 13 | pid= astro-ph/0103037 | title_snip='The Stellar Content of Obscured Galactic Giant H II Regions III.: W31' | abs_len= 1238
+[23:52:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:23] select | verify strict 16/20
+[23:52:23] verify | func= Background | rank= 14 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[23:52:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:25] select | verify strict 17/20
+[23:52:25] verify | func= Background | rank= 15 | pid= astro-ph/0102125 | title_snip='NICMOS Observations of Extragalactic Cepheids. I. Photometry Database
+…' | abs_len= 893
+[23:52:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:28] select | verify strict 18/20
+[23:52:28] verify | func= Background | rank= 16 | pid= astro-ph/0103188 | title_snip='Empirical relations for cluster RR Lyrae stars revisited' | abs_len= 1352
+[23:52:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:30] select | verify strict 19/20
+[23:52:30] verify | func= Background | rank= 18 | pid= astro-ph/0102263 | title_snip='A Pair of Compact Red Galaxies at Redshift 2.38, Immersed in a 100 kpc…' | abs_len= 1424
+[23:52:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:33] select | verify strict 20/20
+[23:52:33] verify | func= Background | rank= 19 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[23:52:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the detection of upper main sequence stars and red giant branch stars in the halo of an amorphous galaxy relate to previous work on galaxy interactions and distance measurements?
+- WINNER: astro-ph/0103121 | Observation of the Halo of NGC 3077 Near the "Garland" Region Using the
+  Hubble Space Telescope
+- QUOTE : detection of upper main sequence stars and red giant branch stars
+- WHY   : sufficient
+- ANSWER: The detection of upper main sequence stars and red giant branch stars in the halo of an amorphous galaxy relates to previous work on galaxy interactions, as it may be associated with star formation triggered by tidal interactions (astro-ph/0103121).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,487 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query seeks reasons (motivation) behind a limitation and asks for possible future research directions (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.46 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.68it/s]
+Reading arXiv_src_0101_001.jsonl: 94it [00:00, 372.01it/s]
+Reading arXiv_src_0101_001.jsonl: 240it [00:00, 763.43it/s]
+Reading arXiv_src_0101_001.jsonl: 345it [00:00, 860.84it/s]
+Reading arXiv_src_0101_001.jsonl: 445it [00:00, 705.60it/s]
+Reading arXiv_src_0101_001.jsonl: 528it [00:00, 590.03it/s]
+Reading arXiv_src_0101_001.jsonl: 598it [00:01, 603.69it/s]
+Reading arXiv_src_0101_001.jsonl: 704it [00:01, 715.95it/s]
+Reading arXiv_src_0101_001.jsonl: 805it [00:01, 787.77it/s]
+Reading arXiv_src_0101_001.jsonl: 907it [00:01, 849.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 892.78it/s]
+Reading arXiv_src_0101_001.jsonl: 1146it [00:01, 1016.99it/s]
+Reading arXiv_src_0101_001.jsonl: 1282it [00:01, 1113.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1397it [00:01, 1095.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1528it [00:01, 1154.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1667it [00:01, 1221.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1791it [00:02, 1187.99it/s]
+Reading arXiv_src_0101_001.jsonl: 1947it [00:02, 1292.89it/s]
+Reading arXiv_src_0101_001.jsonl: 2120it [00:02, 1419.61it/s]
+Reading arXiv_src_0101_001.jsonl: 2271it [00:02, 1445.17it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 976.61it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1330.25it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1367.88it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 848.09it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 508.51it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 543.46it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:01, 606.54it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 731.70it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 872.75it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 931.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 995.14it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1043.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1403it [00:01, 1126.73it/s]
+Reading arXiv_src_0102_001.jsonl: 1538it [00:01, 1189.83it/s]
+Reading arXiv_src_0102_001.jsonl: 1668it [00:01, 1221.80it/s]
+Reading arXiv_src_0102_001.jsonl: 1816it [00:01, 1296.84it/s]
+Reading arXiv_src_0102_001.jsonl: 1969it [00:02, 1363.29it/s]
+Reading arXiv_src_0102_001.jsonl: 2120it [00:02, 1406.06it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1009.02it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1374.50it/s]
+Reading arXiv_src_0103_001.jsonl: 302it [00:00, 1527.58it/s]
+Reading arXiv_src_0103_001.jsonl: 455it [00:00, 1123.04it/s]
+Reading arXiv_src_0103_001.jsonl: 577it [00:00, 737.20it/s] 
+Reading arXiv_src_0103_001.jsonl: 672it [00:00, 783.09it/s]
+Reading arXiv_src_0103_001.jsonl: 765it [00:00, 804.21it/s]
+Reading arXiv_src_0103_001.jsonl: 883it [00:00, 899.24it/s]
+Reading arXiv_src_0103_001.jsonl: 989it [00:01, 941.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1093it [00:01, 967.97it/s]
+Reading arXiv_src_0103_001.jsonl: 1215it [00:01, 1039.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1324it [00:01, 1046.24it/s]
+Reading arXiv_src_0103_001.jsonl: 1466it [00:01, 1154.00it/s]
+Reading arXiv_src_0103_001.jsonl: 1602it [00:01, 1213.83it/s]
+Reading arXiv_src_0103_001.jsonl: 1751it [00:01, 1293.23it/s]
+Reading arXiv_src_0103_001.jsonl: 1892it [00:01, 1326.15it/s]
+Reading arXiv_src_0103_001.jsonl: 2034it [00:01, 1351.12it/s]
+Reading arXiv_src_0103_001.jsonl: 2173it [00:01, 1361.16it/s]
+Reading arXiv_src_0103_001.jsonl: 2331it [00:02, 1426.23it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1142.61it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 10.94it/s]
+Reading arXiv_src_0104_001.jsonl: 145it [00:00, 632.36it/s]
+Reading arXiv_src_0104_001.jsonl: 302it [00:00, 992.30it/s]
+Reading arXiv_src_0104_001.jsonl: 420it [00:00, 998.78it/s]
+Reading arXiv_src_0104_001.jsonl: 531it [00:00, 682.48it/s]
+Reading arXiv_src_0104_001.jsonl: 618it [00:01, 493.64it/s]
+Reading arXiv_src_0104_001.jsonl: 714it [00:01, 579.77it/s]
+Reading arXiv_src_0104_001.jsonl: 803it [00:01, 644.46it/s]
+Reading arXiv_src_0104_001.jsonl: 903it [00:01, 725.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1029it [00:01, 855.52it/s]
+Reading arXiv_src_0104_001.jsonl: 1137it [00:01, 912.68it/s]
+Reading arXiv_src_0104_001.jsonl: 1261it [00:01, 999.29it/s]
+Reading arXiv_src_0104_001.jsonl: 1369it [00:01, 994.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1503it [00:01, 1088.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1643it [00:01, 1175.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1774it [00:02, 1211.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1922it [00:02, 1287.78it/s]
+Reading arXiv_src_0104_001.jsonl: 2082it [00:02, 1376.87it/s]
+Reading arXiv_src_0104_001.jsonl: 2222it [00:02, 935.77it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 890.24it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What future research directions could be motivated by the current study's inability to distinguish between vertical and horizontal line nodes in spin-triplet superconducting states?
+[debug] classifier labels: ['Motivation', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+1     1  0.845220  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+2     2  0.813971  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+3     3  0.691046  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+4     4  0.627364  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+5     5  0.529331  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+6     6  0.518638  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+7     7  0.365371  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+8     8  0.355377  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+9     9  0.349733  ...  2025-09-21T11:28:40.155008  Motivation, FutureWork
+
+[10 rows x 12 columns]
+[13:28:48] main | args: Namespace(max_check=20, debug=True)
+[13:28:48] read_last_jsonl | path= classified_outputs.jsonl
+[13:28:48] read_last_jsonl | total_lines= 1
+[13:28:48] main | query='What future research directions could be motivated by the current study's inability to distinguish between vertical and horizontal line nodes in spin-triplet superconducting states?' | funcs=['Motivation', 'FutureWork']
+[13:28:51] main | core_terms= ['spin-triplet superconducting states', 'line nodes', 'vertical line nodes', 'horizontal line nodes', 'spin-triplet']
+[13:28:51] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:28:51] load_topk_jsonl | rows= 20
+[13:28:51] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0104432 title_snip='Thermal Conductivity near H_c2 for spin-triplet superconducting States…' abs_len= 1279
+[13:28:51] main | running function= Motivation
+[13:28:51] select | function= Motivation | candidates_in= 20
+[13:28:51] select | core_terms= ['spin-triplet superconducting states', 'line nodes', 'vertical line nodes', 'horizontal line nodes', 'spin-triplet']
+[13:28:51] select | no cosine prune; kept=20/20
+[13:28:51] select | pool_size= 20 | ranks= [0, 5, 1, 2, 3, 8, 10, 13, 16, 18, 4, 6, 7, 9, 11, 12, 14, 15, 17, 19] | pids= ['cond-mat/0104432', 'cond-mat/0102075', 'cond-mat/0102132', 'cond-mat/0103523', 'cond-mat/0104225', 'cond-mat/0102456', 'cond-mat/0102111', 'cond-mat/0102281', 'cond-mat/0102343', 'cond-mat/0104090', 'cond-mat/0102139', 'cond-mat/0102074', 'cond-mat/0103381', 'cond-mat/0102055', 'cond-mat/0103456', 'nucl-ex/0104028', 'cond-mat/0104457', 'cond-mat/0101011', 'cond-mat/0102144', 'cond-mat/0104223']
+[13:28:51] select | verify strict 1/20
+[13:28:51] verify | func= Motivation | rank= 0 | pid= cond-mat/0104432 | title_snip='Thermal Conductivity near H_c2 for spin-triplet superconducting States…' | abs_len= 1279
+[13:28:54] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:28:54] select | verify strict 2/20
+[13:28:54] verify | func= Motivation | rank= 5 | pid= cond-mat/0102075 | title_snip='Effect of Band Structure on the Symmetry of Superconducting States' | abs_len= 616
+[13:28:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[13:28:58] select | verify strict 3/20
+[13:28:58] verify | func= Motivation | rank= 1 | pid= cond-mat/0102132 | title_snip='Scaling of H_{c2 \perp}(T) in Nb/CuMn Multilayers' | abs_len= 502
+[13:29:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:00] select | verify strict 4/20
+[13:29:00] verify | func= Motivation | rank= 2 | pid= cond-mat/0103523 | title_snip='Evidence for Suppression of Superconductivity by Spin Imbalance in
+  C…' | abs_len= 657
+[13:29:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:03] select | verify strict 5/20
+[13:29:03] verify | func= Motivation | rank= 3 | pid= cond-mat/0104225 | title_snip='Angular Position of Nodes in the Superconducting Gap of Quasi-2D
+  Hea…' | abs_len= 606
+[13:29:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= True
+[13:29:06] select | verify strict 6/20
+[13:29:06] verify | func= Motivation | rank= 8 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[13:29:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:08] select | verify strict 7/20
+[13:29:08] verify | func= Motivation | rank= 10 | pid= cond-mat/0102111 | title_snip='Pseudogap in High - Temperature Superconductors' | abs_len= 918
+[13:29:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:11] select | verify strict 8/20
+[13:29:11] verify | func= Motivation | rank= 13 | pid= cond-mat/0102281 | title_snip='Stripes, Vibrations and Superconductivity' | abs_len= 999
+[13:29:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:13] select | verify strict 9/20
+[13:29:13] verify | func= Motivation | rank= 16 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[13:29:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:16] select | verify strict 10/20
+[13:29:16] verify | func= Motivation | rank= 18 | pid= cond-mat/0104090 | title_snip='Decoupling of the S=1/2 antiferromagnetic zig-zag ladder with anisotro…' | abs_len= 1137
+[13:29:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:19] select | verify strict 11/20
+[13:29:19] verify | func= Motivation | rank= 4 | pid= cond-mat/0102139 | title_snip='Interplay between spin-density-wave and superconducting states in
+  qu…' | abs_len= 666
+[13:29:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:29:22] select | verify strict 12/20
+[13:29:22] verify | func= Motivation | rank= 6 | pid= cond-mat/0102074 | title_snip='Electronic theory for superconductivity in Sr$_2$RuO$_4$: triplet
+  pa…' | abs_len= 1068
+[13:29:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:29:25] select | verify strict 13/20
+[13:29:25] verify | func= Motivation | rank= 7 | pid= cond-mat/0103381 | title_snip='Theoretical study of quasiparticle states near the surface of a
+  quas…' | abs_len= 680
+[13:29:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:27] select | verify strict 14/20
+[13:29:27] verify | func= Motivation | rank= 9 | pid= cond-mat/0102055 | title_snip='Disorder and superconductivity : a new phase of bi-particle localized
+…' | abs_len= 468
+[13:29:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:30] select | verify strict 15/20
+[13:29:30] verify | func= Motivation | rank= 11 | pid= cond-mat/0103456 | title_snip='Doping dependence of the resonance peak and incommensuration in
+  high…' | abs_len= 937
+[13:29:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:33] select | verify strict 16/20
+[13:29:33] verify | func= Motivation | rank= 12 | pid= nucl-ex/0104028 | title_snip='High-spin states in and around doubly-magic nuclei' | abs_len= 469
+[13:29:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:35] select | verify strict 17/20
+[13:29:35] verify | func= Motivation | rank= 14 | pid= cond-mat/0104457 | title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' | abs_len= 1338
+[13:29:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:38] select | verify strict 18/20
+[13:29:38] verify | func= Motivation | rank= 15 | pid= cond-mat/0101011 | title_snip='Calculation of Magnetic Penetration Depth Length $\lambda(T)$ in High …' | abs_len= 597
+[13:29:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:40] select | verify strict 19/20
+[13:29:40] verify | func= Motivation | rank= 17 | pid= cond-mat/0102144 | title_snip='New selection rules for resonant Raman scattering on quantum wires' | abs_len= 902
+[13:29:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:43] select | verify strict 20/20
+[13:29:43] verify | func= Motivation | rank= 19 | pid= cond-mat/0104223 | title_snip='Ferromagnetism in the one-dimensional Hubbard model with orbital
+  deg…' | abs_len= 1427
+[13:29:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:45] select | strict pass found 0 winners → trying relaxed
+[13:29:45] select | verify relaxed 1/20
+[13:29:45] verify | func= Motivation | rank= 0 | pid= cond-mat/0104432 | title_snip='Thermal Conductivity near H_c2 for spin-triplet superconducting States…' | abs_len= 1279
+[13:29:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:29:49] select | verify relaxed 2/20
+[13:29:49] verify | func= Motivation | rank= 5 | pid= cond-mat/0102075 | title_snip='Effect of Band Structure on the Symmetry of Superconducting States' | abs_len= 616
+[13:29:52] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:29:52] select | verify relaxed 3/20
+[13:29:52] verify | func= Motivation | rank= 1 | pid= cond-mat/0102132 | title_snip='Scaling of H_{c2 \perp}(T) in Nb/CuMn Multilayers' | abs_len= 502
+[13:29:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:29:55] select | verify relaxed 4/20
+[13:29:55] verify | func= Motivation | rank= 2 | pid= cond-mat/0103523 | title_snip='Evidence for Suppression of Superconductivity by Spin Imbalance in
+  C…' | abs_len= 657
+[13:29:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:29:57] select | verify relaxed 5/20
+[13:29:57] verify | func= Motivation | rank= 3 | pid= cond-mat/0104225 | title_snip='Angular Position of Nodes in the Superconducting Gap of Quasi-2D
+  Hea…' | abs_len= 606
+[13:30:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= True
+[13:30:01] select | verify relaxed 6/20
+[13:30:01] verify | func= Motivation | rank= 8 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[13:30:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:03] select | verify relaxed 7/20
+[13:30:03] verify | func= Motivation | rank= 10 | pid= cond-mat/0102111 | title_snip='Pseudogap in High - Temperature Superconductors' | abs_len= 918
+[13:30:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:06] select | verify relaxed 8/20
+[13:30:06] verify | func= Motivation | rank= 13 | pid= cond-mat/0102281 | title_snip='Stripes, Vibrations and Superconductivity' | abs_len= 999
+[13:30:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:08] select | verify relaxed 9/20
+[13:30:08] verify | func= Motivation | rank= 16 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[13:30:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:11] select | verify relaxed 10/20
+[13:30:11] verify | func= Motivation | rank= 18 | pid= cond-mat/0104090 | title_snip='Decoupling of the S=1/2 antiferromagnetic zig-zag ladder with anisotro…' | abs_len= 1137
+[13:30:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:14] select | verify relaxed 11/20
+[13:30:14] verify | func= Motivation | rank= 4 | pid= cond-mat/0102139 | title_snip='Interplay between spin-density-wave and superconducting states in
+  qu…' | abs_len= 666
+[13:30:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:30:17] select | verify relaxed 12/20
+[13:30:17] verify | func= Motivation | rank= 6 | pid= cond-mat/0102074 | title_snip='Electronic theory for superconductivity in Sr$_2$RuO$_4$: triplet
+  pa…' | abs_len= 1068
+[13:30:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[13:30:19] select | verify relaxed 13/20
+[13:30:19] verify | func= Motivation | rank= 7 | pid= cond-mat/0103381 | title_snip='Theoretical study of quasiparticle states near the surface of a
+  quas…' | abs_len= 680
+[13:30:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:30:23] select | verify relaxed 14/20
+[13:30:23] verify | func= Motivation | rank= 9 | pid= cond-mat/0102055 | title_snip='Disorder and superconductivity : a new phase of bi-particle localized
+…' | abs_len= 468
+[13:30:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:25] select | verify relaxed 15/20
+[13:30:25] verify | func= Motivation | rank= 11 | pid= cond-mat/0103456 | title_snip='Doping dependence of the resonance peak and incommensuration in
+  high…' | abs_len= 937
+[13:30:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:28] select | verify relaxed 16/20
+[13:30:28] verify | func= Motivation | rank= 12 | pid= nucl-ex/0104028 | title_snip='High-spin states in and around doubly-magic nuclei' | abs_len= 469
+[13:30:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:30] select | verify relaxed 17/20
+[13:30:30] verify | func= Motivation | rank= 14 | pid= cond-mat/0104457 | title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' | abs_len= 1338
+[13:30:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:33] select | verify relaxed 18/20
+[13:30:33] verify | func= Motivation | rank= 15 | pid= cond-mat/0101011 | title_snip='Calculation of Magnetic Penetration Depth Length $\lambda(T)$ in High …' | abs_len= 597
+[13:30:36] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:30:36] select | verify relaxed 19/20
+[13:30:36] verify | func= Motivation | rank= 17 | pid= cond-mat/0102144 | title_snip='New selection rules for resonant Raman scattering on quantum wires' | abs_len= 902
+[13:30:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:38] select | verify relaxed 20/20
+[13:30:38] verify | func= Motivation | rank= 19 | pid= cond-mat/0104223 | title_snip='Ferromagnetism in the one-dimensional Hubbard model with orbital
+  deg…' | abs_len= 1427
+[13:30:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What future research directions could be motivated by the current study's inability to distinguish between vertical and horizontal line nodes in spin-triplet superconducting states?
+- WINNER: cond-mat/0104432 | Thermal Conductivity near H_c2 for spin-triplet superconducting States
+  with line nodes in Sr_2RuO_4
+- QUOTE : Since the results for vertical and horizontal line nodes are almost the same
+- WHY   : sufficient
+- ANSWER: Future research could investigate ways to differentiate between vertical and horizontal line nodes in spin-triplet superconducting states, as the current study's inability to do so leaves the pairing model for Sr_2RuO_4 uncertain. This distinction is crucial for understanding the underlying superconducting mechanisms in these materials (cond-mat/0104432).
+[13:30:46] main | running function= FutureWork
+[13:30:46] select | function= FutureWork | candidates_in= 20
+[13:30:46] select | core_terms= ['spin-triplet superconducting states', 'line nodes', 'vertical line nodes', 'horizontal line nodes', 'spin-triplet']
+[13:30:46] select | no cosine prune; kept=20/20
+[13:30:46] select | pool_size= 20 | ranks= [0, 5, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] | pids= ['cond-mat/0104432', 'cond-mat/0102075', 'cond-mat/0102132', 'cond-mat/0103523', 'cond-mat/0104225', 'cond-mat/0102139', 'cond-mat/0102074', 'cond-mat/0103381', 'cond-mat/0102456', 'cond-mat/0102055', 'cond-mat/0102111', 'cond-mat/0103456', 'nucl-ex/0104028', 'cond-mat/0102281', 'cond-mat/0104457', 'cond-mat/0101011', 'cond-mat/0102343', 'cond-mat/0102144', 'cond-mat/0104090', 'cond-mat/0104223']
+[13:30:46] select | verify strict 1/20
+[13:30:46] verify | func= FutureWork | rank= 0 | pid= cond-mat/0104432 | title_snip='Thermal Conductivity near H_c2 for spin-triplet superconducting States…' | abs_len= 1279
+[13:30:49] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:30:49] select | verify strict 2/20
+[13:30:49] verify | func= FutureWork | rank= 5 | pid= cond-mat/0102075 | title_snip='Effect of Band Structure on the Symmetry of Superconducting States' | abs_len= 616
+[13:30:52] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[13:30:52] select | verify strict 3/20
+[13:30:52] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102132 | title_snip='Scaling of H_{c2 \perp}(T) in Nb/CuMn Multilayers' | abs_len= 502
+[13:30:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:55] select | verify strict 4/20
+[13:30:55] verify | func= FutureWork | rank= 2 | pid= cond-mat/0103523 | title_snip='Evidence for Suppression of Superconductivity by Spin Imbalance in
+  C…' | abs_len= 657
+[13:30:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:30:57] select | verify strict 5/20
+[13:30:57] verify | func= FutureWork | rank= 3 | pid= cond-mat/0104225 | title_snip='Angular Position of Nodes in the Superconducting Gap of Quasi-2D
+  Hea…' | abs_len= 606
+[13:31:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:31:00] select | verify strict 6/20
+[13:31:00] verify | func= FutureWork | rank= 4 | pid= cond-mat/0102139 | title_snip='Interplay between spin-density-wave and superconducting states in
+  qu…' | abs_len= 666
+[13:31:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:31:03] select | verify strict 7/20
+[13:31:03] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102074 | title_snip='Electronic theory for superconductivity in Sr$_2$RuO$_4$: triplet
+  pa…' | abs_len= 1068
+[13:31:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:31:06] select | verify strict 8/20
+[13:31:06] verify | func= FutureWork | rank= 7 | pid= cond-mat/0103381 | title_snip='Theoretical study of quasiparticle states near the surface of a
+  quas…' | abs_len= 680
+[13:31:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:09] select | verify strict 9/20
+[13:31:09] verify | func= FutureWork | rank= 8 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[13:31:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:12] select | verify strict 10/20
+[13:31:12] verify | func= FutureWork | rank= 9 | pid= cond-mat/0102055 | title_snip='Disorder and superconductivity : a new phase of bi-particle localized
+…' | abs_len= 468
+[13:31:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:14] select | verify strict 11/20
+[13:31:14] verify | func= FutureWork | rank= 10 | pid= cond-mat/0102111 | title_snip='Pseudogap in High - Temperature Superconductors' | abs_len= 918
+[13:31:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:17] select | verify strict 12/20
+[13:31:17] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103456 | title_snip='Doping dependence of the resonance peak and incommensuration in
+  high…' | abs_len= 937
+[13:31:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:19] select | verify strict 13/20
+[13:31:19] verify | func= FutureWork | rank= 12 | pid= nucl-ex/0104028 | title_snip='High-spin states in and around doubly-magic nuclei' | abs_len= 469
+[13:31:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:22] select | verify strict 14/20
+[13:31:22] verify | func= FutureWork | rank= 13 | pid= cond-mat/0102281 | title_snip='Stripes, Vibrations and Superconductivity' | abs_len= 999
+[13:31:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:24] select | verify strict 15/20
+[13:31:24] verify | func= FutureWork | rank= 14 | pid= cond-mat/0104457 | title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' | abs_len= 1338
+[13:31:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:27] select | verify strict 16/20
+[13:31:27] verify | func= FutureWork | rank= 15 | pid= cond-mat/0101011 | title_snip='Calculation of Magnetic Penetration Depth Length $\lambda(T)$ in High …' | abs_len= 597
+[13:31:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:29] select | verify strict 17/20
+[13:31:29] verify | func= FutureWork | rank= 16 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[13:31:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:32] select | verify strict 18/20
+[13:31:32] verify | func= FutureWork | rank= 17 | pid= cond-mat/0102144 | title_snip='New selection rules for resonant Raman scattering on quantum wires' | abs_len= 902
+[13:31:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:35] select | verify strict 19/20
+[13:31:35] verify | func= FutureWork | rank= 18 | pid= cond-mat/0104090 | title_snip='Decoupling of the S=1/2 antiferromagnetic zig-zag ladder with anisotro…' | abs_len= 1137
+[13:31:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:37] select | verify strict 20/20
+[13:31:37] verify | func= FutureWork | rank= 19 | pid= cond-mat/0104223 | title_snip='Ferromagnetism in the one-dimensional Hubbard model with orbital
+  deg…' | abs_len= 1427
+[13:31:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:40] select | strict pass found 0 winners → trying relaxed
+[13:31:40] select | verify relaxed 1/20
+[13:31:40] verify | func= FutureWork | rank= 0 | pid= cond-mat/0104432 | title_snip='Thermal Conductivity near H_c2 for spin-triplet superconducting States…' | abs_len= 1279
+[13:31:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:31:43] select | verify relaxed 2/20
+[13:31:43] verify | func= FutureWork | rank= 5 | pid= cond-mat/0102075 | title_snip='Effect of Band Structure on the Symmetry of Superconducting States' | abs_len= 616
+[13:31:46] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:31:46] select | verify relaxed 3/20
+[13:31:46] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102132 | title_snip='Scaling of H_{c2 \perp}(T) in Nb/CuMn Multilayers' | abs_len= 502
+[13:31:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:31:49] select | verify relaxed 4/20
+[13:31:49] verify | func= FutureWork | rank= 2 | pid= cond-mat/0103523 | title_snip='Evidence for Suppression of Superconductivity by Spin Imbalance in
+  C…' | abs_len= 657
+[13:31:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:31:52] select | verify relaxed 5/20
+[13:31:52] verify | func= FutureWork | rank= 3 | pid= cond-mat/0104225 | title_snip='Angular Position of Nodes in the Superconducting Gap of Quasi-2D
+  Hea…' | abs_len= 606
+[13:31:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:31:55] select | verify relaxed 6/20
+[13:31:55] verify | func= FutureWork | rank= 4 | pid= cond-mat/0102139 | title_snip='Interplay between spin-density-wave and superconducting states in
+  qu…' | abs_len= 666
+[13:31:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:31:58] select | verify relaxed 7/20
+[13:31:58] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102074 | title_snip='Electronic theory for superconductivity in Sr$_2$RuO$_4$: triplet
+  pa…' | abs_len= 1068
+[13:32:00] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[13:32:00] select | verify relaxed 8/20
+[13:32:00] verify | func= FutureWork | rank= 7 | pid= cond-mat/0103381 | title_snip='Theoretical study of quasiparticle states near the surface of a
+  quas…' | abs_len= 680
+[13:32:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:32:03] select | verify relaxed 9/20
+[13:32:03] verify | func= FutureWork | rank= 8 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[13:32:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:06] select | verify relaxed 10/20
+[13:32:06] verify | func= FutureWork | rank= 9 | pid= cond-mat/0102055 | title_snip='Disorder and superconductivity : a new phase of bi-particle localized
+…' | abs_len= 468
+[13:32:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:32:09] select | verify relaxed 11/20
+[13:32:09] verify | func= FutureWork | rank= 10 | pid= cond-mat/0102111 | title_snip='Pseudogap in High - Temperature Superconductors' | abs_len= 918
+[13:32:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:11] select | verify relaxed 12/20
+[13:32:11] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103456 | title_snip='Doping dependence of the resonance peak and incommensuration in
+  high…' | abs_len= 937
+[13:32:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:14] select | verify relaxed 13/20
+[13:32:14] verify | func= FutureWork | rank= 12 | pid= nucl-ex/0104028 | title_snip='High-spin states in and around doubly-magic nuclei' | abs_len= 469
+[13:32:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:17] select | verify relaxed 14/20
+[13:32:17] verify | func= FutureWork | rank= 13 | pid= cond-mat/0102281 | title_snip='Stripes, Vibrations and Superconductivity' | abs_len= 999
+[13:32:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:32:19] select | verify relaxed 15/20
+[13:32:19] verify | func= FutureWork | rank= 14 | pid= cond-mat/0104457 | title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' | abs_len= 1338
+[13:32:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:22] select | verify relaxed 16/20
+[13:32:22] verify | func= FutureWork | rank= 15 | pid= cond-mat/0101011 | title_snip='Calculation of Magnetic Penetration Depth Length $\lambda(T)$ in High …' | abs_len= 597
+[13:32:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:32:25] select | verify relaxed 17/20
+[13:32:25] verify | func= FutureWork | rank= 16 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[13:32:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:27] select | verify relaxed 18/20
+[13:32:27] verify | func= FutureWork | rank= 17 | pid= cond-mat/0102144 | title_snip='New selection rules for resonant Raman scattering on quantum wires' | abs_len= 902
+[13:32:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:30] select | verify relaxed 19/20
+[13:32:30] verify | func= FutureWork | rank= 18 | pid= cond-mat/0104090 | title_snip='Decoupling of the S=1/2 antiferromagnetic zig-zag ladder with anisotro…' | abs_len= 1137
+[13:32:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:32:33] select | verify relaxed 20/20
+[13:32:33] verify | func= FutureWork | rank= 19 | pid= cond-mat/0104223 | title_snip='Ferromagnetism in the one-dimensional Hubbard model with orbital
+  deg…' | abs_len= 1427
+[13:32:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What future research directions could be motivated by the current study's inability to distinguish between vertical and horizontal line nodes in spin-triplet superconducting states?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

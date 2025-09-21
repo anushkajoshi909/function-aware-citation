@@ -1,0 +1,329 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query seeks to use observed r\u2011process abundance variations to elucidate underlying astrophysical processes (Background) and to identify directions for subsequent investigations (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.9 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 128it [00:00, 1279.75it/s]
+Reading arXiv_src_0101_001.jsonl: 273it [00:00, 1376.34it/s]
+Reading arXiv_src_0101_001.jsonl: 411it [00:00, 1004.16it/s]
+Reading arXiv_src_0101_001.jsonl: 521it [00:00, 721.21it/s] 
+Reading arXiv_src_0101_001.jsonl: 606it [00:00, 699.24it/s]
+Reading arXiv_src_0101_001.jsonl: 711it [00:00, 783.99it/s]
+Reading arXiv_src_0101_001.jsonl: 813it [00:00, 844.71it/s]
+Reading arXiv_src_0101_001.jsonl: 923it [00:01, 912.89it/s]
+Reading arXiv_src_0101_001.jsonl: 1021it [00:01, 928.58it/s]
+Reading arXiv_src_0101_001.jsonl: 1153it [00:01, 1039.22it/s]
+Reading arXiv_src_0101_001.jsonl: 1289it [00:01, 1130.03it/s]
+Reading arXiv_src_0101_001.jsonl: 1406it [00:01, 1110.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1535it [00:01, 1155.48it/s]
+Reading arXiv_src_0101_001.jsonl: 1669it [00:01, 1208.71it/s]
+Reading arXiv_src_0101_001.jsonl: 1792it [00:01, 1176.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1947it [00:01, 1282.97it/s]
+Reading arXiv_src_0101_001.jsonl: 2121it [00:01, 1416.09it/s]
+Reading arXiv_src_0101_001.jsonl: 2273it [00:02, 1443.57it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1098.96it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 131it [00:00, 1309.75it/s]
+Reading arXiv_src_0102_001.jsonl: 269it [00:00, 1347.83it/s]
+Reading arXiv_src_0102_001.jsonl: 404it [00:00, 851.73it/s] 
+Reading arXiv_src_0102_001.jsonl: 505it [00:00, 508.67it/s]
+Reading arXiv_src_0102_001.jsonl: 589it [00:00, 571.54it/s]
+Reading arXiv_src_0102_001.jsonl: 666it [00:01, 595.87it/s]
+Reading arXiv_src_0102_001.jsonl: 778it [00:01, 715.72it/s]
+Reading arXiv_src_0102_001.jsonl: 906it [00:01, 853.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1017it [00:01, 920.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1132it [00:01, 979.61it/s]
+Reading arXiv_src_0102_001.jsonl: 1244it [00:01, 1016.14it/s]
+Reading arXiv_src_0102_001.jsonl: 1386it [00:01, 1127.78it/s]
+Reading arXiv_src_0102_001.jsonl: 1521it [00:01, 1186.82it/s]
+Reading arXiv_src_0102_001.jsonl: 1644it [00:01, 1191.18it/s]
+Reading arXiv_src_0102_001.jsonl: 1793it [00:01, 1278.17it/s]
+Reading arXiv_src_0102_001.jsonl: 1944it [00:02, 1346.20it/s]
+Reading arXiv_src_0102_001.jsonl: 2088it [00:02, 1372.10it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1006.17it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1366.14it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1520.73it/s]
+Reading arXiv_src_0103_001.jsonl: 454it [00:00, 1101.06it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 728.96it/s] 
+Reading arXiv_src_0103_001.jsonl: 670it [00:00, 778.30it/s]
+Reading arXiv_src_0103_001.jsonl: 762it [00:00, 793.13it/s]
+Reading arXiv_src_0103_001.jsonl: 878it [00:00, 886.26it/s]
+Reading arXiv_src_0103_001.jsonl: 979it [00:01, 917.48it/s]
+Reading arXiv_src_0103_001.jsonl: 1082it [00:01, 946.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1209it [00:01, 1030.50it/s]
+Reading arXiv_src_0103_001.jsonl: 1317it [00:01, 1034.11it/s]
+Reading arXiv_src_0103_001.jsonl: 1456it [00:01, 1136.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1587it [00:01, 1180.92it/s]
+Reading arXiv_src_0103_001.jsonl: 1740it [00:01, 1282.88it/s]
+Reading arXiv_src_0103_001.jsonl: 1877it [00:01, 1306.80it/s]
+Reading arXiv_src_0103_001.jsonl: 2013it [00:01, 1321.42it/s]
+Reading arXiv_src_0103_001.jsonl: 2158it [00:01, 1356.73it/s]
+Reading arXiv_src_0103_001.jsonl: 2304it [00:02, 1387.14it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1128.78it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 145it [00:00, 1448.43it/s]
+Reading arXiv_src_0104_001.jsonl: 306it [00:00, 1541.92it/s]
+Reading arXiv_src_0104_001.jsonl: 461it [00:00, 1018.86it/s]
+Reading arXiv_src_0104_001.jsonl: 578it [00:00, 550.97it/s] 
+Reading arXiv_src_0104_001.jsonl: 673it [00:00, 622.97it/s]
+Reading arXiv_src_0104_001.jsonl: 767it [00:01, 687.59it/s]
+Reading arXiv_src_0104_001.jsonl: 865it [00:01, 751.56it/s]
+Reading arXiv_src_0104_001.jsonl: 984it [00:01, 858.08it/s]
+Reading arXiv_src_0104_001.jsonl: 1097it [00:01, 927.94it/s]
+Reading arXiv_src_0104_001.jsonl: 1208it [00:01, 976.59it/s]
+Reading arXiv_src_0104_001.jsonl: 1319it [00:01, 1012.15it/s]
+Reading arXiv_src_0104_001.jsonl: 1444it [00:01, 1067.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1577it [00:01, 1137.65it/s]
+Reading arXiv_src_0104_001.jsonl: 1698it [00:01, 1158.28it/s]
+Reading arXiv_src_0104_001.jsonl: 1841it [00:01, 1236.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1998it [00:02, 1334.70it/s]
+Reading arXiv_src_0104_001.jsonl: 2134it [00:02, 927.84it/s] 
+Reading arXiv_src_0104_001.jsonl: 2282it [00:02, 1050.98it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 961.12it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?
+[debug] classifier labels: ['Background', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+1     1  0.938506  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+2     2  0.835792  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+3     3  0.654347  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+4     4  0.451554  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+5     5  0.388318  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+6     6  0.269564  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+7     7  0.269480  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+8     8  0.240000  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+9     9  0.223935  ...  2025-09-21T21:45:26.453822  Background, FutureWork
+
+[10 rows x 12 columns]
+[23:45:35] main | args: Namespace(max_check=20, debug=True)
+[23:45:35] read_last_jsonl | path= classified_outputs.jsonl
+[23:45:35] read_last_jsonl | total_lines= 1
+[23:45:35] main | query='How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?' | funcs=['Background', 'FutureWork']
+[23:45:39] main | core_terms= ['r-process', 'element abundances', 'astrophysical processes']
+[23:45:39] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:45:39] load_topk_jsonl | rows= 20
+[23:45:39] load_topk_jsonl | first: rank= 0 paper_id= nucl-th/0103049 title_snip='Changes in r-process abundances at late times' abs_len= 661
+[23:45:39] main | running function= Background
+[23:45:39] select | function= Background | candidates_in= 20
+[23:45:39] select | core_terms= ['r-process', 'element abundances', 'astrophysical processes']
+[23:45:39] select | no cosine prune; kept=20/20
+[23:45:39] select | pool_size= 20 | ranks= [2, 0, 1, 3, 16, 19, 5, 6, 9, 12, 13, 17, 18, 4, 7, 8, 10, 11, 14, 15] | pids= ['astro-ph/0101440', 'nucl-th/0103049', 'astro-ph/0103083', 'astro-ph/0104187', 'astro-ph/0101347', 'astro-ph/0103411', 'astro-ph/0103072', 'astro-ph/0104189', 'hep-ph/0104234', 'astro-ph/0101330', 'astro-ph/0104480', 'hep-ph/0101115', 'hep-ph/0101078', 'astro-ph/0101407', 'astro-ph/0104392', 'nucl-ex/0104021', 'astro-ph/0103396', 'hep-ph/0104177', 'astro-ph/0104237', 'hep-ph/0101060']
+[23:45:39] select | verify strict 1/20
+[23:45:39] verify | func= Background | rank= 2 | pid= astro-ph/0101440 | title_snip='Halo Star Abundances and r-Process Synthesis' | abs_len= 197
+[23:45:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:45:42] select | verify strict 2/20
+[23:45:42] verify | func= Background | rank= 0 | pid= nucl-th/0103049 | title_snip='Changes in r-process abundances at late times' | abs_len= 661
+[23:45:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:45:45] select | verify strict 3/20
+[23:45:45] verify | func= Background | rank= 1 | pid= astro-ph/0103083 | title_snip='A Simple Model for r-Process Scatter and Halo Evolution' | abs_len= 1288
+[23:45:48] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:45:48] select | verify strict 4/20
+[23:45:48] verify | func= Background | rank= 3 | pid= astro-ph/0104187 | title_snip='Diverse Supernova Sources for the r-Process and Abundances in Metal-Po…' | abs_len= 872
+[23:45:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:45:51] select | verify strict 5/20
+[23:45:51] verify | func= Background | rank= 16 | pid= astro-ph/0101347 | title_snip='Rapid-Process Nucleosynthesis in Neutrino-Magneto-Centrifugally Driven…' | abs_len= 1130
+[23:45:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:45:54] select | verify strict 6/20
+[23:45:54] verify | func= Background | rank= 19 | pid= astro-ph/0103411 | title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' | abs_len= 936
+[23:45:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:45:57] select | verify strict 7/20
+[23:45:57] verify | func= Background | rank= 5 | pid= astro-ph/0103072 | title_snip='A Mapping Survey of the 12CO and 13CO Emission in Galaxies' | abs_len= 1548
+[23:45:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:45:59] select | verify strict 8/20
+[23:45:59] verify | func= Background | rank= 6 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[23:46:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:02] select | verify strict 9/20
+[23:46:02] verify | func= Background | rank= 9 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[23:46:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:04] select | verify strict 10/20
+[23:46:04] verify | func= Background | rank= 12 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:46:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:07] select | verify strict 11/20
+[23:46:07] verify | func= Background | rank= 13 | pid= astro-ph/0104480 | title_snip='On the Possibility of Observing H2 Emission from Primordial Molecular
+…' | abs_len= 1230
+[23:46:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:09] select | verify strict 12/20
+[23:46:09] verify | func= Background | rank= 17 | pid= hep-ph/0101115 | title_snip='Enhanced Minijet Production in $A-A$ Collisions from Gluons with Large…' | abs_len= 696
+[23:46:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:12] select | verify strict 13/20
+[23:46:12] verify | func= Background | rank= 18 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[23:46:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:14] select | verify strict 14/20
+[23:46:14] verify | func= Background | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[23:46:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:17] select | verify strict 15/20
+[23:46:17] verify | func= Background | rank= 7 | pid= astro-ph/0104392 | title_snip='Systematic Uncertainties in the Determination of the Primordial 4He
+  …' | abs_len= 1524
+[23:46:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:19] select | verify strict 16/20
+[23:46:19] verify | func= Background | rank= 8 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[23:46:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:22] select | verify strict 17/20
+[23:46:22] verify | func= Background | rank= 10 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[23:46:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:25] select | verify strict 18/20
+[23:46:25] verify | func= Background | rank= 11 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[23:46:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:27] select | verify strict 19/20
+[23:46:27] verify | func= Background | rank= 14 | pid= astro-ph/0104237 | title_snip='Chemical Evolution of Galaxies' | abs_len= 977
+[23:46:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:46:30] select | verify strict 20/20
+[23:46:30] verify | func= Background | rank= 15 | pid= hep-ph/0101060 | title_snip='An Inclusive Cross Section for the Nucleus - Nucleus Interaction at RH…' | abs_len= 290
+[23:46:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?
+- WINNER: nucl-th/0103049 | Changes in r-process abundances at late times
+- QUOTE : Changes in r-process abundances
+- WHY   : sufficient
+- ANSWER: The observed variations in r-process element abundances are influenced by changes in abundance patterns that occur late in the r process, such as the shifting of material into specific peaks (nucl-th/0103049).
+[23:46:38] main | running function= FutureWork
+[23:46:38] select | function= FutureWork | candidates_in= 20
+[23:46:38] select | core_terms= ['r-process', 'element abundances', 'astrophysical processes']
+[23:46:38] select | no cosine prune; kept=20/20
+[23:46:38] select | pool_size= 20 | ranks= [2, 0, 1, 3, 16, 19, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18] | pids= ['astro-ph/0101440', 'nucl-th/0103049', 'astro-ph/0103083', 'astro-ph/0104187', 'astro-ph/0101347', 'astro-ph/0103411', 'astro-ph/0101407', 'astro-ph/0103072', 'astro-ph/0104189', 'astro-ph/0104392', 'nucl-ex/0104021', 'hep-ph/0104234', 'astro-ph/0103396', 'hep-ph/0104177', 'astro-ph/0101330', 'astro-ph/0104480', 'astro-ph/0104237', 'hep-ph/0101060', 'hep-ph/0101115', 'hep-ph/0101078']
+[23:46:38] select | verify strict 1/20
+[23:46:38] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101440 | title_snip='Halo Star Abundances and r-Process Synthesis' | abs_len= 197
+[23:46:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:46:41] select | verify strict 2/20
+[23:46:41] verify | func= FutureWork | rank= 0 | pid= nucl-th/0103049 | title_snip='Changes in r-process abundances at late times' | abs_len= 661
+[23:46:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:46:44] select | verify strict 3/20
+[23:46:44] verify | func= FutureWork | rank= 1 | pid= astro-ph/0103083 | title_snip='A Simple Model for r-Process Scatter and Halo Evolution' | abs_len= 1288
+[23:46:47] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[23:46:47] select | verify strict 4/20
+[23:46:47] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104187 | title_snip='Diverse Supernova Sources for the r-Process and Abundances in Metal-Po…' | abs_len= 872
+[23:46:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:46:50] select | verify strict 5/20
+[23:46:50] verify | func= FutureWork | rank= 16 | pid= astro-ph/0101347 | title_snip='Rapid-Process Nucleosynthesis in Neutrino-Magneto-Centrifugally Driven…' | abs_len= 1130
+[23:46:53] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:46:53] select | verify strict 6/20
+[23:46:53] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103411 | title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' | abs_len= 936
+[23:46:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:56] select | verify strict 7/20
+[23:46:56] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[23:46:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:46:58] select | verify strict 8/20
+[23:46:58] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103072 | title_snip='A Mapping Survey of the 12CO and 13CO Emission in Galaxies' | abs_len= 1548
+[23:47:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:01] select | verify strict 9/20
+[23:47:01] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[23:47:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:03] select | verify strict 10/20
+[23:47:03] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104392 | title_snip='Systematic Uncertainties in the Determination of the Primordial 4He
+  …' | abs_len= 1524
+[23:47:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:06] select | verify strict 11/20
+[23:47:06] verify | func= FutureWork | rank= 8 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[23:47:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:08] select | verify strict 12/20
+[23:47:08] verify | func= FutureWork | rank= 9 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[23:47:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:11] select | verify strict 13/20
+[23:47:11] verify | func= FutureWork | rank= 10 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[23:47:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:14] select | verify strict 14/20
+[23:47:14] verify | func= FutureWork | rank= 11 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[23:47:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:16] select | verify strict 15/20
+[23:47:16] verify | func= FutureWork | rank= 12 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:47:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:19] select | verify strict 16/20
+[23:47:19] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104480 | title_snip='On the Possibility of Observing H2 Emission from Primordial Molecular
+…' | abs_len= 1230
+[23:47:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:21] select | verify strict 17/20
+[23:47:21] verify | func= FutureWork | rank= 14 | pid= astro-ph/0104237 | title_snip='Chemical Evolution of Galaxies' | abs_len= 977
+[23:47:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:47:24] select | verify strict 18/20
+[23:47:24] verify | func= FutureWork | rank= 15 | pid= hep-ph/0101060 | title_snip='An Inclusive Cross Section for the Nucleus - Nucleus Interaction at RH…' | abs_len= 290
+[23:47:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:27] select | verify strict 19/20
+[23:47:27] verify | func= FutureWork | rank= 17 | pid= hep-ph/0101115 | title_snip='Enhanced Minijet Production in $A-A$ Collisions from Gluons with Large…' | abs_len= 696
+[23:47:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:47:29] select | verify strict 20/20
+[23:47:29] verify | func= FutureWork | rank= 18 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[23:47:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?
+- WINNER: astro-ph/0101440 | Halo Star Abundances and r-Process Synthesis
+- QUOTE : r-Process Synthesis
+- WHY   : sufficient
+- ANSWER: The observed variations in r-process element abundances have implications for nucleosynthesis and early Galactic chemical evolution, suggesting avenues for future research in these areas. Further study of heavy element abundances in low metallicity stars is needed to fully understand the background astrophysical processes (astro-ph/0101440).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

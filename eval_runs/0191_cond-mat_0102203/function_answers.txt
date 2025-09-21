@@ -1,0 +1,2 @@
+The experimental studies of discrete breathers in superconducting arrays, such as Josephson-junction ladder arrays, provide a foundation for future research by demonstrating the detection and control of breather states under various array parameters (cond-mat/0102203). [Background]
+The abstract does not provide information relevant to FutureWork. [FutureWork]

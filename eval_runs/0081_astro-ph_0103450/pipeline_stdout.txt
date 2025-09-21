@@ -1,0 +1,331 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Motivation"
+  ],
+  "justification": "The query asks how the new work builds on prior methods (Extends) and what shortcomings in earlier work drive this development (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.62 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.48it/s]
+Reading arXiv_src_0101_001.jsonl: 30it [00:00, 77.61it/s]
+Reading arXiv_src_0101_001.jsonl: 181it [00:00, 466.15it/s]
+Reading arXiv_src_0101_001.jsonl: 303it [00:00, 676.26it/s]
+Reading arXiv_src_0101_001.jsonl: 399it [00:00, 706.18it/s]
+Reading arXiv_src_0101_001.jsonl: 488it [00:01, 599.97it/s]
+Reading arXiv_src_0101_001.jsonl: 562it [00:01, 554.54it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:01, 670.13it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 755.34it/s]
+Reading arXiv_src_0101_001.jsonl: 883it [00:01, 847.15it/s]
+Reading arXiv_src_0101_001.jsonl: 991it [00:01, 909.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1097it [00:01, 950.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1224it [00:01, 1039.76it/s]
+Reading arXiv_src_0101_001.jsonl: 1332it [00:01, 1031.48it/s]
+Reading arXiv_src_0101_001.jsonl: 1472it [00:01, 1136.13it/s]
+Reading arXiv_src_0101_001.jsonl: 1599it [00:02, 1174.84it/s]
+Reading arXiv_src_0101_001.jsonl: 1730it [00:02, 1212.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1853it [00:02, 1183.75it/s]
+Reading arXiv_src_0101_001.jsonl: 2025it [00:02, 1337.27it/s]
+Reading arXiv_src_0101_001.jsonl: 2188it [00:02, 1423.04it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 893.36it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1331.22it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1368.63it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 852.22it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 525.82it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 559.56it/s]
+Reading arXiv_src_0102_001.jsonl: 665it [00:00, 594.21it/s]
+Reading arXiv_src_0102_001.jsonl: 779it [00:01, 720.25it/s]
+Reading arXiv_src_0102_001.jsonl: 908it [00:01, 860.04it/s]
+Reading arXiv_src_0102_001.jsonl: 1022it [00:01, 931.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1143it [00:01, 1006.73it/s]
+Reading arXiv_src_0102_001.jsonl: 1254it [00:01, 1029.42it/s]
+Reading arXiv_src_0102_001.jsonl: 1401it [00:01, 1153.39it/s]
+Reading arXiv_src_0102_001.jsonl: 1536it [00:01, 1208.25it/s]
+Reading arXiv_src_0102_001.jsonl: 1665it [00:01, 1231.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1816it [00:01, 1313.38it/s]
+Reading arXiv_src_0102_001.jsonl: 1969it [00:02, 1375.81it/s]
+Reading arXiv_src_0102_001.jsonl: 2122it [00:02, 1419.36it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1014.85it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1357.93it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1520.60it/s]
+Reading arXiv_src_0103_001.jsonl: 454it [00:00, 1114.29it/s]
+Reading arXiv_src_0103_001.jsonl: 576it [00:00, 737.34it/s] 
+Reading arXiv_src_0103_001.jsonl: 672it [00:00, 785.52it/s]
+Reading arXiv_src_0103_001.jsonl: 765it [00:00, 803.48it/s]
+Reading arXiv_src_0103_001.jsonl: 879it [00:00, 888.43it/s]
+Reading arXiv_src_0103_001.jsonl: 978it [00:01, 913.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1081it [00:01, 943.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1208it [00:01, 1035.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1316it [00:01, 1030.53it/s]
+Reading arXiv_src_0103_001.jsonl: 1455it [00:01, 1133.59it/s]
+Reading arXiv_src_0103_001.jsonl: 1589it [00:01, 1192.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1744it [00:01, 1292.45it/s]
+Reading arXiv_src_0103_001.jsonl: 1881it [00:01, 1314.98it/s]
+Reading arXiv_src_0103_001.jsonl: 2023it [00:01, 1345.22it/s]
+Reading arXiv_src_0103_001.jsonl: 2165it [00:01, 1365.65it/s]
+Reading arXiv_src_0103_001.jsonl: 2314it [00:02, 1402.24it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1135.10it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  7.81it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  8.83it/s]
+Reading arXiv_src_0104_001.jsonl: 141it [00:00, 596.77it/s]
+Reading arXiv_src_0104_001.jsonl: 300it [00:00, 972.11it/s]
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 984.60it/s]
+Reading arXiv_src_0104_001.jsonl: 507it [00:00, 698.82it/s]
+Reading arXiv_src_0104_001.jsonl: 589it [00:01, 465.51it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 571.18it/s]
+Reading arXiv_src_0104_001.jsonl: 785it [00:01, 643.27it/s]
+Reading arXiv_src_0104_001.jsonl: 886it [00:01, 727.32it/s]
+Reading arXiv_src_0104_001.jsonl: 1003it [00:01, 834.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1121it [00:01, 923.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1232it [00:01, 971.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1337it [00:01, 986.81it/s]
+Reading arXiv_src_0104_001.jsonl: 1469it [00:01, 1081.01it/s]
+Reading arXiv_src_0104_001.jsonl: 1607it [00:02, 1158.28it/s]
+Reading arXiv_src_0104_001.jsonl: 1731it [00:02, 1180.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1877it [00:02, 1261.50it/s]
+Reading arXiv_src_0104_001.jsonl: 2031it [00:02, 1337.84it/s]
+Reading arXiv_src_0104_001.jsonl: 2167it [00:02, 938.80it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 873.23it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work extend previous methods for determining metallicity and age in galaxies, and what problem or limitation in previous work motivates this extension?
+[debug] classifier labels: ['Extends', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+1     1  0.904377  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+2     2  0.860118  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+3     3  0.658324  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+4     4  0.623784  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+5     5  0.612218  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+6     6  0.593405  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+7     7  0.585310  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+8     8  0.568450  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+9     9  0.564822  ...  2025-09-21T16:06:15.455389  Extends, Motivation
+
+[10 rows x 12 columns]
+[18:06:27] main | args: Namespace(max_check=20, debug=True)
+[18:06:27] read_last_jsonl | path= classified_outputs.jsonl
+[18:06:27] read_last_jsonl | total_lines= 1
+[18:06:27] main | query='How does the current work extend previous methods for determining metallicity and age in galaxies, and what problem or limitation in previous work motivates this extension?' | funcs=['Extends', 'Motivation']
+[18:06:29] main | core_terms= ['galaxies', 'metallicity', 'age']
+[18:06:29] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[18:06:29] load_topk_jsonl | rows= 20
+[18:06:29] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103450 title_snip='F stars, metallicity, and the ages of red galaxies at z > 1' abs_len= 1821
+[18:06:29] main | running function= Extends
+[18:06:29] select | function= Extends | candidates_in= 20
+[18:06:29] select | core_terms= ['galaxies', 'metallicity', 'age']
+[18:06:29] select | no cosine prune; kept=20/20
+[18:06:29] select | pool_size= 20 | ranks= [0, 9, 14, 5, 12, 13, 16, 15, 17, 1, 8, 2, 3, 18, 19, 4, 6, 7, 10, 11] | pids= ['astro-ph/0103450', 'astro-ph/0101472', 'astro-ph/0101543', 'astro-ph/0101544', 'astro-ph/0101344', 'astro-ph/0103175', 'astro-ph/0101084', 'astro-ph/0104435', 'astro-ph/0101174', 'astro-ph/0104076', 'astro-ph/0101296', 'astro-ph/0101386', 'hep-ph/0101131', 'gr-qc/0103003', 'astro-ph/0101134', 'astro-ph/0104162', 'astro-ph/0101448', 'astro-ph/0101040', 'hep-ph/0101210', 'hep-ph/0102096']
+[18:06:29] select | verify strict 1/20
+[18:06:29] verify | func= Extends | rank= 0 | pid= astro-ph/0103450 | title_snip='F stars, metallicity, and the ages of red galaxies at z > 1' | abs_len= 1821
+[18:06:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:06:32] select | verify strict 2/20
+[18:06:32] verify | func= Extends | rank= 9 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[18:06:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:06:35] select | verify strict 3/20
+[18:06:35] verify | func= Extends | rank= 14 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[18:06:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:06:38] select | verify strict 4/20
+[18:06:38] verify | func= Extends | rank= 5 | pid= astro-ph/0101544 | title_snip='Dark energy and the epoch of galaxy formation' | abs_len= 971
+[18:06:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:06:41] select | verify strict 5/20
+[18:06:41] verify | func= Extends | rank= 12 | pid= astro-ph/0101344 | title_snip='The ultraviolet visibility and quantitative morphology of galactic dis…' | abs_len= 1279
+[18:06:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:06:44] select | verify strict 6/20
+[18:06:44] verify | func= Extends | rank= 13 | pid= astro-ph/0103175 | title_snip='Constraining the Properties of Dark Energy' | abs_len= 1410
+[18:06:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:06:47] select | verify strict 7/20
+[18:06:47] verify | func= Extends | rank= 16 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[18:06:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[18:06:50] select | verify strict 8/20
+[18:06:50] verify | func= Extends | rank= 15 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[18:06:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:06:52] select | verify strict 9/20
+[18:06:52] verify | func= Extends | rank= 17 | pid= astro-ph/0101174 | title_snip='Extended Lyman Alpha Emission Around Young Quasars: a Constraint on
+  …' | abs_len= 1134
+[18:06:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:06:55] select | verify strict 10/20
+[18:06:55] verify | func= Extends | rank= 1 | pid= astro-ph/0104076 | title_snip='Constraints on the Cosmic Equation of State using Gravitational Lensin…' | abs_len= 1196
+[18:06:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:06:58] select | verify strict 11/20
+[18:06:58] verify | func= Extends | rank= 8 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[18:07:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:07:01] select | verify strict 12/20
+[18:07:01] verify | func= Extends | rank= 2 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[18:07:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:03] select | verify strict 13/20
+[18:07:03] verify | func= Extends | rank= 3 | pid= hep-ph/0101131 | title_snip='Cosmological Constraints on Large Extra Dimensions' | abs_len= 490
+[18:07:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:06] select | verify strict 14/20
+[18:07:06] verify | func= Extends | rank= 18 | pid= gr-qc/0103003 | title_snip='Varying Cosmological Constant and the Machian Solution in the
+  Genera…' | abs_len= 1092
+[18:07:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:08] select | verify strict 15/20
+[18:07:08] verify | func= Extends | rank= 19 | pid= astro-ph/0101134 | title_snip='Astrophysical Limits on Massive Dark Matter' | abs_len= 818
+[18:07:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:11] select | verify strict 16/20
+[18:07:11] verify | func= Extends | rank= 4 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[18:07:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:13] select | verify strict 17/20
+[18:07:13] verify | func= Extends | rank= 6 | pid= astro-ph/0101448 | title_snip='Recycling the universe using scalar fields' | abs_len= 1419
+[18:07:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:16] select | verify strict 18/20
+[18:07:16] verify | func= Extends | rank= 7 | pid= astro-ph/0101040 | title_snip='Measuring Time-Dependence of Dark Energy Density from Type Ia Supernov…' | abs_len= 1330
+[18:07:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:18] select | verify strict 19/20
+[18:07:18] verify | func= Extends | rank= 10 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[18:07:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:21] select | verify strict 20/20
+[18:07:21] verify | func= Extends | rank= 11 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[18:07:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work extend previous methods for determining metallicity and age in galaxies, and what problem or limitation in previous work motivates this extension?
+- WINNER: astro-ph/0103450 | F stars, metallicity, and the ages of red galaxies at z > 1
+- QUOTE : allow the degeneracy between age and metallicity to be lifted
+- WHY   : sufficient
+- ANSWER: This work extends previous methods for determining metallicity and age in galaxies by exploring the use of the rest-frame near-UV spectral region to lift the degeneracy between age and metallicity, motivated by the limitation of previous methods in accurately estimating these parameters. The extension improves the accuracy of age estimates, particularly for high-redshift galaxies, by allowing metallicity to vary as a free parameter in model fitting (astro-ph/0103450).
+[18:07:29] main | running function= Motivation
+[18:07:29] select | function= Motivation | candidates_in= 20
+[18:07:29] select | core_terms= ['galaxies', 'metallicity', 'age']
+[18:07:29] select | no cosine prune; kept=20/20
+[18:07:29] select | pool_size= 20 | ranks= [0, 9, 14, 5, 12, 13, 16, 15, 1, 8, 2, 3, 17, 6, 10, 11, 4, 7, 18, 19] | pids= ['astro-ph/0103450', 'astro-ph/0101472', 'astro-ph/0101543', 'astro-ph/0101544', 'astro-ph/0101344', 'astro-ph/0103175', 'astro-ph/0101084', 'astro-ph/0104435', 'astro-ph/0104076', 'astro-ph/0101296', 'astro-ph/0101386', 'hep-ph/0101131', 'astro-ph/0101174', 'astro-ph/0101448', 'hep-ph/0101210', 'hep-ph/0102096', 'astro-ph/0104162', 'astro-ph/0101040', 'gr-qc/0103003', 'astro-ph/0101134']
+[18:07:29] select | verify strict 1/20
+[18:07:29] verify | func= Motivation | rank= 0 | pid= astro-ph/0103450 | title_snip='F stars, metallicity, and the ages of red galaxies at z > 1' | abs_len= 1821
+[18:07:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:07:32] select | verify strict 2/20
+[18:07:32] verify | func= Motivation | rank= 9 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[18:07:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:07:35] select | verify strict 3/20
+[18:07:35] verify | func= Motivation | rank= 14 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[18:07:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:07:38] select | verify strict 4/20
+[18:07:38] verify | func= Motivation | rank= 5 | pid= astro-ph/0101544 | title_snip='Dark energy and the epoch of galaxy formation' | abs_len= 971
+[18:07:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:07:41] select | verify strict 5/20
+[18:07:41] verify | func= Motivation | rank= 12 | pid= astro-ph/0101344 | title_snip='The ultraviolet visibility and quantitative morphology of galactic dis…' | abs_len= 1279
+[18:07:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:07:44] select | verify strict 6/20
+[18:07:44] verify | func= Motivation | rank= 13 | pid= astro-ph/0103175 | title_snip='Constraining the Properties of Dark Energy' | abs_len= 1410
+[18:07:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:46] select | verify strict 7/20
+[18:07:46] verify | func= Motivation | rank= 16 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[18:07:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[18:07:49] select | verify strict 8/20
+[18:07:49] verify | func= Motivation | rank= 15 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[18:07:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:52] select | verify strict 9/20
+[18:07:52] verify | func= Motivation | rank= 1 | pid= astro-ph/0104076 | title_snip='Constraints on the Cosmic Equation of State using Gravitational Lensin…' | abs_len= 1196
+[18:07:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:07:54] select | verify strict 10/20
+[18:07:54] verify | func= Motivation | rank= 8 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[18:07:57] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:07:57] select | verify strict 11/20
+[18:07:57] verify | func= Motivation | rank= 2 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[18:08:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:00] select | verify strict 12/20
+[18:08:00] verify | func= Motivation | rank= 3 | pid= hep-ph/0101131 | title_snip='Cosmological Constraints on Large Extra Dimensions' | abs_len= 490
+[18:08:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:02] select | verify strict 13/20
+[18:08:02] verify | func= Motivation | rank= 17 | pid= astro-ph/0101174 | title_snip='Extended Lyman Alpha Emission Around Young Quasars: a Constraint on
+  …' | abs_len= 1134
+[18:08:05] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:08:05] select | verify strict 14/20
+[18:08:05] verify | func= Motivation | rank= 6 | pid= astro-ph/0101448 | title_snip='Recycling the universe using scalar fields' | abs_len= 1419
+[18:08:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:08] select | verify strict 15/20
+[18:08:08] verify | func= Motivation | rank= 10 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[18:08:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:10] select | verify strict 16/20
+[18:08:10] verify | func= Motivation | rank= 11 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[18:08:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:13] select | verify strict 17/20
+[18:08:13] verify | func= Motivation | rank= 4 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[18:08:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:15] select | verify strict 18/20
+[18:08:15] verify | func= Motivation | rank= 7 | pid= astro-ph/0101040 | title_snip='Measuring Time-Dependence of Dark Energy Density from Type Ia Supernov…' | abs_len= 1330
+[18:08:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:18] select | verify strict 19/20
+[18:08:18] verify | func= Motivation | rank= 18 | pid= gr-qc/0103003 | title_snip='Varying Cosmological Constant and the Machian Solution in the
+  Genera…' | abs_len= 1092
+[18:08:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:08:20] select | verify strict 20/20
+[18:08:20] verify | func= Motivation | rank= 19 | pid= astro-ph/0101134 | title_snip='Astrophysical Limits on Massive Dark Matter' | abs_len= 818
+[18:08:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the current work extend previous methods for determining metallicity and age in galaxies, and what problem or limitation in previous work motivates this extension?
+- WINNER: astro-ph/0103450 | F stars, metallicity, and the ages of red galaxies at z > 1
+- QUOTE : degeneracy between age and metallicity to be lifted
+- WHY   : sufficient
+- ANSWER: The current work extends previous methods by exploring the use of the rest-frame near-UV spectral region to break the age-metallicity degeneracy in galaxies, motivated by the limitation of previous methods in accurately determining metallicity and age. This extension is necessary because previous methods struggled to lift this degeneracy, making it difficult to constrain the ages of galaxies (astro-ph/0103450).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

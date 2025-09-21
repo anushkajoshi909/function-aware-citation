@@ -1,0 +1,341 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Uses"
+  ],
+  "justification": "The query requests foundational information on photon\u2011pixel interactions (background) and inquires about the techniques employed to obtain subpixel resolution (uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.99 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  5.55it/s]
+Reading arXiv_src_0101_001.jsonl: 31it [00:00, 135.70it/s]
+Reading arXiv_src_0101_001.jsonl: 182it [00:00, 666.25it/s]
+Reading arXiv_src_0101_001.jsonl: 310it [00:00, 883.90it/s]
+Reading arXiv_src_0101_001.jsonl: 408it [00:00, 790.16it/s]
+Reading arXiv_src_0101_001.jsonl: 495it [00:00, 650.53it/s]
+Reading arXiv_src_0101_001.jsonl: 569it [00:00, 590.36it/s]
+Reading arXiv_src_0101_001.jsonl: 674it [00:01, 699.99it/s]
+Reading arXiv_src_0101_001.jsonl: 776it [00:01, 780.06it/s]
+Reading arXiv_src_0101_001.jsonl: 888it [00:01, 869.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1001it [00:01, 941.25it/s]
+Reading arXiv_src_0101_001.jsonl: 1109it [00:01, 979.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1241it [00:01, 1075.63it/s]
+Reading arXiv_src_0101_001.jsonl: 1352it [00:01, 1067.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:01, 1142.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:01, 1199.81it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:01, 1219.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1873it [00:02, 1200.34it/s]
+Reading arXiv_src_0101_001.jsonl: 2056it [00:02, 1382.89it/s]
+Reading arXiv_src_0101_001.jsonl: 2210it [00:02, 1429.06it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 981.68it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  4.95it/s]
+Reading arXiv_src_0102_001.jsonl: 90it [00:00, 326.52it/s]
+Reading arXiv_src_0102_001.jsonl: 150it [00:00, 312.79it/s]
+Reading arXiv_src_0102_001.jsonl: 270it [00:00, 549.49it/s]
+Reading arXiv_src_0102_001.jsonl: 351it [00:00, 620.80it/s]
+Reading arXiv_src_0102_001.jsonl: 425it [00:00, 535.89it/s]
+Reading arXiv_src_0102_001.jsonl: 488it [00:01, 377.20it/s]
+Reading arXiv_src_0102_001.jsonl: 575it [00:01, 471.86it/s]
+Reading arXiv_src_0102_001.jsonl: 636it [00:01, 497.63it/s]
+Reading arXiv_src_0102_001.jsonl: 728it [00:01, 595.51it/s]
+Reading arXiv_src_0102_001.jsonl: 849it [00:01, 749.14it/s]
+Reading arXiv_src_0102_001.jsonl: 967it [00:01, 862.26it/s]
+Reading arXiv_src_0102_001.jsonl: 1075it [00:01, 921.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1193it [00:01, 992.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1308it [00:02, 1036.82it/s]
+Reading arXiv_src_0102_001.jsonl: 1453it [00:02, 1156.06it/s]
+Reading arXiv_src_0102_001.jsonl: 1576it [00:02, 1171.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1707it [00:02, 1210.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1854it [00:02, 1285.34it/s]
+Reading arXiv_src_0102_001.jsonl: 2005it [00:02, 1350.88it/s]
+Reading arXiv_src_0102_001.jsonl: 2156it [00:02, 1396.96it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 829.04it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1363.69it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1517.49it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1109.61it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 738.86it/s] 
+Reading arXiv_src_0103_001.jsonl: 665it [00:00, 768.55it/s]
+Reading arXiv_src_0103_001.jsonl: 755it [00:00, 786.00it/s]
+Reading arXiv_src_0103_001.jsonl: 870it [00:00, 878.17it/s]
+Reading arXiv_src_0103_001.jsonl: 972it [00:01, 911.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1079it [00:01, 953.95it/s]
+Reading arXiv_src_0103_001.jsonl: 1205it [00:01, 1040.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1314it [00:01, 1026.28it/s]
+Reading arXiv_src_0103_001.jsonl: 1451it [00:01, 1123.60it/s]
+Reading arXiv_src_0103_001.jsonl: 1586it [00:01, 1188.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1732it [00:01, 1266.76it/s]
+Reading arXiv_src_0103_001.jsonl: 1873it [00:01, 1306.77it/s]
+Reading arXiv_src_0103_001.jsonl: 2006it [00:01, 1312.34it/s]
+Reading arXiv_src_0103_001.jsonl: 2152it [00:01, 1355.25it/s]
+Reading arXiv_src_0103_001.jsonl: 2293it [00:02, 1371.40it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1126.69it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  3.99it/s]
+Reading arXiv_src_0104_001.jsonl: 53it [00:00, 116.09it/s]
+Reading arXiv_src_0104_001.jsonl: 202it [00:00, 446.31it/s]
+Reading arXiv_src_0104_001.jsonl: 356it [00:00, 710.05it/s]
+Reading arXiv_src_0104_001.jsonl: 463it [00:00, 657.42it/s]
+Reading arXiv_src_0104_001.jsonl: 553it [00:01, 592.84it/s]
+Reading arXiv_src_0104_001.jsonl: 629it [00:01, 451.97it/s]
+Reading arXiv_src_0104_001.jsonl: 720it [00:01, 535.58it/s]
+Reading arXiv_src_0104_001.jsonl: 806it [00:01, 601.10it/s]
+Reading arXiv_src_0104_001.jsonl: 911it [00:01, 703.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1036it [00:01, 827.82it/s]
+Reading arXiv_src_0104_001.jsonl: 1149it [00:01, 903.03it/s]
+Reading arXiv_src_0104_001.jsonl: 1268it [00:02, 979.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1374it [00:02, 987.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1504it [00:02, 1074.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1640it [00:02, 1154.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1766it [00:02, 1184.45it/s]
+Reading arXiv_src_0104_001.jsonl: 1909it [00:02, 1255.49it/s]
+Reading arXiv_src_0104_001.jsonl: 2064it [00:02, 1338.31it/s]
+Reading arXiv_src_0104_001.jsonl: 2200it [00:02, 927.98it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:03, 769.37it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the understanding of X-ray photon interactions with pixels provide background for determining the X-ray landing position, and what methods are used to achieve subpixel resolution?
+[debug] classifier labels: ['Background', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T12:04:07.152735     Background, Uses
+1     1  0.459047  ...  2025-09-21T12:04:07.152735     Background, Uses
+2     2  0.452321  ...  2025-09-21T12:04:07.152735     Background, Uses
+3     3  0.384225  ...  2025-09-21T12:04:07.152735     Background, Uses
+4     4  0.357950  ...  2025-09-21T12:04:07.152735     Background, Uses
+5     5  0.273598  ...  2025-09-21T12:04:07.152735     Background, Uses
+6     6  0.253238  ...  2025-09-21T12:04:07.152735     Background, Uses
+7     7  0.248050  ...  2025-09-21T12:04:07.152735     Background, Uses
+8     8  0.235254  ...  2025-09-21T12:04:07.152735     Background, Uses
+9     9  0.233993  ...  2025-09-21T12:04:07.152735     Background, Uses
+
+[10 rows x 12 columns]
+[14:04:14] main | args: Namespace(max_check=20, debug=True)
+[14:04:14] read_last_jsonl | path= classified_outputs.jsonl
+[14:04:14] read_last_jsonl | total_lines= 1
+[14:04:14] main | query='How does the understanding of X-ray photon interactions with pixels provide background for determining the X-ray landing position, and what methods are used to achieve subpixel resolution?' | funcs=['Background', 'Uses']
+[14:04:16] main | core_terms= ['X-ray photon', 'pixels', 'X-ray landing position', 'subpixel resolution', 'X-ray']
+[14:04:16] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:04:16] load_topk_jsonl | rows= 20
+[14:04:16] load_topk_jsonl | first: rank= 0 paper_id= physics/0101052 title_snip='Subpixel Spatial Resolution of the X-Ray Charge-Coupled Device Based o…' abs_len= 1282
+[14:04:16] main | running function= Background
+[14:04:16] select | function= Background | candidates_in= 20
+[14:04:16] select | core_terms= ['X-ray photon', 'pixels', 'X-ray landing position', 'subpixel resolution', 'X-ray']
+[14:04:16] select | no cosine prune; kept=20/20
+[14:04:16] select | pool_size= 20 | ranks= [0, 11, 2, 1, 7, 10, 3, 8, 13, 15, 6, 4, 5, 9, 12, 14, 16, 17, 18, 19] | pids= ['physics/0101052', 'quant-ph/0102118', 'astro-ph/0101557', 'astro-ph/0101467', 'astro-ph/0101466', 'astro-ph/0102297', 'cond-mat/0101142', 'astro-ph/0103439', 'cond-mat/0101230', 'physics/0101059', 'hep-ph/0102105', 'quant-ph/0101122', 'hep-ph/0101084', 'astro-ph/0103048', 'hep-ex/0104006', 'hep-ph/0103323', 'gr-qc/0101051', 'astro-ph/0104366', 'hep-ph/0102018', 'hep-ph/0104155']
+[14:04:16] select | verify strict 1/20
+[14:04:16] verify | func= Background | rank= 0 | pid= physics/0101052 | title_snip='Subpixel Spatial Resolution of the X-Ray Charge-Coupled Device Based o…' | abs_len= 1282
+[14:04:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:04:19] select | verify strict 2/20
+[14:04:19] verify | func= Background | rank= 11 | pid= quant-ph/0102118 | title_snip='Quantum Interrogation and the Safer X-ray' | abs_len= 524
+[14:04:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:21] select | verify strict 3/20
+[14:04:21] verify | func= Background | rank= 2 | pid= astro-ph/0101557 | title_snip='Improvement of the Spatial Resolution of the ACIS Using Split Pixel
+  …' | abs_len= 1307
+[14:04:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:04:24] select | verify strict 4/20
+[14:04:24] verify | func= Background | rank= 1 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[14:04:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:04:27] select | verify strict 5/20
+[14:04:27] verify | func= Background | rank= 7 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[14:04:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:04:31] select | verify strict 6/20
+[14:04:31] verify | func= Background | rank= 10 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[14:04:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:04:34] select | verify strict 7/20
+[14:04:34] verify | func= Background | rank= 3 | pid= cond-mat/0101142 | title_snip='X-ray diffraction and spectroscopic techniques from liquid surfaces an…' | abs_len= 95
+[14:04:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:36] select | verify strict 8/20
+[14:04:36] verify | func= Background | rank= 8 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[14:04:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:04:39] select | verify strict 9/20
+[14:04:39] verify | func= Background | rank= 13 | pid= cond-mat/0101230 | title_snip='X-ray standing wave and reflectometric characterization of multilayer
+…' | abs_len= 1296
+[14:04:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:04:42] select | verify strict 10/20
+[14:04:42] verify | func= Background | rank= 15 | pid= physics/0101059 | title_snip='Discovery of a Planar Waveguide for an X-Ray Radiation' | abs_len= 786
+[14:04:45] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:04:45] select | verify strict 11/20
+[14:04:45] verify | func= Background | rank= 6 | pid= hep-ph/0102105 | title_snip='On the Resummation of Large QCD Logarithms in Higgs -> 2 Photons Decay' | abs_len= 785
+[14:04:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:47] select | verify strict 12/20
+[14:04:47] verify | func= Background | rank= 4 | pid= quant-ph/0101122 | title_snip='Sub-wavelength lithography over extended areas' | abs_len= 845
+[14:04:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:50] select | verify strict 13/20
+[14:04:50] verify | func= Background | rank= 5 | pid= hep-ph/0101084 | title_snip='In-event background and signal reconstruction for two-photon
+  invaria…' | abs_len= 544
+[14:04:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:52] select | verify strict 14/20
+[14:04:52] verify | func= Background | rank= 9 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[14:04:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:55] select | verify strict 15/20
+[14:04:55] verify | func= Background | rank= 12 | pid= hep-ex/0104006 | title_snip='Momentum Resolution Improvement Technique for Silicon Tracking Detecto…' | abs_len= 629
+[14:04:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:04:57] select | verify strict 16/20
+[14:04:57] verify | func= Background | rank= 14 | pid= hep-ph/0103323 | title_snip='Nonlinear and spin effects in two-photon annihilation of a fermion pai…' | abs_len= 1471
+[14:05:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:00] select | verify strict 17/20
+[14:05:00] verify | func= Background | rank= 16 | pid= gr-qc/0101051 | title_snip='Detecting a non-Gaussian stochastic background of gravitational
+  radi…' | abs_len= 392
+[14:05:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:02] select | verify strict 18/20
+[14:05:02] verify | func= Background | rank= 17 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[14:05:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:05] select | verify strict 19/20
+[14:05:05] verify | func= Background | rank= 18 | pid= hep-ph/0102018 | title_snip='Introduction to low x physics and diffraction' | abs_len= 418
+[14:05:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:08] select | verify strict 20/20
+[14:05:08] verify | func= Background | rank= 19 | pid= hep-ph/0104155 | title_snip='The color dipole approach to the Drell-Yan process in pA collisions' | abs_len= 896
+[14:05:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the understanding of X-ray photon interactions with pixels provide background for determining the X-ray landing position, and what methods are used to achieve subpixel resolution?
+- WINNER: physics/0101052 | Subpixel Spatial Resolution of the X-Ray Charge-Coupled Device Based on
+  the Charge Cloud Shape
+- QUOTE : X-ray photon lands into a pixel
+- WHY   : sufficient
+- ANSWER: Understanding how X-ray photons interact with pixels, including charge spillover to adjacent pixels, provides background for determining the X-ray landing position (physics/0101052).
+[14:05:16] main | running function= Uses
+[14:05:16] select | function= Uses | candidates_in= 20
+[14:05:16] select | core_terms= ['X-ray photon', 'pixels', 'X-ray landing position', 'subpixel resolution', 'X-ray']
+[14:05:16] select | no cosine prune; kept=20/20
+[14:05:16] select | pool_size= 20 | ranks= [0, 2, 11, 1, 10, 3, 7, 8, 13, 15, 4, 12, 16, 17, 5, 6, 9, 14, 18, 19] | pids= ['physics/0101052', 'astro-ph/0101557', 'quant-ph/0102118', 'astro-ph/0101467', 'astro-ph/0102297', 'cond-mat/0101142', 'astro-ph/0101466', 'astro-ph/0103439', 'cond-mat/0101230', 'physics/0101059', 'quant-ph/0101122', 'hep-ex/0104006', 'gr-qc/0101051', 'astro-ph/0104366', 'hep-ph/0101084', 'hep-ph/0102105', 'astro-ph/0103048', 'hep-ph/0103323', 'hep-ph/0102018', 'hep-ph/0104155']
+[14:05:16] select | verify strict 1/20
+[14:05:16] verify | func= Uses | rank= 0 | pid= physics/0101052 | title_snip='Subpixel Spatial Resolution of the X-Ray Charge-Coupled Device Based o…' | abs_len= 1282
+[14:05:19] verify | result supports= False fit= 0.00 top= 1.00 invalid= quote_not_in_abstract cue_hint= True
+[14:05:19] select | verify strict 2/20
+[14:05:19] verify | func= Uses | rank= 2 | pid= astro-ph/0101557 | title_snip='Improvement of the Spatial Resolution of the ACIS Using Split Pixel
+  …' | abs_len= 1307
+[14:05:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:05:22] select | verify strict 3/20
+[14:05:22] verify | func= Uses | rank= 11 | pid= quant-ph/0102118 | title_snip='Quantum Interrogation and the Safer X-ray' | abs_len= 524
+[14:05:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:05:25] select | verify strict 4/20
+[14:05:25] verify | func= Uses | rank= 1 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[14:05:28] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[14:05:28] select | verify strict 5/20
+[14:05:28] verify | func= Uses | rank= 10 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[14:05:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:05:31] select | verify strict 6/20
+[14:05:31] verify | func= Uses | rank= 3 | pid= cond-mat/0101142 | title_snip='X-ray diffraction and spectroscopic techniques from liquid surfaces an…' | abs_len= 95
+[14:05:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:34] select | verify strict 7/20
+[14:05:34] verify | func= Uses | rank= 7 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[14:05:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:05:37] select | verify strict 8/20
+[14:05:37] verify | func= Uses | rank= 8 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[14:05:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:40] select | verify strict 9/20
+[14:05:40] verify | func= Uses | rank= 13 | pid= cond-mat/0101230 | title_snip='X-ray standing wave and reflectometric characterization of multilayer
+…' | abs_len= 1296
+[14:05:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:05:43] select | verify strict 10/20
+[14:05:43] verify | func= Uses | rank= 15 | pid= physics/0101059 | title_snip='Discovery of a Planar Waveguide for an X-Ray Radiation' | abs_len= 786
+[14:05:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:05:46] select | verify strict 11/20
+[14:05:46] verify | func= Uses | rank= 4 | pid= quant-ph/0101122 | title_snip='Sub-wavelength lithography over extended areas' | abs_len= 845
+[14:05:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:48] select | verify strict 12/20
+[14:05:48] verify | func= Uses | rank= 12 | pid= hep-ex/0104006 | title_snip='Momentum Resolution Improvement Technique for Silicon Tracking Detecto…' | abs_len= 629
+[14:05:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:51] select | verify strict 13/20
+[14:05:51] verify | func= Uses | rank= 16 | pid= gr-qc/0101051 | title_snip='Detecting a non-Gaussian stochastic background of gravitational
+  radi…' | abs_len= 392
+[14:05:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:53] select | verify strict 14/20
+[14:05:53] verify | func= Uses | rank= 17 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[14:05:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:56] select | verify strict 15/20
+[14:05:56] verify | func= Uses | rank= 5 | pid= hep-ph/0101084 | title_snip='In-event background and signal reconstruction for two-photon
+  invaria…' | abs_len= 544
+[14:05:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:05:58] select | verify strict 16/20
+[14:05:58] verify | func= Uses | rank= 6 | pid= hep-ph/0102105 | title_snip='On the Resummation of Large QCD Logarithms in Higgs -> 2 Photons Decay' | abs_len= 785
+[14:06:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:06:01] select | verify strict 17/20
+[14:06:01] verify | func= Uses | rank= 9 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[14:06:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:06:04] select | verify strict 18/20
+[14:06:04] verify | func= Uses | rank= 14 | pid= hep-ph/0103323 | title_snip='Nonlinear and spin effects in two-photon annihilation of a fermion pai…' | abs_len= 1471
+[14:06:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:06:06] select | verify strict 19/20
+[14:06:06] verify | func= Uses | rank= 18 | pid= hep-ph/0102018 | title_snip='Introduction to low x physics and diffraction' | abs_len= 418
+[14:06:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:06:09] select | verify strict 20/20
+[14:06:09] verify | func= Uses | rank= 19 | pid= hep-ph/0104155 | title_snip='The color dipole approach to the Drell-Yan process in pA collisions' | abs_len= 896
+[14:06:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the understanding of X-ray photon interactions with pixels provide background for determining the X-ray landing position, and what methods are used to achieve subpixel resolution?
+- WINNER: astro-ph/0101557 | Improvement of the Spatial Resolution of the ACIS Using Split Pixel
+  Events
+- QUOTE : X-ray photons on a CCD detector
+- WHY   : sufficient
+- ANSWER: The Chandra ACIS uses split pixel events to improve spatial resolution by selecting X-ray events that deposit charge in more than one pixel, allowing for better position accuracy than the CCD pixel size. This method achieves subpixel resolution by considering only corner events, which improves the image quality (astro-ph/0101557).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

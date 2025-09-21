@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Compares. [Compares]
+This work extends previous studies on high-redshift quasars by analyzing a larger set of objects and providing a more detailed understanding of their far-infrared spectral energy distribution. The study's parameterization of the spectral energy distribution allows for more accurate extrapolations of dust masses and FIR luminosities, building on prior methods that relied on single-wavelength flux measurements (astro-ph/0102116). [Extends]

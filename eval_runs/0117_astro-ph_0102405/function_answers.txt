@@ -1,0 +1,2 @@
+The limitation of having only one old orbit solution for UX Ari motivates the current work because it hinders the accuracy of surface imaging techniques, which rely on precise orbital parameters. This limitation suggests areas for future research, such as refining orbital solutions to improve our understanding of UX Ari and similar RS CVn stars (astro-ph/0102405). [Motivation]
+The abstract does not provide information relevant to FutureWork. [FutureWork]

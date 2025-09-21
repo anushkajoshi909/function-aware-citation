@@ -1,0 +1,2 @@
+The investigation of spatial variation in the cosmological constant is motivated by the possibility of differences in fundamental physical parameters across the universe (hep-ph/0101130). [Background]
+The investigation of spatial variation in the cosmological constant is motivated by the need for an effective quantum gravity solution to the cosmological constant problem. The method of treating spacetime geometry as a fluctuating system provides a foundation for exploring this variation (hep-ph/0101252). [Motivation]

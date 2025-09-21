@@ -1,0 +1,323 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.05 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.89it/s]
+Reading arXiv_src_0101_001.jsonl: 143it [00:00, 825.13it/s]
+Reading arXiv_src_0101_001.jsonl: 291it [00:00, 1114.72it/s]
+Reading arXiv_src_0101_001.jsonl: 403it [00:00, 962.65it/s] 
+Reading arXiv_src_0101_001.jsonl: 502it [00:00, 702.12it/s]
+Reading arXiv_src_0101_001.jsonl: 582it [00:00, 660.65it/s]
+Reading arXiv_src_0101_001.jsonl: 689it [00:00, 761.21it/s]
+Reading arXiv_src_0101_001.jsonl: 790it [00:01, 825.71it/s]
+Reading arXiv_src_0101_001.jsonl: 905it [00:01, 912.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1009it [00:01, 946.33it/s]
+Reading arXiv_src_0101_001.jsonl: 1130it [00:01, 1021.10it/s]
+Reading arXiv_src_0101_001.jsonl: 1260it [00:01, 1100.78it/s]
+Reading arXiv_src_0101_001.jsonl: 1373it [00:01, 1098.13it/s]
+Reading arXiv_src_0101_001.jsonl: 1506it [00:01, 1164.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1645it [00:01, 1230.07it/s]
+Reading arXiv_src_0101_001.jsonl: 1770it [00:01, 1211.66it/s]
+Reading arXiv_src_0101_001.jsonl: 1907it [00:01, 1257.90it/s]
+Reading arXiv_src_0101_001.jsonl: 2093it [00:02, 1434.68it/s]
+Reading arXiv_src_0101_001.jsonl: 2242it [00:02, 1450.76it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1070.89it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1335.60it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1358.98it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 857.29it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 500.82it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 539.09it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:01, 604.34it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 729.65it/s]
+Reading arXiv_src_0102_001.jsonl: 927it [00:01, 876.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1037it [00:01, 932.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1155it [00:01, 997.91it/s]
+Reading arXiv_src_0102_001.jsonl: 1271it [00:01, 1042.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1416it [00:01, 1156.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1550it [00:01, 1204.54it/s]
+Reading arXiv_src_0102_001.jsonl: 1683it [00:01, 1239.12it/s]
+Reading arXiv_src_0102_001.jsonl: 1834it [00:01, 1318.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1983it [00:02, 1367.25it/s]
+Reading arXiv_src_0102_001.jsonl: 2134it [00:02, 1406.66it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1011.01it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1372.39it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1534.84it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1123.35it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 717.29it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 782.68it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 814.48it/s]
+Reading arXiv_src_0103_001.jsonl: 886it [00:00, 882.96it/s]
+Reading arXiv_src_0103_001.jsonl: 999it [00:01, 948.06it/s]
+Reading arXiv_src_0103_001.jsonl: 1108it [00:01, 984.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1229it [00:01, 1045.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1339it [00:01, 1057.94it/s]
+Reading arXiv_src_0103_001.jsonl: 1487it [00:01, 1179.10it/s]
+Reading arXiv_src_0103_001.jsonl: 1620it [00:01, 1223.09it/s]
+Reading arXiv_src_0103_001.jsonl: 1766it [00:01, 1291.71it/s]
+Reading arXiv_src_0103_001.jsonl: 1914it [00:01, 1347.03it/s]
+Reading arXiv_src_0103_001.jsonl: 2051it [00:01, 1351.60it/s]
+Reading arXiv_src_0103_001.jsonl: 2189it [00:01, 1359.76it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1415.22it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1142.34it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 152it [00:00, 1506.17it/s]
+Reading arXiv_src_0104_001.jsonl: 313it [00:00, 1566.21it/s]
+Reading arXiv_src_0104_001.jsonl: 470it [00:00, 985.00it/s] 
+Reading arXiv_src_0104_001.jsonl: 587it [00:00, 554.67it/s]
+Reading arXiv_src_0104_001.jsonl: 695it [00:00, 649.53it/s]
+Reading arXiv_src_0104_001.jsonl: 790it [00:01, 711.15it/s]
+Reading arXiv_src_0104_001.jsonl: 894it [00:01, 781.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1020it [00:01, 897.04it/s]
+Reading arXiv_src_0104_001.jsonl: 1127it [00:01, 941.11it/s]
+Reading arXiv_src_0104_001.jsonl: 1251it [00:01, 1021.50it/s]
+Reading arXiv_src_0104_001.jsonl: 1363it [00:01, 1022.30it/s]
+Reading arXiv_src_0104_001.jsonl: 1496it [00:01, 1107.70it/s]
+Reading arXiv_src_0104_001.jsonl: 1640it [00:01, 1198.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1771it [00:01, 1229.58it/s]
+Reading arXiv_src_0104_001.jsonl: 1921it [00:01, 1307.28it/s]
+Reading arXiv_src_0104_001.jsonl: 2084it [00:02, 1400.48it/s]
+Reading arXiv_src_0104_001.jsonl: 2226it [00:02, 961.80it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 980.63it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What limitations in previous methods for simulating binary black hole systems motivated the development of new techniques that can be compared to existing approaches in terms of accuracy and applicability?
+[debug] classifier labels: ['Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:53:34.955790           Background
+1     1  0.804924  ...  2025-09-21T21:53:34.955790           Background
+2     2  0.708091  ...  2025-09-21T21:53:34.955790           Background
+3     3  0.648321  ...  2025-09-21T21:53:34.955790           Background
+4     4  0.609360  ...  2025-09-21T21:53:34.955790           Background
+5     5  0.481022  ...  2025-09-21T21:53:34.955790           Background
+6     6  0.444069  ...  2025-09-21T21:53:34.955790           Background
+7     7  0.435002  ...  2025-09-21T21:53:34.955790           Background
+8     8  0.407055  ...  2025-09-21T21:53:34.955790           Background
+9     9  0.383619  ...  2025-09-21T21:53:34.955790           Background
+
+[10 rows x 12 columns]
+[23:53:44] main | args: Namespace(max_check=20, debug=True)
+[23:53:44] read_last_jsonl | path= classified_outputs.jsonl
+[23:53:44] read_last_jsonl | total_lines= 1
+[23:53:44] main | query='What limitations in previous methods for simulating binary black hole systems motivated the development of new techniques that can be compared to existing approaches in terms of accuracy and applicability?' | funcs=['Background']
+[23:53:47] main | core_terms= ['binary black hole systems', 'simulating', 'accuracy', 'applicability']
+[23:53:47] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:53:47] load_topk_jsonl | rows= 20
+[23:53:47] load_topk_jsonl | first: rank= 0 paper_id= gr-qc/0104063 title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' abs_len= 1769
+[23:53:47] main | running function= Background
+[23:53:47] select | function= Background | candidates_in= 20
+[23:53:47] select | core_terms= ['binary black hole systems', 'simulating', 'accuracy', 'applicability']
+[23:53:47] select | no cosine prune; kept=20/20
+[23:53:47] select | pool_size= 20 | ranks= [6, 3, 0, 5, 7, 11, 13, 15, 17, 1, 2, 4, 8, 9, 10, 12, 14, 16, 18, 19] | pids= ['gr-qc/0103011', 'math/0102094', 'gr-qc/0104063', 'gr-qc/0103099', 'gr-qc/0101063', 'hep-th/0101117', 'hep-ph/0103299', 'astro-ph/0102297', 'gr-qc/0102037', 'astro-ph/0103431', 'astro-ph/0104182', 'astro-ph/0102340', 'gr-qc/0104079', 'gr-qc/0102085', 'astro-ph/0101386', 'astro-ph/0103470', 'astro-ph/0102068', 'hep-ph/0103121', 'hep-ph/0103302', 'astro-ph/0102443']
+[23:53:47] select | verify strict 1/20
+[23:53:47] verify | func= Background | rank= 6 | pid= gr-qc/0103011 | title_snip='Gravitational waveforms with controlled accuracy' | abs_len= 589
+[23:53:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:53:50] select | verify strict 2/20
+[23:53:50] verify | func= Background | rank= 3 | pid= math/0102094 | title_snip='Accuracy and convergence of the backward Monte-Carlo method' | abs_len= 957
+[23:53:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:53:52] select | verify strict 3/20
+[23:53:52] verify | func= Background | rank= 0 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[23:53:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:53:56] select | verify strict 4/20
+[23:53:56] verify | func= Background | rank= 5 | pid= gr-qc/0103099 | title_snip='A cure for unstable numerical evolutions of single black holes:
+  adju…' | abs_len= 833
+[23:53:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:53:58] select | verify strict 5/20
+[23:53:58] verify | func= Background | rank= 7 | pid= gr-qc/0101063 | title_snip='Approximate Solutions to the Binary Black Hole Initial Value Problem' | abs_len= 416
+[23:54:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:54:01] select | verify strict 6/20
+[23:54:01] verify | func= Background | rank= 11 | pid= hep-th/0101117 | title_snip='Black hole entropy calculations based on symmetries' | abs_len= 867
+[23:54:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:03] select | verify strict 7/20
+[23:54:03] verify | func= Background | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:54:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:06] select | verify strict 8/20
+[23:54:06] verify | func= Background | rank= 15 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[23:54:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:09] select | verify strict 9/20
+[23:54:09] verify | func= Background | rank= 17 | pid= gr-qc/0102037 | title_snip='Plunge waveforms from inspiralling binary black holes' | abs_len= 596
+[23:54:11] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:54:11] select | verify strict 10/20
+[23:54:11] verify | func= Background | rank= 1 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[23:54:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:54:14] select | verify strict 11/20
+[23:54:14] verify | func= Background | rank= 2 | pid= astro-ph/0104182 | title_snip='The Distance to the Magellanic Clouds' | abs_len= 722
+[23:54:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:17] select | verify strict 12/20
+[23:54:17] verify | func= Background | rank= 4 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[23:54:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:19] select | verify strict 13/20
+[23:54:19] verify | func= Background | rank= 8 | pid= gr-qc/0104079 | title_snip='On the Effect of Constraint Enforcement on the Quality of Numerical
+  …' | abs_len= 733
+[23:54:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:22] select | verify strict 14/20
+[23:54:22] verify | func= Background | rank= 9 | pid= gr-qc/0102085 | title_snip='Characteristic Evolution and Matching' | abs_len= 362
+[23:54:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:54:25] select | verify strict 15/20
+[23:54:25] verify | func= Background | rank= 10 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[23:54:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:28] select | verify strict 16/20
+[23:54:28] verify | func= Background | rank= 12 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[23:54:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:30] select | verify strict 17/20
+[23:54:30] verify | func= Background | rank= 14 | pid= astro-ph/0102068 | title_snip='A 3D MHD model of astrophysical flows: algorithms, tests and
+  paralle…' | abs_len= 1027
+[23:54:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:32] select | verify strict 18/20
+[23:54:32] verify | func= Background | rank= 16 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[23:54:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:35] select | verify strict 19/20
+[23:54:35] verify | func= Background | rank= 18 | pid= hep-ph/0103302 | title_snip='Models for RHIC and LHC: New Developments' | abs_len= 973
+[23:54:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:38] select | verify strict 20/20
+[23:54:38] verify | func= Background | rank= 19 | pid= astro-ph/0102443 | title_snip='A Non-Parametric Approach to Infer the Energy Spectrum and the Mass
+  …' | abs_len= 1120
+[23:54:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:40] select | strict pass found 0 winners → trying relaxed
+[23:54:40] select | verify relaxed 1/20
+[23:54:40] verify | func= Background | rank= 6 | pid= gr-qc/0103011 | title_snip='Gravitational waveforms with controlled accuracy' | abs_len= 589
+[23:54:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:54:43] select | verify relaxed 2/20
+[23:54:43] verify | func= Background | rank= 3 | pid= math/0102094 | title_snip='Accuracy and convergence of the backward Monte-Carlo method' | abs_len= 957
+[23:54:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:46] select | verify relaxed 3/20
+[23:54:46] verify | func= Background | rank= 0 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[23:54:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[23:54:53] select | verify relaxed 4/20
+[23:54:53] verify | func= Background | rank= 5 | pid= gr-qc/0103099 | title_snip='A cure for unstable numerical evolutions of single black holes:
+  adju…' | abs_len= 833
+[23:54:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:54:56] select | verify relaxed 5/20
+[23:54:56] verify | func= Background | rank= 7 | pid= gr-qc/0101063 | title_snip='Approximate Solutions to the Binary Black Hole Initial Value Problem' | abs_len= 416
+[23:54:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:54:59] select | verify relaxed 6/20
+[23:54:59] verify | func= Background | rank= 11 | pid= hep-th/0101117 | title_snip='Black hole entropy calculations based on symmetries' | abs_len= 867
+[23:55:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:01] select | verify relaxed 7/20
+[23:55:01] verify | func= Background | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:55:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:04] select | verify relaxed 8/20
+[23:55:04] verify | func= Background | rank= 15 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[23:55:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:06] select | verify relaxed 9/20
+[23:55:06] verify | func= Background | rank= 17 | pid= gr-qc/0102037 | title_snip='Plunge waveforms from inspiralling binary black holes' | abs_len= 596
+[23:55:09] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:55:09] select | verify relaxed 10/20
+[23:55:09] verify | func= Background | rank= 1 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[23:55:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:55:13] select | verify relaxed 11/20
+[23:55:13] verify | func= Background | rank= 2 | pid= astro-ph/0104182 | title_snip='The Distance to the Magellanic Clouds' | abs_len= 722
+[23:55:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:15] select | verify relaxed 12/20
+[23:55:15] verify | func= Background | rank= 4 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[23:55:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:18] select | verify relaxed 13/20
+[23:55:18] verify | func= Background | rank= 8 | pid= gr-qc/0104079 | title_snip='On the Effect of Constraint Enforcement on the Quality of Numerical
+  …' | abs_len= 733
+[23:55:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:55:21] select | verify relaxed 14/20
+[23:55:21] verify | func= Background | rank= 9 | pid= gr-qc/0102085 | title_snip='Characteristic Evolution and Matching' | abs_len= 362
+[23:55:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:55:24] select | verify relaxed 15/20
+[23:55:24] verify | func= Background | rank= 10 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[23:55:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:26] select | verify relaxed 16/20
+[23:55:26] verify | func= Background | rank= 12 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[23:55:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:29] select | verify relaxed 17/20
+[23:55:29] verify | func= Background | rank= 14 | pid= astro-ph/0102068 | title_snip='A 3D MHD model of astrophysical flows: algorithms, tests and
+  paralle…' | abs_len= 1027
+[23:55:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:31] select | verify relaxed 18/20
+[23:55:31] verify | func= Background | rank= 16 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[23:55:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:34] select | verify relaxed 19/20
+[23:55:34] verify | func= Background | rank= 18 | pid= hep-ph/0103302 | title_snip='Models for RHIC and LHC: New Developments' | abs_len= 973
+[23:55:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:55:36] select | verify relaxed 20/20
+[23:55:36] verify | func= Background | rank= 19 | pid= astro-ph/0102443 | title_snip='A Non-Parametric Approach to Infer the Energy Spectrum and the Mass
+  …' | abs_len= 1120
+[23:55:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What limitations in previous methods for simulating binary black hole systems motivated the development of new techniques that can be compared to existing approaches in terms of accuracy and applicability?
+- WINNER: gr-qc/0103011 | Gravitational waveforms with controlled accuracy
+- QUOTE : significantly improved accuracy
+- WHY   : sufficient
+- ANSWER: Previous methods for simulating binary black hole systems had limitations in accuracy, particularly in the nonlinear post-merger regime (gr-qc/0103011).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

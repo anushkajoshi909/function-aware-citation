@@ -1,0 +1,397 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query asks how pseudo mode theory builds on prior work (Extends) and how it stacks up against alternative approaches (Compares)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.2 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.79it/s]
+Reading arXiv_src_0101_001.jsonl: 28it [00:00, 97.09it/s]
+Reading arXiv_src_0101_001.jsonl: 171it [00:00, 541.14it/s]
+Reading arXiv_src_0101_001.jsonl: 296it [00:00, 769.10it/s]
+Reading arXiv_src_0101_001.jsonl: 390it [00:00, 811.90it/s]
+Reading arXiv_src_0101_001.jsonl: 483it [00:00, 626.83it/s]
+Reading arXiv_src_0101_001.jsonl: 559it [00:01, 560.14it/s]
+Reading arXiv_src_0101_001.jsonl: 662it [00:01, 667.79it/s]
+Reading arXiv_src_0101_001.jsonl: 759it [00:01, 741.76it/s]
+Reading arXiv_src_0101_001.jsonl: 868it [00:01, 831.53it/s]
+Reading arXiv_src_0101_001.jsonl: 976it [00:01, 898.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1081it [00:01, 938.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1213it [00:01, 1044.99it/s]
+Reading arXiv_src_0101_001.jsonl: 1322it [00:01, 1043.88it/s]
+Reading arXiv_src_0101_001.jsonl: 1459it [00:01, 1136.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1588it [00:01, 1179.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1724it [00:02, 1228.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1849it [00:02, 1189.27it/s]
+Reading arXiv_src_0101_001.jsonl: 2027it [00:02, 1359.83it/s]
+Reading arXiv_src_0101_001.jsonl: 2192it [00:02, 1442.58it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 941.75it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 135it [00:00, 1347.59it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1367.01it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 861.20it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 535.89it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 567.34it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:00, 629.74it/s]
+Reading arXiv_src_0102_001.jsonl: 795it [00:01, 755.26it/s]
+Reading arXiv_src_0102_001.jsonl: 929it [00:01, 901.21it/s]
+Reading arXiv_src_0102_001.jsonl: 1038it [00:01, 950.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1157it [00:01, 1012.72it/s]
+Reading arXiv_src_0102_001.jsonl: 1279it [00:01, 1070.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1428it [00:01, 1188.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1552it [00:01, 1198.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1687it [00:01, 1241.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1837it [00:01, 1315.48it/s]
+Reading arXiv_src_0102_001.jsonl: 1988it [00:01, 1372.19it/s]
+Reading arXiv_src_0102_001.jsonl: 2140it [00:02, 1415.50it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1032.65it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 139it [00:00, 1378.41it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1511.02it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1125.82it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 741.90it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 791.29it/s]
+Reading arXiv_src_0103_001.jsonl: 764it [00:00, 811.58it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 906.01it/s]
+Reading arXiv_src_0103_001.jsonl: 991it [00:01, 953.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1099it [00:01, 988.61it/s]
+Reading arXiv_src_0103_001.jsonl: 1220it [00:01, 1050.58it/s]
+Reading arXiv_src_0103_001.jsonl: 1330it [00:01, 1055.00it/s]
+Reading arXiv_src_0103_001.jsonl: 1464it [00:01, 1136.81it/s]
+Reading arXiv_src_0103_001.jsonl: 1603it [00:01, 1206.27it/s]
+Reading arXiv_src_0103_001.jsonl: 1752it [00:01, 1289.23it/s]
+Reading arXiv_src_0103_001.jsonl: 1896it [00:01, 1333.18it/s]
+Reading arXiv_src_0103_001.jsonl: 2040it [00:01, 1364.15it/s]
+Reading arXiv_src_0103_001.jsonl: 2181it [00:01, 1375.39it/s]
+Reading arXiv_src_0103_001.jsonl: 2340it [00:02, 1438.84it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1149.61it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  9.28it/s]
+Reading arXiv_src_0104_001.jsonl: 63it [00:00, 356.33it/s]
+Reading arXiv_src_0104_001.jsonl: 217it [00:00, 882.97it/s]
+Reading arXiv_src_0104_001.jsonl: 358it [00:00, 1085.73it/s]
+Reading arXiv_src_0104_001.jsonl: 468it [00:00, 825.96it/s] 
+Reading arXiv_src_0104_001.jsonl: 559it [00:00, 596.61it/s]
+Reading arXiv_src_0104_001.jsonl: 632it [00:01, 522.48it/s]
+Reading arXiv_src_0104_001.jsonl: 727it [00:01, 610.84it/s]
+Reading arXiv_src_0104_001.jsonl: 813it [00:01, 666.80it/s]
+Reading arXiv_src_0104_001.jsonl: 928it [00:01, 785.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1050it [00:01, 897.31it/s]
+Reading arXiv_src_0104_001.jsonl: 1158it [00:01, 945.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1287it [00:01, 1040.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1397it [00:01, 1038.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1531it [00:01, 1124.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1665it [00:01, 1186.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1797it [00:02, 1224.19it/s]
+Reading arXiv_src_0104_001.jsonl: 1944it [00:02, 1296.27it/s]
+Reading arXiv_src_0104_001.jsonl: 2100it [00:02, 1373.63it/s]
+Reading arXiv_src_0104_001.jsonl: 2239it [00:02, 934.52it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 904.09it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?
+[debug] classifier labels: ['Extends', 'Compares']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T11:24:49.556476    Extends, Compares
+1     1  0.745524  ...  2025-09-21T11:24:49.556476    Extends, Compares
+2     2  0.644996  ...  2025-09-21T11:24:49.556476    Extends, Compares
+3     3  0.498788  ...  2025-09-21T11:24:49.556476    Extends, Compares
+4     4  0.426931  ...  2025-09-21T11:24:49.556476    Extends, Compares
+5     5  0.357100  ...  2025-09-21T11:24:49.556476    Extends, Compares
+6     6  0.307065  ...  2025-09-21T11:24:49.556476    Extends, Compares
+7     7  0.289828  ...  2025-09-21T11:24:49.556476    Extends, Compares
+8     8  0.283631  ...  2025-09-21T11:24:49.556476    Extends, Compares
+9     9  0.266974  ...  2025-09-21T11:24:49.556476    Extends, Compares
+
+[10 rows x 12 columns]
+[13:24:57] main | args: Namespace(max_check=20, debug=True)
+[13:24:57] read_last_jsonl | path= classified_outputs.jsonl
+[13:24:57] read_last_jsonl | total_lines= 1
+[13:24:57] main | query='How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?' | funcs=['Extends', 'Compares']
+[13:24:59] main | core_terms= ['atomic systems', 'pseudo mode theory', 'non-Markovian behavior', 'non-Markovian']
+[13:24:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:24:59] load_topk_jsonl | rows= 20
+[13:24:59] load_topk_jsonl | first: rank= 0 paper_id= quant-ph/0102142 title_snip='Theory of Pseudomodes in Quantum Optical Processes' abs_len= 1320
+[13:24:59] main | running function= Extends
+[13:24:59] select | function= Extends | candidates_in= 20
+[13:24:59] select | core_terms= ['atomic systems', 'pseudo mode theory', 'non-Markovian behavior', 'non-Markovian']
+[13:24:59] select | no cosine prune; kept=20/20
+[13:24:59] select | pool_size= 20 | ranks= [0, 19, 1, 16, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18] | pids= ['quant-ph/0102142', 'math/0101022', 'math-ph/0104012', 'hep-ph/0101112', 'math-ph/0101029', 'cond-mat/0103610', 'hep-ph/0101202', 'nucl-th/0101008', 'hep-lat/0103010', 'hep-th/0103228', 'hep-th/0104001', 'hep-lat/0103016', 'hep-th/0102182', 'hep-th/0101217', 'cond-mat/0102483', 'hep-th/0102004', 'physics/0101104', 'hep-ph/0103191', 'hep-th/0104224', 'cond-mat/0102125']
+[13:24:59] select | verify strict 1/20
+[13:24:59] verify | func= Extends | rank= 0 | pid= quant-ph/0102142 | title_snip='Theory of Pseudomodes in Quantum Optical Processes' | abs_len= 1320
+[13:25:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:02] select | verify strict 2/20
+[13:25:02] verify | func= Extends | rank= 19 | pid= math/0101022 | title_snip='Non-Markovian Optimal Prediction' | abs_len= 625
+[13:25:05] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:25:05] select | verify strict 3/20
+[13:25:05] verify | func= Extends | rank= 1 | pid= math-ph/0104012 | title_snip='Conservation of pseudo-norm in PT symmetric quantum mechanics' | abs_len= 340
+[13:25:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:25:08] select | verify strict 4/20
+[13:25:08] verify | func= Extends | rank= 16 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:25:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:11] select | verify strict 5/20
+[13:25:11] verify | func= Extends | rank= 2 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[13:25:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:13] select | verify strict 6/20
+[13:25:13] verify | func= Extends | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[13:25:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:16] select | verify strict 7/20
+[13:25:16] verify | func= Extends | rank= 4 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[13:25:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:18] select | verify strict 8/20
+[13:25:18] verify | func= Extends | rank= 5 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[13:25:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:21] select | verify strict 9/20
+[13:25:21] verify | func= Extends | rank= 6 | pid= hep-lat/0103010 | title_snip='Cluster Percolation and Pseudocritical Behaviour in Spin Models' | abs_len= 566
+[13:25:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:23] select | verify strict 10/20
+[13:25:23] verify | func= Extends | rank= 7 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[13:25:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:26] select | verify strict 11/20
+[13:25:26] verify | func= Extends | rank= 8 | pid= hep-th/0104001 | title_snip='The euclidean propagator in a model with two non-equivalent instantons' | abs_len= 1121
+[13:25:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:28] select | verify strict 12/20
+[13:25:28] verify | func= Extends | rank= 9 | pid= hep-lat/0103016 | title_snip='CP(N-1) Models with Theta Term and Fixed Point Action' | abs_len= 1159
+[13:25:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:31] select | verify strict 13/20
+[13:25:31] verify | func= Extends | rank= 10 | pid= hep-th/0102182 | title_snip='Noncommutative instantons: a new approach' | abs_len= 841
+[13:25:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:34] select | verify strict 14/20
+[13:25:34] verify | func= Extends | rank= 11 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[13:25:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:36] select | verify strict 15/20
+[13:25:36] verify | func= Extends | rank= 12 | pid= cond-mat/0102483 | title_snip='Quantum-field-theoretical techniques for stochastic representation of
+…' | abs_len= 555
+[13:25:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:39] select | verify strict 16/20
+[13:25:39] verify | func= Extends | rank= 13 | pid= hep-th/0102004 | title_snip='Non-Hermitian oscillator-like Hamiltonians and $\lambda$-coherent stat…' | abs_len= 429
+[13:25:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:41] select | verify strict 17/20
+[13:25:41] verify | func= Extends | rank= 14 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[13:25:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:44] select | verify strict 18/20
+[13:25:44] verify | func= Extends | rank= 15 | pid= hep-ph/0103191 | title_snip='Derivative expansions of the non-equilibrium effective action' | abs_len= 519
+[13:25:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:46] select | verify strict 19/20
+[13:25:46] verify | func= Extends | rank= 17 | pid= hep-th/0104224 | title_snip='The Landau problem and noncommutative quantum mechanics' | abs_len= 749
+[13:25:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:49] select | verify strict 20/20
+[13:25:49] verify | func= Extends | rank= 18 | pid= cond-mat/0102125 | title_snip='On spectroscopic structure of two interacting electrons in a quantum d…' | abs_len= 434
+[13:25:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?
+- WINNER: quant-ph/0102142 | Theory of Pseudomodes in Quantum Optical Processes
+- QUOTE : pseudo mode theory for single quantum reservoir excitations
+- WHY   : sufficient
+- ANSWER: The pseudo mode theory extends previous work by applying the Fano diagonalisation method to systems with structured reservoirs, allowing for the treatment of non-Markovian behavior in atomic systems with improved accuracy. This approach builds upon prior methods by enabling the use of Markovian master equations for systems with multiple excitations of the reservoir (quant-ph/0102142).
+[13:25:56] main | running function= Compares
+[13:25:56] select | function= Compares | candidates_in= 20
+[13:25:56] select | core_terms= ['atomic systems', 'pseudo mode theory', 'non-Markovian behavior', 'non-Markovian']
+[13:25:56] select | no cosine prune; kept=20/20
+[13:25:56] select | pool_size= 20 | ranks= [0, 19, 3, 7, 9, 1, 2, 4, 5, 6, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18] | pids= ['quant-ph/0102142', 'math/0101022', 'cond-mat/0103610', 'hep-th/0103228', 'hep-lat/0103016', 'math-ph/0104012', 'math-ph/0101029', 'hep-ph/0101202', 'nucl-th/0101008', 'hep-lat/0103010', 'hep-th/0104001', 'hep-th/0102182', 'hep-th/0101217', 'cond-mat/0102483', 'hep-th/0102004', 'physics/0101104', 'hep-ph/0103191', 'hep-ph/0101112', 'hep-th/0104224', 'cond-mat/0102125']
+[13:25:56] select | verify strict 1/20
+[13:25:56] verify | func= Compares | rank= 0 | pid= quant-ph/0102142 | title_snip='Theory of Pseudomodes in Quantum Optical Processes' | abs_len= 1320
+[13:25:59] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:25:59] select | verify strict 2/20
+[13:25:59] verify | func= Compares | rank= 19 | pid= math/0101022 | title_snip='Non-Markovian Optimal Prediction' | abs_len= 625
+[13:26:02] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:26:02] select | verify strict 3/20
+[13:26:02] verify | func= Compares | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[13:26:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:05] select | verify strict 4/20
+[13:26:05] verify | func= Compares | rank= 7 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[13:26:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:07] select | verify strict 5/20
+[13:26:07] verify | func= Compares | rank= 9 | pid= hep-lat/0103016 | title_snip='CP(N-1) Models with Theta Term and Fixed Point Action' | abs_len= 1159
+[13:26:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:10] select | verify strict 6/20
+[13:26:10] verify | func= Compares | rank= 1 | pid= math-ph/0104012 | title_snip='Conservation of pseudo-norm in PT symmetric quantum mechanics' | abs_len= 340
+[13:26:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:26:13] select | verify strict 7/20
+[13:26:13] verify | func= Compares | rank= 2 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[13:26:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:15] select | verify strict 8/20
+[13:26:15] verify | func= Compares | rank= 4 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[13:26:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:18] select | verify strict 9/20
+[13:26:18] verify | func= Compares | rank= 5 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[13:26:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:21] select | verify strict 10/20
+[13:26:21] verify | func= Compares | rank= 6 | pid= hep-lat/0103010 | title_snip='Cluster Percolation and Pseudocritical Behaviour in Spin Models' | abs_len= 566
+[13:26:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:23] select | verify strict 11/20
+[13:26:23] verify | func= Compares | rank= 8 | pid= hep-th/0104001 | title_snip='The euclidean propagator in a model with two non-equivalent instantons' | abs_len= 1121
+[13:26:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:26] select | verify strict 12/20
+[13:26:26] verify | func= Compares | rank= 10 | pid= hep-th/0102182 | title_snip='Noncommutative instantons: a new approach' | abs_len= 841
+[13:26:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:28] select | verify strict 13/20
+[13:26:28] verify | func= Compares | rank= 11 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[13:26:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:31] select | verify strict 14/20
+[13:26:31] verify | func= Compares | rank= 12 | pid= cond-mat/0102483 | title_snip='Quantum-field-theoretical techniques for stochastic representation of
+…' | abs_len= 555
+[13:26:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:33] select | verify strict 15/20
+[13:26:33] verify | func= Compares | rank= 13 | pid= hep-th/0102004 | title_snip='Non-Hermitian oscillator-like Hamiltonians and $\lambda$-coherent stat…' | abs_len= 429
+[13:26:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:36] select | verify strict 16/20
+[13:26:36] verify | func= Compares | rank= 14 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[13:26:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:38] select | verify strict 17/20
+[13:26:38] verify | func= Compares | rank= 15 | pid= hep-ph/0103191 | title_snip='Derivative expansions of the non-equilibrium effective action' | abs_len= 519
+[13:26:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:41] select | verify strict 18/20
+[13:26:41] verify | func= Compares | rank= 16 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:26:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:43] select | verify strict 19/20
+[13:26:43] verify | func= Compares | rank= 17 | pid= hep-th/0104224 | title_snip='The Landau problem and noncommutative quantum mechanics' | abs_len= 749
+[13:26:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:46] select | verify strict 20/20
+[13:26:46] verify | func= Compares | rank= 18 | pid= cond-mat/0102125 | title_snip='On spectroscopic structure of two interacting electrons in a quantum d…' | abs_len= 434
+[13:26:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:49] select | strict pass found 0 winners → trying relaxed
+[13:26:49] select | verify relaxed 1/20
+[13:26:49] verify | func= Compares | rank= 0 | pid= quant-ph/0102142 | title_snip='Theory of Pseudomodes in Quantum Optical Processes' | abs_len= 1320
+[13:26:52] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:26:52] select | verify relaxed 2/20
+[13:26:52] verify | func= Compares | rank= 19 | pid= math/0101022 | title_snip='Non-Markovian Optimal Prediction' | abs_len= 625
+[13:26:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:26:55] select | verify relaxed 3/20
+[13:26:55] verify | func= Compares | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[13:26:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:57] select | verify relaxed 4/20
+[13:26:57] verify | func= Compares | rank= 7 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[13:27:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:00] select | verify relaxed 5/20
+[13:27:00] verify | func= Compares | rank= 9 | pid= hep-lat/0103016 | title_snip='CP(N-1) Models with Theta Term and Fixed Point Action' | abs_len= 1159
+[13:27:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:02] select | verify relaxed 6/20
+[13:27:02] verify | func= Compares | rank= 1 | pid= math-ph/0104012 | title_snip='Conservation of pseudo-norm in PT symmetric quantum mechanics' | abs_len= 340
+[13:27:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:27:05] select | verify relaxed 7/20
+[13:27:05] verify | func= Compares | rank= 2 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[13:27:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:08] select | verify relaxed 8/20
+[13:27:08] verify | func= Compares | rank= 4 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[13:27:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:27:11] select | verify relaxed 9/20
+[13:27:11] verify | func= Compares | rank= 5 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[13:27:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:14] select | verify relaxed 10/20
+[13:27:14] verify | func= Compares | rank= 6 | pid= hep-lat/0103010 | title_snip='Cluster Percolation and Pseudocritical Behaviour in Spin Models' | abs_len= 566
+[13:27:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:16] select | verify relaxed 11/20
+[13:27:16] verify | func= Compares | rank= 8 | pid= hep-th/0104001 | title_snip='The euclidean propagator in a model with two non-equivalent instantons' | abs_len= 1121
+[13:27:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:19] select | verify relaxed 12/20
+[13:27:19] verify | func= Compares | rank= 10 | pid= hep-th/0102182 | title_snip='Noncommutative instantons: a new approach' | abs_len= 841
+[13:27:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:22] select | verify relaxed 13/20
+[13:27:22] verify | func= Compares | rank= 11 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[13:27:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:24] select | verify relaxed 14/20
+[13:27:24] verify | func= Compares | rank= 12 | pid= cond-mat/0102483 | title_snip='Quantum-field-theoretical techniques for stochastic representation of
+…' | abs_len= 555
+[13:27:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:27:27] select | verify relaxed 15/20
+[13:27:27] verify | func= Compares | rank= 13 | pid= hep-th/0102004 | title_snip='Non-Hermitian oscillator-like Hamiltonians and $\lambda$-coherent stat…' | abs_len= 429
+[13:27:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:30] select | verify relaxed 16/20
+[13:27:30] verify | func= Compares | rank= 14 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[13:27:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:32] select | verify relaxed 17/20
+[13:27:32] verify | func= Compares | rank= 15 | pid= hep-ph/0103191 | title_snip='Derivative expansions of the non-equilibrium effective action' | abs_len= 519
+[13:27:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:27:35] select | verify relaxed 18/20
+[13:27:35] verify | func= Compares | rank= 16 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:27:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:37] select | verify relaxed 19/20
+[13:27:37] verify | func= Compares | rank= 17 | pid= hep-th/0104224 | title_snip='The Landau problem and noncommutative quantum mechanics' | abs_len= 749
+[13:27:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:40] select | verify relaxed 20/20
+[13:27:40] verify | func= Compares | rank= 18 | pid= cond-mat/0102125 | title_snip='On spectroscopic structure of two interacting electrons in a quantum d…' | abs_len= 434
+[13:27:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?
+- WINNER: quant-ph/0102142 | Theory of Pseudomodes in Quantum Optical Processes
+- QUOTE : can be obtained by applying the Fano diagonalisation method
+- WHY   : sufficient
+- ANSWER: The pseudo mode theory extends previous work by treating non-Markovian behavior in atomic systems through the Fano diagonalisation method, comparing to other methods by applying Markovian master equations for the atom-discrete quasimode system. It is compared to quasimode theory, which enables treatment of multiple excitation of the reservoir, on the basis of structured reservoirs and coupling constants (quant-ph/0102142).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

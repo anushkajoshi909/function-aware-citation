@@ -1,0 +1,341 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Background"
+  ],
+  "justification": "The query asks how the current approach compares to prior work and also requests the background needed to understand that comparison."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.5 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.95it/s]
+Reading arXiv_src_0101_001.jsonl: 83it [00:00, 245.29it/s]
+Reading arXiv_src_0101_001.jsonl: 234it [00:00, 618.71it/s]
+Reading arXiv_src_0101_001.jsonl: 343it [00:00, 757.63it/s]
+Reading arXiv_src_0101_001.jsonl: 443it [00:00, 689.66it/s]
+Reading arXiv_src_0101_001.jsonl: 529it [00:01, 580.59it/s]
+Reading arXiv_src_0101_001.jsonl: 600it [00:01, 604.47it/s]
+Reading arXiv_src_0101_001.jsonl: 710it [00:01, 718.88it/s]
+Reading arXiv_src_0101_001.jsonl: 813it [00:01, 797.77it/s]
+Reading arXiv_src_0101_001.jsonl: 923it [00:01, 878.37it/s]
+Reading arXiv_src_0101_001.jsonl: 1021it [00:01, 905.58it/s]
+Reading arXiv_src_0101_001.jsonl: 1154it [00:01, 1024.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1292it [00:01, 1121.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1408it [00:01, 1114.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1539it [00:01, 1168.99it/s]
+Reading arXiv_src_0101_001.jsonl: 1675it [00:02, 1222.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1799it [00:02, 1184.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1961it [00:02, 1310.16it/s]
+Reading arXiv_src_0101_001.jsonl: 2129it [00:02, 1417.17it/s]
+Reading arXiv_src_0101_001.jsonl: 2289it [00:02, 1466.06it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 939.55it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1336.48it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1369.45it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 850.99it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 538.44it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 570.74it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:00, 628.48it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 755.03it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 893.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1036it [00:01, 950.85it/s]
+Reading arXiv_src_0102_001.jsonl: 1155it [00:01, 1015.49it/s]
+Reading arXiv_src_0102_001.jsonl: 1273it [00:01, 1061.26it/s]
+Reading arXiv_src_0102_001.jsonl: 1418it [00:01, 1171.81it/s]
+Reading arXiv_src_0102_001.jsonl: 1550it [00:01, 1211.26it/s]
+Reading arXiv_src_0102_001.jsonl: 1684it [00:01, 1248.24it/s]
+Reading arXiv_src_0102_001.jsonl: 1836it [00:01, 1322.39it/s]
+Reading arXiv_src_0102_001.jsonl: 1986it [00:01, 1372.69it/s]
+Reading arXiv_src_0102_001.jsonl: 2138it [00:02, 1415.36it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1032.79it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1370.70it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1533.82it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1125.74it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 730.04it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 794.28it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 824.16it/s]
+Reading arXiv_src_0103_001.jsonl: 886it [00:00, 891.22it/s]
+Reading arXiv_src_0103_001.jsonl: 997it [00:01, 949.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1103it [00:01, 977.60it/s]
+Reading arXiv_src_0103_001.jsonl: 1224it [00:01, 1041.92it/s]
+Reading arXiv_src_0103_001.jsonl: 1333it [00:01, 1052.55it/s]
+Reading arXiv_src_0103_001.jsonl: 1481it [00:01, 1175.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1614it [00:01, 1219.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1761it [00:01, 1292.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1908it [00:01, 1343.99it/s]
+Reading arXiv_src_0103_001.jsonl: 2048it [00:01, 1359.36it/s]
+Reading arXiv_src_0103_001.jsonl: 2187it [00:01, 1363.44it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1420.69it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1146.75it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:04,  4.41s/it]
+Reading arXiv_src_0104_001.jsonl: 48it [00:04, 14.96it/s]
+Reading arXiv_src_0104_001.jsonl: 203it [00:04, 80.74it/s]
+Reading arXiv_src_0104_001.jsonl: 356it [00:04, 164.13it/s]
+Reading arXiv_src_0104_001.jsonl: 467it [00:04, 221.52it/s]
+Reading arXiv_src_0104_001.jsonl: 560it [00:08, 70.53it/s] 
+Reading arXiv_src_0104_001.jsonl: 622it [00:08, 85.68it/s]
+Reading arXiv_src_0104_001.jsonl: 717it [00:08, 121.94it/s]
+Reading arXiv_src_0104_001.jsonl: 806it [00:08, 165.14it/s]
+Reading arXiv_src_0104_001.jsonl: 916it [00:08, 234.30it/s]
+Reading arXiv_src_0104_001.jsonl: 1041it [00:08, 331.95it/s]
+Reading arXiv_src_0104_001.jsonl: 1156it [00:09, 426.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1285it [00:09, 552.30it/s]
+Reading arXiv_src_0104_001.jsonl: 1393it [00:09, 639.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1535it [00:09, 792.02it/s]
+Reading arXiv_src_0104_001.jsonl: 1669it [00:09, 911.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1808it [00:09, 1024.60it/s]
+Reading arXiv_src_0104_001.jsonl: 1958it [00:09, 1144.56it/s]
+Reading arXiv_src_0104_001.jsonl: 2117it [00:09, 1261.92it/s]
+Reading arXiv_src_0104_001.jsonl: 2259it [00:09, 945.25it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:09, 231.22it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current code's approach to solving the transfer of continuum and lines compare to previous work in the field, and what background information is necessary to understand this comparison?
+[debug] classifier labels: ['Compares', 'Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T21:42:32.156727  Compares, Background
+1     1  0.998380  ...  2025-09-21T21:42:32.156727  Compares, Background
+2     2  0.953476  ...  2025-09-21T21:42:32.156727  Compares, Background
+3     3  0.941400  ...  2025-09-21T21:42:32.156727  Compares, Background
+4     4  0.847493  ...  2025-09-21T21:42:32.156727  Compares, Background
+5     5  0.635048  ...  2025-09-21T21:42:32.156727  Compares, Background
+6     6  0.608475  ...  2025-09-21T21:42:32.156727  Compares, Background
+7     7  0.581389  ...  2025-09-21T21:42:32.156727  Compares, Background
+8     8  0.568843  ...  2025-09-21T21:42:32.156727  Compares, Background
+9     9  0.503480  ...  2025-09-21T21:42:32.156727  Compares, Background
+
+[10 rows x 12 columns]
+[23:42:40] main | args: Namespace(max_check=20, debug=True)
+[23:42:40] read_last_jsonl | path= classified_outputs.jsonl
+[23:42:40] read_last_jsonl | total_lines= 1
+[23:42:40] main | query='How does the current code's approach to solving the transfer of continuum and lines compare to previous work in the field, and what background information is necessary to understand this comparison?' | funcs=['Compares', 'Background']
+[23:42:41] main | core_terms= ['continuum', 'lines', 'transfer']
+[23:42:41] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:42:41] load_topk_jsonl | rows= 20
+[23:42:41] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103317 title_snip='Codes for optically thick and hot photoionized media - Radiative
+  tra…' abs_len= 1213
+[23:42:41] main | running function= Compares
+[23:42:41] select | function= Compares | candidates_in= 20
+[23:42:41] select | core_terms= ['continuum', 'lines', 'transfer']
+[23:42:41] select | no cosine prune; kept=20/20
+[23:42:41] select | pool_size= 20 | ranks= [0, 3, 15, 6, 2, 13, 10, 1, 4, 8, 16, 18, 19, 5, 7, 9, 11, 12, 14, 17] | pids= ['astro-ph/0103317', 'astro-ph/0102270', 'nucl-th/0103038', 'hep-ph/0104065', 'astro-ph/0102269', 'physics/0103014', 'cond-mat/0103455', 'astro-ph/0103503', 'hep-th/0103228', 'gr-qc/0103017', 'hep-ph/0102185', 'math/0102094', 'cond-mat/0103610', 'hep-ph/0104049', 'hep-ph/0102005', 'hep-ph/0104097', 'gr-qc/0103005', 'gr-qc/0104063', 'physics/0104004', 'astro-ph/0104258']
+[23:42:41] select | verify strict 1/20
+[23:42:41] verify | func= Compares | rank= 0 | pid= astro-ph/0103317 | title_snip='Codes for optically thick and hot photoionized media - Radiative
+  tra…' | abs_len= 1213
+[23:42:45] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:42:45] select | verify strict 2/20
+[23:42:45] verify | func= Compares | rank= 3 | pid= astro-ph/0102270 | title_snip='Radiative transfer in molecular lines' | abs_len= 548
+[23:42:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:42:48] select | verify strict 3/20
+[23:42:48] verify | func= Compares | rank= 15 | pid= nucl-th/0103038 | title_snip='HFB theory for nuclei near the drip-lines: continuum coupling' | abs_len= 528
+[23:42:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:42:51] select | verify strict 4/20
+[23:42:51] verify | func= Compares | rank= 6 | pid= hep-ph/0104065 | title_snip='Rescattering corrections in elastic scattering' | abs_len= 773
+[23:42:54] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[23:42:54] select | verify strict 5/20
+[23:42:54] verify | func= Compares | rank= 2 | pid= astro-ph/0102269 | title_snip='Radiative transfer for the FIRST era' | abs_len= 236
+[23:42:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:42:57] select | verify strict 6/20
+[23:42:57] verify | func= Compares | rank= 13 | pid= physics/0103014 | title_snip='Wave packet propagation study of the charge transfer interaction in th…' | abs_len= 911
+[23:42:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:42:59] select | verify strict 7/20
+[23:42:59] verify | func= Compares | rank= 10 | pid= cond-mat/0103455 | title_snip='An Analysis of the Quasicontinuum Method' | abs_len= 556
+[23:43:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:43:03] select | verify strict 8/20
+[23:43:03] verify | func= Compares | rank= 1 | pid= astro-ph/0103503 | title_snip='MLAPM - a C code for cosmological simulations' | abs_len= 1536
+[23:43:06] verify | result supports= False fit= 0.00 top= 0.60 invalid= missing_core_in_quote cue_hint= True
+[23:43:06] select | verify strict 9/20
+[23:43:06] verify | func= Compares | rank= 4 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[23:43:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:09] select | verify strict 10/20
+[23:43:09] verify | func= Compares | rank= 8 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[23:43:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:11] select | verify strict 11/20
+[23:43:11] verify | func= Compares | rank= 16 | pid= hep-ph/0102185 | title_snip='Quantum diffusion of magnetic fields in a numerical worldline approach' | abs_len= 601
+[23:43:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:14] select | verify strict 12/20
+[23:43:14] verify | func= Compares | rank= 18 | pid= math/0102094 | title_snip='Accuracy and convergence of the backward Monte-Carlo method' | abs_len= 957
+[23:43:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:17] select | verify strict 13/20
+[23:43:17] verify | func= Compares | rank= 19 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:43:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:19] select | verify strict 14/20
+[23:43:19] verify | func= Compares | rank= 5 | pid= hep-ph/0104049 | title_snip='The Monte Carlo Program KoralW version 1.51 and The Concurrent Monte
+ …' | abs_len= 1446
+[23:43:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:22] select | verify strict 15/20
+[23:43:22] verify | func= Compares | rank= 7 | pid= hep-ph/0102005 | title_snip='The Algebraic Method' | abs_len= 820
+[23:43:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:24] select | verify strict 16/20
+[23:43:24] verify | func= Compares | rank= 9 | pid= hep-ph/0104097 | title_snip='Freezing of QCD coupling affects the short distance static potential' | abs_len= 857
+[23:43:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:27] select | verify strict 17/20
+[23:43:27] verify | func= Compares | rank= 11 | pid= gr-qc/0103005 | title_snip='An Improved Exact Riemann Solver for Relativistic Hydrodynamics' | abs_len= 1154
+[23:43:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:29] select | verify strict 18/20
+[23:43:29] verify | func= Compares | rank= 12 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[23:43:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:32] select | verify strict 19/20
+[23:43:32] verify | func= Compares | rank= 14 | pid= physics/0104004 | title_snip='Ray-Tracing studies in a perturbed atmosphere: I- The initial value
+  …' | abs_len= 1220
+[23:43:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:34] select | verify strict 20/20
+[23:43:34] verify | func= Compares | rank= 17 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[23:43:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current code's approach to solving the transfer of continuum and lines compare to previous work in the field, and what background information is necessary to understand this comparison?
+- WINNER: astro-ph/0102269 | Radiative transfer for the FIRST era
+- QUOTE : radiative transfer
+- WHY   : sufficient
+- ANSWER: The current code's approach to solving the transfer of continuum and lines is compared to previous work in the field of numerical radiative transfer. Understanding this comparison requires background information on recent advances in numerical radiative transfer and its applications in molecular astrophysics (astro-ph/0102269).
+[23:43:41] main | running function= Background
+[23:43:41] select | function= Background | candidates_in= 20
+[23:43:41] select | core_terms= ['continuum', 'lines', 'transfer']
+[23:43:41] select | no cosine prune; kept=20/20
+[23:43:41] select | pool_size= 20 | ranks= [0, 3, 15, 6, 2, 13, 10, 1, 4, 7, 8, 12, 14, 16, 5, 9, 11, 17, 18, 19] | pids= ['astro-ph/0103317', 'astro-ph/0102270', 'nucl-th/0103038', 'hep-ph/0104065', 'astro-ph/0102269', 'physics/0103014', 'cond-mat/0103455', 'astro-ph/0103503', 'hep-th/0103228', 'hep-ph/0102005', 'gr-qc/0103017', 'gr-qc/0104063', 'physics/0104004', 'hep-ph/0102185', 'hep-ph/0104049', 'hep-ph/0104097', 'gr-qc/0103005', 'astro-ph/0104258', 'math/0102094', 'cond-mat/0103610']
+[23:43:41] select | verify strict 1/20
+[23:43:41] verify | func= Background | rank= 0 | pid= astro-ph/0103317 | title_snip='Codes for optically thick and hot photoionized media - Radiative
+  tra…' | abs_len= 1213
+[23:43:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:43:44] select | verify strict 2/20
+[23:43:44] verify | func= Background | rank= 3 | pid= astro-ph/0102270 | title_snip='Radiative transfer in molecular lines' | abs_len= 548
+[23:43:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:43:47] select | verify strict 3/20
+[23:43:47] verify | func= Background | rank= 15 | pid= nucl-th/0103038 | title_snip='HFB theory for nuclei near the drip-lines: continuum coupling' | abs_len= 528
+[23:43:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:43:50] select | verify strict 4/20
+[23:43:50] verify | func= Background | rank= 6 | pid= hep-ph/0104065 | title_snip='Rescattering corrections in elastic scattering' | abs_len= 773
+[23:43:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:43:53] select | verify strict 5/20
+[23:43:53] verify | func= Background | rank= 2 | pid= astro-ph/0102269 | title_snip='Radiative transfer for the FIRST era' | abs_len= 236
+[23:43:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:43:56] select | verify strict 6/20
+[23:43:56] verify | func= Background | rank= 13 | pid= physics/0103014 | title_snip='Wave packet propagation study of the charge transfer interaction in th…' | abs_len= 911
+[23:43:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:43:59] select | verify strict 7/20
+[23:43:59] verify | func= Background | rank= 10 | pid= cond-mat/0103455 | title_snip='An Analysis of the Quasicontinuum Method' | abs_len= 556
+[23:44:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:44:02] select | verify strict 8/20
+[23:44:02] verify | func= Background | rank= 1 | pid= astro-ph/0103503 | title_snip='MLAPM - a C code for cosmological simulations' | abs_len= 1536
+[23:44:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:05] select | verify strict 9/20
+[23:44:05] verify | func= Background | rank= 4 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[23:44:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:07] select | verify strict 10/20
+[23:44:07] verify | func= Background | rank= 7 | pid= hep-ph/0102005 | title_snip='The Algebraic Method' | abs_len= 820
+[23:44:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:10] select | verify strict 11/20
+[23:44:10] verify | func= Background | rank= 8 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[23:44:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:12] select | verify strict 12/20
+[23:44:12] verify | func= Background | rank= 12 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[23:44:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:15] select | verify strict 13/20
+[23:44:15] verify | func= Background | rank= 14 | pid= physics/0104004 | title_snip='Ray-Tracing studies in a perturbed atmosphere: I- The initial value
+  …' | abs_len= 1220
+[23:44:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:17] select | verify strict 14/20
+[23:44:17] verify | func= Background | rank= 16 | pid= hep-ph/0102185 | title_snip='Quantum diffusion of magnetic fields in a numerical worldline approach' | abs_len= 601
+[23:44:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:20] select | verify strict 15/20
+[23:44:20] verify | func= Background | rank= 5 | pid= hep-ph/0104049 | title_snip='The Monte Carlo Program KoralW version 1.51 and The Concurrent Monte
+ …' | abs_len= 1446
+[23:44:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:22] select | verify strict 16/20
+[23:44:22] verify | func= Background | rank= 9 | pid= hep-ph/0104097 | title_snip='Freezing of QCD coupling affects the short distance static potential' | abs_len= 857
+[23:44:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:25] select | verify strict 17/20
+[23:44:25] verify | func= Background | rank= 11 | pid= gr-qc/0103005 | title_snip='An Improved Exact Riemann Solver for Relativistic Hydrodynamics' | abs_len= 1154
+[23:44:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:27] select | verify strict 18/20
+[23:44:27] verify | func= Background | rank= 17 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[23:44:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:44:30] select | verify strict 19/20
+[23:44:30] verify | func= Background | rank= 18 | pid= math/0102094 | title_snip='Accuracy and convergence of the backward Monte-Carlo method' | abs_len= 957
+[23:44:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:44:33] select | verify strict 20/20
+[23:44:33] verify | func= Background | rank= 19 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:44:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current code's approach to solving the transfer of continuum and lines compare to previous work in the field, and what background information is necessary to understand this comparison?
+- WINNER: astro-ph/0103317 | Codes for optically thick and hot photoionized media - Radiative
+  transfer and new developments
+- QUOTE : transfer of the continuum with the Accelerated Lambda Iteration method
+- WHY   : sufficient
+- ANSWER: The current code's approach to solving the transfer of continuum and lines is compared to previous work, building on a code presented in a 2000 paper by Dumont, Abrassart, and Collin (astro-ph/0103317).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

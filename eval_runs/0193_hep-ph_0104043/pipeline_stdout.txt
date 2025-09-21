@@ -1,0 +1,333 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query asks for the foundational work that informs the study (Background) and why that prior work drives the creation of a new approximate method (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.86 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 40it [00:00, 399.69it/s]
+Reading arXiv_src_0101_001.jsonl: 192it [00:00, 1057.97it/s]
+Reading arXiv_src_0101_001.jsonl: 313it [00:00, 1109.07it/s]
+Reading arXiv_src_0101_001.jsonl: 424it [00:00, 584.28it/s] 
+Reading arXiv_src_0101_001.jsonl: 505it [00:00, 534.57it/s]
+Reading arXiv_src_0101_001.jsonl: 573it [00:00, 530.17it/s]
+Reading arXiv_src_0101_001.jsonl: 682it [00:01, 654.71it/s]
+Reading arXiv_src_0101_001.jsonl: 782it [00:01, 736.81it/s]
+Reading arXiv_src_0101_001.jsonl: 896it [00:01, 839.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 881.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1132it [00:01, 992.09it/s]
+Reading arXiv_src_0101_001.jsonl: 1259it [00:01, 1069.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1371it [00:01, 1073.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1500it [00:01, 1135.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1633it [00:01, 1191.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1755it [00:01, 1186.40it/s]
+Reading arXiv_src_0101_001.jsonl: 1882it [00:02, 1209.18it/s]
+Reading arXiv_src_0101_001.jsonl: 2070it [00:02, 1405.59it/s]
+Reading arXiv_src_0101_001.jsonl: 2219it [00:02, 1428.96it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 993.66it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1319.55it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1354.35it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 855.08it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 522.02it/s]
+Reading arXiv_src_0102_001.jsonl: 591it [00:00, 581.76it/s]
+Reading arXiv_src_0102_001.jsonl: 668it [00:00, 606.77it/s]
+Reading arXiv_src_0102_001.jsonl: 782it [00:01, 730.34it/s]
+Reading arXiv_src_0102_001.jsonl: 909it [00:01, 864.09it/s]
+Reading arXiv_src_0102_001.jsonl: 1023it [00:01, 935.79it/s]
+Reading arXiv_src_0102_001.jsonl: 1144it [00:01, 1010.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1254it [00:01, 1030.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1401it [00:01, 1154.62it/s]
+Reading arXiv_src_0102_001.jsonl: 1533it [00:01, 1202.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1662it [00:01, 1227.40it/s]
+Reading arXiv_src_0102_001.jsonl: 1808it [00:01, 1293.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1960it [00:01, 1359.87it/s]
+Reading arXiv_src_0102_001.jsonl: 2114it [00:02, 1409.70it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1019.90it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1371.48it/s]
+Reading arXiv_src_0103_001.jsonl: 302it [00:00, 1527.41it/s]
+Reading arXiv_src_0103_001.jsonl: 455it [00:00, 1118.74it/s]
+Reading arXiv_src_0103_001.jsonl: 577it [00:00, 734.31it/s] 
+Reading arXiv_src_0103_001.jsonl: 672it [00:00, 783.31it/s]
+Reading arXiv_src_0103_001.jsonl: 765it [00:00, 798.19it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 891.42it/s]
+Reading arXiv_src_0103_001.jsonl: 988it [00:01, 935.11it/s]
+Reading arXiv_src_0103_001.jsonl: 1090it [00:01, 958.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1212it [00:01, 1030.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1320it [00:01, 1041.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1462it [00:01, 1148.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1598it [00:01, 1208.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1749it [00:01, 1296.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1888it [00:01, 1323.15it/s]
+Reading arXiv_src_0103_001.jsonl: 2029it [00:01, 1348.13it/s]
+Reading arXiv_src_0103_001.jsonl: 2170it [00:01, 1362.45it/s]
+Reading arXiv_src_0103_001.jsonl: 2324it [00:02, 1413.33it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.35it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 1499.14it/s]
+Reading arXiv_src_0104_001.jsonl: 310it [00:00, 1553.12it/s]
+Reading arXiv_src_0104_001.jsonl: 466it [00:00, 999.71it/s] 
+Reading arXiv_src_0104_001.jsonl: 583it [00:00, 549.27it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:00, 645.48it/s]
+Reading arXiv_src_0104_001.jsonl: 787it [00:01, 705.00it/s]
+Reading arXiv_src_0104_001.jsonl: 892it [00:01, 779.31it/s]
+Reading arXiv_src_0104_001.jsonl: 1013it [00:01, 882.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1127it [00:01, 948.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1251it [00:01, 1024.36it/s]
+Reading arXiv_src_0104_001.jsonl: 1363it [00:01, 1025.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1495it [00:01, 1105.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1639it [00:01, 1200.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1769it [00:01, 1227.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1916it [00:01, 1298.29it/s]
+Reading arXiv_src_0104_001.jsonl: 2074it [00:02, 1381.01it/s]
+Reading arXiv_src_0104_001.jsonl: 2214it [00:02, 982.98it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 982.42it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work use previous research to motivate the development of a new approximate method for studying three flavor neutrino oscillations in matter?
+[debug] classifier labels: ['Background', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T22:54:21.154792  Background, Motivation
+1     1  0.985252  ...  2025-09-21T22:54:21.154792  Background, Motivation
+2     2  0.575182  ...  2025-09-21T22:54:21.154792  Background, Motivation
+3     3  0.570994  ...  2025-09-21T22:54:21.154792  Background, Motivation
+4     4  0.520916  ...  2025-09-21T22:54:21.154792  Background, Motivation
+5     5  0.517811  ...  2025-09-21T22:54:21.154792  Background, Motivation
+6     6  0.499932  ...  2025-09-21T22:54:21.154792  Background, Motivation
+7     7  0.438704  ...  2025-09-21T22:54:21.154792  Background, Motivation
+8     8  0.339996  ...  2025-09-21T22:54:21.154792  Background, Motivation
+9     9  0.330101  ...  2025-09-21T22:54:21.154792  Background, Motivation
+
+[10 rows x 12 columns]
+[00:54:27] main | args: Namespace(max_check=20, debug=True)
+[00:54:27] read_last_jsonl | path= classified_outputs.jsonl
+[00:54:27] read_last_jsonl | total_lines= 1
+[00:54:27] main | query='How does the current work use previous research to motivate the development of a new approximate method for studying three flavor neutrino oscillations in matter?' | funcs=['Background', 'Motivation']
+[00:54:29] main | core_terms= ['neutrino', 'neutrino oscillations', 'three flavor']
+[00:54:29] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:54:29] load_topk_jsonl | rows= 20
+[00:54:29] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0104043 title_snip='Decoupled oscillations and resonances of three neutrinos in matter' abs_len= 1026
+[00:54:29] main | running function= Background
+[00:54:29] select | function= Background | candidates_in= 20
+[00:54:29] select | core_terms= ['neutrino', 'neutrino oscillations', 'three flavor']
+[00:54:29] select | no cosine prune; kept=20/20
+[00:54:29] select | pool_size= 20 | ranks= [5, 0, 2, 12, 16, 10, 18, 19, 1, 6, 7, 9, 13, 15, 8, 11, 17, 3, 4, 14] | pids= ['hep-ph/0103252', 'hep-ph/0104043', 'hep-ph/0101244', 'hep-ph/0102255', 'hep-ph/0102001', 'hep-ph/0103052', 'hep-ph/0102252', 'hep-ph/0101090', 'hep-ph/0101231', 'hep-ph/0103300', 'hep-ph/0102063', 'hep-ph/0102103', 'hep-ph/0103015', 'hep-ph/0102167', 'hep-ph/0103123', 'nucl-th/0101008', 'hep-ph/0103299', 'hep-ph/0101122', 'hep-lat/0104001', 'hep-th/0102124']
+[00:54:29] select | verify strict 1/20
+[00:54:29] verify | func= Background | rank= 5 | pid= hep-ph/0103252 | title_snip='Neutrino oscillations with three flavors in matter of varying density' | abs_len= 801
+[00:54:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:33] select | verify strict 2/20
+[00:54:33] verify | func= Background | rank= 0 | pid= hep-ph/0104043 | title_snip='Decoupled oscillations and resonances of three neutrinos in matter' | abs_len= 1026
+[00:54:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:36] select | verify strict 3/20
+[00:54:36] verify | func= Background | rank= 2 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[00:54:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:39] select | verify strict 4/20
+[00:54:39] verify | func= Background | rank= 12 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[00:54:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:42] select | verify strict 5/20
+[00:54:42] verify | func= Background | rank= 16 | pid= hep-ph/0102001 | title_snip='Remarks on flavor-neutrino propagators and oscillation formulae' | abs_len= 1071
+[00:54:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:45] select | verify strict 6/20
+[00:54:45] verify | func= Background | rank= 10 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[00:54:48] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:54:48] select | verify strict 7/20
+[00:54:48] verify | func= Background | rank= 18 | pid= hep-ph/0102252 | title_snip='4-Neutrino mass schemes and the likelihood of (3+1)-mass spectra' | abs_len= 1050
+[00:54:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:51] select | verify strict 8/20
+[00:54:51] verify | func= Background | rank= 19 | pid= hep-ph/0101090 | title_snip='Matter enhanced nu_mu->nu_e signals using various Fermilab main inject…' | abs_len= 647
+[00:54:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:54] select | verify strict 9/20
+[00:54:54] verify | func= Background | rank= 1 | pid= hep-ph/0101231 | title_snip='The Three Neutrino Scenario' | abs_len= 645
+[00:54:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:54:58] select | verify strict 10/20
+[00:54:58] verify | func= Background | rank= 6 | pid= hep-ph/0103300 | title_snip='Analytic Approximations for Three Neutrino Oscillation Parameters and
+…' | abs_len= 914
+[00:55:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:01] select | verify strict 11/20
+[00:55:01] verify | func= Background | rank= 7 | pid= hep-ph/0102063 | title_snip='Can three-flavor oscillations solve the solar neutrino problem?' | abs_len= 1219
+[00:55:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:04] select | verify strict 12/20
+[00:55:04] verify | func= Background | rank= 9 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[00:55:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:55:07] select | verify strict 13/20
+[00:55:07] verify | func= Background | rank= 13 | pid= hep-ph/0103015 | title_snip='Covariant Treatment of Neutrino Spin (Flavour) Conversion in Matter
+  …' | abs_len= 208
+[00:55:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:55:10] select | verify strict 14/20
+[00:55:10] verify | func= Background | rank= 15 | pid= hep-ph/0102167 | title_snip='Various Solutions of the Atmospheric Neutrino Data' | abs_len= 350
+[00:55:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:13] select | verify strict 15/20
+[00:55:13] verify | func= Background | rank= 8 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[00:55:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:55:16] select | verify strict 16/20
+[00:55:16] verify | func= Background | rank= 11 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[00:55:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:55:19] select | verify strict 17/20
+[00:55:19] verify | func= Background | rank= 17 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[00:55:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:55:21] select | verify strict 18/20
+[00:55:21] verify | func= Background | rank= 3 | pid= hep-ph/0101122 | title_snip='Theoretical Overview: Motivations for Lepton Flavor Violation' | abs_len= 450
+[00:55:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:55:24] select | verify strict 19/20
+[00:55:24] verify | func= Background | rank= 4 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[00:55:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:55:26] select | verify strict 20/20
+[00:55:26] verify | func= Background | rank= 14 | pid= hep-th/0102124 | title_snip='Supersymmetric quantum mechanics, the variational method and a new sha…' | abs_len= 376
+[00:55:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current work use previous research to motivate the development of a new approximate method for studying three flavor neutrino oscillations in matter?
+- WINNER: hep-ph/0104043 | Decoupled oscillations and resonances of three neutrinos in matter
+- QUOTE : three flavor neutrino oscillations in matter
+- WHY   : sufficient
+- ANSWER: The current work builds on a previous theoretical framework for three neutrino mixing in matter, where rigorous analytical solutions were obtained (hep-ph/0104043).
+[00:55:34] main | running function= Motivation
+[00:55:34] select | function= Motivation | candidates_in= 20
+[00:55:34] select | core_terms= ['neutrino', 'neutrino oscillations', 'three flavor']
+[00:55:34] select | no cosine prune; kept=20/20
+[00:55:34] select | pool_size= 20 | ranks= [5, 0, 2, 12, 16, 1, 6, 7, 9, 10, 13, 15, 18, 19, 3, 4, 11, 17, 8, 14] | pids= ['hep-ph/0103252', 'hep-ph/0104043', 'hep-ph/0101244', 'hep-ph/0102255', 'hep-ph/0102001', 'hep-ph/0101231', 'hep-ph/0103300', 'hep-ph/0102063', 'hep-ph/0102103', 'hep-ph/0103052', 'hep-ph/0103015', 'hep-ph/0102167', 'hep-ph/0102252', 'hep-ph/0101090', 'hep-ph/0101122', 'hep-lat/0104001', 'nucl-th/0101008', 'hep-ph/0103299', 'hep-ph/0103123', 'hep-th/0102124']
+[00:55:34] select | verify strict 1/20
+[00:55:34] verify | func= Motivation | rank= 5 | pid= hep-ph/0103252 | title_snip='Neutrino oscillations with three flavors in matter of varying density' | abs_len= 801
+[00:55:37] verify | result supports= True fit= 0.80 top= 1.00 invalid= — cue_hint= False
+[00:55:37] select | verify strict 2/20
+[00:55:37] verify | func= Motivation | rank= 0 | pid= hep-ph/0104043 | title_snip='Decoupled oscillations and resonances of three neutrinos in matter' | abs_len= 1026
+[00:55:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:40] select | verify strict 3/20
+[00:55:40] verify | func= Motivation | rank= 2 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[00:55:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:43] select | verify strict 4/20
+[00:55:43] verify | func= Motivation | rank= 12 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[00:55:46] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:55:46] select | verify strict 5/20
+[00:55:46] verify | func= Motivation | rank= 16 | pid= hep-ph/0102001 | title_snip='Remarks on flavor-neutrino propagators and oscillation formulae' | abs_len= 1071
+[00:55:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:50] select | verify strict 6/20
+[00:55:50] verify | func= Motivation | rank= 1 | pid= hep-ph/0101231 | title_snip='The Three Neutrino Scenario' | abs_len= 645
+[00:55:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:53] select | verify strict 7/20
+[00:55:53] verify | func= Motivation | rank= 6 | pid= hep-ph/0103300 | title_snip='Analytic Approximations for Three Neutrino Oscillation Parameters and
+…' | abs_len= 914
+[00:55:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:55:56] select | verify strict 8/20
+[00:55:56] verify | func= Motivation | rank= 7 | pid= hep-ph/0102063 | title_snip='Can three-flavor oscillations solve the solar neutrino problem?' | abs_len= 1219
+[00:56:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:56:00] select | verify strict 9/20
+[00:56:00] verify | func= Motivation | rank= 9 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[00:56:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:56:03] select | verify strict 10/20
+[00:56:03] verify | func= Motivation | rank= 10 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[00:56:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:56:06] select | verify strict 11/20
+[00:56:06] verify | func= Motivation | rank= 13 | pid= hep-ph/0103015 | title_snip='Covariant Treatment of Neutrino Spin (Flavour) Conversion in Matter
+  …' | abs_len= 208
+[00:56:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:56:10] select | verify strict 12/20
+[00:56:10] verify | func= Motivation | rank= 15 | pid= hep-ph/0102167 | title_snip='Various Solutions of the Atmospheric Neutrino Data' | abs_len= 350
+[00:56:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:56:13] select | verify strict 13/20
+[00:56:13] verify | func= Motivation | rank= 18 | pid= hep-ph/0102252 | title_snip='4-Neutrino mass schemes and the likelihood of (3+1)-mass spectra' | abs_len= 1050
+[00:56:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[00:56:20] select | verify strict 14/20
+[00:56:20] verify | func= Motivation | rank= 19 | pid= hep-ph/0101090 | title_snip='Matter enhanced nu_mu->nu_e signals using various Fermilab main inject…' | abs_len= 647
+[00:56:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:56:23] select | verify strict 15/20
+[00:56:23] verify | func= Motivation | rank= 3 | pid= hep-ph/0101122 | title_snip='Theoretical Overview: Motivations for Lepton Flavor Violation' | abs_len= 450
+[00:56:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:56:26] select | verify strict 16/20
+[00:56:26] verify | func= Motivation | rank= 4 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[00:56:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:56:28] select | verify strict 17/20
+[00:56:28] verify | func= Motivation | rank= 11 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[00:56:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:56:31] select | verify strict 18/20
+[00:56:31] verify | func= Motivation | rank= 17 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[00:56:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:56:33] select | verify strict 19/20
+[00:56:33] verify | func= Motivation | rank= 8 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[00:56:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:56:36] select | verify strict 20/20
+[00:56:36] verify | func= Motivation | rank= 14 | pid= hep-th/0102124 | title_snip='Supersymmetric quantum mechanics, the variational method and a new sha…' | abs_len= 376
+[00:56:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the current work use previous research to motivate the development of a new approximate method for studying three flavor neutrino oscillations in matter?
+- WINNER: hep-ph/0103252 | Neutrino oscillations with three flavors in matter of varying density
+- QUOTE : three flavor neutrino oscillations in matter
+- WHY   : sufficient
+- ANSWER: The development of a new approximate method for studying three flavor neutrino oscillations in matter is motivated by the need for a simpler approach to handle varying matter density profiles. This work builds on previous research by introducing a semi-classical approximation that replaces multiple evolution operators with a single one, applicable to matter density profiles with minimal fluctuations (hep-ph/0103252).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

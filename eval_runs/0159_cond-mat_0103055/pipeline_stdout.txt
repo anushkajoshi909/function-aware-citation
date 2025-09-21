@@ -1,0 +1,334 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query asks how the current work compares with prior approaches (comparison) and how it makes use of those existing methods (usage)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.7 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 129it [00:00, 1275.52it/s]
+Reading arXiv_src_0101_001.jsonl: 278it [00:00, 1399.34it/s]
+Reading arXiv_src_0101_001.jsonl: 418it [00:00, 1020.51it/s]
+Reading arXiv_src_0101_001.jsonl: 530it [00:00, 709.15it/s] 
+Reading arXiv_src_0101_001.jsonl: 615it [00:00, 717.20it/s]
+Reading arXiv_src_0101_001.jsonl: 723it [00:00, 802.40it/s]
+Reading arXiv_src_0101_001.jsonl: 835it [00:00, 884.18it/s]
+Reading arXiv_src_0101_001.jsonl: 940it [00:01, 925.36it/s]
+Reading arXiv_src_0101_001.jsonl: 1053it [00:01, 982.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1184it [00:01, 1074.66it/s]
+Reading arXiv_src_0101_001.jsonl: 1304it [00:01, 1106.49it/s]
+Reading arXiv_src_0101_001.jsonl: 1422it [00:01, 1125.21it/s]
+Reading arXiv_src_0101_001.jsonl: 1555it [00:01, 1182.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1691it [00:01, 1234.43it/s]
+Reading arXiv_src_0101_001.jsonl: 1816it [00:01, 1222.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1978it [00:01, 1338.50it/s]
+Reading arXiv_src_0101_001.jsonl: 2152it [00:01, 1455.35it/s]
+Reading arXiv_src_0101_001.jsonl: 2308it [00:02, 1484.06it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1117.53it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1337.82it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1357.54it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 849.52it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 518.59it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 552.19it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:01, 616.04it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 741.09it/s]
+Reading arXiv_src_0102_001.jsonl: 926it [00:01, 883.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1037it [00:01, 941.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 986.48it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1039.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1404it [00:01, 1126.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1183.04it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1224.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1824it [00:01, 1303.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1368.31it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1399.07it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1014.41it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1378.84it/s]
+Reading arXiv_src_0103_001.jsonl: 304it [00:00, 1536.64it/s]
+Reading arXiv_src_0103_001.jsonl: 458it [00:00, 1128.72it/s]
+Reading arXiv_src_0103_001.jsonl: 581it [00:00, 728.16it/s] 
+Reading arXiv_src_0103_001.jsonl: 684it [00:00, 794.82it/s]
+Reading arXiv_src_0103_001.jsonl: 780it [00:00, 825.67it/s]
+Reading arXiv_src_0103_001.jsonl: 887it [00:00, 885.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 946.06it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 999.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1044.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1061.59it/s]
+Reading arXiv_src_0103_001.jsonl: 1492it [00:01, 1182.31it/s]
+Reading arXiv_src_0103_001.jsonl: 1629it [00:01, 1235.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1773it [00:01, 1295.02it/s]
+Reading arXiv_src_0103_001.jsonl: 1923it [00:01, 1355.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2063it [00:01, 1367.07it/s]
+Reading arXiv_src_0103_001.jsonl: 2201it [00:01, 1361.12it/s]
+Reading arXiv_src_0103_001.jsonl: 2352it [00:02, 1405.24it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1147.33it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 152it [00:00, 1507.70it/s]
+Reading arXiv_src_0104_001.jsonl: 314it [00:00, 1561.62it/s]
+Reading arXiv_src_0104_001.jsonl: 471it [00:00, 978.98it/s] 
+Reading arXiv_src_0104_001.jsonl: 587it [00:00, 552.58it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:00, 644.16it/s]
+Reading arXiv_src_0104_001.jsonl: 787it [00:01, 704.51it/s]
+Reading arXiv_src_0104_001.jsonl: 892it [00:01, 779.27it/s]
+Reading arXiv_src_0104_001.jsonl: 1013it [00:01, 882.83it/s]
+Reading arXiv_src_0104_001.jsonl: 1126it [00:01, 945.41it/s]
+Reading arXiv_src_0104_001.jsonl: 1251it [00:01, 1024.56it/s]
+Reading arXiv_src_0104_001.jsonl: 1363it [00:01, 1025.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1495it [00:01, 1106.04it/s]
+Reading arXiv_src_0104_001.jsonl: 1639it [00:01, 1200.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1768it [00:01, 1225.58it/s]
+Reading arXiv_src_0104_001.jsonl: 1914it [00:01, 1290.85it/s]
+Reading arXiv_src_0104_001.jsonl: 2073it [00:02, 1377.22it/s]
+Reading arXiv_src_0104_001.jsonl: 2213it [00:02, 952.00it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 975.51it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?
+[debug] classifier labels: ['Compares', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:02:22.656235       Compares, Uses
+1     1  0.843469  ...  2025-09-21T21:02:22.656235       Compares, Uses
+2     2  0.805792  ...  2025-09-21T21:02:22.656235       Compares, Uses
+3     3  0.754037  ...  2025-09-21T21:02:22.656235       Compares, Uses
+4     4  0.528002  ...  2025-09-21T21:02:22.656235       Compares, Uses
+5     5  0.524544  ...  2025-09-21T21:02:22.656235       Compares, Uses
+6     6  0.442290  ...  2025-09-21T21:02:22.656235       Compares, Uses
+7     7  0.422241  ...  2025-09-21T21:02:22.656235       Compares, Uses
+8     8  0.388826  ...  2025-09-21T21:02:22.656235       Compares, Uses
+9     9  0.378443  ...  2025-09-21T21:02:22.656235       Compares, Uses
+
+[10 rows x 12 columns]
+[23:02:28] main | args: Namespace(max_check=20, debug=True)
+[23:02:28] read_last_jsonl | path= classified_outputs.jsonl
+[23:02:28] read_last_jsonl | total_lines= 1
+[23:02:28] main | query='How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?' | funcs=['Compares', 'Uses']
+[23:02:29] main | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[23:02:29] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:02:29] load_topk_jsonl | rows= 20
+[23:02:29] load_topk_jsonl | first: rank= 0 paper_id= hep-lat/0104001 title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' abs_len= 391
+[23:02:29] main | running function= Compares
+[23:02:29] select | function= Compares | candidates_in= 20
+[23:02:29] select | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[23:02:29] select | no cosine prune; kept=20/20
+[23:02:29] select | pool_size= 20 | ranks= [3, 5, 9, 1, 2, 10, 18, 19, 0, 4, 7, 13, 16, 17, 8, 14, 6, 11, 12, 15] | pids= ['cond-mat/0103055', 'cond-mat/0103293', 'hep-ph/0104033', 'cond-mat/0103610', 'hep-lat/0101015', 'hep-lat/0104002', 'hep-lat/0101019', 'cond-mat/0103565', 'hep-lat/0104001', 'hep-lat/0101003', 'hep-lat/0101017', 'hep-lat/0104013', 'hep-ph/0104080', 'hep-lat/0103018', 'nucl-th/0104043', 'hep-ph/0101110', 'hep-ph/0103299', 'hep-th/0102124', 'cond-mat/0103235', 'hep-ph/0102053']
+[23:02:29] select | verify strict 1/20
+[23:02:29] verify | func= Compares | rank= 3 | pid= cond-mat/0103055 | title_snip='Superfluidity of bosons on a deformable lattice' | abs_len= 1505
+[23:02:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:02:33] select | verify strict 2/20
+[23:02:33] verify | func= Compares | rank= 5 | pid= cond-mat/0103293 | title_snip='Local quantum coherence and superfluidity' | abs_len= 1066
+[23:02:36] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:02:36] select | verify strict 3/20
+[23:02:36] verify | func= Compares | rank= 9 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[23:02:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:02:39] select | verify strict 4/20
+[23:02:39] verify | func= Compares | rank= 1 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:02:42] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[23:02:42] select | verify strict 5/20
+[23:02:42] verify | func= Compares | rank= 2 | pid= hep-lat/0101015 | title_snip='Schwinger Model with the Overlap-Dirac Operator: exact results versus …' | abs_len= 481
+[23:02:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:02:44] select | verify strict 6/20
+[23:02:44] verify | func= Compares | rank= 10 | pid= hep-lat/0104002 | title_snip='The QCD spectrum with three quark flavors' | abs_len= 832
+[23:02:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:02:47] select | verify strict 7/20
+[23:02:47] verify | func= Compares | rank= 18 | pid= hep-lat/0101019 | title_snip='Comparison Studies of Finite Momentum Correlators on Anisotropic and
+ …' | abs_len= 552
+[23:02:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:02:50] select | verify strict 8/20
+[23:02:50] verify | func= Compares | rank= 19 | pid= cond-mat/0103565 | title_snip='Numerical study of the coupled time-dependent Gross-Pitaevskii equatio…' | abs_len= 819
+[23:02:53] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:02:53] select | verify strict 9/20
+[23:02:53] verify | func= Compares | rank= 0 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[23:02:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:02:55] select | verify strict 10/20
+[23:02:55] verify | func= Compares | rank= 4 | pid= hep-lat/0101003 | title_snip='Lattice B-Physics' | abs_len= 597
+[23:02:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:02:58] select | verify strict 11/20
+[23:02:58] verify | func= Compares | rank= 7 | pid= hep-lat/0101017 | title_snip='Abelian chromomagnetic background field at finite temperature on the
+ …' | abs_len= 650
+[23:03:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:00] select | verify strict 12/20
+[23:03:00] verify | func= Compares | rank= 13 | pid= hep-lat/0104013 | title_snip='Chiral Behaviour of the Rho Meson in Lattice QCD' | abs_len= 928
+[23:03:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:03] select | verify strict 13/20
+[23:03:03] verify | func= Compares | rank= 16 | pid= hep-ph/0104080 | title_snip='Width difference of the B_s mesons from lattice QCD' | abs_len= 433
+[23:03:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:05] select | verify strict 14/20
+[23:03:05] verify | func= Compares | rank= 17 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[23:03:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:08] select | verify strict 15/20
+[23:03:08] verify | func= Compares | rank= 8 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[23:03:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:10] select | verify strict 16/20
+[23:03:10] verify | func= Compares | rank= 14 | pid= hep-ph/0101110 | title_snip='Current quark mass effects on chiral phase transition of QCD in the
+  …' | abs_len= 1153
+[23:03:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:13] select | verify strict 17/20
+[23:03:13] verify | func= Compares | rank= 6 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:03:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:16] select | verify strict 18/20
+[23:03:16] verify | func= Compares | rank= 11 | pid= hep-th/0102124 | title_snip='Supersymmetric quantum mechanics, the variational method and a new sha…' | abs_len= 376
+[23:03:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:18] select | verify strict 19/20
+[23:03:18] verify | func= Compares | rank= 12 | pid= cond-mat/0103235 | title_snip='Full Current Statistics in Diffusive Normal-Superconductor Structures' | abs_len= 767
+[23:03:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:21] select | verify strict 20/20
+[23:03:21] verify | func= Compares | rank= 15 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[23:03:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?
+- WINNER: cond-mat/0103055 | Superfluidity of bosons on a deformable lattice
+- QUOTE : superfluid properties of a system of interacting bosons on a lattice
+- WHY   : sufficient
+- ANSWER: The current work compares its results to those of bosons on a rigid lattice, utilizing an extension of the Beliaev-Popov formalism to study superfluid properties on a deformable lattice. The comparison is based on the sound velocity, which is found to be practically unaffected by the coupling with phonons, indicating the robustness of the superfluid state (cond-mat/0103055).
+[23:03:28] main | running function= Uses
+[23:03:28] select | function= Uses | candidates_in= 20
+[23:03:28] select | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[23:03:28] select | no cosine prune; kept=20/20
+[23:03:28] select | pool_size= 20 | ranks= [3, 5, 0, 7, 9, 13, 16, 17, 1, 8, 10, 14, 18, 4, 2, 19, 6, 12, 11, 15] | pids= ['cond-mat/0103055', 'cond-mat/0103293', 'hep-lat/0104001', 'hep-lat/0101017', 'hep-ph/0104033', 'hep-lat/0104013', 'hep-ph/0104080', 'hep-lat/0103018', 'cond-mat/0103610', 'nucl-th/0104043', 'hep-lat/0104002', 'hep-ph/0101110', 'hep-lat/0101019', 'hep-lat/0101003', 'hep-lat/0101015', 'cond-mat/0103565', 'hep-ph/0103299', 'cond-mat/0103235', 'hep-th/0102124', 'hep-ph/0102053']
+[23:03:28] select | verify strict 1/20
+[23:03:28] verify | func= Uses | rank= 3 | pid= cond-mat/0103055 | title_snip='Superfluidity of bosons on a deformable lattice' | abs_len= 1505
+[23:03:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:03:31] select | verify strict 2/20
+[23:03:31] verify | func= Uses | rank= 5 | pid= cond-mat/0103293 | title_snip='Local quantum coherence and superfluidity' | abs_len= 1066
+[23:03:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:03:34] select | verify strict 3/20
+[23:03:34] verify | func= Uses | rank= 0 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[23:03:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:37] select | verify strict 4/20
+[23:03:37] verify | func= Uses | rank= 7 | pid= hep-lat/0101017 | title_snip='Abelian chromomagnetic background field at finite temperature on the
+ …' | abs_len= 650
+[23:03:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:39] select | verify strict 5/20
+[23:03:39] verify | func= Uses | rank= 9 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[23:03:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:42] select | verify strict 6/20
+[23:03:42] verify | func= Uses | rank= 13 | pid= hep-lat/0104013 | title_snip='Chiral Behaviour of the Rho Meson in Lattice QCD' | abs_len= 928
+[23:03:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:44] select | verify strict 7/20
+[23:03:44] verify | func= Uses | rank= 16 | pid= hep-ph/0104080 | title_snip='Width difference of the B_s mesons from lattice QCD' | abs_len= 433
+[23:03:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:47] select | verify strict 8/20
+[23:03:47] verify | func= Uses | rank= 17 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[23:03:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:50] select | verify strict 9/20
+[23:03:50] verify | func= Uses | rank= 1 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:03:52] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:03:52] select | verify strict 10/20
+[23:03:52] verify | func= Uses | rank= 8 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[23:03:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:55] select | verify strict 11/20
+[23:03:55] verify | func= Uses | rank= 10 | pid= hep-lat/0104002 | title_snip='The QCD spectrum with three quark flavors' | abs_len= 832
+[23:03:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:03:58] select | verify strict 12/20
+[23:03:58] verify | func= Uses | rank= 14 | pid= hep-ph/0101110 | title_snip='Current quark mass effects on chiral phase transition of QCD in the
+  …' | abs_len= 1153
+[23:04:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:00] select | verify strict 13/20
+[23:04:00] verify | func= Uses | rank= 18 | pid= hep-lat/0101019 | title_snip='Comparison Studies of Finite Momentum Correlators on Anisotropic and
+ …' | abs_len= 552
+[23:04:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:03] select | verify strict 14/20
+[23:04:03] verify | func= Uses | rank= 4 | pid= hep-lat/0101003 | title_snip='Lattice B-Physics' | abs_len= 597
+[23:04:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:05] select | verify strict 15/20
+[23:04:05] verify | func= Uses | rank= 2 | pid= hep-lat/0101015 | title_snip='Schwinger Model with the Overlap-Dirac Operator: exact results versus …' | abs_len= 481
+[23:04:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:08] select | verify strict 16/20
+[23:04:08] verify | func= Uses | rank= 19 | pid= cond-mat/0103565 | title_snip='Numerical study of the coupled time-dependent Gross-Pitaevskii equatio…' | abs_len= 819
+[23:04:11] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:04:11] select | verify strict 17/20
+[23:04:11] verify | func= Uses | rank= 6 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:04:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:13] select | verify strict 18/20
+[23:04:13] verify | func= Uses | rank= 12 | pid= cond-mat/0103235 | title_snip='Full Current Statistics in Diffusive Normal-Superconductor Structures' | abs_len= 767
+[23:04:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:16] select | verify strict 19/20
+[23:04:16] verify | func= Uses | rank= 11 | pid= hep-th/0102124 | title_snip='Supersymmetric quantum mechanics, the variational method and a new sha…' | abs_len= 376
+[23:04:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:18] select | verify strict 20/20
+[23:04:18] verify | func= Uses | rank= 15 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[23:04:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:04:23] arbiter | rejected off-topic winner: cond-mat/0103610
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

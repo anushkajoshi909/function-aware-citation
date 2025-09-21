@@ -15,8 +15,8 @@ PIPELINE_PATH_DEFAULT = PROJECT_ROOT / "run_pipeline.py"
 RUNS_DIR_DEFAULT = PROJECT_ROOT / "eval_runs"  # where we stash per-example outputs
 
 # --- Filenames your pipeline already produces
-FUNC_RESULTS_JSONL = "outputs/function_selection_results.jsonl"
-FUNC_ANSWERS_TXT   = "outputs/function_answers.txt"
+FUNC_RESULTS_JSONL = "RetrievalAugmentedGeneration/outputs/function_selection_results.jsonl"
+FUNC_ANSWERS_TXT   = "RetrievalAugmentedGeneration/outputs/function_answers.txt"
 CLASSIFIED_JSONL   = "RetrievalAugmentedGeneration/classified_outputs.jsonl"  # used by pipeline
 
 # --------------------------
@@ -34,6 +34,20 @@ def read_jsonl(path: Path):
             except json.JSONDecodeError:
                 pass
     return rows
+
+def read_last_jsonl(path: Path):
+    """Read just the last valid JSON line."""
+    last = None
+    with open(path, "r", encoding="utf-8") as f:
+        for ln in f:
+            ln = ln.strip()
+            if not ln:
+                continue
+            try:
+                last = json.loads(ln)
+            except json.JSONDecodeError:
+                continue
+    return last
 
 def load_dataset(path: Path):
     """Your dataset lines already contain:
@@ -69,13 +83,29 @@ def is_negative_answer_sentence(answer_sentence: str, func_name: str):
 # --------------------------
 # Evaluation
 # --------------------------
-def evaluate_one_example(gt_row: dict, results_jsonl_path: Path):
+def get_predicted_functions(classified_jsonl_path: Path):
+    """
+    Pull the classifier's predicted citation functions from classified_outputs.jsonl.
+    We take the LAST record (the one from the most recent run).
+    """
+    if not classified_jsonl_path.exists():
+        return []
+    rec = read_last_jsonl(classified_jsonl_path)
+    if not rec:
+        return []
+    clf = rec.get("citation_function_classification") or {}
+    funcs = clf.get("citation_functions") or []
+    # normalize capitalization/whitespace just in case
+    return [str(f).strip() for f in funcs if f]
+
+def evaluate_one_example(gt_row: dict, results_jsonl_path: Path, classified_jsonl_path: Path):
     """
     gt_row schema (from your dataset):
       - paper_id (gold)
       - question
       - citation_functions (list of 2)
       - labels: [{"function": "Uses", "supported": true}, ...]
+
     results_jsonl_path schema (from your pipeline):
       - list with one or more items, each like:
         {"query": ..., "function": "Background", "result": { "function":..., "winner": {...}|null, "answer_sentence": ..., "verdicts":[...]}}
@@ -84,7 +114,12 @@ def evaluate_one_example(gt_row: dict, results_jsonl_path: Path):
         "paper_id": gt_row.get("paper_id"),
         "question": gt_row.get("question"),
         "per_function": [],  # filled below
+        "predicted_functions": []  # for debugging/visibility
     }
+
+    # Predicted function list from classifier (independent of support)
+    pred_funcs = get_predicted_functions(classified_jsonl_path)
+    out["predicted_functions"] = pred_funcs[:]
 
     if not results_jsonl_path.exists():
         out["error"] = "missing_function_results"
@@ -110,7 +145,11 @@ def evaluate_one_example(gt_row: dict, results_jsonl_path: Path):
         winner = pred_result.get("winner")
         verdicts = pred_result.get("verdicts", [])
 
-        pred_supported = winner is not None  # your pipeline returns None for unsupported cases
+        # support predicted by pipeline selection step
+        pred_supported = winner is not None  # None winner => unsupported
+
+        # Function correctness = did classifier predict this function? (membership check)
+        function_correct = (func in pred_funcs)
 
         # paper correctness only meaningful when GT says there *is* support and model predicted support
         paper_correct = bool(gt_supported and pred_supported and winner and (winner.get("paper_id") == gold_pid))
@@ -122,7 +161,7 @@ def evaluate_one_example(gt_row: dict, results_jsonl_path: Path):
             "function": func,
             "gt_supported": gt_supported,
             "pred_supported": pred_supported,
-            "function_correct": (gt_supported == pred_supported),
+            "function_correct": function_correct,
             "paper_correct@1": paper_correct,
             "hit_any": hit_any,
             "winner_pid": (winner or {}).get("paper_id"),
@@ -138,6 +177,10 @@ def aggregate_metrics(per_example_rows):
     paper_total = 0
     hit_any_cnt = 0
     hit_any_total = 0
+
+    # optional: function membership metrics
+    func_mem_total = 0
+    func_mem_correct = 0
 
     for row in per_example_rows:
         if "per_function" not in row:
@@ -167,6 +210,11 @@ def aggregate_metrics(per_example_rows):
                 if pf["hit_any"]:
                     hit_any_cnt += 1
 
+            # function membership accuracy (independent of support)
+            func_mem_total += 1
+            if pf["function_correct"]:
+                func_mem_correct += 1
+
     # support classification metrics
     acc = (tp + tn) / total_funcs if total_funcs else 0.0
     prec = (tp / (tp + fp)) if (tp + fp) else 0.0
@@ -177,6 +225,9 @@ def aggregate_metrics(per_example_rows):
     paper_at1 = (paper_hits / paper_total) if paper_total else 0.0
     hit_any = (hit_any_cnt / hit_any_total) if hit_any_total else 0.0
 
+    # function membership accuracy
+    func_membership_acc = (func_mem_correct / func_mem_total) if func_mem_total else 0.0
+
     return {
         "n_functions": total_funcs,
         "support_confusion": {"TP": tp, "FP": fp, "TN": tn, "FN": fn},
@@ -186,6 +237,7 @@ def aggregate_metrics(per_example_rows):
         "support_f1": f1,
         "paper_at1_accuracy": paper_at1,
         "retrieval_hit_any": hit_any,
+        "function_membership_accuracy": func_membership_acc,
     }
 
 # --------------------------
@@ -197,9 +249,6 @@ def run_pipeline_once(pipeline_path: Path, model_index: int, question: str, cwd:
       line 1: model index
       line 2: question
     """
-    # make sure previous outputs (if any) don't leak
-    # (optional) you can purge outputs here if your pipeline doesn't do it itself
-    # e.g., (cwd / "outputs").mkdir(exist_ok=True); for p in (cwd/"outputs").glob("*"): p.unlink()
     p = subprocess.run(
         [sys.executable, str(pipeline_path)],
         input=f"{model_index}\n{question}\n",
@@ -263,11 +312,16 @@ def main():
             # 2) copy outputs away before next run overwrites them
             copied1 = copy_if_exists(project_root / FUNC_RESULTS_JSONL, subdir / "function_selection_results.jsonl")
             copied2 = copy_if_exists(project_root / FUNC_ANSWERS_TXT,   subdir / "function_answers.txt")
-            if not (copied1 and copied2):
-                print("   ⚠️ Missing expected outputs; check pipeline logs.")
+            copied3 = copy_if_exists(project_root / CLASSIFIED_JSONL,   subdir / "classified_outputs.jsonl")
+            if not (copied1 and copied2 and copied3):
+                print("   ⚠️ Missing expected outputs; check pipeline logs (need function_results, answers, and classified).")
 
         # 3) evaluate this example using the copied results
-        one_eval = evaluate_one_example(row, subdir / "function_selection_results.jsonl")
+        one_eval = evaluate_one_example(
+            gt_row=row,
+            results_jsonl_path=subdir / "function_selection_results.jsonl",
+            classified_jsonl_path=subdir / "classified_outputs.jsonl",
+        )
         one_eval["run_dir"] = str(subdir)
         per_example_eval.append(one_eval)
 
@@ -284,7 +338,12 @@ def main():
     # save per-function CSV
     with open(perrow_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["idx","paper_id","function","gt_supported","pred_supported","function_correct","paper_correct@1","hit_any","winner_pid","run_dir"])
+        w.writerow([
+            "idx","paper_id","function",
+            "gt_supported","pred_supported",
+            "function_correct",  # membership in classifier's predicted functions
+            "paper_correct@1","hit_any","winner_pid","run_dir"
+        ])
         idx = 0
         for i, row in enumerate(per_example_eval, 1):
             pid = row.get("paper_id")

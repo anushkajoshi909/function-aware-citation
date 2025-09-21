@@ -1,0 +1,262 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.1 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  5.37it/s]
+Reading arXiv_src_0101_001.jsonl: 56it [00:00, 241.46it/s]
+Reading arXiv_src_0101_001.jsonl: 208it [00:00, 730.36it/s]
+Reading arXiv_src_0101_001.jsonl: 318it [00:00, 859.16it/s]
+Reading arXiv_src_0101_001.jsonl: 414it [00:00, 783.56it/s]
+Reading arXiv_src_0101_001.jsonl: 500it [00:00, 631.30it/s]
+Reading arXiv_src_0101_001.jsonl: 572it [00:00, 595.24it/s]
+Reading arXiv_src_0101_001.jsonl: 678it [00:01, 707.75it/s]
+Reading arXiv_src_0101_001.jsonl: 781it [00:01, 788.07it/s]
+Reading arXiv_src_0101_001.jsonl: 893it [00:01, 875.33it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 917.42it/s]
+Reading arXiv_src_0101_001.jsonl: 1132it [00:01, 1021.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1261it [00:01, 1096.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1374it [00:01, 1086.46it/s]
+Reading arXiv_src_0101_001.jsonl: 1502it [00:01, 1140.12it/s]
+Reading arXiv_src_0101_001.jsonl: 1636it [00:01, 1196.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1757it [00:01, 1190.03it/s]
+Reading arXiv_src_0101_001.jsonl: 1881it [00:02, 1204.40it/s]
+Reading arXiv_src_0101_001.jsonl: 2064it [00:02, 1388.81it/s]
+Reading arXiv_src_0101_001.jsonl: 2215it [00:02, 1423.98it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 986.10it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1326.15it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1368.60it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 853.42it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 529.62it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 561.75it/s]
+Reading arXiv_src_0102_001.jsonl: 673it [00:00, 613.55it/s]
+Reading arXiv_src_0102_001.jsonl: 786it [00:01, 732.70it/s]
+Reading arXiv_src_0102_001.jsonl: 916it [00:01, 873.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 936.89it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1003.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1049.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1413it [00:01, 1162.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1546it [00:01, 1208.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1678it [00:01, 1240.58it/s]
+Reading arXiv_src_0102_001.jsonl: 1830it [00:01, 1320.59it/s]
+Reading arXiv_src_0102_001.jsonl: 1982it [00:02, 1378.56it/s]
+Reading arXiv_src_0102_001.jsonl: 2132it [00:02, 1413.09it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1023.93it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 132it [00:00, 1319.10it/s]
+Reading arXiv_src_0103_001.jsonl: 294it [00:00, 1491.43it/s]
+Reading arXiv_src_0103_001.jsonl: 444it [00:00, 1166.50it/s]
+Reading arXiv_src_0103_001.jsonl: 568it [00:00, 755.96it/s] 
+Reading arXiv_src_0103_001.jsonl: 661it [00:00, 773.52it/s]
+Reading arXiv_src_0103_001.jsonl: 752it [00:00, 806.25it/s]
+Reading arXiv_src_0103_001.jsonl: 861it [00:00, 878.34it/s]
+Reading arXiv_src_0103_001.jsonl: 965it [00:01, 920.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1074it [00:01, 967.66it/s]
+Reading arXiv_src_0103_001.jsonl: 1200it [00:01, 1049.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1309it [00:01, 1042.09it/s]
+Reading arXiv_src_0103_001.jsonl: 1449it [00:01, 1144.23it/s]
+Reading arXiv_src_0103_001.jsonl: 1587it [00:01, 1209.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1743it [00:01, 1312.23it/s]
+Reading arXiv_src_0103_001.jsonl: 1880it [00:01, 1327.37it/s]
+Reading arXiv_src_0103_001.jsonl: 2024it [00:01, 1360.30it/s]
+Reading arXiv_src_0103_001.jsonl: 2168it [00:01, 1381.55it/s]
+Reading arXiv_src_0103_001.jsonl: 2320it [00:02, 1421.22it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1146.86it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.96it/s]
+Reading arXiv_src_0104_001.jsonl: 9it [00:00, 43.28it/s]
+Reading arXiv_src_0104_001.jsonl: 156it [00:00, 635.69it/s]
+Reading arXiv_src_0104_001.jsonl: 317it [00:00, 998.17it/s]
+Reading arXiv_src_0104_001.jsonl: 423it [00:00, 956.05it/s]
+Reading arXiv_src_0104_001.jsonl: 523it [00:00, 703.05it/s]
+Reading arXiv_src_0104_001.jsonl: 605it [00:01, 485.30it/s]
+Reading arXiv_src_0104_001.jsonl: 707it [00:01, 585.26it/s]
+Reading arXiv_src_0104_001.jsonl: 798it [00:01, 652.82it/s]
+Reading arXiv_src_0104_001.jsonl: 899it [00:01, 733.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1026it [00:01, 864.64it/s]
+Reading arXiv_src_0104_001.jsonl: 1134it [00:01, 918.81it/s]
+Reading arXiv_src_0104_001.jsonl: 1259it [00:01, 1007.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1367it [00:01, 1000.27it/s]
+Reading arXiv_src_0104_001.jsonl: 1499it [00:01, 1088.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1640it [00:02, 1178.34it/s]
+Reading arXiv_src_0104_001.jsonl: 1770it [00:02, 1212.78it/s]
+Reading arXiv_src_0104_001.jsonl: 1918it [00:02, 1288.82it/s]
+Reading arXiv_src_0104_001.jsonl: 2080it [00:02, 1385.20it/s]
+Reading arXiv_src_0104_001.jsonl: 2221it [00:02, 951.96it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 882.28it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the possibility of a low value of sin2β motivate the construction of a reference unitarity triangle and what established methods are used in this construction?
+[debug] classifier labels: ['Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T15:17:47.654545           Background
+1     1  0.770761  ...  2025-09-21T15:17:47.654545           Background
+2     2  0.472972  ...  2025-09-21T15:17:47.654545           Background
+3     3  0.374875  ...  2025-09-21T15:17:47.654545           Background
+4     4  0.350411  ...  2025-09-21T15:17:47.654545           Background
+5     5  0.296598  ...  2025-09-21T15:17:47.654545           Background
+6     6  0.250652  ...  2025-09-21T15:17:47.654545           Background
+7     7  0.248949  ...  2025-09-21T15:17:47.654545           Background
+8     8  0.237258  ...  2025-09-21T15:17:47.654545           Background
+9     9  0.229213  ...  2025-09-21T15:17:47.654545           Background
+
+[10 rows x 12 columns]
+[17:18:01] main | args: Namespace(max_check=20, debug=True)
+[17:18:01] read_last_jsonl | path= classified_outputs.jsonl
+[17:18:01] read_last_jsonl | total_lines= 1
+[17:18:01] main | query='How does the possibility of a low value of sin2β motivate the construction of a reference unitarity triangle and what established methods are used in this construction?' | funcs=['Background']
+[17:18:05] main | core_terms= ['unitarity triangle', 'sin2β']
+[17:18:05] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:18:05] load_topk_jsonl | rows= 20
+[17:18:05] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0102274 title_snip='Constructing "Reference" Triangle through Unitarity of CKM Matrix' abs_len= 1047
+[17:18:05] main | running function= Background
+[17:18:05] select | function= Background | candidates_in= 20
+[17:18:05] select | core_terms= ['unitarity triangle', 'sin2β']
+[17:18:05] select | no cosine prune; kept=20/20
+[17:18:05] select | pool_size= 20 | ranks= [3, 9, 0, 1, 2, 8, 4, 7, 13, 16, 17, 5, 6, 10, 11, 12, 14, 15, 18, 19] | pids= ['hep-ph/0102295', 'hep-ph/0104238', 'hep-ph/0102274', 'hep-ph/0103040', 'hep-ph/0102310', 'hep-ph/0104009', 'hep-ph/0104211', 'hep-ph/0102163', 'hep-ph/0103159', 'hep-ph/0103180', 'hep-lat/0104006', 'hep-ph/0104137', 'math-ph/0104037', 'cond-mat/0103074', 'hep-th/0103096', 'nucl-th/0101051', 'hep-th/0102034', 'hep-ph/0104048', 'hep-ph/0102306', 'hep-lat/0101005']
+[17:18:05] select | verify strict 1/20
+[17:18:05] verify | func= Background | rank= 3 | pid= hep-ph/0102295 | title_snip='Bounds on \sin 2\beta and |V_{ub}/V_{cb}| from the Light-Quark Triangl…' | abs_len= 635
+[17:18:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:18:08] select | verify strict 2/20
+[17:18:08] verify | func= Background | rank= 9 | pid= hep-ph/0104238 | title_snip='Bounds on the Unitarity Triangle, $\sin 2\beta$ and $K\to\pi\nu\bar\nu…' | abs_len= 1404
+[17:18:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:12] select | verify strict 3/20
+[17:18:12] verify | func= Background | rank= 0 | pid= hep-ph/0102274 | title_snip='Constructing "Reference" Triangle through Unitarity of CKM Matrix' | abs_len= 1047
+[17:18:15] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[17:18:15] select | verify strict 4/20
+[17:18:15] verify | func= Background | rank= 1 | pid= hep-ph/0103040 | title_snip='Indirect Determination of the Vertex and Angles of the Unitarity
+  Tri…' | abs_len= 524
+[17:18:19] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[17:18:19] select | verify strict 5/20
+[17:18:19] verify | func= Background | rank= 2 | pid= hep-ph/0102310 | title_snip='Implication of $\sin 2\beta$ from global fit and $B\to J/\psi K_S$' | abs_len= 1444
+[17:18:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:18:23] select | verify strict 6/20
+[17:18:23] verify | func= Background | rank= 8 | pid= hep-ph/0104009 | title_snip='Determination of the angle $\gamma$ from nonleptonic $B_c \to D_s D^0$…' | abs_len= 375
+[17:18:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:18:25] select | verify strict 7/20
+[17:18:25] verify | func= Background | rank= 4 | pid= hep-ph/0104211 | title_snip='Prediction of $\sin^2\theta_W$ in a Conformal Approach to Coupling
+  U…' | abs_len= 661
+[17:18:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:28] select | verify strict 8/20
+[17:18:28] verify | func= Background | rank= 7 | pid= hep-ph/0102163 | title_snip='The b->sgamma rate and Higgs boson limits in the Constrained Minimal
+ …' | abs_len= 1026
+[17:18:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:31] select | verify strict 9/20
+[17:18:31] verify | func= Background | rank= 13 | pid= hep-ph/0103159 | title_snip='Gauge Invariance, Color-Octet Vector Resonances and Double Technieta
+ …' | abs_len= 655
+[17:18:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:33] select | verify strict 10/20
+[17:18:33] verify | func= Background | rank= 16 | pid= hep-ph/0103180 | title_snip='Low-scale Quantum Gravity and Double Nucleon Decay' | abs_len= 903
+[17:18:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:36] select | verify strict 11/20
+[17:18:36] verify | func= Background | rank= 17 | pid= hep-lat/0104006 | title_snip='$K \to \pi\pi$ Decays in a Finite Volume' | abs_len= 843
+[17:18:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:38] select | verify strict 12/20
+[17:18:38] verify | func= Background | rank= 5 | pid= hep-ph/0104137 | title_snip='CP violation from noncommutative geometry' | abs_len= 1195
+[17:18:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:41] select | verify strict 13/20
+[17:18:41] verify | func= Background | rank= 6 | pid= math-ph/0104037 | title_snip='Multiscale Reference Function Analysis of the ${\cal P}{\cal T}$
+  Sym…' | abs_len= 1125
+[17:18:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:43] select | verify strict 14/20
+[17:18:43] verify | func= Background | rank= 10 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[17:18:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:46] select | verify strict 15/20
+[17:18:46] verify | func= Background | rank= 11 | pid= hep-th/0103096 | title_snip='Strong-weak coupling duality in anisotropic current interactions' | abs_len= 440
+[17:18:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:48] select | verify strict 16/20
+[17:18:48] verify | func= Background | rank= 12 | pid= nucl-th/0101051 | title_snip='Meson exchange in the weak decay of Lambda hypernuclei and the
+  Gamma…' | abs_len= 722
+[17:18:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:51] select | verify strict 17/20
+[17:18:51] verify | func= Background | rank= 14 | pid= hep-th/0102034 | title_snip='Dimensional Reduction by a Two-Form (another alternative to
+  compacti…' | abs_len= 618
+[17:18:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:53] select | verify strict 18/20
+[17:18:53] verify | func= Background | rank= 15 | pid= hep-ph/0104048 | title_snip='The check of QCD based on the tau-decay data analysis in the complex
+ …' | abs_len= 1227
+[17:18:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:56] select | verify strict 19/20
+[17:18:56] verify | func= Background | rank= 18 | pid= hep-ph/0102306 | title_snip='Precision prediction of gauge couplings and the profile of a string
+  …' | abs_len= 903
+[17:18:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:18:59] select | verify strict 20/20
+[17:18:59] verify | func= Background | rank= 19 | pid= hep-lat/0101005 | title_snip='The Structure of the Aoki Phase at Weak Coupling' | abs_len= 563
+[17:19:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the possibility of a low value of sin2β motivate the construction of a reference unitarity triangle and what established methods are used in this construction?
+- WINNER: hep-ph/0102310 | Implication of $\sin 2\beta$ from global fit and $B\to J/\psi K_S$
+- QUOTE : global fit of the unitarity triangle
+- WHY   : sufficient
+- ANSWER: A low value of sin2β motivates the construction of a reference unitarity triangle, which is built using established methods such as global fit and B→J/ψKS decay (hep-ph/0102310).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

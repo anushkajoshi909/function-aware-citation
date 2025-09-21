@@ -1,0 +1,396 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query seeks foundational understanding of the geometric Clifford algebra approach (Background) and explicitly asks about suggested directions for further investigation (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.56 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.41it/s]
+Reading arXiv_src_0101_001.jsonl: 32it [00:00, 103.67it/s]
+Reading arXiv_src_0101_001.jsonl: 182it [00:00, 547.64it/s]
+Reading arXiv_src_0101_001.jsonl: 310it [00:00, 775.55it/s]
+Reading arXiv_src_0101_001.jsonl: 408it [00:00, 733.47it/s]
+Reading arXiv_src_0101_001.jsonl: 495it [00:00, 623.26it/s]
+Reading arXiv_src_0101_001.jsonl: 569it [00:01, 578.82it/s]
+Reading arXiv_src_0101_001.jsonl: 674it [00:01, 689.25it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 762.31it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 853.68it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 930.28it/s]
+Reading arXiv_src_0101_001.jsonl: 1107it [00:01, 971.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1240it [00:01, 1071.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1351it [00:01, 1062.04it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:01, 1138.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:01, 1195.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1215.92it/s]
+Reading arXiv_src_0101_001.jsonl: 1873it [00:02, 1193.24it/s]
+Reading arXiv_src_0101_001.jsonl: 2054it [00:02, 1371.47it/s]
+Reading arXiv_src_0101_001.jsonl: 2208it [00:02, 1420.87it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 935.53it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1319.30it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1354.79it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 852.00it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 521.22it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 562.13it/s]
+Reading arXiv_src_0102_001.jsonl: 680it [00:00, 629.07it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 747.15it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 884.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 939.07it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 999.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1267it [00:01, 1042.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1404it [00:01, 1134.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1538it [00:01, 1191.39it/s]
+Reading arXiv_src_0102_001.jsonl: 1665it [00:01, 1214.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1815it [00:01, 1293.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1966it [00:02, 1356.68it/s]
+Reading arXiv_src_0102_001.jsonl: 2118it [00:02, 1404.11it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1017.53it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  5.83it/s]
+Reading arXiv_src_0103_001.jsonl: 29it [00:00, 130.19it/s]
+Reading arXiv_src_0103_001.jsonl: 169it [00:00, 628.68it/s]
+Reading arXiv_src_0103_001.jsonl: 320it [00:00, 945.29it/s]
+Reading arXiv_src_0103_001.jsonl: 424it [00:00, 976.30it/s]
+Reading arXiv_src_0103_001.jsonl: 528it [00:00, 668.68it/s]
+Reading arXiv_src_0103_001.jsonl: 611it [00:00, 647.84it/s]
+Reading arXiv_src_0103_001.jsonl: 714it [00:01, 738.14it/s]
+Reading arXiv_src_0103_001.jsonl: 801it [00:01, 770.48it/s]
+Reading arXiv_src_0103_001.jsonl: 906it [00:01, 843.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1007it [00:01, 886.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1125it [00:01, 968.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1237it [00:01, 999.89it/s]
+Reading arXiv_src_0103_001.jsonl: 1352it [00:01, 1041.90it/s]
+Reading arXiv_src_0103_001.jsonl: 1495it [00:01, 1152.80it/s]
+Reading arXiv_src_0103_001.jsonl: 1627it [00:01, 1201.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1769it [00:01, 1264.18it/s]
+Reading arXiv_src_0103_001.jsonl: 1912it [00:02, 1312.54it/s]
+Reading arXiv_src_0103_001.jsonl: 2048it [00:02, 1323.46it/s]
+Reading arXiv_src_0103_001.jsonl: 2185it [00:02, 1335.87it/s]
+Reading arXiv_src_0103_001.jsonl: 2338it [00:02, 1393.32it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1002.82it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.52it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  8.10it/s]
+Reading arXiv_src_0104_001.jsonl: 146it [00:00, 587.80it/s]
+Reading arXiv_src_0104_001.jsonl: 290it [00:00, 899.39it/s]
+Reading arXiv_src_0104_001.jsonl: 402it [00:00, 975.03it/s]
+Reading arXiv_src_0104_001.jsonl: 505it [00:00, 690.70it/s]
+Reading arXiv_src_0104_001.jsonl: 588it [00:01, 465.28it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 571.80it/s]
+Reading arXiv_src_0104_001.jsonl: 784it [00:01, 642.04it/s]
+Reading arXiv_src_0104_001.jsonl: 885it [00:01, 726.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1002it [00:01, 832.90it/s]
+Reading arXiv_src_0104_001.jsonl: 1118it [00:01, 915.90it/s]
+Reading arXiv_src_0104_001.jsonl: 1228it [00:01, 965.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1333it [00:01, 976.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1466it [00:01, 1073.83it/s]
+Reading arXiv_src_0104_001.jsonl: 1601it [00:02, 1149.98it/s]
+Reading arXiv_src_0104_001.jsonl: 1721it [00:02, 1163.22it/s]
+Reading arXiv_src_0104_001.jsonl: 1865it [00:02, 1243.83it/s]
+Reading arXiv_src_0104_001.jsonl: 2013it [00:02, 1312.12it/s]
+Reading arXiv_src_0104_001.jsonl: 2146it [00:02, 914.07it/s] 
+Reading arXiv_src_0104_001.jsonl: 2297it [00:02, 1049.17it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 860.02it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the geometric approach to the standard model using Clifford algebra Cl_7 provide a foundation for understanding the symmetries and structures of particle physics, and what potential areas of future research does it suggest?
+[debug] classifier labels: ['Background', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+1     1  0.805913  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+2     2  0.565410  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+3     3  0.525081  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+4     4  0.522633  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+5     5  0.472966  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+6     6  0.467496  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+7     7  0.438781  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+8     8  0.437317  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+9     9  0.419217  ...  2025-09-21T13:44:49.851643  Background, FutureWork
+
+[10 rows x 12 columns]
+[15:44:57] main | args: Namespace(max_check=20, debug=True)
+[15:44:57] read_last_jsonl | path= classified_outputs.jsonl
+[15:44:57] read_last_jsonl | total_lines= 1
+[15:44:57] main | query='How does the geometric approach to the standard model using Clifford algebra Cl_7 provide a foundation for understanding the symmetries and structures of particle physics, and what potential areas of future research does it suggest?' | funcs=['Background', 'FutureWork']
+[15:44:59] main | core_terms= ['Cl_7', 'standard model', 'Clifford algebra', 'symmetries', 'particle physics']
+[15:44:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:44:59] load_topk_jsonl | rows= 20
+[15:44:59] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0103137 title_snip='A geometric basis for the standard-model gauge group' abs_len= 1156
+[15:44:59] main | running function= Background
+[15:44:59] select | function= Background | candidates_in= 20
+[15:44:59] select | core_terms= ['Cl_7', 'standard model', 'Clifford algebra', 'symmetries', 'particle physics']
+[15:44:59] select | no cosine prune; kept=20/20
+[15:44:59] select | pool_size= 20 | ranks= [0, 7, 6, 15, 8, 13, 2, 9, 10, 11, 3, 4, 16, 17, 18, 19, 1, 5, 12, 14] | pids= ['hep-th/0103137', 'hep-ph/0102249', 'hep-ph/0102168', 'hep-ph/0101276', 'cond-mat/0102211', 'hep-th/0104120', 'hep-th/0102041', 'hep-ph/0103270', 'hep-ph/0103349', 'hep-ph/0103121', 'hep-ph/0101078', 'hep-th/0102147', 'hep-ph/0103088', 'hep-ph/0101211', 'hep-ph/0103342', 'hep-th/0104086', 'hep-ph/0103038', 'hep-th/0102049', 'cond-mat/0103610', 'hep-th/0102111']
+[15:44:59] select | verify strict 1/20
+[15:44:59] verify | func= Background | rank= 0 | pid= hep-th/0103137 | title_snip='A geometric basis for the standard-model gauge group' | abs_len= 1156
+[15:45:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:45:03] select | verify strict 2/20
+[15:45:03] verify | func= Background | rank= 7 | pid= hep-ph/0102249 | title_snip='On the quest for unification - simplicity and antisimplicity' | abs_len= 624
+[15:45:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:05] select | verify strict 3/20
+[15:45:05] verify | func= Background | rank= 6 | pid= hep-ph/0102168 | title_snip='Possible Supersymmetric Effects on Angular Distributions in $B \to K^*…' | abs_len= 526
+[15:45:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:08] select | verify strict 4/20
+[15:45:08] verify | func= Background | rank= 15 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[15:45:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:11] select | verify strict 5/20
+[15:45:11] verify | func= Background | rank= 8 | pid= cond-mat/0102211 | title_snip='Symmetries in the Hubbard model with n-fold orbital degeneracy' | abs_len= 1058
+[15:45:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:13] select | verify strict 6/20
+[15:45:13] verify | func= Background | rank= 13 | pid= hep-th/0104120 | title_snip='Loop symmetry of integrable vertex models at roots of unity' | abs_len= 1009
+[15:45:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:16] select | verify strict 7/20
+[15:45:16] verify | func= Background | rank= 2 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[15:45:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:19] select | verify strict 8/20
+[15:45:19] verify | func= Background | rank= 9 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[15:45:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:21] select | verify strict 9/20
+[15:45:21] verify | func= Background | rank= 10 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[15:45:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= — cue_hint= False
+[15:45:24] select | verify strict 10/20
+[15:45:24] verify | func= Background | rank= 11 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[15:45:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:26] select | verify strict 11/20
+[15:45:26] verify | func= Background | rank= 3 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[15:45:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:29] select | verify strict 12/20
+[15:45:29] verify | func= Background | rank= 4 | pid= hep-th/0102147 | title_snip='Locally Localized Gravity Models in Higher Dimensions' | abs_len= 1094
+[15:45:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:32] select | verify strict 13/20
+[15:45:32] verify | func= Background | rank= 16 | pid= hep-ph/0103088 | title_snip='\pi\pi scattering' | abs_len= 1133
+[15:45:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:34] select | verify strict 14/20
+[15:45:34] verify | func= Background | rank= 17 | pid= hep-ph/0101211 | title_snip='Chiral Symmetry and the Intrinsic Structure of the Nucleon' | abs_len= 709
+[15:45:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:37] select | verify strict 15/20
+[15:45:37] verify | func= Background | rank= 18 | pid= hep-ph/0103342 | title_snip='Geometric CP Violation with Extra Dimensions' | abs_len= 304
+[15:45:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:39] select | verify strict 16/20
+[15:45:39] verify | func= Background | rank= 19 | pid= hep-th/0104086 | title_snip='Non Standard Extended Noncommutativity of Coordinates' | abs_len= 767
+[15:45:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:42] select | verify strict 17/20
+[15:45:42] verify | func= Background | rank= 1 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[15:45:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:44] select | verify strict 18/20
+[15:45:44] verify | func= Background | rank= 5 | pid= hep-th/0102049 | title_snip='On Fermions in Compact momentum Spaces Bilinearly Constructed with Pur…' | abs_len= 1455
+[15:45:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:48] select | verify strict 19/20
+[15:45:48] verify | func= Background | rank= 12 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[15:45:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:45:50] select | verify strict 20/20
+[15:45:50] verify | func= Background | rank= 14 | pid= hep-th/0102111 | title_snip='Higher-U(2,2)-spin fields and higher-dimensional W-gravities: quantum
+…' | abs_len= 671
+[15:45:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the geometric approach to the standard model using Clifford algebra Cl_7 provide a foundation for understanding the symmetries and structures of particle physics, and what potential areas of future research does it suggest?
+- WINNER: hep-th/0103137 | A geometric basis for the standard-model gauge group
+- QUOTE : A geometric approach to the standard model in terms of the Clifford algebra Cl_7
+- WHY   : sufficient
+- ANSWER: The geometric approach using Clifford algebra Cl_7 provides a foundation for understanding the symmetries and structures of particle physics by describing spinor transformations and rotations that conserve spacetime components (hep-th/0103137).
+[15:45:59] main | running function= FutureWork
+[15:45:59] select | function= FutureWork | candidates_in= 20
+[15:45:59] select | core_terms= ['Cl_7', 'standard model', 'Clifford algebra', 'symmetries', 'particle physics']
+[15:45:59] select | no cosine prune; kept=20/20
+[15:45:59] select | pool_size= 20 | ranks= [0, 7, 8, 13, 2, 6, 9, 10, 11, 15, 1, 3, 4, 5, 12, 14, 16, 17, 18, 19] | pids= ['hep-th/0103137', 'hep-ph/0102249', 'cond-mat/0102211', 'hep-th/0104120', 'hep-th/0102041', 'hep-ph/0102168', 'hep-ph/0103270', 'hep-ph/0103349', 'hep-ph/0103121', 'hep-ph/0101276', 'hep-ph/0103038', 'hep-ph/0101078', 'hep-th/0102147', 'hep-th/0102049', 'cond-mat/0103610', 'hep-th/0102111', 'hep-ph/0103088', 'hep-ph/0101211', 'hep-ph/0103342', 'hep-th/0104086']
+[15:45:59] select | verify strict 1/20
+[15:45:59] verify | func= FutureWork | rank= 0 | pid= hep-th/0103137 | title_snip='A geometric basis for the standard-model gauge group' | abs_len= 1156
+[15:46:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:46:02] select | verify strict 2/20
+[15:46:02] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102249 | title_snip='On the quest for unification - simplicity and antisimplicity' | abs_len= 624
+[15:46:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:05] select | verify strict 3/20
+[15:46:05] verify | func= FutureWork | rank= 8 | pid= cond-mat/0102211 | title_snip='Symmetries in the Hubbard model with n-fold orbital degeneracy' | abs_len= 1058
+[15:46:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:07] select | verify strict 4/20
+[15:46:07] verify | func= FutureWork | rank= 13 | pid= hep-th/0104120 | title_snip='Loop symmetry of integrable vertex models at roots of unity' | abs_len= 1009
+[15:46:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:10] select | verify strict 5/20
+[15:46:10] verify | func= FutureWork | rank= 2 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[15:46:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:12] select | verify strict 6/20
+[15:46:12] verify | func= FutureWork | rank= 6 | pid= hep-ph/0102168 | title_snip='Possible Supersymmetric Effects on Angular Distributions in $B \to K^*…' | abs_len= 526
+[15:46:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:15] select | verify strict 7/20
+[15:46:15] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[15:46:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:17] select | verify strict 8/20
+[15:46:17] verify | func= FutureWork | rank= 10 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[15:46:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:46:20] select | verify strict 9/20
+[15:46:20] verify | func= FutureWork | rank= 11 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[15:46:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:23] select | verify strict 10/20
+[15:46:23] verify | func= FutureWork | rank= 15 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[15:46:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:25] select | verify strict 11/20
+[15:46:25] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[15:46:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:28] select | verify strict 12/20
+[15:46:28] verify | func= FutureWork | rank= 3 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[15:46:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:31] select | verify strict 13/20
+[15:46:31] verify | func= FutureWork | rank= 4 | pid= hep-th/0102147 | title_snip='Locally Localized Gravity Models in Higher Dimensions' | abs_len= 1094
+[15:46:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:33] select | verify strict 14/20
+[15:46:33] verify | func= FutureWork | rank= 5 | pid= hep-th/0102049 | title_snip='On Fermions in Compact momentum Spaces Bilinearly Constructed with Pur…' | abs_len= 1455
+[15:46:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:37] select | verify strict 15/20
+[15:46:37] verify | func= FutureWork | rank= 12 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[15:46:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:39] select | verify strict 16/20
+[15:46:39] verify | func= FutureWork | rank= 14 | pid= hep-th/0102111 | title_snip='Higher-U(2,2)-spin fields and higher-dimensional W-gravities: quantum
+…' | abs_len= 671
+[15:46:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:42] select | verify strict 17/20
+[15:46:42] verify | func= FutureWork | rank= 16 | pid= hep-ph/0103088 | title_snip='\pi\pi scattering' | abs_len= 1133
+[15:46:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:44] select | verify strict 18/20
+[15:46:44] verify | func= FutureWork | rank= 17 | pid= hep-ph/0101211 | title_snip='Chiral Symmetry and the Intrinsic Structure of the Nucleon' | abs_len= 709
+[15:46:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:47] select | verify strict 19/20
+[15:46:47] verify | func= FutureWork | rank= 18 | pid= hep-ph/0103342 | title_snip='Geometric CP Violation with Extra Dimensions' | abs_len= 304
+[15:46:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:49] select | verify strict 20/20
+[15:46:49] verify | func= FutureWork | rank= 19 | pid= hep-th/0104086 | title_snip='Non Standard Extended Noncommutativity of Coordinates' | abs_len= 767
+[15:46:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:46:52] select | strict pass found 0 winners → trying relaxed
+[15:46:52] select | verify relaxed 1/20
+[15:46:52] verify | func= FutureWork | rank= 0 | pid= hep-th/0103137 | title_snip='A geometric basis for the standard-model gauge group' | abs_len= 1156
+[15:46:55] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[15:46:55] select | verify relaxed 2/20
+[15:46:55] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102249 | title_snip='On the quest for unification - simplicity and antisimplicity' | abs_len= 624
+[15:46:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:46:58] select | verify relaxed 3/20
+[15:46:58] verify | func= FutureWork | rank= 8 | pid= cond-mat/0102211 | title_snip='Symmetries in the Hubbard model with n-fold orbital degeneracy' | abs_len= 1058
+[15:47:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:01] select | verify relaxed 4/20
+[15:47:01] verify | func= FutureWork | rank= 13 | pid= hep-th/0104120 | title_snip='Loop symmetry of integrable vertex models at roots of unity' | abs_len= 1009
+[15:47:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:04] select | verify relaxed 5/20
+[15:47:04] verify | func= FutureWork | rank= 2 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[15:47:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:06] select | verify relaxed 6/20
+[15:47:06] verify | func= FutureWork | rank= 6 | pid= hep-ph/0102168 | title_snip='Possible Supersymmetric Effects on Angular Distributions in $B \to K^*…' | abs_len= 526
+[15:47:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:09] select | verify relaxed 7/20
+[15:47:09] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[15:47:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:11] select | verify relaxed 8/20
+[15:47:11] verify | func= FutureWork | rank= 10 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[15:47:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:47:14] select | verify relaxed 9/20
+[15:47:14] verify | func= FutureWork | rank= 11 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[15:47:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:17] select | verify relaxed 10/20
+[15:47:17] verify | func= FutureWork | rank= 15 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[15:47:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:23] select | verify relaxed 11/20
+[15:47:23] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[15:47:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:47:26] select | verify relaxed 12/20
+[15:47:26] verify | func= FutureWork | rank= 3 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[15:47:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:29] select | verify relaxed 13/20
+[15:47:29] verify | func= FutureWork | rank= 4 | pid= hep-th/0102147 | title_snip='Locally Localized Gravity Models in Higher Dimensions' | abs_len= 1094
+[15:47:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:32] select | verify relaxed 14/20
+[15:47:32] verify | func= FutureWork | rank= 5 | pid= hep-th/0102049 | title_snip='On Fermions in Compact momentum Spaces Bilinearly Constructed with Pur…' | abs_len= 1455
+[15:47:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[15:47:35] select | verify relaxed 15/20
+[15:47:35] verify | func= FutureWork | rank= 12 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[15:47:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:37] select | verify relaxed 16/20
+[15:47:37] verify | func= FutureWork | rank= 14 | pid= hep-th/0102111 | title_snip='Higher-U(2,2)-spin fields and higher-dimensional W-gravities: quantum
+…' | abs_len= 671
+[15:47:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:40] select | verify relaxed 17/20
+[15:47:40] verify | func= FutureWork | rank= 16 | pid= hep-ph/0103088 | title_snip='\pi\pi scattering' | abs_len= 1133
+[15:47:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:43] select | verify relaxed 18/20
+[15:47:43] verify | func= FutureWork | rank= 17 | pid= hep-ph/0101211 | title_snip='Chiral Symmetry and the Intrinsic Structure of the Nucleon' | abs_len= 709
+[15:47:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:47:45] select | verify relaxed 19/20
+[15:47:45] verify | func= FutureWork | rank= 18 | pid= hep-ph/0103342 | title_snip='Geometric CP Violation with Extra Dimensions' | abs_len= 304
+[15:47:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:47:48] select | verify relaxed 20/20
+[15:47:48] verify | func= FutureWork | rank= 19 | pid= hep-th/0104086 | title_snip='Non Standard Extended Noncommutativity of Coordinates' | abs_len= 767
+[15:47:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the geometric approach to the standard model using Clifford algebra Cl_7 provide a foundation for understanding the symmetries and structures of particle physics, and what potential areas of future research does it suggest?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

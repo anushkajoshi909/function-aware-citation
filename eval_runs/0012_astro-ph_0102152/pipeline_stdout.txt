@@ -1,0 +1,337 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Background"
+  ],
+  "justification": "The query asks how two lines of evidence (BBN and CMB) are compared and how that informs the foundational knowledge about baryon abundance."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.73 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 10it [00:00, 99.89it/s]
+Reading arXiv_src_0101_001.jsonl: 144it [00:00, 823.75it/s]
+Reading arXiv_src_0101_001.jsonl: 292it [00:00, 1117.31it/s]
+Reading arXiv_src_0101_001.jsonl: 404it [00:00, 935.41it/s] 
+Reading arXiv_src_0101_001.jsonl: 502it [00:00, 703.01it/s]
+Reading arXiv_src_0101_001.jsonl: 581it [00:00, 659.49it/s]
+Reading arXiv_src_0101_001.jsonl: 688it [00:00, 759.01it/s]
+Reading arXiv_src_0101_001.jsonl: 790it [00:01, 826.42it/s]
+Reading arXiv_src_0101_001.jsonl: 904it [00:01, 910.62it/s]
+Reading arXiv_src_0101_001.jsonl: 1008it [00:01, 944.84it/s]
+Reading arXiv_src_0101_001.jsonl: 1140it [00:01, 1051.47it/s]
+Reading arXiv_src_0101_001.jsonl: 1273it [00:01, 1129.12it/s]
+Reading arXiv_src_0101_001.jsonl: 1389it [00:01, 1100.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1525it [00:01, 1174.27it/s]
+Reading arXiv_src_0101_001.jsonl: 1664it [00:01, 1235.42it/s]
+Reading arXiv_src_0101_001.jsonl: 1790it [00:01, 1185.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1948it [00:01, 1297.57it/s]
+Reading arXiv_src_0101_001.jsonl: 2124it [00:02, 1429.69it/s]
+Reading arXiv_src_0101_001.jsonl: 2280it [00:02, 1467.64it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1071.15it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1323.73it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1365.90it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 845.10it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 529.04it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 563.23it/s]
+Reading arXiv_src_0102_001.jsonl: 680it [00:00, 629.77it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 747.85it/s]
+Reading arXiv_src_0102_001.jsonl: 925it [00:01, 887.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1035it [00:01, 943.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1000.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1046.93it/s]
+Reading arXiv_src_0102_001.jsonl: 1412it [00:01, 1157.17it/s]
+Reading arXiv_src_0102_001.jsonl: 1543it [00:01, 1200.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1228.59it/s]
+Reading arXiv_src_0102_001.jsonl: 1822it [00:01, 1301.82it/s]
+Reading arXiv_src_0102_001.jsonl: 1974it [00:01, 1364.99it/s]
+Reading arXiv_src_0102_001.jsonl: 2124it [00:02, 1403.34it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1022.04it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1374.10it/s]
+Reading arXiv_src_0103_001.jsonl: 302it [00:00, 1529.11it/s]
+Reading arXiv_src_0103_001.jsonl: 455it [00:00, 1119.07it/s]
+Reading arXiv_src_0103_001.jsonl: 577it [00:00, 736.34it/s] 
+Reading arXiv_src_0103_001.jsonl: 673it [00:00, 786.62it/s]
+Reading arXiv_src_0103_001.jsonl: 766it [00:00, 806.86it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 895.38it/s]
+Reading arXiv_src_0103_001.jsonl: 987it [00:01, 936.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1090it [00:01, 960.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1212it [00:01, 1031.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1320it [00:01, 1040.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1461it [00:01, 1146.79it/s]
+Reading arXiv_src_0103_001.jsonl: 1596it [00:01, 1206.00it/s]
+Reading arXiv_src_0103_001.jsonl: 1747it [00:01, 1293.85it/s]
+Reading arXiv_src_0103_001.jsonl: 1884it [00:01, 1316.31it/s]
+Reading arXiv_src_0103_001.jsonl: 2020it [00:01, 1327.88it/s]
+Reading arXiv_src_0103_001.jsonl: 2161it [00:01, 1351.69it/s]
+Reading arXiv_src_0103_001.jsonl: 2308it [00:02, 1386.89it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1137.14it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 1479.62it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1550.43it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 996.44it/s] 
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 460.19it/s]
+Reading arXiv_src_0104_001.jsonl: 688it [00:01, 553.33it/s]
+Reading arXiv_src_0104_001.jsonl: 777it [00:01, 613.83it/s]
+Reading arXiv_src_0104_001.jsonl: 878it [00:01, 694.86it/s]
+Reading arXiv_src_0104_001.jsonl: 997it [00:01, 806.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1110it [00:01, 885.13it/s]
+Reading arXiv_src_0104_001.jsonl: 1222it [00:01, 940.77it/s]
+Reading arXiv_src_0104_001.jsonl: 1329it [00:01, 968.62it/s]
+Reading arXiv_src_0104_001.jsonl: 1463it [00:01, 1070.93it/s]
+Reading arXiv_src_0104_001.jsonl: 1601it [00:01, 1156.05it/s]
+Reading arXiv_src_0104_001.jsonl: 1725it [00:01, 1178.80it/s]
+Reading arXiv_src_0104_001.jsonl: 1871it [00:02, 1258.34it/s]
+Reading arXiv_src_0104_001.jsonl: 2026it [00:02, 1343.52it/s]
+Reading arXiv_src_0104_001.jsonl: 2163it [00:02, 996.79it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 929.62it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the comparison between big bang nucleosynthesis and cosmic microwave background observations relate to the background understanding of the universe's baryon abundance?
+[debug] classifier labels: ['Compares', 'Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T11:51:19.257855  Compares, Background
+1     1  0.927856  ...  2025-09-21T11:51:19.257855  Compares, Background
+2     2  0.742613  ...  2025-09-21T11:51:19.257855  Compares, Background
+3     3  0.633482  ...  2025-09-21T11:51:19.257855  Compares, Background
+4     4  0.543420  ...  2025-09-21T11:51:19.257855  Compares, Background
+5     5  0.467647  ...  2025-09-21T11:51:19.257855  Compares, Background
+6     6  0.462500  ...  2025-09-21T11:51:19.257855  Compares, Background
+7     7  0.395793  ...  2025-09-21T11:51:19.257855  Compares, Background
+8     8  0.363032  ...  2025-09-21T11:51:19.257855  Compares, Background
+9     9  0.357305  ...  2025-09-21T11:51:19.257855  Compares, Background
+
+[10 rows x 12 columns]
+[13:51:28] main | args: Namespace(max_check=20, debug=True)
+[13:51:28] read_last_jsonl | path= classified_outputs.jsonl
+[13:51:28] read_last_jsonl | total_lines= 1
+[13:51:28] main | query='How does the comparison between big bang nucleosynthesis and cosmic microwave background observations relate to the background understanding of the universe's baryon abundance?' | funcs=['Compares', 'Background']
+[13:51:31] main | core_terms= ['baryon', 'big bang nucleosynthesis', 'cosmic microwave background', 'baryon abundance']
+[13:51:31] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:51:31] load_topk_jsonl | rows= 20
+[13:51:31] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103411 title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' abs_len= 936
+[13:51:31] main | running function= Compares
+[13:51:31] select | function= Compares | candidates_in= 20
+[13:51:31] select | core_terms= ['baryon', 'big bang nucleosynthesis', 'cosmic microwave background', 'baryon abundance']
+[13:51:31] select | no cosine prune; kept=20/20
+[13:51:31] select | pool_size= 20 | ranks= [16, 1, 7, 5, 14, 18, 4, 10, 15, 0, 2, 3, 8, 9, 11, 12, 13, 19, 6, 17] | pids= ['astro-ph/0101413', 'astro-ph/0102152', 'astro-ph/0101292', 'hep-ph/0101343', 'astro-ph/0104442', 'astro-ph/0102339', 'astro-ph/0101236', 'astro-ph/0102264', 'astro-ph/0103271', 'astro-ph/0103411', 'astro-ph/0102032', 'astro-ph/0102172', 'astro-ph/0103281', 'astro-ph/0102402', 'astro-ph/0104460', 'astro-ph/0103177', 'astro-ph/0104366', 'astro-ph/0103279', 'astro-ph/0103505', 'astro-ph/0101105']
+[13:51:31] select | verify strict 1/20
+[13:51:31] verify | func= Compares | rank= 16 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[13:51:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:35] select | verify strict 2/20
+[13:51:35] verify | func= Compares | rank= 1 | pid= astro-ph/0102152 | title_snip='CMB (And Other) Challenges To BBN' | abs_len= 1154
+[13:51:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:39] select | verify strict 3/20
+[13:51:39] verify | func= Compares | rank= 7 | pid= astro-ph/0101292 | title_snip='Inhomogeneous Big Bang Nucleosynthesis: Upper Limit on Omega_b and
+  P…' | abs_len= 1336
+[13:51:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:42] select | verify strict 4/20
+[13:51:42] verify | func= Compares | rank= 5 | pid= hep-ph/0101343 | title_snip='Cosmic string induced sheet like baryon inhomogeneities at quark-hadro…' | abs_len= 922
+[13:51:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:46] select | verify strict 5/20
+[13:51:46] verify | func= Compares | rank= 14 | pid= astro-ph/0104442 | title_snip='The Cosmic Baryon Fraction and the Extragalactic Ionizing Background' | abs_len= 1674
+[13:51:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:49] select | verify strict 6/20
+[13:51:49] verify | func= Compares | rank= 18 | pid= astro-ph/0102339 | title_snip='Implications of the BOOMERANG and MAXIMA-I results for the Baryon Mass…' | abs_len= 434
+[13:51:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:53] select | verify strict 7/20
+[13:51:53] verify | func= Compares | rank= 4 | pid= astro-ph/0101236 | title_snip='Determination of Omega_b From Big Bang Nucleosynthesis in the Presence…' | abs_len= 582
+[13:51:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:51:56] select | verify strict 8/20
+[13:51:56] verify | func= Compares | rank= 10 | pid= astro-ph/0102264 | title_snip='Binned Cosmic Microwave Background Anisotropy Power Spectra: Peak
+  Lo…' | abs_len= 1197
+[13:51:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:51:59] select | verify strict 9/20
+[13:51:59] verify | func= Compares | rank= 15 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[13:52:02] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:52:02] select | verify strict 10/20
+[13:52:02] verify | func= Compares | rank= 0 | pid= astro-ph/0103411 | title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' | abs_len= 936
+[13:52:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:52:06] select | verify strict 11/20
+[13:52:06] verify | func= Compares | rank= 2 | pid= astro-ph/0102032 | title_snip='In Support of Inflation' | abs_len= 313
+[13:52:08] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:52:08] select | verify strict 12/20
+[13:52:08] verify | func= Compares | rank= 3 | pid= astro-ph/0102172 | title_snip='Magnetic Fields and the Cosmic Microwave Background' | abs_len= 699
+[13:52:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:52:11] select | verify strict 13/20
+[13:52:11] verify | func= Compares | rank= 8 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[13:52:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:52:13] select | verify strict 14/20
+[13:52:13] verify | func= Compares | rank= 9 | pid= astro-ph/0102402 | title_snip='The Cosmic Microwave Background' | abs_len= 421
+[13:52:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:52:16] select | verify strict 15/20
+[13:52:16] verify | func= Compares | rank= 11 | pid= astro-ph/0104460 | title_snip='A measurement by BOOMERANG of multiple peaks in the angular power
+  sp…' | abs_len= 482
+[13:52:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:52:19] select | verify strict 16/20
+[13:52:19] verify | func= Compares | rank= 12 | pid= astro-ph/0103177 | title_snip='Probing the Early Universe with the S-Z Effect' | abs_len= 430
+[13:52:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:52:22] select | verify strict 17/20
+[13:52:22] verify | func= Compares | rank= 13 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[13:52:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:52:25] select | verify strict 18/20
+[13:52:25] verify | func= Compares | rank= 19 | pid= astro-ph/0103279 | title_snip='Fluctuations in the Cosmic Microwave Background I: Form Factors and
+  …' | abs_len= 530
+[13:52:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:52:28] select | verify strict 19/20
+[13:52:28] verify | func= Compares | rank= 6 | pid= astro-ph/0103505 | title_snip='Probing the Universe After Cosmological Recombination Through the Effe…' | abs_len= 942
+[13:52:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:52:31] select | verify strict 20/20
+[13:52:31] verify | func= Compares | rank= 17 | pid= astro-ph/0101105 | title_snip='Far-Infrared Source Counts and the Diffuse Infrared Background' | abs_len= 449
+[13:52:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the comparison between big bang nucleosynthesis and cosmic microwave background observations relate to the background understanding of the universe's baryon abundance?
+- WINNER: astro-ph/0101236 | Determination of Omega_b From Big Bang Nucleosynthesis in the Presence
+  of Regions of Antimatter
+- QUOTE : as compared to the standard big bang nucleosynthesis
+- WHY   : sufficient
+- ANSWER: The comparison between big bang nucleosynthesis and standard models is made to determine the acceptable range of Omega_b in the presence of antimatter regions. This comparison is based on the abundances of light elements, such as 4He, D/H, and 7Li, which are affected by the presence of antimatter regions during nucleosynthesis (astro-ph/0101236).
+[13:52:39] main | running function= Background
+[13:52:39] select | function= Background | candidates_in= 20
+[13:52:39] select | core_terms= ['baryon', 'big bang nucleosynthesis', 'cosmic microwave background', 'baryon abundance']
+[13:52:39] select | no cosine prune; kept=20/20
+[13:52:39] select | pool_size= 20 | ranks= [7, 1, 16, 14, 5, 18, 3, 4, 15, 0, 2, 8, 9, 10, 11, 12, 13, 19, 6, 17] | pids= ['astro-ph/0101292', 'astro-ph/0102152', 'astro-ph/0101413', 'astro-ph/0104442', 'hep-ph/0101343', 'astro-ph/0102339', 'astro-ph/0102172', 'astro-ph/0101236', 'astro-ph/0103271', 'astro-ph/0103411', 'astro-ph/0102032', 'astro-ph/0103281', 'astro-ph/0102402', 'astro-ph/0102264', 'astro-ph/0104460', 'astro-ph/0103177', 'astro-ph/0104366', 'astro-ph/0103279', 'astro-ph/0103505', 'astro-ph/0101105']
+[13:52:39] select | verify strict 1/20
+[13:52:39] verify | func= Background | rank= 7 | pid= astro-ph/0101292 | title_snip='Inhomogeneous Big Bang Nucleosynthesis: Upper Limit on Omega_b and
+  P…' | abs_len= 1336
+[13:52:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:52:42] select | verify strict 2/20
+[13:52:42] verify | func= Background | rank= 1 | pid= astro-ph/0102152 | title_snip='CMB (And Other) Challenges To BBN' | abs_len= 1154
+[13:52:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:52:45] select | verify strict 3/20
+[13:52:45] verify | func= Background | rank= 16 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[13:52:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:52:49] select | verify strict 4/20
+[13:52:49] verify | func= Background | rank= 14 | pid= astro-ph/0104442 | title_snip='The Cosmic Baryon Fraction and the Extragalactic Ionizing Background' | abs_len= 1674
+[13:52:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:52:52] select | verify strict 5/20
+[13:52:52] verify | func= Background | rank= 5 | pid= hep-ph/0101343 | title_snip='Cosmic string induced sheet like baryon inhomogeneities at quark-hadro…' | abs_len= 922
+[13:52:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:52:56] select | verify strict 6/20
+[13:52:56] verify | func= Background | rank= 18 | pid= astro-ph/0102339 | title_snip='Implications of the BOOMERANG and MAXIMA-I results for the Baryon Mass…' | abs_len= 434
+[13:52:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:52:59] select | verify strict 7/20
+[13:52:59] verify | func= Background | rank= 3 | pid= astro-ph/0102172 | title_snip='Magnetic Fields and the Cosmic Microwave Background' | abs_len= 699
+[13:53:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:53:02] select | verify strict 8/20
+[13:53:02] verify | func= Background | rank= 4 | pid= astro-ph/0101236 | title_snip='Determination of Omega_b From Big Bang Nucleosynthesis in the Presence…' | abs_len= 582
+[13:53:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:53:05] select | verify strict 9/20
+[13:53:05] verify | func= Background | rank= 15 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[13:53:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:53:08] select | verify strict 10/20
+[13:53:08] verify | func= Background | rank= 0 | pid= astro-ph/0103411 | title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' | abs_len= 936
+[13:53:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:53:11] select | verify strict 11/20
+[13:53:11] verify | func= Background | rank= 2 | pid= astro-ph/0102032 | title_snip='In Support of Inflation' | abs_len= 313
+[13:53:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:53:14] select | verify strict 12/20
+[13:53:14] verify | func= Background | rank= 8 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[13:53:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:53:17] select | verify strict 13/20
+[13:53:17] verify | func= Background | rank= 9 | pid= astro-ph/0102402 | title_snip='The Cosmic Microwave Background' | abs_len= 421
+[13:53:20] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:53:20] select | verify strict 14/20
+[13:53:20] verify | func= Background | rank= 10 | pid= astro-ph/0102264 | title_snip='Binned Cosmic Microwave Background Anisotropy Power Spectra: Peak
+  Lo…' | abs_len= 1197
+[13:53:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:53:23] select | verify strict 15/20
+[13:53:23] verify | func= Background | rank= 11 | pid= astro-ph/0104460 | title_snip='A measurement by BOOMERANG of multiple peaks in the angular power
+  sp…' | abs_len= 482
+[13:53:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:53:26] select | verify strict 16/20
+[13:53:26] verify | func= Background | rank= 12 | pid= astro-ph/0103177 | title_snip='Probing the Early Universe with the S-Z Effect' | abs_len= 430
+[13:53:29] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:53:29] select | verify strict 17/20
+[13:53:29] verify | func= Background | rank= 13 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[13:53:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:53:32] select | verify strict 18/20
+[13:53:32] verify | func= Background | rank= 19 | pid= astro-ph/0103279 | title_snip='Fluctuations in the Cosmic Microwave Background I: Form Factors and
+  …' | abs_len= 530
+[13:53:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:53:34] select | verify strict 19/20
+[13:53:34] verify | func= Background | rank= 6 | pid= astro-ph/0103505 | title_snip='Probing the Universe After Cosmological Recombination Through the Effe…' | abs_len= 942
+[13:53:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:53:37] select | verify strict 20/20
+[13:53:37] verify | func= Background | rank= 17 | pid= astro-ph/0101105 | title_snip='Far-Infrared Source Counts and the Diffuse Infrared Background' | abs_len= 449
+[13:53:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the comparison between big bang nucleosynthesis and cosmic microwave background observations relate to the background understanding of the universe's baryon abundance?
+- WINNER: astro-ph/0103411 | Primordial nucleosynthesis and hadronic decay of a massive particle with
+  a relatively short lifetime
+- QUOTE : big bang nucleosynthesis (BBN) of the hadronic decay
+- WHY   : sufficient
+- ANSWER: The comparison between big bang nucleosynthesis and cosmic microwave background observations informs the understanding of the universe's baryon abundance by providing a basis for evaluating the consistency of theoretical predictions with observational data (astro-ph/0103411).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

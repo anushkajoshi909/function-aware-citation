@@ -1,0 +1,257 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.61 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.95it/s]
+Reading arXiv_src_0101_001.jsonl: 69it [00:00, 247.42it/s]
+Reading arXiv_src_0101_001.jsonl: 218it [00:00, 665.91it/s]
+Reading arXiv_src_0101_001.jsonl: 327it [00:00, 803.68it/s]
+Reading arXiv_src_0101_001.jsonl: 424it [00:00, 753.86it/s]
+Reading arXiv_src_0101_001.jsonl: 511it [00:00, 616.84it/s]
+Reading arXiv_src_0101_001.jsonl: 583it [00:01, 605.03it/s]
+Reading arXiv_src_0101_001.jsonl: 688it [00:01, 713.01it/s]
+Reading arXiv_src_0101_001.jsonl: 787it [00:01, 784.40it/s]
+Reading arXiv_src_0101_001.jsonl: 898it [00:01, 872.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 907.87it/s]
+Reading arXiv_src_0101_001.jsonl: 1126it [00:01, 998.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1259it [00:01, 1092.13it/s]
+Reading arXiv_src_0101_001.jsonl: 1372it [00:01, 1094.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1502it [00:01, 1154.00it/s]
+Reading arXiv_src_0101_001.jsonl: 1637it [00:01, 1210.70it/s]
+Reading arXiv_src_0101_001.jsonl: 1760it [00:02, 1210.04it/s]
+Reading arXiv_src_0101_001.jsonl: 1884it [00:02, 1217.49it/s]
+Reading arXiv_src_0101_001.jsonl: 2072it [00:02, 1411.41it/s]
+Reading arXiv_src_0101_001.jsonl: 2227it [00:02, 1449.13it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 968.27it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1338.34it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1373.68it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 854.41it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 525.35it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 556.56it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 616.14it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 745.13it/s]
+Reading arXiv_src_0102_001.jsonl: 925it [00:01, 884.44it/s]
+Reading arXiv_src_0102_001.jsonl: 1037it [00:01, 944.75it/s]
+Reading arXiv_src_0102_001.jsonl: 1156it [00:01, 1008.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1277it [00:01, 1063.80it/s]
+Reading arXiv_src_0102_001.jsonl: 1410it [00:01, 1139.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1178.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1221.80it/s]
+Reading arXiv_src_0102_001.jsonl: 1826it [00:01, 1307.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1979it [00:02, 1368.81it/s]
+Reading arXiv_src_0102_001.jsonl: 2129it [00:02, 1406.38it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1020.29it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1378.12it/s]
+Reading arXiv_src_0103_001.jsonl: 304it [00:00, 1541.55it/s]
+Reading arXiv_src_0103_001.jsonl: 459it [00:00, 1126.68it/s]
+Reading arXiv_src_0103_001.jsonl: 582it [00:00, 726.91it/s] 
+Reading arXiv_src_0103_001.jsonl: 686it [00:00, 796.91it/s]
+Reading arXiv_src_0103_001.jsonl: 782it [00:00, 829.79it/s]
+Reading arXiv_src_0103_001.jsonl: 888it [00:00, 888.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 948.21it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 1002.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1046.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1065.06it/s]
+Reading arXiv_src_0103_001.jsonl: 1494it [00:01, 1190.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1631it [00:01, 1242.62it/s]
+Reading arXiv_src_0103_001.jsonl: 1776it [00:01, 1302.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1924it [00:01, 1354.31it/s]
+Reading arXiv_src_0103_001.jsonl: 2066it [00:01, 1373.43it/s]
+Reading arXiv_src_0103_001.jsonl: 2205it [00:01, 1363.13it/s]
+Reading arXiv_src_0103_001.jsonl: 2363it [00:02, 1420.31it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1151.80it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 135it [00:00, 1345.09it/s]
+Reading arXiv_src_0104_001.jsonl: 298it [00:00, 1510.49it/s]
+Reading arXiv_src_0104_001.jsonl: 450it [00:00, 1033.66it/s]
+Reading arXiv_src_0104_001.jsonl: 567it [00:00, 670.08it/s] 
+Reading arXiv_src_0104_001.jsonl: 654it [00:00, 588.87it/s]
+Reading arXiv_src_0104_001.jsonl: 749it [00:00, 661.56it/s]
+Reading arXiv_src_0104_001.jsonl: 845it [00:01, 727.29it/s]
+Reading arXiv_src_0104_001.jsonl: 956it [00:01, 819.95it/s]
+Reading arXiv_src_0104_001.jsonl: 1086it [00:01, 942.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1196it [00:01, 984.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1308it [00:01, 1020.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1438it [00:01, 1099.11it/s]
+Reading arXiv_src_0104_001.jsonl: 1577it [00:01, 1179.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1702it [00:01, 1196.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1850it [00:01, 1278.48it/s]
+Reading arXiv_src_0104_001.jsonl: 2009it [00:02, 1365.61it/s]
+Reading arXiv_src_0104_001.jsonl: 2148it [00:02, 940.44it/s] 
+Reading arXiv_src_0104_001.jsonl: 2297it [00:02, 1062.97it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 974.98it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model?
+[debug] classifier labels: ['Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:30:39.855787           Background
+1     1  0.769590  ...  2025-09-21T21:30:39.855787           Background
+2     2  0.686568  ...  2025-09-21T21:30:39.855787           Background
+3     3  0.673875  ...  2025-09-21T21:30:39.855787           Background
+4     4  0.629225  ...  2025-09-21T21:30:39.855787           Background
+5     5  0.510691  ...  2025-09-21T21:30:39.855787           Background
+6     6  0.502326  ...  2025-09-21T21:30:39.855787           Background
+7     7  0.464937  ...  2025-09-21T21:30:39.855787           Background
+8     8  0.461452  ...  2025-09-21T21:30:39.855787           Background
+9     9  0.454163  ...  2025-09-21T21:30:39.855787           Background
+
+[10 rows x 12 columns]
+[23:30:49] main | args: Namespace(max_check=20, debug=True)
+[23:30:49] read_last_jsonl | path= classified_outputs.jsonl
+[23:30:49] read_last_jsonl | total_lines= 1
+[23:30:49] main | query='How do extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model?' | funcs=['Background']
+[23:30:53] main | core_terms= ['standard model', 'CP violation', 'supersymmetric extensions', 'electroweak standard model', 'new physics', 'CP']
+[23:30:53] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:30:53] load_topk_jsonl | rows= 20
+[23:30:53] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101259 title_snip='CP violation, the CKM matrix and New Physics' abs_len= 425
+[23:30:53] main | running function= Background
+[23:30:53] select | function= Background | candidates_in= 20
+[23:30:53] select | core_terms= ['standard model', 'CP violation', 'supersymmetric extensions', 'electroweak standard model', 'new physics', 'CP']
+[23:30:53] select | no cosine prune; kept=20/20
+[23:30:53] select | pool_size= 20 | ranks= [0, 4, 8, 11, 14, 1, 2, 9, 17, 10, 13, 3, 5, 6, 7, 12, 15, 16, 18, 19] | pids= ['hep-ph/0101259', 'hep-ph/0103299', 'hep-ph/0101315', 'hep-ph/0103294', 'hep-ph/0101106', 'hep-ph/0104027', 'hep-ph/0101002', 'hep-ph/0102085', 'hep-ph/0103320', 'hep-ph/0101237', 'hep-ph/0103189', 'hep-ph/0103038', 'hep-ph/0102113', 'hep-ph/0103095', 'hep-ph/0103333', 'hep-ph/0101068', 'hep-ph/0103244', 'hep-ph/0102096', 'hep-ph/0104158', 'hep-ph/0104300']
+[23:30:53] select | verify strict 1/20
+[23:30:53] verify | func= Background | rank= 0 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[23:30:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:30:56] select | verify strict 2/20
+[23:30:56] verify | func= Background | rank= 4 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:30:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:30:59] select | verify strict 3/20
+[23:30:59] verify | func= Background | rank= 8 | pid= hep-ph/0101315 | title_snip='Dynamical CP Violation and Flavour-Changing Processes' | abs_len= 927
+[23:31:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:02] select | verify strict 4/20
+[23:31:02] verify | func= Background | rank= 11 | pid= hep-ph/0103294 | title_snip='Higgs Boson Decays in the Minimal Supersymmetric Standard Model with
+ …' | abs_len= 1111
+[23:31:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:05] select | verify strict 5/20
+[23:31:05] verify | func= Background | rank= 14 | pid= hep-ph/0101106 | title_snip='CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Col…' | abs_len= 1397
+[23:31:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:09] select | verify strict 6/20
+[23:31:09] verify | func= Background | rank= 1 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[23:31:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:12] select | verify strict 7/20
+[23:31:12] verify | func= Background | rank= 2 | pid= hep-ph/0101002 | title_snip='CP Violation and Extra Dimensions' | abs_len= 524
+[23:31:15] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:31:15] select | verify strict 8/20
+[23:31:15] verify | func= Background | rank= 9 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[23:31:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:19] select | verify strict 9/20
+[23:31:19] verify | func= Background | rank= 17 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[23:31:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:31:22] select | verify strict 10/20
+[23:31:22] verify | func= Background | rank= 10 | pid= hep-ph/0101237 | title_snip='General one-loop renormalization group evolutions and electroweak
+  sy…' | abs_len= 1098
+[23:31:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:25] select | verify strict 11/20
+[23:31:25] verify | func= Background | rank= 13 | pid= hep-ph/0103189 | title_snip='Radiative electroweak symmetry breaking in the extra dimensions
+  scen…' | abs_len= 870
+[23:31:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:31:27] select | verify strict 12/20
+[23:31:27] verify | func= Background | rank= 3 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[23:31:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:31:30] select | verify strict 13/20
+[23:31:30] verify | func= Background | rank= 5 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[23:31:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:34] select | verify strict 14/20
+[23:31:34] verify | func= Background | rank= 6 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[23:31:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:37] select | verify strict 15/20
+[23:31:37] verify | func= Background | rank= 7 | pid= hep-ph/0103333 | title_snip='Electroweak D-Waves' | abs_len= 383
+[23:31:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:31:40] select | verify strict 16/20
+[23:31:40] verify | func= Background | rank= 12 | pid= hep-ph/0101068 | title_snip='Heavy particle electroweak loop effects in extra-dimensional models wi…' | abs_len= 634
+[23:31:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:31:42] select | verify strict 17/20
+[23:31:42] verify | func= Background | rank= 15 | pid= hep-ph/0103244 | title_snip='$SU(3)_c\otimes SU(3)_L\otimes U(1)_X$ as an $E_6$ Subgroup' | abs_len= 884
+[23:31:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:45] select | verify strict 18/20
+[23:31:45] verify | func= Background | rank= 16 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:31:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:48] select | verify strict 19/20
+[23:31:48] verify | func= Background | rank= 18 | pid= hep-ph/0104158 | title_snip='Extra dimensions and the strong CP problem' | abs_len= 636
+[23:31:51] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:31:51] select | verify strict 20/20
+[23:31:51] verify | func= Background | rank= 19 | pid= hep-ph/0104300 | title_snip='Cross Sections and Lorentz Violation' | abs_len= 359
+[23:31:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model?
+- WINNER: hep-ph/0101259 | CP violation, the CKM matrix and New Physics
+- QUOTE : CP violation, the CKM matrix and New Physics
+- WHY   : sufficient
+- ANSWER: Extensions of the standard model, such as supersymmetric extensions, incorporate new physics beyond the electroweak standard model by influencing CP-violating observables through loop corrections (hep-ph/0101259).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

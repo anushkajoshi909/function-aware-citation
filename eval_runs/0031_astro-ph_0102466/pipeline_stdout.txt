@@ -1,0 +1,483 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the presented methods can be applied (Uses) and explicitly frames it as guidance for future research (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.77 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  5.12it/s]
+Reading arXiv_src_0101_001.jsonl: 83it [00:00, 349.41it/s]
+Reading arXiv_src_0101_001.jsonl: 233it [00:00, 779.39it/s]
+Reading arXiv_src_0101_001.jsonl: 341it [00:00, 881.67it/s]
+Reading arXiv_src_0101_001.jsonl: 441it [00:00, 746.57it/s]
+Reading arXiv_src_0101_001.jsonl: 526it [00:00, 609.05it/s]
+Reading arXiv_src_0101_001.jsonl: 597it [00:00, 619.44it/s]
+Reading arXiv_src_0101_001.jsonl: 706it [00:01, 736.00it/s]
+Reading arXiv_src_0101_001.jsonl: 808it [00:01, 808.06it/s]
+Reading arXiv_src_0101_001.jsonl: 914it [00:01, 874.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1014it [00:01, 908.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1147it [00:01, 1027.86it/s]
+Reading arXiv_src_0101_001.jsonl: 1285it [00:01, 1126.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1401it [00:01, 1110.76it/s]
+Reading arXiv_src_0101_001.jsonl: 1532it [00:01, 1168.06it/s]
+Reading arXiv_src_0101_001.jsonl: 1669it [00:01, 1216.70it/s]
+Reading arXiv_src_0101_001.jsonl: 1792it [00:01, 1197.37it/s]
+Reading arXiv_src_0101_001.jsonl: 1948it [00:02, 1302.28it/s]
+Reading arXiv_src_0101_001.jsonl: 2121it [00:02, 1426.93it/s]
+Reading arXiv_src_0101_001.jsonl: 2271it [00:02, 1446.70it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 993.60it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1328.81it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1354.32it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 850.36it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 538.39it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 572.27it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:00, 632.06it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 755.22it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 893.68it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 948.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1008.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1053.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1412it [00:01, 1163.80it/s]
+Reading arXiv_src_0102_001.jsonl: 1544it [00:01, 1208.88it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1235.37it/s]
+Reading arXiv_src_0102_001.jsonl: 1824it [00:01, 1312.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1978it [00:01, 1378.15it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1406.40it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1030.76it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  6.92it/s]
+Reading arXiv_src_0103_001.jsonl: 29it [00:00, 142.41it/s]
+Reading arXiv_src_0103_001.jsonl: 167it [00:00, 655.22it/s]
+Reading arXiv_src_0103_001.jsonl: 318it [00:00, 972.97it/s]
+Reading arXiv_src_0103_001.jsonl: 424it [00:00, 999.00it/s]
+Reading arXiv_src_0103_001.jsonl: 528it [00:00, 676.72it/s]
+Reading arXiv_src_0103_001.jsonl: 611it [00:00, 652.66it/s]
+Reading arXiv_src_0103_001.jsonl: 714it [00:01, 741.89it/s]
+Reading arXiv_src_0103_001.jsonl: 800it [00:01, 771.37it/s]
+Reading arXiv_src_0103_001.jsonl: 903it [00:01, 839.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1007it [00:01, 889.02it/s]
+Reading arXiv_src_0103_001.jsonl: 1126it [00:01, 971.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1237it [00:01, 1003.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1353it [00:01, 1042.87it/s]
+Reading arXiv_src_0103_001.jsonl: 1498it [00:01, 1159.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1635it [00:01, 1220.71it/s]
+Reading arXiv_src_0103_001.jsonl: 1773it [00:01, 1267.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1919it [00:02, 1322.25it/s]
+Reading arXiv_src_0103_001.jsonl: 2053it [00:02, 1325.09it/s]
+Reading arXiv_src_0103_001.jsonl: 2189it [00:02, 1328.87it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1392.76it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1015.54it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.24it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  7.97it/s]
+Reading arXiv_src_0104_001.jsonl: 145it [00:00, 577.83it/s]
+Reading arXiv_src_0104_001.jsonl: 304it [00:00, 945.36it/s]
+Reading arXiv_src_0104_001.jsonl: 407it [00:00, 974.25it/s]
+Reading arXiv_src_0104_001.jsonl: 510it [00:00, 698.22it/s]
+Reading arXiv_src_0104_001.jsonl: 594it [00:01, 470.62it/s]
+Reading arXiv_src_0104_001.jsonl: 700it [00:01, 579.72it/s]
+Reading arXiv_src_0104_001.jsonl: 791it [00:01, 647.13it/s]
+Reading arXiv_src_0104_001.jsonl: 893it [00:01, 731.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1012it [00:01, 843.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 909.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1242it [00:01, 986.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1349it [00:01, 988.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1479it [00:01, 1076.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1619it [00:02, 1164.70it/s]
+Reading arXiv_src_0104_001.jsonl: 1748it [00:02, 1198.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1893it [00:02, 1271.81it/s]
+Reading arXiv_src_0104_001.jsonl: 2037it [00:02, 1321.22it/s]
+Reading arXiv_src_0104_001.jsonl: 2171it [00:02, 1028.62it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 881.77it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?
+[debug] classifier labels: ['Uses', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+1     1  0.805825  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+2     2  0.761690  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+3     3  0.706306  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+4     4  0.601742  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+5     5  0.573354  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+6     6  0.456065  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+7     7  0.452328  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+8     8  0.406908  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+9     9  0.406187  ...  2025-09-21T12:58:04.554946     Uses, FutureWork
+
+[10 rows x 12 columns]
+[14:58:12] main | args: Namespace(max_check=20, debug=True)
+[14:58:12] read_last_jsonl | path= classified_outputs.jsonl
+[14:58:12] read_last_jsonl | total_lines= 1
+[14:58:12] main | query='How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?' | funcs=['Uses', 'FutureWork']
+[14:58:15] main | core_terms= ['density fluctuations', 'power spectrum']
+[14:58:15] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:58:15] load_topk_jsonl | rows= 20
+[14:58:15] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103018 title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' abs_len= 1788
+[14:58:15] main | running function= Uses
+[14:58:15] select | function= Uses | candidates_in= 20
+[14:58:15] select | core_terms= ['density fluctuations', 'power spectrum']
+[14:58:15] select | no cosine prune; kept=20/20
+[14:58:15] select | pool_size= 20 | ranks= [0, 2, 16, 5, 6, 7, 9, 13, 14, 1, 3, 19, 11, 17, 18, 4, 8, 10, 12, 15] | pids= ['astro-ph/0103018', 'astro-ph/0101361', 'astro-ph/0104313', 'gr-qc/0103045', 'astro-ph/0103082', 'astro-ph/0104443', 'astro-ph/0104057', 'nucl-th/0104019', 'astro-ph/0102160', 'astro-ph/0101225', 'astro-ph/0102195', 'astro-ph/0102430', 'cond-mat/0103186', 'astro-ph/0102276', 'cond-mat/0101363', 'nucl-th/0101012', 'astro-ph/0102174', 'cond-mat/0103042', 'physics/0102040', 'cond-mat/0104067']
+[14:58:15] select | verify strict 1/20
+[14:58:15] verify | func= Uses | rank= 0 | pid= astro-ph/0103018 | title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' | abs_len= 1788
+[14:58:18] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:18] select | verify strict 2/20
+[14:58:18] verify | func= Uses | rank= 2 | pid= astro-ph/0101361 | title_snip='Cosmological Density and Power Spectrum from Peculiar Velocities:
+  No…' | abs_len= 1851
+[14:58:21] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[14:58:21] select | verify strict 3/20
+[14:58:21] verify | func= Uses | rank= 16 | pid= astro-ph/0104313 | title_snip='Cluster correlations in redshift space' | abs_len= 1713
+[14:58:24] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:24] select | verify strict 4/20
+[14:58:24] verify | func= Uses | rank= 5 | pid= gr-qc/0103045 | title_snip='Inflation from a massive scalar field and scalar perturbations of the
+…' | abs_len= 494
+[14:58:27] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:27] select | verify strict 5/20
+[14:58:27] verify | func= Uses | rank= 6 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[14:58:30] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:30] select | verify strict 6/20
+[14:58:30] verify | func= Uses | rank= 7 | pid= astro-ph/0104443 | title_snip='CMB Power Spectrum Estimation via Hierarchical Decomposition' | abs_len= 739
+[14:58:33] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:33] select | verify strict 7/20
+[14:58:33] verify | func= Uses | rank= 9 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[14:58:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:58:36] select | verify strict 8/20
+[14:58:36] verify | func= Uses | rank= 13 | pid= nucl-th/0104019 | title_snip='Void Analysis of Hadronic Density Fluctuations at Phase Transition' | abs_len= 1015
+[14:58:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:58:39] select | verify strict 9/20
+[14:58:39] verify | func= Uses | rank= 14 | pid= astro-ph/0102160 | title_snip='Measuring the galaxy power spectrum with multiresolution decomposition…' | abs_len= 1745
+[14:58:42] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:58:42] select | verify strict 10/20
+[14:58:42] verify | func= Uses | rank= 1 | pid= astro-ph/0101225 | title_snip='The Density Perturbation Power Spectrum to Second-Order Corrections in…' | abs_len= 272
+[14:58:45] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:45] select | verify strict 11/20
+[14:58:45] verify | func= Uses | rank= 3 | pid= astro-ph/0102195 | title_snip='Evolution of Power Spectrum in Non-Gaussian Models' | abs_len= 433
+[14:58:48] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:58:48] select | verify strict 12/20
+[14:58:48] verify | func= Uses | rank= 19 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[14:58:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:58:51] select | verify strict 13/20
+[14:58:51] verify | func= Uses | rank= 11 | pid= cond-mat/0103186 | title_snip='Comment on ``Density-matrix renormalization-group method for excited
+ …' | abs_len= 650
+[14:58:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:58:54] select | verify strict 14/20
+[14:58:54] verify | func= Uses | rank= 17 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[14:58:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:58:56] select | verify strict 15/20
+[14:58:56] verify | func= Uses | rank= 18 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[14:58:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:58:59] select | verify strict 16/20
+[14:58:59] verify | func= Uses | rank= 4 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[14:59:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:59:02] select | verify strict 17/20
+[14:59:02] verify | func= Uses | rank= 8 | pid= astro-ph/0102174 | title_snip='Revisiting the calculations of inflationary perturbations' | abs_len= 553
+[14:59:05] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:05] select | verify strict 18/20
+[14:59:05] verify | func= Uses | rank= 10 | pid= cond-mat/0103042 | title_snip='Localized Random Lasing Modes and a New Path for Observing Localizatio…' | abs_len= 790
+[14:59:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:59:08] select | verify strict 19/20
+[14:59:08] verify | func= Uses | rank= 12 | pid= physics/0102040 | title_snip='Coherent structures in a turbulent environment' | abs_len= 524
+[14:59:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:59:10] select | verify strict 20/20
+[14:59:10] verify | func= Uses | rank= 15 | pid= cond-mat/0104067 | title_snip='Revisit Phase Separation of the Two-Dimensional $t-J$ model by the
+  P…' | abs_len= 533
+[14:59:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:59:13] select | strict pass found 0 winners → trying relaxed
+[14:59:13] select | verify relaxed 1/20
+[14:59:13] verify | func= Uses | rank= 0 | pid= astro-ph/0103018 | title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' | abs_len= 1788
+[14:59:17] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= True
+[14:59:17] select | verify relaxed 2/20
+[14:59:17] verify | func= Uses | rank= 2 | pid= astro-ph/0101361 | title_snip='Cosmological Density and Power Spectrum from Peculiar Velocities:
+  No…' | abs_len= 1851
+[14:59:20] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:20] select | verify relaxed 3/20
+[14:59:20] verify | func= Uses | rank= 16 | pid= astro-ph/0104313 | title_snip='Cluster correlations in redshift space' | abs_len= 1713
+[14:59:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:23] select | verify relaxed 4/20
+[14:59:23] verify | func= Uses | rank= 5 | pid= gr-qc/0103045 | title_snip='Inflation from a massive scalar field and scalar perturbations of the
+…' | abs_len= 494
+[14:59:26] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:26] select | verify relaxed 5/20
+[14:59:26] verify | func= Uses | rank= 6 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[14:59:29] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:29] select | verify relaxed 6/20
+[14:59:29] verify | func= Uses | rank= 7 | pid= astro-ph/0104443 | title_snip='CMB Power Spectrum Estimation via Hierarchical Decomposition' | abs_len= 739
+[14:59:32] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:32] select | verify relaxed 7/20
+[14:59:32] verify | func= Uses | rank= 9 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[14:59:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:59:35] select | verify relaxed 8/20
+[14:59:35] verify | func= Uses | rank= 13 | pid= nucl-th/0104019 | title_snip='Void Analysis of Hadronic Density Fluctuations at Phase Transition' | abs_len= 1015
+[14:59:38] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:38] select | verify relaxed 9/20
+[14:59:38] verify | func= Uses | rank= 14 | pid= astro-ph/0102160 | title_snip='Measuring the galaxy power spectrum with multiresolution decomposition…' | abs_len= 1745
+[14:59:41] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:41] select | verify relaxed 10/20
+[14:59:41] verify | func= Uses | rank= 1 | pid= astro-ph/0101225 | title_snip='The Density Perturbation Power Spectrum to Second-Order Corrections in…' | abs_len= 272
+[14:59:44] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:44] select | verify relaxed 11/20
+[14:59:44] verify | func= Uses | rank= 3 | pid= astro-ph/0102195 | title_snip='Evolution of Power Spectrum in Non-Gaussian Models' | abs_len= 433
+[14:59:47] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:47] select | verify relaxed 12/20
+[14:59:47] verify | func= Uses | rank= 19 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[14:59:51] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:59:51] select | verify relaxed 13/20
+[14:59:51] verify | func= Uses | rank= 11 | pid= cond-mat/0103186 | title_snip='Comment on ``Density-matrix renormalization-group method for excited
+ …' | abs_len= 650
+[14:59:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:59:54] select | verify relaxed 14/20
+[14:59:54] verify | func= Uses | rank= 17 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[14:59:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:59:56] select | verify relaxed 15/20
+[14:59:56] verify | func= Uses | rank= 18 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[14:59:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:59:59] select | verify relaxed 16/20
+[14:59:59] verify | func= Uses | rank= 4 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[15:00:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:00:02] select | verify relaxed 17/20
+[15:00:02] verify | func= Uses | rank= 8 | pid= astro-ph/0102174 | title_snip='Revisiting the calculations of inflationary perturbations' | abs_len= 553
+[15:00:05] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:05] select | verify relaxed 18/20
+[15:00:05] verify | func= Uses | rank= 10 | pid= cond-mat/0103042 | title_snip='Localized Random Lasing Modes and a New Path for Observing Localizatio…' | abs_len= 790
+[15:00:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:00:08] select | verify relaxed 19/20
+[15:00:08] verify | func= Uses | rank= 12 | pid= physics/0102040 | title_snip='Coherent structures in a turbulent environment' | abs_len= 524
+[15:00:11] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:00:11] select | verify relaxed 20/20
+[15:00:11] verify | func= Uses | rank= 15 | pid= cond-mat/0104067 | title_snip='Revisit Phase Separation of the Two-Dimensional $t-J$ model by the
+  P…' | abs_len= 533
+[15:00:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+[15:00:14] main | running function= FutureWork
+[15:00:14] select | function= FutureWork | candidates_in= 20
+[15:00:14] select | core_terms= ['density fluctuations', 'power spectrum']
+[15:00:14] select | no cosine prune; kept=20/20
+[15:00:14] select | pool_size= 20 | ranks= [0, 2, 16, 1, 3, 5, 6, 7, 9, 13, 14, 19, 4, 8, 10, 11, 12, 15, 17, 18] | pids= ['astro-ph/0103018', 'astro-ph/0101361', 'astro-ph/0104313', 'astro-ph/0101225', 'astro-ph/0102195', 'gr-qc/0103045', 'astro-ph/0103082', 'astro-ph/0104443', 'astro-ph/0104057', 'nucl-th/0104019', 'astro-ph/0102160', 'astro-ph/0102430', 'nucl-th/0101012', 'astro-ph/0102174', 'cond-mat/0103042', 'cond-mat/0103186', 'physics/0102040', 'cond-mat/0104067', 'astro-ph/0102276', 'cond-mat/0101363']
+[15:00:14] select | verify strict 1/20
+[15:00:14] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103018 | title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' | abs_len= 1788
+[15:00:17] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:17] select | verify strict 2/20
+[15:00:17] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101361 | title_snip='Cosmological Density and Power Spectrum from Peculiar Velocities:
+  No…' | abs_len= 1851
+[15:00:20] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[15:00:20] select | verify strict 3/20
+[15:00:20] verify | func= FutureWork | rank= 16 | pid= astro-ph/0104313 | title_snip='Cluster correlations in redshift space' | abs_len= 1713
+[15:00:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:23] select | verify strict 4/20
+[15:00:23] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101225 | title_snip='The Density Perturbation Power Spectrum to Second-Order Corrections in…' | abs_len= 272
+[15:00:26] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:26] select | verify strict 5/20
+[15:00:26] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102195 | title_snip='Evolution of Power Spectrum in Non-Gaussian Models' | abs_len= 433
+[15:00:29] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:29] select | verify strict 6/20
+[15:00:29] verify | func= FutureWork | rank= 5 | pid= gr-qc/0103045 | title_snip='Inflation from a massive scalar field and scalar perturbations of the
+…' | abs_len= 494
+[15:00:32] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:32] select | verify strict 7/20
+[15:00:32] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[15:00:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[15:00:35] select | verify strict 8/20
+[15:00:35] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104443 | title_snip='CMB Power Spectrum Estimation via Hierarchical Decomposition' | abs_len= 739
+[15:00:38] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[15:00:38] select | verify strict 9/20
+[15:00:38] verify | func= FutureWork | rank= 9 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[15:00:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:00:41] select | verify strict 10/20
+[15:00:41] verify | func= FutureWork | rank= 13 | pid= nucl-th/0104019 | title_snip='Void Analysis of Hadronic Density Fluctuations at Phase Transition' | abs_len= 1015
+[15:00:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:00:44] select | verify strict 11/20
+[15:00:44] verify | func= FutureWork | rank= 14 | pid= astro-ph/0102160 | title_snip='Measuring the galaxy power spectrum with multiresolution decomposition…' | abs_len= 1745
+[15:00:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:00:47] select | verify strict 12/20
+[15:00:47] verify | func= FutureWork | rank= 19 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[15:00:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:00:50] select | verify strict 13/20
+[15:00:50] verify | func= FutureWork | rank= 4 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[15:00:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:00:53] select | verify strict 14/20
+[15:00:53] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102174 | title_snip='Revisiting the calculations of inflationary perturbations' | abs_len= 553
+[15:00:56] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:00:56] select | verify strict 15/20
+[15:00:56] verify | func= FutureWork | rank= 10 | pid= cond-mat/0103042 | title_snip='Localized Random Lasing Modes and a New Path for Observing Localizatio…' | abs_len= 790
+[15:00:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:00:58] select | verify strict 16/20
+[15:00:58] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103186 | title_snip='Comment on ``Density-matrix renormalization-group method for excited
+ …' | abs_len= 650
+[15:01:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:01:01] select | verify strict 17/20
+[15:01:01] verify | func= FutureWork | rank= 12 | pid= physics/0102040 | title_snip='Coherent structures in a turbulent environment' | abs_len= 524
+[15:01:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:01:04] select | verify strict 18/20
+[15:01:04] verify | func= FutureWork | rank= 15 | pid= cond-mat/0104067 | title_snip='Revisit Phase Separation of the Two-Dimensional $t-J$ model by the
+  P…' | abs_len= 533
+[15:01:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[15:01:07] select | verify strict 19/20
+[15:01:07] verify | func= FutureWork | rank= 17 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[15:01:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:01:10] select | verify strict 20/20
+[15:01:10] verify | func= FutureWork | rank= 18 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[15:01:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:01:13] select | strict pass found 0 winners → trying relaxed
+[15:01:13] select | verify relaxed 1/20
+[15:01:13] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103018 | title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' | abs_len= 1788
+[15:01:16] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[15:01:16] select | verify relaxed 2/20
+[15:01:16] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101361 | title_snip='Cosmological Density and Power Spectrum from Peculiar Velocities:
+  No…' | abs_len= 1851
+[15:01:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:01:19] select | verify relaxed 3/20
+[15:01:19] verify | func= FutureWork | rank= 16 | pid= astro-ph/0104313 | title_snip='Cluster correlations in redshift space' | abs_len= 1713
+[15:01:22] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:22] select | verify relaxed 4/20
+[15:01:22] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101225 | title_snip='The Density Perturbation Power Spectrum to Second-Order Corrections in…' | abs_len= 272
+[15:01:25] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:25] select | verify relaxed 5/20
+[15:01:25] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102195 | title_snip='Evolution of Power Spectrum in Non-Gaussian Models' | abs_len= 433
+[15:01:28] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:28] select | verify relaxed 6/20
+[15:01:28] verify | func= FutureWork | rank= 5 | pid= gr-qc/0103045 | title_snip='Inflation from a massive scalar field and scalar perturbations of the
+…' | abs_len= 494
+[15:01:31] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:31] select | verify relaxed 7/20
+[15:01:31] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[15:01:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:01:34] select | verify relaxed 8/20
+[15:01:34] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104443 | title_snip='CMB Power Spectrum Estimation via Hierarchical Decomposition' | abs_len= 739
+[15:01:37] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[15:01:37] select | verify relaxed 9/20
+[15:01:37] verify | func= FutureWork | rank= 9 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[15:01:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:01:40] select | verify relaxed 10/20
+[15:01:40] verify | func= FutureWork | rank= 13 | pid= nucl-th/0104019 | title_snip='Void Analysis of Hadronic Density Fluctuations at Phase Transition' | abs_len= 1015
+[15:01:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:43] select | verify relaxed 11/20
+[15:01:43] verify | func= FutureWork | rank= 14 | pid= astro-ph/0102160 | title_snip='Measuring the galaxy power spectrum with multiresolution decomposition…' | abs_len= 1745
+[15:01:46] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:46] select | verify relaxed 12/20
+[15:01:46] verify | func= FutureWork | rank= 19 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[15:01:50] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:50] select | verify relaxed 13/20
+[15:01:50] verify | func= FutureWork | rank= 4 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[15:01:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:01:52] select | verify relaxed 14/20
+[15:01:52] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102174 | title_snip='Revisiting the calculations of inflationary perturbations' | abs_len= 553
+[15:01:55] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[15:01:55] select | verify relaxed 15/20
+[15:01:55] verify | func= FutureWork | rank= 10 | pid= cond-mat/0103042 | title_snip='Localized Random Lasing Modes and a New Path for Observing Localizatio…' | abs_len= 790
+[15:01:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:01:58] select | verify relaxed 16/20
+[15:01:58] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103186 | title_snip='Comment on ``Density-matrix renormalization-group method for excited
+ …' | abs_len= 650
+[15:02:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:02:01] select | verify relaxed 17/20
+[15:02:01] verify | func= FutureWork | rank= 12 | pid= physics/0102040 | title_snip='Coherent structures in a turbulent environment' | abs_len= 524
+[15:02:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:02:04] select | verify relaxed 18/20
+[15:02:04] verify | func= FutureWork | rank= 15 | pid= cond-mat/0104067 | title_snip='Revisit Phase Separation of the Two-Dimensional $t-J$ model by the
+  P…' | abs_len= 533
+[15:02:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:02:07] select | verify relaxed 19/20
+[15:02:07] verify | func= FutureWork | rank= 17 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[15:02:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:02:09] select | verify relaxed 20/20
+[15:02:09] verify | func= FutureWork | rank= 18 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[15:02:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?
+- WINNER: astro-ph/0101361 | Cosmological Density and Power Spectrum from Peculiar Velocities:
+  Nonlinear Corrections and PCA
+- QUOTE : The improvement in likelihood due to the nonlinear correction
+- WHY   : sufficient
+- ANSWER: Future research could utilize the nonlinear correction methods and Principal Component Analysis (PCA) presented in this study to further investigate the power spectrum of density fluctuations by exploring deviations from the LCDM model and addressing spatial features of the data. This could involve fine-tuning theoretical and error models to better understand the observed wiggle in the power spectrum (astro-ph/0101361).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

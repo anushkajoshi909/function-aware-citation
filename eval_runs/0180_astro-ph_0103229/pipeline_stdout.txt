@@ -1,0 +1,394 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks for a comparison of the current approach with other studies and seeks suggested future research directions based on identified parameter space regions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.53 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 7it [00:00, 69.89it/s]
+Reading arXiv_src_0101_001.jsonl: 52it [00:00, 293.24it/s]
+Reading arXiv_src_0101_001.jsonl: 209it [00:00, 875.52it/s]
+Reading arXiv_src_0101_001.jsonl: 321it [00:00, 971.20it/s]
+Reading arXiv_src_0101_001.jsonl: 419it [00:00, 859.03it/s]
+Reading arXiv_src_0101_001.jsonl: 507it [00:00, 665.06it/s]
+Reading arXiv_src_0101_001.jsonl: 581it [00:00, 619.36it/s]
+Reading arXiv_src_0101_001.jsonl: 687it [00:00, 728.31it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:01, 796.71it/s]
+Reading arXiv_src_0101_001.jsonl: 903it [00:01, 890.96it/s]
+Reading arXiv_src_0101_001.jsonl: 1004it [00:01, 921.20it/s]
+Reading arXiv_src_0101_001.jsonl: 1134it [00:01, 1025.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1265it [00:01, 1102.23it/s]
+Reading arXiv_src_0101_001.jsonl: 1378it [00:01, 1095.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1510it [00:01, 1158.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1650it [00:01, 1227.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1774it [00:01, 1187.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1920it [00:02, 1266.09it/s]
+Reading arXiv_src_0101_001.jsonl: 2098it [00:02, 1414.13it/s]
+Reading arXiv_src_0101_001.jsonl: 2251it [00:02, 1447.17it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1031.53it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1320.89it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1364.23it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 849.01it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 526.39it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 560.09it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:00, 618.29it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 743.23it/s]
+Reading arXiv_src_0102_001.jsonl: 923it [00:01, 882.51it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 938.44it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 997.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1267it [00:01, 1041.84it/s]
+Reading arXiv_src_0102_001.jsonl: 1412it [00:01, 1154.39it/s]
+Reading arXiv_src_0102_001.jsonl: 1543it [00:01, 1198.47it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1225.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1825it [00:01, 1307.81it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1369.38it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1401.16it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1020.07it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1369.61it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1530.63it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1105.45it/s]
+Reading arXiv_src_0103_001.jsonl: 579it [00:00, 719.69it/s] 
+Reading arXiv_src_0103_001.jsonl: 681it [00:00, 786.66it/s]
+Reading arXiv_src_0103_001.jsonl: 776it [00:00, 815.38it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 883.37it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 947.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1104it [00:01, 978.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1224it [00:01, 1036.66it/s]
+Reading arXiv_src_0103_001.jsonl: 1333it [00:01, 1042.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1479it [00:01, 1161.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1608it [00:01, 1198.46it/s]
+Reading arXiv_src_0103_001.jsonl: 1756it [00:01, 1279.19it/s]
+Reading arXiv_src_0103_001.jsonl: 1900it [00:01, 1325.95it/s]
+Reading arXiv_src_0103_001.jsonl: 2041it [00:01, 1350.31it/s]
+Reading arXiv_src_0103_001.jsonl: 2181it [00:01, 1363.50it/s]
+Reading arXiv_src_0103_001.jsonl: 2338it [00:02, 1424.33it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.05it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 1478.83it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1552.42it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 994.16it/s] 
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 553.54it/s]
+Reading arXiv_src_0104_001.jsonl: 689it [00:00, 646.71it/s]
+Reading arXiv_src_0104_001.jsonl: 780it [00:01, 699.51it/s]
+Reading arXiv_src_0104_001.jsonl: 883it [00:01, 774.34it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 872.23it/s]
+Reading arXiv_src_0104_001.jsonl: 1118it [00:01, 948.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1231it [00:01, 996.74it/s]
+Reading arXiv_src_0104_001.jsonl: 1340it [00:01, 1012.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1471it [00:01, 1089.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1611it [00:01, 1177.17it/s]
+Reading arXiv_src_0104_001.jsonl: 1738it [00:01, 1199.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1889it [00:01, 1290.25it/s]
+Reading arXiv_src_0104_001.jsonl: 2040it [00:02, 1354.21it/s]
+Reading arXiv_src_0104_001.jsonl: 2178it [00:02, 950.51it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 974.39it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?
+[debug] classifier labels: ['Compares', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+1     1  0.732872  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+2     2  0.644970  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+3     3  0.546768  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+4     4  0.512499  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+5     5  0.501879  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+6     6  0.492929  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+7     7  0.479527  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+8     8  0.477358  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+9     9  0.465364  ...  2025-09-21T22:06:05.956125  Compares, FutureWork
+
+[10 rows x 12 columns]
+[00:06:11] main | args: Namespace(max_check=20, debug=True)
+[00:06:11] read_last_jsonl | path= classified_outputs.jsonl
+[00:06:11] read_last_jsonl | total_lines= 1
+[00:06:11] main | query='How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?' | funcs=['Compares', 'FutureWork']
+[00:06:13] main | core_terms= ['high energy radiation', 'parameter space']
+[00:06:13] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:06:13] load_topk_jsonl | rows= 20
+[00:06:13] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101331 title_snip='Cosmic Rays and Particle Physics' abs_len= 774
+[00:06:13] main | running function= Compares
+[00:06:13] select | function= Compares | candidates_in= 20
+[00:06:13] select | core_terms= ['high energy radiation', 'parameter space']
+[00:06:13] select | no cosine prune; kept=20/20
+[00:06:13] select | pool_size= 20 | ranks= [4, 11, 12, 14, 15, 16, 0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 13, 17, 18, 19] | pids= ['astro-ph/0103229', 'hep-ph/0103052', 'hep-ph/0104015', 'hep-ph/0101150', 'astro-ph/0103396', 'nucl-th/0101038', 'astro-ph/0101331', 'hep-ph/0104227', 'nucl-th/0101056', 'cond-mat/0104527', 'hep-ph/0102159', 'hep-ph/0101163', 'hep-ph/0102053', 'astro-ph/0102276', 'hep-ph/0101244', 'gr-qc/0104066', 'nucl-th/0104083', 'nucl-th/0103018', 'hep-th/0102111', 'hep-ph/0101312']
+[00:06:13] select | verify strict 1/20
+[00:06:13] verify | func= Compares | rank= 4 | pid= astro-ph/0103229 | title_snip='High Energy Spectral Components in Gamma-Ray Burst Afterglows' | abs_len= 1321
+[00:06:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:06:16] select | verify strict 2/20
+[00:06:16] verify | func= Compares | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[00:06:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:06:19] select | verify strict 3/20
+[00:06:19] verify | func= Compares | rank= 12 | pid= hep-ph/0104015 | title_snip='Total Cross Sections' | abs_len= 532
+[00:06:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[00:06:22] select | verify strict 4/20
+[00:06:22] verify | func= Compares | rank= 14 | pid= hep-ph/0101150 | title_snip='Contact interactions and polarized beams at a Linear Collider' | abs_len= 1029
+[00:06:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:24] select | verify strict 5/20
+[00:06:24] verify | func= Compares | rank= 15 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[00:06:28] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:06:28] select | verify strict 6/20
+[00:06:28] verify | func= Compares | rank= 16 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[00:06:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:30] select | verify strict 7/20
+[00:06:30] verify | func= Compares | rank= 0 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[00:06:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:06:33] select | verify strict 8/20
+[00:06:33] verify | func= Compares | rank= 1 | pid= hep-ph/0104227 | title_snip='Topics in Lorentz and CPT Violation' | abs_len= 85
+[00:06:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:36] select | verify strict 9/20
+[00:06:36] verify | func= Compares | rank= 2 | pid= nucl-th/0101056 | title_snip='The nucleon-nucleon interaction' | abs_len= 566
+[00:06:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:06:39] select | verify strict 10/20
+[00:06:39] verify | func= Compares | rank= 3 | pid= cond-mat/0104527 | title_snip='Using Entropy-Based Methods to Study General Constrained Parameter
+  O…' | abs_len= 424
+[00:06:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:41] select | verify strict 11/20
+[00:06:41] verify | func= Compares | rank= 5 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[00:06:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:44] select | verify strict 12/20
+[00:06:44] verify | func= Compares | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[00:06:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:06:47] select | verify strict 13/20
+[00:06:47] verify | func= Compares | rank= 7 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[00:06:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:49] select | verify strict 14/20
+[00:06:49] verify | func= Compares | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[00:06:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:52] select | verify strict 15/20
+[00:06:52] verify | func= Compares | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[00:06:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:06:55] select | verify strict 16/20
+[00:06:55] verify | func= Compares | rank= 10 | pid= gr-qc/0104066 | title_snip='Measurement of the gravitational constant $G$ in space (Project SEE):
+…' | abs_len= 1113
+[00:06:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:06:57] select | verify strict 17/20
+[00:06:57] verify | func= Compares | rank= 13 | pid= nucl-th/0104083 | title_snip='Electroweak Probes and Nuclear Effective Field Theory' | abs_len= 254
+[00:07:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:00] select | verify strict 18/20
+[00:07:00] verify | func= Compares | rank= 17 | pid= nucl-th/0103018 | title_snip='$\gamma$-Radiation of Excited Nuclear Discrete Levels in Peripheral' | abs_len= 800
+[00:07:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:07:03] select | verify strict 19/20
+[00:07:03] verify | func= Compares | rank= 18 | pid= hep-th/0102111 | title_snip='Higher-U(2,2)-spin fields and higher-dimensional W-gravities: quantum
+…' | abs_len= 671
+[00:07:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:07:06] select | verify strict 20/20
+[00:07:06] verify | func= Compares | rank= 19 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[00:07:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?
+- WINNER: astro-ph/0103229 | High Energy Spectral Components in Gamma-Ray Burst Afterglows
+- QUOTE : investigate two high energy radiation mechanisms
+- WHY   : sufficient
+- ANSWER: The current work's approach to investigating high energy radiation mechanisms is compared to other studies through the development of a simple analytical approach that explores the conditions under which proton synchrotron or electron inverse Compton emission dominates. The identification of different parameter space regions suggests future research directions, such as detecting the inverse Compton component with GLAST or Chandra, which is compared to the detectability of other components in various bands (astro-ph/0103229).
+[00:07:15] main | running function= FutureWork
+[00:07:15] select | function= FutureWork | candidates_in= 20
+[00:07:15] select | core_terms= ['high energy radiation', 'parameter space']
+[00:07:15] select | no cosine prune; kept=20/20
+[00:07:15] select | pool_size= 20 | ranks= [4, 11, 2, 6, 0, 1, 3, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19] | pids= ['astro-ph/0103229', 'hep-ph/0103052', 'nucl-th/0101056', 'hep-ph/0101163', 'astro-ph/0101331', 'hep-ph/0104227', 'cond-mat/0104527', 'hep-ph/0102159', 'hep-ph/0102053', 'astro-ph/0102276', 'hep-ph/0101244', 'gr-qc/0104066', 'hep-ph/0104015', 'nucl-th/0104083', 'hep-ph/0101150', 'astro-ph/0103396', 'nucl-th/0101038', 'nucl-th/0103018', 'hep-th/0102111', 'hep-ph/0101312']
+[00:07:15] select | verify strict 1/20
+[00:07:15] verify | func= FutureWork | rank= 4 | pid= astro-ph/0103229 | title_snip='High Energy Spectral Components in Gamma-Ray Burst Afterglows' | abs_len= 1321
+[00:07:18] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:07:18] select | verify strict 2/20
+[00:07:18] verify | func= FutureWork | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[00:07:21] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:07:21] select | verify strict 3/20
+[00:07:21] verify | func= FutureWork | rank= 2 | pid= nucl-th/0101056 | title_snip='The nucleon-nucleon interaction' | abs_len= 566
+[00:07:24] verify | result supports= False fit= 0.00 top= 0.60 invalid= missing_core_in_quote cue_hint= True
+[00:07:24] select | verify strict 4/20
+[00:07:24] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[00:07:27] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:07:27] select | verify strict 5/20
+[00:07:27] verify | func= FutureWork | rank= 0 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[00:07:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:07:30] select | verify strict 6/20
+[00:07:30] verify | func= FutureWork | rank= 1 | pid= hep-ph/0104227 | title_snip='Topics in Lorentz and CPT Violation' | abs_len= 85
+[00:07:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:32] select | verify strict 7/20
+[00:07:32] verify | func= FutureWork | rank= 3 | pid= cond-mat/0104527 | title_snip='Using Entropy-Based Methods to Study General Constrained Parameter
+  O…' | abs_len= 424
+[00:07:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:35] select | verify strict 8/20
+[00:07:35] verify | func= FutureWork | rank= 5 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[00:07:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:37] select | verify strict 9/20
+[00:07:37] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[00:07:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:40] select | verify strict 10/20
+[00:07:40] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[00:07:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:07:43] select | verify strict 11/20
+[00:07:43] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[00:07:46] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:07:46] select | verify strict 12/20
+[00:07:46] verify | func= FutureWork | rank= 10 | pid= gr-qc/0104066 | title_snip='Measurement of the gravitational constant $G$ in space (Project SEE):
+…' | abs_len= 1113
+[00:07:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:49] select | verify strict 13/20
+[00:07:49] verify | func= FutureWork | rank= 12 | pid= hep-ph/0104015 | title_snip='Total Cross Sections' | abs_len= 532
+[00:07:52] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:07:52] select | verify strict 14/20
+[00:07:52] verify | func= FutureWork | rank= 13 | pid= nucl-th/0104083 | title_snip='Electroweak Probes and Nuclear Effective Field Theory' | abs_len= 254
+[00:07:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:54] select | verify strict 15/20
+[00:07:54] verify | func= FutureWork | rank= 14 | pid= hep-ph/0101150 | title_snip='Contact interactions and polarized beams at a Linear Collider' | abs_len= 1029
+[00:07:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:07:57] select | verify strict 16/20
+[00:07:57] verify | func= FutureWork | rank= 15 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[00:08:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[00:08:00] select | verify strict 17/20
+[00:08:00] verify | func= FutureWork | rank= 16 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[00:08:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:08:03] select | verify strict 18/20
+[00:08:03] verify | func= FutureWork | rank= 17 | pid= nucl-th/0103018 | title_snip='$\gamma$-Radiation of Excited Nuclear Discrete Levels in Peripheral' | abs_len= 800
+[00:08:05] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:08:05] select | verify strict 19/20
+[00:08:05] verify | func= FutureWork | rank= 18 | pid= hep-th/0102111 | title_snip='Higher-U(2,2)-spin fields and higher-dimensional W-gravities: quantum
+…' | abs_len= 671
+[00:08:08] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:08:08] select | verify strict 20/20
+[00:08:08] verify | func= FutureWork | rank= 19 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[00:08:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:08:12] select | strict pass found 0 winners → trying relaxed
+[00:08:12] select | verify relaxed 1/20
+[00:08:12] verify | func= FutureWork | rank= 4 | pid= astro-ph/0103229 | title_snip='High Energy Spectral Components in Gamma-Ray Burst Afterglows' | abs_len= 1321
+[00:08:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:08:15] select | verify relaxed 2/20
+[00:08:15] verify | func= FutureWork | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[00:08:18] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:08:18] select | verify relaxed 3/20
+[00:08:18] verify | func= FutureWork | rank= 2 | pid= nucl-th/0101056 | title_snip='The nucleon-nucleon interaction' | abs_len= 566
+[00:08:21] verify | result supports= False fit= 0.00 top= 0.60 invalid= off_topic_no_core_in_abstract cue_hint= True
+[00:08:21] select | verify relaxed 4/20
+[00:08:21] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[00:08:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[00:08:25] select | verify relaxed 5/20
+[00:08:25] verify | func= FutureWork | rank= 0 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[00:08:28] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:08:28] select | verify relaxed 6/20
+[00:08:28] verify | func= FutureWork | rank= 1 | pid= hep-ph/0104227 | title_snip='Topics in Lorentz and CPT Violation' | abs_len= 85
+[00:08:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:08:31] select | verify relaxed 7/20
+[00:08:31] verify | func= FutureWork | rank= 3 | pid= cond-mat/0104527 | title_snip='Using Entropy-Based Methods to Study General Constrained Parameter
+  O…' | abs_len= 424
+[00:08:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:08:33] select | verify relaxed 8/20
+[00:08:33] verify | func= FutureWork | rank= 5 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[00:08:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:08:36] select | verify relaxed 9/20
+[00:08:36] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[00:08:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:08:38] select | verify relaxed 10/20
+[00:08:38] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[00:08:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[00:08:41] select | verify relaxed 11/20
+[00:08:41] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[00:08:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:08:44] select | verify relaxed 12/20
+[00:08:44] verify | func= FutureWork | rank= 10 | pid= gr-qc/0104066 | title_snip='Measurement of the gravitational constant $G$ in space (Project SEE):
+…' | abs_len= 1113
+[00:08:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:08:46] select | verify relaxed 13/20
+[00:08:46] verify | func= FutureWork | rank= 12 | pid= hep-ph/0104015 | title_snip='Total Cross Sections' | abs_len= 532
+[00:08:49] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:08:49] select | verify relaxed 14/20
+[00:08:49] verify | func= FutureWork | rank= 13 | pid= nucl-th/0104083 | title_snip='Electroweak Probes and Nuclear Effective Field Theory' | abs_len= 254
+[00:08:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:08:52] select | verify relaxed 15/20
+[00:08:52] verify | func= FutureWork | rank= 14 | pid= hep-ph/0101150 | title_snip='Contact interactions and polarized beams at a Linear Collider' | abs_len= 1029
+[00:08:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:08:55] select | verify relaxed 16/20
+[00:08:55] verify | func= FutureWork | rank= 15 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[00:08:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[00:08:58] select | verify relaxed 17/20
+[00:08:58] verify | func= FutureWork | rank= 16 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[00:09:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[00:09:01] select | verify relaxed 18/20
+[00:09:01] verify | func= FutureWork | rank= 17 | pid= nucl-th/0103018 | title_snip='$\gamma$-Radiation of Excited Nuclear Discrete Levels in Peripheral' | abs_len= 800
+[00:09:04] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:09:04] select | verify relaxed 19/20
+[00:09:04] verify | func= FutureWork | rank= 18 | pid= hep-th/0102111 | title_snip='Higher-U(2,2)-spin fields and higher-dimensional W-gravities: quantum
+…' | abs_len= 671
+[00:09:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:09:07] select | verify relaxed 20/20
+[00:09:07] verify | func= FutureWork | rank= 19 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[00:09:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?
+- WINNER: astro-ph/0103229 | High Energy Spectral Components in Gamma-Ray Burst Afterglows
+- QUOTE : We discuss the prospects and astrophysical implications
+- WHY   : sufficient
+- ANSWER: The current work's approach to investigating high energy radiation mechanisms differs from others by exploring the conditions under which different spectral components dominate, identifying three distinct parameter space regions. Future research directions include directly detecting the inverse Compton and proton high energy components with upcoming missions like GLAST and Chandra (astro-ph/0103229).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

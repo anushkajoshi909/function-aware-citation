@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Background. [Background]
+Molecular dynamics simulations are used to study the hydration of polyelectrolytes, such as sodium carboxy methyl cellulose and sodium poly(acrylate), in aqueous solutions. These simulations take into account water and counterions to understand the behavior and structure of the polyelectrolytes, including their hydrogen-bond properties and conformation (cond-mat/0101115). [Uses]

@@ -1,0 +1,403 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query seeks ways to extend the current analysis (Extends) and explicitly asks about new directions for future research (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 5.83 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.10it/s]
+Reading arXiv_src_0101_001.jsonl: 30it [00:00, 91.05it/s]
+Reading arXiv_src_0101_001.jsonl: 180it [00:00, 519.21it/s]
+Reading arXiv_src_0101_001.jsonl: 304it [00:00, 737.21it/s]
+Reading arXiv_src_0101_001.jsonl: 400it [00:00, 737.92it/s]
+Reading arXiv_src_0101_001.jsonl: 488it [00:00, 615.90it/s]
+Reading arXiv_src_0101_001.jsonl: 562it [00:01, 564.17it/s]
+Reading arXiv_src_0101_001.jsonl: 669it [00:01, 680.36it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 764.34it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 855.23it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 931.18it/s]
+Reading arXiv_src_0101_001.jsonl: 1107it [00:01, 972.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1240it [00:01, 1072.36it/s]
+Reading arXiv_src_0101_001.jsonl: 1352it [00:01, 1063.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1486it [00:01, 1139.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1622it [00:02, 1203.15it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1219.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1198.82it/s]
+Reading arXiv_src_0101_001.jsonl: 2057it [00:02, 1380.21it/s]
+Reading arXiv_src_0101_001.jsonl: 2211it [00:02, 1422.67it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 925.55it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 120it [00:00, 1190.90it/s]
+Reading arXiv_src_0102_001.jsonl: 251it [00:00, 1256.71it/s]
+Reading arXiv_src_0102_001.jsonl: 377it [00:00, 843.24it/s] 
+Reading arXiv_src_0102_001.jsonl: 473it [00:00, 500.82it/s]
+Reading arXiv_src_0102_001.jsonl: 544it [00:00, 541.66it/s]
+Reading arXiv_src_0102_001.jsonl: 614it [00:00, 545.46it/s]
+Reading arXiv_src_0102_001.jsonl: 718it [00:01, 658.39it/s]
+Reading arXiv_src_0102_001.jsonl: 834it [00:01, 781.20it/s]
+Reading arXiv_src_0102_001.jsonl: 957it [00:01, 894.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1065it [00:01, 941.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1184it [00:01, 1006.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1306it [00:01, 1066.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1455it [00:01, 1187.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1578it [00:01, 1196.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1717it [00:01, 1250.58it/s]
+Reading arXiv_src_0102_001.jsonl: 1867it [00:01, 1323.96it/s]
+Reading arXiv_src_0102_001.jsonl: 2022it [00:02, 1386.81it/s]
+Reading arXiv_src_0102_001.jsonl: 2176it [00:02, 1432.08it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 993.72it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1336.15it/s]
+Reading arXiv_src_0103_001.jsonl: 293it [00:00, 1481.13it/s]
+Reading arXiv_src_0103_001.jsonl: 442it [00:00, 1169.36it/s]
+Reading arXiv_src_0103_001.jsonl: 566it [00:00, 741.45it/s] 
+Reading arXiv_src_0103_001.jsonl: 659it [00:00, 751.13it/s]
+Reading arXiv_src_0103_001.jsonl: 747it [00:00, 781.02it/s]
+Reading arXiv_src_0103_001.jsonl: 853it [00:00, 851.47it/s]
+Reading arXiv_src_0103_001.jsonl: 955it [00:01, 895.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 944.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1190it [00:01, 1024.55it/s]
+Reading arXiv_src_0103_001.jsonl: 1297it [00:01, 1028.87it/s]
+Reading arXiv_src_0103_001.jsonl: 1429it [00:01, 1111.66it/s]
+Reading arXiv_src_0103_001.jsonl: 1577it [00:01, 1217.45it/s]
+Reading arXiv_src_0103_001.jsonl: 1712it [00:01, 1254.94it/s]
+Reading arXiv_src_0103_001.jsonl: 1862it [00:01, 1326.20it/s]
+Reading arXiv_src_0103_001.jsonl: 1996it [00:01, 1315.13it/s]
+Reading arXiv_src_0103_001.jsonl: 2143it [00:01, 1358.51it/s]
+Reading arXiv_src_0103_001.jsonl: 2287it [00:02, 1381.00it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1125.27it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  3.07it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  5.09it/s]
+Reading arXiv_src_0104_001.jsonl: 144it [00:00, 428.88it/s]
+Reading arXiv_src_0104_001.jsonl: 297it [00:00, 757.97it/s]
+Reading arXiv_src_0104_001.jsonl: 404it [00:00, 847.78it/s]
+Reading arXiv_src_0104_001.jsonl: 506it [00:00, 640.15it/s]
+Reading arXiv_src_0104_001.jsonl: 588it [00:01, 443.76it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 549.47it/s]
+Reading arXiv_src_0104_001.jsonl: 783it [00:01, 618.33it/s]
+Reading arXiv_src_0104_001.jsonl: 884it [00:01, 705.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 813.26it/s]
+Reading arXiv_src_0104_001.jsonl: 1116it [00:01, 898.57it/s]
+Reading arXiv_src_0104_001.jsonl: 1225it [00:01, 949.71it/s]
+Reading arXiv_src_0104_001.jsonl: 1329it [00:02, 968.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1462it [00:02, 1069.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1593it [00:02, 1138.34it/s]
+Reading arXiv_src_0104_001.jsonl: 1712it [00:02, 1152.65it/s]
+Reading arXiv_src_0104_001.jsonl: 1857it [00:02, 1239.30it/s]
+Reading arXiv_src_0104_001.jsonl: 2009it [00:02, 1320.38it/s]
+Reading arXiv_src_0104_001.jsonl: 2143it [00:02, 1021.93it/s]
+Reading arXiv_src_0104_001.jsonl: 2297it [00:02, 1148.02it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 818.94it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?
+[debug] classifier labels: ['Extends', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+1     1  0.870244  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+2     2  0.473167  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+3     3  0.438197  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+4     4  0.361100  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+5     5  0.330523  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+6     6  0.257282  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+7     7  0.229214  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+8     8  0.209498  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+9     9  0.198644  ...  2025-09-21T17:20:54.151708  Extends, FutureWork
+
+[10 rows x 12 columns]
+[19:21:00] main | args: Namespace(max_check=20, debug=True)
+[19:21:00] read_last_jsonl | path= classified_outputs.jsonl
+[19:21:00] read_last_jsonl | total_lines= 1
+[19:21:00] main | query='How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?' | funcs=['Extends', 'FutureWork']
+[19:21:03] main | core_terms= ['Z_k', 'cyclic group', 'residue arithmetic', 'units']
+[19:21:03] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:21:03] load_topk_jsonl | rows= 20
+[19:21:03] load_topk_jsonl | first: rank= 0 paper_id= math/0103083 title_snip='Powersums representing residues mod p^k, from Fermat to Waring' abs_len= 1103
+[19:21:03] main | running function= Extends
+[19:21:03] select | function= Extends | candidates_in= 20
+[19:21:03] select | core_terms= ['Z_k', 'cyclic group', 'residue arithmetic', 'units']
+[19:21:03] select | no cosine prune; kept=20/20
+[19:21:03] select | pool_size= 20 | ranks= [0, 1, 4, 8, 9, 18, 2, 3, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 19] | pids= ['math/0103083', 'math/0103014', 'math/0103091', 'hep-ph/0102019', 'hep-ph/0102124', 'hep-th/0104221', 'math/0101258', 'cond-mat/0103074', 'hep-ph/0101248', 'hep-th/0101217', 'hep-ph/0101295', 'math-ph/0102002', 'math-ph/0104017', 'math-ph/0101029', 'math/0104261', 'hep-ph/0103123', 'astro-ph/0101311', 'hep-ph/0101147', 'math/0101219', 'hep-ph/0103121']
+[19:21:03] select | verify strict 1/20
+[19:21:03] verify | func= Extends | rank= 0 | pid= math/0103083 | title_snip='Powersums representing residues mod p^k, from Fermat to Waring' | abs_len= 1103
+[19:21:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[19:21:06] select | verify strict 2/20
+[19:21:06] verify | func= Extends | rank= 1 | pid= math/0103014 | title_snip='Triplets and Symmetries of Arithmetic mod p^k' | abs_len= 1605
+[19:21:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:21:10] select | verify strict 3/20
+[19:21:10] verify | func= Extends | rank= 4 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[19:21:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[19:21:13] select | verify strict 4/20
+[19:21:13] verify | func= Extends | rank= 8 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[19:21:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:16] select | verify strict 5/20
+[19:21:16] verify | func= Extends | rank= 9 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[19:21:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:18] select | verify strict 6/20
+[19:21:18] verify | func= Extends | rank= 18 | pid= hep-th/0104221 | title_snip='Mind The Gap' | abs_len= 678
+[19:21:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:21] select | verify strict 7/20
+[19:21:21] verify | func= Extends | rank= 2 | pid= math/0101258 | title_snip='Yet another construction of the central extension of the loop group' | abs_len= 246
+[19:21:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:23] select | verify strict 8/20
+[19:21:23] verify | func= Extends | rank= 3 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[19:21:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:26] select | verify strict 9/20
+[19:21:26] verify | func= Extends | rank= 5 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[19:21:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:28] select | verify strict 10/20
+[19:21:28] verify | func= Extends | rank= 6 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[19:21:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:31] select | verify strict 11/20
+[19:21:31] verify | func= Extends | rank= 7 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[19:21:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:33] select | verify strict 12/20
+[19:21:33] verify | func= Extends | rank= 10 | pid= math-ph/0102002 | title_snip='Continuous wavelet transforms from semidirect products: Cyclic
+  repre…' | abs_len= 808
+[19:21:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:36] select | verify strict 13/20
+[19:21:36] verify | func= Extends | rank= 11 | pid= math-ph/0104017 | title_snip='Connes-Moscovici-Kreimer Hopf Algebras' | abs_len= 365
+[19:21:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:38] select | verify strict 14/20
+[19:21:38] verify | func= Extends | rank= 12 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[19:21:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:41] select | verify strict 15/20
+[19:21:41] verify | func= Extends | rank= 13 | pid= math/0104261 | title_snip='Expansive subdynamics for algebraic $Z^d$-actions' | abs_len= 879
+[19:21:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:43] select | verify strict 16/20
+[19:21:43] verify | func= Extends | rank= 14 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[19:21:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:46] select | verify strict 17/20
+[19:21:46] verify | func= Extends | rank= 15 | pid= astro-ph/0101311 | title_snip='Multi-transition study and new detections of class II methanol masers' | abs_len= 1023
+[19:21:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:48] select | verify strict 18/20
+[19:21:48] verify | func= Extends | rank= 16 | pid= hep-ph/0101147 | title_snip='Progress on two-loop non-propagator integrals' | abs_len= 474
+[19:21:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:51] select | verify strict 19/20
+[19:21:51] verify | func= Extends | rank= 17 | pid= math/0101219 | title_snip='On q-analog of McKay correspondence and ADE classification of sl^(2)
+ …' | abs_len= 762
+[19:21:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:21:53] select | verify strict 20/20
+[19:21:53] verify | func= Extends | rank= 19 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[19:21:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?
+- WINNER: math/0103014 | Triplets and Symmetries of Arithmetic mod p^k
+- QUOTE : The cyclic group of units G_k in Z_k(.) has order (p-1)p^{k-1}
+- WHY   : sufficient
+- ANSWER: The analysis of the cyclic group of units in Z_k can be extended by exploring the properties of the subgroup F_k, which properly contains the core A_k for k > 2, and by applying quadratic analysis to derive the additive structure of subgroups G_k and F_k. This extends the prior method of linear analysis, such as Hensel's lemma, to achieve a more accurate understanding of residue arithmetic (math/0103014).
+[19:22:02] main | running function= FutureWork
+[19:22:02] select | function= FutureWork | candidates_in= 20
+[19:22:02] select | core_terms= ['Z_k', 'cyclic group', 'residue arithmetic', 'units']
+[19:22:02] select | no cosine prune; kept=20/20
+[19:22:02] select | pool_size= 20 | ranks= [0, 1, 4, 7, 2, 3, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] | pids= ['math/0103083', 'math/0103014', 'math/0103091', 'hep-ph/0101295', 'math/0101258', 'cond-mat/0103074', 'hep-ph/0101248', 'hep-th/0101217', 'hep-ph/0102019', 'hep-ph/0102124', 'math-ph/0102002', 'math-ph/0104017', 'math-ph/0101029', 'math/0104261', 'hep-ph/0103123', 'astro-ph/0101311', 'hep-ph/0101147', 'math/0101219', 'hep-th/0104221', 'hep-ph/0103121']
+[19:22:02] select | verify strict 1/20
+[19:22:02] verify | func= FutureWork | rank= 0 | pid= math/0103083 | title_snip='Powersums representing residues mod p^k, from Fermat to Waring' | abs_len= 1103
+[19:22:05] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[19:22:05] select | verify strict 2/20
+[19:22:05] verify | func= FutureWork | rank= 1 | pid= math/0103014 | title_snip='Triplets and Symmetries of Arithmetic mod p^k' | abs_len= 1605
+[19:22:09] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[19:22:09] select | verify strict 3/20
+[19:22:09] verify | func= FutureWork | rank= 4 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[19:22:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[19:22:12] select | verify strict 4/20
+[19:22:12] verify | func= FutureWork | rank= 7 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[19:22:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:14] select | verify strict 5/20
+[19:22:14] verify | func= FutureWork | rank= 2 | pid= math/0101258 | title_snip='Yet another construction of the central extension of the loop group' | abs_len= 246
+[19:22:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:17] select | verify strict 6/20
+[19:22:17] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[19:22:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:19] select | verify strict 7/20
+[19:22:19] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[19:22:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:22] select | verify strict 8/20
+[19:22:22] verify | func= FutureWork | rank= 6 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[19:22:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:24] select | verify strict 9/20
+[19:22:24] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[19:22:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:27] select | verify strict 10/20
+[19:22:27] verify | func= FutureWork | rank= 9 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[19:22:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:30] select | verify strict 11/20
+[19:22:30] verify | func= FutureWork | rank= 10 | pid= math-ph/0102002 | title_snip='Continuous wavelet transforms from semidirect products: Cyclic
+  repre…' | abs_len= 808
+[19:22:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:32] select | verify strict 12/20
+[19:22:32] verify | func= FutureWork | rank= 11 | pid= math-ph/0104017 | title_snip='Connes-Moscovici-Kreimer Hopf Algebras' | abs_len= 365
+[19:22:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:35] select | verify strict 13/20
+[19:22:35] verify | func= FutureWork | rank= 12 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[19:22:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:37] select | verify strict 14/20
+[19:22:37] verify | func= FutureWork | rank= 13 | pid= math/0104261 | title_snip='Expansive subdynamics for algebraic $Z^d$-actions' | abs_len= 879
+[19:22:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:39] select | verify strict 15/20
+[19:22:39] verify | func= FutureWork | rank= 14 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[19:22:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:42] select | verify strict 16/20
+[19:22:42] verify | func= FutureWork | rank= 15 | pid= astro-ph/0101311 | title_snip='Multi-transition study and new detections of class II methanol masers' | abs_len= 1023
+[19:22:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:45] select | verify strict 17/20
+[19:22:45] verify | func= FutureWork | rank= 16 | pid= hep-ph/0101147 | title_snip='Progress on two-loop non-propagator integrals' | abs_len= 474
+[19:22:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:47] select | verify strict 18/20
+[19:22:47] verify | func= FutureWork | rank= 17 | pid= math/0101219 | title_snip='On q-analog of McKay correspondence and ADE classification of sl^(2)
+ …' | abs_len= 762
+[19:22:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:50] select | verify strict 19/20
+[19:22:50] verify | func= FutureWork | rank= 18 | pid= hep-th/0104221 | title_snip='Mind The Gap' | abs_len= 678
+[19:22:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:52] select | verify strict 20/20
+[19:22:52] verify | func= FutureWork | rank= 19 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[19:22:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:22:55] select | strict pass found 0 winners → trying relaxed
+[19:22:55] select | verify relaxed 1/20
+[19:22:55] verify | func= FutureWork | rank= 0 | pid= math/0103083 | title_snip='Powersums representing residues mod p^k, from Fermat to Waring' | abs_len= 1103
+[19:22:58] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[19:22:58] select | verify relaxed 2/20
+[19:22:58] verify | func= FutureWork | rank= 1 | pid= math/0103014 | title_snip='Triplets and Symmetries of Arithmetic mod p^k' | abs_len= 1605
+[19:23:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[19:23:02] select | verify relaxed 3/20
+[19:23:02] verify | func= FutureWork | rank= 4 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[19:23:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:23:05] select | verify relaxed 4/20
+[19:23:05] verify | func= FutureWork | rank= 7 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[19:23:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:08] select | verify relaxed 5/20
+[19:23:08] verify | func= FutureWork | rank= 2 | pid= math/0101258 | title_snip='Yet another construction of the central extension of the loop group' | abs_len= 246
+[19:23:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:10] select | verify relaxed 6/20
+[19:23:10] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[19:23:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:13] select | verify relaxed 7/20
+[19:23:13] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[19:23:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:15] select | verify relaxed 8/20
+[19:23:15] verify | func= FutureWork | rank= 6 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[19:23:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:18] select | verify relaxed 9/20
+[19:23:18] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[19:23:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:20] select | verify relaxed 10/20
+[19:23:20] verify | func= FutureWork | rank= 9 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[19:23:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:23] select | verify relaxed 11/20
+[19:23:23] verify | func= FutureWork | rank= 10 | pid= math-ph/0102002 | title_snip='Continuous wavelet transforms from semidirect products: Cyclic
+  repre…' | abs_len= 808
+[19:23:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:23:25] select | verify relaxed 12/20
+[19:23:25] verify | func= FutureWork | rank= 11 | pid= math-ph/0104017 | title_snip='Connes-Moscovici-Kreimer Hopf Algebras' | abs_len= 365
+[19:23:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:28] select | verify relaxed 13/20
+[19:23:28] verify | func= FutureWork | rank= 12 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[19:23:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:30] select | verify relaxed 14/20
+[19:23:30] verify | func= FutureWork | rank= 13 | pid= math/0104261 | title_snip='Expansive subdynamics for algebraic $Z^d$-actions' | abs_len= 879
+[19:23:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:33] select | verify relaxed 15/20
+[19:23:33] verify | func= FutureWork | rank= 14 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[19:23:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:35] select | verify relaxed 16/20
+[19:23:35] verify | func= FutureWork | rank= 15 | pid= astro-ph/0101311 | title_snip='Multi-transition study and new detections of class II methanol masers' | abs_len= 1023
+[19:23:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:38] select | verify relaxed 17/20
+[19:23:38] verify | func= FutureWork | rank= 16 | pid= hep-ph/0101147 | title_snip='Progress on two-loop non-propagator integrals' | abs_len= 474
+[19:23:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:40] select | verify relaxed 18/20
+[19:23:40] verify | func= FutureWork | rank= 17 | pid= math/0101219 | title_snip='On q-analog of McKay correspondence and ADE classification of sl^(2)
+ …' | abs_len= 762
+[19:23:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:43] select | verify relaxed 19/20
+[19:23:43] verify | func= FutureWork | rank= 18 | pid= hep-th/0104221 | title_snip='Mind The Gap' | abs_len= 678
+[19:23:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:23:46] select | verify relaxed 20/20
+[19:23:46] verify | func= FutureWork | rank= 19 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[19:23:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?
+- WINNER: math/0103091 | Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conjecture
+- QUOTE : Induction on k by extending residues mod m_k
+- WHY   : sufficient
+- ANSWER: The analysis of the cyclic group of units in Z_k can be extended by exploring the additive properties of its lattice and the Boolean lattice formed by idempotents. Future research can involve induction on k to extend residues mod m_k and yield a prime sieve for integers, potentially resolving Goldbach's Conjecture (math/0103091).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

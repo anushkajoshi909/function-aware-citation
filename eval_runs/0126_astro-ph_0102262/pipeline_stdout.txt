@@ -1,0 +1,413 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Uses"
+  ],
+  "justification": "The query asks why the R\u202fCoronae\u202fBorealis stars in the LMC are worth studying (motivation) and how the MACHO photometry data are employed in that research (uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.45 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.44it/s]
+Reading arXiv_src_0101_001.jsonl: 121it [00:00, 699.73it/s]
+Reading arXiv_src_0101_001.jsonl: 266it [00:00, 1037.97it/s]
+Reading arXiv_src_0101_001.jsonl: 373it [00:00, 1029.47it/s]
+Reading arXiv_src_0101_001.jsonl: 477it [00:00, 734.44it/s] 
+Reading arXiv_src_0101_001.jsonl: 561it [00:00, 624.72it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:00, 728.87it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 804.06it/s]
+Reading arXiv_src_0101_001.jsonl: 885it [00:01, 888.98it/s]
+Reading arXiv_src_0101_001.jsonl: 995it [00:01, 946.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1106it [00:01, 991.46it/s]
+Reading arXiv_src_0101_001.jsonl: 1219it [00:01, 1026.87it/s]
+Reading arXiv_src_0101_001.jsonl: 1325it [00:01, 1025.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1468it [00:01, 1140.81it/s]
+Reading arXiv_src_0101_001.jsonl: 1597it [00:01, 1183.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1731it [00:01, 1228.33it/s]
+Reading arXiv_src_0101_001.jsonl: 1855it [00:01, 1203.45it/s]
+Reading arXiv_src_0101_001.jsonl: 2030it [00:02, 1362.19it/s]
+Reading arXiv_src_0101_001.jsonl: 2192it [00:02, 1436.55it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1050.08it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1331.80it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1357.61it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 855.20it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 528.71it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 562.22it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:00, 623.01it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 747.24it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 887.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1035it [00:01, 944.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1152it [00:01, 1005.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1050.93it/s]
+Reading arXiv_src_0102_001.jsonl: 1414it [00:01, 1164.85it/s]
+Reading arXiv_src_0102_001.jsonl: 1547it [00:01, 1211.75it/s]
+Reading arXiv_src_0102_001.jsonl: 1679it [00:01, 1240.66it/s]
+Reading arXiv_src_0102_001.jsonl: 1822it [00:01, 1295.48it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:01, 1368.12it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1401.63it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1024.26it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1373.64it/s]
+Reading arXiv_src_0103_001.jsonl: 304it [00:00, 1533.57it/s]
+Reading arXiv_src_0103_001.jsonl: 458it [00:00, 1128.16it/s]
+Reading arXiv_src_0103_001.jsonl: 581it [00:00, 728.27it/s] 
+Reading arXiv_src_0103_001.jsonl: 684it [00:00, 794.91it/s]
+Reading arXiv_src_0103_001.jsonl: 780it [00:00, 826.51it/s]
+Reading arXiv_src_0103_001.jsonl: 887it [00:00, 880.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 942.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 997.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1042.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1063.84it/s]
+Reading arXiv_src_0103_001.jsonl: 1492it [00:01, 1184.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1629it [00:01, 1237.47it/s]
+Reading arXiv_src_0103_001.jsonl: 1773it [00:01, 1297.01it/s]
+Reading arXiv_src_0103_001.jsonl: 1923it [00:01, 1356.71it/s]
+Reading arXiv_src_0103_001.jsonl: 2063it [00:01, 1368.99it/s]
+Reading arXiv_src_0103_001.jsonl: 2201it [00:01, 1359.05it/s]
+Reading arXiv_src_0103_001.jsonl: 2358it [00:02, 1419.08it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1148.06it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 151it [00:00, 1506.11it/s]
+Reading arXiv_src_0104_001.jsonl: 310it [00:00, 1554.87it/s]
+Reading arXiv_src_0104_001.jsonl: 466it [00:00, 998.83it/s] 
+Reading arXiv_src_0104_001.jsonl: 583it [00:00, 550.87it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:00, 646.14it/s]
+Reading arXiv_src_0104_001.jsonl: 787it [00:01, 705.49it/s]
+Reading arXiv_src_0104_001.jsonl: 890it [00:01, 778.38it/s]
+Reading arXiv_src_0104_001.jsonl: 1010it [00:01, 879.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1123it [00:01, 942.41it/s]
+Reading arXiv_src_0104_001.jsonl: 1247it [00:01, 1021.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1359it [00:01, 1024.10it/s]
+Reading arXiv_src_0104_001.jsonl: 1488it [00:01, 1097.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1634it [00:01, 1198.27it/s]
+Reading arXiv_src_0104_001.jsonl: 1764it [00:01, 1224.46it/s]
+Reading arXiv_src_0104_001.jsonl: 1910it [00:01, 1292.66it/s]
+Reading arXiv_src_0104_001.jsonl: 2067it [00:02, 1371.98it/s]
+Reading arXiv_src_0104_001.jsonl: 2206it [00:02, 982.90it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 982.47it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What motivates the study of R Coronae Borealis stars in the Large Magellanic Cloud and how does it use the MACHO project photometry database?
+[debug] classifier labels: ['Motivation', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+1     1  0.328697  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+2     2  0.311842  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+3     3  0.273362  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+4     4  0.253379  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+5     5  0.250911  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+6     6  0.221380  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+7     7  0.210183  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+8     8  0.191690  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+9     9  0.187059  ...  2025-09-21T19:02:12.852328     Motivation, Uses
+
+[10 rows x 12 columns]
+[21:02:21] main | args: Namespace(max_check=20, debug=True)
+[21:02:21] read_last_jsonl | path= classified_outputs.jsonl
+[21:02:21] read_last_jsonl | total_lines= 1
+[21:02:21] main | query='What motivates the study of R Coronae Borealis stars in the Large Magellanic Cloud and how does it use the MACHO project photometry database?' | funcs=['Motivation', 'Uses']
+[21:02:26] main | core_terms= ['R Coronae Borealis stars', 'Large Magellanic Cloud', 'MACHO project', 'photometry', 'MACHO']
+[21:02:26] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:02:26] load_topk_jsonl | rows= 20
+[21:02:26] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102262 title_snip='The MACHO Project LMC Variable Star Inventory: X. The R Coronae Boreal…' abs_len= 1169
+[21:02:26] main | running function= Motivation
+[21:02:26] select | function= Motivation | candidates_in= 20
+[21:02:26] select | core_terms= ['R Coronae Borealis stars', 'Large Magellanic Cloud', 'MACHO project', 'photometry', 'MACHO']
+[21:02:26] select | no cosine prune; kept=20/20
+[21:02:26] select | pool_size= 20 | ranks= [0, 1, 15, 11, 5, 7, 17, 2, 6, 13, 9, 12, 14, 3, 4, 8, 10, 16, 18, 19] | pids= ['astro-ph/0102262', 'astro-ph/0102369', 'astro-ph/0101371', 'astro-ph/0101436', 'astro-ph/0103516', 'astro-ph/0102494', 'astro-ph/0102354', 'astro-ph/0102242', 'astro-ph/0103400', 'astro-ph/0104286', 'astro-ph/0102442', 'astro-ph/0103286', 'astro-ph/0102132', 'astro-ph/0104163', 'astro-ph/0104098', 'astro-ph/0102472', 'astro-ph/0104114', 'astro-ph/0103480', 'astro-ph/0103518', 'astro-ph/0102273']
+[21:02:26] select | verify strict 1/20
+[21:02:26] verify | func= Motivation | rank= 0 | pid= astro-ph/0102262 | title_snip='The MACHO Project LMC Variable Star Inventory: X. The R Coronae Boreal…' | abs_len= 1169
+[21:02:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[21:02:29] select | verify strict 2/20
+[21:02:29] verify | func= Motivation | rank= 1 | pid= astro-ph/0102369 | title_snip='Stellar luminosity functions of rich star clusters in the Large
+  Mage…' | abs_len= 1243
+[21:02:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:31] select | verify strict 3/20
+[21:02:31] verify | func= Motivation | rank= 15 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[21:02:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:34] select | verify strict 4/20
+[21:02:34] verify | func= Motivation | rank= 11 | pid= astro-ph/0101436 | title_snip='Photometry and the Metallicity Distribution of the Outer Halo of M31' | abs_len= 1815
+[21:02:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:37] select | verify strict 5/20
+[21:02:37] verify | func= Motivation | rank= 5 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[21:02:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:39] select | verify strict 6/20
+[21:02:39] verify | func= Motivation | rank= 7 | pid= astro-ph/0102494 | title_snip='Constraints on thick disc and halo parameters from HST photometry of
+ …' | abs_len= 999
+[21:02:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:41] select | verify strict 7/20
+[21:02:41] verify | func= Motivation | rank= 17 | pid= astro-ph/0102354 | title_snip='The Munich Near-Infrared Cluster Survey - I. Field selection, object
+ …' | abs_len= 1716
+[21:02:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:44] select | verify strict 8/20
+[21:02:44] verify | func= Motivation | rank= 2 | pid= astro-ph/0102242 | title_snip='Detecting Galactic MACHOs with VERA through Astrometric Microlensing o…' | abs_len= 1755
+[21:02:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:47] select | verify strict 9/20
+[21:02:47] verify | func= Motivation | rank= 6 | pid= astro-ph/0103400 | title_snip='Infrared Space Observatory Spectra of R Coronae Borealis Stars. I.
+  E…' | abs_len= 776
+[21:02:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:49] select | verify strict 10/20
+[21:02:49] verify | func= Motivation | rank= 13 | pid= astro-ph/0104286 | title_snip='The Nearby Field Galaxy Survey: a spectrophotometric and photometric
+ …' | abs_len= 1022
+[21:02:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:52] select | verify strict 11/20
+[21:02:52] verify | func= Motivation | rank= 9 | pid= astro-ph/0102442 | title_snip='M Dwarfs from Hubble Space Telescope Star Counts. IV' | abs_len= 1717
+[21:02:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:54] select | verify strict 12/20
+[21:02:54] verify | func= Motivation | rank= 12 | pid= astro-ph/0103286 | title_snip='Magnetic Field Diagnostics Based on Far-Infrared Polarimetry: Tests
+  …' | abs_len= 1733
+[21:02:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:57] select | verify strict 13/20
+[21:02:57] verify | func= Motivation | rank= 14 | pid= astro-ph/0102132 | title_snip='Public Imaging Surveys: Scientific Opportunities' | abs_len= 1300
+[21:02:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:02:59] select | verify strict 14/20
+[21:02:59] verify | func= Motivation | rank= 3 | pid= astro-ph/0104163 | title_snip='The CFHT Open Star Cluster Survey I -- Cluster Selection and Data
+  Re…' | abs_len= 1677
+[21:03:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:02] select | verify strict 15/20
+[21:03:02] verify | func= Motivation | rank= 4 | pid= astro-ph/0104098 | title_snip='On the Statistical Significance of the Hipparcos Astrometric Orbit of
+…' | abs_len= 821
+[21:03:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:04] select | verify strict 16/20
+[21:03:04] verify | func= Motivation | rank= 8 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[21:03:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:07] select | verify strict 17/20
+[21:03:07] verify | func= Motivation | rank= 10 | pid= astro-ph/0104114 | title_snip='A step toward the calibration of the RGB Tip as a Standard Candle' | abs_len= 1233
+[21:03:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:09] select | verify strict 18/20
+[21:03:09] verify | func= Motivation | rank= 16 | pid= astro-ph/0103480 | title_snip='The Sunyaev-Zel'dovich Effect: Results and Future Prospects' | abs_len= 1000
+[21:03:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:12] select | verify strict 19/20
+[21:03:12] verify | func= Motivation | rank= 18 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[21:03:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:14] select | verify strict 20/20
+[21:03:14] verify | func= Motivation | rank= 19 | pid= astro-ph/0102273 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1510
+[21:03:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:17] select | strict pass found 0 winners → trying relaxed
+[21:03:17] select | verify relaxed 1/20
+[21:03:17] verify | func= Motivation | rank= 0 | pid= astro-ph/0102262 | title_snip='The MACHO Project LMC Variable Star Inventory: X. The R Coronae Boreal…' | abs_len= 1169
+[21:03:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:03:20] select | verify relaxed 2/20
+[21:03:20] verify | func= Motivation | rank= 1 | pid= astro-ph/0102369 | title_snip='Stellar luminosity functions of rich star clusters in the Large
+  Mage…' | abs_len= 1243
+[21:03:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:23] select | verify relaxed 3/20
+[21:03:23] verify | func= Motivation | rank= 15 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[21:03:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:25] select | verify relaxed 4/20
+[21:03:25] verify | func= Motivation | rank= 11 | pid= astro-ph/0101436 | title_snip='Photometry and the Metallicity Distribution of the Outer Halo of M31' | abs_len= 1815
+[21:03:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:28] select | verify relaxed 5/20
+[21:03:28] verify | func= Motivation | rank= 5 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[21:03:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:30] select | verify relaxed 6/20
+[21:03:30] verify | func= Motivation | rank= 7 | pid= astro-ph/0102494 | title_snip='Constraints on thick disc and halo parameters from HST photometry of
+ …' | abs_len= 999
+[21:03:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:33] select | verify relaxed 7/20
+[21:03:33] verify | func= Motivation | rank= 17 | pid= astro-ph/0102354 | title_snip='The Munich Near-Infrared Cluster Survey - I. Field selection, object
+ …' | abs_len= 1716
+[21:03:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:35] select | verify relaxed 8/20
+[21:03:35] verify | func= Motivation | rank= 2 | pid= astro-ph/0102242 | title_snip='Detecting Galactic MACHOs with VERA through Astrometric Microlensing o…' | abs_len= 1755
+[21:03:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:38] select | verify relaxed 9/20
+[21:03:38] verify | func= Motivation | rank= 6 | pid= astro-ph/0103400 | title_snip='Infrared Space Observatory Spectra of R Coronae Borealis Stars. I.
+  E…' | abs_len= 776
+[21:03:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[21:03:41] select | verify relaxed 10/20
+[21:03:41] verify | func= Motivation | rank= 13 | pid= astro-ph/0104286 | title_snip='The Nearby Field Galaxy Survey: a spectrophotometric and photometric
+ …' | abs_len= 1022
+[21:03:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:43] select | verify relaxed 11/20
+[21:03:43] verify | func= Motivation | rank= 9 | pid= astro-ph/0102442 | title_snip='M Dwarfs from Hubble Space Telescope Star Counts. IV' | abs_len= 1717
+[21:03:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:46] select | verify relaxed 12/20
+[21:03:46] verify | func= Motivation | rank= 12 | pid= astro-ph/0103286 | title_snip='Magnetic Field Diagnostics Based on Far-Infrared Polarimetry: Tests
+  …' | abs_len= 1733
+[21:03:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:48] select | verify relaxed 13/20
+[21:03:48] verify | func= Motivation | rank= 14 | pid= astro-ph/0102132 | title_snip='Public Imaging Surveys: Scientific Opportunities' | abs_len= 1300
+[21:03:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:51] select | verify relaxed 14/20
+[21:03:51] verify | func= Motivation | rank= 3 | pid= astro-ph/0104163 | title_snip='The CFHT Open Star Cluster Survey I -- Cluster Selection and Data
+  Re…' | abs_len= 1677
+[21:03:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:53] select | verify relaxed 15/20
+[21:03:53] verify | func= Motivation | rank= 4 | pid= astro-ph/0104098 | title_snip='On the Statistical Significance of the Hipparcos Astrometric Orbit of
+…' | abs_len= 821
+[21:03:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:56] select | verify relaxed 16/20
+[21:03:56] verify | func= Motivation | rank= 8 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[21:03:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:03:58] select | verify relaxed 17/20
+[21:03:58] verify | func= Motivation | rank= 10 | pid= astro-ph/0104114 | title_snip='A step toward the calibration of the RGB Tip as a Standard Candle' | abs_len= 1233
+[21:04:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:01] select | verify relaxed 18/20
+[21:04:01] verify | func= Motivation | rank= 16 | pid= astro-ph/0103480 | title_snip='The Sunyaev-Zel'dovich Effect: Results and Future Prospects' | abs_len= 1000
+[21:04:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:03] select | verify relaxed 19/20
+[21:04:03] verify | func= Motivation | rank= 18 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[21:04:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:06] select | verify relaxed 20/20
+[21:04:06] verify | func= Motivation | rank= 19 | pid= astro-ph/0102273 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1510
+[21:04:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the study of R Coronae Borealis stars in the Large Magellanic Cloud and how does it use the MACHO project photometry database?
+- WINNER: astro-ph/0102262 | The MACHO Project LMC Variable Star Inventory: X. The R Coronae Borealis
+  Stars
+- QUOTE : Hence, the importance of the LMC RCB stars.
+- WHY   : sufficient
+- ANSWER: The study of R Coronae Borealis stars in the Large Magellanic Cloud is motivated by the unknown absolute luminosities of Galactic RCB stars, which can be determined using the LMC stars as a reference. The MACHO project photometry database is utilized to discover new RCB stars and estimate their properties, ultimately informing our understanding of these stars in the Galaxy (astro-ph/0102262).
+[21:04:13] main | running function= Uses
+[21:04:13] select | function= Uses | candidates_in= 20
+[21:04:13] select | core_terms= ['R Coronae Borealis stars', 'Large Magellanic Cloud', 'MACHO project', 'photometry', 'MACHO']
+[21:04:13] select | no cosine prune; kept=20/20
+[21:04:13] select | pool_size= 20 | ranks= [0, 1, 5, 15, 11, 7, 17, 2, 6, 13, 3, 4, 8, 9, 10, 12, 16, 19, 14, 18] | pids= ['astro-ph/0102262', 'astro-ph/0102369', 'astro-ph/0103516', 'astro-ph/0101371', 'astro-ph/0101436', 'astro-ph/0102494', 'astro-ph/0102354', 'astro-ph/0102242', 'astro-ph/0103400', 'astro-ph/0104286', 'astro-ph/0104163', 'astro-ph/0104098', 'astro-ph/0102472', 'astro-ph/0102442', 'astro-ph/0104114', 'astro-ph/0103286', 'astro-ph/0103480', 'astro-ph/0102273', 'astro-ph/0102132', 'astro-ph/0103518']
+[21:04:13] select | verify strict 1/20
+[21:04:13] verify | func= Uses | rank= 0 | pid= astro-ph/0102262 | title_snip='The MACHO Project LMC Variable Star Inventory: X. The R Coronae Boreal…' | abs_len= 1169
+[21:04:16] verify | result supports= True fit= 0.80 top= 1.00 invalid= — cue_hint= True
+[21:04:16] select | verify strict 2/20
+[21:04:16] verify | func= Uses | rank= 1 | pid= astro-ph/0102369 | title_snip='Stellar luminosity functions of rich star clusters in the Large
+  Mage…' | abs_len= 1243
+[21:04:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:19] select | verify strict 3/20
+[21:04:19] verify | func= Uses | rank= 5 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[21:04:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:21] select | verify strict 4/20
+[21:04:21] verify | func= Uses | rank= 15 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[21:04:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:24] select | verify strict 5/20
+[21:04:24] verify | func= Uses | rank= 11 | pid= astro-ph/0101436 | title_snip='Photometry and the Metallicity Distribution of the Outer Halo of M31' | abs_len= 1815
+[21:04:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:26] select | verify strict 6/20
+[21:04:26] verify | func= Uses | rank= 7 | pid= astro-ph/0102494 | title_snip='Constraints on thick disc and halo parameters from HST photometry of
+ …' | abs_len= 999
+[21:04:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:29] select | verify strict 7/20
+[21:04:29] verify | func= Uses | rank= 17 | pid= astro-ph/0102354 | title_snip='The Munich Near-Infrared Cluster Survey - I. Field selection, object
+ …' | abs_len= 1716
+[21:04:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:31] select | verify strict 8/20
+[21:04:31] verify | func= Uses | rank= 2 | pid= astro-ph/0102242 | title_snip='Detecting Galactic MACHOs with VERA through Astrometric Microlensing o…' | abs_len= 1755
+[21:04:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:34] select | verify strict 9/20
+[21:04:34] verify | func= Uses | rank= 6 | pid= astro-ph/0103400 | title_snip='Infrared Space Observatory Spectra of R Coronae Borealis Stars. I.
+  E…' | abs_len= 776
+[21:04:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:36] select | verify strict 10/20
+[21:04:36] verify | func= Uses | rank= 13 | pid= astro-ph/0104286 | title_snip='The Nearby Field Galaxy Survey: a spectrophotometric and photometric
+ …' | abs_len= 1022
+[21:04:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:39] select | verify strict 11/20
+[21:04:39] verify | func= Uses | rank= 3 | pid= astro-ph/0104163 | title_snip='The CFHT Open Star Cluster Survey I -- Cluster Selection and Data
+  Re…' | abs_len= 1677
+[21:04:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:42] select | verify strict 12/20
+[21:04:42] verify | func= Uses | rank= 4 | pid= astro-ph/0104098 | title_snip='On the Statistical Significance of the Hipparcos Astrometric Orbit of
+…' | abs_len= 821
+[21:04:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:44] select | verify strict 13/20
+[21:04:44] verify | func= Uses | rank= 8 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[21:04:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:47] select | verify strict 14/20
+[21:04:47] verify | func= Uses | rank= 9 | pid= astro-ph/0102442 | title_snip='M Dwarfs from Hubble Space Telescope Star Counts. IV' | abs_len= 1717
+[21:04:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:49] select | verify strict 15/20
+[21:04:49] verify | func= Uses | rank= 10 | pid= astro-ph/0104114 | title_snip='A step toward the calibration of the RGB Tip as a Standard Candle' | abs_len= 1233
+[21:04:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:52] select | verify strict 16/20
+[21:04:52] verify | func= Uses | rank= 12 | pid= astro-ph/0103286 | title_snip='Magnetic Field Diagnostics Based on Far-Infrared Polarimetry: Tests
+  …' | abs_len= 1733
+[21:04:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:54] select | verify strict 17/20
+[21:04:54] verify | func= Uses | rank= 16 | pid= astro-ph/0103480 | title_snip='The Sunyaev-Zel'dovich Effect: Results and Future Prospects' | abs_len= 1000
+[21:04:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:57] select | verify strict 18/20
+[21:04:57] verify | func= Uses | rank= 19 | pid= astro-ph/0102273 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1510
+[21:04:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:04:59] select | verify strict 19/20
+[21:04:59] verify | func= Uses | rank= 14 | pid= astro-ph/0102132 | title_snip='Public Imaging Surveys: Scientific Opportunities' | abs_len= 1300
+[21:05:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:05:02] select | verify strict 20/20
+[21:05:02] verify | func= Uses | rank= 18 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[21:05:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : What motivates the study of R Coronae Borealis stars in the Large Magellanic Cloud and how does it use the MACHO project photometry database?
+- WINNER: astro-ph/0102262 | The MACHO Project LMC Variable Star Inventory: X. The R Coronae Borealis
+  Stars
+- QUOTE : using the MACHO project photometry database
+- WHY   : sufficient
+- ANSWER: The study of R Coronae Borealis stars in the Large Magellanic Cloud is motivated by the unknown absolute luminosities of Galactic RCB stars, and it utilizes the MACHO project photometry database to discover new RCB stars and estimate their absolute magnitudes. Researchers use the MACHO database to identify and analyze RCB stars in the LMC, aiming to better understand their properties and estimate the number of RCB stars in the Galaxy (astro-ph/0102262).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,328 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Background"
+  ],
+  "justification": "The query asks how the study expands (extends) knowledge of X\u2011ray binaries and also seeks foundational (background) information about their behavior."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.93 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 128it [00:00, 1278.05it/s]
+Reading arXiv_src_0101_001.jsonl: 272it [00:00, 1372.33it/s]
+Reading arXiv_src_0101_001.jsonl: 410it [00:00, 1018.73it/s]
+Reading arXiv_src_0101_001.jsonl: 521it [00:00, 735.73it/s] 
+Reading arXiv_src_0101_001.jsonl: 607it [00:00, 714.96it/s]
+Reading arXiv_src_0101_001.jsonl: 713it [00:00, 800.12it/s]
+Reading arXiv_src_0101_001.jsonl: 802it [00:01, 616.18it/s]
+Reading arXiv_src_0101_001.jsonl: 907it [00:01, 709.40it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 786.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1146it [00:01, 922.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1277it [00:01, 1022.23it/s]
+Reading arXiv_src_0101_001.jsonl: 1388it [00:01, 1027.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1525it [00:01, 1119.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1663it [00:01, 1191.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1786it [00:01, 1161.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1942it [00:01, 1272.78it/s]
+Reading arXiv_src_0101_001.jsonl: 2119it [00:02, 1414.63it/s]
+Reading arXiv_src_0101_001.jsonl: 2269it [00:02, 1439.47it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1040.31it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1330.51it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1369.53it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 834.69it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 515.88it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 551.17it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 611.19it/s]
+Reading arXiv_src_0102_001.jsonl: 786it [00:01, 723.12it/s]
+Reading arXiv_src_0102_001.jsonl: 916it [00:01, 864.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1028it [00:01, 930.14it/s]
+Reading arXiv_src_0102_001.jsonl: 1150it [00:01, 1006.37it/s]
+Reading arXiv_src_0102_001.jsonl: 1260it [00:01, 1031.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1408it [00:01, 1158.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1199.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1229.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1824it [00:01, 1308.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1373.14it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1404.67it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1014.16it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1333.91it/s]
+Reading arXiv_src_0103_001.jsonl: 299it [00:00, 1516.07it/s]
+Reading arXiv_src_0103_001.jsonl: 451it [00:00, 1146.33it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 744.81it/s] 
+Reading arXiv_src_0103_001.jsonl: 667it [00:00, 777.57it/s]
+Reading arXiv_src_0103_001.jsonl: 758it [00:00, 795.18it/s]
+Reading arXiv_src_0103_001.jsonl: 875it [00:00, 889.42it/s]
+Reading arXiv_src_0103_001.jsonl: 978it [00:01, 926.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1083it [00:01, 959.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1209it [00:01, 1044.06it/s]
+Reading arXiv_src_0103_001.jsonl: 1318it [00:01, 1050.46it/s]
+Reading arXiv_src_0103_001.jsonl: 1454it [00:01, 1139.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1590it [00:01, 1202.47it/s]
+Reading arXiv_src_0103_001.jsonl: 1745it [00:01, 1302.83it/s]
+Reading arXiv_src_0103_001.jsonl: 1884it [00:01, 1326.41it/s]
+Reading arXiv_src_0103_001.jsonl: 2025it [00:01, 1350.85it/s]
+Reading arXiv_src_0103_001.jsonl: 2167it [00:01, 1371.40it/s]
+Reading arXiv_src_0103_001.jsonl: 2316it [00:02, 1406.60it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1141.73it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 1497.99it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1549.20it/s]
+Reading arXiv_src_0104_001.jsonl: 464it [00:00, 1020.06it/s]
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 552.39it/s] 
+Reading arXiv_src_0104_001.jsonl: 689it [00:00, 645.72it/s]
+Reading arXiv_src_0104_001.jsonl: 781it [00:01, 698.20it/s]
+Reading arXiv_src_0104_001.jsonl: 885it [00:01, 772.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1004it [00:01, 874.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 941.54it/s]
+Reading arXiv_src_0104_001.jsonl: 1245it [00:01, 1017.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1356it [00:01, 1017.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1488it [00:01, 1098.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1634it [00:01, 1197.70it/s]
+Reading arXiv_src_0104_001.jsonl: 1763it [00:01, 1223.11it/s]
+Reading arXiv_src_0104_001.jsonl: 1909it [00:01, 1290.50it/s]
+Reading arXiv_src_0104_001.jsonl: 2067it [00:02, 1374.35it/s]
+Reading arXiv_src_0104_001.jsonl: 2207it [00:02, 957.43it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 976.57it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the study of Hercules X-1 in an anomalous low state extend our understanding of X-ray binary systems and provide background information on the behavior of these systems?
+[debug] classifier labels: ['Extends', 'Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T14:24:16.061755  Extends, Background
+1     1  0.948080  ...  2025-09-21T14:24:16.061755  Extends, Background
+2     2  0.249976  ...  2025-09-21T14:24:16.061755  Extends, Background
+3     3  0.241418  ...  2025-09-21T14:24:16.061755  Extends, Background
+4     4  0.214652  ...  2025-09-21T14:24:16.061755  Extends, Background
+5     5  0.208853  ...  2025-09-21T14:24:16.061755  Extends, Background
+6     6  0.168503  ...  2025-09-21T14:24:16.061755  Extends, Background
+7     7  0.168221  ...  2025-09-21T14:24:16.061755  Extends, Background
+8     8  0.166536  ...  2025-09-21T14:24:16.061755  Extends, Background
+9     9  0.152902  ...  2025-09-21T14:24:16.061755  Extends, Background
+
+[10 rows x 12 columns]
+[16:24:22] main | args: Namespace(max_check=20, debug=True)
+[16:24:22] read_last_jsonl | path= classified_outputs.jsonl
+[16:24:22] read_last_jsonl | total_lines= 1
+[16:24:22] main | query='How does the study of Hercules X-1 in an anomalous low state extend our understanding of X-ray binary systems and provide background information on the behavior of these systems?' | funcs=['Extends', 'Background']
+[16:24:24] main | core_terms= ['Hercules X-1', 'X-ray binary systems', 'anomalous low state', 'X-1', 'X-ray']
+[16:24:24] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:24:24] load_topk_jsonl | rows= 20
+[16:24:24] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102100 title_snip='RXTE Observations of Hercules X-1 During the July 1998 Short-high Stat…' abs_len= 1080
+[16:24:24] main | running function= Extends
+[16:24:24] select | function= Extends | candidates_in= 20
+[16:24:24] select | core_terms= ['Hercules X-1', 'X-ray binary systems', 'anomalous low state', 'X-1', 'X-ray']
+[16:24:24] select | no cosine prune; kept=20/20
+[16:24:24] select | pool_size= 20 | ranks= [0, 1, 19, 10, 18, 5, 7, 14, 2, 11, 12, 13, 16, 3, 4, 6, 8, 9, 15, 17] | pids= ['astro-ph/0102100', 'astro-ph/0101417', 'astro-ph/0101396', 'astro-ph/0102047', 'astro-ph/0103362', 'astro-ph/0103044', 'astro-ph/0101104', 'astro-ph/0102167', 'astro-ph/0103439', 'astro-ph/0102017', 'astro-ph/0101102', 'astro-ph/0101466', 'astro-ph/0101495', 'cond-mat/0103610', 'astro-ph/0103411', 'cond-mat/0103353', 'hep-ph/0101162', 'nucl-th/0104032', 'cond-mat/0101026', 'cond-mat/0104512']
+[16:24:24] select | verify strict 1/20
+[16:24:24] verify | func= Extends | rank= 0 | pid= astro-ph/0102100 | title_snip='RXTE Observations of Hercules X-1 During the July 1998 Short-high Stat…' | abs_len= 1080
+[16:24:28] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[16:24:28] select | verify strict 2/20
+[16:24:28] verify | func= Extends | rank= 1 | pid= astro-ph/0101417 | title_snip='Atmospheric reflection during an anomalous low-state of Hercules X-1' | abs_len= 1255
+[16:24:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:24:31] select | verify strict 3/20
+[16:24:31] verify | func= Extends | rank= 19 | pid= astro-ph/0101396 | title_snip='HEXTE Studies of Sco X-1 Spectra: Detections of Hard X-Ray Tails Beyon…' | abs_len= 944
+[16:24:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:34] select | verify strict 4/20
+[16:24:34] verify | func= Extends | rank= 10 | pid= astro-ph/0102047 | title_snip='Neutron star cooling in transiently accreting low mass binaries: a new…' | abs_len= 768
+[16:24:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:36] select | verify strict 5/20
+[16:24:36] verify | func= Extends | rank= 18 | pid= astro-ph/0103362 | title_snip='Application of a relativistic accretion disc model to X-ray spectra of…' | abs_len= 1132
+[16:24:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:39] select | verify strict 6/20
+[16:24:39] verify | func= Extends | rank= 5 | pid= astro-ph/0103044 | title_snip='Modeling the Low State Spectrum of the X-Ray Nova XTE J1118+480' | abs_len= 972
+[16:24:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:42] select | verify strict 7/20
+[16:24:42] verify | func= Extends | rank= 7 | pid= astro-ph/0101104 | title_snip='Optical studies of the X-ray transient XTE J2123-058 - II.
+  Phase-res…' | abs_len= 1151
+[16:24:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:44] select | verify strict 8/20
+[16:24:44] verify | func= Extends | rank= 14 | pid= astro-ph/0102167 | title_snip='Mapping the inner accretion disk of the galactic black hole J1550-564
+…' | abs_len= 1631
+[16:24:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:47] select | verify strict 9/20
+[16:24:47] verify | func= Extends | rank= 2 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[16:24:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:49] select | verify strict 10/20
+[16:24:49] verify | func= Extends | rank= 11 | pid= astro-ph/0102017 | title_snip='The Zoo of X-ray Pulsars' | abs_len= 298
+[16:24:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:52] select | verify strict 11/20
+[16:24:52] verify | func= Extends | rank= 12 | pid= astro-ph/0101102 | title_snip='On Echo Outbursts and ER UMa Supercycles in SU UMa-type Cataclysmic
+  …' | abs_len= 514
+[16:24:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:54] select | verify strict 12/20
+[16:24:54] verify | func= Extends | rank= 13 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[16:24:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:24:57] select | verify strict 13/20
+[16:24:57] verify | func= Extends | rank= 16 | pid= astro-ph/0101495 | title_snip='X-Ray Observations of Low-Mass X-Ray Binaries: Accretion Instabilities…' | abs_len= 1280
+[16:25:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:25:00] select | verify strict 14/20
+[16:25:00] verify | func= Extends | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[16:25:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:03] select | verify strict 15/20
+[16:25:03] verify | func= Extends | rank= 4 | pid= astro-ph/0103411 | title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' | abs_len= 936
+[16:25:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:05] select | verify strict 16/20
+[16:25:05] verify | func= Extends | rank= 6 | pid= cond-mat/0103353 | title_snip='Perfectly Translating Lattices on a Cylinder' | abs_len= 710
+[16:25:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:08] select | verify strict 17/20
+[16:25:08] verify | func= Extends | rank= 8 | pid= hep-ph/0101162 | title_snip='Probing for the Charm Content of $B$ and $\Upsilon$ Mesons' | abs_len= 652
+[16:25:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:11] select | verify strict 18/20
+[16:25:11] verify | func= Extends | rank= 9 | pid= nucl-th/0104032 | title_snip='The $\eta NN$-system at low energy within a three-body approach' | abs_len= 738
+[16:25:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:13] select | verify strict 19/20
+[16:25:13] verify | func= Extends | rank= 15 | pid= cond-mat/0101026 | title_snip='On the problem of Yb_{4}As_{3}' | abs_len= 795
+[16:25:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:16] select | verify strict 20/20
+[16:25:16] verify | func= Extends | rank= 17 | pid= cond-mat/0104512 | title_snip='Structure and magnetic order in Fe2+xV1-xAl' | abs_len= 1005
+[16:25:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the study of Hercules X-1 in an anomalous low state extend our understanding of X-ray binary systems and provide background information on the behavior of these systems?
+- WINNER: astro-ph/0101417 | Atmospheric reflection during an anomalous low-state of Hercules X-1
+- QUOTE : Hercules X-1 conducted during an anomalous low state
+- WHY   : sufficient
+- ANSWER: The study of Hercules X-1 in an anomalous low state extends our understanding of X-ray binary systems by providing insight into the behavior of these systems when the direct X-ray emission is blocked, revealing a reflected spectrum from the companion star. This extends prior methods by allowing the reconstruction of the incident X-rays and understanding of the system's geometry and emission mechanisms (astro-ph/0101417).
+[16:25:24] main | running function= Background
+[16:25:24] select | function= Background | candidates_in= 20
+[16:25:24] select | core_terms= ['Hercules X-1', 'X-ray binary systems', 'anomalous low state', 'X-1', 'X-ray']
+[16:25:24] select | no cosine prune; kept=20/20
+[16:25:24] select | pool_size= 20 | ranks= [0, 1, 19, 10, 18, 5, 7, 13, 14, 2, 11, 12, 16, 17, 3, 4, 6, 8, 9, 15] | pids= ['astro-ph/0102100', 'astro-ph/0101417', 'astro-ph/0101396', 'astro-ph/0102047', 'astro-ph/0103362', 'astro-ph/0103044', 'astro-ph/0101104', 'astro-ph/0101466', 'astro-ph/0102167', 'astro-ph/0103439', 'astro-ph/0102017', 'astro-ph/0101102', 'astro-ph/0101495', 'cond-mat/0104512', 'cond-mat/0103610', 'astro-ph/0103411', 'cond-mat/0103353', 'hep-ph/0101162', 'nucl-th/0104032', 'cond-mat/0101026']
+[16:25:24] select | verify strict 1/20
+[16:25:24] verify | func= Background | rank= 0 | pid= astro-ph/0102100 | title_snip='RXTE Observations of Hercules X-1 During the July 1998 Short-high Stat…' | abs_len= 1080
+[16:25:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:25:27] select | verify strict 2/20
+[16:25:27] verify | func= Background | rank= 1 | pid= astro-ph/0101417 | title_snip='Atmospheric reflection during an anomalous low-state of Hercules X-1' | abs_len= 1255
+[16:25:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:25:31] select | verify strict 3/20
+[16:25:31] verify | func= Background | rank= 19 | pid= astro-ph/0101396 | title_snip='HEXTE Studies of Sco X-1 Spectra: Detections of Hard X-Ray Tails Beyon…' | abs_len= 944
+[16:25:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:33] select | verify strict 4/20
+[16:25:33] verify | func= Background | rank= 10 | pid= astro-ph/0102047 | title_snip='Neutron star cooling in transiently accreting low mass binaries: a new…' | abs_len= 768
+[16:25:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:36] select | verify strict 5/20
+[16:25:36] verify | func= Background | rank= 18 | pid= astro-ph/0103362 | title_snip='Application of a relativistic accretion disc model to X-ray spectra of…' | abs_len= 1132
+[16:25:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:39] select | verify strict 6/20
+[16:25:39] verify | func= Background | rank= 5 | pid= astro-ph/0103044 | title_snip='Modeling the Low State Spectrum of the X-Ray Nova XTE J1118+480' | abs_len= 972
+[16:25:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:41] select | verify strict 7/20
+[16:25:41] verify | func= Background | rank= 7 | pid= astro-ph/0101104 | title_snip='Optical studies of the X-ray transient XTE J2123-058 - II.
+  Phase-res…' | abs_len= 1151
+[16:25:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:44] select | verify strict 8/20
+[16:25:44] verify | func= Background | rank= 13 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[16:25:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:46] select | verify strict 9/20
+[16:25:46] verify | func= Background | rank= 14 | pid= astro-ph/0102167 | title_snip='Mapping the inner accretion disk of the galactic black hole J1550-564
+…' | abs_len= 1631
+[16:25:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:49] select | verify strict 10/20
+[16:25:49] verify | func= Background | rank= 2 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[16:25:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:52] select | verify strict 11/20
+[16:25:52] verify | func= Background | rank= 11 | pid= astro-ph/0102017 | title_snip='The Zoo of X-ray Pulsars' | abs_len= 298
+[16:25:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:54] select | verify strict 12/20
+[16:25:54] verify | func= Background | rank= 12 | pid= astro-ph/0101102 | title_snip='On Echo Outbursts and ER UMa Supercycles in SU UMa-type Cataclysmic
+  …' | abs_len= 514
+[16:25:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:57] select | verify strict 13/20
+[16:25:57] verify | func= Background | rank= 16 | pid= astro-ph/0101495 | title_snip='X-Ray Observations of Low-Mass X-Ray Binaries: Accretion Instabilities…' | abs_len= 1280
+[16:25:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:25:59] select | verify strict 14/20
+[16:25:59] verify | func= Background | rank= 17 | pid= cond-mat/0104512 | title_snip='Structure and magnetic order in Fe2+xV1-xAl' | abs_len= 1005
+[16:26:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:26:02] select | verify strict 15/20
+[16:26:02] verify | func= Background | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[16:26:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:26:04] select | verify strict 16/20
+[16:26:04] verify | func= Background | rank= 4 | pid= astro-ph/0103411 | title_snip='Primordial nucleosynthesis and hadronic decay of a massive particle wi…' | abs_len= 936
+[16:26:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:26:07] select | verify strict 17/20
+[16:26:07] verify | func= Background | rank= 6 | pid= cond-mat/0103353 | title_snip='Perfectly Translating Lattices on a Cylinder' | abs_len= 710
+[16:26:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:26:09] select | verify strict 18/20
+[16:26:09] verify | func= Background | rank= 8 | pid= hep-ph/0101162 | title_snip='Probing for the Charm Content of $B$ and $\Upsilon$ Mesons' | abs_len= 652
+[16:26:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:26:12] select | verify strict 19/20
+[16:26:12] verify | func= Background | rank= 9 | pid= nucl-th/0104032 | title_snip='The $\eta NN$-system at low energy within a three-body approach' | abs_len= 738
+[16:26:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:26:15] select | verify strict 20/20
+[16:26:15] verify | func= Background | rank= 15 | pid= cond-mat/0101026 | title_snip='On the problem of Yb_{4}As_{3}' | abs_len= 795
+[16:26:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the study of Hercules X-1 in an anomalous low state extend our understanding of X-ray binary systems and provide background information on the behavior of these systems?
+- WINNER: astro-ph/0102100 | RXTE Observations of Hercules X-1 During the July 1998 Short-high State
+- QUOTE : Hercules X-1 During the July 1998 Short-high State
+- WHY   : sufficient
+- ANSWER: The study of Hercules X-1 in an anomalous low state builds on observations during its short-high state, providing context for understanding X-ray binary systems (astro-ph/0102100).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

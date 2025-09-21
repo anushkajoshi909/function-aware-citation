@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Extends. [Extends]
+The discovery of non-thermal emission in dust-enshrouded Wolf-Rayet stars motivates a re-evaluation of stellar evolution models because it suggests that binary systems are necessary for efficient dust production. This challenges current single-star and binary stellar evolution models, which will need to be revised if the hypothesis that most dusty WC8-10 stars are in binaries is confirmed (astro-ph/0103184). [Motivation]

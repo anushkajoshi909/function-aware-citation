@@ -1,0 +1,405 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the new finding compares with existing models and seeks directions for future research to address the observed discrepancy."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.07 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.24it/s]
+Reading arXiv_src_0101_001.jsonl: 101it [00:00, 379.52it/s]
+Reading arXiv_src_0101_001.jsonl: 248it [00:00, 760.59it/s]
+Reading arXiv_src_0101_001.jsonl: 356it [00:00, 866.07it/s]
+Reading arXiv_src_0101_001.jsonl: 459it [00:00, 692.72it/s]
+Reading arXiv_src_0101_001.jsonl: 543it [00:00, 567.20it/s]
+Reading arXiv_src_0101_001.jsonl: 648it [00:01, 673.52it/s]
+Reading arXiv_src_0101_001.jsonl: 755it [00:01, 767.50it/s]
+Reading arXiv_src_0101_001.jsonl: 859it [00:01, 834.87it/s]
+Reading arXiv_src_0101_001.jsonl: 962it [00:01, 885.87it/s]
+Reading arXiv_src_0101_001.jsonl: 1070it [00:01, 938.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1203it [00:01, 1047.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1313it [00:01, 1048.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1447it [00:01, 1127.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1580it [00:01, 1185.62it/s]
+Reading arXiv_src_0101_001.jsonl: 1713it [00:01, 1224.48it/s]
+Reading arXiv_src_0101_001.jsonl: 1837it [00:02, 1200.57it/s]
+Reading arXiv_src_0101_001.jsonl: 2008it [00:02, 1348.88it/s]
+Reading arXiv_src_0101_001.jsonl: 2173it [00:02, 1425.27it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 978.08it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1319.88it/s]
+Reading arXiv_src_0102_001.jsonl: 270it [00:00, 1352.00it/s]
+Reading arXiv_src_0102_001.jsonl: 406it [00:00, 854.13it/s] 
+Reading arXiv_src_0102_001.jsonl: 507it [00:00, 518.80it/s]
+Reading arXiv_src_0102_001.jsonl: 590it [00:00, 578.67it/s]
+Reading arXiv_src_0102_001.jsonl: 667it [00:00, 602.95it/s]
+Reading arXiv_src_0102_001.jsonl: 780it [00:01, 723.68it/s]
+Reading arXiv_src_0102_001.jsonl: 907it [00:01, 856.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1020it [00:01, 926.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1134it [00:01, 984.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1244it [00:01, 1016.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1386it [00:01, 1129.20it/s]
+Reading arXiv_src_0102_001.jsonl: 1518it [00:01, 1183.49it/s]
+Reading arXiv_src_0102_001.jsonl: 1640it [00:01, 1182.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1790it [00:01, 1273.39it/s]
+Reading arXiv_src_0102_001.jsonl: 1943it [00:02, 1345.60it/s]
+Reading arXiv_src_0102_001.jsonl: 2087it [00:02, 1370.66it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1010.11it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1332.06it/s]
+Reading arXiv_src_0103_001.jsonl: 297it [00:00, 1504.45it/s]
+Reading arXiv_src_0103_001.jsonl: 448it [00:00, 1153.41it/s]
+Reading arXiv_src_0103_001.jsonl: 571it [00:00, 735.31it/s] 
+Reading arXiv_src_0103_001.jsonl: 663it [00:00, 758.06it/s]
+Reading arXiv_src_0103_001.jsonl: 752it [00:00, 784.76it/s]
+Reading arXiv_src_0103_001.jsonl: 859it [00:00, 856.98it/s]
+Reading arXiv_src_0103_001.jsonl: 961it [00:01, 898.06it/s]
+Reading arXiv_src_0103_001.jsonl: 1067it [00:01, 942.19it/s]
+Reading arXiv_src_0103_001.jsonl: 1190it [00:01, 1021.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1297it [00:01, 1026.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1427it [00:01, 1105.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1575it [00:01, 1211.84it/s]
+Reading arXiv_src_0103_001.jsonl: 1708it [00:01, 1243.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1858it [00:01, 1316.08it/s]
+Reading arXiv_src_0103_001.jsonl: 1991it [00:01, 1308.15it/s]
+Reading arXiv_src_0103_001.jsonl: 2137it [00:01, 1352.94it/s]
+Reading arXiv_src_0103_001.jsonl: 2281it [00:02, 1378.15it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1124.10it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 140it [00:00, 1397.18it/s]
+Reading arXiv_src_0104_001.jsonl: 302it [00:00, 1525.82it/s]
+Reading arXiv_src_0104_001.jsonl: 455it [00:00, 1024.92it/s]
+Reading arXiv_src_0104_001.jsonl: 572it [00:00, 547.64it/s] 
+Reading arXiv_src_0104_001.jsonl: 660it [00:00, 607.76it/s]
+Reading arXiv_src_0104_001.jsonl: 755it [00:01, 677.31it/s]
+Reading arXiv_src_0104_001.jsonl: 851it [00:01, 740.94it/s]
+Reading arXiv_src_0104_001.jsonl: 961it [00:01, 827.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1088it [00:01, 940.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1195it [00:01, 974.68it/s]
+Reading arXiv_src_0104_001.jsonl: 1308it [00:01, 1009.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1436it [00:01, 1082.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1571it [00:01, 1159.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1695it [00:01, 1173.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1834it [00:01, 1235.63it/s]
+Reading arXiv_src_0104_001.jsonl: 1993it [00:02, 1337.85it/s]
+Reading arXiv_src_0104_001.jsonl: 2129it [00:02, 960.06it/s] 
+Reading arXiv_src_0104_001.jsonl: 2276it [00:02, 1077.89it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 967.07it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current study's finding on the lower mass threshold for Hot Bottom Burning compare to existing stellar evolution models, and what future research could resolve the discrepancy between the observed and predicted luminosity of the carbon star?
+[debug] classifier labels: ['Compares', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+1     1  0.966080  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+2     2  0.784131  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+3     3  0.715322  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+4     4  0.664660  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+5     5  0.656385  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+6     6  0.637128  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+7     7  0.635940  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+8     8  0.596730  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+9     9  0.555185  ...  2025-09-21T21:34:43.652799  Compares, FutureWork
+
+[10 rows x 12 columns]
+[23:34:50] main | args: Namespace(max_check=20, debug=True)
+[23:34:50] read_last_jsonl | path= classified_outputs.jsonl
+[23:34:50] read_last_jsonl | total_lines= 1
+[23:34:50] main | query='How does the current study's finding on the lower mass threshold for Hot Bottom Burning compare to existing stellar evolution models, and what future research could resolve the discrepancy between the observed and predicted luminosity of the carbon star?' | funcs=['Compares', 'FutureWork']
+[23:34:52] main | core_terms= ['Hot Bottom Burning', 'carbon star', 'stellar evolution', 'luminosity']
+[23:34:52] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:34:52] load_topk_jsonl | rows= 20
+[23:34:52] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103104 title_snip='Evolution and Nucleosynthesis of Zero Metal Intermediate Mass Stars' abs_len= 1765
+[23:34:52] main | running function= Compares
+[23:34:52] select | function= Compares | candidates_in= 20
+[23:34:52] select | core_terms= ['Hot Bottom Burning', 'carbon star', 'stellar evolution', 'luminosity']
+[23:34:52] select | no cosine prune; kept=20/20
+[23:34:52] select | pool_size= 20 | ranks= [3, 19, 15, 2, 6, 16, 0, 5, 14, 17, 4, 8, 9, 10, 12, 1, 7, 11, 13, 18] | pids= ['astro-ph/0101107', 'astro-ph/0103141', 'astro-ph/0101477', 'astro-ph/0103113', 'astro-ph/0101330', 'astro-ph/0103253', 'astro-ph/0103104', 'astro-ph/0101472', 'astro-ph/0101095', 'astro-ph/0103003', 'astro-ph/0102010', 'astro-ph/0103396', 'astro-ph/0102253', 'astro-ph/0104238', 'astro-ph/0102135', 'astro-ph/0102430', 'astro-ph/0102379', 'astro-ph/0103153', 'astro-ph/0104162', 'astro-ph/0103170']
+[23:34:52] select | verify strict 1/20
+[23:34:52] verify | func= Compares | rank= 3 | pid= astro-ph/0101107 | title_snip='The peculiar cluster HS 327 in the Large Magellanic Cloud: can OH/IR
+ …' | abs_len= 1042
+[23:34:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:34:56] select | verify strict 2/20
+[23:34:56] verify | func= Compares | rank= 19 | pid= astro-ph/0103141 | title_snip='Reprocessing the Hipparcos data for evolved giant stars II. Absolute
+ …' | abs_len= 1548
+[23:34:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:34:58] select | verify strict 3/20
+[23:34:58] verify | func= Compares | rank= 15 | pid= astro-ph/0101477 | title_snip='Models of circumstellar molecular radio line emission: Mass loss rates…' | abs_len= 1605
+[23:35:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:35:01] select | verify strict 4/20
+[23:35:01] verify | func= Compares | rank= 2 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[23:35:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:04] select | verify strict 5/20
+[23:35:04] verify | func= Compares | rank= 6 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:35:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:06] select | verify strict 6/20
+[23:35:06] verify | func= Compares | rank= 16 | pid= astro-ph/0103253 | title_snip='Towards a resolution of the discrepancy between different estimators o…' | abs_len= 1593
+[23:35:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:09] select | verify strict 7/20
+[23:35:09] verify | func= Compares | rank= 0 | pid= astro-ph/0103104 | title_snip='Evolution and Nucleosynthesis of Zero Metal Intermediate Mass Stars' | abs_len= 1765
+[23:35:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:35:12] select | verify strict 8/20
+[23:35:12] verify | func= Compares | rank= 5 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[23:35:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:15] select | verify strict 9/20
+[23:35:15] verify | func= Compares | rank= 14 | pid= astro-ph/0101095 | title_snip='Faint field galaxies: an explanation of the faint blue excess using
+  …' | abs_len= 1461
+[23:35:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:17] select | verify strict 10/20
+[23:35:17] verify | func= Compares | rank= 17 | pid= astro-ph/0103003 | title_snip='Modeling the evolution of Sakurai's object' | abs_len= 1536
+[23:35:20] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:35:20] select | verify strict 11/20
+[23:35:20] verify | func= Compares | rank= 4 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:35:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:23] select | verify strict 12/20
+[23:35:23] verify | func= Compares | rank= 8 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[23:35:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:26] select | verify strict 13/20
+[23:35:26] verify | func= Compares | rank= 9 | pid= astro-ph/0102253 | title_snip='Zero-metallicity stars I. Evolution at constant mass' | abs_len= 1567
+[23:35:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[23:35:29] select | verify strict 14/20
+[23:35:29] verify | func= Compares | rank= 10 | pid= astro-ph/0104238 | title_snip='Tracing the Mass during Low-Mass Star Formation. II. Modelling the
+  S…' | abs_len= 1033
+[23:35:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:31] select | verify strict 15/20
+[23:35:31] verify | func= Compares | rank= 12 | pid= astro-ph/0102135 | title_snip='Evolution on the AGB and beyond: On the formation of H-deficient
+  pos…' | abs_len= 1183
+[23:35:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:35:34] select | verify strict 16/20
+[23:35:34] verify | func= Compares | rank= 1 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[23:35:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:37] select | verify strict 17/20
+[23:35:37] verify | func= Compares | rank= 7 | pid= astro-ph/0102379 | title_snip='Formation of High Mass X-ray Black Hole Binaries' | abs_len= 1737
+[23:35:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:40] select | verify strict 18/20
+[23:35:40] verify | func= Compares | rank= 11 | pid= astro-ph/0103153 | title_snip='PN-Carbon Yields and the Chemical Evolution of the Galaxy' | abs_len= 529
+[23:35:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:35:43] select | verify strict 19/20
+[23:35:43] verify | func= Compares | rank= 13 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[23:35:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:35:45] select | verify strict 20/20
+[23:35:45] verify | func= Compares | rank= 18 | pid= astro-ph/0103170 | title_snip='D/H Measurements' | abs_len= 823
+[23:35:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current study's finding on the lower mass threshold for Hot Bottom Burning compare to existing stellar evolution models, and what future research could resolve the discrepancy between the observed and predicted luminosity of the carbon star?
+- WINNER: astro-ph/0101107 | The peculiar cluster HS 327 in the Large Magellanic Cloud: can OH/IR
+  stars and carbon stars be twins?
+- QUOTE : agrees with stellar evolution models that, however, fail to reproduce
+- WHY   : sufficient
+- ANSWER: The current study's finding on the lower mass threshold for Hot Bottom Burning is consistent with existing stellar evolution models, but the observed luminosity of the carbon star is lower than predicted. The discrepancy between observed and predicted luminosity could be resolved through further research on the stellar evolution of carbon stars (astro-ph/0101107).
+[23:35:58] main | running function= FutureWork
+[23:35:58] select | function= FutureWork | candidates_in= 20
+[23:35:58] select | core_terms= ['Hot Bottom Burning', 'carbon star', 'stellar evolution', 'luminosity']
+[23:35:58] select | no cosine prune; kept=20/20
+[23:35:58] select | pool_size= 20 | ranks= [3, 19, 15, 2, 0, 5, 6, 14, 16, 17, 1, 4, 7, 8, 9, 10, 11, 12, 13, 18] | pids= ['astro-ph/0101107', 'astro-ph/0103141', 'astro-ph/0101477', 'astro-ph/0103113', 'astro-ph/0103104', 'astro-ph/0101472', 'astro-ph/0101330', 'astro-ph/0101095', 'astro-ph/0103253', 'astro-ph/0103003', 'astro-ph/0102430', 'astro-ph/0102010', 'astro-ph/0102379', 'astro-ph/0103396', 'astro-ph/0102253', 'astro-ph/0104238', 'astro-ph/0103153', 'astro-ph/0102135', 'astro-ph/0104162', 'astro-ph/0103170']
+[23:35:58] select | verify strict 1/20
+[23:35:58] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101107 | title_snip='The peculiar cluster HS 327 in the Large Magellanic Cloud: can OH/IR
+ …' | abs_len= 1042
+[23:36:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:36:02] select | verify strict 2/20
+[23:36:02] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103141 | title_snip='Reprocessing the Hipparcos data for evolved giant stars II. Absolute
+ …' | abs_len= 1548
+[23:36:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:36:05] select | verify strict 3/20
+[23:36:05] verify | func= FutureWork | rank= 15 | pid= astro-ph/0101477 | title_snip='Models of circumstellar molecular radio line emission: Mass loss rates…' | abs_len= 1605
+[23:36:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:36:08] select | verify strict 4/20
+[23:36:08] verify | func= FutureWork | rank= 2 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[23:36:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:10] select | verify strict 5/20
+[23:36:10] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103104 | title_snip='Evolution and Nucleosynthesis of Zero Metal Intermediate Mass Stars' | abs_len= 1765
+[23:36:13] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[23:36:13] select | verify strict 6/20
+[23:36:13] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[23:36:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:16] select | verify strict 7/20
+[23:36:16] verify | func= FutureWork | rank= 6 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:36:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:18] select | verify strict 8/20
+[23:36:18] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101095 | title_snip='Faint field galaxies: an explanation of the faint blue excess using
+  …' | abs_len= 1461
+[23:36:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:21] select | verify strict 9/20
+[23:36:21] verify | func= FutureWork | rank= 16 | pid= astro-ph/0103253 | title_snip='Towards a resolution of the discrepancy between different estimators o…' | abs_len= 1593
+[23:36:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:24] select | verify strict 10/20
+[23:36:24] verify | func= FutureWork | rank= 17 | pid= astro-ph/0103003 | title_snip='Modeling the evolution of Sakurai's object' | abs_len= 1536
+[23:36:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:36:27] select | verify strict 11/20
+[23:36:27] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[23:36:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:29] select | verify strict 12/20
+[23:36:29] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:36:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:32] select | verify strict 13/20
+[23:36:32] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102379 | title_snip='Formation of High Mass X-ray Black Hole Binaries' | abs_len= 1737
+[23:36:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:34] select | verify strict 14/20
+[23:36:34] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[23:36:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:37] select | verify strict 15/20
+[23:36:37] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102253 | title_snip='Zero-metallicity stars I. Evolution at constant mass' | abs_len= 1567
+[23:36:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:36:41] select | verify strict 16/20
+[23:36:41] verify | func= FutureWork | rank= 10 | pid= astro-ph/0104238 | title_snip='Tracing the Mass during Low-Mass Star Formation. II. Modelling the
+  S…' | abs_len= 1033
+[23:36:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:43] select | verify strict 17/20
+[23:36:43] verify | func= FutureWork | rank= 11 | pid= astro-ph/0103153 | title_snip='PN-Carbon Yields and the Chemical Evolution of the Galaxy' | abs_len= 529
+[23:36:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:36:46] select | verify strict 18/20
+[23:36:46] verify | func= FutureWork | rank= 12 | pid= astro-ph/0102135 | title_snip='Evolution on the AGB and beyond: On the formation of H-deficient
+  pos…' | abs_len= 1183
+[23:36:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:36:49] select | verify strict 19/20
+[23:36:49] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[23:36:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:52] select | verify strict 20/20
+[23:36:52] verify | func= FutureWork | rank= 18 | pid= astro-ph/0103170 | title_snip='D/H Measurements' | abs_len= 823
+[23:36:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:36:54] select | strict pass found 0 winners → trying relaxed
+[23:36:54] select | verify relaxed 1/20
+[23:36:54] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101107 | title_snip='The peculiar cluster HS 327 in the Large Magellanic Cloud: can OH/IR
+ …' | abs_len= 1042
+[23:36:58] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:36:58] select | verify relaxed 2/20
+[23:36:58] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103141 | title_snip='Reprocessing the Hipparcos data for evolved giant stars II. Absolute
+ …' | abs_len= 1548
+[23:37:00] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[23:37:00] select | verify relaxed 3/20
+[23:37:00] verify | func= FutureWork | rank= 15 | pid= astro-ph/0101477 | title_snip='Models of circumstellar molecular radio line emission: Mass loss rates…' | abs_len= 1605
+[23:37:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[23:37:03] select | verify relaxed 4/20
+[23:37:03] verify | func= FutureWork | rank= 2 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[23:37:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:06] select | verify relaxed 5/20
+[23:37:06] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103104 | title_snip='Evolution and Nucleosynthesis of Zero Metal Intermediate Mass Stars' | abs_len= 1765
+[23:37:10] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:37:10] select | verify relaxed 6/20
+[23:37:10] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[23:37:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:12] select | verify relaxed 7/20
+[23:37:12] verify | func= FutureWork | rank= 6 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:37:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:15] select | verify relaxed 8/20
+[23:37:15] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101095 | title_snip='Faint field galaxies: an explanation of the faint blue excess using
+  …' | abs_len= 1461
+[23:37:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:17] select | verify relaxed 9/20
+[23:37:17] verify | func= FutureWork | rank= 16 | pid= astro-ph/0103253 | title_snip='Towards a resolution of the discrepancy between different estimators o…' | abs_len= 1593
+[23:37:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:20] select | verify relaxed 10/20
+[23:37:20] verify | func= FutureWork | rank= 17 | pid= astro-ph/0103003 | title_snip='Modeling the evolution of Sakurai's object' | abs_len= 1536
+[23:37:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:37:23] select | verify relaxed 11/20
+[23:37:23] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[23:37:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:26] select | verify relaxed 12/20
+[23:37:26] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:37:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:28] select | verify relaxed 13/20
+[23:37:28] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102379 | title_snip='Formation of High Mass X-ray Black Hole Binaries' | abs_len= 1737
+[23:37:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:31] select | verify relaxed 14/20
+[23:37:31] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[23:37:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:34] select | verify relaxed 15/20
+[23:37:34] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102253 | title_snip='Zero-metallicity stars I. Evolution at constant mass' | abs_len= 1567
+[23:37:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:37:37] select | verify relaxed 16/20
+[23:37:37] verify | func= FutureWork | rank= 10 | pid= astro-ph/0104238 | title_snip='Tracing the Mass during Low-Mass Star Formation. II. Modelling the
+  S…' | abs_len= 1033
+[23:37:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:40] select | verify relaxed 17/20
+[23:37:40] verify | func= FutureWork | rank= 11 | pid= astro-ph/0103153 | title_snip='PN-Carbon Yields and the Chemical Evolution of the Galaxy' | abs_len= 529
+[23:37:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:37:42] select | verify relaxed 18/20
+[23:37:42] verify | func= FutureWork | rank= 12 | pid= astro-ph/0102135 | title_snip='Evolution on the AGB and beyond: On the formation of H-deficient
+  pos…' | abs_len= 1183
+[23:37:45] verify | result supports= False fit= 0.00 top= 0.60 invalid= no_quote cue_hint= False
+[23:37:45] select | verify relaxed 19/20
+[23:37:45] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[23:37:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:48] select | verify relaxed 20/20
+[23:37:48] verify | func= FutureWork | rank= 18 | pid= astro-ph/0103170 | title_snip='D/H Measurements' | abs_len= 823
+[23:37:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the current study's finding on the lower mass threshold for Hot Bottom Burning compare to existing stellar evolution models, and what future research could resolve the discrepancy between the observed and predicted luminosity of the carbon star?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,2 @@
+The proposed model extends existing theories on blazar flares by incorporating additional radiation mechanisms, such as Comptonization of light from the broad emission line region and IR radiation from hot dust. This extension improves the accuracy of flare behavior predictions, particularly in distinguishing between adiabatic and radiative regimes (astro-ph/0101380). [Extends]
+The abstract does not provide information relevant to Compares. [Compares]

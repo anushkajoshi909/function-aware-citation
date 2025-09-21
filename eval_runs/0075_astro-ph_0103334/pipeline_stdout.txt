@@ -1,0 +1,340 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Uses"
+  ],
+  "justification": "The query seeks reasons for studying magnetic field fluctuations (motivation) and asks how polarization observations are applied to interpret them (uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.86 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.39it/s]
+Reading arXiv_src_0101_001.jsonl: 37it [00:00, 119.74it/s]
+Reading arXiv_src_0101_001.jsonl: 181it [00:00, 538.84it/s]
+Reading arXiv_src_0101_001.jsonl: 302it [00:00, 746.04it/s]
+Reading arXiv_src_0101_001.jsonl: 396it [00:00, 755.34it/s]
+Reading arXiv_src_0101_001.jsonl: 484it [00:00, 618.98it/s]
+Reading arXiv_src_0101_001.jsonl: 558it [00:01, 558.55it/s]
+Reading arXiv_src_0101_001.jsonl: 664it [00:01, 671.43it/s]
+Reading arXiv_src_0101_001.jsonl: 769it [00:01, 765.24it/s]
+Reading arXiv_src_0101_001.jsonl: 882it [00:01, 859.16it/s]
+Reading arXiv_src_0101_001.jsonl: 987it [00:01, 909.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1095it [00:01, 954.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1220it [00:01, 1037.64it/s]
+Reading arXiv_src_0101_001.jsonl: 1328it [00:01, 1037.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1468it [00:01, 1141.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1592it [00:01, 1167.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1725it [00:02, 1214.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1848it [00:02, 1167.23it/s]
+Reading arXiv_src_0101_001.jsonl: 2024it [00:02, 1336.34it/s]
+Reading arXiv_src_0101_001.jsonl: 2185it [00:02, 1414.60it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 929.05it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1314.91it/s]
+Reading arXiv_src_0102_001.jsonl: 270it [00:00, 1350.33it/s]
+Reading arXiv_src_0102_001.jsonl: 406it [00:00, 853.73it/s] 
+Reading arXiv_src_0102_001.jsonl: 507it [00:00, 515.27it/s]
+Reading arXiv_src_0102_001.jsonl: 590it [00:00, 575.51it/s]
+Reading arXiv_src_0102_001.jsonl: 666it [00:00, 599.13it/s]
+Reading arXiv_src_0102_001.jsonl: 779it [00:01, 720.92it/s]
+Reading arXiv_src_0102_001.jsonl: 907it [00:01, 857.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1019it [00:01, 926.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1134it [00:01, 986.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1244it [00:01, 1017.88it/s]
+Reading arXiv_src_0102_001.jsonl: 1386it [00:01, 1132.40it/s]
+Reading arXiv_src_0102_001.jsonl: 1520it [00:01, 1191.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1643it [00:01, 1189.96it/s]
+Reading arXiv_src_0102_001.jsonl: 1792it [00:01, 1277.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1944it [00:02, 1347.88it/s]
+Reading arXiv_src_0102_001.jsonl: 2088it [00:02, 1370.64it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1009.70it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1329.61it/s]
+Reading arXiv_src_0103_001.jsonl: 298it [00:00, 1504.94it/s]
+Reading arXiv_src_0103_001.jsonl: 449it [00:00, 1152.70it/s]
+Reading arXiv_src_0103_001.jsonl: 572it [00:00, 731.21it/s] 
+Reading arXiv_src_0103_001.jsonl: 664it [00:00, 751.90it/s]
+Reading arXiv_src_0103_001.jsonl: 752it [00:00, 781.65it/s]
+Reading arXiv_src_0103_001.jsonl: 858it [00:00, 852.50it/s]
+Reading arXiv_src_0103_001.jsonl: 961it [00:01, 896.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 938.10it/s]
+Reading arXiv_src_0103_001.jsonl: 1186it [00:01, 1009.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1292it [00:01, 1012.14it/s]
+Reading arXiv_src_0103_001.jsonl: 1421it [00:01, 1089.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1571it [00:01, 1206.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1705it [00:01, 1242.62it/s]
+Reading arXiv_src_0103_001.jsonl: 1855it [00:01, 1317.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1988it [00:01, 1311.62it/s]
+Reading arXiv_src_0103_001.jsonl: 2133it [00:01, 1348.86it/s]
+Reading arXiv_src_0103_001.jsonl: 2269it [00:02, 1345.61it/s]
+Reading arXiv_src_0103_001.jsonl: 2437it [00:02, 1443.93it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1118.14it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.40it/s]
+Reading arXiv_src_0104_001.jsonl: 48it [00:00, 227.30it/s]
+Reading arXiv_src_0104_001.jsonl: 200it [00:00, 748.96it/s]
+Reading arXiv_src_0104_001.jsonl: 356it [00:00, 1010.23it/s]
+Reading arXiv_src_0104_001.jsonl: 464it [00:00, 802.29it/s] 
+Reading arXiv_src_0104_001.jsonl: 554it [00:00, 668.26it/s]
+Reading arXiv_src_0104_001.jsonl: 630it [00:01, 487.19it/s]
+Reading arXiv_src_0104_001.jsonl: 723it [00:01, 572.53it/s]
+Reading arXiv_src_0104_001.jsonl: 809it [00:01, 632.94it/s]
+Reading arXiv_src_0104_001.jsonl: 916it [00:01, 732.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1039it [00:01, 856.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1153it [00:01, 930.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1271it [00:01, 998.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1378it [00:01, 1003.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1509it [00:01, 1084.26it/s]
+Reading arXiv_src_0104_001.jsonl: 1646it [00:02, 1166.21it/s]
+Reading arXiv_src_0104_001.jsonl: 1771it [00:02, 1188.62it/s]
+Reading arXiv_src_0104_001.jsonl: 1914it [00:02, 1259.09it/s]
+Reading arXiv_src_0104_001.jsonl: 2067it [00:02, 1338.94it/s]
+Reading arXiv_src_0104_001.jsonl: 2203it [00:02, 958.46it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 875.76it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What motivates the investigation of magnetic field fluctuations in the NGC 7538 region and how are the observations of polarization used to understand these fluctuations?
+[debug] classifier labels: ['Motivation', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+1     1  0.985232  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+2     2  0.710437  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+3     3  0.659680  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+4     4  0.520196  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+5     5  0.409531  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+6     6  0.354399  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+7     7  0.324883  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+8     8  0.300051  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+9     9  0.266546  ...  2025-09-21T15:41:36.556476     Motivation, Uses
+
+[10 rows x 12 columns]
+[17:41:48] main | args: Namespace(max_check=20, debug=True)
+[17:41:48] read_last_jsonl | path= classified_outputs.jsonl
+[17:41:48] read_last_jsonl | total_lines= 1
+[17:41:48] main | query='What motivates the investigation of magnetic field fluctuations in the NGC 7538 region and how are the observations of polarization used to understand these fluctuations?' | funcs=['Motivation', 'Uses']
+[17:41:52] main | core_terms= ['NGC 7538', 'magnetic field', 'polarization', 'fluctuations', 'NGC']
+[17:41:52] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:41:52] load_topk_jsonl | rows= 20
+[17:41:52] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103334 title_snip='Submillimeter Imaging Polarimetry of the NGC 7538 Region' abs_len= 1603
+[17:41:52] main | running function= Motivation
+[17:41:52] select | function= Motivation | candidates_in= 20
+[17:41:52] select | core_terms= ['NGC 7538', 'magnetic field', 'polarization', 'fluctuations', 'NGC']
+[17:41:52] select | no cosine prune; kept=20/20
+[17:41:52] select | pool_size= 20 | ranks= [0, 2, 13, 12, 4, 17, 1, 3, 7, 8, 9, 11, 18, 5, 15, 6, 10, 14, 19, 16] | pids= ['astro-ph/0103334', 'astro-ph/0104360', 'astro-ph/0101325', 'astro-ph/0104312', 'physics/0103029', 'astro-ph/0104366', 'astro-ph/0103048', 'cond-mat/0102414', 'nucl-th/0102026', 'astro-ph/0101368', 'hep-ex/0101010', 'cond-mat/0102100', 'cond-mat/0104540', 'astro-ph/0101001', 'cond-mat/0102226', 'astro-ph/0102445', 'quant-ph/0104086', 'cond-mat/0101075', 'quant-ph/0101055', 'astro-ph/0101063']
+[17:41:52] select | verify strict 1/20
+[17:41:52] verify | func= Motivation | rank= 0 | pid= astro-ph/0103334 | title_snip='Submillimeter Imaging Polarimetry of the NGC 7538 Region' | abs_len= 1603
+[17:41:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:41:55] select | verify strict 2/20
+[17:41:55] verify | func= Motivation | rank= 2 | pid= astro-ph/0104360 | title_snip='Spectra of Maser Radiation from a Turbulent, Circumnuclear Accretion
+ …' | abs_len= 1208
+[17:41:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:41:57] select | verify strict 3/20
+[17:41:57] verify | func= Motivation | rank= 13 | pid= astro-ph/0101325 | title_snip='Variability and polarization in the inner jet of 3C395' | abs_len= 916
+[17:42:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:00] select | verify strict 4/20
+[17:42:00] verify | func= Motivation | rank= 12 | pid= astro-ph/0104312 | title_snip='86 GHz Very Long Baseline Polarimetry of 3C273 and 3C279 with the
+  Co…' | abs_len= 737
+[17:42:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:03] select | verify strict 5/20
+[17:42:03] verify | func= Motivation | rank= 4 | pid= physics/0103029 | title_snip='The Inertial Polarization Principle: The Mechanism Underlying
+  Sonolu…' | abs_len= 1263
+[17:42:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:05] select | verify strict 6/20
+[17:42:05] verify | func= Motivation | rank= 17 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[17:42:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:08] select | verify strict 7/20
+[17:42:08] verify | func= Motivation | rank= 1 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[17:42:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:10] select | verify strict 8/20
+[17:42:10] verify | func= Motivation | rank= 3 | pid= cond-mat/0102414 | title_snip='Spin fluctuations in a magnetically frustrated metal, LiV2O4' | abs_len= 735
+[17:42:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:13] select | verify strict 9/20
+[17:42:13] verify | func= Motivation | rank= 7 | pid= nucl-th/0102026 | title_snip='Polarization observables in the reaction $p n \to d \phi$' | abs_len= 195
+[17:42:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:15] select | verify strict 10/20
+[17:42:15] verify | func= Motivation | rank= 8 | pid= astro-ph/0101368 | title_snip='Polarization of the Cosmic Microwave Background from Non-Uniform
+  Rei…' | abs_len= 1537
+[17:42:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:18] select | verify strict 11/20
+[17:42:18] verify | func= Motivation | rank= 9 | pid= hep-ex/0101010 | title_snip='Constraining CP-Violating TGCs and Measuring W-Polarization at OPAL' | abs_len= 430
+[17:42:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:20] select | verify strict 12/20
+[17:42:20] verify | func= Motivation | rank= 11 | pid= cond-mat/0102100 | title_snip='Ground-State Magnetization for Interacting Fermions in a Disordered
+  …' | abs_len= 1446
+[17:42:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:23] select | verify strict 13/20
+[17:42:23] verify | func= Motivation | rank= 18 | pid= cond-mat/0104540 | title_snip='Influence of quantum fluctuations on zero-temperature phase transition…' | abs_len= 906
+[17:42:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:26] select | verify strict 14/20
+[17:42:26] verify | func= Motivation | rank= 5 | pid= astro-ph/0101001 | title_snip='Polarized Microwave Radiation from Dust' | abs_len= 1125
+[17:42:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:28] select | verify strict 15/20
+[17:42:28] verify | func= Motivation | rank= 15 | pid= cond-mat/0102226 | title_snip='Theory of a magnetic microscope with nanometer resolution' | abs_len= 836
+[17:42:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:31] select | verify strict 16/20
+[17:42:31] verify | func= Motivation | rank= 6 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[17:42:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:33] select | verify strict 17/20
+[17:42:33] verify | func= Motivation | rank= 10 | pid= quant-ph/0104086 | title_snip='Delocalization border and onset of chaos in a model of quantum
+  compu…' | abs_len= 1220
+[17:42:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:36] select | verify strict 18/20
+[17:42:36] verify | func= Motivation | rank= 14 | pid= cond-mat/0101075 | title_snip='Evidence for Adiabatic Magnetization of cold Dy_N Clusters' | abs_len= 574
+[17:42:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:38] select | verify strict 19/20
+[17:42:38] verify | func= Motivation | rank= 19 | pid= quant-ph/0101055 | title_snip='Enhanced absorption Hanle effect on the Fg=F->Fe=F+1 closed transition…' | abs_len= 532
+[17:42:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:41] select | verify strict 20/20
+[17:42:41] verify | func= Motivation | rank= 16 | pid= astro-ph/0101063 | title_snip='Quasar Absorption Lines as a Function of Quasar Orientation Measures' | abs_len= 876
+[17:42:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the investigation of magnetic field fluctuations in the NGC 7538 region and how are the observations of polarization used to understand these fluctuations?
+- WINNER: astro-ph/0103334 | Submillimeter Imaging Polarimetry of the NGC 7538 Region
+- QUOTE : small scale fluctuations of the magnetic field
+- WHY   : sufficient
+- ANSWER: The investigation of magnetic field fluctuations in the NGC 7538 region is motivated by the observed differences in polarization between two prominent cores, suggesting varying evolutionary stages and magnetic field structures. The observations of polarization are used to understand these fluctuations, which are thought to have developed during the formation of substructures in the more evolved core (astro-ph/0103334).
+[17:42:49] main | running function= Uses
+[17:42:49] select | function= Uses | candidates_in= 20
+[17:42:49] select | core_terms= ['NGC 7538', 'magnetic field', 'polarization', 'fluctuations', 'NGC']
+[17:42:49] select | no cosine prune; kept=20/20
+[17:42:49] select | pool_size= 20 | ranks= [0, 2, 13, 12, 17, 1, 3, 4, 7, 8, 9, 11, 18, 5, 15, 6, 10, 14, 19, 16] | pids= ['astro-ph/0103334', 'astro-ph/0104360', 'astro-ph/0101325', 'astro-ph/0104312', 'astro-ph/0104366', 'astro-ph/0103048', 'cond-mat/0102414', 'physics/0103029', 'nucl-th/0102026', 'astro-ph/0101368', 'hep-ex/0101010', 'cond-mat/0102100', 'cond-mat/0104540', 'astro-ph/0101001', 'cond-mat/0102226', 'astro-ph/0102445', 'quant-ph/0104086', 'cond-mat/0101075', 'quant-ph/0101055', 'astro-ph/0101063']
+[17:42:49] select | verify strict 1/20
+[17:42:49] verify | func= Uses | rank= 0 | pid= astro-ph/0103334 | title_snip='Submillimeter Imaging Polarimetry of the NGC 7538 Region' | abs_len= 1603
+[17:42:52] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:42:52] select | verify strict 2/20
+[17:42:52] verify | func= Uses | rank= 2 | pid= astro-ph/0104360 | title_snip='Spectra of Maser Radiation from a Turbulent, Circumnuclear Accretion
+ …' | abs_len= 1208
+[17:42:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:55] select | verify strict 3/20
+[17:42:55] verify | func= Uses | rank= 13 | pid= astro-ph/0101325 | title_snip='Variability and polarization in the inner jet of 3C395' | abs_len= 916
+[17:42:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:42:57] select | verify strict 4/20
+[17:42:57] verify | func= Uses | rank= 12 | pid= astro-ph/0104312 | title_snip='86 GHz Very Long Baseline Polarimetry of 3C273 and 3C279 with the
+  Co…' | abs_len= 737
+[17:43:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:00] select | verify strict 5/20
+[17:43:00] verify | func= Uses | rank= 17 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[17:43:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:02] select | verify strict 6/20
+[17:43:02] verify | func= Uses | rank= 1 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[17:43:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:05] select | verify strict 7/20
+[17:43:05] verify | func= Uses | rank= 3 | pid= cond-mat/0102414 | title_snip='Spin fluctuations in a magnetically frustrated metal, LiV2O4' | abs_len= 735
+[17:43:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:08] select | verify strict 8/20
+[17:43:08] verify | func= Uses | rank= 4 | pid= physics/0103029 | title_snip='The Inertial Polarization Principle: The Mechanism Underlying
+  Sonolu…' | abs_len= 1263
+[17:43:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:10] select | verify strict 9/20
+[17:43:10] verify | func= Uses | rank= 7 | pid= nucl-th/0102026 | title_snip='Polarization observables in the reaction $p n \to d \phi$' | abs_len= 195
+[17:43:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:13] select | verify strict 10/20
+[17:43:13] verify | func= Uses | rank= 8 | pid= astro-ph/0101368 | title_snip='Polarization of the Cosmic Microwave Background from Non-Uniform
+  Rei…' | abs_len= 1537
+[17:43:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:15] select | verify strict 11/20
+[17:43:15] verify | func= Uses | rank= 9 | pid= hep-ex/0101010 | title_snip='Constraining CP-Violating TGCs and Measuring W-Polarization at OPAL' | abs_len= 430
+[17:43:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:18] select | verify strict 12/20
+[17:43:18] verify | func= Uses | rank= 11 | pid= cond-mat/0102100 | title_snip='Ground-State Magnetization for Interacting Fermions in a Disordered
+  …' | abs_len= 1446
+[17:43:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:20] select | verify strict 13/20
+[17:43:20] verify | func= Uses | rank= 18 | pid= cond-mat/0104540 | title_snip='Influence of quantum fluctuations on zero-temperature phase transition…' | abs_len= 906
+[17:43:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:23] select | verify strict 14/20
+[17:43:23] verify | func= Uses | rank= 5 | pid= astro-ph/0101001 | title_snip='Polarized Microwave Radiation from Dust' | abs_len= 1125
+[17:43:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:25] select | verify strict 15/20
+[17:43:25] verify | func= Uses | rank= 15 | pid= cond-mat/0102226 | title_snip='Theory of a magnetic microscope with nanometer resolution' | abs_len= 836
+[17:43:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:28] select | verify strict 16/20
+[17:43:28] verify | func= Uses | rank= 6 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[17:43:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:30] select | verify strict 17/20
+[17:43:30] verify | func= Uses | rank= 10 | pid= quant-ph/0104086 | title_snip='Delocalization border and onset of chaos in a model of quantum
+  compu…' | abs_len= 1220
+[17:43:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:33] select | verify strict 18/20
+[17:43:33] verify | func= Uses | rank= 14 | pid= cond-mat/0101075 | title_snip='Evidence for Adiabatic Magnetization of cold Dy_N Clusters' | abs_len= 574
+[17:43:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:35] select | verify strict 19/20
+[17:43:35] verify | func= Uses | rank= 19 | pid= quant-ph/0101055 | title_snip='Enhanced absorption Hanle effect on the Fg=F->Fe=F+1 closed transition…' | abs_len= 532
+[17:43:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:43:38] select | verify strict 20/20
+[17:43:38] verify | func= Uses | rank= 16 | pid= astro-ph/0101063 | title_snip='Quasar Absorption Lines as a Function of Quasar Orientation Measures' | abs_len= 876
+[17:43:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : What motivates the investigation of magnetic field fluctuations in the NGC 7538 region and how are the observations of polarization used to understand these fluctuations?
+- WINNER: astro-ph/0103334 | Submillimeter Imaging Polarimetry of the NGC 7538 Region
+- QUOTE : polarization map is interpreted in terms of thermal radiation by magnetically aligned dust grains
+- WHY   : sufficient
+- ANSWER: The SCUBA Polarimeter is used to obtain imaging polarimetry of the 0.85mm continuum emission in the NGC 7538 region to understand magnetic field fluctuations. The observations of polarization are used to interpret thermal radiation by magnetically aligned dust grains and derive the distribution of magnetic field directions (astro-ph/0103334).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

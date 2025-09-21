@@ -1,0 +1,463 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query explicitly asks how the current work builds on (extends) and how it is evaluated against (compares) existing theories."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.73 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 8it [00:00, 79.66it/s]
+Reading arXiv_src_0101_001.jsonl: 143it [00:00, 819.12it/s]
+Reading arXiv_src_0101_001.jsonl: 287it [00:00, 1100.97it/s]
+Reading arXiv_src_0101_001.jsonl: 398it [00:00, 953.80it/s] 
+Reading arXiv_src_0101_001.jsonl: 496it [00:00, 689.61it/s]
+Reading arXiv_src_0101_001.jsonl: 575it [00:00, 630.89it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:01, 574.06it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 668.18it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 770.13it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 858.86it/s]
+Reading arXiv_src_0101_001.jsonl: 1104it [00:01, 914.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1237it [00:01, 1026.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1346it [00:01, 1034.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1482it [00:01, 1126.96it/s]
+Reading arXiv_src_0101_001.jsonl: 1615it [00:01, 1183.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1745it [00:01, 1216.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1869it [00:02, 1186.11it/s]
+Reading arXiv_src_0101_001.jsonl: 2053it [00:02, 1375.01it/s]
+Reading arXiv_src_0101_001.jsonl: 2209it [00:02, 1427.75it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1003.83it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1324.17it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1363.72it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 845.03it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 501.58it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 538.91it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 600.61it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 728.43it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 869.35it/s]
+Reading arXiv_src_0102_001.jsonl: 1035it [00:01, 930.89it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 992.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1260it [00:01, 1012.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1406it [00:01, 1138.45it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1186.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1223.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1823it [00:01, 1300.79it/s]
+Reading arXiv_src_0102_001.jsonl: 1976it [00:02, 1367.96it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1399.53it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1004.99it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1373.21it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1531.76it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1126.94it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 726.59it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 791.79it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 821.49it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 887.19it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 950.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1106it [00:01, 985.83it/s]
+Reading arXiv_src_0103_001.jsonl: 1224it [00:01, 1037.37it/s]
+Reading arXiv_src_0103_001.jsonl: 1333it [00:01, 1048.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1478it [00:01, 1163.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1613it [00:01, 1215.46it/s]
+Reading arXiv_src_0103_001.jsonl: 1759it [00:01, 1283.20it/s]
+Reading arXiv_src_0103_001.jsonl: 1906it [00:01, 1337.94it/s]
+Reading arXiv_src_0103_001.jsonl: 2046it [00:01, 1356.00it/s]
+Reading arXiv_src_0103_001.jsonl: 2183it [00:01, 1356.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2338it [00:02, 1412.60it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1141.69it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:01,  1.57s/it]
+Reading arXiv_src_0104_001.jsonl: 87it [00:01, 72.32it/s]
+Reading arXiv_src_0104_001.jsonl: 247it [00:01, 234.92it/s]
+Reading arXiv_src_0104_001.jsonl: 377it [00:01, 375.11it/s]
+Reading arXiv_src_0104_001.jsonl: 489it [00:02, 408.75it/s]
+Reading arXiv_src_0104_001.jsonl: 578it [00:02, 356.82it/s]
+Reading arXiv_src_0104_001.jsonl: 675it [00:02, 443.71it/s]
+Reading arXiv_src_0104_001.jsonl: 769it [00:02, 526.13it/s]
+Reading arXiv_src_0104_001.jsonl: 867it [00:02, 613.91it/s]
+Reading arXiv_src_0104_001.jsonl: 989it [00:02, 744.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1104it [00:02, 840.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1222it [00:03, 919.25it/s]
+Reading arXiv_src_0104_001.jsonl: 1329it [00:03, 955.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1465it [00:03, 1059.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1607it [00:03, 1151.19it/s]
+Reading arXiv_src_0104_001.jsonl: 1733it [00:03, 1180.76it/s]
+Reading arXiv_src_0104_001.jsonl: 1877it [00:03, 1254.92it/s]
+Reading arXiv_src_0104_001.jsonl: 2030it [00:03, 1330.87it/s]
+Reading arXiv_src_0104_001.jsonl: 2166it [00:03, 920.22it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:03, 578.23it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work extend and compare with existing theories on massless fields and helicity representations?
+[debug] classifier labels: ['Extends', 'Compares']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:10:49.452019    Extends, Compares
+1     1  0.985341  ...  2025-09-21T21:10:49.452019    Extends, Compares
+2     2  0.977207  ...  2025-09-21T21:10:49.452019    Extends, Compares
+3     3  0.950011  ...  2025-09-21T21:10:49.452019    Extends, Compares
+4     4  0.791343  ...  2025-09-21T21:10:49.452019    Extends, Compares
+5     5  0.735321  ...  2025-09-21T21:10:49.452019    Extends, Compares
+6     6  0.664915  ...  2025-09-21T21:10:49.452019    Extends, Compares
+7     7  0.646958  ...  2025-09-21T21:10:49.452019    Extends, Compares
+8     8  0.570225  ...  2025-09-21T21:10:49.452019    Extends, Compares
+9     9  0.484004  ...  2025-09-21T21:10:49.452019    Extends, Compares
+
+[10 rows x 12 columns]
+[23:10:55] main | args: Namespace(max_check=20, debug=True)
+[23:10:55] read_last_jsonl | path= classified_outputs.jsonl
+[23:10:55] read_last_jsonl | total_lines= 1
+[23:10:55] main | query='How does the current work extend and compare with existing theories on massless fields and helicity representations?' | funcs=['Extends', 'Compares']
+[23:10:57] main | core_terms= ['massless fields', 'helicity representations']
+[23:10:57] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:10:57] load_topk_jsonl | rows= 20
+[23:10:57] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0101216 title_snip='Discrete Noncommutative Gauge Theory' abs_len= 998
+[23:10:57] main | running function= Extends
+[23:10:57] select | function= Extends | candidates_in= 20
+[23:10:57] select | core_terms= ['massless fields', 'helicity representations']
+[23:10:57] select | no cosine prune; kept=20/20
+[23:10:57] select | pool_size= 20 | ranks= [5, 12, 19, 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18] | pids= ['hep-ph/0104197', 'hep-ph/0102019', 'gr-qc/0103017', 'hep-th/0101216', 'hep-th/0102041', 'hep-th/0103228', 'hep-th/0101190', 'hep-th/0103209', 'hep-ph/0102103', 'hep-ph/0103299', 'physics/0101039', 'nucl-th/0101009', 'physics/0102078', 'hep-ph/0102056', 'quant-ph/0101091', 'hep-ph/0102096', 'hep-th/0103198', 'hep-th/0103112', 'hep-ph/0101244', 'hep-th/0102116']
+[23:10:57] select | verify strict 1/20
+[23:10:57] verify | func= Extends | rank= 5 | pid= hep-ph/0104197 | title_snip='Effective field theory and the quark model, II. Structure of loop
+  co…' | abs_len= 1238
+[23:11:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:00] select | verify strict 2/20
+[23:11:00] verify | func= Extends | rank= 12 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[23:11:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:11:03] select | verify strict 3/20
+[23:11:03] verify | func= Extends | rank= 19 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[23:11:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:05] select | verify strict 4/20
+[23:11:05] verify | func= Extends | rank= 0 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[23:11:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:08] select | verify strict 5/20
+[23:11:08] verify | func= Extends | rank= 1 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[23:11:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:10] select | verify strict 6/20
+[23:11:10] verify | func= Extends | rank= 2 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[23:11:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:13] select | verify strict 7/20
+[23:11:13] verify | func= Extends | rank= 3 | pid= hep-th/0101190 | title_snip='Fractional helicity, Lorentz symmetry breaking, compactification and
+ …' | abs_len= 1182
+[23:11:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:11:16] select | verify strict 8/20
+[23:11:16] verify | func= Extends | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[23:11:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:19] select | verify strict 9/20
+[23:11:19] verify | func= Extends | rank= 6 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[23:11:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:21] select | verify strict 10/20
+[23:11:21] verify | func= Extends | rank= 7 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:11:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:24] select | verify strict 11/20
+[23:11:24] verify | func= Extends | rank= 8 | pid= physics/0101039 | title_snip='Reductionism, Emergence, and Effective Field Theories' | abs_len= 505
+[23:11:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:26] select | verify strict 12/20
+[23:11:26] verify | func= Extends | rank= 9 | pid= nucl-th/0101009 | title_snip='New Forms of Deuteron Equations and Wave Function Representations' | abs_len= 620
+[23:11:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:29] select | verify strict 13/20
+[23:11:29] verify | func= Extends | rank= 10 | pid= physics/0102078 | title_snip='Fuzzy, Non Commutative SpaceTime: A New Paradigm for a New Century' | abs_len= 764
+[23:11:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:31] select | verify strict 14/20
+[23:11:31] verify | func= Extends | rank= 11 | pid= hep-ph/0102056 | title_snip='Fundamental Forces as Gauge Theories' | abs_len= 816
+[23:11:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:11:34] select | verify strict 15/20
+[23:11:34] verify | func= Extends | rank= 13 | pid= quant-ph/0101091 | title_snip='Masses and fields in Microdynamics: a possible foundation for dynamic
+…' | abs_len= 604
+[23:11:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:37] select | verify strict 16/20
+[23:11:37] verify | func= Extends | rank= 14 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:11:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:39] select | verify strict 17/20
+[23:11:39] verify | func= Extends | rank= 15 | pid= hep-th/0103198 | title_snip='Partial Masslessness of Higher Spins in (A)dS' | abs_len= 1412
+[23:11:42] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:11:42] select | verify strict 18/20
+[23:11:42] verify | func= Extends | rank= 16 | pid= hep-th/0103112 | title_snip='(Non-)perturbative tests of the AdS/CFT correspondence' | abs_len= 598
+[23:11:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:45] select | verify strict 19/20
+[23:11:45] verify | func= Extends | rank= 17 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[23:11:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:47] select | verify strict 20/20
+[23:11:47] verify | func= Extends | rank= 18 | pid= hep-th/0102116 | title_snip='Hamiltonian BRST interactions in Abelian theories' | abs_len= 336
+[23:11:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:50] select | strict pass found 0 winners → trying relaxed
+[23:11:50] select | verify relaxed 1/20
+[23:11:50] verify | func= Extends | rank= 5 | pid= hep-ph/0104197 | title_snip='Effective field theory and the quark model, II. Structure of loop
+  co…' | abs_len= 1238
+[23:11:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:52] select | verify relaxed 2/20
+[23:11:52] verify | func= Extends | rank= 12 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[23:11:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:11:55] select | verify relaxed 3/20
+[23:11:55] verify | func= Extends | rank= 19 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[23:11:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:11:58] select | verify relaxed 4/20
+[23:11:58] verify | func= Extends | rank= 0 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[23:12:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:00] select | verify relaxed 5/20
+[23:12:00] verify | func= Extends | rank= 1 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[23:12:04] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:12:04] select | verify relaxed 6/20
+[23:12:04] verify | func= Extends | rank= 2 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[23:12:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:12:06] select | verify relaxed 7/20
+[23:12:06] verify | func= Extends | rank= 3 | pid= hep-th/0101190 | title_snip='Fractional helicity, Lorentz symmetry breaking, compactification and
+ …' | abs_len= 1182
+[23:12:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:12:10] select | verify relaxed 8/20
+[23:12:10] verify | func= Extends | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[23:12:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:12:13] select | verify relaxed 9/20
+[23:12:13] verify | func= Extends | rank= 6 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[23:12:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:16] select | verify relaxed 10/20
+[23:12:16] verify | func= Extends | rank= 7 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:12:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:18] select | verify relaxed 11/20
+[23:12:18] verify | func= Extends | rank= 8 | pid= physics/0101039 | title_snip='Reductionism, Emergence, and Effective Field Theories' | abs_len= 505
+[23:12:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:21] select | verify relaxed 12/20
+[23:12:21] verify | func= Extends | rank= 9 | pid= nucl-th/0101009 | title_snip='New Forms of Deuteron Equations and Wave Function Representations' | abs_len= 620
+[23:12:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:12:24] select | verify relaxed 13/20
+[23:12:24] verify | func= Extends | rank= 10 | pid= physics/0102078 | title_snip='Fuzzy, Non Commutative SpaceTime: A New Paradigm for a New Century' | abs_len= 764
+[23:12:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:27] select | verify relaxed 14/20
+[23:12:27] verify | func= Extends | rank= 11 | pid= hep-ph/0102056 | title_snip='Fundamental Forces as Gauge Theories' | abs_len= 816
+[23:12:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:12:30] select | verify relaxed 15/20
+[23:12:30] verify | func= Extends | rank= 13 | pid= quant-ph/0101091 | title_snip='Masses and fields in Microdynamics: a possible foundation for dynamic
+…' | abs_len= 604
+[23:12:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:12:33] select | verify relaxed 16/20
+[23:12:33] verify | func= Extends | rank= 14 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:12:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:35] select | verify relaxed 17/20
+[23:12:35] verify | func= Extends | rank= 15 | pid= hep-th/0103198 | title_snip='Partial Masslessness of Higher Spins in (A)dS' | abs_len= 1412
+[23:12:39] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:12:39] select | verify relaxed 18/20
+[23:12:39] verify | func= Extends | rank= 16 | pid= hep-th/0103112 | title_snip='(Non-)perturbative tests of the AdS/CFT correspondence' | abs_len= 598
+[23:12:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:12:42] select | verify relaxed 19/20
+[23:12:42] verify | func= Extends | rank= 17 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[23:12:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:44] select | verify relaxed 20/20
+[23:12:44] verify | func= Extends | rank= 18 | pid= hep-th/0102116 | title_snip='Hamiltonian BRST interactions in Abelian theories' | abs_len= 336
+[23:12:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work extend and compare with existing theories on massless fields and helicity representations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Extends.
+[23:12:47] main | running function= Compares
+[23:12:47] select | function= Compares | candidates_in= 20
+[23:12:47] select | core_terms= ['massless fields', 'helicity representations']
+[23:12:47] select | no cosine prune; kept=20/20
+[23:12:47] select | pool_size= 20 | ranks= [2, 3, 6, 14, 19, 0, 1, 4, 5, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18] | pids= ['hep-th/0103228', 'hep-th/0101190', 'hep-ph/0102103', 'hep-ph/0102096', 'gr-qc/0103017', 'hep-th/0101216', 'hep-th/0102041', 'hep-th/0103209', 'hep-ph/0104197', 'hep-ph/0103299', 'physics/0101039', 'nucl-th/0101009', 'physics/0102078', 'hep-ph/0102056', 'hep-ph/0102019', 'quant-ph/0101091', 'hep-th/0103198', 'hep-th/0103112', 'hep-ph/0101244', 'hep-th/0102116']
+[23:12:47] select | verify strict 1/20
+[23:12:47] verify | func= Compares | rank= 2 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[23:12:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:50] select | verify strict 2/20
+[23:12:50] verify | func= Compares | rank= 3 | pid= hep-th/0101190 | title_snip='Fractional helicity, Lorentz symmetry breaking, compactification and
+ …' | abs_len= 1182
+[23:12:53] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:12:53] select | verify strict 3/20
+[23:12:53] verify | func= Compares | rank= 6 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[23:12:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:56] select | verify strict 4/20
+[23:12:56] verify | func= Compares | rank= 14 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:12:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:12:58] select | verify strict 5/20
+[23:12:58] verify | func= Compares | rank= 19 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[23:13:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:01] select | verify strict 6/20
+[23:13:01] verify | func= Compares | rank= 0 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[23:13:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:03] select | verify strict 7/20
+[23:13:03] verify | func= Compares | rank= 1 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[23:13:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:06] select | verify strict 8/20
+[23:13:06] verify | func= Compares | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[23:13:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:08] select | verify strict 9/20
+[23:13:08] verify | func= Compares | rank= 5 | pid= hep-ph/0104197 | title_snip='Effective field theory and the quark model, II. Structure of loop
+  co…' | abs_len= 1238
+[23:13:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:11] select | verify strict 10/20
+[23:13:11] verify | func= Compares | rank= 7 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:13:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:13] select | verify strict 11/20
+[23:13:13] verify | func= Compares | rank= 8 | pid= physics/0101039 | title_snip='Reductionism, Emergence, and Effective Field Theories' | abs_len= 505
+[23:13:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:16] select | verify strict 12/20
+[23:13:16] verify | func= Compares | rank= 9 | pid= nucl-th/0101009 | title_snip='New Forms of Deuteron Equations and Wave Function Representations' | abs_len= 620
+[23:13:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:13:19] select | verify strict 13/20
+[23:13:19] verify | func= Compares | rank= 10 | pid= physics/0102078 | title_snip='Fuzzy, Non Commutative SpaceTime: A New Paradigm for a New Century' | abs_len= 764
+[23:13:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:22] select | verify strict 14/20
+[23:13:22] verify | func= Compares | rank= 11 | pid= hep-ph/0102056 | title_snip='Fundamental Forces as Gauge Theories' | abs_len= 816
+[23:13:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:13:25] select | verify strict 15/20
+[23:13:25] verify | func= Compares | rank= 12 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[23:13:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:27] select | verify strict 16/20
+[23:13:27] verify | func= Compares | rank= 13 | pid= quant-ph/0101091 | title_snip='Masses and fields in Microdynamics: a possible foundation for dynamic
+…' | abs_len= 604
+[23:13:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:30] select | verify strict 17/20
+[23:13:30] verify | func= Compares | rank= 15 | pid= hep-th/0103198 | title_snip='Partial Masslessness of Higher Spins in (A)dS' | abs_len= 1412
+[23:13:33] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:13:33] select | verify strict 18/20
+[23:13:33] verify | func= Compares | rank= 16 | pid= hep-th/0103112 | title_snip='(Non-)perturbative tests of the AdS/CFT correspondence' | abs_len= 598
+[23:13:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:36] select | verify strict 19/20
+[23:13:36] verify | func= Compares | rank= 17 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[23:13:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:38] select | verify strict 20/20
+[23:13:38] verify | func= Compares | rank= 18 | pid= hep-th/0102116 | title_snip='Hamiltonian BRST interactions in Abelian theories' | abs_len= 336
+[23:13:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:41] select | strict pass found 0 winners → trying relaxed
+[23:13:41] select | verify relaxed 1/20
+[23:13:41] verify | func= Compares | rank= 2 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[23:13:44] verify | result supports= False fit= 0.00 top= 0.70 invalid= off_topic_no_core_in_abstract cue_hint= True
+[23:13:44] select | verify relaxed 2/20
+[23:13:44] verify | func= Compares | rank= 3 | pid= hep-th/0101190 | title_snip='Fractional helicity, Lorentz symmetry breaking, compactification and
+ …' | abs_len= 1182
+[23:13:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:13:47] select | verify relaxed 3/20
+[23:13:47] verify | func= Compares | rank= 6 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[23:13:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:13:50] select | verify relaxed 4/20
+[23:13:50] verify | func= Compares | rank= 14 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:13:53] verify | result supports= False fit= 0.00 top= 0.60 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:13:53] select | verify relaxed 5/20
+[23:13:53] verify | func= Compares | rank= 19 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[23:13:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:13:56] select | verify relaxed 6/20
+[23:13:56] verify | func= Compares | rank= 0 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[23:13:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:13:59] select | verify relaxed 7/20
+[23:13:59] verify | func= Compares | rank= 1 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[23:14:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:14:02] select | verify relaxed 8/20
+[23:14:02] verify | func= Compares | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[23:14:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:14:05] select | verify relaxed 9/20
+[23:14:05] verify | func= Compares | rank= 5 | pid= hep-ph/0104197 | title_snip='Effective field theory and the quark model, II. Structure of loop
+  co…' | abs_len= 1238
+[23:14:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:14:08] select | verify relaxed 10/20
+[23:14:08] verify | func= Compares | rank= 7 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:14:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:14:10] select | verify relaxed 11/20
+[23:14:10] verify | func= Compares | rank= 8 | pid= physics/0101039 | title_snip='Reductionism, Emergence, and Effective Field Theories' | abs_len= 505
+[23:14:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:14:12] select | verify relaxed 12/20
+[23:14:12] verify | func= Compares | rank= 9 | pid= nucl-th/0101009 | title_snip='New Forms of Deuteron Equations and Wave Function Representations' | abs_len= 620
+[23:14:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:14:16] select | verify relaxed 13/20
+[23:14:16] verify | func= Compares | rank= 10 | pid= physics/0102078 | title_snip='Fuzzy, Non Commutative SpaceTime: A New Paradigm for a New Century' | abs_len= 764
+[23:14:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:14:18] select | verify relaxed 14/20
+[23:14:18] verify | func= Compares | rank= 11 | pid= hep-ph/0102056 | title_snip='Fundamental Forces as Gauge Theories' | abs_len= 816
+[23:14:21] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:14:21] select | verify relaxed 15/20
+[23:14:21] verify | func= Compares | rank= 12 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[23:14:24] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:14:24] select | verify relaxed 16/20
+[23:14:24] verify | func= Compares | rank= 13 | pid= quant-ph/0101091 | title_snip='Masses and fields in Microdynamics: a possible foundation for dynamic
+…' | abs_len= 604
+[23:14:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:14:27] select | verify relaxed 17/20
+[23:14:27] verify | func= Compares | rank= 15 | pid= hep-th/0103198 | title_snip='Partial Masslessness of Higher Spins in (A)dS' | abs_len= 1412
+[23:14:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:14:31] select | verify relaxed 18/20
+[23:14:31] verify | func= Compares | rank= 16 | pid= hep-th/0103112 | title_snip='(Non-)perturbative tests of the AdS/CFT correspondence' | abs_len= 598
+[23:14:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:14:35] select | verify relaxed 19/20
+[23:14:35] verify | func= Compares | rank= 17 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[23:14:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:14:38] select | verify relaxed 20/20
+[23:14:38] verify | func= Compares | rank= 18 | pid= hep-th/0102116 | title_snip='Hamiltonian BRST interactions in Abelian theories' | abs_len= 336
+[23:14:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work extend and compare with existing theories on massless fields and helicity representations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

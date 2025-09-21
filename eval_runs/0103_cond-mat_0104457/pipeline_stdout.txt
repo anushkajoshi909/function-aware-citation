@@ -1,0 +1,347 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query requests foundational information about Migdal\u2011Eliashberg theory (Background) and explicitly asks how that background points to the need for further research and generalization (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.83 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.30it/s]
+Reading arXiv_src_0101_001.jsonl: 25it [00:00, 78.82it/s]
+Reading arXiv_src_0101_001.jsonl: 167it [00:00, 498.65it/s]
+Reading arXiv_src_0101_001.jsonl: 296it [00:00, 742.86it/s]
+Reading arXiv_src_0101_001.jsonl: 391it [00:00, 798.23it/s]
+Reading arXiv_src_0101_001.jsonl: 485it [00:00, 610.75it/s]
+Reading arXiv_src_0101_001.jsonl: 562it [00:01, 558.21it/s]
+Reading arXiv_src_0101_001.jsonl: 667it [00:01, 669.74it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 752.06it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 839.07it/s]
+Reading arXiv_src_0101_001.jsonl: 996it [00:01, 913.56it/s]
+Reading arXiv_src_0101_001.jsonl: 1101it [00:01, 950.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1229it [00:01, 1040.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1338it [00:01, 1038.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1469it [00:01, 1116.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1592it [00:02, 1149.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1724it [00:02, 1198.99it/s]
+Reading arXiv_src_0101_001.jsonl: 1846it [00:02, 1165.23it/s]
+Reading arXiv_src_0101_001.jsonl: 2017it [00:02, 1318.16it/s]
+Reading arXiv_src_0101_001.jsonl: 2176it [00:02, 1396.98it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 917.30it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 131it [00:00, 1309.90it/s]
+Reading arXiv_src_0102_001.jsonl: 264it [00:00, 1320.39it/s]
+Reading arXiv_src_0102_001.jsonl: 397it [00:00, 858.51it/s] 
+Reading arXiv_src_0102_001.jsonl: 497it [00:00, 507.54it/s]
+Reading arXiv_src_0102_001.jsonl: 585it [00:00, 574.02it/s]
+Reading arXiv_src_0102_001.jsonl: 661it [00:00, 597.83it/s]
+Reading arXiv_src_0102_001.jsonl: 773it [00:01, 717.47it/s]
+Reading arXiv_src_0102_001.jsonl: 899it [00:01, 850.53it/s]
+Reading arXiv_src_0102_001.jsonl: 1004it [00:01, 899.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1119it [00:01, 965.54it/s]
+Reading arXiv_src_0102_001.jsonl: 1224it [00:01, 983.89it/s]
+Reading arXiv_src_0102_001.jsonl: 1369it [00:01, 1115.73it/s]
+Reading arXiv_src_0102_001.jsonl: 1507it [00:01, 1191.22it/s]
+Reading arXiv_src_0102_001.jsonl: 1630it [00:01, 1195.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1776it [00:01, 1272.31it/s]
+Reading arXiv_src_0102_001.jsonl: 1928it [00:02, 1343.00it/s]
+Reading arXiv_src_0102_001.jsonl: 2073it [00:02, 1368.32it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1004.67it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  6.16it/s]
+Reading arXiv_src_0103_001.jsonl: 25it [00:00, 115.57it/s]
+Reading arXiv_src_0103_001.jsonl: 164it [00:00, 626.03it/s]
+Reading arXiv_src_0103_001.jsonl: 310it [00:00, 929.54it/s]
+Reading arXiv_src_0103_001.jsonl: 416it [00:00, 972.18it/s]
+Reading arXiv_src_0103_001.jsonl: 519it [00:00, 662.62it/s]
+Reading arXiv_src_0103_001.jsonl: 601it [00:00, 629.42it/s]
+Reading arXiv_src_0103_001.jsonl: 696it [00:01, 703.75it/s]
+Reading arXiv_src_0103_001.jsonl: 782it [00:01, 741.29it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:01, 816.44it/s]
+Reading arXiv_src_0103_001.jsonl: 996it [00:01, 896.37it/s]
+Reading arXiv_src_0103_001.jsonl: 1095it [00:01, 920.88it/s]
+Reading arXiv_src_0103_001.jsonl: 1210it [00:01, 986.08it/s]
+Reading arXiv_src_0103_001.jsonl: 1312it [00:01, 992.84it/s]
+Reading arXiv_src_0103_001.jsonl: 1446it [00:01, 1094.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1586it [00:01, 1164.61it/s]
+Reading arXiv_src_0103_001.jsonl: 1730it [00:01, 1243.02it/s]
+Reading arXiv_src_0103_001.jsonl: 1872it [00:02, 1292.70it/s]
+Reading arXiv_src_0103_001.jsonl: 2003it [00:02, 1283.27it/s]
+Reading arXiv_src_0103_001.jsonl: 2147it [00:02, 1329.13it/s]
+Reading arXiv_src_0103_001.jsonl: 2288it [00:02, 1348.60it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 987.37it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  3.42it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  5.49it/s]
+Reading arXiv_src_0104_001.jsonl: 143it [00:00, 448.47it/s]
+Reading arXiv_src_0104_001.jsonl: 298it [00:00, 790.37it/s]
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 867.80it/s]
+Reading arXiv_src_0104_001.jsonl: 507it [00:00, 653.97it/s]
+Reading arXiv_src_0104_001.jsonl: 589it [00:01, 448.37it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 553.86it/s]
+Reading arXiv_src_0104_001.jsonl: 783it [00:01, 623.94it/s]
+Reading arXiv_src_0104_001.jsonl: 885it [00:01, 710.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 819.58it/s]
+Reading arXiv_src_0104_001.jsonl: 1116it [00:01, 903.39it/s]
+Reading arXiv_src_0104_001.jsonl: 1224it [00:01, 950.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1328it [00:01, 969.57it/s]
+Reading arXiv_src_0104_001.jsonl: 1461it [00:02, 1066.52it/s]
+Reading arXiv_src_0104_001.jsonl: 1592it [00:02, 1136.22it/s]
+Reading arXiv_src_0104_001.jsonl: 1712it [00:02, 1151.64it/s]
+Reading arXiv_src_0104_001.jsonl: 1857it [00:02, 1238.41it/s]
+Reading arXiv_src_0104_001.jsonl: 2009it [00:02, 1317.62it/s]
+Reading arXiv_src_0104_001.jsonl: 2143it [00:02, 917.39it/s] 
+Reading arXiv_src_0104_001.jsonl: 2292it [00:02, 1045.93it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 814.90it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What background information on the Migdal-Eliashberg theory suggests a need for future work in generalizing the theory of superconductivity?
+[debug] classifier labels: ['Background', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+1     1  0.534095  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+2     2  0.515072  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+3     3  0.398495  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+4     4  0.227571  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+5     5  0.224129  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+6     6  0.189788  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+7     7  0.171697  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+8     8  0.171495  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+9     9  0.166264  ...  2025-09-21T17:33:14.257012  Background, FutureWork
+
+[10 rows x 12 columns]
+[19:33:19] main | args: Namespace(max_check=20, debug=True)
+[19:33:19] read_last_jsonl | path= classified_outputs.jsonl
+[19:33:19] read_last_jsonl | total_lines= 1
+[19:33:19] main | query='What background information on the Migdal-Eliashberg theory suggests a need for future work in generalizing the theory of superconductivity?' | funcs=['Background', 'FutureWork']
+[19:33:20] main | core_terms= ['Migdal-Eliashberg theory', 'superconductivity', 'Migdal-Eliashberg']
+[19:33:20] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:33:20] load_topk_jsonl | rows= 20
+[19:33:20] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0104457 title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' abs_len= 1338
+[19:33:20] main | running function= Background
+[19:33:20] select | function= Background | candidates_in= 20
+[19:33:20] select | core_terms= ['Migdal-Eliashberg theory', 'superconductivity', 'Migdal-Eliashberg']
+[19:33:20] select | no cosine prune; kept=20/20
+[19:33:20] select | pool_size= 20 | ranks= [0, 1, 16, 9, 10, 2, 5, 8, 15, 12, 19, 4, 7, 13, 14, 17, 3, 6, 11, 18] | pids= ['cond-mat/0104457', 'cond-mat/0102189', 'cond-mat/0104097', 'cond-mat/0104519', 'cond-mat/0101203', 'cond-mat/0101258', 'cond-mat/0102456', 'cond-mat/0102136', 'cond-mat/0102281', 'cond-mat/0103154', 'cond-mat/0102422', 'cond-mat/0104502', 'cond-mat/0101080', 'cond-mat/0102143', 'hep-ph/0103092', 'hep-th/0103228', 'cond-mat/0103518', 'cond-mat/0102111', 'cond-mat/0104544', 'physics/0103076']
+[19:33:20] select | verify strict 1/20
+[19:33:20] verify | func= Background | rank= 0 | pid= cond-mat/0104457 | title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' | abs_len= 1338
+[19:33:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:33:24] select | verify strict 2/20
+[19:33:24] verify | func= Background | rank= 1 | pid= cond-mat/0102189 | title_snip='Breakdown of the Migdal-Eliashberg theory in the strong-coupling
+  adi…' | abs_len= 903
+[19:33:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:33:27] select | verify strict 3/20
+[19:33:27] verify | func= Background | rank= 16 | pid= cond-mat/0104097 | title_snip='Superconductivity near Itinerant Ferromagnetic Quantum Criticality' | abs_len= 789
+[19:33:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:33:30] select | verify strict 4/20
+[19:33:30] verify | func= Background | rank= 9 | pid= cond-mat/0104519 | title_snip='Bond operator theory of doped antiferromagnets: from Mott insulators
+ …' | abs_len= 1454
+[19:33:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:33] select | verify strict 5/20
+[19:33:33] verify | func= Background | rank= 10 | pid= cond-mat/0101203 | title_snip='Quasiclassical description of transport through superconducting contac…' | abs_len= 1460
+[19:33:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:35] select | verify strict 6/20
+[19:33:35] verify | func= Background | rank= 2 | pid= cond-mat/0101258 | title_snip='To Phenomenological Theory of Superconductivity. Superconductivity - n…' | abs_len= 574
+[19:33:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:33:38] select | verify strict 7/20
+[19:33:38] verify | func= Background | rank= 5 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[19:33:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:41] select | verify strict 8/20
+[19:33:41] verify | func= Background | rank= 8 | pid= cond-mat/0102136 | title_snip='Superconductivity from Hole Undressing' | abs_len= 1264
+[19:33:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:43] select | verify strict 9/20
+[19:33:43] verify | func= Background | rank= 15 | pid= cond-mat/0102281 | title_snip='Stripes, Vibrations and Superconductivity' | abs_len= 999
+[19:33:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:46] select | verify strict 10/20
+[19:33:46] verify | func= Background | rank= 12 | pid= cond-mat/0103154 | title_snip='The upper critical field problem in MgB2' | abs_len= 667
+[19:33:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:49] select | verify strict 11/20
+[19:33:49] verify | func= Background | rank= 19 | pid= cond-mat/0102422 | title_snip='Metal-insulator crossover in superconducting cuprates in strong magnet…' | abs_len= 719
+[19:33:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:51] select | verify strict 12/20
+[19:33:51] verify | func= Background | rank= 4 | pid= cond-mat/0104502 | title_snip='Application of the scattering rate sum-rule to the interplane optical
+…' | abs_len= 543
+[19:33:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:54] select | verify strict 13/20
+[19:33:54] verify | func= Background | rank= 7 | pid= cond-mat/0101080 | title_snip='Superconductors with Magnetic Impurities: Instantons and Sub-gap State…' | abs_len= 1453
+[19:33:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:56] select | verify strict 14/20
+[19:33:56] verify | func= Background | rank= 13 | pid= cond-mat/0102143 | title_snip='Spontaneous Hall effect in chiral p-wave superconductor' | abs_len= 1387
+[19:33:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:33:59] select | verify strict 15/20
+[19:33:59] verify | func= Background | rank= 14 | pid= hep-ph/0103092 | title_snip='Transport theory for a two-flavor color superconductor' | abs_len= 973
+[19:34:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:02] select | verify strict 16/20
+[19:34:02] verify | func= Background | rank= 17 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[19:34:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:04] select | verify strict 17/20
+[19:34:04] verify | func= Background | rank= 3 | pid= cond-mat/0103518 | title_snip='Calculation of Dip Features in the SIS Conductance of D-Wave
+  Superco…' | abs_len= 407
+[19:34:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:34:07] select | verify strict 18/20
+[19:34:07] verify | func= Background | rank= 6 | pid= cond-mat/0102111 | title_snip='Pseudogap in High - Temperature Superconductors' | abs_len= 918
+[19:34:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:10] select | verify strict 19/20
+[19:34:10] verify | func= Background | rank= 11 | pid= cond-mat/0104544 | title_snip='Asymmetric Primitive-Model Electrolytes: Debye-Huckel Theory,
+  Critic…' | abs_len= 1192
+[19:34:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:12] select | verify strict 20/20
+[19:34:12] verify | func= Background | rank= 18 | pid= physics/0103076 | title_snip='Complexity Through Nonextensivity' | abs_len= 1128
+[19:34:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What background information on the Migdal-Eliashberg theory suggests a need for future work in generalizing the theory of superconductivity?
+- WINNER: cond-mat/0104457 | Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashberg
+  theory
+- QUOTE : Migdal-Eliashberg theory
+- WHY   : sufficient
+- ANSWER: The Migdal-Eliashberg theory has limitations, as evidenced by its incompatibility with experimental data of Rb$_3$C$_{60}$, which requires extremely large electron-phonon couplings that violate Migdal's theorem (cond-mat/0104457).
+[19:34:20] main | running function= FutureWork
+[19:34:20] select | function= FutureWork | candidates_in= 20
+[19:34:20] select | core_terms= ['Migdal-Eliashberg theory', 'superconductivity', 'Migdal-Eliashberg']
+[19:34:20] select | no cosine prune; kept=20/20
+[19:34:20] select | pool_size= 20 | ranks= [0, 1, 2, 5, 8, 15, 16, 9, 10, 12, 19, 3, 4, 6, 7, 11, 13, 14, 17, 18] | pids= ['cond-mat/0104457', 'cond-mat/0102189', 'cond-mat/0101258', 'cond-mat/0102456', 'cond-mat/0102136', 'cond-mat/0102281', 'cond-mat/0104097', 'cond-mat/0104519', 'cond-mat/0101203', 'cond-mat/0103154', 'cond-mat/0102422', 'cond-mat/0103518', 'cond-mat/0104502', 'cond-mat/0102111', 'cond-mat/0101080', 'cond-mat/0104544', 'cond-mat/0102143', 'hep-ph/0103092', 'hep-th/0103228', 'physics/0103076']
+[19:34:20] select | verify strict 1/20
+[19:34:20] verify | func= FutureWork | rank= 0 | pid= cond-mat/0104457 | title_snip='Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashber…' | abs_len= 1338
+[19:34:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:34:24] select | verify strict 2/20
+[19:34:24] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102189 | title_snip='Breakdown of the Migdal-Eliashberg theory in the strong-coupling
+  adi…' | abs_len= 903
+[19:34:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:34:27] select | verify strict 3/20
+[19:34:27] verify | func= FutureWork | rank= 2 | pid= cond-mat/0101258 | title_snip='To Phenomenological Theory of Superconductivity. Superconductivity - n…' | abs_len= 574
+[19:34:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:34:30] select | verify strict 4/20
+[19:34:30] verify | func= FutureWork | rank= 5 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[19:34:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:33] select | verify strict 5/20
+[19:34:33] verify | func= FutureWork | rank= 8 | pid= cond-mat/0102136 | title_snip='Superconductivity from Hole Undressing' | abs_len= 1264
+[19:34:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:35] select | verify strict 6/20
+[19:34:35] verify | func= FutureWork | rank= 15 | pid= cond-mat/0102281 | title_snip='Stripes, Vibrations and Superconductivity' | abs_len= 999
+[19:34:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:38] select | verify strict 7/20
+[19:34:38] verify | func= FutureWork | rank= 16 | pid= cond-mat/0104097 | title_snip='Superconductivity near Itinerant Ferromagnetic Quantum Criticality' | abs_len= 789
+[19:34:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:34:41] select | verify strict 8/20
+[19:34:41] verify | func= FutureWork | rank= 9 | pid= cond-mat/0104519 | title_snip='Bond operator theory of doped antiferromagnets: from Mott insulators
+ …' | abs_len= 1454
+[19:34:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:43] select | verify strict 9/20
+[19:34:43] verify | func= FutureWork | rank= 10 | pid= cond-mat/0101203 | title_snip='Quasiclassical description of transport through superconducting contac…' | abs_len= 1460
+[19:34:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:34:46] select | verify strict 10/20
+[19:34:46] verify | func= FutureWork | rank= 12 | pid= cond-mat/0103154 | title_snip='The upper critical field problem in MgB2' | abs_len= 667
+[19:34:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:34:49] select | verify strict 11/20
+[19:34:49] verify | func= FutureWork | rank= 19 | pid= cond-mat/0102422 | title_snip='Metal-insulator crossover in superconducting cuprates in strong magnet…' | abs_len= 719
+[19:34:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:52] select | verify strict 12/20
+[19:34:52] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103518 | title_snip='Calculation of Dip Features in the SIS Conductance of D-Wave
+  Superco…' | abs_len= 407
+[19:34:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:34:55] select | verify strict 13/20
+[19:34:55] verify | func= FutureWork | rank= 4 | pid= cond-mat/0104502 | title_snip='Application of the scattering rate sum-rule to the interplane optical
+…' | abs_len= 543
+[19:34:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:34:57] select | verify strict 14/20
+[19:34:57] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102111 | title_snip='Pseudogap in High - Temperature Superconductors' | abs_len= 918
+[19:35:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:35:00] select | verify strict 15/20
+[19:35:00] verify | func= FutureWork | rank= 7 | pid= cond-mat/0101080 | title_snip='Superconductors with Magnetic Impurities: Instantons and Sub-gap State…' | abs_len= 1453
+[19:35:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:35:02] select | verify strict 16/20
+[19:35:02] verify | func= FutureWork | rank= 11 | pid= cond-mat/0104544 | title_snip='Asymmetric Primitive-Model Electrolytes: Debye-Huckel Theory,
+  Critic…' | abs_len= 1192
+[19:35:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:35:05] select | verify strict 17/20
+[19:35:05] verify | func= FutureWork | rank= 13 | pid= cond-mat/0102143 | title_snip='Spontaneous Hall effect in chiral p-wave superconductor' | abs_len= 1387
+[19:35:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:35:08] select | verify strict 18/20
+[19:35:08] verify | func= FutureWork | rank= 14 | pid= hep-ph/0103092 | title_snip='Transport theory for a two-flavor color superconductor' | abs_len= 973
+[19:35:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:35:10] select | verify strict 19/20
+[19:35:10] verify | func= FutureWork | rank= 17 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[19:35:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:35:13] select | verify strict 20/20
+[19:35:13] verify | func= FutureWork | rank= 18 | pid= physics/0103076 | title_snip='Complexity Through Nonextensivity' | abs_len= 1128
+[19:35:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What background information on the Migdal-Eliashberg theory suggests a need for future work in generalizing the theory of superconductivity?
+- WINNER: cond-mat/0104457 | Superconductivity of Rb$_3$C$_{60}$: breakdown of the Migdal-Eliashberg
+  theory
+- QUOTE : generalization of the theory of superconductivity
+- WHY   : sufficient
+- ANSWER: The Migdal-Eliashberg theory's inability to explain the experimental data of Rb$_3$C$_{60}$ with reasonable electron-phonon coupling values suggests a need for future work in generalizing the theory of superconductivity, particularly in the nonadiabatic regime. This generalization is necessary to account for the experimental properties of fullerides that strongly violate Migdal's theorem (cond-mat/0104457).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

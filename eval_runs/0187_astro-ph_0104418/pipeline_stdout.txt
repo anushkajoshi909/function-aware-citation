@@ -1,0 +1,327 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query asks for a direct comparison of current methods with those from previous redshift surveys, and also concerns how these methods are employed to understand large\u2011scale structure."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.72 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 10it [00:00, 99.09it/s]
+Reading arXiv_src_0101_001.jsonl: 118it [00:00, 672.42it/s]
+Reading arXiv_src_0101_001.jsonl: 260it [00:00, 1009.58it/s]
+Reading arXiv_src_0101_001.jsonl: 371it [00:00, 1046.15it/s]
+Reading arXiv_src_0101_001.jsonl: 476it [00:00, 727.08it/s] 
+Reading arXiv_src_0101_001.jsonl: 560it [00:00, 626.44it/s]
+Reading arXiv_src_0101_001.jsonl: 667it [00:00, 729.69it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 805.88it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 879.37it/s]
+Reading arXiv_src_0101_001.jsonl: 999it [00:01, 952.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1110it [00:01, 994.09it/s]
+Reading arXiv_src_0101_001.jsonl: 1245it [00:01, 1095.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1359it [00:01, 1094.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1490it [00:01, 1156.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1626it [00:01, 1213.72it/s]
+Reading arXiv_src_0101_001.jsonl: 1752it [00:01, 1206.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1879it [00:01, 1225.25it/s]
+Reading arXiv_src_0101_001.jsonl: 2068it [00:02, 1421.15it/s]
+Reading arXiv_src_0101_001.jsonl: 2223it [00:02, 1458.56it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1059.01it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1334.15it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1369.83it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 850.72it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 525.32it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 559.35it/s]
+Reading arXiv_src_0102_001.jsonl: 682it [00:00, 630.15it/s]
+Reading arXiv_src_0102_001.jsonl: 797it [00:01, 749.76it/s]
+Reading arXiv_src_0102_001.jsonl: 931it [00:01, 894.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1036it [00:01, 934.75it/s]
+Reading arXiv_src_0102_001.jsonl: 1154it [00:01, 1001.07it/s]
+Reading arXiv_src_0102_001.jsonl: 1270it [00:01, 1044.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1414it [00:01, 1156.40it/s]
+Reading arXiv_src_0102_001.jsonl: 1547it [00:01, 1204.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1677it [00:01, 1231.51it/s]
+Reading arXiv_src_0102_001.jsonl: 1827it [00:01, 1310.28it/s]
+Reading arXiv_src_0102_001.jsonl: 1978it [00:02, 1369.33it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1398.32it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1021.93it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1367.73it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1526.48it/s]
+Reading arXiv_src_0103_001.jsonl: 454it [00:00, 1097.88it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 732.84it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 781.79it/s]
+Reading arXiv_src_0103_001.jsonl: 763it [00:00, 800.01it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 895.28it/s]
+Reading arXiv_src_0103_001.jsonl: 984it [00:01, 928.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1087it [00:01, 955.49it/s]
+Reading arXiv_src_0103_001.jsonl: 1210it [00:01, 1030.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1318it [00:01, 1039.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1461it [00:01, 1149.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1598it [00:01, 1212.01it/s]
+Reading arXiv_src_0103_001.jsonl: 1749it [00:01, 1298.84it/s]
+Reading arXiv_src_0103_001.jsonl: 1889it [00:01, 1325.67it/s]
+Reading arXiv_src_0103_001.jsonl: 2032it [00:01, 1356.45it/s]
+Reading arXiv_src_0103_001.jsonl: 2172it [00:01, 1362.61it/s]
+Reading arXiv_src_0103_001.jsonl: 2331it [00:02, 1429.06it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1139.34it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 145it [00:00, 1446.61it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1555.07it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 994.08it/s] 
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 552.13it/s]
+Reading arXiv_src_0104_001.jsonl: 689it [00:00, 645.14it/s]
+Reading arXiv_src_0104_001.jsonl: 780it [00:01, 698.34it/s]
+Reading arXiv_src_0104_001.jsonl: 884it [00:01, 775.24it/s]
+Reading arXiv_src_0104_001.jsonl: 1002it [00:01, 873.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 942.36it/s]
+Reading arXiv_src_0104_001.jsonl: 1247it [00:01, 1020.92it/s]
+Reading arXiv_src_0104_001.jsonl: 1358it [00:01, 1020.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1488it [00:01, 1097.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1634it [00:01, 1198.58it/s]
+Reading arXiv_src_0104_001.jsonl: 1765it [00:01, 1229.68it/s]
+Reading arXiv_src_0104_001.jsonl: 1913it [00:01, 1301.82it/s]
+Reading arXiv_src_0104_001.jsonl: 2069it [00:02, 1377.30it/s]
+Reading arXiv_src_0104_001.jsonl: 2209it [00:02, 951.62it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 974.69it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the methods used in the current work compare to those of previous redshift surveys in terms of their ability to understand large-scale structure in the Universe?
+[debug] classifier labels: ['Compares', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T22:33:08.153544       Compares, Uses
+1     1  0.476991  ...  2025-09-21T22:33:08.153544       Compares, Uses
+2     2  0.472373  ...  2025-09-21T22:33:08.153544       Compares, Uses
+3     3  0.388764  ...  2025-09-21T22:33:08.153544       Compares, Uses
+4     4  0.376348  ...  2025-09-21T22:33:08.153544       Compares, Uses
+5     5  0.355183  ...  2025-09-21T22:33:08.153544       Compares, Uses
+6     6  0.336082  ...  2025-09-21T22:33:08.153544       Compares, Uses
+7     7  0.326666  ...  2025-09-21T22:33:08.153544       Compares, Uses
+8     8  0.313391  ...  2025-09-21T22:33:08.153544       Compares, Uses
+9     9  0.303942  ...  2025-09-21T22:33:08.153544       Compares, Uses
+
+[10 rows x 12 columns]
+[00:33:15] main | args: Namespace(max_check=20, debug=True)
+[00:33:15] read_last_jsonl | path= classified_outputs.jsonl
+[00:33:15] read_last_jsonl | total_lines= 1
+[00:33:15] main | query='How do the methods used in the current work compare to those of previous redshift surveys in terms of their ability to understand large-scale structure in the Universe?' | funcs=['Compares', 'Uses']
+[00:33:18] main | core_terms= ['Universe', 'large-scale structure', 'redshift surveys', 'large-scale']
+[00:33:18] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:33:18] load_topk_jsonl | rows= 20
+[00:33:18] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104418 title_snip='Mining the Sky with Redshift Surveys' abs_len= 1392
+[00:33:18] main | running function= Compares
+[00:33:18] select | function= Compares | candidates_in= 20
+[00:33:18] select | core_terms= ['Universe', 'large-scale structure', 'redshift surveys', 'large-scale']
+[00:33:18] select | no cosine prune; kept=20/20
+[00:33:18] select | pool_size= 20 | ranks= [0, 4, 11, 13, 9, 1, 10, 12, 15, 3, 5, 14, 17, 18, 2, 6, 7, 8, 16, 19] | pids= ['astro-ph/0104418', 'astro-ph/0101130', 'astro-ph/0103017', 'astro-ph/0104245', 'astro-ph/0102214', 'astro-ph/0102319', 'astro-ph/0101369', 'astro-ph/0101143', 'astro-ph/0103127', 'astro-ph/0101445', 'astro-ph/0102368', 'astro-ph/0103155', 'astro-ph/0103512', 'astro-ph/0104440', 'astro-ph/0103500', 'astro-ph/0101230', 'astro-ph/0103049', 'astro-ph/0102276', 'nucl-th/0104043', 'astro-ph/0104404']
+[00:33:18] select | verify strict 1/20
+[00:33:18] verify | func= Compares | rank= 0 | pid= astro-ph/0104418 | title_snip='Mining the Sky with Redshift Surveys' | abs_len= 1392
+[00:33:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:33:22] select | verify strict 2/20
+[00:33:22] verify | func= Compares | rank= 4 | pid= astro-ph/0101130 | title_snip='Cosmic shear surveys' | abs_len= 549
+[00:33:25] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:33:25] select | verify strict 3/20
+[00:33:25] verify | func= Compares | rank= 11 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[00:33:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:33:28] select | verify strict 4/20
+[00:33:28] verify | func= Compares | rank= 13 | pid= astro-ph/0104245 | title_snip='Cluster abundance and large-scale structure' | abs_len= 530
+[00:33:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:33:31] select | verify strict 5/20
+[00:33:31] verify | func= Compares | rank= 9 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[00:33:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:33:34] select | verify strict 6/20
+[00:33:34] verify | func= Compares | rank= 1 | pid= astro-ph/0102319 | title_snip='Overconstrained dynamics in galaxy redshift surveys' | abs_len= 1775
+[00:33:37] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[00:33:37] select | verify strict 7/20
+[00:33:37] verify | func= Compares | rank= 10 | pid= astro-ph/0101369 | title_snip='Large scale geometry and evolution of a universe with radiation pressu…' | abs_len= 539
+[00:33:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:33:40] select | verify strict 8/20
+[00:33:40] verify | func= Compares | rank= 12 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[00:33:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:33:43] select | verify strict 9/20
+[00:33:43] verify | func= Compares | rank= 15 | pid= astro-ph/0103127 | title_snip='Clustering in Deep (Submillimeter) Surveys' | abs_len= 615
+[00:33:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:33:46] select | verify strict 10/20
+[00:33:46] verify | func= Compares | rank= 3 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[00:33:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:33:49] select | verify strict 11/20
+[00:33:49] verify | func= Compares | rank= 5 | pid= astro-ph/0102368 | title_snip='The effect of distant large scale structure on weak lensing mass
+  est…' | abs_len= 1228
+[00:33:51] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:33:51] select | verify strict 12/20
+[00:33:51] verify | func= Compares | rank= 14 | pid= astro-ph/0103155 | title_snip='The new sample of Giant radio sources: I. Radio imaging, optical
+  ide…' | abs_len= 1140
+[00:33:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:33:54] select | verify strict 13/20
+[00:33:54] verify | func= Compares | rank= 17 | pid= astro-ph/0103512 | title_snip='The SZ effect as a cosmological discriminator' | abs_len= 934
+[00:33:57] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[00:33:57] select | verify strict 14/20
+[00:33:57] verify | func= Compares | rank= 18 | pid= astro-ph/0104440 | title_snip='Seeing double: strong gravitational lensing of high-redshift supernova…' | abs_len= 1277
+[00:34:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:34:00] select | verify strict 15/20
+[00:34:00] verify | func= Compares | rank= 2 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[00:34:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:34:03] select | verify strict 16/20
+[00:34:03] verify | func= Compares | rank= 6 | pid= astro-ph/0101230 | title_snip='A Survey for Large Separation Lensed FIRST Quasars' | abs_len= 1668
+[00:34:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:34:06] select | verify strict 17/20
+[00:34:06] verify | func= Compares | rank= 7 | pid= astro-ph/0103049 | title_snip='Clusters in the Precision Cosmology Era' | abs_len= 849
+[00:34:09] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:34:09] select | verify strict 18/20
+[00:34:09] verify | func= Compares | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[00:34:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:34:12] select | verify strict 19/20
+[00:34:12] verify | func= Compares | rank= 16 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[00:34:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:34:14] select | verify strict 20/20
+[00:34:14] verify | func= Compares | rank= 19 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[00:34:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the methods used in the current work compare to those of previous redshift surveys in terms of their ability to understand large-scale structure in the Universe?
+- WINNER: astro-ph/0104418 | Mining the Sky with Redshift Surveys
+- QUOTE : Subsequent low-z redshift surveys have been up to an order of magnitude larger
+- WHY   : sufficient
+- ANSWER: The methods used in the current work are compared to those of previous redshift surveys, such as the CfA and SDSS surveys, in terms of their ability to understand large-scale structure, with newer surveys like the VLT/VIRMOS and Keck/DEIMOS projects offering improvements in precision and scope. These newer surveys are expected to surpass previous ones by an order of magnitude in size and precision (astro-ph/0104418).
+[00:34:25] main | running function= Uses
+[00:34:25] select | function= Uses | candidates_in= 20
+[00:34:25] select | core_terms= ['Universe', 'large-scale structure', 'redshift surveys', 'large-scale']
+[00:34:25] select | no cosine prune; kept=20/20
+[00:34:25] select | pool_size= 20 | ranks= [4, 0, 11, 13, 9, 1, 12, 10, 15, 2, 3, 6, 8, 16, 5, 7, 14, 17, 18, 19] | pids= ['astro-ph/0101130', 'astro-ph/0104418', 'astro-ph/0103017', 'astro-ph/0104245', 'astro-ph/0102214', 'astro-ph/0102319', 'astro-ph/0101143', 'astro-ph/0101369', 'astro-ph/0103127', 'astro-ph/0103500', 'astro-ph/0101445', 'astro-ph/0101230', 'astro-ph/0102276', 'nucl-th/0104043', 'astro-ph/0102368', 'astro-ph/0103049', 'astro-ph/0103155', 'astro-ph/0103512', 'astro-ph/0104440', 'astro-ph/0104404']
+[00:34:25] select | verify strict 1/20
+[00:34:25] verify | func= Uses | rank= 4 | pid= astro-ph/0101130 | title_snip='Cosmic shear surveys' | abs_len= 549
+[00:34:28] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:34:28] select | verify strict 2/20
+[00:34:28] verify | func= Uses | rank= 0 | pid= astro-ph/0104418 | title_snip='Mining the Sky with Redshift Surveys' | abs_len= 1392
+[00:34:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:34:31] select | verify strict 3/20
+[00:34:31] verify | func= Uses | rank= 11 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[00:34:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:34:34] select | verify strict 4/20
+[00:34:34] verify | func= Uses | rank= 13 | pid= astro-ph/0104245 | title_snip='Cluster abundance and large-scale structure' | abs_len= 530
+[00:34:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:34:37] select | verify strict 5/20
+[00:34:37] verify | func= Uses | rank= 9 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[00:34:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:34:40] select | verify strict 6/20
+[00:34:40] verify | func= Uses | rank= 1 | pid= astro-ph/0102319 | title_snip='Overconstrained dynamics in galaxy redshift surveys' | abs_len= 1775
+[00:34:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[00:34:44] select | verify strict 7/20
+[00:34:44] verify | func= Uses | rank= 12 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[00:34:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:34:47] select | verify strict 8/20
+[00:34:47] verify | func= Uses | rank= 10 | pid= astro-ph/0101369 | title_snip='Large scale geometry and evolution of a universe with radiation pressu…' | abs_len= 539
+[00:34:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:34:50] select | verify strict 9/20
+[00:34:50] verify | func= Uses | rank= 15 | pid= astro-ph/0103127 | title_snip='Clustering in Deep (Submillimeter) Surveys' | abs_len= 615
+[00:34:52] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:34:52] select | verify strict 10/20
+[00:34:52] verify | func= Uses | rank= 2 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[00:34:55] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:34:55] select | verify strict 11/20
+[00:34:55] verify | func= Uses | rank= 3 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[00:34:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:34:58] select | verify strict 12/20
+[00:34:58] verify | func= Uses | rank= 6 | pid= astro-ph/0101230 | title_snip='A Survey for Large Separation Lensed FIRST Quasars' | abs_len= 1668
+[00:35:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:35:01] select | verify strict 13/20
+[00:35:01] verify | func= Uses | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[00:35:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:35:04] select | verify strict 14/20
+[00:35:04] verify | func= Uses | rank= 16 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[00:35:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:35:06] select | verify strict 15/20
+[00:35:06] verify | func= Uses | rank= 5 | pid= astro-ph/0102368 | title_snip='The effect of distant large scale structure on weak lensing mass
+  est…' | abs_len= 1228
+[00:35:09] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:35:09] select | verify strict 16/20
+[00:35:09] verify | func= Uses | rank= 7 | pid= astro-ph/0103049 | title_snip='Clusters in the Precision Cosmology Era' | abs_len= 849
+[00:35:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:35:12] select | verify strict 17/20
+[00:35:12] verify | func= Uses | rank= 14 | pid= astro-ph/0103155 | title_snip='The new sample of Giant radio sources: I. Radio imaging, optical
+  ide…' | abs_len= 1140
+[00:35:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:35:15] select | verify strict 18/20
+[00:35:15] verify | func= Uses | rank= 17 | pid= astro-ph/0103512 | title_snip='The SZ effect as a cosmological discriminator' | abs_len= 934
+[00:35:18] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:35:18] select | verify strict 19/20
+[00:35:18] verify | func= Uses | rank= 18 | pid= astro-ph/0104440 | title_snip='Seeing double: strong gravitational lensing of high-redshift supernova…' | abs_len= 1277
+[00:35:21] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:35:21] select | verify strict 20/20
+[00:35:21] verify | func= Uses | rank= 19 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[00:35:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How do the methods used in the current work compare to those of previous redshift surveys in terms of their ability to understand large-scale structure in the Universe?
+- WINNER: astro-ph/0104418 | Mining the Sky with Redshift Surveys
+- QUOTE : redshift surveys have been vital for progress in understanding large-scale structure
+- WHY   : sufficient
+- ANSWER: The current work uses redshift surveys, such as the 2DF and SDSS surveys, to understand large-scale structure in the Universe, similar to previous surveys like the CfA redshift survey. These surveys are applied to collect spectra of galaxies and measure clustering, with newer surveys like VLT/VIRMOS and Keck/DEIMOS aiming to improve precision and extend measurements to the distant Universe (astro-ph/0104418).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

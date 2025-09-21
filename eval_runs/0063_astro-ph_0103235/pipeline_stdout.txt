@@ -1,0 +1,329 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks for a comparative analysis of beamed Magnetar Flares versus other gamma-ray bursts and also seeks directions for future research on this relationship."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.22 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.20it/s]
+Reading arXiv_src_0101_001.jsonl: 76it [00:00, 235.85it/s]
+Reading arXiv_src_0101_001.jsonl: 231it [00:00, 639.76it/s]
+Reading arXiv_src_0101_001.jsonl: 336it [00:00, 764.73it/s]
+Reading arXiv_src_0101_001.jsonl: 435it [00:00, 714.38it/s]
+Reading arXiv_src_0101_001.jsonl: 521it [00:00, 589.03it/s]
+Reading arXiv_src_0101_001.jsonl: 593it [00:01, 598.12it/s]
+Reading arXiv_src_0101_001.jsonl: 700it [00:01, 712.60it/s]
+Reading arXiv_src_0101_001.jsonl: 802it [00:01, 791.04it/s]
+Reading arXiv_src_0101_001.jsonl: 906it [00:01, 847.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 890.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1146it [00:01, 1011.45it/s]
+Reading arXiv_src_0101_001.jsonl: 1282it [00:01, 1109.96it/s]
+Reading arXiv_src_0101_001.jsonl: 1397it [00:01, 1095.54it/s]
+Reading arXiv_src_0101_001.jsonl: 1530it [00:01, 1159.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1668it [00:02, 1217.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1792it [00:02, 1191.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1951it [00:02, 1305.38it/s]
+Reading arXiv_src_0101_001.jsonl: 2125it [00:02, 1429.59it/s]
+Reading arXiv_src_0101_001.jsonl: 2281it [00:02, 1466.44it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 944.91it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 135it [00:00, 1343.60it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1365.67it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 852.78it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 526.26it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 557.30it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:00, 620.52it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 745.05it/s]
+Reading arXiv_src_0102_001.jsonl: 926it [00:01, 887.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 922.58it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 993.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1043.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1416it [00:01, 1161.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1550it [00:01, 1209.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1682it [00:01, 1240.24it/s]
+Reading arXiv_src_0102_001.jsonl: 1831it [00:01, 1311.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1980it [00:02, 1363.04it/s]
+Reading arXiv_src_0102_001.jsonl: 2130it [00:02, 1399.71it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1020.72it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 139it [00:00, 1373.90it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1528.80it/s]
+Reading arXiv_src_0103_001.jsonl: 456it [00:00, 1112.11it/s]
+Reading arXiv_src_0103_001.jsonl: 578it [00:00, 720.58it/s] 
+Reading arXiv_src_0103_001.jsonl: 676it [00:00, 778.18it/s]
+Reading arXiv_src_0103_001.jsonl: 770it [00:00, 806.30it/s]
+Reading arXiv_src_0103_001.jsonl: 884it [00:00, 888.74it/s]
+Reading arXiv_src_0103_001.jsonl: 994it [00:01, 942.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1101it [00:01, 973.94it/s]
+Reading arXiv_src_0103_001.jsonl: 1219it [00:01, 1029.88it/s]
+Reading arXiv_src_0103_001.jsonl: 1327it [00:01, 1031.24it/s]
+Reading arXiv_src_0103_001.jsonl: 1473it [00:01, 1153.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1607it [00:01, 1205.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1752it [00:01, 1276.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1891it [00:01, 1309.27it/s]
+Reading arXiv_src_0103_001.jsonl: 2025it [00:01, 1318.02it/s]
+Reading arXiv_src_0103_001.jsonl: 2158it [00:01, 1310.45it/s]
+Reading arXiv_src_0103_001.jsonl: 2301it [00:02, 1345.70it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1125.37it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 147it [00:00, 1464.94it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1555.56it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 613.61it/s] 
+Reading arXiv_src_0104_001.jsonl: 566it [00:00, 514.67it/s]
+Reading arXiv_src_0104_001.jsonl: 642it [00:01, 478.91it/s]
+Reading arXiv_src_0104_001.jsonl: 735it [00:01, 558.02it/s]
+Reading arXiv_src_0104_001.jsonl: 819it [00:01, 614.47it/s]
+Reading arXiv_src_0104_001.jsonl: 930it [00:01, 724.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1055it [00:01, 849.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1162it [00:01, 906.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1290it [00:01, 1003.38it/s]
+Reading arXiv_src_0104_001.jsonl: 1399it [00:01, 1013.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1538it [00:01, 1117.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1674it [00:02, 1185.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1805it [00:02, 1218.95it/s]
+Reading arXiv_src_0104_001.jsonl: 1957it [00:02, 1305.89it/s]
+Reading arXiv_src_0104_001.jsonl: 2112it [00:02, 1377.67it/s]
+Reading arXiv_src_0104_001.jsonl: 2252it [00:02, 948.21it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 886.36it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the detection rates and characteristics of beamed Magnetar Flares compare to other gamma-ray bursts, and what future research could explore this relationship?
+[debug] classifier labels: ['Compares', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+1     1  0.798252  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+2     2  0.549474  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+3     3  0.532547  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+4     4  0.522265  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+5     5  0.489936  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+6     6  0.385164  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+7     7  0.371320  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+8     8  0.333561  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+9     9  0.322262  ...  2025-09-21T14:58:35.056218  Compares, FutureWork
+
+[10 rows x 12 columns]
+[16:58:47] main | args: Namespace(max_check=20, debug=True)
+[16:58:47] read_last_jsonl | path= classified_outputs.jsonl
+[16:58:47] read_last_jsonl | total_lines= 1
+[16:58:47] main | query='How do the detection rates and characteristics of beamed Magnetar Flares compare to other gamma-ray bursts, and what future research could explore this relationship?' | funcs=['Compares', 'FutureWork']
+[16:58:50] main | core_terms= ['Magnetar Flares', 'gamma-ray bursts', 'detection rates', 'beamed', 'gamma-ray']
+[16:58:50] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:58:50] load_topk_jsonl | rows= 20
+[16:58:50] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103235 title_snip='Gamma-Ray Bursts from Extragalactic Magnetar Flares' abs_len= 1581
+[16:58:50] main | running function= Compares
+[16:58:50] select | function= Compares | candidates_in= 20
+[16:58:50] select | core_terms= ['Magnetar Flares', 'gamma-ray bursts', 'detection rates', 'beamed', 'gamma-ray']
+[16:58:50] select | no cosine prune; kept=20/20
+[16:58:50] select | pool_size= 20 | ranks= [0, 1, 3, 2, 12, 4, 5, 14, 18, 7, 11, 15, 16, 19, 6, 8, 9, 10, 13, 17] | pids= ['astro-ph/0103235', 'astro-ph/0103384', 'astro-ph/0102366', 'astro-ph/0102315', 'astro-ph/0102277', 'astro-ph/0104208', 'astro-ph/0103179', 'astro-ph/0104471', 'astro-ph/0102255', 'astro-ph/0103396', 'astro-ph/0102098', 'astro-ph/0101039', 'astro-ph/0102445', 'astro-ph/0102299', 'astro-ph/0103028', 'astro-ph/0103125', 'astro-ph/0101036', 'astro-ph/0102091', 'astro-ph/0104402', 'astro-ph/0102326']
+[16:58:50] select | verify strict 1/20
+[16:58:50] verify | func= Compares | rank= 0 | pid= astro-ph/0103235 | title_snip='Gamma-Ray Bursts from Extragalactic Magnetar Flares' | abs_len= 1581
+[16:58:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:58:53] select | verify strict 2/20
+[16:58:53] verify | func= Compares | rank= 1 | pid= astro-ph/0103384 | title_snip='Gamma-Ray Bursts at Low Redshift' | abs_len= 1121
+[16:58:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:58:56] select | verify strict 3/20
+[16:58:56] verify | func= Compares | rank= 3 | pid= astro-ph/0102366 | title_snip='Gamma ray bursts from superconducting cosmic strings' | abs_len= 1224
+[16:58:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:58:59] select | verify strict 4/20
+[16:58:59] verify | func= Compares | rank= 2 | pid= astro-ph/0102315 | title_snip='Gravitational Radiation from Gamma-Ray Bursts' | abs_len= 1031
+[16:59:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:02] select | verify strict 5/20
+[16:59:02] verify | func= Compares | rank= 12 | pid= astro-ph/0102277 | title_snip='BATSE Observations of Fast X-ray Transients Detected by BeppoSAX-WFC' | abs_len= 799
+[16:59:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[16:59:05] select | verify strict 6/20
+[16:59:05] verify | func= Compares | rank= 4 | pid= astro-ph/0104208 | title_snip='A Search for Early Optical Emission from Short and Long Duration
+  Gam…' | abs_len= 1039
+[16:59:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= — cue_hint= False
+[16:59:08] select | verify strict 7/20
+[16:59:08] verify | func= Compares | rank= 5 | pid= astro-ph/0103179 | title_snip='HST Observations of SGR 0526-66: New Constraints on Accretion and
+  Ma…' | abs_len= 1144
+[16:59:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:59:11] select | verify strict 8/20
+[16:59:11] verify | func= Compares | rank= 14 | pid= astro-ph/0104471 | title_snip='Gamma-ray Burst Remnants: How can we find them?' | abs_len= 940
+[16:59:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:14] select | verify strict 9/20
+[16:59:14] verify | func= Compares | rank= 18 | pid= astro-ph/0102255 | title_snip='Gamma-Ray Bursts: Afterglow Implications, Progenitor Clues and Prospec…' | abs_len= 1084
+[16:59:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:59:17] select | verify strict 10/20
+[16:59:17] verify | func= Compares | rank= 7 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[16:59:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:19] select | verify strict 11/20
+[16:59:19] verify | func= Compares | rank= 11 | pid= astro-ph/0102098 | title_snip='On the nature of soft Gamma-ray repeaters' | abs_len= 585
+[16:59:23] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[16:59:23] select | verify strict 12/20
+[16:59:23] verify | func= Compares | rank= 15 | pid= astro-ph/0101039 | title_snip='Gamma Ray Pulsars: Observations' | abs_len= 848
+[16:59:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:25] select | verify strict 13/20
+[16:59:25] verify | func= Compares | rank= 16 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[16:59:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:27] select | verify strict 14/20
+[16:59:27] verify | func= Compares | rank= 19 | pid= astro-ph/0102299 | title_snip='Detection of a Hard Tail in the X-ray Spectrum of the Z Source GX 349+…' | abs_len= 1082
+[16:59:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:30] select | verify strict 15/20
+[16:59:30] verify | func= Compares | rank= 6 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[16:59:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:59:33] select | verify strict 16/20
+[16:59:33] verify | func= Compares | rank= 8 | pid= astro-ph/0103125 | title_snip='Recurrent very-long type-I X-ray bursts in the low-mass X-ray binary 4…' | abs_len= 838
+[16:59:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:36] select | verify strict 17/20
+[16:59:36] verify | func= Compares | rank= 9 | pid= astro-ph/0101036 | title_snip='GRBS: Standard Model & Beyond' | abs_len= 391
+[16:59:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[16:59:38] select | verify strict 18/20
+[16:59:38] verify | func= Compares | rank= 10 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[16:59:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:59:41] select | verify strict 19/20
+[16:59:41] verify | func= Compares | rank= 13 | pid= astro-ph/0104402 | title_snip='Collapsar Jets, Bubbles and Fe Lines' | abs_len= 996
+[16:59:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:59:44] select | verify strict 20/20
+[16:59:44] verify | func= Compares | rank= 17 | pid= astro-ph/0102326 | title_snip='Magnetic flaring in pre-main sequence stars' | abs_len= 892
+[16:59:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the detection rates and characteristics of beamed Magnetar Flares compare to other gamma-ray bursts, and what future research could explore this relationship?
+- WINNER: astro-ph/0103235 | Gamma-Ray Bursts from Extragalactic Magnetar Flares
+- QUOTE : beamed MFs could account for the short, hard Class II gamma-ray bursts
+- WHY   : sufficient
+- ANSWER: The detection rates of beamed Magnetar Flares are compared to other gamma-ray bursts, such as Class II GRBs, on the basis of their luminosity and distance. Beamed Magnetar Flares could be detected out to redshift z ~ 0.1, potentially accounting for a subset of short, hard Class II gamma-ray bursts (astro-ph/0103235).
+[16:59:52] main | running function= FutureWork
+[16:59:52] select | function= FutureWork | candidates_in= 20
+[16:59:52] select | core_terms= ['Magnetar Flares', 'gamma-ray bursts', 'detection rates', 'beamed', 'gamma-ray']
+[16:59:52] select | no cosine prune; kept=20/20
+[16:59:52] select | pool_size= 20 | ranks= [0, 1, 3, 2, 4, 5, 12, 14, 18, 7, 11, 15, 6, 8, 9, 10, 13, 16, 17, 19] | pids= ['astro-ph/0103235', 'astro-ph/0103384', 'astro-ph/0102366', 'astro-ph/0102315', 'astro-ph/0104208', 'astro-ph/0103179', 'astro-ph/0102277', 'astro-ph/0104471', 'astro-ph/0102255', 'astro-ph/0103396', 'astro-ph/0102098', 'astro-ph/0101039', 'astro-ph/0103028', 'astro-ph/0103125', 'astro-ph/0101036', 'astro-ph/0102091', 'astro-ph/0104402', 'astro-ph/0102445', 'astro-ph/0102326', 'astro-ph/0102299']
+[16:59:52] select | verify strict 1/20
+[16:59:52] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103235 | title_snip='Gamma-Ray Bursts from Extragalactic Magnetar Flares' | abs_len= 1581
+[16:59:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:59:56] select | verify strict 2/20
+[16:59:56] verify | func= FutureWork | rank= 1 | pid= astro-ph/0103384 | title_snip='Gamma-Ray Bursts at Low Redshift' | abs_len= 1121
+[16:59:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[16:59:58] select | verify strict 3/20
+[16:59:58] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102366 | title_snip='Gamma ray bursts from superconducting cosmic strings' | abs_len= 1224
+[17:00:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:01] select | verify strict 4/20
+[17:00:01] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102315 | title_snip='Gravitational Radiation from Gamma-Ray Bursts' | abs_len= 1031
+[17:00:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:04] select | verify strict 5/20
+[17:00:04] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104208 | title_snip='A Search for Early Optical Emission from Short and Long Duration
+  Gam…' | abs_len= 1039
+[17:00:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:07] select | verify strict 6/20
+[17:00:07] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103179 | title_snip='HST Observations of SGR 0526-66: New Constraints on Accretion and
+  Ma…' | abs_len= 1144
+[17:00:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:09] select | verify strict 7/20
+[17:00:09] verify | func= FutureWork | rank= 12 | pid= astro-ph/0102277 | title_snip='BATSE Observations of Fast X-ray Transients Detected by BeppoSAX-WFC' | abs_len= 799
+[17:00:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:12] select | verify strict 8/20
+[17:00:12] verify | func= FutureWork | rank= 14 | pid= astro-ph/0104471 | title_snip='Gamma-ray Burst Remnants: How can we find them?' | abs_len= 940
+[17:00:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:15] select | verify strict 9/20
+[17:00:15] verify | func= FutureWork | rank= 18 | pid= astro-ph/0102255 | title_snip='Gamma-Ray Bursts: Afterglow Implications, Progenitor Clues and Prospec…' | abs_len= 1084
+[17:00:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:18] select | verify strict 10/20
+[17:00:18] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[17:00:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:21] select | verify strict 11/20
+[17:00:21] verify | func= FutureWork | rank= 11 | pid= astro-ph/0102098 | title_snip='On the nature of soft Gamma-ray repeaters' | abs_len= 585
+[17:00:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:24] select | verify strict 12/20
+[17:00:24] verify | func= FutureWork | rank= 15 | pid= astro-ph/0101039 | title_snip='Gamma Ray Pulsars: Observations' | abs_len= 848
+[17:00:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:26] select | verify strict 13/20
+[17:00:26] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[17:00:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:00:29] select | verify strict 14/20
+[17:00:29] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103125 | title_snip='Recurrent very-long type-I X-ray bursts in the low-mass X-ray binary 4…' | abs_len= 838
+[17:00:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:32] select | verify strict 15/20
+[17:00:32] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101036 | title_snip='GRBS: Standard Model & Beyond' | abs_len= 391
+[17:00:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[17:00:34] select | verify strict 16/20
+[17:00:34] verify | func= FutureWork | rank= 10 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[17:00:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:37] select | verify strict 17/20
+[17:00:37] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104402 | title_snip='Collapsar Jets, Bubbles and Fe Lines' | abs_len= 996
+[17:00:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:00:40] select | verify strict 18/20
+[17:00:40] verify | func= FutureWork | rank= 16 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[17:00:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:42] select | verify strict 19/20
+[17:00:42] verify | func= FutureWork | rank= 17 | pid= astro-ph/0102326 | title_snip='Magnetic flaring in pre-main sequence stars' | abs_len= 892
+[17:00:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:00:45] select | verify strict 20/20
+[17:00:45] verify | func= FutureWork | rank= 19 | pid= astro-ph/0102299 | title_snip='Detection of a Hard Tail in the X-ray Spectrum of the Z Source GX 349+…' | abs_len= 1082
+[17:00:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the detection rates and characteristics of beamed Magnetar Flares compare to other gamma-ray bursts, and what future research could explore this relationship?
+- WINNER: astro-ph/0103235 | Gamma-Ray Bursts from Extragalactic Magnetar Flares
+- QUOTE : We speculate that such beamed MFs could account for the short, hard Class II gamma-ray bursts
+- WHY   : sufficient
+- ANSWER: Future research could explore the possibility that beamed Magnetar Flares account for short, hard Class II gamma-ray bursts, investigating whether their positions correlate with galaxies and galaxy clusters within 350 Mpc. This could involve analyzing the detection rates and characteristics of beamed Magnetar Flares in relation to other gamma-ray bursts to confirm or rule out this hypothesis (astro-ph/0103235).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,403 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Compares"
+  ],
+  "justification": "The query asks why the coupled evolution of two giant planets is worth studying (Motivation) and seeks a comparison with the single\u2011planet migration scenario (Compares)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.6 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.05it/s]
+Reading arXiv_src_0101_001.jsonl: 79it [00:00, 288.21it/s]
+Reading arXiv_src_0101_001.jsonl: 231it [00:00, 710.78it/s]
+Reading arXiv_src_0101_001.jsonl: 335it [00:00, 819.03it/s]
+Reading arXiv_src_0101_001.jsonl: 434it [00:00, 750.99it/s]
+Reading arXiv_src_0101_001.jsonl: 521it [00:00, 606.20it/s]
+Reading arXiv_src_0101_001.jsonl: 593it [00:01, 609.56it/s]
+Reading arXiv_src_0101_001.jsonl: 694it [00:01, 707.58it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:01, 759.40it/s]
+Reading arXiv_src_0101_001.jsonl: 895it [00:01, 848.49it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 889.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1123it [00:01, 975.04it/s]
+Reading arXiv_src_0101_001.jsonl: 1250it [00:01, 1053.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1359it [00:01, 1059.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:01, 1115.48it/s]
+Reading arXiv_src_0101_001.jsonl: 1618it [00:01, 1174.98it/s]
+Reading arXiv_src_0101_001.jsonl: 1742it [00:02, 1193.92it/s]
+Reading arXiv_src_0101_001.jsonl: 1863it [00:02, 1164.19it/s]
+Reading arXiv_src_0101_001.jsonl: 2028it [00:02, 1305.62it/s]
+Reading arXiv_src_0101_001.jsonl: 2183it [00:02, 1373.90it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 949.27it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 128it [00:00, 1276.92it/s]
+Reading arXiv_src_0102_001.jsonl: 266it [00:00, 1335.47it/s]
+Reading arXiv_src_0102_001.jsonl: 400it [00:00, 865.56it/s] 
+Reading arXiv_src_0102_001.jsonl: 501it [00:00, 522.30it/s]
+Reading arXiv_src_0102_001.jsonl: 585it [00:00, 584.31it/s]
+Reading arXiv_src_0102_001.jsonl: 662it [00:00, 602.17it/s]
+Reading arXiv_src_0102_001.jsonl: 774it [00:01, 719.81it/s]
+Reading arXiv_src_0102_001.jsonl: 902it [00:01, 858.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1015it [00:01, 928.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1132it [00:01, 991.60it/s]
+Reading arXiv_src_0102_001.jsonl: 1244it [00:01, 1024.20it/s]
+Reading arXiv_src_0102_001.jsonl: 1387it [00:01, 1137.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1522it [00:01, 1199.04it/s]
+Reading arXiv_src_0102_001.jsonl: 1646it [00:01, 1206.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1799it [00:01, 1300.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1947it [00:01, 1349.83it/s]
+Reading arXiv_src_0102_001.jsonl: 2091it [00:02, 1374.96it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1015.80it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1324.14it/s]
+Reading arXiv_src_0103_001.jsonl: 295it [00:00, 1489.18it/s]
+Reading arXiv_src_0103_001.jsonl: 444it [00:00, 1141.28it/s]
+Reading arXiv_src_0103_001.jsonl: 566it [00:00, 717.25it/s] 
+Reading arXiv_src_0103_001.jsonl: 657it [00:00, 715.85it/s]
+Reading arXiv_src_0103_001.jsonl: 741it [00:00, 720.80it/s]
+Reading arXiv_src_0103_001.jsonl: 850it [00:01, 807.12it/s]
+Reading arXiv_src_0103_001.jsonl: 955it [00:01, 865.10it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 921.17it/s]
+Reading arXiv_src_0103_001.jsonl: 1190it [00:01, 1006.84it/s]
+Reading arXiv_src_0103_001.jsonl: 1296it [00:01, 1017.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1430it [00:01, 1108.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1579it [00:01, 1217.99it/s]
+Reading arXiv_src_0103_001.jsonl: 1716it [00:01, 1262.18it/s]
+Reading arXiv_src_0103_001.jsonl: 1864it [00:01, 1325.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1999it [00:01, 1321.06it/s]
+Reading arXiv_src_0103_001.jsonl: 2149it [00:02, 1373.73it/s]
+Reading arXiv_src_0103_001.jsonl: 2290it [00:02, 1382.93it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1109.59it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  3.83it/s]
+Reading arXiv_src_0104_001.jsonl: 13it [00:00, 44.87it/s]
+Reading arXiv_src_0104_001.jsonl: 158it [00:00, 515.72it/s]
+Reading arXiv_src_0104_001.jsonl: 317it [00:00, 863.51it/s]
+Reading arXiv_src_0104_001.jsonl: 423it [00:00, 870.93it/s]
+Reading arXiv_src_0104_001.jsonl: 523it [00:00, 668.43it/s]
+Reading arXiv_src_0104_001.jsonl: 604it [00:01, 470.28it/s]
+Reading arXiv_src_0104_001.jsonl: 707it [00:01, 573.24it/s]
+Reading arXiv_src_0104_001.jsonl: 797it [00:01, 641.56it/s]
+Reading arXiv_src_0104_001.jsonl: 897it [00:01, 722.19it/s]
+Reading arXiv_src_0104_001.jsonl: 1022it [00:01, 851.34it/s]
+Reading arXiv_src_0104_001.jsonl: 1129it [00:01, 907.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1253it [00:01, 996.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1361it [00:01, 993.68it/s]
+Reading arXiv_src_0104_001.jsonl: 1489it [00:02, 1073.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1632it [00:02, 1173.04it/s]
+Reading arXiv_src_0104_001.jsonl: 1762it [00:02, 1207.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1907it [00:02, 1275.79it/s]
+Reading arXiv_src_0104_001.jsonl: 2065it [00:02, 1364.80it/s]
+Reading arXiv_src_0104_001.jsonl: 2204it [00:02, 1051.36it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 856.34it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What motivates the study of the coupled evolution of a two giant planet system and how does it compare to the one planet case in terms of migration?
+[debug] classifier labels: ['Motivation', 'Compares']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+1     1  0.969417  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+2     2  0.811134  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+3     3  0.731506  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+4     4  0.718158  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+5     5  0.675816  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+6     6  0.629397  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+7     7  0.533062  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+8     8  0.437297  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+9     9  0.394336  ...  2025-09-21T16:13:14.758946  Motivation, Compares
+
+[10 rows x 12 columns]
+[18:13:23] main | args: Namespace(max_check=20, debug=True)
+[18:13:23] read_last_jsonl | path= classified_outputs.jsonl
+[18:13:23] read_last_jsonl | total_lines= 1
+[18:13:23] main | query='What motivates the study of the coupled evolution of a two giant planet system and how does it compare to the one planet case in terms of migration?' | funcs=['Motivation', 'Compares']
+[18:13:27] main | core_terms= ['giant planet', 'planet system', 'migration', 'coupled evolution']
+[18:13:27] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[18:13:27] load_topk_jsonl | rows= 20
+[18:13:27] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101332 title_snip='Reversing type II migration: resonance trapping of a lighter giant
+  p…' abs_len= 992
+[18:13:27] main | running function= Motivation
+[18:13:27] select | function= Motivation | candidates_in= 20
+[18:13:27] select | core_terms= ['giant planet', 'planet system', 'migration', 'coupled evolution']
+[18:13:27] select | no cosine prune; kept=20/20
+[18:13:27] select | pool_size= 20 | ranks= [0, 6, 1, 3, 4, 5, 12, 19, 2, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18] | pids= ['astro-ph/0101332', 'astro-ph/0103327', 'astro-ph/0104432', 'astro-ph/0102126', 'astro-ph/0103383', 'astro-ph/0101024', 'astro-ph/0101423', 'cond-mat/0103080', 'astro-ph/0102244', 'astro-ph/0104475', 'astro-ph/0102198', 'astro-ph/0103092', 'astro-ph/0101407', 'astro-ph/0101296', 'astro-ph/0104304', 'astro-ph/0103002', 'cond-mat/0104116', 'astro-ph/0103004', 'astro-ph/0103485', 'gr-qc/0103018']
+[18:13:27] select | verify strict 1/20
+[18:13:27] verify | func= Motivation | rank= 0 | pid= astro-ph/0101332 | title_snip='Reversing type II migration: resonance trapping of a lighter giant
+  p…' | abs_len= 992
+[18:13:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:13:30] select | verify strict 2/20
+[18:13:30] verify | func= Motivation | rank= 6 | pid= astro-ph/0103327 | title_snip='Migration of giant planets in planetesimal discs' | abs_len= 911
+[18:13:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:13:33] select | verify strict 3/20
+[18:13:33] verify | func= Motivation | rank= 1 | pid= astro-ph/0104432 | title_snip='On disc driven inward migration of resonantly coupled planets with
+  a…' | abs_len= 1101
+[18:13:36] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:13:36] select | verify strict 4/20
+[18:13:36] verify | func= Motivation | rank= 3 | pid= astro-ph/0102126 | title_snip='Astronomical engineering: a strategy for modifying planetary orbits' | abs_len= 1431
+[18:13:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:13:39] select | verify strict 5/20
+[18:13:39] verify | func= Motivation | rank= 4 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[18:13:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:13:41] select | verify strict 6/20
+[18:13:41] verify | func= Motivation | rank= 5 | pid= astro-ph/0101024 | title_snip='Theory of Extrasolar Giant Planet Transits' | abs_len= 802
+[18:13:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:13:44] select | verify strict 7/20
+[18:13:44] verify | func= Motivation | rank= 12 | pid= astro-ph/0101423 | title_snip='Short-Term Dynamical Interactions Among Extrasolar Planets' | abs_len= 1041
+[18:13:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:13:47] select | verify strict 8/20
+[18:13:47] verify | func= Motivation | rank= 19 | pid= cond-mat/0103080 | title_snip='Epigenetics as a first exit problem' | abs_len= 1065
+[18:13:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:13:49] select | verify strict 9/20
+[18:13:49] verify | func= Motivation | rank= 2 | pid= astro-ph/0102244 | title_snip='Formation of contact in massive close binaries' | abs_len= 1484
+[18:13:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:13:52] select | verify strict 10/20
+[18:13:52] verify | func= Motivation | rank= 7 | pid= astro-ph/0104475 | title_snip='Eccentricity Evolution of Resonant Migrating Planets' | abs_len= 1051
+[18:13:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:13:55] select | verify strict 11/20
+[18:13:55] verify | func= Motivation | rank= 8 | pid= astro-ph/0102198 | title_snip='Mm/submm observations of symbiotic binary stars: implications for the
+…' | abs_len= 729
+[18:13:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:13:57] select | verify strict 12/20
+[18:13:57] verify | func= Motivation | rank= 9 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[18:14:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:00] select | verify strict 13/20
+[18:14:00] verify | func= Motivation | rank= 10 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[18:14:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:02] select | verify strict 14/20
+[18:14:02] verify | func= Motivation | rank= 11 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[18:14:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:05] select | verify strict 15/20
+[18:14:05] verify | func= Motivation | rank= 13 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[18:14:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:08] select | verify strict 16/20
+[18:14:08] verify | func= Motivation | rank= 14 | pid= astro-ph/0103002 | title_snip='The evolutionary time scale of Sakurai's object: A test of convection
+…' | abs_len= 1301
+[18:14:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:10] select | verify strict 17/20
+[18:14:10] verify | func= Motivation | rank= 15 | pid= cond-mat/0104116 | title_snip='Tangled Nature: a model of evolutionary ecology' | abs_len= 627
+[18:14:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:13] select | verify strict 18/20
+[18:14:13] verify | func= Motivation | rank= 16 | pid= astro-ph/0103004 | title_snip='Stellar evolution and nucleosynthesis of Post-AGB Stars' | abs_len= 630
+[18:14:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:15] select | verify strict 19/20
+[18:14:15] verify | func= Motivation | rank= 17 | pid= astro-ph/0103485 | title_snip='Star formation and chemical evolution of damped Lyman $\alpha$ systems' | abs_len= 1606
+[18:14:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:18] select | verify strict 20/20
+[18:14:18] verify | func= Motivation | rank= 18 | pid= gr-qc/0103018 | title_snip='Coalescence of Two Spinning Black Holes: An Effective One-Body Approac…' | abs_len= 1538
+[18:14:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the study of the coupled evolution of a two giant planet system and how does it compare to the one planet case in terms of migration?
+- WINNER: astro-ph/0101332 | Reversing type II migration: resonance trapping of a lighter giant
+  protoplanet
+- QUOTE : coupled evolution of a two giant planet system
+- WHY   : sufficient
+- ANSWER: The study of a two giant planet system's coupled evolution is motivated by the need to understand how the migration of planets is affected by the presence of multiple planets, which can lead to different outcomes compared to the one planet case. This is important because the interactions between planets and the disk can result in unexpected migration patterns, such as outward migration (astro-ph/0101332).
+[18:14:26] main | running function= Compares
+[18:14:26] select | function= Compares | candidates_in= 20
+[18:14:26] select | core_terms= ['giant planet', 'planet system', 'migration', 'coupled evolution']
+[18:14:26] select | no cosine prune; kept=20/20
+[18:14:26] select | pool_size= 20 | ranks= [0, 6, 1, 3, 4, 5, 12, 8, 10, 13, 15, 19, 2, 7, 9, 11, 14, 16, 17, 18] | pids= ['astro-ph/0101332', 'astro-ph/0103327', 'astro-ph/0104432', 'astro-ph/0102126', 'astro-ph/0103383', 'astro-ph/0101024', 'astro-ph/0101423', 'astro-ph/0102198', 'astro-ph/0101407', 'astro-ph/0104304', 'cond-mat/0104116', 'cond-mat/0103080', 'astro-ph/0102244', 'astro-ph/0104475', 'astro-ph/0103092', 'astro-ph/0101296', 'astro-ph/0103002', 'astro-ph/0103004', 'astro-ph/0103485', 'gr-qc/0103018']
+[18:14:26] select | verify strict 1/20
+[18:14:26] verify | func= Compares | rank= 0 | pid= astro-ph/0101332 | title_snip='Reversing type II migration: resonance trapping of a lighter giant
+  p…' | abs_len= 992
+[18:14:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:14:29] select | verify strict 2/20
+[18:14:29] verify | func= Compares | rank= 6 | pid= astro-ph/0103327 | title_snip='Migration of giant planets in planetesimal discs' | abs_len= 911
+[18:14:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:14:32] select | verify strict 3/20
+[18:14:32] verify | func= Compares | rank= 1 | pid= astro-ph/0104432 | title_snip='On disc driven inward migration of resonantly coupled planets with
+  a…' | abs_len= 1101
+[18:14:35] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:14:35] select | verify strict 4/20
+[18:14:35] verify | func= Compares | rank= 3 | pid= astro-ph/0102126 | title_snip='Astronomical engineering: a strategy for modifying planetary orbits' | abs_len= 1431
+[18:14:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:37] select | verify strict 5/20
+[18:14:37] verify | func= Compares | rank= 4 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[18:14:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:14:40] select | verify strict 6/20
+[18:14:40] verify | func= Compares | rank= 5 | pid= astro-ph/0101024 | title_snip='Theory of Extrasolar Giant Planet Transits' | abs_len= 802
+[18:14:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:43] select | verify strict 7/20
+[18:14:43] verify | func= Compares | rank= 12 | pid= astro-ph/0101423 | title_snip='Short-Term Dynamical Interactions Among Extrasolar Planets' | abs_len= 1041
+[18:14:46] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:14:46] select | verify strict 8/20
+[18:14:46] verify | func= Compares | rank= 8 | pid= astro-ph/0102198 | title_snip='Mm/submm observations of symbiotic binary stars: implications for the
+…' | abs_len= 729
+[18:14:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:48] select | verify strict 9/20
+[18:14:48] verify | func= Compares | rank= 10 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[18:14:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:50] select | verify strict 10/20
+[18:14:50] verify | func= Compares | rank= 13 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[18:14:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:53] select | verify strict 11/20
+[18:14:53] verify | func= Compares | rank= 15 | pid= cond-mat/0104116 | title_snip='Tangled Nature: a model of evolutionary ecology' | abs_len= 627
+[18:14:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:56] select | verify strict 12/20
+[18:14:56] verify | func= Compares | rank= 19 | pid= cond-mat/0103080 | title_snip='Epigenetics as a first exit problem' | abs_len= 1065
+[18:14:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:14:58] select | verify strict 13/20
+[18:14:58] verify | func= Compares | rank= 2 | pid= astro-ph/0102244 | title_snip='Formation of contact in massive close binaries' | abs_len= 1484
+[18:15:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:01] select | verify strict 14/20
+[18:15:01] verify | func= Compares | rank= 7 | pid= astro-ph/0104475 | title_snip='Eccentricity Evolution of Resonant Migrating Planets' | abs_len= 1051
+[18:15:04] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:15:04] select | verify strict 15/20
+[18:15:04] verify | func= Compares | rank= 9 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[18:15:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:07] select | verify strict 16/20
+[18:15:07] verify | func= Compares | rank= 11 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[18:15:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:09] select | verify strict 17/20
+[18:15:09] verify | func= Compares | rank= 14 | pid= astro-ph/0103002 | title_snip='The evolutionary time scale of Sakurai's object: A test of convection
+…' | abs_len= 1301
+[18:15:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:12] select | verify strict 18/20
+[18:15:12] verify | func= Compares | rank= 16 | pid= astro-ph/0103004 | title_snip='Stellar evolution and nucleosynthesis of Post-AGB Stars' | abs_len= 630
+[18:15:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:14] select | verify strict 19/20
+[18:15:14] verify | func= Compares | rank= 17 | pid= astro-ph/0103485 | title_snip='Star formation and chemical evolution of damped Lyman $\alpha$ systems' | abs_len= 1606
+[18:15:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:16] select | verify strict 20/20
+[18:15:16] verify | func= Compares | rank= 18 | pid= gr-qc/0103018 | title_snip='Coalescence of Two Spinning Black Holes: An Effective One-Body Approac…' | abs_len= 1538
+[18:15:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:19] select | strict pass found 0 winners → trying relaxed
+[18:15:19] select | verify relaxed 1/20
+[18:15:19] verify | func= Compares | rank= 0 | pid= astro-ph/0101332 | title_snip='Reversing type II migration: resonance trapping of a lighter giant
+  p…' | abs_len= 992
+[18:15:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:15:22] select | verify relaxed 2/20
+[18:15:22] verify | func= Compares | rank= 6 | pid= astro-ph/0103327 | title_snip='Migration of giant planets in planetesimal discs' | abs_len= 911
+[18:15:26] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:15:26] select | verify relaxed 3/20
+[18:15:26] verify | func= Compares | rank= 1 | pid= astro-ph/0104432 | title_snip='On disc driven inward migration of resonantly coupled planets with
+  a…' | abs_len= 1101
+[18:15:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:15:29] select | verify relaxed 4/20
+[18:15:29] verify | func= Compares | rank= 3 | pid= astro-ph/0102126 | title_snip='Astronomical engineering: a strategy for modifying planetary orbits' | abs_len= 1431
+[18:15:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:15:32] select | verify relaxed 5/20
+[18:15:32] verify | func= Compares | rank= 4 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[18:15:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:15:35] select | verify relaxed 6/20
+[18:15:35] verify | func= Compares | rank= 5 | pid= astro-ph/0101024 | title_snip='Theory of Extrasolar Giant Planet Transits' | abs_len= 802
+[18:15:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:15:38] select | verify relaxed 7/20
+[18:15:38] verify | func= Compares | rank= 12 | pid= astro-ph/0101423 | title_snip='Short-Term Dynamical Interactions Among Extrasolar Planets' | abs_len= 1041
+[18:15:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:15:41] select | verify relaxed 8/20
+[18:15:41] verify | func= Compares | rank= 8 | pid= astro-ph/0102198 | title_snip='Mm/submm observations of symbiotic binary stars: implications for the
+…' | abs_len= 729
+[18:15:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:43] select | verify relaxed 9/20
+[18:15:43] verify | func= Compares | rank= 10 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[18:15:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:46] select | verify relaxed 10/20
+[18:15:46] verify | func= Compares | rank= 13 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[18:15:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:48] select | verify relaxed 11/20
+[18:15:48] verify | func= Compares | rank= 15 | pid= cond-mat/0104116 | title_snip='Tangled Nature: a model of evolutionary ecology' | abs_len= 627
+[18:15:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:51] select | verify relaxed 12/20
+[18:15:51] verify | func= Compares | rank= 19 | pid= cond-mat/0103080 | title_snip='Epigenetics as a first exit problem' | abs_len= 1065
+[18:15:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:53] select | verify relaxed 13/20
+[18:15:53] verify | func= Compares | rank= 2 | pid= astro-ph/0102244 | title_snip='Formation of contact in massive close binaries' | abs_len= 1484
+[18:15:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:15:56] select | verify relaxed 14/20
+[18:15:56] verify | func= Compares | rank= 7 | pid= astro-ph/0104475 | title_snip='Eccentricity Evolution of Resonant Migrating Planets' | abs_len= 1051
+[18:15:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:15:59] select | verify relaxed 15/20
+[18:15:59] verify | func= Compares | rank= 9 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[18:16:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:16:02] select | verify relaxed 16/20
+[18:16:02] verify | func= Compares | rank= 11 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[18:16:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:16:04] select | verify relaxed 17/20
+[18:16:04] verify | func= Compares | rank= 14 | pid= astro-ph/0103002 | title_snip='The evolutionary time scale of Sakurai's object: A test of convection
+…' | abs_len= 1301
+[18:16:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:16:07] select | verify relaxed 18/20
+[18:16:07] verify | func= Compares | rank= 16 | pid= astro-ph/0103004 | title_snip='Stellar evolution and nucleosynthesis of Post-AGB Stars' | abs_len= 630
+[18:16:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:16:09] select | verify relaxed 19/20
+[18:16:09] verify | func= Compares | rank= 17 | pid= astro-ph/0103485 | title_snip='Star formation and chemical evolution of damped Lyman $\alpha$ systems' | abs_len= 1606
+[18:16:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:16:11] select | verify relaxed 20/20
+[18:16:11] verify | func= Compares | rank= 18 | pid= gr-qc/0103018 | title_snip='Coalescence of Two Spinning Black Holes: An Effective One-Body Approac…' | abs_len= 1538
+[18:16:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : What motivates the study of the coupled evolution of a two giant planet system and how does it compare to the one planet case in terms of migration?
+- WINNER: astro-ph/0101332 | Reversing type II migration: resonance trapping of a lighter giant
+  protoplanet
+- QUOTE : favored by a factor ~10 with respect to the one planet case
+- WHY   : sufficient
+- ANSWER: The study of a two giant planet system is motivated by its comparison to the one planet case in terms of migration, with the two planet system exhibiting outwards migration due to a positive differential Lindblad torque. This is in contrast to the one planet case, where the torques are proportional to the square of the planet mass, resulting in a different migration behavior (astro-ph/0101332).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

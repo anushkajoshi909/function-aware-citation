@@ -1,0 +1,334 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Extends"
+  ],
+  "justification": "The query seeks foundational knowledge about neutrino mass scenarios (Background) and asks how this knowledge informs the expansion of experiments like GENIUS (Extends)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.9 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.33it/s]
+Reading arXiv_src_0101_001.jsonl: 43it [00:00, 162.35it/s]
+Reading arXiv_src_0101_001.jsonl: 194it [00:00, 635.76it/s]
+Reading arXiv_src_0101_001.jsonl: 312it [00:00, 814.20it/s]
+Reading arXiv_src_0101_001.jsonl: 408it [00:00, 752.55it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 630.11it/s]
+Reading arXiv_src_0101_001.jsonl: 566it [00:01, 583.28it/s]
+Reading arXiv_src_0101_001.jsonl: 672it [00:01, 697.42it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 772.24it/s]
+Reading arXiv_src_0101_001.jsonl: 883it [00:01, 854.61it/s]
+Reading arXiv_src_0101_001.jsonl: 988it [00:01, 904.85it/s]
+Reading arXiv_src_0101_001.jsonl: 1090it [00:01, 935.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1216it [00:01, 1028.15it/s]
+Reading arXiv_src_0101_001.jsonl: 1322it [00:01, 1009.41it/s]
+Reading arXiv_src_0101_001.jsonl: 1452it [00:01, 1090.30it/s]
+Reading arXiv_src_0101_001.jsonl: 1580it [00:01, 1144.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1713it [00:02, 1196.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1834it [00:02, 1175.98it/s]
+Reading arXiv_src_0101_001.jsonl: 2009it [00:02, 1342.73it/s]
+Reading arXiv_src_0101_001.jsonl: 2173it [00:02, 1426.19it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 952.63it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1333.74it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1359.58it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 853.06it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 505.00it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 544.73it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:01, 609.73it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 734.26it/s]
+Reading arXiv_src_0102_001.jsonl: 917it [00:01, 855.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 924.27it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 996.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1045.83it/s]
+Reading arXiv_src_0102_001.jsonl: 1415it [00:01, 1161.44it/s]
+Reading arXiv_src_0102_001.jsonl: 1549it [00:01, 1210.49it/s]
+Reading arXiv_src_0102_001.jsonl: 1680it [00:01, 1238.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1831it [00:01, 1317.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1983it [00:02, 1372.60it/s]
+Reading arXiv_src_0102_001.jsonl: 2133it [00:02, 1410.19it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1013.12it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1373.95it/s]
+Reading arXiv_src_0103_001.jsonl: 299it [00:00, 1511.32it/s]
+Reading arXiv_src_0103_001.jsonl: 451it [00:00, 1138.66it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 738.46it/s] 
+Reading arXiv_src_0103_001.jsonl: 666it [00:00, 770.82it/s]
+Reading arXiv_src_0103_001.jsonl: 757it [00:00, 789.59it/s]
+Reading arXiv_src_0103_001.jsonl: 874it [00:00, 884.68it/s]
+Reading arXiv_src_0103_001.jsonl: 975it [00:01, 916.87it/s]
+Reading arXiv_src_0103_001.jsonl: 1080it [00:01, 950.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1206it [00:01, 1037.14it/s]
+Reading arXiv_src_0103_001.jsonl: 1314it [00:01, 1035.39it/s]
+Reading arXiv_src_0103_001.jsonl: 1452it [00:01, 1133.50it/s]
+Reading arXiv_src_0103_001.jsonl: 1588it [00:01, 1198.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1734it [00:01, 1274.03it/s]
+Reading arXiv_src_0103_001.jsonl: 1876it [00:01, 1315.50it/s]
+Reading arXiv_src_0103_001.jsonl: 2013it [00:01, 1327.17it/s]
+Reading arXiv_src_0103_001.jsonl: 2159it [00:01, 1363.34it/s]
+Reading arXiv_src_0103_001.jsonl: 2308it [00:02, 1399.23it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1134.80it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  7.69it/s]
+Reading arXiv_src_0104_001.jsonl: 10it [00:00, 50.77it/s]
+Reading arXiv_src_0104_001.jsonl: 156it [00:00, 651.71it/s]
+Reading arXiv_src_0104_001.jsonl: 314it [00:00, 997.28it/s]
+Reading arXiv_src_0104_001.jsonl: 418it [00:00, 987.74it/s]
+Reading arXiv_src_0104_001.jsonl: 520it [00:00, 697.20it/s]
+Reading arXiv_src_0104_001.jsonl: 602it [00:01, 479.33it/s]
+Reading arXiv_src_0104_001.jsonl: 706it [00:01, 583.83it/s]
+Reading arXiv_src_0104_001.jsonl: 795it [00:01, 648.35it/s]
+Reading arXiv_src_0104_001.jsonl: 896it [00:01, 730.56it/s]
+Reading arXiv_src_0104_001.jsonl: 1018it [00:01, 851.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1128it [00:01, 913.31it/s]
+Reading arXiv_src_0104_001.jsonl: 1251it [00:01, 998.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1359it [00:01, 1001.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1486it [00:01, 1076.19it/s]
+Reading arXiv_src_0104_001.jsonl: 1630it [00:01, 1177.65it/s]
+Reading arXiv_src_0104_001.jsonl: 1759it [00:02, 1209.82it/s]
+Reading arXiv_src_0104_001.jsonl: 1907it [00:02, 1282.87it/s]
+Reading arXiv_src_0104_001.jsonl: 2065it [00:02, 1368.34it/s]
+Reading arXiv_src_0104_001.jsonl: 2204it [00:02, 952.09it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 883.25it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?
+[debug] classifier labels: ['Background', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T16:57:25.256009  Background, Extends
+1     1  0.987186  ...  2025-09-21T16:57:25.256009  Background, Extends
+2     2  0.944250  ...  2025-09-21T16:57:25.256009  Background, Extends
+3     3  0.656441  ...  2025-09-21T16:57:25.256009  Background, Extends
+4     4  0.422188  ...  2025-09-21T16:57:25.256009  Background, Extends
+5     5  0.405289  ...  2025-09-21T16:57:25.256009  Background, Extends
+6     6  0.315208  ...  2025-09-21T16:57:25.256009  Background, Extends
+7     7  0.296410  ...  2025-09-21T16:57:25.256009  Background, Extends
+8     8  0.286989  ...  2025-09-21T16:57:25.256009  Background, Extends
+9     9  0.280851  ...  2025-09-21T16:57:25.256009  Background, Extends
+
+[10 rows x 12 columns]
+[18:57:33] main | args: Namespace(max_check=20, debug=True)
+[18:57:33] read_last_jsonl | path= classified_outputs.jsonl
+[18:57:33] read_last_jsonl | total_lines= 1
+[18:57:33] main | query='How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?' | funcs=['Background', 'Extends']
+[18:57:36] main | core_terms= ['neutrino', 'GENIUS', 'Standard Model', 'neutrino mass']
+[18:57:36] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[18:57:36] load_topk_jsonl | rows= 20
+[18:57:36] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0102319 title_snip='New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark…' abs_len= 1296
+[18:57:36] main | running function= Background
+[18:57:36] select | function= Background | candidates_in= 20
+[18:57:36] select | core_terms= ['neutrino', 'GENIUS', 'Standard Model', 'neutrino mass']
+[18:57:36] select | no cosine prune; kept=20/20
+[18:57:36] select | pool_size= 20 | ranks= [0, 1, 2, 3, 7, 9, 18, 4, 5, 16, 17, 8, 12, 14, 6, 10, 13, 19, 11, 15] | pids= ['hep-ph/0102319', 'hep-ph/0103074', 'hep-ph/0104028', 'hep-ph/0102276', 'hep-ph/0102277', 'hep-ph/0103017', 'hep-ph/0102065', 'hep-ph/0102255', 'hep-ph/0101148', 'hep-ph/0103278', 'hep-ph/0103244', 'hep-ph/0101244', 'astro-ph/0103195', 'hep-ph/0102246', 'hep-ph/0102085', 'hep-ph/0102143', 'hep-ph/0103095', 'hep-ph/0102122', 'hep-ph/0101331', 'hep-ph/0103038']
+[18:57:36] select | verify strict 1/20
+[18:57:36] verify | func= Background | rank= 0 | pid= hep-ph/0102319 | title_snip='New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark…' | abs_len= 1296
+[18:57:40] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[18:57:40] select | verify strict 2/20
+[18:57:40] verify | func= Background | rank= 1 | pid= hep-ph/0103074 | title_snip='Information about the neutrino mass matrix from Double Beta Decay' | abs_len= 1064
+[18:57:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:57:43] select | verify strict 3/20
+[18:57:43] verify | func= Background | rank= 2 | pid= hep-ph/0104028 | title_snip='New Underground Neutrino Observatory - GENIUS- in the New Millenium :
+…' | abs_len= 1275
+[18:57:46] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[18:57:46] select | verify strict 4/20
+[18:57:46] verify | func= Background | rank= 3 | pid= hep-ph/0102276 | title_snip='Neutrino Mass from Laboratory: Contribution of Double Beta Decay to th…' | abs_len= 969
+[18:57:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[18:57:50] select | verify strict 5/20
+[18:57:50] verify | func= Background | rank= 7 | pid= hep-ph/0102277 | title_snip='GENIUS - A New Facility of Non-Accelerator Particle Physics' | abs_len= 1051
+[18:57:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:57:53] select | verify strict 6/20
+[18:57:53] verify | func= Background | rank= 9 | pid= hep-ph/0103017 | title_snip='Generalized Bounds on Majoron-neutrino couplings' | abs_len= 701
+[18:57:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:57:57] select | verify strict 7/20
+[18:57:57] verify | func= Background | rank= 18 | pid= hep-ph/0102065 | title_snip='TeV Strings and the Neutrino-Nucleon Cross Section at Ultra-high
+  Ene…' | abs_len= 697
+[18:58:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:58:00] select | verify strict 8/20
+[18:58:00] verify | func= Background | rank= 4 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[18:58:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:03] select | verify strict 9/20
+[18:58:03] verify | func= Background | rank= 5 | pid= hep-ph/0101148 | title_snip='Degenerate and Other Neutrino Mass Scenarios and Dark Matter' | abs_len= 1015
+[18:58:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:06] select | verify strict 10/20
+[18:58:06] verify | func= Background | rank= 16 | pid= hep-ph/0103278 | title_snip='Collider Verification of the Neutrino Mass Matrix in Two Scenarios' | abs_len= 299
+[18:58:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:09] select | verify strict 11/20
+[18:58:09] verify | func= Background | rank= 17 | pid= hep-ph/0103244 | title_snip='$SU(3)_c\otimes SU(3)_L\otimes U(1)_X$ as an $E_6$ Subgroup' | abs_len= 884
+[18:58:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:12] select | verify strict 12/20
+[18:58:12] verify | func= Background | rank= 8 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[18:58:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:15] select | verify strict 13/20
+[18:58:15] verify | func= Background | rank= 12 | pid= astro-ph/0103195 | title_snip='High Energy Neutrino Astronomy: Towards Kilometer-Scale Detectors' | abs_len= 1586
+[18:58:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:58:18] select | verify strict 14/20
+[18:58:18] verify | func= Background | rank= 14 | pid= hep-ph/0102246 | title_snip='A Model for Neutrino Warm Dark Matter and Neutrino Oscillations' | abs_len= 580
+[18:58:21] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[18:58:21] select | verify strict 15/20
+[18:58:21] verify | func= Background | rank= 6 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[18:58:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:58:24] select | verify strict 16/20
+[18:58:24] verify | func= Background | rank= 10 | pid= hep-ph/0102143 | title_snip='Fundamental Parameters from Precision Tests' | abs_len= 197
+[18:58:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:58:27] select | verify strict 17/20
+[18:58:27] verify | func= Background | rank= 13 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[18:58:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:58:30] select | verify strict 18/20
+[18:58:30] verify | func= Background | rank= 19 | pid= hep-ph/0102122 | title_snip='The Muon Anomalous Magnetic Moment: A Harbinger For "New Physics"' | abs_len= 525
+[18:58:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:58:32] select | verify strict 19/20
+[18:58:32] verify | func= Background | rank= 11 | pid= hep-ph/0101331 | title_snip='Standard-Model-like scenarios in the 2HDM and Photon Collider potentia…' | abs_len= 879
+[18:58:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:58:35] select | verify strict 20/20
+[18:58:35] verify | func= Background | rank= 15 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[18:58:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?
+- WINNER: hep-ph/0103074 | Information about the neutrino mass matrix from Double Beta Decay
+- QUOTE : neutrino mass matrix from Double Beta Decay
+- WHY   : sufficient
+- ANSWER: The current understanding of neutrino mass scenarios is being probed by experiments like Double Beta Decay, which can test degenerate neutrino mass scenarios and hot dark matter models (hep-ph/0103074).
+[18:58:42] main | running function= Extends
+[18:58:42] select | function= Extends | candidates_in= 20
+[18:58:42] select | core_terms= ['neutrino', 'GENIUS', 'Standard Model', 'neutrino mass']
+[18:58:42] select | no cosine prune; kept=20/20
+[18:58:42] select | pool_size= 20 | ranks= [0, 1, 2, 3, 7, 9, 4, 5, 16, 18, 17, 8, 12, 14, 6, 10, 13, 19, 11, 15] | pids= ['hep-ph/0102319', 'hep-ph/0103074', 'hep-ph/0104028', 'hep-ph/0102276', 'hep-ph/0102277', 'hep-ph/0103017', 'hep-ph/0102255', 'hep-ph/0101148', 'hep-ph/0103278', 'hep-ph/0102065', 'hep-ph/0103244', 'hep-ph/0101244', 'astro-ph/0103195', 'hep-ph/0102246', 'hep-ph/0102085', 'hep-ph/0102143', 'hep-ph/0103095', 'hep-ph/0102122', 'hep-ph/0101331', 'hep-ph/0103038']
+[18:58:42] select | verify strict 1/20
+[18:58:42] verify | func= Extends | rank= 0 | pid= hep-ph/0102319 | title_snip='New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark…' | abs_len= 1296
+[18:58:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:45] select | verify strict 2/20
+[18:58:45] verify | func= Extends | rank= 1 | pid= hep-ph/0103074 | title_snip='Information about the neutrino mass matrix from Double Beta Decay' | abs_len= 1064
+[18:58:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:49] select | verify strict 3/20
+[18:58:49] verify | func= Extends | rank= 2 | pid= hep-ph/0104028 | title_snip='New Underground Neutrino Observatory - GENIUS- in the New Millenium :
+…' | abs_len= 1275
+[18:58:52] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:52] select | verify strict 4/20
+[18:58:52] verify | func= Extends | rank= 3 | pid= hep-ph/0102276 | title_snip='Neutrino Mass from Laboratory: Contribution of Double Beta Decay to th…' | abs_len= 969
+[18:58:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:56] select | verify strict 5/20
+[18:58:56] verify | func= Extends | rank= 7 | pid= hep-ph/0102277 | title_snip='GENIUS - A New Facility of Non-Accelerator Particle Physics' | abs_len= 1051
+[18:58:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:58:59] select | verify strict 6/20
+[18:58:59] verify | func= Extends | rank= 9 | pid= hep-ph/0103017 | title_snip='Generalized Bounds on Majoron-neutrino couplings' | abs_len= 701
+[18:59:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[18:59:02] select | verify strict 7/20
+[18:59:02] verify | func= Extends | rank= 4 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[18:59:05] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:59:05] select | verify strict 8/20
+[18:59:05] verify | func= Extends | rank= 5 | pid= hep-ph/0101148 | title_snip='Degenerate and Other Neutrino Mass Scenarios and Dark Matter' | abs_len= 1015
+[18:59:08] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:59:08] select | verify strict 9/20
+[18:59:08] verify | func= Extends | rank= 16 | pid= hep-ph/0103278 | title_snip='Collider Verification of the Neutrino Mass Matrix in Two Scenarios' | abs_len= 299
+[18:59:11] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:59:11] select | verify strict 10/20
+[18:59:11] verify | func= Extends | rank= 18 | pid= hep-ph/0102065 | title_snip='TeV Strings and the Neutrino-Nucleon Cross Section at Ultra-high
+  Ene…' | abs_len= 697
+[18:59:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:59:14] select | verify strict 11/20
+[18:59:14] verify | func= Extends | rank= 17 | pid= hep-ph/0103244 | title_snip='$SU(3)_c\otimes SU(3)_L\otimes U(1)_X$ as an $E_6$ Subgroup' | abs_len= 884
+[18:59:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:59:17] select | verify strict 12/20
+[18:59:17] verify | func= Extends | rank= 8 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[18:59:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:59:21] select | verify strict 13/20
+[18:59:21] verify | func= Extends | rank= 12 | pid= astro-ph/0103195 | title_snip='High Energy Neutrino Astronomy: Towards Kilometer-Scale Detectors' | abs_len= 1586
+[18:59:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:59:24] select | verify strict 14/20
+[18:59:24] verify | func= Extends | rank= 14 | pid= hep-ph/0102246 | title_snip='A Model for Neutrino Warm Dark Matter and Neutrino Oscillations' | abs_len= 580
+[18:59:27] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[18:59:27] select | verify strict 15/20
+[18:59:27] verify | func= Extends | rank= 6 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[18:59:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:59:29] select | verify strict 16/20
+[18:59:29] verify | func= Extends | rank= 10 | pid= hep-ph/0102143 | title_snip='Fundamental Parameters from Precision Tests' | abs_len= 197
+[18:59:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:59:32] select | verify strict 17/20
+[18:59:32] verify | func= Extends | rank= 13 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[18:59:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:59:35] select | verify strict 18/20
+[18:59:35] verify | func= Extends | rank= 19 | pid= hep-ph/0102122 | title_snip='The Muon Anomalous Magnetic Moment: A Harbinger For "New Physics"' | abs_len= 525
+[18:59:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:59:37] select | verify strict 19/20
+[18:59:37] verify | func= Extends | rank= 11 | pid= hep-ph/0101331 | title_snip='Standard-Model-like scenarios in the 2HDM and Photon Collider potentia…' | abs_len= 879
+[18:59:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:59:40] select | verify strict 20/20
+[18:59:40] verify | func= Extends | rank= 15 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[18:59:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?
+- WINNER: hep-ph/0102319 | New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark
+  Matter, Solar Neutrinos
+- QUOTE : test almost all neutrino mass scenarios
+- WHY   : sufficient
+- ANSWER: The GENIUS experiment extends the scope of double beta decay experiments, such as the Heidelberg-Moscow experiment, to probe beyond Standard Model physics and test almost all neutrino mass scenarios. It also extends the accuracy of neutrino mass measurements, allowing for the exclusion of degenerate neutrino mass scenarios and probing cosmological models on the level of future satellite experiments (hep-ph/0102319).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs
