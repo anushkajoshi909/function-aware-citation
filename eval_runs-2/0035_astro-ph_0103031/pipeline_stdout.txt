@@ -1,0 +1,155 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Uses"
+  ],
+  "justification": "The query asks why statistical methods are employed (Motivation) and concerns their application to study blazar luminosity correlations (Uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:00:15] main | args: Namespace(max_check=10, debug=True)
+[22:00:15] read_last_jsonl | path= classified_outputs.jsonl
+[22:00:15] read_last_jsonl | total_lines= 1
+[22:00:15] main | query='What motivates the use of statistical methods to study the correlation between radio and gamma-ray luminosities in blazars?' | funcs=['Motivation', 'Uses']
+[22:00:17] main | core_terms= ['blazars', 'radio luminosity', 'gamma-ray luminosity', 'correlation', 'gamma-ray']
+[22:00:17] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:00:17] load_topk_jsonl | rows= 20
+[22:00:17] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103031 title_snip='The Radio and Gamma-Ray Luminosities of Blazars' abs_len= 1071
+[22:00:17] main | running function= Motivation
+[22:00:17] select | function= Motivation | candidates_in= 20
+[22:00:17] select | core_terms= ['blazars', 'radio luminosity', 'gamma-ray luminosity', 'correlation', 'gamma-ray']
+[22:00:17] select | no cosine prune; kept=20/20
+[22:00:17] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103031', 'astro-ph/0101398', 'astro-ph/0102012', 'astro-ph/0103087', 'astro-ph/0104351', 'astro-ph/0102127', 'astro-ph/0101380', 'astro-ph/0103424', 'astro-ph/0101301', 'astro-ph/0101462']
+[22:00:17] select | verify relaxed 1/10
+[22:00:17] verify | func= Motivation | rank= 0 | pid= astro-ph/0103031 | title_snip='The Radio and Gamma-Ray Luminosities of Blazars' | abs_len= 1071
+[22:00:20] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[22:00:20] select | verify relaxed 2/10
+[22:00:20] verify | func= Motivation | rank= 1 | pid= astro-ph/0101398 | title_snip='Extragalactic radio source evolution & unification: clues to the
+  dem…' | abs_len= 563
+[22:00:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:00:23] select | verify relaxed 3/10
+[22:00:23] verify | func= Motivation | rank= 2 | pid= astro-ph/0102012 | title_snip='Multi-Epoch VLBA Observations of EGRET-Detected Quasars and BL Lac
+  O…' | abs_len= 1204
+[22:00:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:00:26] select | verify relaxed 4/10
+[22:00:26] verify | func= Motivation | rank= 3 | pid= astro-ph/0103087 | title_snip='The radio-luminosity - black hole mass correlation for quasars from th…' | abs_len= 1388
+[22:00:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:00:29] select | verify relaxed 5/10
+[22:00:29] verify | func= Motivation | rank= 4 | pid= astro-ph/0104351 | title_snip='On the time variability of gamma-ray sources: A numerical analysis of
+…' | abs_len= 598
+[22:00:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[22:00:31] select | verify relaxed 6/10
+[22:00:31] verify | func= Motivation | rank= 5 | pid= astro-ph/0102127 | title_snip='Multi-Epoch Multiwavelength Spectra and Models for Blazar 3C~279' | abs_len= 1248
+[22:00:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:00:35] select | verify relaxed 7/10
+[22:00:35] verify | func= Motivation | rank= 6 | pid= astro-ph/0101380 | title_snip='Modeling Flares Produced in Blazars' | abs_len= 1047
+[22:00:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[22:00:37] select | verify relaxed 8/10
+[22:00:37] verify | func= Motivation | rank= 7 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[22:00:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:00:40] select | verify relaxed 9/10
+[22:00:40] verify | func= Motivation | rank= 8 | pid= astro-ph/0101301 | title_snip='Egret (GeV) Blazars' | abs_len= 1000
+[22:00:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:00:44] select | verify relaxed 10/10
+[22:00:44] verify | func= Motivation | rank= 9 | pid= astro-ph/0101462 | title_snip='Explaining the Gamma Ray Burst Lag/Luminosity and Variability/Luminosi…' | abs_len= 1061
+[22:00:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the use of statistical methods to study the correlation between radio and gamma-ray luminosities in blazars?
+- WINNER: astro-ph/0102012 | Multi-Epoch VLBA Observations of EGRET-Detected Quasars and BL Lac
+  Objects: Connection between Superluminal Ejections and Gamma-Ray Flares in
+  Blazars
+- QUOTE : Connection between Superluminal Ejections and Gamma-Ray Flares in Blazars
+- WHY   : sufficient
+- ANSWER: The motivation for studying the correlation between radio and gamma-ray luminosities in blazars stems from the need to understand the relationship between superluminal ejections and gamma-ray flares. This understanding is crucial as it can reveal the physical mechanisms underlying these events, such as inverse Compton scattering by relativistic electrons in the jet (astro-ph/0102012).
+[22:00:51] main | running function= Uses
+[22:00:51] select | function= Uses | candidates_in= 20
+[22:00:51] select | core_terms= ['blazars', 'radio luminosity', 'gamma-ray luminosity', 'correlation', 'gamma-ray']
+[22:00:51] select | no cosine prune; kept=20/20
+[22:00:51] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103031', 'astro-ph/0101398', 'astro-ph/0102012', 'astro-ph/0103087', 'astro-ph/0104351', 'astro-ph/0102127', 'astro-ph/0101380', 'astro-ph/0103424', 'astro-ph/0101301', 'astro-ph/0101462']
+[22:00:51] select | verify relaxed 1/10
+[22:00:51] verify | func= Uses | rank= 0 | pid= astro-ph/0103031 | title_snip='The Radio and Gamma-Ray Luminosities of Blazars' | abs_len= 1071
+[22:00:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= True
+[22:00:53] select | verify relaxed 2/10
+[22:00:53] verify | func= Uses | rank= 1 | pid= astro-ph/0101398 | title_snip='Extragalactic radio source evolution & unification: clues to the
+  dem…' | abs_len= 563
+[22:00:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:00:56] select | verify relaxed 3/10
+[22:00:56] verify | func= Uses | rank= 2 | pid= astro-ph/0102012 | title_snip='Multi-Epoch VLBA Observations of EGRET-Detected Quasars and BL Lac
+  O…' | abs_len= 1204
+[22:01:00] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:01:00] select | verify relaxed 4/10
+[22:01:00] verify | func= Uses | rank= 3 | pid= astro-ph/0103087 | title_snip='The radio-luminosity - black hole mass correlation for quasars from th…' | abs_len= 1388
+[22:01:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:01:03] select | verify relaxed 5/10
+[22:01:03] verify | func= Uses | rank= 4 | pid= astro-ph/0104351 | title_snip='On the time variability of gamma-ray sources: A numerical analysis of
+…' | abs_len= 598
+[22:01:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:01:06] select | verify relaxed 6/10
+[22:01:06] verify | func= Uses | rank= 5 | pid= astro-ph/0102127 | title_snip='Multi-Epoch Multiwavelength Spectra and Models for Blazar 3C~279' | abs_len= 1248
+[22:01:10] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:01:10] select | verify relaxed 7/10
+[22:01:10] verify | func= Uses | rank= 6 | pid= astro-ph/0101380 | title_snip='Modeling Flares Produced in Blazars' | abs_len= 1047
+[22:01:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:01:13] select | verify relaxed 8/10
+[22:01:13] verify | func= Uses | rank= 7 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[22:01:16] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:01:16] select | verify relaxed 9/10
+[22:01:16] verify | func= Uses | rank= 8 | pid= astro-ph/0101301 | title_snip='Egret (GeV) Blazars' | abs_len= 1000
+[22:01:19] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:01:19] select | verify relaxed 10/10
+[22:01:19] verify | func= Uses | rank= 9 | pid= astro-ph/0101462 | title_snip='Explaining the Gamma Ray Burst Lag/Luminosity and Variability/Luminosi…' | abs_len= 1061
+[22:01:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : What motivates the use of statistical methods to study the correlation between radio and gamma-ray luminosities in blazars?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

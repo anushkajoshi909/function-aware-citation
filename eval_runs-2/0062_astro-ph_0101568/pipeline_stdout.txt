@@ -1,0 +1,149 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Extends"
+  ],
+  "justification": "The query asks why the study is compelling (motivation) and how it builds upon earlier work (extends)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:32:22] main | args: Namespace(max_check=10, debug=True)
+[22:32:22] read_last_jsonl | path= classified_outputs.jsonl
+[22:32:22] read_last_jsonl | total_lines= 1
+[22:32:22] main | query='How does the work on the self-gravitating non-relativistic gas at thermal equilibrium motivate and extend previous research in the field?' | funcs=['Motivation', 'Extends']
+[22:32:24] main | core_terms= ['self-gravitating gas', 'thermal equilibrium', 'non-relativistic', 'self-gravitating']
+[22:32:24] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:32:24] load_topk_jsonl | rows= 20
+[22:32:24] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101202 title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' abs_len= 1716
+[22:32:24] main | running function= Motivation
+[22:32:24] select | function= Motivation | candidates_in= 20
+[22:32:24] select | core_terms= ['self-gravitating gas', 'thermal equilibrium', 'non-relativistic', 'self-gravitating']
+[22:32:24] select | no cosine prune; kept=20/20
+[22:32:24] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101202', 'gr-qc/0101106', 'cond-mat/0103610', 'hep-ph/0101078', 'quant-ph/0101130', 'astro-ph/0101568', 'astro-ph/0101265', 'nucl-th/0101008', 'cond-mat/0102056', 'hep-th/0103034']
+[22:32:24] select | verify relaxed 1/10
+[22:32:24] verify | func= Motivation | rank= 0 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[22:32:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:27] select | verify relaxed 2/10
+[22:32:27] verify | func= Motivation | rank= 1 | pid= gr-qc/0101106 | title_snip='Statistical Mechanics of Relativistic One-Dimensional Self-Gravitating…' | abs_len= 844
+[22:32:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:32:30] select | verify relaxed 3/10
+[22:32:30] verify | func= Motivation | rank= 2 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[22:32:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:32] select | verify relaxed 4/10
+[22:32:32] verify | func= Motivation | rank= 3 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[22:32:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:35] select | verify relaxed 5/10
+[22:32:35] verify | func= Motivation | rank= 4 | pid= quant-ph/0101130 | title_snip='Understanding the production of dual BEC with sympathetic cooling' | abs_len= 615
+[22:32:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:37] select | verify relaxed 6/10
+[22:32:37] verify | func= Motivation | rank= 5 | pid= astro-ph/0101568 | title_snip='Statistical Mechanics of the Self-Gravitating Gas: I. Thermodynamic
+  …' | abs_len= 1846
+[22:32:40] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[22:32:40] select | verify relaxed 7/10
+[22:32:40] verify | func= Motivation | rank= 6 | pid= astro-ph/0101265 | title_snip='N-Body Simulations of Open, Self-Gravitating Systems' | abs_len= 792
+[22:32:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:32:44] select | verify relaxed 8/10
+[22:32:44] verify | func= Motivation | rank= 7 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[22:32:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:46] select | verify relaxed 9/10
+[22:32:46] verify | func= Motivation | rank= 8 | pid= cond-mat/0102056 | title_snip='Theory of Thermal Remagnetization of Permanent Magnets' | abs_len= 946
+[22:32:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:49] select | verify relaxed 10/10
+[22:32:49] verify | func= Motivation | rank= 9 | pid= hep-th/0103034 | title_snip='Gravity as the Spin-2 Quantum Gauge Theory' | abs_len= 1603
+[22:32:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the work on the self-gravitating non-relativistic gas at thermal equilibrium motivate and extend previous research in the field?
+- WINNER: astro-ph/0101265 | N-Body Simulations of Open, Self-Gravitating Systems
+- QUOTE : Astrophysical systems differ often in two points from classical
+- WHY   : sufficient
+- ANSWER: The work on self-gravitating non-relativistic gas at thermal equilibrium motivates further research by addressing the limitations of classical thermodynamics in astrophysical systems, where gravity and openness modify equilibrium structures. This study extends previous research by simulating the consequences of these modifications on structure formation (astro-ph/0101265).
+[22:32:55] main | running function= Extends
+[22:32:55] select | function= Extends | candidates_in= 20
+[22:32:55] select | core_terms= ['self-gravitating gas', 'thermal equilibrium', 'non-relativistic', 'self-gravitating']
+[22:32:55] select | no cosine prune; kept=20/20
+[22:32:55] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101202', 'gr-qc/0101106', 'cond-mat/0103610', 'hep-ph/0101078', 'quant-ph/0101130', 'astro-ph/0101568', 'astro-ph/0101265', 'nucl-th/0101008', 'cond-mat/0102056', 'hep-th/0103034']
+[22:32:55] select | verify relaxed 1/10
+[22:32:55] verify | func= Extends | rank= 0 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[22:32:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:32:58] select | verify relaxed 2/10
+[22:32:58] verify | func= Extends | rank= 1 | pid= gr-qc/0101106 | title_snip='Statistical Mechanics of Relativistic One-Dimensional Self-Gravitating…' | abs_len= 844
+[22:33:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:33:01] select | verify relaxed 3/10
+[22:33:01] verify | func= Extends | rank= 2 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[22:33:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:33:04] select | verify relaxed 4/10
+[22:33:04] verify | func= Extends | rank= 3 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[22:33:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:33:06] select | verify relaxed 5/10
+[22:33:06] verify | func= Extends | rank= 4 | pid= quant-ph/0101130 | title_snip='Understanding the production of dual BEC with sympathetic cooling' | abs_len= 615
+[22:33:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:33:09] select | verify relaxed 6/10
+[22:33:09] verify | func= Extends | rank= 5 | pid= astro-ph/0101568 | title_snip='Statistical Mechanics of the Self-Gravitating Gas: I. Thermodynamic
+  …' | abs_len= 1846
+[22:33:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[22:33:12] select | verify relaxed 7/10
+[22:33:12] verify | func= Extends | rank= 6 | pid= astro-ph/0101265 | title_snip='N-Body Simulations of Open, Self-Gravitating Systems' | abs_len= 792
+[22:33:15] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[22:33:15] select | verify relaxed 8/10
+[22:33:15] verify | func= Extends | rank= 7 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[22:33:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:33:17] select | verify relaxed 9/10
+[22:33:17] verify | func= Extends | rank= 8 | pid= cond-mat/0102056 | title_snip='Theory of Thermal Remagnetization of Permanent Magnets' | abs_len= 946
+[22:33:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:33:20] select | verify relaxed 10/10
+[22:33:20] verify | func= Extends | rank= 9 | pid= hep-th/0103034 | title_snip='Gravity as the Spin-2 Quantum Gauge Theory' | abs_len= 1603
+[22:33:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the work on the self-gravitating non-relativistic gas at thermal equilibrium motivate and extend previous research in the field?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Extends.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

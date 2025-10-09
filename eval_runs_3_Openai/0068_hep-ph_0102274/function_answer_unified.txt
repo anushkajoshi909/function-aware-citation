@@ -1,0 +1,1 @@
+The possibility of a low value of sin2β motivates the construction of a reference unitarity triangle [Background] (hep-ph/0103040). The construction of this triangle utilizes established methods, including fits to experimental data and theory calculations, to indirectly determine the vertex and angles of the unitarity triangle [Background] (hep-ph/0103040).

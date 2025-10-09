@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query asks how the new work builds on (extends) current knowledge of the Galactic Center and directly compares its findings with earlier studies on the massive black hole."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[21:43:56] main | args: Namespace(max_check=10, debug=True)
+[21:43:56] read_last_jsonl | path= classified_outputs.jsonl
+[21:43:56] read_last_jsonl | total_lines= 1
+[21:43:56] main | query='How does the current work extend our understanding of the Galactic Center and compare with previous studies on the existence and activity of the massive black hole?' | funcs=['Extends', 'Compares']
+[21:43:57] main | core_terms= ['Galactic Center', 'black hole', 'massive black hole activity']
+[21:43:57] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:43:57] load_topk_jsonl | rows= 20
+[21:43:57] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102382 title_snip='The Center of Our Galaxy: Activity and High-Energy Emission of the
+  C…' abs_len= 1028
+[21:43:57] main | running function= Extends
+[21:43:57] select | function= Extends | candidates_in= 20
+[21:43:57] select | core_terms= ['Galactic Center', 'black hole', 'massive black hole activity']
+[21:43:57] select | no cosine prune; kept=20/20
+[21:43:57] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102382', 'astro-ph/0101330', 'gr-qc/0101091', 'gr-qc/0102067', 'gr-qc/0104020', 'astro-ph/0102139', 'hep-ph/0101210', 'astro-ph/0103466', 'hep-th/0104206', 'nucl-th/0104043']
+[21:43:57] select | verify relaxed 1/10
+[21:43:57] verify | func= Extends | rank= 0 | pid= astro-ph/0102382 | title_snip='The Center of Our Galaxy: Activity and High-Energy Emission of the
+  C…' | abs_len= 1028
+[21:44:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:44:01] select | verify relaxed 2/10
+[21:44:01] verify | func= Extends | rank= 1 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[21:44:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:44:04] select | verify relaxed 3/10
+[21:44:04] verify | func= Extends | rank= 2 | pid= gr-qc/0101091 | title_snip='Black Holes under External Influence' | abs_len= 491
+[21:44:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:06] select | verify relaxed 4/10
+[21:44:06] verify | func= Extends | rank= 3 | pid= gr-qc/0102067 | title_snip='Evaporation of a two-dimensional charged black hole' | abs_len= 797
+[21:44:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:09] select | verify relaxed 5/10
+[21:44:09] verify | func= Extends | rank= 4 | pid= gr-qc/0104020 | title_snip='Black Hole Excision for Dynamic Black Holes' | abs_len= 1035
+[21:44:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:11] select | verify relaxed 6/10
+[21:44:11] verify | func= Extends | rank= 5 | pid= astro-ph/0102139 | title_snip='A new Monte Carlo code for star cluster simulations: I. Relaxation' | abs_len= 1307
+[21:44:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[21:44:14] select | verify relaxed 7/10
+[21:44:14] verify | func= Extends | rank= 6 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[21:44:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:44:17] select | verify relaxed 8/10
+[21:44:17] verify | func= Extends | rank= 7 | pid= astro-ph/0103466 | title_snip='The motion of stars near the Galactic center: A comparison of the blac…' | abs_len= 1053
+[21:44:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[21:44:20] select | verify relaxed 9/10
+[21:44:20] verify | func= Extends | rank= 8 | pid= hep-th/0104206 | title_snip='Macroscopic and Microscopic Description of Black Diholes' | abs_len= 768
+[21:44:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:23] select | verify relaxed 10/10
+[21:44:23] verify | func= Extends | rank= 9 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[21:44:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work extend our understanding of the Galactic Center and compare with previous studies on the existence and activity of the massive black hole?
+- WINNER: astro-ph/0102382 | The Center of Our Galaxy: Activity and High-Energy Emission of the
+  Closest Massive Black Hole
+- QUOTE : existence, physical condition and activity of the 3 10E6 Mo black hole
+- WHY   : sufficient
+- ANSWER: The current work extends our understanding of the Galactic Center by reviewing the main observational characteristics and recent high-energy observations, building on previous studies of the massive black hole's existence and activity. It refines the understanding of the 3 million solar mass black hole coincident with Sgr A*, addressing its physical condition and apparent lack of high-energy activity (astro-ph/0102382).
+[21:44:30] main | running function= Compares
+[21:44:30] select | function= Compares | candidates_in= 20
+[21:44:30] select | core_terms= ['Galactic Center', 'black hole', 'massive black hole activity']
+[21:44:30] select | no cosine prune; kept=20/20
+[21:44:30] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102382', 'astro-ph/0101330', 'gr-qc/0101091', 'gr-qc/0102067', 'gr-qc/0104020', 'astro-ph/0102139', 'hep-ph/0101210', 'astro-ph/0103466', 'hep-th/0104206', 'nucl-th/0104043']
+[21:44:30] select | verify relaxed 1/10
+[21:44:30] verify | func= Compares | rank= 0 | pid= astro-ph/0102382 | title_snip='The Center of Our Galaxy: Activity and High-Energy Emission of the
+  C…' | abs_len= 1028
+[21:44:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:44:33] select | verify relaxed 2/10
+[21:44:33] verify | func= Compares | rank= 1 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[21:44:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:44:36] select | verify relaxed 3/10
+[21:44:36] verify | func= Compares | rank= 2 | pid= gr-qc/0101091 | title_snip='Black Holes under External Influence' | abs_len= 491
+[21:44:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:39] select | verify relaxed 4/10
+[21:44:39] verify | func= Compares | rank= 3 | pid= gr-qc/0102067 | title_snip='Evaporation of a two-dimensional charged black hole' | abs_len= 797
+[21:44:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:41] select | verify relaxed 5/10
+[21:44:41] verify | func= Compares | rank= 4 | pid= gr-qc/0104020 | title_snip='Black Hole Excision for Dynamic Black Holes' | abs_len= 1035
+[21:44:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:44] select | verify relaxed 6/10
+[21:44:44] verify | func= Compares | rank= 5 | pid= astro-ph/0102139 | title_snip='A new Monte Carlo code for star cluster simulations: I. Relaxation' | abs_len= 1307
+[21:44:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[21:44:47] select | verify relaxed 7/10
+[21:44:47] verify | func= Compares | rank= 6 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[21:44:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:44:50] select | verify relaxed 8/10
+[21:44:50] verify | func= Compares | rank= 7 | pid= astro-ph/0103466 | title_snip='The motion of stars near the Galactic center: A comparison of the blac…' | abs_len= 1053
+[21:44:53] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= True
+[21:44:53] select | verify relaxed 9/10
+[21:44:53] verify | func= Compares | rank= 8 | pid= hep-th/0104206 | title_snip='Macroscopic and Microscopic Description of Black Diholes' | abs_len= 768
+[21:44:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:44:56] select | verify relaxed 10/10
+[21:44:56] verify | func= Compares | rank= 9 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[21:44:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work extend our understanding of the Galactic Center and compare with previous studies on the existence and activity of the massive black hole?
+- WINNER: astro-ph/0103466 | The motion of stars near the Galactic center: A comparison of the black
+  hole and fermion ball scenarios
+- QUOTE : A comparison of the black hole and fermion ball scenarios
+- WHY   : sufficient
+- ANSWER: The current work compares the black hole and fermion ball scenarios of the Galactic Center by analyzing the orbits of stars S0-1 and S0-2, showing that both scenarios are consistent with the data. The comparison is based on the allowed phase-space of the stars' velocity and distance to Sgr A*, which is found to be larger for the fermion ball scenario than for the black hole scenario (astro-ph/0103466).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

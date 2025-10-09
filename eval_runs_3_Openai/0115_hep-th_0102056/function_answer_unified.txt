@@ -1,0 +1,1 @@
+The current work compares to existing noncommutative open string theories by reviewing and constructing the most general (3+1) noncommutative open string theory [Compares] (hep-th/0101045). It utilizes these theories by studying their dualities and arguing the existence of a U-duality group [Uses] (hep-th/0101045).

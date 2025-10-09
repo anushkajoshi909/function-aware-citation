@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Motivation"
+  ],
+  "justification": "The query asks how supersymmetric extensions build upon (extend) the existing understanding of CP violation, and why this understanding motivates exploring new physics beyond the electroweak Standard Model."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:06:53] main | args: Namespace(max_check=10, debug=True)
+[01:06:53] read_last_jsonl | path= classified_outputs.jsonl
+[01:06:53] read_last_jsonl | total_lines= 1
+[01:06:53] main | query='How do extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model?' | funcs=['Extends', 'Motivation']
+[01:06:55] main | core_terms= ['standard model', 'CP violation', 'supersymmetric extensions', 'electroweak standard model', 'new physics', 'CP']
+[01:06:55] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:06:55] load_topk_jsonl | rows= 20
+[01:06:55] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101259 title_snip='CP violation, the CKM matrix and New Physics' abs_len= 425
+[01:06:55] main | running function= Extends
+[01:06:55] select | function= Extends | candidates_in= 20
+[01:06:55] select | core_terms= ['standard model', 'CP violation', 'supersymmetric extensions', 'electroweak standard model', 'new physics', 'CP']
+[01:06:55] select | no cosine prune; kept=20/20
+[01:06:55] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101259', 'hep-ph/0104027', 'hep-ph/0101002', 'hep-ph/0103038', 'hep-ph/0103299', 'hep-ph/0102113', 'hep-ph/0103095', 'hep-ph/0103333', 'hep-ph/0101315', 'hep-ph/0102085']
+[01:06:55] select | verify relaxed 1/10
+[01:06:55] verify | func= Extends | rank= 0 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[01:06:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:06:58] select | verify relaxed 2/10
+[01:06:58] verify | func= Extends | rank= 1 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[01:07:02] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= False
+[01:07:02] select | verify relaxed 3/10
+[01:07:02] verify | func= Extends | rank= 2 | pid= hep-ph/0101002 | title_snip='CP Violation and Extra Dimensions' | abs_len= 524
+[01:07:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:05] select | verify relaxed 4/10
+[01:07:05] verify | func= Extends | rank= 3 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[01:07:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:07:08] select | verify relaxed 5/10
+[01:07:08] verify | func= Extends | rank= 4 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[01:07:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:11] select | verify relaxed 6/10
+[01:07:11] verify | func= Extends | rank= 5 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[01:07:14] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:14] select | verify relaxed 7/10
+[01:07:14] verify | func= Extends | rank= 6 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[01:07:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:17] select | verify relaxed 8/10
+[01:07:17] verify | func= Extends | rank= 7 | pid= hep-ph/0103333 | title_snip='Electroweak D-Waves' | abs_len= 383
+[01:07:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:07:20] select | verify relaxed 9/10
+[01:07:20] verify | func= Extends | rank= 8 | pid= hep-ph/0101315 | title_snip='Dynamical CP Violation and Flavour-Changing Processes' | abs_len= 927
+[01:07:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:23] select | verify relaxed 10/10
+[01:07:23] verify | func= Extends | rank= 9 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[01:07:26] verify | result supports= False fit= 0.20 top= 0.60 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How do extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model?
+- WINNER: hep-ph/0104027 | New physics in CP violation experiments
+- QUOTE : Most extensions of the SM exhibit new sources of CP violation
+- WHY   : sufficient
+- ANSWER: Supersymmetric extensions of the standard model, such as the CMSSM, build upon our current understanding of CP violation by introducing new sources of CP violation beyond the single source in the standard model. These extensions increase the scope of CP violation, allowing for potential departures from the standard model in rare phenomena, particularly in B physics (hep-ph/0104027).
+[01:07:30] main | running function= Motivation
+[01:07:30] select | function= Motivation | candidates_in= 20
+[01:07:30] select | core_terms= ['standard model', 'CP violation', 'supersymmetric extensions', 'electroweak standard model', 'new physics', 'CP']
+[01:07:30] select | no cosine prune; kept=20/20
+[01:07:30] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101259', 'hep-ph/0104027', 'hep-ph/0101002', 'hep-ph/0103038', 'hep-ph/0103299', 'hep-ph/0102113', 'hep-ph/0103095', 'hep-ph/0103333', 'hep-ph/0101315', 'hep-ph/0102085']
+[01:07:30] select | verify relaxed 1/10
+[01:07:30] verify | func= Motivation | rank= 0 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[01:07:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:33] select | verify relaxed 2/10
+[01:07:33] verify | func= Motivation | rank= 1 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[01:07:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:37] select | verify relaxed 3/10
+[01:07:37] verify | func= Motivation | rank= 2 | pid= hep-ph/0101002 | title_snip='CP Violation and Extra Dimensions' | abs_len= 524
+[01:07:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:40] select | verify relaxed 4/10
+[01:07:40] verify | func= Motivation | rank= 3 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[01:07:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:07:43] select | verify relaxed 5/10
+[01:07:43] verify | func= Motivation | rank= 4 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[01:07:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[01:07:46] select | verify relaxed 6/10
+[01:07:46] verify | func= Motivation | rank= 5 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[01:07:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:48] select | verify relaxed 7/10
+[01:07:48] verify | func= Motivation | rank= 6 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[01:07:51] verify | result supports= False fit= 0.20 top= 0.60 invalid= — cue_hint= True
+[01:07:51] select | verify relaxed 8/10
+[01:07:51] verify | func= Motivation | rank= 7 | pid= hep-ph/0103333 | title_snip='Electroweak D-Waves' | abs_len= 383
+[01:07:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:07:54] select | verify relaxed 9/10
+[01:07:54] verify | func= Motivation | rank= 8 | pid= hep-ph/0101315 | title_snip='Dynamical CP Violation and Flavour-Changing Processes' | abs_len= 927
+[01:07:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:07:57] select | verify relaxed 10/10
+[01:07:57] verify | func= Motivation | rank= 9 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[01:08:00] verify | result supports= False fit= 0.20 top= 0.60 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How do extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model?
+- WINNER: hep-ph/0103299 | Constraining Models of New Physics in Light of Recent Experimental
+  Results on $a_{\psi K_S}$
+- QUOTE : extensions of the Standard Model
+- WHY   : sufficient
+- ANSWER: Recent experimental results on CP violation, such as $a_{\psi K_S}$, motivate the study of extensions to the Standard Model, as they may reveal new physics beyond the electroweak standard model. These extensions, including supersymmetric models, aim to build upon our current understanding of CP violation and its role in new physics (hep-ph/0103299).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

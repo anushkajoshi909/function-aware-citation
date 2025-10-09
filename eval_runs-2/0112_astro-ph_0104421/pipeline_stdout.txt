@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Motivation"
+  ],
+  "justification": "The query asks how the study expands knowledge of low-frequency QPOs (Extends) and also seeks the reasons it drives future investigations (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:37:04] main | args: Namespace(max_check=10, debug=True)
+[23:37:04] read_last_jsonl | path= classified_outputs.jsonl
+[23:37:04] read_last_jsonl | total_lines= 1
+[23:37:04] main | query='How does the study of the 5 Hz quasi-periodic oscillation in GRS 1739-278 extend our understanding of low-frequency QPOs and motivate further research on their properties in black-hole candidates?' | funcs=['Extends', 'Motivation']
+[23:37:06] main | core_terms= ['GRS 1739-278', 'black-hole candidates', 'quasi-periodic oscillation', 'QPOs', '5 Hz', 'quasi-periodic', 'GRS', '1739-278', 'low-frequency', 'QPO', 'black-hole']
+[23:37:06] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:37:06] load_topk_jsonl | rows= 20
+[23:37:06] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104421 title_snip='A detailed study of the 5 Hz quasi-periodic oscillations in the bright…' abs_len= 1532
+[23:37:06] main | running function= Extends
+[23:37:06] select | function= Extends | candidates_in= 20
+[23:37:06] select | core_terms= ['GRS 1739-278', 'black-hole candidates', 'quasi-periodic oscillation', 'QPOs', '5 Hz', 'quasi-periodic', 'GRS', '1739-278', 'low-frequency', 'QPO', 'black-hole']
+[23:37:06] select | no cosine prune; kept=20/20
+[23:37:06] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104421', 'astro-ph/0104019', 'gr-qc/0103054', 'astro-ph/0104008', 'astro-ph/0104487', 'astro-ph/0104323', 'astro-ph/0101048', 'astro-ph/0103431', 'hep-th/0104065', 'astro-ph/0102233']
+[23:37:06] select | verify relaxed 1/10
+[23:37:06] verify | func= Extends | rank= 0 | pid= astro-ph/0104421 | title_snip='A detailed study of the 5 Hz quasi-periodic oscillations in the bright…' | abs_len= 1532
+[23:37:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:37:09] select | verify relaxed 2/10
+[23:37:09] verify | func= Extends | rank= 1 | pid= astro-ph/0104019 | title_snip='The High-Frequency QPOs in GRS 1915+105' | abs_len= 980
+[23:37:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:12] select | verify relaxed 3/10
+[23:37:12] verify | func= Extends | rank= 2 | pid= gr-qc/0103054 | title_snip='Late-time dynamics of rapidly rotating black holes' | abs_len= 1519
+[23:37:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:14] select | verify relaxed 4/10
+[23:37:14] verify | func= Extends | rank= 3 | pid= astro-ph/0104008 | title_snip='Testing the transition layer model of quasi-periodic oscillations in
+ …' | abs_len= 1628
+[23:37:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:17] select | verify relaxed 5/10
+[23:37:17] verify | func= Extends | rank= 4 | pid= astro-ph/0104487 | title_snip='Discovery of a 450 Hz QPO from the Microquasar GRO J1655-40 with RXTE' | abs_len= 1752
+[23:37:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:19] select | verify relaxed 6/10
+[23:37:19] verify | func= Extends | rank= 5 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[23:37:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:22] select | verify relaxed 7/10
+[23:37:22] verify | func= Extends | rank= 6 | pid= astro-ph/0101048 | title_snip='KiloHertz QPO and Gravitational Wave Emission as the Signature of the
+…' | abs_len= 1588
+[23:37:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:24] select | verify relaxed 8/10
+[23:37:24] verify | func= Extends | rank= 7 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[23:37:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:37:27] select | verify relaxed 9/10
+[23:37:27] verify | func= Extends | rank= 8 | pid= hep-th/0104065 | title_snip='On the Absorption by Near-Extremal Black Branes' | abs_len= 1387
+[23:37:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:30] select | verify relaxed 10/10
+[23:37:30] verify | func= Extends | rank= 9 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[23:37:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the study of the 5 Hz quasi-periodic oscillation in GRS 1739-278 extend our understanding of low-frequency QPOs and motivate further research on their properties in black-hole candidates?
+- WINNER: astro-ph/0104421 | A detailed study of the 5 Hz quasi-periodic oscillations in the bright
+  X-ray transient and black-hole candidate GRS 1739-278
+- QUOTE : We discuss our finding in the frame work of low-frequency QPOs
+- WHY   : sufficient
+- ANSWER: The study of the 5 Hz quasi-periodic oscillation in GRS 1739-278 extends our understanding of low-frequency QPOs by providing detailed observations of its properties, such as energy dependence and phase lags. This research builds upon prior studies by offering new insights into the behavior of QPOs in black-hole candidates, particularly with regards to their frequency, amplitude, and timing characteristics (astro-ph/0104421).
+[23:37:37] main | running function= Motivation
+[23:37:37] select | function= Motivation | candidates_in= 20
+[23:37:37] select | core_terms= ['GRS 1739-278', 'black-hole candidates', 'quasi-periodic oscillation', 'QPOs', '5 Hz', 'quasi-periodic', 'GRS', '1739-278', 'low-frequency', 'QPO', 'black-hole']
+[23:37:37] select | no cosine prune; kept=20/20
+[23:37:37] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104421', 'astro-ph/0104019', 'gr-qc/0103054', 'astro-ph/0104008', 'astro-ph/0104487', 'astro-ph/0104323', 'astro-ph/0101048', 'astro-ph/0103431', 'hep-th/0104065', 'astro-ph/0102233']
+[23:37:37] select | verify relaxed 1/10
+[23:37:37] verify | func= Motivation | rank= 0 | pid= astro-ph/0104421 | title_snip='A detailed study of the 5 Hz quasi-periodic oscillations in the bright…' | abs_len= 1532
+[23:37:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:37:41] select | verify relaxed 2/10
+[23:37:41] verify | func= Motivation | rank= 1 | pid= astro-ph/0104019 | title_snip='The High-Frequency QPOs in GRS 1915+105' | abs_len= 980
+[23:37:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:43] select | verify relaxed 3/10
+[23:37:43] verify | func= Motivation | rank= 2 | pid= gr-qc/0103054 | title_snip='Late-time dynamics of rapidly rotating black holes' | abs_len= 1519
+[23:37:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:46] select | verify relaxed 4/10
+[23:37:46] verify | func= Motivation | rank= 3 | pid= astro-ph/0104008 | title_snip='Testing the transition layer model of quasi-periodic oscillations in
+ …' | abs_len= 1628
+[23:37:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:48] select | verify relaxed 5/10
+[23:37:48] verify | func= Motivation | rank= 4 | pid= astro-ph/0104487 | title_snip='Discovery of a 450 Hz QPO from the Microquasar GRO J1655-40 with RXTE' | abs_len= 1752
+[23:37:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:51] select | verify relaxed 6/10
+[23:37:51] verify | func= Motivation | rank= 5 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[23:37:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:53] select | verify relaxed 7/10
+[23:37:53] verify | func= Motivation | rank= 6 | pid= astro-ph/0101048 | title_snip='KiloHertz QPO and Gravitational Wave Emission as the Signature of the
+…' | abs_len= 1588
+[23:37:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:37:55] select | verify relaxed 8/10
+[23:37:55] verify | func= Motivation | rank= 7 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[23:37:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:37:58] select | verify relaxed 9/10
+[23:37:58] verify | func= Motivation | rank= 8 | pid= hep-th/0104065 | title_snip='On the Absorption by Near-Extremal Black Branes' | abs_len= 1387
+[23:38:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:38:01] select | verify relaxed 10/10
+[23:38:01] verify | func= Motivation | rank= 9 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[23:38:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the study of the 5 Hz quasi-periodic oscillation in GRS 1739-278 extend our understanding of low-frequency QPOs and motivate further research on their properties in black-hole candidates?
+- WINNER: astro-ph/0104421 | A detailed study of the 5 Hz quasi-periodic oscillations in the bright
+  X-ray transient and black-hole candidate GRS 1739-278
+- QUOTE : We discuss our finding in the frame work of low-frequency QPOs
+- WHY   : sufficient
+- ANSWER: The study of the 5 Hz quasi-periodic oscillation in GRS 1739-278 is motivated by the need to understand low-frequency QPOs in black-hole candidates, as it provides insights into their properties and behavior. This research is important because it sheds light on the physical mechanisms underlying these oscillations, which can help resolve the existing gaps in our knowledge of black-hole candidates (astro-ph/0104421).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

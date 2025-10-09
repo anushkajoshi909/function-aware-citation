@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query explicitly asks how the current work builds upon (extends) existing theories and how it stands in comparison (compares) to them."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[19:07:36] main | args: Namespace(max_check=10, debug=True)
+[19:07:36] read_last_jsonl | path= classified_outputs.jsonl
+[19:07:36] read_last_jsonl | total_lines= 1
+[19:07:36] main | query='How does the current work extend and compare with existing theories on massless fields and helicity representations?' | funcs=['Extends', 'Compares']
+[19:07:37] main | core_terms= ['massless fields', 'helicity representations']
+[19:07:37] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:07:37] load_topk_jsonl | rows= 20
+[19:07:37] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0101216 title_snip='Discrete Noncommutative Gauge Theory' abs_len= 998
+[19:07:37] main | running function= Extends
+[19:07:37] select | function= Extends | candidates_in= 20
+[19:07:37] select | core_terms= ['massless fields', 'helicity representations']
+[19:07:37] select | no cosine prune; kept=20/20
+[19:07:37] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0101216', 'hep-th/0102041', 'hep-th/0103228', 'hep-th/0101190', 'hep-th/0103209', 'hep-ph/0104197', 'hep-ph/0102103', 'hep-ph/0103299', 'physics/0101039', 'nucl-th/0101009']
+[19:07:37] select | verify relaxed 1/10
+[19:07:37] verify | func= Extends | rank= 0 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[19:07:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:07:40] select | verify relaxed 2/10
+[19:07:40] verify | func= Extends | rank= 1 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[19:07:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:07:43] select | verify relaxed 3/10
+[19:07:43] verify | func= Extends | rank= 2 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[19:07:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[19:07:46] select | verify relaxed 4/10
+[19:07:46] verify | func= Extends | rank= 3 | pid= hep-th/0101190 | title_snip='Fractional helicity, Lorentz symmetry breaking, compactification and
+ …' | abs_len= 1182
+[19:07:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[19:07:50] select | verify relaxed 5/10
+[19:07:50] verify | func= Extends | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[19:07:54] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[19:07:54] select | verify relaxed 6/10
+[19:07:54] verify | func= Extends | rank= 5 | pid= hep-ph/0104197 | title_snip='Effective field theory and the quark model, II. Structure of loop
+  co…' | abs_len= 1238
+[19:07:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:07:57] select | verify relaxed 7/10
+[19:07:57] verify | func= Extends | rank= 6 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[19:07:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:07:59] select | verify relaxed 8/10
+[19:07:59] verify | func= Extends | rank= 7 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[19:08:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:08:02] select | verify relaxed 9/10
+[19:08:02] verify | func= Extends | rank= 8 | pid= physics/0101039 | title_snip='Reductionism, Emergence, and Effective Field Theories' | abs_len= 505
+[19:08:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:08:05] select | verify relaxed 10/10
+[19:08:05] verify | func= Extends | rank= 9 | pid= nucl-th/0101009 | title_snip='New Forms of Deuteron Equations and Wave Function Representations' | abs_len= 620
+[19:08:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work extend and compare with existing theories on massless fields and helicity representations?
+- No supporting candidate with sufficient evidence.
+[19:08:09] main | running function= Compares
+[19:08:09] select | function= Compares | candidates_in= 20
+[19:08:09] select | core_terms= ['massless fields', 'helicity representations']
+[19:08:09] select | no cosine prune; kept=20/20
+[19:08:09] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0101216', 'hep-th/0102041', 'hep-th/0103228', 'hep-th/0101190', 'hep-th/0103209', 'hep-ph/0104197', 'hep-ph/0102103', 'hep-ph/0103299', 'physics/0101039', 'nucl-th/0101009']
+[19:08:09] select | verify relaxed 1/10
+[19:08:09] verify | func= Compares | rank= 0 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[19:08:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[19:08:12] select | verify relaxed 2/10
+[19:08:12] verify | func= Compares | rank= 1 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[19:08:15] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[19:08:15] select | verify relaxed 3/10
+[19:08:15] verify | func= Compares | rank= 2 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[19:08:18] verify | result supports= False fit= 0.00 top= 0.70 invalid= off_topic_no_core_in_abstract cue_hint= False
+[19:08:18] select | verify relaxed 4/10
+[19:08:18] verify | func= Compares | rank= 3 | pid= hep-th/0101190 | title_snip='Fractional helicity, Lorentz symmetry breaking, compactification and
+ …' | abs_len= 1182
+[19:08:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[19:08:22] select | verify relaxed 5/10
+[19:08:22] verify | func= Compares | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[19:08:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:08:25] select | verify relaxed 6/10
+[19:08:25] verify | func= Compares | rank= 5 | pid= hep-ph/0104197 | title_snip='Effective field theory and the quark model, II. Structure of loop
+  co…' | abs_len= 1238
+[19:08:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:08:28] select | verify relaxed 7/10
+[19:08:28] verify | func= Compares | rank= 6 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[19:08:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:08:31] select | verify relaxed 8/10
+[19:08:31] verify | func= Compares | rank= 7 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[19:08:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:08:33] select | verify relaxed 9/10
+[19:08:33] verify | func= Compares | rank= 8 | pid= physics/0101039 | title_snip='Reductionism, Emergence, and Effective Field Theories' | abs_len= 505
+[19:08:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:08:36] select | verify relaxed 10/10
+[19:08:36] verify | func= Compares | rank= 9 | pid= nucl-th/0101009 | title_snip='New Forms of Deuteron Equations and Wave Function Representations' | abs_len= 620
+[19:08:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work extend and compare with existing theories on massless fields and helicity representations?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

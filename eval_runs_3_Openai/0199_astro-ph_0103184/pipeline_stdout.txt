@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Motivation"
+  ],
+  "justification": "The query asks how a new discovery expands (extends) current knowledge of dust production and also why this finding drives (motivates) a reassessment of stellar evolution models."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[19:59:30] main | args: Namespace(max_check=10, debug=True)
+[19:59:30] read_last_jsonl | path= classified_outputs.jsonl
+[19:59:30] read_last_jsonl | total_lines= 1
+[19:59:30] main | query='How does the discovery of non-thermal emission in dust-enshrouded Wolf-Rayet stars extend our understanding of dust production and motivate a re-evaluation of single-star and binary stellar evolution models?' | funcs=['Extends', 'Motivation']
+[19:59:32] main | core_terms= ['Wolf-Rayet stars', 'dust', 'non-thermal emission', 'stellar evolution', 'non-thermal', 'dust-enshrouded', 'Wolf-Rayet', 're-evaluation', 'single-star']
+[19:59:32] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:59:32] load_topk_jsonl | rows= 20
+[19:59:32] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103184 title_snip='Radio and Infrared Properties of Dust-Enshrouded Wolf-Rayet Stars' abs_len= 1020
+[19:59:32] main | running function= Extends
+[19:59:32] select | function= Extends | candidates_in= 20
+[19:59:32] select | core_terms= ['Wolf-Rayet stars', 'dust', 'non-thermal emission', 'stellar evolution', 'non-thermal', 'dust-enshrouded', 'Wolf-Rayet', 're-evaluation', 'single-star']
+[19:59:32] select | no cosine prune; kept=20/20
+[19:59:32] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103184', 'astro-ph/0104262', 'astro-ph/0101001', 'cond-mat/0103019', 'astro-ph/0104480', 'astro-ph/0102217', 'astro-ph/0104238', 'astro-ph/0104425', 'astro-ph/0101091', 'astro-ph/0102228']
+[19:59:32] select | verify relaxed 1/10
+[19:59:32] verify | func= Extends | rank= 0 | pid= astro-ph/0103184 | title_snip='Radio and Infrared Properties of Dust-Enshrouded Wolf-Rayet Stars' | abs_len= 1020
+[19:59:35] verify | result supports= True fit= 0.90 top= 0.95 invalid= — cue_hint= False
+[19:59:35] select | verify relaxed 2/10
+[19:59:35] verify | func= Extends | rank= 1 | pid= astro-ph/0104262 | title_snip='Irradiated Planets' | abs_len= 1273
+[19:59:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:38] select | verify relaxed 3/10
+[19:59:38] verify | func= Extends | rank= 2 | pid= astro-ph/0101001 | title_snip='Polarized Microwave Radiation from Dust' | abs_len= 1125
+[19:59:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:41] select | verify relaxed 4/10
+[19:59:41] verify | func= Extends | rank= 3 | pid= cond-mat/0103019 | title_snip='Thermal Re-emission Model' | abs_len= 612
+[19:59:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:43] select | verify relaxed 5/10
+[19:59:43] verify | func= Extends | rank= 4 | pid= astro-ph/0104480 | title_snip='On the Possibility of Observing H2 Emission from Primordial Molecular
+…' | abs_len= 1230
+[19:59:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:46] select | verify relaxed 6/10
+[19:59:46] verify | func= Extends | rank= 5 | pid= astro-ph/0102217 | title_snip='100-year Mass Loss Modulations on the Asymptotic Giant Branch' | abs_len= 1563
+[19:59:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:49] select | verify relaxed 7/10
+[19:59:49] verify | func= Extends | rank= 6 | pid= astro-ph/0104238 | title_snip='Tracing the Mass during Low-Mass Star Formation. II. Modelling the
+  S…' | abs_len= 1033
+[19:59:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:52] select | verify relaxed 8/10
+[19:59:52] verify | func= Extends | rank= 7 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[19:59:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:54] select | verify relaxed 9/10
+[19:59:54] verify | func= Extends | rank= 8 | pid= astro-ph/0101091 | title_snip='Thermal Infrared 3--5 $\mu$m Colors of Obscured and Unobscured Active
+…' | abs_len= 1184
+[19:59:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:59:57] select | verify relaxed 10/10
+[19:59:57] verify | func= Extends | rank= 9 | pid= astro-ph/0102228 | title_snip='The evolution of emission lines in HII galaxies' | abs_len= 1484
+[20:00:00] verify | result supports= True fit= 0.80 top= 0.60 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the discovery of non-thermal emission in dust-enshrouded Wolf-Rayet stars extend our understanding of dust production and motivate a re-evaluation of single-star and binary stellar evolution models?
+- WINNER: astro-ph/0103184 | Radio and Infrared Properties of Dust-Enshrouded Wolf-Rayet Stars
+- QUOTE : Single-star and binary stellar evolution models will have to be modified
+- WHY   : sufficient
+[20:00:02] main | running function= Motivation
+[20:00:02] select | function= Motivation | candidates_in= 20
+[20:00:02] select | core_terms= ['Wolf-Rayet stars', 'dust', 'non-thermal emission', 'stellar evolution', 'non-thermal', 'dust-enshrouded', 'Wolf-Rayet', 're-evaluation', 'single-star']
+[20:00:02] select | no cosine prune; kept=20/20
+[20:00:02] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103184', 'astro-ph/0104262', 'astro-ph/0101001', 'cond-mat/0103019', 'astro-ph/0104480', 'astro-ph/0102217', 'astro-ph/0104238', 'astro-ph/0104425', 'astro-ph/0101091', 'astro-ph/0102228']
+[20:00:02] select | verify relaxed 1/10
+[20:00:02] verify | func= Motivation | rank= 0 | pid= astro-ph/0103184 | title_snip='Radio and Infrared Properties of Dust-Enshrouded Wolf-Rayet Stars' | abs_len= 1020
+[20:00:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:00:06] select | verify relaxed 2/10
+[20:00:06] verify | func= Motivation | rank= 1 | pid= astro-ph/0104262 | title_snip='Irradiated Planets' | abs_len= 1273
+[20:00:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:08] select | verify relaxed 3/10
+[20:00:08] verify | func= Motivation | rank= 2 | pid= astro-ph/0101001 | title_snip='Polarized Microwave Radiation from Dust' | abs_len= 1125
+[20:00:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:11] select | verify relaxed 4/10
+[20:00:11] verify | func= Motivation | rank= 3 | pid= cond-mat/0103019 | title_snip='Thermal Re-emission Model' | abs_len= 612
+[20:00:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:14] select | verify relaxed 5/10
+[20:00:14] verify | func= Motivation | rank= 4 | pid= astro-ph/0104480 | title_snip='On the Possibility of Observing H2 Emission from Primordial Molecular
+…' | abs_len= 1230
+[20:00:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:17] select | verify relaxed 6/10
+[20:00:17] verify | func= Motivation | rank= 5 | pid= astro-ph/0102217 | title_snip='100-year Mass Loss Modulations on the Asymptotic Giant Branch' | abs_len= 1563
+[20:00:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:19] select | verify relaxed 7/10
+[20:00:19] verify | func= Motivation | rank= 6 | pid= astro-ph/0104238 | title_snip='Tracing the Mass during Low-Mass Star Formation. II. Modelling the
+  S…' | abs_len= 1033
+[20:00:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:22] select | verify relaxed 8/10
+[20:00:22] verify | func= Motivation | rank= 7 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[20:00:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:25] select | verify relaxed 9/10
+[20:00:25] verify | func= Motivation | rank= 8 | pid= astro-ph/0101091 | title_snip='Thermal Infrared 3--5 $\mu$m Colors of Obscured and Unobscured Active
+…' | abs_len= 1184
+[20:00:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:00:28] select | verify relaxed 10/10
+[20:00:28] verify | func= Motivation | rank= 9 | pid= astro-ph/0102228 | title_snip='The evolution of emission lines in HII galaxies' | abs_len= 1484
+[20:00:31] verify | result supports= True fit= 0.80 top= 0.60 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the discovery of non-thermal emission in dust-enshrouded Wolf-Rayet stars extend our understanding of dust production and motivate a re-evaluation of single-star and binary stellar evolution models?
+- WINNER: astro-ph/0103184 | Radio and Infrared Properties of Dust-Enshrouded Wolf-Rayet Stars
+- QUOTE : Single-star and binary stellar evolution models will have to be modified
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The discovery of non-thermal emission in dust-enshrouded Wolf-Rayet stars extends our understanding of dust production by suggesting that wind compression in a binary system is necessary for efficient dust production [Extends] (astro-ph/0103184). This finding motivates a re-evaluation of single-star and binary stellar evolution models, as the hypothesis that virtually all WC8-10 stars must be in binaries challenges current models [Motivation] (astro-ph/0103184).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

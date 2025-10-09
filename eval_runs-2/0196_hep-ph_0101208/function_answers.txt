@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Motivation. [Motivation]
+The analysis of Higgs boson couplings in the 2HDM(II) model extends our understanding of the Standard Model-like scenario by providing a pattern relation between the ratios of couplings to gauge bosons and quarks, allowing for the differentiation of various realizations of this scenario. This extends the prior method by enabling the calculation of loop couplings with increased accuracy and sensitivity to Higgs self-interaction parameters (hep-ph/0101208). [Extends]

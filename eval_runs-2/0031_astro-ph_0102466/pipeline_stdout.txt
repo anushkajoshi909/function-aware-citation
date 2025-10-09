@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the study's methods can be applied (Uses) and explicitly frames this as guidance for subsequent investigations (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[21:55:25] main | args: Namespace(max_check=10, debug=True)
+[21:55:25] read_last_jsonl | path= classified_outputs.jsonl
+[21:55:25] read_last_jsonl | total_lines= 1
+[21:55:25] main | query='How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?' | funcs=['Uses', 'FutureWork']
+[21:55:26] main | core_terms= ['density fluctuations', 'power spectrum']
+[21:55:26] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:55:26] load_topk_jsonl | rows= 20
+[21:55:26] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103018 title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' abs_len= 1788
+[21:55:26] main | running function= Uses
+[21:55:26] select | function= Uses | candidates_in= 20
+[21:55:26] select | core_terms= ['density fluctuations', 'power spectrum']
+[21:55:26] select | no cosine prune; kept=20/20
+[21:55:26] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103018', 'astro-ph/0101225', 'astro-ph/0101361', 'astro-ph/0102195', 'nucl-th/0101012', 'gr-qc/0103045', 'astro-ph/0103082', 'astro-ph/0104443', 'astro-ph/0102174', 'astro-ph/0104057']
+[21:55:26] select | verify relaxed 1/10
+[21:55:26] verify | func= Uses | rank= 0 | pid= astro-ph/0103018 | title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' | abs_len= 1788
+[21:55:29] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= True
+[21:55:29] select | verify relaxed 2/10
+[21:55:29] verify | func= Uses | rank= 1 | pid= astro-ph/0101225 | title_snip='The Density Perturbation Power Spectrum to Second-Order Corrections in…' | abs_len= 272
+[21:55:32] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:32] select | verify relaxed 3/10
+[21:55:32] verify | func= Uses | rank= 2 | pid= astro-ph/0101361 | title_snip='Cosmological Density and Power Spectrum from Peculiar Velocities:
+  No…' | abs_len= 1851
+[21:55:36] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:36] select | verify relaxed 4/10
+[21:55:36] verify | func= Uses | rank= 3 | pid= astro-ph/0102195 | title_snip='Evolution of Power Spectrum in Non-Gaussian Models' | abs_len= 433
+[21:55:39] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:39] select | verify relaxed 5/10
+[21:55:39] verify | func= Uses | rank= 4 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[21:55:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:55:41] select | verify relaxed 6/10
+[21:55:41] verify | func= Uses | rank= 5 | pid= gr-qc/0103045 | title_snip='Inflation from a massive scalar field and scalar perturbations of the
+…' | abs_len= 494
+[21:55:44] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:44] select | verify relaxed 7/10
+[21:55:44] verify | func= Uses | rank= 6 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[21:55:47] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:47] select | verify relaxed 8/10
+[21:55:47] verify | func= Uses | rank= 7 | pid= astro-ph/0104443 | title_snip='CMB Power Spectrum Estimation via Hierarchical Decomposition' | abs_len= 739
+[21:55:50] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:50] select | verify relaxed 9/10
+[21:55:50] verify | func= Uses | rank= 8 | pid= astro-ph/0102174 | title_snip='Revisiting the calculations of inflationary perturbations' | abs_len= 553
+[21:55:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:55:53] select | verify relaxed 10/10
+[21:55:53] verify | func= Uses | rank= 9 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[21:55:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+[21:55:56] main | running function= FutureWork
+[21:55:56] select | function= FutureWork | candidates_in= 20
+[21:55:56] select | core_terms= ['density fluctuations', 'power spectrum']
+[21:55:56] select | no cosine prune; kept=20/20
+[21:55:56] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103018', 'astro-ph/0101225', 'astro-ph/0101361', 'astro-ph/0102195', 'nucl-th/0101012', 'gr-qc/0103045', 'astro-ph/0103082', 'astro-ph/0104443', 'astro-ph/0102174', 'astro-ph/0104057']
+[21:55:56] select | verify relaxed 1/10
+[21:55:56] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103018 | title_snip='Possible Detection of Baryonic Fluctuations in the Large-Scale Structu…' | abs_len= 1788
+[21:55:58] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[21:55:58] select | verify relaxed 2/10
+[21:55:58] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101225 | title_snip='The Density Perturbation Power Spectrum to Second-Order Corrections in…' | abs_len= 272
+[21:56:01] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:56:01] select | verify relaxed 3/10
+[21:56:01] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101361 | title_snip='Cosmological Density and Power Spectrum from Peculiar Velocities:
+  No…' | abs_len= 1851
+[21:56:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:56:05] select | verify relaxed 4/10
+[21:56:05] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102195 | title_snip='Evolution of Power Spectrum in Non-Gaussian Models' | abs_len= 433
+[21:56:07] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:56:07] select | verify relaxed 5/10
+[21:56:07] verify | func= FutureWork | rank= 4 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[21:56:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:56:10] select | verify relaxed 6/10
+[21:56:10] verify | func= FutureWork | rank= 5 | pid= gr-qc/0103045 | title_snip='Inflation from a massive scalar field and scalar perturbations of the
+…' | abs_len= 494
+[21:56:13] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:56:13] select | verify relaxed 7/10
+[21:56:13] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[21:56:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:56:16] select | verify relaxed 8/10
+[21:56:16] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104443 | title_snip='CMB Power Spectrum Estimation via Hierarchical Decomposition' | abs_len= 739
+[21:56:19] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[21:56:19] select | verify relaxed 9/10
+[21:56:19] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102174 | title_snip='Revisiting the calculations of inflationary perturbations' | abs_len= 553
+[21:56:22] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[21:56:22] select | verify relaxed 10/10
+[21:56:22] verify | func= FutureWork | rank= 9 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[21:56:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How could future research utilize the methods presented in this study to further investigate the power spectrum of density fluctuations?
+- WINNER: astro-ph/0101361 | Cosmological Density and Power Spectrum from Peculiar Velocities:
+  Nonlinear Corrections and PCA
+- QUOTE : may be related to the wiggle seen in the power spectrum
+- WHY   : sufficient
+- ANSWER: Future research could utilize the nonlinear correction methods and Principal Component Analysis (PCA) presented in this study to further investigate the power spectrum of density fluctuations by exploring deviations from the LCDM model and addressing spatial features of the data. This could involve fine-tuning theoretical and error models to better understand the observed wiggle in the power spectrum (astro-ph/0101361).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

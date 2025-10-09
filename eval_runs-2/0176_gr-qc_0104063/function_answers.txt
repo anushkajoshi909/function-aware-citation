@@ -1,0 +1,1 @@
+Previous methods for simulating binary black hole systems had limitations in terms of accuracy, particularly in the nonlinear post-merger regime (gr-qc/0103011). [Background]

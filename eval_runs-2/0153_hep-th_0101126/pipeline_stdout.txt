@@ -1,0 +1,147 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query seeks reasons (limitations) that drive further study (Motivation) and explicitly asks for future research directions (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:30:52] main | args: Namespace(max_check=10, debug=True)
+[00:30:52] read_last_jsonl | path= classified_outputs.jsonl
+[00:30:52] read_last_jsonl | total_lines= 1
+[00:30:52] main | query='What future research directions are motivated by the current limitations of M-theory and matrix theory?' | funcs=['Motivation', 'FutureWork']
+[00:30:53] main | core_terms= ['M-theory', 'matrix theory', 'string theory', 'quantum gravity']
+[00:30:53] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:30:53] load_topk_jsonl | rows= 20
+[00:30:53] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0101126 title_snip='M(atrix) Theory: Matrix Quantum Mechanics as a Fundamental Theory' abs_len= 1397
+[00:30:53] main | running function= Motivation
+[00:30:53] select | function= Motivation | candidates_in= 20
+[00:30:53] select | core_terms= ['M-theory', 'matrix theory', 'string theory', 'quantum gravity']
+[00:30:53] select | no cosine prune; kept=20/20
+[00:30:53] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0101126', 'hep-th/0102170', 'hep-ph/0103095', 'hep-th/0102077', 'hep-th/0102168', 'hep-ph/0102117', 'hep-ph/0104027', 'hep-ph/0103080', 'hep-ph/0103074', 'hep-ph/0104062']
+[00:30:53] select | verify relaxed 1/10
+[00:30:53] verify | func= Motivation | rank= 0 | pid= hep-th/0101126 | title_snip='M(atrix) Theory: Matrix Quantum Mechanics as a Fundamental Theory' | abs_len= 1397
+[00:30:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:30:57] select | verify relaxed 2/10
+[00:30:57] verify | func= Motivation | rank= 1 | pid= hep-th/0102170 | title_snip='Proposal of a topological M(atrix) theory' | abs_len= 826
+[00:31:00] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[00:31:00] select | verify relaxed 3/10
+[00:31:00] verify | func= Motivation | rank= 2 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[00:31:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:02] select | verify relaxed 4/10
+[00:31:02] verify | func= Motivation | rank= 3 | pid= hep-th/0102077 | title_snip='M-theory observables for cosmological space-times' | abs_len= 806
+[00:31:05] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:31:05] select | verify relaxed 5/10
+[00:31:05] verify | func= Motivation | rank= 4 | pid= hep-th/0102168 | title_snip='Supermatrix Models' | abs_len= 678
+[00:31:08] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:31:08] select | verify relaxed 6/10
+[00:31:08] verify | func= Motivation | rank= 5 | pid= hep-ph/0102117 | title_snip='Higgs Production and Decay in the MSSM: Status and Perspectives' | abs_len= 468
+[00:31:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:11] select | verify relaxed 7/10
+[00:31:11] verify | func= Motivation | rank= 6 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[00:31:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:13] select | verify relaxed 8/10
+[00:31:13] verify | func= Motivation | rank= 7 | pid= hep-ph/0103080 | title_snip='A Note on Wandzura-Wilczek Relations' | abs_len= 647
+[00:31:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:16] select | verify relaxed 9/10
+[00:31:16] verify | func= Motivation | rank= 8 | pid= hep-ph/0103074 | title_snip='Information about the neutrino mass matrix from Double Beta Decay' | abs_len= 1064
+[00:31:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:18] select | verify relaxed 10/10
+[00:31:18] verify | func= Motivation | rank= 9 | pid= hep-ph/0104062 | title_snip='A New Approach to a Global Fit of the CKM Matrix' | abs_len= 979
+[00:31:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What future research directions are motivated by the current limitations of M-theory and matrix theory?
+- WINNER: hep-th/0101126 | M(atrix) Theory: Matrix Quantum Mechanics as a Fundamental Theory
+- QUOTE : Evidence for the existence of M-theory is still only circumstantial
+- WHY   : sufficient
+- ANSWER: The limitations of M-theory, including the lack of a complete background-independent formulation, motivate future research directions. Developing a more comprehensive understanding of M-theory and matrix theory is crucial for reconciling gravity and quantum field theory in a realistic framework (hep-th/0101126).
+[00:31:24] main | running function= FutureWork
+[00:31:24] select | function= FutureWork | candidates_in= 20
+[00:31:24] select | core_terms= ['M-theory', 'matrix theory', 'string theory', 'quantum gravity']
+[00:31:24] select | no cosine prune; kept=20/20
+[00:31:24] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0101126', 'hep-th/0102170', 'hep-ph/0103095', 'hep-th/0102077', 'hep-th/0102168', 'hep-ph/0102117', 'hep-ph/0104027', 'hep-ph/0103080', 'hep-ph/0103074', 'hep-ph/0104062']
+[00:31:24] select | verify relaxed 1/10
+[00:31:24] verify | func= FutureWork | rank= 0 | pid= hep-th/0101126 | title_snip='M(atrix) Theory: Matrix Quantum Mechanics as a Fundamental Theory' | abs_len= 1397
+[00:31:27] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[00:31:27] select | verify relaxed 2/10
+[00:31:27] verify | func= FutureWork | rank= 1 | pid= hep-th/0102170 | title_snip='Proposal of a topological M(atrix) theory' | abs_len= 826
+[00:31:30] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:31:30] select | verify relaxed 3/10
+[00:31:30] verify | func= FutureWork | rank= 2 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[00:31:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:33] select | verify relaxed 4/10
+[00:31:33] verify | func= FutureWork | rank= 3 | pid= hep-th/0102077 | title_snip='M-theory observables for cosmological space-times' | abs_len= 806
+[00:31:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[00:31:35] select | verify relaxed 5/10
+[00:31:35] verify | func= FutureWork | rank= 4 | pid= hep-th/0102168 | title_snip='Supermatrix Models' | abs_len= 678
+[00:31:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[00:31:38] select | verify relaxed 6/10
+[00:31:38] verify | func= FutureWork | rank= 5 | pid= hep-ph/0102117 | title_snip='Higgs Production and Decay in the MSSM: Status and Perspectives' | abs_len= 468
+[00:31:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:40] select | verify relaxed 7/10
+[00:31:40] verify | func= FutureWork | rank= 6 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[00:31:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:43] select | verify relaxed 8/10
+[00:31:43] verify | func= FutureWork | rank= 7 | pid= hep-ph/0103080 | title_snip='A Note on Wandzura-Wilczek Relations' | abs_len= 647
+[00:31:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:45] select | verify relaxed 9/10
+[00:31:45] verify | func= FutureWork | rank= 8 | pid= hep-ph/0103074 | title_snip='Information about the neutrino mass matrix from Double Beta Decay' | abs_len= 1064
+[00:31:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:48] select | verify relaxed 10/10
+[00:31:48] verify | func= FutureWork | rank= 9 | pid= hep-ph/0104062 | title_snip='A New Approach to a Global Fit of the CKM Matrix' | abs_len= 979
+[00:31:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What future research directions are motivated by the current limitations of M-theory and matrix theory?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

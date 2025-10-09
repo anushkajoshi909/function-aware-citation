@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query asks why deeper study of metal absorption systems is needed (motivation) and explicitly requests future research directions (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[16:32:07] main | args: Namespace(max_check=10, debug=True)
+[16:32:07] read_last_jsonl | path= classified_outputs.jsonl
+[16:32:07] read_last_jsonl | total_lines= 1
+[16:32:07] main | query='How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?' | funcs=['Motivation', 'FutureWork']
+[16:32:09] main | core_terms= ['metal absorption systems', 'quasar', 'absorption lines', 'HDF-South', 'J2233-606']
+[16:32:09] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:32:09] load_topk_jsonl | rows= 20
+[16:32:09] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102491 title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' abs_len= 1611
+[16:32:09] main | running function= Motivation
+[16:32:09] select | function= Motivation | candidates_in= 20
+[16:32:09] select | core_terms= ['metal absorption systems', 'quasar', 'absorption lines', 'HDF-South', 'J2233-606']
+[16:32:09] select | no cosine prune; kept=20/20
+[16:32:09] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102491', 'astro-ph/0102230', 'astro-ph/0104457', 'astro-ph/0104474', 'astro-ph/0101340', 'astro-ph/0103048', 'astro-ph/0103305', 'astro-ph/0101472', 'astro-ph/0104479', 'cond-mat/0101106']
+[16:32:09] select | verify relaxed 1/10
+[16:32:09] verify | func= Motivation | rank= 0 | pid= astro-ph/0102491 | title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' | abs_len= 1611
+[16:32:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:32:12] select | verify relaxed 2/10
+[16:32:12] verify | func= Motivation | rank= 1 | pid= astro-ph/0102230 | title_snip='UVES observations of a damped Ly-alpha system at z_abs = 4.466 towards…' | abs_len= 1334
+[16:32:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:15] select | verify relaxed 3/10
+[16:32:15] verify | func= Motivation | rank= 2 | pid= astro-ph/0104457 | title_snip='Cold Gas Kinematics in an L* Spiral Galaxy at z=0.437: The Nature of
+ …' | abs_len= 1588
+[16:32:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:18] select | verify relaxed 4/10
+[16:32:18] verify | func= Motivation | rank= 3 | pid= astro-ph/0104474 | title_snip='A New Measurement of the Primordial Abundance of Deuterium: Toward
+  C…' | abs_len= 1559
+[16:32:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:21] select | verify relaxed 5/10
+[16:32:21] verify | func= Motivation | rank= 4 | pid= astro-ph/0101340 | title_snip='Dust-penetrated morphology in the high-redshift universe: clues from N…' | abs_len= 1560
+[16:32:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:24] select | verify relaxed 6/10
+[16:32:24] verify | func= Motivation | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[16:32:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:26] select | verify relaxed 7/10
+[16:32:26] verify | func= Motivation | rank= 6 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[16:32:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:29] select | verify relaxed 8/10
+[16:32:29] verify | func= Motivation | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[16:32:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:33] select | verify relaxed 9/10
+[16:32:33] verify | func= Motivation | rank= 8 | pid= astro-ph/0104479 | title_snip='H2 Formation in Low Metallicity Galaxies' | abs_len= 1514
+[16:32:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:36] select | verify relaxed 10/10
+[16:32:36] verify | func= Motivation | rank= 9 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[16:32:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?
+- WINNER: astro-ph/0102491 | Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems in
+  the spectrum of the HDF-S quasar
+- QUOTE : We present a detailed analysis of three metal absorption systems
+- WHY   : sufficient
+[16:32:41] main | running function= FutureWork
+[16:32:41] select | function= FutureWork | candidates_in= 20
+[16:32:41] select | core_terms= ['metal absorption systems', 'quasar', 'absorption lines', 'HDF-South', 'J2233-606']
+[16:32:41] select | no cosine prune; kept=20/20
+[16:32:41] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102491', 'astro-ph/0102230', 'astro-ph/0104457', 'astro-ph/0104474', 'astro-ph/0101340', 'astro-ph/0103048', 'astro-ph/0103305', 'astro-ph/0101472', 'astro-ph/0104479', 'cond-mat/0101106']
+[16:32:41] select | verify relaxed 1/10
+[16:32:41] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102491 | title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' | abs_len= 1611
+[16:32:44] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[16:32:44] select | verify relaxed 2/10
+[16:32:44] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102230 | title_snip='UVES observations of a damped Ly-alpha system at z_abs = 4.466 towards…' | abs_len= 1334
+[16:32:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:47] select | verify relaxed 3/10
+[16:32:47] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104457 | title_snip='Cold Gas Kinematics in an L* Spiral Galaxy at z=0.437: The Nature of
+ …' | abs_len= 1588
+[16:32:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:49] select | verify relaxed 4/10
+[16:32:49] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104474 | title_snip='A New Measurement of the Primordial Abundance of Deuterium: Toward
+  C…' | abs_len= 1559
+[16:32:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:52] select | verify relaxed 5/10
+[16:32:52] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101340 | title_snip='Dust-penetrated morphology in the high-redshift universe: clues from N…' | abs_len= 1560
+[16:32:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:55] select | verify relaxed 6/10
+[16:32:55] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[16:32:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:32:58] select | verify relaxed 7/10
+[16:32:58] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[16:33:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:33:01] select | verify relaxed 8/10
+[16:33:01] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[16:33:04] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:33:04] select | verify relaxed 9/10
+[16:33:04] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104479 | title_snip='H2 Formation in Low Metallicity Galaxies' | abs_len= 1514
+[16:33:07] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:33:07] select | verify relaxed 10/10
+[16:33:07] verify | func= FutureWork | rank= 9 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[16:33:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current understanding of metal absorption systems can be improved by analyzing high-resolution data of quasar spectra, such as the HDF-South quasar J2233-606, to reveal variations in metallicities and ionization states [Motivation] (astro-ph/0102491). Future research directions can explore the correlation between velocity position and ionization state, as well as the origin of high column density systems, to gain a deeper understanding of metal enrichment and galaxy evolution [Motivation] (astro-ph/0102491).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,151 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Background"
+  ],
+  "justification": "The query asks how the new work expands (extends) knowledge of cosmic\u2011ray propagation while referencing the existing background of high\u2011precision flux measurements."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:13:18] main | args: Namespace(max_check=10, debug=True)
+[00:13:18] read_last_jsonl | path= classified_outputs.jsonl
+[00:13:18] read_last_jsonl | total_lines= 1
+[00:13:18] main | query='How does the current work extend our understanding of cosmic ray propagation, given the background of expected high-precision measurements of cosmic ray nuclei fluxes?' | funcs=['Extends', 'Background']
+[00:13:20] main | core_terms= ['cosmic ray nuclei', 'cosmic rays', 'cosmic ray propagation', 'nuclei fluxes', 'high-precision']
+[00:13:20] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:13:20] load_topk_jsonl | rows= 20
+[00:13:20] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102077 title_snip='The Origin of the Highest Energy Cosmic Rays' abs_len= 966
+[00:13:20] main | running function= Extends
+[00:13:20] select | function= Extends | candidates_in= 20
+[00:13:20] select | core_terms= ['cosmic ray nuclei', 'cosmic rays', 'cosmic ray propagation', 'nuclei fluxes', 'high-precision']
+[00:13:20] select | no cosine prune; kept=20/20
+[00:13:20] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102077', 'hep-ex/0101049', 'astro-ph/0103043', 'hep-ph/0104234', 'astro-ph/0101175', 'astro-ph/0101216', 'astro-ph/0101331', 'astro-ph/0101231', 'astro-ph/0103150', 'hep-ph/0103322']
+[00:13:20] select | verify relaxed 1/10
+[00:13:20] verify | func= Extends | rank= 0 | pid= astro-ph/0102077 | title_snip='The Origin of the Highest Energy Cosmic Rays' | abs_len= 966
+[00:13:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:13:23] select | verify relaxed 2/10
+[00:13:23] verify | func= Extends | rank= 1 | pid= hep-ex/0101049 | title_snip='Predicting Neutron Production from Cosmic-ray Muons' | abs_len= 746
+[00:13:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:13:26] select | verify relaxed 3/10
+[00:13:26] verify | func= Extends | rank= 2 | pid= astro-ph/0103043 | title_snip='An Auger test of the Cen A model of highest energy cosmic rays' | abs_len= 506
+[00:13:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:13:30] select | verify relaxed 4/10
+[00:13:30] verify | func= Extends | rank= 3 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[00:13:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:13:33] select | verify relaxed 5/10
+[00:13:33] verify | func= Extends | rank= 4 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[00:13:36] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:13:36] select | verify relaxed 6/10
+[00:13:36] verify | func= Extends | rank= 5 | pid= astro-ph/0101216 | title_snip='Neutrinos from propagation of ultra-high energy protons' | abs_len= 906
+[00:13:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:13:39] select | verify relaxed 7/10
+[00:13:39] verify | func= Extends | rank= 6 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[00:13:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:13:42] select | verify relaxed 8/10
+[00:13:42] verify | func= Extends | rank= 7 | pid= astro-ph/0101231 | title_snip='Cosmic Rays below Z=30 in a diffusion model: new constraints on
+  prop…' | abs_len= 1548
+[00:13:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:13:45] select | verify relaxed 9/10
+[00:13:45] verify | func= Extends | rank= 8 | pid= astro-ph/0103150 | title_snip='Antiprotons from spallations of cosmic rays on interstellar matter' | abs_len= 1737
+[00:13:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:13:48] select | verify relaxed 10/10
+[00:13:48] verify | func= Extends | rank= 9 | pid= hep-ph/0103322 | title_snip='Atmospheric neutrino flux supported by recent muon experiments' | abs_len= 546
+[00:13:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work extend our understanding of cosmic ray propagation, given the background of expected high-precision measurements of cosmic ray nuclei fluxes?
+- WINNER: astro-ph/0103043 | An Auger test of the Cen A model of highest energy cosmic rays
+- QUOTE : cosmic rays detected above the Greisen-Zatsepin-Kuz'min cutoff
+- WHY   : sufficient
+- ANSWER: The current work extends our understanding of cosmic ray propagation by considering the effects of intergalactic magnetic fields on the flux of protons and neutrons from a specific source, Cen A. This builds upon prior proposals by Farrar and Piran, providing a more detailed prediction of the observable neutron-to-proton ratio along the line of sight to Cen A (astro-ph/0103043).
+[00:13:56] main | running function= Background
+[00:13:56] select | function= Background | candidates_in= 20
+[00:13:56] select | core_terms= ['cosmic ray nuclei', 'cosmic rays', 'cosmic ray propagation', 'nuclei fluxes', 'high-precision']
+[00:13:56] select | no cosine prune; kept=20/20
+[00:13:56] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102077', 'hep-ex/0101049', 'astro-ph/0103043', 'hep-ph/0104234', 'astro-ph/0101175', 'astro-ph/0101216', 'astro-ph/0101331', 'astro-ph/0101231', 'astro-ph/0103150', 'hep-ph/0103322']
+[00:13:56] select | verify relaxed 1/10
+[00:13:56] verify | func= Background | rank= 0 | pid= astro-ph/0102077 | title_snip='The Origin of the Highest Energy Cosmic Rays' | abs_len= 966
+[00:13:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:13:59] select | verify relaxed 2/10
+[00:13:59] verify | func= Background | rank= 1 | pid= hep-ex/0101049 | title_snip='Predicting Neutron Production from Cosmic-ray Muons' | abs_len= 746
+[00:14:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:14:02] select | verify relaxed 3/10
+[00:14:02] verify | func= Background | rank= 2 | pid= astro-ph/0103043 | title_snip='An Auger test of the Cen A model of highest energy cosmic rays' | abs_len= 506
+[00:14:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:14:05] select | verify relaxed 4/10
+[00:14:05] verify | func= Background | rank= 3 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[00:14:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:14:08] select | verify relaxed 5/10
+[00:14:08] verify | func= Background | rank= 4 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[00:14:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:14:11] select | verify relaxed 6/10
+[00:14:11] verify | func= Background | rank= 5 | pid= astro-ph/0101216 | title_snip='Neutrinos from propagation of ultra-high energy protons' | abs_len= 906
+[00:14:14] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:14:14] select | verify relaxed 7/10
+[00:14:14] verify | func= Background | rank= 6 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[00:14:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:14:17] select | verify relaxed 8/10
+[00:14:17] verify | func= Background | rank= 7 | pid= astro-ph/0101231 | title_snip='Cosmic Rays below Z=30 in a diffusion model: new constraints on
+  prop…' | abs_len= 1548
+[00:14:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:14:21] select | verify relaxed 9/10
+[00:14:21] verify | func= Background | rank= 8 | pid= astro-ph/0103150 | title_snip='Antiprotons from spallations of cosmic rays on interstellar matter' | abs_len= 1737
+[00:14:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:14:24] select | verify relaxed 10/10
+[00:14:24] verify | func= Background | rank= 9 | pid= hep-ph/0103322 | title_snip='Atmospheric neutrino flux supported by recent muon experiments' | abs_len= 546
+[00:14:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current work extend our understanding of cosmic ray propagation, given the background of expected high-precision measurements of cosmic ray nuclei fluxes?
+- WINNER: astro-ph/0103043 | An Auger test of the Cen A model of highest energy cosmic rays
+- QUOTE : cosmic rays detected above the Greisen-Zatsepin-Kuz'min cutoff
+- WHY   : sufficient
+- ANSWER: The current work builds on expected high-precision measurements of cosmic ray nuclei fluxes by testing a specific model of cosmic ray origin (astro-ph/0103043).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

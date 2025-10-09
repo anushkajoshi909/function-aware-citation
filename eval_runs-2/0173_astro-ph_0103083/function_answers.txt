@@ -1,0 +1,2 @@
+The observed variations in r-process element abundances in low metallicity stars provide insights into nucleosynthesis and early Galactic chemical evolution (astro-ph/0101440). [Background]
+The observed variations in r-process element abundances have implications for nucleosynthesis and early Galactic chemical evolution, suggesting avenues for future research in these areas. Further study of heavy element abundances in low metallicity stars is needed to fully understand the background astrophysical processes (astro-ph/0101440). [FutureWork]

@@ -1,0 +1,1 @@
+The dimensional crossover in Hubbard ladders is not fully understood, particularly the transition from 1D to 2D behavior in half-filled and lightly doped systems [Background] (cond-mat/0103159), which motivates the current study to investigate this phenomenon and its underlying mechanisms [Motivation] (cond-mat/0103159).

@@ -1,0 +1,160 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Uses"
+  ],
+  "justification": "The query asks how the method builds upon (extends) prior nuclear physics calculations and how it is applied (used) to study differential observables."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:18:29] main | args: Namespace(max_check=10, debug=True)
+[01:18:29] read_last_jsonl | path= classified_outputs.jsonl
+[01:18:29] read_last_jsonl | total_lines= 1
+[01:18:29] main | query='How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?' | funcs=['Extends', 'Uses']
+[01:18:31] main | core_terms= ['nucleus', 'nuclear physics', 'local energy-density functional', 'differential observables', 'energy-density']
+[01:18:31] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:18:31] load_topk_jsonl | rows= 20
+[01:18:31] load_topk_jsonl | first: rank= 0 paper_id= nucl-th/0101012 title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' abs_len= 1196
+[01:18:31] main | running function= Extends
+[01:18:31] select | function= Extends | candidates_in= 20
+[01:18:31] select | core_terms= ['nucleus', 'nuclear physics', 'local energy-density functional', 'differential observables', 'energy-density']
+[01:18:31] select | no cosine prune; kept=20/20
+[01:18:31] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['nucl-th/0101012', 'physics/0103003', 'nucl-th/0101048', 'nucl-th/0104065', 'cond-mat/0101363', 'nucl-th/0104050', 'cond-mat/0103124', 'nucl-th/0102010', 'cond-mat/0103610', 'nucl-th/0101034']
+[01:18:31] select | verify relaxed 1/10
+[01:18:31] verify | func= Extends | rank= 0 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[01:18:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:18:34] select | verify relaxed 2/10
+[01:18:34] verify | func= Extends | rank= 1 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[01:18:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:18:36] select | verify relaxed 3/10
+[01:18:36] verify | func= Extends | rank= 2 | pid= nucl-th/0101048 | title_snip='A New Approach to Large-Scale Nuclear Structure Calculations' | abs_len= 628
+[01:18:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:18:39] select | verify relaxed 4/10
+[01:18:39] verify | func= Extends | rank= 3 | pid= nucl-th/0104065 | title_snip='Relativistic Hartree-Bogoliubov Approach for Nuclear Matter with
+  Non…' | abs_len= 390
+[01:18:42] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[01:18:42] select | verify relaxed 5/10
+[01:18:42] verify | func= Extends | rank= 4 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[01:18:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:18:45] select | verify relaxed 6/10
+[01:18:45] verify | func= Extends | rank= 5 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[01:18:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:18:48] select | verify relaxed 7/10
+[01:18:48] verify | func= Extends | rank= 6 | pid= cond-mat/0103124 | title_snip='Unified theory of quantum many-particle systems' | abs_len= 1125
+[01:18:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:18:50] select | verify relaxed 8/10
+[01:18:50] verify | func= Extends | rank= 7 | pid= nucl-th/0102010 | title_snip='Testing Dirac-Brueckner models in collective flow of heavy-ion
+  colli…' | abs_len= 1207
+[01:18:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:18:53] select | verify relaxed 9/10
+[01:18:53] verify | func= Extends | rank= 8 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[01:18:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:18:55] select | verify relaxed 10/10
+[01:18:55] verify | func= Extends | rank= 9 | pid= nucl-th/0101034 | title_snip='Relativistic corrections in (e,e'p) knockout reactions' | abs_len= 777
+[01:18:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?
+- WINNER: nucl-th/0101012 | Nuclear isotope shifts within the local energy-density functional
+  approach
+- QUOTE : The method is used to investigate differential observables
+- WHY   : sufficient
+- ANSWER: The local energy-density functional method extends existing nuclear physics calculations, such as the conventional mean field Skyrme-HFB and relativistic Hartree-BCS calculations, to investigate differential observables like odd-even mass differences and charge radii with improved treatment of pairing interactions. It builds upon these methods by incorporating a zero-range cutoff density-dependent pairing interaction with a density-gradient term, allowing for a more accurate description of nuclear ground-state properties (nucl-th/0101012).
+[01:19:03] main | running function= Uses
+[01:19:03] select | function= Uses | candidates_in= 20
+[01:19:03] select | core_terms= ['nucleus', 'nuclear physics', 'local energy-density functional', 'differential observables', 'energy-density']
+[01:19:03] select | no cosine prune; kept=20/20
+[01:19:03] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['nucl-th/0101012', 'physics/0103003', 'nucl-th/0101048', 'nucl-th/0104065', 'cond-mat/0101363', 'nucl-th/0104050', 'cond-mat/0103124', 'nucl-th/0102010', 'cond-mat/0103610', 'nucl-th/0101034']
+[01:19:03] select | verify relaxed 1/10
+[01:19:03] verify | func= Uses | rank= 0 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[01:19:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:19:07] select | verify relaxed 2/10
+[01:19:07] verify | func= Uses | rank= 1 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[01:19:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:19:09] select | verify relaxed 3/10
+[01:19:09] verify | func= Uses | rank= 2 | pid= nucl-th/0101048 | title_snip='A New Approach to Large-Scale Nuclear Structure Calculations' | abs_len= 628
+[01:19:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:19:12] select | verify relaxed 4/10
+[01:19:12] verify | func= Uses | rank= 3 | pid= nucl-th/0104065 | title_snip='Relativistic Hartree-Bogoliubov Approach for Nuclear Matter with
+  Non…' | abs_len= 390
+[01:19:15] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:19:15] select | verify relaxed 5/10
+[01:19:15] verify | func= Uses | rank= 4 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[01:19:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:19:17] select | verify relaxed 6/10
+[01:19:17] verify | func= Uses | rank= 5 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[01:19:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:19:20] select | verify relaxed 7/10
+[01:19:20] verify | func= Uses | rank= 6 | pid= cond-mat/0103124 | title_snip='Unified theory of quantum many-particle systems' | abs_len= 1125
+[01:19:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:19:22] select | verify relaxed 8/10
+[01:19:22] verify | func= Uses | rank= 7 | pid= nucl-th/0102010 | title_snip='Testing Dirac-Brueckner models in collective flow of heavy-ion
+  colli…' | abs_len= 1207
+[01:19:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:19:25] select | verify relaxed 9/10
+[01:19:25] verify | func= Uses | rank= 8 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[01:19:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:19:28] select | verify relaxed 10/10
+[01:19:28] verify | func= Uses | rank= 9 | pid= nucl-th/0101034 | title_snip='Relativistic corrections in (e,e'p) knockout reactions' | abs_len= 777
+[01:19:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?
+- WINNER: nucl-th/0101012 | Nuclear isotope shifts within the local energy-density functional
+  approach
+- QUOTE : The method is used to investigate differential observables
+- WHY   : sufficient
+- ANSWER: The local energy-density functional method uses the Gor'kov equations and a zero-range cutoff density-dependent pairing interaction to investigate differential observables. It extends existing nuclear physics calculations by comparing its results with conventional mean field Skyrme-HFB and relativistic Hartree-BCS calculations (nucl-th/0101012).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

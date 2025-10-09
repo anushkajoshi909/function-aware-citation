@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query seeks ways to extend the current analysis (Extends) and explicitly asks about new directions for future research (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:20:45] main | args: Namespace(max_check=10, debug=True)
+[23:20:45] read_last_jsonl | path= classified_outputs.jsonl
+[23:20:45] read_last_jsonl | total_lines= 1
+[23:20:45] main | query='How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?' | funcs=['Extends', 'FutureWork']
+[23:20:47] main | core_terms= ['Z_k', 'cyclic group', 'residue arithmetic', 'units']
+[23:20:47] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:20:47] load_topk_jsonl | rows= 20
+[23:20:47] load_topk_jsonl | first: rank= 0 paper_id= math/0103083 title_snip='Powersums representing residues mod p^k, from Fermat to Waring' abs_len= 1103
+[23:20:47] main | running function= Extends
+[23:20:47] select | function= Extends | candidates_in= 20
+[23:20:47] select | core_terms= ['Z_k', 'cyclic group', 'residue arithmetic', 'units']
+[23:20:47] select | no cosine prune; kept=20/20
+[23:20:47] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0103083', 'math/0103014', 'math/0101258', 'cond-mat/0103074', 'math/0103091', 'hep-ph/0101248', 'hep-th/0101217', 'hep-ph/0101295', 'hep-ph/0102019', 'hep-ph/0102124']
+[23:20:47] select | verify relaxed 1/10
+[23:20:47] verify | func= Extends | rank= 0 | pid= math/0103083 | title_snip='Powersums representing residues mod p^k, from Fermat to Waring' | abs_len= 1103
+[23:20:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[23:20:50] select | verify relaxed 2/10
+[23:20:50] verify | func= Extends | rank= 1 | pid= math/0103014 | title_snip='Triplets and Symmetries of Arithmetic mod p^k' | abs_len= 1605
+[23:20:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:20:54] select | verify relaxed 3/10
+[23:20:54] verify | func= Extends | rank= 2 | pid= math/0101258 | title_snip='Yet another construction of the central extension of the loop group' | abs_len= 246
+[23:20:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:20:56] select | verify relaxed 4/10
+[23:20:56] verify | func= Extends | rank= 3 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[23:20:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:20:59] select | verify relaxed 5/10
+[23:20:59] verify | func= Extends | rank= 4 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[23:21:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[23:21:02] select | verify relaxed 6/10
+[23:21:02] verify | func= Extends | rank= 5 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[23:21:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:04] select | verify relaxed 7/10
+[23:21:04] verify | func= Extends | rank= 6 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[23:21:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:07] select | verify relaxed 8/10
+[23:21:07] verify | func= Extends | rank= 7 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[23:21:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:09] select | verify relaxed 9/10
+[23:21:09] verify | func= Extends | rank= 8 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[23:21:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:12] select | verify relaxed 10/10
+[23:21:12] verify | func= Extends | rank= 9 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[23:21:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?
+- WINNER: math/0103083 | Powersums representing residues mod p^k, from Fermat to Waring
+- QUOTE : extends Fermat's Small Theorem (FST) to mod p^{k>1}
+- WHY   : sufficient
+- ANSWER: The analysis of the cyclic group of units in Z_k is extended to explore new areas of residue arithmetic by generalizing Fermat's Small Theorem to mod p^k and examining the properties of p-th power residues. This extension improves the understanding of residue arithmetic by allowing the analysis of divisors of 0 mod p^k and showing that each residue mod p^k can be represented as the sum of at most four p-th power residues (math/0103083).
+[23:21:20] main | running function= FutureWork
+[23:21:20] select | function= FutureWork | candidates_in= 20
+[23:21:20] select | core_terms= ['Z_k', 'cyclic group', 'residue arithmetic', 'units']
+[23:21:20] select | no cosine prune; kept=20/20
+[23:21:20] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0103083', 'math/0103014', 'math/0101258', 'cond-mat/0103074', 'math/0103091', 'hep-ph/0101248', 'hep-th/0101217', 'hep-ph/0101295', 'hep-ph/0102019', 'hep-ph/0102124']
+[23:21:20] select | verify relaxed 1/10
+[23:21:20] verify | func= FutureWork | rank= 0 | pid= math/0103083 | title_snip='Powersums representing residues mod p^k, from Fermat to Waring' | abs_len= 1103
+[23:21:23] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:21:23] select | verify relaxed 2/10
+[23:21:23] verify | func= FutureWork | rank= 1 | pid= math/0103014 | title_snip='Triplets and Symmetries of Arithmetic mod p^k' | abs_len= 1605
+[23:21:27] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[23:21:27] select | verify relaxed 3/10
+[23:21:27] verify | func= FutureWork | rank= 2 | pid= math/0101258 | title_snip='Yet another construction of the central extension of the loop group' | abs_len= 246
+[23:21:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:29] select | verify relaxed 4/10
+[23:21:29] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[23:21:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:32] select | verify relaxed 5/10
+[23:21:32] verify | func= FutureWork | rank= 4 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[23:21:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:21:35] select | verify relaxed 6/10
+[23:21:35] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[23:21:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:37] select | verify relaxed 7/10
+[23:21:37] verify | func= FutureWork | rank= 6 | pid= hep-th/0101217 | title_snip='$Z_2\times Z_2$ Lattice as a Connes-Lott-Quantum Group Model' | abs_len= 677
+[23:21:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:40] select | verify relaxed 8/10
+[23:21:40] verify | func= FutureWork | rank= 7 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[23:21:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:42] select | verify relaxed 9/10
+[23:21:42] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[23:21:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:45] select | verify relaxed 10/10
+[23:21:45] verify | func= FutureWork | rank= 9 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[23:21:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the analysis of the cyclic group of units in Z_k be extended to explore new areas of future research in residue arithmetic?
+- WINNER: math/0103091 | Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conjecture
+- QUOTE : Induction on k by extending residues mod m_k
+- WHY   : sufficient
+- ANSWER: The analysis of the cyclic group of units in Z_k can be extended by exploring the additive properties of its lattice and the Boolean lattice formed by idempotents. Future research directions may involve induction on k and extending residues mod m_k to yield a prime sieve for integers and further investigate the relationship between Goldbach's Conjecture and "Goldbach for Residues" (math/0103091).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

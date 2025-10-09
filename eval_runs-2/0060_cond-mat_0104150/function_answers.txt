@@ -1,0 +1,2 @@
+The discovery of a gapped spectrum in Piperazinium Hexachlorodicuprate motivates future research into the effects of magnetic fields on quantum disordered phases and the behavior of frustrated quantum magnets. Further study of this phenomenon could shed light on the interplay between frustration, dimensionality, and magnetic field in quantum systems (cond-mat/0104150). [Motivation]
+The abstract does not provide information relevant to FutureWork. [FutureWork]

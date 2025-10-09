@@ -1,0 +1,1 @@
+The extension of the semiclassical model of the collective atomic recoil laser was motivated by the need to include quantum mechanical effects, particularly for cases where the average atomic momentum is less than the recoil momentum (cond-mat/0102360). [Background]

@@ -1,0 +1,163 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Extends"
+  ],
+  "justification": "The query asks how the new study relates to (compares with) prior work and how it builds upon (extends) that research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:28:40] main | args: Namespace(max_check=10, debug=True)
+[22:28:40] read_last_jsonl | path= classified_outputs.jsonl
+[22:28:40] read_last_jsonl | total_lines= 1
+[22:28:40] main | query='How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?' | funcs=['Compares', 'Extends']
+[22:28:42] main | core_terms= ['SrB$_{6}$', 'magnetic state', 'doped']
+[22:28:42] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:28:42] load_topk_jsonl | rows= 20
+[22:28:42] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0103180 title_snip='Electronic structure and magnetism in slightly doped SrB_6' abs_len= 1358
+[22:28:42] main | running function= Compares
+[22:28:42] select | function= Compares | candidates_in= 20
+[22:28:42] select | core_terms= ['SrB$_{6}$', 'magnetic state', 'doped']
+[22:28:42] select | no cosine prune; kept=20/20
+[22:28:42] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0103180', 'cond-mat/0103189', 'cond-mat/0102048', 'cond-mat/0102421', 'cond-mat/0101138', 'cond-mat/0104308', 'cond-mat/0103418', 'cond-mat/0102024', 'cond-mat/0104498', 'hep-ph/0104253']
+[22:28:42] select | verify relaxed 1/10
+[22:28:42] verify | func= Compares | rank= 0 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[22:28:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:28:45] select | verify relaxed 2/10
+[22:28:45] verify | func= Compares | rank= 1 | pid= cond-mat/0103189 | title_snip='Strong ferromangnetism and weak antiferroamgnetism in double
+  perovsk…' | abs_len= 616
+[22:28:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:28:48] select | verify relaxed 3/10
+[22:28:48] verify | func= Compares | rank= 2 | pid= cond-mat/0102048 | title_snip='Staggered currents in the mixed state' | abs_len= 896
+[22:28:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:28:50] select | verify relaxed 4/10
+[22:28:50] verify | func= Compares | rank= 3 | pid= cond-mat/0102421 | title_snip='Electronic States of Boron in Superconducting MgB$_2$ Studied by
+  $^{…' | abs_len= 629
+[22:28:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:28:53] select | verify relaxed 5/10
+[22:28:53] verify | func= Compares | rank= 4 | pid= cond-mat/0101138 | title_snip='Depairing currents in the superconductor/ferromagnet proximity system
+…' | abs_len= 1274
+[22:28:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:28:55] select | verify relaxed 6/10
+[22:28:55] verify | func= Compares | rank= 5 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[22:28:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:28:58] select | verify relaxed 7/10
+[22:28:58] verify | func= Compares | rank= 6 | pid= cond-mat/0103418 | title_snip='The energy gap of intermediate-valent SmB6 studied by point-contact
+  …' | abs_len= 1041
+[22:29:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:00] select | verify relaxed 8/10
+[22:29:00] verify | func= Compares | rank= 7 | pid= cond-mat/0102024 | title_snip='Ab-initio study of disorder effects on the electronic and magnetic
+  s…' | abs_len= 843
+[22:29:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:03] select | verify relaxed 9/10
+[22:29:03] verify | func= Compares | rank= 8 | pid= cond-mat/0104498 | title_snip='Electron Spin Resonance of Ni-doped CuGeO$_3$ in the paramagnetic,
+  s…' | abs_len= 1555
+[22:29:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:05] select | verify relaxed 10/10
+[22:29:05] verify | func= Compares | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[22:29:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?
+- WINNER: cond-mat/0103180 | Electronic structure and magnetism in slightly doped SrB_6
+- QUOTE : As has been shown in a previous publication, it can lead to a weak ferromagnetic state
+- WHY   : sufficient
+- ANSWER: The current work compares to previous research by extending the understanding of the magnetic state in doped SrB$_{6}$ through calculations of larger supercells and lower doping levels. It builds upon previous findings by demonstrating the persistence of a weak ferromagnetic state at lower doping levels, with a magnetic moment of approximately 0.1 $\mu_B$ per La impurity (cond-mat/0103180).
+[22:29:13] main | running function= Extends
+[22:29:13] select | function= Extends | candidates_in= 20
+[22:29:13] select | core_terms= ['SrB$_{6}$', 'magnetic state', 'doped']
+[22:29:13] select | no cosine prune; kept=20/20
+[22:29:13] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0103180', 'cond-mat/0103189', 'cond-mat/0102048', 'cond-mat/0102421', 'cond-mat/0101138', 'cond-mat/0104308', 'cond-mat/0103418', 'cond-mat/0102024', 'cond-mat/0104498', 'hep-ph/0104253']
+[22:29:13] select | verify relaxed 1/10
+[22:29:13] verify | func= Extends | rank= 0 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[22:29:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:29:16] select | verify relaxed 2/10
+[22:29:16] verify | func= Extends | rank= 1 | pid= cond-mat/0103189 | title_snip='Strong ferromangnetism and weak antiferroamgnetism in double
+  perovsk…' | abs_len= 616
+[22:29:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:19] select | verify relaxed 3/10
+[22:29:19] verify | func= Extends | rank= 2 | pid= cond-mat/0102048 | title_snip='Staggered currents in the mixed state' | abs_len= 896
+[22:29:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:21] select | verify relaxed 4/10
+[22:29:21] verify | func= Extends | rank= 3 | pid= cond-mat/0102421 | title_snip='Electronic States of Boron in Superconducting MgB$_2$ Studied by
+  $^{…' | abs_len= 629
+[22:29:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:24] select | verify relaxed 5/10
+[22:29:24] verify | func= Extends | rank= 4 | pid= cond-mat/0101138 | title_snip='Depairing currents in the superconductor/ferromagnet proximity system
+…' | abs_len= 1274
+[22:29:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:26] select | verify relaxed 6/10
+[22:29:26] verify | func= Extends | rank= 5 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[22:29:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:29] select | verify relaxed 7/10
+[22:29:29] verify | func= Extends | rank= 6 | pid= cond-mat/0103418 | title_snip='The energy gap of intermediate-valent SmB6 studied by point-contact
+  …' | abs_len= 1041
+[22:29:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:31] select | verify relaxed 8/10
+[22:29:31] verify | func= Extends | rank= 7 | pid= cond-mat/0102024 | title_snip='Ab-initio study of disorder effects on the electronic and magnetic
+  s…' | abs_len= 843
+[22:29:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:34] select | verify relaxed 9/10
+[22:29:34] verify | func= Extends | rank= 8 | pid= cond-mat/0104498 | title_snip='Electron Spin Resonance of Ni-doped CuGeO$_3$ in the paramagnetic,
+  s…' | abs_len= 1555
+[22:29:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:29:36] select | verify relaxed 10/10
+[22:29:36] verify | func= Extends | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[22:29:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?
+- WINNER: cond-mat/0103180 | Electronic structure and magnetism in slightly doped SrB_6
+- QUOTE : As has been shown in a previous publication, it can lead to a weak ferromagnetic state
+- WHY   : sufficient
+- ANSWER: The current work extends previous research by demonstrating that the weak ferromagnetic state in slightly doped SrB$_{6}$ persists at even lower doping levels. It builds upon prior findings by showing that the magnetic state can be understood through charge transfer and potential energy gain, with a moment of approximately 0.1 $\mu_B$ per La impurity (cond-mat/0103180).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,2 @@
+The current work is motivated by a lack of understanding of state transitions in black-hole candidates like GRO J1655-40 (astro-ph/0101305). [Background]
+The current work is motivated by a lack of understanding of state transitions in black-hole candidates, such as GRO J1655-40. To appreciate this research, background knowledge of X-ray state transitions and accretion flows in these systems is necessary (astro-ph/0101305). [Motivation]

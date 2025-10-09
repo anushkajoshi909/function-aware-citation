@@ -1,0 +1,151 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query asks why current methods are insufficient (motivation) and seeks future research directions that stem from those limitations (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[15:33:25] main | args: Namespace(max_check=10, debug=True)
+[15:33:25] read_last_jsonl | path= classified_outputs.jsonl
+[15:33:25] read_last_jsonl | total_lines= 1
+[15:33:25] main | query='What potential areas of future research are motivated by the limitations of current gravitational lensing methods in predicting the maximum number of images produced by n-tuple lenses?' | funcs=['Motivation', 'FutureWork']
+[15:33:27] main | core_terms= ['n-tuple lenses', 'gravitational lensing', 'image multiplicity', 'lensing methods', 'n-tuple']
+[15:33:27] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:33:27] load_topk_jsonl | rows= 20
+[15:33:27] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103463 title_snip='Can A Gravitational Quadruple Lens Produce 17 images?' abs_len= 1372
+[15:33:27] main | running function= Motivation
+[15:33:27] select | function= Motivation | candidates_in= 20
+[15:33:27] select | core_terms= ['n-tuple lenses', 'gravitational lensing', 'image multiplicity', 'lensing methods', 'n-tuple']
+[15:33:27] select | no cosine prune; kept=20/20
+[15:33:27] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103463', 'astro-ph/0102340', 'astro-ph/0104399', 'astro-ph/0102341', 'astro-ph/0103093', 'astro-ph/0104123', 'astro-ph/0101528', 'astro-ph/0101228', 'astro-ph/0103500', 'astro-ph/0101230']
+[15:33:27] select | verify relaxed 1/10
+[15:33:27] verify | func= Motivation | rank= 0 | pid= astro-ph/0103463 | title_snip='Can A Gravitational Quadruple Lens Produce 17 images?' | abs_len= 1372
+[15:33:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:33:31] select | verify relaxed 2/10
+[15:33:31] verify | func= Motivation | rank= 1 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[15:33:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:33:34] select | verify relaxed 3/10
+[15:33:34] verify | func= Motivation | rank= 2 | pid= astro-ph/0104399 | title_snip='The new two-image gravitational lens system CLASS B2319+051' | abs_len= 1214
+[15:33:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:33:38] select | verify relaxed 4/10
+[15:33:38] verify | func= Motivation | rank= 3 | pid= astro-ph/0102341 | title_snip='A Catalog of Mass Models for Gravitational Lensing' | abs_len= 435
+[15:33:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:33:41] select | verify relaxed 5/10
+[15:33:41] verify | func= Motivation | rank= 4 | pid= astro-ph/0103093 | title_snip='Strong gravitational lensing by multiple galaxies' | abs_len= 1336
+[15:33:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:33:45] select | verify relaxed 6/10
+[15:33:45] verify | func= Motivation | rank= 5 | pid= astro-ph/0104123 | title_snip='Investigation of Gravitational Lens Mass Models' | abs_len= 1568
+[15:33:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[15:33:49] select | verify relaxed 7/10
+[15:33:49] verify | func= Motivation | rank= 6 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[15:33:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[15:33:52] select | verify relaxed 8/10
+[15:33:52] verify | func= Motivation | rank= 7 | pid= astro-ph/0101228 | title_snip='Using Gravitational Lensing to study HI clouds at high redshift' | abs_len= 1650
+[15:33:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:33:54] select | verify relaxed 9/10
+[15:33:54] verify | func= Motivation | rank= 8 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[15:33:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:33:58] select | verify relaxed 10/10
+[15:33:58] verify | func= Motivation | rank= 9 | pid= astro-ph/0101230 | title_snip='A Survey for Large Separation Lensed FIRST Quasars' | abs_len= 1668
+[15:34:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[15:34:04] arbiter | rejected off-topic winner: astro-ph/0104123
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research are motivated by the limitations of current gravitational lensing methods in predicting the maximum number of images produced by n-tuple lenses?
+- No supporting candidate with sufficient evidence.
+[15:34:04] main | running function= FutureWork
+[15:34:04] select | function= FutureWork | candidates_in= 20
+[15:34:04] select | core_terms= ['n-tuple lenses', 'gravitational lensing', 'image multiplicity', 'lensing methods', 'n-tuple']
+[15:34:04] select | no cosine prune; kept=20/20
+[15:34:04] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103463', 'astro-ph/0102340', 'astro-ph/0104399', 'astro-ph/0102341', 'astro-ph/0103093', 'astro-ph/0104123', 'astro-ph/0101528', 'astro-ph/0101228', 'astro-ph/0103500', 'astro-ph/0101230']
+[15:34:04] select | verify relaxed 1/10
+[15:34:04] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103463 | title_snip='Can A Gravitational Quadruple Lens Produce 17 images?' | abs_len= 1372
+[15:34:07] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[15:34:07] select | verify relaxed 2/10
+[15:34:07] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[15:34:10] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[15:34:10] select | verify relaxed 3/10
+[15:34:10] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104399 | title_snip='The new two-image gravitational lens system CLASS B2319+051' | abs_len= 1214
+[15:34:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:34:14] select | verify relaxed 4/10
+[15:34:14] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102341 | title_snip='A Catalog of Mass Models for Gravitational Lensing' | abs_len= 435
+[15:34:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:34:17] select | verify relaxed 5/10
+[15:34:17] verify | func= FutureWork | rank= 4 | pid= astro-ph/0103093 | title_snip='Strong gravitational lensing by multiple galaxies' | abs_len= 1336
+[15:34:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:34:20] select | verify relaxed 6/10
+[15:34:20] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104123 | title_snip='Investigation of Gravitational Lens Mass Models' | abs_len= 1568
+[15:34:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[15:34:23] select | verify relaxed 7/10
+[15:34:23] verify | func= FutureWork | rank= 6 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[15:34:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:34:27] select | verify relaxed 8/10
+[15:34:27] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101228 | title_snip='Using Gravitational Lensing to study HI clouds at high redshift' | abs_len= 1650
+[15:34:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:34:31] select | verify relaxed 9/10
+[15:34:31] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[15:34:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:34:35] select | verify relaxed 10/10
+[15:34:35] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101230 | title_snip='A Survey for Large Separation Lensed FIRST Quasars' | abs_len= 1668
+[15:34:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research are motivated by the limitations of current gravitational lensing methods in predicting the maximum number of images produced by n-tuple lenses?
+- WINNER: astro-ph/0103093 | Strong gravitational lensing by multiple galaxies
+- QUOTE : will be important in future, both for constraining lens models
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Future research may investigate the effects of external shear and aligned discs on image positions and magnification cross sections in multiple lens systems [FutureWork] (astro-ph/0103093). This could lead to improved lens modelling and a better understanding of statistical lensing, ultimately enhancing our ability to predict the maximum number of images produced by n-tuple lenses [FutureWork] (astro-ph/0103093).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

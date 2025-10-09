@@ -1,0 +1,2 @@
+The background for the current study on GaN/AlGaN quantum wells is their unique valence band structure, which is altered by strain in the AlGaN barriers (cond-mat/0101069). [Background]
+The current study is motivated by the need to understand the valence band ordering and excitonic properties in GaN/AlGaN quantum wells, which is important due to the observed differences in valence band structure compared to GaN epilayers. This difference has significant implications for the behavior of excitons in these quantum wells (cond-mat/0101069). [Motivation]

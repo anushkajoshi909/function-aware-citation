@@ -1,0 +1,2 @@
+The current work extends previous studies by Spruit, Stehle & Papaloizou (1995) and the shearing sheet model, confirming the existence of the interchange instability and the stabilizing effect of shear in Keplerian discs. It also expands on these findings by identifying a global instability that transports angular momentum outward when magnetic forces significantly support the disc against gravity (astro-ph/0103409). [Extends]
+The abstract does not provide information relevant to Compares. [Compares]

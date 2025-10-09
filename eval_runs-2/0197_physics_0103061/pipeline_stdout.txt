@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the paper\u2019s extension of the theory builds on prior work (Extends) and how that leads to suggested future research directions (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:45:46] main | args: Namespace(max_check=10, debug=True)
+[01:45:46] read_last_jsonl | path= classified_outputs.jsonl
+[01:45:46] read_last_jsonl | total_lines= 1
+[01:45:46] main | query='How does the extension of the Nonlinear Maxwell Theory in this paper suggest potential areas for future research?' | funcs=['Extends', 'FutureWork']
+[01:45:47] main | core_terms= ['Nonlinear Maxwell Theory', 'extension', 'future research']
+[01:45:47] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:45:47] load_topk_jsonl | rows= 20
+[01:45:47] load_topk_jsonl | first: rank= 0 paper_id= physics/0103061 title_snip='The Nonlinear Maxwell Theory---an Outline' abs_len= 1088
+[01:45:47] main | running function= Extends
+[01:45:47] select | function= Extends | candidates_in= 20
+[01:45:47] select | core_terms= ['Nonlinear Maxwell Theory', 'extension', 'future research']
+[01:45:47] select | no cosine prune; kept=20/20
+[01:45:47] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0103061', 'hep-th/0101137', 'hep-ph/0101312', 'quant-ph/0102110', 'hep-ph/0103333', 'cond-mat/0104257', 'hep-th/0103086', 'cond-mat/0102493', 'math/0102173', 'gr-qc/0102038']
+[01:45:47] select | verify relaxed 1/10
+[01:45:47] verify | func= Extends | rank= 0 | pid= physics/0103061 | title_snip='The Nonlinear Maxwell Theory---an Outline' | abs_len= 1088
+[01:45:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:45:50] select | verify relaxed 2/10
+[01:45:50] verify | func= Extends | rank= 1 | pid= hep-th/0101137 | title_snip='From Electromagnetic Duality to Extended Electrodynamics' | abs_len= 655
+[01:45:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:45:53] select | verify relaxed 3/10
+[01:45:53] verify | func= Extends | rank= 2 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[01:45:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:45:56] select | verify relaxed 4/10
+[01:45:56] verify | func= Extends | rank= 3 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[01:45:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:45:58] select | verify relaxed 5/10
+[01:45:58] verify | func= Extends | rank= 4 | pid= hep-ph/0103333 | title_snip='Electroweak D-Waves' | abs_len= 383
+[01:46:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:01] select | verify relaxed 6/10
+[01:46:01] verify | func= Extends | rank= 5 | pid= cond-mat/0104257 | title_snip='Nonlinear Thermomagnetic Waves in Type II Superconductors' | abs_len= 938
+[01:46:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:03] select | verify relaxed 7/10
+[01:46:03] verify | func= Extends | rank= 6 | pid= hep-th/0103086 | title_snip='Electric-Magnetic Duality in Supergravity' | abs_len= 118
+[01:46:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[01:46:06] select | verify relaxed 8/10
+[01:46:06] verify | func= Extends | rank= 7 | pid= cond-mat/0102493 | title_snip='Response theory for time-resolved second-harmonic generation and
+  two…' | abs_len= 1205
+[01:46:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:09] select | verify relaxed 9/10
+[01:46:09] verify | func= Extends | rank= 8 | pid= math/0102173 | title_snip='Unipotency and semistability of overconvergent F-crystals' | abs_len= 549
+[01:46:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:11] select | verify relaxed 10/10
+[01:46:11] verify | func= Extends | rank= 9 | pid= gr-qc/0102038 | title_snip='Coherent States for Canonical Quantum General Relativity and the
+  Inf…' | abs_len= 527
+[01:46:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:15] arbiter | rejected off-topic winner: physics/0103061
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the extension of the Nonlinear Maxwell Theory in this paper suggest potential areas for future research?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Extends.
+[01:46:15] main | running function= FutureWork
+[01:46:15] select | function= FutureWork | candidates_in= 20
+[01:46:15] select | core_terms= ['Nonlinear Maxwell Theory', 'extension', 'future research']
+[01:46:15] select | no cosine prune; kept=20/20
+[01:46:15] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0103061', 'hep-th/0101137', 'hep-ph/0101312', 'quant-ph/0102110', 'hep-ph/0103333', 'cond-mat/0104257', 'hep-th/0103086', 'cond-mat/0102493', 'math/0102173', 'gr-qc/0102038']
+[01:46:15] select | verify relaxed 1/10
+[01:46:15] verify | func= FutureWork | rank= 0 | pid= physics/0103061 | title_snip='The Nonlinear Maxwell Theory---an Outline' | abs_len= 1088
+[01:46:17] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:46:17] select | verify relaxed 2/10
+[01:46:17] verify | func= FutureWork | rank= 1 | pid= hep-th/0101137 | title_snip='From Electromagnetic Duality to Extended Electrodynamics' | abs_len= 655
+[01:46:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:46:21] select | verify relaxed 3/10
+[01:46:21] verify | func= FutureWork | rank= 2 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[01:46:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:23] select | verify relaxed 4/10
+[01:46:23] verify | func= FutureWork | rank= 3 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[01:46:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:26] select | verify relaxed 5/10
+[01:46:26] verify | func= FutureWork | rank= 4 | pid= hep-ph/0103333 | title_snip='Electroweak D-Waves' | abs_len= 383
+[01:46:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:28] select | verify relaxed 6/10
+[01:46:28] verify | func= FutureWork | rank= 5 | pid= cond-mat/0104257 | title_snip='Nonlinear Thermomagnetic Waves in Type II Superconductors' | abs_len= 938
+[01:46:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:46:31] select | verify relaxed 7/10
+[01:46:31] verify | func= FutureWork | rank= 6 | pid= hep-th/0103086 | title_snip='Electric-Magnetic Duality in Supergravity' | abs_len= 118
+[01:46:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:46:34] select | verify relaxed 8/10
+[01:46:34] verify | func= FutureWork | rank= 7 | pid= cond-mat/0102493 | title_snip='Response theory for time-resolved second-harmonic generation and
+  two…' | abs_len= 1205
+[01:46:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:36] select | verify relaxed 9/10
+[01:46:36] verify | func= FutureWork | rank= 8 | pid= math/0102173 | title_snip='Unipotency and semistability of overconvergent F-crystals' | abs_len= 549
+[01:46:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:46:38] select | verify relaxed 10/10
+[01:46:38] verify | func= FutureWork | rank= 9 | pid= gr-qc/0102038 | title_snip='Coherent States for Canonical Quantum General Relativity and the
+  Inf…' | abs_len= 527
+[01:46:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the extension of the Nonlinear Maxwell Theory in this paper suggest potential areas for future research?
+- WINNER: hep-th/0101137 | From Electromagnetic Duality to Extended Electrodynamics
+- QUOTE : motivate and outline the way to be followed in pursuing the right extension
+- WHY   : sufficient
+- ANSWER: The extension of the Nonlinear Maxwell Theory in this paper suggests potential areas for future research by outlining the transition to Extended Electrodynamics and motivating the pursuit of the right extension of Maxwell equations. This implies that future work could involve further developing and exploring the properties of nonlinear vacuum solutions in the context of Extended Electrodynamics (hep-th/0101137).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

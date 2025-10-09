@@ -1,0 +1,2 @@
+Molecular dynamics simulations of polyelectrolytes provide background information by calculating structure factors beyond the Random Phase Approximation to understand their behavior in aqueous solutions (cond-mat/0101279). [Background]
+The abstract does not provide information relevant to Uses. [Uses]

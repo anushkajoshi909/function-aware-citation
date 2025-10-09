@@ -1,0 +1,2 @@
+The current work extends our understanding of cosmic ray propagation by considering the effects of intergalactic magnetic fields on the flux of protons and neutrons from a specific source, Cen A. This builds upon prior proposals by Farrar and Piran, providing a more detailed prediction of the observable neutron-to-proton ratio along the line of sight to Cen A (astro-ph/0103043). [Extends]
+The current work builds on expected high-precision measurements of cosmic ray nuclei fluxes by testing a specific model of cosmic ray origin (astro-ph/0103043). [Background]

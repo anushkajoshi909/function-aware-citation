@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Background. [Background]
+The existence of close-in large planets challenges current understanding of planetary formation, as they are found in regions where high temperatures would typically prevent formation. This gap in understanding motivates further research into the composition and properties of these planets to explain their unexpected presence (astro-ph/0101055). [Motivation]
