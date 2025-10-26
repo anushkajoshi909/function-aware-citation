@@ -1,0 +1,18 @@
+{
+  "answer": "The methods used in this study can be applied to future research on parity nonconserving electric dipole transition amplitudes by using a hybrid mixed-states/sum-over-states approach, which can calculate PNC s-d amplitudes to high accuracy (physics/0101044).",
+  "predicted_paper_id": "physics/0101044",
+  "explanation": "This paper presents a method for calculating parity nonconserving electric dipole transition amplitudes between s-d electron states, which can be applied to future research in this area.",
+  "evidence_quote": "PNC s-d amplitudes",
+  "topk_list": [
+    "physics/0101044",
+    "cond-mat/0103312",
+    "hep-ph/0101112",
+    "hep-ph/0103123",
+    "physics/0101053",
+    "astro-ph/0104246",
+    "hep-ph/0101071",
+    "hep-ph/0101113",
+    "nucl-th/0103045",
+    "hep-ph/0104295"
+  ]
+}

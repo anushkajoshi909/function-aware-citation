@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks foundational information on gravity and motion (Background) and asks why this motivates the creation of preferred\u2011frame theory (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[21:59:34] main | args: Namespace(max_check=10, debug=True)
+[21:59:34] read_last_jsonl | path= classified_outputs.jsonl
+[21:59:34] read_last_jsonl | total_lines= 1
+[21:59:34] main | query='What background information about gravity and motion motivates the development of preferred-frame theory?' | funcs=['Background', 'Motivation']
+[21:59:36] main | core_terms= ['gravity', 'motion', 'Lorentz symmetry', 'preferred-frame theory', 'preferred-frame']
+[21:59:36] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:59:36] load_topk_jsonl | rows= 20
+[21:59:36] load_topk_jsonl | first: rank= 0 paper_id= gr-qc/0103025 title_snip='On a scalar theory of gravitation' abs_len= 1001
+[21:59:36] main | running function= Background
+[21:59:36] select | function= Background | candidates_in= 20
+[21:59:36] select | core_terms= ['gravity', 'motion', 'Lorentz symmetry', 'preferred-frame theory', 'preferred-frame']
+[21:59:36] select | no cosine prune; kept=20/20
+[21:59:36] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['gr-qc/0103025', 'gr-qc/0101099', 'gr-qc/0103076', 'hep-th/0103180', 'gr-qc/0102009', 'astro-ph/0102423', 'astro-ph/0102109', 'hep-th/0102186', 'hep-th/0103156', 'gr-qc/0101093']
+[21:59:36] select | verify relaxed 1/10
+[21:59:36] verify | func= Background | rank= 0 | pid= gr-qc/0103025 | title_snip='On a scalar theory of gravitation' | abs_len= 1001
+[21:59:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:59:40] select | verify relaxed 2/10
+[21:59:40] verify | func= Background | rank= 1 | pid= gr-qc/0101099 | title_snip='Flat Spacetime Gravitation with a Preferred Foliation' | abs_len= 712
+[21:59:43] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[21:59:43] select | verify relaxed 3/10
+[21:59:43] verify | func= Background | rank= 2 | pid= gr-qc/0103076 | title_snip='New Perspectives on the Relativistically Rotating Disk and
+  Non-time-…' | abs_len= 1715
+[21:59:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[21:59:46] select | verify relaxed 4/10
+[21:59:46] verify | func= Background | rank= 3 | pid= hep-th/0103180 | title_snip='Scalar gravitational waves and Einstein frame' | abs_len= 444
+[21:59:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:59:50] select | verify relaxed 5/10
+[21:59:50] verify | func= Background | rank= 4 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[21:59:53] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[21:59:53] select | verify relaxed 6/10
+[21:59:53] verify | func= Background | rank= 5 | pid= astro-ph/0102423 | title_snip='f(R) gravity theory and CMBR constraints' | abs_len= 881
+[21:59:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:59:56] select | verify relaxed 7/10
+[21:59:56] verify | func= Background | rank= 6 | pid= astro-ph/0102109 | title_snip='Induced Gravity Model Based on External Impinging Neutrinos: Calculati…' | abs_len= 1817
+[21:59:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[21:59:59] select | verify relaxed 8/10
+[21:59:59] verify | func= Background | rank= 7 | pid= hep-th/0102186 | title_snip='Perturbative Quantization of Gravity Theories' | abs_len= 562
+[22:00:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:00:02] select | verify relaxed 9/10
+[22:00:02] verify | func= Background | rank= 8 | pid= hep-th/0103156 | title_snip='The Promise of String Cosmology' | abs_len= 475
+[22:00:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:00:05] select | verify relaxed 10/10
+[22:00:05] verify | func= Background | rank= 9 | pid= gr-qc/0101093 | title_snip='Field Theories from the Relativistic Law of Motion' | abs_len= 637
+[22:00:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What background information about gravity and motion motivates the development of preferred-frame theory?
+- WINNER: gr-qc/0103025 | On a scalar theory of gravitation
+- QUOTE : an interpretation of gravity as a pressure force
+- WHY   : sufficient
+[22:00:10] main | running function= Motivation
+[22:00:10] select | function= Motivation | candidates_in= 20
+[22:00:10] select | core_terms= ['gravity', 'motion', 'Lorentz symmetry', 'preferred-frame theory', 'preferred-frame']
+[22:00:10] select | no cosine prune; kept=20/20
+[22:00:10] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['gr-qc/0103025', 'gr-qc/0101099', 'gr-qc/0103076', 'hep-th/0103180', 'gr-qc/0102009', 'astro-ph/0102423', 'astro-ph/0102109', 'hep-th/0102186', 'hep-th/0103156', 'gr-qc/0101093']
+[22:00:10] select | verify relaxed 1/10
+[22:00:10] verify | func= Motivation | rank= 0 | pid= gr-qc/0103025 | title_snip='On a scalar theory of gravitation' | abs_len= 1001
+[22:00:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:00:13] select | verify relaxed 2/10
+[22:00:13] verify | func= Motivation | rank= 1 | pid= gr-qc/0101099 | title_snip='Flat Spacetime Gravitation with a Preferred Foliation' | abs_len= 712
+[22:00:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:00:16] select | verify relaxed 3/10
+[22:00:16] verify | func= Motivation | rank= 2 | pid= gr-qc/0103076 | title_snip='New Perspectives on the Relativistically Rotating Disk and
+  Non-time-…' | abs_len= 1715
+[22:00:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:00:20] select | verify relaxed 4/10
+[22:00:20] verify | func= Motivation | rank= 3 | pid= hep-th/0103180 | title_snip='Scalar gravitational waves and Einstein frame' | abs_len= 444
+[22:00:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:00:23] select | verify relaxed 5/10
+[22:00:23] verify | func= Motivation | rank= 4 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[22:00:27] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[22:00:27] select | verify relaxed 6/10
+[22:00:27] verify | func= Motivation | rank= 5 | pid= astro-ph/0102423 | title_snip='f(R) gravity theory and CMBR constraints' | abs_len= 881
+[22:00:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:00:30] select | verify relaxed 7/10
+[22:00:30] verify | func= Motivation | rank= 6 | pid= astro-ph/0102109 | title_snip='Induced Gravity Model Based on External Impinging Neutrinos: Calculati…' | abs_len= 1817
+[22:00:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:00:33] select | verify relaxed 8/10
+[22:00:33] verify | func= Motivation | rank= 7 | pid= hep-th/0102186 | title_snip='Perturbative Quantization of Gravity Theories' | abs_len= 562
+[22:00:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:00:37] select | verify relaxed 9/10
+[22:00:37] verify | func= Motivation | rank= 8 | pid= hep-th/0103156 | title_snip='The Promise of String Cosmology' | abs_len= 475
+[22:00:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:00:39] select | verify relaxed 10/10
+[22:00:39] verify | func= Motivation | rank= 9 | pid= gr-qc/0101093 | title_snip='Field Theories from the Relativistic Law of Motion' | abs_len= 637
+[22:00:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What background information about gravity and motion motivates the development of preferred-frame theory?
+- WINNER: gr-qc/0103025 | On a scalar theory of gravitation
+- QUOTE : an interpretation of gravity as a pressure force
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The background information about gravity and motion, which includes an interpretation of gravity as a pressure force and an equivalence principle between the absolute effects of motion and gravitation [Background] (gr-qc/0103025), motivates the development of preferred-frame theory as it aims to account for special relativity and provide a consistent celestial mechanics [Motivation] (gr-qc/0103025).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

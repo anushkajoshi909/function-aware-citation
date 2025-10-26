@@ -1,0 +1,18 @@
+{
+  "answer": "Future research may utilize techniques developed for analyzing SO(2N) invariant couplings in the context of large tensor representations to study proton decay and quark lepton textures (hep-ph/0103165).",
+  "predicted_paper_id": "hep-ph/0103165",
+  "explanation": "This paper develops techniques for analyzing SO(2N) invariant couplings and applies them to the case of SO(10) involving large tensor representations, making it relevant to future research in this area.",
+  "evidence_quote": "large tensor representations",
+  "topk_list": [
+    "hep-ph/0103165",
+    "hep-th/0101120",
+    "hep-th/0103149",
+    "quant-ph/0101024",
+    "quant-ph/0104071",
+    "nucl-th/0101009",
+    "hep-th/0104031",
+    "hep-th/0102168",
+    "hep-th/0102006",
+    "hep-th/0101016"
+  ]
+}

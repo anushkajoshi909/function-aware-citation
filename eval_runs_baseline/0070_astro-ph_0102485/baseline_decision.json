@@ -1,0 +1,18 @@
+{
+  "answer": "The properties of SNe II-L and SNe IIn extend our understanding of supernovae, with SNe II-L showing evidence of late-time interaction with circumstellar material and SNe IIn having unusually dense circumstellar gas (astro-ph/0102485).",
+  "predicted_paper_id": "astro-ph/0102485",
+  "explanation": "This paper provides an overview of optical observations of core-collapse supernovae, including SNe II-L and SNe IIn, and discusses their properties and interactions with circumstellar material.",
+  "evidence_quote": "SNe II-L tend to show evidence of late-time interaction with circumstellar material",
+  "topk_list": [
+    "astro-ph/0102485",
+    "astro-ph/0101119",
+    "astro-ph/0104025",
+    "astro-ph/0104235",
+    "astro-ph/0104012",
+    "astro-ph/0104009",
+    "hep-ph/0103201",
+    "astro-ph/0103396",
+    "astro-ph/0103034",
+    "astro-ph/0103324"
+  ]
+}

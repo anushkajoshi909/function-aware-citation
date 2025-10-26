@@ -1,0 +1,18 @@
+{
+  "answer": "The mid-infrared spectral energy distribution of Mrk 279 shows a strong power law continuum and weak PAH emission features, similar to other Seyfert galaxies (astro-ph/0102356).",
+  "predicted_paper_id": "astro-ph/0102356",
+  "explanation": "This paper presents mid-infrared images and spectra of Mrk 279, allowing for a direct comparison with other Seyfert galaxies.",
+  "evidence_quote": "strong power law continuum",
+  "topk_list": [
+    "astro-ph/0102356",
+    "astro-ph/0101103",
+    "astro-ph/0101038",
+    "astro-ph/0103266",
+    "astro-ph/0101066",
+    "astro-ph/0103263",
+    "astro-ph/0101153",
+    "astro-ph/0104197",
+    "astro-ph/0104042",
+    "astro-ph/0104087"
+  ]
+}

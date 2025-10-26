@@ -1,0 +1,18 @@
+{
+  "answer": "Future research directions may involve complex models such as the irradiated disk and the disk-corona models to explain the overall UV-X spectral distribution (astro-ph/0101203).",
+  "predicted_paper_id": "astro-ph/0101203",
+  "explanation": "This paper discusses the standard accretion disk model and its limitations, suggesting the need for more complex models to explain observations.",
+  "evidence_quote": "more complex models are required",
+  "topk_list": [
+    "astro-ph/0101203",
+    "astro-ph/0104242",
+    "astro-ph/0103274",
+    "astro-ph/0101075",
+    "astro-ph/0102146",
+    "astro-ph/0103439",
+    "astro-ph/0103020",
+    "astro-ph/0103230",
+    "astro-ph/0104275",
+    "astro-ph/0104193"
+  ]
+}

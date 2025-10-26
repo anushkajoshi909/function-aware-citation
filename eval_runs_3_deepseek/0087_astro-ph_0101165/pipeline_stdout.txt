@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly asks for a comparison with other works and seeks future research directions derived from the study's findings."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:33:04] main | args: Namespace(max_check=10, debug=True)
+[13:33:04] read_last_jsonl | path= classified_outputs.jsonl
+[13:33:04] read_last_jsonl | total_lines= 1
+[13:33:04] main | query='How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?' | funcs=['Compares', 'FutureWork']
+[13:33:06] main | core_terms= ['radiative shock waves', 'shock wave structure', 'radiation flux', 'radiation hydrodynamics']
+[13:33:06] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:33:06] load_topk_jsonl | rows= 20
+[13:33:06] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103108 title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' abs_len= 1788
+[13:33:06] main | running function= Compares
+[13:33:06] select | function= Compares | candidates_in= 20
+[13:33:06] select | core_terms= ['radiative shock waves', 'shock wave structure', 'radiation flux', 'radiation hydrodynamics']
+[13:33:06] select | no cosine prune; kept=20/20
+[13:33:06] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103108', 'astro-ph/0101291', 'astro-ph/0101165', 'astro-ph/0101175', 'astro-ph/0102091', 'astro-ph/0104120', 'astro-ph/0102434', 'astro-ph/0102276', 'astro-ph/0103424', 'hep-ph/0101112']
+[13:33:06] select | verify relaxed 1/10
+[13:33:06] verify | func= Compares | rank= 0 | pid= astro-ph/0103108 | title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' | abs_len= 1788
+[13:33:09] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:33:09] select | verify relaxed 2/10
+[13:33:09] verify | func= Compares | rank= 1 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[13:33:12] verify | result supports= False fit= 0.20 top= 0.60 invalid= — cue_hint= False
+[13:33:12] select | verify relaxed 3/10
+[13:33:12] verify | func= Compares | rank= 2 | pid= astro-ph/0101165 | title_snip='The structure of radiative shock waves. III. The model grid for
+  part…' | abs_len= 1734
+[13:33:16] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:33:16] select | verify relaxed 4/10
+[13:33:16] verify | func= Compares | rank= 3 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[13:33:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:18] select | verify relaxed 5/10
+[13:33:18] verify | func= Compares | rank= 4 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[13:33:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:33:21] select | verify relaxed 6/10
+[13:33:21] verify | func= Compares | rank= 5 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[13:33:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:33:25] select | verify relaxed 7/10
+[13:33:25] verify | func= Compares | rank= 6 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[13:33:28] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:33:28] select | verify relaxed 8/10
+[13:33:28] verify | func= Compares | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:33:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:31] select | verify relaxed 9/10
+[13:33:31] verify | func= Compares | rank= 8 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[13:33:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:33:34] select | verify relaxed 10/10
+[13:33:34] verify | func= Compares | rank= 9 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:33:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?
+- No supporting candidate with sufficient evidence.
+[13:33:37] main | running function= FutureWork
+[13:33:37] select | function= FutureWork | candidates_in= 20
+[13:33:37] select | core_terms= ['radiative shock waves', 'shock wave structure', 'radiation flux', 'radiation hydrodynamics']
+[13:33:37] select | no cosine prune; kept=20/20
+[13:33:37] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103108', 'astro-ph/0101291', 'astro-ph/0101165', 'astro-ph/0101175', 'astro-ph/0102091', 'astro-ph/0104120', 'astro-ph/0102434', 'astro-ph/0102276', 'astro-ph/0103424', 'hep-ph/0101112']
+[13:33:37] select | verify relaxed 1/10
+[13:33:37] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103108 | title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' | abs_len= 1788
+[13:33:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:41] select | verify relaxed 2/10
+[13:33:41] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[13:33:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:33:44] select | verify relaxed 3/10
+[13:33:44] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101165 | title_snip='The structure of radiative shock waves. III. The model grid for
+  part…' | abs_len= 1734
+[13:33:47] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:33:47] select | verify relaxed 4/10
+[13:33:47] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[13:33:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:49] select | verify relaxed 5/10
+[13:33:49] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[13:33:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:33:53] select | verify relaxed 6/10
+[13:33:53] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[13:33:56] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:33:56] select | verify relaxed 7/10
+[13:33:56] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[13:33:58] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[13:33:58] select | verify relaxed 8/10
+[13:33:58] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[13:34:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:34:01] select | verify relaxed 9/10
+[13:34:01] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[13:34:04] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:34:04] select | verify relaxed 10/10
+[13:34:04] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:34:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,1 @@
+The background information on GaN/AlGaN quantum wells, including the re-ordered valence band and well-width dependence of excitonic properties [Background] (cond-mat/0101069), motivates the current study as it reveals unique characteristics that can be further explored, such as the valence band ordering and excitonic binding energies [Motivation] (cond-mat/0101069).

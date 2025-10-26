@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends existing methods for calculating the energy of Wigner crystals by generalizing Ewald's method for anisotropic interactions, as seen in cond-mat/0104438.",
+  "predicted_paper_id": "cond-mat/0104438",
+  "explanation": "This paper provides a generalization of Ewald's method for calculating the energy of Wigner crystals, which is relevant to the question of extending existing methods.",
+  "evidence_quote": "A generalization of Ewald's method",
+  "topk_list": [
+    "cond-mat/0104438",
+    "quant-ph/0104099",
+    "cond-mat/0103610",
+    "cond-mat/0104579",
+    "gr-qc/0103017",
+    "cond-mat/0103392",
+    "cond-mat/0103094",
+    "hep-ph/0102149",
+    "quant-ph/0102095",
+    "cond-mat/0101045"
+  ]
+}

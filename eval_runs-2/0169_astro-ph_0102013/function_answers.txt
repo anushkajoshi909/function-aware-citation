@@ -1,2 +1,0 @@
-Future studies of microlensing events could build on current understanding by exploring the optical depth and time-scale distribution in the context of the Sagittarius dwarf galaxy, extending the scope of previous work to account for the galaxy's contribution to microlensing events at higher latitudes. This extension could improve the accuracy of optical depth maps by considering the significant contribution of Milky Way/Sagittarius dwarf galaxy events (astro-ph/0102013). [Extends]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

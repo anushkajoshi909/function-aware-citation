@@ -1,0 +1,18 @@
+{
+  "answer": "The current work's methods compare to previous redshift surveys in understanding large-scale structure, with improvements in technologies enabling progress, as seen in astro-ph/0104418.",
+  "predicted_paper_id": "astro-ph/0104418",
+  "explanation": "This paper provides a review of twenty years of progress in large-scale structure studies, highlighting the role of redshift surveys and technological improvements.",
+  "evidence_quote": "progress in large scale structure studies",
+  "topk_list": [
+    "astro-ph/0104418",
+    "astro-ph/0102319",
+    "astro-ph/0103500",
+    "astro-ph/0101445",
+    "astro-ph/0101130",
+    "astro-ph/0102368",
+    "astro-ph/0101230",
+    "astro-ph/0103049",
+    "astro-ph/0102276",
+    "astro-ph/0102214"
+  ]
+}

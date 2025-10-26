@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Uses"
+  ],
+  "justification": "The query connects foundational knowledge in astrophysics simulations with the practical application and benefits of a method."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:59:52] main | args: Namespace(max_check=10, debug=True)
+[13:59:52] read_last_jsonl | path= classified_outputs.jsonl
+[13:59:52] read_last_jsonl | total_lines= 1
+[13:59:52] main | query='How does the dynamic and adaptive method for domain decomposition in the parallel tree-code relate to its background in astrophysics simulations and its use in achieving low computational costs?' | funcs=['Background', 'Uses']
+[13:59:55] main | core_terms= ['tree-code', 'astrophysics', 'domain decomposition', 'parallel computing', 'computational cost']
+[13:59:55] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:59:55] load_topk_jsonl | rows= 20
+[13:59:55] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104152 title_snip='An efficient parallel tree-code for the simulation of self-gravitating…' abs_len= 963
+[13:59:55] main | running function= Background
+[13:59:55] select | function= Background | candidates_in= 20
+[13:59:55] select | core_terms= ['tree-code', 'astrophysics', 'domain decomposition', 'parallel computing', 'computational cost']
+[13:59:55] select | no cosine prune; kept=20/20
+[13:59:55] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104152', 'astro-ph/0101447', 'astro-ph/0101148', 'astro-ph/0104258', 'astro-ph/0103503', 'astro-ph/0102068', 'astro-ph/0103001', 'cond-mat/0103263', 'cs/0103001', 'astro-ph/0103301']
+[13:59:55] select | verify relaxed 1/10
+[13:59:55] verify | func= Background | rank= 0 | pid= astro-ph/0104152 | title_snip='An efficient parallel tree-code for the simulation of self-gravitating…' | abs_len= 963
+[13:59:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:59:58] select | verify relaxed 2/10
+[13:59:58] verify | func= Background | rank= 1 | pid= astro-ph/0101447 | title_snip='An Integrated Procedure for Tree-Nbody Simulations: FLY and AstroMD' | abs_len= 998
+[14:00:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:00:02] select | verify relaxed 3/10
+[14:00:02] verify | func= Background | rank= 2 | pid= astro-ph/0101148 | title_snip='Are You Ready to FLY in the Universe ? A Multi-platform N-body Tree Co…' | abs_len= 1051
+[14:00:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:00:05] select | verify relaxed 4/10
+[14:00:05] verify | func= Background | rank= 3 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[14:00:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:00:07] select | verify relaxed 5/10
+[14:00:07] verify | func= Background | rank= 4 | pid= astro-ph/0103503 | title_snip='MLAPM - a C code for cosmological simulations' | abs_len= 1536
+[14:00:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:10] select | verify relaxed 6/10
+[14:00:10] verify | func= Background | rank= 5 | pid= astro-ph/0102068 | title_snip='A 3D MHD model of astrophysical flows: algorithms, tests and
+  paralle…' | abs_len= 1027
+[14:00:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:00:13] select | verify relaxed 7/10
+[14:00:13] verify | func= Background | rank= 6 | pid= astro-ph/0103001 | title_snip='Binaries and Globular Cluster Dynamics' | abs_len= 1294
+[14:00:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:16] select | verify relaxed 8/10
+[14:00:16] verify | func= Background | rank= 7 | pid= cond-mat/0103263 | title_snip='Implementation of parallel algorithms for 2D vortex dynamics simulatio…' | abs_len= 527
+[14:00:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:00:19] select | verify relaxed 9/10
+[14:00:19] verify | func= Background | rank= 8 | pid= cs/0103001 | title_snip='Construction of an algorithm in parallel for the Fast Fourier Transfor…' | abs_len= 588
+[14:00:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:22] select | verify relaxed 10/10
+[14:00:22] verify | func= Background | rank= 9 | pid= astro-ph/0103301 | title_snip='Multiscale Gaussian Random Fields for Cosmological Simulations' | abs_len= 479
+[14:00:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the dynamic and adaptive method for domain decomposition in the parallel tree-code relate to its background in astrophysics simulations and its use in achieving low computational costs?
+- WINNER: astro-ph/0104152 | An efficient parallel tree-code for the simulation of self-gravitating
+  systems
+- QUOTE : for the simulation of self-gravitating systems in Astrophysics
+- WHY   : sufficient
+[14:00:25] main | running function= Uses
+[14:00:25] select | function= Uses | candidates_in= 20
+[14:00:25] select | core_terms= ['tree-code', 'astrophysics', 'domain decomposition', 'parallel computing', 'computational cost']
+[14:00:25] select | no cosine prune; kept=20/20
+[14:00:25] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104152', 'astro-ph/0101447', 'astro-ph/0101148', 'astro-ph/0104258', 'astro-ph/0103503', 'astro-ph/0102068', 'astro-ph/0103001', 'cond-mat/0103263', 'cs/0103001', 'astro-ph/0103301']
+[14:00:25] select | verify relaxed 1/10
+[14:00:25] verify | func= Uses | rank= 0 | pid= astro-ph/0104152 | title_snip='An efficient parallel tree-code for the simulation of self-gravitating…' | abs_len= 963
+[14:00:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:00:29] select | verify relaxed 2/10
+[14:00:29] verify | func= Uses | rank= 1 | pid= astro-ph/0101447 | title_snip='An Integrated Procedure for Tree-Nbody Simulations: FLY and AstroMD' | abs_len= 998
+[14:00:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[14:00:32] select | verify relaxed 3/10
+[14:00:32] verify | func= Uses | rank= 2 | pid= astro-ph/0101148 | title_snip='Are You Ready to FLY in the Universe ? A Multi-platform N-body Tree Co…' | abs_len= 1051
+[14:00:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[14:00:35] select | verify relaxed 4/10
+[14:00:35] verify | func= Uses | rank= 3 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[14:00:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:38] select | verify relaxed 5/10
+[14:00:38] verify | func= Uses | rank= 4 | pid= astro-ph/0103503 | title_snip='MLAPM - a C code for cosmological simulations' | abs_len= 1536
+[14:00:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:41] select | verify relaxed 6/10
+[14:00:41] verify | func= Uses | rank= 5 | pid= astro-ph/0102068 | title_snip='A 3D MHD model of astrophysical flows: algorithms, tests and
+  paralle…' | abs_len= 1027
+[14:00:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:00:44] select | verify relaxed 7/10
+[14:00:44] verify | func= Uses | rank= 6 | pid= astro-ph/0103001 | title_snip='Binaries and Globular Cluster Dynamics' | abs_len= 1294
+[14:00:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:47] select | verify relaxed 8/10
+[14:00:47] verify | func= Uses | rank= 7 | pid= cond-mat/0103263 | title_snip='Implementation of parallel algorithms for 2D vortex dynamics simulatio…' | abs_len= 527
+[14:00:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:00:50] select | verify relaxed 9/10
+[14:00:50] verify | func= Uses | rank= 8 | pid= cs/0103001 | title_snip='Construction of an algorithm in parallel for the Fast Fourier Transfor…' | abs_len= 588
+[14:00:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:00:53] select | verify relaxed 10/10
+[14:00:53] verify | func= Uses | rank= 9 | pid= astro-ph/0103301 | title_snip='Multiscale Gaussian Random Fields for Cosmological Simulations' | abs_len= 479
+[14:00:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the dynamic and adaptive method for domain decomposition in the parallel tree-code relate to its background in astrophysics simulations and its use in achieving low computational costs?
+- WINNER: astro-ph/0104152 | An efficient parallel tree-code for the simulation of self-gravitating
+  systems
+- QUOTE : a parallel version of our tree-code for the simulation of self-gravitating systems in Astrophysics
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The dynamic and adaptive method for domain decomposition in the parallel tree-code originates from its background in astrophysics simulations, where it is used to efficiently simulate self-gravitating systems [Background] (astro-ph/0104152). This method is utilized to achieve low computational costs, as it enables the domain decomposition to be performed 'on the fly' and reduces parallelization overhead to less than 4% of the total CPU-time, making it useful for large-scale simulations [Uses] (astro-ph/0104152).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

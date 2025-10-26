@@ -1,0 +1,18 @@
+{
+  "answer": "The template spectra of normal galaxies along the Hubble sequence relate to previous studies in terms of observational approach and spectral characteristics, as seen in astro-ph/0104427, which defines template spectra of normal galaxies along the Hubble sequence (astro-ph/0104427).",
+  "predicted_paper_id": "astro-ph/0104427",
+  "explanation": "This paper best supports the answer because it directly addresses the definition of template spectra of normal galaxies along the Hubble sequence, providing a clear connection to previous studies.",
+  "evidence_quote": "define template spectra of normal galaxies along the Hubble sequence",
+  "topk_list": [
+    "astro-ph/0104427",
+    "astro-ph/0101416",
+    "astro-ph/0101445",
+    "astro-ph/0103017",
+    "astro-ph/0101367",
+    "astro-ph/0104311",
+    "astro-ph/0101248",
+    "astro-ph/0101143",
+    "astro-ph/0104084",
+    "astro-ph/0104313"
+  ]
+}

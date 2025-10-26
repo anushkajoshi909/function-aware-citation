@@ -1,0 +1,1 @@
+The effects of irradiation on planetary atmospheres, as described in the background of this study [Background] (astro-ph/0104262), are compared to other models or observations, motivated by the need to accurately account for the impinging radiation field in atmospheric structure computations [Motivation] (astro-ph/0104262).

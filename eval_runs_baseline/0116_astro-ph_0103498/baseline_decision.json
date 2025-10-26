@@ -1,0 +1,18 @@
+{
+  "answer": "The revisitation of the OGLE database provides background information and uses previous methods to investigate the properties of Fourier parameters in different types of stars, as seen in the analysis of pulsating stars with P<1 d (astro-ph/0103498).",
+  "predicted_paper_id": "astro-ph/0103498",
+  "explanation": "This paper directly addresses the revisitation of the OGLE database to investigate the properties of Fourier parameters in different types of stars, making it the most relevant to the question.",
+  "evidence_quote": "The OGLE database is revisited to investigate in more detail the properties of the Fourier parameters.",
+  "topk_list": [
+    "astro-ph/0103498",
+    "astro-ph/0101192",
+    "astro-ph/0101084",
+    "astro-ph/0102276",
+    "astro-ph/0102027",
+    "astro-ph/0104483",
+    "astro-ph/0104411",
+    "astro-ph/0104182",
+    "astro-ph/0103307",
+    "astro-ph/0101510"
+  ]
+}

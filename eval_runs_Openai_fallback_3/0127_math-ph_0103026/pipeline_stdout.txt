@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query requests prior methods/results (background) and asks how they can inspire further study of stability (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:52:10] main | args: Namespace(max_check=10, debug=True)
+[23:52:10] read_last_jsonl | path= classified_outputs.jsonl
+[23:52:10] read_last_jsonl | total_lines= 1
+[23:52:10] main | query='What methods or results from previous studies on non-linear parabolic equations could motivate further investigation into the stability of stationary states in fluid dynamics?' | funcs=['Background', 'Motivation']
+[23:52:12] main | core_terms= ['stationary states', 'fluid dynamics', 'non-linear parabolic equations', 'stability', 'non-linear']
+[23:52:12] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:52:12] load_topk_jsonl | rows= 20
+[23:52:12] load_topk_jsonl | first: rank= 0 paper_id= math-ph/0103026 title_snip='Stability of a Hot Smoluchowski Fluid' abs_len= 1035
+[23:52:12] main | running function= Background
+[23:52:12] select | function= Background | candidates_in= 20
+[23:52:12] select | core_terms= ['stationary states', 'fluid dynamics', 'non-linear parabolic equations', 'stability', 'non-linear']
+[23:52:12] select | no cosine prune; kept=20/20
+[23:52:12] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math-ph/0103026', 'gr-qc/0103060', 'physics/0101025', 'astro-ph/0102434', 'physics/0103003', 'nlin/0103053', 'nlin/0101012', 'astro-ph/0101222', 'math-ph/0101029', 'hep-ph/0101202']
+[23:52:12] select | verify relaxed 1/10
+[23:52:12] verify | func= Background | rank= 0 | pid= math-ph/0103026 | title_snip='Stability of a Hot Smoluchowski Fluid' | abs_len= 1035
+[23:52:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:52:15] select | verify relaxed 2/10
+[23:52:15] verify | func= Background | rank= 1 | pid= gr-qc/0103060 | title_snip='Stability analysis of cosmological models through Liapunov's method' | abs_len= 676
+[23:52:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:18] select | verify relaxed 3/10
+[23:52:18] verify | func= Background | rank= 2 | pid= physics/0101025 | title_snip='Global stability of systems related to the Navier-Stokes equations' | abs_len= 385
+[23:52:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:52:21] select | verify relaxed 4/10
+[23:52:21] verify | func= Background | rank= 3 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[23:52:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:52:24] select | verify relaxed 5/10
+[23:52:24] verify | func= Background | rank= 4 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[23:52:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:52:27] select | verify relaxed 6/10
+[23:52:27] verify | func= Background | rank= 5 | pid= nlin/0103053 | title_snip='Stability of narrow beams in bulk Kerr-type nonlinear media' | abs_len= 1366
+[23:52:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:52:31] select | verify relaxed 7/10
+[23:52:31] verify | func= Background | rank= 6 | pid= nlin/0101012 | title_snip='Derivatives and Constraints in Chaotic Flows: Asymptotic Behaviour and…' | abs_len= 1136
+[23:52:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:33] select | verify relaxed 8/10
+[23:52:33] verify | func= Background | rank= 7 | pid= astro-ph/0101222 | title_snip='Damping time and stability of density fermion perturbations in the
+  e…' | abs_len= 1202
+[23:52:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:36] select | verify relaxed 9/10
+[23:52:36] verify | func= Background | rank= 8 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[23:52:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:39] select | verify relaxed 10/10
+[23:52:39] verify | func= Background | rank= 9 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[23:52:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What methods or results from previous studies on non-linear parabolic equations could motivate further investigation into the stability of stationary states in fluid dynamics?
+- WINNER: math-ph/0103026 | Stability of a Hot Smoluchowski Fluid
+- QUOTE : coupled non-linear parabolic equations for a fluid
+- WHY   : sufficient
+[23:52:42] main | running function= Motivation
+[23:52:42] select | function= Motivation | candidates_in= 20
+[23:52:42] select | core_terms= ['stationary states', 'fluid dynamics', 'non-linear parabolic equations', 'stability', 'non-linear']
+[23:52:42] select | no cosine prune; kept=20/20
+[23:52:42] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math-ph/0103026', 'gr-qc/0103060', 'physics/0101025', 'astro-ph/0102434', 'physics/0103003', 'nlin/0103053', 'nlin/0101012', 'astro-ph/0101222', 'math-ph/0101029', 'hep-ph/0101202']
+[23:52:42] select | verify relaxed 1/10
+[23:52:42] verify | func= Motivation | rank= 0 | pid= math-ph/0103026 | title_snip='Stability of a Hot Smoluchowski Fluid' | abs_len= 1035
+[23:52:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:52:46] select | verify relaxed 2/10
+[23:52:46] verify | func= Motivation | rank= 1 | pid= gr-qc/0103060 | title_snip='Stability analysis of cosmological models through Liapunov's method' | abs_len= 676
+[23:52:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:52:48] select | verify relaxed 3/10
+[23:52:48] verify | func= Motivation | rank= 2 | pid= physics/0101025 | title_snip='Global stability of systems related to the Navier-Stokes equations' | abs_len= 385
+[23:52:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:52:51] select | verify relaxed 4/10
+[23:52:51] verify | func= Motivation | rank= 3 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[23:52:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:52:55] select | verify relaxed 5/10
+[23:52:55] verify | func= Motivation | rank= 4 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[23:52:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:52:58] select | verify relaxed 6/10
+[23:52:58] verify | func= Motivation | rank= 5 | pid= nlin/0103053 | title_snip='Stability of narrow beams in bulk Kerr-type nonlinear media' | abs_len= 1366
+[23:53:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:53:01] select | verify relaxed 7/10
+[23:53:01] verify | func= Motivation | rank= 6 | pid= nlin/0101012 | title_snip='Derivatives and Constraints in Chaotic Flows: Asymptotic Behaviour and…' | abs_len= 1136
+[23:53:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:53:03] select | verify relaxed 8/10
+[23:53:03] verify | func= Motivation | rank= 7 | pid= astro-ph/0101222 | title_snip='Damping time and stability of density fermion perturbations in the
+  e…' | abs_len= 1202
+[23:53:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:53:06] select | verify relaxed 9/10
+[23:53:06] verify | func= Motivation | rank= 8 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[23:53:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:53:08] select | verify relaxed 10/10
+[23:53:08] verify | func= Motivation | rank= 9 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[23:53:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What methods or results from previous studies on non-linear parabolic equations could motivate further investigation into the stability of stationary states in fluid dynamics?
+- WINNER: math-ph/0103026 | Stability of a Hot Smoluchowski Fluid
+- QUOTE : necessary for the stability of the stationary state
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Previous studies on non-linear parabolic equations, such as those in math-ph/0103026, provide background [Background] on the stability of stationary solutions in fluid dynamics by analyzing the spectrum of the generator of time-evolution. The fact that the stability of the stationary state is not guaranteed, as the generator is not a sectorial operator [Motivation] (math-ph/0103026).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

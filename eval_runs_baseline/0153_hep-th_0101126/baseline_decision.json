@@ -1,0 +1,18 @@
+{
+  "answer": "Future research directions are motivated by the limitations of M-theory and matrix theory, such as formulating matrix theory in a general space-time background (hep-th/0101126).",
+  "predicted_paper_id": "hep-th/0101126",
+  "explanation": "This paper provides a self-contained review of the matrix model of M-theory and discusses the problem of formulating matrix theory in a general space-time background, which is a current limitation of the theory.",
+  "evidence_quote": "no complete background-independent formulation of the theory yet exists",
+  "topk_list": [
+    "hep-th/0101126",
+    "hep-th/0102170",
+    "hep-ph/0103095",
+    "hep-th/0102077",
+    "hep-th/0102168",
+    "hep-ph/0102117",
+    "hep-ph/0104027",
+    "hep-ph/0103080",
+    "hep-ph/0103074",
+    "hep-ph/0104062"
+  ]
+}

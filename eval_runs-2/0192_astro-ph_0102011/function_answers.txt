@@ -1,2 +1,0 @@
-The study of disc-like objects using specific simulations is motivated by the need to accurately model their structural and dynamical properties, which is crucial for understanding the formation and evolution of spiral galaxies. This is important because previous simulations have struggled to reproduce the observed properties of these objects, particularly the formation of compact bulges that stabilize disc-like structures (astro-ph/0102011). [Motivation]
-The abstract does not provide information relevant to Uses. [Uses]

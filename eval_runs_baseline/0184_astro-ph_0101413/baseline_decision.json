@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous research on cosmic microwave background anisotropies by using specific datasets or methods from earlier studies, such as combining the COBE, Saskatoon and MAX data sets (astro-ph/0104366).",
+  "predicted_paper_id": "astro-ph/0104366",
+  "explanation": "This paper best supports the answer because it discusses a complete likelihood analysis combining multiple datasets, demonstrating an extension of previous research on CMB anisotropies.",
+  "evidence_quote": "combining the COBE, Saskatoon and MAX data sets",
+  "topk_list": [
+    "astro-ph/0104366",
+    "astro-ph/0104017",
+    "astro-ph/0103134",
+    "astro-ph/0104459",
+    "astro-ph/0103505",
+    "astro-ph/0102378",
+    "astro-ph/0102264",
+    "astro-ph/0101086",
+    "astro-ph/0101449",
+    "astro-ph/0101112"
+  ]
+}

@@ -1,0 +1,157 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query requests foundational knowledge and explicitly frames it as laying groundwork for subsequent research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:33:01] main | args: Namespace(max_check=10, debug=True)
+[13:33:01] read_last_jsonl | path= classified_outputs.jsonl
+[13:33:01] read_last_jsonl | total_lines= 1
+[13:33:01] main | query='How does the analysis of the canonical structure for a gauge fixed PST bosonic five brane action lay the groundwork for potential future research in this area?' | funcs=['Background', 'FutureWork']
+[13:33:03] main | core_terms= ['PST bosonic five brane', 'gauge fixed action', 'canonical structure', 'PST']
+[13:33:03] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:33:03] load_topk_jsonl | rows= 20
+[13:33:03] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0103123 title_snip='Master Canonical Action and BRST Charge of the M Theory Bosonic Five
+ …' abs_len= 1088
+[13:33:03] main | running function= Background
+[13:33:03] select | function= Background | candidates_in= 20
+[13:33:03] select | core_terms= ['PST bosonic five brane', 'gauge fixed action', 'canonical structure', 'PST']
+[13:33:03] select | no cosine prune; kept=20/20
+[13:33:03] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0103123', 'hep-ph/0103251', 'hep-ph/0102019', 'hep-th/0102041', 'hep-th/0101213', 'hep-ph/0102270', 'hep-th/0102145', 'hep-th/0102147', 'hep-th/0103138', 'hep-ph/0103121']
+[13:33:03] select | verify relaxed 1/10
+[13:33:03] verify | func= Background | rank= 0 | pid= hep-th/0103123 | title_snip='Master Canonical Action and BRST Charge of the M Theory Bosonic Five
+ …' | abs_len= 1088
+[13:33:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:33:06] select | verify relaxed 2/10
+[13:33:06] verify | func= Background | rank= 1 | pid= hep-ph/0103251 | title_snip='Semi-simple group unification in the supersymmetric brane world' | abs_len= 1529
+[13:33:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:09] select | verify relaxed 3/10
+[13:33:09] verify | func= Background | rank= 2 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[13:33:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:12] select | verify relaxed 4/10
+[13:33:12] verify | func= Background | rank= 3 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[13:33:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:14] select | verify relaxed 5/10
+[13:33:14] verify | func= Background | rank= 4 | pid= hep-th/0101213 | title_snip='Strings at the Tachyonic Vacuum' | abs_len= 689
+[13:33:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:17] select | verify relaxed 6/10
+[13:33:17] verify | func= Background | rank= 5 | pid= hep-ph/0102270 | title_snip='Determination of the String Scale in D-Brane Scenarios and Dark Matter…' | abs_len= 845
+[13:33:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:19] select | verify relaxed 7/10
+[13:33:19] verify | func= Background | rank= 6 | pid= hep-th/0102145 | title_snip='Four-Dimensional Supergravities from Five-Dimensional Brane Worlds' | abs_len= 718
+[13:33:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:22] select | verify relaxed 8/10
+[13:33:22] verify | func= Background | rank= 7 | pid= hep-th/0102147 | title_snip='Locally Localized Gravity Models in Higher Dimensions' | abs_len= 1094
+[13:33:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:24] select | verify relaxed 9/10
+[13:33:24] verify | func= Background | rank= 8 | pid= hep-th/0103138 | title_snip='Fermion vacuum energies in brane world models' | abs_len= 275
+[13:33:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:27] select | verify relaxed 10/10
+[13:33:27] verify | func= Background | rank= 9 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[13:33:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the analysis of the canonical structure for a gauge fixed PST bosonic five brane action lay the groundwork for potential future research in this area?
+- WINNER: hep-th/0103123 | Master Canonical Action and BRST Charge of the M Theory Bosonic Five
+  Brane
+- QUOTE : A complete analysis of the canonical structure for a gauge fixed PST bosonic five brane action is performed
+- WHY   : sufficient
+[13:33:30] main | running function= FutureWork
+[13:33:30] select | function= FutureWork | candidates_in= 20
+[13:33:30] select | core_terms= ['PST bosonic five brane', 'gauge fixed action', 'canonical structure', 'PST']
+[13:33:30] select | no cosine prune; kept=20/20
+[13:33:30] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0103123', 'hep-ph/0103251', 'hep-ph/0102019', 'hep-th/0102041', 'hep-th/0101213', 'hep-ph/0102270', 'hep-th/0102145', 'hep-th/0102147', 'hep-th/0103138', 'hep-ph/0103121']
+[13:33:30] select | verify relaxed 1/10
+[13:33:30] verify | func= FutureWork | rank= 0 | pid= hep-th/0103123 | title_snip='Master Canonical Action and BRST Charge of the M Theory Bosonic Five
+ …' | abs_len= 1088
+[13:33:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:33:34] select | verify relaxed 2/10
+[13:33:34] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103251 | title_snip='Semi-simple group unification in the supersymmetric brane world' | abs_len= 1529
+[13:33:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:37] select | verify relaxed 3/10
+[13:33:37] verify | func= FutureWork | rank= 2 | pid= hep-ph/0102019 | title_snip='Chiral fermions and gauge-fixing in five-dimensional theories' | abs_len= 1017
+[13:33:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:39] select | verify relaxed 4/10
+[13:33:39] verify | func= FutureWork | rank= 3 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[13:33:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:42] select | verify relaxed 5/10
+[13:33:42] verify | func= FutureWork | rank= 4 | pid= hep-th/0101213 | title_snip='Strings at the Tachyonic Vacuum' | abs_len= 689
+[13:33:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:44] select | verify relaxed 6/10
+[13:33:44] verify | func= FutureWork | rank= 5 | pid= hep-ph/0102270 | title_snip='Determination of the String Scale in D-Brane Scenarios and Dark Matter…' | abs_len= 845
+[13:33:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:47] select | verify relaxed 7/10
+[13:33:47] verify | func= FutureWork | rank= 6 | pid= hep-th/0102145 | title_snip='Four-Dimensional Supergravities from Five-Dimensional Brane Worlds' | abs_len= 718
+[13:33:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:49] select | verify relaxed 8/10
+[13:33:49] verify | func= FutureWork | rank= 7 | pid= hep-th/0102147 | title_snip='Locally Localized Gravity Models in Higher Dimensions' | abs_len= 1094
+[13:33:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:52] select | verify relaxed 9/10
+[13:33:52] verify | func= FutureWork | rank= 8 | pid= hep-th/0103138 | title_snip='Fermion vacuum energies in brane world models' | abs_len= 275
+[13:33:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:33:54] select | verify relaxed 10/10
+[13:33:54] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[13:33:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the analysis of the canonical structure for a gauge fixed PST bosonic five brane action lay the groundwork for potential future research in this area?
+- WINNER: hep-th/0103123 | Master Canonical Action and BRST Charge of the M Theory Bosonic Five
+  Brane
+- QUOTE : A complete analysis of the canonical structure for a gauge fixed PST bosonic five brane action is performed
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The analysis of the canonical structure for a gauge fixed PST bosonic five brane action provides a foundation for understanding the theory's stability properties and constraint algebra [Background] (hep-th/0103123). This groundwork lays the basis for potential future research in this area, such as exploring the implications of the master canonical action and BRST charge for theories with cosmological terms [FutureWork] (hep-th/0103123).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

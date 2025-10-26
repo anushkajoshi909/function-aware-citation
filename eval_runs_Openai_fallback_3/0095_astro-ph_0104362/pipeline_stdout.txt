@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Compares"
+  ],
+  "justification": "The query asks why current gaps (limitations) drive further study (Motivation) and explicitly seeks a comparison of energetic properties (Compares)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:10:07] main | args: Namespace(max_check=10, debug=True)
+[23:10:07] read_last_jsonl | path= classified_outputs.jsonl
+[23:10:07] read_last_jsonl | total_lines= 1
+[23:10:07] main | query='What limitations in understanding gamma-ray bursts motivate further analysis and comparison of their energetic properties?' | funcs=['Motivation', 'Compares']
+[23:10:08] main | core_terms= ['gamma-ray bursts', 'energetic properties', 'gamma-ray']
+[23:10:08] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:10:08] load_topk_jsonl | rows= 20
+[23:10:08] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103028 title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' abs_len= 856
+[23:10:08] main | running function= Motivation
+[23:10:08] select | function= Motivation | candidates_in= 20
+[23:10:08] select | core_terms= ['gamma-ray bursts', 'energetic properties', 'gamma-ray']
+[23:10:08] select | no cosine prune; kept=20/20
+[23:10:08] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103028', 'astro-ph/0101147', 'astro-ph/0101462', 'astro-ph/0102282', 'astro-ph/0104208', 'astro-ph/0103186', 'astro-ph/0101175', 'astro-ph/0104232', 'astro-ph/0103384', 'astro-ph/0102122']
+[23:10:08] select | verify relaxed 1/10
+[23:10:08] verify | func= Motivation | rank= 0 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[23:10:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:10:12] select | verify relaxed 2/10
+[23:10:12] verify | func= Motivation | rank= 1 | pid= astro-ph/0101147 | title_snip='Gamma-Ray Bursts: Afterglows and Central Engines' | abs_len= 1143
+[23:10:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:15] select | verify relaxed 3/10
+[23:10:15] verify | func= Motivation | rank= 2 | pid= astro-ph/0101462 | title_snip='Explaining the Gamma Ray Burst Lag/Luminosity and Variability/Luminosi…' | abs_len= 1061
+[23:10:18] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[23:10:18] select | verify relaxed 4/10
+[23:10:18] verify | func= Motivation | rank= 3 | pid= astro-ph/0102282 | title_snip='Beaming in Gamma-Ray Bursts: Evidence for a Standard Energy Reservoir' | abs_len= 859
+[23:10:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:21] select | verify relaxed 5/10
+[23:10:21] verify | func= Motivation | rank= 4 | pid= astro-ph/0104208 | title_snip='A Search for Early Optical Emission from Short and Long Duration
+  Gam…' | abs_len= 1039
+[23:10:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[23:10:25] select | verify relaxed 6/10
+[23:10:25] verify | func= Motivation | rank= 5 | pid= astro-ph/0103186 | title_snip='High energy particles from gamma-ray bursts' | abs_len= 492
+[23:10:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:28] select | verify relaxed 7/10
+[23:10:28] verify | func= Motivation | rank= 6 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[23:10:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[23:10:31] select | verify relaxed 8/10
+[23:10:31] verify | func= Motivation | rank= 7 | pid= astro-ph/0104232 | title_snip='On the Power Spectrum Density of Gamma Ray Bursts' | abs_len= 521
+[23:10:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:10:35] select | verify relaxed 9/10
+[23:10:35] verify | func= Motivation | rank= 8 | pid= astro-ph/0103384 | title_snip='Gamma-Ray Bursts at Low Redshift' | abs_len= 1121
+[23:10:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:38] select | verify relaxed 10/10
+[23:10:38] verify | func= Motivation | rank= 9 | pid= astro-ph/0102122 | title_snip='Observations and theoretical models of gamma-ray bursts' | abs_len= 1194
+[23:10:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:42] arbiter | rejected off-topic winner: astro-ph/0101175
+[23:10:44] arbiter | accepted fallback: astro-ph/0101147
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in understanding gamma-ray bursts motivate further analysis and comparison of their energetic properties?
+- WINNER: astro-ph/0101147 | Gamma-Ray Bursts: Afterglows and Central Engines
+- QUOTE : Unconventional energy mechanisms and extremely high conversion efficiency
+- WHY   : sufficient
+[23:10:44] main | running function= Compares
+[23:10:44] select | function= Compares | candidates_in= 20
+[23:10:44] select | core_terms= ['gamma-ray bursts', 'energetic properties', 'gamma-ray']
+[23:10:44] select | no cosine prune; kept=20/20
+[23:10:44] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103028', 'astro-ph/0101147', 'astro-ph/0101462', 'astro-ph/0102282', 'astro-ph/0104208', 'astro-ph/0103186', 'astro-ph/0101175', 'astro-ph/0104232', 'astro-ph/0103384', 'astro-ph/0102122']
+[23:10:44] select | verify relaxed 1/10
+[23:10:44] verify | func= Compares | rank= 0 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[23:10:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:10:47] select | verify relaxed 2/10
+[23:10:47] verify | func= Compares | rank= 1 | pid= astro-ph/0101147 | title_snip='Gamma-Ray Bursts: Afterglows and Central Engines' | abs_len= 1143
+[23:10:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:50] select | verify relaxed 3/10
+[23:10:50] verify | func= Compares | rank= 2 | pid= astro-ph/0101462 | title_snip='Explaining the Gamma Ray Burst Lag/Luminosity and Variability/Luminosi…' | abs_len= 1061
+[23:10:54] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:10:54] select | verify relaxed 4/10
+[23:10:54] verify | func= Compares | rank= 3 | pid= astro-ph/0102282 | title_snip='Beaming in Gamma-Ray Bursts: Evidence for a Standard Energy Reservoir' | abs_len= 859
+[23:10:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:10:57] select | verify relaxed 5/10
+[23:10:57] verify | func= Compares | rank= 4 | pid= astro-ph/0104208 | title_snip='A Search for Early Optical Emission from Short and Long Duration
+  Gam…' | abs_len= 1039
+[23:11:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:11:00] select | verify relaxed 6/10
+[23:11:00] verify | func= Compares | rank= 5 | pid= astro-ph/0103186 | title_snip='High energy particles from gamma-ray bursts' | abs_len= 492
+[23:11:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:11:03] select | verify relaxed 7/10
+[23:11:03] verify | func= Compares | rank= 6 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[23:11:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:11:06] select | verify relaxed 8/10
+[23:11:06] verify | func= Compares | rank= 7 | pid= astro-ph/0104232 | title_snip='On the Power Spectrum Density of Gamma Ray Bursts' | abs_len= 521
+[23:11:09] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:11:09] select | verify relaxed 9/10
+[23:11:09] verify | func= Compares | rank= 8 | pid= astro-ph/0103384 | title_snip='Gamma-Ray Bursts at Low Redshift' | abs_len= 1121
+[23:11:13] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:11:13] select | verify relaxed 10/10
+[23:11:13] verify | func= Compares | rank= 9 | pid= astro-ph/0102122 | title_snip='Observations and theoretical models of gamma-ray bursts' | abs_len= 1194
+[23:11:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : What limitations in understanding gamma-ray bursts motivate further analysis and comparison of their energetic properties?
+- WINNER: astro-ph/0101147 | Gamma-Ray Bursts: Afterglows and Central Engines
+- QUOTE : thousand times stronger than that of supernova explosion
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The enormous energy released by gamma-ray bursts, which is thousand times stronger than supernova explosions [Motivation] (astro-ph/0101147), motivates further analysis and comparison of their energetic properties, particularly when compared to other cosmic events like supernovae [Compares] (astro-ph/0101147).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

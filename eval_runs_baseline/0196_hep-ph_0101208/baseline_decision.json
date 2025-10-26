@@ -1,0 +1,18 @@
+{
+  "answer": "The analysis of Higgs boson couplings in the 2HDM(II) model motivates and extends our understanding of the Standard Model-like scenario by providing a pattern relation between the ratios of couplings (hep-ph/0101208).",
+  "predicted_paper_id": "hep-ph/0101208",
+  "explanation": "This paper compares the SM and the 2HDM(II) and derives a relation between the ratios of couplings, which helps to resolve SM-like scenarios.",
+  "evidence_quote": "In the analysis we use as independent quantities the ratios",
+  "topk_list": [
+    "hep-ph/0101208",
+    "hep-ph/0101331",
+    "hep-ph/0103223",
+    "hep-ph/0101229",
+    "hep-ph/0102096",
+    "hep-ph/0103050",
+    "hep-ph/0104056",
+    "hep-ph/0103183",
+    "hep-ph/0103095",
+    "hep-th/0102041"
+  ]
+}

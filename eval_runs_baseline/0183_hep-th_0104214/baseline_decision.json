@@ -1,0 +1,18 @@
+{
+  "answer": "Future research may focus on high-dimensional Ising models with novel symmetry and gauge redundancy (cond-mat/0103188).",
+  "predicted_paper_id": "cond-mat/0103188",
+  "explanation": "This paper discusses models with effective reduction dimensionality, which could motivate future research on high-dimensional Ising models.",
+  "evidence_quote": "effective reduction dimensionality",
+  "topk_list": [
+    "hep-th/0104214",
+    "cond-mat/0103188",
+    "cond-mat/0103074",
+    "cond-mat/0103396",
+    "cond-mat/0101412",
+    "cond-mat/0104185",
+    "cond-mat/0104398",
+    "nucl-th/0103030",
+    "astro-ph/0102392",
+    "cond-mat/0104183"
+  ]
+}

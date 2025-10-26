@@ -1,0 +1,18 @@
+{
+  "answer": "The use of specific simulations in the study of disc-like objects is motivated by the need to understand their structural and dynamical properties, such as the formation of compact bulges and the stability of disc-like structures (astro-ph/0102011).",
+  "predicted_paper_id": "astro-ph/0102011",
+  "explanation": "This paper presents a detailed analysis of disc-like objects in hierarchical hydrodynamical simulations, which provides valuable insights into their properties and behavior.",
+  "evidence_quote": "disc-like objects identified at z=0",
+  "topk_list": [
+    "astro-ph/0102011",
+    "astro-ph/0101490",
+    "astro-ph/0101489",
+    "astro-ph/0101470",
+    "cond-mat/0103016",
+    "astro-ph/0101264",
+    "cond-mat/0104440",
+    "astro-ph/0103362",
+    "cond-mat/0104204",
+    "astro-ph/0101296"
+  ]
+}

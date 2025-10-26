@@ -1,0 +1,18 @@
+{
+  "answer": "The coarsening behaviors of CD models on different surfaces are compared using analytic and numerical results, which show that CD models exhibit coarsening to an ordered steady state (cond-mat/0102521).",
+  "predicted_paper_id": "cond-mat/0102521",
+  "explanation": "This paper provides a detailed analysis of the coarsening behaviors of CD models on different surfaces, including Edwards-Wilkinson and Kardar-Parisi-Zhang surfaces.",
+  "evidence_quote": "CD models exhibit coarsening",
+  "topk_list": [
+    "cond-mat/0102521",
+    "cond-mat/0101198",
+    "cond-mat/0102275",
+    "cond-mat/0104381",
+    "physics/0101077",
+    "cond-mat/0101106",
+    "cond-mat/0104552",
+    "cond-mat/0102519",
+    "cond-mat/0102131",
+    "cond-mat/0101175"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The problem of calculating multi-loop master integrals motivated the development of a new method based on numerical solutions of systems of difference equations, as seen in the work on high-precision calculation of multi-loop Feynman integrals (hep-ph/0102033).",
+  "predicted_paper_id": "hep-ph/0102033",
+  "explanation": "This paper best supports the answer because it describes a new method for calculating generic multi-loop master integrals using numerical solutions of systems of difference equations, which directly addresses the problem in question.",
+  "evidence_quote": "numerical solution of systems of difference equations",
+  "topk_list": [
+    "hep-ph/0102033",
+    "hep-ph/0102032",
+    "hep-ph/0101124",
+    "hep-ph/0102271",
+    "hep-ph/0104013",
+    "hep-ph/0102231",
+    "math/0101105",
+    "nucl-th/0101048",
+    "astro-ph/0102068",
+    "hep-ph/0102318"
+  ]
+}

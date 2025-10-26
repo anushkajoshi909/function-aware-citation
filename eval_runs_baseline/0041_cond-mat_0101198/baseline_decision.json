@@ -1,0 +1,18 @@
+{
+  "answer": "The extension of the Swendsen-Wang cluster algorithm to include surface fields relates to the use of power laws predicted by Fisher and Nakanishi, as shown in the study of capillary condensation critical point (cond-mat/0101198).",
+  "predicted_paper_id": "cond-mat/0101198",
+  "explanation": "This paper directly addresses the relationship between the extension of the Swendsen-Wang cluster algorithm and the power laws predicted by Fisher and Nakanishi, making it the most relevant choice.",
+  "evidence_quote": "consistent with the power laws predicted by Fisher and Nakanishi",
+  "topk_list": [
+    "cond-mat/0101198",
+    "cond-mat/0102131",
+    "astro-ph/0103378",
+    "hep-th/0102107",
+    "cond-mat/0102521",
+    "hep-th/0104248",
+    "cond-mat/0102423",
+    "cond-mat/0101005",
+    "hep-ph/0101248",
+    "cond-mat/0103417"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "Future research could be motivated by the limitations of current photon emission calculations in high-energy collisions, such as the need for more accurate treatments of energy conservation and multiple scattering theory (hep-ph/0103302).",
+  "predicted_paper_id": "hep-ph/0103302",
+  "explanation": "This paper discusses the inconsistencies in currently used models for high energy nuclear scattering and introduces a fully self-consistent formulation of the multiple-scattering scheme, which could motivate future research in this area.",
+  "evidence_quote": "inconsistencies in presently used models",
+  "topk_list": [
+    "nucl-th/0102005",
+    "hep-ph/0101075",
+    "hep-ph/0103044",
+    "hep-ph/0103302",
+    "hep-ph/0103301",
+    "hep-ph/0104015",
+    "nucl-th/0103014",
+    "hep-ex/0101002",
+    "hep-ph/0102105",
+    "hep-ph/0103296"
+  ]
+}

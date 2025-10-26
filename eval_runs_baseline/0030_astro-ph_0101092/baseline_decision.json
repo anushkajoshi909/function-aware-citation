@@ -1,0 +1,18 @@
+{
+  "answer": "The spectroscopic study of microlensed sources is motivated by the opportunity to study the kinematics of the Galactic bulge and the effects of extinction on the microlensed sources, using methods such as radial velocity measurements and extinction analysis (astro-ph/0101092).",
+  "predicted_paper_id": "astro-ph/0101092",
+  "explanation": "This paper best supports the answer because it specifically discusses the motivations and methods of spectroscopic studies of microlensed sources, providing a clear and detailed explanation of the goals and techniques used in this field.",
+  "evidence_quote": "study the kinematics of the Galactic bulge",
+  "topk_list": [
+    "astro-ph/0101092",
+    "astro-ph/0103516",
+    "gr-qc/0104076",
+    "astro-ph/0102013",
+    "astro-ph/0101378",
+    "astro-ph/0102257",
+    "astro-ph/0102242",
+    "astro-ph/0102031",
+    "astro-ph/0101428",
+    "astro-ph/0104283"
+  ]
+}

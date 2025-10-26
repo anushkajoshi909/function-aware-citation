@@ -1,0 +1,18 @@
+{
+  "answer": "Future research directions are motivated by the discovery of giant micro-pulses and a large amplitude gaussian component in the Vela pulsar's pulse profile (astro-ph/0101146).",
+  "predicted_paper_id": "astro-ph/0101146",
+  "explanation": "This paper presents high time-resolution observations of the Vela pulsar, revealing giant micro-pulses and a large amplitude gaussian component, which motivates further research into the pulsar's behavior.",
+  "evidence_quote": "giant micro-pulses and a large amplitude gaussian component",
+  "topk_list": [
+    "astro-ph/0101146",
+    "astro-ph/0101039",
+    "astro-ph/0103155",
+    "astro-ph/0102026",
+    "astro-ph/0104476",
+    "hep-ph/0104220",
+    "gr-qc/0103035",
+    "astro-ph/0102255",
+    "hep-ph/0103053",
+    "astro-ph/0101022"
+  ]
+}

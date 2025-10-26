@@ -1,0 +1,18 @@
+{
+  "answer": "The relationship between sparsity and statistical independence in stochastic processes is complex and not fully understood, with different bases optimal for each measure, as seen in the study of the spike process (math/0104083).",
+  "predicted_paper_id": "math/0104083",
+  "explanation": "This paper directly addresses the relationship between sparsity and statistical independence in the context of stochastic processes, providing insights into their intricate relationship through the analysis of a synthetic stochastic process.",
+  "evidence_quote": "Sparsity vs. Statistical Independence",
+  "topk_list": [
+    "math/0104083",
+    "quant-ph/0104061",
+    "physics/0101065",
+    "cond-mat/0103246",
+    "nucl-th/0103026",
+    "math/0101037",
+    "math/0103104",
+    "gr-qc/0101051",
+    "cond-mat/0102181",
+    "math/0103033"
+  ]
+}

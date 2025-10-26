@@ -1,0 +1,18 @@
+{
+  "answer": "The axino's properties, such as its mass being generically not of the order of the supersymmetry-breaking scale, motivate its consideration as a candidate for cold dark matter (hep-ph/0102325).",
+  "predicted_paper_id": "hep-ph/0102325",
+  "explanation": "This paper provides a detailed analysis of the axino's properties and its potential as a cold dark matter candidate, making it the most relevant choice.",
+  "evidence_quote": "axino mass is generically not of the order of the supersymmetry breaking scale",
+  "topk_list": [
+    "hep-ph/0102325",
+    "hep-ph/0101009",
+    "hep-ph/0102327",
+    "hep-ph/0104140",
+    "hep-ph/0101026",
+    "hep-ph/0103097",
+    "hep-ph/0102200",
+    "hep-ex/0102013",
+    "astro-ph/0104200",
+    "astro-ph/0104173"
+  ]
+}

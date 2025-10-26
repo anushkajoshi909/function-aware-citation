@@ -1,0 +1,162 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Compares"
+  ],
+  "justification": "The query asks why the observed X\u2011ray spectrum drives a new two\u2011phase model (Motivation) and how that model\u2019s predictions stack up against typical Seyfert galaxy spectra (Compares)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:34:15] main | args: Namespace(max_check=10, debug=True)
+[22:34:15] read_last_jsonl | path= classified_outputs.jsonl
+[22:34:15] read_last_jsonl | total_lines= 1
+[22:34:15] main | query='How does the X-ray spectrum of NGC 4151 motivate the development of a two-phase model and compare to expected spectra for Seyfert galaxies?' | funcs=['Motivation', 'Compares']
+[22:34:18] main | core_terms= ['NGC 4151', 'Seyfert galaxies', 'X-ray spectrum', 'two-phase model', 'X-ray', 'NGC', 'two-phase']
+[22:34:18] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:34:18] load_topk_jsonl | rows= 20
+[22:34:18] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104281 title_snip='A two-phase model for the Narrow Line Region of NGC 4151' abs_len= 993
+[22:34:18] main | running function= Motivation
+[22:34:18] select | function= Motivation | candidates_in= 20
+[22:34:18] select | core_terms= ['NGC 4151', 'Seyfert galaxies', 'X-ray spectrum', 'two-phase model', 'X-ray', 'NGC', 'two-phase']
+[22:34:18] select | no cosine prune; kept=20/20
+[22:34:18] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104281', 'astro-ph/0101066', 'astro-ph/0104204', 'astro-ph/0101221', 'astro-ph/0104061', 'astro-ph/0104125', 'astro-ph/0101079', 'astro-ph/0101037', 'astro-ph/0101184', 'astro-ph/0102404']
+[22:34:18] select | verify relaxed 1/10
+[22:34:18] verify | func= Motivation | rank= 0 | pid= astro-ph/0104281 | title_snip='A two-phase model for the Narrow Line Region of NGC 4151' | abs_len= 993
+[22:34:22] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= True
+[22:34:22] select | verify relaxed 2/10
+[22:34:22] verify | func= Motivation | rank= 1 | pid= astro-ph/0101066 | title_snip='X-ray energy and power spectra of Seyfert 1 and Narrow Line Seyfert 1
+…' | abs_len= 914
+[22:34:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:34:25] select | verify relaxed 3/10
+[22:34:25] verify | func= Motivation | rank= 2 | pid= astro-ph/0104204 | title_snip='Testing Comptonisation models using BeppoSAX observations of Seyfert 1…' | abs_len= 1340
+[22:34:29] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:34:29] select | verify relaxed 4/10
+[22:34:29] verify | func= Motivation | rank= 3 | pid= astro-ph/0101221 | title_snip='Constraints on the High Energy Continuum of Seyfert galaxies from RXTE…' | abs_len= 850
+[22:34:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:34:32] select | verify relaxed 5/10
+[22:34:32] verify | func= Motivation | rank= 4 | pid= astro-ph/0104061 | title_snip='The X-ray spectra of optically selected Seyfert 2 galaxies. Are there
+…' | abs_len= 1157
+[22:34:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:34:36] select | verify relaxed 6/10
+[22:34:36] verify | func= Motivation | rank= 5 | pid= astro-ph/0104125 | title_snip='High-Resolution X-ray and Ultraviolet Spectroscopy of the Complex
+  In…' | abs_len= 1479
+[22:34:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:34:39] select | verify relaxed 7/10
+[22:34:39] verify | func= Motivation | rank= 6 | pid= astro-ph/0101079 | title_snip='BeppoSAX Observations of the Seyfert-2 Galaxies NGC 7172 and ESO 103-G…' | abs_len= 948
+[22:34:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:34:41] select | verify relaxed 8/10
+[22:34:41] verify | func= Motivation | rank= 7 | pid= astro-ph/0101037 | title_snip='STIS Echelle Observations of the Seyfert Galaxy NGC 4151: Physical
+  C…' | abs_len= 1807
+[22:34:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:34:46] select | verify relaxed 9/10
+[22:34:46] verify | func= Motivation | rank= 8 | pid= astro-ph/0101184 | title_snip='Soft X-ray properties of a spectroscopically selected sample of
+  inte…' | abs_len= 1569
+[22:34:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:34:49] select | verify relaxed 10/10
+[22:34:49] verify | func= Motivation | rank= 9 | pid= astro-ph/0102404 | title_snip='Absorption and Reddening in the Seyfert Galaxy NGC 3227' | abs_len= 1515
+[22:34:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the X-ray spectrum of NGC 4151 motivate the development of a two-phase model and compare to expected spectra for Seyfert galaxies?
+- WINNER: astro-ph/0104281 | A two-phase model for the Narrow Line Region of NGC 4151
+- QUOTE : This study is motivated by (i) the fact that the X-ray spectrum of NGC 4151
+- WHY   : sufficient
+[22:34:54] main | running function= Compares
+[22:34:54] select | function= Compares | candidates_in= 20
+[22:34:54] select | core_terms= ['NGC 4151', 'Seyfert galaxies', 'X-ray spectrum', 'two-phase model', 'X-ray', 'NGC', 'two-phase']
+[22:34:54] select | no cosine prune; kept=20/20
+[22:34:54] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104281', 'astro-ph/0101066', 'astro-ph/0104204', 'astro-ph/0101221', 'astro-ph/0104061', 'astro-ph/0104125', 'astro-ph/0101079', 'astro-ph/0101037', 'astro-ph/0101184', 'astro-ph/0102404']
+[22:34:54] select | verify relaxed 1/10
+[22:34:54] verify | func= Compares | rank= 0 | pid= astro-ph/0104281 | title_snip='A two-phase model for the Narrow Line Region of NGC 4151' | abs_len= 993
+[22:34:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:34:58] select | verify relaxed 2/10
+[22:34:58] verify | func= Compares | rank= 1 | pid= astro-ph/0101066 | title_snip='X-ray energy and power spectra of Seyfert 1 and Narrow Line Seyfert 1
+…' | abs_len= 914
+[22:35:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:35:01] select | verify relaxed 3/10
+[22:35:01] verify | func= Compares | rank= 2 | pid= astro-ph/0104204 | title_snip='Testing Comptonisation models using BeppoSAX observations of Seyfert 1…' | abs_len= 1340
+[22:35:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:35:05] select | verify relaxed 4/10
+[22:35:05] verify | func= Compares | rank= 3 | pid= astro-ph/0101221 | title_snip='Constraints on the High Energy Continuum of Seyfert galaxies from RXTE…' | abs_len= 850
+[22:35:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:35:08] select | verify relaxed 5/10
+[22:35:08] verify | func= Compares | rank= 4 | pid= astro-ph/0104061 | title_snip='The X-ray spectra of optically selected Seyfert 2 galaxies. Are there
+…' | abs_len= 1157
+[22:35:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:35:12] select | verify relaxed 6/10
+[22:35:12] verify | func= Compares | rank= 5 | pid= astro-ph/0104125 | title_snip='High-Resolution X-ray and Ultraviolet Spectroscopy of the Complex
+  In…' | abs_len= 1479
+[22:35:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:35:14] select | verify relaxed 7/10
+[22:35:14] verify | func= Compares | rank= 6 | pid= astro-ph/0101079 | title_snip='BeppoSAX Observations of the Seyfert-2 Galaxies NGC 7172 and ESO 103-G…' | abs_len= 948
+[22:35:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:35:17] select | verify relaxed 8/10
+[22:35:17] verify | func= Compares | rank= 7 | pid= astro-ph/0101037 | title_snip='STIS Echelle Observations of the Seyfert Galaxy NGC 4151: Physical
+  C…' | abs_len= 1807
+[22:35:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:35:21] select | verify relaxed 9/10
+[22:35:21] verify | func= Compares | rank= 8 | pid= astro-ph/0101184 | title_snip='Soft X-ray properties of a spectroscopically selected sample of
+  inte…' | abs_len= 1569
+[22:35:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:35:25] select | verify relaxed 10/10
+[22:35:25] verify | func= Compares | rank= 9 | pid= astro-ph/0102404 | title_snip='Absorption and Reddening in the Seyfert Galaxy NGC 3227' | abs_len= 1515
+[22:35:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the X-ray spectrum of NGC 4151 motivate the development of a two-phase model and compare to expected spectra for Seyfert galaxies?
+- WINNER: astro-ph/0104281 | A two-phase model for the Narrow Line Region of NGC 4151
+- QUOTE : X-ray spectra as flat as that of NGC 4151
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The X-ray spectrum of NGC 4151 motivates the development of a two-phase model [Motivation] because its flatness is expected to favor the presence of two gas phases in pressure equilibrium (astro-ph/0104281). This spectrum compares to expected spectra for Seyfert galaxies in being among the flattest known, with a Gamma_x value of -1.5 [Compares] (astro-ph/0104281).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,18 @@
+{
+  "answer": "The problem of source crowding in astrometric measurements motivates the development of new methods to improve accuracy, such as spectral decomposition of the fringe pattern, as seen in astro-ph/0101217.",
+  "predicted_paper_id": "astro-ph/0101217",
+  "explanation": "This paper investigates the use of spectral decomposition to disentangle overlapping fringes from multiple blended sources, reducing astrometry errors to near photon noise levels.",
+  "evidence_quote": "source crowding can induce significant positional errors",
+  "topk_list": [
+    "astro-ph/0101217",
+    "astro-ph/0102297",
+    "astro-ph/0104182",
+    "astro-ph/0104266",
+    "astro-ph/0101105",
+    "astro-ph/0102392",
+    "astro-ph/0103028",
+    "astro-ph/0102497",
+    "astro-ph/0103017",
+    "astro-ph/0102077"
+  ]
+}

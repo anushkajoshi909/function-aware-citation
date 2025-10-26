@@ -1,0 +1,18 @@
+{
+  "answer": "The local energy-density functional method uses and extends existing nuclear physics calculations to investigate differential observables such as odd-even mass differences and charge radii (nucl-th/0101012).",
+  "predicted_paper_id": "nucl-th/0101012",
+  "explanation": "This paper best supports the answer because it describes the foundation of the local energy-density functional method and its application to investigate differential observables.",
+  "evidence_quote": "differential observables such as the odd-even mass differences",
+  "topk_list": [
+    "nucl-th/0101012",
+    "physics/0103003",
+    "nucl-th/0101048",
+    "nucl-th/0104065",
+    "cond-mat/0101363",
+    "nucl-th/0104050",
+    "cond-mat/0103124",
+    "nucl-th/0102010",
+    "cond-mat/0103610",
+    "nucl-th/0101034"
+  ]
+}

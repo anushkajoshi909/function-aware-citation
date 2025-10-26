@@ -1,1 +1,0 @@
-The Everett interpretation of quantum mechanics uses the Heisenberg picture to provide a local explanation for correlations between spatially-separated quantum systems by transforming Heisenberg-picture operators that "label" local copies of systems and observers (quant-ph/0103079). [Background]

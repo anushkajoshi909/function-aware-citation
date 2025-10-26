@@ -1,0 +1,18 @@
+{
+  "answer": "The current study's finding on the lower mass threshold for Hot Bottom Burning is consistent with stellar evolution models, but the observed luminosity of the carbon star is lower than predicted, suggesting a need for further research to resolve this discrepancy (astro-ph/0101107).",
+  "predicted_paper_id": "astro-ph/0101107",
+  "explanation": "This paper directly measures the lower mass threshold for Hot Bottom Burning and discusses the discrepancy between the observed and predicted luminosity of the carbon star, making it the most relevant to the question.",
+  "evidence_quote": "the first direct measurement of the lower mass threshold for HBB",
+  "topk_list": [
+    "astro-ph/0103104",
+    "astro-ph/0102430",
+    "astro-ph/0103113",
+    "astro-ph/0101107",
+    "astro-ph/0102010",
+    "astro-ph/0101472",
+    "astro-ph/0101330",
+    "astro-ph/0102379",
+    "astro-ph/0103396",
+    "astro-ph/0102253"
+  ]
+}

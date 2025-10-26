@@ -1,0 +1,18 @@
+{
+  "answer": "The current understanding of neutrino mass scenarios is related to the extension of experiments like GENIUS to probe beyond Standard Model physics, allowing to test almost all neutrino mass scenarios (hep-ph/0102319).",
+  "predicted_paper_id": "hep-ph/0102319",
+  "explanation": "This paper best supports the answer because it discusses the potential of GENIUS to test almost all neutrino mass scenarios allowed by present neutrino oscillation experiments and its relation to beyond Standard Model physics.",
+  "evidence_quote": "test almost all neutrino mass scenarios",
+  "topk_list": [
+    "hep-ph/0102319",
+    "hep-ph/0103074",
+    "hep-ph/0104028",
+    "hep-ph/0102276",
+    "hep-ph/0102255",
+    "hep-ph/0101148",
+    "hep-ph/0102085",
+    "hep-ph/0102277",
+    "hep-ph/0101244",
+    "hep-ph/0103017"
+  ]
+}

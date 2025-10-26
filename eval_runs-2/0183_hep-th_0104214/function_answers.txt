@@ -1,2 +1,0 @@
-The limitations of current methods for solving high-dimensional Ising models motivate future research into overcoming critical slowing down at zero temperature phase transitions. This is important because current algorithms, such as the push-relabel algorithm, exhibit significant slowdowns, hindering their ability to efficiently compute exact ground state configurations (cond-mat/0104185). [Motivation]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

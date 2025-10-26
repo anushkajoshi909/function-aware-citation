@@ -1,0 +1,18 @@
+{
+  "answer": "Future research can use the extended Emery model to improve understanding of copper-oxide layered materials by analyzing the three-band structure and its relation to the appearance of the extended van Hove singularity (cond-mat/0103057).",
+  "predicted_paper_id": "cond-mat/0103057",
+  "explanation": "This paper provides a detailed analysis of the extended Emery model and its application to copper-oxide layered materials, making it a relevant reference for future research.",
+  "evidence_quote": "copper-oxide layered materials",
+  "topk_list": [
+    "cond-mat/0103057",
+    "cond-mat/0102456",
+    "cond-mat/0102420",
+    "cond-mat/0103610",
+    "cond-mat/0104381",
+    "cond-mat/0101335",
+    "cond-mat/0102343",
+    "cond-mat/0102128",
+    "cond-mat/0103626",
+    "cond-mat/0101243"
+  ]
+}

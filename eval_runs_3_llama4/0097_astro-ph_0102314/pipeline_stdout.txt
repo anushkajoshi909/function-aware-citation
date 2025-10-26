@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Extends"
+  ],
+  "justification": "The query seeks foundational information and also aims to understand how this background knowledge expands current understanding of certain astronomical objects."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:27:44] main | args: Namespace(max_check=10, debug=True)
+[13:27:44] read_last_jsonl | path= classified_outputs.jsonl
+[13:27:44] read_last_jsonl | total_lines= 1
+[13:27:44] main | query='How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?' | funcs=['Background', 'Extends']
+[13:27:46] main | core_terms= ['Cen A', 'M87', 'BL Lac', 'spectral energy distribution', 'high-energy-peaked', 'BL', 'Lac-like']
+[13:27:46] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:27:46] load_topk_jsonl | rows= 20
+[13:27:46] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102314 title_snip='Are Cen a and M87 Tev Gamma-Ray Sources?' abs_len= 1433
+[13:27:46] main | running function= Background
+[13:27:46] select | function= Background | candidates_in= 20
+[13:27:46] select | core_terms= ['Cen A', 'M87', 'BL Lac', 'spectral energy distribution', 'high-energy-peaked', 'BL', 'Lac-like']
+[13:27:46] select | no cosine prune; kept=20/20
+[13:27:46] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102314', 'astro-ph/0103343', 'astro-ph/0102445', 'astro-ph/0102088', 'astro-ph/0102295', 'cond-mat/0101280', 'astro-ph/0103048', 'astro-ph/0104101', 'astro-ph/0103439', 'astro-ph/0101442']
+[13:27:46] select | verify relaxed 1/10
+[13:27:46] verify | func= Background | rank= 0 | pid= astro-ph/0102314 | title_snip='Are Cen a and M87 Tev Gamma-Ray Sources?' | abs_len= 1433
+[13:27:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:27:49] select | verify relaxed 2/10
+[13:27:49] verify | func= Background | rank= 1 | pid= astro-ph/0103343 | title_snip='Extreme synchrotron BL Lac objects' | abs_len= 746
+[13:27:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:27:53] select | verify relaxed 3/10
+[13:27:53] verify | func= Background | rank= 2 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[13:27:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:27:56] select | verify relaxed 4/10
+[13:27:56] verify | func= Background | rank= 3 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[13:27:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:27:59] select | verify relaxed 5/10
+[13:27:59] verify | func= Background | rank= 4 | pid= astro-ph/0102295 | title_snip='Spectral Energy Distributions of Blazars: Facts and Speculations' | abs_len= 758
+[13:28:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:28:02] select | verify relaxed 6/10
+[13:28:02] verify | func= Background | rank= 5 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[13:28:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:04] select | verify relaxed 7/10
+[13:28:04] verify | func= Background | rank= 6 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[13:28:07] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:28:07] select | verify relaxed 8/10
+[13:28:07] verify | func= Background | rank= 7 | pid= astro-ph/0104101 | title_snip='Spectral variability in transonic discs around black holes' | abs_len= 1143
+[13:28:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:10] select | verify relaxed 9/10
+[13:28:10] verify | func= Background | rank= 8 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[13:28:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:12] select | verify relaxed 10/10
+[13:28:12] verify | func= Background | rank= 9 | pid= astro-ph/0101442 | title_snip='Hidden BL Lacertae Objects Near and Far' | abs_len= 307
+[13:28:15] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?
+- WINNER: astro-ph/0102314 | Are Cen a and M87 Tev Gamma-Ray Sources?
+- QUOTE : investigating their spectral energy distributions (SEDs)
+- WHY   : sufficient
+[13:28:16] main | running function= Extends
+[13:28:16] select | function= Extends | candidates_in= 20
+[13:28:16] select | core_terms= ['Cen A', 'M87', 'BL Lac', 'spectral energy distribution', 'high-energy-peaked', 'BL', 'Lac-like']
+[13:28:16] select | no cosine prune; kept=20/20
+[13:28:16] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102314', 'astro-ph/0103343', 'astro-ph/0102445', 'astro-ph/0102088', 'astro-ph/0102295', 'cond-mat/0101280', 'astro-ph/0103048', 'astro-ph/0104101', 'astro-ph/0103439', 'astro-ph/0101442']
+[13:28:16] select | verify relaxed 1/10
+[13:28:16] verify | func= Extends | rank= 0 | pid= astro-ph/0102314 | title_snip='Are Cen a and M87 Tev Gamma-Ray Sources?' | abs_len= 1433
+[13:28:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:28:19] select | verify relaxed 2/10
+[13:28:19] verify | func= Extends | rank= 1 | pid= astro-ph/0103343 | title_snip='Extreme synchrotron BL Lac objects' | abs_len= 746
+[13:28:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:28:23] select | verify relaxed 3/10
+[13:28:23] verify | func= Extends | rank= 2 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[13:28:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:28:26] select | verify relaxed 4/10
+[13:28:26] verify | func= Extends | rank= 3 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[13:28:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:28] select | verify relaxed 5/10
+[13:28:28] verify | func= Extends | rank= 4 | pid= astro-ph/0102295 | title_snip='Spectral Energy Distributions of Blazars: Facts and Speculations' | abs_len= 758
+[13:28:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:28:32] select | verify relaxed 6/10
+[13:28:32] verify | func= Extends | rank= 5 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[13:28:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:35] select | verify relaxed 7/10
+[13:28:35] verify | func= Extends | rank= 6 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[13:28:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:28:37] select | verify relaxed 8/10
+[13:28:37] verify | func= Extends | rank= 7 | pid= astro-ph/0104101 | title_snip='Spectral variability in transonic discs around black holes' | abs_len= 1143
+[13:28:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:40] select | verify relaxed 9/10
+[13:28:40] verify | func= Extends | rank= 8 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[13:28:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:28:42] select | verify relaxed 10/10
+[13:28:42] verify | func= Extends | rank= 9 | pid= astro-ph/0101442 | title_snip='Hidden BL Lacertae Objects Near and Far' | abs_len= 307
+[13:28:45] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?
+- WINNER: astro-ph/0102314 | Are Cen a and M87 Tev Gamma-Ray Sources?
+- QUOTE : investigating their spectral energy distributions (SEDs)
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects by revealing the peaks of their synchrotron emission [Background] (astro-ph/0102314). This knowledge extends our understanding of these objects' properties, including their potential Compton emission peaks and TeV gamma-ray fluxes, making them TeV gamma-ray source candidates [Extends] (astro-ph/0102314).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

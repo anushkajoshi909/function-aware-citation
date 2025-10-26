@@ -1,0 +1,18 @@
+{
+  "answer": "The current work investigates the relationship between ACM and glicci schemes, motivated by the open question of whether all ACM schemes are glicci (math/0103188).",
+  "predicted_paper_id": "math/0103188",
+  "explanation": "This paper is relevant because it discusses the relationship between ACM and glicci schemes, and investigates the conditions under which an ACM scheme is also glicci.",
+  "evidence_quote": "ACM schemes are glicci",
+  "topk_list": [
+    "math/0103188",
+    "hep-lat/0101019",
+    "nucl-th/0101058",
+    "cond-mat/0103424",
+    "nucl-th/0103002",
+    "hep-ex/0101009",
+    "hep-ph/0103299",
+    "cond-mat/0102536",
+    "astro-ph/0103503",
+    "hep-ph/0104290"
+  ]
+}

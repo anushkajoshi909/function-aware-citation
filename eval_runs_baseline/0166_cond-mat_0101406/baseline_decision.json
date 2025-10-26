@@ -1,0 +1,18 @@
+{
+  "answer": "The current work's use of the Martin-Siggia-Rose formalism is compared to other approaches in solving the random heteropolymer model, which is solved non-perturbatively employing a Gaussian variational approach (cond-mat/0101406).",
+  "predicted_paper_id": "cond-mat/0101406",
+  "explanation": "This paper best supports the answer because it directly addresses the use of the Martin-Siggia-Rose formalism in solving the random heteropolymer model.",
+  "evidence_quote": "Martin-Siggia-Rose formalism",
+  "topk_list": [
+    "cond-mat/0101406",
+    "hep-th/0103178",
+    "nucl-th/0101012",
+    "cond-mat/0104449",
+    "nucl-th/0101048",
+    "math/0102094",
+    "cond-mat/0103324",
+    "cond-mat/0103467",
+    "cond-mat/0103468",
+    "astro-ph/0102439"
+  ]
+}

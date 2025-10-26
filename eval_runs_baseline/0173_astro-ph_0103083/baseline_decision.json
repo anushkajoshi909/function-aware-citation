@@ -1,0 +1,18 @@
+{
+  "answer": "The observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research, such as investigating the role of supernovae in r-process nucleosynthesis (astro-ph/0104187).",
+  "predicted_paper_id": "astro-ph/0104187",
+  "explanation": "This paper discusses the dispersion and mean trends of r-process abundances in metal-poor stars based on a model of diverse supernova sources for the r-process, providing a good explanation for the observed dispersion and mean trend of Eu abundances.",
+  "evidence_quote": "r-process abundances in metal-poor stars",
+  "topk_list": [
+    "nucl-th/0103049",
+    "astro-ph/0103083",
+    "astro-ph/0101440",
+    "astro-ph/0104187",
+    "astro-ph/0101407",
+    "astro-ph/0103072",
+    "astro-ph/0104189",
+    "astro-ph/0104392",
+    "nucl-ex/0104021",
+    "hep-ph/0104234"
+  ]
+}

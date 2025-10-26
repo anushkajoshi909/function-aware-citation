@@ -1,0 +1,18 @@
+{
+  "answer": "The current work's finding of a linear term in the dispersion relation is relevant to existing Bose-Einstein condensation studies, as seen in cond-mat/0104051.",
+  "predicted_paper_id": "cond-mat/0104051",
+  "explanation": "This paper studies the response of a trapped Bose-Einstein condensed gas to a density perturbation, which is related to the dispersion relation.",
+  "evidence_quote": "trapped Bose-Einstein condensed gas",
+  "topk_list": [
+    "hep-ph/0103093",
+    "cond-mat/0104051",
+    "cond-mat/0103565",
+    "cond-mat/0103196",
+    "hep-ph/0101210",
+    "hep-ph/0103191",
+    "cond-mat/0103555",
+    "astro-ph/0101222",
+    "astro-ph/0101451",
+    "cond-mat/0103166"
+  ]
+}

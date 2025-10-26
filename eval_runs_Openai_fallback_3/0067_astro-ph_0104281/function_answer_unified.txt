@@ -1,0 +1,1 @@
+The X-ray spectrum of NGC 4151 motivates the development of a two-phase model [Motivation] because its flatness is expected to favor the presence of two gas phases in pressure equilibrium (astro-ph/0104281). This spectrum compares to expected spectra for Seyfert galaxies in being among the flattest known, with a Gamma_x value of -1.5 [Compares] (astro-ph/0104281).

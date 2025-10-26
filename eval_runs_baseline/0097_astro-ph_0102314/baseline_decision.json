@@ -1,0 +1,18 @@
+{
+  "answer": "The spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects, as seen in their synchrotron emission peaks (astro-ph/0102314).",
+  "predicted_paper_id": "astro-ph/0102314",
+  "explanation": "This paper investigates the spectral energy distributions of Cen A and M87, identifying them as high-energy-peaked BL Lac-like objects by analyzing their synchrotron emission peaks.",
+  "evidence_quote": "high-energy-peaked BL Lac-like objects",
+  "topk_list": [
+    "astro-ph/0102314",
+    "astro-ph/0103343",
+    "astro-ph/0102445",
+    "astro-ph/0102088",
+    "astro-ph/0102295",
+    "cond-mat/0101280",
+    "astro-ph/0103048",
+    "astro-ph/0104101",
+    "astro-ph/0103439",
+    "astro-ph/0101442"
+  ]
+}

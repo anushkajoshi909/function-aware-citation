@@ -1,0 +1,18 @@
+{
+  "answer": "Extensions of the standard model, such as supersymmetric extensions, build upon our current understanding of CP violation and its role in new physics beyond the electroweak standard model, as seen in supersymmetric models (hep-ph/0104027).",
+  "predicted_paper_id": "hep-ph/0104027",
+  "explanation": "This paper discusses the potentialities to use CP violation as a probe on Supersymmetric extensions of the SM, making it the most relevant to the question.",
+  "evidence_quote": "New physics may have a good chance to manifest some departure",
+  "topk_list": [
+    "hep-ph/0101259",
+    "hep-ph/0104027",
+    "hep-ph/0101002",
+    "hep-ph/0103038",
+    "hep-ph/0103299",
+    "hep-ph/0102113",
+    "hep-ph/0103095",
+    "hep-ph/0103333",
+    "hep-ph/0101315",
+    "hep-ph/0102085"
+  ]
+}

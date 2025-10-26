@@ -1,0 +1,18 @@
+{
+  "answer": "The current model of electromagnetic structure black holes can be extended to study longer bursts with baryonic matter by considering the effects of dark energy and the properties of black holes in the early universe (hep-ph/0101210).",
+  "predicted_paper_id": "hep-ph/0101210",
+  "explanation": "This paper discusses the production of ultralow frequencies at very high momenta and their potential role in the dark energy of the universe, which is relevant to the study of black holes and baryonic matter.",
+  "evidence_quote": "dark energy of the universe",
+  "topk_list": [
+    "hep-ph/0103038",
+    "physics/0101057",
+    "hep-ph/0101210",
+    "hep-ph/0102045",
+    "astro-ph/0101515",
+    "astro-ph/0103271",
+    "hep-th/0102041",
+    "astro-ph/0104166",
+    "hep-ph/0102096",
+    "nucl-th/0104043"
+  ]
+}

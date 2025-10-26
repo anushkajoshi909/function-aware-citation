@@ -1,0 +1,18 @@
+{
+  "answer": "Future studies can extend current work by analyzing galaxy correlation functions and pairwise peculiar velocity dispersion, as seen in astro-ph/0104023, to better understand galaxy biasing (astro-ph/0104023).",
+  "predicted_paper_id": "astro-ph/0104023",
+  "explanation": "This paper provides a method for analyzing galaxy correlation functions and pairwise peculiar velocity dispersion, which can be extended to better understand galaxy biasing.",
+  "evidence_quote": "galaxy biasing in cold dark matter models",
+  "topk_list": [
+    "astro-ph/0104023",
+    "astro-ph/0101543",
+    "astro-ph/0102372",
+    "astro-ph/0103017",
+    "astro-ph/0103040",
+    "astro-ph/0103281",
+    "astro-ph/0104417",
+    "astro-ph/0102276",
+    "astro-ph/0103092",
+    "astro-ph/0101499"
+  ]
+}

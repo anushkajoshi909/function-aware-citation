@@ -1,0 +1,1 @@
+The spectral analysis of the Vela pulsar provides background information on its thermal emission and power-law spectrum [Background] (astro-ph/0103171), and the lower-than-predicted effective temperature of the pulsar motivates further investigation into neutron star cooling models [Motivation] (astro-ph/0103171).

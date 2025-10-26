@@ -1,0 +1,161 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Extends"
+  ],
+  "justification": "The query asks how the analysis provides a reason (motivation) for studying the scenario and how it builds upon (extends) current knowledge of the Standard Model-like case."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:19:38] main | args: Namespace(max_check=10, debug=True)
+[01:19:38] read_last_jsonl | path= classified_outputs.jsonl
+[01:19:38] read_last_jsonl | total_lines= 1
+[01:19:38] main | query='How does the analysis of Higgs boson couplings in the 2HDM(II) model motivate and extend our understanding of the Standard Model-like scenario?' | funcs=['Motivation', 'Extends']
+[01:19:40] main | core_terms= ['Higgs boson', '2HDM(II)', 'Standard Model-like scenario', 'Higgs boson couplings', '2HDM', 'II', 'Model-like']
+[01:19:40] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:19:40] load_topk_jsonl | rows= 20
+[01:19:40] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101208 title_snip='Resolving SM-like scenarios via Higgs boson production at a Photon
+  C…' abs_len= 1276
+[01:19:40] main | running function= Motivation
+[01:19:40] select | function= Motivation | candidates_in= 20
+[01:19:40] select | core_terms= ['Higgs boson', '2HDM(II)', 'Standard Model-like scenario', 'Higgs boson couplings', '2HDM', 'II', 'Model-like']
+[01:19:40] select | no cosine prune; kept=20/20
+[01:19:40] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101208', 'hep-ph/0101331', 'hep-ph/0103223', 'hep-ph/0101229', 'hep-ph/0102096', 'hep-ph/0103050', 'hep-ph/0104056', 'hep-ph/0103183', 'hep-ph/0103095', 'hep-th/0102041']
+[01:19:40] select | verify relaxed 1/10
+[01:19:40] verify | func= Motivation | rank= 0 | pid= hep-ph/0101208 | title_snip='Resolving SM-like scenarios via Higgs boson production at a Photon
+  C…' | abs_len= 1276
+[01:19:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[01:19:44] select | verify relaxed 2/10
+[01:19:44] verify | func= Motivation | rank= 1 | pid= hep-ph/0101331 | title_snip='Standard-Model-like scenarios in the 2HDM and Photon Collider potentia…' | abs_len= 879
+[01:19:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:19:47] select | verify relaxed 3/10
+[01:19:47] verify | func= Motivation | rank= 2 | pid= hep-ph/0103223 | title_snip='The new (g-2) for muon measurement and limits on the light Higgs boson…' | abs_len= 772
+[01:19:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:19:50] select | verify relaxed 4/10
+[01:19:50] verify | func= Motivation | rank= 3 | pid= hep-ph/0101229 | title_snip='Potential of Photon Collider in resolving SM-like scenarios' | abs_len= 866
+[01:19:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:19:53] select | verify relaxed 5/10
+[01:19:53] verify | func= Motivation | rank= 4 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[01:19:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:19:56] select | verify relaxed 6/10
+[01:19:56] verify | func= Motivation | rank= 5 | pid= hep-ph/0103050 | title_snip='Bounds for FCNC and the Pseudoscalar Higgs mass in the General Two Hig…' | abs_len= 539
+[01:19:59] verify | result supports= True fit= 0.80 top= 0.70 invalid= — cue_hint= True
+[01:19:59] select | verify relaxed 7/10
+[01:19:59] verify | func= Motivation | rank= 6 | pid= hep-ph/0104056 | title_snip='Muon anomalous magnetic moment in the standard model with two Higgs
+  …' | abs_len= 1106
+[01:20:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:20:02] select | verify relaxed 8/10
+[01:20:02] verify | func= Motivation | rank= 7 | pid= hep-ph/0103183 | title_snip='Muon Anomalous Magnetic Moment, Two-Higgs-Doublet Model, and
+  Supersy…' | abs_len= 780
+[01:20:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:20:06] select | verify relaxed 9/10
+[01:20:06] verify | func= Motivation | rank= 8 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[01:20:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:20:08] select | verify relaxed 10/10
+[01:20:08] verify | func= Motivation | rank= 9 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[01:20:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the analysis of Higgs boson couplings in the 2HDM(II) model motivate and extend our understanding of the Standard Model-like scenario?
+- WINNER: hep-ph/0101208 | Resolving SM-like scenarios via Higgs boson production at a Photon
+  Collider: I. 2HDM versus SM
+- QUOTE : a Higgs boson will be discovered, but no signal of New Physics
+- WHY   : sufficient
+[01:20:13] main | running function= Extends
+[01:20:13] select | function= Extends | candidates_in= 20
+[01:20:13] select | core_terms= ['Higgs boson', '2HDM(II)', 'Standard Model-like scenario', 'Higgs boson couplings', '2HDM', 'II', 'Model-like']
+[01:20:13] select | no cosine prune; kept=20/20
+[01:20:13] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101208', 'hep-ph/0101331', 'hep-ph/0103223', 'hep-ph/0101229', 'hep-ph/0102096', 'hep-ph/0103050', 'hep-ph/0104056', 'hep-ph/0103183', 'hep-ph/0103095', 'hep-th/0102041']
+[01:20:13] select | verify relaxed 1/10
+[01:20:13] verify | func= Extends | rank= 0 | pid= hep-ph/0101208 | title_snip='Resolving SM-like scenarios via Higgs boson production at a Photon
+  C…' | abs_len= 1276
+[01:20:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:20:17] select | verify relaxed 2/10
+[01:20:17] verify | func= Extends | rank= 1 | pid= hep-ph/0101331 | title_snip='Standard-Model-like scenarios in the 2HDM and Photon Collider potentia…' | abs_len= 879
+[01:20:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:20:21] select | verify relaxed 3/10
+[01:20:21] verify | func= Extends | rank= 2 | pid= hep-ph/0103223 | title_snip='The new (g-2) for muon measurement and limits on the light Higgs boson…' | abs_len= 772
+[01:20:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:20:24] select | verify relaxed 4/10
+[01:20:24] verify | func= Extends | rank= 3 | pid= hep-ph/0101229 | title_snip='Potential of Photon Collider in resolving SM-like scenarios' | abs_len= 866
+[01:20:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:20:28] select | verify relaxed 5/10
+[01:20:28] verify | func= Extends | rank= 4 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[01:20:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:20:30] select | verify relaxed 6/10
+[01:20:30] verify | func= Extends | rank= 5 | pid= hep-ph/0103050 | title_snip='Bounds for FCNC and the Pseudoscalar Higgs mass in the General Two Hig…' | abs_len= 539
+[01:20:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:20:34] select | verify relaxed 7/10
+[01:20:34] verify | func= Extends | rank= 6 | pid= hep-ph/0104056 | title_snip='Muon anomalous magnetic moment in the standard model with two Higgs
+  …' | abs_len= 1106
+[01:20:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:20:36] select | verify relaxed 8/10
+[01:20:36] verify | func= Extends | rank= 7 | pid= hep-ph/0103183 | title_snip='Muon Anomalous Magnetic Moment, Two-Higgs-Doublet Model, and
+  Supersy…' | abs_len= 780
+[01:20:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:20:40] select | verify relaxed 9/10
+[01:20:40] verify | func= Extends | rank= 8 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[01:20:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:20:42] select | verify relaxed 10/10
+[01:20:42] verify | func= Extends | rank= 9 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[01:20:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the analysis of Higgs boson couplings in the 2HDM(II) model motivate and extend our understanding of the Standard Model-like scenario?
+- WINNER: hep-ph/0101208 | Resolving SM-like scenarios via Higgs boson production at a Photon
+  Collider: I. 2HDM versus SM
+- QUOTE : In the analysis we use as independent quantities the ratios, to the SM values, of couplings of the observed Higgs boson
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The analysis of Higgs boson couplings in the 2HDM(II) model motivates further investigation into the Standard Model-like scenario by considering alternative models that could produce similar results [Motivation] (hep-ph/0101208). This analysis extends our understanding of the scenario by deriving a pattern relation between the ratios of couplings and calculating loop couplings, allowing for the distinction between the SM and 2HDM(II) [Extends] (hep-ph/0101208).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

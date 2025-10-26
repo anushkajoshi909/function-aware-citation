@@ -1,2 +1,0 @@
-The dynamic and adaptive method for domain decomposition in the parallel tree-code originates from astrophysics simulations of self-gravitating systems (astro-ph/0104152). [Background]
-Researchers use a dynamic and adaptive method for domain decomposition in the parallel tree-code to simulate self-gravitating systems in astrophysics, achieving low computational costs. This method is applied to exploit the hierarchical data arrangement and reduce parallelization overhead (astro-ph/0104152). [Uses]

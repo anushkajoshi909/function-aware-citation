@@ -1,0 +1,18 @@
+{
+  "answer": "Previous studies of star formation rates in Lyman break galaxies had limitations that motivated the current work, which compares to previous expectations by finding that star formation rates deduced from Hbeta luminosity are on average no larger than those implied by the stellar continuum at 1500 A (astro-ph/0102456).",
+  "predicted_paper_id": "astro-ph/0102456",
+  "explanation": "This paper best supports the answer because it discusses the limitations of previous studies and presents new results on star formation rates in Lyman break galaxies, providing a comparison to previous expectations.",
+  "evidence_quote": "Contrary to expectations, the star formation rates deduced from the Hbeta luminosity",
+  "topk_list": [
+    "astro-ph/0101254",
+    "astro-ph/0102456",
+    "astro-ph/0101386",
+    "astro-ph/0103305",
+    "astro-ph/0101174",
+    "astro-ph/0104442",
+    "astro-ph/0101544",
+    "astro-ph/0101472",
+    "hep-ph/0102163",
+    "hep-ph/0103299"
+  ]
+}

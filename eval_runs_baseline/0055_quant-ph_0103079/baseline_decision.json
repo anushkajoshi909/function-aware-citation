@@ -1,0 +1,18 @@
+{
+  "answer": "The Everett interpretation of quantum mechanics uses the Heisenberg picture to provide background for understanding correlations between spatially-separated quantum systems by replacing nonlocality with proliferating labels (quant-ph/0103079).",
+  "predicted_paper_id": "quant-ph/0103079",
+  "explanation": "This paper directly addresses the use of the Heisenberg picture in the Everett interpretation to explain correlations between spatially-separated systems.",
+  "evidence_quote": "Everett interpretation of quantum mechanics, in the Heisenberg picture",
+  "topk_list": [
+    "quant-ph/0103079",
+    "quant-ph/0102084",
+    "cond-mat/0103124",
+    "hep-th/0103228",
+    "gr-qc/0104051",
+    "cond-mat/0104105",
+    "quant-ph/0101022",
+    "hep-lat/0103004",
+    "quant-ph/0104046",
+    "hep-ph/0101161"
+  ]
+}

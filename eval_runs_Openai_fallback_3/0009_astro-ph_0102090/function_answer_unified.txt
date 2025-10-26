@@ -1,0 +1,1 @@
+The current work's method of deriving the color-magnitude relation compares to previous methods by introducing a less biased approach [Compares] (astro-ph/0102090), and it uses a sample of 48 giant early-type galaxies in the Coma cluster with CCD observations in the U- and V-band to achieve this comparison [Uses] (astro-ph/0102090).

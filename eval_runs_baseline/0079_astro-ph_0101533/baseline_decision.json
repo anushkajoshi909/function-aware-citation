@@ -1,0 +1,18 @@
+{
+  "answer": "Current uses of Imaging Atmospheric Cerenkov Telescopes inform future work in detecting gamma rays from astrophysical objects by providing techniques and results for distinguishing between particle air showers, as seen in astro-ph/0101533.",
+  "predicted_paper_id": "astro-ph/0101533",
+  "explanation": "This paper discusses the challenges and techniques used in Imaging Atmospheric Cerenkov Telescopes, which is relevant to informing future work in detecting gamma rays from astrophysical objects.",
+  "evidence_quote": "Imaging Atmospheric Cerenkov Telescopes",
+  "topk_list": [
+    "astro-ph/0101533",
+    "astro-ph/0102324",
+    "astro-ph/0101039",
+    "astro-ph/0101120",
+    "astro-ph/0103516",
+    "astro-ph/0101241",
+    "physics/0104041",
+    "astro-ph/0104143",
+    "astro-ph/0101496",
+    "astro-ph/0102391"
+  ]
+}

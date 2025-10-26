@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Background. [Background]
-The capability of VLBI to image large fields-of-view with sub-mJy detection limits is crucial for distinguishing between starburst and AGN activity in distant sources, which is essential for understanding their nature. This capability enables the study of faint radio sources, such as those in the Hubble Deep Field, to gain insights into the coexistence of AGN and starburst activity (astro-ph/0102037). [Motivation]

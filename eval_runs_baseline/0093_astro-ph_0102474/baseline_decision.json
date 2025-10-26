@@ -1,0 +1,18 @@
+{
+  "answer": "The framework of out of equilibrium field dynamics provides background information for understanding the evolution of highly excited quantum states by studying the self-consistent evolution of these states and the scale factor, as seen in astro-ph/0102474.",
+  "predicted_paper_id": "astro-ph/0102474",
+  "explanation": "This paper investigates inflation driven by the evolution of highly excited quantum states within the framework of out of equilibrium field dynamics, making it directly relevant to the question.",
+  "evidence_quote": "inflation driven by the evolution of highly excited quantum states",
+  "topk_list": [
+    "astro-ph/0102474",
+    "hep-ph/0101202",
+    "gr-qc/0103104",
+    "hep-th/0103228",
+    "hep-ph/0103303",
+    "hep-ph/0104167",
+    "hep-ph/0104182",
+    "physics/0103003",
+    "quant-ph/0102074",
+    "quant-ph/0103032"
+  ]
+}

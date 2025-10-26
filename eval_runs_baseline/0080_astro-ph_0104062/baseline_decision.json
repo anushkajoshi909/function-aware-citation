@@ -1,0 +1,18 @@
+{
+  "answer": "The methods used to analyze the absorption feature in GRB 990705 could inform future research on supernova remnants and their impact on afterglow generation by considering the physical conditions and geometry of the absorbing material, such as a young supernova remnant surrounding the burst site (astro-ph/0104062).",
+  "predicted_paper_id": "astro-ph/0104062",
+  "explanation": "This paper discusses the absorption feature in the prompt X-ray spectrum of GRB 990705 and its implications for the properties of the absorbing material, which could be a young supernova remnant.",
+  "evidence_quote": "young supernova remnant surrounding the burst site",
+  "topk_list": [
+    "astro-ph/0104062",
+    "astro-ph/0101234",
+    "astro-ph/0101274",
+    "astro-ph/0104485",
+    "astro-ph/0104348",
+    "astro-ph/0104174",
+    "astro-ph/0104471",
+    "astro-ph/0101425",
+    "astro-ph/0102129",
+    "astro-ph/0101198"
+  ]
+}

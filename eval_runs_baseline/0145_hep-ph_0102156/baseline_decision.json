@@ -1,0 +1,18 @@
+{
+  "answer": "The RIMH models, which arise from SUSY SO(10) grand unified theories, provide a promising way to reconcile naturalness with a decoupling solution to the SUSY flavor and CP problems (hep-ph/0102156).",
+  "predicted_paper_id": "hep-ph/0102156",
+  "explanation": "This paper directly addresses the RIMH models and their ability to solve the SUSY flavor and CP problems within the context of SUSY SO(10) grand unified theories.",
+  "evidence_quote": "RIMH models arise naturally within the context of SUSY SO(10) grand unified theories",
+  "topk_list": [
+    "hep-ph/0102156",
+    "hep-ph/0101350",
+    "hep-th/0103005",
+    "hep-ph/0101185",
+    "hep-ph/0103324",
+    "hep-ph/0104302",
+    "math-ph/0102001",
+    "hep-ph/0104101",
+    "math/0101207",
+    "hep-th/0103162"
+  ]
+}

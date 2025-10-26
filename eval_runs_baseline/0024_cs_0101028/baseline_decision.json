@@ -1,0 +1,18 @@
+{
+  "answer": "The proposed hybrid algorithm compares to existing work in terms of background and context by providing an optimal deterministic hybrid algorithm and an efficient randomized hybrid algorithm (cs/0101028).",
+  "predicted_paper_id": "cs/0101028",
+  "explanation": "This paper best supports the answer because it constructs an optimal deterministic hybrid algorithm and an efficient randomized hybrid algorithm, which provides a basis for comparison with existing work.",
+  "evidence_quote": "Optimal Constructions of Hybrid Algorithms",
+  "topk_list": [
+    "cs/0101028",
+    "cs/0104011",
+    "cond-mat/0103415",
+    "hep-ex/0101012",
+    "physics/0104032",
+    "hep-ex/0101011",
+    "astro-ph/0101112",
+    "astro-ph/0104258",
+    "physics/0104004",
+    "hep-ph/0102241"
+  ]
+}

@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Extends. [Extends]
-The extension of the Nonlinear Maxwell Theory in this paper suggests potential areas for future research by outlining the transition to Extended Electrodynamics and motivating the pursuit of the right extension of Maxwell equations. This implies that future work could involve further developing and exploring the properties of nonlinear vacuum solutions in the context of Extended Electrodynamics (hep-th/0101137). [FutureWork]

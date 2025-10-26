@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends existing models by analyzing the nonminimal supersymmetric standard model with baryon and lepton number violation, as seen in hep-ph/0103005.",
+  "predicted_paper_id": "hep-ph/0103005",
+  "explanation": "This paper provides a comprehensive analysis of the NMSSM with baryon and lepton number violation, including the renormalization group evolution and infrared stable fixed points of the Yukawa couplings and soft supersymmetry breaking trilinear couplings.",
+  "evidence_quote": "nonminimal supersymmetric standard model with baryon and lepton number violation",
+  "topk_list": [
+    "hep-ph/0103005",
+    "hep-ph/0103270",
+    "hep-ph/0103299",
+    "hep-ph/0101259",
+    "hep-ph/0101250",
+    "hep-ph/0103122",
+    "hep-ph/0102113",
+    "hep-ph/0104120",
+    "hep-ph/0104292",
+    "hep-ph/0102096"
+  ]
+}

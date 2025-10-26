@@ -1,0 +1,18 @@
+{
+  "answer": "Current X-ray spectral analysis of Seyfert 2 galaxies extends previous work by revealing complex spectra and motivating further investigation into the nature of these galaxies (astro-ph/0104061).",
+  "predicted_paper_id": "astro-ph/0104061",
+  "explanation": "This paper presents an X-ray spectral analysis of a sample of Seyfert 2 galaxies, finding complex spectra and suggesting that some objects may lack intrinsic absorption, which motivates further investigation.",
+  "evidence_quote": "The X-ray spectra of our Seyfert 2 galaxies are complex",
+  "topk_list": [
+    "astro-ph/0103438",
+    "astro-ph/0101184",
+    "astro-ph/0101079",
+    "astro-ph/0104061",
+    "astro-ph/0101066",
+    "astro-ph/0104027",
+    "astro-ph/0103413",
+    "astro-ph/0101324",
+    "astro-ph/0103263",
+    "astro-ph/0101104"
+  ]
+}

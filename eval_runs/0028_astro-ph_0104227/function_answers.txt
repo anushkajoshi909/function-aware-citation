@@ -1,2 +1,0 @@
-Future studies can utilize the current analysis by further investigating the suggestive correlation between cluster properties and position on the sky, and by applying the methods used to determine line-of-sight depth to larger datasets. The positional and abundance data from this work could be combined with other datasets to better understand the structure of the Small Magellanic Cloud (astro-ph/0104227). [FutureWork]
-The abstract does not provide information relevant to Uses. [Uses]

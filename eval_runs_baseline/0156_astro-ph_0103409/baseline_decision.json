@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous studies on the stability of poloidal magnetic fields in accretion discs by numerically confirming the existence of the interchange instability and finding a global instability that transports angular momentum outward (astro-ph/0103409).",
+  "predicted_paper_id": "astro-ph/0103409",
+  "explanation": "This paper best supports the answer because it directly addresses the stability of poloidal magnetic fields in accretion discs and presents numerical simulations that confirm the existence of the interchange instability and a global instability.",
+  "evidence_quote": "existence of the interchange instability",
+  "topk_list": [
+    "astro-ph/0103409",
+    "astro-ph/0102045",
+    "astro-ph/0103230",
+    "astro-ph/0101470",
+    "astro-ph/0101293",
+    "astro-ph/0102178",
+    "astro-ph/0101237",
+    "physics/0104072",
+    "astro-ph/0104130",
+    "astro-ph/0104385"
+  ]
+}

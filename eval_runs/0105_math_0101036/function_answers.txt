@@ -1,2 +1,0 @@
-Geometrical stability theory provides a foundation for studying homogeneous models by offering tools for structural results on models of a simple first-order theory (math/0101036). [Background]
-Geometrical stability theory is extended to non-saturated structures, specifically homogeneous models, by generalizing the concept of independence and introducing a canonical base in this more general setting. This extension broadens the scope of the theory beyond saturated models, where it typically applies (math/0101036). [Extends]

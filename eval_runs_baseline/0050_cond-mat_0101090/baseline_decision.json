@@ -1,0 +1,18 @@
+{
+  "answer": "The proposed two-band s-d model explains the interface sensitivity of magnetic tunnel junctions by considering interfacial inter-band scattering, which can substantially reduce the TMR (cond-mat/0101090).",
+  "predicted_paper_id": "cond-mat/0101090",
+  "explanation": "This paper best supports the answer because it specifically addresses the interface sensitivity of magnetic tunnel junctions and proposes the two-band s-d model to explain it.",
+  "evidence_quote": "explain the strong interface sensitivity",
+  "topk_list": [
+    "cond-mat/0101090",
+    "cond-mat/0104251",
+    "cond-mat/0101277",
+    "cond-mat/0103172",
+    "cond-mat/0102128",
+    "cond-mat/0103536",
+    "cond-mat/0103006",
+    "cond-mat/0102205",
+    "cond-mat/0104544",
+    "cond-mat/0101203"
+  ]
+}

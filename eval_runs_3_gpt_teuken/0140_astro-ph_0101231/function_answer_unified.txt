@@ -1,0 +1,1 @@
+The current work extends our understanding of cosmic ray propagation by providing new constraints on diffusion parameters [Background] (astro-ph/0101231), and it is motivated by the need for a very good understanding of cosmic ray propagation due to expected high-precision measurements of cosmic ray nuclei fluxes [Motivation] (astro-ph/0101231).

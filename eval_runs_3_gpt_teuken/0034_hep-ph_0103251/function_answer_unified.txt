@@ -1,0 +1,1 @@
+The proposed unification model based on a semi-simple group addresses the problems of large mass splitting and proton lifetime in conventional supersymmetric grand unified theories [Background] (hep-ph/0103251), and its motivation stems from solving these two serious problems simultaneously, providing a more consistent and explanatory framework [Motivation] (hep-ph/0103251).

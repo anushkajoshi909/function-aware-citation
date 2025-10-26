@@ -1,0 +1,18 @@
+{
+  "answer": "The work extends previous lattice estimates by applying the operator product expansion to predict physical quantities, which requires high-order perturbative calculations (hep-ph/0101302).",
+  "predicted_paper_id": "hep-ph/0101302",
+  "explanation": "This paper shows that the OPE can be applied in predicting physical quantities only if the Wilson coefficients are computed to a high enough perturbative order.",
+  "evidence_quote": "OPE can be applied in predicting physical quantities",
+  "topk_list": [
+    "hep-lat/0104007",
+    "hep-lat/0104005",
+    "hep-lat/0103018",
+    "hep-ph/0101302",
+    "hep-ph/0101248",
+    "hep-ph/0104033",
+    "hep-ph/0101163",
+    "hep-ph/0102026",
+    "hep-ph/0101318",
+    "hep-ph/0104246"
+  ]
+}

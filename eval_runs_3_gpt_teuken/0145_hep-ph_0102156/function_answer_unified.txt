@@ -1,0 +1,1 @@
+The RIMH models, which arise from SUSY SO(10) grand unified theories, provide a background for understanding the SUSY flavor and CP problems [Background] (hep-ph/0102156), and are motivated by their potential to reconcile naturalness with a decoupling solution to these problems [Motivation] (hep-ph/0102156).

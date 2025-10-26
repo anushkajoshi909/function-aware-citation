@@ -1,2 +1,0 @@
-Current understanding of ionization properties in Damped Ly alpha systems is limited by the lack of knowledge on how ionization corrections affect abundance measurements (astro-ph/0104298). [Background]
-Current understanding of ionization properties in Damped Ly alpha systems is limited, as the role of gas with intermediate ionization state and the impact of ionization corrections on abundance measurements are not well understood. This knowledge gap motivates further research to accurately determine elemental abundances in these systems (astro-ph/0104298). [Motivation]

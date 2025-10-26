@@ -1,0 +1,18 @@
+{
+  "answer": "The properties of host galaxies of radio-loud and radio-quiet quasars provide background information for understanding the origin of radio loudness, suggesting areas for future research (astro-ph/0103238).",
+  "predicted_paper_id": "astro-ph/0103238",
+  "explanation": "This paper reviews our knowledge of the properties of the host galaxies of radio-loud and radio-quiet quasars, providing a comprehensive understanding of the origin of radio loudness.",
+  "evidence_quote": "host galaxies of radio-loud and radio-quiet quasars",
+  "topk_list": [
+    "astro-ph/0103238",
+    "astro-ph/0104310",
+    "astro-ph/0102046",
+    "astro-ph/0102166",
+    "astro-ph/0103394",
+    "astro-ph/0101137",
+    "astro-ph/0104383",
+    "astro-ph/0103291",
+    "astro-ph/0101096",
+    "astro-ph/0104183"
+  ]
+}

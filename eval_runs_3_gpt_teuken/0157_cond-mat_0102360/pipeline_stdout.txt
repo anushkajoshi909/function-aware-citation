@@ -1,0 +1,165 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the background and motivation behind an extension of a previous work, specifically the semiclassical model of the collective atomic recoil laser. It asks about the problem or limitation in previous work that motivated the extension and what methods or results from previous work are used in this extension."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:32:28] main | args: Namespace(max_check=10, debug=True)
+[14:32:28] read_last_jsonl | path= classified_outputs.jsonl
+[14:32:28] read_last_jsonl | total_lines= 1
+[14:32:28] main | query='What problem or limitation in previous work motivated the extension of the semiclassical model of the collective atomic recoil laser, and what methods or results from previous work are used in this extension?' | funcs=['Background', 'Motivation']
+[14:32:30] main | core_terms= ['collective atomic recoil laser', 'semiclassical model']
+[14:32:30] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:32:30] load_topk_jsonl | rows= 20
+[14:32:30] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0102360 title_snip='Quantum effects in the collective light scattering by coherent atomic
+…' abs_len= 1269
+[14:32:30] main | running function= Background
+[14:32:30] select | function= Background | candidates_in= 20
+[14:32:30] select | core_terms= ['collective atomic recoil laser', 'semiclassical model']
+[14:32:30] select | no cosine prune; kept=20/20
+[14:32:30] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0102360', 'nlin/0104041', 'hep-ph/0101297', 'hep-th/0103228', 'hep-ph/0102144', 'hep-ph/0103129', 'nlin/0101055', 'astro-ph/0101222', 'hep-ph/0101318', 'nlin/0101007']
+[14:32:30] select | verify relaxed 1/10
+[14:32:30] verify | func= Background | rank= 0 | pid= cond-mat/0102360 | title_snip='Quantum effects in the collective light scattering by coherent atomic
+…' | abs_len= 1269
+[14:32:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:32:33] select | verify relaxed 2/10
+[14:32:33] verify | func= Background | rank= 1 | pid= nlin/0104041 | title_snip='Semiclassical description of shell effects in finite fermion systems' | abs_len= 745
+[14:32:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:35] select | verify relaxed 3/10
+[14:32:35] verify | func= Background | rank= 2 | pid= hep-ph/0101297 | title_snip='Bilocal expansion of the Borel amplitude and the hadronic tau decay
+  …' | abs_len= 1398
+[14:32:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:38] select | verify relaxed 4/10
+[14:32:38] verify | func= Background | rank= 3 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[14:32:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:41] select | verify relaxed 5/10
+[14:32:41] verify | func= Background | rank= 4 | pid= hep-ph/0102144 | title_snip='Extra Families, Higgs Spectrum and Oblique Corrections' | abs_len= 1305
+[14:32:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:43] select | verify relaxed 6/10
+[14:32:43] verify | func= Background | rank= 5 | pid= hep-ph/0103129 | title_snip='The Meson Mass Spectrum from a Systematically Renormalized Light-Front…' | abs_len= 1448
+[14:32:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:46] select | verify relaxed 7/10
+[14:32:46] verify | func= Background | rank= 6 | pid= nlin/0101055 | title_snip='A new class of semiclassical wave function uniformizations' | abs_len= 425
+[14:32:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:48] select | verify relaxed 8/10
+[14:32:48] verify | func= Background | rank= 7 | pid= astro-ph/0101222 | title_snip='Damping time and stability of density fermion perturbations in the
+  e…' | abs_len= 1202
+[14:32:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:50] select | verify relaxed 9/10
+[14:32:50] verify | func= Background | rank= 8 | pid= hep-ph/0101318 | title_snip='Mesons on a transverse lattice' | abs_len= 1033
+[14:32:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:32:53] select | verify relaxed 10/10
+[14:32:53] verify | func= Background | rank= 9 | pid= nlin/0101007 | title_snip='Periodic Orbit Quantization: How to Make Semiclassical Trace Formulae
+…' | abs_len= 1057
+[14:32:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What problem or limitation in previous work motivated the extension of the semiclassical model of the collective atomic recoil laser, and what methods or results from previous work are used in this extension?
+- WINNER: cond-mat/0102360 | Quantum effects in the collective light scattering by coherent atomic
+  recoil in a Bose-Einstein condensate
+- QUOTE : We extend the semiclassical model of the collective atomic recoil laser
+- WHY   : sufficient
+[14:32:56] main | running function= Motivation
+[14:32:56] select | function= Motivation | candidates_in= 20
+[14:32:56] select | core_terms= ['collective atomic recoil laser', 'semiclassical model']
+[14:32:56] select | no cosine prune; kept=20/20
+[14:32:56] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0102360', 'nlin/0104041', 'hep-ph/0101297', 'hep-th/0103228', 'hep-ph/0102144', 'hep-ph/0103129', 'nlin/0101055', 'astro-ph/0101222', 'hep-ph/0101318', 'nlin/0101007']
+[14:32:56] select | verify relaxed 1/10
+[14:32:56] verify | func= Motivation | rank= 0 | pid= cond-mat/0102360 | title_snip='Quantum effects in the collective light scattering by coherent atomic
+…' | abs_len= 1269
+[14:33:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:33:00] select | verify relaxed 2/10
+[14:33:00] verify | func= Motivation | rank= 1 | pid= nlin/0104041 | title_snip='Semiclassical description of shell effects in finite fermion systems' | abs_len= 745
+[14:33:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:02] select | verify relaxed 3/10
+[14:33:02] verify | func= Motivation | rank= 2 | pid= hep-ph/0101297 | title_snip='Bilocal expansion of the Borel amplitude and the hadronic tau decay
+  …' | abs_len= 1398
+[14:33:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:05] select | verify relaxed 4/10
+[14:33:05] verify | func= Motivation | rank= 3 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[14:33:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:07] select | verify relaxed 5/10
+[14:33:07] verify | func= Motivation | rank= 4 | pid= hep-ph/0102144 | title_snip='Extra Families, Higgs Spectrum and Oblique Corrections' | abs_len= 1305
+[14:33:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:10] select | verify relaxed 6/10
+[14:33:10] verify | func= Motivation | rank= 5 | pid= hep-ph/0103129 | title_snip='The Meson Mass Spectrum from a Systematically Renormalized Light-Front…' | abs_len= 1448
+[14:33:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:12] select | verify relaxed 7/10
+[14:33:12] verify | func= Motivation | rank= 6 | pid= nlin/0101055 | title_snip='A new class of semiclassical wave function uniformizations' | abs_len= 425
+[14:33:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:15] select | verify relaxed 8/10
+[14:33:15] verify | func= Motivation | rank= 7 | pid= astro-ph/0101222 | title_snip='Damping time and stability of density fermion perturbations in the
+  e…' | abs_len= 1202
+[14:33:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:17] select | verify relaxed 9/10
+[14:33:17] verify | func= Motivation | rank= 8 | pid= hep-ph/0101318 | title_snip='Mesons on a transverse lattice' | abs_len= 1033
+[14:33:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:33:20] select | verify relaxed 10/10
+[14:33:20] verify | func= Motivation | rank= 9 | pid= nlin/0101007 | title_snip='Periodic Orbit Quantization: How to Make Semiclassical Trace Formulae
+…' | abs_len= 1057
+[14:33:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What problem or limitation in previous work motivated the extension of the semiclassical model of the collective atomic recoil laser, and what methods or results from previous work are used in this extension?
+- WINNER: cond-mat/0102360 | Quantum effects in the collective light scattering by coherent atomic
+  recoil in a Bose-Einstein condensate
+- QUOTE : We extend the semiclassical model of the collective atomic recoil laser
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The limitation of the semiclassical model of the collective atomic recoil laser in describing quantum effects motivated its extension to include the quantum mechanical description of the center-of-mass motion of atoms in a Bose-Einstein condensate [Motivation] (cond-mat/0102360). This extension builds on previous work by using the Maxwell-Bloch equations for two momentum levels when the average atomic momentum is less than the recoil momentum [Background] (cond-mat/0102360).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

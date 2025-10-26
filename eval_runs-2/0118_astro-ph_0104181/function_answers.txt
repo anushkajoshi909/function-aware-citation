@@ -1,2 +1,0 @@
-The concept of homogeneity in cosmology informs its understanding of galaxy distribution by assuming an almost-perfect random gaussian field as the initial density field (astro-ph/0101143). [Background]
-The trispectrum of the galaxy density field is used to differentiate between gaussian and non-gaussian models of structure formation. This method builds on previous results by investigating the statistical properties of the initial density field, which is expected to be an almost-perfect random gaussian field in the standard model of cosmology (astro-ph/0101143). [Uses]

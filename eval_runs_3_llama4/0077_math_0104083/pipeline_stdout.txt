@@ -1,0 +1,161 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Background"
+  ],
+  "justification": "The query compares a specific relationship to existing knowledge and requests foundational context."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:01:37] main | args: Namespace(max_check=10, debug=True)
+[13:01:37] read_last_jsonl | path= classified_outputs.jsonl
+[13:01:37] read_last_jsonl | total_lines= 1
+[13:01:37] main | query='How does the relationship between sparsity and statistical independence in the context of stochastic processes compare to existing background knowledge on efficient data representation?' | funcs=['Compares', 'Background']
+[13:01:39] main | core_terms= ['stochastic processes', 'sparsity', 'statistical independence', 'efficient data representation']
+[13:01:39] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:01:39] load_topk_jsonl | rows= 20
+[13:01:39] load_topk_jsonl | first: rank= 0 paper_id= math/0104083 title_snip='Sparsity vs. Statistical Independence in Adaptive Signal
+  Representat…' abs_len= 1388
+[13:01:39] main | running function= Compares
+[13:01:39] select | function= Compares | candidates_in= 20
+[13:01:39] select | core_terms= ['stochastic processes', 'sparsity', 'statistical independence', 'efficient data representation']
+[13:01:39] select | no cosine prune; kept=20/20
+[13:01:39] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0104083', 'quant-ph/0104061', 'physics/0101065', 'cond-mat/0103246', 'nucl-th/0103026', 'math/0101037', 'math/0103104', 'gr-qc/0101051', 'cond-mat/0102181', 'math/0103033']
+[13:01:39] select | verify relaxed 1/10
+[13:01:39] verify | func= Compares | rank= 0 | pid= math/0104083 | title_snip='Sparsity vs. Statistical Independence in Adaptive Signal
+  Representat…' | abs_len= 1388
+[13:01:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:01:42] select | verify relaxed 2/10
+[13:01:42] verify | func= Compares | rank= 1 | pid= quant-ph/0104061 | title_snip='Efficient Implementation and the Product State Representation of Numbe…' | abs_len= 928
+[13:01:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:01:44] select | verify relaxed 3/10
+[13:01:44] verify | func= Compares | rank= 2 | pid= physics/0101065 | title_snip='Relation of uncertainty for time' | abs_len= 567
+[13:01:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:01:47] select | verify relaxed 4/10
+[13:01:47] verify | func= Compares | rank= 3 | pid= cond-mat/0103246 | title_snip='Signatures of Randomness in Quantum Chaos' | abs_len= 1176
+[13:01:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:01:50] select | verify relaxed 5/10
+[13:01:50] verify | func= Compares | rank= 4 | pid= nucl-th/0103026 | title_snip='The effect of gluon depletion on J/psi suppression in pA and AA
+  coll…' | abs_len= 836
+[13:01:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:01:53] select | verify relaxed 6/10
+[13:01:53] verify | func= Compares | rank= 5 | pid= math/0101037 | title_snip='Reconstruction from projections using dynamics: Non-Stochastic Case' | abs_len= 1202
+[13:01:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:01:55] select | verify relaxed 7/10
+[13:01:55] verify | func= Compares | rank= 6 | pid= math/0103104 | title_snip='Detection of spatial pattern through independence of thinned processes' | abs_len= 339
+[13:01:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:01:58] select | verify relaxed 8/10
+[13:01:58] verify | func= Compares | rank= 7 | pid= gr-qc/0101051 | title_snip='Detecting a non-Gaussian stochastic background of gravitational
+  radi…' | abs_len= 392
+[13:02:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:02:01] select | verify relaxed 9/10
+[13:02:01] verify | func= Compares | rank= 8 | pid= cond-mat/0102181 | title_snip='Regularities Unseen, Randomness Observed: Levels of Entropy Convergenc…' | abs_len= 871
+[13:02:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:02:04] select | verify relaxed 10/10
+[13:02:04] verify | func= Compares | rank= 9 | pid= math/0103033 | title_snip='Filtered stochastic calculus' | abs_len= 783
+[13:02:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the relationship between sparsity and statistical independence in the context of stochastic processes compare to existing background knowledge on efficient data representation?
+- WINNER: math/0104083 | Sparsity vs. Statistical Independence in Adaptive Signal
+  Representations: A Case Study of the Spike Process
+- QUOTE : sparsity and statistical independence
+- WHY   : sufficient
+[13:02:08] main | running function= Background
+[13:02:08] select | function= Background | candidates_in= 20
+[13:02:08] select | core_terms= ['stochastic processes', 'sparsity', 'statistical independence', 'efficient data representation']
+[13:02:08] select | no cosine prune; kept=20/20
+[13:02:08] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0104083', 'quant-ph/0104061', 'physics/0101065', 'cond-mat/0103246', 'nucl-th/0103026', 'math/0101037', 'math/0103104', 'gr-qc/0101051', 'cond-mat/0102181', 'math/0103033']
+[13:02:08] select | verify relaxed 1/10
+[13:02:08] verify | func= Background | rank= 0 | pid= math/0104083 | title_snip='Sparsity vs. Statistical Independence in Adaptive Signal
+  Representat…' | abs_len= 1388
+[13:02:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:02:11] select | verify relaxed 2/10
+[13:02:11] verify | func= Background | rank= 1 | pid= quant-ph/0104061 | title_snip='Efficient Implementation and the Product State Representation of Numbe…' | abs_len= 928
+[13:02:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:02:13] select | verify relaxed 3/10
+[13:02:13] verify | func= Background | rank= 2 | pid= physics/0101065 | title_snip='Relation of uncertainty for time' | abs_len= 567
+[13:02:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:02:16] select | verify relaxed 4/10
+[13:02:16] verify | func= Background | rank= 3 | pid= cond-mat/0103246 | title_snip='Signatures of Randomness in Quantum Chaos' | abs_len= 1176
+[13:02:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:02:19] select | verify relaxed 5/10
+[13:02:19] verify | func= Background | rank= 4 | pid= nucl-th/0103026 | title_snip='The effect of gluon depletion on J/psi suppression in pA and AA
+  coll…' | abs_len= 836
+[13:02:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:02:22] select | verify relaxed 6/10
+[13:02:22] verify | func= Background | rank= 5 | pid= math/0101037 | title_snip='Reconstruction from projections using dynamics: Non-Stochastic Case' | abs_len= 1202
+[13:02:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:02:24] select | verify relaxed 7/10
+[13:02:24] verify | func= Background | rank= 6 | pid= math/0103104 | title_snip='Detection of spatial pattern through independence of thinned processes' | abs_len= 339
+[13:02:27] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:02:27] select | verify relaxed 8/10
+[13:02:27] verify | func= Background | rank= 7 | pid= gr-qc/0101051 | title_snip='Detecting a non-Gaussian stochastic background of gravitational
+  radi…' | abs_len= 392
+[13:02:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:02:30] select | verify relaxed 9/10
+[13:02:30] verify | func= Background | rank= 8 | pid= cond-mat/0102181 | title_snip='Regularities Unseen, Randomness Observed: Levels of Entropy Convergenc…' | abs_len= 871
+[13:02:33] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:02:33] select | verify relaxed 10/10
+[13:02:33] verify | func= Background | rank= 9 | pid= math/0103033 | title_snip='Filtered stochastic calculus' | abs_len= 783
+[13:02:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the relationship between sparsity and statistical independence in the context of stochastic processes compare to existing background knowledge on efficient data representation?
+- WINNER: math/0104083 | Sparsity vs. Statistical Independence in Adaptive Signal
+  Representations: A Case Study of the Spike Process
+- QUOTE : stochastic process is of tremendous importance
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The relationship between sparsity and statistical independence in stochastic processes [Compares] differs from existing knowledge on efficient data representation, which emphasizes the importance of finding a basis that efficiently represents input data streams [Background] (math/0104083). This difference highlights the complexity of understanding the intricate relationship between sparsity and statistical independence [Compares] in the context of stochastic processes, particularly in fields like data compression and computational neuroscience [Background] (math/0104083).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

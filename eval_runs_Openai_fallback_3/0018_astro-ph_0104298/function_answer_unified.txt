@@ -1,0 +1,1 @@
+Current understanding of ionization properties in Damped Ly alpha systems is limited by the potential effects of ionization corrections on abundance measurements [Background] (astro-ph/0104298), which motivates further research to accurately determine these corrections and improve our knowledge of the ionization properties of these systems [Motivation] (astro-ph/0104298).

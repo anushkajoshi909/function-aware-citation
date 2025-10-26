@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query makes a comparative inquiry between detection methods and model predictions, and implies usage of these methods in understanding wind-blown bubbles."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:02:08] main | args: Namespace(max_check=10, debug=True)
+[14:02:08] read_last_jsonl | path= classified_outputs.jsonl
+[14:02:08] read_last_jsonl | total_lines= 1
+[14:02:08] main | query='How do the methods used to detect wind-blown bubbles compare to the expected outcomes based on model predictions?' | funcs=['Compares', 'Uses']
+[14:02:10] main | core_terms= ['wind-blown bubbles', 'detection methods', 'model predictions', 'wind-blown']
+[14:02:10] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:02:10] load_topk_jsonl | rows= 20
+[14:02:10] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103096 title_snip='Magnetic Collimation in PNe' abs_len= 922
+[14:02:10] main | running function= Compares
+[14:02:10] select | function= Compares | candidates_in= 20
+[14:02:10] select | core_terms= ['wind-blown bubbles', 'detection methods', 'model predictions', 'wind-blown']
+[14:02:10] select | no cosine prune; kept=20/20
+[14:02:10] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103096', 'hep-ex/0101022', 'hep-ph/0103016', 'cond-mat/0102274', 'astro-ph/0104420', 'astro-ph/0104176', 'hep-ph/0104053', 'hep-ph/0104066', 'gr-qc/0102090', 'hep-ph/0102104']
+[14:02:10] select | verify relaxed 1/10
+[14:02:10] verify | func= Compares | rank= 0 | pid= astro-ph/0103096 | title_snip='Magnetic Collimation in PNe' | abs_len= 922
+[14:02:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:02:13] select | verify relaxed 2/10
+[14:02:13] verify | func= Compares | rank= 1 | pid= hep-ex/0101022 | title_snip='New results on alpha_s and optimized scales' | abs_len= 290
+[14:02:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:16] select | verify relaxed 3/10
+[14:02:16] verify | func= Compares | rank= 2 | pid= hep-ph/0103016 | title_snip='Radiative decays of mesons in the NJL model' | abs_len= 332
+[14:02:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:18] select | verify relaxed 4/10
+[14:02:18] verify | func= Compares | rank= 3 | pid= cond-mat/0102274 | title_snip='Tractable approximations for probabilistic models: The adaptive TAP me…' | abs_len= 530
+[14:02:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:21] select | verify relaxed 5/10
+[14:02:21] verify | func= Compares | rank= 4 | pid= astro-ph/0104420 | title_snip='Interstellar Bubbles in Two Young HII Regions' | abs_len= 1732
+[14:02:24] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= False
+[14:02:24] select | verify relaxed 6/10
+[14:02:24] verify | func= Compares | rank= 5 | pid= astro-ph/0104176 | title_snip='Predicting the Second Caustic Crossing in Binary Microlensing Events' | abs_len= 746
+[14:02:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:27] select | verify relaxed 7/10
+[14:02:27] verify | func= Compares | rank= 6 | pid= hep-ph/0104053 | title_snip='Hard Scattering Based Luminosity Measurement at Hadron Colliders' | abs_len= 627
+[14:02:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:29] select | verify relaxed 8/10
+[14:02:29] verify | func= Compares | rank= 7 | pid= hep-ph/0104066 | title_snip='Absolute determination of D_s branching ratios and f_{D_s} extraction …' | abs_len= 343
+[14:02:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:32] select | verify relaxed 9/10
+[14:02:32] verify | func= Compares | rank= 8 | pid= gr-qc/0102090 | title_snip='A prescription for probabilities in eternal inflation' | abs_len= 1091
+[14:02:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:34] select | verify relaxed 10/10
+[14:02:34] verify | func= Compares | rank= 9 | pid= hep-ph/0102104 | title_snip='Effective action for bubble nucleation rates' | abs_len= 578
+[14:02:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the methods used to detect wind-blown bubbles compare to the expected outcomes based on model predictions?
+- WINNER: astro-ph/0104420 | Interstellar Bubbles in Two Young HII Regions
+- QUOTE : Comparisons between the observed bubble dynamics and model predictions
+- WHY   : sufficient
+[14:02:38] main | running function= Uses
+[14:02:38] select | function= Uses | candidates_in= 20
+[14:02:38] select | core_terms= ['wind-blown bubbles', 'detection methods', 'model predictions', 'wind-blown']
+[14:02:38] select | no cosine prune; kept=20/20
+[14:02:38] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103096', 'hep-ex/0101022', 'hep-ph/0103016', 'cond-mat/0102274', 'astro-ph/0104420', 'astro-ph/0104176', 'hep-ph/0104053', 'hep-ph/0104066', 'gr-qc/0102090', 'hep-ph/0102104']
+[14:02:38] select | verify relaxed 1/10
+[14:02:38] verify | func= Uses | rank= 0 | pid= astro-ph/0103096 | title_snip='Magnetic Collimation in PNe' | abs_len= 922
+[14:02:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:02:41] select | verify relaxed 2/10
+[14:02:41] verify | func= Uses | rank= 1 | pid= hep-ex/0101022 | title_snip='New results on alpha_s and optimized scales' | abs_len= 290
+[14:02:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:44] select | verify relaxed 3/10
+[14:02:44] verify | func= Uses | rank= 2 | pid= hep-ph/0103016 | title_snip='Radiative decays of mesons in the NJL model' | abs_len= 332
+[14:02:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:46] select | verify relaxed 4/10
+[14:02:46] verify | func= Uses | rank= 3 | pid= cond-mat/0102274 | title_snip='Tractable approximations for probabilistic models: The adaptive TAP me…' | abs_len= 530
+[14:02:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:49] select | verify relaxed 5/10
+[14:02:49] verify | func= Uses | rank= 4 | pid= astro-ph/0104420 | title_snip='Interstellar Bubbles in Two Young HII Regions' | abs_len= 1732
+[14:02:52] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:02:52] select | verify relaxed 6/10
+[14:02:52] verify | func= Uses | rank= 5 | pid= astro-ph/0104176 | title_snip='Predicting the Second Caustic Crossing in Binary Microlensing Events' | abs_len= 746
+[14:02:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:55] select | verify relaxed 7/10
+[14:02:55] verify | func= Uses | rank= 6 | pid= hep-ph/0104053 | title_snip='Hard Scattering Based Luminosity Measurement at Hadron Colliders' | abs_len= 627
+[14:02:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:57] select | verify relaxed 8/10
+[14:02:57] verify | func= Uses | rank= 7 | pid= hep-ph/0104066 | title_snip='Absolute determination of D_s branching ratios and f_{D_s} extraction …' | abs_len= 343
+[14:03:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:03:00] select | verify relaxed 9/10
+[14:03:00] verify | func= Uses | rank= 8 | pid= gr-qc/0102090 | title_snip='A prescription for probabilities in eternal inflation' | abs_len= 1091
+[14:03:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:03:03] select | verify relaxed 10/10
+[14:03:03] verify | func= Uses | rank= 9 | pid= hep-ph/0102104 | title_snip='Effective action for bubble nucleation rates' | abs_len= 578
+[14:03:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How do the methods used to detect wind-blown bubbles compare to the expected outcomes based on model predictions?
+- WINNER: astro-ph/0104420 | Interstellar Bubbles in Two Young HII Regions
+- QUOTE : Comparisons between the observed bubble dynamics and model predictions
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The methods used to detect wind-blown bubbles, which involve obtaining high-resolution images and spectra of HII regions [Uses] (astro-ph/0104420), compare to the expected outcomes based on model predictions by showing a large discrepancy between the observed and predicted stellar wind luminosity [Compares] (astro-ph/0104420). This discrepancy suggests that the actual bubble dynamics differ significantly from the theoretical models, highlighting the need for further research to understand the formation and evolution of wind-blown bubbles (astro-ph/0104420).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

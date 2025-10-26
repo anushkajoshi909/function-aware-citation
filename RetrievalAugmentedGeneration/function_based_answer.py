@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-# function_based_final.py — function-aware selection with abstract-only synthesis
+# function_based_answer-2.py — function-aware selection with abstract-only synthesis
 # Outputs:
 #  - outputs/function_selection_results.json
 #  - outputs/function_selection_results.jsonl
-#  - outputs/function_answers.txt   <-- answers-only lines
+#  - outputs/function_answer_unified.txt   <-- unified 1–2 sentence answer covering all functions
 
 import os
 import re
@@ -285,12 +285,69 @@ FUNCTION_INSTRUCTIONS = {
 }
 
 FUNCTION_CUES = {
-    "Background": ["we present","we report","we find","we show","we study","is defined","we analyze","we provide","we identify","is identified"],
-    "Uses": ["we use","we utilize","we apply","using","based on","leverage","adopt","employ"],
-    "Compares": ["compare","compared","comparison","versus","vs.","relative to","contrast","benchmark","compares favorably","favorable comparison","in contrast to","unlike","as compared to","avoid cancellation","avoids cancellation","reduces cancellation","vs","versus"],
-    "Motivation": ["challenge","problem","gap","issue","crisis","tension","discrepanc","conflict","need","motivat"],
-    "Extends": ["extend","extends","extended","generalize","improve","build on","refine","enhance","extends to","generalizes to","allows calculation of","enables calculation of","achieves higher accuracy","permits higher accuracy","broadens","pushes beyond"],
-    "FutureWork": ["future work","we plan","we will","will investigate","left for future","beyond the scope","in the future","further study","remains to","open question","to be addressed"],
+    "Background": [
+        "we present", "we describe", "we report", "we provide",
+        "here we", "this paper presents", "this study presents",
+        "we characterize", "we observe", "we measure",
+        "we review", "overview of", "survey of",
+        "is defined as", "definition of", "background on",
+        "we derive (background",
+    ],
+    "Uses": [
+        "we use", "we utilize", "we apply", "we employ", "we adopt",
+        "we implement", "we exploit", "we make use of",
+        "using the", "based on the", "leverag",
+        "built on", "built upon", "with the aid of",
+        "fine-tun", "calibrat using", "evaluat using", "train(ed) on",
+        "we run on", "we run with", "we process with",
+        "we follow the method of", "following the protocol of",
+    ],
+    "Compares": [
+        "we compare", "compared with", "compared to", "comparison with",
+        "head-to-head", "side-by-side", "versus", "vs.", "vs ",
+        "in contrast to", "relative to", "as compared to",
+        "benchmark against", "benchmarked against",
+        "outperform", "performs better than", "beats",
+        "superior to", "inferior to", "on par with",
+        "statistically significant(ly) better", "non-inferior to",
+        "ablation study", "ablation analyses",
+        "comparison of methods", "comparative analysis",
+    ],
+    "Motivation": [
+        "however,", "nevertheless,", "nonetheless,", "yet,", "but ",
+        "remains unclear", "poorly understood", "little is known",
+        "lack of", "limited understanding", "scarce data",
+        "gap in the literature", "open problem", "open question",
+        "challenge", "bottleneck", "shortcoming", "limitation",
+        "conflict with", "inconsisten", "controvers",
+        "need for", "necessitates", "calls for", "warrants",
+        "motivat", "motivates", "to address this", "to fill this gap",
+        "we aim to", "we seek to", "we intend to",
+    ],
+    "Extends": [
+        "we extend", "extends", "extended", "extension of",
+        "we generalize", "generalizes", "broaden", "wider class of",
+        "we improve", "improves upon", "we refine", "we enhance",
+        "we augment", "we advance", "build on", "build upon",
+        "we introduce a new", "we propose a new", "novel method",
+        "we modify", "we relax the assumption", "we unify",
+        "more general formulation", "more general framework",
+        "enables calculation of", "allows calculation of",
+        "achieves higher accuracy", "achieves better performance",
+        "permits higher accuracy", "reduces complexity",
+        "extends to", "generalizes to", "applicable to broader",
+        "pushes beyond", "state-of-the-art results",
+    ],
+    "FutureWork": [
+        "future work", "in future work", "further work",
+        "we plan to", "we intend to", "we will investigate",
+        "we are exploring", "we will explore",
+        "left for future", "beyond the scope", "outside the scope",
+        "requires further study", "warrants further investigation",
+        "remains to be seen", "remains open", "open avenue",
+        "to be addressed", "to be studied", "to be explored",
+        "we will release", "we will make available",
+    ],
 }
 
 def has_function_cue(text: str, func_norm: str) -> bool:
@@ -366,20 +423,12 @@ def load_topk_jsonl(path: str, debug=False) -> List[Dict[str, Any]]:
             "abs_len=", abs_len)
     return rows
 
-# ========= Scoring helpers (cosine + blended) =========
+# ========= Scoring helpers (kept, but NOT used for ordering top-K) =========
 def cosine_of(c: dict) -> float:
     try:
         return float(c.get("cosine", c.get("score", 0.0)) or 0.0)
     except Exception:
         return 0.0
-
-def dynamic_cosine_cut(cands: List[Dict[str, Any]], keep_frac: float = 0.6, min_floor: float = 0.25) -> float:
-    vals = sorted([cosine_of(c) for c in cands], reverse=True)
-    if not vals:
-        return min_floor
-    k = max(1, int(len(vals)*keep_frac))
-    t = vals[k-1]
-    return max(t, min_floor)
 
 def core_hits_in_text(txt: str, core_terms: List[str]) -> int:
     t = (txt or "").lower()
@@ -387,35 +436,6 @@ def core_hits_in_text(txt: str, core_terms: List[str]) -> int:
 
 def has_func_cue_in_text(txt: str, func: str) -> bool:
     return has_function_cue(txt, normalize_function(func))
-
-def quick_string_bonus(cand: dict, core_terms: List[str]) -> float:
-    bonus = 0.0
-    for fld in ("title_matches", "abs_matches"):
-        s = (cand.get(fld) or "").lower()
-        if any(ct.lower() in s for ct in core_terms or []):
-            bonus += 0.02
-    return min(bonus, 0.04)
-
-def subject_bias(pid: str, core_terms: List[str]) -> float:
-    pid = (pid or "").lower()
-    key = " ".join(core_terms).lower()
-    if any(k in key for k in ["pnc", "s-d", "6s-7s", "cs "]):
-        if pid.startswith("physics/"):
-            return 0.04
-    return 0.0
-
-def blended_relevance(cand: dict, core_terms: List[str], func: str) -> float:
-    cos = cosine_of(cand)
-    txt = f"{cand.get('title','')} {(cand.get('abstract_full') or cand.get('abstract') or '')}"
-    ch = core_hits_in_text(txt, core_terms)
-    cue = 1.0 if has_func_cue_in_text(txt, func) else 0.0
-    w_cos, w_core, w_cue = 0.60, 0.35, 0.05
-    core_bonus = min(ch, 3) / 3.0
-    base = w_cos*cos + w_core*core_bonus + w_cue*cue + quick_string_bonus(cand, core_terms)
-    if ch == 0:
-        base -= 0.10
-    base += subject_bias(cand.get("paper_id",""), core_terms)
-    return base
 
 # ========= Final topicality arbiter =========
 ON_TOPIC_ARBITER_PROMPT_TPL = Template("""Return strict JSON:
@@ -441,32 +461,14 @@ def arbiter_on_topic(query: str, core_terms: List[str], title: str, abstract: st
     return bool(obj.get("on_topic", False))
 
 # ========= Core: verify / extract / synthesize =========
-@dataclass
-class Verdict:
-    supports: bool
-    fit: float
-    topicality: float
-    quote: str
-    why: str
-    paper_id: str
-    id: int
-    title: str
-    abstract: str
-    authors: Any
-    year: str
-    retrieval_score: float = 0.0
-    invalid_reason: str = ""
-    evidence_ok: bool = False
-    on_topic_ok: bool = False
-    cue_hint: bool = False
-
 def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
                                   core_terms: List[str], debug: bool=False, strict: bool=True) -> Verdict:
+    # We will always call this with strict=False from the selector.
     func_norm = normalize_function(func)
     abs_txt = cand.get("abstract_full") or cand.get("abstract") or ""
     pid_cand = cand.get("paper_id") or cand.get("arxiv_id") or cand.get("id") or "unknown"
 
-    # optional soft floor in strict mode (still counts as checked)
+    # optional soft floor in strict mode (kept for completeness; not used when strict=False)
     cos = cosine_of(cand)
     if strict and cos < 0.2:
         return Verdict(False, 0.0, 0.0, "", "cosine_too_low", pid_cand,
@@ -534,40 +536,60 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
         "cue_hint=", v.cue_hint)
     return v
 
-def synthesize_answer(query: str, func: str, title: str, abstract: str,
-                      paper_id: str, suppress_restate: bool=False) -> str:
-    func_norm = normalize_function(func)
-    func_instr = FUNCTION_INSTRUCTIONS.get(func_norm, "")
-    avoid_restate_instr = ""
-    if func_norm == "Motivation" and suppress_restate:
-        avoid_restate_instr = "- Do not restate background measurements; assume Background already provided them."
+# ========= NEW: Unified synthesis across multiple functions =========
+def synthesize_multi_function_answer(query: str,
+                                     func_winners: Dict[str, Dict[str, Any]]) -> str:
+    """
+    Produce a single 1–2 sentence coherent answer that covers ALL functions.
+    Each clause should be tagged with [Function] (e.g., [Extends], [Motivation]).
+    Use only info from the provided TITLE/ABSTRACT snippets (no invention).
+    If multiple papers are involved, cite (paper_id) inline before the period.
+    """
+    packs = []
+    for f, w in func_winners.items():
+        if not w:
+            continue
+        packs.append({
+            "function": f,
+            "paper_id": w.get("paper_id",""),
+            "title": w.get("title",""),
+            "abstract": w.get("abstract","")
+        })
 
-    prompt = ANSWER_TPL.substitute(
-        QUERY=cand_safe(query, 1000),
-        FUNCTION=func_norm,
-        TITLE=cand_safe(title, 600),
-        ABSTRACT=cand_safe(abstract, 8000),
-        FUNC_INSTR=func_instr,
-        AVOID_RESTATE_INSTR=avoid_restate_instr
-    )
+    if not packs:
+        return "No sufficient evidence to answer coherently across the requested functions."
+
+    functions_str = ", ".join([p["function"] for p in packs])
+    evidence_blocks = []
+    for p in packs:
+        evidence_blocks.append(
+            f"[{p['function']}] PAPER {p['paper_id']}\nTITLE: {cand_safe(p['title'], 500)}\nABSTRACT: {cand_safe(p['abstract'], 3000)}"
+        )
+    evidence_text = "\n\n".join(evidence_blocks)
+
+    prompt = f"""Write ONE coherent answer in 1–2 sentences to the QUERY, covering ALL of these functions: {functions_str}.
+Rules:
+- Use ONLY the supplied titles/abstracts (no invented facts).
+- Paraphrase (do not quote verbatim).
+- Tag the clause for each function with [Function] (e.g., ... [Extends]).
+- If a clause is supported by a specific paper, append the paper id in parentheses immediately before the period, e.g., ... (astro-ph/0103184).
+- Stay concise; 1–2 sentences total.
+- No preface, bullets, or extra text.
+
+QUERY: {cand_safe(query, 800)}
+
+EVIDENCE:
+{evidence_text}
+"""
 
     ans = llm_text(prompt, model=DEFAULT_MODEL, temperature=0.15, max_tokens=180).strip()
-
-    if not ans.endswith(f"({paper_id})."):
-        ans = re.sub(r"\s*\([^)]*\)\.?$", "", ans)
-        ans = ans.rstrip(".") + f" ({paper_id})."
-
+    # Enforce max of 2 sentences
     parts = re.split(r"(?<=\.)\s+", ans)
     if len(parts) > 2:
-        ans = " ".join(parts[:2])
-
-    if func_norm == "Background":
-        first = re.split(r"(?<=\.)\s+", ans)[0].rstrip(".")
-        ans = first + f" ({paper_id})."
-
+        ans = " ".join(parts[:2]).strip()
     return ans
 
-# ========= Selection per function =========
+# ========= Selection per function (RELAXED-ONLY + TOP-K BY RANK) =========
 def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[str, Any]],
                                  core_terms: List[str], max_check: int, debug: bool=False,
                                  suppress_restate: bool=False) -> Dict[str, Any]:
@@ -578,51 +600,45 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
     cand_pool0 = candidates[:]  # consider everything we have
     dbg(debug, f"select | no cosine prune; kept={len(cand_pool0)}/{len(candidates)}")
 
-    # Rank all candidates by blended relevance, then take up to max_check
-    ranked = sorted(cand_pool0, key=lambda c: blended_relevance(c, core_terms, func), reverse=True)
-    cand_pool = ranked[:max_check]
+    # Take top-N by original retrieval rank (ascending), preserving retrieval order.
+    def _safe_rank(c):
+        try:
+            return int(c.get("rank", 1_000_000))
+        except Exception:
+            return 1_000_000
+    cand_pool0_sorted = sorted(cand_pool0, key=_safe_rank)
+    cand_pool = cand_pool0_sorted[:max_check]
 
     dbg(debug, "select | pool_size=", len(cand_pool),
         "| ranks=", [c.get("rank") for c in cand_pool],
         "| pids=", [c.get("paper_id") or c.get("arxiv_id") for c in cand_pool])
 
-    # Pass 1: strict
+    # Single pass: relaxed verification only (as requested)
     verdicts: List[Verdict] = []
     for i, c in enumerate(cand_pool, 1):
-        dbg(debug, f"select | verify strict {i}/{len(cand_pool)}")
-        verdicts.append(verify_candidate_for_function(query, func, c, core_terms=core_terms, debug=debug, strict=True))
+        dbg(debug, f"select | verify relaxed {i}/{len(cand_pool)}")
+        verdicts.append(verify_candidate_for_function(
+            query, func, c, core_terms=core_terms, debug=debug, strict=False))
 
     supported = [v for v in verdicts if v.supports and not v.invalid_reason]
-    supported.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0), v.topicality, v.retrieval_score), reverse=True)
+    supported.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0),
+                                  v.topicality, v.retrieval_score),
+                   reverse=True)
     winner = supported[0] if supported else None
 
-    # Pass 2: relaxed if needed — check the full pool
-    if winner is None:
-        dbg(debug, "select | strict pass found 0 winners → trying relaxed")
-        verdicts_relaxed: List[Verdict] = []
-        K = len(cand_pool)
-        for i, c in enumerate(cand_pool[:K], 1):
-            dbg(debug, f"select | verify relaxed {i}/{K}")
-            verdicts_relaxed.append(verify_candidate_for_function(query, func, c, core_terms=core_terms, debug=debug, strict=False))
-        verdicts.extend(verdicts_relaxed)
-        supported2 = [v for v in verdicts_relaxed if v.supports and not v.invalid_reason]
-        supported2.sort(key=lambda v: (v.fit + (0.03 if v.cue_hint else 0.0), v.topicality, v.retrieval_score), reverse=True)
-        winner = supported2[0] if supported2 else None
-
-    # Arbiter
+    # ===== Arbiter with fallback to next supported candidate =====
     if winner:
         if not arbiter_on_topic(query, core_terms, winner.title, winner.abstract):
             dbg(debug, "arbiter | rejected off-topic winner:", winner.paper_id)
             winner = None
-
-    if winner and winner.quote:
-        answer_sentence = synthesize_answer(
-            query, func, winner.title, winner.abstract,
-            paper_id=winner.paper_id,
-            suppress_restate=suppress_restate
-        )
-    else:
-        answer_sentence = f"The abstract does not provide information relevant to {normalize_function(func)}."
+            # Try remaining supported candidates in order
+            for alt in supported[1:]:
+                if arbiter_on_topic(query, core_terms, alt.title, alt.abstract):
+                    dbg(debug, "arbiter | accepted fallback:", alt.paper_id)
+                    winner = alt
+                    break
+                else:
+                    dbg(debug, "arbiter | rejected fallback:", alt.paper_id)
 
     return {
         "function": normalize_function(func),
@@ -638,7 +654,6 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
             "quote": winner.quote,
             "why": winner.why
         } if winner else None),
-        "answer_sentence": answer_sentence,
         "verdicts": [
             {"id": v.id, "paper_id": v.paper_id, "fit": round(v.fit,3),
              "topicality": round(v.topicality,3), "retrieval": round(v.retrieval_score,3),
@@ -651,7 +666,7 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
 # ========= Main =========
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--max-check", type=int, default=200, help="Max candidates to verify per function.")
+    ap.add_argument("--max-check", type=int, default=10, help="Max candidates to verify per function.")
     ap.add_argument("--debug", action="store_true", help="Print debug logs.")
     args = ap.parse_args()
     debug = args.debug
@@ -661,7 +676,7 @@ def main():
     os.makedirs(OUT_DIR, exist_ok=True)
     out_pretty = os.path.join(OUT_DIR, "function_selection_results.json")
     out_jsonl  = os.path.join(OUT_DIR, "function_selection_results.jsonl")
-    out_answers = os.path.join(OUT_DIR, "function_answers.txt")
+    # removed per-function answers file
 
     rec = read_last_jsonl(CLASSIFIED_PATH, debug=debug)
     query = sanitize_query(rec.get("query") or "")
@@ -685,7 +700,6 @@ def main():
         return
 
     bundle = []
-    answer_lines = []
     processed_funcs: Set[str] = set()
 
     for func in funcs:
@@ -707,23 +721,59 @@ def main():
             print(f"- WHY   : {result['winner']['why']}")
         else:
             print("- No supporting candidate with sufficient evidence.")
-        print(f"- ANSWER: {result['answer_sentence'] or '[no answer — insufficient concrete facts]'}")
 
-        answer_lines.append(f"{result['answer_sentence']} [{func}]")
         processed_funcs.add(func)
 
+    # Save originals
     with open(out_pretty, "w", encoding="utf-8") as f:
         json.dump(bundle, f, indent=2, ensure_ascii=False)
     with open(out_jsonl, "w", encoding="utf-8") as f:
         for obj in bundle:
             f.write(json.dumps(obj, ensure_ascii=False) + "\n")
-    with open(out_answers, "w", encoding="utf-8") as f:
-        for line in answer_lines:
-            f.write(line.strip() + "\n")
 
+    # ========= Unified multi-function answer synthesis =========
+    # Build a function -> winner map with title + recovered abstract
+    func_winners: Dict[str, Dict[str, Any]] = {}
+
+    # Index candidates by paper_id and by rank for recovery
+    by_pid = {}
+    for c in cands:
+        pid = c.get("paper_id") or c.get("arxiv_id") or c.get("id")
+        if pid:
+            by_pid[str(pid)] = c
+    by_rank = {str(c.get("rank")): c for c in cands if c.get("rank") is not None}
+
+    for obj in bundle:
+        func = obj["function"]
+        res = obj["result"]
+        w = res.get("winner") if res else None
+        if not w:
+            continue
+        # Recover full abstract from candidate pools
+        abstract_full = ""
+        pid = w.get("paper_id")
+        rank = str(w.get("id"))
+        cand = by_pid.get(str(pid)) or by_rank.get(rank)
+        if cand:
+            abstract_full = cand.get("abstract_full") or cand.get("abstract") or ""
+        func_winners[func] = {
+            "paper_id": w.get("paper_id",""),
+            "title": w.get("title",""),
+            "abstract": abstract_full
+        }
+
+    unified_answer = synthesize_multi_function_answer(query, func_winners)
+
+    out_unified = os.path.join(OUT_DIR, "function_answer_unified.txt")
+    with open(out_unified, "w", encoding="utf-8") as f:
+        f.write(unified_answer.strip() + "\n")
+
+    print("\n" + "="*80)
+    print("UNIFIED ANSWER (1–2 sentences, tagged):")
+    print(unified_answer)
     print(f"\n📄 Saved: {out_pretty}")
     print(f"📄 Saved: {out_jsonl}")
-    print(f"📝 Answers-only: {out_answers}")
+    print(f"📝 Unified answer: {out_unified}")
 
 if __name__ == "__main__":
     main()

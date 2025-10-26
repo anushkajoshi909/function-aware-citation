@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends and uses previous research on magnetospheric accretion to interpret the observed features of RW Aur A, as seen in non-axisymmetric accretion models (astro-ph/0102137).",
+  "predicted_paper_id": "astro-ph/0102137",
+  "explanation": "This paper provides a framework for understanding the observed features of RW Aur A in terms of non-axisymmetric magnetospheric accretion, making it relevant to the current work.",
+  "evidence_quote": "non-axisymmetric magnetospheric accretion",
+  "topk_list": [
+    "astro-ph/0102137",
+    "astro-ph/0102488",
+    "astro-ph/0101203",
+    "astro-ph/0104366",
+    "astro-ph/0102276",
+    "astro-ph/0103286",
+    "hep-ex/0101042",
+    "hep-ph/0102124",
+    "gr-qc/0104064",
+    "astro-ph/0102423"
+  ]
+}

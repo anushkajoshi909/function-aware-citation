@@ -1,2 +1,0 @@
-Future studies can utilize the current analysis by expanding the dataset beyond the 12 high-quality clusters to further investigate the suggested correlation between cluster properties and position on the sky. The methods and datasets from this work, such as the computation of reddening and distance modulus, can be applied to larger datasets to better understand the structure of the Small Magellanic Cloud (astro-ph/0104227). [FutureWork]
-The abstract does not provide information relevant to Uses. [Uses]

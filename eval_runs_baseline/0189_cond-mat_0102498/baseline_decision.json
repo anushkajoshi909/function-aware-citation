@@ -1,0 +1,18 @@
+{
+  "answer": "The current work uses transmission electron microscope to investigate the microstructure of the MgB2 superconductor and aims to solve the problem of understanding its high density and lack of porosity (cond-mat/0102498).",
+  "predicted_paper_id": "cond-mat/0102498",
+  "explanation": "This paper best supports the answer because it directly discusses the microstructure of MgB2 using transmission electron microscope and its high density.",
+  "evidence_quote": "The microstructure of the MgB2 superconductor",
+  "topk_list": [
+    "cond-mat/0102312",
+    "cond-mat/0103390",
+    "cond-mat/0102507",
+    "cond-mat/0103157",
+    "cond-mat/0102498",
+    "cond-mat/0103431",
+    "cond-mat/0103006",
+    "cond-mat/0103154",
+    "cond-mat/0102289",
+    "cond-mat/0102242"
+  ]
+}

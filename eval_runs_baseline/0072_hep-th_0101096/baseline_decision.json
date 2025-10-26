@@ -1,0 +1,18 @@
+{
+  "answer": "The current work uses a method from a previous study to compare the supersymmetry of different deformed D2-brane solutions (hep-th/0101096).",
+  "predicted_paper_id": "hep-th/0101096",
+  "explanation": "This paper provides regular deformed D2-brane solutions with fractional D2-branes and discusses their supersymmetry, making it relevant to the question.",
+  "evidence_quote": "Supersymmetric Non-singular Fractional D2-branes",
+  "topk_list": [
+    "hep-th/0103149",
+    "hep-th/0103233",
+    "hep-th/0104046",
+    "hep-th/0104146",
+    "hep-th/0104230",
+    "hep-th/0104131",
+    "hep-th/0104041",
+    "gr-qc/0102016",
+    "hep-th/0101096",
+    "nucl-th/0101008"
+  ]
+}

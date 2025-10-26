@@ -1,0 +1,18 @@
+{
+  "answer": "The current work's approach to simulating X-ray surface brightness distribution extends existing methods by considering the effects of non-gravitational heating on the intergalactic medium (astro-ph/0101467).",
+  "predicted_paper_id": "astro-ph/0101467",
+  "explanation": "This paper best supports the answer because it discusses the simulation of X-ray surface brightness distribution from diffuse gas and the importance of non-gravitational heating in reconciling the simulated background with observations.",
+  "evidence_quote": "non-gravitational heating",
+  "topk_list": [
+    "astro-ph/0101467",
+    "astro-ph/0101466",
+    "astro-ph/0102297",
+    "astro-ph/0102214",
+    "astro-ph/0101084",
+    "astro-ph/0104366",
+    "astro-ph/0101313",
+    "astro-ph/0102165",
+    "astro-ph/0102206",
+    "astro-ph/0103439"
+  ]
+}

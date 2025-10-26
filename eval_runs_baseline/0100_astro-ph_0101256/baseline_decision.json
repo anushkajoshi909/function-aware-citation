@@ -1,0 +1,18 @@
+{
+  "answer": "The current study extends our understanding of the relationship between mass-loss rates and crystalline silicate features in AGB stars by showing that low mass-loss rate AGB stars might also form crystalline silicates, as suggested by radiative transfer calculations (astro-ph/0101256).",
+  "predicted_paper_id": "astro-ph/0101256",
+  "explanation": "This paper best supports the answer because it presents a study on the relationship between mass-loss rates and crystalline silicate features in AGB stars, and provides an alternative explanation to the lack of crystalline silicate features in low mass-loss rate AGB stars.",
+  "evidence_quote": "crystalline silicate features in their spectra",
+  "topk_list": [
+    "astro-ph/0101256",
+    "astro-ph/0101094",
+    "astro-ph/0101374",
+    "astro-ph/0101054",
+    "astro-ph/0104292",
+    "astro-ph/0102217",
+    "astro-ph/0101260",
+    "astro-ph/0103048",
+    "astro-ph/0102198",
+    "astro-ph/0102430"
+  ]
+}

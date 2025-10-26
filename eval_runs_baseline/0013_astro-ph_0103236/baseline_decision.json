@@ -1,0 +1,18 @@
+{
+  "answer": "The development of the BMW catalogue extends existing work in X-ray source detection by providing a systematic analysis of ROSAT-HRI public data and detecting over 19,000 sources (astro-ph/0103236).",
+  "predicted_paper_id": "astro-ph/0103236",
+  "explanation": "This paper best supports the answer because it describes the development of the BMW catalogue and its application to X-ray source detection, demonstrating how it motivates and extends existing work in the field.",
+  "evidence_quote": "BMW catalogue with more than 19,000 sources detected",
+  "topk_list": [
+    "astro-ph/0103236",
+    "astro-ph/0101437",
+    "astro-ph/0103348",
+    "astro-ph/0102297",
+    "astro-ph/0104077",
+    "astro-ph/0102132",
+    "astro-ph/0102497",
+    "astro-ph/0101093",
+    "astro-ph/0101363",
+    "astro-ph/0101467"
+  ]
+}

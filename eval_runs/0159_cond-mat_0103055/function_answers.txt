@@ -1,2 +1,0 @@
-The current work compares its results to those of bosons on a rigid lattice, utilizing an extension of the Beliaev-Popov formalism to study superfluid properties on a deformable lattice. The comparison is based on the sound velocity, which is found to be practically unaffected by the coupling with phonons, indicating the robustness of the superfluid state (cond-mat/0103055). [Compares]
-The abstract does not provide information relevant to Uses. [Uses]

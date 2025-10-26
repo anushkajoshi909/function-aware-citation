@@ -1,0 +1,18 @@
+{
+  "answer": "Current understanding of ionization properties in Damped Ly alpha systems is limited, motivating further research on ionization corrections (astro-ph/0104298).",
+  "predicted_paper_id": "astro-ph/0104298",
+  "explanation": "This paper analyzes the ionization properties of Damped Ly alpha systems and finds that gas of intermediate ionization state plays an important role, suggesting that abundances are not severely influenced by ionization effects.",
+  "evidence_quote": "gas of intermediate ionization state",
+  "topk_list": [
+    "astro-ph/0104298",
+    "astro-ph/0101029",
+    "astro-ph/0104392",
+    "hep-ph/0103121",
+    "astro-ph/0101335",
+    "hep-ph/0101212",
+    "astro-ph/0102403",
+    "hep-ph/0101106",
+    "hep-ex/0103006",
+    "astro-ph/0104308"
+  ]
+}

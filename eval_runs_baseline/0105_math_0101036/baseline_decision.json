@@ -1,0 +1,18 @@
+{
+  "answer": "Geometrical stability theory provides background for the study of homogeneous models and extends the theory to non-saturated structures by introducing a notion of independence (math/0101036).",
+  "predicted_paper_id": "math/0101036",
+  "explanation": "This paper studies strongly lambda-homogeneous models and introduces a notion of independence that agrees with forking independence when the model is saturated, extending geometrical stability theory to non-saturated structures.",
+  "evidence_quote": "Geometrical stability theory",
+  "topk_list": [
+    "math/0101036",
+    "cond-mat/0103147",
+    "math/0101207",
+    "gr-qc/0104069",
+    "physics/0104066",
+    "cond-mat/0103432",
+    "gr-qc/0101068",
+    "hep-th/0104167",
+    "hep-th/0102183",
+    "hep-th/0101216"
+  ]
+}

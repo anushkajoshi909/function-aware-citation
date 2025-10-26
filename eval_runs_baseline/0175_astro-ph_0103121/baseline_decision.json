@@ -1,0 +1,18 @@
+{
+  "answer": "The detection of upper main sequence stars and red giant branch stars in the halo of an amorphous galaxy relates to previous work on galaxy interactions and distance measurements, as seen in the study of NGC 3077 (astro-ph/0103121).",
+  "predicted_paper_id": "astro-ph/0103121",
+  "explanation": "This paper is relevant because it discusses the detection of upper main sequence stars and red giant branch stars in the halo of an amorphous galaxy, NGC 3077, and its relation to galaxy interactions and distance measurements.",
+  "evidence_quote": "detection of upper main sequence stars and red giant branch stars",
+  "topk_list": [
+    "astro-ph/0103121",
+    "astro-ph/0102397",
+    "astro-ph/0101338",
+    "astro-ph/0103502",
+    "astro-ph/0101271",
+    "astro-ph/0103518",
+    "astro-ph/0101436",
+    "astro-ph/0104037",
+    "astro-ph/0102436",
+    "astro-ph/0101323"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The possibility of a low value of sin2\u03b2 motivates the construction of a reference unitarity triangle, which is constructed using the unitarity of the CKM matrix and the experimental values of the well known CKM elements (hep-ph/0102274).",
+  "predicted_paper_id": "hep-ph/0102274",
+  "explanation": "This paper directly addresses the construction of a reference unitarity triangle motivated by the possibility of a low value of sin2\u03b2, using the CKM matrix and experimental values of its elements.",
+  "evidence_quote": "Motivated by the possibility of the low value of sin2\beta",
+  "topk_list": [
+    "hep-ph/0102274",
+    "hep-ph/0103040",
+    "hep-ph/0102310",
+    "hep-ph/0102295",
+    "hep-ph/0104211",
+    "hep-ph/0104137",
+    "math-ph/0104037",
+    "hep-ph/0102163",
+    "hep-ph/0104009",
+    "hep-ph/0104238"
+  ]
+}

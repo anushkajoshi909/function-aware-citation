@@ -1,0 +1,1 @@
+The extension of the Swendsen-Wang cluster algorithm to include surface fields [Extends] (cond-mat/0101198) allows for a study of the capillary condensation critical point, which compares favorably with the power laws predicted by Fisher and Nakanishi [Compares] (cond-mat/0101198).

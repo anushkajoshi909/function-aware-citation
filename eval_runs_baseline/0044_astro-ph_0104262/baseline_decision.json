@@ -1,0 +1,18 @@
+{
+  "answer": "The effects of irradiation on planetary atmospheres are compared to other models in astro-ph/0104262, which finds that large errors result from models not including impinging radiation in a self-consistent manner (astro-ph/0104262).",
+  "predicted_paper_id": "astro-ph/0104262",
+  "explanation": "This paper directly addresses the effects of irradiation on planetary atmospheres and compares the results to other models, making it the most relevant to the question.",
+  "evidence_quote": "large errors in both the thermal and reflected flux",
+  "topk_list": [
+    "astro-ph/0104262",
+    "astro-ph/0101407",
+    "astro-ph/0104199",
+    "astro-ph/0103383",
+    "astro-ph/0104209",
+    "astro-ph/0104305",
+    "astro-ph/0104413",
+    "astro-ph/0103083",
+    "astro-ph/0101024",
+    "astro-ph/0101375"
+  ]
+}

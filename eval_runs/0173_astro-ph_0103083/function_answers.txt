@@ -1,2 +1,0 @@
-The observed variations in r-process element abundances are influenced by changes in abundance patterns that occur late in the r process, such as the shifting of material into specific peaks (nucl-th/0103049). [Background]
-The observed variations in r-process element abundances have implications for nucleosynthesis and early Galactic chemical evolution, suggesting avenues for future research in these areas. Further study of heavy element abundances in low metallicity stars is needed to fully understand the background astrophysical processes (astro-ph/0101440). [FutureWork]

@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Background. [Background]
-The calculation of Higgs-boson contributions to rare B decays is motivated by the need to improve our understanding of CP violation in the B system. Background information on B physics, particularly B mixing and rare decays, is necessary to understand the significance of this calculation (hep-ex/0101055). [Motivation]

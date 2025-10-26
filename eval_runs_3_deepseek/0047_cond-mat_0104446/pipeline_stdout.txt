@@ -1,0 +1,162 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly identifies limitations (motivation for research) and directly asks about future directions to address implications of specific behaviors."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:51:59] main | args: Namespace(max_check=10, debug=True)
+[12:51:59] read_last_jsonl | path= classified_outputs.jsonl
+[12:51:59] read_last_jsonl | total_lines= 1
+[12:51:59] main | query='What limitations in understanding the magnetic structure of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$ motivate further research into their field-dependent heat capacity, and what future work could explore the implications of their anisotropic spin-density wave and simple antiferromagnetic magnon behaviors?' | funcs=['Motivation', 'FutureWork']
+[12:52:02] main | core_terms= ['CeRhIn$_{5}$', 'Ce$_{2}$RhIn$_{8}$', 'anisotropic spin-density wave', 'antiferromagnetic magnon', 'field-dependent heat capacity', 'field-dependent', 'spin-density']
+[12:52:02] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:52:02] load_topk_jsonl | rows= 20
+[12:52:02] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0104446 title_snip='Field-induced magnetic transitions in the quasi-two-dimensional
+  heav…' abs_len= 1174
+[12:52:02] main | running function= Motivation
+[12:52:02] select | function= Motivation | candidates_in= 20
+[12:52:02] select | core_terms= ['CeRhIn$_{5}$', 'Ce$_{2}$RhIn$_{8}$', 'anisotropic spin-density wave', 'antiferromagnetic magnon', 'field-dependent heat capacity', 'field-dependent', 'spin-density']
+[12:52:02] select | no cosine prune; kept=20/20
+[12:52:02] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0104446', 'cond-mat/0103212', 'cond-mat/0102503', 'cond-mat/0101280', 'cond-mat/0102413', 'cond-mat/0104368', 'cond-mat/0102137', 'cond-mat/0103438', 'cond-mat/0102221', 'cond-mat/0104447']
+[12:52:02] select | verify relaxed 1/10
+[12:52:02] verify | func= Motivation | rank= 0 | pid= cond-mat/0104446 | title_snip='Field-induced magnetic transitions in the quasi-two-dimensional
+  heav…' | abs_len= 1174
+[12:52:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:52:06] select | verify relaxed 2/10
+[12:52:06] verify | func= Motivation | rank= 1 | pid= cond-mat/0103212 | title_snip='Pressure-induced anomalous magnetism and unconventional
+  superconduct…' | abs_len= 971
+[12:52:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:52:09] select | verify relaxed 3/10
+[12:52:09] verify | func= Motivation | rank= 2 | pid= cond-mat/0102503 | title_snip='Anisotropic three-dimentional magnetic fluctuations in heavy fermion
+ …' | abs_len= 561
+[12:52:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:52:12] select | verify relaxed 4/10
+[12:52:12] verify | func= Motivation | rank= 3 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[12:52:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:15] select | verify relaxed 5/10
+[12:52:15] verify | func= Motivation | rank= 4 | pid= cond-mat/0102413 | title_snip='Magnetoresistivity and Complete $H_{c2}(T)$ in $MgB_2$' | abs_len= 925
+[12:52:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:17] select | verify relaxed 6/10
+[12:52:17] verify | func= Motivation | rank= 5 | pid= cond-mat/0104368 | title_snip='Thermoelectric Behaviour Near Magnetic Quantum Critical Point' | abs_len= 1291
+[12:52:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:20] select | verify relaxed 7/10
+[12:52:20] verify | func= Motivation | rank= 6 | pid= cond-mat/0102137 | title_snip='Time-Reversal-Symmetry Violation and Coexistence of Superconducting an…' | abs_len= 616
+[12:52:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:22] select | verify relaxed 8/10
+[12:52:22] verify | func= Motivation | rank= 7 | pid= cond-mat/0103438 | title_snip='Observation of two-magnon bound states in the two-leg ladders of
+  (Ca…' | abs_len= 757
+[12:52:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:25] select | verify relaxed 9/10
+[12:52:25] verify | func= Motivation | rank= 8 | pid= cond-mat/0102221 | title_snip='Magnetic Structure of Heavy Fermion Ce2RhIn8' | abs_len= 105
+[12:52:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:52:28] select | verify relaxed 10/10
+[12:52:28] verify | func= Motivation | rank= 9 | pid= cond-mat/0104447 | title_snip='Magnetothemopower study of quasi two-dimensional organic conductor
+  $…' | abs_len= 879
+[12:52:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in understanding the magnetic structure of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$ motivate further research into their field-dependent heat capacity, and what future work could explore the implications of their anisotropic spin-density wave and simple antiferromagnetic magnon behaviors?
+- WINNER: cond-mat/0104446 | Field-induced magnetic transitions in the quasi-two-dimensional
+  heavy-fermion antiferromagnets Ce_{n}RhIn_{3n+2} (n=1 or 2)
+- QUOTE : We have measured the field-dependent heat capacity
+- WHY   : sufficient
+[12:52:32] main | running function= FutureWork
+[12:52:32] select | function= FutureWork | candidates_in= 20
+[12:52:32] select | core_terms= ['CeRhIn$_{5}$', 'Ce$_{2}$RhIn$_{8}$', 'anisotropic spin-density wave', 'antiferromagnetic magnon', 'field-dependent heat capacity', 'field-dependent', 'spin-density']
+[12:52:32] select | no cosine prune; kept=20/20
+[12:52:32] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0104446', 'cond-mat/0103212', 'cond-mat/0102503', 'cond-mat/0101280', 'cond-mat/0102413', 'cond-mat/0104368', 'cond-mat/0102137', 'cond-mat/0103438', 'cond-mat/0102221', 'cond-mat/0104447']
+[12:52:32] select | verify relaxed 1/10
+[12:52:32] verify | func= FutureWork | rank= 0 | pid= cond-mat/0104446 | title_snip='Field-induced magnetic transitions in the quasi-two-dimensional
+  heav…' | abs_len= 1174
+[12:52:35] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[12:52:35] select | verify relaxed 2/10
+[12:52:35] verify | func= FutureWork | rank= 1 | pid= cond-mat/0103212 | title_snip='Pressure-induced anomalous magnetism and unconventional
+  superconduct…' | abs_len= 971
+[12:52:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:52:38] select | verify relaxed 3/10
+[12:52:38] verify | func= FutureWork | rank= 2 | pid= cond-mat/0102503 | title_snip='Anisotropic three-dimentional magnetic fluctuations in heavy fermion
+ …' | abs_len= 561
+[12:52:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:52:41] select | verify relaxed 4/10
+[12:52:41] verify | func= FutureWork | rank= 3 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[12:52:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:44] select | verify relaxed 5/10
+[12:52:44] verify | func= FutureWork | rank= 4 | pid= cond-mat/0102413 | title_snip='Magnetoresistivity and Complete $H_{c2}(T)$ in $MgB_2$' | abs_len= 925
+[12:52:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:46] select | verify relaxed 6/10
+[12:52:46] verify | func= FutureWork | rank= 5 | pid= cond-mat/0104368 | title_snip='Thermoelectric Behaviour Near Magnetic Quantum Critical Point' | abs_len= 1291
+[12:52:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:49] select | verify relaxed 7/10
+[12:52:49] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102137 | title_snip='Time-Reversal-Symmetry Violation and Coexistence of Superconducting an…' | abs_len= 616
+[12:52:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:51] select | verify relaxed 8/10
+[12:52:51] verify | func= FutureWork | rank= 7 | pid= cond-mat/0103438 | title_snip='Observation of two-magnon bound states in the two-leg ladders of
+  (Ca…' | abs_len= 757
+[12:52:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:52:54] select | verify relaxed 9/10
+[12:52:54] verify | func= FutureWork | rank= 8 | pid= cond-mat/0102221 | title_snip='Magnetic Structure of Heavy Fermion Ce2RhIn8' | abs_len= 105
+[12:52:57] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:52:57] select | verify relaxed 10/10
+[12:52:57] verify | func= FutureWork | rank= 9 | pid= cond-mat/0104447 | title_snip='Magnetothemopower study of quasi two-dimensional organic conductor
+  $…' | abs_len= 879
+[12:53:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What limitations in understanding the magnetic structure of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$ motivate further research into their field-dependent heat capacity, and what future work could explore the implications of their anisotropic spin-density wave and simple antiferromagnetic magnon behaviors?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The limitations in understanding the magnetic structure of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$, including their anisotropic properties and field-induced transitions, motivate further research into their field-dependent heat capacity [Motivation] (cond-mat/0104446). Future work could explore the implications of their distinct spin-density wave and magnon behaviors, particularly in relation to their two-dimensional magnetic structures [Motivation] (cond-mat/0104446).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

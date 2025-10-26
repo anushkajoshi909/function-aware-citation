@@ -1,0 +1,1 @@
+The observed variations in r-process element abundances provide insight into the background astrophysical processes [Background] (astro-ph/0101440), and the significant scatter in r/Fe ratios across stars with similar metallicity motivates further research into the nucleosynthesis events that contribute to a star's composition [Motivation] (astro-ph/0103083).

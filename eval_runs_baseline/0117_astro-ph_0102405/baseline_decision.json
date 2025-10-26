@@ -1,0 +1,18 @@
+{
+  "answer": "The limitation of having only one old orbit solution for UX Ari motivates the current work to improve the orbit and suggest areas for future research (astro-ph/0102405).",
+  "predicted_paper_id": "astro-ph/0102405",
+  "explanation": "This paper directly addresses the issue of having only one old orbit solution for UX Ari and presents an improved orbit solution using new radial velocity measurements.",
+  "evidence_quote": "only one, quite old orbit solution",
+  "topk_list": [
+    "astro-ph/0102405",
+    "gr-qc/0104063",
+    "gr-qc/0104042",
+    "hep-ph/0102096",
+    "hep-ph/0101147",
+    "cond-mat/0103610",
+    "astro-ph/0102126",
+    "hep-ph/0104186",
+    "quant-ph/0104100",
+    "gr-qc/0104029"
+  ]
+}

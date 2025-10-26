@@ -1,2 +1,0 @@
-The physics of gas accretion in young stellar clusters is a dynamic process influenced by the gravitational potential, affecting accretion rates (astro-ph/0102074). [Background]
-The authors use N-body calculations and a stellar velocity distribution function to model the evolution of embedded clusters and compute the fraction of stars that remain bound after gas removal. These methods are applied to study the impact of gas removal on cluster evolution and the conditions required for clusters to survive as bound systems (astro-ph/0102024). [Uses]

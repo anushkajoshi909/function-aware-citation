@@ -1,0 +1,1 @@
+The dimensional crossover in Hubbard ladders is not fully understood, with a lack of knowledge about the transition from 1D to 2D behavior [Background] (cond-mat/0103159), which motivates the current study to investigate this phenomenon, particularly the odd-even effect and the emergence of a 2D-like antiferromagnet or d-wave superconductor [Motivation] (cond-mat/0103159).

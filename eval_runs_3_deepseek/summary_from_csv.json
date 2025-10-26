@@ -1,0 +1,19 @@
+{
+  "metrics": {
+    "n_functions": 400,
+    "support_confusion": {
+      "TP": 246,
+      "FP": 34,
+      "TN": 33,
+      "FN": 87
+    },
+    "support_accuracy": 0.6975,
+    "support_precision": 0.8785714285714286,
+    "support_recall": 0.7387387387387387,
+    "support_f1": 0.8026101141924958,
+    "paper_recall@1": 0.4954954954954955,
+    "retrieval_hit_any": 0.6246246246246246,
+    "function_membership_accuracy": 0.8
+  },
+  "source_csv": "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_3_deepseek/deepseek_final.csv"
+}

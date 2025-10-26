@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query makes a comparative inquiry to previous work and explicitly asks for suggested future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:41:00] main | args: Namespace(max_check=10, debug=True)
+[14:41:00] read_last_jsonl | path= classified_outputs.jsonl
+[14:41:00] read_last_jsonl | total_lines= 1
+[14:41:00] main | query='How do the findings of this study on the coexistence of two scaling regimes in shear dominated flows compare to previous work and what future research directions does it suggest?' | funcs=['Compares', 'FutureWork']
+[14:41:01] main | core_terms= ['shear dominated flows', 'scaling regimes', 'coexistence']
+[14:41:01] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:41:01] load_topk_jsonl | rows= 20
+[14:41:01] load_topk_jsonl | first: rank= 0 paper_id= nlin/0104042 title_snip='Double scaling and intermittency in shear dominated flows' abs_len= 1305
+[14:41:01] main | running function= Compares
+[14:41:01] select | function= Compares | candidates_in= 20
+[14:41:01] select | core_terms= ['shear dominated flows', 'scaling regimes', 'coexistence']
+[14:41:01] select | no cosine prune; kept=20/20
+[14:41:01] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['nlin/0104042', 'nlin/0102015', 'nlin/0101050', 'nlin/0104056', 'astro-ph/0101397', 'physics/0101037', 'nlin/0102023', 'nlin/0103017', 'cond-mat/0101474', 'cond-mat/0102302']
+[14:41:01] select | verify relaxed 1/10
+[14:41:01] verify | func= Compares | rank= 0 | pid= nlin/0104042 | title_snip='Double scaling and intermittency in shear dominated flows' | abs_len= 1305
+[14:41:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:41:04] select | verify relaxed 2/10
+[14:41:04] verify | func= Compares | rank= 1 | pid= nlin/0102015 | title_snip='Experimental assessment of a new form of scaling law for near-wall
+  t…' | abs_len= 1624
+[14:41:08] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:41:08] select | verify relaxed 3/10
+[14:41:08] verify | func= Compares | rank= 2 | pid= nlin/0101050 | title_snip='Stability of scaling regimes in $d\geq 2$ developed turbulence with we…' | abs_len= 787
+[14:41:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:41:11] select | verify relaxed 4/10
+[14:41:11] verify | func= Compares | rank= 3 | pid= nlin/0104056 | title_snip='Weak Wave Turbulence Scaling Theory for Diffusion and Relative Diffusi…' | abs_len= 476
+[14:41:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:13] select | verify relaxed 5/10
+[14:41:13] verify | func= Compares | rank= 4 | pid= astro-ph/0101397 | title_snip='Turbulent dissipation in the ISM: the coexistence of forced and decayi…' | abs_len= 1787
+[14:41:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:41:16] select | verify relaxed 6/10
+[14:41:16] verify | func= Compares | rank= 5 | pid= physics/0101037 | title_snip='Fast Numerical simulations of 2D turbulence using a dynamic model for
+…' | abs_len= 770
+[14:41:20] verify | result supports= False fit= 0.00 top= 0.60 invalid= off_topic_no_core_in_abstract cue_hint= True
+[14:41:20] select | verify relaxed 7/10
+[14:41:20] verify | func= Compares | rank= 6 | pid= nlin/0102023 | title_snip='Pair dispersion in turbulence' | abs_len= 450
+[14:41:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:22] select | verify relaxed 8/10
+[14:41:22] verify | func= Compares | rank= 7 | pid= nlin/0103017 | title_snip='Experimental evidence of chaotic advection in a convective flow' | abs_len= 472
+[14:41:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:25] select | verify relaxed 9/10
+[14:41:25] verify | func= Compares | rank= 8 | pid= cond-mat/0101474 | title_snip='Numerical analysis of the Minimal and Two-Liquid models of the Market
+…' | abs_len= 1428
+[14:41:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:27] select | verify relaxed 10/10
+[14:41:27] verify | func= Compares | rank= 9 | pid= cond-mat/0102302 | title_snip='A new relation between pressure and fractional flow in two-phase flow …' | abs_len= 793
+[14:41:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the findings of this study on the coexistence of two scaling regimes in shear dominated flows compare to previous work and what future research directions does it suggest?
+- WINNER: nlin/0104042 | Double scaling and intermittency in shear dominated flows
+- QUOTE : coexistence of the two regimes
+- WHY   : sufficient
+[14:41:31] main | running function= FutureWork
+[14:41:31] select | function= FutureWork | candidates_in= 20
+[14:41:31] select | core_terms= ['shear dominated flows', 'scaling regimes', 'coexistence']
+[14:41:31] select | no cosine prune; kept=20/20
+[14:41:31] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['nlin/0104042', 'nlin/0102015', 'nlin/0101050', 'nlin/0104056', 'astro-ph/0101397', 'physics/0101037', 'nlin/0102023', 'nlin/0103017', 'cond-mat/0101474', 'cond-mat/0102302']
+[14:41:31] select | verify relaxed 1/10
+[14:41:31] verify | func= FutureWork | rank= 0 | pid= nlin/0104042 | title_snip='Double scaling and intermittency in shear dominated flows' | abs_len= 1305
+[14:41:33] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:41:33] select | verify relaxed 2/10
+[14:41:33] verify | func= FutureWork | rank= 1 | pid= nlin/0102015 | title_snip='Experimental assessment of a new form of scaling law for near-wall
+  t…' | abs_len= 1624
+[14:41:36] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:41:36] select | verify relaxed 3/10
+[14:41:36] verify | func= FutureWork | rank= 2 | pid= nlin/0101050 | title_snip='Stability of scaling regimes in $d\geq 2$ developed turbulence with we…' | abs_len= 787
+[14:41:39] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:41:39] select | verify relaxed 4/10
+[14:41:39] verify | func= FutureWork | rank= 3 | pid= nlin/0104056 | title_snip='Weak Wave Turbulence Scaling Theory for Diffusion and Relative Diffusi…' | abs_len= 476
+[14:41:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:42] select | verify relaxed 5/10
+[14:41:42] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101397 | title_snip='Turbulent dissipation in the ISM: the coexistence of forced and decayi…' | abs_len= 1787
+[14:41:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:41:45] select | verify relaxed 6/10
+[14:41:45] verify | func= FutureWork | rank= 5 | pid= physics/0101037 | title_snip='Fast Numerical simulations of 2D turbulence using a dynamic model for
+…' | abs_len= 770
+[14:41:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:47] select | verify relaxed 7/10
+[14:41:47] verify | func= FutureWork | rank= 6 | pid= nlin/0102023 | title_snip='Pair dispersion in turbulence' | abs_len= 450
+[14:41:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:49] select | verify relaxed 8/10
+[14:41:49] verify | func= FutureWork | rank= 7 | pid= nlin/0103017 | title_snip='Experimental evidence of chaotic advection in a convective flow' | abs_len= 472
+[14:41:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:41:53] select | verify relaxed 9/10
+[14:41:53] verify | func= FutureWork | rank= 8 | pid= cond-mat/0101474 | title_snip='Numerical analysis of the Minimal and Two-Liquid models of the Market
+…' | abs_len= 1428
+[14:41:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:41:55] select | verify relaxed 10/10
+[14:41:55] verify | func= FutureWork | rank= 9 | pid= cond-mat/0102302 | title_snip='A new relation between pressure and fractional flow in two-phase flow …' | abs_len= 793
+[14:41:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the findings of this study on the coexistence of two scaling regimes in shear dominated flows compare to previous work and what future research directions does it suggest?
+- WINNER: astro-ph/0101397 | Turbulent dissipation in the ISM: the coexistence of forced and decaying
+  regimes and implications for galaxy formation and evolution
+- QUOTE : support models of galaxy evolution
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The findings of this study on the coexistence of two scaling regimes in shear dominated flows [Compares] (nlin/0104042) differ from previous work in that they provide evidence of the coexistence of the two regimes, whereas previous data only showed individual regimes. This study suggests future research directions, such as investigating the implications of turbulent dissipation for galaxy formation and evolution [FutureWork] (astro-ph/0101397).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

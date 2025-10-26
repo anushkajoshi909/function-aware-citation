@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the background and motivation behind the use of multi-lens ray-tracing in future research on strong gravitational lensing by multiple objects."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:04:31] main | args: Namespace(max_check=10, debug=True)
+[13:04:31] read_last_jsonl | path= classified_outputs.jsonl
+[13:04:31] read_last_jsonl | total_lines= 1
+[13:04:31] main | query='How will the method of multi-lens ray-tracing be used in future research to improve our understanding of strong gravitational lensing by multiple objects?' | funcs=['Background', 'Motivation']
+[13:04:33] main | core_terms= ['gravitational lensing', 'multi-lens ray-tracing', 'strong lensing', 'multi-lens', 'ray-tracing']
+[13:04:33] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:04:33] load_topk_jsonl | rows= 20
+[13:04:33] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103093 title_snip='Strong gravitational lensing by multiple galaxies' abs_len= 1336
+[13:04:33] main | running function= Background
+[13:04:33] select | function= Background | candidates_in= 20
+[13:04:33] select | core_terms= ['gravitational lensing', 'multi-lens ray-tracing', 'strong lensing', 'multi-lens', 'ray-tracing']
+[13:04:33] select | no cosine prune; kept=20/20
+[13:04:33] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103093', 'astro-ph/0102340', 'astro-ph/0104253', 'astro-ph/0104440', 'astro-ph/0103208', 'physics/0104004', 'gr-qc/0104083', 'astro-ph/0103516', 'astro-ph/0102341', 'astro-ph/0103500']
+[13:04:33] select | verify relaxed 1/10
+[13:04:33] verify | func= Background | rank= 0 | pid= astro-ph/0103093 | title_snip='Strong gravitational lensing by multiple galaxies' | abs_len= 1336
+[13:04:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:04:37] select | verify relaxed 2/10
+[13:04:37] verify | func= Background | rank= 1 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[13:04:40] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:04:40] select | verify relaxed 3/10
+[13:04:40] verify | func= Background | rank= 2 | pid= astro-ph/0104253 | title_snip='Possible Method to Reconstruct the Cosmic Equation of State from Stron…' | abs_len= 596
+[13:04:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:04:43] select | verify relaxed 4/10
+[13:04:43] verify | func= Background | rank= 3 | pid= astro-ph/0104440 | title_snip='Seeing double: strong gravitational lensing of high-redshift supernova…' | abs_len= 1277
+[13:04:46] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[13:04:46] select | verify relaxed 5/10
+[13:04:46] verify | func= Background | rank= 4 | pid= astro-ph/0103208 | title_snip='Gravitational lensing and modified Newtonian dynamics' | abs_len= 1041
+[13:04:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:04:49] select | verify relaxed 6/10
+[13:04:49] verify | func= Background | rank= 5 | pid= physics/0104004 | title_snip='Ray-Tracing studies in a perturbed atmosphere: I- The initial value
+  …' | abs_len= 1220
+[13:04:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:04:52] select | verify relaxed 7/10
+[13:04:52] verify | func= Background | rank= 6 | pid= gr-qc/0104083 | title_snip='Post-Newtonian Expansion of Gravitational Radiation' | abs_len= 1005
+[13:04:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:04:54] select | verify relaxed 8/10
+[13:04:54] verify | func= Background | rank= 7 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[13:04:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:04:57] select | verify relaxed 9/10
+[13:04:57] verify | func= Background | rank= 8 | pid= astro-ph/0102341 | title_snip='A Catalog of Mass Models for Gravitational Lensing' | abs_len= 435
+[13:05:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:05:00] select | verify relaxed 10/10
+[13:05:00] verify | func= Background | rank= 9 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[13:05:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How will the method of multi-lens ray-tracing be used in future research to improve our understanding of strong gravitational lensing by multiple objects?
+- WINNER: astro-ph/0103093 | Strong gravitational lensing by multiple galaxies
+- QUOTE : Using multi-lens ray-tracing, we estimate the likelihood
+- WHY   : sufficient
+[13:05:04] main | running function= Motivation
+[13:05:04] select | function= Motivation | candidates_in= 20
+[13:05:04] select | core_terms= ['gravitational lensing', 'multi-lens ray-tracing', 'strong lensing', 'multi-lens', 'ray-tracing']
+[13:05:04] select | no cosine prune; kept=20/20
+[13:05:04] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103093', 'astro-ph/0102340', 'astro-ph/0104253', 'astro-ph/0104440', 'astro-ph/0103208', 'physics/0104004', 'gr-qc/0104083', 'astro-ph/0103516', 'astro-ph/0102341', 'astro-ph/0103500']
+[13:05:04] select | verify relaxed 1/10
+[13:05:04] verify | func= Motivation | rank= 0 | pid= astro-ph/0103093 | title_snip='Strong gravitational lensing by multiple galaxies' | abs_len= 1336
+[13:05:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:05:08] select | verify relaxed 2/10
+[13:05:08] verify | func= Motivation | rank= 1 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[13:05:11] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:05:11] select | verify relaxed 3/10
+[13:05:11] verify | func= Motivation | rank= 2 | pid= astro-ph/0104253 | title_snip='Possible Method to Reconstruct the Cosmic Equation of State from Stron…' | abs_len= 596
+[13:05:15] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:05:15] select | verify relaxed 4/10
+[13:05:15] verify | func= Motivation | rank= 3 | pid= astro-ph/0104440 | title_snip='Seeing double: strong gravitational lensing of high-redshift supernova…' | abs_len= 1277
+[13:05:18] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[13:05:18] select | verify relaxed 5/10
+[13:05:18] verify | func= Motivation | rank= 4 | pid= astro-ph/0103208 | title_snip='Gravitational lensing and modified Newtonian dynamics' | abs_len= 1041
+[13:05:21] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:05:21] select | verify relaxed 6/10
+[13:05:21] verify | func= Motivation | rank= 5 | pid= physics/0104004 | title_snip='Ray-Tracing studies in a perturbed atmosphere: I- The initial value
+  …' | abs_len= 1220
+[13:05:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:05:24] select | verify relaxed 7/10
+[13:05:24] verify | func= Motivation | rank= 6 | pid= gr-qc/0104083 | title_snip='Post-Newtonian Expansion of Gravitational Radiation' | abs_len= 1005
+[13:05:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:05:26] select | verify relaxed 8/10
+[13:05:26] verify | func= Motivation | rank= 7 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[13:05:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:05:29] select | verify relaxed 9/10
+[13:05:29] verify | func= Motivation | rank= 8 | pid= astro-ph/0102341 | title_snip='A Catalog of Mass Models for Gravitational Lensing' | abs_len= 435
+[13:05:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:05:32] select | verify relaxed 10/10
+[13:05:32] verify | func= Motivation | rank= 9 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[13:05:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How will the method of multi-lens ray-tracing be used in future research to improve our understanding of strong gravitational lensing by multiple objects?
+- WINNER: astro-ph/0103093 | Strong gravitational lensing by multiple galaxies
+- QUOTE : Multiple lens systems will be important in future
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The method of multi-lens ray-tracing provides a foundation for understanding strong gravitational lensing by multiple objects [Background] (astro-ph/0103093). This method will be used in future research to improve our understanding of such phenomena, driven by the need to account for effects like external shear and aligned discs in lensing galaxies, which will be crucial for constraining lens models and statistical lensing [Motivation] (astro-ph/0103093).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

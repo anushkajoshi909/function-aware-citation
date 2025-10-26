@@ -1,0 +1,18 @@
+{
+  "answer": "The discovery of a subparsec-scale dense plasma torus around an active galactic nucleus informs our understanding of the accretion process and suggests potential areas for future research, such as the transition from radial accretion to rotational accretion around the nucleus (astro-ph/0104039).",
+  "predicted_paper_id": "astro-ph/0104039",
+  "explanation": "This paper directly discusses the discovery of a subparsec-scale dense plasma torus around an active galactic nucleus and its implications for the accretion process.",
+  "evidence_quote": "A subparsec-scale dense plasma torus around an active galactic nucleus",
+  "topk_list": [
+    "astro-ph/0104039",
+    "astro-ph/0101330",
+    "astro-ph/0103048",
+    "astro-ph/0103230",
+    "astro-ph/0104480",
+    "physics/0102001",
+    "astro-ph/0103439",
+    "astro-ph/0102146",
+    "hep-ph/0104234",
+    "astro-ph/0104074"
+  ]
+}

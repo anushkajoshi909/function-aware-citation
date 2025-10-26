@@ -1,2 +1,0 @@
-The geometric approach using Clifford algebra Cl_7 provides a foundation for understanding the symmetries and structures of particle physics by describing spinor transformations and rotations that conserve spacetime components (hep-th/0103137). [Background]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

@@ -1,0 +1,18 @@
+{
+  "answer": "The late-time behavior of a dynamically perturbed rapidly rotating black hole provides background for understanding its implications and suggests areas for future research on gravitational-wave signals (gr-qc/0103054).",
+  "predicted_paper_id": "gr-qc/0103054",
+  "explanation": "This paper studies the late-time behavior of a dynamically perturbed rapidly rotating black hole and its implications for gravitational-wave signals, making it the most relevant to the question.",
+  "evidence_quote": "late-time behaviour of a dynamically perturbed rapidly rotating black hole",
+  "topk_list": [
+    "gr-qc/0103054",
+    "hep-th/0102051",
+    "gr-qc/0101071",
+    "gr-qc/0104020",
+    "gr-qc/0101023",
+    "gr-qc/0102037",
+    "astro-ph/0102460",
+    "hep-ph/0101210",
+    "astro-ph/0104435",
+    "hep-th/0103133"
+  ]
+}

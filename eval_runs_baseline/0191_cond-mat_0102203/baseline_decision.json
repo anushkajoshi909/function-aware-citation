@@ -1,0 +1,18 @@
+{
+  "answer": "Experimental studies of discrete breathers in superconducting arrays provide a foundation for potential future research in this area by exploring nonlinear localized excitations (cond-mat/0102203).",
+  "predicted_paper_id": "cond-mat/0102203",
+  "explanation": "This paper presents a study of discrete breathers in a superconducting array, reviewing experiments and proposing a simple DC circuit model to understand the detected states.",
+  "evidence_quote": "discrete breathers in a superconducting array",
+  "topk_list": [
+    "cond-mat/0102203",
+    "nlin/0103013",
+    "cond-mat/0102162",
+    "cond-mat/0103280",
+    "cond-mat/0103368",
+    "hep-ph/0103121",
+    "cond-mat/0103582",
+    "cond-mat/0102048",
+    "cond-mat/0103610",
+    "cond-mat/0101415"
+  ]
+}

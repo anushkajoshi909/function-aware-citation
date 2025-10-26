@@ -1,0 +1,1 @@
+The current code's approach to solving the transfer of continuum and lines can be compared to previous work, such as the Accelerated Lambda Iteration method and two stream Eddington approximation used in astro-ph/0103317, which provides a background [Background] (astro-ph/0103317) for understanding the comparison [Compares] (astro-ph/0102269).

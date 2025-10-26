@@ -1,1 +1,0 @@
-The general two-dimensional gravity model provides background information by elucidating its canonical form and solution in the massless case, which helps in understanding the derivation of the effective action (gr-qc/0101033). [Background]

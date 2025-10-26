@@ -1,2 +1,0 @@
-The axino's mass, which can be much smaller than the supersymmetry breaking scale, and its potential stability make it a candidate for cold dark matter (hep-ph/0102325). [Background]
-The axino's potentially small mass, which can be much smaller than the supersymmetry breaking scale, motivates its consideration as a candidate for cold dark matter. This is because such a mass range allows axinos to be generated non-thermally and constitute cold dark matter relics under certain conditions (hep-ph/0102325). [Motivation]

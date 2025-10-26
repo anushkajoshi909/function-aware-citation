@@ -1,0 +1,18 @@
+{
+  "answer": "The new calculation of photoionization of interstellar matter builds upon existing knowledge of the Complex of Local Interstellar Clouds by considering the ionization and heating of the cloud required to match various observations (astro-ph/0104234).",
+  "predicted_paper_id": "astro-ph/0104234",
+  "explanation": "This paper presents new calculations of the photoionization of interstellar matter within the Complex of Local Interstellar Clouds, taking into account directly observed radiation sources and unobserved EUV emission.",
+  "evidence_quote": "photoionization of interstellar matter",
+  "topk_list": [
+    "astro-ph/0104234",
+    "astro-ph/0103246",
+    "astro-ph/0102392",
+    "astro-ph/0102477",
+    "astro-ph/0102010",
+    "astro-ph/0102401",
+    "hep-ph/0102108",
+    "astro-ph/0101330",
+    "astro-ph/0101466",
+    "astro-ph/0101467"
+  ]
+}

@@ -1,0 +1,112 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "The query seeks background information to inform future work on the topic of heating of X-Ray hot gas in galaxy groups."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:57:25] main | args: Namespace(max_check=10, debug=True)
+[11:57:25] read_last_jsonl | path= classified_outputs.jsonl
+[11:57:25] read_last_jsonl | total_lines= 1
+[11:57:25] main | query='What background information about the heating of X-Ray hot gas in galaxy groups can be used to inform future work on this topic?' | funcs=['Background']
+[11:57:27] main | core_terms= ['X-Ray hot gas', 'galaxy groups', 'heating', 'X-Ray']
+[11:57:27] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:57:27] load_topk_jsonl | rows= 20
+[11:57:27] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101517 title_snip='Entropy Evolution in Galaxy Groups and Clusters; A Comparison of
+  Ext…' abs_len= 1348
+[11:57:27] main | running function= Background
+[11:57:27] select | function= Background | candidates_in= 20
+[11:57:27] select | core_terms= ['X-Ray hot gas', 'galaxy groups', 'heating', 'X-Ray']
+[11:57:27] select | no cosine prune; kept=20/20
+[11:57:27] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101517', 'astro-ph/0101466', 'astro-ph/0102221', 'astro-ph/0101467', 'astro-ph/0103392', 'astro-ph/0104387', 'astro-ph/0101363', 'astro-ph/0103293', 'astro-ph/0102227', 'astro-ph/0101302']
+[11:57:27] select | verify relaxed 1/10
+[11:57:27] verify | func= Background | rank= 0 | pid= astro-ph/0101517 | title_snip='Entropy Evolution in Galaxy Groups and Clusters; A Comparison of
+  Ext…' | abs_len= 1348
+[11:57:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:57:31] select | verify relaxed 2/10
+[11:57:31] verify | func= Background | rank= 1 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[11:57:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:57:34] select | verify relaxed 3/10
+[11:57:34] verify | func= Background | rank= 2 | pid= astro-ph/0102221 | title_snip='Heating of X-Ray Hot Gas in Groups by Blast Waves' | abs_len= 897
+[11:57:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:57:38] select | verify relaxed 4/10
+[11:57:38] verify | func= Background | rank= 3 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[11:57:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:57:41] select | verify relaxed 5/10
+[11:57:41] verify | func= Background | rank= 4 | pid= astro-ph/0103392 | title_snip='The interaction of radio sources and cooling flows' | abs_len= 606
+[11:57:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:57:44] select | verify relaxed 6/10
+[11:57:44] verify | func= Background | rank= 5 | pid= astro-ph/0104387 | title_snip='Warm and Hot Diffuse Gas in Dwarf Galaxies' | abs_len= 1213
+[11:57:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:57:47] select | verify relaxed 7/10
+[11:57:47] verify | func= Background | rank= 6 | pid= astro-ph/0101363 | title_snip='High Energy X-Ray Emission in Clusters of Galaxies' | abs_len= 983
+[11:57:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:57:50] select | verify relaxed 8/10
+[11:57:50] verify | func= Background | rank= 7 | pid= astro-ph/0103293 | title_snip='X-ray luminosities of galaxies in groups' | abs_len= 1534
+[11:57:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:57:54] select | verify relaxed 9/10
+[11:57:54] verify | func= Background | rank= 8 | pid= astro-ph/0102227 | title_snip='Testing a model of variability of X-ray reprocessing features in Activ…' | abs_len= 1157
+[11:57:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:57:56] select | verify relaxed 10/10
+[11:57:56] verify | func= Background | rank= 9 | pid= astro-ph/0101302 | title_snip='The temperature-mass relation in magnetized galaxy clusters' | abs_len= 722
+[11:57:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What background information about the heating of X-Ray hot gas in galaxy groups can be used to inform future work on this topic?
+- WINNER: astro-ph/0101517 | Entropy Evolution in Galaxy Groups and Clusters; A Comparison of
+  External and Internal Heating
+- QUOTE : X-ray observations of hot gas in galaxy groups
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The heating of X-Ray hot gas in galaxy groups is influenced by external and internal heating processes, with internal heating by Type II supernovae being preferred over external heating [Background] (astro-ph/0101517). This background information can inform future work by considering the effects of internal heating mechanisms on the entropy and X-ray luminosity of galaxy groups [Background] (astro-ph/0101517).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

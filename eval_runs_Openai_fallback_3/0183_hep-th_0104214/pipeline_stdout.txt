@@ -1,0 +1,157 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query asks which future research directions are driven by the shortcomings of existing methods, highlighting both the motivating challenges and the prospective work."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:03:07] main | args: Namespace(max_check=10, debug=True)
+[01:03:07] read_last_jsonl | path= classified_outputs.jsonl
+[01:03:07] read_last_jsonl | total_lines= 1
+[01:03:07] main | query='What potential areas of future research are motivated by the limitations of current methods for solving high-dimensional Ising models?' | funcs=['Motivation', 'FutureWork']
+[01:03:08] main | core_terms= ['Ising models', 'high-dimensional systems', 'high-dimensional']
+[01:03:08] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:03:08] load_topk_jsonl | rows= 20
+[01:03:08] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0104214 title_snip='An Exact Solution to a Three Dimensional Ising Model and Dimensional
+ …' abs_len= 1021
+[01:03:08] main | running function= Motivation
+[01:03:08] select | function= Motivation | candidates_in= 20
+[01:03:08] select | core_terms= ['Ising models', 'high-dimensional systems', 'high-dimensional']
+[01:03:08] select | no cosine prune; kept=20/20
+[01:03:08] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0104214', 'cond-mat/0103188', 'cond-mat/0103074', 'cond-mat/0103396', 'cond-mat/0101412', 'cond-mat/0104185', 'cond-mat/0104398', 'nucl-th/0103030', 'astro-ph/0102392', 'cond-mat/0104183']
+[01:03:08] select | verify relaxed 1/10
+[01:03:08] verify | func= Motivation | rank= 0 | pid= hep-th/0104214 | title_snip='An Exact Solution to a Three Dimensional Ising Model and Dimensional
+ …' | abs_len= 1021
+[01:03:11] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:03:11] select | verify relaxed 2/10
+[01:03:11] verify | func= Motivation | rank= 1 | pid= cond-mat/0103188 | title_snip='Exact Solutions to Special High Dimensional O(n) Models, Dimensional
+ …' | abs_len= 1226
+[01:03:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:03:14] select | verify relaxed 3/10
+[01:03:14] verify | func= Motivation | rank= 2 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[01:03:17] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[01:03:17] select | verify relaxed 4/10
+[01:03:17] verify | func= Motivation | rank= 3 | pid= cond-mat/0103396 | title_snip='Short-ranged RVB physics, quantum dimer models and Ising gauge theorie…' | abs_len= 1200
+[01:03:20] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[01:03:20] select | verify relaxed 5/10
+[01:03:20] verify | func= Motivation | rank= 4 | pid= cond-mat/0101412 | title_snip='Ising Dipoles on the Triangular Lattice' | abs_len= 700
+[01:03:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[01:03:23] select | verify relaxed 6/10
+[01:03:23] verify | func= Motivation | rank= 5 | pid= cond-mat/0104185 | title_snip='Critical slowing down in polynomial time algorithms' | abs_len= 548
+[01:03:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:03:26] select | verify relaxed 7/10
+[01:03:26] verify | func= Motivation | rank= 6 | pid= cond-mat/0104398 | title_snip='Pedestrian Solution of the Two-Dimensional Ising Model' | abs_len= 507
+[01:03:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:03:29] select | verify relaxed 8/10
+[01:03:29] verify | func= Motivation | rank= 7 | pid= nucl-th/0103030 | title_snip='The three-dimensional Ising model: A paradigm of liquid-vapor
+  coexis…' | abs_len= 587
+[01:03:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[01:03:32] select | verify relaxed 9/10
+[01:03:32] verify | func= Motivation | rank= 8 | pid= astro-ph/0102392 | title_snip='When Photoionization Is Not Enough' | abs_len= 647
+[01:03:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:35] select | verify relaxed 10/10
+[01:03:35] verify | func= Motivation | rank= 9 | pid= cond-mat/0104183 | title_snip='Critical exponents predicted by grouping of Feynman diagrams in phi^4
+…' | abs_len= 833
+[01:03:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research are motivated by the limitations of current methods for solving high-dimensional Ising models?
+- No supporting candidate with sufficient evidence.
+[01:03:37] main | running function= FutureWork
+[01:03:37] select | function= FutureWork | candidates_in= 20
+[01:03:37] select | core_terms= ['Ising models', 'high-dimensional systems', 'high-dimensional']
+[01:03:37] select | no cosine prune; kept=20/20
+[01:03:37] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0104214', 'cond-mat/0103188', 'cond-mat/0103074', 'cond-mat/0103396', 'cond-mat/0101412', 'cond-mat/0104185', 'cond-mat/0104398', 'nucl-th/0103030', 'astro-ph/0102392', 'cond-mat/0104183']
+[01:03:37] select | verify relaxed 1/10
+[01:03:37] verify | func= FutureWork | rank= 0 | pid= hep-th/0104214 | title_snip='An Exact Solution to a Three Dimensional Ising Model and Dimensional
+ …' | abs_len= 1021
+[01:03:40] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[01:03:40] select | verify relaxed 2/10
+[01:03:40] verify | func= FutureWork | rank= 1 | pid= cond-mat/0103188 | title_snip='Exact Solutions to Special High Dimensional O(n) Models, Dimensional
+ …' | abs_len= 1226
+[01:03:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[01:03:43] select | verify relaxed 3/10
+[01:03:43] verify | func= FutureWork | rank= 2 | pid= cond-mat/0103074 | title_snip='The susceptibility of the square lattice Ising model: New developments' | abs_len= 1052
+[01:03:46] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:03:46] select | verify relaxed 4/10
+[01:03:46] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103396 | title_snip='Short-ranged RVB physics, quantum dimer models and Ising gauge theorie…' | abs_len= 1200
+[01:03:48] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[01:03:48] select | verify relaxed 5/10
+[01:03:48] verify | func= FutureWork | rank= 4 | pid= cond-mat/0101412 | title_snip='Ising Dipoles on the Triangular Lattice' | abs_len= 700
+[01:03:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[01:03:51] select | verify relaxed 6/10
+[01:03:51] verify | func= FutureWork | rank= 5 | pid= cond-mat/0104185 | title_snip='Critical slowing down in polynomial time algorithms' | abs_len= 548
+[01:03:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[01:03:54] select | verify relaxed 7/10
+[01:03:54] verify | func= FutureWork | rank= 6 | pid= cond-mat/0104398 | title_snip='Pedestrian Solution of the Two-Dimensional Ising Model' | abs_len= 507
+[01:03:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:03:57] select | verify relaxed 8/10
+[01:03:57] verify | func= FutureWork | rank= 7 | pid= nucl-th/0103030 | title_snip='The three-dimensional Ising model: A paradigm of liquid-vapor
+  coexis…' | abs_len= 587
+[01:04:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[01:04:00] select | verify relaxed 9/10
+[01:04:00] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102392 | title_snip='When Photoionization Is Not Enough' | abs_len= 647
+[01:04:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:03] select | verify relaxed 10/10
+[01:04:03] verify | func= FutureWork | rank= 9 | pid= cond-mat/0104183 | title_snip='Critical exponents predicted by grouping of Feynman diagrams in phi^4
+…' | abs_len= 833
+[01:04:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research are motivated by the limitations of current methods for solving high-dimensional Ising models?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

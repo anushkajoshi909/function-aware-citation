@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the background and motivation behind the analysis of the X-ray source and the methods used to understand its properties."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:24:03] main | args: Namespace(max_check=10, debug=True)
+[14:24:03] read_last_jsonl | path= classified_outputs.jsonl
+[14:24:03] read_last_jsonl | total_lines= 1
+[14:24:03] main | query='What motivates the analysis of the X-ray source and what methods are used to understand its properties?' | funcs=['Background', 'Motivation']
+[14:24:04] main | core_terms= ['X-ray source', 'spectroscopy', 'emission spectrum', 'X-ray']
+[14:24:04] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:24:04] load_topk_jsonl | rows= 20
+[14:24:04] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103431 title_snip='Properties of Black Holes in Stellar Binary Systems' abs_len= 880
+[14:24:04] main | running function= Background
+[14:24:04] select | function= Background | candidates_in= 20
+[14:24:04] select | core_terms= ['X-ray source', 'spectroscopy', 'emission spectrum', 'X-ray']
+[14:24:04] select | no cosine prune; kept=20/20
+[14:24:04] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103431', 'astro-ph/0102297', 'astro-ph/0102428', 'astro-ph/0102111', 'astro-ph/0102088', 'astro-ph/0104270', 'astro-ph/0104348', 'astro-ph/0102495', 'astro-ph/0101084', 'astro-ph/0101396']
+[14:24:04] select | verify relaxed 1/10
+[14:24:04] verify | func= Background | rank= 0 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[14:24:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:07] select | verify relaxed 2/10
+[14:24:07] verify | func= Background | rank= 1 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[14:24:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:11] select | verify relaxed 3/10
+[14:24:11] verify | func= Background | rank= 2 | pid= astro-ph/0102428 | title_snip='The BeppoSAX High Energy Large Area Survey. IV. On the soft X-ray
+  pr…' | abs_len= 753
+[14:24:14] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:14] select | verify relaxed 4/10
+[14:24:14] verify | func= Background | rank= 3 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[14:24:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:17] select | verify relaxed 5/10
+[14:24:17] verify | func= Background | rank= 4 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[14:24:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:20] select | verify relaxed 6/10
+[14:24:20] verify | func= Background | rank= 5 | pid= astro-ph/0104270 | title_snip='The Enigmatic X-ray Point Sources at the Central Stars of NGC 6543 and…' | abs_len= 850
+[14:24:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:23] select | verify relaxed 7/10
+[14:24:23] verify | func= Background | rank= 6 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[14:24:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:26] select | verify relaxed 8/10
+[14:24:26] verify | func= Background | rank= 7 | pid= astro-ph/0102495 | title_snip='The Gamma-Ray Properties of Unidentified EGRET Sources' | abs_len= 894
+[14:24:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:24:29] select | verify relaxed 9/10
+[14:24:29] verify | func= Background | rank= 8 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[14:24:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:24:31] select | verify relaxed 10/10
+[14:24:31] verify | func= Background | rank= 9 | pid= astro-ph/0101396 | title_snip='HEXTE Studies of Sco X-1 Spectra: Detections of Hard X-Ray Tails Beyon…' | abs_len= 944
+[14:24:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What motivates the analysis of the X-ray source and what methods are used to understand its properties?
+- WINNER: astro-ph/0103431 | Properties of Black Holes in Stellar Binary Systems
+- QUOTE : Recent X-ray timing and spectral observations
+- WHY   : sufficient
+[14:24:36] main | running function= Motivation
+[14:24:36] select | function= Motivation | candidates_in= 20
+[14:24:36] select | core_terms= ['X-ray source', 'spectroscopy', 'emission spectrum', 'X-ray']
+[14:24:36] select | no cosine prune; kept=20/20
+[14:24:36] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103431', 'astro-ph/0102297', 'astro-ph/0102428', 'astro-ph/0102111', 'astro-ph/0102088', 'astro-ph/0104270', 'astro-ph/0104348', 'astro-ph/0102495', 'astro-ph/0101084', 'astro-ph/0101396']
+[14:24:36] select | verify relaxed 1/10
+[14:24:36] verify | func= Motivation | rank= 0 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[14:24:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:39] select | verify relaxed 2/10
+[14:24:39] verify | func= Motivation | rank= 1 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[14:24:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:42] select | verify relaxed 3/10
+[14:24:42] verify | func= Motivation | rank= 2 | pid= astro-ph/0102428 | title_snip='The BeppoSAX High Energy Large Area Survey. IV. On the soft X-ray
+  pr…' | abs_len= 753
+[14:24:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:45] select | verify relaxed 4/10
+[14:24:45] verify | func= Motivation | rank= 3 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[14:24:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:48] select | verify relaxed 5/10
+[14:24:48] verify | func= Motivation | rank= 4 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[14:24:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:51] select | verify relaxed 6/10
+[14:24:51] verify | func= Motivation | rank= 5 | pid= astro-ph/0104270 | title_snip='The Enigmatic X-ray Point Sources at the Central Stars of NGC 6543 and…' | abs_len= 850
+[14:24:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:54] select | verify relaxed 7/10
+[14:24:54] verify | func= Motivation | rank= 6 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[14:24:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:24:58] select | verify relaxed 8/10
+[14:24:58] verify | func= Motivation | rank= 7 | pid= astro-ph/0102495 | title_snip='The Gamma-Ray Properties of Unidentified EGRET Sources' | abs_len= 894
+[14:25:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:25:00] select | verify relaxed 9/10
+[14:25:00] verify | func= Motivation | rank= 8 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[14:25:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:25:02] select | verify relaxed 10/10
+[14:25:02] verify | func= Motivation | rank= 9 | pid= astro-ph/0101396 | title_snip='HEXTE Studies of Sco X-1 Spectra: Detections of Hard X-Ray Tails Beyon…' | abs_len= 944
+[14:25:05] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the analysis of the X-ray source and what methods are used to understand its properties?
+- WINNER: astro-ph/0103431 | Properties of Black Holes in Stellar Binary Systems
+- QUOTE : Recent X-ray timing and spectral observations
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The analysis of the X-ray source is motivated by the desire to understand the properties of Galactic black holes and the physics of accretion flows [Motivation] (astro-ph/0103431). The background for this analysis is provided by recent X-ray timing and spectral observations of black hole binaries, which have redefined methods for investigating these properties [Background] (astro-ph/0103431).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

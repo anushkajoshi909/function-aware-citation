@@ -1,0 +1,1 @@
+The discovery of high redshift Lyman-$\alpha$ sources motivates our understanding of chemically primitive galaxies in the early universe [Background] (astro-ph/0104308). It extends our knowledge by suggesting that these galaxies, such as damped Lyman-$\alpha$ systems, are the building blocks that merged to form normal galaxies today [Extends] (astro-ph/0104308).

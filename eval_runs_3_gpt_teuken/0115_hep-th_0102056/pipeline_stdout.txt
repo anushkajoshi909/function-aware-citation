@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand how the current work compares to and utilizes existing theories, which are foundational in nature and relate to motivation."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:39:46] main | args: Namespace(max_check=10, debug=True)
+[13:39:46] read_last_jsonl | path= classified_outputs.jsonl
+[13:39:46] read_last_jsonl | total_lines= 1
+[13:39:46] main | query='How does the current work compare to and utilize existing theories such as noncommutative Yang-Mills and noncommutative open string theories?' | funcs=['Background', 'Motivation']
+[13:39:48] main | core_terms= ['Yang-Mills', 'open string', 'noncommutative geometry', 'noncommutative field theory']
+[13:39:48] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:39:48] load_topk_jsonl | rows= 20
+[13:39:48] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0101045 title_snip='Noncommutative Open String Theories and Their Dualities' abs_len= 471
+[13:39:48] main | running function= Background
+[13:39:48] select | function= Background | candidates_in= 20
+[13:39:48] select | core_terms= ['Yang-Mills', 'open string', 'noncommutative geometry', 'noncommutative field theory']
+[13:39:48] select | no cosine prune; kept=20/20
+[13:39:48] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0101045', 'hep-th/0104168', 'hep-th/0101039', 'hep-th/0103188', 'hep-th/0103209', 'physics/0102078', 'hep-th/0101216', 'hep-th/0103168', 'hep-th/0104032', 'hep-th/0102056']
+[13:39:48] select | verify relaxed 1/10
+[13:39:48] verify | func= Background | rank= 0 | pid= hep-th/0101045 | title_snip='Noncommutative Open String Theories and Their Dualities' | abs_len= 471
+[13:39:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:51] select | verify relaxed 2/10
+[13:39:51] verify | func= Background | rank= 1 | pid= hep-th/0104168 | title_snip='Non-Commutative Open (p,q)-String Theories' | abs_len= 1031
+[13:39:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:54] select | verify relaxed 3/10
+[13:39:54] verify | func= Background | rank= 2 | pid= hep-th/0101039 | title_snip='From noncommutative string/membrane to ordinary ones' | abs_len= 749
+[13:39:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:58] select | verify relaxed 4/10
+[13:39:58] verify | func= Background | rank= 3 | pid= hep-th/0103188 | title_snip='Open String/Open D-Brane Dualities: Old and New' | abs_len= 677
+[13:40:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:40:01] select | verify relaxed 5/10
+[13:40:01] verify | func= Background | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[13:40:04] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:40:04] select | verify relaxed 6/10
+[13:40:04] verify | func= Background | rank= 5 | pid= physics/0102078 | title_snip='Fuzzy, Non Commutative SpaceTime: A New Paradigm for a New Century' | abs_len= 764
+[13:40:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:40:07] select | verify relaxed 7/10
+[13:40:07] verify | func= Background | rank= 6 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[13:40:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:10] select | verify relaxed 8/10
+[13:40:10] verify | func= Background | rank= 7 | pid= hep-th/0103168 | title_snip='Aspects of Gauge Theory on Commutative and Noncommutative Tori' | abs_len= 812
+[13:40:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:13] select | verify relaxed 9/10
+[13:40:13] verify | func= Background | rank= 8 | pid= hep-th/0104032 | title_snip='On Methods for Extracting Exact Non-perturbative Results in
+  Non-supe…' | abs_len= 880
+[13:40:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:16] select | verify relaxed 10/10
+[13:40:16] verify | func= Background | rank= 9 | pid= hep-th/0102056 | title_snip='(1 + p)-Dimensional Open D(p - 2) Brane Theories' | abs_len= 1307
+[13:40:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current work compare to and utilize existing theories such as noncommutative Yang-Mills and noncommutative open string theories?
+- WINNER: hep-th/0101045 | Noncommutative Open String Theories and Their Dualities
+- QUOTE : noncommutative open string theories
+- WHY   : sufficient
+[13:40:21] main | running function= Motivation
+[13:40:21] select | function= Motivation | candidates_in= 20
+[13:40:21] select | core_terms= ['Yang-Mills', 'open string', 'noncommutative geometry', 'noncommutative field theory']
+[13:40:21] select | no cosine prune; kept=20/20
+[13:40:21] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0101045', 'hep-th/0104168', 'hep-th/0101039', 'hep-th/0103188', 'hep-th/0103209', 'physics/0102078', 'hep-th/0101216', 'hep-th/0103168', 'hep-th/0104032', 'hep-th/0102056']
+[13:40:21] select | verify relaxed 1/10
+[13:40:21] verify | func= Motivation | rank= 0 | pid= hep-th/0101045 | title_snip='Noncommutative Open String Theories and Their Dualities' | abs_len= 471
+[13:40:24] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:40:24] select | verify relaxed 2/10
+[13:40:24] verify | func= Motivation | rank= 1 | pid= hep-th/0104168 | title_snip='Non-Commutative Open (p,q)-String Theories' | abs_len= 1031
+[13:40:27] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:40:27] select | verify relaxed 3/10
+[13:40:27] verify | func= Motivation | rank= 2 | pid= hep-th/0101039 | title_snip='From noncommutative string/membrane to ordinary ones' | abs_len= 749
+[13:40:31] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:40:31] select | verify relaxed 4/10
+[13:40:31] verify | func= Motivation | rank= 3 | pid= hep-th/0103188 | title_snip='Open String/Open D-Brane Dualities: Old and New' | abs_len= 677
+[13:40:34] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:40:34] select | verify relaxed 5/10
+[13:40:34] verify | func= Motivation | rank= 4 | pid= hep-th/0103209 | title_snip='Noncommutative o*(N) and usp*(2N) algebras and the corresponding gauge…' | abs_len= 834
+[13:40:37] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:40:37] select | verify relaxed 6/10
+[13:40:37] verify | func= Motivation | rank= 5 | pid= physics/0102078 | title_snip='Fuzzy, Non Commutative SpaceTime: A New Paradigm for a New Century' | abs_len= 764
+[13:40:40] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[13:40:40] select | verify relaxed 7/10
+[13:40:40] verify | func= Motivation | rank= 6 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[13:40:43] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:40:43] select | verify relaxed 8/10
+[13:40:43] verify | func= Motivation | rank= 7 | pid= hep-th/0103168 | title_snip='Aspects of Gauge Theory on Commutative and Noncommutative Tori' | abs_len= 812
+[13:40:47] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[13:40:47] select | verify relaxed 9/10
+[13:40:47] verify | func= Motivation | rank= 8 | pid= hep-th/0104032 | title_snip='On Methods for Extracting Exact Non-perturbative Results in
+  Non-supe…' | abs_len= 880
+[13:40:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:50] select | verify relaxed 10/10
+[13:40:50] verify | func= Motivation | rank= 9 | pid= hep-th/0102056 | title_snip='(1 + p)-Dimensional Open D(p - 2) Brane Theories' | abs_len= 1307
+[13:40:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the current work compare to and utilize existing theories such as noncommutative Yang-Mills and noncommutative open string theories?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work builds upon existing theories, including noncommutative Yang-Mills and noncommutative open string theories [Background] (hep-th/0101045), and utilizes their dualities, such as S and T-dualities, to construct more general theories [Background] (hep-th/0101045).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

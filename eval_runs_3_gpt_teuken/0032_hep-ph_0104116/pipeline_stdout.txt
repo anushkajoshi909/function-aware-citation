@@ -1,0 +1,111 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "The query seeks background information on the 2-3 symmetry and its relevance to neutrino mass matrix and its predictions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:01:54] main | args: Namespace(max_check=10, debug=True)
+[12:01:54] read_last_jsonl | path= classified_outputs.jsonl
+[12:01:54] read_last_jsonl | total_lines= 1
+[12:01:54] main | query='How does the 2-3 symmetry motivate and extend our understanding of neutrino mass matrix and its predictions?' | funcs=['Background']
+[12:01:56] main | core_terms= ['neutrino', '2-3 symmetry', 'neutrino mass matrix', '2-3']
+[12:01:56] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:01:56] load_topk_jsonl | rows= 20
+[12:01:56] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0104116 title_snip='A 2-3 Symmetry in Neutrino Oscillations' abs_len= 1163
+[12:01:56] main | running function= Background
+[12:01:56] select | function= Background | candidates_in= 20
+[12:01:56] select | core_terms= ['neutrino', '2-3 symmetry', 'neutrino mass matrix', '2-3']
+[12:01:56] select | no cosine prune; kept=20/20
+[12:01:56] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0104116', 'hep-ph/0103244', 'hep-ph/0102255', 'hep-ph/0103278', 'hep-ph/0103195', 'hep-ph/0103126', 'hep-ph/0103281', 'hep-ph/0101181', 'hep-ph/0102060', 'hep-ph/0101231']
+[12:01:56] select | verify relaxed 1/10
+[12:01:56] verify | func= Background | rank= 0 | pid= hep-ph/0104116 | title_snip='A 2-3 Symmetry in Neutrino Oscillations' | abs_len= 1163
+[12:02:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:02:00] select | verify relaxed 2/10
+[12:02:00] verify | func= Background | rank= 1 | pid= hep-ph/0103244 | title_snip='$SU(3)_c\otimes SU(3)_L\otimes U(1)_X$ as an $E_6$ Subgroup' | abs_len= 884
+[12:02:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:02:03] select | verify relaxed 3/10
+[12:02:03] verify | func= Background | rank= 2 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[12:02:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:06] select | verify relaxed 4/10
+[12:02:06] verify | func= Background | rank= 3 | pid= hep-ph/0103278 | title_snip='Collider Verification of the Neutrino Mass Matrix in Two Scenarios' | abs_len= 299
+[12:02:09] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:09] select | verify relaxed 5/10
+[12:02:09] verify | func= Background | rank= 4 | pid= hep-ph/0103195 | title_snip='Comment on Neutrino Masses and Oscillations in an $SU(3)_L \times
+  U(…' | abs_len= 807
+[12:02:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:13] select | verify relaxed 6/10
+[12:02:13] verify | func= Background | rank= 5 | pid= hep-ph/0103126 | title_snip='Neutrino-Lepton Masses, Zee Scalars and Muon g-2' | abs_len= 864
+[12:02:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:16] select | verify relaxed 7/10
+[12:02:16] verify | func= Background | rank= 6 | pid= hep-ph/0103281 | title_snip='Three-Neutrino MSW Effect and the LNW Mass Matrix' | abs_len= 302
+[12:02:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:19] select | verify relaxed 8/10
+[12:02:19] verify | func= Background | rank= 7 | pid= hep-ph/0101181 | title_snip='A Neutrino Mass Matrix Model with many Quantum charges and No SUSY' | abs_len= 601
+[12:02:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:23] select | verify relaxed 9/10
+[12:02:23] verify | func= Background | rank= 8 | pid= hep-ph/0102060 | title_snip='Phenomenology of Neutrino Mass Matrix' | abs_len= 605
+[12:02:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:02:26] select | verify relaxed 10/10
+[12:02:26] verify | func= Background | rank= 9 | pid= hep-ph/0101231 | title_snip='The Three Neutrino Scenario' | abs_len= 645
+[12:02:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the 2-3 symmetry motivate and extend our understanding of neutrino mass matrix and its predictions?
+- WINNER: hep-ph/0104116 | A 2-3 Symmetry in Neutrino Oscillations
+- QUOTE : a 2-3 symmetry, under which the neutrino mass matrix is invariant
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The 2-3 symmetry provides a framework for understanding the neutrino mass matrix, motivating predictions such as maximum mixing in atmospheric neutrino oscillation and vanishing of the MNS matrix element $U_{e3}$ [Background] (hep-ph/0104116). This symmetry also extends our understanding by allowing for renormalization-group corrections and MSSM dynamics to generate deviations from these predictions at experimental energies [Background] (hep-ph/0104116).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

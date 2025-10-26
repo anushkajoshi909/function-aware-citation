@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Motivation. [Motivation]
-The energetic properties of gamma-ray bursts are being compared to those of supernova explosions, with GRBs being thousands of times stronger. This comparison highlights the need for unconventional energy mechanisms to explain the extremely high conversion efficiency of GRBs (astro-ph/0101147). [Compares]

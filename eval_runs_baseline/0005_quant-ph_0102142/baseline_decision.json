@@ -1,0 +1,18 @@
+{
+  "answer": "The pseudo mode theory extends previous work by treating non-Markovian behavior in atomic systems, as seen in quant-ph/0102142.",
+  "predicted_paper_id": "quant-ph/0102142",
+  "explanation": "This paper deals with non-Markovian behavior in atomic systems coupled to a structured reservoir, which is relevant to the question.",
+  "evidence_quote": "non-Markovian behaviour in atomic systems",
+  "topk_list": [
+    "quant-ph/0102142",
+    "math-ph/0104012",
+    "math-ph/0101029",
+    "cond-mat/0103610",
+    "hep-ph/0101202",
+    "nucl-th/0101008",
+    "hep-lat/0103010",
+    "hep-th/0103228",
+    "hep-th/0104001",
+    "hep-lat/0103016"
+  ]
+}

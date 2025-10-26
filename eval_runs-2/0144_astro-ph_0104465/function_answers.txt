@@ -1,2 +1,0 @@
-The study's results on dark matter halo shapes and Galactic constants are compared to previous models, suggesting that a significantly flattened dark matter halo is only possible if certain conditions are met, such as a smaller Galactic constant R_0. The findings rule out certain dark matter candidates and suggest future research directions, including investigating the effects of gaseous velocity dispersion and refining estimates of stellar column density (astro-ph/0104465). [Compares]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

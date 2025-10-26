@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query asks how pseudo mode theory builds on prior work (extension) and how it stacks up against alternative approaches (comparison)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:00:08] main | args: Namespace(max_check=10, debug=True)
+[12:00:08] read_last_jsonl | path= classified_outputs.jsonl
+[12:00:08] read_last_jsonl | total_lines= 1
+[12:00:08] main | query='How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?' | funcs=['Extends', 'Compares']
+[12:00:10] main | core_terms= ['atomic systems', 'pseudo mode theory', 'non-Markovian behavior', 'non-Markovian']
+[12:00:10] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:00:10] load_topk_jsonl | rows= 20
+[12:00:10] load_topk_jsonl | first: rank= 0 paper_id= quant-ph/0102142 title_snip='Theory of Pseudomodes in Quantum Optical Processes' abs_len= 1320
+[12:00:10] main | running function= Extends
+[12:00:10] select | function= Extends | candidates_in= 20
+[12:00:10] select | core_terms= ['atomic systems', 'pseudo mode theory', 'non-Markovian behavior', 'non-Markovian']
+[12:00:10] select | no cosine prune; kept=20/20
+[12:00:10] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['quant-ph/0102142', 'math-ph/0104012', 'math-ph/0101029', 'cond-mat/0103610', 'hep-ph/0101202', 'nucl-th/0101008', 'hep-lat/0103010', 'hep-th/0103228', 'hep-th/0104001', 'hep-lat/0103016']
+[12:00:10] select | verify relaxed 1/10
+[12:00:10] verify | func= Extends | rank= 0 | pid= quant-ph/0102142 | title_snip='Theory of Pseudomodes in Quantum Optical Processes' | abs_len= 1320
+[12:00:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:00:13] select | verify relaxed 2/10
+[12:00:13] verify | func= Extends | rank= 1 | pid= math-ph/0104012 | title_snip='Conservation of pseudo-norm in PT symmetric quantum mechanics' | abs_len= 340
+[12:00:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[12:00:16] select | verify relaxed 3/10
+[12:00:16] verify | func= Extends | rank= 2 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[12:00:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:19] select | verify relaxed 4/10
+[12:00:19] verify | func= Extends | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[12:00:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:22] select | verify relaxed 5/10
+[12:00:22] verify | func= Extends | rank= 4 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[12:00:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[12:00:24] select | verify relaxed 6/10
+[12:00:24] verify | func= Extends | rank= 5 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[12:00:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:27] select | verify relaxed 7/10
+[12:00:27] verify | func= Extends | rank= 6 | pid= hep-lat/0103010 | title_snip='Cluster Percolation and Pseudocritical Behaviour in Spin Models' | abs_len= 566
+[12:00:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:29] select | verify relaxed 8/10
+[12:00:29] verify | func= Extends | rank= 7 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[12:00:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:32] select | verify relaxed 9/10
+[12:00:32] verify | func= Extends | rank= 8 | pid= hep-th/0104001 | title_snip='The euclidean propagator in a model with two non-equivalent instantons' | abs_len= 1121
+[12:00:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:35] select | verify relaxed 10/10
+[12:00:35] verify | func= Extends | rank= 9 | pid= hep-lat/0103016 | title_snip='CP(N-1) Models with Theta Term and Fixed Point Action' | abs_len= 1159
+[12:00:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?
+- WINNER: quant-ph/0102142 | Theory of Pseudomodes in Quantum Optical Processes
+- QUOTE : the pseudo mode theory for single quantum reservoir excitations
+- WHY   : sufficient
+[12:00:38] main | running function= Compares
+[12:00:38] select | function= Compares | candidates_in= 20
+[12:00:38] select | core_terms= ['atomic systems', 'pseudo mode theory', 'non-Markovian behavior', 'non-Markovian']
+[12:00:38] select | no cosine prune; kept=20/20
+[12:00:38] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['quant-ph/0102142', 'math-ph/0104012', 'math-ph/0101029', 'cond-mat/0103610', 'hep-ph/0101202', 'nucl-th/0101008', 'hep-lat/0103010', 'hep-th/0103228', 'hep-th/0104001', 'hep-lat/0103016']
+[12:00:38] select | verify relaxed 1/10
+[12:00:38] verify | func= Compares | rank= 0 | pid= quant-ph/0102142 | title_snip='Theory of Pseudomodes in Quantum Optical Processes' | abs_len= 1320
+[12:00:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:00:41] select | verify relaxed 2/10
+[12:00:41] verify | func= Compares | rank= 1 | pid= math-ph/0104012 | title_snip='Conservation of pseudo-norm in PT symmetric quantum mechanics' | abs_len= 340
+[12:00:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:00:44] select | verify relaxed 3/10
+[12:00:44] verify | func= Compares | rank= 2 | pid= math-ph/0101029 | title_snip='Pseudo perturbative expansion method; the non-polynomial, cutoff -
+  C…' | abs_len= 487
+[12:00:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:47] select | verify relaxed 4/10
+[12:00:47] verify | func= Compares | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[12:00:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:50] select | verify relaxed 5/10
+[12:00:50] verify | func= Compares | rank= 4 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[12:00:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[12:00:53] select | verify relaxed 6/10
+[12:00:53] verify | func= Compares | rank= 5 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[12:00:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:55] select | verify relaxed 7/10
+[12:00:55] verify | func= Compares | rank= 6 | pid= hep-lat/0103010 | title_snip='Cluster Percolation and Pseudocritical Behaviour in Spin Models' | abs_len= 566
+[12:00:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:00:58] select | verify relaxed 8/10
+[12:00:58] verify | func= Compares | rank= 7 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[12:01:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:01:00] select | verify relaxed 9/10
+[12:01:00] verify | func= Compares | rank= 8 | pid= hep-th/0104001 | title_snip='The euclidean propagator in a model with two non-equivalent instantons' | abs_len= 1121
+[12:01:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:01:03] select | verify relaxed 10/10
+[12:01:03] verify | func= Compares | rank= 9 | pid= hep-lat/0103016 | title_snip='CP(N-1) Models with Theta Term and Fixed Point Action' | abs_len= 1159
+[12:01:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the pseudo mode theory extend previous work and compare to other methods in treating non-Markovian behavior in atomic systems?
+- WINNER: quant-ph/0102142 | Theory of Pseudomodes in Quantum Optical Processes
+- QUOTE : can be obtained by applying the Fano diagonalisation method
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The pseudo mode theory extends previous work by applying the Fano diagonalisation method to a system with atomic transitions coupled to discrete and continuum quasimodes [Extends] (quant-ph/0102142). It compares to other methods by enabling treatment of non-Markovian behavior via Markovian master equations for the atom-discrete quasimode system, and is equivalent to a case with two discrete quasimodes for a simple photonic band gap model [Compares] (quant-ph/0102142).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,18 @@
+{
+  "answer": "The comparison of restricted N-body models with self-consistent N-body simulations informs future research on galaxy interactions, such as between NGC 4449 and DDO 125 (astro-ph/0104304).",
+  "predicted_paper_id": "astro-ph/0104304",
+  "explanation": "This paper directly addresses the comparison of restricted N-body models with self-consistent N-body simulations in the context of galaxy interactions, making it the most relevant to the question.",
+  "evidence_quote": "Multi-method-modeling of interacting galaxies",
+  "topk_list": [
+    "astro-ph/0104304",
+    "astro-ph/0101265",
+    "astro-ph/0101296",
+    "astro-ph/0104465",
+    "astro-ph/0102011",
+    "astro-ph/0103092",
+    "astro-ph/0104069",
+    "astro-ph/0103410",
+    "astro-ph/0101490",
+    "hep-ph/0103249"
+  ]
+}

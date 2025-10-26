@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends our understanding of the Galactic Center by studying the activity and high-energy emission of the closest massive black hole, as seen in astro-ph/0102382.",
+  "predicted_paper_id": "astro-ph/0102382",
+  "explanation": "This paper reviews the main observational characteristics of the Galactic Center, with particular attention to the existence, physical condition, and activity of the massive black hole coincident with the compact radio source Sgr A*.",
+  "evidence_quote": "The Center of our Galaxy is a peculiar region",
+  "topk_list": [
+    "astro-ph/0102382",
+    "astro-ph/0101330",
+    "gr-qc/0101091",
+    "gr-qc/0102067",
+    "gr-qc/0104020",
+    "astro-ph/0102139",
+    "hep-ph/0101210",
+    "astro-ph/0103466",
+    "hep-th/0104206",
+    "nucl-th/0104043"
+  ]
+}

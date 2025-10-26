@@ -1,0 +1,195 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly asks for a comparison with prior work and identifies directions for subsequent research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:27:28] main | args: Namespace(max_check=10, debug=True)
+[11:27:28] read_last_jsonl | path= classified_outputs.jsonl
+[11:27:28] read_last_jsonl | total_lines= 1
+[11:27:28] main | query='How do the findings of this study compare to previous work and what future research directions do they suggest?' | funcs=['Compares', 'FutureWork']
+[11:27:30] main | core_terms= ['previous work', 'future research directions', 'findings', 'study']
+[11:27:30] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:27:30] load_topk_jsonl | rows= 20
+[11:27:30] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102276 title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' abs_len= 1783
+[11:27:30] main | running function= Compares
+[11:27:30] select | function= Compares | candidates_in= 20
+[11:27:30] select | core_terms= ['previous work', 'future research directions', 'findings', 'study']
+[11:27:30] select | no cosine prune; kept=20/20
+[11:27:30] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102276', 'hep-ph/0102015', 'hep-ph/0103296', 'cond-mat/0103166', 'hep-ex/0103048', 'hep-ph/0101295', 'hep-ph/0102068', 'astro-ph/0104063', 'hep-ph/0102159', 'quant-ph/0102110']
+[11:27:30] select | verify relaxed 1/10
+[11:27:30] verify | func= Compares | rank= 0 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[11:27:33] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:27:33] select | verify relaxed 2/10
+[11:27:33] verify | func= Compares | rank= 1 | pid= hep-ph/0102015 | title_snip='Future Measurements of Transversity' | abs_len= 74
+[11:27:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:27:37] select | verify relaxed 3/10
+[11:27:37] verify | func= Compares | rank= 2 | pid= hep-ph/0103296 | title_snip='Summary Talk: First Workshop on Forward Physics and Luminosity
+  Deter…' | abs_len= 1168
+[11:27:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[11:27:39] select | verify relaxed 4/10
+[11:27:39] verify | func= Compares | rank= 3 | pid= cond-mat/0103166 | title_snip='Comparison between Theory and Some Recent Experiments on Quantum
+  Dep…' | abs_len= 312
+[11:27:43] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[11:27:43] select | verify relaxed 5/10
+[11:27:43] verify | func= Compares | rank= 4 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[11:27:46] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[11:27:46] select | verify relaxed 6/10
+[11:27:46] verify | func= Compares | rank= 5 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[11:27:49] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:27:49] select | verify relaxed 7/10
+[11:27:49] verify | func= Compares | rank= 6 | pid= hep-ph/0102068 | title_snip='Phenomenological Issues in the Determination of Delta Gamma_D' | abs_len= 623
+[11:27:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:27:53] select | verify relaxed 8/10
+[11:27:53] verify | func= Compares | rank= 7 | pid= astro-ph/0104063 | title_snip='A Study of Wavelength Calibration of NEWSIPS High-Dispersion Spectra' | abs_len= 1843
+[11:27:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:27:57] select | verify relaxed 9/10
+[11:27:57] verify | func= Compares | rank= 8 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[11:28:00] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:28:00] select | verify relaxed 10/10
+[11:28:00] verify | func= Compares | rank= 9 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[11:28:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:28:04] arbiter | rejected off-topic winner: hep-ph/0102068
+[11:28:05] arbiter | rejected fallback: astro-ph/0104063
+[11:28:06] arbiter | accepted fallback: quant-ph/0102110
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the findings of this study compare to previous work and what future research directions do they suggest?
+- WINNER: quant-ph/0102110 | Addendum to "Nonlinear quantum evolution with maximal entropy
+  production"
+- QUOTE : calls attention to previous work
+- WHY   : sufficient
+[11:28:06] main | running function= FutureWork
+[11:28:06] select | function= FutureWork | candidates_in= 20
+[11:28:06] select | core_terms= ['previous work', 'future research directions', 'findings', 'study']
+[11:28:06] select | no cosine prune; kept=20/20
+[11:28:06] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102276', 'hep-ph/0102015', 'hep-ph/0103296', 'cond-mat/0103166', 'hep-ex/0103048', 'hep-ph/0101295', 'hep-ph/0102068', 'astro-ph/0104063', 'hep-ph/0102159', 'quant-ph/0102110']
+[11:28:06] select | verify relaxed 1/10
+[11:28:06] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[11:28:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[11:28:09] select | verify relaxed 2/10
+[11:28:09] verify | func= FutureWork | rank= 1 | pid= hep-ph/0102015 | title_snip='Future Measurements of Transversity' | abs_len= 74
+[11:28:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:28:13] select | verify relaxed 3/10
+[11:28:13] verify | func= FutureWork | rank= 2 | pid= hep-ph/0103296 | title_snip='Summary Talk: First Workshop on Forward Physics and Luminosity
+  Deter…' | abs_len= 1168
+[11:28:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[11:28:16] select | verify relaxed 4/10
+[11:28:16] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103166 | title_snip='Comparison between Theory and Some Recent Experiments on Quantum
+  Dep…' | abs_len= 312
+[11:28:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:28:19] select | verify relaxed 5/10
+[11:28:19] verify | func= FutureWork | rank= 4 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[11:28:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:28:22] select | verify relaxed 6/10
+[11:28:22] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101295 | title_snip='12 Years of Precision Calculations for LEP. What's Next?' | abs_len= 287
+[11:28:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[11:28:25] select | verify relaxed 7/10
+[11:28:25] verify | func= FutureWork | rank= 6 | pid= hep-ph/0102068 | title_snip='Phenomenological Issues in the Determination of Delta Gamma_D' | abs_len= 623
+[11:28:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:28:29] select | verify relaxed 8/10
+[11:28:29] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104063 | title_snip='A Study of Wavelength Calibration of NEWSIPS High-Dispersion Spectra' | abs_len= 1843
+[11:28:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[11:28:32] select | verify relaxed 9/10
+[11:28:32] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[11:28:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:28:35] select | verify relaxed 10/10
+[11:28:35] verify | func= FutureWork | rank= 9 | pid= quant-ph/0102110 | title_snip='Addendum to "Nonlinear quantum evolution with maximal entropy
+  produc…' | abs_len= 222
+[11:28:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:28:39] arbiter | rejected off-topic winner: hep-ph/0102068
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the findings of this study compare to previous work and what future research directions do they suggest?
+- No supporting candidate with sufficient evidence.
+Traceback (most recent call last):
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 779, in <module>
+    main()
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 765, in main
+    unified_answer = synthesize_multi_function_answer(query, func_winners)
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 585, in synthesize_multi_function_answer
+    ans = llm_text(prompt, model=DEFAULT_MODEL, temperature=0.15, max_tokens=180).strip()
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 62, in llm_text
+    return resp.choices[0].message.content.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+[11:40:01] main | args: Namespace(max_check=10, debug=True)
+[11:40:01] read_last_jsonl | path= classified_outputs.jsonl
+[11:40:01] read_last_jsonl | total_lines= 1
+[11:40:01] main | query='How do the findings of this study compare to previous work and what future research directions do they suggest?' | funcs=['Compares', 'FutureWork']
+Traceback (most recent call last):
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 779, in <module>
+    main()
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 689, in main
+    core = extract_core_entities(query)
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 165, in extract_core_entities
+    raw = llm_chat(CORE_ENTITIES_PROMPT_TPL.substitute(QUERY=query),
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py", line 50, in llm_chat
+    return resp.choices[0].message.content.strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+⚠️ Final stage failed once; pausing and retrying…
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+Traceback (most recent call last):
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline-2.py", line 80, in main
+    run([sys.executable, str(FINAL_STAGE), "--debug", "--max-check", "10"], cwd=str(RAG), env=env)
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline-2.py", line 29, in run
+    subprocess.run(cmd, cwd=cwd, env=env, check=True)
+  File "/home/anpa439f/anaconda3/envs/myenv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/anpa439f/anaconda3/envs/myenv/bin/python3', '/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py', '--debug', '--max-check', '10']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline-2.py", line 92, in <module>
+    main()
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline-2.py", line 84, in main
+    run([sys.executable, str(FINAL_STAGE), "--debug", "--max-check", "10"], cwd=str(RAG), env=env)
+  File "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline-2.py", line 29, in run
+    subprocess.run(cmd, cwd=cwd, env=env, check=True)
+  File "/home/anpa439f/anaconda3/envs/myenv/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/anpa439f/anaconda3/envs/myenv/bin/python3', '/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py', '--debug', '--max-check', '10']' returned non-zero exit status 1.

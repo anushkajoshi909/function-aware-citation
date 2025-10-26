@@ -1,0 +1,18 @@
+{
+  "answer": "The proposed model extends existing theories on blazar flares by considering the radiation mechanisms and comparing with observed flare behaviors, as seen in astro-ph/0101380, which discusses the synchrotron-self Compton mechanism (astro-ph/0101380).",
+  "predicted_paper_id": "astro-ph/0101380",
+  "explanation": "This paper best supports the answer because it discusses the radiation mechanisms and compares with observed flare behaviors, providing a clear understanding of the proposed model's extension of existing theories.",
+  "evidence_quote": "synchrotron-self Compton mechanism",
+  "topk_list": [
+    "astro-ph/0101380",
+    "astro-ph/0102091",
+    "astro-ph/0101382",
+    "astro-ph/0102295",
+    "astro-ph/0103424",
+    "astro-ph/0102012",
+    "astro-ph/0101398",
+    "astro-ph/0103031",
+    "astro-ph/0103396",
+    "astro-ph/0101008"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The results of this study compare to previous models of the Milky Way by investigating the effects of uncertain gaseous velocity dispersion on HI flaring constraints and the shape of the dark matter halo, suggesting future research directions (astro-ph/0104465).",
+  "predicted_paper_id": "astro-ph/0104465",
+  "explanation": "This paper best supports the answer because it directly addresses the comparison of the study's results to previous models of the Milky Way and discusses the implications for dark matter halo shapes and Galactic constants.",
+  "evidence_quote": "Axisymmetric models of the Milky Way",
+  "topk_list": [
+    "astro-ph/0104465",
+    "astro-ph/0102436",
+    "astro-ph/0104293",
+    "astro-ph/0104242",
+    "astro-ph/0103430",
+    "astro-ph/0101528",
+    "astro-ph/0101210",
+    "astro-ph/0103386",
+    "astro-ph/0104069",
+    "astro-ph/0104404"
+  ]
+}

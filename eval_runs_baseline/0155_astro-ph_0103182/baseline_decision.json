@@ -1,0 +1,18 @@
+{
+  "answer": "The distinct types of hard steady states in GRS 1915+105 provide a foundation for understanding the underlying accretion flow and suggest potential avenues for future research (astro-ph/0103182).",
+  "predicted_paper_id": "astro-ph/0103182",
+  "explanation": "This paper characterizes the X-ray spectral and timing properties of GRS 1915+105 during hard steady states, identifying two distinct types of states that differ in their spectral and timing properties, which can help understand the accretion flow.",
+  "evidence_quote": "two types of steady hard X-ray states",
+  "topk_list": [
+    "astro-ph/0103182",
+    "astro-ph/0104067",
+    "astro-ph/0104378",
+    "astro-ph/0103304",
+    "astro-ph/0101330",
+    "astro-ph/0104389",
+    "astro-ph/0104481",
+    "astro-ph/0103044",
+    "astro-ph/0101246",
+    "hep-ph/0104253"
+  ]
+}

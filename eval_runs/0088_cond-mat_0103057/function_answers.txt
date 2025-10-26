@@ -1,2 +1,0 @@
-Researchers can use the extended Emery model to improve understanding of copper-oxide layered materials by analyzing the three-band structure and its parameters, such as Cu-O site energy splitting and hopping. This model can be applied to fit the Fermi surfaces of high-Tc superconductors, like LSCO, Bi1221, and Y123, to gain insights into their electronic properties (cond-mat/0103057). [Uses]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

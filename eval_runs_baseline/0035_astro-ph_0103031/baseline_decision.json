@@ -1,0 +1,18 @@
+{
+  "answer": "The use of statistical methods to study the correlation between radio and gamma-ray luminosities in blazars is motivated by the need to understand the underlying physical mechanisms, as seen in astro-ph/0103031.",
+  "predicted_paper_id": "astro-ph/0103031",
+  "explanation": "This paper uses two statistical methods to study the correlation between radio and gamma-ray luminosities in blazars, providing insights into the physical mechanisms driving these correlations.",
+  "evidence_quote": "correlation between the radio and gamma-ray luminosities",
+  "topk_list": [
+    "astro-ph/0103031",
+    "astro-ph/0101398",
+    "astro-ph/0102012",
+    "astro-ph/0103087",
+    "astro-ph/0104351",
+    "astro-ph/0102127",
+    "astro-ph/0101380",
+    "astro-ph/0103424",
+    "astro-ph/0101301",
+    "astro-ph/0101462"
+  ]
+}

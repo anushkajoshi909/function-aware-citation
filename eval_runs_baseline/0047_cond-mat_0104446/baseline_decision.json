@@ -1,0 +1,18 @@
+{
+  "answer": "The limitations in understanding the magnetic structure of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$ motivate further research into their field-dependent heat capacity, as seen in cond-mat/0104446.",
+  "predicted_paper_id": "cond-mat/0104446",
+  "explanation": "This paper directly addresses the field-dependent heat capacity of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$, providing insights into their magnetic structures.",
+  "evidence_quote": "field-dependent heat capacity",
+  "topk_list": [
+    "cond-mat/0104446",
+    "cond-mat/0103212",
+    "cond-mat/0102503",
+    "cond-mat/0101280",
+    "cond-mat/0102413",
+    "cond-mat/0104368",
+    "cond-mat/0102137",
+    "cond-mat/0103438",
+    "cond-mat/0102221",
+    "cond-mat/0104447"
+  ]
+}

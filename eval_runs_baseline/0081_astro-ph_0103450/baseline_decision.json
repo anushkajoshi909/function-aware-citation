@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous methods for determining metallicity and age in galaxies by using the rest-frame near-UV spectral region, which contains sufficient information to lift the degeneracy between age and metallicity, as shown in astro-ph/0103450.",
+  "predicted_paper_id": "astro-ph/0103450",
+  "explanation": "This paper explores the use of the rest-frame near-UV spectral region to determine metallicity and age in galaxies, which is a new approach that extends previous methods.",
+  "evidence_quote": "lift the degeneracy between age and metallicity",
+  "topk_list": [
+    "astro-ph/0103450",
+    "astro-ph/0104076",
+    "astro-ph/0101386",
+    "hep-ph/0101131",
+    "astro-ph/0104162",
+    "astro-ph/0101544",
+    "astro-ph/0101448",
+    "astro-ph/0101040",
+    "astro-ph/0101296",
+    "astro-ph/0101472"
+  ]
+}

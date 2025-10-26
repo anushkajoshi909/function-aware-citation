@@ -1,0 +1,18 @@
+{
+  "answer": "The new self-interaction correction method builds upon existing density functional theory methods by providing a novel approach to remove self-interaction, as seen in cond-mat/0103324.",
+  "predicted_paper_id": "cond-mat/0103324",
+  "explanation": "This paper presents a new method that is totally free from self-interaction, which is a significant improvement over existing methods.",
+  "evidence_quote": "a novel method which, by construction, is totally free from self interaction",
+  "topk_list": [
+    "cond-mat/0103324",
+    "cond-mat/0104449",
+    "nucl-th/0101012",
+    "nucl-th/0101048",
+    "cond-mat/0104405",
+    "physics/0103032",
+    "cond-mat/0101363",
+    "cond-mat/0102200",
+    "physics/0103003",
+    "nucl-th/0101022"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The detection rates and characteristics of beamed Magnetar Flares compare to other gamma-ray bursts in terms of their brief, intense, hard spikes of gamma rays, and future research could explore this relationship (astro-ph/0103235).",
+  "predicted_paper_id": "astro-ph/0103235",
+  "explanation": "This paper discusses the prototype for Magnetar Flares and their potential detection by BATSE, making it relevant to the comparison of beamed Magnetar Flares to other gamma-ray bursts.",
+  "evidence_quote": "beamed component during the intial spike phase",
+  "topk_list": [
+    "astro-ph/0103235",
+    "astro-ph/0103384",
+    "astro-ph/0102315",
+    "astro-ph/0102366",
+    "astro-ph/0104208",
+    "astro-ph/0103179",
+    "astro-ph/0103028",
+    "astro-ph/0103396",
+    "astro-ph/0103125",
+    "astro-ph/0101036"
+  ]
+}

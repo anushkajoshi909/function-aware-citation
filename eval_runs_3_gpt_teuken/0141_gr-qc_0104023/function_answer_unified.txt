@@ -1,0 +1,1 @@
+Future research can extend the current understanding of the Church-Turing Theses by exploring their validity in different background physical theories, such as classical general relativity theory [Motivation] (gr-qc/0104023). This can lead to a deeper understanding of the theoretical limitations of computers and deductive sciences in various contexts [Motivation] (gr-qc/0104023).

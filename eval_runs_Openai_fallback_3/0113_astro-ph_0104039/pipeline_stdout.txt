@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query requests how a new observational finding deepens basic understanding of accretion (background) and explicitly asks what future research avenues it opens (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:33:30] main | args: Namespace(max_check=10, debug=True)
+[23:33:30] read_last_jsonl | path= classified_outputs.jsonl
+[23:33:30] read_last_jsonl | total_lines= 1
+[23:33:30] main | query='How does the discovery of a subparsec-scale dense plasma torus around an active galactic nucleus inform our understanding of the accretion process and suggest potential areas for future research?' | funcs=['Background', 'FutureWork']
+[23:33:32] main | core_terms= ['active galactic nucleus', 'plasma torus', 'accretion process', 'subparsec-scale']
+[23:33:32] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:33:32] load_topk_jsonl | rows= 20
+[23:33:32] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104039 title_snip='The Dense Plasma Torus Around the Nucleus of an Active Galaxy NGC 1052' abs_len= 1031
+[23:33:32] main | running function= Background
+[23:33:32] select | function= Background | candidates_in= 20
+[23:33:32] select | core_terms= ['active galactic nucleus', 'plasma torus', 'accretion process', 'subparsec-scale']
+[23:33:32] select | no cosine prune; kept=20/20
+[23:33:32] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104039', 'astro-ph/0101330', 'astro-ph/0103048', 'astro-ph/0103230', 'astro-ph/0104480', 'physics/0102001', 'astro-ph/0103439', 'astro-ph/0102146', 'hep-ph/0104234', 'astro-ph/0104074']
+[23:33:32] select | verify relaxed 1/10
+[23:33:32] verify | func= Background | rank= 0 | pid= astro-ph/0104039 | title_snip='The Dense Plasma Torus Around the Nucleus of an Active Galaxy NGC 1052' | abs_len= 1031
+[23:33:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:33:35] select | verify relaxed 2/10
+[23:33:35] verify | func= Background | rank= 1 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:33:39] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:33:39] select | verify relaxed 3/10
+[23:33:39] verify | func= Background | rank= 2 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[23:33:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:33:42] select | verify relaxed 4/10
+[23:33:42] verify | func= Background | rank= 3 | pid= astro-ph/0103230 | title_snip='Stability of Accretion Disks in Presence of Nucleosynthesis' | abs_len= 767
+[23:33:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:33:45] select | verify relaxed 5/10
+[23:33:45] verify | func= Background | rank= 4 | pid= astro-ph/0104480 | title_snip='On the Possibility of Observing H2 Emission from Primordial Molecular
+…' | abs_len= 1230
+[23:33:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:33:47] select | verify relaxed 6/10
+[23:33:47] verify | func= Background | rank= 5 | pid= physics/0102001 | title_snip='Topological-Torsion and Topological-Spin as coherent structures in
+  p…' | abs_len= 1544
+[23:33:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:33:50] select | verify relaxed 7/10
+[23:33:50] verify | func= Background | rank= 6 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[23:33:53] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:33:53] select | verify relaxed 8/10
+[23:33:53] verify | func= Background | rank= 7 | pid= astro-ph/0102146 | title_snip='In the Shadow of the Accretion Disk: Higher Resolution Imaging of the
+…' | abs_len= 1300
+[23:33:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:33:56] select | verify relaxed 9/10
+[23:33:56] verify | func= Background | rank= 8 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[23:33:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:33:59] select | verify relaxed 10/10
+[23:33:59] verify | func= Background | rank= 9 | pid= astro-ph/0104074 | title_snip='The Cygnus X region: a nucleosynthesis laboratory for INTEGRAL' | abs_len= 1732
+[23:34:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the discovery of a subparsec-scale dense plasma torus around an active galactic nucleus inform our understanding of the accretion process and suggest potential areas for future research?
+- WINNER: astro-ph/0104039 | The Dense Plasma Torus Around the Nucleus of an Active Galaxy NGC 1052
+- QUOTE : A subparsec-scale dense plasma torus around an active galactic nucleus (AGN)
+- WHY   : sufficient
+[23:34:02] main | running function= FutureWork
+[23:34:02] select | function= FutureWork | candidates_in= 20
+[23:34:02] select | core_terms= ['active galactic nucleus', 'plasma torus', 'accretion process', 'subparsec-scale']
+[23:34:02] select | no cosine prune; kept=20/20
+[23:34:02] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104039', 'astro-ph/0101330', 'astro-ph/0103048', 'astro-ph/0103230', 'astro-ph/0104480', 'physics/0102001', 'astro-ph/0103439', 'astro-ph/0102146', 'hep-ph/0104234', 'astro-ph/0104074']
+[23:34:02] select | verify relaxed 1/10
+[23:34:02] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104039 | title_snip='The Dense Plasma Torus Around the Nucleus of an Active Galaxy NGC 1052' | abs_len= 1031
+[23:34:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:34:06] select | verify relaxed 2/10
+[23:34:06] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:34:09] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:34:09] select | verify relaxed 3/10
+[23:34:09] verify | func= FutureWork | rank= 2 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[23:34:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:34:12] select | verify relaxed 4/10
+[23:34:12] verify | func= FutureWork | rank= 3 | pid= astro-ph/0103230 | title_snip='Stability of Accretion Disks in Presence of Nucleosynthesis' | abs_len= 767
+[23:34:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:34:14] select | verify relaxed 5/10
+[23:34:14] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104480 | title_snip='On the Possibility of Observing H2 Emission from Primordial Molecular
+…' | abs_len= 1230
+[23:34:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:34:17] select | verify relaxed 6/10
+[23:34:17] verify | func= FutureWork | rank= 5 | pid= physics/0102001 | title_snip='Topological-Torsion and Topological-Spin as coherent structures in
+  p…' | abs_len= 1544
+[23:34:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:34:19] select | verify relaxed 7/10
+[23:34:19] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[23:34:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:34:22] select | verify relaxed 8/10
+[23:34:22] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102146 | title_snip='In the Shadow of the Accretion Disk: Higher Resolution Imaging of the
+…' | abs_len= 1300
+[23:34:25] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[23:34:25] select | verify relaxed 9/10
+[23:34:25] verify | func= FutureWork | rank= 8 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[23:34:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:34:27] select | verify relaxed 10/10
+[23:34:27] verify | func= FutureWork | rank= 9 | pid= astro-ph/0104074 | title_snip='The Cygnus X region: a nucleosynthesis laboratory for INTEGRAL' | abs_len= 1732
+[23:34:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the discovery of a subparsec-scale dense plasma torus around an active galactic nucleus inform our understanding of the accretion process and suggest potential areas for future research?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The discovery of a subparsec-scale dense plasma torus around an active galactic nucleus informs our understanding of the accretion process by suggesting a transition from radial accretion to rotational accretion around the nucleus [Background] (astro-ph/0104039). This finding also implies potential areas for future research, such as investigating the interplay between the plasma torus and the accretion process [Background] (astro-ph/0104039).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

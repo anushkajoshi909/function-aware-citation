@@ -1,0 +1,18 @@
+{
+  "answer": "Future research could be motivated by measurements of tau lepton polarization and forward-backward polarization asymmetry near the Z resonance, such as investigating lepton universality and the Standard Model (hep-ex/0103045).",
+  "predicted_paper_id": "hep-ex/0103045",
+  "explanation": "This paper presents measurements of the tau lepton polarization and forward-backward polarization asymmetry near the Z resonance, which could motivate future research in lepton universality and the Standard Model.",
+  "evidence_quote": "Measurements of the tau lepton polarization",
+  "topk_list": [
+    "hep-ex/0103045",
+    "hep-ex/0103048",
+    "hep-ex/0104038",
+    "hep-ex/0102037",
+    "hep-ph/0103116",
+    "hep-ph/0101057",
+    "hep-ph/0101201",
+    "hep-ph/0103039",
+    "hep-ex/0101047",
+    "hep-ph/0103197"
+  ]
+}

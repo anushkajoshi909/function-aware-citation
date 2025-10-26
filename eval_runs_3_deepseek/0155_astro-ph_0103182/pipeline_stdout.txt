@@ -1,0 +1,111 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:49:36] main | args: Namespace(max_check=10, debug=True)
+[14:49:36] read_last_jsonl | path= classified_outputs.jsonl
+[14:49:36] read_last_jsonl | total_lines= 1
+[14:49:36] main | query='How do the distinct types of hard steady states in GRS 1915+105, as characterized by their X-ray spectral and timing properties, provide a foundation for understanding the underlying accretion flow and suggest potential avenues for future research?' | funcs=['Background']
+[14:49:38] main | core_terms= ['GRS 1915+105', 'X-ray', 'accretion flow', 'hard steady states', 'GRS']
+[14:49:38] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:49:38] load_topk_jsonl | rows= 20
+[14:49:38] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103182 title_snip='On the two types of steady hard X-ray states of GRS 1915+105' abs_len= 1458
+[14:49:38] main | running function= Background
+[14:49:38] select | function= Background | candidates_in= 20
+[14:49:38] select | core_terms= ['GRS 1915+105', 'X-ray', 'accretion flow', 'hard steady states', 'GRS']
+[14:49:38] select | no cosine prune; kept=20/20
+[14:49:38] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103182', 'astro-ph/0104067', 'astro-ph/0104378', 'astro-ph/0103304', 'astro-ph/0101330', 'astro-ph/0104389', 'astro-ph/0104481', 'astro-ph/0103044', 'astro-ph/0101246', 'hep-ph/0104253']
+[14:49:38] select | verify relaxed 1/10
+[14:49:38] verify | func= Background | rank= 0 | pid= astro-ph/0103182 | title_snip='On the two types of steady hard X-ray states of GRS 1915+105' | abs_len= 1458
+[14:49:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:49:41] select | verify relaxed 2/10
+[14:49:41] verify | func= Background | rank= 1 | pid= astro-ph/0104067 | title_snip='Radio Emission and the Timing Properties of the Hard X-ray State of GR…' | abs_len= 1616
+[14:49:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:49:45] select | verify relaxed 3/10
+[14:49:45] verify | func= Background | rank= 2 | pid= astro-ph/0104378 | title_snip='Spectral differences between the radio-loud and radio-quiet low-hard
+ …' | abs_len= 1498
+[14:49:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:49:49] select | verify relaxed 4/10
+[14:49:49] verify | func= Background | rank= 3 | pid= astro-ph/0103304 | title_snip='Two Different Long-term Behaviors in Black-Hole Candidates: Evidence f…' | abs_len= 1487
+[14:49:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:49:52] select | verify relaxed 5/10
+[14:49:52] verify | func= Background | rank= 4 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[14:49:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:49:54] select | verify relaxed 6/10
+[14:49:54] verify | func= Background | rank= 5 | pid= astro-ph/0104389 | title_snip='Orbital Comptonization in accretion disks around black holes' | abs_len= 979
+[14:49:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:49:57] select | verify relaxed 7/10
+[14:49:57] verify | func= Background | rank= 6 | pid= astro-ph/0104481 | title_snip='Different Types of X-ray Variability Observed in Micro-Quasar GRS
+  19…' | abs_len= 1168
+[14:50:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:50:00] select | verify relaxed 8/10
+[14:50:00] verify | func= Background | rank= 7 | pid= astro-ph/0103044 | title_snip='Modeling the Low State Spectrum of the X-Ray Nova XTE J1118+480' | abs_len= 972
+[14:50:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:50:03] select | verify relaxed 9/10
+[14:50:03] verify | func= Background | rank= 8 | pid= astro-ph/0101246 | title_snip='Particle Spectra Of Ultra-Relativistic Shock Waves' | abs_len= 768
+[14:50:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:50:05] select | verify relaxed 10/10
+[14:50:05] verify | func= Background | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[14:50:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the distinct types of hard steady states in GRS 1915+105, as characterized by their X-ray spectral and timing properties, provide a foundation for understanding the underlying accretion flow and suggest potential avenues for future research?
+- WINNER: astro-ph/0103182 | On the two types of steady hard X-ray states of GRS 1915+105
+- QUOTE : X-ray spectral and timing properties of GRS 1915+105
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The distinct types of hard steady states in GRS 1915+105, characterized by their X-ray spectral and timing properties, provide a foundation for understanding the underlying accretion flow [Background] (astro-ph/0103182). These states suggest potential avenues for future research by highlighting the possible differences in accretion flow structure due to the presence of relativistic outflow of matter [Background] (astro-ph/0103182).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

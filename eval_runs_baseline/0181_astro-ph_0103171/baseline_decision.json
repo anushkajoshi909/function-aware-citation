@@ -1,0 +1,18 @@
+{
+  "answer": "The spectral analysis of the Vela pulsar extends existing models of neutron star cooling and emission, with the effective temperature being lower than that predicted by standard neutron star cooling models (astro-ph/0103171).",
+  "predicted_paper_id": "astro-ph/0103171",
+  "explanation": "This paper provides a detailed spectral analysis of the Vela pulsar, which is relevant to understanding neutron star cooling and emission.",
+  "evidence_quote": "The effective temperature is lower than that predicted by standard neutron star cooling models",
+  "topk_list": [
+    "astro-ph/0103171",
+    "astro-ph/0103273",
+    "astro-ph/0101339",
+    "astro-ph/0103140",
+    "astro-ph/0101044",
+    "astro-ph/0101246",
+    "astro-ph/0102047",
+    "astro-ph/0103227",
+    "astro-ph/0103316",
+    "astro-ph/0101257"
+  ]
+}

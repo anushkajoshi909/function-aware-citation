@@ -1,0 +1,18 @@
+{
+  "answer": "The current study's methodology compares to and extends previous work on compact high-velocity clouds, such as the cataloging by Braun & Burton, by providing deeper insights into the properties of these clouds (astro-ph/0103119).",
+  "predicted_paper_id": "astro-ph/0103119",
+  "explanation": "This paper presents deep HI observations of the compact high-velocity cloud HVC125+41-207, providing a detailed analysis of its properties and structure, which is relevant to the current study's methodology.",
+  "evidence_quote": "compact high-velocity cloud HVC125+41-207",
+  "topk_list": [
+    "astro-ph/0101543",
+    "astro-ph/0102276",
+    "astro-ph/0103119",
+    "astro-ph/0102085",
+    "astro-ph/0101112",
+    "astro-ph/0101252",
+    "astro-ph/0102086",
+    "astro-ph/0104366",
+    "hep-ph/0101163",
+    "gr-qc/0103088"
+  ]
+}

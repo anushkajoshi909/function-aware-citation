@@ -1,2 +1,0 @@
-The results of this study on relativistic shock waves are compared to non-relativistic shocks, showing that cosmic ray spectra at relativistic shock waves depend substantially on magnetic field configurations and turbulence spectra. The findings suggest that the theory of cosmic ray acceleration in relativistic shock waves is not able to uniquely explain observed synchrotron spectra, differing from other works that may not account for these complexities (astro-ph/0104120). [Compares]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

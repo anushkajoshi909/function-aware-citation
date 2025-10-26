@@ -1,0 +1,155 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand how future studies can build upon the current analysis of populous clusters in the Small Magellanic Cloud to further understand its structure. It asks for both background information and motivation, which are relevant to the purpose of the query."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:58:17] main | args: Namespace(max_check=10, debug=True)
+[11:58:17] read_last_jsonl | path= classified_outputs.jsonl
+[11:58:17] read_last_jsonl | total_lines= 1
+[11:58:17] main | query='How can future studies utilize the current analysis of populous clusters in the Small Magellanic Cloud to further understand its structure and what methods or datasets from this work could be used in such studies?' | funcs=['Background', 'Motivation']
+[11:58:19] main | core_terms= ['Small Magellanic Cloud', 'populous clusters', 'structure']
+[11:58:19] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:58:19] load_topk_jsonl | rows= 20
+[11:58:19] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104227 title_snip='The Line-of-Sight Depth of Populous Clusters in the Small Magellanic
+ …' abs_len= 1656
+[11:58:19] main | running function= Background
+[11:58:19] select | function= Background | candidates_in= 20
+[11:58:19] select | core_terms= ['Small Magellanic Cloud', 'populous clusters', 'structure']
+[11:58:19] select | no cosine prune; kept=20/20
+[11:58:19] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104227', 'astro-ph/0103076', 'astro-ph/0101508', 'astro-ph/0102165', 'astro-ph/0102010', 'astro-ph/0102363', 'astro-ph/0103518', 'astro-ph/0102191', 'astro-ph/0104245', 'astro-ph/0102477']
+[11:58:19] select | verify relaxed 1/10
+[11:58:19] verify | func= Background | rank= 0 | pid= astro-ph/0104227 | title_snip='The Line-of-Sight Depth of Populous Clusters in the Small Magellanic
+ …' | abs_len= 1656
+[11:58:23] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[11:58:23] select | verify relaxed 2/10
+[11:58:23] verify | func= Background | rank= 1 | pid= astro-ph/0103076 | title_snip='Magellanic Clouds Planetary Nebulae: an updated view on stellar
+  evol…' | abs_len= 458
+[11:58:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:58:26] select | verify relaxed 3/10
+[11:58:26] verify | func= Background | rank= 2 | pid= astro-ph/0101508 | title_snip='The Structure of Prestellar Cores as derived from ISO Observations' | abs_len= 1056
+[11:58:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:29] select | verify relaxed 4/10
+[11:58:29] verify | func= Background | rank= 3 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[11:58:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:31] select | verify relaxed 5/10
+[11:58:31] verify | func= Background | rank= 4 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[11:58:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:34] select | verify relaxed 6/10
+[11:58:34] verify | func= Background | rank= 5 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[11:58:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:37] select | verify relaxed 7/10
+[11:58:37] verify | func= Background | rank= 6 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[11:58:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:58:40] select | verify relaxed 8/10
+[11:58:40] verify | func= Background | rank= 7 | pid= astro-ph/0102191 | title_snip='Velocity and density spectra of the Small Magellanic Cloud' | abs_len= 834
+[11:58:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[11:58:43] select | verify relaxed 9/10
+[11:58:43] verify | func= Background | rank= 8 | pid= astro-ph/0104245 | title_snip='Cluster abundance and large-scale structure' | abs_len= 530
+[11:58:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:46] select | verify relaxed 10/10
+[11:58:46] verify | func= Background | rank= 9 | pid= astro-ph/0102477 | title_snip='The Structure and Evolution of Magnetized Cloud Cores in a Zero--Densi…' | abs_len= 1571
+[11:58:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How can future studies utilize the current analysis of populous clusters in the Small Magellanic Cloud to further understand its structure and what methods or datasets from this work could be used in such studies?
+- No supporting candidate with sufficient evidence.
+[11:58:49] main | running function= Motivation
+[11:58:49] select | function= Motivation | candidates_in= 20
+[11:58:49] select | core_terms= ['Small Magellanic Cloud', 'populous clusters', 'structure']
+[11:58:49] select | no cosine prune; kept=20/20
+[11:58:49] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104227', 'astro-ph/0103076', 'astro-ph/0101508', 'astro-ph/0102165', 'astro-ph/0102010', 'astro-ph/0102363', 'astro-ph/0103518', 'astro-ph/0102191', 'astro-ph/0104245', 'astro-ph/0102477']
+[11:58:49] select | verify relaxed 1/10
+[11:58:49] verify | func= Motivation | rank= 0 | pid= astro-ph/0104227 | title_snip='The Line-of-Sight Depth of Populous Clusters in the Small Magellanic
+ …' | abs_len= 1656
+[11:58:52] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= True
+[11:58:52] select | verify relaxed 2/10
+[11:58:52] verify | func= Motivation | rank= 1 | pid= astro-ph/0103076 | title_snip='Magellanic Clouds Planetary Nebulae: an updated view on stellar
+  evol…' | abs_len= 458
+[11:58:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:58:55] select | verify relaxed 3/10
+[11:58:55] verify | func= Motivation | rank= 2 | pid= astro-ph/0101508 | title_snip='The Structure of Prestellar Cores as derived from ISO Observations' | abs_len= 1056
+[11:58:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:58] select | verify relaxed 4/10
+[11:58:58] verify | func= Motivation | rank= 3 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[11:59:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:59:01] select | verify relaxed 5/10
+[11:59:01] verify | func= Motivation | rank= 4 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[11:59:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:59:03] select | verify relaxed 6/10
+[11:59:03] verify | func= Motivation | rank= 5 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[11:59:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:59:06] select | verify relaxed 7/10
+[11:59:06] verify | func= Motivation | rank= 6 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[11:59:09] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:59:09] select | verify relaxed 8/10
+[11:59:09] verify | func= Motivation | rank= 7 | pid= astro-ph/0102191 | title_snip='Velocity and density spectra of the Small Magellanic Cloud' | abs_len= 834
+[11:59:13] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[11:59:13] select | verify relaxed 9/10
+[11:59:13] verify | func= Motivation | rank= 8 | pid= astro-ph/0104245 | title_snip='Cluster abundance and large-scale structure' | abs_len= 530
+[11:59:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:59:16] select | verify relaxed 10/10
+[11:59:16] verify | func= Motivation | rank= 9 | pid= astro-ph/0102477 | title_snip='The Structure and Evolution of Magnetized Cloud Cores in a Zero--Densi…' | abs_len= 1571
+[11:59:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How can future studies utilize the current analysis of populous clusters in the Small Magellanic Cloud to further understand its structure and what methods or datasets from this work could be used in such studies?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

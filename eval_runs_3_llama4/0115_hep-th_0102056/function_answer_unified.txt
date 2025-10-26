@@ -1,0 +1,1 @@
+The current work compares to existing noncommutative Yang-Mills and noncommutative open string theories [Compares] (hep-th/0101045), and utilizes these theories, such as noncommutative open string theories, to describe the low energy theory of D-branes [Uses] (hep-th/0101045).

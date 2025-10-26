@@ -1,0 +1,1 @@
+The work extends previous lattice estimates by introducing a new approach to expand gauge-invariant Wilson operators on lattice, overcoming limitations of former methods [Background] (hep-lat/0104007). This development motivates the need for high-order perturbative calculations in the context of the operator product expansion.

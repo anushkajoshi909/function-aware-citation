@@ -1,2 +1,0 @@
-The background information on skutterudite compounds, specifically their electronic structure, informs the use of photoemission spectroscopy in this study by providing a basis for understanding the valence-band spectra and hybridization of states (cond-mat/0103342). [Background]
-The abstract does not provide information relevant to Motivation. [Motivation]

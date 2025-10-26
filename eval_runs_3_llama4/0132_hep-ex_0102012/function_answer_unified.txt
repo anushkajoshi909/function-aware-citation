@@ -1,0 +1,1 @@
+The PHOBOS experiment provides background information on the study of Au-Au interactions at RHIC, where it is one of four experiments [Background] (hep-ex/0102012). The PHOBOS detector is used to collect data on Au-Au collisions, obtaining physics results for central collisions and analyzing pseudorapidity density of charged particles [Uses] (hep-ex/0102012).

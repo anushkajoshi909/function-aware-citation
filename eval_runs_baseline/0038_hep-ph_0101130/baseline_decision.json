@@ -1,0 +1,18 @@
+{
+  "answer": "The investigation of spatial variation in the cosmological constant is motivated by the possibility of differences in fundamental physical parameters from one side of the observed universe to the other, as discussed in hep-ph/0101130.",
+  "predicted_paper_id": "hep-ph/0101130",
+  "explanation": "This paper provides a theoretical framework for understanding the potential spatial variation of the cosmological constant, making it a relevant motivation for further investigation.",
+  "evidence_quote": "Spatial gradients in the cosmological constant",
+  "topk_list": [
+    "hep-ph/0101130",
+    "astro-ph/0102319",
+    "astro-ph/0101143",
+    "astro-ph/0103158",
+    "astro-ph/0103075",
+    "gr-qc/0104029",
+    "astro-ph/0104366",
+    "gr-qc/0102003",
+    "astro-ph/0101449",
+    "gr-qc/0103003"
+  ]
+}

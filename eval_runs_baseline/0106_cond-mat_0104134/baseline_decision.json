@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends our understanding of the collapse phase transition in self-avoiding trails by confirming earlier predictions and phenomenological theories, as seen in the study of four-dimensional interacting self-avoiding trails (cond-mat/0104134).",
+  "predicted_paper_id": "cond-mat/0104134",
+  "explanation": "This paper best supports the answer because it directly investigates the collapse phase transition in self-avoiding trails, providing evidence for the transition and its characteristics in four dimensions.",
+  "evidence_quote": "collapse phase transition occurring at finite temperature",
+  "topk_list": [
+    "cond-mat/0104134",
+    "cond-mat/0104135",
+    "cond-mat/0104121",
+    "hep-ph/0104259",
+    "cond-mat/0102409",
+    "cond-mat/0102169",
+    "hep-ph/0101039",
+    "astro-ph/0101113",
+    "hep-ph/0101078",
+    "quant-ph/0104105"
+  ]
+}

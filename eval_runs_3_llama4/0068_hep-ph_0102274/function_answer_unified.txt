@@ -1,0 +1,1 @@
+The possibility of a low value of sin2β motivates the construction of a reference unitarity triangle [Motivation] (hep-ph/0103040), and established methods such as using the unitarity of the CKM matrix and experimental values of well-known CKM elements are used in this construction [Uses] (hep-ph/0102274).

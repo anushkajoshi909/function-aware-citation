@@ -1,0 +1,18 @@
+{
+  "answer": "The pulsation properties of SX Phe variables provide insight into their evolutionary history in Galactic Globular Clusters and Local Group dwarf galaxies (astro-ph/0102029).",
+  "predicted_paper_id": "astro-ph/0102029",
+  "explanation": "This paper presents a detailed linear, nonadiabatic pulsational scenario for SX Phoenicis variables in Galactic Globular Clusters and Local Group dwarf galaxies, discussing how their pulsation properties can constrain their evolutionary history.",
+  "evidence_quote": "pulsation properties of SX Phe",
+  "topk_list": [
+    "astro-ph/0102029",
+    "astro-ph/0101126",
+    "astro-ph/0103262",
+    "astro-ph/0102351",
+    "astro-ph/0104178",
+    "astro-ph/0102374",
+    "astro-ph/0101081",
+    "astro-ph/0102430",
+    "astro-ph/0101529",
+    "astro-ph/0103092"
+  ]
+}

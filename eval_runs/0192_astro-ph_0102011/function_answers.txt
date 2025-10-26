@@ -1,2 +1,0 @@
-The study of disc-like objects using specific simulations is motivated by the need to accurately model their structural and dynamical properties, which is crucial for understanding the formation and evolution of spiral galaxies. This is important because previous simulations have struggled to form stable disc-like structures, making it necessary to test new approaches, such as the inefficient Schmidt law-like algorithm used here (astro-ph/0102011). [Motivation]
-The abstract does not provide information relevant to Uses. [Uses]

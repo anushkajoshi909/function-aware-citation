@@ -1,0 +1,18 @@
+{
+  "answer": "Future research could utilize the methods presented in this study to further investigate the power spectrum of density fluctuations by applying the statistical technique called the False Discovery Rate, as seen in astro-ph/0103018.",
+  "predicted_paper_id": "astro-ph/0103018",
+  "explanation": "This paper presents a joint analysis of the power spectra of density fluctuations from three independent cosmological redshift surveys, and uses a newly developed statistical technique to show that certain features in the power spectra are statistically significant.",
+  "evidence_quote": "We use a newly developed statistical technique called the False Discovery Rate",
+  "topk_list": [
+    "astro-ph/0103018",
+    "astro-ph/0101225",
+    "astro-ph/0101361",
+    "astro-ph/0102195",
+    "nucl-th/0101012",
+    "gr-qc/0103045",
+    "astro-ph/0103082",
+    "astro-ph/0104443",
+    "astro-ph/0102174",
+    "astro-ph/0104057"
+  ]
+}

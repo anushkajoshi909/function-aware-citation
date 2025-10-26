@@ -1,0 +1,1 @@
+The structural analysis of meson loop corrections in HBChPT can be used in future research to determine significant loop corrections in various settings [FutureWork] (hep-ph/0104197), and it utilizes methods such as the three-flavor-index representation of effective baryon fields and decomposition of corrections in terms of effective quark operators [Uses] (hep-ph/0104197).

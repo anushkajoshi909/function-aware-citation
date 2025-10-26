@@ -1,0 +1,18 @@
+{
+  "answer": "The current code's approach to solving the transfer of continuum and lines is comparable to previous work in the field, such as the Accelerated Lambda Iteration method (ALI) and two stream Eddington approximation (astro-ph/0103317).",
+  "predicted_paper_id": "astro-ph/0103317",
+  "explanation": "This paper presents a code that solves the transfer of the continuum with the ALI method and that of the lines in a two stream Eddington approximation, which is relevant to the current code's approach.",
+  "evidence_quote": "Accelerated Lambda Iteration method",
+  "topk_list": [
+    "astro-ph/0103317",
+    "astro-ph/0103503",
+    "astro-ph/0102269",
+    "astro-ph/0102270",
+    "hep-th/0103228",
+    "hep-ph/0104049",
+    "hep-ph/0104065",
+    "hep-ph/0102005",
+    "gr-qc/0103017",
+    "hep-ph/0104097"
+  ]
+}

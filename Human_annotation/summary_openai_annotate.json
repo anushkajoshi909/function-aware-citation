@@ -1,0 +1,18 @@
+{
+  "metrics": {
+    "n_functions": 100,
+    "support_confusion": {
+      "TP": 64,
+      "FP": 12,
+      "TN": 7,
+      "FN": 17
+    },
+    "support_accuracy": 0.71,
+    "support_precision": 0.8421052631578947,
+    "support_recall": 0.7901234567901234,
+    "support_f1": 0.8152866242038217,
+    "function_accuracy_vs_annotator": 0.99,
+    "paper_recall@1_vs_annotator": 0.6296296296296297
+  },
+  "source_csv": "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/Human_annotation/annotation_batch.csv"
+}

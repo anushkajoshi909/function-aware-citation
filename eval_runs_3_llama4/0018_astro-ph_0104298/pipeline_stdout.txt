@@ -1,0 +1,165 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Background"
+  ],
+  "justification": "The query highlights limitations in current understanding, which motivates further research, and also implies a need for foundational knowledge about ionization properties in Damped Ly alpha systems."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:43:24] main | args: Namespace(max_check=10, debug=True)
+[11:43:24] read_last_jsonl | path= classified_outputs.jsonl
+[11:43:24] read_last_jsonl | total_lines= 1
+[11:43:24] main | query='What limitations in current understanding of ionization properties in Damped Ly alpha systems motivate further research on the effects of ionization corrections on abundance measurements?' | funcs=['Motivation', 'Background']
+[11:43:26] main | core_terms= ['Damped Ly alpha systems', 'ionization properties', 'ionization corrections', 'abundance measurements']
+[11:43:26] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:43:26] load_topk_jsonl | rows= 20
+[11:43:26] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104298 title_snip='Ionization Properties and Elemental Abundances in Damped Ly alpha
+  Sy…' abs_len= 1762
+[11:43:26] main | running function= Motivation
+[11:43:26] select | function= Motivation | candidates_in= 20
+[11:43:26] select | core_terms= ['Damped Ly alpha systems', 'ionization properties', 'ionization corrections', 'abundance measurements']
+[11:43:26] select | no cosine prune; kept=20/20
+[11:43:26] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104298', 'astro-ph/0101029', 'astro-ph/0104392', 'hep-ph/0103121', 'astro-ph/0101335', 'hep-ph/0101212', 'astro-ph/0102403', 'hep-ph/0101106', 'hep-ex/0103006', 'astro-ph/0104308']
+[11:43:26] select | verify relaxed 1/10
+[11:43:26] verify | func= Motivation | rank= 0 | pid= astro-ph/0104298 | title_snip='Ionization Properties and Elemental Abundances in Damped Ly alpha
+  Sy…' | abs_len= 1762
+[11:43:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:43:30] select | verify relaxed 2/10
+[11:43:30] verify | func= Motivation | rank= 1 | pid= astro-ph/0101029 | title_snip='Galactic Chemical Abundances at z>3 I: First Results from the Echellet…' | abs_len= 1144
+[11:43:33] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[11:43:33] select | verify relaxed 3/10
+[11:43:33] verify | func= Motivation | rank= 2 | pid= astro-ph/0104392 | title_snip='Systematic Uncertainties in the Determination of the Primordial 4He
+  …' | abs_len= 1524
+[11:43:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:43:35] select | verify relaxed 4/10
+[11:43:35] verify | func= Motivation | rank= 3 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[11:43:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:43:38] select | verify relaxed 5/10
+[11:43:38] verify | func= Motivation | rank= 4 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[11:43:41] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:43:41] select | verify relaxed 6/10
+[11:43:41] verify | func= Motivation | rank= 5 | pid= hep-ph/0101212 | title_snip='Theory of eps'/eps' | abs_len= 723
+[11:43:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:43:44] select | verify relaxed 7/10
+[11:43:44] verify | func= Motivation | rank= 6 | pid= astro-ph/0102403 | title_snip='The electron temperature in ionized nebulae' | abs_len= 944
+[11:43:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:43:46] select | verify relaxed 8/10
+[11:43:46] verify | func= Motivation | rank= 7 | pid= hep-ph/0101106 | title_snip='CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Col…' | abs_len= 1397
+[11:43:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:43:49] select | verify relaxed 9/10
+[11:43:49] verify | func= Motivation | rank= 8 | pid= hep-ex/0103006 | title_snip='Search for SUSY with R-parity violating LL\bar{E} couplings at sqrt(s)…' | abs_len= 1118
+[11:43:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:43:52] select | verify relaxed 10/10
+[11:43:52] verify | func= Motivation | rank= 9 | pid= astro-ph/0104308 | title_snip='Chemical Enrichment at High Redshifts: Understanding the Nature of
+  D…' | abs_len= 1464
+[11:43:55] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in current understanding of ionization properties in Damped Ly alpha systems motivate further research on the effects of ionization corrections on abundance measurements?
+- WINNER: astro-ph/0104298 | Ionization Properties and Elemental Abundances in Damped Ly alpha
+  Systems
+- QUOTE : Contrary to common belief, the ratio can attain relatively high values
+- WHY   : sufficient
+[11:43:56] main | running function= Background
+[11:43:56] select | function= Background | candidates_in= 20
+[11:43:56] select | core_terms= ['Damped Ly alpha systems', 'ionization properties', 'ionization corrections', 'abundance measurements']
+[11:43:56] select | no cosine prune; kept=20/20
+[11:43:56] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104298', 'astro-ph/0101029', 'astro-ph/0104392', 'hep-ph/0103121', 'astro-ph/0101335', 'hep-ph/0101212', 'astro-ph/0102403', 'hep-ph/0101106', 'hep-ex/0103006', 'astro-ph/0104308']
+[11:43:56] select | verify relaxed 1/10
+[11:43:56] verify | func= Background | rank= 0 | pid= astro-ph/0104298 | title_snip='Ionization Properties and Elemental Abundances in Damped Ly alpha
+  Sy…' | abs_len= 1762
+[11:43:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:43:59] select | verify relaxed 2/10
+[11:43:59] verify | func= Background | rank= 1 | pid= astro-ph/0101029 | title_snip='Galactic Chemical Abundances at z>3 I: First Results from the Echellet…' | abs_len= 1144
+[11:44:02] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[11:44:02] select | verify relaxed 3/10
+[11:44:02] verify | func= Background | rank= 2 | pid= astro-ph/0104392 | title_snip='Systematic Uncertainties in the Determination of the Primordial 4He
+  …' | abs_len= 1524
+[11:44:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:44:05] select | verify relaxed 4/10
+[11:44:05] verify | func= Background | rank= 3 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[11:44:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:44:08] select | verify relaxed 5/10
+[11:44:08] verify | func= Background | rank= 4 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[11:44:11] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[11:44:11] select | verify relaxed 6/10
+[11:44:11] verify | func= Background | rank= 5 | pid= hep-ph/0101212 | title_snip='Theory of eps'/eps' | abs_len= 723
+[11:44:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:44:13] select | verify relaxed 7/10
+[11:44:13] verify | func= Background | rank= 6 | pid= astro-ph/0102403 | title_snip='The electron temperature in ionized nebulae' | abs_len= 944
+[11:44:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:44:16] select | verify relaxed 8/10
+[11:44:16] verify | func= Background | rank= 7 | pid= hep-ph/0101106 | title_snip='CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Col…' | abs_len= 1397
+[11:44:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:44:18] select | verify relaxed 9/10
+[11:44:18] verify | func= Background | rank= 8 | pid= hep-ex/0103006 | title_snip='Search for SUSY with R-parity violating LL\bar{E} couplings at sqrt(s)…' | abs_len= 1118
+[11:44:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:44:21] select | verify relaxed 10/10
+[11:44:21] verify | func= Background | rank= 9 | pid= astro-ph/0104308 | title_snip='Chemical Enrichment at High Redshifts: Understanding the Nature of
+  D…' | abs_len= 1464
+[11:44:24] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What limitations in current understanding of ionization properties in Damped Ly alpha systems motivate further research on the effects of ionization corrections on abundance measurements?
+- WINNER: astro-ph/0104298 | Ionization Properties and Elemental Abundances in Damped Ly alpha
+  Systems
+- QUOTE : We analyze extant data of Al++, Al+ and other low ions
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current understanding of ionization properties in Damped Ly alpha systems is limited by the potential effects of ionization corrections on abundance measurements, which motivates further research [Motivation] (astro-ph/0104298). The background of this issue lies in the analysis of ionization properties and elemental abundances in Damped Ly alpha systems, where gas of intermediate ionization state plays a significant role [Background] (astro-ph/0104298).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

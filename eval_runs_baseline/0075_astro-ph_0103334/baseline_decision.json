@@ -1,0 +1,18 @@
+{
+  "answer": "The investigation of magnetic field fluctuations in the NGC 7538 region is motivated by the need to understand the differences in polarization between IRS 1(SMM) and IRS 11(SMM) (astro-ph/0103334).",
+  "predicted_paper_id": "astro-ph/0103334",
+  "explanation": "This paper presents imaging polarimetry of the 0.85mm continuum emission in the NGC 7538 region and interprets the polarization map in terms of thermal radiation by magnetically aligned dust grains.",
+  "evidence_quote": "small scale fluctuations of the magnetic field",
+  "topk_list": [
+    "astro-ph/0103334",
+    "astro-ph/0103048",
+    "astro-ph/0104360",
+    "cond-mat/0102414",
+    "physics/0103029",
+    "astro-ph/0101001",
+    "astro-ph/0102445",
+    "nucl-th/0102026",
+    "astro-ph/0101368",
+    "hep-ex/0101010"
+  ]
+}
