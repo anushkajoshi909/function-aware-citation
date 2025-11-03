@@ -13,4 +13,4 @@ tqdm>=4.66
 regex>=2023.0.0
 openai==1.93.0
 matplotlib>=3.7
-seaborn>=0.13  # optional, used for nicer plots
+seaborn>=0.13  
