@@ -1,0 +1,23 @@
+name: fa-cite
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.23
+  - pandas>=2.0
+  - scikit-learn>=1.3
+  - pip:
+      - faiss-cpu>=1.7.4,<2
+      - torch>=2.0,<3
+      - transformers>=4.33
+      - sentence-transformers==2.2.2
+      - datasets>=2.19
+      - huggingface_hub>=0.23
+      - rank-bm25==0.2.2
+      - tqdm>=4.66
+      - regex>=2023.0.0
+      - openai==1.93.0
+      - matplotlib>=3.7
+      - seaborn>=0.13
