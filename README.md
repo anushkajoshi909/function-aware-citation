@@ -29,3 +29,160 @@ This repository contains the source code, models, and experimental setup for bui
 # clone the repository
 git clone https://github.com/anushkajoshi909/function-aware-citation.git
 cd function-aware-citation
+
+# create env & install deps
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+---
+
+## Datasets
+
+### Corpus (unarXive_2024)
+- Hugging Face: `ines-besrour/unarxive_2024`
+- Download the corpus; to reproduce our runs you only need these shards:
+```
+processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0101_001.jsonl
+processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0102_001.jsonl
+processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0103_001.jsonl
+processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0104_001.jsonl
+```
+
+### Index dataset (FACET / FAISS+E5)
+- FAISS index over E5 embeddings (title+abstract+metadata).
+- Existing index dirs used in the repo: `e5_index_subset_1/`.
+
+---
+
+## Evaluation Data
+
+### Synthetic (LLM-generated)
+- Already included at: `RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl`
+- To regenerate (200 papers → 200 questions with function + support tags):
+```bash
+cd RetrievalAugmentedGeneration
+python3 Data_generation_support.py
+```
+
+### Human-annotated subset
+- Existing file: `Human_annotation/annotation_batch.csv`
+- To create your own sheet:
+```bash
+cd Human_annotation
+python3 generate_annotation_sheet.py \
+  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl \
+  --out_csv /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/Human_annotation/annotation_batch.csv \
+  --n_papers 50
+```
+
+---
+
+## Pipeline (TL;DR)
+**Classify → Retrieve → Function-filter → Synthesize**
+
+Stable I/O per stage:
+
+- **Function classification** → `{"query","predicted_functions","scores"}`  
+- **Semantic retrieval** (E5+FAISS) → `{"query_id","candidates":[{"paper_id","score"}...]}`  
+- **Function-aware filtering** → `{"paper_id","supports","fit","topicality","quote","why","core_hits","score"}`  
+- **Answer synthesis** → `{"answer","citations":["paper_id",...],"rationales"}`
+
+Run end-to-end:
+```bash
+python3 run_pipeline.py
+```
+
+---
+
+## Evaluation (compute metrics vs. gold)
+```bash
+python3 eval_runner.py \
+  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl \
+  --pipeline /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline.py \
+  --project-root /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project \
+  --runs-dir /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_3_gpt_teuken \
+  --model-index 7 \
+  --limit 200
+```
+
+**Sanity checks (expected ranges):**
+- Support **F1 ≈ 0.85**
+- Paper **Recall@1 ≈ 0.62**
+- Retrieval **Hit_any ≈ 0.83**
+- Function membership **Accuracy ≈ 0.92**
+- Baseline: **Citation@1 ≈ 0.83**, **Recall@10 ≈ 0.915**
+
+---
+
+## Run Components Individually
+
+### 1) Function classification
+```bash
+cd RetrievalAugmentedGeneration
+python3 classifying_question.py
+```
+
+### 2) Retrieval (ad-hoc / inspection)
+Open the notebook:
+```
+Retreival_query_based.ipynb
+```
+
+### 3) Function-aware filtering + answer generation
+```bash
+python3 function_based_answer.py --debug --max-check 10
+# --max-check: top-k candidates to score per query
+```
+
+---
+
+## Baseline: Standard RAG (abstract-only)
+
+**Scope:** No function awareness. Retrieves top-k abstracts (k=10) and prompts the model to cite **one** paper.
+
+**Metrics:**  
+- **Citation Accuracy@1** – cited == gold  
+- **Retrieval Recall@10** – gold in retrieved top-k
+
+**Command:**
+```bash
+python3 baseline_rag_citation_eval.py \
+  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl \
+  --runs-dir /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_baseline \
+  --topk 10 \
+  --retrieval-topk 10 \
+  --model openai/gpt-oss-120b \
+  --limit 200
+```
+
+---
+
+## Scripts • Inputs • Output
+
+| Stage / Role                  | Script/Path                                                | Input (key fields)                                         | Output artifact                          | Notes |
+|------------------------------|------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------|-------|
+| Function classification      | `RetrievalAugmentedGeneration/classifying_question.py`     | `query`                                                     | `classified_output.jsonl`                | `{query, predicted_functions[]}` few-shot over {Background, Uses, Compares, Extends, FutureWork}. |
+| Semantic retrieval           | `RetrievalAugmentedGeneration/retrieval_query_based.py` *(nb: `Retreival_query_based.ipynb`)* | `query`; FAISS index in `e5_index_subset_1/`                | `topk_candidates_query.jsonl`            | `{paper_id, title, abstract, cosine}` (E5 over title+abstract+metadata). |
+| Function-aware filtering     | `function_based_answer.py`                                 | top-k candidates + `query`                                  | `scored_candidates.jsonl`                | `{paper_id, supports:bool, fit:float, topicality:float, quote, why, core_hits}`. |
+| Answer synthesis             | `function_based_answer.py`                                 | supported candidates                                        | `final_answer.jsonl`                     | `{answer, citations[paper_id], rationale}` (evidence-conditioned). |
+| Orchestration                | `run_pipeline.py` *(or `run_pipeline_2.py`)*               | `.env`/config, CLI flags                                    | `pipeline_stdout.txt` + artifacts        | Deterministic stage execution, logs prompts, outputs, timestamps. |
+| Evaluation                   | `eval_runner.py`                                           | `final_answer.jsonl` + gold                                 | `eval_results.jsonl`                     | Reports Support P/R/F1, Function membership accuracy, `paper_at1_accuracy`, `retrieval_hit_any`. |
+| Index build (offline)        | `build_index.py`                                           | `papers.jsonl` (`paper_id`, title, authors, year, abstract) | `e5_index_subset_1/` (FAISS + metadata)  | Concatenate fields; embed with `intfloat/e5-small-v2`. |
+| Baseline RAG                 | `baseline_rag_citation_eval.py`                            | synthetic dataset + retriever                               | `baseline_eval.json` (in run dir)        | Citation@1 and Recall@10 (no function signals). |
+
+---
+
+## Repo Pointers
+- `Human_annotation/` – scripts & CSVs for human labels  
+- `RetrievalAugmentedGeneration/` – classification, retrieval, generation, synthetic data  
+- `eval_runs_*` – experiment outputs (deepseek, gpt_teuken, llama4, baseline, etc.)  
+- `e5_index_subset_1/` – FAISS/E5 indices  
+- Notebooks: `Load_dataset.ipynb`, `Retreival_query_based.ipynb`, `function_aware_e5_index.ipynb`  
+- Runners: `run_pipeline.py`, `eval_runner.py`, `baseline_rag_citation_eval.py`
+
+## Citation
+If you use this code or dataset setup, please cite:
+```
+Joshi, A. (2025). Function-Aware Citation Retrieval and Generation. GitHub: anushkajoshi909/function-aware-citation
+```
+
