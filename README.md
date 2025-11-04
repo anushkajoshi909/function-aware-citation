@@ -33,7 +33,7 @@ cd function-aware-citation
 # create env & install deps
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
+```
 ---
 
 ## Datasets
