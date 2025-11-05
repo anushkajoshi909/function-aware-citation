@@ -11,9 +11,9 @@
     "support_precision": 0.8785714285714286,
     "support_recall": 0.7387387387387387,
     "support_f1": 0.8026101141924958,
-    "paper_recall@1": 0.4954954954954955,
-    "retrieval_hit_any": 0.6246246246246246,
-    "function_membership_accuracy": 0.8
+    "citation_recall@1": 0.4954954954954955,
+    "citation_recall@10": 0.6246246246246246,
+    "function_classification_accuracy": 0.8
   },
   "source_csv": "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_3_deepseek/deepseek_final.csv"
 }
