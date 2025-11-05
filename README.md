@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ## Datasets
 
 ### Corpus (unarXive_2024)
-- Hugging Face: `ines-besrour/unarxive_2024`
+- Hugging Face: `ines-besrour/unarxive_2024` (https://huggingface.co/datasets/ines-besrour/unarxive_2024/tree/main)
 - Download the corpus; to reproduce our runs you only need these shards:
 ```
 processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0101_001.jsonl
