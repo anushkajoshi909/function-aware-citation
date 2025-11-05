@@ -11,8 +11,8 @@
     "support_precision": 0.9140625,
     "support_recall": 0.35135135135135137,
     "support_f1": 0.507592190889371,
-    "paper_recall@1": 0.29429429429429427,
-    "paper_recall@10": 0.35435435435435436,
+    "citation_recall@1": 0.29429429429429427,
+    "citation_recall@10": 0.35435435435435436,
     "function_classfication_accuracy": 0.335
   },
   "rows": [
