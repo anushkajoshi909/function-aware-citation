@@ -56,9 +56,9 @@ processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0104_001.jsonl
 
 ## Evaluation Data
 
-### Synthetic (LLM-generated)
+### Synthetic (LLM-generated) / FACET( gold)
 - Already included at: `RetrievalAugmentedGeneration/synthetic_dataset_strict1.jsonl`
-- To regenerate (200 papers → 200 questions with function + support tags):
+- To regenerate with new questions (200 papers → 200 questions with 400 function + support tags). You can run the following commands:
 ```bash
 cd RetrievalAugmentedGeneration
 python3 Data_generation_support.py
@@ -66,7 +66,7 @@ python3 Data_generation_support.py
 
 ### Human-annotated subset
 - Existing file: `Human_annotation/annotation_batch.csv`
-- To create your own sheet:
+- To create your own sheet for annotation:
 ```bash
 cd Human_annotation
 python3 generate_annotation_sheet.py \
@@ -77,7 +77,7 @@ python3 generate_annotation_sheet.py \
 
 ---
 
-## Pipeline (TL;DR)
+## Pipeline
 **Classify → Retrieve → Function-filter → Synthesize**
 
 Stable I/O per stage:
@@ -86,7 +86,8 @@ Stable I/O per stage:
 - **Semantic retrieval** (E5+FAISS) → `{"query_id","candidates":[{"paper_id","score"}...]}`  
 - **Function-aware filtering** → `{"paper_id","supports","fit","topicality","quote","why","core_hits","score"}`  
 - **Answer synthesis** → `{"answer","citations":["paper_id",...],"rationales"}`
-
+  
+When you run the fillowing command, this will prompt tyou to enter the model name and the question when running the pipeline.
 Run end-to-end:
 ```bash
 python3 run_pipeline.py
@@ -95,6 +96,10 @@ python3 run_pipeline.py
 ---
 
 ## Evaluation (compute metrics vs. gold)
+You can rename the eval_runs folder as needed. In this example, the evaluation was performed using the gpt_teuken model. The results for our run are available in the master branch under folders named eval_runs_<model_name>.
+
+This file runs the pipeline for the whole dataset and evaludates against the gold set and provides the scores.
+
 ```bash
 python3 eval_runner.py \
   --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/synthetic_dataset_strict1.jsonl \
@@ -105,16 +110,9 @@ python3 eval_runner.py \
   --limit 200
 ```
 
-**Sanity checks (expected ranges):**
-- Support **F1 ≈ 0.85**
-- Paper **Recall@1 ≈ 0.62**
-- Retrieval **Hit_any ≈ 0.83**
-- Function membership **Accuracy ≈ 0.92**
-- Baseline: **Citation@1 ≈ 0.83**, **Recall@10 ≈ 0.915**
-
----
-
 ## Run Components Individually
+
+You can also run the components of the pipeline individually. Detailed commands are given below.
 
 ### 1) Function classification
 ```bash
@@ -123,7 +121,7 @@ python3 classifying_question.py
 ```
 
 ### 2) Retrieval (ad-hoc / inspection)
-Open the notebook:
+Open the notebook and runt the blocks.
 ```
 Retreival_query_based.ipynb
 ```
@@ -166,9 +164,9 @@ python3 baseline_rag_citation_eval.py \
 | Function-aware filtering     | `function_based_answer.py`                                 | top-k candidates + `query`                                  | `scored_candidates.jsonl`                | `{paper_id, supports:bool, fit:float, topicality:float, quote, why, core_hits}`. |
 | Answer synthesis             | `function_based_answer.py`                                 | supported candidates                                        | `final_answer.jsonl`                     | `{answer, citations[paper_id], rationale}` (evidence-conditioned). |
 | Orchestration                | `run_pipeline.py` *(or `run_pipeline_2.py`)*               | `.env`/config, CLI flags                                    | `pipeline_stdout.txt` + artifacts        | Deterministic stage execution, logs prompts, outputs, timestamps. |
-| Evaluation                   | `eval_runner.py`                                           | `final_answer.jsonl` + gold                                 | `eval_results.jsonl`                     | Reports Support P/R/F1, Function membership accuracy, `paper_at1_accuracy`, `retrieval_hit_any`. |
+| Evaluation                   | `eval_runner.py`                                           | `final_answer.jsonl` + gold                                 | `eval_results.jsonl`                     | Reports Support P/R/F1, Function classification accuracy, `Citation Recall@1`, `Citation Recall@10`. |
 | Index build (offline)        | `build_index.py`                                           | `papers.jsonl` (`paper_id`, title, authors, year, abstract) | `e5_index_subset_1/` (FAISS + metadata)  | Concatenate fields; embed with `intfloat/e5-small-v2`. |
-| Baseline RAG                 | `baseline_rag_citation_eval.py`                            | synthetic dataset + retriever                               | `baseline_eval.json` (in run dir)        | Citation@1 and Recall@10 (no function signals). |
+| Baseline RAG                 | `baseline_rag_citation_eval.py`                            | synthetic dataset + retriever                               | `baseline_eval.json` (in run dir)        | Citation Recall@1 and Citation Recall@10 (no function signals). |
 
 ---
 
