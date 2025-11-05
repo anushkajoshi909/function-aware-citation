@@ -1,1 +1,0 @@
-The current work uses a method from a previous study to obtain regular deformed D2-brane solutions [Uses] (hep-th/0101096), and it compares the supersymmetry of different deformed D2-brane solutions, proving that both types of solutions are supersymmetric and preserve 1/16 of the maximal supersymmetry [Compares] (hep-th/0101096).

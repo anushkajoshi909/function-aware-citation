@@ -1,1 +1,0 @@
-The methods used to analyze the absorption feature in GRB 990705 [Uses] (astro-ph/0104062) can inform future research on supernova remnants by providing insights into their properties and impact on afterglow generation. This knowledge can guide future work [FutureWork] (astro-ph/0104062) on understanding the relationship between supernova remnants and afterglow generation.

@@ -1,1 +1,0 @@
-The current work uses chiral perturbation theory to analyze pion-nucleon scattering [Uses] and compares its results to previous phase shift analyses, finding sizeable differences for the S-waves of the elastic channels (hep-ph/0101030). This comparison allows for a more precise description of the strong interaction and the isolation of its effects [Uses] (hep-ph/0101030).

@@ -1,1 +1,0 @@
-The identification of Hilbert's error motivates a re-examination of black holes in the context of Schwarzschild's result [Motivation] (gr-qc/0102055). This understanding extends to reveal that Hilbert's space-time is analytically extendible, containing a black hole as shown by Kruskal and Fronsdal [Extends] (gr-qc/0102055).

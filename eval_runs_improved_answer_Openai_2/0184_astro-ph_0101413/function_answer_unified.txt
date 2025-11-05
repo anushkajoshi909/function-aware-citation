@@ -1,1 +1,0 @@
-The current work extends previous research on cosmic microwave background anisotropies by analyzing the MAXIMA-1 data to smaller angular scales [Extends] (astro-ph/0104459). It uses specific methods from earlier studies, such as weighted mean and median statistics techniques to combine individual CMB anisotropy detections [Uses] (astro-ph/0102264).

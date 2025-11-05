@@ -1,1 +1,0 @@
-The current understanding of the mass function of open clusters is limited by factors such as strong irregularities in the stellar background, internal dynamical evolution, and interaction with the Galactic field [Background] (astro-ph/0101371), which motivates further study to accurately determine the initial mass function [Motivation] (astro-ph/0101371).

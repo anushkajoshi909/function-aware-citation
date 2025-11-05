@@ -1,1 +1,0 @@
-The current study's methodology compares to previous work by Braun & Burton [Compares] (astro-ph/0103119), and extends it by providing a more detailed analysis of the warm neutral medium in compact high-velocity clouds, allowing for constraints on the intergalactic medium parameters [Extends] (astro-ph/0103119).
