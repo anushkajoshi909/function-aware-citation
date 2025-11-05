@@ -57,7 +57,7 @@ processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0104_001.jsonl
 ## Evaluation Data
 
 ### Synthetic (LLM-generated)
-- Already included at: `RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl`
+- Already included at: `RetrievalAugmentedGeneration/synthetic_dataset_strict1.jsonl`
 - To regenerate (200 papers → 200 questions with function + support tags):
 ```bash
 cd RetrievalAugmentedGeneration
@@ -70,7 +70,7 @@ python3 Data_generation_support.py
 ```bash
 cd Human_annotation
 python3 generate_annotation_sheet.py \
-  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl \
+  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/synthetic_dataset_strict1.jsonl \
   --out_csv /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/Human_annotation/annotation_batch.csv \
   --n_papers 50
 ```
@@ -97,7 +97,7 @@ python3 run_pipeline.py
 ## Evaluation (compute metrics vs. gold)
 ```bash
 python3 eval_runner.py \
-  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl \
+  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/synthetic_dataset_strict1.jsonl \
   --pipeline /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/run_pipeline.py \
   --project-root /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project \
   --runs-dir /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_3_gpt_teuken \
@@ -147,7 +147,7 @@ python3 function_based_answer.py --debug --max-check 10
 **Command:**
 ```bash
 python3 baseline_rag_citation_eval.py \
-  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl \
+  --dataset /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/synthetic_dataset_strict1.jsonl \
   --runs-dir /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_baseline \
   --topk 10 \
   --retrieval-topk 10 \
