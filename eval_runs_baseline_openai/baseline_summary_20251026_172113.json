@@ -1,8 +1,8 @@
 {
   "metrics": {
     "n_rows": 400,
-    "citation_accuracy@1": 0.83,
-    "retrieval_recall@10": 0.915,
+    "citation_recall@1": 0.83,
+    "citation_recall@10": 0.915,
     "n_with_topk": 400
   },
   "perrow_csv": "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/eval_runs_baseline/baseline_perrow_20251026_172113.csv"
