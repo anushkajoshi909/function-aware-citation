@@ -1,0 +1,210 @@
+rank,paper_id,title,year,authors,abstract,score,cosine,title_matches,abs_matches,query_terms_used,classifier_functions,retrieval_error,retrieved_at
+0,physics/0101044,"Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,
+  and Ra II",2001,V. A. DzubaV. V. FlambaumJ. S. M. Ginges,"We have performed ab initio mixed-states and sum-over-states calculations of
+parity nonconserving (PNC) electric dipole (E1) transition amplitudes between
+s-d electron states of Cs, Fr, Ba II, and Ra II. For the lower states of these
+atoms we have also calculated energies, E1 transition amplitudes, and
+lifetimes. We have shown that PNC E1 transition amplitudes between s-d states
+can be calculated to high accuracy. Contrary to the Cs 6s-7s transition, in
+these transitions there are no strong cancelations between different terms in
+the sum-over-states approach. In fact, there is one dominating term which
+deviates from the sum by less than 20%. This term corresponds to an s-p_{1/2}
+weak matrix element, which can be calculated to better than 1%, and a
+p_{1/2}-d_{3/2} E1 transition amplitude, which can be measured. Also, the s-d
+amplitudes are about four times larger than the corresponding s-s transitions.
+We have shown that by using a hybrid mixed-states/sum-over-states approach the
+accuracy of the calculations of PNC s-d amplitudes could compete with that of
+Cs 6s-7s if p_{1/2}-d_{3/2} E1 amplitudes are measured to high accuracy.",1.0,0.8880318403244019,,"amplitudes, hybrid, mixed, pnc, states, sum","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+1,hep-ph/0102289,A note on the dispersive treatment of K -> pi pi with the kaon off-shell,2001,M. BuechlerG. ColangeloJ. KamborF. Orellana,"It has been recently suggested that it is possible to calculate the effect of
+final state interactions in K -> pi pi amplitudes by applying dispersive
+methods to the amplitude with the kaon off-shell. We critically reexamine the
+procedure, and point out the effects of the arbitrariness in the choice of the
+off-shell field for the kaon.",0.2946518361568451,0.8578847646713257,,amplitudes,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+2,hep-th/0104234,Simplified Method for Trace Anomaly Calculations in d=6 and d<6,2001,Fiorenzo BastianelliN. D. Hari Dass,"We discuss a simplified method for computing trace anomalies in d=6 and d<6
+dimensions. It is known that in the quantum mechanical approach trace anomalies
+in d dimensions are given by a (1+d/2)-loop computation in an auxiliary 1d
+sigma model with arbitrary geometry. We show how one can obtain the same
+information using a simpler d/2-loop calculation on an arbitrary geometry
+supplemented by a (1+d/2)-loop calculation on the simplified geometry of a
+maximally symmetric space.",0.2753427028656006,0.8570594787597656,,calculation,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+3,nucl-th/0103058,Polarization observables in p-d scattering below 30 MeV,2001,A. KievskyM. VivianiS. Rosati,"Differential and total breakup cross sections as well as vector and tensor
+analyzing powers for p-d scattering are studied for energies above the deuteron
+breakup threshold up to E(lab)=28 MeV. The p-d scattering wave function is
+expanded in terms of the correlated hyperspherical harmonic basis and the
+elastic S-matrix is obtained using the Kohn variational principle in its
+complex form. The effects of the Coulomb interaction, which are expected to be
+important in this energy range, have been rigorously taken into account. The
+Argonne AV18 interaction and the Urbana URIX three-nucleon potential have been
+used to perform a comparison to the available experimental data.",0.2723667025566101,0.8569322824478149,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+4,nucl-th/0104053,Final state interactions in the eta-d system,2001,S. WycechA. M. Green,"The eta-deuteron scattering amplitude is calculated with a recent K-matrix
+model of eta-N interactions. The existence of a narrow virtual state in the
+eta-deuteron system is inferred. This state couples strongly to the eta-d
+channel but its effect on final state interactions in the pn --> eta-d reaction
+is shown to be rather weak. Fairly large eta-N scattering lengths are allowed
+by the experimental data.",0.2619325816631317,0.8564863204956055,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+5,hep-ph/0104155,The color dipole approach to the Drell-Yan process in pA collisions,2001,B. Z. KopeliovichJ. RaufeisenA. V. Tarasov,"In the target rest frame and at high energies, Drell-Yan (DY) dilepton
+production looks like bremsstrahlung of massive photons, rather than parton
+annihilation. The projectile quark is decomposed into a series of Fock states.
+Configurations with fixed transverse separations are interaction eigenstates
+for pp scattering. The DY cross section can then be expressed in terms of the
+same color dipole cross section as DIS. This approach is especially suitable to
+describe nuclear effects, since it allows to apply Glauber multiple scattering
+theory. We go beyond the Glauber eikonal approximation by taking into account
+transitions between interaction eigenstates. We calculate nuclear shadowing at
+large Feynman-x_F for DY in proton-nucleus collisions, compare to existing data
+from E772 and make predictions for RHIC. Nuclear effects on the transverse
+momentum distribution are also investigated.",0.2572636008262634,0.8562867641448975,,"compare, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+6,hep-ph/0102308,Towards An Accurate Calculation of the Neutralino Relic Density,2001,Takeshi NiheiLeszek RoszkowskiRoberto Ruiz de Austri,"We compute the neutralino relic density in the minimal supersymmetric
+standard model by using exact expressions for the neutralino annihilation cross
+section into all tree-level final states, including all contributions and
+interference terms. We find that several final states may give comparable
+contributions to the relic density, which illustrates the importance of
+performing a complete calculation. We compare the exact results with those of
+the usual expansion method and demonstrate a sizeable discrepancy (of more than
+10%) over a significant range of the neutralino mass of up to several tens of
+GeV which is caused by the presence of resonances and new final-state
+thresholds. We perform several related checks and comparisons. In particular,
+we find that the often employed approximate iterative procedure of computing
+the neutralino freeze-out temperature gives generally very accurate results,
+except when the expansion method is used near resonances and thresholds.",0.24984729290008545,0.8559697866439819,calculation,"calculation, compare, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+7,hep-ph/0101297,"Bilocal expansion of the Borel amplitude and the hadronic tau decay
+  width",2001,Gorazd CveticTaekoon Lee,"The singular part of Borel transform of a QCD amplitude near the infrared
+renormalon can be expanded in terms of higher order Wilson coefficients of the
+operators associated with the renormalon. In this paper we observe that this
+expansion gives nontrivial constraints on the Borel amplitude that can be used
+to improve the accuracy of the ordinary perturbative expansion of the Borel
+amplitude. In particular, we consider the Borel transform of the Adler function
+and its expansion around the first infrared renormalon due to the gluon
+condensate. Using the next-to-leading order Wilson coefficient of the gluon
+condensate operator, we obtain an exact constraint on the Borel amplitude at
+the first IR renormalon. We then extrapolate, using judiciously chosen
+conformal transformations and Pade approximants, the ordinary perturbative
+expansion of the Borel amplitude in such a way that this constraint is
+satisfied. This procedure allows us to predict the $O(\alpha_s^4)$ coefficient
+of the Adler function, which gives a result consistent with the estimate by
+Kataev and Starshenko using a completely different method. We then apply this
+improved Borel amplitude to the tau decay width, and obtain the strong coupling
+constant $\alpha_s(M_Z) =0.1193 \pm 0.0007_{exp.} \pm 0.0010_{EW+CKM} \pm
+0.0009_{meth.} \pm 0.0003_{evol.}$. We then compare this result with those of
+other resummation methods.",0.24775823950767517,0.8558804988861084,,compare,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+8,hep-ph/0101227,Introduction to QCD Sum Rule Approach,2001,A. V. Radyushkin,"In these lectures, I describe the techniques used within the QCD sum rule
+approach. The basic concepts of the approach are introduced using a simple
+model of quantum-mechanical oscillator in 2+1 dimensions. Then I discuss their
+field-theoretical extension and the construction of the operator product
+expansion for current correlators in QCD. The calculation of static parameters
+is illustrated on the example of sum rules in the vector and axial meson
+channels. Finally, the QCD sum rule calculation of the pion electromagnetic
+form factor is presented as an example of application of the method to dynamic
+characteristics of the hadrons.",0.24194569885730743,0.8556320667266846,sum,"calculation, sum","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+9,hep-ph/0102240,Melosh Construction Of Relativistic Three-Quark Baryon Wave Functions,2001,Xuepeng SunHans J. Weber,"A method for constructing a complete set of relativistic three-quark states
+in light front dynamics is implemented for the nucleon, N$^*$(1520) and
+N$^*$(1535). This approach facilitates constructing states containing virtual
+antiquarks. A physical interpretation is provided in terms of transition
+amplitudes from quark to quark-gluon or quark-Goldstone boson Fock states of
+chiral dynamics generated by flux tube breaking expected in QCD at intermediate
+distances.",0.22467541694641113,0.8548939228057861,,"amplitudes, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+10,hep-ph/0104290,On a QCD-based pion distribution amplitude vs. recent experimental data,2001,A. P. BakulevS. V. MikhailovN. G. Stefanis,"Using QCD sum rules with nonlocal condensates the twist-2 pion distribution
+amplitude is determined by means of its moments and their confidence intervals,
+including also radiative corrections. An admissible set of pion distribution
+amplitudes is constructed in the a_2, a_4 plane of the Gegenbauer polynomial
+expansion coefficients. The determined a_2, a_4 region strongly overlaps with
+that extracted from the CLEO data by Schmedding and Yakovlev. Comparisons are
+given with results from Fermilab experiment E791 and recent lattice
+calculations.",0.2031126618385315,0.853972315788269,,"amplitudes, sum","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+11,hep-ph/0104206,Model-independent approach as a tool of studying chiral symmetry,2001,Yu. S. SurovtsevD. KrupaM. Nagy,"A simultaneous analysis (in the model-independent approach) of the $\pi\pi$
+scattering (from the threshold to 1.9 GeV) and of the $\pi\pi\to K\overline{K}$
+process (from the threshold to $\sim$ 1.46 GeV) is carried out in channel with
+$I^GJ^{PC}=0^+0^{++}$. The existence of the $f_0(665)$ state with properies of
+the $\sigma$-meson is proved. An indication for the glueball nature of the
+$f_0(1500)$ is obtained. A minimum scenario of the simultaneous description of
+the processes $\pi\pi\to\pi\pi,K\overline{K}$ does without the ${f_0}(1370)$
+resonance. A version including this state is also considered. In this case the
+${f_0}(1370)$ resonance has the dominant $s{\bar s}$ component (the ratio of
+its coupling constant with the $\pi\pi$ channel to the one with the
+$K\overline{K}$ channel is 0.12). The coupling constants of the observed states
+with the $\pi\pi$ and $K\overline{K}$ systems and the $\pi\pi$ and
+$K\overline{K}$ scattering lengths are obtained. A parameterless description of
+the $\pi\pi$ background is given by allowance for the left-hand branch-point in
+the uniformizing variable. On the basis of this and of the fact that all the
+adjusted parameters for the $\pi\pi$ scattering are only the positions of poles
+describing resonances, it is concluded that our model-independent approach is a
+valuable tool for studying the realization schemes of chiral symmetry. The
+existence of the $f_0(665)$ state and the obtained $\pi\pi$-scattering length
+($a_0^0\approx 0.27 m_{\pi^+}^{-1}$) seem to suggest the linear realization of
+chiral symmetry.",0.1799350082874298,0.852981686592102,,states,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+12,hep-ph/0102287,Dispersion relations and soft pion theorems for K -> pi pi,2001,M. BuechlerG. ColangeloJ. KamborF. Orellana,"We propose a new method to obtain the K -> pi pi amplitude from K -> pi which
+allows one to fully account for the effects of final state interactions. The
+method is based on a set of dispersion relations for the K -> pi pi amplitude
+in which the weak Hamiltonian carries momentum. The soft pion theorem, which
+relates this amplitude to the K -> pi amplitude, can be used to determine one
+of the two subtraction constants - the second constant is at present known only
+to leading order in chiral perturbation theory. We solve the dispersion
+relations numerically and express the result in terms of the unknown higher
+order corrections to this subtraction constant.",0.17992106080055237,0.8529810905456543,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+13,hep-ph/0104048,"The check of QCD based on the tau-decay data analysis in the complex
+  q^2-plane",2001,B. V. GeshkenbeinB. L. IoffeK. N. Zyablyuk,"The thorough analysis of the ALEPH data on hadronic tau-decay is performed in
+the framework of QCD. The perturbative calculations are performed in 3 and
+4-loop approximations. The terms of the operator product expansion (OPE) are
+accounted up to dimension D=8. The value of the QCD coupling constant
+alpha_s(m_tau^2)=0.355 pm 0.025 was found from hadronic branching ratio R_tau.
+The V+A and V spectral function are analyzed using analytical properties of
+polarization operators in the whole complex q^2-plane. Borel sum rules in the
+complex q^2 plane along the rays, starting from the origin, are used. It was
+demonstrated that QCD with OPE terms is in agreement with the data for the
+coupling constant close to the lower error edge alpha_s(m_tau^2)=0.330. The
+restriction on the value of the gluonic condensate was found
+<(alpha_s/pi)G^2>=0.006 pm 0.012 GeV^2. The analytical perturbative QCD was
+compared with the data. It is demonstrated to be in strong contradiction with
+experiment. The restrictions on the renormalon contribution were found. The
+instanton contributions to the polarization operator are analyzed in various
+sum rules. In Borel transformation they appear to be small, but not in spectral
+moments sum rules.",0.17908990383148193,0.8529455661773682,,sum,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+14,quant-ph/0103104,Reply to Comment,2001,Ping-Xing ChenLin-Mei LiangCheng-Zu LiMing-Qiu Huang,"In the comment(quant-ph/0103003) Eggeling,Vollbrecht and Wolf suspect our
+method in quant-ph/0102133 is not practical. Here we explain our result and
+method and show that our example can tell one how to judge a separable state,
+and so our method is practical, at least for many mixed states.",0.17134729027748108,0.8526146411895752,,"mixed, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+15,nucl-th/0104057,Benchmark Test Calculation of a Four-Nucleon Bound State,2001,H. KamadaA. NoggaW. GloeckleE. HiyamaM. KamimuraK. VargaY. SuzukiM. VivianiA. KievskyS. RosatiJ. CarlsonSteven C. PieperR. B. WiringaP. NavratilB. R. BarrettN. BarneaW. LeidemannG. Orlandini,"In the past, several efficient methods have been developed to solve the
+Schroedinger equation for four-nucleon bound states accurately. These are the
+Faddeev-Yakubovsky, the coupled-rearrangement-channel Gaussian-basis
+variational, the stochastic variational, the hyperspherical variational, the
+Green's function Monte Carlo, the no-core shell model and the effective
+interaction hyperspherical harmonic methods. In this article we compare the
+energy eigenvalue results and some wave function properties using the realistic
+AV8' NN interaction. The results of all schemes agree very well showing the
+high accuracy of our present ability to calculate the four-nucleon bound state.",0.16448184847831726,0.852321207523346,calculation,"compare, states","hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+16,astro-ph/0103396,"A New Model for the Thermal X-ray Composites and the Neutral Pion Decay
+  Gamma-Rays from Supernova Remnants",2001,O. Petruk,"Recent nonthermal X-ray and gamma-ray observations, attributed to electron
+emission processes, for the first time give an experimental confirmation that
+electrons are accelerated on SNR shocks up to the energy 10^{14} eV. We have no
+direct observational confirmations about proton acceleration by SNR. Different
+models of gamma-emission from SNRs predict different emission mechanisms as
+dominating. Only decays of neutral pion created in proton-nucleon interactions
+allow us to look inside the CR nuclear component acceleration processes. A new
+model for the thermal X-ray composites strongly suggest that thermal X-ray peak
+inside the radio shell of SNR tells us about entering of one part of SNR shock
+into a denser medium compared with other parts of the shell. This makes a TXCs
+promising sites for gamma-ray generation via neutral pion decays. Detailed
+consideration of SNR-cloud interaction allows to increase an expected proton
+induced gamma-ray flux from SNR at least on an order of magnitude, that allows
+to adjust the theoretical proton origin gamma-luminosities with observed fluxes
+at least for a few SNRs even for low density (n=10-100 cm^{-3}) cloud.",0.15202142298221588,0.8517886400222778,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+17,quant-ph/0104098,Separable approximation for mixed states of composite quantum systems,2001,Thomas WellensMarek Kus,"We describe a purely algebraic method for finding the best separable
+approximation to a mixed state of a composite 2x2 quantum system, consisting of
+a decomposition of the state into a linear combination of a mixed separable
+part and a pure entangled one. We prove that, in a generic case, the weight of
+the pure part in the decomposition equals the concurrence of the state.",0.1401369422674179,0.851280689239502,"mixed, states",mixed,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+18,hep-ph/0104015,Total Cross Sections,2001,Rohini M. GodboleA. GrauG. PancheriY. Srivastava,"A unified approach to total cross-sections, based on the QCD contribution to
+the rise with energy, is presented for the processes $pp$, $p{\bar p}$, $\gamma
+p, \gamma \gamma, e^+e^- \to hadrons$. For proton processes, a discussion of
+the role played by soft gluon summation in taming the fast rise due to
+mini-jets is presented. For photon-photon processes, a comparison with other
+models indicates the need for precision measurements in both the low and high
+energy region, likely only with measurements at future Linear Colliders.",0.1177123561501503,0.8503222465515137,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609
+19,cond-mat/0103455,An Analysis of the Quasicontinuum Method,2001,J. KnapM. Ortiz,"The aim of this paper is to present a streamlined and fully three-dimensional
+version of the quasicontinuum (QC) theory of Tadmor et al. and to analyze its
+accuracy and convergence characteristics. Specifically, we assess the effect of
+the summation rules on accuracy; we determine the rate of convergence of the
+method in the presence of strong singularities, such as point loads; and we
+assess the effect of the refinement tolerance, which controls the rate at which
+new nodes are inserted in the model, on the development of dislocation
+microstructures.",0.11068375408649445,0.8500218391418457,,,"hybrid, mixed, states, sum, states, compare, previous, extend, calculation, pnc, amplitudes","Compares, Extends",,2025-09-09T18:03:58.180609

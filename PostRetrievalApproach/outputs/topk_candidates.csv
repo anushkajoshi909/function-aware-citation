@@ -1,0 +1,113 @@
+sentence_idx,sentence_uid,sentence_text,citation_function,citation_functions,needs_citation,justification,rank,paper_id,title,year,authors,abstract,normalized_score,title_matches,abs_matches,retrieval_error,retrieved_at
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,0,math/0104121,Eigenvalue estimates of the Dirac operator depending on the Ricci tensor,2001,Thomas FriedrichKlaus-Dieter Kirchberg,"We prove a new lower bound for the first eigenvalue of the Dirac operator on
+a compact Riemannian spin manifold by refined Weitzenb\""ock techniques. It
+applies to manifolds with harmonic curvature tensor and depends on the Ricci
+tensor. Examples show how it behaves compared to other known bounds.",0.8618135452270508,"dirac, estimates","bounds, curvature, dirac, manifolds, riemannian, spin",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,1,math/0103095,On eigenvalue estimates for the Dirac operator,2001,N. GinouxB. Morel,"We give lower bounds for the eigenvalues of the submanifold Dirac operator in
+terms of intrinsic and extrinsic curvature expressions. We also show that the
+limiting cases give rise to a class generalizing that of Killing spinors. We
+conclude by translating these results in terms of intrinsic twisted Dirac
+operators.",0.8552584052085876,"dirac, estimates","bounds, curvature, dirac, operators",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,2,math/0101061,Spectral estimates on 2-tori,2001,Bernd Ammann,"We prove upper and lower bounds for the eigenvalues of the Dirac operator and
+the Laplace operator on 2-dimensional tori. In particluar we give a lower bound
+for the first eigenvalue of the Dirac operator for non-trivial spin structures.
+It is the only explicit estimate for eigenvalues of the Dirac operator known so
+far that uses information about the spin structure.
+  As a corollary we obtain lower bounds for the Willmore functional of a…",0.851396918296814,estimates,"bounds, dirac, riemannian, spin, uses",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,3,math/0101111,"Eigenvalue estimates for the Dirac-Schr\""odinger operators",2001,Bertrand Morel,"We give new estimates for the eigenvalues of the hypersurface Dirac operator
+in terms of the intrinsic energy-momentum tensor, the mean curvature and the
+scalar curvature. We also discuss their limiting cases as well as the limiting
+cases of the estimates obtained by X. Zhang and O. Hijazi in [13] and [10]. We
+compare these limiting cases with those corresponding to the Friedrich and
+Hijazi inequalities. We conclude by comparing these results to…",0.843708872795105,"dirac, estimates, operators","curvature, dirac, estimates, inequalities",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,4,math/0102135,New bounds on Kakeya problems,2001,Nets KatzTerence Tao,"We establish new estimates on the Minkowski and Hausdorff dimensions of
+Besicovitch sets and obtain new bounds on the Kakeya maximal operator.",0.8302132487297058,bounds,"bounds, establish, estimates",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,5,quant-ph/0103089,"Geometrisation of electromagnetic field and topological interpretation
+  of quantum formalism",2001,O. A. Olkhov,"A new approach is proposed for an electromagnetic field geometrisation. We
+show that interacting Maxwell and Dirac fields can be considered as a single
+connected space-time 4-manifold. The Dirac spinors appear wihtin such approach
+as basic fanctions for the manifold fundamental group representation and
+electric and magnertic fields appear as components of a curvature tensor of the
+manifold covering space.",0.8257842659950256,,"curvature, dirac",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,6,math/0101084,"Curvature Estimates in Asymptotically Flat Manifolds of Positive Scalar
+  Curvature",2001,Felix FinsterInes Kath,"We consider an asymptotically flat Riemannian spin manifold of positive
+scalar curvature. An inequality is derived which bounds the Riemann tensor in
+terms of the total mass and quantifies in which sense curvature must become
+small when the total mass tends to zero.",0.824458122253418,"curvature, estimates, manifolds","bounds, curvature, riemannian, spin",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,7,hep-th/0103206,Dirac Operator on the Quantum Sphere,2001,A. PinzulA. Stern,"We construct a Dirac operator on the quantum sphere $S^2_q$ which is
+covariant under the action of $SU_q(2)$. It reduces to Watamuras' Dirac
+operator on the fuzzy sphere when $q\to 1$. We argue that our Dirac operator
+may be useful in constructing $SU_q(2)$ invariant field theories on $S^2_q$
+following the Connes-Lott approach to noncommutative geometry.",0.8227299451828003,dirac,dirac,,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,8,cond-mat/0101228,"Bounding and approximating parabolas for the spectrum of Heisenberg spin
+  systems",2001,H. -J. SchmidtJ. SchnackMarshall Luban,"We prove that for a wide class of quantum spin systems with isotropic
+Heisenberg coupling the energy eigenvalues which belong to a total spin quantum
+number S have upper and lower bounds depending at most quadratically on S. The
+only assumption adopted is that the mean coupling strength of any spin w.r.t.
+its neighbours is constant for all N spins. The coefficients of the bounding
+parabolas are given in terms of special eigenvalues of the N…",0.8222419023513794,spin,"bounds, spin",,2025-09-06T18:42:14.038301
+0,blk1|si0,"The current work uses a range of methods to derive inequalities for Riemannian spin manifolds, including the application of Dirac operators and the utilization of curvature bounds to establish sharp estimates.",uses,['Uses'],True,This sentence was generated to fulfill the 'Uses' citation function.,9,math/0103058,"A lower bound in an approximation problem involving the zeros of the
+  Riemann zeta function",2001,Jean-Francois Burnol,"We slightly improve the lower bound of Baez-Duarte, Balazard, Landreau and
+Saias in the Nyman-Beurling formulation of the Riemann Hypothesis as an
+approximation problem. We construct Hilbert space vectors which could prove
+useful in the context of the so-called `Hilbert-Polya idea'.",0.8217916488647461,,,,2025-09-06T18:42:14.038301
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,0,gr-qc/0101125,Diagrams for heat kernel expansions,2001,Ian G MossWade Naylor,"A diagramatic heat kernel expansion technique is presented. The method is
+especially well suited to the small-derivative expansion of the heat kernel,
+but it can also be used to reproduce the results obtained by the approach known
+as covariant perturbation theory. The new technique gives an expansion for the
+heat kernel at coincident points. It can also be used to obtain the derivative
+of the heat kernel and this is useful for evaluating the…",0.8246236443519592,"heat, kernel","heat, kernel",,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,1,math/0101111,"Eigenvalue estimates for the Dirac-Schr\""odinger operators",2001,Bertrand Morel,"We give new estimates for the eigenvalues of the hypersurface Dirac operator
+in terms of the intrinsic energy-momentum tensor, the mean curvature and the
+scalar curvature. We also discuss their limiting cases as well as the limiting
+cases of the estimates obtained by X. Zhang and O. Hijazi in [13] and [10]. We
+compare these limiting cases with those corresponding to the Friedrich and
+Hijazi inequalities. We conclude by comparing these results to…",0.811663031578064,,inequalities,,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,2,hep-ph/0104201,On e+e- --> W+W- --> 4f(+gamma) at LEP2,2001,Yoshimasa KuriharaMasaaki KurodaDieter Schildknecht,"The results on e+e- --> W+W- --> 4f(+gamma) obtained by different groups are
+compared with each other. Differences in the results for the total cross
+section of up to about 0.6% are traced back to different ways of implementing
+the double-pole approximation.",0.8085941076278687,,,,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,3,cond-mat/0102101,Thermodynamic Properties of the Dimerised and Frustrated S=1/2 Chain,2001,Alexander BühlerUte LöwGötz S. Uhrig,"By high temperature series expansion, exact diagonalisation and temperature
+density-matrix renormalisation the magnetic susceptibility $\chi(T)$ and the
+specific heat $C(T)$ of dimerised and frustrated $S=1/2$ chains are computed.
+All three methods yield reliable results, in particular for not too small
+temperatures or not too small gaps. The series expansion results are provided
+in the form of polynomials allowing very fast and convenient fits…",0.8076890110969543,,"analysis, heat",,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,4,astro-ph/0102329,"Generalized Fermi-Dirac Functions and Derivatives: Properties and
+  Evaluation",2001,Zhigang GongLadislav ZejdaWerner DappenJosep M. Aparicio,"The generalized Fermi-Dirac functions and their derivatives are important in
+evaluating the thermodynamic quantities of partially degenerate electrons in
+hot dense stellar plasmas. New recursion relations of the generalized
+Fermi-Dirac functions have been found. An effective numerical method to
+evaluate the derivatives of the generalized Fermi-Dirac functions up to third
+order with respect to both degeneracy and temperature is then…",0.8068267703056335,,analytic,,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,5,math/0102219,"Tracking eigenvalues to the frontier of moduli space I: Convergence and
+  spectral accumulation",2001,Chris Judge,"We study the limiting behavior of eigenfunctions/eigenvalues of the Laplacian
+of a family of Riemannian metrics that degenerates on a hypersurface. Our
+results generalize earlier work concerning the degeneration of hyperbolic
+surfaces.",0.804970383644104,,,,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,6,math/0103013,"Algorithmic Determination of the Rational Cohomology of Complex
+  Varieties via Differential Forms",2001,Uli Walther,"We give algorithms for the computation of the algebraic de Rham cohomology of
+open and closed algebraic sets inside projective space or other smooth complex
+toric varieties. The methods, which are based on Gr\""obner basis computations
+in rings of differential operators, can also be used to compute the cohomology
+of intersections of smooth closed and open subsets, and in certain situations
+the cup-product structure.
+  We give some examples which…",0.8037642240524292,,,,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,7,math/0104055,Symmetry group analysis of weak solutions,2001,N. DapicM. KunzingerS. Pilipovic,"Methods of Lie group analysis of differential equations are extended to weak
+solutions of (linear and nonlinear) PDEs, where the term ``weak solution''
+comprises the following settings:
+  (a) Distributional solutions. (b) Solutions in generalized function algebras.
+(c) Solutions in the sense of association (corresponding to a number of weak or
+integral solution concepts in classical analysis).
+  Factorization properties and infinitesimal…",0.8037080764770508,analysis,analysis,,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,8,math/0103149,"On a functional-difference equation of Runyon, Morrison, Carlitz, and
+  Riordan",2001,Helmut Prodinger,"A certain functional-difference equation that Runyon encountered when
+analyzing a queuing system was solved in a combined effort of Morrison,
+Carlitz, and Riordan. We simplify that analysis by exclusively using generating
+functions, in particular the kernel method, and the Lagrange inversion formula.",0.8027786016464233,,"analysis, kernel",,2025-09-06T18:42:14.471697
+1,blk1|si1,"The study compares these methods to existing approaches, such as those employing Ricci flow and heat kernel techniques, to provide a comprehensive analysis of their relative strengths and limitations in deriving geometric and analytic inequalities.",compares,['Compares'],True,This sentence was generated to fulfill the 'Compares' citation function.,9,hep-th/0103037,Multiple reflection expansion and heat kernel coefficients,2001,M. BordagD. VassilevichH. FalomirE. M. Santangelo,"We propose the multiple reflection expansion as a tool for the calculation of
+heat kernel coefficients. As an example, we give the coefficients for a sphere
+as a finite sum over reflections, obtaining as a byproduct a relation between
+the coefficients for Dirichlet and Neumann boundary conditions. Further, we
+calculate the heat kernel coefficients for the most general matching conditions
+on the surface of a sphere, including those cases…",0.8024246692657471,"heat, kernel","heat, kernel",,2025-09-06T18:42:14.471697
