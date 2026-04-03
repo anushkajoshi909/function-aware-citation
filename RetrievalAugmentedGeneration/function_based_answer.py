@@ -1,50 +1,41 @@
+#!/usr/bin/env python3
+# function_based_answer.py — query-only, function-aware selection with full abstracts + LLM answer synthesis
+# Outputs:
+#  - outputs/function_selection_results.json
+#  - outputs/function_selection_results.jsonl
+#  - outputs/function_answers.txt               <-- answers-only lines
+
 import os
 import re
 import json
+import time
 import argparse
 from dataclasses import dataclass
 from typing import List, Dict, Any
-# -------------------------
-# OpenAI-compatible client (SCADS endpoint)
-# -------------------------
-try:
-    from openai import OpenAI
-except ImportError:
-    raise SystemExit("pip install openai")
 
-API_KEY_PATH = os.path.join(os.path.expanduser("~"), ".scadsai-api-key")
-if not os.path.exists(API_KEY_PATH):
-    raise SystemExit("❌ API key file not found at ~/.scadsai-api-key")
-with open(API_KEY_PATH, "r", encoding="utf-8") as f:
-    API_KEY = f.read().strip()
-
-CLIENT = OpenAI(base_url="https://llm.scads.ai/v1", api_key=API_KEY)
+# ========= Fixed config (you don't need to pass these on CLI) =========
+CLASSIFIED_PATH = "classified_outputs.jsonl"
+TOPK_PATH = "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl"
+OUT_DIR = "outputs"
 DEFAULT_MODEL = "meta-llama/Llama-3.3-70B-Instruct"
+API_KEY_FILE = os.path.join(os.path.expanduser("~"), ".scadsai-api-key")
 
-
-# =========================
-# OpenAI-compatible client (SCADS endpoint)
-# =========================
+# ========= LLM client =========
 try:
     from openai import OpenAI
 except ImportError:
     raise SystemExit("pip install openai")
 
 def load_client():
-    api_key_path = os.path.join(os.path.expanduser("~"), ".scadsai-api-key")
-    if not os.path.exists(api_key_path):
+    if not os.path.exists(API_KEY_FILE):
         raise SystemExit("❌ API key file not found at ~/.scadsai-api-key")
-    with open(api_key_path, "r", encoding="utf-8") as f:
-        api_key = f.read().strip()
-    return OpenAI(base_url="https://llm.scads.ai/v1", api_key=api_key)
+    with open(API_KEY_FILE, "r", encoding="utf-8") as f:
+        key = f.read().strip()
+    return OpenAI(base_url="https://llm.scads.ai/v1", api_key=key)
 
 CLIENT = load_client()
-DEFAULT_MODEL = "meta-llama/Llama-3.3-70B-Instruct"
 
-def llm_chat(prompt_user: str,
-             model: str = DEFAULT_MODEL,
-             temperature: float = 0.0,
-             max_tokens: int = 900) -> str:
+def llm_chat(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 0.0, max_tokens: int = 900) -> str:
     resp = CLIENT.chat.completions.create(
         model=model,
         messages=[
@@ -56,15 +47,11 @@ def llm_chat(prompt_user: str,
     )
     return resp.choices[0].message.content.strip()
 
-def llm_text(prompt_user: str,
-             model: str = DEFAULT_MODEL,
-             temperature: float = 0.2,
-             max_tokens: int = 120) -> str:
-    """For generating the final function-aware answer sentence."""
+def llm_text(prompt_user: str, model: str = DEFAULT_MODEL, temperature: float = 0.25, max_tokens: int = 180) -> str:
     resp = CLIENT.chat.completions.create(
         model=model,
         messages=[
-            {"role": "system", "content": "Output ONE well-formed sentence. No preface, no bullets, no extra text."},
+            {"role": "system", "content": "Write a concise answer. No preface, no bullets, no extra text."},
             {"role": "user", "content": prompt_user}
         ],
         temperature=temperature,
@@ -72,9 +59,13 @@ def llm_text(prompt_user: str,
     )
     return resp.choices[0].message.content.strip()
 
-# =========================
-# Utilities
-# =========================
+# ========= Small utils / debug =========
+def ts() -> str:
+    return time.strftime("[%H:%M:%S]")
+
+def dbg(flag: bool, *args):
+    if flag: print(ts(), *args, flush=True)
+
 CANON_FUNCS = {
     "background": "Background",
     "uses": "Uses",
@@ -117,23 +108,44 @@ def normalize_space(s: str) -> str:
     return re.sub(r"\s+", " ", s or "").strip()
 
 def evidence_in_text(quote: str, title: str, abstract: str) -> bool:
-    if not quote:
-        return False
+    if not quote: return False
     q = normalize_space(quote).lower().strip(' "')
     text = normalize_space((title or "") + " " + (abstract or "")).lower()
     return q and (q in text)
 
-def first_author(authors_str: str) -> str:
-    if not authors_str: return ""
-    parts = [a.strip() for a in re.split(r"[;,]| and ", authors_str) if a.strip()]
-    if not parts: parts = [authors_str.strip()]
-    cand = parts[0]
-    tokens = cand.split()
-    return tokens[-1] if tokens else cand
-
 def cand_safe(text: str, max_chars: int) -> str:
     if not text: return ""
     return text.replace("\u0000", " ").strip()[:max_chars]
+
+# Robust first-author guesser (handles lists, comma/semicolon strings, AND concatenated names)
+SURNAME_RE = re.compile(r"\b([A-Z][a-z]{2,}(?:-[A-Z][a-z]{2,})?)\b")
+def first_author(authors_field: Any) -> str:
+    # Prefer a clean list first
+    if isinstance(authors_field, list) and authors_field:
+        s = " ".join(str(authors_field[0]).split())
+        m = SURNAME_RE.search(s)
+        if m:
+            return m.group(1)
+        # fallback: last token of first element
+        toks = s.split()
+        return toks[-1] if toks else "Author"
+
+    # Fallback to string cases (including concatenated)
+    s = " ".join(str(authors_field or "").split())
+    # 1) Try first surname-looking token anywhere
+    m = SURNAME_RE.search(s)
+    if m:
+        return m.group(1)
+    # 2) Try separator-based first element
+    parts = [p.strip() for p in re.split(r";|,| and ", s) if p.strip()]
+    if parts:
+        toks = parts[0].split()
+        # choose last capitalized-looking token if present
+        for t in reversed(toks):
+            if re.match(r"^[A-Z][a-zA-Z\-']+$", t):
+                return t
+        return toks[-1] if toks else "Author"
+    return "Author"
 
 # Domain terms from query + overlap scoring
 STOP = set("""
@@ -144,16 +156,14 @@ his her them they we you i such thus there here where when which who whom whose 
 """.split())
 
 def content_terms_from_query(q: str, min_len=2):
-    toks = re.findall(r"\b[\w-]+\b", q.lower())
+    toks = re.findall(r"\b[\w-]+\b", (q or "").lower())
     return [t for t in toks if len(t) >= min_len and t not in STOP]
 
 def overlap_score(cand: dict, terms: List[str]) -> int:
-    hay = f"{cand.get('title','')} {cand.get('abstract','')}".lower()
+    hay = f"{cand.get('title','')} {(cand.get('abstract_full') or cand.get('abstract') or '')}".lower()
     return sum(1 for t in set(terms) if t in hay)
 
-# =========================
-# Prompts
-# =========================
+# ========= Prompts =========
 FUNC_EVAL_PROMPT = """You are a scientific function checker.
 
 Given a user QUERY, a list of DOMAIN TERMS, and a target FUNCTION, decide whether the PAPER's
@@ -184,20 +194,27 @@ TITLE: {TITLE}
 ABSTRACT: {ABSTRACT}
 """
 
+RELAXED_FUNC_EVAL_PROMPT = """You are a scientific function checker.
 
-STRUCT_PROMPT = """Extract concrete facts from the PAPER's TITLE/ABSTRACT that can answer the QUERY
-for the given FUNCTION. Use exact spans; no outside info.
+Given a user QUERY and a target FUNCTION, decide whether the PAPER's TITLE/ABSTRACT
+contain enough function-appropriate information to answer the QUERY.
 
-Return STRICT JSON:
+Normalize FUNCTION to one of:
+Background, Uses, Compares, Motivation, Extends, FutureWork.
+
+STRICT RULES:
+- Evidence MUST be a direct quote from TITLE or ABSTRACT (<= 40 words); no paraphrase.
+- Prefer a quote containing a relevant term from the QUERY, but if none exists,
+  choose the best function-relevant quote anyway.
+
+Return strict JSON:
 {{
-  "system": "entities/systems studied (e.g., Cs, Fr, Ba II, Ra II)",
-  "method": "method or approach used",
-  "baseline_or_previous": "baseline/previous methods named ('' if none)",
-  "result_or_claim": "specific comparative result or extension claim",
-  "evidence": [
-     {{"span": "<<=20 words exact quote>>"}},
-     {{"span": "<<=20 words exact quote>>"}}
-  ]
+  "supports": true/false,
+  "fit": 0-1,
+  "topicality": 0-1,
+  "quote": "<<=40 words from TITLE or ABSTRACT>>",
+  "why": "short reason tied to the function cue",
+  "paper_id": "{PAPER_ID}"
 }}
 
 QUERY: {QUERY}
@@ -206,23 +223,24 @@ TITLE: {TITLE}
 ABSTRACT: {ABSTRACT}
 """
 
-
-CITE_ANSWER_PROMPT = """Write ONE formal sentence (<=40 words) that answers the QUERY in a way
-that clearly serves the FUNCTION, using ONLY the PAPER's TITLE/ABSTRACT (no outside info).
-Append a citation in parentheses with FIRST_AUTHOR LASTNAME and YEAR, like (Lastname YEAR).
-Do NOT add any extra text.
+# Natural answer synthesis (1–2 sentences, coherent, abstract-only)
+ANSWER_PROMPT = """Answer the user's QUERY using ONLY the PAPER TITLE/ABSTRACT below.
+Write **1–2 concise sentences** that clearly satisfy the FUNCTION.
+- Be concrete (systems, methods, results); **no generic claims**.
+- If the abstract compares to prior work, **state what it’s compared to**.
+- If it extends prior work, **state what is extended** and **how** (scope/accuracy/systems).
+- **No invented facts**. Do not quote verbatim; paraphrase.
+- End with a citation "(LASTNAME YEAR)".
 
 QUERY: {QUERY}
 FUNCTION: {FUNCTION}
 PAPER TITLE: {TITLE}
 PAPER ABSTRACT: {ABSTRACT}
-FIRST AUTHOR: {FIRST_AUTHOR}
-YEAR: {YEAR}
+CITATION_LASTNAME: {LASTNAME}
+CITATION_YEAR: {YEAR}
 """
 
-# =========================
-# Data structures
-# =========================
+# ========= Data structures =========
 @dataclass
 class Verdict:
     supports: bool
@@ -234,7 +252,7 @@ class Verdict:
     id: int
     title: str
     abstract: str
-    authors: str
+    authors: Any
     year: str
     retrieval_score: float = 0.0
     invalid_reason: str = ""
@@ -251,41 +269,62 @@ def enforce_evidence(v: Verdict) -> Verdict:
         v.supports = False; v.fit = 0.0; v.invalid_reason = "quote_not_in_abstract"; return v
     return v
 
-# =========================
-# IO helpers
-# =========================
-def read_last_jsonl(path: str) -> Dict[str, Any]:
+# ========= IO helpers =========
+def read_last_jsonl(path: str, debug=False) -> Dict[str, Any]:
+    dbg(debug, "read_last_jsonl | path=", path)
     with open(path, "r", encoding="utf-8") as f:
         lines = [ln.strip() for ln in f if ln.strip()]
+    dbg(debug, "read_last_jsonl | total_lines=", len(lines))
     if not lines:
         raise ValueError(f"No lines found in {path}")
     return json.loads(lines[-1])
 
-def load_topk_jsonl(path: str) -> List[Dict[str, Any]]:
+def load_topk_jsonl(path: str, debug=False) -> List[Dict[str, Any]]:
+    dbg(debug, "load_topk_jsonl | path=", path)
     rows = []
     with open(path, "r", encoding="utf-8") as f:
         for ln in f:
             ln = ln.strip()
             if not ln: continue
-            try: rows.append(json.loads(ln))
-            except json.JSONDecodeError: continue
+            try:
+                obj = json.loads(ln)
+                rows.append(obj)
+            except json.JSONDecodeError:
+                continue
+    dbg(debug, "load_topk_jsonl | rows=", len(rows))
+    if rows:
+        first = rows[0]
+        abs_len = len((first.get("abstract_full") or first.get("abstract") or ""))
+        dbg(debug, "load_topk_jsonl | first: rank=", first.get("rank"),
+            "paper_id=", first.get("paper_id") or first.get("arxiv_id"),
+            "title_snip='{}'".format((first.get("title","")[:70] + "…") if len(first.get("title",""))>70 else first.get("title","")),
+            "abs_len=", abs_len)
     return rows
 
-# =========================
-# Core: verify / extract / build
-# =========================
-def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any], terms: List[str]) -> Verdict:
+# ========= Core: verify / extract / synthesize =========
+def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any],
+                                  terms: List[str], debug: bool=False, strict: bool=True) -> Verdict:
     func_norm = normalize_function(func)
-    prompt = FUNC_EVAL_PROMPT.format(
+    abs_txt = cand.get("abstract_full") or cand.get("abstract") or ""
+    pid_cand = cand.get("paper_id") or cand.get("arxiv_id") or cand.get("id") or "unknown"
+
+    prompt = (FUNC_EVAL_PROMPT if strict else RELAXED_FUNC_EVAL_PROMPT).format(
         QUERY=cand_safe(query, 1500),
-        TERMS=", ".join(sorted(set(terms)))[:300],
+        TERMS=", ".join(sorted(set(terms)))[:300] if strict else "",
         FUNCTION=func_norm,
         TITLE=cand_safe(cand.get("title",""), 900),
-        ABSTRACT=cand_safe(cand.get("abstract",""), 2500),
-        PAPER_ID=cand.get("paper_id") or cand.get("arxiv_id") or ""
+        ABSTRACT=cand_safe(abs_txt, 8000),
+        PAPER_ID=pid_cand
     )
+
+    dbg(debug, "verify | func=", func_norm, "| rank=", cand.get("rank"),
+        "| pid=", pid_cand, "| title_snip='{}'".format((cand.get("title","")[:70]+"…") if len(cand.get("title",""))>70 else cand.get("title","")),
+        "| abs_len=", len(abs_txt))
     raw = llm_chat(prompt, model=DEFAULT_MODEL, temperature=0.0, max_tokens=900)
     obj = parse_json_strict(raw)
+
+    pid_resp = str(obj.get("paper_id", "")).strip()
+    pid_final = pid_resp if pid_resp and pid_resp not in {"{PAPER_ID}", "unknown"} else pid_cand
 
     v = Verdict(
         supports=bool(obj.get("supports", False)),
@@ -293,89 +332,102 @@ def verify_candidate_for_function(query: str, func: str, cand: Dict[str, Any], t
         topicality=clamp01(obj.get("topicality", 0)),
         quote=str(obj.get("quote", ""))[:500],
         why=str(obj.get("why", ""))[:300],
-        paper_id=str(obj.get("paper_id", cand.get("paper_id",""))),
+        paper_id=pid_final,
         id=int(cand.get("rank", 0) or 0),
         title=cand.get("title", ""),
-        abstract=cand.get("abstract", ""),
+        abstract=abs_txt,
         authors=cand.get("authors", ""),
         year=str(cand.get("year", "")),
         retrieval_score=float(cand.get("score") or cand.get("cosine") or 0.0)
     )
     v = enforce_evidence(v)
+    dbg(debug, "verify | result supports=", v.supports, "fit=", f"{v.fit:.2f}",
+        "top=", f"{v.topicality:.2f}", "invalid=", v.invalid_reason or "—")
     return v
 
-def extract_facts(query: str, func: str, title: str, abstract: str) -> Dict[str, Any]:
-    raw = llm_chat(STRUCT_PROMPT.format(
-        QUERY=cand_safe(query, 800),
+def synthesize_answer(query: str, func: str, title: str, abstract: str, authors: Any, year: str) -> str:
+    lastname = first_author(authors)
+    yr = (re.findall(r"\d{4}", str(year)) or [""])[0] or "Year"
+    prompt = ANSWER_PROMPT.format(
+        QUERY=cand_safe(query, 1000),
         FUNCTION=normalize_function(func),
         TITLE=cand_safe(title, 600),
-        ABSTRACT=cand_safe(abstract, 2500)
-    ), model=DEFAULT_MODEL, temperature=0.0, max_tokens=500)
-    obj = parse_json_strict(raw)
-    # minimal shape
-    obj.setdefault("system","")
-    obj.setdefault("method","")
-    obj.setdefault("baseline_or_previous","")
-    obj.setdefault("result_or_claim","")
-    obj.setdefault("evidence",[])
-    return obj
+        ABSTRACT=cand_safe(abstract, 8000),
+        LASTNAME=lastname or "Author",
+        YEAR=yr
+    )
+    ans = llm_text(prompt, model=DEFAULT_MODEL, temperature=0.25, max_tokens=180)
+    # Ensure it ends with the citation and a period
+    ans = ans.strip()
+    if not ans.endswith((").", ").", ")")):
+        if ans.endswith(")"):
+            ans += "."
+        else:
+            ans += f" ({lastname} {yr})."
+    # Limit to 2 sentences max
+    parts = re.split(r"(?<=\.)\s+", ans)
+    if len(parts) > 2:
+        ans = " ".join(parts[:2])
+    return ans
 
-def build_answer_from_facts(func: str, facts: dict, authors: str, year: str) -> str:
-    last = first_author(authors)
-    yr = (re.findall(r"\d{4}", year) or [""])[0]
-
-    sys = facts.get("system","").strip()
-    meth = facts.get("method","").strip()
-    base = facts.get("baseline_or_previous","").strip()
-    claim = facts.get("result_or_claim","").strip()
-
-    sys_part = f" for {sys}" if sys else ""
-    base_part = f" vs {base}" if base else ""
-
-    fn = normalize_function(func)
-    if fn == "Compares":
-        if not claim:
-            return ""
-        # steer wording towards concrete claim
-        verb = "outperforms" if re.search(r"\boutperform|\bsuperior|better\b", claim, re.I) else "shows"
-        return f"{meth or 'The hybrid approach'}{sys_part} {verb} {claim}{base_part} ({last} {yr})."
-
-    if fn == "Extends":
-        if not claim and not meth:
-            return ""
-        return f"{meth or 'The approach'}{sys_part} extends prior calculations by {claim or 'broadening the scope to additional systems'} ({last} {yr})."
-
-    if claim:
-        return f"{meth or 'The approach'}{sys_part} {claim} ({last} {yr})."
-    return ""
-
-# =========================
-# Selection per function
-# =========================
-def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[str, Any]], max_check: int = 20):
+# ========= Selection per function =========
+def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[str, Any]],
+                                 max_check: int, debug: bool=False) -> Dict[str, Any]:
     terms = content_terms_from_query(query)
-    # topic filter first
-    scored = []
-    for c in candidates:
-        ov = overlap_score(c, terms)
-        scored.append((ov, c))
-    scored.sort(key=lambda t: (t[0], t[1].get("score",0.0)), reverse=True)
-    # prefer candidates mentioning >=2 domain terms, else fall back to top few
-    cand_pool = [c for ov,c in scored if ov >= 2][:max_check] or [c for ov,c in scored][:min(max_check, 8)]
+    dbg(debug, "select | function=", func, "| candidates_in=", len(candidates))
+    dbg(debug, "select | domain_terms=", terms)
 
-    # verify candidates (enforces evidence + domain terms)
-    verdicts: List[Verdict] = [verify_candidate_for_function(query, func, c, terms) for c in cand_pool]
+    # A) top by retrieval
+    cand_by_retrieval = sorted(
+        candidates, key=lambda c: float(c.get("score") or c.get("cosine") or 0.0), reverse=True
+    )[:max_check]
+
+    # B) overlap >=1
+    scored = [(overlap_score(c, terms), c) for c in candidates]
+    scored.sort(key=lambda t: (t[0], float(t[1].get("score") or t[1].get("cosine") or 0.0)), reverse=True)
+    cand_by_overlap = [c for ov, c in scored if ov >= 1][:max_check]
+
+    # Merge unique
+    seen = set(); cand_pool = []
+    for c in cand_by_overlap + cand_by_retrieval:
+        key = c.get("paper_id") or c.get("arxiv_id") or c.get("title")
+        if key in seen: continue
+        seen.add(key); cand_pool.append(c)
+        if len(cand_pool) >= max_check: break
+
+    dbg(debug, "select | pool_size=", len(cand_pool),
+        "| ranks=", [c.get("rank") for c in cand_pool],
+        "| pids=", [c.get("paper_id") or c.get("arxiv_id") for c in cand_pool])
+
+    # Pass 1: strict
+    verdicts: List[Verdict] = []
+    for i, c in enumerate(cand_pool, 1):
+        dbg(debug, f"select | verify strict {i}/{len(cand_pool)}")
+        verdicts.append(verify_candidate_for_function(query, func, c, terms, debug=debug, strict=True))
 
     supported = [v for v in verdicts if v.supports and not v.invalid_reason]
     supported.sort(key=lambda v: (v.fit, v.topicality, v.retrieval_score), reverse=True)
     winner = supported[0] if supported else None
 
-    # build factual answer only if we have a verified winner with evidence
-    answer_sentence, facts = "", {}
-    if winner and winner.quote:
-        facts = extract_facts(query, func, winner.title, winner.abstract)
-        answer_sentence = build_answer_from_facts(func, facts, winner.authors, winner.year)
+    # Pass 2: relaxed if needed
+    if winner is None:
+        dbg(debug, "select | strict pass found 0 winners → trying relaxed")
+        verdicts_relaxed: List[Verdict] = []
+        K = min(6, len(cand_pool))
+        for i, c in enumerate(cand_pool[:K], 1):
+            dbg(debug, f"select | verify relaxed {i}/{K}")
+            verdicts_relaxed.append(verify_candidate_for_function(query, func, c, terms, debug=debug, strict=False))
+        verdicts.extend(verdicts_relaxed)
+        supported2 = [v for v in verdicts_relaxed if v.supports and not v.invalid_reason]
+        supported2.sort(key=lambda v: (v.fit, v.topicality, v.retrieval_score), reverse=True)
+        winner = supported2[0] if supported2 else None
 
+    # Build answer via LLM synthesis from the winner's abstract
+    answer_sentence = ""
+    if winner and winner.quote:
+        answer_sentence = synthesize_answer(query, func, winner.title, winner.abstract, winner.authors, winner.year)
+
+    # Bundle
     return {
         "function": normalize_function(func),
         "winner": ({
@@ -391,7 +443,6 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
             "why": winner.why
         } if winner else None),
         "answer_sentence": answer_sentence,
-        "facts": facts,
         "verdicts": [
             {"id": v.id, "paper_id": v.paper_id, "fit": round(v.fit,3),
              "topicality": round(v.topicality,3), "retrieval": round(v.retrieval_score,3),
@@ -400,42 +451,40 @@ def pick_and_answer_for_function(query: str, func: str, candidates: List[Dict[st
         ]
     }
 
-# =========================
-# Main
-# =========================
+# ========= Main =========
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--classified", default="classified_outputs.jsonl",
-                    help="Path to the JSONL with the latest {query, citation_function_classification}.")
-    ap.add_argument("--topk", default="/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl",
-                    help="Path to the JSONL with top-k candidates for the query.")
-    ap.add_argument("--outdir", default="outputs", help="Directory to write results.")
-    ap.add_argument("--model", default=DEFAULT_MODEL, help="LLM model id to use.")
-    ap.add_argument("--max-check", type=int, default=20, help="Max candidates to verify per function.")
+    ap.add_argument("--max-check", type=int, default=10, help="Max candidates to verify per function.")
+    ap.add_argument("--debug", action="store_true", help="Print debug logs.")
     args = ap.parse_args()
+    debug = args.debug
 
-    os.makedirs(args.outdir, exist_ok=True)
-    out_pretty = os.path.join(args.outdir, "function_selection_results.json")
-    out_jsonl  = os.path.join(args.outdir, "function_selection_results.jsonl")
+    dbg(debug, "main | args:", args)
 
-    # load latest query + functions
-    rec = read_last_jsonl(args.classified)
+    os.makedirs(OUT_DIR, exist_ok=True)
+    out_pretty = os.path.join(OUT_DIR, "function_selection_results.json")
+    out_jsonl  = os.path.join(OUT_DIR, "function_selection_results.jsonl")
+    out_answers = os.path.join(OUT_DIR, "function_answers.txt")
+
+    rec = read_last_jsonl(CLASSIFIED_PATH, debug=debug)
     query = (rec.get("query") or "").strip()
     funcs = ((rec.get("citation_function_classification") or {}).get("citation_functions") or [])
     funcs = [normalize_function(f) for f in funcs if f] or ["Background"]
+    dbg(debug, "main | query='{}' | funcs={}".format(query, funcs))
 
-    # load top-k candidates (same pool for each function)
-    cands = load_topk_jsonl(args.topk)
+    cands = load_topk_jsonl(TOPK_PATH, debug=debug)
     if not cands:
-        print(f"No candidates found in {args.topk}")
+        print(f"No candidates found in {TOPK_PATH}")
         return
 
     bundle = []
+    answer_lines = []
+
     for func in funcs:
-        result = pick_and_answer_for_function(query, func, cands, max_check=args.max_check)
+        dbg(debug, "main | running function=", func)
+        result = pick_and_answer_for_function(query, func, cands, max_check=args.max_check, debug=debug)
         bundle.append({"query": query, "function": func, "result": result})
 
-        # console preview
         print("\n" + "="*80)
         print(f"FUNCTION: {func}")
         print(f"QUERY   : {query}")
@@ -444,18 +493,26 @@ def main():
             print(f"- QUOTE : {result['winner']['quote']}")
             print(f"- WHY   : {result['winner']['why']}")
             print(f"- ANSWER: {result['answer_sentence'] or '[no answer — insufficient concrete facts]'}")
+            # answers-only line: <answer> [paper_id] [Function]
+            pid = result["winner"]["paper_id"]
+            ans = result["answer_sentence"] or ""
+            tag_line = f"{ans} [{pid}] [{func}]".strip()
+            answer_lines.append(tag_line)
         else:
             print("- No supporting candidate with sufficient evidence.")
 
-    # save results
     with open(out_pretty, "w", encoding="utf-8") as f:
         json.dump(bundle, f, indent=2, ensure_ascii=False)
     with open(out_jsonl, "w", encoding="utf-8") as f:
         for obj in bundle:
             f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+    with open(out_answers, "w", encoding="utf-8") as f:
+        for line in answer_lines:
+            f.write(line.strip() + "\n")
 
     print(f"\n📄 Saved: {out_pretty}")
     print(f"📄 Saved: {out_jsonl}")
+    print(f"📝 Answers-only: {out_answers}")
 
 if __name__ == "__main__":
     main()
