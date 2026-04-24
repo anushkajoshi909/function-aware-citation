@@ -1,2 +1,2 @@
-The abstract does not provide information relevant to Motivation. [Motivation]
-The abstract does not provide information relevant to Extends. [Extends]
+The problem of understanding global stability in complex dynamical systems like the Lorenz model and the Navier-Stokes equations motivates the development of a generalized Lyapunov method (physics/0101025). [Background]
+The development of a generalized Lyapunov method is motivated by the need to better understand the global stability of complex dynamical systems, such as those described by the Navier-Stokes equations. Background knowledge of dissipative dynamical systems and their stability properties is necessary to apply this method (physics/0101025). [Motivation]
