@@ -1,0 +1,331 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Extends"
+  ],
+  "justification": "The query asks to compare the Vela pulsar's spectral analysis with existing models and to see how it extends those models."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.71 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.07it/s]
+Reading arXiv_src_0101_001.jsonl: 137it [00:00, 788.15it/s]
+Reading arXiv_src_0101_001.jsonl: 286it [00:00, 1103.86it/s]
+Reading arXiv_src_0101_001.jsonl: 398it [00:00, 965.27it/s] 
+Reading arXiv_src_0101_001.jsonl: 498it [00:00, 710.21it/s]
+Reading arXiv_src_0101_001.jsonl: 579it [00:00, 644.61it/s]
+Reading arXiv_src_0101_001.jsonl: 685it [00:00, 744.22it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:01, 811.48it/s]
+Reading arXiv_src_0101_001.jsonl: 903it [00:01, 902.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1004it [00:01, 931.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1134it [00:01, 1035.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1264it [00:01, 1110.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1379it [00:01, 1097.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1512it [00:01, 1162.15it/s]
+Reading arXiv_src_0101_001.jsonl: 1651it [00:01, 1227.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1776it [00:01, 1195.87it/s]
+Reading arXiv_src_0101_001.jsonl: 1921it [00:01, 1267.23it/s]
+Reading arXiv_src_0101_001.jsonl: 2098it [00:02, 1413.56it/s]
+Reading arXiv_src_0101_001.jsonl: 2250it [00:02, 1444.80it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1062.36it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1329.40it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1365.54it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 844.18it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 522.93it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 557.80it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 617.08it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 742.37it/s]
+Reading arXiv_src_0102_001.jsonl: 922it [00:01, 880.77it/s]
+Reading arXiv_src_0102_001.jsonl: 1031it [00:01, 935.53it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 999.62it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1045.93it/s]
+Reading arXiv_src_0102_001.jsonl: 1412it [00:01, 1155.68it/s]
+Reading arXiv_src_0102_001.jsonl: 1543it [00:01, 1199.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1228.68it/s]
+Reading arXiv_src_0102_001.jsonl: 1823it [00:01, 1305.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1371.62it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1400.39it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1018.88it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1369.22it/s]
+Reading arXiv_src_0103_001.jsonl: 296it [00:00, 1495.77it/s]
+Reading arXiv_src_0103_001.jsonl: 446it [00:00, 1162.20it/s]
+Reading arXiv_src_0103_001.jsonl: 570it [00:00, 747.91it/s] 
+Reading arXiv_src_0103_001.jsonl: 663it [00:00, 768.24it/s]
+Reading arXiv_src_0103_001.jsonl: 752it [00:00, 796.34it/s]
+Reading arXiv_src_0103_001.jsonl: 862it [00:00, 873.77it/s]
+Reading arXiv_src_0103_001.jsonl: 964it [00:01, 912.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1073it [00:01, 959.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1195it [00:01, 1030.62it/s]
+Reading arXiv_src_0103_001.jsonl: 1303it [00:01, 1026.46it/s]
+Reading arXiv_src_0103_001.jsonl: 1439it [00:01, 1121.97it/s]
+Reading arXiv_src_0103_001.jsonl: 1583it [00:01, 1213.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1720it [00:01, 1256.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1870it [00:01, 1328.08it/s]
+Reading arXiv_src_0103_001.jsonl: 2005it [00:01, 1317.97it/s]
+Reading arXiv_src_0103_001.jsonl: 2153it [00:01, 1363.37it/s]
+Reading arXiv_src_0103_001.jsonl: 2295it [00:02, 1377.64it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1134.40it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 1493.27it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1547.86it/s]
+Reading arXiv_src_0104_001.jsonl: 464it [00:00, 1019.64it/s]
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 551.73it/s] 
+Reading arXiv_src_0104_001.jsonl: 689it [00:00, 644.53it/s]
+Reading arXiv_src_0104_001.jsonl: 780it [00:01, 696.00it/s]
+Reading arXiv_src_0104_001.jsonl: 882it [00:01, 767.26it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 868.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1118it [00:01, 943.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1231it [00:01, 990.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1339it [00:01, 1006.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1471it [00:01, 1091.22it/s]
+Reading arXiv_src_0104_001.jsonl: 1612it [00:01, 1182.10it/s]
+Reading arXiv_src_0104_001.jsonl: 1738it [00:01, 1200.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1889it [00:01, 1289.74it/s]
+Reading arXiv_src_0104_001.jsonl: 2038it [00:02, 1348.48it/s]
+Reading arXiv_src_0104_001.jsonl: 2175it [00:02, 979.46it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 979.29it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the spectral analysis of the Vela pulsar compare to and extend existing models of neutron star cooling and emission?
+[debug] classifier labels: ['Compares', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T22:10:07.254719    Compares, Extends
+1     1  0.626421  ...  2025-09-21T22:10:07.254719    Compares, Extends
+2     2  0.388849  ...  2025-09-21T22:10:07.254719    Compares, Extends
+3     3  0.344805  ...  2025-09-21T22:10:07.254719    Compares, Extends
+4     4  0.344044  ...  2025-09-21T22:10:07.254719    Compares, Extends
+5     5  0.312993  ...  2025-09-21T22:10:07.254719    Compares, Extends
+6     6  0.257784  ...  2025-09-21T22:10:07.254719    Compares, Extends
+7     7  0.247628  ...  2025-09-21T22:10:07.254719    Compares, Extends
+8     8  0.236174  ...  2025-09-21T22:10:07.254719    Compares, Extends
+9     9  0.233330  ...  2025-09-21T22:10:07.254719    Compares, Extends
+
+[10 rows x 12 columns]
+[00:10:12] main | args: Namespace(max_check=20, debug=True)
+[00:10:12] read_last_jsonl | path= classified_outputs.jsonl
+[00:10:12] read_last_jsonl | total_lines= 1
+[00:10:12] main | query='How does the spectral analysis of the Vela pulsar compare to and extend existing models of neutron star cooling and emission?' | funcs=['Compares', 'Extends']
+[00:10:15] main | core_terms= ['Vela pulsar', 'neutron star', 'spectral analysis', 'cooling', 'emission']
+[00:10:15] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:10:15] load_topk_jsonl | rows= 20
+[00:10:15] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103171 title_snip='The X-ray Spectrum of the Vela Pulsar Resolved with Chandra' abs_len= 1771
+[00:10:15] main | running function= Compares
+[00:10:15] select | function= Compares | candidates_in= 20
+[00:10:15] select | core_terms= ['Vela pulsar', 'neutron star', 'spectral analysis', 'cooling', 'emission']
+[00:10:15] select | no cosine prune; kept=20/20
+[00:10:15] select | pool_size= 20 | ranks= [1, 0, 6, 14, 2, 7, 19, 13, 18, 10, 16, 17, 3, 4, 8, 9, 12, 15, 5, 11] | pids= ['astro-ph/0103273', 'astro-ph/0103171', 'astro-ph/0102047', 'astro-ph/0101141', 'astro-ph/0101339', 'astro-ph/0103227', 'astro-ph/0102084', 'astro-ph/0104264', 'astro-ph/0101146', 'astro-ph/0104470', 'astro-ph/0103179', 'astro-ph/0103421', 'astro-ph/0103140', 'astro-ph/0101044', 'astro-ph/0103316', 'astro-ph/0101257', 'nucl-th/0103054', 'nucl-th/0102040', 'astro-ph/0101246', 'astro-ph/0103498']
+[00:10:15] select | verify strict 1/20
+[00:10:15] verify | func= Compares | rank= 1 | pid= astro-ph/0103273 | title_snip='Anomalous X-ray Pulsars and Soft gamma-ray Repeaters: Spectral Fits an…' | abs_len= 1419
+[00:10:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:18] select | verify strict 2/20
+[00:10:18] verify | func= Compares | rank= 0 | pid= astro-ph/0103171 | title_snip='The X-ray Spectrum of the Vela Pulsar Resolved with Chandra' | abs_len= 1771
+[00:10:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:10:21] select | verify strict 3/20
+[00:10:21] verify | func= Compares | rank= 6 | pid= astro-ph/0102047 | title_snip='Neutron star cooling in transiently accreting low mass binaries: a new…' | abs_len= 768
+[00:10:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:23] select | verify strict 4/20
+[00:10:23] verify | func= Compares | rank= 14 | pid= astro-ph/0101141 | title_snip='Time-Variable Emission from Transiently Accreting Neutron Stars In
+  Q…' | abs_len= 1239
+[00:10:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:10:26] select | verify strict 5/20
+[00:10:26] verify | func= Compares | rank= 2 | pid= astro-ph/0101339 | title_snip='A Ray-Tracing Model of the Vela Pulsar' | abs_len= 463
+[00:10:29] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[00:10:29] select | verify strict 6/20
+[00:10:29] verify | func= Compares | rank= 7 | pid= astro-ph/0103227 | title_snip='Surface Emission Properties of Strongly Magnetic Neutron Stars' | abs_len= 1514
+[00:10:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:10:32] select | verify strict 7/20
+[00:10:32] verify | func= Compares | rank= 19 | pid= astro-ph/0102084 | title_snip='X-ray Observations of the New Pulsar--Supernova Remnant System PSR
+  J…' | abs_len= 1020
+[00:10:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:35] select | verify strict 8/20
+[00:10:35] verify | func= Compares | rank= 13 | pid= astro-ph/0104264 | title_snip='Variability of the Vela Pulsar-wind Nebula Observed with Chandra' | abs_len= 581
+[00:10:38] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[00:10:38] select | verify strict 9/20
+[00:10:38] verify | func= Compares | rank= 18 | pid= astro-ph/0101146 | title_snip='High time-resolution observations of the Vela pulsar' | abs_len= 1216
+[00:10:41] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[00:10:41] select | verify strict 10/20
+[00:10:41] verify | func= Compares | rank= 10 | pid= astro-ph/0104470 | title_snip='X-ray emission from middle-aged pulsars' | abs_len= 944
+[00:10:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:43] select | verify strict 11/20
+[00:10:43] verify | func= Compares | rank= 16 | pid= astro-ph/0103179 | title_snip='HST Observations of SGR 0526-66: New Constraints on Accretion and
+  Ma…' | abs_len= 1144
+[00:10:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:46] select | verify strict 12/20
+[00:10:46] verify | func= Compares | rank= 17 | pid= astro-ph/0103421 | title_snip='The identification of the optical/IR counterpart of the 29.5-s transie…' | abs_len= 783
+[00:10:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:49] select | verify strict 13/20
+[00:10:49] verify | func= Compares | rank= 3 | pid= astro-ph/0103140 | title_snip='Phase Dependent Spectral Variability of 4U1907+09' | abs_len= 939
+[00:10:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:51] select | verify strict 14/20
+[00:10:51] verify | func= Compares | rank= 4 | pid= astro-ph/0101044 | title_snip='A Doppler Shift model to explain the Cyclotron Line Variability in X-R…' | abs_len= 683
+[00:10:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:10:54] select | verify strict 15/20
+[00:10:54] verify | func= Compares | rank= 8 | pid= astro-ph/0103316 | title_snip='Proton Cyclotron Features in Thermal Spectra of Ultra-magnetized Neutr…' | abs_len= 1010
+[00:10:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:10:56] select | verify strict 16/20
+[00:10:56] verify | func= Compares | rank= 9 | pid= astro-ph/0101257 | title_snip='Relativistic superfluid models for rotating neutron stars' | abs_len= 849
+[00:10:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:10:59] select | verify strict 17/20
+[00:10:59] verify | func= Compares | rank= 12 | pid= nucl-th/0103054 | title_snip='Relativistic Hartree-Bogoliubov Calculation of Specific Heat of the
+  …' | abs_len= 510
+[00:11:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:02] select | verify strict 18/20
+[00:11:02] verify | func= Compares | rank= 15 | pid= nucl-th/0102040 | title_snip='How a quark-gluon plasma phase modifies the bounds on extra dimensions…' | abs_len= 952
+[00:11:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:05] select | verify strict 19/20
+[00:11:05] verify | func= Compares | rank= 5 | pid= astro-ph/0101246 | title_snip='Particle Spectra Of Ultra-Relativistic Shock Waves' | abs_len= 768
+[00:11:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:07] select | verify strict 20/20
+[00:11:07] verify | func= Compares | rank= 11 | pid= astro-ph/0103498 | title_snip='Fourier decomposition and frequency analysis of the pulsating stars wi…' | abs_len= 1154
+[00:11:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the spectral analysis of the Vela pulsar compare to and extend existing models of neutron star cooling and emission?
+- WINNER: astro-ph/0103171 | The X-ray Spectrum of the Vela Pulsar Resolved with Chandra
+- QUOTE : The effective temperature is lower than that predicted by standard neutron star cooling models
+- WHY   : sufficient
+- ANSWER: The spectral analysis of the Vela pulsar is compared to standard neutron star cooling models, with the effective temperature found to be lower than predicted. The results are also compared to a standard blackbody fit, which yields an unrealistic neutron star radius, highlighting the differences between the two models (astro-ph/0103171).
+[00:11:15] main | running function= Extends
+[00:11:15] select | function= Extends | candidates_in= 20
+[00:11:15] select | core_terms= ['Vela pulsar', 'neutron star', 'spectral analysis', 'cooling', 'emission']
+[00:11:15] select | no cosine prune; kept=20/20
+[00:11:15] select | pool_size= 20 | ranks= [0, 6, 14, 1, 19, 2, 7, 17, 3, 12, 10, 16, 4, 8, 9, 13, 15, 18, 11, 5] | pids= ['astro-ph/0103171', 'astro-ph/0102047', 'astro-ph/0101141', 'astro-ph/0103273', 'astro-ph/0102084', 'astro-ph/0101339', 'astro-ph/0103227', 'astro-ph/0103421', 'astro-ph/0103140', 'nucl-th/0103054', 'astro-ph/0104470', 'astro-ph/0103179', 'astro-ph/0101044', 'astro-ph/0103316', 'astro-ph/0101257', 'astro-ph/0104264', 'nucl-th/0102040', 'astro-ph/0101146', 'astro-ph/0103498', 'astro-ph/0101246']
+[00:11:15] select | verify strict 1/20
+[00:11:15] verify | func= Extends | rank= 0 | pid= astro-ph/0103171 | title_snip='The X-ray Spectrum of the Vela Pulsar Resolved with Chandra' | abs_len= 1771
+[00:11:18] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:11:18] select | verify strict 2/20
+[00:11:18] verify | func= Extends | rank= 6 | pid= astro-ph/0102047 | title_snip='Neutron star cooling in transiently accreting low mass binaries: a new…' | abs_len= 768
+[00:11:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:21] select | verify strict 3/20
+[00:11:21] verify | func= Extends | rank= 14 | pid= astro-ph/0101141 | title_snip='Time-Variable Emission from Transiently Accreting Neutron Stars In
+  Q…' | abs_len= 1239
+[00:11:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:11:23] select | verify strict 4/20
+[00:11:23] verify | func= Extends | rank= 1 | pid= astro-ph/0103273 | title_snip='Anomalous X-ray Pulsars and Soft gamma-ray Repeaters: Spectral Fits an…' | abs_len= 1419
+[00:11:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:11:26] select | verify strict 5/20
+[00:11:26] verify | func= Extends | rank= 19 | pid= astro-ph/0102084 | title_snip='X-ray Observations of the New Pulsar--Supernova Remnant System PSR
+  J…' | abs_len= 1020
+[00:11:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:29] select | verify strict 6/20
+[00:11:29] verify | func= Extends | rank= 2 | pid= astro-ph/0101339 | title_snip='A Ray-Tracing Model of the Vela Pulsar' | abs_len= 463
+[00:11:32] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[00:11:32] select | verify strict 7/20
+[00:11:32] verify | func= Extends | rank= 7 | pid= astro-ph/0103227 | title_snip='Surface Emission Properties of Strongly Magnetic Neutron Stars' | abs_len= 1514
+[00:11:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:11:35] select | verify strict 8/20
+[00:11:35] verify | func= Extends | rank= 17 | pid= astro-ph/0103421 | title_snip='The identification of the optical/IR counterpart of the 29.5-s transie…' | abs_len= 783
+[00:11:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:37] select | verify strict 9/20
+[00:11:37] verify | func= Extends | rank= 3 | pid= astro-ph/0103140 | title_snip='Phase Dependent Spectral Variability of 4U1907+09' | abs_len= 939
+[00:11:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:40] select | verify strict 10/20
+[00:11:40] verify | func= Extends | rank= 12 | pid= nucl-th/0103054 | title_snip='Relativistic Hartree-Bogoliubov Calculation of Specific Heat of the
+  …' | abs_len= 510
+[00:11:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:11:43] select | verify strict 11/20
+[00:11:43] verify | func= Extends | rank= 10 | pid= astro-ph/0104470 | title_snip='X-ray emission from middle-aged pulsars' | abs_len= 944
+[00:11:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:45] select | verify strict 12/20
+[00:11:45] verify | func= Extends | rank= 16 | pid= astro-ph/0103179 | title_snip='HST Observations of SGR 0526-66: New Constraints on Accretion and
+  Ma…' | abs_len= 1144
+[00:11:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:11:48] select | verify strict 13/20
+[00:11:48] verify | func= Extends | rank= 4 | pid= astro-ph/0101044 | title_snip='A Doppler Shift model to explain the Cyclotron Line Variability in X-R…' | abs_len= 683
+[00:11:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:11:50] select | verify strict 14/20
+[00:11:50] verify | func= Extends | rank= 8 | pid= astro-ph/0103316 | title_snip='Proton Cyclotron Features in Thermal Spectra of Ultra-magnetized Neutr…' | abs_len= 1010
+[00:11:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:11:53] select | verify strict 15/20
+[00:11:53] verify | func= Extends | rank= 9 | pid= astro-ph/0101257 | title_snip='Relativistic superfluid models for rotating neutron stars' | abs_len= 849
+[00:11:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:11:56] select | verify strict 16/20
+[00:11:56] verify | func= Extends | rank= 13 | pid= astro-ph/0104264 | title_snip='Variability of the Vela Pulsar-wind Nebula Observed with Chandra' | abs_len= 581
+[00:12:00] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[00:12:00] select | verify strict 17/20
+[00:12:00] verify | func= Extends | rank= 15 | pid= nucl-th/0102040 | title_snip='How a quark-gluon plasma phase modifies the bounds on extra dimensions…' | abs_len= 952
+[00:12:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:12:02] select | verify strict 18/20
+[00:12:02] verify | func= Extends | rank= 18 | pid= astro-ph/0101146 | title_snip='High time-resolution observations of the Vela pulsar' | abs_len= 1216
+[00:12:05] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[00:12:05] select | verify strict 19/20
+[00:12:05] verify | func= Extends | rank= 11 | pid= astro-ph/0103498 | title_snip='Fourier decomposition and frequency analysis of the pulsating stars wi…' | abs_len= 1154
+[00:12:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:12:08] select | verify strict 20/20
+[00:12:08] verify | func= Extends | rank= 5 | pid= astro-ph/0101246 | title_snip='Particle Spectra Of Ultra-Relativistic Shock Waves' | abs_len= 768
+[00:12:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the spectral analysis of the Vela pulsar compare to and extend existing models of neutron star cooling and emission?
+- WINNER: astro-ph/0103171 | The X-ray Spectrum of the Vela Pulsar Resolved with Chandra
+- QUOTE : The effective temperature is lower than that predicted by standard neutron star cooling models
+- WHY   : sufficient
+- ANSWER: The spectral analysis of the Vela pulsar extends existing models of neutron star cooling by providing a lower effective temperature than predicted by standard models. The results also refine emission models by resolving the pulsar's spectrum into two distinct components, a magnetic hydrogen atmosphere spectrum and a power-law spectrum (astro-ph/0103171).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

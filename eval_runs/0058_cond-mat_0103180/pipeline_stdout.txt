@@ -1,0 +1,493 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Extends"
+  ],
+  "justification": "The query asks how the new study relates to (compares with) prior work and how it builds upon (extends) that research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 9.25 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.59it/s]
+Reading arXiv_src_0101_001.jsonl: 63it [00:00, 212.27it/s]
+Reading arXiv_src_0101_001.jsonl: 216it [00:00, 641.20it/s]
+Reading arXiv_src_0101_001.jsonl: 323it [00:00, 777.24it/s]
+Reading arXiv_src_0101_001.jsonl: 420it [00:00, 746.44it/s]
+Reading arXiv_src_0101_001.jsonl: 507it [00:00, 612.07it/s]
+Reading arXiv_src_0101_001.jsonl: 580it [00:01, 593.01it/s]
+Reading arXiv_src_0101_001.jsonl: 680it [00:01, 690.80it/s]
+Reading arXiv_src_0101_001.jsonl: 773it [00:01, 749.66it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 844.76it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 925.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1107it [00:01, 970.89it/s]
+Reading arXiv_src_0101_001.jsonl: 1240it [00:01, 1073.61it/s]
+Reading arXiv_src_0101_001.jsonl: 1351it [00:01, 1057.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:01, 1138.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:01, 1199.15it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1219.13it/s]
+Reading arXiv_src_0101_001.jsonl: 1873it [00:02, 1198.73it/s]
+Reading arXiv_src_0101_001.jsonl: 2054it [00:02, 1377.04it/s]
+Reading arXiv_src_0101_001.jsonl: 2209it [00:02, 1427.12it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 948.07it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1322.42it/s]
+Reading arXiv_src_0102_001.jsonl: 273it [00:00, 1358.80it/s]
+Reading arXiv_src_0102_001.jsonl: 409it [00:00, 855.94it/s] 
+Reading arXiv_src_0102_001.jsonl: 510it [00:00, 500.50it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 541.60it/s]
+Reading arXiv_src_0102_001.jsonl: 681it [00:01, 612.46it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 724.28it/s]
+Reading arXiv_src_0102_001.jsonl: 919it [00:01, 857.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 919.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1150it [00:01, 995.91it/s]
+Reading arXiv_src_0102_001.jsonl: 1259it [00:01, 1020.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1405it [00:01, 1144.13it/s]
+Reading arXiv_src_0102_001.jsonl: 1538it [00:01, 1195.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1666it [00:01, 1219.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1815it [00:01, 1294.25it/s]
+Reading arXiv_src_0102_001.jsonl: 1966it [00:02, 1355.65it/s]
+Reading arXiv_src_0102_001.jsonl: 2118it [00:02, 1401.46it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1004.78it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 132it [00:00, 1318.40it/s]
+Reading arXiv_src_0103_001.jsonl: 291it [00:00, 1477.92it/s]
+Reading arXiv_src_0103_001.jsonl: 439it [00:00, 1180.89it/s]
+Reading arXiv_src_0103_001.jsonl: 563it [00:00, 749.37it/s] 
+Reading arXiv_src_0103_001.jsonl: 656it [00:00, 758.23it/s]
+Reading arXiv_src_0103_001.jsonl: 744it [00:00, 785.12it/s]
+Reading arXiv_src_0103_001.jsonl: 854it [00:00, 862.84it/s]
+Reading arXiv_src_0103_001.jsonl: 958it [00:01, 910.03it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 954.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1190it [00:01, 1032.35it/s]
+Reading arXiv_src_0103_001.jsonl: 1298it [00:01, 1036.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1429it [00:01, 1114.90it/s]
+Reading arXiv_src_0103_001.jsonl: 1576it [00:01, 1216.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1710it [00:01, 1252.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1858it [00:01, 1317.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1991it [00:01, 1311.26it/s]
+Reading arXiv_src_0103_001.jsonl: 2139it [00:01, 1360.57it/s]
+Reading arXiv_src_0103_001.jsonl: 2284it [00:02, 1386.81it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1131.44it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  5.62it/s]
+Reading arXiv_src_0104_001.jsonl: 75it [00:00, 331.89it/s]
+Reading arXiv_src_0104_001.jsonl: 229it [00:00, 798.98it/s]
+Reading arXiv_src_0104_001.jsonl: 368it [00:00, 1005.94it/s]
+Reading arXiv_src_0104_001.jsonl: 479it [00:00, 736.07it/s] 
+Reading arXiv_src_0104_001.jsonl: 568it [00:01, 487.54it/s]
+Reading arXiv_src_0104_001.jsonl: 648it [00:01, 545.12it/s]
+Reading arXiv_src_0104_001.jsonl: 739it [00:01, 620.45it/s]
+Reading arXiv_src_0104_001.jsonl: 832it [00:01, 689.14it/s]
+Reading arXiv_src_0104_001.jsonl: 942it [00:01, 789.52it/s]
+Reading arXiv_src_0104_001.jsonl: 1067it [00:01, 909.36it/s]
+Reading arXiv_src_0104_001.jsonl: 1170it [00:01, 941.27it/s]
+Reading arXiv_src_0104_001.jsonl: 1300it [00:01, 1037.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1410it [00:01, 1038.25it/s]
+Reading arXiv_src_0104_001.jsonl: 1540it [00:01, 1110.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1672it [00:02, 1170.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1808it [00:02, 1224.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1957it [00:02, 1300.90it/s]
+Reading arXiv_src_0104_001.jsonl: 2110it [00:02, 1368.09it/s]
+Reading arXiv_src_0104_001.jsonl: 2248it [00:02, 934.47it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 873.47it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?
+[debug] classifier labels: ['Compares', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T14:36:35.553909    Compares, Extends
+1     1  0.511799  ...  2025-09-21T14:36:35.553909    Compares, Extends
+2     2  0.498637  ...  2025-09-21T14:36:35.553909    Compares, Extends
+3     3  0.472144  ...  2025-09-21T14:36:35.553909    Compares, Extends
+4     4  0.377338  ...  2025-09-21T14:36:35.553909    Compares, Extends
+5     5  0.377068  ...  2025-09-21T14:36:35.553909    Compares, Extends
+6     6  0.347801  ...  2025-09-21T14:36:35.553909    Compares, Extends
+7     7  0.306681  ...  2025-09-21T14:36:35.553909    Compares, Extends
+8     8  0.261327  ...  2025-09-21T14:36:35.553909    Compares, Extends
+9     9  0.218305  ...  2025-09-21T14:36:35.553909    Compares, Extends
+
+[10 rows x 12 columns]
+[16:39:10] main | args: Namespace(max_check=20, debug=True)
+[16:39:10] read_last_jsonl | path= classified_outputs.jsonl
+[16:39:10] read_last_jsonl | total_lines= 1
+[16:39:10] main | query='How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?' | funcs=['Compares', 'Extends']
+[16:39:29] main | core_terms= ['SrB$_{6}$', 'magnetic state', 'doped']
+[16:39:29] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:39:29] load_topk_jsonl | rows= 20
+[16:39:29] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0103180 title_snip='Electronic structure and magnetism in slightly doped SrB_6' abs_len= 1358
+[16:39:29] main | running function= Compares
+[16:39:29] select | function= Compares | candidates_in= 20
+[16:39:29] select | core_terms= ['SrB$_{6}$', 'magnetic state', 'doped']
+[16:39:29] select | no cosine prune; kept=20/20
+[16:39:29] select | pool_size= 20 | ranks= [0, 8, 1, 7, 14, 10, 12, 3, 4, 5, 9, 16, 17, 19, 2, 6, 11, 13, 15, 18] | pids= ['cond-mat/0103180', 'cond-mat/0104498', 'cond-mat/0103189', 'cond-mat/0102024', 'cond-mat/0104117', 'cond-mat/0104184', 'cond-mat/0104299', 'cond-mat/0102421', 'cond-mat/0101138', 'cond-mat/0104308', 'hep-ph/0104253', 'cond-mat/0101280', 'cond-mat/0102522', 'hep-ph/0104166', 'cond-mat/0102048', 'cond-mat/0103418', 'cond-mat/0104216', 'hep-ph/0103299', 'cond-mat/0102114', 'cond-mat/0101105']
+[16:39:29] select | verify strict 1/20
+[16:39:29] verify | func= Compares | rank= 0 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[16:39:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[16:39:32] select | verify strict 2/20
+[16:39:32] verify | func= Compares | rank= 8 | pid= cond-mat/0104498 | title_snip='Electron Spin Resonance of Ni-doped CuGeO$_3$ in the paramagnetic,
+  s…' | abs_len= 1555
+[16:39:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:35] select | verify strict 3/20
+[16:39:35] verify | func= Compares | rank= 1 | pid= cond-mat/0103189 | title_snip='Strong ferromangnetism and weak antiferroamgnetism in double
+  perovsk…' | abs_len= 616
+[16:39:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:37] select | verify strict 4/20
+[16:39:37] verify | func= Compares | rank= 7 | pid= cond-mat/0102024 | title_snip='Ab-initio study of disorder effects on the electronic and magnetic
+  s…' | abs_len= 843
+[16:39:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:40] select | verify strict 5/20
+[16:39:40] verify | func= Compares | rank= 14 | pid= cond-mat/0104117 | title_snip='Temperature dependence of current self-oscillations and electric field…' | abs_len= 508
+[16:39:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:42] select | verify strict 6/20
+[16:39:42] verify | func= Compares | rank= 10 | pid= cond-mat/0104184 | title_snip='Fermi Surface Measurements on the Low Carrier Density Ferromagnet
+  Ca…' | abs_len= 547
+[16:39:45] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:39:45] select | verify strict 7/20
+[16:39:45] verify | func= Compares | rank= 12 | pid= cond-mat/0104299 | title_snip='Does theory of quantum correction to conductivity agree with
+  experim…' | abs_len= 784
+[16:39:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:48] select | verify strict 8/20
+[16:39:48] verify | func= Compares | rank= 3 | pid= cond-mat/0102421 | title_snip='Electronic States of Boron in Superconducting MgB$_2$ Studied by
+  $^{…' | abs_len= 629
+[16:39:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:50] select | verify strict 9/20
+[16:39:50] verify | func= Compares | rank= 4 | pid= cond-mat/0101138 | title_snip='Depairing currents in the superconductor/ferromagnet proximity system
+…' | abs_len= 1274
+[16:39:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:53] select | verify strict 10/20
+[16:39:53] verify | func= Compares | rank= 5 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[16:39:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:55] select | verify strict 11/20
+[16:39:55] verify | func= Compares | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[16:39:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:39:58] select | verify strict 12/20
+[16:39:58] verify | func= Compares | rank= 16 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[16:40:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:01] select | verify strict 13/20
+[16:40:01] verify | func= Compares | rank= 17 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[16:40:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:03] select | verify strict 14/20
+[16:40:03] verify | func= Compares | rank= 19 | pid= hep-ph/0104166 | title_snip='Piecing the Solar Neutrino Puzzle Together at SNO' | abs_len= 1191
+[16:40:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:06] select | verify strict 15/20
+[16:40:06] verify | func= Compares | rank= 2 | pid= cond-mat/0102048 | title_snip='Staggered currents in the mixed state' | abs_len= 896
+[16:40:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:08] select | verify strict 16/20
+[16:40:08] verify | func= Compares | rank= 6 | pid= cond-mat/0103418 | title_snip='The energy gap of intermediate-valent SmB6 studied by point-contact
+  …' | abs_len= 1041
+[16:40:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:11] select | verify strict 17/20
+[16:40:11] verify | func= Compares | rank= 11 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[16:40:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:14] select | verify strict 18/20
+[16:40:14] verify | func= Compares | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[16:40:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:16] select | verify strict 19/20
+[16:40:16] verify | func= Compares | rank= 15 | pid= cond-mat/0102114 | title_snip='Thermodynamic and Transport Properties of Superconducting $Mg^{10}B_2$' | abs_len= 1034
+[16:40:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:19] select | verify strict 20/20
+[16:40:19] verify | func= Compares | rank= 18 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[16:40:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:22] select | strict pass found 0 winners → trying relaxed
+[16:40:22] select | verify relaxed 1/20
+[16:40:22] verify | func= Compares | rank= 0 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[16:40:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:40:25] select | verify relaxed 2/20
+[16:40:25] verify | func= Compares | rank= 8 | pid= cond-mat/0104498 | title_snip='Electron Spin Resonance of Ni-doped CuGeO$_3$ in the paramagnetic,
+  s…' | abs_len= 1555
+[16:40:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:28] select | verify relaxed 3/20
+[16:40:28] verify | func= Compares | rank= 1 | pid= cond-mat/0103189 | title_snip='Strong ferromangnetism and weak antiferroamgnetism in double
+  perovsk…' | abs_len= 616
+[16:40:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:30] select | verify relaxed 4/20
+[16:40:30] verify | func= Compares | rank= 7 | pid= cond-mat/0102024 | title_snip='Ab-initio study of disorder effects on the electronic and magnetic
+  s…' | abs_len= 843
+[16:40:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:33] select | verify relaxed 5/20
+[16:40:33] verify | func= Compares | rank= 14 | pid= cond-mat/0104117 | title_snip='Temperature dependence of current self-oscillations and electric field…' | abs_len= 508
+[16:40:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:35] select | verify relaxed 6/20
+[16:40:35] verify | func= Compares | rank= 10 | pid= cond-mat/0104184 | title_snip='Fermi Surface Measurements on the Low Carrier Density Ferromagnet
+  Ca…' | abs_len= 547
+[16:40:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:40:38] select | verify relaxed 7/20
+[16:40:38] verify | func= Compares | rank= 12 | pid= cond-mat/0104299 | title_snip='Does theory of quantum correction to conductivity agree with
+  experim…' | abs_len= 784
+[16:40:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:41] select | verify relaxed 8/20
+[16:40:41] verify | func= Compares | rank= 3 | pid= cond-mat/0102421 | title_snip='Electronic States of Boron in Superconducting MgB$_2$ Studied by
+  $^{…' | abs_len= 629
+[16:40:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:44] select | verify relaxed 9/20
+[16:40:44] verify | func= Compares | rank= 4 | pid= cond-mat/0101138 | title_snip='Depairing currents in the superconductor/ferromagnet proximity system
+…' | abs_len= 1274
+[16:40:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:46] select | verify relaxed 10/20
+[16:40:46] verify | func= Compares | rank= 5 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[16:40:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:49] select | verify relaxed 11/20
+[16:40:49] verify | func= Compares | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[16:40:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:51] select | verify relaxed 12/20
+[16:40:51] verify | func= Compares | rank= 16 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[16:40:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:54] select | verify relaxed 13/20
+[16:40:54] verify | func= Compares | rank= 17 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[16:40:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:57] select | verify relaxed 14/20
+[16:40:57] verify | func= Compares | rank= 19 | pid= hep-ph/0104166 | title_snip='Piecing the Solar Neutrino Puzzle Together at SNO' | abs_len= 1191
+[16:40:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:40:59] select | verify relaxed 15/20
+[16:40:59] verify | func= Compares | rank= 2 | pid= cond-mat/0102048 | title_snip='Staggered currents in the mixed state' | abs_len= 896
+[16:41:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:02] select | verify relaxed 16/20
+[16:41:02] verify | func= Compares | rank= 6 | pid= cond-mat/0103418 | title_snip='The energy gap of intermediate-valent SmB6 studied by point-contact
+  …' | abs_len= 1041
+[16:41:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:04] select | verify relaxed 17/20
+[16:41:04] verify | func= Compares | rank= 11 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[16:41:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:07] select | verify relaxed 18/20
+[16:41:07] verify | func= Compares | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[16:41:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:10] select | verify relaxed 19/20
+[16:41:10] verify | func= Compares | rank= 15 | pid= cond-mat/0102114 | title_snip='Thermodynamic and Transport Properties of Superconducting $Mg^{10}B_2$' | abs_len= 1034
+[16:41:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:12] select | verify relaxed 20/20
+[16:41:12] verify | func= Compares | rank= 18 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[16:41:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?
+- WINNER: cond-mat/0103180 | Electronic structure and magnetism in slightly doped SrB_6
+- QUOTE : As has been shown in a previous publication, it can lead to a weak ferromagnetic state.
+- WHY   : sufficient
+- ANSWER: The current work compares to previous research by extending the understanding of the magnetic state in doped SrB$_{6}$ through calculations for larger supercells and lower doping levels. It builds upon previous findings by demonstrating the persistence of a weak ferromagnetic state at lower doping levels, with a magnetic moment of approximately 0.1 $\mu_B$ per La impurity (cond-mat/0103180).
+[16:41:21] main | running function= Extends
+[16:41:21] select | function= Extends | candidates_in= 20
+[16:41:21] select | core_terms= ['SrB$_{6}$', 'magnetic state', 'doped']
+[16:41:21] select | no cosine prune; kept=20/20
+[16:41:21] select | pool_size= 20 | ranks= [0, 8, 14, 10, 12, 1, 7, 5, 17, 2, 3, 4, 6, 9, 11, 13, 15, 16, 18, 19] | pids= ['cond-mat/0103180', 'cond-mat/0104498', 'cond-mat/0104117', 'cond-mat/0104184', 'cond-mat/0104299', 'cond-mat/0103189', 'cond-mat/0102024', 'cond-mat/0104308', 'cond-mat/0102522', 'cond-mat/0102048', 'cond-mat/0102421', 'cond-mat/0101138', 'cond-mat/0103418', 'hep-ph/0104253', 'cond-mat/0104216', 'hep-ph/0103299', 'cond-mat/0102114', 'cond-mat/0101280', 'cond-mat/0101105', 'hep-ph/0104166']
+[16:41:21] select | verify strict 1/20
+[16:41:21] verify | func= Extends | rank= 0 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[16:41:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[16:41:24] select | verify strict 2/20
+[16:41:24] verify | func= Extends | rank= 8 | pid= cond-mat/0104498 | title_snip='Electron Spin Resonance of Ni-doped CuGeO$_3$ in the paramagnetic,
+  s…' | abs_len= 1555
+[16:41:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:27] select | verify strict 3/20
+[16:41:27] verify | func= Extends | rank= 14 | pid= cond-mat/0104117 | title_snip='Temperature dependence of current self-oscillations and electric field…' | abs_len= 508
+[16:41:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:29] select | verify strict 4/20
+[16:41:29] verify | func= Extends | rank= 10 | pid= cond-mat/0104184 | title_snip='Fermi Surface Measurements on the Low Carrier Density Ferromagnet
+  Ca…' | abs_len= 547
+[16:41:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:41:32] select | verify strict 5/20
+[16:41:32] verify | func= Extends | rank= 12 | pid= cond-mat/0104299 | title_snip='Does theory of quantum correction to conductivity agree with
+  experim…' | abs_len= 784
+[16:41:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:35] select | verify strict 6/20
+[16:41:35] verify | func= Extends | rank= 1 | pid= cond-mat/0103189 | title_snip='Strong ferromangnetism and weak antiferroamgnetism in double
+  perovsk…' | abs_len= 616
+[16:41:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:37] select | verify strict 7/20
+[16:41:37] verify | func= Extends | rank= 7 | pid= cond-mat/0102024 | title_snip='Ab-initio study of disorder effects on the electronic and magnetic
+  s…' | abs_len= 843
+[16:41:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:40] select | verify strict 8/20
+[16:41:40] verify | func= Extends | rank= 5 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[16:41:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:42] select | verify strict 9/20
+[16:41:42] verify | func= Extends | rank= 17 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[16:41:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:45] select | verify strict 10/20
+[16:41:45] verify | func= Extends | rank= 2 | pid= cond-mat/0102048 | title_snip='Staggered currents in the mixed state' | abs_len= 896
+[16:41:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:47] select | verify strict 11/20
+[16:41:47] verify | func= Extends | rank= 3 | pid= cond-mat/0102421 | title_snip='Electronic States of Boron in Superconducting MgB$_2$ Studied by
+  $^{…' | abs_len= 629
+[16:41:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:50] select | verify strict 12/20
+[16:41:50] verify | func= Extends | rank= 4 | pid= cond-mat/0101138 | title_snip='Depairing currents in the superconductor/ferromagnet proximity system
+…' | abs_len= 1274
+[16:41:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:53] select | verify strict 13/20
+[16:41:53] verify | func= Extends | rank= 6 | pid= cond-mat/0103418 | title_snip='The energy gap of intermediate-valent SmB6 studied by point-contact
+  …' | abs_len= 1041
+[16:41:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:55] select | verify strict 14/20
+[16:41:55] verify | func= Extends | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[16:41:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:41:58] select | verify strict 15/20
+[16:41:58] verify | func= Extends | rank= 11 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[16:42:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:01] select | verify strict 16/20
+[16:42:01] verify | func= Extends | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[16:42:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:03] select | verify strict 17/20
+[16:42:03] verify | func= Extends | rank= 15 | pid= cond-mat/0102114 | title_snip='Thermodynamic and Transport Properties of Superconducting $Mg^{10}B_2$' | abs_len= 1034
+[16:42:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:06] select | verify strict 18/20
+[16:42:06] verify | func= Extends | rank= 16 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[16:42:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:09] select | verify strict 19/20
+[16:42:09] verify | func= Extends | rank= 18 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[16:42:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:11] select | verify strict 20/20
+[16:42:11] verify | func= Extends | rank= 19 | pid= hep-ph/0104166 | title_snip='Piecing the Solar Neutrino Puzzle Together at SNO' | abs_len= 1191
+[16:42:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:14] select | strict pass found 0 winners → trying relaxed
+[16:42:14] select | verify relaxed 1/20
+[16:42:14] verify | func= Extends | rank= 0 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[16:42:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:42:17] select | verify relaxed 2/20
+[16:42:17] verify | func= Extends | rank= 8 | pid= cond-mat/0104498 | title_snip='Electron Spin Resonance of Ni-doped CuGeO$_3$ in the paramagnetic,
+  s…' | abs_len= 1555
+[16:42:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:20] select | verify relaxed 3/20
+[16:42:20] verify | func= Extends | rank= 14 | pid= cond-mat/0104117 | title_snip='Temperature dependence of current self-oscillations and electric field…' | abs_len= 508
+[16:42:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:22] select | verify relaxed 4/20
+[16:42:22] verify | func= Extends | rank= 10 | pid= cond-mat/0104184 | title_snip='Fermi Surface Measurements on the Low Carrier Density Ferromagnet
+  Ca…' | abs_len= 547
+[16:42:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:42:25] select | verify relaxed 5/20
+[16:42:25] verify | func= Extends | rank= 12 | pid= cond-mat/0104299 | title_snip='Does theory of quantum correction to conductivity agree with
+  experim…' | abs_len= 784
+[16:42:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:28] select | verify relaxed 6/20
+[16:42:28] verify | func= Extends | rank= 1 | pid= cond-mat/0103189 | title_snip='Strong ferromangnetism and weak antiferroamgnetism in double
+  perovsk…' | abs_len= 616
+[16:42:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:30] select | verify relaxed 7/20
+[16:42:30] verify | func= Extends | rank= 7 | pid= cond-mat/0102024 | title_snip='Ab-initio study of disorder effects on the electronic and magnetic
+  s…' | abs_len= 843
+[16:42:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:33] select | verify relaxed 8/20
+[16:42:33] verify | func= Extends | rank= 5 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[16:42:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:35] select | verify relaxed 9/20
+[16:42:35] verify | func= Extends | rank= 17 | pid= cond-mat/0102522 | title_snip='Strong Electron-Phonon Coupling in Superconducting MgB$_2$: A Specific…' | abs_len= 742
+[16:42:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:38] select | verify relaxed 10/20
+[16:42:38] verify | func= Extends | rank= 2 | pid= cond-mat/0102048 | title_snip='Staggered currents in the mixed state' | abs_len= 896
+[16:42:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:41] select | verify relaxed 11/20
+[16:42:41] verify | func= Extends | rank= 3 | pid= cond-mat/0102421 | title_snip='Electronic States of Boron in Superconducting MgB$_2$ Studied by
+  $^{…' | abs_len= 629
+[16:42:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:43] select | verify relaxed 12/20
+[16:42:43] verify | func= Extends | rank= 4 | pid= cond-mat/0101138 | title_snip='Depairing currents in the superconductor/ferromagnet proximity system
+…' | abs_len= 1274
+[16:42:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:46] select | verify relaxed 13/20
+[16:42:46] verify | func= Extends | rank= 6 | pid= cond-mat/0103418 | title_snip='The energy gap of intermediate-valent SmB6 studied by point-contact
+  …' | abs_len= 1041
+[16:42:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:49] select | verify relaxed 14/20
+[16:42:49] verify | func= Extends | rank= 9 | pid= hep-ph/0104253 | title_snip='Production of the $\eta_b(nS)$ states' | abs_len= 915
+[16:42:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:51] select | verify relaxed 15/20
+[16:42:51] verify | func= Extends | rank= 11 | pid= cond-mat/0104216 | title_snip='The band structure of MgB$_{2}$ with different lattice constants' | abs_len= 901
+[16:42:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:54] select | verify relaxed 16/20
+[16:42:54] verify | func= Extends | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[16:42:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:56] select | verify relaxed 17/20
+[16:42:56] verify | func= Extends | rank= 15 | pid= cond-mat/0102114 | title_snip='Thermodynamic and Transport Properties of Superconducting $Mg^{10}B_2$' | abs_len= 1034
+[16:42:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:42:59] select | verify relaxed 18/20
+[16:42:59] verify | func= Extends | rank= 16 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[16:43:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:43:02] select | verify relaxed 19/20
+[16:43:02] verify | func= Extends | rank= 18 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[16:43:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:43:04] select | verify relaxed 20/20
+[16:43:04] verify | func= Extends | rank= 19 | pid= hep-ph/0104166 | title_snip='Piecing the Solar Neutrino Puzzle Together at SNO' | abs_len= 1191
+[16:43:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work compare to and extend previous research on the magnetic state of doped SrB$_{6}$?
+- WINNER: cond-mat/0103180 | Electronic structure and magnetism in slightly doped SrB_6
+- QUOTE : As has been shown in a previous publication, it can lead to a weak ferromagnetic state.
+- WHY   : sufficient
+- ANSWER: The current work extends previous research by demonstrating that the weak ferromagnetic state in slightly doped SrB$_{6}$ persists at even lower doping levels. It builds upon prior findings by showing that the magnetic state can be understood through charge transfer and potential energy gain, with a moment of approximately 0.1 $\mu_B$ per La impurity (cond-mat/0103180).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,2 @@
+Future research could investigate ways to differentiate between vertical and horizontal line nodes in spin-triplet superconducting states, as the current study's inability to do so leaves the pairing model for Sr_2RuO_4 uncertain. This distinction is crucial for understanding the underlying superconducting mechanisms in these materials (cond-mat/0104432). [Motivation]
+The abstract does not provide information relevant to FutureWork. [FutureWork]

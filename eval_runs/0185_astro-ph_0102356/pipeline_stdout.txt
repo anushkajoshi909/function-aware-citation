@@ -1,0 +1,403 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Background"
+  ],
+  "justification": "The query asks for a comparative analysis of Mrk\u202f279\u2019s mid\u2011infrared SED against other Seyfert galaxies and also requests background information on their emission features."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.61 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.39it/s]
+Reading arXiv_src_0101_001.jsonl: 94it [00:00, 541.61it/s]
+Reading arXiv_src_0101_001.jsonl: 245it [00:00, 974.63it/s]
+Reading arXiv_src_0101_001.jsonl: 356it [00:00, 1023.73it/s]
+Reading arXiv_src_0101_001.jsonl: 459it [00:00, 762.74it/s] 
+Reading arXiv_src_0101_001.jsonl: 544it [00:00, 601.19it/s]
+Reading arXiv_src_0101_001.jsonl: 649it [00:00, 703.11it/s]
+Reading arXiv_src_0101_001.jsonl: 758it [00:01, 797.52it/s]
+Reading arXiv_src_0101_001.jsonl: 868it [00:01, 874.96it/s]
+Reading arXiv_src_0101_001.jsonl: 978it [00:01, 933.85it/s]
+Reading arXiv_src_0101_001.jsonl: 1083it [00:01, 963.45it/s]
+Reading arXiv_src_0101_001.jsonl: 1218it [00:01, 1062.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1328it [00:01, 1058.42it/s]
+Reading arXiv_src_0101_001.jsonl: 1471it [00:01, 1165.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1600it [00:01, 1200.63it/s]
+Reading arXiv_src_0101_001.jsonl: 1732it [00:01, 1235.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1857it [00:01, 1196.33it/s]
+Reading arXiv_src_0101_001.jsonl: 2037it [00:02, 1369.93it/s]
+Reading arXiv_src_0101_001.jsonl: 2198it [00:02, 1439.24it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1044.08it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1325.46it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1350.33it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 853.77it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 517.05it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 558.08it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:01, 614.70it/s]
+Reading arXiv_src_0102_001.jsonl: 782it [00:01, 719.08it/s]
+Reading arXiv_src_0102_001.jsonl: 909it [00:01, 852.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1024it [00:01, 929.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1144it [00:01, 1002.38it/s]
+Reading arXiv_src_0102_001.jsonl: 1254it [00:01, 1023.35it/s]
+Reading arXiv_src_0102_001.jsonl: 1400it [00:01, 1145.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1531it [00:01, 1193.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1659it [00:01, 1217.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1809it [00:01, 1296.24it/s]
+Reading arXiv_src_0102_001.jsonl: 1962it [00:02, 1364.20it/s]
+Reading arXiv_src_0102_001.jsonl: 2115it [00:02, 1412.24it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1013.30it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1364.80it/s]
+Reading arXiv_src_0103_001.jsonl: 288it [00:00, 1443.42it/s]
+Reading arXiv_src_0103_001.jsonl: 433it [00:00, 1217.50it/s]
+Reading arXiv_src_0103_001.jsonl: 559it [00:00, 735.71it/s] 
+Reading arXiv_src_0103_001.jsonl: 652it [00:00, 751.12it/s]
+Reading arXiv_src_0103_001.jsonl: 741it [00:00, 776.60it/s]
+Reading arXiv_src_0103_001.jsonl: 850it [00:00, 853.51it/s]
+Reading arXiv_src_0103_001.jsonl: 955it [00:01, 900.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 947.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1190it [00:01, 1024.28it/s]
+Reading arXiv_src_0103_001.jsonl: 1297it [00:01, 1028.18it/s]
+Reading arXiv_src_0103_001.jsonl: 1428it [00:01, 1108.46it/s]
+Reading arXiv_src_0103_001.jsonl: 1576it [00:01, 1214.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1709it [00:01, 1246.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1861it [00:01, 1324.44it/s]
+Reading arXiv_src_0103_001.jsonl: 1995it [00:01, 1318.33it/s]
+Reading arXiv_src_0103_001.jsonl: 2142it [00:01, 1362.69it/s]
+Reading arXiv_src_0103_001.jsonl: 2288it [00:02, 1388.81it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1127.53it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 1498.52it/s]
+Reading arXiv_src_0104_001.jsonl: 310it [00:00, 1546.09it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 987.53it/s] 
+Reading arXiv_src_0104_001.jsonl: 581it [00:00, 546.87it/s]
+Reading arXiv_src_0104_001.jsonl: 689it [00:00, 641.68it/s]
+Reading arXiv_src_0104_001.jsonl: 780it [00:01, 694.19it/s]
+Reading arXiv_src_0104_001.jsonl: 884it [00:01, 771.56it/s]
+Reading arXiv_src_0104_001.jsonl: 1002it [00:01, 869.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1121it [00:01, 951.64it/s]
+Reading arXiv_src_0104_001.jsonl: 1232it [00:01, 992.23it/s]
+Reading arXiv_src_0104_001.jsonl: 1340it [00:01, 1010.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1471it [00:01, 1092.31it/s]
+Reading arXiv_src_0104_001.jsonl: 1613it [00:01, 1185.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1738it [00:01, 1202.60it/s]
+Reading arXiv_src_0104_001.jsonl: 1889it [00:01, 1292.21it/s]
+Reading arXiv_src_0104_001.jsonl: 2040it [00:02, 1355.59it/s]
+Reading arXiv_src_0104_001.jsonl: 2178it [00:02, 948.49it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 971.11it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the mid-infrared spectral energy distribution of Mrk 279 compare to other Seyfert galaxies in terms of background information on their emission features?
+[debug] classifier labels: ['Compares', 'Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T22:25:33.055169  Compares, Background
+1     1  0.480050  ...  2025-09-21T22:25:33.055169  Compares, Background
+2     2  0.325387  ...  2025-09-21T22:25:33.055169  Compares, Background
+3     3  0.292663  ...  2025-09-21T22:25:33.055169  Compares, Background
+4     4  0.285907  ...  2025-09-21T22:25:33.055169  Compares, Background
+5     5  0.272577  ...  2025-09-21T22:25:33.055169  Compares, Background
+6     6  0.234246  ...  2025-09-21T22:25:33.055169  Compares, Background
+7     7  0.234116  ...  2025-09-21T22:25:33.055169  Compares, Background
+8     8  0.230835  ...  2025-09-21T22:25:33.055169  Compares, Background
+9     9  0.188312  ...  2025-09-21T22:25:33.055169  Compares, Background
+
+[10 rows x 12 columns]
+[00:25:41] main | args: Namespace(max_check=20, debug=True)
+[00:25:41] read_last_jsonl | path= classified_outputs.jsonl
+[00:25:41] read_last_jsonl | total_lines= 1
+[00:25:41] main | query='How does the mid-infrared spectral energy distribution of Mrk 279 compare to other Seyfert galaxies in terms of background information on their emission features?' | funcs=['Compares', 'Background']
+[00:25:44] main | core_terms= ['Mrk 279', 'Seyfert galaxies', 'mid-infrared spectral energy distribution', 'emission features', 'mid-infrared']
+[00:25:44] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:25:44] load_topk_jsonl | rows= 20
+[00:25:44] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102356 title_snip='Monitoring of the optical and 2.5-11.7 micron spectrum and mid-IR
+  im…' abs_len= 1106
+[00:25:44] main | running function= Compares
+[00:25:44] select | function= Compares | candidates_in= 20
+[00:25:44] select | core_terms= ['Mrk 279', 'Seyfert galaxies', 'mid-infrared spectral energy distribution', 'emission features', 'mid-infrared']
+[00:25:44] select | no cosine prune; kept=20/20
+[00:25:44] select | pool_size= 20 | ranks= [0, 1, 12, 2, 3, 6, 9, 11, 15, 4, 5, 7, 17, 18, 8, 10, 13, 14, 16, 19] | pids= ['astro-ph/0102356', 'astro-ph/0101103', 'astro-ph/0101203', 'astro-ph/0101038', 'astro-ph/0103266', 'astro-ph/0101153', 'astro-ph/0104087', 'astro-ph/0101221', 'astro-ph/0103504', 'astro-ph/0101066', 'astro-ph/0103263', 'astro-ph/0104197', 'astro-ph/0104186', 'astro-ph/0102472', 'astro-ph/0104042', 'astro-ph/0103078', 'astro-ph/0104309', 'astro-ph/0101324', 'astro-ph/0102506', 'astro-ph/0103518']
+[00:25:44] select | verify strict 1/20
+[00:25:44] verify | func= Compares | rank= 0 | pid= astro-ph/0102356 | title_snip='Monitoring of the optical and 2.5-11.7 micron spectrum and mid-IR
+  im…' | abs_len= 1106
+[00:25:48] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[00:25:48] select | verify strict 2/20
+[00:25:48] verify | func= Compares | rank= 1 | pid= astro-ph/0101103 | title_snip='The origin of the mid- and far-infrared emission in AGN' | abs_len= 1153
+[00:25:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:25:51] select | verify strict 3/20
+[00:25:51] verify | func= Compares | rank= 12 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[00:25:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:25:54] select | verify strict 4/20
+[00:25:54] verify | func= Compares | rank= 2 | pid= astro-ph/0101038 | title_snip='Mid-infrared observations of NGC 1068 with ISOCAM' | abs_len= 1493
+[00:25:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:25:56] select | verify strict 5/20
+[00:25:56] verify | func= Compares | rank= 3 | pid= astro-ph/0103266 | title_snip='High-resolution radio observations of Seyfert galaxies in the extended…' | abs_len= 1100
+[00:26:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:26:00] select | verify strict 6/20
+[00:26:00] verify | func= Compares | rank= 6 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[00:26:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:02] select | verify strict 7/20
+[00:26:02] verify | func= Compares | rank= 9 | pid= astro-ph/0104087 | title_snip='The impact of bars on the mid-infrared dust emission of spiral galaxie…' | abs_len= 1721
+[00:26:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:05] select | verify strict 8/20
+[00:26:05] verify | func= Compares | rank= 11 | pid= astro-ph/0101221 | title_snip='Constraints on the High Energy Continuum of Seyfert galaxies from RXTE…' | abs_len= 850
+[00:26:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:07] select | verify strict 9/20
+[00:26:07] verify | func= Compares | rank= 15 | pid= astro-ph/0103504 | title_snip='The complete ISO spectrum of NGC 6302' | abs_len= 737
+[00:26:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:10] select | verify strict 10/20
+[00:26:10] verify | func= Compares | rank= 4 | pid= astro-ph/0101066 | title_snip='X-ray energy and power spectra of Seyfert 1 and Narrow Line Seyfert 1
+…' | abs_len= 914
+[00:26:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:13] select | verify strict 11/20
+[00:26:13] verify | func= Compares | rank= 5 | pid= astro-ph/0103263 | title_snip='Testing the Unified Model with an Infrared Selected Sample of Seyfert
+…' | abs_len= 1824
+[00:26:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:26:16] select | verify strict 12/20
+[00:26:16] verify | func= Compares | rank= 7 | pid= astro-ph/0104197 | title_snip='Integral Field Near-IR Spectroscopy of a Sample of Seyfert and LINER
+ …' | abs_len= 951
+[00:26:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:26:19] select | verify strict 13/20
+[00:26:19] verify | func= Compares | rank= 17 | pid= astro-ph/0104186 | title_snip='Empirical diagnostics of the starburst-AGN connection' | abs_len= 1774
+[00:26:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:22] select | verify strict 14/20
+[00:26:22] verify | func= Compares | rank= 18 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[00:26:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:24] select | verify strict 15/20
+[00:26:24] verify | func= Compares | rank= 8 | pid= astro-ph/0104042 | title_snip='The Environmental Dependence of the Infrared Luminosity and Stellar Ma…' | abs_len= 894
+[00:26:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:27] select | verify strict 16/20
+[00:26:27] verify | func= Compares | rank= 10 | pid= astro-ph/0103078 | title_snip='The Cosmic Infrared Background at 1.25 microns and 2.2 microns using
+ …' | abs_len= 865
+[00:26:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:29] select | verify strict 17/20
+[00:26:29] verify | func= Compares | rank= 13 | pid= astro-ph/0104309 | title_snip='The Inner Light Year of the Nearest Seyfert 1 Nucleus in NGC 4395' | abs_len= 1009
+[00:26:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:32] select | verify strict 18/20
+[00:26:32] verify | func= Compares | rank= 14 | pid= astro-ph/0101324 | title_snip='On the Origin of the FeK$\alpha$ Line in the Seyfert 2 Galaxy NGC 7172' | abs_len= 1364
+[00:26:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:34] select | verify strict 19/20
+[00:26:34] verify | func= Compares | rank= 16 | pid= astro-ph/0102506 | title_snip='Radio Continuum Survey of an Optically-Selected Sample of Nearby Seyfe…' | abs_len= 1126
+[00:26:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:37] select | verify strict 20/20
+[00:26:37] verify | func= Compares | rank= 19 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[00:26:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:40] select | strict pass found 0 winners → trying relaxed
+[00:26:40] select | verify relaxed 1/20
+[00:26:40] verify | func= Compares | rank= 0 | pid= astro-ph/0102356 | title_snip='Monitoring of the optical and 2.5-11.7 micron spectrum and mid-IR
+  im…' | abs_len= 1106
+[00:26:43] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[00:26:43] select | verify relaxed 2/20
+[00:26:43] verify | func= Compares | rank= 1 | pid= astro-ph/0101103 | title_snip='The origin of the mid- and far-infrared emission in AGN' | abs_len= 1153
+[00:26:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:26:46] select | verify relaxed 3/20
+[00:26:46] verify | func= Compares | rank= 12 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[00:26:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:26:49] select | verify relaxed 4/20
+[00:26:49] verify | func= Compares | rank= 2 | pid= astro-ph/0101038 | title_snip='Mid-infrared observations of NGC 1068 with ISOCAM' | abs_len= 1493
+[00:26:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:26:53] select | verify relaxed 5/20
+[00:26:53] verify | func= Compares | rank= 3 | pid= astro-ph/0103266 | title_snip='High-resolution radio observations of Seyfert galaxies in the extended…' | abs_len= 1100
+[00:26:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:26:56] select | verify relaxed 6/20
+[00:26:56] verify | func= Compares | rank= 6 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[00:26:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:26:59] select | verify relaxed 7/20
+[00:26:59] verify | func= Compares | rank= 9 | pid= astro-ph/0104087 | title_snip='The impact of bars on the mid-infrared dust emission of spiral galaxie…' | abs_len= 1721
+[00:27:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:27:02] select | verify relaxed 8/20
+[00:27:02] verify | func= Compares | rank= 11 | pid= astro-ph/0101221 | title_snip='Constraints on the High Energy Continuum of Seyfert galaxies from RXTE…' | abs_len= 850
+[00:27:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:27:05] select | verify relaxed 9/20
+[00:27:05] verify | func= Compares | rank= 15 | pid= astro-ph/0103504 | title_snip='The complete ISO spectrum of NGC 6302' | abs_len= 737
+[00:27:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:07] select | verify relaxed 10/20
+[00:27:07] verify | func= Compares | rank= 4 | pid= astro-ph/0101066 | title_snip='X-ray energy and power spectra of Seyfert 1 and Narrow Line Seyfert 1
+…' | abs_len= 914
+[00:27:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:10] select | verify relaxed 11/20
+[00:27:10] verify | func= Compares | rank= 5 | pid= astro-ph/0103263 | title_snip='Testing the Unified Model with an Infrared Selected Sample of Seyfert
+…' | abs_len= 1824
+[00:27:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:27:13] select | verify relaxed 12/20
+[00:27:13] verify | func= Compares | rank= 7 | pid= astro-ph/0104197 | title_snip='Integral Field Near-IR Spectroscopy of a Sample of Seyfert and LINER
+ …' | abs_len= 951
+[00:27:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:27:16] select | verify relaxed 13/20
+[00:27:16] verify | func= Compares | rank= 17 | pid= astro-ph/0104186 | title_snip='Empirical diagnostics of the starburst-AGN connection' | abs_len= 1774
+[00:27:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[00:27:19] select | verify relaxed 14/20
+[00:27:19] verify | func= Compares | rank= 18 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[00:27:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:22] select | verify relaxed 15/20
+[00:27:22] verify | func= Compares | rank= 8 | pid= astro-ph/0104042 | title_snip='The Environmental Dependence of the Infrared Luminosity and Stellar Ma…' | abs_len= 894
+[00:27:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:24] select | verify relaxed 16/20
+[00:27:24] verify | func= Compares | rank= 10 | pid= astro-ph/0103078 | title_snip='The Cosmic Infrared Background at 1.25 microns and 2.2 microns using
+ …' | abs_len= 865
+[00:27:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:27] select | verify relaxed 17/20
+[00:27:27] verify | func= Compares | rank= 13 | pid= astro-ph/0104309 | title_snip='The Inner Light Year of the Nearest Seyfert 1 Nucleus in NGC 4395' | abs_len= 1009
+[00:27:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:29] select | verify relaxed 18/20
+[00:27:29] verify | func= Compares | rank= 14 | pid= astro-ph/0101324 | title_snip='On the Origin of the FeK$\alpha$ Line in the Seyfert 2 Galaxy NGC 7172' | abs_len= 1364
+[00:27:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:36] select | verify relaxed 19/20
+[00:27:36] verify | func= Compares | rank= 16 | pid= astro-ph/0102506 | title_snip='Radio Continuum Survey of an Optically-Selected Sample of Nearby Seyfe…' | abs_len= 1126
+[00:27:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:38] select | verify relaxed 20/20
+[00:27:38] verify | func= Compares | rank= 19 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[00:27:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:42] arbiter | rejected off-topic winner: astro-ph/0101103
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the mid-infrared spectral energy distribution of Mrk 279 compare to other Seyfert galaxies in terms of background information on their emission features?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+[00:27:42] main | running function= Background
+[00:27:42] select | function= Background | candidates_in= 20
+[00:27:42] select | core_terms= ['Mrk 279', 'Seyfert galaxies', 'mid-infrared spectral energy distribution', 'emission features', 'mid-infrared']
+[00:27:42] select | no cosine prune; kept=20/20
+[00:27:42] select | pool_size= 20 | ranks= [0, 1, 2, 6, 9, 11, 15, 3, 12, 5, 7, 10, 16, 17, 18, 19, 4, 8, 13, 14] | pids= ['astro-ph/0102356', 'astro-ph/0101103', 'astro-ph/0101038', 'astro-ph/0101153', 'astro-ph/0104087', 'astro-ph/0101221', 'astro-ph/0103504', 'astro-ph/0103266', 'astro-ph/0101203', 'astro-ph/0103263', 'astro-ph/0104197', 'astro-ph/0103078', 'astro-ph/0102506', 'astro-ph/0104186', 'astro-ph/0102472', 'astro-ph/0103518', 'astro-ph/0101066', 'astro-ph/0104042', 'astro-ph/0104309', 'astro-ph/0101324']
+[00:27:42] select | verify strict 1/20
+[00:27:42] verify | func= Background | rank= 0 | pid= astro-ph/0102356 | title_snip='Monitoring of the optical and 2.5-11.7 micron spectrum and mid-IR
+  im…' | abs_len= 1106
+[00:27:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:27:46] select | verify strict 2/20
+[00:27:46] verify | func= Background | rank= 1 | pid= astro-ph/0101103 | title_snip='The origin of the mid- and far-infrared emission in AGN' | abs_len= 1153
+[00:27:49] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[00:27:49] select | verify strict 3/20
+[00:27:49] verify | func= Background | rank= 2 | pid= astro-ph/0101038 | title_snip='Mid-infrared observations of NGC 1068 with ISOCAM' | abs_len= 1493
+[00:27:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:51] select | verify strict 4/20
+[00:27:51] verify | func= Background | rank= 6 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[00:27:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:54] select | verify strict 5/20
+[00:27:54] verify | func= Background | rank= 9 | pid= astro-ph/0104087 | title_snip='The impact of bars on the mid-infrared dust emission of spiral galaxie…' | abs_len= 1721
+[00:27:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:57] select | verify strict 6/20
+[00:27:57] verify | func= Background | rank= 11 | pid= astro-ph/0101221 | title_snip='Constraints on the High Energy Continuum of Seyfert galaxies from RXTE…' | abs_len= 850
+[00:27:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:27:59] select | verify strict 7/20
+[00:27:59] verify | func= Background | rank= 15 | pid= astro-ph/0103504 | title_snip='The complete ISO spectrum of NGC 6302' | abs_len= 737
+[00:28:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:01] select | verify strict 8/20
+[00:28:01] verify | func= Background | rank= 3 | pid= astro-ph/0103266 | title_snip='High-resolution radio observations of Seyfert galaxies in the extended…' | abs_len= 1100
+[00:28:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:28:05] select | verify strict 9/20
+[00:28:05] verify | func= Background | rank= 12 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[00:28:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:07] select | verify strict 10/20
+[00:28:07] verify | func= Background | rank= 5 | pid= astro-ph/0103263 | title_snip='Testing the Unified Model with an Infrared Selected Sample of Seyfert
+…' | abs_len= 1824
+[00:28:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:28:11] select | verify strict 11/20
+[00:28:11] verify | func= Background | rank= 7 | pid= astro-ph/0104197 | title_snip='Integral Field Near-IR Spectroscopy of a Sample of Seyfert and LINER
+ …' | abs_len= 951
+[00:28:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:13] select | verify strict 12/20
+[00:28:13] verify | func= Background | rank= 10 | pid= astro-ph/0103078 | title_snip='The Cosmic Infrared Background at 1.25 microns and 2.2 microns using
+ …' | abs_len= 865
+[00:28:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:16] select | verify strict 13/20
+[00:28:16] verify | func= Background | rank= 16 | pid= astro-ph/0102506 | title_snip='Radio Continuum Survey of an Optically-Selected Sample of Nearby Seyfe…' | abs_len= 1126
+[00:28:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:18] select | verify strict 14/20
+[00:28:18] verify | func= Background | rank= 17 | pid= astro-ph/0104186 | title_snip='Empirical diagnostics of the starburst-AGN connection' | abs_len= 1774
+[00:28:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:21] select | verify strict 15/20
+[00:28:21] verify | func= Background | rank= 18 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[00:28:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:23] select | verify strict 16/20
+[00:28:23] verify | func= Background | rank= 19 | pid= astro-ph/0103518 | title_snip='Background galaxies as reddening probes throughout the Magellanic Clou…' | abs_len= 1323
+[00:28:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:26] select | verify strict 17/20
+[00:28:26] verify | func= Background | rank= 4 | pid= astro-ph/0101066 | title_snip='X-ray energy and power spectra of Seyfert 1 and Narrow Line Seyfert 1
+…' | abs_len= 914
+[00:28:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:28] select | verify strict 18/20
+[00:28:28] verify | func= Background | rank= 8 | pid= astro-ph/0104042 | title_snip='The Environmental Dependence of the Infrared Luminosity and Stellar Ma…' | abs_len= 894
+[00:28:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:31] select | verify strict 19/20
+[00:28:31] verify | func= Background | rank= 13 | pid= astro-ph/0104309 | title_snip='The Inner Light Year of the Nearest Seyfert 1 Nucleus in NGC 4395' | abs_len= 1009
+[00:28:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:34] select | verify strict 20/20
+[00:28:34] verify | func= Background | rank= 14 | pid= astro-ph/0101324 | title_snip='On the Origin of the FeK$\alpha$ Line in the Seyfert 2 Galaxy NGC 7172' | abs_len= 1364
+[00:28:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the mid-infrared spectral energy distribution of Mrk 279 compare to other Seyfert galaxies in terms of background information on their emission features?
+- WINNER: astro-ph/0102356 | Monitoring of the optical and 2.5-11.7 micron spectrum and mid-IR
+  imaging of the Seyfert 1 galaxy Mrk279 with ISO
+- QUOTE : Mid-infrared images of the Seyfert 1 galaxy Mrk 279
+- WHY   : sufficient
+- ANSWER: The mid-infrared spectral energy distribution of Mrk 279 features a strong power law continuum and a mid-IR bump, with weak PAH emission (astro-ph/0102356).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

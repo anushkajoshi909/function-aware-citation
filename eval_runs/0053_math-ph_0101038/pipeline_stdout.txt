@@ -1,0 +1,461 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the equation can be expanded (extension) and how that can guide upcoming research (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.41 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.33it/s]
+Reading arXiv_src_0101_001.jsonl: 99it [00:00, 376.84it/s]
+Reading arXiv_src_0101_001.jsonl: 247it [00:00, 764.57it/s]
+Reading arXiv_src_0101_001.jsonl: 353it [00:00, 862.88it/s]
+Reading arXiv_src_0101_001.jsonl: 455it [00:00, 696.16it/s]
+Reading arXiv_src_0101_001.jsonl: 539it [00:00, 604.13it/s]
+Reading arXiv_src_0101_001.jsonl: 617it [00:01, 645.30it/s]
+Reading arXiv_src_0101_001.jsonl: 724it [00:01, 750.90it/s]
+Reading arXiv_src_0101_001.jsonl: 835it [00:01, 844.46it/s]
+Reading arXiv_src_0101_001.jsonl: 940it [00:01, 897.59it/s]
+Reading arXiv_src_0101_001.jsonl: 1053it [00:01, 961.01it/s]
+Reading arXiv_src_0101_001.jsonl: 1184it [00:01, 1059.68it/s]
+Reading arXiv_src_0101_001.jsonl: 1304it [00:01, 1096.16it/s]
+Reading arXiv_src_0101_001.jsonl: 1421it [00:01, 1117.01it/s]
+Reading arXiv_src_0101_001.jsonl: 1551it [00:01, 1170.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1683it [00:01, 1213.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1806it [00:02, 1203.46it/s]
+Reading arXiv_src_0101_001.jsonl: 1966it [00:02, 1320.07it/s]
+Reading arXiv_src_0101_001.jsonl: 2132it [00:02, 1418.11it/s]
+Reading arXiv_src_0101_001.jsonl: 2293it [00:02, 1473.68it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 988.67it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1330.32it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1354.97it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 850.75it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 522.80it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 558.33it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 617.73it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 742.99it/s]
+Reading arXiv_src_0102_001.jsonl: 909it [00:01, 849.00it/s]
+Reading arXiv_src_0102_001.jsonl: 1024it [00:01, 927.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1145it [00:01, 1002.42it/s]
+Reading arXiv_src_0102_001.jsonl: 1254it [00:01, 1025.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1402it [00:01, 1152.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1536it [00:01, 1206.51it/s]
+Reading arXiv_src_0102_001.jsonl: 1664it [00:01, 1227.09it/s]
+Reading arXiv_src_0102_001.jsonl: 1814it [00:01, 1306.26it/s]
+Reading arXiv_src_0102_001.jsonl: 1965it [00:02, 1364.51it/s]
+Reading arXiv_src_0102_001.jsonl: 2118it [00:02, 1411.94it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1017.59it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  4.79it/s]
+Reading arXiv_src_0103_001.jsonl: 32it [00:00, 128.09it/s]
+Reading arXiv_src_0103_001.jsonl: 175it [00:00, 604.07it/s]
+Reading arXiv_src_0103_001.jsonl: 312it [00:00, 865.85it/s]
+Reading arXiv_src_0103_001.jsonl: 419it [00:00, 932.69it/s]
+Reading arXiv_src_0103_001.jsonl: 522it [00:00, 660.29it/s]
+Reading arXiv_src_0103_001.jsonl: 604it [00:00, 636.29it/s]
+Reading arXiv_src_0103_001.jsonl: 703it [00:01, 719.47it/s]
+Reading arXiv_src_0103_001.jsonl: 789it [00:01, 754.34it/s]
+Reading arXiv_src_0103_001.jsonl: 893it [00:01, 829.46it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 897.57it/s]
+Reading arXiv_src_0103_001.jsonl: 1114it [00:01, 961.84it/s]
+Reading arXiv_src_0103_001.jsonl: 1230it [00:01, 1015.04it/s]
+Reading arXiv_src_0103_001.jsonl: 1337it [00:01, 1030.60it/s]
+Reading arXiv_src_0103_001.jsonl: 1484it [00:01, 1155.24it/s]
+Reading arXiv_src_0103_001.jsonl: 1616it [00:01, 1202.11it/s]
+Reading arXiv_src_0103_001.jsonl: 1759it [00:02, 1268.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1903it [00:02, 1316.53it/s]
+Reading arXiv_src_0103_001.jsonl: 2041it [00:02, 1331.24it/s]
+Reading arXiv_src_0103_001.jsonl: 2180it [00:02, 1347.48it/s]
+Reading arXiv_src_0103_001.jsonl: 2335it [00:02, 1402.27it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 989.42it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.34it/s]
+Reading arXiv_src_0104_001.jsonl: 47it [00:00, 221.63it/s]
+Reading arXiv_src_0104_001.jsonl: 200it [00:00, 747.91it/s]
+Reading arXiv_src_0104_001.jsonl: 356it [00:00, 1013.37it/s]
+Reading arXiv_src_0104_001.jsonl: 464it [00:00, 816.77it/s] 
+Reading arXiv_src_0104_001.jsonl: 555it [00:00, 678.13it/s]
+Reading arXiv_src_0104_001.jsonl: 632it [00:01, 497.27it/s]
+Reading arXiv_src_0104_001.jsonl: 727it [00:01, 585.10it/s]
+Reading arXiv_src_0104_001.jsonl: 812it [00:01, 641.88it/s]
+Reading arXiv_src_0104_001.jsonl: 922it [00:01, 750.32it/s]
+Reading arXiv_src_0104_001.jsonl: 1042it [00:01, 864.15it/s]
+Reading arXiv_src_0104_001.jsonl: 1155it [00:01, 933.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1277it [00:01, 1009.46it/s]
+Reading arXiv_src_0104_001.jsonl: 1385it [00:01, 1005.42it/s]
+Reading arXiv_src_0104_001.jsonl: 1521it [00:01, 1104.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1654it [00:02, 1168.53it/s]
+Reading arXiv_src_0104_001.jsonl: 1785it [00:02, 1208.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1930it [00:02, 1279.28it/s]
+Reading arXiv_src_0104_001.jsonl: 2089it [00:02, 1366.48it/s]
+Reading arXiv_src_0104_001.jsonl: 2227it [00:02, 933.67it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 878.23it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?
+[debug] classifier labels: ['Extends', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+1     1  0.626002  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+2     2  0.499741  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+3     3  0.457066  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+4     4  0.452922  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+5     5  0.446779  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+6     6  0.390070  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+7     7  0.378052  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+8     8  0.320871  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+9     9  0.291549  ...  2025-09-21T14:13:51.551000  Extends, FutureWork
+
+[10 rows x 12 columns]
+[16:14:03] main | args: Namespace(max_check=20, debug=True)
+[16:14:03] read_last_jsonl | path= classified_outputs.jsonl
+[16:14:03] read_last_jsonl | total_lines= 1
+[16:14:03] main | query='How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?' | funcs=['Extends', 'FutureWork']
+[16:14:08] main | core_terms= ['lattice systems', 'discrete nonlinear Schrödinger equation', 'chaotic spatial structures', 'quantum', 'classical']
+[16:14:08] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:14:08] load_topk_jsonl | rows= 20
+[16:14:08] load_topk_jsonl | first: rank= 0 paper_id= math-ph/0101038 title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' abs_len= 1590
+[16:14:08] main | running function= Extends
+[16:14:08] select | function= Extends | candidates_in= 20
+[16:14:08] select | core_terms= ['lattice systems', 'discrete nonlinear Schrödinger equation', 'chaotic spatial structures', 'quantum', 'classical']
+[16:14:08] select | no cosine prune; kept=20/20
+[16:14:08] select | pool_size= 20 | ranks= [0, 9, 3, 10, 14, 16, 13, 1, 8, 12, 15, 17, 19, 2, 4, 5, 6, 7, 11, 18] | pids= ['math-ph/0101038', 'cond-mat/0102135', 'hep-ph/0101202', 'quant-ph/0101004', 'hep-ph/0103303', 'cond-mat/0102256', 'hep-th/0102204', 'cond-mat/0102291', 'physics/0101104', 'nlin/0104010', 'cond-mat/0102488', 'nlin/0101003', 'cond-mat/0101189', 'nlin/0103013', 'cond-mat/0103368', 'cond-mat/0101378', 'nlin/0104054', 'hep-th/0104225', 'cond-mat/0103610', 'cond-mat/0102450']
+[16:14:08] select | verify strict 1/20
+[16:14:08] verify | func= Extends | rank= 0 | pid= math-ph/0101038 | title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' | abs_len= 1590
+[16:14:11] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[16:14:11] select | verify strict 2/20
+[16:14:11] verify | func= Extends | rank= 9 | pid= cond-mat/0102135 | title_snip='Decoherence as Decay of the Loschmidt Echo in a Lorentz Gas' | abs_len= 1225
+[16:14:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:13] select | verify strict 3/20
+[16:14:13] verify | func= Extends | rank= 3 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[16:14:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:16] select | verify strict 4/20
+[16:14:16] verify | func= Extends | rank= 10 | pid= quant-ph/0101004 | title_snip='Quantum Computing of Classical Chaos: Smile of the Arnold-Schrodinger
+…' | abs_len= 413
+[16:14:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:14:19] select | verify strict 5/20
+[16:14:19] verify | func= Extends | rank= 14 | pid= hep-ph/0103303 | title_snip='Space-time evolution of the \lap model: classical and quantum aspects' | abs_len= 541
+[16:14:22] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[16:14:22] select | verify strict 6/20
+[16:14:22] verify | func= Extends | rank= 16 | pid= cond-mat/0102256 | title_snip='Quantum mechanical relaxation of open quasiperiodic systems' | abs_len= 639
+[16:14:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:14:25] select | verify strict 7/20
+[16:14:25] verify | func= Extends | rank= 13 | pid= hep-th/0102204 | title_snip='Advance in dynamical spontaneous symmetry breaking' | abs_len= 300
+[16:14:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:28] select | verify strict 8/20
+[16:14:28] verify | func= Extends | rank= 1 | pid= cond-mat/0102291 | title_snip='Tunable tunneling: An application of stationary states of Bose-Einstei…' | abs_len= 1136
+[16:14:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:30] select | verify strict 9/20
+[16:14:30] verify | func= Extends | rank= 8 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[16:14:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:33] select | verify strict 10/20
+[16:14:33] verify | func= Extends | rank= 12 | pid= nlin/0104010 | title_snip='Resonance-assisted tunneling in near-integrable systems' | abs_len= 709
+[16:14:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:36] select | verify strict 11/20
+[16:14:36] verify | func= Extends | rank= 15 | pid= cond-mat/0102488 | title_snip='Conformal symmetry and the nonlinear Schrodinger equation' | abs_len= 600
+[16:14:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:14:39] select | verify strict 12/20
+[16:14:39] verify | func= Extends | rank= 17 | pid= nlin/0101003 | title_snip='Frequency Locking in Spatially Extended Systems' | abs_len= 518
+[16:14:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:41] select | verify strict 13/20
+[16:14:41] verify | func= Extends | rank= 19 | pid= cond-mat/0101189 | title_snip='Microscopic kinetics and time-dependent structure factors' | abs_len= 773
+[16:14:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:44] select | verify strict 14/20
+[16:14:44] verify | func= Extends | rank= 2 | pid= nlin/0103013 | title_snip='Discrete breathers in dissipative lattices' | abs_len= 1286
+[16:14:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:14:47] select | verify strict 15/20
+[16:14:47] verify | func= Extends | rank= 4 | pid= cond-mat/0103368 | title_snip='Discrete Solitons and Breathers with Dilute Bose-Einstein Condensates' | abs_len= 525
+[16:14:50] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[16:14:50] select | verify strict 16/20
+[16:14:50] verify | func= Extends | rank= 5 | pid= cond-mat/0101378 | title_snip='Nonlinear reactive systems viewed as Boolean dynamical systems' | abs_len= 826
+[16:14:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:53] select | verify strict 17/20
+[16:14:53] verify | func= Extends | rank= 6 | pid= nlin/0104054 | title_snip='Critical Localization and Strange Nonchaotic Dynamics: The Fibonacci
+ …' | abs_len= 716
+[16:14:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[16:14:56] select | verify strict 18/20
+[16:14:56] verify | func= Extends | rank= 7 | pid= hep-th/0104225 | title_snip='Kink Dynamics in a Topological Phi^4 Lattice' | abs_len= 1217
+[16:14:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:14:58] select | verify strict 19/20
+[16:14:58] verify | func= Extends | rank= 11 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[16:15:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:15:01] select | verify strict 20/20
+[16:15:01] verify | func= Extends | rank= 18 | pid= cond-mat/0102450 | title_snip='Solvable Lattice Gas Models of Random Heteropolymers at Finite Density…' | abs_len= 844
+[16:15:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:15:03] select | strict pass found 0 winners → trying relaxed
+[16:15:03] select | verify relaxed 1/20
+[16:15:03] verify | func= Extends | rank= 0 | pid= math-ph/0101038 | title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' | abs_len= 1590
+[16:15:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[16:15:07] select | verify relaxed 2/20
+[16:15:07] verify | func= Extends | rank= 9 | pid= cond-mat/0102135 | title_snip='Decoherence as Decay of the Loschmidt Echo in a Lorentz Gas' | abs_len= 1225
+[16:15:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:10] select | verify relaxed 3/20
+[16:15:10] verify | func= Extends | rank= 3 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[16:15:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:13] select | verify relaxed 4/20
+[16:15:13] verify | func= Extends | rank= 10 | pid= quant-ph/0101004 | title_snip='Quantum Computing of Classical Chaos: Smile of the Arnold-Schrodinger
+…' | abs_len= 413
+[16:15:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:16] select | verify relaxed 5/20
+[16:15:16] verify | func= Extends | rank= 14 | pid= hep-ph/0103303 | title_snip='Space-time evolution of the \lap model: classical and quantum aspects' | abs_len= 541
+[16:15:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:15:19] select | verify relaxed 6/20
+[16:15:19] verify | func= Extends | rank= 16 | pid= cond-mat/0102256 | title_snip='Quantum mechanical relaxation of open quasiperiodic systems' | abs_len= 639
+[16:15:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:23] select | verify relaxed 7/20
+[16:15:23] verify | func= Extends | rank= 13 | pid= hep-th/0102204 | title_snip='Advance in dynamical spontaneous symmetry breaking' | abs_len= 300
+[16:15:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:26] select | verify relaxed 8/20
+[16:15:26] verify | func= Extends | rank= 1 | pid= cond-mat/0102291 | title_snip='Tunable tunneling: An application of stationary states of Bose-Einstei…' | abs_len= 1136
+[16:15:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:29] select | verify relaxed 9/20
+[16:15:29] verify | func= Extends | rank= 8 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[16:15:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:15:31] select | verify relaxed 10/20
+[16:15:31] verify | func= Extends | rank= 12 | pid= nlin/0104010 | title_snip='Resonance-assisted tunneling in near-integrable systems' | abs_len= 709
+[16:15:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:15:34] select | verify relaxed 11/20
+[16:15:34] verify | func= Extends | rank= 15 | pid= cond-mat/0102488 | title_snip='Conformal symmetry and the nonlinear Schrodinger equation' | abs_len= 600
+[16:15:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[16:15:37] select | verify relaxed 12/20
+[16:15:37] verify | func= Extends | rank= 17 | pid= nlin/0101003 | title_snip='Frequency Locking in Spatially Extended Systems' | abs_len= 518
+[16:15:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[16:15:40] select | verify relaxed 13/20
+[16:15:40] verify | func= Extends | rank= 19 | pid= cond-mat/0101189 | title_snip='Microscopic kinetics and time-dependent structure factors' | abs_len= 773
+[16:15:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:43] select | verify relaxed 14/20
+[16:15:43] verify | func= Extends | rank= 2 | pid= nlin/0103013 | title_snip='Discrete breathers in dissipative lattices' | abs_len= 1286
+[16:15:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:15:46] select | verify relaxed 15/20
+[16:15:46] verify | func= Extends | rank= 4 | pid= cond-mat/0103368 | title_snip='Discrete Solitons and Breathers with Dilute Bose-Einstein Condensates' | abs_len= 525
+[16:15:49] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[16:15:49] select | verify relaxed 16/20
+[16:15:49] verify | func= Extends | rank= 5 | pid= cond-mat/0101378 | title_snip='Nonlinear reactive systems viewed as Boolean dynamical systems' | abs_len= 826
+[16:15:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:15:52] select | verify relaxed 17/20
+[16:15:52] verify | func= Extends | rank= 6 | pid= nlin/0104054 | title_snip='Critical Localization and Strange Nonchaotic Dynamics: The Fibonacci
+ …' | abs_len= 716
+[16:15:55] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[16:15:55] select | verify relaxed 18/20
+[16:15:55] verify | func= Extends | rank= 7 | pid= hep-th/0104225 | title_snip='Kink Dynamics in a Topological Phi^4 Lattice' | abs_len= 1217
+[16:15:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:15:57] select | verify relaxed 19/20
+[16:15:57] verify | func= Extends | rank= 11 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[16:16:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:00] select | verify relaxed 20/20
+[16:16:00] verify | func= Extends | rank= 18 | pid= cond-mat/0102450 | title_snip='Solvable Lattice Gas Models of Random Heteropolymers at Finite Density…' | abs_len= 844
+[16:16:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Extends.
+[16:16:02] main | running function= FutureWork
+[16:16:02] select | function= FutureWork | candidates_in= 20
+[16:16:02] select | core_terms= ['lattice systems', 'discrete nonlinear Schrödinger equation', 'chaotic spatial structures', 'quantum', 'classical']
+[16:16:02] select | no cosine prune; kept=20/20
+[16:16:02] select | pool_size= 20 | ranks= [0, 3, 10, 14, 16, 9, 1, 8, 12, 13, 2, 4, 5, 6, 7, 11, 15, 17, 18, 19] | pids= ['math-ph/0101038', 'hep-ph/0101202', 'quant-ph/0101004', 'hep-ph/0103303', 'cond-mat/0102256', 'cond-mat/0102135', 'cond-mat/0102291', 'physics/0101104', 'nlin/0104010', 'hep-th/0102204', 'nlin/0103013', 'cond-mat/0103368', 'cond-mat/0101378', 'nlin/0104054', 'hep-th/0104225', 'cond-mat/0103610', 'cond-mat/0102488', 'nlin/0101003', 'cond-mat/0102450', 'cond-mat/0101189']
+[16:16:02] select | verify strict 1/20
+[16:16:02] verify | func= FutureWork | rank= 0 | pid= math-ph/0101038 | title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' | abs_len= 1590
+[16:16:05] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[16:16:05] select | verify strict 2/20
+[16:16:05] verify | func= FutureWork | rank= 3 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[16:16:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:08] select | verify strict 3/20
+[16:16:08] verify | func= FutureWork | rank= 10 | pid= quant-ph/0101004 | title_snip='Quantum Computing of Classical Chaos: Smile of the Arnold-Schrodinger
+…' | abs_len= 413
+[16:16:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:16:11] select | verify strict 4/20
+[16:16:11] verify | func= FutureWork | rank= 14 | pid= hep-ph/0103303 | title_snip='Space-time evolution of the \lap model: classical and quantum aspects' | abs_len= 541
+[16:16:14] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[16:16:14] select | verify strict 5/20
+[16:16:14] verify | func= FutureWork | rank= 16 | pid= cond-mat/0102256 | title_snip='Quantum mechanical relaxation of open quasiperiodic systems' | abs_len= 639
+[16:16:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:16:17] select | verify strict 6/20
+[16:16:17] verify | func= FutureWork | rank= 9 | pid= cond-mat/0102135 | title_snip='Decoherence as Decay of the Loschmidt Echo in a Lorentz Gas' | abs_len= 1225
+[16:16:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:20] select | verify strict 7/20
+[16:16:20] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102291 | title_snip='Tunable tunneling: An application of stationary states of Bose-Einstei…' | abs_len= 1136
+[16:16:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:23] select | verify strict 8/20
+[16:16:23] verify | func= FutureWork | rank= 8 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[16:16:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:25] select | verify strict 9/20
+[16:16:25] verify | func= FutureWork | rank= 12 | pid= nlin/0104010 | title_snip='Resonance-assisted tunneling in near-integrable systems' | abs_len= 709
+[16:16:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:28] select | verify strict 10/20
+[16:16:28] verify | func= FutureWork | rank= 13 | pid= hep-th/0102204 | title_snip='Advance in dynamical spontaneous symmetry breaking' | abs_len= 300
+[16:16:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:30] select | verify strict 11/20
+[16:16:30] verify | func= FutureWork | rank= 2 | pid= nlin/0103013 | title_snip='Discrete breathers in dissipative lattices' | abs_len= 1286
+[16:16:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:16:33] select | verify strict 12/20
+[16:16:33] verify | func= FutureWork | rank= 4 | pid= cond-mat/0103368 | title_snip='Discrete Solitons and Breathers with Dilute Bose-Einstein Condensates' | abs_len= 525
+[16:16:37] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[16:16:37] select | verify strict 13/20
+[16:16:37] verify | func= FutureWork | rank= 5 | pid= cond-mat/0101378 | title_snip='Nonlinear reactive systems viewed as Boolean dynamical systems' | abs_len= 826
+[16:16:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:39] select | verify strict 14/20
+[16:16:39] verify | func= FutureWork | rank= 6 | pid= nlin/0104054 | title_snip='Critical Localization and Strange Nonchaotic Dynamics: The Fibonacci
+ …' | abs_len= 716
+[16:16:42] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[16:16:42] select | verify strict 15/20
+[16:16:42] verify | func= FutureWork | rank= 7 | pid= hep-th/0104225 | title_snip='Kink Dynamics in a Topological Phi^4 Lattice' | abs_len= 1217
+[16:16:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:45] select | verify strict 16/20
+[16:16:45] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[16:16:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:47] select | verify strict 17/20
+[16:16:47] verify | func= FutureWork | rank= 15 | pid= cond-mat/0102488 | title_snip='Conformal symmetry and the nonlinear Schrodinger equation' | abs_len= 600
+[16:16:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:16:50] select | verify strict 18/20
+[16:16:50] verify | func= FutureWork | rank= 17 | pid= nlin/0101003 | title_snip='Frequency Locking in Spatially Extended Systems' | abs_len= 518
+[16:16:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:53] select | verify strict 19/20
+[16:16:53] verify | func= FutureWork | rank= 18 | pid= cond-mat/0102450 | title_snip='Solvable Lattice Gas Models of Random Heteropolymers at Finite Density…' | abs_len= 844
+[16:16:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:55] select | verify strict 20/20
+[16:16:55] verify | func= FutureWork | rank= 19 | pid= cond-mat/0101189 | title_snip='Microscopic kinetics and time-dependent structure factors' | abs_len= 773
+[16:16:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:16:58] select | strict pass found 0 winners → trying relaxed
+[16:16:58] select | verify relaxed 1/20
+[16:16:58] verify | func= FutureWork | rank= 0 | pid= math-ph/0101038 | title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' | abs_len= 1590
+[16:17:01] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[16:17:01] select | verify relaxed 2/20
+[16:17:01] verify | func= FutureWork | rank= 3 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[16:17:04] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:04] select | verify relaxed 3/20
+[16:17:04] verify | func= FutureWork | rank= 10 | pid= quant-ph/0101004 | title_snip='Quantum Computing of Classical Chaos: Smile of the Arnold-Schrodinger
+…' | abs_len= 413
+[16:17:07] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:07] select | verify relaxed 4/20
+[16:17:07] verify | func= FutureWork | rank= 14 | pid= hep-ph/0103303 | title_snip='Space-time evolution of the \lap model: classical and quantum aspects' | abs_len= 541
+[16:17:10] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[16:17:10] select | verify relaxed 5/20
+[16:17:10] verify | func= FutureWork | rank= 16 | pid= cond-mat/0102256 | title_snip='Quantum mechanical relaxation of open quasiperiodic systems' | abs_len= 639
+[16:17:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:14] select | verify relaxed 6/20
+[16:17:14] verify | func= FutureWork | rank= 9 | pid= cond-mat/0102135 | title_snip='Decoherence as Decay of the Loschmidt Echo in a Lorentz Gas' | abs_len= 1225
+[16:17:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:17:16] select | verify relaxed 7/20
+[16:17:16] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102291 | title_snip='Tunable tunneling: An application of stationary states of Bose-Einstei…' | abs_len= 1136
+[16:17:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:17:19] select | verify relaxed 8/20
+[16:17:19] verify | func= FutureWork | rank= 8 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[16:17:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:17:22] select | verify relaxed 9/20
+[16:17:22] verify | func= FutureWork | rank= 12 | pid= nlin/0104010 | title_snip='Resonance-assisted tunneling in near-integrable systems' | abs_len= 709
+[16:17:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:17:24] select | verify relaxed 10/20
+[16:17:24] verify | func= FutureWork | rank= 13 | pid= hep-th/0102204 | title_snip='Advance in dynamical spontaneous symmetry breaking' | abs_len= 300
+[16:17:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:17:27] select | verify relaxed 11/20
+[16:17:27] verify | func= FutureWork | rank= 2 | pid= nlin/0103013 | title_snip='Discrete breathers in dissipative lattices' | abs_len= 1286
+[16:17:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:30] select | verify relaxed 12/20
+[16:17:30] verify | func= FutureWork | rank= 4 | pid= cond-mat/0103368 | title_snip='Discrete Solitons and Breathers with Dilute Bose-Einstein Condensates' | abs_len= 525
+[16:17:33] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[16:17:33] select | verify relaxed 13/20
+[16:17:33] verify | func= FutureWork | rank= 5 | pid= cond-mat/0101378 | title_snip='Nonlinear reactive systems viewed as Boolean dynamical systems' | abs_len= 826
+[16:17:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:17:35] select | verify relaxed 14/20
+[16:17:35] verify | func= FutureWork | rank= 6 | pid= nlin/0104054 | title_snip='Critical Localization and Strange Nonchaotic Dynamics: The Fibonacci
+ …' | abs_len= 716
+[16:17:39] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[16:17:39] select | verify relaxed 15/20
+[16:17:39] verify | func= FutureWork | rank= 7 | pid= hep-th/0104225 | title_snip='Kink Dynamics in a Topological Phi^4 Lattice' | abs_len= 1217
+[16:17:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:42] select | verify relaxed 16/20
+[16:17:42] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[16:17:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:17:44] select | verify relaxed 17/20
+[16:17:44] verify | func= FutureWork | rank= 15 | pid= cond-mat/0102488 | title_snip='Conformal symmetry and the nonlinear Schrodinger equation' | abs_len= 600
+[16:17:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:47] select | verify relaxed 18/20
+[16:17:47] verify | func= FutureWork | rank= 17 | pid= nlin/0101003 | title_snip='Frequency Locking in Spatially Extended Systems' | abs_len= 518
+[16:17:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:17:50] select | verify relaxed 19/20
+[16:17:50] verify | func= FutureWork | rank= 18 | pid= cond-mat/0102450 | title_snip='Solvable Lattice Gas Models of Random Heteropolymers at Finite Density…' | abs_len= 844
+[16:17:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:17:53] select | verify relaxed 20/20
+[16:17:53] verify | func= FutureWork | rank= 19 | pid= cond-mat/0101189 | title_snip='Microscopic kinetics and time-dependent structure factors' | abs_len= 773
+[16:17:55] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,263 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.72 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.26it/s]
+Reading arXiv_src_0101_001.jsonl: 82it [00:00, 259.76it/s]
+Reading arXiv_src_0101_001.jsonl: 233it [00:00, 648.03it/s]
+Reading arXiv_src_0101_001.jsonl: 334it [00:00, 754.76it/s]
+Reading arXiv_src_0101_001.jsonl: 431it [00:00, 716.05it/s]
+Reading arXiv_src_0101_001.jsonl: 517it [00:00, 596.37it/s]
+Reading arXiv_src_0101_001.jsonl: 588it [00:01, 591.95it/s]
+Reading arXiv_src_0101_001.jsonl: 693it [00:01, 702.33it/s]
+Reading arXiv_src_0101_001.jsonl: 793it [00:01, 777.99it/s]
+Reading arXiv_src_0101_001.jsonl: 906it [00:01, 861.03it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 902.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1147it [00:01, 1023.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1285it [00:01, 1122.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1401it [00:01, 1094.18it/s]
+Reading arXiv_src_0101_001.jsonl: 1530it [00:01, 1149.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1666it [00:02, 1207.58it/s]
+Reading arXiv_src_0101_001.jsonl: 1789it [00:02, 1171.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1943it [00:02, 1276.53it/s]
+Reading arXiv_src_0101_001.jsonl: 2120it [00:02, 1419.60it/s]
+Reading arXiv_src_0101_001.jsonl: 2274it [00:02, 1454.25it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 946.52it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1333.64it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1370.95it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 851.29it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 519.38it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 550.76it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:01, 614.75it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 739.02it/s]
+Reading arXiv_src_0102_001.jsonl: 926it [00:01, 881.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 931.22it/s]
+Reading arXiv_src_0102_001.jsonl: 1150it [00:01, 990.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1260it [00:01, 1020.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1408it [00:01, 1150.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1193.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1230.95it/s]
+Reading arXiv_src_0102_001.jsonl: 1825it [00:01, 1311.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1978it [00:02, 1375.70it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1401.46it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1015.47it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1369.72it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1531.19it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1119.84it/s]
+Reading arXiv_src_0103_001.jsonl: 579it [00:00, 724.09it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 790.72it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 822.45it/s]
+Reading arXiv_src_0103_001.jsonl: 886it [00:00, 889.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1000it [00:01, 953.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1109it [00:01, 990.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1229it [00:01, 1047.64it/s]
+Reading arXiv_src_0103_001.jsonl: 1339it [00:01, 1057.67it/s]
+Reading arXiv_src_0103_001.jsonl: 1487it [00:01, 1178.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1620it [00:01, 1221.83it/s]
+Reading arXiv_src_0103_001.jsonl: 1766it [00:01, 1291.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1914it [00:01, 1346.58it/s]
+Reading arXiv_src_0103_001.jsonl: 2051it [00:01, 1350.97it/s]
+Reading arXiv_src_0103_001.jsonl: 2189it [00:01, 1357.56it/s]
+Reading arXiv_src_0103_001.jsonl: 2347it [00:02, 1423.05it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1146.13it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  7.96it/s]
+Reading arXiv_src_0104_001.jsonl: 111it [00:00, 587.93it/s]
+Reading arXiv_src_0104_001.jsonl: 271it [00:00, 1022.66it/s]
+Reading arXiv_src_0104_001.jsonl: 394it [00:00, 1097.15it/s]
+Reading arXiv_src_0104_001.jsonl: 508it [00:00, 721.43it/s] 
+Reading arXiv_src_0104_001.jsonl: 597it [00:01, 489.59it/s]
+Reading arXiv_src_0104_001.jsonl: 704it [00:01, 594.65it/s]
+Reading arXiv_src_0104_001.jsonl: 795it [00:01, 659.44it/s]
+Reading arXiv_src_0104_001.jsonl: 897it [00:01, 739.81it/s]
+Reading arXiv_src_0104_001.jsonl: 1024it [00:01, 868.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1133it [00:01, 925.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1260it [00:01, 1017.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1371it [00:01, 1015.54it/s]
+Reading arXiv_src_0104_001.jsonl: 1507it [00:01, 1109.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1647it [00:01, 1183.59it/s]
+Reading arXiv_src_0104_001.jsonl: 1778it [00:02, 1216.22it/s]
+Reading arXiv_src_0104_001.jsonl: 1924it [00:02, 1280.78it/s]
+Reading arXiv_src_0104_001.jsonl: 2085it [00:02, 1375.48it/s]
+Reading arXiv_src_0104_001.jsonl: 2225it [00:02, 944.53it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 909.09it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the Everett interpretation of quantum mechanics, as described in the abstract, use the Heisenberg picture to provide background for understanding the correlations between spatially-separated quantum systems?
+[debug] classifier labels: ['Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T14:22:06.159310           Background
+1     1  0.740194  ...  2025-09-21T14:22:06.159310           Background
+2     2  0.474476  ...  2025-09-21T14:22:06.159310           Background
+3     3  0.360209  ...  2025-09-21T14:22:06.159310           Background
+4     4  0.317959  ...  2025-09-21T14:22:06.159310           Background
+5     5  0.262672  ...  2025-09-21T14:22:06.159310           Background
+6     6  0.262251  ...  2025-09-21T14:22:06.159310           Background
+7     7  0.251956  ...  2025-09-21T14:22:06.159310           Background
+8     8  0.249798  ...  2025-09-21T14:22:06.159310           Background
+9     9  0.239862  ...  2025-09-21T14:22:06.159310           Background
+
+[10 rows x 12 columns]
+[16:22:15] main | args: Namespace(max_check=20, debug=True)
+[16:22:15] read_last_jsonl | path= classified_outputs.jsonl
+[16:22:15] read_last_jsonl | total_lines= 1
+[16:22:15] main | query='How does the Everett interpretation of quantum mechanics, as described in the abstract, use the Heisenberg picture to provide background for understanding the correlations between spatially-separated quantum systems?' | funcs=['Background']
+[16:22:18] main | core_terms= ['Everett interpretation', 'Heisenberg picture', 'quantum mechanics', 'quantum systems', 'spatially-separated']
+[16:22:18] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:22:18] load_topk_jsonl | rows= 20
+[16:22:18] load_topk_jsonl | first: rank= 0 paper_id= quant-ph/0103079 title_snip='Locality in the Everett Interpretation of Heisenberg-Picture Quantum
+ …' abs_len= 1286
+[16:22:18] main | running function= Background
+[16:22:18] select | function= Background | candidates_in= 20
+[16:22:18] select | core_terms= ['Everett interpretation', 'Heisenberg picture', 'quantum mechanics', 'quantum systems', 'spatially-separated']
+[16:22:18] select | no cosine prune; kept=20/20
+[16:22:18] select | pool_size= 20 | ranks= [0, 1, 3, 18, 2, 4, 6, 11, 14, 19, 5, 7, 8, 9, 10, 12, 13, 15, 16, 17] | pids= ['quant-ph/0103079', 'quant-ph/0102084', 'hep-th/0103228', 'hep-th/0104074', 'cond-mat/0103124', 'gr-qc/0104051', 'quant-ph/0101022', 'quant-ph/0101070', 'cond-mat/0102073', 'cond-mat/0104068', 'cond-mat/0104105', 'hep-lat/0103004', 'quant-ph/0104046', 'hep-ph/0101161', 'cond-mat/0104137', 'hep-th/0104027', 'cond-mat/0101421', 'hep-ph/0104003', 'quant-ph/0102006', 'quant-ph/0102128']
+[16:22:18] select | verify strict 1/20
+[16:22:18] verify | func= Background | rank= 0 | pid= quant-ph/0103079 | title_snip='Locality in the Everett Interpretation of Heisenberg-Picture Quantum
+ …' | abs_len= 1286
+[16:22:21] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= False
+[16:22:21] select | verify strict 2/20
+[16:22:21] verify | func= Background | rank= 1 | pid= quant-ph/0102084 | title_snip='From Classical to Quantum Mechanics: "How to translate physical ideas
+…' | abs_len= 1664
+[16:22:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:24] select | verify strict 3/20
+[16:22:24] verify | func= Background | rank= 3 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[16:22:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:26] select | verify strict 4/20
+[16:22:26] verify | func= Background | rank= 18 | pid= hep-th/0104074 | title_snip='Quantum correlations from incomplete classical statistics' | abs_len= 1065
+[16:22:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:29] select | verify strict 5/20
+[16:22:29] verify | func= Background | rank= 2 | pid= cond-mat/0103124 | title_snip='Unified theory of quantum many-particle systems' | abs_len= 1125
+[16:22:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:32] select | verify strict 6/20
+[16:22:32] verify | func= Background | rank= 4 | pid= gr-qc/0104051 | title_snip='Photons from quantized electric flux representations' | abs_len= 752
+[16:22:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:34] select | verify strict 7/20
+[16:22:34] verify | func= Background | rank= 6 | pid= quant-ph/0101022 | title_snip='Do Quantum Nonlocal Correlations Imply Information Transfer?- A Gedank…' | abs_len= 864
+[16:22:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:37] select | verify strict 8/20
+[16:22:37] verify | func= Background | rank= 11 | pid= quant-ph/0101070 | title_snip='Quantum State Tomography of Complex Multimode Fields using Array
+  Det…' | abs_len= 665
+[16:22:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:39] select | verify strict 9/20
+[16:22:39] verify | func= Background | rank= 14 | pid= cond-mat/0102073 | title_snip='Instanton picture of the spin tunneling in the Lipkin model' | abs_len= 735
+[16:22:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:42] select | verify strict 10/20
+[16:22:42] verify | func= Background | rank= 19 | pid= cond-mat/0104068 | title_snip='Quantum lattice fluctuations in a model electron-phonon system' | abs_len= 907
+[16:22:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:44] select | verify strict 11/20
+[16:22:44] verify | func= Background | rank= 5 | pid= cond-mat/0104105 | title_snip='Electron correlation effects in a wide channel from the $\nu =1$ quant…' | abs_len= 1391
+[16:22:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:47] select | verify strict 12/20
+[16:22:47] verify | func= Background | rank= 7 | pid= hep-lat/0103004 | title_snip='A Regularization of Quantum Gravity' | abs_len= 777
+[16:22:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:49] select | verify strict 13/20
+[16:22:49] verify | func= Background | rank= 8 | pid= quant-ph/0104046 | title_snip='Generalized quantum measurement' | abs_len= 702
+[16:22:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:22:52] select | verify strict 14/20
+[16:22:52] verify | func= Background | rank= 9 | pid= hep-ph/0101161 | title_snip='Bose-Einstein correlations in cascade processes and non-extensive
+  st…' | abs_len= 553
+[16:22:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:55] select | verify strict 15/20
+[16:22:55] verify | func= Background | rank= 10 | pid= cond-mat/0104137 | title_snip='Ground state of the spin-1/2 Heisenberg antiferromagnet on an
+  Archim…' | abs_len= 447
+[16:22:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:22:57] select | verify strict 16/20
+[16:22:57] verify | func= Background | rank= 12 | pid= hep-th/0104027 | title_snip='Thermodynamics, Euclidean Gravity and Kaluza-Klein Reduction' | abs_len= 1097
+[16:23:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:23:00] select | verify strict 17/20
+[16:23:00] verify | func= Background | rank= 13 | pid= cond-mat/0101421 | title_snip='An investigation of the quantum $J_1-J_2-J_3$ model on the honeycomb
+ …' | abs_len= 744
+[16:23:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:23:03] select | verify strict 18/20
+[16:23:03] verify | func= Background | rank= 15 | pid= hep-ph/0104003 | title_snip='The Distinctive Feature of Weak Interactions and Some of Its
+  Subsequ…' | abs_len= 1367
+[16:23:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:23:05] select | verify strict 19/20
+[16:23:05] verify | func= Background | rank= 16 | pid= quant-ph/0102006 | title_snip='Interferometry with Entangled Atoms' | abs_len= 661
+[16:23:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:23:08] select | verify strict 20/20
+[16:23:08] verify | func= Background | rank= 17 | pid= quant-ph/0102128 | title_snip='Bateman's dual system revisited: I. Quantization, geometric phase and
+…' | abs_len= 548
+[16:23:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the Everett interpretation of quantum mechanics, as described in the abstract, use the Heisenberg picture to provide background for understanding the correlations between spatially-separated quantum systems?
+- WINNER: quant-ph/0103079 | Locality in the Everett Interpretation of Heisenberg-Picture Quantum
+  Mechanics
+- QUOTE : Everett interpretation of quantum mechanics, in the Heisenberg picture
+- WHY   : sufficient
+- ANSWER: The Everett interpretation of quantum mechanics uses the Heisenberg picture to provide a local explanation for correlations between spatially-separated quantum systems by transforming Heisenberg-picture operators that "label" local copies of systems and observers (quant-ph/0103079).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

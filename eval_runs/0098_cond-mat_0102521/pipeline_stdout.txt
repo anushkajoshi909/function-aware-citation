@@ -1,0 +1,342 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query asks for a comparative analysis of coarsening behaviors across surfaces and inquires about the analytical methods employed, indicating both comparison and usage aspects."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.1 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.62it/s]
+Reading arXiv_src_0101_001.jsonl: 24it [00:00, 94.07it/s]
+Reading arXiv_src_0101_001.jsonl: 164it [00:00, 565.55it/s]
+Reading arXiv_src_0101_001.jsonl: 295it [00:00, 817.62it/s]
+Reading arXiv_src_0101_001.jsonl: 390it [00:00, 848.22it/s]
+Reading arXiv_src_0101_001.jsonl: 484it [00:00, 639.27it/s]
+Reading arXiv_src_0101_001.jsonl: 561it [00:01, 572.62it/s]
+Reading arXiv_src_0101_001.jsonl: 667it [00:01, 683.33it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 764.44it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 852.71it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 927.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1104it [00:01, 965.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1235it [00:01, 1060.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1345it [00:01, 1055.21it/s]
+Reading arXiv_src_0101_001.jsonl: 1481it [00:01, 1140.38it/s]
+Reading arXiv_src_0101_001.jsonl: 1614it [00:01, 1191.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1740it [00:02, 1209.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1863it [00:02, 1184.14it/s]
+Reading arXiv_src_0101_001.jsonl: 2038it [00:02, 1346.24it/s]
+Reading arXiv_src_0101_001.jsonl: 2195it [00:02, 1411.55it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 957.14it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1322.01it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1363.97it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 849.24it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 521.83it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 551.20it/s]
+Reading arXiv_src_0102_001.jsonl: 674it [00:01, 607.25it/s]
+Reading arXiv_src_0102_001.jsonl: 789it [00:01, 730.00it/s]
+Reading arXiv_src_0102_001.jsonl: 918it [00:01, 867.87it/s]
+Reading arXiv_src_0102_001.jsonl: 1030it [00:01, 932.53it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 999.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1045.77it/s]
+Reading arXiv_src_0102_001.jsonl: 1404it [00:01, 1134.78it/s]
+Reading arXiv_src_0102_001.jsonl: 1539it [00:01, 1195.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1667it [00:01, 1219.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1815it [00:01, 1295.68it/s]
+Reading arXiv_src_0102_001.jsonl: 1967it [00:02, 1361.10it/s]
+Reading arXiv_src_0102_001.jsonl: 2118it [00:02, 1402.30it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1012.67it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1352.55it/s]
+Reading arXiv_src_0103_001.jsonl: 299it [00:00, 1513.38it/s]
+Reading arXiv_src_0103_001.jsonl: 451it [00:00, 1138.04it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 738.82it/s] 
+Reading arXiv_src_0103_001.jsonl: 666it [00:00, 770.32it/s]
+Reading arXiv_src_0103_001.jsonl: 756it [00:00, 788.00it/s]
+Reading arXiv_src_0103_001.jsonl: 872it [00:00, 882.80it/s]
+Reading arXiv_src_0103_001.jsonl: 972it [00:01, 912.53it/s]
+Reading arXiv_src_0103_001.jsonl: 1080it [00:01, 950.95it/s]
+Reading arXiv_src_0103_001.jsonl: 1206it [00:01, 1037.01it/s]
+Reading arXiv_src_0103_001.jsonl: 1314it [00:01, 1034.82it/s]
+Reading arXiv_src_0103_001.jsonl: 1450it [00:01, 1127.31it/s]
+Reading arXiv_src_0103_001.jsonl: 1587it [00:01, 1194.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1738it [00:01, 1286.49it/s]
+Reading arXiv_src_0103_001.jsonl: 1877it [00:01, 1312.13it/s]
+Reading arXiv_src_0103_001.jsonl: 2013it [00:01, 1324.61it/s]
+Reading arXiv_src_0103_001.jsonl: 2157it [00:01, 1358.51it/s]
+Reading arXiv_src_0103_001.jsonl: 2303it [00:02, 1388.66it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1131.25it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.04it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  7.61it/s]
+Reading arXiv_src_0104_001.jsonl: 126it [00:00, 487.14it/s]
+Reading arXiv_src_0104_001.jsonl: 282it [00:00, 868.81it/s]
+Reading arXiv_src_0104_001.jsonl: 399it [00:00, 968.30it/s]
+Reading arXiv_src_0104_001.jsonl: 503it [00:00, 682.39it/s]
+Reading arXiv_src_0104_001.jsonl: 586it [00:01, 460.63it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 567.39it/s]
+Reading arXiv_src_0104_001.jsonl: 784it [00:01, 636.83it/s]
+Reading arXiv_src_0104_001.jsonl: 885it [00:01, 720.13it/s]
+Reading arXiv_src_0104_001.jsonl: 1002it [00:01, 826.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1118it [00:01, 908.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1227it [00:01, 956.60it/s]
+Reading arXiv_src_0104_001.jsonl: 1331it [00:01, 970.01it/s]
+Reading arXiv_src_0104_001.jsonl: 1465it [00:01, 1067.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1601it [00:02, 1149.08it/s]
+Reading arXiv_src_0104_001.jsonl: 1720it [00:02, 1160.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1865it [00:02, 1245.08it/s]
+Reading arXiv_src_0104_001.jsonl: 2013it [00:02, 1312.64it/s]
+Reading arXiv_src_0104_001.jsonl: 2146it [00:02, 916.81it/s] 
+Reading arXiv_src_0104_001.jsonl: 2297it [00:02, 1051.04it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 849.53it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the coarsening behaviors of the CD models on different surfaces compare, and what methods are used to analyze these behaviors?
+[debug] classifier labels: ['Compares', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T17:17:43.056731       Compares, Uses
+1     1  0.720462  ...  2025-09-21T17:17:43.056731       Compares, Uses
+2     2  0.635657  ...  2025-09-21T17:17:43.056731       Compares, Uses
+3     3  0.634042  ...  2025-09-21T17:17:43.056731       Compares, Uses
+4     4  0.598406  ...  2025-09-21T17:17:43.056731       Compares, Uses
+5     5  0.587080  ...  2025-09-21T17:17:43.056731       Compares, Uses
+6     6  0.586224  ...  2025-09-21T17:17:43.056731       Compares, Uses
+7     7  0.584542  ...  2025-09-21T17:17:43.056731       Compares, Uses
+8     8  0.563235  ...  2025-09-21T17:17:43.056731       Compares, Uses
+9     9  0.559674  ...  2025-09-21T17:17:43.056731       Compares, Uses
+
+[10 rows x 12 columns]
+[19:17:55] main | args: Namespace(max_check=20, debug=True)
+[19:17:55] read_last_jsonl | path= classified_outputs.jsonl
+[19:17:55] read_last_jsonl | total_lines= 1
+[19:17:55] main | query='How do the coarsening behaviors of the CD models on different surfaces compare, and what methods are used to analyze these behaviors?' | funcs=['Compares', 'Uses']
+[19:17:59] main | core_terms= ['CD models', 'coarsening behaviors', 'surfaces', 'CD']
+[19:17:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:17:59] load_topk_jsonl | rows= 20
+[19:17:59] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0102521 title_snip='Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving…' abs_len= 1424
+[19:17:59] main | running function= Compares
+[19:17:59] select | function= Compares | candidates_in= 20
+[19:17:59] select | core_terms= ['CD models', 'coarsening behaviors', 'surfaces', 'CD']
+[19:17:59] select | no cosine prune; kept=20/20
+[19:17:59] select | pool_size= 20 | ranks= [0, 10, 1, 8, 13, 19, 6, 16, 2, 3, 4, 5, 7, 9, 11, 12, 14, 15, 17, 18] | pids= ['cond-mat/0102521', 'astro-ph/0102011', 'cond-mat/0101198', 'cond-mat/0102131', 'cond-mat/0104031', 'astro-ph/0103313', 'cond-mat/0104552', 'cond-mat/0101093', 'cond-mat/0102275', 'cond-mat/0104381', 'physics/0101077', 'cond-mat/0101106', 'cond-mat/0102519', 'cond-mat/0101175', 'cond-mat/0101148', 'astro-ph/0104432', 'cond-mat/0103332', 'cond-mat/0103016', 'cond-mat/0101387', 'cond-mat/0103133']
+[19:17:59] select | verify strict 1/20
+[19:17:59] verify | func= Compares | rank= 0 | pid= cond-mat/0102521 | title_snip='Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving…' | abs_len= 1424
+[19:18:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:18:03] select | verify strict 2/20
+[19:18:03] verify | func= Compares | rank= 10 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[19:18:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:05] select | verify strict 3/20
+[19:18:05] verify | func= Compares | rank= 1 | pid= cond-mat/0101198 | title_snip='A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Ca…' | abs_len= 1221
+[19:18:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:08] select | verify strict 4/20
+[19:18:08] verify | func= Compares | rank= 8 | pid= cond-mat/0102131 | title_snip='Dynamic surface scaling behavior of isotropic Heisenberg ferromagnets' | abs_len= 882
+[19:18:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:10] select | verify strict 5/20
+[19:18:10] verify | func= Compares | rank= 13 | pid= cond-mat/0104031 | title_snip='Simulations of the Static Friction Due to Adsorbed Molecules' | abs_len= 627
+[19:18:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:13] select | verify strict 6/20
+[19:18:13] verify | func= Compares | rank= 19 | pid= astro-ph/0103313 | title_snip='Velocity dispersion in N-body simulations of CDM models' | abs_len= 741
+[19:18:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:18:16] select | verify strict 7/20
+[19:18:16] verify | func= Compares | rank= 6 | pid= cond-mat/0104552 | title_snip='Scaling in Plasticity-Induced Cell-Boundary Microstructure:
+  Fragment…' | abs_len= 979
+[19:18:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:18] select | verify strict 8/20
+[19:18:18] verify | func= Compares | rank= 16 | pid= cond-mat/0101093 | title_snip='Capillary condensation in disordered porous materials: hysteresis vers…' | abs_len= 672
+[19:18:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:21] select | verify strict 9/20
+[19:18:21] verify | func= Compares | rank= 2 | pid= cond-mat/0102275 | title_snip='Does Luttinger liquid behaviour survive in an atomic wire on a surface…' | abs_len= 658
+[19:18:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:23] select | verify strict 10/20
+[19:18:23] verify | func= Compares | rank= 3 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[19:18:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:26] select | verify strict 11/20
+[19:18:26] verify | func= Compares | rank= 4 | pid= physics/0101077 | title_snip='Coarse graining: lessons from simple examples' | abs_len= 455
+[19:18:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:28] select | verify strict 12/20
+[19:18:28] verify | func= Compares | rank= 5 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[19:18:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:31] select | verify strict 13/20
+[19:18:31] verify | func= Compares | rank= 7 | pid= cond-mat/0102519 | title_snip='Random walk theory of jamming in a cellular automaton model for traffi…' | abs_len= 700
+[19:18:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:33] select | verify strict 14/20
+[19:18:33] verify | func= Compares | rank= 9 | pid= cond-mat/0101175 | title_snip='Coarse-graining and Self-similarity of Price Fluctuations' | abs_len= 542
+[19:18:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:36] select | verify strict 15/20
+[19:18:36] verify | func= Compares | rank= 11 | pid= cond-mat/0101148 | title_snip='Surface Phase Diagrams for Wetting on Heterogenous Substrates' | abs_len= 832
+[19:18:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:38] select | verify strict 16/20
+[19:18:38] verify | func= Compares | rank= 12 | pid= astro-ph/0104432 | title_snip='On disc driven inward migration of resonantly coupled planets with
+  a…' | abs_len= 1101
+[19:18:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:41] select | verify strict 17/20
+[19:18:41] verify | func= Compares | rank= 14 | pid= cond-mat/0103332 | title_snip='Exact Finite-Size Scaling and Corrections to Scaling in the Ising Mode…' | abs_len= 502
+[19:18:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:44] select | verify strict 18/20
+[19:18:44] verify | func= Compares | rank= 15 | pid= cond-mat/0103016 | title_snip='From DEM simulations towards a continuum theory of granular matter' | abs_len= 666
+[19:18:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:18:46] select | verify strict 19/20
+[19:18:46] verify | func= Compares | rank= 17 | pid= cond-mat/0101387 | title_snip='Directed Percolation and Systems with Absorbing States: Impact of
+  Bo…' | abs_len= 1271
+[19:18:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[19:18:50] select | verify strict 20/20
+[19:18:50] verify | func= Compares | rank= 18 | pid= cond-mat/0103133 | title_snip='Monte Carlo Simulations of Critical Dynamics with Conserved Order
+  Pa…' | abs_len= 259
+[19:18:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the coarsening behaviors of the CD models on different surfaces compare, and what methods are used to analyze these behaviors?
+- WINNER: cond-mat/0102521 | Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving
+  Surfaces
+- QUOTE : For Edwards-Wilkinson (EW) and Kardar-Parisi-Zhang (KPZ) surfaces
+- WHY   : sufficient
+- ANSWER: The coarsening behaviors of CD models on EW, KPZ, and GBDT surfaces are compared, with analysis based on the distribution of particle cluster sizes, 2-point spatial correlation functions, and density-density correlation functions. The comparison reveals differences in the exponent values, such as α, indicating distinct coarsening behaviors on different surfaces (cond-mat/0102521).
+[19:18:59] main | running function= Uses
+[19:18:59] select | function= Uses | candidates_in= 20
+[19:18:59] select | core_terms= ['CD models', 'coarsening behaviors', 'surfaces', 'CD']
+[19:18:59] select | no cosine prune; kept=20/20
+[19:18:59] select | pool_size= 20 | ranks= [0, 13, 10, 19, 1, 8, 2, 3, 5, 7, 9, 11, 12, 17, 4, 6, 14, 15, 16, 18] | pids= ['cond-mat/0102521', 'cond-mat/0104031', 'astro-ph/0102011', 'astro-ph/0103313', 'cond-mat/0101198', 'cond-mat/0102131', 'cond-mat/0102275', 'cond-mat/0104381', 'cond-mat/0101106', 'cond-mat/0102519', 'cond-mat/0101175', 'cond-mat/0101148', 'astro-ph/0104432', 'cond-mat/0101387', 'physics/0101077', 'cond-mat/0104552', 'cond-mat/0103332', 'cond-mat/0103016', 'cond-mat/0101093', 'cond-mat/0103133']
+[19:18:59] select | verify strict 1/20
+[19:18:59] verify | func= Uses | rank= 0 | pid= cond-mat/0102521 | title_snip='Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving…' | abs_len= 1424
+[19:19:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:19:02] select | verify strict 2/20
+[19:19:02] verify | func= Uses | rank= 13 | pid= cond-mat/0104031 | title_snip='Simulations of the Static Friction Due to Adsorbed Molecules' | abs_len= 627
+[19:19:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:05] select | verify strict 3/20
+[19:19:05] verify | func= Uses | rank= 10 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[19:19:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:07] select | verify strict 4/20
+[19:19:07] verify | func= Uses | rank= 19 | pid= astro-ph/0103313 | title_snip='Velocity dispersion in N-body simulations of CDM models' | abs_len= 741
+[19:19:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:19:10] select | verify strict 5/20
+[19:19:10] verify | func= Uses | rank= 1 | pid= cond-mat/0101198 | title_snip='A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Ca…' | abs_len= 1221
+[19:19:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:13] select | verify strict 6/20
+[19:19:13] verify | func= Uses | rank= 8 | pid= cond-mat/0102131 | title_snip='Dynamic surface scaling behavior of isotropic Heisenberg ferromagnets' | abs_len= 882
+[19:19:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:15] select | verify strict 7/20
+[19:19:15] verify | func= Uses | rank= 2 | pid= cond-mat/0102275 | title_snip='Does Luttinger liquid behaviour survive in an atomic wire on a surface…' | abs_len= 658
+[19:19:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:19:18] select | verify strict 8/20
+[19:19:18] verify | func= Uses | rank= 3 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[19:19:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:21] select | verify strict 9/20
+[19:19:21] verify | func= Uses | rank= 5 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[19:19:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:23] select | verify strict 10/20
+[19:19:23] verify | func= Uses | rank= 7 | pid= cond-mat/0102519 | title_snip='Random walk theory of jamming in a cellular automaton model for traffi…' | abs_len= 700
+[19:19:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:26] select | verify strict 11/20
+[19:19:26] verify | func= Uses | rank= 9 | pid= cond-mat/0101175 | title_snip='Coarse-graining and Self-similarity of Price Fluctuations' | abs_len= 542
+[19:19:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:28] select | verify strict 12/20
+[19:19:28] verify | func= Uses | rank= 11 | pid= cond-mat/0101148 | title_snip='Surface Phase Diagrams for Wetting on Heterogenous Substrates' | abs_len= 832
+[19:19:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:31] select | verify strict 13/20
+[19:19:31] verify | func= Uses | rank= 12 | pid= astro-ph/0104432 | title_snip='On disc driven inward migration of resonantly coupled planets with
+  a…' | abs_len= 1101
+[19:19:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:33] select | verify strict 14/20
+[19:19:33] verify | func= Uses | rank= 17 | pid= cond-mat/0101387 | title_snip='Directed Percolation and Systems with Absorbing States: Impact of
+  Bo…' | abs_len= 1271
+[19:19:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:36] select | verify strict 15/20
+[19:19:36] verify | func= Uses | rank= 4 | pid= physics/0101077 | title_snip='Coarse graining: lessons from simple examples' | abs_len= 455
+[19:19:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:39] select | verify strict 16/20
+[19:19:39] verify | func= Uses | rank= 6 | pid= cond-mat/0104552 | title_snip='Scaling in Plasticity-Induced Cell-Boundary Microstructure:
+  Fragment…' | abs_len= 979
+[19:19:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:41] select | verify strict 17/20
+[19:19:41] verify | func= Uses | rank= 14 | pid= cond-mat/0103332 | title_snip='Exact Finite-Size Scaling and Corrections to Scaling in the Ising Mode…' | abs_len= 502
+[19:19:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:44] select | verify strict 18/20
+[19:19:44] verify | func= Uses | rank= 15 | pid= cond-mat/0103016 | title_snip='From DEM simulations towards a continuum theory of granular matter' | abs_len= 666
+[19:19:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:46] select | verify strict 19/20
+[19:19:46] verify | func= Uses | rank= 16 | pid= cond-mat/0101093 | title_snip='Capillary condensation in disordered porous materials: hysteresis vers…' | abs_len= 672
+[19:19:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:19:49] select | verify strict 20/20
+[19:19:49] verify | func= Uses | rank= 18 | pid= cond-mat/0103133 | title_snip='Monte Carlo Simulations of Critical Dynamics with Conserved Order
+  Pa…' | abs_len= 259
+[19:19:51] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How do the coarsening behaviors of the CD models on different surfaces compare, and what methods are used to analyze these behaviors?
+- WINNER: cond-mat/0102521 | Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving
+  Surfaces
+- QUOTE : CD models exhibit coarsening to an ordered steady state
+- WHY   : sufficient
+- ANSWER: The authors use analytic and numerical methods to analyze the coarsening behaviors of CD models on different surfaces, including Edwards-Wilkinson and Kardar-Parisi-Zhang surfaces. They apply the independent interval approximation to derive a relationship between the exponents describing the distribution of particle cluster sizes and the spatial correlation function (cond-mat/0102521).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

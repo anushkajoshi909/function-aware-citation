@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Motivation. [Motivation]
+The measurements of tau lepton polarization and forward-backward polarization asymmetry near the Z resonance could motivate future research in testing lepton universality and studying Lorentz structure. Further studies on hadronic decays, neutrino oscillations, and neutrinoless decays may also be potential areas of future research (hep-ex/0103010). [FutureWork]

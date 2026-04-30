@@ -1,0 +1,331 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Extends"
+  ],
+  "justification": "The query asks for foundational spectral energy distribution information (Background) and how this information broadens our understanding of the objects' properties (Extends)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.88 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 15it [00:00, 149.51it/s]
+Reading arXiv_src_0101_001.jsonl: 131it [00:00, 742.66it/s]
+Reading arXiv_src_0101_001.jsonl: 282it [00:00, 1085.14it/s]
+Reading arXiv_src_0101_001.jsonl: 391it [00:00, 1026.69it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 701.07it/s] 
+Reading arXiv_src_0101_001.jsonl: 576it [00:00, 632.59it/s]
+Reading arXiv_src_0101_001.jsonl: 684it [00:00, 737.91it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:01, 806.42it/s]
+Reading arXiv_src_0101_001.jsonl: 903it [00:01, 896.71it/s]
+Reading arXiv_src_0101_001.jsonl: 1004it [00:01, 927.28it/s]
+Reading arXiv_src_0101_001.jsonl: 1135it [00:01, 1034.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1267it [00:01, 1113.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1382it [00:01, 1105.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1516it [00:01, 1170.09it/s]
+Reading arXiv_src_0101_001.jsonl: 1654it [00:01, 1229.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1779it [00:01, 1185.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1935it [00:01, 1289.22it/s]
+Reading arXiv_src_0101_001.jsonl: 2112it [00:02, 1427.29it/s]
+Reading arXiv_src_0101_001.jsonl: 2267it [00:02, 1461.50it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1063.73it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1335.56it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1360.36it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 857.97it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 533.24it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 564.59it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:00, 626.99it/s]
+Reading arXiv_src_0102_001.jsonl: 795it [00:01, 752.86it/s]
+Reading arXiv_src_0102_001.jsonl: 928it [00:01, 896.82it/s]
+Reading arXiv_src_0102_001.jsonl: 1038it [00:01, 946.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1157it [00:01, 1007.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1279it [00:01, 1066.25it/s]
+Reading arXiv_src_0102_001.jsonl: 1427it [00:01, 1184.04it/s]
+Reading arXiv_src_0102_001.jsonl: 1556it [00:01, 1210.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1693it [00:01, 1255.75it/s]
+Reading arXiv_src_0102_001.jsonl: 1841it [00:01, 1320.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1993it [00:01, 1378.58it/s]
+Reading arXiv_src_0102_001.jsonl: 2146it [00:02, 1422.62it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1031.21it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1372.27it/s]
+Reading arXiv_src_0103_001.jsonl: 302it [00:00, 1528.87it/s]
+Reading arXiv_src_0103_001.jsonl: 455it [00:00, 1113.50it/s]
+Reading arXiv_src_0103_001.jsonl: 577it [00:00, 736.51it/s] 
+Reading arXiv_src_0103_001.jsonl: 673it [00:00, 786.31it/s]
+Reading arXiv_src_0103_001.jsonl: 766it [00:00, 808.66it/s]
+Reading arXiv_src_0103_001.jsonl: 884it [00:00, 897.13it/s]
+Reading arXiv_src_0103_001.jsonl: 994it [00:01, 950.87it/s]
+Reading arXiv_src_0103_001.jsonl: 1101it [00:01, 982.88it/s]
+Reading arXiv_src_0103_001.jsonl: 1222it [00:01, 1045.18it/s]
+Reading arXiv_src_0103_001.jsonl: 1331it [00:01, 1047.45it/s]
+Reading arXiv_src_0103_001.jsonl: 1477it [00:01, 1166.11it/s]
+Reading arXiv_src_0103_001.jsonl: 1608it [00:01, 1207.03it/s]
+Reading arXiv_src_0103_001.jsonl: 1757it [00:01, 1286.04it/s]
+Reading arXiv_src_0103_001.jsonl: 1903it [00:01, 1335.46it/s]
+Reading arXiv_src_0103_001.jsonl: 2045it [00:01, 1357.74it/s]
+Reading arXiv_src_0103_001.jsonl: 2186it [00:01, 1369.01it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1423.08it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1145.32it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 151it [00:00, 1508.21it/s]
+Reading arXiv_src_0104_001.jsonl: 302it [00:00, 705.61it/s] 
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 791.41it/s]
+Reading arXiv_src_0104_001.jsonl: 502it [00:00, 629.06it/s]
+Reading arXiv_src_0104_001.jsonl: 578it [00:01, 446.12it/s]
+Reading arXiv_src_0104_001.jsonl: 673it [00:01, 538.51it/s]
+Reading arXiv_src_0104_001.jsonl: 767it [00:01, 620.27it/s]
+Reading arXiv_src_0104_001.jsonl: 864it [00:01, 699.34it/s]
+Reading arXiv_src_0104_001.jsonl: 981it [00:01, 814.85it/s]
+Reading arXiv_src_0104_001.jsonl: 1097it [00:01, 904.45it/s]
+Reading arXiv_src_0104_001.jsonl: 1209it [00:01, 961.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1321it [00:01, 995.63it/s]
+Reading arXiv_src_0104_001.jsonl: 1457it [00:01, 1098.48it/s]
+Reading arXiv_src_0104_001.jsonl: 1587it [00:01, 1155.80it/s]
+Reading arXiv_src_0104_001.jsonl: 1711it [00:02, 1178.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1861it [00:02, 1273.01it/s]
+Reading arXiv_src_0104_001.jsonl: 2015it [00:02, 1349.35it/s]
+Reading arXiv_src_0104_001.jsonl: 2152it [00:02, 972.23it/s] 
+Reading arXiv_src_0104_001.jsonl: 2307it [00:02, 1106.33it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 901.01it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?
+[debug] classifier labels: ['Background', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T17:14:30.556106  Background, Extends
+1     1  0.651253  ...  2025-09-21T17:14:30.556106  Background, Extends
+2     2  0.408787  ...  2025-09-21T17:14:30.556106  Background, Extends
+3     3  0.374057  ...  2025-09-21T17:14:30.556106  Background, Extends
+4     4  0.319490  ...  2025-09-21T17:14:30.556106  Background, Extends
+5     5  0.293275  ...  2025-09-21T17:14:30.556106  Background, Extends
+6     6  0.247892  ...  2025-09-21T17:14:30.556106  Background, Extends
+7     7  0.234503  ...  2025-09-21T17:14:30.556106  Background, Extends
+8     8  0.230343  ...  2025-09-21T17:14:30.556106  Background, Extends
+9     9  0.209103  ...  2025-09-21T17:14:30.556106  Background, Extends
+
+[10 rows x 12 columns]
+[19:14:40] main | args: Namespace(max_check=20, debug=True)
+[19:14:40] read_last_jsonl | path= classified_outputs.jsonl
+[19:14:40] read_last_jsonl | total_lines= 1
+[19:14:40] main | query='How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?' | funcs=['Background', 'Extends']
+[19:14:44] main | core_terms= ['Cen A', 'M87', 'BL Lac', 'spectral energy distributions', 'high-energy-peaked', 'BL', 'Lac-like']
+[19:14:44] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:14:44] load_topk_jsonl | rows= 20
+[19:14:44] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102314 title_snip='Are Cen a and M87 Tev Gamma-Ray Sources?' abs_len= 1433
+[19:14:44] main | running function= Background
+[19:14:44] select | function= Background | candidates_in= 20
+[19:14:44] select | core_terms= ['Cen A', 'M87', 'BL Lac', 'spectral energy distributions', 'high-energy-peaked', 'BL', 'Lac-like']
+[19:14:44] select | no cosine prune; kept=20/20
+[19:14:44] select | pool_size= 20 | ranks= [0, 4, 10, 1, 6, 9, 18, 11, 13, 14, 17, 2, 7, 8, 12, 19, 3, 5, 15, 16] | pids= ['astro-ph/0102314', 'astro-ph/0102295', 'astro-ph/0102476', 'astro-ph/0103343', 'astro-ph/0103048', 'astro-ph/0101442', 'astro-ph/0101124', 'astro-ph/0101330', 'astro-ph/0102111', 'astro-ph/0103055', 'hep-ph/0101210', 'astro-ph/0102445', 'astro-ph/0104101', 'astro-ph/0103439', 'astro-ph/0104486', 'astro-ph/0102485', 'astro-ph/0102088', 'cond-mat/0101280', 'astro-ph/0102170', 'astro-ph/0102344']
+[19:14:44] select | verify strict 1/20
+[19:14:44] verify | func= Background | rank= 0 | pid= astro-ph/0102314 | title_snip='Are Cen a and M87 Tev Gamma-Ray Sources?' | abs_len= 1433
+[19:14:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:14:47] select | verify strict 2/20
+[19:14:47] verify | func= Background | rank= 4 | pid= astro-ph/0102295 | title_snip='Spectral Energy Distributions of Blazars: Facts and Speculations' | abs_len= 758
+[19:14:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:14:50] select | verify strict 3/20
+[19:14:50] verify | func= Background | rank= 10 | pid= astro-ph/0102476 | title_snip='BL Lacertae are probable sources of the observed ultra-high energy
+  c…' | abs_len= 466
+[19:14:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:14:52] select | verify strict 4/20
+[19:14:52] verify | func= Background | rank= 1 | pid= astro-ph/0103343 | title_snip='Extreme synchrotron BL Lac objects' | abs_len= 746
+[19:14:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:14:55] select | verify strict 5/20
+[19:14:55] verify | func= Background | rank= 6 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[19:14:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:14:58] select | verify strict 6/20
+[19:14:58] verify | func= Background | rank= 9 | pid= astro-ph/0101442 | title_snip='Hidden BL Lacertae Objects Near and Far' | abs_len= 307
+[19:15:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:00] select | verify strict 7/20
+[19:15:00] verify | func= Background | rank= 18 | pid= astro-ph/0101124 | title_snip='The Connection between BL Lacs and FSRQs' | abs_len= 745
+[19:15:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:03] select | verify strict 8/20
+[19:15:03] verify | func= Background | rank= 11 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[19:15:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:05] select | verify strict 9/20
+[19:15:05] verify | func= Background | rank= 13 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[19:15:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:08] select | verify strict 10/20
+[19:15:08] verify | func= Background | rank= 14 | pid= astro-ph/0103055 | title_snip='A survey of hard spectrum ROSAT sources 2: optical identification of
+ …' | abs_len= 1657
+[19:15:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:10] select | verify strict 11/20
+[19:15:10] verify | func= Background | rank= 17 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[19:15:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:13] select | verify strict 12/20
+[19:15:13] verify | func= Background | rank= 2 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[19:15:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:16] select | verify strict 13/20
+[19:15:16] verify | func= Background | rank= 7 | pid= astro-ph/0104101 | title_snip='Spectral variability in transonic discs around black holes' | abs_len= 1143
+[19:15:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:18] select | verify strict 14/20
+[19:15:18] verify | func= Background | rank= 8 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[19:15:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:21] select | verify strict 15/20
+[19:15:21] verify | func= Background | rank= 12 | pid= astro-ph/0104486 | title_snip='The Location of CMB Peaks in a Universe with Dark Energy' | abs_len= 773
+[19:15:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:23] select | verify strict 16/20
+[19:15:23] verify | func= Background | rank= 19 | pid= astro-ph/0102485 | title_snip='Optical Observations of Core-Collapse Supernovae' | abs_len= 1583
+[19:15:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:26] select | verify strict 17/20
+[19:15:26] verify | func= Background | rank= 3 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[19:15:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:28] select | verify strict 18/20
+[19:15:28] verify | func= Background | rank= 5 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[19:15:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:31] select | verify strict 19/20
+[19:15:31] verify | func= Background | rank= 15 | pid= astro-ph/0102170 | title_snip='On the Fast Spectral Variability of GRBs' | abs_len= 545
+[19:15:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:33] select | verify strict 20/20
+[19:15:33] verify | func= Background | rank= 16 | pid= astro-ph/0102344 | title_snip='Quintessence and Cosmic Microwave Background' | abs_len= 390
+[19:15:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?
+- WINNER: astro-ph/0102314 | Are Cen a and M87 Tev Gamma-Ray Sources?
+- QUOTE : investigating their spectral energy distributions (SEDs)
+- WHY   : sufficient
+- ANSWER: The spectral energy distributions of Cen A and M87 provide insight into their classification as high-energy-peaked BL Lac-like objects by revealing the peaks of their synchrotron emission (astro-ph/0102314).
+[19:15:42] main | running function= Extends
+[19:15:42] select | function= Extends | candidates_in= 20
+[19:15:42] select | core_terms= ['Cen A', 'M87', 'BL Lac', 'spectral energy distributions', 'high-energy-peaked', 'BL', 'Lac-like']
+[19:15:42] select | no cosine prune; kept=20/20
+[19:15:42] select | pool_size= 20 | ranks= [0, 1, 4, 6, 9, 10, 18, 19, 2, 7, 8, 11, 12, 13, 14, 17, 16, 3, 5, 15] | pids= ['astro-ph/0102314', 'astro-ph/0103343', 'astro-ph/0102295', 'astro-ph/0103048', 'astro-ph/0101442', 'astro-ph/0102476', 'astro-ph/0101124', 'astro-ph/0102485', 'astro-ph/0102445', 'astro-ph/0104101', 'astro-ph/0103439', 'astro-ph/0101330', 'astro-ph/0104486', 'astro-ph/0102111', 'astro-ph/0103055', 'hep-ph/0101210', 'astro-ph/0102344', 'astro-ph/0102088', 'cond-mat/0101280', 'astro-ph/0102170']
+[19:15:42] select | verify strict 1/20
+[19:15:42] verify | func= Extends | rank= 0 | pid= astro-ph/0102314 | title_snip='Are Cen a and M87 Tev Gamma-Ray Sources?' | abs_len= 1433
+[19:15:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:15:45] select | verify strict 2/20
+[19:15:45] verify | func= Extends | rank= 1 | pid= astro-ph/0103343 | title_snip='Extreme synchrotron BL Lac objects' | abs_len= 746
+[19:15:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:15:48] select | verify strict 3/20
+[19:15:48] verify | func= Extends | rank= 4 | pid= astro-ph/0102295 | title_snip='Spectral Energy Distributions of Blazars: Facts and Speculations' | abs_len= 758
+[19:15:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:15:51] select | verify strict 4/20
+[19:15:51] verify | func= Extends | rank= 6 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[19:15:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:54] select | verify strict 5/20
+[19:15:54] verify | func= Extends | rank= 9 | pid= astro-ph/0101442 | title_snip='Hidden BL Lacertae Objects Near and Far' | abs_len= 307
+[19:15:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:56] select | verify strict 6/20
+[19:15:56] verify | func= Extends | rank= 10 | pid= astro-ph/0102476 | title_snip='BL Lacertae are probable sources of the observed ultra-high energy
+  c…' | abs_len= 466
+[19:15:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:15:59] select | verify strict 7/20
+[19:15:59] verify | func= Extends | rank= 18 | pid= astro-ph/0101124 | title_snip='The Connection between BL Lacs and FSRQs' | abs_len= 745
+[19:16:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:16:01] select | verify strict 8/20
+[19:16:01] verify | func= Extends | rank= 19 | pid= astro-ph/0102485 | title_snip='Optical Observations of Core-Collapse Supernovae' | abs_len= 1583
+[19:16:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:04] select | verify strict 9/20
+[19:16:04] verify | func= Extends | rank= 2 | pid= astro-ph/0102445 | title_snip='Optical Structure and Physics of the M87 Jet' | abs_len= 1065
+[19:16:07] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:16:07] select | verify strict 10/20
+[19:16:07] verify | func= Extends | rank= 7 | pid= astro-ph/0104101 | title_snip='Spectral variability in transonic discs around black holes' | abs_len= 1143
+[19:16:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:10] select | verify strict 11/20
+[19:16:10] verify | func= Extends | rank= 8 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[19:16:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:12] select | verify strict 12/20
+[19:16:12] verify | func= Extends | rank= 11 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[19:16:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:14] select | verify strict 13/20
+[19:16:14] verify | func= Extends | rank= 12 | pid= astro-ph/0104486 | title_snip='The Location of CMB Peaks in a Universe with Dark Energy' | abs_len= 773
+[19:16:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:17] select | verify strict 14/20
+[19:16:17] verify | func= Extends | rank= 13 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[19:16:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:19] select | verify strict 15/20
+[19:16:19] verify | func= Extends | rank= 14 | pid= astro-ph/0103055 | title_snip='A survey of hard spectrum ROSAT sources 2: optical identification of
+ …' | abs_len= 1657
+[19:16:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:22] select | verify strict 16/20
+[19:16:22] verify | func= Extends | rank= 17 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[19:16:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:25] select | verify strict 17/20
+[19:16:25] verify | func= Extends | rank= 16 | pid= astro-ph/0102344 | title_snip='Quintessence and Cosmic Microwave Background' | abs_len= 390
+[19:16:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:27] select | verify strict 18/20
+[19:16:27] verify | func= Extends | rank= 3 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[19:16:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:29] select | verify strict 19/20
+[19:16:29] verify | func= Extends | rank= 5 | pid= cond-mat/0101280 | title_snip='The spectral and magnetic properties of $\alpha$- and $\gamma$-Ce from…' | abs_len= 1116
+[19:16:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:16:32] select | verify strict 20/20
+[19:16:32] verify | func= Extends | rank= 15 | pid= astro-ph/0102170 | title_snip='On the Fast Spectral Variability of GRBs' | abs_len= 545
+[19:16:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How do the spectral energy distributions of Cen A and M87 provide background information for understanding their classification as high-energy-peaked BL Lac-like objects and extend our knowledge of these objects' properties?
+- WINNER: astro-ph/0102314 | Are Cen a and M87 Tev Gamma-Ray Sources?
+- QUOTE : investigating their spectral energy distributions (SEDs)
+- WHY   : sufficient
+- ANSWER: The spectral energy distributions of Cen A and M87 extend our knowledge of high-energy-peaked BL Lac-like objects by revealing their synchrotron emission peaks and predicting their Compton emission peaks. This study generalizes the properties of TeV BL Lac objects to HBL-like FRI radio galaxies, increasing our understanding of these objects' properties and behavior (astro-ph/0102314).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

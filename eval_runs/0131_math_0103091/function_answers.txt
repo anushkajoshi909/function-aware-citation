@@ -1,0 +1,2 @@
+The work on Goldbach's Conjecture is motivated by the fact that there are infinitely many primes, with all primes between the kth prime and the product of the first k primes being part of a group of units (math/0103091). [Background]
+The abstract does not provide information relevant to Motivation. [Motivation]

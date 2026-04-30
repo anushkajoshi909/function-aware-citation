@@ -1,0 +1,338 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks for a comparative analysis of two modeling approaches and explicitly seeks how this comparison can guide subsequent research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.5 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  5.37it/s]
+Reading arXiv_src_0101_001.jsonl: 31it [00:00, 133.27it/s]
+Reading arXiv_src_0101_001.jsonl: 181it [00:00, 655.31it/s]
+Reading arXiv_src_0101_001.jsonl: 310it [00:00, 878.29it/s]
+Reading arXiv_src_0101_001.jsonl: 408it [00:00, 779.21it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 644.72it/s]
+Reading arXiv_src_0101_001.jsonl: 567it [00:00, 595.38it/s]
+Reading arXiv_src_0101_001.jsonl: 673it [00:01, 705.82it/s]
+Reading arXiv_src_0101_001.jsonl: 776it [00:01, 787.51it/s]
+Reading arXiv_src_0101_001.jsonl: 887it [00:01, 872.58it/s]
+Reading arXiv_src_0101_001.jsonl: 995it [00:01, 926.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1102it [00:01, 966.59it/s]
+Reading arXiv_src_0101_001.jsonl: 1234it [00:01, 1065.70it/s]
+Reading arXiv_src_0101_001.jsonl: 1344it [00:01, 1059.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1481it [00:01, 1147.21it/s]
+Reading arXiv_src_0101_001.jsonl: 1614it [00:01, 1199.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1742it [00:01, 1222.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1866it [00:02, 1189.11it/s]
+Reading arXiv_src_0101_001.jsonl: 2051it [00:02, 1381.16it/s]
+Reading arXiv_src_0101_001.jsonl: 2207it [00:02, 1432.64it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 978.64it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1317.32it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1359.55it/s]
+Reading arXiv_src_0102_001.jsonl: 410it [00:00, 844.25it/s] 
+Reading arXiv_src_0102_001.jsonl: 511it [00:00, 520.49it/s]
+Reading arXiv_src_0102_001.jsonl: 588it [00:00, 567.25it/s]
+Reading arXiv_src_0102_001.jsonl: 662it [00:00, 592.47it/s]
+Reading arXiv_src_0102_001.jsonl: 774it [00:01, 713.92it/s]
+Reading arXiv_src_0102_001.jsonl: 901it [00:01, 851.78it/s]
+Reading arXiv_src_0102_001.jsonl: 1015it [00:01, 926.54it/s]
+Reading arXiv_src_0102_001.jsonl: 1132it [00:01, 990.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1239it [00:01, 1002.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1384it [00:01, 1128.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1521it [00:01, 1193.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1644it [00:01, 1203.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1794it [00:01, 1288.37it/s]
+Reading arXiv_src_0102_001.jsonl: 1946it [00:02, 1354.14it/s]
+Reading arXiv_src_0102_001.jsonl: 2093it [00:02, 1386.80it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1011.66it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  3.98it/s]
+Reading arXiv_src_0103_001.jsonl: 39it [00:00, 139.90it/s]
+Reading arXiv_src_0103_001.jsonl: 186it [00:00, 591.11it/s]
+Reading arXiv_src_0103_001.jsonl: 330it [00:00, 867.52it/s]
+Reading arXiv_src_0103_001.jsonl: 435it [00:00, 860.12it/s]
+Reading arXiv_src_0103_001.jsonl: 533it [00:00, 645.01it/s]
+Reading arXiv_src_0103_001.jsonl: 612it [00:01, 634.22it/s]
+Reading arXiv_src_0103_001.jsonl: 715it [00:01, 727.53it/s]
+Reading arXiv_src_0103_001.jsonl: 802it [00:01, 761.81it/s]
+Reading arXiv_src_0103_001.jsonl: 909it [00:01, 840.08it/s]
+Reading arXiv_src_0103_001.jsonl: 1008it [00:01, 880.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1126it [00:01, 960.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1237it [00:01, 994.61it/s]
+Reading arXiv_src_0103_001.jsonl: 1349it [00:01, 1029.53it/s]
+Reading arXiv_src_0103_001.jsonl: 1492it [00:01, 1145.27it/s]
+Reading arXiv_src_0103_001.jsonl: 1623it [00:01, 1192.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1762it [00:02, 1249.81it/s]
+Reading arXiv_src_0103_001.jsonl: 1899it [00:02, 1284.23it/s]
+Reading arXiv_src_0103_001.jsonl: 2035it [00:02, 1304.44it/s]
+Reading arXiv_src_0103_001.jsonl: 2172it [00:02, 1319.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2325it [00:02, 1381.87it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 968.72it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.11it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  7.87it/s]
+Reading arXiv_src_0104_001.jsonl: 147it [00:00, 581.61it/s]
+Reading arXiv_src_0104_001.jsonl: 300it [00:00, 924.89it/s]
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 955.21it/s]
+Reading arXiv_src_0104_001.jsonl: 506it [00:00, 688.49it/s]
+Reading arXiv_src_0104_001.jsonl: 588it [00:01, 461.62it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 568.77it/s]
+Reading arXiv_src_0104_001.jsonl: 785it [00:01, 641.47it/s]
+Reading arXiv_src_0104_001.jsonl: 886it [00:01, 725.30it/s]
+Reading arXiv_src_0104_001.jsonl: 1002it [00:01, 831.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1118it [00:01, 916.64it/s]
+Reading arXiv_src_0104_001.jsonl: 1229it [00:01, 967.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1334it [00:01, 981.70it/s]
+Reading arXiv_src_0104_001.jsonl: 1469it [00:01, 1084.77it/s]
+Reading arXiv_src_0104_001.jsonl: 1605it [00:02, 1162.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1726it [00:02, 1173.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1872it [00:02, 1257.66it/s]
+Reading arXiv_src_0104_001.jsonl: 2028it [00:02, 1346.65it/s]
+Reading arXiv_src_0104_001.jsonl: 2165it [00:02, 938.40it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 862.88it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?
+[debug] classifier labels: ['Compares', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+1     1  0.241318  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+2     2  0.200482  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+3     3  0.196624  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+4     4  0.188775  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+5     5  0.187252  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+6     6  0.147644  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+7     7  0.125139  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+8     8  0.115082  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+9     9  0.109253  ...  2025-09-21T19:34:15.954629  Compares, FutureWork
+
+[10 rows x 12 columns]
+[21:34:22] main | args: Namespace(max_check=20, debug=True)
+[21:34:22] read_last_jsonl | path= classified_outputs.jsonl
+[21:34:22] read_last_jsonl | total_lines= 1
+[21:34:22] main | query='How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?' | funcs=['Compares', 'FutureWork']
+[21:34:26] main | core_terms= ['N-body', 'galaxies', 'NGC 4449', 'DDO 125', 'self-consistent N-body simulations', 'restricted N-body models', 'self-consistent', 'NGC', 'DDO']
+[21:34:26] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:34:26] load_topk_jsonl | rows= 20
+[21:34:26] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104304 title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' abs_len= 1670
+[21:34:26] main | running function= Compares
+[21:34:26] select | function= Compares | candidates_in= 20
+[21:34:26] select | core_terms= ['N-body', 'galaxies', 'NGC 4449', 'DDO 125', 'self-consistent N-body simulations', 'restricted N-body models', 'self-consistent', 'NGC', 'DDO']
+[21:34:26] select | no cosine prune; kept=20/20
+[21:34:26] select | pool_size= 20 | ranks= [0, 6, 2, 5, 11, 8, 4, 1, 3, 15, 13, 18, 19, 7, 9, 12, 16, 10, 14, 17] | pids= ['astro-ph/0104304', 'astro-ph/0104069', 'astro-ph/0101296', 'astro-ph/0103092', 'astro-ph/0103386', 'astro-ph/0101490', 'astro-ph/0102011', 'astro-ph/0101265', 'astro-ph/0104465', 'astro-ph/0104076', 'astro-ph/0104139', 'astro-ph/0101544', 'astro-ph/0103017', 'astro-ph/0103410', 'hep-ph/0103249', 'cond-mat/0104135', 'astro-ph/0102165', 'astro-ph/0101183', 'hep-ph/0103034', 'astro-ph/0101143']
+[21:34:26] select | verify strict 1/20
+[21:34:26] verify | func= Compares | rank= 0 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[21:34:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[21:34:29] select | verify strict 2/20
+[21:34:29] verify | func= Compares | rank= 6 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[21:34:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:32] select | verify strict 3/20
+[21:34:32] verify | func= Compares | rank= 2 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[21:34:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:34] select | verify strict 4/20
+[21:34:34] verify | func= Compares | rank= 5 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[21:34:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:37] select | verify strict 5/20
+[21:34:37] verify | func= Compares | rank= 11 | pid= astro-ph/0103386 | title_snip='Dark Halos: The Flattening of the Density Cusp by Dynamical Friction' | abs_len= 1598
+[21:34:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:39] select | verify strict 6/20
+[21:34:39] verify | func= Compares | rank= 8 | pid= astro-ph/0101490 | title_snip='Comparison between Disk-like Objects Formed in Hierarchical
+  Hydrodyn…' | abs_len= 457
+[21:34:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:42] select | verify strict 7/20
+[21:34:42] verify | func= Compares | rank= 4 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[21:34:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:44] select | verify strict 8/20
+[21:34:44] verify | func= Compares | rank= 1 | pid= astro-ph/0101265 | title_snip='N-Body Simulations of Open, Self-Gravitating Systems' | abs_len= 792
+[21:34:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:47] select | verify strict 9/20
+[21:34:47] verify | func= Compares | rank= 3 | pid= astro-ph/0104465 | title_snip='Luminous and Dark Matter in the Milky Way' | abs_len= 1523
+[21:34:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:49] select | verify strict 10/20
+[21:34:49] verify | func= Compares | rank= 15 | pid= astro-ph/0104076 | title_snip='Constraints on the Cosmic Equation of State using Gravitational Lensin…' | abs_len= 1196
+[21:34:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:52] select | verify strict 11/20
+[21:34:52] verify | func= Compares | rank= 13 | pid= astro-ph/0104139 | title_snip='Observational tests of the delta_c-M_vir relation in hierarchical
+  cl…' | abs_len= 995
+[21:34:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:55] select | verify strict 12/20
+[21:34:55] verify | func= Compares | rank= 18 | pid= astro-ph/0101544 | title_snip='Dark energy and the epoch of galaxy formation' | abs_len= 971
+[21:34:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:34:57] select | verify strict 13/20
+[21:34:57] verify | func= Compares | rank= 19 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[21:35:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:00] select | verify strict 14/20
+[21:35:00] verify | func= Compares | rank= 7 | pid= astro-ph/0103410 | title_snip='Collisional dynamics around binary black holes in galactic centers' | abs_len= 1046
+[21:35:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:02] select | verify strict 15/20
+[21:35:02] verify | func= Compares | rank= 9 | pid= hep-ph/0103249 | title_snip='Non-Newtonian gravity confronting models with large extra dimensions' | abs_len= 287
+[21:35:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:05] select | verify strict 16/20
+[21:35:05] verify | func= Compares | rank= 12 | pid= cond-mat/0104135 | title_snip='Scaling of Self-Avoiding Walks in High Dimensions' | abs_len= 1153
+[21:35:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:08] select | verify strict 17/20
+[21:35:08] verify | func= Compares | rank= 16 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[21:35:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:10] select | verify strict 18/20
+[21:35:10] verify | func= Compares | rank= 10 | pid= astro-ph/0101183 | title_snip='Monte Carlo Simulations of Dense Galactic Nuclei' | abs_len= 453
+[21:35:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:13] select | verify strict 19/20
+[21:35:13] verify | func= Compares | rank= 14 | pid= hep-ph/0103034 | title_snip='Model-Independent Analysis of g_\mu-2' | abs_len= 857
+[21:35:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:15] select | verify strict 20/20
+[21:35:15] verify | func= Compares | rank= 17 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[21:35:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?
+- WINNER: astro-ph/0104304 | Multi-method-modeling of interacting galaxies. I. A unique scenario for
+  NGC 4449?
+- QUOTE : restricted N-body models are compared with self-consistent N-body simulations
+- WHY   : sufficient
+- ANSWER: The comparison of restricted N-body models with self-consistent N-body simulations informs future research on the interaction scenario between galaxies like NGC 4449 and DDO 125 by demonstrating the applicability of simple restricted N-body calculations. The restricted models are compared to self-consistent simulations on the basis of their ability to reproduce the main observational features of the galaxy interaction (astro-ph/0104304).
+[21:35:24] main | running function= FutureWork
+[21:35:24] select | function= FutureWork | candidates_in= 20
+[21:35:24] select | core_terms= ['N-body', 'galaxies', 'NGC 4449', 'DDO 125', 'self-consistent N-body simulations', 'restricted N-body models', 'self-consistent', 'NGC', 'DDO']
+[21:35:24] select | no cosine prune; kept=20/20
+[21:35:24] select | pool_size= 20 | ranks= [0, 2, 5, 6, 11, 8, 15, 4, 13, 18, 19, 1, 3, 7, 9, 10, 12, 14, 16, 17] | pids= ['astro-ph/0104304', 'astro-ph/0101296', 'astro-ph/0103092', 'astro-ph/0104069', 'astro-ph/0103386', 'astro-ph/0101490', 'astro-ph/0104076', 'astro-ph/0102011', 'astro-ph/0104139', 'astro-ph/0101544', 'astro-ph/0103017', 'astro-ph/0101265', 'astro-ph/0104465', 'astro-ph/0103410', 'hep-ph/0103249', 'astro-ph/0101183', 'cond-mat/0104135', 'hep-ph/0103034', 'astro-ph/0102165', 'astro-ph/0101143']
+[21:35:24] select | verify strict 1/20
+[21:35:24] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[21:35:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:35:28] select | verify strict 2/20
+[21:35:28] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[21:35:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:30] select | verify strict 3/20
+[21:35:30] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[21:35:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:33] select | verify strict 4/20
+[21:35:33] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[21:35:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:35] select | verify strict 5/20
+[21:35:35] verify | func= FutureWork | rank= 11 | pid= astro-ph/0103386 | title_snip='Dark Halos: The Flattening of the Density Cusp by Dynamical Friction' | abs_len= 1598
+[21:35:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:38] select | verify strict 6/20
+[21:35:38] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101490 | title_snip='Comparison between Disk-like Objects Formed in Hierarchical
+  Hydrodyn…' | abs_len= 457
+[21:35:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:40] select | verify strict 7/20
+[21:35:40] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104076 | title_snip='Constraints on the Cosmic Equation of State using Gravitational Lensin…' | abs_len= 1196
+[21:35:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:43] select | verify strict 8/20
+[21:35:43] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[21:35:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:46] select | verify strict 9/20
+[21:35:46] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104139 | title_snip='Observational tests of the delta_c-M_vir relation in hierarchical
+  cl…' | abs_len= 995
+[21:35:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:48] select | verify strict 10/20
+[21:35:48] verify | func= FutureWork | rank= 18 | pid= astro-ph/0101544 | title_snip='Dark energy and the epoch of galaxy formation' | abs_len= 971
+[21:35:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:51] select | verify strict 11/20
+[21:35:51] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[21:35:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:53] select | verify strict 12/20
+[21:35:53] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101265 | title_snip='N-Body Simulations of Open, Self-Gravitating Systems' | abs_len= 792
+[21:35:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:56] select | verify strict 13/20
+[21:35:56] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104465 | title_snip='Luminous and Dark Matter in the Milky Way' | abs_len= 1523
+[21:35:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:35:58] select | verify strict 14/20
+[21:35:58] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103410 | title_snip='Collisional dynamics around binary black holes in galactic centers' | abs_len= 1046
+[21:36:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:36:01] select | verify strict 15/20
+[21:36:01] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103249 | title_snip='Non-Newtonian gravity confronting models with large extra dimensions' | abs_len= 287
+[21:36:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:36:03] select | verify strict 16/20
+[21:36:03] verify | func= FutureWork | rank= 10 | pid= astro-ph/0101183 | title_snip='Monte Carlo Simulations of Dense Galactic Nuclei' | abs_len= 453
+[21:36:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:36:06] select | verify strict 17/20
+[21:36:06] verify | func= FutureWork | rank= 12 | pid= cond-mat/0104135 | title_snip='Scaling of Self-Avoiding Walks in High Dimensions' | abs_len= 1153
+[21:36:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:36:09] select | verify strict 18/20
+[21:36:09] verify | func= FutureWork | rank= 14 | pid= hep-ph/0103034 | title_snip='Model-Independent Analysis of g_\mu-2' | abs_len= 857
+[21:36:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:36:11] select | verify strict 19/20
+[21:36:11] verify | func= FutureWork | rank= 16 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[21:36:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:36:14] select | verify strict 20/20
+[21:36:14] verify | func= FutureWork | rank= 17 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[21:36:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?
+- WINNER: astro-ph/0104304 | Multi-method-modeling of interacting galaxies. I. A unique scenario for
+  NGC 4449?
+- QUOTE : In the third step the results of the restricted N-body models are compared with self-consistent N-body simulations
+- WHY   : sufficient
+- ANSWER: The comparison of restricted N-body models with self-consistent N-body simulations informs future research by demonstrating the applicability of simple calculations and highlighting the need to investigate the origin of the extended HI disc around NGC 4449. Further study is required to clarify the origin of this disc, potentially involving previous interactions (astro-ph/0104304).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

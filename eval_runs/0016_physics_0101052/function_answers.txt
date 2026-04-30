@@ -1,0 +1,2 @@
+Understanding how X-ray photons interact with pixels, including charge spillover to adjacent pixels, provides background for determining the X-ray landing position (physics/0101052). [Background]
+The Chandra ACIS uses split pixel events to improve spatial resolution by selecting X-ray events that deposit charge in more than one pixel, allowing for better position accuracy than the CCD pixel size. This method achieves subpixel resolution by considering only corner events, which improves the image quality (astro-ph/0101557). [Uses]

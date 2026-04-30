@@ -1,0 +1,331 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query highlights gaps in current knowledge that drive motivation for further study and explicitly asks about directions for future research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.52 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.81it/s]
+Reading arXiv_src_0101_001.jsonl: 71it [00:00, 202.09it/s]
+Reading arXiv_src_0101_001.jsonl: 222it [00:00, 580.28it/s]
+Reading arXiv_src_0101_001.jsonl: 331it [00:00, 728.20it/s]
+Reading arXiv_src_0101_001.jsonl: 429it [00:00, 697.64it/s]
+Reading arXiv_src_0101_001.jsonl: 515it [00:01, 590.27it/s]
+Reading arXiv_src_0101_001.jsonl: 587it [00:01, 587.51it/s]
+Reading arXiv_src_0101_001.jsonl: 692it [00:01, 697.21it/s]
+Reading arXiv_src_0101_001.jsonl: 793it [00:01, 775.94it/s]
+Reading arXiv_src_0101_001.jsonl: 906it [00:01, 858.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 905.04it/s]
+Reading arXiv_src_0101_001.jsonl: 1147it [00:01, 1025.16it/s]
+Reading arXiv_src_0101_001.jsonl: 1282it [00:01, 1117.30it/s]
+Reading arXiv_src_0101_001.jsonl: 1398it [00:01, 1094.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1528it [00:01, 1152.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1663it [00:02, 1208.10it/s]
+Reading arXiv_src_0101_001.jsonl: 1786it [00:02, 1165.71it/s]
+Reading arXiv_src_0101_001.jsonl: 1940it [00:02, 1269.29it/s]
+Reading arXiv_src_0101_001.jsonl: 2114it [00:02, 1405.49it/s]
+Reading arXiv_src_0101_001.jsonl: 2265it [00:02, 1434.70it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 925.53it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1331.37it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1371.15it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 852.54it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 529.43it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 558.63it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:00, 616.03it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 741.96it/s]
+Reading arXiv_src_0102_001.jsonl: 922it [00:01, 882.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 941.13it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1003.19it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1051.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1413it [00:01, 1161.87it/s]
+Reading arXiv_src_0102_001.jsonl: 1547it [00:01, 1212.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1678it [00:01, 1239.75it/s]
+Reading arXiv_src_0102_001.jsonl: 1829it [00:01, 1315.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1980it [00:02, 1370.09it/s]
+Reading arXiv_src_0102_001.jsonl: 2130it [00:02, 1407.48it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1023.84it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1364.40it/s]
+Reading arXiv_src_0103_001.jsonl: 299it [00:00, 1512.73it/s]
+Reading arXiv_src_0103_001.jsonl: 451it [00:00, 1132.22it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 735.74it/s] 
+Reading arXiv_src_0103_001.jsonl: 666it [00:00, 767.72it/s]
+Reading arXiv_src_0103_001.jsonl: 756it [00:00, 780.30it/s]
+Reading arXiv_src_0103_001.jsonl: 872it [00:00, 876.34it/s]
+Reading arXiv_src_0103_001.jsonl: 972it [00:01, 905.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1078it [00:01, 946.42it/s]
+Reading arXiv_src_0103_001.jsonl: 1204it [00:01, 1034.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1312it [00:01, 1024.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1447it [00:01, 1116.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1586it [00:01, 1183.10it/s]
+Reading arXiv_src_0103_001.jsonl: 1733it [00:01, 1265.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1874it [00:01, 1305.45it/s]
+Reading arXiv_src_0103_001.jsonl: 2009it [00:01, 1318.03it/s]
+Reading arXiv_src_0103_001.jsonl: 2155it [00:01, 1357.04it/s]
+Reading arXiv_src_0103_001.jsonl: 2296it [00:02, 1368.38it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1124.71it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  5.90it/s]
+Reading arXiv_src_0104_001.jsonl: 67it [00:00, 303.83it/s]
+Reading arXiv_src_0104_001.jsonl: 222it [00:00, 794.15it/s]
+Reading arXiv_src_0104_001.jsonl: 362it [00:00, 1007.04it/s]
+Reading arXiv_src_0104_001.jsonl: 472it [00:00, 775.72it/s] 
+Reading arXiv_src_0104_001.jsonl: 563it [00:00, 580.57it/s]
+Reading arXiv_src_0104_001.jsonl: 635it [00:01, 520.77it/s]
+Reading arXiv_src_0104_001.jsonl: 730it [00:01, 609.00it/s]
+Reading arXiv_src_0104_001.jsonl: 815it [00:01, 662.77it/s]
+Reading arXiv_src_0104_001.jsonl: 929it [00:01, 779.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1048it [00:01, 883.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1156it [00:01, 932.95it/s]
+Reading arXiv_src_0104_001.jsonl: 1285it [00:01, 1027.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1394it [00:01, 1027.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1531it [00:01, 1124.93it/s]
+Reading arXiv_src_0104_001.jsonl: 1666it [00:02, 1188.38it/s]
+Reading arXiv_src_0104_001.jsonl: 1799it [00:02, 1228.39it/s]
+Reading arXiv_src_0104_001.jsonl: 1949it [00:02, 1307.85it/s]
+Reading arXiv_src_0104_001.jsonl: 2107it [00:02, 1384.74it/s]
+Reading arXiv_src_0104_001.jsonl: 2247it [00:02, 953.59it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 885.70it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What limitations in current understanding of supernova explosions and their interactions with the circumstellar medium motivate further research and potential future work in this area?
+[debug] classifier labels: ['Motivation', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+1     1  0.930952  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+2     2  0.904892  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+3     3  0.777167  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+4     4  0.743736  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+5     5  0.692570  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+6     6  0.679461  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+7     7  0.674598  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+8     8  0.651289  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+9     9  0.612692  ...  2025-09-21T15:02:27.454169  Motivation, FutureWork
+
+[10 rows x 12 columns]
+[17:02:38] main | args: Namespace(max_check=20, debug=True)
+[17:02:38] read_last_jsonl | path= classified_outputs.jsonl
+[17:02:38] read_last_jsonl | total_lines= 1
+[17:02:38] main | query='What limitations in current understanding of supernova explosions and their interactions with the circumstellar medium motivate further research and potential future work in this area?' | funcs=['Motivation', 'FutureWork']
+[17:02:41] main | core_terms= ['supernova', 'circumstellar medium', 'explosion', 'interaction']
+[17:02:41] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:02:41] load_topk_jsonl | rows= 20
+[17:02:41] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103015 title_snip='Supernova Explosions and Neutron Star Formation' abs_len= 1135
+[17:02:41] main | running function= Motivation
+[17:02:41] select | function= Motivation | candidates_in= 20
+[17:02:41] select | core_terms= ['supernova', 'circumstellar medium', 'explosion', 'interaction']
+[17:02:41] select | no cosine prune; kept=20/20
+[17:02:41] select | pool_size= 20 | ranks= [0, 3, 4, 6, 1, 2, 8, 13, 11, 5, 12, 17, 7, 10, 14, 15, 18, 9, 16, 19] | pids= ['astro-ph/0103015', 'astro-ph/0101018', 'astro-ph/0104156', 'astro-ph/0102087', 'astro-ph/0102212', 'hep-ph/0104094', 'astro-ph/0103412', 'astro-ph/0103384', 'astro-ph/0102485', 'astro-ph/0101043', 'astro-ph/0101175', 'astro-ph/0102228', 'astro-ph/0103075', 'astro-ph/0103195', 'hep-ph/0101276', 'hep-ph/0103121', 'astro-ph/0101120', 'astro-ph/0103461', 'astro-ph/0102276', 'astro-ph/0102186']
+[17:02:41] select | verify strict 1/20
+[17:02:41] verify | func= Motivation | rank= 0 | pid= astro-ph/0103015 | title_snip='Supernova Explosions and Neutron Star Formation' | abs_len= 1135
+[17:02:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:02:44] select | verify strict 2/20
+[17:02:44] verify | func= Motivation | rank= 3 | pid= astro-ph/0101018 | title_snip='Science Prospects for SPI' | abs_len= 1822
+[17:02:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:02:47] select | verify strict 3/20
+[17:02:47] verify | func= Motivation | rank= 4 | pid= astro-ph/0104156 | title_snip='SN1993J VLBI (I): The Center of the Explosion and a Limit on Anisotrop…' | abs_len= 1795
+[17:02:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:02:51] select | verify strict 4/20
+[17:02:51] verify | func= Motivation | rank= 6 | pid= astro-ph/0102087 | title_snip='The X-ray nebula of the filled center supernova remnant 3C58 and its
+ …' | abs_len= 1417
+[17:02:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:02:54] select | verify strict 5/20
+[17:02:54] verify | func= Motivation | rank= 1 | pid= astro-ph/0102212 | title_snip='Theoretical Implications of the Gamma-Ray Burst - Supernova Connection' | abs_len= 721
+[17:02:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:02:57] select | verify strict 6/20
+[17:02:57] verify | func= Motivation | rank= 2 | pid= hep-ph/0104094 | title_snip='Supernova Constraints on Neutrino Mass and Mixing' | abs_len= 396
+[17:03:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:00] select | verify strict 7/20
+[17:03:00] verify | func= Motivation | rank= 8 | pid= astro-ph/0103412 | title_snip='Thermal X-ray emission of the remnants of ashperical Supernova
+  explo…' | abs_len= 518
+[17:03:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:03:03] select | verify strict 8/20
+[17:03:03] verify | func= Motivation | rank= 13 | pid= astro-ph/0103384 | title_snip='Gamma-Ray Bursts at Low Redshift' | abs_len= 1121
+[17:03:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:03:06] select | verify strict 9/20
+[17:03:06] verify | func= Motivation | rank= 11 | pid= astro-ph/0102485 | title_snip='Optical Observations of Core-Collapse Supernovae' | abs_len= 1583
+[17:03:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:03:09] select | verify strict 10/20
+[17:03:09] verify | func= Motivation | rank= 5 | pid= astro-ph/0101043 | title_snip='Young Supernova Remnants: Issues and Prospects' | abs_len= 386
+[17:03:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[17:03:12] select | verify strict 11/20
+[17:03:12] verify | func= Motivation | rank= 12 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[17:03:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:03:15] select | verify strict 12/20
+[17:03:15] verify | func= Motivation | rank= 17 | pid= astro-ph/0102228 | title_snip='The evolution of emission lines in HII galaxies' | abs_len= 1484
+[17:03:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:18] select | verify strict 13/20
+[17:03:18] verify | func= Motivation | rank= 7 | pid= astro-ph/0103075 | title_snip='Supernova constraints on spatial variations of the vacuum energy densi…' | abs_len= 810
+[17:03:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:20] select | verify strict 14/20
+[17:03:20] verify | func= Motivation | rank= 10 | pid= astro-ph/0103195 | title_snip='High Energy Neutrino Astronomy: Towards Kilometer-Scale Detectors' | abs_len= 1586
+[17:03:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:23] select | verify strict 15/20
+[17:03:23] verify | func= Motivation | rank= 14 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[17:03:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:25] select | verify strict 16/20
+[17:03:25] verify | func= Motivation | rank= 15 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[17:03:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:28] select | verify strict 17/20
+[17:03:28] verify | func= Motivation | rank= 18 | pid= astro-ph/0101120 | title_snip='TeV Gamma-Ray Astronomy in the new Millennium' | abs_len= 928
+[17:03:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:03:31] select | verify strict 18/20
+[17:03:31] verify | func= Motivation | rank= 9 | pid= astro-ph/0103461 | title_snip='Observations of Circumstellar Disks' | abs_len= 1289
+[17:03:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:34] select | verify strict 19/20
+[17:03:34] verify | func= Motivation | rank= 16 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[17:03:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:03:36] select | verify strict 20/20
+[17:03:36] verify | func= Motivation | rank= 19 | pid= astro-ph/0102186 | title_snip='The jet model for Sgr A*: radio and X-ray spectrum' | abs_len= 1257
+[17:03:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in current understanding of supernova explosions and their interactions with the circumstellar medium motivate further research and potential future work in this area?
+- WINNER: astro-ph/0103015 | Supernova Explosions and Neutron Star Formation
+- QUOTE : do not yield explosions
+- WHY   : sufficient
+- ANSWER: Current understanding of supernova explosions is limited by the inability of spherical models to reproduce explosions, even with accurate neutrino transport, highlighting the need for multi-dimensional simulations and better understanding of neutrino interactions. This gap in knowledge motivates further research to resolve the discrepancies and improve our comprehension of these complex astrophysical phenomena (astro-ph/0103015).
+[17:03:44] main | running function= FutureWork
+[17:03:44] select | function= FutureWork | candidates_in= 20
+[17:03:44] select | core_terms= ['supernova', 'circumstellar medium', 'explosion', 'interaction']
+[17:03:44] select | no cosine prune; kept=20/20
+[17:03:44] select | pool_size= 20 | ranks= [0, 3, 4, 1, 2, 6, 8, 13, 11, 5, 7, 10, 12, 14, 15, 18, 17, 9, 16, 19] | pids= ['astro-ph/0103015', 'astro-ph/0101018', 'astro-ph/0104156', 'astro-ph/0102212', 'hep-ph/0104094', 'astro-ph/0102087', 'astro-ph/0103412', 'astro-ph/0103384', 'astro-ph/0102485', 'astro-ph/0101043', 'astro-ph/0103075', 'astro-ph/0103195', 'astro-ph/0101175', 'hep-ph/0101276', 'hep-ph/0103121', 'astro-ph/0101120', 'astro-ph/0102228', 'astro-ph/0103461', 'astro-ph/0102276', 'astro-ph/0102186']
+[17:03:44] select | verify strict 1/20
+[17:03:44] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103015 | title_snip='Supernova Explosions and Neutron Star Formation' | abs_len= 1135
+[17:03:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:03:47] select | verify strict 2/20
+[17:03:47] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101018 | title_snip='Science Prospects for SPI' | abs_len= 1822
+[17:03:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:03:50] select | verify strict 3/20
+[17:03:50] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104156 | title_snip='SN1993J VLBI (I): The Center of the Explosion and a Limit on Anisotrop…' | abs_len= 1795
+[17:03:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:03:54] select | verify strict 4/20
+[17:03:54] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102212 | title_snip='Theoretical Implications of the Gamma-Ray Burst - Supernova Connection' | abs_len= 721
+[17:03:57] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[17:03:57] select | verify strict 5/20
+[17:03:57] verify | func= FutureWork | rank= 2 | pid= hep-ph/0104094 | title_snip='Supernova Constraints on Neutrino Mass and Mixing' | abs_len= 396
+[17:04:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:04:00] select | verify strict 6/20
+[17:04:00] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102087 | title_snip='The X-ray nebula of the filled center supernova remnant 3C58 and its
+ …' | abs_len= 1417
+[17:04:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:04:03] select | verify strict 7/20
+[17:04:03] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103412 | title_snip='Thermal X-ray emission of the remnants of ashperical Supernova
+  explo…' | abs_len= 518
+[17:04:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:04:06] select | verify strict 8/20
+[17:04:06] verify | func= FutureWork | rank= 13 | pid= astro-ph/0103384 | title_snip='Gamma-Ray Bursts at Low Redshift' | abs_len= 1121
+[17:04:09] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:04:09] select | verify strict 9/20
+[17:04:09] verify | func= FutureWork | rank= 11 | pid= astro-ph/0102485 | title_snip='Optical Observations of Core-Collapse Supernovae' | abs_len= 1583
+[17:04:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:04:13] select | verify strict 10/20
+[17:04:13] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101043 | title_snip='Young Supernova Remnants: Issues and Prospects' | abs_len= 386
+[17:04:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:04:16] select | verify strict 11/20
+[17:04:16] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103075 | title_snip='Supernova constraints on spatial variations of the vacuum energy densi…' | abs_len= 810
+[17:04:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:18] select | verify strict 12/20
+[17:04:18] verify | func= FutureWork | rank= 10 | pid= astro-ph/0103195 | title_snip='High Energy Neutrino Astronomy: Towards Kilometer-Scale Detectors' | abs_len= 1586
+[17:04:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:21] select | verify strict 13/20
+[17:04:21] verify | func= FutureWork | rank= 12 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[17:04:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:04:24] select | verify strict 14/20
+[17:04:24] verify | func= FutureWork | rank= 14 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[17:04:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:26] select | verify strict 15/20
+[17:04:26] verify | func= FutureWork | rank= 15 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[17:04:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:29] select | verify strict 16/20
+[17:04:29] verify | func= FutureWork | rank= 18 | pid= astro-ph/0101120 | title_snip='TeV Gamma-Ray Astronomy in the new Millennium' | abs_len= 928
+[17:04:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:04:32] select | verify strict 17/20
+[17:04:32] verify | func= FutureWork | rank= 17 | pid= astro-ph/0102228 | title_snip='The evolution of emission lines in HII galaxies' | abs_len= 1484
+[17:04:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:34] select | verify strict 18/20
+[17:04:34] verify | func= FutureWork | rank= 9 | pid= astro-ph/0103461 | title_snip='Observations of Circumstellar Disks' | abs_len= 1289
+[17:04:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:37] select | verify strict 19/20
+[17:04:37] verify | func= FutureWork | rank= 16 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[17:04:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:04:39] select | verify strict 20/20
+[17:04:39] verify | func= FutureWork | rank= 19 | pid= astro-ph/0102186 | title_snip='The jet model for Sgr A*: radio and X-ray spectrum' | abs_len= 1257
+[17:04:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What limitations in current understanding of supernova explosions and their interactions with the circumstellar medium motivate further research and potential future work in this area?
+- WINNER: astro-ph/0103015 | Supernova Explosions and Neutron Star Formation
+- QUOTE : resolve the problem that state-of-the-art spherical models do not yield explosions
+- WHY   : sufficient
+- ANSWER: Further research is needed to overcome the limitations of current spherical models, which fail to produce explosions even with accurate neutrino transport. Future work may involve multi-dimensional hydrodynamics, general relativity, and improved understanding of neutrino interactions in neutron star matter to better comprehend supernova explosions and their interactions with the circumstellar medium (astro-ph/0103015).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

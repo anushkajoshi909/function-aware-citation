@@ -1,0 +1,482 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query asks whether a specific method is employed to compare model performance (comparison) and how it is used within the work (usage)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.61 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.81it/s]
+Reading arXiv_src_0101_001.jsonl: 31it [00:00, 108.16it/s]
+Reading arXiv_src_0101_001.jsonl: 172it [00:00, 543.17it/s]
+Reading arXiv_src_0101_001.jsonl: 299it [00:00, 776.68it/s]
+Reading arXiv_src_0101_001.jsonl: 394it [00:00, 780.67it/s]
+Reading arXiv_src_0101_001.jsonl: 483it [00:00, 633.95it/s]
+Reading arXiv_src_0101_001.jsonl: 558it [00:01, 563.45it/s]
+Reading arXiv_src_0101_001.jsonl: 662it [00:01, 672.99it/s]
+Reading arXiv_src_0101_001.jsonl: 762it [00:01, 752.47it/s]
+Reading arXiv_src_0101_001.jsonl: 871it [00:01, 840.37it/s]
+Reading arXiv_src_0101_001.jsonl: 978it [00:01, 901.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1080it [00:01, 933.04it/s]
+Reading arXiv_src_0101_001.jsonl: 1209it [00:01, 1027.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1316it [00:01, 1028.56it/s]
+Reading arXiv_src_0101_001.jsonl: 1447it [00:01, 1107.84it/s]
+Reading arXiv_src_0101_001.jsonl: 1577it [00:01, 1163.88it/s]
+Reading arXiv_src_0101_001.jsonl: 1706it [00:02, 1200.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1828it [00:02, 1164.47it/s]
+Reading arXiv_src_0101_001.jsonl: 1997it [00:02, 1314.12it/s]
+Reading arXiv_src_0101_001.jsonl: 2163it [00:02, 1412.88it/s]
+Reading arXiv_src_0101_001.jsonl: 2310it [00:02, 1427.98it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 933.12it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  4.93it/s]
+Reading arXiv_src_0102_001.jsonl: 130it [00:00, 535.86it/s]
+Reading arXiv_src_0102_001.jsonl: 264it [00:00, 834.15it/s]
+Reading arXiv_src_0102_001.jsonl: 367it [00:00, 796.85it/s]
+Reading arXiv_src_0102_001.jsonl: 459it [00:00, 607.31it/s]
+Reading arXiv_src_0102_001.jsonl: 533it [00:01, 453.87it/s]
+Reading arXiv_src_0102_001.jsonl: 593it [00:01, 482.04it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:01, 559.87it/s]
+Reading arXiv_src_0102_001.jsonl: 789it [00:01, 690.83it/s]
+Reading arXiv_src_0102_001.jsonl: 915it [00:01, 834.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1024it [00:01, 901.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1139it [00:01, 969.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1243it [00:01, 981.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1381it [00:01, 1093.95it/s]
+Reading arXiv_src_0102_001.jsonl: 1513it [00:01, 1159.06it/s]
+Reading arXiv_src_0102_001.jsonl: 1632it [00:02, 1167.43it/s]
+Reading arXiv_src_0102_001.jsonl: 1775it [00:02, 1243.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1924it [00:02, 1311.09it/s]
+Reading arXiv_src_0102_001.jsonl: 2067it [00:02, 1344.72it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 902.90it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  4.90it/s]
+Reading arXiv_src_0103_001.jsonl: 29it [00:00, 118.17it/s]
+Reading arXiv_src_0103_001.jsonl: 166it [00:00, 581.50it/s]
+Reading arXiv_src_0103_001.jsonl: 315it [00:00, 894.76it/s]
+Reading arXiv_src_0103_001.jsonl: 420it [00:00, 945.78it/s]
+Reading arXiv_src_0103_001.jsonl: 523it [00:00, 657.46it/s]
+Reading arXiv_src_0103_001.jsonl: 606it [00:00, 631.24it/s]
+Reading arXiv_src_0103_001.jsonl: 704it [00:01, 712.52it/s]
+Reading arXiv_src_0103_001.jsonl: 788it [00:01, 743.14it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:01, 798.97it/s]
+Reading arXiv_src_0103_001.jsonl: 996it [00:01, 883.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1095it [00:01, 911.25it/s]
+Reading arXiv_src_0103_001.jsonl: 1212it [00:01, 983.08it/s]
+Reading arXiv_src_0103_001.jsonl: 1314it [00:01, 992.88it/s]
+Reading arXiv_src_0103_001.jsonl: 1448it [00:01, 1094.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1586it [00:01, 1162.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1730it [00:02, 1240.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1872it [00:02, 1290.96it/s]
+Reading arXiv_src_0103_001.jsonl: 2002it [00:02, 1277.23it/s]
+Reading arXiv_src_0103_001.jsonl: 2147it [00:02, 1324.83it/s]
+Reading arXiv_src_0103_001.jsonl: 2288it [00:02, 1347.80it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 972.28it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.74it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  8.04it/s]
+Reading arXiv_src_0104_001.jsonl: 144it [00:00, 576.92it/s]
+Reading arXiv_src_0104_001.jsonl: 298it [00:00, 926.14it/s]
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 965.07it/s]
+Reading arXiv_src_0104_001.jsonl: 507it [00:00, 689.68it/s]
+Reading arXiv_src_0104_001.jsonl: 589it [00:01, 460.93it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 565.88it/s]
+Reading arXiv_src_0104_001.jsonl: 783it [00:01, 633.93it/s]
+Reading arXiv_src_0104_001.jsonl: 884it [00:01, 719.60it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 825.22it/s]
+Reading arXiv_src_0104_001.jsonl: 1115it [00:01, 906.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1223it [00:01, 950.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1326it [00:01, 966.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1461it [00:01, 1064.23it/s]
+Reading arXiv_src_0104_001.jsonl: 1590it [00:02, 1125.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1706it [00:02, 1131.52it/s]
+Reading arXiv_src_0104_001.jsonl: 1849it [00:02, 1217.79it/s]
+Reading arXiv_src_0104_001.jsonl: 2003it [00:02, 1311.39it/s]
+Reading arXiv_src_0104_001.jsonl: 2136it [00:02, 905.70it/s] 
+Reading arXiv_src_0104_001.jsonl: 2286it [00:02, 1039.25it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 853.78it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: Does the current work use a specific method to compare the performance of different models for X-ray burst oscillations?
+[debug] classifier labels: ['Compares', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T18:10:03.552964       Compares, Uses
+1     1  0.713969  ...  2025-09-21T18:10:03.552964       Compares, Uses
+2     2  0.662626  ...  2025-09-21T18:10:03.552964       Compares, Uses
+3     3  0.658117  ...  2025-09-21T18:10:03.552964       Compares, Uses
+4     4  0.499153  ...  2025-09-21T18:10:03.552964       Compares, Uses
+5     5  0.493862  ...  2025-09-21T18:10:03.552964       Compares, Uses
+6     6  0.476643  ...  2025-09-21T18:10:03.552964       Compares, Uses
+7     7  0.381026  ...  2025-09-21T18:10:03.552964       Compares, Uses
+8     8  0.379563  ...  2025-09-21T18:10:03.552964       Compares, Uses
+9     9  0.305891  ...  2025-09-21T18:10:03.552964       Compares, Uses
+
+[10 rows x 12 columns]
+[20:10:14] main | args: Namespace(max_check=20, debug=True)
+[20:10:14] read_last_jsonl | path= classified_outputs.jsonl
+[20:10:14] read_last_jsonl | total_lines= 1
+[20:10:14] main | query='Does the current work use a specific method to compare the performance of different models for X-ray burst oscillations?' | funcs=['Compares', 'Uses']
+[20:10:16] main | core_terms= ['X-ray burst oscillations', 'performance comparison', 'X-ray']
+[20:10:16] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[20:10:16] load_topk_jsonl | rows= 20
+[20:10:16] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102297 title_snip='Comparison of source detection procedures for XMM-Newton images' abs_len= 1589
+[20:10:16] main | running function= Compares
+[20:10:16] select | function= Compares | candidates_in= 20
+[20:10:16] select | core_terms= ['X-ray burst oscillations', 'performance comparison', 'X-ray']
+[20:10:16] select | no cosine prune; kept=20/20
+[20:10:16] select | pool_size= 20 | ranks= [0, 5, 10, 12, 14, 16, 2, 3, 6, 9, 8, 13, 15, 1, 4, 7, 11, 17, 18, 19] | pids= ['astro-ph/0102297', 'astro-ph/0104323', 'astro-ph/0102277', 'astro-ph/0102233', 'astro-ph/0104057', 'astro-ph/0103357', 'astro-ph/0101160', 'astro-ph/0103431', 'astro-ph/0104413', 'astro-ph/0104285', 'hep-ph/0102103', 'hep-ph/0104290', 'nucl-th/0101038', 'astro-ph/0102271', 'astro-ph/0101291', 'astro-ph/0104120', 'hep-ph/0103052', 'nucl-th/0103045', 'astro-ph/0102434', 'astro-ph/0102145']
+[20:10:16] select | verify strict 1/20
+[20:10:16] verify | func= Compares | rank= 0 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[20:10:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:10:18] select | verify strict 2/20
+[20:10:18] verify | func= Compares | rank= 5 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[20:10:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[20:10:22] select | verify strict 3/20
+[20:10:22] verify | func= Compares | rank= 10 | pid= astro-ph/0102277 | title_snip='BATSE Observations of Fast X-ray Transients Detected by BeppoSAX-WFC' | abs_len= 799
+[20:10:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[20:10:25] select | verify strict 4/20
+[20:10:25] verify | func= Compares | rank= 12 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[20:10:28] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[20:10:28] select | verify strict 5/20
+[20:10:28] verify | func= Compares | rank= 14 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[20:10:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[20:10:31] select | verify strict 6/20
+[20:10:31] verify | func= Compares | rank= 16 | pid= astro-ph/0103357 | title_snip='X-Ray Light Curves of Gamma-ray Bursts Detected with the All-Sky Monit…' | abs_len= 1411
+[20:10:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:10:34] select | verify strict 7/20
+[20:10:34] verify | func= Compares | rank= 2 | pid= astro-ph/0101160 | title_snip='X-ray Observations of Neutron Star Binaries: Evidence for Millisecond
+…' | abs_len= 985
+[20:10:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[20:10:37] select | verify strict 8/20
+[20:10:37] verify | func= Compares | rank= 3 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[20:10:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:10:40] select | verify strict 9/20
+[20:10:40] verify | func= Compares | rank= 6 | pid= astro-ph/0104413 | title_snip='Modelling X-ray variability in the structured atmospheres of hot stars' | abs_len= 676
+[20:10:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:10:43] select | verify strict 10/20
+[20:10:43] verify | func= Compares | rank= 9 | pid= astro-ph/0104285 | title_snip='The first outburst of SAX J1808.4-3658 revisited' | abs_len= 1053
+[20:10:46] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[20:10:46] select | verify strict 11/20
+[20:10:46] verify | func= Compares | rank= 8 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[20:10:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:10:49] select | verify strict 12/20
+[20:10:49] verify | func= Compares | rank= 13 | pid= hep-ph/0104290 | title_snip='On a QCD-based pion distribution amplitude vs. recent experimental dat…' | abs_len= 547
+[20:10:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:10:51] select | verify strict 13/20
+[20:10:51] verify | func= Compares | rank= 15 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[20:10:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:10:54] select | verify strict 14/20
+[20:10:54] verify | func= Compares | rank= 1 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[20:10:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:10:57] select | verify strict 15/20
+[20:10:57] verify | func= Compares | rank= 4 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[20:10:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:10:59] select | verify strict 16/20
+[20:10:59] verify | func= Compares | rank= 7 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[20:11:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:02] select | verify strict 17/20
+[20:11:02] verify | func= Compares | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[20:11:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:05] select | verify strict 18/20
+[20:11:05] verify | func= Compares | rank= 17 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[20:11:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:07] select | verify strict 19/20
+[20:11:07] verify | func= Compares | rank= 18 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[20:11:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:10] select | verify strict 20/20
+[20:11:10] verify | func= Compares | rank= 19 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[20:11:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:12] select | strict pass found 0 winners → trying relaxed
+[20:11:12] select | verify relaxed 1/20
+[20:11:12] verify | func= Compares | rank= 0 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[20:11:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:11:15] select | verify relaxed 2/20
+[20:11:15] verify | func= Compares | rank= 5 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[20:11:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:11:19] select | verify relaxed 3/20
+[20:11:19] verify | func= Compares | rank= 10 | pid= astro-ph/0102277 | title_snip='BATSE Observations of Fast X-ray Transients Detected by BeppoSAX-WFC' | abs_len= 799
+[20:11:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[20:11:22] select | verify relaxed 4/20
+[20:11:22] verify | func= Compares | rank= 12 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[20:11:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:11:25] select | verify relaxed 5/20
+[20:11:25] verify | func= Compares | rank= 14 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[20:11:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:11:28] select | verify relaxed 6/20
+[20:11:28] verify | func= Compares | rank= 16 | pid= astro-ph/0103357 | title_snip='X-Ray Light Curves of Gamma-ray Bursts Detected with the All-Sky Monit…' | abs_len= 1411
+[20:11:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:11:31] select | verify relaxed 7/20
+[20:11:31] verify | func= Compares | rank= 2 | pid= astro-ph/0101160 | title_snip='X-ray Observations of Neutron Star Binaries: Evidence for Millisecond
+…' | abs_len= 985
+[20:11:34] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[20:11:34] select | verify relaxed 8/20
+[20:11:34] verify | func= Compares | rank= 3 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[20:11:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:11:37] select | verify relaxed 9/20
+[20:11:37] verify | func= Compares | rank= 6 | pid= astro-ph/0104413 | title_snip='Modelling X-ray variability in the structured atmospheres of hot stars' | abs_len= 676
+[20:11:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:11:41] select | verify relaxed 10/20
+[20:11:41] verify | func= Compares | rank= 9 | pid= astro-ph/0104285 | title_snip='The first outburst of SAX J1808.4-3658 revisited' | abs_len= 1053
+[20:11:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:11:44] select | verify relaxed 11/20
+[20:11:44] verify | func= Compares | rank= 8 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[20:11:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:46] select | verify relaxed 12/20
+[20:11:46] verify | func= Compares | rank= 13 | pid= hep-ph/0104290 | title_snip='On a QCD-based pion distribution amplitude vs. recent experimental dat…' | abs_len= 547
+[20:11:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:49] select | verify relaxed 13/20
+[20:11:49] verify | func= Compares | rank= 15 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[20:11:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:51] select | verify relaxed 14/20
+[20:11:51] verify | func= Compares | rank= 1 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[20:11:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:54] select | verify relaxed 15/20
+[20:11:54] verify | func= Compares | rank= 4 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[20:11:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:11:57] select | verify relaxed 16/20
+[20:11:57] verify | func= Compares | rank= 7 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[20:11:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:11:59] select | verify relaxed 17/20
+[20:11:59] verify | func= Compares | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[20:12:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:02] select | verify relaxed 18/20
+[20:12:02] verify | func= Compares | rank= 17 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[20:12:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:05] select | verify relaxed 19/20
+[20:12:05] verify | func= Compares | rank= 18 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[20:12:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:07] select | verify relaxed 20/20
+[20:12:07] verify | func= Compares | rank= 19 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[20:12:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:12] arbiter | rejected off-topic winner: astro-ph/0102297
+
+================================================================================
+FUNCTION: Compares
+QUERY   : Does the current work use a specific method to compare the performance of different models for X-ray burst oscillations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+[20:12:12] main | running function= Uses
+[20:12:12] select | function= Uses | candidates_in= 20
+[20:12:12] select | core_terms= ['X-ray burst oscillations', 'performance comparison', 'X-ray']
+[20:12:12] select | no cosine prune; kept=20/20
+[20:12:12] select | pool_size= 20 | ranks= [0, 3, 10, 12, 14, 2, 5, 6, 9, 16, 1, 8, 13, 15, 17, 18, 19, 4, 7, 11] | pids= ['astro-ph/0102297', 'astro-ph/0103431', 'astro-ph/0102277', 'astro-ph/0102233', 'astro-ph/0104057', 'astro-ph/0101160', 'astro-ph/0104323', 'astro-ph/0104413', 'astro-ph/0104285', 'astro-ph/0103357', 'astro-ph/0102271', 'hep-ph/0102103', 'hep-ph/0104290', 'nucl-th/0101038', 'nucl-th/0103045', 'astro-ph/0102434', 'astro-ph/0102145', 'astro-ph/0101291', 'astro-ph/0104120', 'hep-ph/0103052']
+[20:12:12] select | verify strict 1/20
+[20:12:12] verify | func= Uses | rank= 0 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[20:12:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:14] select | verify strict 2/20
+[20:12:14] verify | func= Uses | rank= 3 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[20:12:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:12:17] select | verify strict 3/20
+[20:12:17] verify | func= Uses | rank= 10 | pid= astro-ph/0102277 | title_snip='BATSE Observations of Fast X-ray Transients Detected by BeppoSAX-WFC' | abs_len= 799
+[20:12:20] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:12:20] select | verify strict 4/20
+[20:12:20] verify | func= Uses | rank= 12 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[20:12:23] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[20:12:23] select | verify strict 5/20
+[20:12:23] verify | func= Uses | rank= 14 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[20:12:27] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:12:27] select | verify strict 6/20
+[20:12:27] verify | func= Uses | rank= 2 | pid= astro-ph/0101160 | title_snip='X-ray Observations of Neutron Star Binaries: Evidence for Millisecond
+…' | abs_len= 985
+[20:12:29] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[20:12:29] select | verify strict 7/20
+[20:12:29] verify | func= Uses | rank= 5 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[20:12:33] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:12:33] select | verify strict 8/20
+[20:12:33] verify | func= Uses | rank= 6 | pid= astro-ph/0104413 | title_snip='Modelling X-ray variability in the structured atmospheres of hot stars' | abs_len= 676
+[20:12:36] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:12:36] select | verify strict 9/20
+[20:12:36] verify | func= Uses | rank= 9 | pid= astro-ph/0104285 | title_snip='The first outburst of SAX J1808.4-3658 revisited' | abs_len= 1053
+[20:12:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[20:12:39] select | verify strict 10/20
+[20:12:39] verify | func= Uses | rank= 16 | pid= astro-ph/0103357 | title_snip='X-Ray Light Curves of Gamma-ray Bursts Detected with the All-Sky Monit…' | abs_len= 1411
+[20:12:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:12:42] select | verify strict 11/20
+[20:12:42] verify | func= Uses | rank= 1 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[20:12:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:44] select | verify strict 12/20
+[20:12:44] verify | func= Uses | rank= 8 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[20:12:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:47] select | verify strict 13/20
+[20:12:47] verify | func= Uses | rank= 13 | pid= hep-ph/0104290 | title_snip='On a QCD-based pion distribution amplitude vs. recent experimental dat…' | abs_len= 547
+[20:12:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:49] select | verify strict 14/20
+[20:12:49] verify | func= Uses | rank= 15 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[20:12:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:52] select | verify strict 15/20
+[20:12:52] verify | func= Uses | rank= 17 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[20:12:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:55] select | verify strict 16/20
+[20:12:55] verify | func= Uses | rank= 18 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[20:12:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:12:57] select | verify strict 17/20
+[20:12:57] verify | func= Uses | rank= 19 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[20:13:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:00] select | verify strict 18/20
+[20:13:00] verify | func= Uses | rank= 4 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[20:13:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:13:02] select | verify strict 19/20
+[20:13:02] verify | func= Uses | rank= 7 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[20:13:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:05] select | verify strict 20/20
+[20:13:05] verify | func= Uses | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[20:13:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:08] select | strict pass found 0 winners → trying relaxed
+[20:13:08] select | verify relaxed 1/20
+[20:13:08] verify | func= Uses | rank= 0 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[20:13:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:13:11] select | verify relaxed 2/20
+[20:13:11] verify | func= Uses | rank= 3 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[20:13:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:13:14] select | verify relaxed 3/20
+[20:13:14] verify | func= Uses | rank= 10 | pid= astro-ph/0102277 | title_snip='BATSE Observations of Fast X-ray Transients Detected by BeppoSAX-WFC' | abs_len= 799
+[20:13:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:13:17] select | verify relaxed 4/20
+[20:13:17] verify | func= Uses | rank= 12 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[20:13:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:13:20] select | verify relaxed 5/20
+[20:13:20] verify | func= Uses | rank= 14 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[20:13:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:13:23] select | verify relaxed 6/20
+[20:13:23] verify | func= Uses | rank= 2 | pid= astro-ph/0101160 | title_snip='X-ray Observations of Neutron Star Binaries: Evidence for Millisecond
+…' | abs_len= 985
+[20:13:26] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[20:13:26] select | verify relaxed 7/20
+[20:13:26] verify | func= Uses | rank= 5 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[20:13:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:13:30] select | verify relaxed 8/20
+[20:13:30] verify | func= Uses | rank= 6 | pid= astro-ph/0104413 | title_snip='Modelling X-ray variability in the structured atmospheres of hot stars' | abs_len= 676
+[20:13:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:13:33] select | verify relaxed 9/20
+[20:13:33] verify | func= Uses | rank= 9 | pid= astro-ph/0104285 | title_snip='The first outburst of SAX J1808.4-3658 revisited' | abs_len= 1053
+[20:13:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:13:36] select | verify relaxed 10/20
+[20:13:36] verify | func= Uses | rank= 16 | pid= astro-ph/0103357 | title_snip='X-Ray Light Curves of Gamma-ray Bursts Detected with the All-Sky Monit…' | abs_len= 1411
+[20:13:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:13:39] select | verify relaxed 11/20
+[20:13:39] verify | func= Uses | rank= 1 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[20:13:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:42] select | verify relaxed 12/20
+[20:13:42] verify | func= Uses | rank= 8 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[20:13:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:44] select | verify relaxed 13/20
+[20:13:44] verify | func= Uses | rank= 13 | pid= hep-ph/0104290 | title_snip='On a QCD-based pion distribution amplitude vs. recent experimental dat…' | abs_len= 547
+[20:13:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:47] select | verify relaxed 14/20
+[20:13:47] verify | func= Uses | rank= 15 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[20:13:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:49] select | verify relaxed 15/20
+[20:13:49] verify | func= Uses | rank= 17 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[20:13:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:52] select | verify relaxed 16/20
+[20:13:52] verify | func= Uses | rank= 18 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[20:13:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:54] select | verify relaxed 17/20
+[20:13:54] verify | func= Uses | rank= 19 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[20:13:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:13:57] select | verify relaxed 18/20
+[20:13:57] verify | func= Uses | rank= 4 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[20:14:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:14:00] select | verify relaxed 19/20
+[20:14:00] verify | func= Uses | rank= 7 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[20:14:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:14:02] select | verify relaxed 20/20
+[20:14:02] verify | func= Uses | rank= 11 | pid= hep-ph/0103052 | title_snip='Oscillation Measurements with Upgraded Conventional Neutrino Beams' | abs_len= 1133
+[20:14:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:14:07] arbiter | rejected off-topic winner: astro-ph/0102297
+
+================================================================================
+FUNCTION: Uses
+QUERY   : Does the current work use a specific method to compare the performance of different models for X-ray burst oscillations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

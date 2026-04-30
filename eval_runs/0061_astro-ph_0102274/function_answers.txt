@@ -1,0 +1,2 @@
+The DIRECT project is motivated by the need to directly obtain distances to the galaxies M31 and M33, which are crucial in the cosmological distance ladder (astro-ph/0103441). [Background]
+The abstract does not provide information relevant to Motivation. [Motivation]

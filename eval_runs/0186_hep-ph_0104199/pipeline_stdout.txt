@@ -1,0 +1,328 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how studying KK graviton self-interactions can broaden (extend) knowledge of the Randall\u2011Sundrum model and also seeks suggestions for future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.91 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.92it/s]
+Reading arXiv_src_0101_001.jsonl: 68it [00:00, 393.71it/s]
+Reading arXiv_src_0101_001.jsonl: 222it [00:00, 915.20it/s]
+Reading arXiv_src_0101_001.jsonl: 334it [00:00, 988.13it/s]
+Reading arXiv_src_0101_001.jsonl: 433it [00:00, 829.13it/s]
+Reading arXiv_src_0101_001.jsonl: 520it [00:00, 644.46it/s]
+Reading arXiv_src_0101_001.jsonl: 592it [00:00, 638.14it/s]
+Reading arXiv_src_0101_001.jsonl: 699it [00:00, 746.08it/s]
+Reading arXiv_src_0101_001.jsonl: 802it [00:01, 821.08it/s]
+Reading arXiv_src_0101_001.jsonl: 906it [00:01, 881.12it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:01, 921.84it/s]
+Reading arXiv_src_0101_001.jsonl: 1146it [00:01, 1038.61it/s]
+Reading arXiv_src_0101_001.jsonl: 1282it [00:01, 1130.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1398it [00:01, 1110.12it/s]
+Reading arXiv_src_0101_001.jsonl: 1530it [00:01, 1169.04it/s]
+Reading arXiv_src_0101_001.jsonl: 1666it [00:01, 1220.42it/s]
+Reading arXiv_src_0101_001.jsonl: 1790it [00:01, 1185.76it/s]
+Reading arXiv_src_0101_001.jsonl: 1947it [00:02, 1294.71it/s]
+Reading arXiv_src_0101_001.jsonl: 2124it [00:02, 1427.55it/s]
+Reading arXiv_src_0101_001.jsonl: 2279it [00:02, 1461.29it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1036.79it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1314.01it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1355.69it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 856.06it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 517.05it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 558.08it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:01, 615.05it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 740.42it/s]
+Reading arXiv_src_0102_001.jsonl: 920it [00:01, 875.77it/s]
+Reading arXiv_src_0102_001.jsonl: 1025it [00:01, 920.09it/s]
+Reading arXiv_src_0102_001.jsonl: 1145it [00:01, 994.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1254it [00:01, 1015.72it/s]
+Reading arXiv_src_0102_001.jsonl: 1401it [00:01, 1142.18it/s]
+Reading arXiv_src_0102_001.jsonl: 1534it [00:01, 1195.44it/s]
+Reading arXiv_src_0102_001.jsonl: 1662it [00:01, 1218.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1810it [00:01, 1294.29it/s]
+Reading arXiv_src_0102_001.jsonl: 1962it [00:02, 1360.02it/s]
+Reading arXiv_src_0102_001.jsonl: 2114it [00:02, 1407.45it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1013.18it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1356.24it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1522.24it/s]
+Reading arXiv_src_0103_001.jsonl: 454it [00:00, 1118.29it/s]
+Reading arXiv_src_0103_001.jsonl: 576it [00:00, 721.05it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 772.00it/s]
+Reading arXiv_src_0103_001.jsonl: 764it [00:00, 794.67it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 888.26it/s]
+Reading arXiv_src_0103_001.jsonl: 989it [00:01, 935.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1092it [00:01, 960.14it/s]
+Reading arXiv_src_0103_001.jsonl: 1214it [00:01, 1031.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1322it [00:01, 1034.33it/s]
+Reading arXiv_src_0103_001.jsonl: 1464it [00:01, 1142.50it/s]
+Reading arXiv_src_0103_001.jsonl: 1600it [00:01, 1205.67it/s]
+Reading arXiv_src_0103_001.jsonl: 1750it [00:01, 1286.73it/s]
+Reading arXiv_src_0103_001.jsonl: 1889it [00:01, 1317.14it/s]
+Reading arXiv_src_0103_001.jsonl: 2030it [00:01, 1341.63it/s]
+Reading arXiv_src_0103_001.jsonl: 2171it [00:01, 1357.14it/s]
+Reading arXiv_src_0103_001.jsonl: 2325it [00:02, 1411.07it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1132.69it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 144it [00:00, 1437.01it/s]
+Reading arXiv_src_0104_001.jsonl: 305it [00:00, 1534.58it/s]
+Reading arXiv_src_0104_001.jsonl: 459it [00:00, 1028.45it/s]
+Reading arXiv_src_0104_001.jsonl: 577it [00:00, 552.97it/s] 
+Reading arXiv_src_0104_001.jsonl: 672it [00:00, 625.25it/s]
+Reading arXiv_src_0104_001.jsonl: 767it [00:01, 691.00it/s]
+Reading arXiv_src_0104_001.jsonl: 865it [00:01, 754.93it/s]
+Reading arXiv_src_0104_001.jsonl: 986it [00:01, 866.19it/s]
+Reading arXiv_src_0104_001.jsonl: 1101it [00:01, 939.39it/s]
+Reading arXiv_src_0104_001.jsonl: 1216it [00:01, 995.57it/s]
+Reading arXiv_src_0104_001.jsonl: 1325it [00:01, 1006.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1462it [00:01, 1107.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1599it [00:01, 1180.53it/s]
+Reading arXiv_src_0104_001.jsonl: 1723it [00:01, 1197.50it/s]
+Reading arXiv_src_0104_001.jsonl: 1870it [00:01, 1276.04it/s]
+Reading arXiv_src_0104_001.jsonl: 2023it [00:02, 1349.13it/s]
+Reading arXiv_src_0104_001.jsonl: 2160it [00:02, 939.27it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 971.05it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?
+[debug] classifier labels: ['Extends', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+1     1  0.531690  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+2     2  0.376761  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+3     3  0.362653  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+4     4  0.291053  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+5     5  0.284752  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+6     6  0.279108  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+7     7  0.270365  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+8     8  0.248934  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+9     9  0.210371  ...  2025-09-21T22:29:44.256937  Extends, FutureWork
+
+[10 rows x 12 columns]
+[00:29:50] main | args: Namespace(max_check=20, debug=True)
+[00:29:50] read_last_jsonl | path= classified_outputs.jsonl
+[00:29:50] read_last_jsonl | total_lines= 1
+[00:29:50] main | query='How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?' | funcs=['Extends', 'FutureWork']
+[00:29:52] main | core_terms= ['KK graviton', 'Graviton Factory', 'Randall-Sundrum model', 'self-interactions', '5-d', 'KK', 'Randall-Sundrum']
+[00:29:52] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:29:52] load_topk_jsonl | rows= 20
+[00:29:52] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0104199 title_snip='Bulk Physics at a Graviton Factory' abs_len= 1379
+[00:29:52] main | running function= Extends
+[00:29:52] select | function= Extends | candidates_in= 20
+[00:29:52] select | core_terms= ['KK graviton', 'Graviton Factory', 'Randall-Sundrum model', 'self-interactions', '5-d', 'KK', 'Randall-Sundrum']
+[00:29:52] select | no cosine prune; kept=20/20
+[00:29:52] select | pool_size= 20 | ranks= [0, 3, 5, 1, 4, 6, 7, 9, 10, 13, 15, 18, 11, 12, 2, 8, 17, 14, 16, 19] | pids= ['hep-ph/0104199', 'hep-ph/0103308', 'hep-ph/0103127', 'hep-ph/0103055', 'hep-th/0102144', 'hep-ph/0103214', 'hep-ph/0102182', 'hep-th/0102145', 'hep-th/0101038', 'hep-ph/0103297', 'hep-th/0104049', 'hep-th/0103193', 'hep-ph/0104195', 'hep-ph/0103187', 'hep-th/0101214', 'hep-ph/0104002', 'hep-th/0101060', 'hep-ph/0102216', 'hep-ph/0101276', 'hep-th/0101198']
+[00:29:52] select | verify strict 1/20
+[00:29:52] verify | func= Extends | rank= 0 | pid= hep-ph/0104199 | title_snip='Bulk Physics at a Graviton Factory' | abs_len= 1379
+[00:29:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:29:56] select | verify strict 2/20
+[00:29:56] verify | func= Extends | rank= 3 | pid= hep-ph/0103308 | title_snip='Z boson pair production at LHC in a stabilized Randall-Sundrum scenari…' | abs_len= 990
+[00:29:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:29:59] select | verify strict 3/20
+[00:29:59] verify | func= Extends | rank= 5 | pid= hep-ph/0103127 | title_snip='Muon Anomalous Magnetic Moment (g-2)_mu and the Randall-Sundrum Model' | abs_len= 618
+[00:30:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:30:03] select | verify strict 4/20
+[00:30:03] verify | func= Extends | rank= 1 | pid= hep-ph/0103055 | title_snip='Constraining the Randall-Sundrum Model Using Diphoton Production at
+  …' | abs_len= 521
+[00:30:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:30:06] select | verify strict 5/20
+[00:30:06] verify | func= Extends | rank= 4 | pid= hep-th/0102144 | title_snip='Dynamical Instabilities of the Randall-Sundrum Model' | abs_len= 587
+[00:30:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:09] select | verify strict 6/20
+[00:30:09] verify | func= Extends | rank= 6 | pid= hep-ph/0103214 | title_snip='Randall-Sundrum II Cosmology, AdS/CFT, and the Bulk Black Hole' | abs_len= 1468
+[00:30:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:12] select | verify strict 7/20
+[00:30:12] verify | func= Extends | rank= 7 | pid= hep-ph/0102182 | title_snip='Cosmology of Randall-Sundrum models' | abs_len= 374
+[00:30:15] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:15] select | verify strict 8/20
+[00:30:15] verify | func= Extends | rank= 9 | pid= hep-th/0102145 | title_snip='Four-Dimensional Supergravities from Five-Dimensional Brane Worlds' | abs_len= 718
+[00:30:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:18] select | verify strict 9/20
+[00:30:18] verify | func= Extends | rank= 10 | pid= hep-th/0101038 | title_snip='Static solutions in the R^4 brane world' | abs_len= 1241
+[00:30:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:30:21] select | verify strict 10/20
+[00:30:21] verify | func= Extends | rank= 13 | pid= hep-ph/0103297 | title_snip='Inflation with bulk fields in the Randall-Sundrum warped
+  compactific…' | abs_len= 531
+[00:30:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= — cue_hint= False
+[00:30:24] select | verify strict 11/20
+[00:30:24] verify | func= Extends | rank= 15 | pid= hep-th/0104049 | title_snip='Second Order Perturbations in the Randall-Sundrum Infinite Brane-World…' | abs_len= 963
+[00:30:27] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[00:30:27] select | verify strict 12/20
+[00:30:27] verify | func= Extends | rank= 18 | pid= hep-th/0103193 | title_snip='Effective potential in Brane-World scenarios' | abs_len= 267
+[00:30:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:30] select | verify strict 13/20
+[00:30:30] verify | func= Extends | rank= 11 | pid= hep-ph/0104195 | title_snip='A note on brane cosmology' | abs_len= 442
+[00:30:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:33] select | verify strict 14/20
+[00:30:33] verify | func= Extends | rank= 12 | pid= hep-ph/0103187 | title_snip='Radion Phenomenology in the Randall Sundrum Scenario' | abs_len= 794
+[00:30:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:30:36] select | verify strict 15/20
+[00:30:36] verify | func= Extends | rank= 2 | pid= hep-th/0101214 | title_snip='Brane-worlds in 5d supergravity' | abs_len= 192
+[00:30:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:30:39] select | verify strict 16/20
+[00:30:39] verify | func= Extends | rank= 8 | pid= hep-ph/0104002 | title_snip='Dynamical Fermion Masses Under the Influence of Kaluza-Klein Fermions …' | abs_len= 391
+[00:30:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:42] select | verify strict 17/20
+[00:30:42] verify | func= Extends | rank= 17 | pid= hep-th/0101060 | title_snip='Evolution of Cosmological Models in the Brane-world Scenario' | abs_len= 679
+[00:30:45] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:30:45] select | verify strict 18/20
+[00:30:45] verify | func= Extends | rank= 14 | pid= hep-ph/0102216 | title_snip='The Power of Brane-Induced Gravity' | abs_len= 898
+[00:30:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[00:30:48] select | verify strict 19/20
+[00:30:48] verify | func= Extends | rank= 16 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[00:30:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:30:50] select | verify strict 20/20
+[00:30:50] verify | func= Extends | rank= 19 | pid= hep-th/0101198 | title_snip='Self-gravity of Brane Worlds: A New Hierarchy Twist' | abs_len= 1257
+[00:30:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?
+- WINNER: hep-ph/0104199 | Bulk Physics at a Graviton Factory
+- QUOTE : measuring the self-interactions of these KK gravitons
+- WHY   : sufficient
+- ANSWER: The study of KK graviton self-interactions at a future Graviton Factory extends our understanding of the 5-d Randall-Sundrum model by probing the accuracy of the 5-d Einstein gravity picture and yielding indirect information on the self-coupling of the 4-d graviton. This extends prior results by allowing for the measurement of decays of heavier states to lighter ones, which can be sensitive to higher derivative operators and provide insight into the 5-d fermion mass matrix (hep-ph/0104199).
+[00:31:01] main | running function= FutureWork
+[00:31:01] select | function= FutureWork | candidates_in= 20
+[00:31:01] select | core_terms= ['KK graviton', 'Graviton Factory', 'Randall-Sundrum model', 'self-interactions', '5-d', 'KK', 'Randall-Sundrum']
+[00:31:01] select | no cosine prune; kept=20/20
+[00:31:01] select | pool_size= 20 | ranks= [0, 3, 5, 1, 4, 6, 7, 9, 10, 13, 15, 18, 2, 8, 11, 12, 17, 14, 16, 19] | pids= ['hep-ph/0104199', 'hep-ph/0103308', 'hep-ph/0103127', 'hep-ph/0103055', 'hep-th/0102144', 'hep-ph/0103214', 'hep-ph/0102182', 'hep-th/0102145', 'hep-th/0101038', 'hep-ph/0103297', 'hep-th/0104049', 'hep-th/0103193', 'hep-th/0101214', 'hep-ph/0104002', 'hep-ph/0104195', 'hep-ph/0103187', 'hep-th/0101060', 'hep-ph/0102216', 'hep-ph/0101276', 'hep-th/0101198']
+[00:31:01] select | verify strict 1/20
+[00:31:01] verify | func= FutureWork | rank= 0 | pid= hep-ph/0104199 | title_snip='Bulk Physics at a Graviton Factory' | abs_len= 1379
+[00:31:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:31:05] select | verify strict 2/20
+[00:31:05] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103308 | title_snip='Z boson pair production at LHC in a stabilized Randall-Sundrum scenari…' | abs_len= 990
+[00:31:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:08] select | verify strict 3/20
+[00:31:08] verify | func= FutureWork | rank= 5 | pid= hep-ph/0103127 | title_snip='Muon Anomalous Magnetic Moment (g-2)_mu and the Randall-Sundrum Model' | abs_len= 618
+[00:31:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:11] select | verify strict 4/20
+[00:31:11] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103055 | title_snip='Constraining the Randall-Sundrum Model Using Diphoton Production at
+  …' | abs_len= 521
+[00:31:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:14] select | verify strict 5/20
+[00:31:14] verify | func= FutureWork | rank= 4 | pid= hep-th/0102144 | title_snip='Dynamical Instabilities of the Randall-Sundrum Model' | abs_len= 587
+[00:31:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:17] select | verify strict 6/20
+[00:31:17] verify | func= FutureWork | rank= 6 | pid= hep-ph/0103214 | title_snip='Randall-Sundrum II Cosmology, AdS/CFT, and the Bulk Black Hole' | abs_len= 1468
+[00:31:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:20] select | verify strict 7/20
+[00:31:20] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102182 | title_snip='Cosmology of Randall-Sundrum models' | abs_len= 374
+[00:31:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:23] select | verify strict 8/20
+[00:31:23] verify | func= FutureWork | rank= 9 | pid= hep-th/0102145 | title_snip='Four-Dimensional Supergravities from Five-Dimensional Brane Worlds' | abs_len= 718
+[00:31:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:27] select | verify strict 9/20
+[00:31:27] verify | func= FutureWork | rank= 10 | pid= hep-th/0101038 | title_snip='Static solutions in the R^4 brane world' | abs_len= 1241
+[00:31:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:29] select | verify strict 10/20
+[00:31:29] verify | func= FutureWork | rank= 13 | pid= hep-ph/0103297 | title_snip='Inflation with bulk fields in the Randall-Sundrum warped
+  compactific…' | abs_len= 531
+[00:31:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:32] select | verify strict 11/20
+[00:31:32] verify | func= FutureWork | rank= 15 | pid= hep-th/0104049 | title_snip='Second Order Perturbations in the Randall-Sundrum Infinite Brane-World…' | abs_len= 963
+[00:31:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:35] select | verify strict 12/20
+[00:31:35] verify | func= FutureWork | rank= 18 | pid= hep-th/0103193 | title_snip='Effective potential in Brane-World scenarios' | abs_len= 267
+[00:31:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:38] select | verify strict 13/20
+[00:31:38] verify | func= FutureWork | rank= 2 | pid= hep-th/0101214 | title_snip='Brane-worlds in 5d supergravity' | abs_len= 192
+[00:31:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:41] select | verify strict 14/20
+[00:31:41] verify | func= FutureWork | rank= 8 | pid= hep-ph/0104002 | title_snip='Dynamical Fermion Masses Under the Influence of Kaluza-Klein Fermions …' | abs_len= 391
+[00:31:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:44] select | verify strict 15/20
+[00:31:44] verify | func= FutureWork | rank= 11 | pid= hep-ph/0104195 | title_snip='A note on brane cosmology' | abs_len= 442
+[00:31:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:47] select | verify strict 16/20
+[00:31:47] verify | func= FutureWork | rank= 12 | pid= hep-ph/0103187 | title_snip='Radion Phenomenology in the Randall Sundrum Scenario' | abs_len= 794
+[00:31:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:50] select | verify strict 17/20
+[00:31:50] verify | func= FutureWork | rank= 17 | pid= hep-th/0101060 | title_snip='Evolution of Cosmological Models in the Brane-world Scenario' | abs_len= 679
+[00:31:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:52] select | verify strict 18/20
+[00:31:52] verify | func= FutureWork | rank= 14 | pid= hep-ph/0102216 | title_snip='The Power of Brane-Induced Gravity' | abs_len= 898
+[00:31:55] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:31:55] select | verify strict 19/20
+[00:31:55] verify | func= FutureWork | rank= 16 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[00:31:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:31:58] select | verify strict 20/20
+[00:31:58] verify | func= FutureWork | rank= 19 | pid= hep-th/0101198 | title_snip='Self-gravity of Brane Worlds: A New Hierarchy Twist' | abs_len= 1257
+[00:32:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?
+- WINNER: hep-ph/0104199 | Bulk Physics at a Graviton Factory
+- QUOTE : measuring the self-interactions of these KK gravitons
+- WHY   : sufficient
+- ANSWER: The study of KK graviton self-interactions at a future Graviton Factory can extend our understanding of the 5-d Randall-Sundrum model by probing the accuracy of the 5-d Einstein gravity picture and yielding indirect information on the self-coupling of the 4-d graviton. Future research directions include measuring decays of heavier states to lighter ones and studying the sensitivity to higher derivative operators, such as the Gauss-Bonnet term (hep-ph/0104199).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,396 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks to compare the study's results with other works and seeks suggested future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 4.57 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 129it [00:00, 1288.40it/s]
+Reading arXiv_src_0101_001.jsonl: 280it [00:00, 1416.12it/s]
+Reading arXiv_src_0101_001.jsonl: 422it [00:00, 1015.12it/s]
+Reading arXiv_src_0101_001.jsonl: 534it [00:00, 695.71it/s] 
+Reading arXiv_src_0101_001.jsonl: 619it [00:00, 729.25it/s]
+Reading arXiv_src_0101_001.jsonl: 725it [00:00, 807.65it/s]
+Reading arXiv_src_0101_001.jsonl: 837it [00:00, 887.25it/s]
+Reading arXiv_src_0101_001.jsonl: 942it [00:01, 929.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1056it [00:01, 987.06it/s]
+Reading arXiv_src_0101_001.jsonl: 1186it [00:01, 1074.95it/s]
+Reading arXiv_src_0101_001.jsonl: 1299it [00:01, 1089.19it/s]
+Reading arXiv_src_0101_001.jsonl: 1415it [00:01, 1106.68it/s]
+Reading arXiv_src_0101_001.jsonl: 1547it [00:01, 1167.50it/s]
+Reading arXiv_src_0101_001.jsonl: 1682it [00:01, 1216.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1805it [00:01, 1204.38it/s]
+Reading arXiv_src_0101_001.jsonl: 1967it [00:01, 1323.12it/s]
+Reading arXiv_src_0101_001.jsonl: 2140it [00:01, 1439.70it/s]
+Reading arXiv_src_0101_001.jsonl: 2300it [00:02, 1482.53it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1113.51it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1327.01it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1366.05it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 848.75it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 525.71it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 560.29it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:00, 621.18it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 744.96it/s]
+Reading arXiv_src_0102_001.jsonl: 923it [00:01, 882.85it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 939.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1000.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1266it [00:01, 1041.53it/s]
+Reading arXiv_src_0102_001.jsonl: 1409it [00:01, 1150.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1191.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1227.70it/s]
+Reading arXiv_src_0102_001.jsonl: 1823it [00:01, 1304.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1370.86it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1398.92it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1019.96it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  6.38it/s]
+Reading arXiv_src_0103_001.jsonl: 32it [00:00, 150.12it/s]
+Reading arXiv_src_0103_001.jsonl: 171it [00:00, 649.73it/s]
+Reading arXiv_src_0103_001.jsonl: 323it [00:00, 961.12it/s]
+Reading arXiv_src_0103_001.jsonl: 429it [00:00, 990.94it/s]
+Reading arXiv_src_0103_001.jsonl: 533it [00:00, 665.33it/s]
+Reading arXiv_src_0103_001.jsonl: 616it [00:00, 651.11it/s]
+Reading arXiv_src_0103_001.jsonl: 720it [00:01, 728.09it/s]
+Reading arXiv_src_0103_001.jsonl: 813it [00:01, 778.01it/s]
+Reading arXiv_src_0103_001.jsonl: 915it [00:01, 839.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1025it [00:01, 910.20it/s]
+Reading arXiv_src_0103_001.jsonl: 1141it [00:01, 979.42it/s]
+Reading arXiv_src_0103_001.jsonl: 1245it [00:01, 992.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1363it [00:01, 1034.55it/s]
+Reading arXiv_src_0103_001.jsonl: 1514it [00:01, 1172.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1648it [00:01, 1219.87it/s]
+Reading arXiv_src_0103_001.jsonl: 1785it [00:01, 1263.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1929it [00:02, 1313.95it/s]
+Reading arXiv_src_0103_001.jsonl: 2066it [00:02, 1330.09it/s]
+Reading arXiv_src_0103_001.jsonl: 2200it [00:02, 1320.07it/s]
+Reading arXiv_src_0103_001.jsonl: 2352it [00:02, 1376.99it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1007.36it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 1478.53it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 1551.61it/s]
+Reading arXiv_src_0104_001.jsonl: 465it [00:00, 993.61it/s] 
+Reading arXiv_src_0104_001.jsonl: 582it [00:00, 554.93it/s]
+Reading arXiv_src_0104_001.jsonl: 688it [00:00, 646.15it/s]
+Reading arXiv_src_0104_001.jsonl: 779it [00:01, 699.98it/s]
+Reading arXiv_src_0104_001.jsonl: 882it [00:01, 772.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 874.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1119it [00:01, 951.34it/s]
+Reading arXiv_src_0104_001.jsonl: 1232it [00:01, 997.41it/s]
+Reading arXiv_src_0104_001.jsonl: 1341it [00:01, 1015.48it/s]
+Reading arXiv_src_0104_001.jsonl: 1471it [00:01, 1095.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1611it [00:01, 1181.29it/s]
+Reading arXiv_src_0104_001.jsonl: 1736it [00:01, 1201.21it/s]
+Reading arXiv_src_0104_001.jsonl: 1888it [00:01, 1292.54it/s]
+Reading arXiv_src_0104_001.jsonl: 2036it [00:02, 1347.69it/s]
+Reading arXiv_src_0104_001.jsonl: 2173it [00:02, 1028.71it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 990.75it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?
+[debug] classifier labels: ['Compares', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+1     1  0.668129  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+2     2  0.615019  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+3     3  0.592886  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+4     4  0.570467  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+5     5  0.541620  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+6     6  0.528636  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+7     7  0.488029  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+8     8  0.476650  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+9     9  0.407585  ...  2025-09-21T16:41:03.152366  Compares, FutureWork
+
+[10 rows x 12 columns]
+[18:41:10] main | args: Namespace(max_check=20, debug=True)
+[18:41:10] read_last_jsonl | path= classified_outputs.jsonl
+[18:41:10] read_last_jsonl | total_lines= 1
+[18:41:10] main | query='How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?' | funcs=['Compares', 'FutureWork']
+[18:41:12] main | core_terms= ['radiative shock waves', 'shock wave', 'radiation flux']
+[18:41:12] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[18:41:12] load_topk_jsonl | rows= 20
+[18:41:12] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103108 title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' abs_len= 1788
+[18:41:12] main | running function= Compares
+[18:41:12] select | function= Compares | candidates_in= 20
+[18:41:12] select | core_terms= ['radiative shock waves', 'shock wave', 'radiation flux']
+[18:41:12] select | no cosine prune; kept=20/20
+[18:41:12] select | pool_size= 20 | ranks= [2, 0, 5, 12, 13, 14, 16, 1, 3, 4, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19] | pids= ['astro-ph/0101165', 'astro-ph/0103108', 'astro-ph/0104120', 'astro-ph/0104374', 'nucl-th/0101038', 'astro-ph/0101075', 'astro-ph/0103396', 'astro-ph/0101291', 'astro-ph/0101175', 'astro-ph/0102091', 'astro-ph/0102434', 'astro-ph/0102276', 'astro-ph/0103424', 'hep-ph/0101112', 'astro-ph/0102271', 'astro-ph/0103028', 'astro-ph/0104243', 'astro-ph/0101247', 'astro-ph/0102145', 'astro-ph/0101380']
+[18:41:12] select | verify strict 1/20
+[18:41:12] verify | func= Compares | rank= 2 | pid= astro-ph/0101165 | title_snip='The structure of radiative shock waves. III. The model grid for
+  part…' | abs_len= 1734
+[18:41:15] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:41:15] select | verify strict 2/20
+[18:41:15] verify | func= Compares | rank= 0 | pid= astro-ph/0103108 | title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' | abs_len= 1788
+[18:41:18] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[18:41:18] select | verify strict 3/20
+[18:41:18] verify | func= Compares | rank= 5 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[18:41:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:41:21] select | verify strict 4/20
+[18:41:21] verify | func= Compares | rank= 12 | pid= astro-ph/0104374 | title_snip='A ballistic bow shock model for jet-driven protostellar outflow shells' | abs_len= 1306
+[18:41:24] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:41:24] select | verify strict 5/20
+[18:41:24] verify | func= Compares | rank= 13 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[18:41:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:41:27] select | verify strict 6/20
+[18:41:27] verify | func= Compares | rank= 14 | pid= astro-ph/0101075 | title_snip='New Results from a Survey of Galactic Outflows in Nearby Active Galact…' | abs_len= 627
+[18:41:30] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[18:41:30] select | verify strict 7/20
+[18:41:30] verify | func= Compares | rank= 16 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[18:41:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:41:33] select | verify strict 8/20
+[18:41:33] verify | func= Compares | rank= 1 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[18:41:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:41:36] select | verify strict 9/20
+[18:41:36] verify | func= Compares | rank= 3 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[18:41:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:41:38] select | verify strict 10/20
+[18:41:38] verify | func= Compares | rank= 4 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[18:41:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:41:41] select | verify strict 11/20
+[18:41:41] verify | func= Compares | rank= 6 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[18:41:44] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:41:44] select | verify strict 12/20
+[18:41:44] verify | func= Compares | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[18:41:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:41:46] select | verify strict 13/20
+[18:41:46] verify | func= Compares | rank= 8 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[18:41:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:41:50] select | verify strict 14/20
+[18:41:50] verify | func= Compares | rank= 9 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[18:41:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:41:53] select | verify strict 15/20
+[18:41:53] verify | func= Compares | rank= 10 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[18:41:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:41:56] select | verify strict 16/20
+[18:41:56] verify | func= Compares | rank= 11 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[18:41:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:41:58] select | verify strict 17/20
+[18:41:58] verify | func= Compares | rank= 15 | pid= astro-ph/0104243 | title_snip='A Detailed Analysis of a Cygnus Loop Shock-Cloud Interaction' | abs_len= 1512
+[18:42:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:42:02] select | verify strict 18/20
+[18:42:02] verify | func= Compares | rank= 17 | pid= astro-ph/0101247 | title_snip='Numerical Simulations Of Particle Acceleration In Relativistic Shocks
+…' | abs_len= 541
+[18:42:05] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:42:05] select | verify strict 19/20
+[18:42:05] verify | func= Compares | rank= 18 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[18:42:08] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:42:08] select | verify strict 20/20
+[18:42:08] verify | func= Compares | rank= 19 | pid= astro-ph/0101380 | title_snip='Modeling Flares Produced in Blazars' | abs_len= 1047
+[18:42:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?
+- WINNER: astro-ph/0104120 | Numerical Simulations of Relativistic Shock Acceleration
+- QUOTE : cosmic ray spectra at relativistic shock waves
+- WHY   : sufficient
+- ANSWER: The results of this study on relativistic shock waves are compared to non-relativistic shocks, showing that cosmic ray spectra at relativistic shock waves depend substantially on magnetic field configurations and turbulence spectra. The findings suggest that the theory of cosmic ray acceleration in relativistic shock waves is not able to uniquely explain observed synchrotron spectra, indicating a need for further research (astro-ph/0104120).
+[18:42:17] main | running function= FutureWork
+[18:42:17] select | function= FutureWork | candidates_in= 20
+[18:42:17] select | core_terms= ['radiative shock waves', 'shock wave', 'radiation flux']
+[18:42:17] select | no cosine prune; kept=20/20
+[18:42:17] select | pool_size= 20 | ranks= [2, 0, 5, 1, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] | pids= ['astro-ph/0101165', 'astro-ph/0103108', 'astro-ph/0104120', 'astro-ph/0101291', 'astro-ph/0101175', 'astro-ph/0102091', 'astro-ph/0102434', 'astro-ph/0102276', 'astro-ph/0103424', 'hep-ph/0101112', 'astro-ph/0102271', 'astro-ph/0103028', 'astro-ph/0104374', 'nucl-th/0101038', 'astro-ph/0101075', 'astro-ph/0104243', 'astro-ph/0103396', 'astro-ph/0101247', 'astro-ph/0102145', 'astro-ph/0101380']
+[18:42:17] select | verify strict 1/20
+[18:42:17] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101165 | title_snip='The structure of radiative shock waves. III. The model grid for
+  part…' | abs_len= 1734
+[18:42:20] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:42:20] select | verify strict 2/20
+[18:42:20] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103108 | title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' | abs_len= 1788
+[18:42:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:42:24] select | verify strict 3/20
+[18:42:24] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[18:42:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:42:26] select | verify strict 4/20
+[18:42:26] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[18:42:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:42:29] select | verify strict 5/20
+[18:42:29] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[18:42:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[18:42:32] select | verify strict 6/20
+[18:42:32] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[18:42:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:42:35] select | verify strict 7/20
+[18:42:35] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[18:42:38] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:42:38] select | verify strict 8/20
+[18:42:38] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[18:42:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:42:41] select | verify strict 9/20
+[18:42:41] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[18:42:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[18:42:44] select | verify strict 10/20
+[18:42:44] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[18:42:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:42:46] select | verify strict 11/20
+[18:42:46] verify | func= FutureWork | rank= 10 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[18:42:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:42:49] select | verify strict 12/20
+[18:42:49] verify | func= FutureWork | rank= 11 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[18:42:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:42:52] select | verify strict 13/20
+[18:42:52] verify | func= FutureWork | rank= 12 | pid= astro-ph/0104374 | title_snip='A ballistic bow shock model for jet-driven protostellar outflow shells' | abs_len= 1306
+[18:42:55] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[18:42:55] select | verify strict 14/20
+[18:42:55] verify | func= FutureWork | rank= 13 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[18:42:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:42:57] select | verify strict 15/20
+[18:42:57] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101075 | title_snip='New Results from a Survey of Galactic Outflows in Nearby Active Galact…' | abs_len= 627
+[18:43:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:43:00] select | verify strict 16/20
+[18:43:00] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104243 | title_snip='A Detailed Analysis of a Cygnus Loop Shock-Cloud Interaction' | abs_len= 1512
+[18:43:03] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:43:03] select | verify strict 17/20
+[18:43:03] verify | func= FutureWork | rank= 16 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[18:43:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[18:43:10] select | verify strict 18/20
+[18:43:10] verify | func= FutureWork | rank= 17 | pid= astro-ph/0101247 | title_snip='Numerical Simulations Of Particle Acceleration In Relativistic Shocks
+…' | abs_len= 541
+[18:43:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:43:13] select | verify strict 19/20
+[18:43:13] verify | func= FutureWork | rank= 18 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[18:43:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:43:16] select | verify strict 20/20
+[18:43:16] verify | func= FutureWork | rank= 19 | pid= astro-ph/0101380 | title_snip='Modeling Flares Produced in Blazars' | abs_len= 1047
+[18:43:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:43:20] select | strict pass found 0 winners → trying relaxed
+[18:43:20] select | verify relaxed 1/20
+[18:43:20] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101165 | title_snip='The structure of radiative shock waves. III. The model grid for
+  part…' | abs_len= 1734
+[18:43:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:43:23] select | verify relaxed 2/20
+[18:43:23] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103108 | title_snip='Radiative Hydromagnetic Shocks in Relativistic Outflow Sources' | abs_len= 1788
+[18:43:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:43:27] select | verify relaxed 3/20
+[18:43:27] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[18:43:29] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[18:43:29] select | verify relaxed 4/20
+[18:43:29] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101291 | title_snip='On the origin of Gamma Ray Burst radiation' | abs_len= 449
+[18:43:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:43:32] select | verify relaxed 5/20
+[18:43:32] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[18:43:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:43:35] select | verify relaxed 6/20
+[18:43:35] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102091 | title_snip='Modeling the production of flares in $\gamma$-ray quasars' | abs_len= 1551
+[18:43:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:43:38] select | verify relaxed 7/20
+[18:43:38] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102434 | title_snip='Stability analyses of two-temperature radiative shocks: formulation,
+ …' | abs_len= 1257
+[18:43:41] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[18:43:41] select | verify relaxed 8/20
+[18:43:41] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[18:43:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:43:44] select | verify relaxed 9/20
+[18:43:44] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103424 | title_snip='Internal shocks in the jets of radio-loud quasars' | abs_len= 1696
+[18:43:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:43:47] select | verify relaxed 10/20
+[18:43:47] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[18:43:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:43:49] select | verify relaxed 11/20
+[18:43:49] verify | func= FutureWork | rank= 10 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[18:43:52] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[18:43:52] select | verify relaxed 12/20
+[18:43:52] verify | func= FutureWork | rank= 11 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[18:43:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:43:55] select | verify relaxed 13/20
+[18:43:55] verify | func= FutureWork | rank= 12 | pid= astro-ph/0104374 | title_snip='A ballistic bow shock model for jet-driven protostellar outflow shells' | abs_len= 1306
+[18:43:58] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:43:58] select | verify relaxed 14/20
+[18:43:58] verify | func= FutureWork | rank= 13 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[18:44:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:44:00] select | verify relaxed 15/20
+[18:44:00] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101075 | title_snip='New Results from a Survey of Galactic Outflows in Nearby Active Galact…' | abs_len= 627
+[18:44:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:44:03] select | verify relaxed 16/20
+[18:44:03] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104243 | title_snip='A Detailed Analysis of a Cygnus Loop Shock-Cloud Interaction' | abs_len= 1512
+[18:44:06] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:44:06] select | verify relaxed 17/20
+[18:44:06] verify | func= FutureWork | rank= 16 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[18:44:09] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[18:44:09] select | verify relaxed 18/20
+[18:44:09] verify | func= FutureWork | rank= 17 | pid= astro-ph/0101247 | title_snip='Numerical Simulations Of Particle Acceleration In Relativistic Shocks
+…' | abs_len= 541
+[18:44:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:44:12] select | verify relaxed 19/20
+[18:44:12] verify | func= FutureWork | rank= 18 | pid= astro-ph/0102145 | title_snip='A Module for Radiation Hydrodynamic Calculations With ZEUS-2D Using
+  …' | abs_len= 1601
+[18:44:15] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[18:44:15] select | verify relaxed 20/20
+[18:44:15] verify | func= FutureWork | rank= 19 | pid= astro-ph/0101380 | title_snip='Modeling Flares Produced in Blazars' | abs_len= 1047
+[18:44:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the results of this study on radiative shock waves compare to other works, and what future research directions are suggested by the findings on shock wave structure and radiation flux?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

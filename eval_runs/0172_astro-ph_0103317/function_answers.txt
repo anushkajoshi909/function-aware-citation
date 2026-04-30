@@ -1,0 +1,2 @@
+The current code's approach to solving the transfer of continuum and lines is compared to previous work in the field of numerical radiative transfer. Understanding this comparison requires background information on recent advances in numerical radiative transfer and its applications in molecular astrophysics (astro-ph/0102269). [Compares]
+The current code's approach to solving the transfer of continuum and lines is compared to previous work, building on a code presented in a 2000 paper by Dumont, Abrassart, and Collin (astro-ph/0103317). [Background]

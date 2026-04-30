@@ -1,0 +1,476 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query asks why further study of metal absorption systems is needed (motivation) and explicitly requests future research directions (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.38 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.38it/s]
+Reading arXiv_src_0101_001.jsonl: 32it [00:00, 80.40it/s]
+Reading arXiv_src_0101_001.jsonl: 183it [00:00, 460.47it/s]
+Reading arXiv_src_0101_001.jsonl: 312it [00:00, 677.82it/s]
+Reading arXiv_src_0101_001.jsonl: 408it [00:00, 673.76it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:01, 592.86it/s]
+Reading arXiv_src_0101_001.jsonl: 567it [00:01, 560.96it/s]
+Reading arXiv_src_0101_001.jsonl: 673it [00:01, 673.71it/s]
+Reading arXiv_src_0101_001.jsonl: 776it [00:01, 761.31it/s]
+Reading arXiv_src_0101_001.jsonl: 888it [00:01, 854.38it/s]
+Reading arXiv_src_0101_001.jsonl: 1001it [00:01, 927.41it/s]
+Reading arXiv_src_0101_001.jsonl: 1110it [00:01, 971.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1242it [00:01, 1070.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1354it [00:01, 1071.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:02, 1140.26it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:02, 1200.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1220.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1200.43it/s]
+Reading arXiv_src_0101_001.jsonl: 2057it [00:02, 1381.42it/s]
+Reading arXiv_src_0101_001.jsonl: 2211it [00:02, 1426.94it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 893.83it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1335.97it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1371.78it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 854.42it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 527.59it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 559.64it/s]
+Reading arXiv_src_0102_001.jsonl: 671it [00:00, 607.36it/s]
+Reading arXiv_src_0102_001.jsonl: 786it [00:01, 730.91it/s]
+Reading arXiv_src_0102_001.jsonl: 916it [00:01, 871.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 935.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1002.93it/s]
+Reading arXiv_src_0102_001.jsonl: 1266it [00:01, 1042.72it/s]
+Reading arXiv_src_0102_001.jsonl: 1411it [00:01, 1157.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1194.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1232.85it/s]
+Reading arXiv_src_0102_001.jsonl: 1826it [00:01, 1316.25it/s]
+Reading arXiv_src_0102_001.jsonl: 1979it [00:02, 1377.90it/s]
+Reading arXiv_src_0102_001.jsonl: 2130it [00:02, 1412.09it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1021.16it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 132it [00:00, 1312.37it/s]
+Reading arXiv_src_0103_001.jsonl: 293it [00:00, 1484.94it/s]
+Reading arXiv_src_0103_001.jsonl: 442it [00:00, 1178.42it/s]
+Reading arXiv_src_0103_001.jsonl: 566it [00:00, 756.47it/s] 
+Reading arXiv_src_0103_001.jsonl: 659it [00:00, 767.61it/s]
+Reading arXiv_src_0103_001.jsonl: 750it [00:00, 801.97it/s]
+Reading arXiv_src_0103_001.jsonl: 858it [00:00, 873.76it/s]
+Reading arXiv_src_0103_001.jsonl: 963it [00:01, 919.43it/s]
+Reading arXiv_src_0103_001.jsonl: 1073it [00:01, 968.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1198it [00:01, 1047.94it/s]
+Reading arXiv_src_0103_001.jsonl: 1307it [00:01, 1044.60it/s]
+Reading arXiv_src_0103_001.jsonl: 1448it [00:01, 1146.12it/s]
+Reading arXiv_src_0103_001.jsonl: 1587it [00:01, 1209.97it/s]
+Reading arXiv_src_0103_001.jsonl: 1744it [00:01, 1309.83it/s]
+Reading arXiv_src_0103_001.jsonl: 1884it [00:01, 1333.36it/s]
+Reading arXiv_src_0103_001.jsonl: 2027it [00:01, 1361.18it/s]
+Reading arXiv_src_0103_001.jsonl: 2170it [00:01, 1378.03it/s]
+Reading arXiv_src_0103_001.jsonl: 2325it [00:02, 1427.27it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1146.62it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  4.37it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  6.53it/s]
+Reading arXiv_src_0104_001.jsonl: 144it [00:00, 507.10it/s]
+Reading arXiv_src_0104_001.jsonl: 303it [00:00, 870.47it/s]
+Reading arXiv_src_0104_001.jsonl: 407it [00:00, 922.93it/s]
+Reading arXiv_src_0104_001.jsonl: 510it [00:00, 681.22it/s]
+Reading arXiv_src_0104_001.jsonl: 593it [00:01, 465.12it/s]
+Reading arXiv_src_0104_001.jsonl: 698it [00:01, 572.58it/s]
+Reading arXiv_src_0104_001.jsonl: 791it [00:01, 644.61it/s]
+Reading arXiv_src_0104_001.jsonl: 894it [00:01, 729.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1016it [00:01, 848.72it/s]
+Reading arXiv_src_0104_001.jsonl: 1127it [00:01, 916.39it/s]
+Reading arXiv_src_0104_001.jsonl: 1250it [00:01, 1000.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1359it [00:01, 1002.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1487it [00:01, 1080.24it/s]
+Reading arXiv_src_0104_001.jsonl: 1631it [00:02, 1182.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1758it [00:02, 1207.48it/s]
+Reading arXiv_src_0104_001.jsonl: 1902it [00:02, 1274.39it/s]
+Reading arXiv_src_0104_001.jsonl: 2056it [00:02, 1352.13it/s]
+Reading arXiv_src_0104_001.jsonl: 2193it [00:02, 938.29it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 847.99it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?
+[debug] classifier labels: ['Motivation', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+1     1  0.281376  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+2     2  0.281028  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+3     3  0.226524  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+4     4  0.217998  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+5     5  0.216265  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+6     6  0.193788  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+7     7  0.188821  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+8     8  0.186610  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+9     9  0.175333  ...  2025-09-21T14:00:53.458408  Motivation, FutureWork
+
+[10 rows x 12 columns]
+[16:01:00] main | args: Namespace(max_check=20, debug=True)
+[16:01:00] read_last_jsonl | path= classified_outputs.jsonl
+[16:01:00] read_last_jsonl | total_lines= 1
+[16:01:00] main | query='How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?' | funcs=['Motivation', 'FutureWork']
+[16:01:02] main | core_terms= ['metal absorption systems', 'quasar', 'HDF-South', 'J2233-606']
+[16:01:02] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:01:02] load_topk_jsonl | rows= 20
+[16:01:02] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102491 title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' abs_len= 1611
+[16:01:02] main | running function= Motivation
+[16:01:02] select | function= Motivation | candidates_in= 20
+[16:01:02] select | core_terms= ['metal absorption systems', 'quasar', 'HDF-South', 'J2233-606']
+[16:01:02] select | no cosine prune; kept=20/20
+[16:01:02] select | pool_size= 20 | ranks= [0, 1, 2, 5, 19, 18, 3, 6, 10, 13, 4, 7, 8, 9, 11, 12, 14, 15, 16, 17] | pids= ['astro-ph/0102491', 'astro-ph/0102230', 'astro-ph/0104457', 'astro-ph/0103048', 'astro-ph/0102310', 'astro-ph/0102370', 'astro-ph/0104474', 'astro-ph/0103305', 'astro-ph/0101335', 'astro-ph/0101153', 'astro-ph/0101340', 'astro-ph/0101472', 'astro-ph/0104479', 'cond-mat/0101106', 'cond-mat/0101243', 'nucl-ex/0104021', 'astro-ph/0101084', 'astro-ph/0104308', 'hep-ph/0102251', 'astro-ph/0104171']
+[16:01:02] select | verify strict 1/20
+[16:01:02] verify | func= Motivation | rank= 0 | pid= astro-ph/0102491 | title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' | abs_len= 1611
+[16:01:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[16:01:05] select | verify strict 2/20
+[16:01:05] verify | func= Motivation | rank= 1 | pid= astro-ph/0102230 | title_snip='UVES observations of a damped Ly-alpha system at z_abs = 4.466 towards…' | abs_len= 1334
+[16:01:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:08] select | verify strict 3/20
+[16:01:08] verify | func= Motivation | rank= 2 | pid= astro-ph/0104457 | title_snip='Cold Gas Kinematics in an L* Spiral Galaxy at z=0.437: The Nature of
+ …' | abs_len= 1588
+[16:01:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:10] select | verify strict 4/20
+[16:01:10] verify | func= Motivation | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[16:01:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:13] select | verify strict 5/20
+[16:01:13] verify | func= Motivation | rank= 19 | pid= astro-ph/0102310 | title_snip='Spatially Resolved Millimeter Spectroscopy of the Gravitational Lens P…' | abs_len= 964
+[16:01:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:16] select | verify strict 6/20
+[16:01:16] verify | func= Motivation | rank= 18 | pid= astro-ph/0102370 | title_snip='Chandra Observations of Two High-Redshift Quasars' | abs_len= 1639
+[16:01:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:18] select | verify strict 7/20
+[16:01:18] verify | func= Motivation | rank= 3 | pid= astro-ph/0104474 | title_snip='A New Measurement of the Primordial Abundance of Deuterium: Toward
+  C…' | abs_len= 1559
+[16:01:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:21] select | verify strict 8/20
+[16:01:21] verify | func= Motivation | rank= 6 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[16:01:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:23] select | verify strict 9/20
+[16:01:23] verify | func= Motivation | rank= 10 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[16:01:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:26] select | verify strict 10/20
+[16:01:26] verify | func= Motivation | rank= 13 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[16:01:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:28] select | verify strict 11/20
+[16:01:28] verify | func= Motivation | rank= 4 | pid= astro-ph/0101340 | title_snip='Dust-penetrated morphology in the high-redshift universe: clues from N…' | abs_len= 1560
+[16:01:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:31] select | verify strict 12/20
+[16:01:31] verify | func= Motivation | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[16:01:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:33] select | verify strict 13/20
+[16:01:33] verify | func= Motivation | rank= 8 | pid= astro-ph/0104479 | title_snip='H2 Formation in Low Metallicity Galaxies' | abs_len= 1514
+[16:01:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:36] select | verify strict 14/20
+[16:01:36] verify | func= Motivation | rank= 9 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[16:01:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:39] select | verify strict 15/20
+[16:01:39] verify | func= Motivation | rank= 11 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[16:01:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:41] select | verify strict 16/20
+[16:01:41] verify | func= Motivation | rank= 12 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[16:01:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:44] select | verify strict 17/20
+[16:01:44] verify | func= Motivation | rank= 14 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[16:01:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:46] select | verify strict 18/20
+[16:01:46] verify | func= Motivation | rank= 15 | pid= astro-ph/0104308 | title_snip='Chemical Enrichment at High Redshifts: Understanding the Nature of
+  D…' | abs_len= 1464
+[16:01:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:49] select | verify strict 19/20
+[16:01:49] verify | func= Motivation | rank= 16 | pid= hep-ph/0102251 | title_snip='The Pure Leptonic Decays of $D_s$ Meson and Their Radiative Correction…' | abs_len= 968
+[16:01:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:52] select | verify strict 20/20
+[16:01:52] verify | func= Motivation | rank= 17 | pid= astro-ph/0104171 | title_snip='Partially Absorbed Comptonization Spectrum from the Nearly Edge-on
+  S…' | abs_len= 1673
+[16:01:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:01:54] select | strict pass found 0 winners → trying relaxed
+[16:01:54] select | verify relaxed 1/20
+[16:01:54] verify | func= Motivation | rank= 0 | pid= astro-ph/0102491 | title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' | abs_len= 1611
+[16:01:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:01:57] select | verify relaxed 2/20
+[16:01:57] verify | func= Motivation | rank= 1 | pid= astro-ph/0102230 | title_snip='UVES observations of a damped Ly-alpha system at z_abs = 4.466 towards…' | abs_len= 1334
+[16:02:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:00] select | verify relaxed 3/20
+[16:02:00] verify | func= Motivation | rank= 2 | pid= astro-ph/0104457 | title_snip='Cold Gas Kinematics in an L* Spiral Galaxy at z=0.437: The Nature of
+ …' | abs_len= 1588
+[16:02:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:02] select | verify relaxed 4/20
+[16:02:02] verify | func= Motivation | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[16:02:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:05] select | verify relaxed 5/20
+[16:02:05] verify | func= Motivation | rank= 19 | pid= astro-ph/0102310 | title_snip='Spatially Resolved Millimeter Spectroscopy of the Gravitational Lens P…' | abs_len= 964
+[16:02:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:07] select | verify relaxed 6/20
+[16:02:07] verify | func= Motivation | rank= 18 | pid= astro-ph/0102370 | title_snip='Chandra Observations of Two High-Redshift Quasars' | abs_len= 1639
+[16:02:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:10] select | verify relaxed 7/20
+[16:02:10] verify | func= Motivation | rank= 3 | pid= astro-ph/0104474 | title_snip='A New Measurement of the Primordial Abundance of Deuterium: Toward
+  C…' | abs_len= 1559
+[16:02:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:12] select | verify relaxed 8/20
+[16:02:12] verify | func= Motivation | rank= 6 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[16:02:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:15] select | verify relaxed 9/20
+[16:02:15] verify | func= Motivation | rank= 10 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[16:02:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[16:02:18] select | verify relaxed 10/20
+[16:02:18] verify | func= Motivation | rank= 13 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[16:02:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:20] select | verify relaxed 11/20
+[16:02:20] verify | func= Motivation | rank= 4 | pid= astro-ph/0101340 | title_snip='Dust-penetrated morphology in the high-redshift universe: clues from N…' | abs_len= 1560
+[16:02:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:23] select | verify relaxed 12/20
+[16:02:23] verify | func= Motivation | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[16:02:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:25] select | verify relaxed 13/20
+[16:02:25] verify | func= Motivation | rank= 8 | pid= astro-ph/0104479 | title_snip='H2 Formation in Low Metallicity Galaxies' | abs_len= 1514
+[16:02:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:28] select | verify relaxed 14/20
+[16:02:28] verify | func= Motivation | rank= 9 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[16:02:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:31] select | verify relaxed 15/20
+[16:02:31] verify | func= Motivation | rank= 11 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[16:02:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:33] select | verify relaxed 16/20
+[16:02:33] verify | func= Motivation | rank= 12 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[16:02:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:36] select | verify relaxed 17/20
+[16:02:36] verify | func= Motivation | rank= 14 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[16:02:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:02:39] select | verify relaxed 18/20
+[16:02:39] verify | func= Motivation | rank= 15 | pid= astro-ph/0104308 | title_snip='Chemical Enrichment at High Redshifts: Understanding the Nature of
+  D…' | abs_len= 1464
+[16:02:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:02:41] select | verify relaxed 19/20
+[16:02:41] verify | func= Motivation | rank= 16 | pid= hep-ph/0102251 | title_snip='The Pure Leptonic Decays of $D_s$ Meson and Their Radiative Correction…' | abs_len= 968
+[16:02:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:44] select | verify relaxed 20/20
+[16:02:44] verify | func= Motivation | rank= 17 | pid= astro-ph/0104171 | title_snip='Partially Absorbed Comptonization Spectrum from the Nearly Edge-on
+  S…' | abs_len= 1673
+[16:02:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?
+- WINNER: astro-ph/0102491 | Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems in
+  the spectrum of the HDF-S quasar
+- QUOTE : We present a detailed analysis of three metal absorption systems
+- WHY   : sufficient
+- ANSWER: The current understanding of metal absorption systems can be improved by exploring the variations in metallicities and ionisation states within individual systems, as seen in the HDF-South quasar J2233-606. This analysis highlights the need for further research into the origins of these systems, particularly the role of local ionising sources and galactic halos in shaping their properties (astro-ph/0102491).
+[16:02:53] main | running function= FutureWork
+[16:02:53] select | function= FutureWork | candidates_in= 20
+[16:02:53] select | core_terms= ['metal absorption systems', 'quasar', 'HDF-South', 'J2233-606']
+[16:02:53] select | no cosine prune; kept=20/20
+[16:02:53] select | pool_size= 20 | ranks= [0, 1, 2, 5, 19, 18, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17] | pids= ['astro-ph/0102491', 'astro-ph/0102230', 'astro-ph/0104457', 'astro-ph/0103048', 'astro-ph/0102310', 'astro-ph/0102370', 'astro-ph/0104474', 'astro-ph/0101340', 'astro-ph/0103305', 'astro-ph/0101472', 'astro-ph/0104479', 'cond-mat/0101106', 'astro-ph/0101335', 'cond-mat/0101243', 'nucl-ex/0104021', 'astro-ph/0101153', 'astro-ph/0101084', 'astro-ph/0104308', 'hep-ph/0102251', 'astro-ph/0104171']
+[16:02:53] select | verify strict 1/20
+[16:02:53] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102491 | title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' | abs_len= 1611
+[16:02:56] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[16:02:56] select | verify strict 2/20
+[16:02:56] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102230 | title_snip='UVES observations of a damped Ly-alpha system at z_abs = 4.466 towards…' | abs_len= 1334
+[16:02:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:02:58] select | verify strict 3/20
+[16:02:58] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104457 | title_snip='Cold Gas Kinematics in an L* Spiral Galaxy at z=0.437: The Nature of
+ …' | abs_len= 1588
+[16:03:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:01] select | verify strict 4/20
+[16:03:01] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[16:03:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:04] select | verify strict 5/20
+[16:03:04] verify | func= FutureWork | rank= 19 | pid= astro-ph/0102310 | title_snip='Spatially Resolved Millimeter Spectroscopy of the Gravitational Lens P…' | abs_len= 964
+[16:03:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:06] select | verify strict 6/20
+[16:03:06] verify | func= FutureWork | rank= 18 | pid= astro-ph/0102370 | title_snip='Chandra Observations of Two High-Redshift Quasars' | abs_len= 1639
+[16:03:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:09] select | verify strict 7/20
+[16:03:09] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104474 | title_snip='A New Measurement of the Primordial Abundance of Deuterium: Toward
+  C…' | abs_len= 1559
+[16:03:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:11] select | verify strict 8/20
+[16:03:11] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101340 | title_snip='Dust-penetrated morphology in the high-redshift universe: clues from N…' | abs_len= 1560
+[16:03:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:14] select | verify strict 9/20
+[16:03:14] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[16:03:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:16] select | verify strict 10/20
+[16:03:16] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[16:03:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:19] select | verify strict 11/20
+[16:03:19] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104479 | title_snip='H2 Formation in Low Metallicity Galaxies' | abs_len= 1514
+[16:03:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:21] select | verify strict 12/20
+[16:03:21] verify | func= FutureWork | rank= 9 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[16:03:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:24] select | verify strict 13/20
+[16:03:24] verify | func= FutureWork | rank= 10 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[16:03:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:27] select | verify strict 14/20
+[16:03:27] verify | func= FutureWork | rank= 11 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[16:03:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:29] select | verify strict 15/20
+[16:03:29] verify | func= FutureWork | rank= 12 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[16:03:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:32] select | verify strict 16/20
+[16:03:32] verify | func= FutureWork | rank= 13 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[16:03:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:35] select | verify strict 17/20
+[16:03:35] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[16:03:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:37] select | verify strict 18/20
+[16:03:37] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104308 | title_snip='Chemical Enrichment at High Redshifts: Understanding the Nature of
+  D…' | abs_len= 1464
+[16:03:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:39] select | verify strict 19/20
+[16:03:39] verify | func= FutureWork | rank= 16 | pid= hep-ph/0102251 | title_snip='The Pure Leptonic Decays of $D_s$ Meson and Their Radiative Correction…' | abs_len= 968
+[16:03:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:42] select | verify strict 20/20
+[16:03:42] verify | func= FutureWork | rank= 17 | pid= astro-ph/0104171 | title_snip='Partially Absorbed Comptonization Spectrum from the Nearly Edge-on
+  S…' | abs_len= 1673
+[16:03:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:45] select | strict pass found 0 winners → trying relaxed
+[16:03:45] select | verify relaxed 1/20
+[16:03:45] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102491 | title_snip='Inhomogeneous metal enrichment at z \sim 1.9: the Lyman limit systems …' | abs_len= 1611
+[16:03:47] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[16:03:47] select | verify relaxed 2/20
+[16:03:47] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102230 | title_snip='UVES observations of a damped Ly-alpha system at z_abs = 4.466 towards…' | abs_len= 1334
+[16:03:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:53] select | verify relaxed 3/20
+[16:03:53] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104457 | title_snip='Cold Gas Kinematics in an L* Spiral Galaxy at z=0.437: The Nature of
+ …' | abs_len= 1588
+[16:03:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:55] select | verify relaxed 4/20
+[16:03:55] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[16:03:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:03:58] select | verify relaxed 5/20
+[16:03:58] verify | func= FutureWork | rank= 19 | pid= astro-ph/0102310 | title_snip='Spatially Resolved Millimeter Spectroscopy of the Gravitational Lens P…' | abs_len= 964
+[16:04:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:00] select | verify relaxed 6/20
+[16:04:00] verify | func= FutureWork | rank= 18 | pid= astro-ph/0102370 | title_snip='Chandra Observations of Two High-Redshift Quasars' | abs_len= 1639
+[16:04:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:03] select | verify relaxed 7/20
+[16:04:03] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104474 | title_snip='A New Measurement of the Primordial Abundance of Deuterium: Toward
+  C…' | abs_len= 1559
+[16:04:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:05] select | verify relaxed 8/20
+[16:04:05] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101340 | title_snip='Dust-penetrated morphology in the high-redshift universe: clues from N…' | abs_len= 1560
+[16:04:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:08] select | verify relaxed 9/20
+[16:04:08] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[16:04:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:11] select | verify relaxed 10/20
+[16:04:11] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[16:04:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:13] select | verify relaxed 11/20
+[16:04:13] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104479 | title_snip='H2 Formation in Low Metallicity Galaxies' | abs_len= 1514
+[16:04:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:16] select | verify relaxed 12/20
+[16:04:16] verify | func= FutureWork | rank= 9 | pid= cond-mat/0101106 | title_snip='Relaxation and screening in Auger emission: an explanation for the
+  c…' | abs_len= 889
+[16:04:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:18] select | verify relaxed 13/20
+[16:04:18] verify | func= FutureWork | rank= 10 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[16:04:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:04:21] select | verify relaxed 14/20
+[16:04:21] verify | func= FutureWork | rank= 11 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[16:04:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:24] select | verify relaxed 15/20
+[16:04:24] verify | func= FutureWork | rank= 12 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[16:04:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:26] select | verify relaxed 16/20
+[16:04:26] verify | func= FutureWork | rank= 13 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[16:04:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:29] select | verify relaxed 17/20
+[16:04:29] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[16:04:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:04:32] select | verify relaxed 18/20
+[16:04:32] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104308 | title_snip='Chemical Enrichment at High Redshifts: Understanding the Nature of
+  D…' | abs_len= 1464
+[16:04:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:04:34] select | verify relaxed 19/20
+[16:04:34] verify | func= FutureWork | rank= 16 | pid= hep-ph/0102251 | title_snip='The Pure Leptonic Decays of $D_s$ Meson and Their Radiative Correction…' | abs_len= 968
+[16:04:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[16:04:37] select | verify relaxed 20/20
+[16:04:37] verify | func= FutureWork | rank= 17 | pid= astro-ph/0104171 | title_snip='Partially Absorbed Comptonization Spectrum from the Nearly Edge-on
+  S…' | abs_len= 1673
+[16:04:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the current understanding of metal absorption systems be improved and what future research directions can be explored based on the analysis of the HDF-South quasar J2233-606?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

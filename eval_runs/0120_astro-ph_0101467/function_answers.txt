@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Compares. [Compares]
+The current work extends existing methods for predicting the extra-galactic X-ray background by using simulations to compute the X-ray surface brightness distribution from diffuse gas, providing a more detailed and restrictive lower bound on the predicted level. This approach improves upon prior methods by considering the effects of resolution, simulation volume, and pixel size, and exploring the impact of non-gravitational heating on the predicted background (astro-ph/0101467). [Extends]

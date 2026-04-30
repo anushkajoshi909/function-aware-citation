@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Compares. [Compares]
+The proposed hybrid algorithm is compared to existing work in the context of solving problems with multiple basic algorithms, where only one algorithm can solve the problem in finite time (cs/0101028). [Background]

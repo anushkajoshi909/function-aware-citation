@@ -1,0 +1,390 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how existing knowledge can be built upon (Extends) and explicitly seeks directions for upcoming studies (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.55 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 10it [00:00, 99.73it/s]
+Reading arXiv_src_0101_001.jsonl: 144it [00:00, 819.22it/s]
+Reading arXiv_src_0101_001.jsonl: 287it [00:00, 1094.86it/s]
+Reading arXiv_src_0101_001.jsonl: 397it [00:00, 581.01it/s] 
+Reading arXiv_src_0101_001.jsonl: 477it [00:02, 117.73it/s]
+Reading arXiv_src_0101_001.jsonl: 530it [00:02, 139.79it/s]
+Reading arXiv_src_0101_001.jsonl: 595it [00:02, 178.06it/s]
+Reading arXiv_src_0101_001.jsonl: 704it [00:02, 265.37it/s]
+Reading arXiv_src_0101_001.jsonl: 805it [00:03, 355.13it/s]
+Reading arXiv_src_0101_001.jsonl: 908it [00:03, 454.41it/s]
+Reading arXiv_src_0101_001.jsonl: 1012it [00:03, 550.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1146it [00:03, 702.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1278it [00:03, 837.23it/s]
+Reading arXiv_src_0101_001.jsonl: 1390it [00:03, 887.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1524it [00:03, 999.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1658it [00:03, 1086.39it/s]
+Reading arXiv_src_0101_001.jsonl: 1780it [00:03, 1085.37it/s]
+Reading arXiv_src_0101_001.jsonl: 1929it [00:03, 1195.01it/s]
+Reading arXiv_src_0101_001.jsonl: 2102it [00:04, 1344.75it/s]
+Reading arXiv_src_0101_001.jsonl: 2253it [00:04, 1391.70it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:04, 547.30it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1316.63it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1351.35it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 848.97it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 513.85it/s]
+Reading arXiv_src_0102_001.jsonl: 587it [00:00, 564.84it/s]
+Reading arXiv_src_0102_001.jsonl: 661it [00:01, 587.27it/s]
+Reading arXiv_src_0102_001.jsonl: 774it [00:01, 708.26it/s]
+Reading arXiv_src_0102_001.jsonl: 901it [00:01, 844.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1014it [00:01, 915.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1130it [00:01, 980.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1239it [00:01, 1010.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1383it [00:01, 1130.18it/s]
+Reading arXiv_src_0102_001.jsonl: 1519it [00:01, 1195.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1643it [00:01, 1180.96it/s]
+Reading arXiv_src_0102_001.jsonl: 1793it [00:01, 1272.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1944it [00:02, 1341.31it/s]
+Reading arXiv_src_0102_001.jsonl: 2088it [00:02, 1367.81it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1004.04it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 135it [00:00, 1346.77it/s]
+Reading arXiv_src_0103_001.jsonl: 298it [00:00, 1511.69it/s]
+Reading arXiv_src_0103_001.jsonl: 450it [00:00, 1156.46it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 743.51it/s] 
+Reading arXiv_src_0103_001.jsonl: 667it [00:00, 776.64it/s]
+Reading arXiv_src_0103_001.jsonl: 758it [00:00, 795.23it/s]
+Reading arXiv_src_0103_001.jsonl: 875it [00:00, 888.08it/s]
+Reading arXiv_src_0103_001.jsonl: 978it [00:01, 924.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1081it [00:01, 952.94it/s]
+Reading arXiv_src_0103_001.jsonl: 1206it [00:01, 1036.21it/s]
+Reading arXiv_src_0103_001.jsonl: 1314it [00:01, 1035.57it/s]
+Reading arXiv_src_0103_001.jsonl: 1452it [00:01, 1133.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1588it [00:01, 1198.48it/s]
+Reading arXiv_src_0103_001.jsonl: 1744it [00:01, 1299.27it/s]
+Reading arXiv_src_0103_001.jsonl: 1881it [00:01, 1319.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2022it [00:01, 1345.99it/s]
+Reading arXiv_src_0103_001.jsonl: 2164it [00:01, 1366.60it/s]
+Reading arXiv_src_0103_001.jsonl: 2312it [00:02, 1395.98it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1137.74it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 139it [00:00, 1387.84it/s]
+Reading arXiv_src_0104_001.jsonl: 278it [00:00, 488.93it/s] 
+Reading arXiv_src_0104_001.jsonl: 399it [00:00, 652.27it/s]
+Reading arXiv_src_0104_001.jsonl: 496it [00:00, 557.47it/s]
+Reading arXiv_src_0104_001.jsonl: 572it [00:01, 420.23it/s]
+Reading arXiv_src_0104_001.jsonl: 657it [00:01, 494.92it/s]
+Reading arXiv_src_0104_001.jsonl: 749it [00:01, 579.34it/s]
+Reading arXiv_src_0104_001.jsonl: 842it [00:01, 656.70it/s]
+Reading arXiv_src_0104_001.jsonl: 949it [00:01, 754.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1075it [00:01, 883.82it/s]
+Reading arXiv_src_0104_001.jsonl: 1182it [00:01, 931.74it/s]
+Reading arXiv_src_0104_001.jsonl: 1306it [00:01, 1015.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1415it [00:01, 1027.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1554it [00:02, 1127.28it/s]
+Reading arXiv_src_0104_001.jsonl: 1685it [00:02, 1178.72it/s]
+Reading arXiv_src_0104_001.jsonl: 1820it [00:02, 1226.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1978it [00:02, 1329.17it/s]
+Reading arXiv_src_0104_001.jsonl: 2118it [00:02, 883.40it/s] 
+Reading arXiv_src_0104_001.jsonl: 2261it [00:02, 1000.23it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 836.56it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?
+[debug] classifier labels: ['Extends', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+1     1  0.634829  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+2     2  0.571203  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+3     3  0.452825  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+4     4  0.412499  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+5     5  0.391333  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+6     6  0.361736  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+7     7  0.295656  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+8     8  0.285168  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+9     9  0.283478  ...  2025-09-21T21:20:29.858483  Extends, FutureWork
+
+[10 rows x 12 columns]
+[23:20:36] main | args: Namespace(max_check=20, debug=True)
+[23:20:36] read_last_jsonl | path= classified_outputs.jsonl
+[23:20:36] read_last_jsonl | total_lines= 1
+[23:20:36] main | query='How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?' | funcs=['Extends', 'FutureWork']
+[23:20:38] main | core_terms= ['Population III stars', 'initial mass function', 'star formation', 'III']
+[23:20:38] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:20:38] load_topk_jsonl | rows= 20
+[23:20:38] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103382 title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' abs_len= 281
+[23:20:38] main | running function= Extends
+[23:20:38] select | function= Extends | candidates_in= 20
+[23:20:38] select | core_terms= ['Population III stars', 'initial mass function', 'star formation', 'III']
+[23:20:38] select | no cosine prune; kept=20/20
+[23:20:38] select | pool_size= 20 | ranks= [4, 13, 18, 6, 0, 1, 2, 3, 10, 11, 15, 12, 17, 5, 7, 8, 9, 14, 16, 19] | pids= ['astro-ph/0104276', 'astro-ph/0104328', 'astro-ph/0101223', 'astro-ph/0102039', 'astro-ph/0103382', 'astro-ph/0104404', 'astro-ph/0104016', 'astro-ph/0101384', 'astro-ph/0104242', 'astro-ph/0101235', 'astro-ph/0104191', 'astro-ph/0103500', 'astro-ph/0102063', 'astro-ph/0101002', 'astro-ph/0101070', 'astro-ph/0104162', 'astro-ph/0102056', 'astro-ph/0102390', 'astro-ph/0102451', 'astro-ph/0103175']
+[23:20:38] select | verify strict 1/20
+[23:20:38] verify | func= Extends | rank= 4 | pid= astro-ph/0104276 | title_snip='The Implications of the New Z=0 Stellar Models and Yields on the Early…' | abs_len= 1824
+[23:20:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:20:41] select | verify strict 2/20
+[23:20:41] verify | func= Extends | rank= 13 | pid= astro-ph/0104328 | title_snip='The Contribution of Population III to the Enrichment and Preheating of…' | abs_len= 1426
+[23:20:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:20:44] select | verify strict 3/20
+[23:20:44] verify | func= Extends | rank= 18 | pid= astro-ph/0101223 | title_snip='Massive Black Holes as Population III Remnants' | abs_len= 1373
+[23:20:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:20:47] select | verify strict 4/20
+[23:20:47] verify | func= Extends | rank= 6 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[23:20:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:20:50] select | verify strict 5/20
+[23:20:50] verify | func= Extends | rank= 0 | pid= astro-ph/0103382 | title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' | abs_len= 281
+[23:20:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:20:53] select | verify strict 6/20
+[23:20:53] verify | func= Extends | rank= 1 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[23:20:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:20:55] select | verify strict 7/20
+[23:20:55] verify | func= Extends | rank= 2 | pid= astro-ph/0104016 | title_snip='Stellar Populations and Chemical Evolution of Late--Type Dwarf Galaxie…' | abs_len= 484
+[23:20:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:20:58] select | verify strict 8/20
+[23:20:58] verify | func= Extends | rank= 3 | pid= astro-ph/0101384 | title_snip='The Initial Mass Function of the Most Massive Starforming Regions' | abs_len= 808
+[23:21:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:00] select | verify strict 9/20
+[23:21:00] verify | func= Extends | rank= 10 | pid= astro-ph/0104242 | title_snip='The Thick Disk-Halo Interface' | abs_len= 940
+[23:21:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:03] select | verify strict 10/20
+[23:21:03] verify | func= Extends | rank= 11 | pid= astro-ph/0101235 | title_snip='GAIA: Composition, Formation and Evolution of the Galaxy' | abs_len= 1681
+[23:21:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:05] select | verify strict 11/20
+[23:21:05] verify | func= Extends | rank= 15 | pid= astro-ph/0104191 | title_snip='The Oldest Stellar Populations at z ~ 1.5' | abs_len= 970
+[23:21:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:08] select | verify strict 12/20
+[23:21:08] verify | func= Extends | rank= 12 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[23:21:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:10] select | verify strict 13/20
+[23:21:10] verify | func= Extends | rank= 17 | pid= astro-ph/0102063 | title_snip='The likelihood of GODs' existence: Improving the SN1987a constraint on…' | abs_len= 913
+[23:21:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:13] select | verify strict 14/20
+[23:21:13] verify | func= Extends | rank= 5 | pid= astro-ph/0101002 | title_snip='Population clustering as a signal for deconfinement in accreting compa…' | abs_len= 1007
+[23:21:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:15] select | verify strict 15/20
+[23:21:15] verify | func= Extends | rank= 7 | pid= astro-ph/0101070 | title_snip='On The Cosmic Origins Of Carbon & Nitrogen' | abs_len= 559
+[23:21:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:18] select | verify strict 16/20
+[23:21:18] verify | func= Extends | rank= 8 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[23:21:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:20] select | verify strict 17/20
+[23:21:20] verify | func= Extends | rank= 9 | pid= astro-ph/0102056 | title_snip='Galaxy Formation and Evolution: Recent Progress' | abs_len= 299
+[23:21:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:23] select | verify strict 18/20
+[23:21:23] verify | func= Extends | rank= 14 | pid= astro-ph/0102390 | title_snip='Primordial black holes as a probe of the early universe and a varying
+…' | abs_len= 803
+[23:21:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:25] select | verify strict 19/20
+[23:21:25] verify | func= Extends | rank= 16 | pid= astro-ph/0102451 | title_snip='Studies of multiple stellar systems - IV. The triple-lined spectroscop…' | abs_len= 1477
+[23:21:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:28] select | verify strict 20/20
+[23:21:28] verify | func= Extends | rank= 19 | pid= astro-ph/0103175 | title_snip='Constraining the Properties of Dark Energy' | abs_len= 1410
+[23:21:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?
+- WINNER: astro-ph/0103382 | Towards Population III: The Collapse and Fragmentation of Primordial Gas
+- QUOTE : Population III'' stars
+- WHY   : sufficient
+- ANSWER: The current understanding of Population III star formation can be extended through numerical simulations that investigate the collapse and fragmentation of primordial gas. These simulations raise new questions and provide a foundation for future research to better constrain the initial mass function of these stars (astro-ph/0103382).
+[23:21:34] main | running function= FutureWork
+[23:21:34] select | function= FutureWork | candidates_in= 20
+[23:21:34] select | core_terms= ['Population III stars', 'initial mass function', 'star formation', 'III']
+[23:21:34] select | no cosine prune; kept=20/20
+[23:21:34] select | pool_size= 20 | ranks= [4, 13, 18, 6, 0, 1, 2, 3, 10, 11, 15, 5, 7, 8, 9, 12, 14, 16, 17, 19] | pids= ['astro-ph/0104276', 'astro-ph/0104328', 'astro-ph/0101223', 'astro-ph/0102039', 'astro-ph/0103382', 'astro-ph/0104404', 'astro-ph/0104016', 'astro-ph/0101384', 'astro-ph/0104242', 'astro-ph/0101235', 'astro-ph/0104191', 'astro-ph/0101002', 'astro-ph/0101070', 'astro-ph/0104162', 'astro-ph/0102056', 'astro-ph/0103500', 'astro-ph/0102390', 'astro-ph/0102451', 'astro-ph/0102063', 'astro-ph/0103175']
+[23:21:34] select | verify strict 1/20
+[23:21:34] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104276 | title_snip='The Implications of the New Z=0 Stellar Models and Yields on the Early…' | abs_len= 1824
+[23:21:37] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:21:37] select | verify strict 2/20
+[23:21:37] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104328 | title_snip='The Contribution of Population III to the Enrichment and Preheating of…' | abs_len= 1426
+[23:21:40] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[23:21:40] select | verify strict 3/20
+[23:21:40] verify | func= FutureWork | rank= 18 | pid= astro-ph/0101223 | title_snip='Massive Black Holes as Population III Remnants' | abs_len= 1373
+[23:21:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:21:43] select | verify strict 4/20
+[23:21:43] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[23:21:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:46] select | verify strict 5/20
+[23:21:46] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103382 | title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' | abs_len= 281
+[23:21:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:21:49] select | verify strict 6/20
+[23:21:49] verify | func= FutureWork | rank= 1 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[23:21:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:51] select | verify strict 7/20
+[23:21:51] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104016 | title_snip='Stellar Populations and Chemical Evolution of Late--Type Dwarf Galaxie…' | abs_len= 484
+[23:21:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:53] select | verify strict 8/20
+[23:21:53] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101384 | title_snip='The Initial Mass Function of the Most Massive Starforming Regions' | abs_len= 808
+[23:21:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:56] select | verify strict 9/20
+[23:21:56] verify | func= FutureWork | rank= 10 | pid= astro-ph/0104242 | title_snip='The Thick Disk-Halo Interface' | abs_len= 940
+[23:21:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:21:58] select | verify strict 10/20
+[23:21:58] verify | func= FutureWork | rank= 11 | pid= astro-ph/0101235 | title_snip='GAIA: Composition, Formation and Evolution of the Galaxy' | abs_len= 1681
+[23:22:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:01] select | verify strict 11/20
+[23:22:01] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104191 | title_snip='The Oldest Stellar Populations at z ~ 1.5' | abs_len= 970
+[23:22:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:03] select | verify strict 12/20
+[23:22:03] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101002 | title_snip='Population clustering as a signal for deconfinement in accreting compa…' | abs_len= 1007
+[23:22:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:06] select | verify strict 13/20
+[23:22:06] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101070 | title_snip='On The Cosmic Origins Of Carbon & Nitrogen' | abs_len= 559
+[23:22:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:09] select | verify strict 14/20
+[23:22:09] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[23:22:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:11] select | verify strict 15/20
+[23:22:11] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102056 | title_snip='Galaxy Formation and Evolution: Recent Progress' | abs_len= 299
+[23:22:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:14] select | verify strict 16/20
+[23:22:14] verify | func= FutureWork | rank= 12 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[23:22:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:16] select | verify strict 17/20
+[23:22:16] verify | func= FutureWork | rank= 14 | pid= astro-ph/0102390 | title_snip='Primordial black holes as a probe of the early universe and a varying
+…' | abs_len= 803
+[23:22:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:19] select | verify strict 18/20
+[23:22:19] verify | func= FutureWork | rank= 16 | pid= astro-ph/0102451 | title_snip='Studies of multiple stellar systems - IV. The triple-lined spectroscop…' | abs_len= 1477
+[23:22:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:21] select | verify strict 19/20
+[23:22:21] verify | func= FutureWork | rank= 17 | pid= astro-ph/0102063 | title_snip='The likelihood of GODs' existence: Improving the SN1987a constraint on…' | abs_len= 913
+[23:22:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:24] select | verify strict 20/20
+[23:22:24] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103175 | title_snip='Constraining the Properties of Dark Energy' | abs_len= 1410
+[23:22:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:26] select | strict pass found 0 winners → trying relaxed
+[23:22:26] select | verify relaxed 1/20
+[23:22:26] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104276 | title_snip='The Implications of the New Z=0 Stellar Models and Yields on the Early…' | abs_len= 1824
+[23:22:30] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[23:22:30] select | verify relaxed 2/20
+[23:22:30] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104328 | title_snip='The Contribution of Population III to the Enrichment and Preheating of…' | abs_len= 1426
+[23:22:33] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:22:33] select | verify relaxed 3/20
+[23:22:33] verify | func= FutureWork | rank= 18 | pid= astro-ph/0101223 | title_snip='Massive Black Holes as Population III Remnants' | abs_len= 1373
+[23:22:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[23:22:36] select | verify relaxed 4/20
+[23:22:36] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[23:22:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:38] select | verify relaxed 5/20
+[23:22:38] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103382 | title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' | abs_len= 281
+[23:22:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:22:41] select | verify relaxed 6/20
+[23:22:41] verify | func= FutureWork | rank= 1 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[23:22:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:44] select | verify relaxed 7/20
+[23:22:44] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104016 | title_snip='Stellar Populations and Chemical Evolution of Late--Type Dwarf Galaxie…' | abs_len= 484
+[23:22:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:46] select | verify relaxed 8/20
+[23:22:46] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101384 | title_snip='The Initial Mass Function of the Most Massive Starforming Regions' | abs_len= 808
+[23:22:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:22:49] select | verify relaxed 9/20
+[23:22:49] verify | func= FutureWork | rank= 10 | pid= astro-ph/0104242 | title_snip='The Thick Disk-Halo Interface' | abs_len= 940
+[23:22:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:52] select | verify relaxed 10/20
+[23:22:52] verify | func= FutureWork | rank= 11 | pid= astro-ph/0101235 | title_snip='GAIA: Composition, Formation and Evolution of the Galaxy' | abs_len= 1681
+[23:22:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:54] select | verify relaxed 11/20
+[23:22:54] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104191 | title_snip='The Oldest Stellar Populations at z ~ 1.5' | abs_len= 970
+[23:22:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:57] select | verify relaxed 12/20
+[23:22:57] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101002 | title_snip='Population clustering as a signal for deconfinement in accreting compa…' | abs_len= 1007
+[23:22:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:22:59] select | verify relaxed 13/20
+[23:22:59] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101070 | title_snip='On The Cosmic Origins Of Carbon & Nitrogen' | abs_len= 559
+[23:23:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:02] select | verify relaxed 14/20
+[23:23:02] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[23:23:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:04] select | verify relaxed 15/20
+[23:23:04] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102056 | title_snip='Galaxy Formation and Evolution: Recent Progress' | abs_len= 299
+[23:23:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:07] select | verify relaxed 16/20
+[23:23:07] verify | func= FutureWork | rank= 12 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[23:23:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:09] select | verify relaxed 17/20
+[23:23:09] verify | func= FutureWork | rank= 14 | pid= astro-ph/0102390 | title_snip='Primordial black holes as a probe of the early universe and a varying
+…' | abs_len= 803
+[23:23:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:12] select | verify relaxed 18/20
+[23:23:12] verify | func= FutureWork | rank= 16 | pid= astro-ph/0102451 | title_snip='Studies of multiple stellar systems - IV. The triple-lined spectroscop…' | abs_len= 1477
+[23:23:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:14] select | verify relaxed 19/20
+[23:23:14] verify | func= FutureWork | rank= 17 | pid= astro-ph/0102063 | title_snip='The likelihood of GODs' existence: Improving the SN1987a constraint on…' | abs_len= 913
+[23:23:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:23:17] select | verify relaxed 20/20
+[23:23:17] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103175 | title_snip='Constraining the Properties of Dark Energy' | abs_len= 1410
+[23:23:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?
+- WINNER: astro-ph/0103382 | Towards Population III: The Collapse and Fragmentation of Primordial Gas
+- QUOTE : new questions raised as a result of the simulations
+- WHY   : sufficient
+- ANSWER: Further research is needed to extend the current understanding of Population III star formation, and future studies should investigate the collapse and fragmentation of primordial gas to better constrain the initial mass function of these stars. The results of recent numerical simulations have raised new questions that must be addressed in future work (astro-ph/0103382).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

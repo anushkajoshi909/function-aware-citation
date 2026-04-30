@@ -1,0 +1,1 @@
+A low value of sin2β motivates the construction of a reference unitarity triangle, which is built using established methods such as global fit and B→J/ψKS decay (hep-ph/0102310). [Background]

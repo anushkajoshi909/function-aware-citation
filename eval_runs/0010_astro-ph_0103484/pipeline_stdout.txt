@@ -1,0 +1,331 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the study's methods can be applied (Uses) and how they can guide subsequent investigations (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.4 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.34it/s]
+Reading arXiv_src_0101_001.jsonl: 31it [00:00, 99.16it/s]
+Reading arXiv_src_0101_001.jsonl: 181it [00:00, 540.31it/s]
+Reading arXiv_src_0101_001.jsonl: 302it [00:00, 748.03it/s]
+Reading arXiv_src_0101_001.jsonl: 397it [00:00, 760.19it/s]
+Reading arXiv_src_0101_001.jsonl: 486it [00:00, 620.33it/s]
+Reading arXiv_src_0101_001.jsonl: 560it [00:01, 566.61it/s]
+Reading arXiv_src_0101_001.jsonl: 665it [00:01, 679.17it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 764.49it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 853.91it/s]
+Reading arXiv_src_0101_001.jsonl: 999it [00:01, 932.49it/s]
+Reading arXiv_src_0101_001.jsonl: 1107it [00:01, 973.50it/s]
+Reading arXiv_src_0101_001.jsonl: 1240it [00:01, 1074.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1352it [00:01, 1067.50it/s]
+Reading arXiv_src_0101_001.jsonl: 1486it [00:01, 1143.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1621it [00:01, 1202.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1215.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1873it [00:02, 1196.75it/s]
+Reading arXiv_src_0101_001.jsonl: 2056it [00:02, 1379.47it/s]
+Reading arXiv_src_0101_001.jsonl: 2211it [00:02, 1424.66it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 935.07it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1311.85it/s]
+Reading arXiv_src_0102_001.jsonl: 272it [00:00, 1361.78it/s]
+Reading arXiv_src_0102_001.jsonl: 409it [00:00, 860.60it/s] 
+Reading arXiv_src_0102_001.jsonl: 511it [00:00, 524.02it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 560.05it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:00, 621.10it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 744.88it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 884.18it/s]
+Reading arXiv_src_0102_001.jsonl: 1035it [00:01, 943.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1001.47it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1048.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1401it [00:01, 1128.45it/s]
+Reading arXiv_src_0102_001.jsonl: 1533it [00:01, 1182.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1662it [00:01, 1212.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1814it [00:01, 1300.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1965it [00:02, 1362.38it/s]
+Reading arXiv_src_0102_001.jsonl: 2118it [00:02, 1410.87it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1018.76it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1376.46it/s]
+Reading arXiv_src_0103_001.jsonl: 304it [00:00, 1535.05it/s]
+Reading arXiv_src_0103_001.jsonl: 458it [00:00, 1125.11it/s]
+Reading arXiv_src_0103_001.jsonl: 581it [00:00, 730.35it/s] 
+Reading arXiv_src_0103_001.jsonl: 684it [00:00, 797.02it/s]
+Reading arXiv_src_0103_001.jsonl: 780it [00:00, 828.16it/s]
+Reading arXiv_src_0103_001.jsonl: 887it [00:00, 885.73it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 946.10it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 999.66it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1044.09it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1063.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1492it [00:01, 1184.27it/s]
+Reading arXiv_src_0103_001.jsonl: 1627it [00:01, 1232.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1773it [00:01, 1294.37it/s]
+Reading arXiv_src_0103_001.jsonl: 1923it [00:01, 1353.57it/s]
+Reading arXiv_src_0103_001.jsonl: 2063it [00:01, 1365.57it/s]
+Reading arXiv_src_0103_001.jsonl: 2201it [00:01, 1357.79it/s]
+Reading arXiv_src_0103_001.jsonl: 2358it [00:02, 1417.44it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1148.43it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 16.95it/s]
+Reading arXiv_src_0104_001.jsonl: 151it [00:00, 822.43it/s]
+Reading arXiv_src_0104_001.jsonl: 295it [00:00, 1091.81it/s]
+Reading arXiv_src_0104_001.jsonl: 409it [00:00, 1073.85it/s]
+Reading arXiv_src_0104_001.jsonl: 520it [00:00, 728.30it/s] 
+Reading arXiv_src_0104_001.jsonl: 607it [00:00, 500.50it/s]
+Reading arXiv_src_0104_001.jsonl: 710it [00:01, 600.08it/s]
+Reading arXiv_src_0104_001.jsonl: 801it [00:01, 665.87it/s]
+Reading arXiv_src_0104_001.jsonl: 904it [00:01, 750.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1031it [00:01, 877.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1144it [00:01, 943.28it/s]
+Reading arXiv_src_0104_001.jsonl: 1267it [00:01, 1020.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1377it [00:01, 1027.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1510it [00:01, 1112.45it/s]
+Reading arXiv_src_0104_001.jsonl: 1648it [00:01, 1187.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1779it [00:01, 1222.27it/s]
+Reading arXiv_src_0104_001.jsonl: 1924it [00:02, 1282.73it/s]
+Reading arXiv_src_0104_001.jsonl: 2085it [00:02, 1374.93it/s]
+Reading arXiv_src_0104_001.jsonl: 2224it [00:02, 942.73it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 923.03it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?
+[debug] classifier labels: ['Uses', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+1     1  0.928585  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+2     2  0.789875  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+3     3  0.726932  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+4     4  0.724487  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+5     5  0.646721  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+6     6  0.646188  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+7     7  0.549530  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+8     8  0.529097  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+9     9  0.495796  ...  2025-09-21T11:45:13.656607     Uses, FutureWork
+
+[10 rows x 12 columns]
+[13:45:19] main | args: Namespace(max_check=20, debug=True)
+[13:45:19] read_last_jsonl | path= classified_outputs.jsonl
+[13:45:19] read_last_jsonl | total_lines= 1
+[13:45:19] main | query='How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?' | funcs=['Uses', 'FutureWork']
+[13:45:22] main | core_terms= ['X-ray', 'starburst galaxies', 'luminosity']
+[13:45:22] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:45:22] load_topk_jsonl | rows= 20
+[13:45:22] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103484 title_snip='The Hard X-ray Luminosity of OB Star Populations: Implications for the…' abs_len= 1533
+[13:45:22] main | running function= Uses
+[13:45:22] select | function= Uses | candidates_in= 20
+[13:45:22] select | core_terms= ['X-ray', 'starburst galaxies', 'luminosity']
+[13:45:22] select | no cosine prune; kept=20/20
+[13:45:22] select | pool_size= 20 | ranks= [0, 15, 2, 14, 1, 10, 18, 4, 12, 13, 9, 11, 7, 17, 8, 16, 3, 5, 6, 19] | pids= ['astro-ph/0103484', 'astro-ph/0101279', 'astro-ph/0102297', 'astro-ph/0102206', 'astro-ph/0101271', 'astro-ph/0103293', 'astro-ph/0101466', 'astro-ph/0101407', 'astro-ph/0101445', 'astro-ph/0101467', 'astro-ph/0101276', 'astro-ph/0103113', 'astro-ph/0104316', 'astro-ph/0103167', 'astro-ph/0101543', 'astro-ph/0101074', 'astro-ph/0102086', 'astro-ph/0104404', 'astro-ph/0101084', 'astro-ph/0104189']
+[13:45:22] select | verify strict 1/20
+[13:45:22] verify | func= Uses | rank= 0 | pid= astro-ph/0103484 | title_snip='The Hard X-ray Luminosity of OB Star Populations: Implications for the…' | abs_len= 1533
+[13:45:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[13:45:25] select | verify strict 2/20
+[13:45:25] verify | func= Uses | rank= 15 | pid= astro-ph/0101279 | title_snip='Soft X-ray AGN Luminosity Function from ROSAT Surveys II. Table of the…' | abs_len= 818
+[13:45:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:45:28] select | verify strict 3/20
+[13:45:28] verify | func= Uses | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[13:45:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:45:31] select | verify strict 4/20
+[13:45:31] verify | func= Uses | rank= 14 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[13:45:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:45:34] select | verify strict 5/20
+[13:45:34] verify | func= Uses | rank= 1 | pid= astro-ph/0101271 | title_snip='The X-ray Emission in Post-Merger Ellipticals' | abs_len= 909
+[13:45:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:45:36] select | verify strict 6/20
+[13:45:36] verify | func= Uses | rank= 10 | pid= astro-ph/0103293 | title_snip='X-ray luminosities of galaxies in groups' | abs_len= 1534
+[13:45:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:45:39] select | verify strict 7/20
+[13:45:39] verify | func= Uses | rank= 18 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[13:45:42] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:45:42] select | verify strict 8/20
+[13:45:42] verify | func= Uses | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[13:45:45] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:45:45] select | verify strict 9/20
+[13:45:45] verify | func= Uses | rank= 12 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[13:45:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:45:48] select | verify strict 10/20
+[13:45:48] verify | func= Uses | rank= 13 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[13:45:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:45:51] select | verify strict 11/20
+[13:45:51] verify | func= Uses | rank= 9 | pid= astro-ph/0101276 | title_snip='The z=0 Galaxy Luminosity Function: I. Techniques for Identification o…' | abs_len= 850
+[13:45:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:45:53] select | verify strict 12/20
+[13:45:53] verify | func= Uses | rank= 11 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[13:45:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:45:56] select | verify strict 13/20
+[13:45:56] verify | func= Uses | rank= 7 | pid= astro-ph/0104316 | title_snip='The Obscuring Starburst of NGC 6221 and Implications for the Hard X-ra…' | abs_len= 1178
+[13:45:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[13:45:59] select | verify strict 14/20
+[13:45:59] verify | func= Uses | rank= 17 | pid= astro-ph/0103167 | title_snip='Recent star formation in very luminous infrared galaxies' | abs_len= 822
+[13:46:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:02] select | verify strict 15/20
+[13:46:02] verify | func= Uses | rank= 8 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[13:46:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:04] select | verify strict 16/20
+[13:46:04] verify | func= Uses | rank= 16 | pid= astro-ph/0101074 | title_snip='Recovering Physical Parameters from Galaxy Spectra Using MOPED' | abs_len= 1081
+[13:46:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:07] select | verify strict 17/20
+[13:46:07] verify | func= Uses | rank= 3 | pid= astro-ph/0102086 | title_snip='Simulating galaxy surveys with FIRST (PACS & SPIRE)' | abs_len= 1343
+[13:46:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:10] select | verify strict 18/20
+[13:46:10] verify | func= Uses | rank= 5 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[13:46:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:12] select | verify strict 19/20
+[13:46:12] verify | func= Uses | rank= 6 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[13:46:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:15] select | verify strict 20/20
+[13:46:15] verify | func= Uses | rank= 19 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[13:46:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?
+- WINNER: astro-ph/0101467 | The X-ray surface brightness distribution from diffuse gas
+- QUOTE : We use simulations to predict the X-ray surface brightness distribution
+- WHY   : sufficient
+- ANSWER: Simulations are used to predict the X-ray surface brightness distribution from diffuse gas, which can inform future research on the X-ray luminosity of starburst galaxies by providing a basis for understanding the contribution of diffuse gas to the observed X-ray background. The simulations are applied to compute the mean background and its sensitivity to resolution, and to examine the effects of non-gravitational heating on the X-ray surface brightness distribution (astro-ph/0101467).
+[13:46:23] main | running function= FutureWork
+[13:46:23] select | function= FutureWork | candidates_in= 20
+[13:46:23] select | core_terms= ['X-ray', 'starburst galaxies', 'luminosity']
+[13:46:23] select | no cosine prune; kept=20/20
+[13:46:23] select | pool_size= 20 | ranks= [0, 15, 1, 2, 10, 14, 18, 9, 11, 4, 7, 12, 13, 17, 3, 5, 6, 8, 16, 19] | pids= ['astro-ph/0103484', 'astro-ph/0101279', 'astro-ph/0101271', 'astro-ph/0102297', 'astro-ph/0103293', 'astro-ph/0102206', 'astro-ph/0101466', 'astro-ph/0101276', 'astro-ph/0103113', 'astro-ph/0101407', 'astro-ph/0104316', 'astro-ph/0101445', 'astro-ph/0101467', 'astro-ph/0103167', 'astro-ph/0102086', 'astro-ph/0104404', 'astro-ph/0101084', 'astro-ph/0101543', 'astro-ph/0101074', 'astro-ph/0104189']
+[13:46:23] select | verify strict 1/20
+[13:46:23] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103484 | title_snip='The Hard X-ray Luminosity of OB Star Populations: Implications for the…' | abs_len= 1533
+[13:46:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:46:26] select | verify strict 2/20
+[13:46:26] verify | func= FutureWork | rank= 15 | pid= astro-ph/0101279 | title_snip='Soft X-ray AGN Luminosity Function from ROSAT Surveys II. Table of the…' | abs_len= 818
+[13:46:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:29] select | verify strict 3/20
+[13:46:29] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101271 | title_snip='The X-ray Emission in Post-Merger Ellipticals' | abs_len= 909
+[13:46:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:31] select | verify strict 4/20
+[13:46:31] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[13:46:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:46:34] select | verify strict 5/20
+[13:46:34] verify | func= FutureWork | rank= 10 | pid= astro-ph/0103293 | title_snip='X-ray luminosities of galaxies in groups' | abs_len= 1534
+[13:46:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:46:37] select | verify strict 6/20
+[13:46:37] verify | func= FutureWork | rank= 14 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[13:46:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:46:40] select | verify strict 7/20
+[13:46:40] verify | func= FutureWork | rank= 18 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[13:46:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:46:43] select | verify strict 8/20
+[13:46:43] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101276 | title_snip='The z=0 Galaxy Luminosity Function: I. Techniques for Identification o…' | abs_len= 850
+[13:46:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:46] select | verify strict 9/20
+[13:46:46] verify | func= FutureWork | rank= 11 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[13:46:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:48] select | verify strict 10/20
+[13:46:48] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[13:46:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:46:51] select | verify strict 11/20
+[13:46:51] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104316 | title_snip='The Obscuring Starburst of NGC 6221 and Implications for the Hard X-ra…' | abs_len= 1178
+[13:46:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:46:54] select | verify strict 12/20
+[13:46:54] verify | func= FutureWork | rank= 12 | pid= astro-ph/0101445 | title_snip='A critical appraisal of the SED fitting method to estimate photometric…' | abs_len= 708
+[13:46:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:46:57] select | verify strict 13/20
+[13:46:57] verify | func= FutureWork | rank= 13 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[13:46:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:46:59] select | verify strict 14/20
+[13:46:59] verify | func= FutureWork | rank= 17 | pid= astro-ph/0103167 | title_snip='Recent star formation in very luminous infrared galaxies' | abs_len= 822
+[13:47:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:47:02] select | verify strict 15/20
+[13:47:02] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102086 | title_snip='Simulating galaxy surveys with FIRST (PACS & SPIRE)' | abs_len= 1343
+[13:47:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:47:05] select | verify strict 16/20
+[13:47:05] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[13:47:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:47:07] select | verify strict 17/20
+[13:47:07] verify | func= FutureWork | rank= 6 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[13:47:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:47:10] select | verify strict 18/20
+[13:47:10] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[13:47:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:47:12] select | verify strict 19/20
+[13:47:12] verify | func= FutureWork | rank= 16 | pid= astro-ph/0101074 | title_snip='Recovering Physical Parameters from Galaxy Spectra Using MOPED' | abs_len= 1081
+[13:47:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:47:15] select | verify strict 20/20
+[13:47:15] verify | func= FutureWork | rank= 19 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[13:47:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?
+- WINNER: astro-ph/0103484 | The Hard X-ray Luminosity of OB Star Populations: Implications for the
+  Contribution of Star Formation to the Cosmic X-ray Background
+- QUOTE : implications for the contribution of starbursts to the cosmic X-ray background
+- WHY   : sufficient
+- ANSWER: The methods used in this study can inform future research on the X-ray luminosity of starburst galaxies by investigating the nature of the additional emission component required to explain the observed hard X-ray emission in some systems. Future work should explore the implications of this additional emission for the contribution of starbursts to the cosmic X-ray background (astro-ph/0103484).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,342 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the method can be applied (Uses) and explicitly frames it as guidance for subsequent research (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.42 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.68it/s]
+Reading arXiv_src_0101_001.jsonl: 28it [00:00, 110.86it/s]
+Reading arXiv_src_0101_001.jsonl: 179it [00:00, 619.18it/s]
+Reading arXiv_src_0101_001.jsonl: 304it [00:00, 833.70it/s]
+Reading arXiv_src_0101_001.jsonl: 401it [00:00, 798.67it/s]
+Reading arXiv_src_0101_001.jsonl: 490it [00:00, 637.61it/s]
+Reading arXiv_src_0101_001.jsonl: 564it [00:01, 578.09it/s]
+Reading arXiv_src_0101_001.jsonl: 670it [00:01, 691.02it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 771.18it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 859.59it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 933.22it/s]
+Reading arXiv_src_0101_001.jsonl: 1105it [00:01, 974.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1235it [00:01, 1067.25it/s]
+Reading arXiv_src_0101_001.jsonl: 1346it [00:01, 1061.58it/s]
+Reading arXiv_src_0101_001.jsonl: 1481it [00:01, 1144.99it/s]
+Reading arXiv_src_0101_001.jsonl: 1614it [00:01, 1197.98it/s]
+Reading arXiv_src_0101_001.jsonl: 1740it [00:02, 1211.70it/s]
+Reading arXiv_src_0101_001.jsonl: 1863it [00:02, 1183.88it/s]
+Reading arXiv_src_0101_001.jsonl: 2038it [00:02, 1348.47it/s]
+Reading arXiv_src_0101_001.jsonl: 2190it [00:02, 1397.93it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 961.40it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 133it [00:00, 1329.70it/s]
+Reading arXiv_src_0102_001.jsonl: 270it [00:00, 1351.34it/s]
+Reading arXiv_src_0102_001.jsonl: 406it [00:00, 848.53it/s] 
+Reading arXiv_src_0102_001.jsonl: 507it [00:00, 490.80it/s]
+Reading arXiv_src_0102_001.jsonl: 589it [00:00, 551.41it/s]
+Reading arXiv_src_0102_001.jsonl: 664it [00:01, 579.26it/s]
+Reading arXiv_src_0102_001.jsonl: 776it [00:01, 700.15it/s]
+Reading arXiv_src_0102_001.jsonl: 901it [00:01, 833.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1013it [00:01, 906.53it/s]
+Reading arXiv_src_0102_001.jsonl: 1128it [00:01, 968.29it/s]
+Reading arXiv_src_0102_001.jsonl: 1237it [00:01, 1001.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1379it [00:01, 1118.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1513it [00:01, 1181.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1636it [00:01, 1181.80it/s]
+Reading arXiv_src_0102_001.jsonl: 1786it [00:01, 1270.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1936it [00:02, 1335.84it/s]
+Reading arXiv_src_0102_001.jsonl: 2081it [00:02, 1367.23it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 992.88it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1355.17it/s]
+Reading arXiv_src_0103_001.jsonl: 299it [00:00, 1515.41it/s]
+Reading arXiv_src_0103_001.jsonl: 451it [00:00, 1142.44it/s]
+Reading arXiv_src_0103_001.jsonl: 574it [00:00, 734.49it/s] 
+Reading arXiv_src_0103_001.jsonl: 666it [00:00, 767.25it/s]
+Reading arXiv_src_0103_001.jsonl: 757it [00:00, 786.42it/s]
+Reading arXiv_src_0103_001.jsonl: 874it [00:00, 883.34it/s]
+Reading arXiv_src_0103_001.jsonl: 975it [00:01, 915.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1080it [00:01, 948.90it/s]
+Reading arXiv_src_0103_001.jsonl: 1207it [00:01, 1037.81it/s]
+Reading arXiv_src_0103_001.jsonl: 1316it [00:01, 1036.11it/s]
+Reading arXiv_src_0103_001.jsonl: 1457it [00:01, 1142.28it/s]
+Reading arXiv_src_0103_001.jsonl: 1591it [00:01, 1199.64it/s]
+Reading arXiv_src_0103_001.jsonl: 1744it [00:01, 1295.91it/s]
+Reading arXiv_src_0103_001.jsonl: 1881it [00:01, 1316.77it/s]
+Reading arXiv_src_0103_001.jsonl: 2022it [00:01, 1343.86it/s]
+Reading arXiv_src_0103_001.jsonl: 2164it [00:01, 1365.04it/s]
+Reading arXiv_src_0103_001.jsonl: 2312it [00:02, 1395.98it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1134.03it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 11.75it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 672.54it/s]
+Reading arXiv_src_0104_001.jsonl: 304it [00:00, 1021.52it/s]
+Reading arXiv_src_0104_001.jsonl: 422it [00:00, 978.91it/s] 
+Reading arXiv_src_0104_001.jsonl: 530it [00:00, 688.03it/s]
+Reading arXiv_src_0104_001.jsonl: 615it [00:01, 494.71it/s]
+Reading arXiv_src_0104_001.jsonl: 713it [00:01, 584.36it/s]
+Reading arXiv_src_0104_001.jsonl: 803it [00:01, 650.25it/s]
+Reading arXiv_src_0104_001.jsonl: 902it [00:01, 728.73it/s]
+Reading arXiv_src_0104_001.jsonl: 1027it [00:01, 858.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1135it [00:01, 914.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1260it [00:01, 1004.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1369it [00:01, 998.87it/s] 
+Reading arXiv_src_0104_001.jsonl: 1502it [00:01, 1089.68it/s]
+Reading arXiv_src_0104_001.jsonl: 1641it [00:01, 1174.80it/s]
+Reading arXiv_src_0104_001.jsonl: 1769it [00:02, 1203.21it/s]
+Reading arXiv_src_0104_001.jsonl: 1914it [00:02, 1273.29it/s]
+Reading arXiv_src_0104_001.jsonl: 2068it [00:02, 1347.92it/s]
+Reading arXiv_src_0104_001.jsonl: 2205it [00:02, 963.14it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 899.52it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the method of polarisation conversion of electromagnetic waves in 2D electron systems be used in future research for polarisation spectroscopy applications?
+[debug] classifier labels: ['Uses', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+1     1  0.494533  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+2     2  0.324065  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+3     3  0.227567  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+4     4  0.227185  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+5     5  0.219259  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+6     6  0.210255  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+7     7  0.170753  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+8     8  0.170124  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+9     9  0.167214  ...  2025-09-21T12:34:40.755128     Uses, FutureWork
+
+[10 rows x 12 columns]
+[14:34:46] main | args: Namespace(max_check=20, debug=True)
+[14:34:46] read_last_jsonl | path= classified_outputs.jsonl
+[14:34:46] read_last_jsonl | total_lines= 1
+[14:34:46] main | query='How can the method of polarisation conversion of electromagnetic waves in 2D electron systems be used in future research for polarisation spectroscopy applications?' | funcs=['Uses', 'FutureWork']
+[14:34:50] main | core_terms= ['electromagnetic waves', '2D electron systems', 'polarisation conversion', 'polarisation spectroscopy', '2D']
+[14:34:50] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:34:50] load_topk_jsonl | rows= 20
+[14:34:50] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0101072 title_snip='Total Polarisation Conversion in Two-dimensional Electron System under…' abs_len= 1194
+[14:34:50] main | running function= Uses
+[14:34:50] select | function= Uses | candidates_in= 20
+[14:34:50] select | core_terms= ['electromagnetic waves', '2D electron systems', 'polarisation conversion', 'polarisation spectroscopy', '2D']
+[14:34:50] select | no cosine prune; kept=20/20
+[14:34:50] select | pool_size= 20 | ranks= [0, 7, 2, 3, 5, 15, 18, 6, 17, 19, 4, 10, 12, 13, 14, 1, 8, 9, 11, 16] | pids= ['cond-mat/0101072', 'cond-mat/0102057', 'math-ph/0101034', 'cond-mat/0103541', 'cond-mat/0102344', 'cond-mat/0101105', 'cond-mat/0104424', 'cond-mat/0102415', 'cond-mat/0101238', 'cond-mat/0104125', 'cond-mat/0101249', 'cond-mat/0104140', 'cond-mat/0104068', 'cond-mat/0101383', 'cond-mat/0103097', 'cond-mat/0101196', 'physics/0103014', 'cond-mat/0104423', 'cond-mat/0103180', 'cond-mat/0101278']
+[14:34:50] select | verify strict 1/20
+[14:34:50] verify | func= Uses | rank= 0 | pid= cond-mat/0101072 | title_snip='Total Polarisation Conversion in Two-dimensional Electron System under…' | abs_len= 1194
+[14:34:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:34:53] select | verify strict 2/20
+[14:34:53] verify | func= Uses | rank= 7 | pid= cond-mat/0102057 | title_snip='Plasmon dispersion in dilute 2D electron systems: Quantum-Classical an…' | abs_len= 883
+[14:34:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:34:56] select | verify strict 3/20
+[14:34:56] verify | func= Uses | rank= 2 | pid= math-ph/0101034 | title_snip='Spectra of 2D H-donors in magnetic field and their Zeeman splitting' | abs_len= 232
+[14:34:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:34:58] select | verify strict 4/20
+[14:34:58] verify | func= Uses | rank= 3 | pid= cond-mat/0103541 | title_snip='The Droplet State and the Compressibility Anomaly in Dilute 2D Electro…' | abs_len= 544
+[14:35:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:01] select | verify strict 5/20
+[14:35:01] verify | func= Uses | rank= 5 | pid= cond-mat/0102344 | title_snip='A Hartree-Fock Study of Charge Redistribution in a 2D Mesoscopic
+  Str…' | abs_len= 513
+[14:35:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:03] select | verify strict 6/20
+[14:35:03] verify | func= Uses | rank= 15 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[14:35:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:06] select | verify strict 7/20
+[14:35:06] verify | func= Uses | rank= 18 | pid= cond-mat/0104424 | title_snip='Wilson's renormalization group applied to 2D lattice electrons in the
+…' | abs_len= 1054
+[14:35:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:09] select | verify strict 8/20
+[14:35:09] verify | func= Uses | rank= 6 | pid= cond-mat/0102415 | title_snip='Hall Coefficient and electron-electron interaction of 2D electrons in
+…' | abs_len= 825
+[14:35:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:11] select | verify strict 9/20
+[14:35:11] verify | func= Uses | rank= 17 | pid= cond-mat/0101238 | title_snip='Spin dynamics of the model 2D quantum antiferromagnet CFTD' | abs_len= 683
+[14:35:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:14] select | verify strict 10/20
+[14:35:14] verify | func= Uses | rank= 19 | pid= cond-mat/0104125 | title_snip='The simulation of the spin ground states of the coulomb clusters in a
+…' | abs_len= 1019
+[14:35:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:17] select | verify strict 11/20
+[14:35:17] verify | func= Uses | rank= 4 | pid= cond-mat/0101249 | title_snip='The Electron Spectral Function in Two-Dimensional Fractionalized Phase…' | abs_len= 1317
+[14:35:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:19] select | verify strict 12/20
+[14:35:19] verify | func= Uses | rank= 10 | pid= cond-mat/0104140 | title_snip='Path-Integral Renormalization Group Method for Numerical Study on Grou…' | abs_len= 1194
+[14:35:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:22] select | verify strict 13/20
+[14:35:22] verify | func= Uses | rank= 12 | pid= cond-mat/0104068 | title_snip='Quantum lattice fluctuations in a model electron-phonon system' | abs_len= 907
+[14:35:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:24] select | verify strict 14/20
+[14:35:24] verify | func= Uses | rank= 13 | pid= cond-mat/0101383 | title_snip='Coupling of Nonlocal Potentials to Electromagnetic Fields' | abs_len= 584
+[14:35:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:35:27] select | verify strict 15/20
+[14:35:27] verify | func= Uses | rank= 14 | pid= cond-mat/0103097 | title_snip='Diffusing-wave spectroscopy of nonergodic media' | abs_len= 921
+[14:35:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:30] select | verify strict 16/20
+[14:35:30] verify | func= Uses | rank= 1 | pid= cond-mat/0101196 | title_snip='Spin Polarization of Two-Dimensional Electrons Determined from
+  Shubn…' | abs_len= 542
+[14:35:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:35:33] select | verify strict 17/20
+[14:35:33] verify | func= Uses | rank= 8 | pid= physics/0103014 | title_snip='Wave packet propagation study of the charge transfer interaction in th…' | abs_len= 911
+[14:35:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:35] select | verify strict 18/20
+[14:35:35] verify | func= Uses | rank= 9 | pid= cond-mat/0104423 | title_snip='Peierls Distortion in Two-Dimensional Tight-Binding Model' | abs_len= 1157
+[14:35:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:38] select | verify strict 19/20
+[14:35:38] verify | func= Uses | rank= 11 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[14:35:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:41] select | verify strict 20/20
+[14:35:41] verify | func= Uses | rank= 16 | pid= cond-mat/0101278 | title_snip='A theory of the subgap photoemission in one - dimensional electron -
+ …' | abs_len= 952
+[14:35:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How can the method of polarisation conversion of electromagnetic waves in 2D electron systems be used in future research for polarisation spectroscopy applications?
+- WINNER: cond-mat/0101072 | Total Polarisation Conversion in Two-dimensional Electron System under
+  Cyclotron Resonance Conditions
+- QUOTE : polarisation conversion of electromagnetic wave
+- WHY   : sufficient
+- ANSWER: Researchers can use the method of polarisation conversion of electromagnetic waves in 2D electron systems to achieve high polarisation conversion efficiency in polarisation spectroscopy applications. This method can be applied to study 2D electron systems, such as those on GaAs, by exciting cyclotron-polaritons to greatly increase resonance polarisation conversion (cond-mat/0101072).
+[14:35:48] main | running function= FutureWork
+[14:35:48] select | function= FutureWork | candidates_in= 20
+[14:35:48] select | core_terms= ['electromagnetic waves', '2D electron systems', 'polarisation conversion', 'polarisation spectroscopy', '2D']
+[14:35:48] select | no cosine prune; kept=20/20
+[14:35:48] select | pool_size= 20 | ranks= [0, 7, 2, 3, 5, 6, 15, 17, 18, 19, 1, 4, 8, 9, 10, 11, 12, 13, 14, 16] | pids= ['cond-mat/0101072', 'cond-mat/0102057', 'math-ph/0101034', 'cond-mat/0103541', 'cond-mat/0102344', 'cond-mat/0102415', 'cond-mat/0101105', 'cond-mat/0101238', 'cond-mat/0104424', 'cond-mat/0104125', 'cond-mat/0101196', 'cond-mat/0101249', 'physics/0103014', 'cond-mat/0104423', 'cond-mat/0104140', 'cond-mat/0103180', 'cond-mat/0104068', 'cond-mat/0101383', 'cond-mat/0103097', 'cond-mat/0101278']
+[14:35:48] select | verify strict 1/20
+[14:35:48] verify | func= FutureWork | rank= 0 | pid= cond-mat/0101072 | title_snip='Total Polarisation Conversion in Two-dimensional Electron System under…' | abs_len= 1194
+[14:35:52] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:35:52] select | verify strict 2/20
+[14:35:52] verify | func= FutureWork | rank= 7 | pid= cond-mat/0102057 | title_snip='Plasmon dispersion in dilute 2D electron systems: Quantum-Classical an…' | abs_len= 883
+[14:35:55] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:35:55] select | verify strict 3/20
+[14:35:55] verify | func= FutureWork | rank= 2 | pid= math-ph/0101034 | title_snip='Spectra of 2D H-donors in magnetic field and their Zeeman splitting' | abs_len= 232
+[14:35:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:57] select | verify strict 4/20
+[14:35:57] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103541 | title_snip='The Droplet State and the Compressibility Anomaly in Dilute 2D Electro…' | abs_len= 544
+[14:35:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:35:59] select | verify strict 5/20
+[14:35:59] verify | func= FutureWork | rank= 5 | pid= cond-mat/0102344 | title_snip='A Hartree-Fock Study of Charge Redistribution in a 2D Mesoscopic
+  Str…' | abs_len= 513
+[14:36:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:02] select | verify strict 6/20
+[14:36:02] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102415 | title_snip='Hall Coefficient and electron-electron interaction of 2D electrons in
+…' | abs_len= 825
+[14:36:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:05] select | verify strict 7/20
+[14:36:05] verify | func= FutureWork | rank= 15 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[14:36:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:07] select | verify strict 8/20
+[14:36:07] verify | func= FutureWork | rank= 17 | pid= cond-mat/0101238 | title_snip='Spin dynamics of the model 2D quantum antiferromagnet CFTD' | abs_len= 683
+[14:36:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:10] select | verify strict 9/20
+[14:36:10] verify | func= FutureWork | rank= 18 | pid= cond-mat/0104424 | title_snip='Wilson's renormalization group applied to 2D lattice electrons in the
+…' | abs_len= 1054
+[14:36:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:13] select | verify strict 10/20
+[14:36:13] verify | func= FutureWork | rank= 19 | pid= cond-mat/0104125 | title_snip='The simulation of the spin ground states of the coulomb clusters in a
+…' | abs_len= 1019
+[14:36:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:15] select | verify strict 11/20
+[14:36:15] verify | func= FutureWork | rank= 1 | pid= cond-mat/0101196 | title_snip='Spin Polarization of Two-Dimensional Electrons Determined from
+  Shubn…' | abs_len= 542
+[14:36:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:36:18] select | verify strict 12/20
+[14:36:18] verify | func= FutureWork | rank= 4 | pid= cond-mat/0101249 | title_snip='The Electron Spectral Function in Two-Dimensional Fractionalized Phase…' | abs_len= 1317
+[14:36:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:21] select | verify strict 13/20
+[14:36:21] verify | func= FutureWork | rank= 8 | pid= physics/0103014 | title_snip='Wave packet propagation study of the charge transfer interaction in th…' | abs_len= 911
+[14:36:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:23] select | verify strict 14/20
+[14:36:23] verify | func= FutureWork | rank= 9 | pid= cond-mat/0104423 | title_snip='Peierls Distortion in Two-Dimensional Tight-Binding Model' | abs_len= 1157
+[14:36:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:26] select | verify strict 15/20
+[14:36:26] verify | func= FutureWork | rank= 10 | pid= cond-mat/0104140 | title_snip='Path-Integral Renormalization Group Method for Numerical Study on Grou…' | abs_len= 1194
+[14:36:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:29] select | verify strict 16/20
+[14:36:29] verify | func= FutureWork | rank= 11 | pid= cond-mat/0103180 | title_snip='Electronic structure and magnetism in slightly doped SrB_6' | abs_len= 1358
+[14:36:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:31] select | verify strict 17/20
+[14:36:31] verify | func= FutureWork | rank= 12 | pid= cond-mat/0104068 | title_snip='Quantum lattice fluctuations in a model electron-phonon system' | abs_len= 907
+[14:36:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:34] select | verify strict 18/20
+[14:36:34] verify | func= FutureWork | rank= 13 | pid= cond-mat/0101383 | title_snip='Coupling of Nonlocal Potentials to Electromagnetic Fields' | abs_len= 584
+[14:36:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:36] select | verify strict 19/20
+[14:36:36] verify | func= FutureWork | rank= 14 | pid= cond-mat/0103097 | title_snip='Diffusing-wave spectroscopy of nonergodic media' | abs_len= 921
+[14:36:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:36:39] select | verify strict 20/20
+[14:36:39] verify | func= FutureWork | rank= 16 | pid= cond-mat/0101278 | title_snip='A theory of the subgap photoemission in one - dimensional electron -
+ …' | abs_len= 952
+[14:36:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the method of polarisation conversion of electromagnetic waves in 2D electron systems be used in future research for polarisation spectroscopy applications?
+- WINNER: cond-mat/0101072 | Total Polarisation Conversion in Two-dimensional Electron System under
+  Cyclotron Resonance Conditions
+- QUOTE : may be taken up in polarisation spectroscopy of 2D electron systems
+- WHY   : sufficient
+- ANSWER: The method of polarisation conversion of electromagnetic waves in 2D electron systems can be used in future research for polarisation spectroscopy applications by exploiting the high polarisation conversion efficiency under cyclotron resonance conditions. Further studies can explore the potential of this phenomenon in polarisation spectroscopy of 2D electron systems (cond-mat/0101072).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

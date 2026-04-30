@@ -1,0 +1,336 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Motivation"
+  ],
+  "justification": "The query explicitly requests a comparison between current and prior understandings and asks what problem or limitation in earlier work motivated the new investigation."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.85 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 23it [00:00, 229.11it/s]
+Reading arXiv_src_0101_001.jsonl: 170it [00:00, 956.93it/s]
+Reading arXiv_src_0101_001.jsonl: 302it [00:00, 1116.28it/s]
+Reading arXiv_src_0101_001.jsonl: 414it [00:00, 903.92it/s] 
+Reading arXiv_src_0101_001.jsonl: 510it [00:00, 473.95it/s]
+Reading arXiv_src_0101_001.jsonl: 580it [00:00, 494.43it/s]
+Reading arXiv_src_0101_001.jsonl: 687it [00:01, 611.12it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:01, 694.37it/s]
+Reading arXiv_src_0101_001.jsonl: 898it [00:01, 792.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 844.33it/s]
+Reading arXiv_src_0101_001.jsonl: 1133it [00:01, 962.22it/s]
+Reading arXiv_src_0101_001.jsonl: 1263it [00:01, 1054.12it/s]
+Reading arXiv_src_0101_001.jsonl: 1376it [00:01, 1059.68it/s]
+Reading arXiv_src_0101_001.jsonl: 1509it [00:01, 1131.42it/s]
+Reading arXiv_src_0101_001.jsonl: 1646it [00:01, 1198.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1769it [00:02, 1182.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1906it [00:02, 1234.21it/s]
+Reading arXiv_src_0101_001.jsonl: 2092it [00:02, 1414.07it/s]
+Reading arXiv_src_0101_001.jsonl: 2237it [00:02, 1421.15it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 978.60it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  4.97it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 553.19it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 854.77it/s]
+Reading arXiv_src_0102_001.jsonl: 376it [00:00, 764.89it/s]
+Reading arXiv_src_0102_001.jsonl: 466it [00:00, 456.61it/s]
+Reading arXiv_src_0102_001.jsonl: 533it [00:01, 484.88it/s]
+Reading arXiv_src_0102_001.jsonl: 597it [00:01, 514.63it/s]
+Reading arXiv_src_0102_001.jsonl: 683it [00:01, 592.41it/s]
+Reading arXiv_src_0102_001.jsonl: 797it [00:01, 716.82it/s]
+Reading arXiv_src_0102_001.jsonl: 928it [00:01, 868.71it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 919.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 983.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1264it [00:01, 1023.90it/s]
+Reading arXiv_src_0102_001.jsonl: 1409it [00:01, 1143.04it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1182.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1671it [00:02, 1219.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1817it [00:02, 1286.25it/s]
+Reading arXiv_src_0102_001.jsonl: 1969it [00:02, 1352.87it/s]
+Reading arXiv_src_0102_001.jsonl: 2119it [00:02, 1394.76it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 911.26it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1377.59it/s]
+Reading arXiv_src_0103_001.jsonl: 300it [00:00, 1518.83it/s]
+Reading arXiv_src_0103_001.jsonl: 452it [00:00, 1146.64it/s]
+Reading arXiv_src_0103_001.jsonl: 576it [00:00, 734.22it/s] 
+Reading arXiv_src_0103_001.jsonl: 672it [00:00, 783.89it/s]
+Reading arXiv_src_0103_001.jsonl: 765it [00:00, 804.74it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 895.06it/s]
+Reading arXiv_src_0103_001.jsonl: 987it [00:01, 935.61it/s]
+Reading arXiv_src_0103_001.jsonl: 1089it [00:01, 958.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1211it [00:01, 1031.90it/s]
+Reading arXiv_src_0103_001.jsonl: 1319it [00:01, 1040.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1462it [00:01, 1150.21it/s]
+Reading arXiv_src_0103_001.jsonl: 1593it [00:01, 1195.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1747it [00:01, 1294.20it/s]
+Reading arXiv_src_0103_001.jsonl: 1885it [00:01, 1319.29it/s]
+Reading arXiv_src_0103_001.jsonl: 2028it [00:01, 1348.19it/s]
+Reading arXiv_src_0103_001.jsonl: 2171it [00:01, 1366.48it/s]
+Reading arXiv_src_0103_001.jsonl: 2328it [00:02, 1426.18it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1141.31it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:03,  3.63s/it]
+Reading arXiv_src_0104_001.jsonl: 55it [00:03, 20.69it/s]
+Reading arXiv_src_0104_001.jsonl: 212it [00:03, 100.08it/s]
+Reading arXiv_src_0104_001.jsonl: 358it [00:03, 192.77it/s]
+Reading arXiv_src_0104_001.jsonl: 469it [00:04, 254.14it/s]
+Reading arXiv_src_0104_001.jsonl: 562it [00:04, 279.24it/s]
+Reading arXiv_src_0104_001.jsonl: 636it [00:04, 302.72it/s]
+Reading arXiv_src_0104_001.jsonl: 729it [00:04, 383.82it/s]
+Reading arXiv_src_0104_001.jsonl: 813it [00:04, 454.83it/s]
+Reading arXiv_src_0104_001.jsonl: 926it [00:04, 577.11it/s]
+Reading arXiv_src_0104_001.jsonl: 1048it [00:04, 707.06it/s]
+Reading arXiv_src_0104_001.jsonl: 1156it [00:05, 789.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1284it [00:05, 907.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1393it [00:05, 937.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1534it [00:05, 1062.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1668it [00:05, 1136.86it/s]
+Reading arXiv_src_0104_001.jsonl: 1806it [00:05, 1204.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1958it [00:05, 1293.41it/s]
+Reading arXiv_src_0104_001.jsonl: 2118it [00:05, 948.74it/s] 
+Reading arXiv_src_0104_001.jsonl: 2261it [00:06, 1054.26it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:06, 380.74it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?
+[debug] classifier labels: ['Compares', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+1     1  0.879461  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+2     2  0.525026  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+3     3  0.503297  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+4     4  0.489252  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+5     5  0.485384  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+6     6  0.314538  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+7     7  0.309509  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+8     8  0.304470  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+9     9  0.265895  ...  2025-09-21T21:27:30.559038  Compares, Motivation
+
+[10 rows x 12 columns]
+[23:27:37] main | args: Namespace(max_check=20, debug=True)
+[23:27:37] read_last_jsonl | path= classified_outputs.jsonl
+[23:27:37] read_last_jsonl | total_lines= 1
+[23:27:37] main | query='How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?' | funcs=['Compares', 'Motivation']
+[23:27:39] main | core_terms= ['electron', 'Bernstein-Greene-Kruskal solitary waves', 'Bernstein-Greene-Kruskal']
+[23:27:39] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:27:39] load_topk_jsonl | rows= 20
+[23:27:39] load_topk_jsonl | first: rank= 0 paper_id= physics/0103020 title_snip='BGK Electron Solitary Waves Reexamined' abs_len= 1466
+[23:27:39] main | running function= Compares
+[23:27:39] select | function= Compares | candidates_in= 20
+[23:27:39] select | core_terms= ['electron', 'Bernstein-Greene-Kruskal solitary waves', 'Bernstein-Greene-Kruskal']
+[23:27:39] select | no cosine prune; kept=20/20
+[23:27:39] select | pool_size= 20 | ranks= [0, 1, 7, 10, 2, 5, 9, 17, 3, 4, 6, 8, 11, 12, 13, 14, 15, 16, 18, 19] | pids= ['physics/0103020', 'nucl-th/0101024', 'cond-mat/0102189', 'hep-ph/0102212', 'hep-th/0104167', 'hep-ph/0104065', 'hep-ph/0101078', 'hep-th/0103044', 'nucl-th/0101008', 'hep-ph/0103323', 'nucl-th/0104050', 'hep-th/0103034', 'math/0101037', 'hep-ph/0104021', 'nucl-th/0103044', 'hep-ph/0102026', 'nucl-th/0104002', 'hep-ph/0101276', 'hep-ph/0104137', 'quant-ph/0103019']
+[23:27:39] select | verify strict 1/20
+[23:27:39] verify | func= Compares | rank= 0 | pid= physics/0103020 | title_snip='BGK Electron Solitary Waves Reexamined' | abs_len= 1466
+[23:27:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:27:43] select | verify strict 2/20
+[23:27:43] verify | func= Compares | rank= 1 | pid= nucl-th/0101024 | title_snip='Coulomb corrections to $e^+ e^-$ production in ultra-relativistic
+  nu…' | abs_len= 1023
+[23:27:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:27:45] select | verify strict 3/20
+[23:27:45] verify | func= Compares | rank= 7 | pid= cond-mat/0102189 | title_snip='Breakdown of the Migdal-Eliashberg theory in the strong-coupling
+  adi…' | abs_len= 903
+[23:27:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:27:48] select | verify strict 4/20
+[23:27:48] verify | func= Compares | rank= 10 | pid= hep-ph/0102212 | title_snip='QED Corrections to the Scattering of Solar Neutrinos and Electrons' | abs_len= 415
+[23:27:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:27:51] select | verify strict 5/20
+[23:27:51] verify | func= Compares | rank= 2 | pid= hep-th/0104167 | title_snip='A Note on Unitarity of Non-Relativistic Non-Commutative Theories' | abs_len= 423
+[23:27:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:27:53] select | verify strict 6/20
+[23:27:53] verify | func= Compares | rank= 5 | pid= hep-ph/0104065 | title_snip='Rescattering corrections in elastic scattering' | abs_len= 773
+[23:27:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:27:56] select | verify strict 7/20
+[23:27:56] verify | func= Compares | rank= 9 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[23:27:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:27:58] select | verify strict 8/20
+[23:27:58] verify | func= Compares | rank= 17 | pid= hep-th/0103044 | title_snip='New Coherent String States and Minimal Uncertainty in WZWN Models' | abs_len= 1380
+[23:28:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:01] select | verify strict 9/20
+[23:28:01] verify | func= Compares | rank= 3 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[23:28:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:04] select | verify strict 10/20
+[23:28:04] verify | func= Compares | rank= 4 | pid= hep-ph/0103323 | title_snip='Nonlinear and spin effects in two-photon annihilation of a fermion pai…' | abs_len= 1471
+[23:28:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:06] select | verify strict 11/20
+[23:28:06] verify | func= Compares | rank= 6 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:28:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:09] select | verify strict 12/20
+[23:28:09] verify | func= Compares | rank= 8 | pid= hep-th/0103034 | title_snip='Gravity as the Spin-2 Quantum Gauge Theory' | abs_len= 1603
+[23:28:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:12] select | verify strict 13/20
+[23:28:12] verify | func= Compares | rank= 11 | pid= math/0101037 | title_snip='Reconstruction from projections using dynamics: Non-Stochastic Case' | abs_len= 1202
+[23:28:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:14] select | verify strict 14/20
+[23:28:14] verify | func= Compares | rank= 12 | pid= hep-ph/0104021 | title_snip='Non-adiabatic level crossing in (non-) resonant neutrino oscillations' | abs_len= 826
+[23:28:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:17] select | verify strict 15/20
+[23:28:17] verify | func= Compares | rank= 13 | pid= nucl-th/0103044 | title_snip='Compton Scattering off Relativistic Bound States: Two-Photon Vertices,…' | abs_len= 1770
+[23:28:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:19] select | verify strict 16/20
+[23:28:19] verify | func= Compares | rank= 14 | pid= hep-ph/0102026 | title_snip='An Analysis of the Next-to-Leading Order Corrections to the
+  g_T(=g_1…' | abs_len= 1109
+[23:28:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:22] select | verify strict 17/20
+[23:28:22] verify | func= Compares | rank= 15 | pid= nucl-th/0104002 | title_snip='The Ay Problem for p-3He Elastic Scattering' | abs_len= 691
+[23:28:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:25] select | verify strict 18/20
+[23:28:25] verify | func= Compares | rank= 16 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[23:28:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:27] select | verify strict 19/20
+[23:28:27] verify | func= Compares | rank= 18 | pid= hep-ph/0104137 | title_snip='CP violation from noncommutative geometry' | abs_len= 1195
+[23:28:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:30] select | verify strict 20/20
+[23:28:30] verify | func= Compares | rank= 19 | pid= quant-ph/0103019 | title_snip='Relativistic Restrictions on the Distinguishability of Orthogonal
+  Qu…' | abs_len= 347
+[23:28:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?
+- WINNER: physics/0103020 | BGK Electron Solitary Waves Reexamined
+- QUOTE : A BGK EH consists of electron density enhancements as well as a density depletion, instead of only the density depletion as previously thought
+- WHY   : sufficient
+- ANSWER: The current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compares to previous thoughts in that it reveals a more complex structure, including both density enhancements and depletions, whereas previous work considered only density depletions. This reexamination was motivated by the limitation of previous work in understanding the physical roles of trapped and passing electrons in these solitary waves (physics/0103020).
+[23:28:38] main | running function= Motivation
+[23:28:38] select | function= Motivation | candidates_in= 20
+[23:28:38] select | core_terms= ['electron', 'Bernstein-Greene-Kruskal solitary waves', 'Bernstein-Greene-Kruskal']
+[23:28:38] select | no cosine prune; kept=20/20
+[23:28:38] select | pool_size= 20 | ranks= [0, 1, 7, 10, 3, 6, 11, 15, 17, 2, 4, 5, 8, 9, 12, 13, 14, 16, 18, 19] | pids= ['physics/0103020', 'nucl-th/0101024', 'cond-mat/0102189', 'hep-ph/0102212', 'nucl-th/0101008', 'nucl-th/0104050', 'math/0101037', 'nucl-th/0104002', 'hep-th/0103044', 'hep-th/0104167', 'hep-ph/0103323', 'hep-ph/0104065', 'hep-th/0103034', 'hep-ph/0101078', 'hep-ph/0104021', 'nucl-th/0103044', 'hep-ph/0102026', 'hep-ph/0101276', 'hep-ph/0104137', 'quant-ph/0103019']
+[23:28:38] select | verify strict 1/20
+[23:28:38] verify | func= Motivation | rank= 0 | pid= physics/0103020 | title_snip='BGK Electron Solitary Waves Reexamined' | abs_len= 1466
+[23:28:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:28:42] select | verify strict 2/20
+[23:28:42] verify | func= Motivation | rank= 1 | pid= nucl-th/0101024 | title_snip='Coulomb corrections to $e^+ e^-$ production in ultra-relativistic
+  nu…' | abs_len= 1023
+[23:28:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:45] select | verify strict 3/20
+[23:28:45] verify | func= Motivation | rank= 7 | pid= cond-mat/0102189 | title_snip='Breakdown of the Migdal-Eliashberg theory in the strong-coupling
+  adi…' | abs_len= 903
+[23:28:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:48] select | verify strict 4/20
+[23:28:48] verify | func= Motivation | rank= 10 | pid= hep-ph/0102212 | title_snip='QED Corrections to the Scattering of Solar Neutrinos and Electrons' | abs_len= 415
+[23:28:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:50] select | verify strict 5/20
+[23:28:50] verify | func= Motivation | rank= 3 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[23:28:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:53] select | verify strict 6/20
+[23:28:53] verify | func= Motivation | rank= 6 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:28:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:55] select | verify strict 7/20
+[23:28:55] verify | func= Motivation | rank= 11 | pid= math/0101037 | title_snip='Reconstruction from projections using dynamics: Non-Stochastic Case' | abs_len= 1202
+[23:28:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:28:58] select | verify strict 8/20
+[23:28:58] verify | func= Motivation | rank= 15 | pid= nucl-th/0104002 | title_snip='The Ay Problem for p-3He Elastic Scattering' | abs_len= 691
+[23:29:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:00] select | verify strict 9/20
+[23:29:00] verify | func= Motivation | rank= 17 | pid= hep-th/0103044 | title_snip='New Coherent String States and Minimal Uncertainty in WZWN Models' | abs_len= 1380
+[23:29:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:03] select | verify strict 10/20
+[23:29:03] verify | func= Motivation | rank= 2 | pid= hep-th/0104167 | title_snip='A Note on Unitarity of Non-Relativistic Non-Commutative Theories' | abs_len= 423
+[23:29:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:06] select | verify strict 11/20
+[23:29:06] verify | func= Motivation | rank= 4 | pid= hep-ph/0103323 | title_snip='Nonlinear and spin effects in two-photon annihilation of a fermion pai…' | abs_len= 1471
+[23:29:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:08] select | verify strict 12/20
+[23:29:08] verify | func= Motivation | rank= 5 | pid= hep-ph/0104065 | title_snip='Rescattering corrections in elastic scattering' | abs_len= 773
+[23:29:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:11] select | verify strict 13/20
+[23:29:11] verify | func= Motivation | rank= 8 | pid= hep-th/0103034 | title_snip='Gravity as the Spin-2 Quantum Gauge Theory' | abs_len= 1603
+[23:29:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:13] select | verify strict 14/20
+[23:29:13] verify | func= Motivation | rank= 9 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[23:29:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:16] select | verify strict 15/20
+[23:29:16] verify | func= Motivation | rank= 12 | pid= hep-ph/0104021 | title_snip='Non-adiabatic level crossing in (non-) resonant neutrino oscillations' | abs_len= 826
+[23:29:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:19] select | verify strict 16/20
+[23:29:19] verify | func= Motivation | rank= 13 | pid= nucl-th/0103044 | title_snip='Compton Scattering off Relativistic Bound States: Two-Photon Vertices,…' | abs_len= 1770
+[23:29:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:21] select | verify strict 17/20
+[23:29:21] verify | func= Motivation | rank= 14 | pid= hep-ph/0102026 | title_snip='An Analysis of the Next-to-Leading Order Corrections to the
+  g_T(=g_1…' | abs_len= 1109
+[23:29:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:24] select | verify strict 18/20
+[23:29:24] verify | func= Motivation | rank= 16 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[23:29:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:27] select | verify strict 19/20
+[23:29:27] verify | func= Motivation | rank= 18 | pid= hep-ph/0104137 | title_snip='CP violation from noncommutative geometry' | abs_len= 1195
+[23:29:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:29] select | verify strict 20/20
+[23:29:29] verify | func= Motivation | rank= 19 | pid= quant-ph/0103019 | title_snip='Relativistic Restrictions on the Distinguishability of Orthogonal
+  Qu…' | abs_len= 347
+[23:29:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?
+- WINNER: physics/0103020 | BGK Electron Solitary Waves Reexamined
+- QUOTE : A BGK EH consists of electron density enhancements as well as a density depletion, instead of only the density depletion as previously thought
+- WHY   : sufficient
+- ANSWER: Previous thoughts on electron Bernstein-Greene-Kruskal solitary waves were limited by the assumption that they consisted only of density depletion, and the current work reexamines this concept to provide a more accurate understanding. The motivation for this reexamination stems from the need to resolve the limitations and inaccuracies in previous work, particularly regarding the role of trapped and passing electrons and the shielding of the positive core (physics/0103020).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

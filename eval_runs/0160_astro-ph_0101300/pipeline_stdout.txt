@@ -1,0 +1,398 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Extends"
+  ],
+  "justification": "The query asks for foundational context (background) about EUV emission and how this study expands knowledge of cluster gas and radio sources (extends)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.87 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.46it/s]
+Reading arXiv_src_0101_001.jsonl: 142it [00:00, 822.08it/s]
+Reading arXiv_src_0101_001.jsonl: 287it [00:00, 1104.82it/s]
+Reading arXiv_src_0101_001.jsonl: 398it [00:00, 966.99it/s] 
+Reading arXiv_src_0101_001.jsonl: 498it [00:00, 709.32it/s]
+Reading arXiv_src_0101_001.jsonl: 579it [00:00, 658.48it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:01, 509.78it/s]
+Reading arXiv_src_0101_001.jsonl: 768it [00:01, 607.18it/s]
+Reading arXiv_src_0101_001.jsonl: 881it [00:01, 721.40it/s]
+Reading arXiv_src_0101_001.jsonl: 988it [00:01, 802.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1099it [00:01, 875.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1232it [00:01, 996.51it/s]
+Reading arXiv_src_0101_001.jsonl: 1340it [00:01, 1010.93it/s]
+Reading arXiv_src_0101_001.jsonl: 1479it [00:01, 1115.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1616it [00:01, 1186.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1748it [00:01, 1223.72it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1193.12it/s]
+Reading arXiv_src_0101_001.jsonl: 2056it [00:02, 1369.89it/s]
+Reading arXiv_src_0101_001.jsonl: 2213it [00:02, 1424.60it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 983.87it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1335.72it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1367.08it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 854.58it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 523.16it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 556.92it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:01, 620.23it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 745.02it/s]
+Reading arXiv_src_0102_001.jsonl: 916it [00:01, 862.06it/s]
+Reading arXiv_src_0102_001.jsonl: 1028it [00:01, 928.44it/s]
+Reading arXiv_src_0102_001.jsonl: 1150it [00:01, 1005.68it/s]
+Reading arXiv_src_0102_001.jsonl: 1260it [00:01, 1031.70it/s]
+Reading arXiv_src_0102_001.jsonl: 1408it [00:01, 1159.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1201.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1236.72it/s]
+Reading arXiv_src_0102_001.jsonl: 1824it [00:01, 1313.88it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:02, 1375.86it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1405.26it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1019.93it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1359.84it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1523.53it/s]
+Reading arXiv_src_0103_001.jsonl: 454it [00:00, 1100.60it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 734.77it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 783.75it/s]
+Reading arXiv_src_0103_001.jsonl: 764it [00:00, 805.24it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 899.47it/s]
+Reading arXiv_src_0103_001.jsonl: 989it [00:01, 944.40it/s]
+Reading arXiv_src_0103_001.jsonl: 1091it [00:01, 963.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1214it [00:01, 1037.27it/s]
+Reading arXiv_src_0103_001.jsonl: 1322it [00:01, 1043.58it/s]
+Reading arXiv_src_0103_001.jsonl: 1464it [00:01, 1152.66it/s]
+Reading arXiv_src_0103_001.jsonl: 1602it [00:01, 1217.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1751it [00:01, 1296.67it/s]
+Reading arXiv_src_0103_001.jsonl: 1893it [00:01, 1329.83it/s]
+Reading arXiv_src_0103_001.jsonl: 2035it [00:01, 1356.40it/s]
+Reading arXiv_src_0103_001.jsonl: 2175it [00:01, 1368.00it/s]
+Reading arXiv_src_0103_001.jsonl: 2332it [00:02, 1427.96it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1142.62it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 1496.87it/s]
+Reading arXiv_src_0104_001.jsonl: 310it [00:00, 1552.23it/s]
+Reading arXiv_src_0104_001.jsonl: 466it [00:00, 1002.54it/s]
+Reading arXiv_src_0104_001.jsonl: 583it [00:00, 552.32it/s] 
+Reading arXiv_src_0104_001.jsonl: 693it [00:00, 648.08it/s]
+Reading arXiv_src_0104_001.jsonl: 788it [00:01, 709.75it/s]
+Reading arXiv_src_0104_001.jsonl: 892it [00:01, 781.32it/s]
+Reading arXiv_src_0104_001.jsonl: 1013it [00:01, 883.78it/s]
+Reading arXiv_src_0104_001.jsonl: 1127it [00:01, 949.30it/s]
+Reading arXiv_src_0104_001.jsonl: 1251it [00:01, 1026.94it/s]
+Reading arXiv_src_0104_001.jsonl: 1363it [00:01, 1025.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1496it [00:01, 1108.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1640it [00:01, 1202.52it/s]
+Reading arXiv_src_0104_001.jsonl: 1771it [00:01, 1228.64it/s]
+Reading arXiv_src_0104_001.jsonl: 1920it [00:01, 1304.31it/s]
+Reading arXiv_src_0104_001.jsonl: 2082it [00:02, 1396.54it/s]
+Reading arXiv_src_0104_001.jsonl: 2224it [00:02, 956.58it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 979.66it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the study of EUV emission in the Fornax cluster provide background information and extend our understanding of cluster gas and radio sources?
+[debug] classifier labels: ['Background', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:04:51.151816  Background, Extends
+1     1  0.301596  ...  2025-09-21T21:04:51.151816  Background, Extends
+2     2  0.277784  ...  2025-09-21T21:04:51.151816  Background, Extends
+3     3  0.254973  ...  2025-09-21T21:04:51.151816  Background, Extends
+4     4  0.186742  ...  2025-09-21T21:04:51.151816  Background, Extends
+5     5  0.185370  ...  2025-09-21T21:04:51.151816  Background, Extends
+6     6  0.184932  ...  2025-09-21T21:04:51.151816  Background, Extends
+7     7  0.180677  ...  2025-09-21T21:04:51.151816  Background, Extends
+8     8  0.150554  ...  2025-09-21T21:04:51.151816  Background, Extends
+9     9  0.138068  ...  2025-09-21T21:04:51.151816  Background, Extends
+
+[10 rows x 12 columns]
+[23:04:56] main | args: Namespace(max_check=20, debug=True)
+[23:04:56] read_last_jsonl | path= classified_outputs.jsonl
+[23:04:56] read_last_jsonl | total_lines= 1
+[23:04:56] main | query='How does the study of EUV emission in the Fornax cluster provide background information and extend our understanding of cluster gas and radio sources?' | funcs=['Background', 'Extends']
+[23:04:58] main | core_terms= ['Fornax cluster', 'cluster gas', 'radio sources', 'EUV emission', 'EUV']
+[23:04:58] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:04:58] load_topk_jsonl | rows= 20
+[23:04:58] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101300 title_snip='Extreme Ultraviolet Emission in the Fornax Cluster of Galaxies' abs_len= 1096
+[23:04:58] main | running function= Background
+[23:04:58] select | function= Background | candidates_in= 20
+[23:04:58] select | core_terms= ['Fornax cluster', 'cluster gas', 'radio sources', 'EUV emission', 'EUV']
+[23:04:58] select | no cosine prune; kept=20/20
+[23:04:58] select | pool_size= 20 | ranks= [0, 4, 1, 2, 8, 15, 11, 10, 16, 3, 5, 6, 7, 9, 12, 13, 14, 17, 18, 19] | pids= ['astro-ph/0101300', 'astro-ph/0104234', 'astro-ph/0104422', 'astro-ph/0102363', 'astro-ph/0103501', 'astro-ph/0101457', 'astro-ph/0102093', 'astro-ph/0101363', 'astro-ph/0103392', 'astro-ph/0104189', 'astro-ph/0103109', 'astro-ph/0102010', 'astro-ph/0101152', 'astro-ph/0102165', 'astro-ph/0102437', 'astro-ph/0101478', 'astro-ph/0101060', 'astro-ph/0101335', 'astro-ph/0103048', 'nucl-th/0103009']
+[23:04:58] select | verify strict 1/20
+[23:04:58] verify | func= Background | rank= 0 | pid= astro-ph/0101300 | title_snip='Extreme Ultraviolet Emission in the Fornax Cluster of Galaxies' | abs_len= 1096
+[23:05:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:05:01] select | verify strict 2/20
+[23:05:01] verify | func= Background | rank= 4 | pid= astro-ph/0104234 | title_snip='The Ionization of Nearby Interstellar Gas' | abs_len= 1404
+[23:05:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:04] select | verify strict 3/20
+[23:05:04] verify | func= Background | rank= 1 | pid= astro-ph/0104422 | title_snip='Ionizing Photons and EUV Excesses in Clusters of Galaxies' | abs_len= 1285
+[23:05:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:05:07] select | verify strict 4/20
+[23:05:07] verify | func= Background | rank= 2 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[23:05:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:05:10] select | verify strict 5/20
+[23:05:10] verify | func= Background | rank= 8 | pid= astro-ph/0103501 | title_snip='The Globular Cluster System of NGC 1316 (Fornax A)' | abs_len= 1381
+[23:05:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:13] select | verify strict 6/20
+[23:05:13] verify | func= Background | rank= 15 | pid= astro-ph/0101457 | title_snip='The evidence for jet-cloud interactions in a sample of
+  high/intermed…' | abs_len= 1742
+[23:05:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:15] select | verify strict 7/20
+[23:05:15] verify | func= Background | rank= 11 | pid= astro-ph/0102093 | title_snip='FUSE Limits on FUV Emission from Warm Gas in Clusters of Galaxies' | abs_len= 654
+[23:05:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:18] select | verify strict 8/20
+[23:05:18] verify | func= Background | rank= 10 | pid= astro-ph/0101363 | title_snip='High Energy X-Ray Emission in Clusters of Galaxies' | abs_len= 983
+[23:05:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:20] select | verify strict 9/20
+[23:05:20] verify | func= Background | rank= 16 | pid= astro-ph/0103392 | title_snip='The interaction of radio sources and cooling flows' | abs_len= 606
+[23:05:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:23] select | verify strict 10/20
+[23:05:23] verify | func= Background | rank= 3 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[23:05:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:25] select | verify strict 11/20
+[23:05:25] verify | func= Background | rank= 5 | pid= astro-ph/0103109 | title_snip='Understanding the radio emission geometry of PSR B0329+54' | abs_len= 1532
+[23:05:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:28] select | verify strict 12/20
+[23:05:28] verify | func= Background | rank= 6 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:05:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:30] select | verify strict 13/20
+[23:05:30] verify | func= Background | rank= 7 | pid= astro-ph/0101152 | title_snip='Deep VLT spectroscopy of the z=2.49 Radio Galaxy MRC 2104-242: Evidenc…' | abs_len= 915
+[23:05:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:33] select | verify strict 14/20
+[23:05:33] verify | func= Background | rank= 9 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:05:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:36] select | verify strict 15/20
+[23:05:36] verify | func= Background | rank= 12 | pid= astro-ph/0102437 | title_snip='The X-ray emission from Nova V382 Velorum: I. The hard component
+  obs…' | abs_len= 784
+[23:05:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:38] select | verify strict 16/20
+[23:05:38] verify | func= Background | rank= 13 | pid= astro-ph/0101478 | title_snip='Chandra detection of the intracluster medium around 3C294 at z=1.786' | abs_len= 986
+[23:05:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:41] select | verify strict 17/20
+[23:05:41] verify | func= Background | rank= 14 | pid= astro-ph/0101060 | title_snip='BeppoSAX observation of the rich cluster of galaxies Abell 85' | abs_len= 1476
+[23:05:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:43] select | verify strict 18/20
+[23:05:43] verify | func= Background | rank= 17 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[23:05:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:46] select | verify strict 19/20
+[23:05:46] verify | func= Background | rank= 18 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[23:05:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:49] select | verify strict 20/20
+[23:05:49] verify | func= Background | rank= 19 | pid= nucl-th/0103009 | title_snip='Cluster Emission and Phase Transition Behavior in the Nuclear
+  Disass…' | abs_len= 979
+[23:05:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:53] arbiter | rejected off-topic winner: astro-ph/0102363
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the study of EUV emission in the Fornax cluster provide background information and extend our understanding of cluster gas and radio sources?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Background.
+[23:05:53] main | running function= Extends
+[23:05:53] select | function= Extends | candidates_in= 20
+[23:05:53] select | core_terms= ['Fornax cluster', 'cluster gas', 'radio sources', 'EUV emission', 'EUV']
+[23:05:53] select | no cosine prune; kept=20/20
+[23:05:53] select | pool_size= 20 | ranks= [0, 4, 10, 15, 1, 2, 11, 8, 16, 7, 13, 14, 3, 5, 6, 9, 12, 17, 18, 19] | pids= ['astro-ph/0101300', 'astro-ph/0104234', 'astro-ph/0101363', 'astro-ph/0101457', 'astro-ph/0104422', 'astro-ph/0102363', 'astro-ph/0102093', 'astro-ph/0103501', 'astro-ph/0103392', 'astro-ph/0101152', 'astro-ph/0101478', 'astro-ph/0101060', 'astro-ph/0104189', 'astro-ph/0103109', 'astro-ph/0102010', 'astro-ph/0102165', 'astro-ph/0102437', 'astro-ph/0101335', 'astro-ph/0103048', 'nucl-th/0103009']
+[23:05:53] select | verify strict 1/20
+[23:05:53] verify | func= Extends | rank= 0 | pid= astro-ph/0101300 | title_snip='Extreme Ultraviolet Emission in the Fornax Cluster of Galaxies' | abs_len= 1096
+[23:05:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:05:56] select | verify strict 2/20
+[23:05:56] verify | func= Extends | rank= 4 | pid= astro-ph/0104234 | title_snip='The Ionization of Nearby Interstellar Gas' | abs_len= 1404
+[23:05:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:05:59] select | verify strict 3/20
+[23:05:59] verify | func= Extends | rank= 10 | pid= astro-ph/0101363 | title_snip='High Energy X-Ray Emission in Clusters of Galaxies' | abs_len= 983
+[23:06:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:01] select | verify strict 4/20
+[23:06:01] verify | func= Extends | rank= 15 | pid= astro-ph/0101457 | title_snip='The evidence for jet-cloud interactions in a sample of
+  high/intermed…' | abs_len= 1742
+[23:06:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:04] select | verify strict 5/20
+[23:06:04] verify | func= Extends | rank= 1 | pid= astro-ph/0104422 | title_snip='Ionizing Photons and EUV Excesses in Clusters of Galaxies' | abs_len= 1285
+[23:06:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:06:07] select | verify strict 6/20
+[23:06:07] verify | func= Extends | rank= 2 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[23:06:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:06:10] select | verify strict 7/20
+[23:06:10] verify | func= Extends | rank= 11 | pid= astro-ph/0102093 | title_snip='FUSE Limits on FUV Emission from Warm Gas in Clusters of Galaxies' | abs_len= 654
+[23:06:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:13] select | verify strict 8/20
+[23:06:13] verify | func= Extends | rank= 8 | pid= astro-ph/0103501 | title_snip='The Globular Cluster System of NGC 1316 (Fornax A)' | abs_len= 1381
+[23:06:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:16] select | verify strict 9/20
+[23:06:16] verify | func= Extends | rank= 16 | pid= astro-ph/0103392 | title_snip='The interaction of radio sources and cooling flows' | abs_len= 606
+[23:06:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:18] select | verify strict 10/20
+[23:06:18] verify | func= Extends | rank= 7 | pid= astro-ph/0101152 | title_snip='Deep VLT spectroscopy of the z=2.49 Radio Galaxy MRC 2104-242: Evidenc…' | abs_len= 915
+[23:06:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:21] select | verify strict 11/20
+[23:06:21] verify | func= Extends | rank= 13 | pid= astro-ph/0101478 | title_snip='Chandra detection of the intracluster medium around 3C294 at z=1.786' | abs_len= 986
+[23:06:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:23] select | verify strict 12/20
+[23:06:23] verify | func= Extends | rank= 14 | pid= astro-ph/0101060 | title_snip='BeppoSAX observation of the rich cluster of galaxies Abell 85' | abs_len= 1476
+[23:06:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:26] select | verify strict 13/20
+[23:06:26] verify | func= Extends | rank= 3 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[23:06:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:28] select | verify strict 14/20
+[23:06:28] verify | func= Extends | rank= 5 | pid= astro-ph/0103109 | title_snip='Understanding the radio emission geometry of PSR B0329+54' | abs_len= 1532
+[23:06:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:31] select | verify strict 15/20
+[23:06:31] verify | func= Extends | rank= 6 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:06:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:33] select | verify strict 16/20
+[23:06:33] verify | func= Extends | rank= 9 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:06:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:36] select | verify strict 17/20
+[23:06:36] verify | func= Extends | rank= 12 | pid= astro-ph/0102437 | title_snip='The X-ray emission from Nova V382 Velorum: I. The hard component
+  obs…' | abs_len= 784
+[23:06:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:39] select | verify strict 18/20
+[23:06:39] verify | func= Extends | rank= 17 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[23:06:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:41] select | verify strict 19/20
+[23:06:41] verify | func= Extends | rank= 18 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[23:06:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:44] select | verify strict 20/20
+[23:06:44] verify | func= Extends | rank= 19 | pid= nucl-th/0103009 | title_snip='Cluster Emission and Phase Transition Behavior in the Nuclear
+  Disass…' | abs_len= 979
+[23:06:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:47] select | strict pass found 0 winners → trying relaxed
+[23:06:47] select | verify relaxed 1/20
+[23:06:47] verify | func= Extends | rank= 0 | pid= astro-ph/0101300 | title_snip='Extreme Ultraviolet Emission in the Fornax Cluster of Galaxies' | abs_len= 1096
+[23:06:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:06:50] select | verify relaxed 2/20
+[23:06:50] verify | func= Extends | rank= 4 | pid= astro-ph/0104234 | title_snip='The Ionization of Nearby Interstellar Gas' | abs_len= 1404
+[23:06:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:52] select | verify relaxed 3/20
+[23:06:52] verify | func= Extends | rank= 10 | pid= astro-ph/0101363 | title_snip='High Energy X-Ray Emission in Clusters of Galaxies' | abs_len= 983
+[23:06:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:55] select | verify relaxed 4/20
+[23:06:55] verify | func= Extends | rank= 15 | pid= astro-ph/0101457 | title_snip='The evidence for jet-cloud interactions in a sample of
+  high/intermed…' | abs_len= 1742
+[23:06:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:06:57] select | verify relaxed 5/20
+[23:06:57] verify | func= Extends | rank= 1 | pid= astro-ph/0104422 | title_snip='Ionizing Photons and EUV Excesses in Clusters of Galaxies' | abs_len= 1285
+[23:07:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:07:01] select | verify relaxed 6/20
+[23:07:01] verify | func= Extends | rank= 2 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[23:07:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:07:04] select | verify relaxed 7/20
+[23:07:04] verify | func= Extends | rank= 11 | pid= astro-ph/0102093 | title_snip='FUSE Limits on FUV Emission from Warm Gas in Clusters of Galaxies' | abs_len= 654
+[23:07:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:06] select | verify relaxed 8/20
+[23:07:06] verify | func= Extends | rank= 8 | pid= astro-ph/0103501 | title_snip='The Globular Cluster System of NGC 1316 (Fornax A)' | abs_len= 1381
+[23:07:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:09] select | verify relaxed 9/20
+[23:07:09] verify | func= Extends | rank= 16 | pid= astro-ph/0103392 | title_snip='The interaction of radio sources and cooling flows' | abs_len= 606
+[23:07:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:11] select | verify relaxed 10/20
+[23:07:11] verify | func= Extends | rank= 7 | pid= astro-ph/0101152 | title_snip='Deep VLT spectroscopy of the z=2.49 Radio Galaxy MRC 2104-242: Evidenc…' | abs_len= 915
+[23:07:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:14] select | verify relaxed 11/20
+[23:07:14] verify | func= Extends | rank= 13 | pid= astro-ph/0101478 | title_snip='Chandra detection of the intracluster medium around 3C294 at z=1.786' | abs_len= 986
+[23:07:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:17] select | verify relaxed 12/20
+[23:07:17] verify | func= Extends | rank= 14 | pid= astro-ph/0101060 | title_snip='BeppoSAX observation of the rich cluster of galaxies Abell 85' | abs_len= 1476
+[23:07:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:19] select | verify relaxed 13/20
+[23:07:19] verify | func= Extends | rank= 3 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[23:07:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:22] select | verify relaxed 14/20
+[23:07:22] verify | func= Extends | rank= 5 | pid= astro-ph/0103109 | title_snip='Understanding the radio emission geometry of PSR B0329+54' | abs_len= 1532
+[23:07:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:24] select | verify relaxed 15/20
+[23:07:24] verify | func= Extends | rank= 6 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:07:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:27] select | verify relaxed 16/20
+[23:07:27] verify | func= Extends | rank= 9 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:07:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:29] select | verify relaxed 17/20
+[23:07:29] verify | func= Extends | rank= 12 | pid= astro-ph/0102437 | title_snip='The X-ray emission from Nova V382 Velorum: I. The hard component
+  obs…' | abs_len= 784
+[23:07:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:32] select | verify relaxed 18/20
+[23:07:32] verify | func= Extends | rank= 17 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[23:07:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:34] select | verify relaxed 19/20
+[23:07:34] verify | func= Extends | rank= 18 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[23:07:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:07:37] select | verify relaxed 20/20
+[23:07:37] verify | func= Extends | rank= 19 | pid= nucl-th/0103009 | title_snip='Cluster Emission and Phase Transition Behavior in the Nuclear
+  Disass…' | abs_len= 979
+[23:07:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the study of EUV emission in the Fornax cluster provide background information and extend our understanding of cluster gas and radio sources?
+- WINNER: astro-ph/0101300 | Extreme Ultraviolet Emission in the Fornax Cluster of Galaxies
+- QUOTE : We present studies of the Extreme Ultraviolet (EUV) emission
+- WHY   : sufficient
+- ANSWER: The study of EUV emission in the Fornax cluster extends our understanding of cluster gas by showing that large-scale diffuse EUV emission is due to the low energy tail of the X-ray emitting gas. This research also extends prior findings on radio sources by determining that there is no excess EUV emission associated with them at existing sensitivity levels (astro-ph/0101300).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

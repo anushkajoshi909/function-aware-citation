@@ -1,0 +1,331 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks foundational understanding of out\u2011of\u2011equilibrium field dynamics (Background) and asks why this framework is relevant for studying inflation and highly excited quantum states (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.24 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 29.67it/s]
+Reading arXiv_src_0101_001.jsonl: 136it [00:00, 789.40it/s]
+Reading arXiv_src_0101_001.jsonl: 280it [00:00, 1083.43it/s]
+Reading arXiv_src_0101_001.jsonl: 389it [00:00, 1004.84it/s]
+Reading arXiv_src_0101_001.jsonl: 491it [00:00, 687.39it/s] 
+Reading arXiv_src_0101_001.jsonl: 572it [00:00, 622.72it/s]
+Reading arXiv_src_0101_001.jsonl: 676it [00:00, 720.67it/s]
+Reading arXiv_src_0101_001.jsonl: 775it [00:01, 787.77it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 867.65it/s]
+Reading arXiv_src_0101_001.jsonl: 996it [00:01, 936.34it/s]
+Reading arXiv_src_0101_001.jsonl: 1102it [00:01, 970.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1224it [00:01, 1039.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1332it [00:01, 1038.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1473it [00:01, 1143.16it/s]
+Reading arXiv_src_0101_001.jsonl: 1601it [00:01, 1182.41it/s]
+Reading arXiv_src_0101_001.jsonl: 1733it [00:01, 1220.85it/s]
+Reading arXiv_src_0101_001.jsonl: 1857it [00:01, 1189.17it/s]
+Reading arXiv_src_0101_001.jsonl: 2037it [00:02, 1365.61it/s]
+Reading arXiv_src_0101_001.jsonl: 2198it [00:02, 1434.98it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1043.60it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 130it [00:00, 1296.75it/s]
+Reading arXiv_src_0102_001.jsonl: 269it [00:00, 1350.62it/s]
+Reading arXiv_src_0102_001.jsonl: 405it [00:00, 857.83it/s] 
+Reading arXiv_src_0102_001.jsonl: 506it [00:00, 515.50it/s]
+Reading arXiv_src_0102_001.jsonl: 591it [00:00, 579.20it/s]
+Reading arXiv_src_0102_001.jsonl: 668it [00:01, 599.87it/s]
+Reading arXiv_src_0102_001.jsonl: 782it [00:01, 722.52it/s]
+Reading arXiv_src_0102_001.jsonl: 909it [00:01, 854.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1023it [00:01, 928.29it/s]
+Reading arXiv_src_0102_001.jsonl: 1143it [00:01, 1001.17it/s]
+Reading arXiv_src_0102_001.jsonl: 1252it [00:01, 1012.41it/s]
+Reading arXiv_src_0102_001.jsonl: 1396it [00:01, 1132.81it/s]
+Reading arXiv_src_0102_001.jsonl: 1527it [00:01, 1181.51it/s]
+Reading arXiv_src_0102_001.jsonl: 1652it [00:01, 1200.45it/s]
+Reading arXiv_src_0102_001.jsonl: 1804it [00:01, 1292.48it/s]
+Reading arXiv_src_0102_001.jsonl: 1953it [00:02, 1347.65it/s]
+Reading arXiv_src_0102_001.jsonl: 2107it [00:02, 1401.79it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1010.70it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1353.31it/s]
+Reading arXiv_src_0103_001.jsonl: 300it [00:00, 1520.52it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1115.84it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 731.11it/s] 
+Reading arXiv_src_0103_001.jsonl: 670it [00:00, 780.13it/s]
+Reading arXiv_src_0103_001.jsonl: 763it [00:00, 796.65it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 891.13it/s]
+Reading arXiv_src_0103_001.jsonl: 987it [00:01, 933.21it/s]
+Reading arXiv_src_0103_001.jsonl: 1090it [00:01, 958.02it/s]
+Reading arXiv_src_0103_001.jsonl: 1211it [00:01, 1027.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1318it [00:01, 1033.99it/s]
+Reading arXiv_src_0103_001.jsonl: 1458it [00:01, 1139.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1591it [00:01, 1195.04it/s]
+Reading arXiv_src_0103_001.jsonl: 1744it [00:01, 1291.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1880it [00:01, 1310.79it/s]
+Reading arXiv_src_0103_001.jsonl: 2020it [00:01, 1336.40it/s]
+Reading arXiv_src_0103_001.jsonl: 2158it [00:01, 1348.58it/s]
+Reading arXiv_src_0103_001.jsonl: 2304it [00:02, 1381.21it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1132.22it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 147it [00:00, 1467.14it/s]
+Reading arXiv_src_0104_001.jsonl: 308it [00:00, 1545.56it/s]
+Reading arXiv_src_0104_001.jsonl: 463it [00:00, 1006.97it/s]
+Reading arXiv_src_0104_001.jsonl: 580it [00:00, 542.79it/s] 
+Reading arXiv_src_0104_001.jsonl: 686it [00:00, 635.39it/s]
+Reading arXiv_src_0104_001.jsonl: 777it [00:01, 689.31it/s]
+Reading arXiv_src_0104_001.jsonl: 881it [00:01, 767.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1000it [00:01, 869.58it/s]
+Reading arXiv_src_0104_001.jsonl: 1115it [00:01, 941.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1227it [00:01, 987.81it/s]
+Reading arXiv_src_0104_001.jsonl: 1335it [00:01, 1000.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1470it [00:01, 1094.37it/s]
+Reading arXiv_src_0104_001.jsonl: 1608it [00:01, 1172.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1735it [00:01, 1195.24it/s]
+Reading arXiv_src_0104_001.jsonl: 1885it [00:01, 1283.44it/s]
+Reading arXiv_src_0104_001.jsonl: 2034it [00:02, 1340.49it/s]
+Reading arXiv_src_0104_001.jsonl: 2170it [00:02, 942.10it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 967.22it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the framework of out of equilibrium field dynamics, which is used to investigate inflation, provide background information for understanding the evolution of highly excited quantum states?
+[debug] classifier labels: ['Background', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T17:00:48.754580  Background, Motivation
+1     1  0.723663  ...  2025-09-21T17:00:48.754580  Background, Motivation
+2     2  0.622729  ...  2025-09-21T17:00:48.754580  Background, Motivation
+3     3  0.438675  ...  2025-09-21T17:00:48.754580  Background, Motivation
+4     4  0.423364  ...  2025-09-21T17:00:48.754580  Background, Motivation
+5     5  0.397414  ...  2025-09-21T17:00:48.754580  Background, Motivation
+6     6  0.397055  ...  2025-09-21T17:00:48.754580  Background, Motivation
+7     7  0.362448  ...  2025-09-21T17:00:48.754580  Background, Motivation
+8     8  0.358882  ...  2025-09-21T17:00:48.754580  Background, Motivation
+9     9  0.350647  ...  2025-09-21T17:00:48.754580  Background, Motivation
+
+[10 rows x 12 columns]
+[19:00:55] main | args: Namespace(max_check=20, debug=True)
+[19:00:55] read_last_jsonl | path= classified_outputs.jsonl
+[19:00:55] read_last_jsonl | total_lines= 1
+[19:00:55] main | query='How does the framework of out of equilibrium field dynamics, which is used to investigate inflation, provide background information for understanding the evolution of highly excited quantum states?' | funcs=['Background', 'Motivation']
+[19:00:59] main | core_terms= ['field', 'out of equilibrium dynamics', 'inflation', 'quantum states']
+[19:00:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:00:59] load_topk_jsonl | rows= 20
+[19:00:59] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102474 title_snip='Inflation from Tsunami-waves' abs_len= 1499
+[19:00:59] main | running function= Background
+[19:00:59] select | function= Background | candidates_in= 20
+[19:00:59] select | core_terms= ['field', 'out of equilibrium dynamics', 'inflation', 'quantum states']
+[19:00:59] select | no cosine prune; kept=20/20
+[19:00:59] select | pool_size= 20 | ranks= [0, 6, 2, 3, 8, 11, 14, 16, 18, 1, 7, 4, 10, 12, 15, 9, 13, 5, 17, 19] | pids= ['astro-ph/0102474', 'hep-ph/0104182', 'gr-qc/0103104', 'hep-th/0103228', 'quant-ph/0102074', 'gr-qc/0103089', 'hep-ph/0104210', 'hep-ph/0104023', 'cond-mat/0104463', 'hep-ph/0101202', 'physics/0103003', 'hep-ph/0103303', 'cond-mat/0104422', 'gr-qc/0103056', 'hep-th/0102083', 'quant-ph/0103032', 'quant-ph/0102088', 'hep-ph/0104167', 'quant-ph/0101017', 'quant-ph/0104071']
+[19:00:59] select | verify strict 1/20
+[19:00:59] verify | func= Background | rank= 0 | pid= astro-ph/0102474 | title_snip='Inflation from Tsunami-waves' | abs_len= 1499
+[19:01:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:01:03] select | verify strict 2/20
+[19:01:03] verify | func= Background | rank= 6 | pid= hep-ph/0104182 | title_snip='Massive fields temper anomaly-induced inflation: the clue to graceful
+…' | abs_len= 851
+[19:01:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:07] select | verify strict 3/20
+[19:01:07] verify | func= Background | rank= 2 | pid= gr-qc/0103104 | title_snip='Invariant dynamics of scalar perturbations of inflanton and
+  gravitat…' | abs_len= 1660
+[19:01:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:01:10] select | verify strict 4/20
+[19:01:10] verify | func= Background | rank= 3 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[19:01:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:12] select | verify strict 5/20
+[19:01:12] verify | func= Background | rank= 8 | pid= quant-ph/0102074 | title_snip='Conditional large Fock state preparation and field state reconstructio…' | abs_len= 594
+[19:01:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:15] select | verify strict 6/20
+[19:01:15] verify | func= Background | rank= 11 | pid= gr-qc/0103089 | title_snip='On Perturbations in Warm Inflation' | abs_len= 1063
+[19:01:18] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:01:18] select | verify strict 7/20
+[19:01:18] verify | func= Background | rank= 14 | pid= hep-ph/0104210 | title_snip='Dynamical behavior of spatially inhomogeneous relativistic $\lambda
+  …' | abs_len= 826
+[19:01:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:01:21] select | verify strict 8/20
+[19:01:21] verify | func= Background | rank= 16 | pid= hep-ph/0104023 | title_snip='Out-of-equilibrium phenomena in high energy nuclear collisions' | abs_len= 1599
+[19:01:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:23] select | verify strict 9/20
+[19:01:23] verify | func= Background | rank= 18 | pid= cond-mat/0104463 | title_snip='Microscopic Evolution of a Weakly Interacting Homogeneous Bose Gas' | abs_len= 507
+[19:01:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:26] select | verify strict 10/20
+[19:01:26] verify | func= Background | rank= 1 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[19:01:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:01:29] select | verify strict 11/20
+[19:01:29] verify | func= Background | rank= 7 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[19:01:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:32] select | verify strict 12/20
+[19:01:32] verify | func= Background | rank= 4 | pid= hep-ph/0103303 | title_snip='Space-time evolution of the \lap model: classical and quantum aspects' | abs_len= 541
+[19:01:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[19:01:35] select | verify strict 13/20
+[19:01:35] verify | func= Background | rank= 10 | pid= cond-mat/0104422 | title_snip='Nonground State Condensates of Ultracold Trapped Atoms' | abs_len= 538
+[19:01:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:37] select | verify strict 14/20
+[19:01:37] verify | func= Background | rank= 12 | pid= gr-qc/0103056 | title_snip='Application of linear hyperbolic PDE to linear quantum fields in curve…' | abs_len= 1761
+[19:01:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:40] select | verify strict 15/20
+[19:01:40] verify | func= Background | rank= 15 | pid= hep-th/0102083 | title_snip='Dynamical algebra and Dirac quantum modes in Taub-NUT background' | abs_len= 494
+[19:01:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:42] select | verify strict 16/20
+[19:01:42] verify | func= Background | rank= 9 | pid= quant-ph/0103032 | title_snip='State and dynamical parameter estimation for open quantum systems' | abs_len= 1236
+[19:01:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:45] select | verify strict 17/20
+[19:01:45] verify | func= Background | rank= 13 | pid= quant-ph/0102088 | title_snip='Unconventional decay law for excited states in closed many-body system…' | abs_len= 829
+[19:01:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:47] select | verify strict 18/20
+[19:01:47] verify | func= Background | rank= 5 | pid= hep-ph/0104167 | title_snip='Nonequilibrium Temperature for Open Boson and Fermion Systems' | abs_len= 734
+[19:01:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:50] select | verify strict 19/20
+[19:01:50] verify | func= Background | rank= 17 | pid= quant-ph/0101017 | title_snip='Measuring the Quantum State of a Large Angular Momentum' | abs_len= 558
+[19:01:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:01:52] select | verify strict 20/20
+[19:01:52] verify | func= Background | rank= 19 | pid= quant-ph/0104071 | title_snip='Supersymmetric Dynamical Invariants' | abs_len= 647
+[19:01:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the framework of out of equilibrium field dynamics, which is used to investigate inflation, provide background information for understanding the evolution of highly excited quantum states?
+- WINNER: astro-ph/0102474 | Inflation from Tsunami-waves
+- QUOTE : out of equilibrium field dynamics
+- WHY   : sufficient
+- ANSWER: The framework of out of equilibrium field dynamics provides background information by studying the evolution of highly excited quantum states, characterized by a large number of quanta in a band of momenta (astro-ph/0102474).
+[19:02:00] main | running function= Motivation
+[19:02:00] select | function= Motivation | candidates_in= 20
+[19:02:00] select | core_terms= ['field', 'out of equilibrium dynamics', 'inflation', 'quantum states']
+[19:02:00] select | no cosine prune; kept=20/20
+[19:02:00] select | pool_size= 20 | ranks= [0, 6, 2, 1, 3, 12, 7, 8, 11, 14, 4, 10, 15, 16, 18, 19, 5, 9, 13, 17] | pids= ['astro-ph/0102474', 'hep-ph/0104182', 'gr-qc/0103104', 'hep-ph/0101202', 'hep-th/0103228', 'gr-qc/0103056', 'physics/0103003', 'quant-ph/0102074', 'gr-qc/0103089', 'hep-ph/0104210', 'hep-ph/0103303', 'cond-mat/0104422', 'hep-th/0102083', 'hep-ph/0104023', 'cond-mat/0104463', 'quant-ph/0104071', 'hep-ph/0104167', 'quant-ph/0103032', 'quant-ph/0102088', 'quant-ph/0101017']
+[19:02:00] select | verify strict 1/20
+[19:02:00] verify | func= Motivation | rank= 0 | pid= astro-ph/0102474 | title_snip='Inflation from Tsunami-waves' | abs_len= 1499
+[19:02:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:02:03] select | verify strict 2/20
+[19:02:03] verify | func= Motivation | rank= 6 | pid= hep-ph/0104182 | title_snip='Massive fields temper anomaly-induced inflation: the clue to graceful
+…' | abs_len= 851
+[19:02:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:02:06] select | verify strict 3/20
+[19:02:06] verify | func= Motivation | rank= 2 | pid= gr-qc/0103104 | title_snip='Invariant dynamics of scalar perturbations of inflanton and
+  gravitat…' | abs_len= 1660
+[19:02:09] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:02:09] select | verify strict 4/20
+[19:02:09] verify | func= Motivation | rank= 1 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[19:02:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:02:12] select | verify strict 5/20
+[19:02:12] verify | func= Motivation | rank= 3 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[19:02:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:15] select | verify strict 6/20
+[19:02:15] verify | func= Motivation | rank= 12 | pid= gr-qc/0103056 | title_snip='Application of linear hyperbolic PDE to linear quantum fields in curve…' | abs_len= 1761
+[19:02:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:17] select | verify strict 7/20
+[19:02:17] verify | func= Motivation | rank= 7 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[19:02:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:20] select | verify strict 8/20
+[19:02:20] verify | func= Motivation | rank= 8 | pid= quant-ph/0102074 | title_snip='Conditional large Fock state preparation and field state reconstructio…' | abs_len= 594
+[19:02:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:22] select | verify strict 9/20
+[19:02:22] verify | func= Motivation | rank= 11 | pid= gr-qc/0103089 | title_snip='On Perturbations in Warm Inflation' | abs_len= 1063
+[19:02:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:02:25] select | verify strict 10/20
+[19:02:25] verify | func= Motivation | rank= 14 | pid= hep-ph/0104210 | title_snip='Dynamical behavior of spatially inhomogeneous relativistic $\lambda
+  …' | abs_len= 826
+[19:02:28] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[19:02:28] select | verify strict 11/20
+[19:02:28] verify | func= Motivation | rank= 4 | pid= hep-ph/0103303 | title_snip='Space-time evolution of the \lap model: classical and quantum aspects' | abs_len= 541
+[19:02:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[19:02:31] select | verify strict 12/20
+[19:02:31] verify | func= Motivation | rank= 10 | pid= cond-mat/0104422 | title_snip='Nonground State Condensates of Ultracold Trapped Atoms' | abs_len= 538
+[19:02:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:34] select | verify strict 13/20
+[19:02:34] verify | func= Motivation | rank= 15 | pid= hep-th/0102083 | title_snip='Dynamical algebra and Dirac quantum modes in Taub-NUT background' | abs_len= 494
+[19:02:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:36] select | verify strict 14/20
+[19:02:36] verify | func= Motivation | rank= 16 | pid= hep-ph/0104023 | title_snip='Out-of-equilibrium phenomena in high energy nuclear collisions' | abs_len= 1599
+[19:02:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:39] select | verify strict 15/20
+[19:02:39] verify | func= Motivation | rank= 18 | pid= cond-mat/0104463 | title_snip='Microscopic Evolution of a Weakly Interacting Homogeneous Bose Gas' | abs_len= 507
+[19:02:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:41] select | verify strict 16/20
+[19:02:41] verify | func= Motivation | rank= 19 | pid= quant-ph/0104071 | title_snip='Supersymmetric Dynamical Invariants' | abs_len= 647
+[19:02:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:44] select | verify strict 17/20
+[19:02:44] verify | func= Motivation | rank= 5 | pid= hep-ph/0104167 | title_snip='Nonequilibrium Temperature for Open Boson and Fermion Systems' | abs_len= 734
+[19:02:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:46] select | verify strict 18/20
+[19:02:46] verify | func= Motivation | rank= 9 | pid= quant-ph/0103032 | title_snip='State and dynamical parameter estimation for open quantum systems' | abs_len= 1236
+[19:02:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:49] select | verify strict 19/20
+[19:02:49] verify | func= Motivation | rank= 13 | pid= quant-ph/0102088 | title_snip='Unconventional decay law for excited states in closed many-body system…' | abs_len= 829
+[19:02:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:02:51] select | verify strict 20/20
+[19:02:51] verify | func= Motivation | rank= 17 | pid= quant-ph/0101017 | title_snip='Measuring the Quantum State of a Large Angular Momentum' | abs_len= 558
+[19:02:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the framework of out of equilibrium field dynamics, which is used to investigate inflation, provide background information for understanding the evolution of highly excited quantum states?
+- WINNER: astro-ph/0102474 | Inflation from Tsunami-waves
+- QUOTE : inflation driven by the evolution of highly excited quantum states
+- WHY   : sufficient
+- ANSWER: The framework of out of equilibrium field dynamics provides crucial background information for understanding the evolution of highly excited quantum states, which is essential for investigating inflation driven by these states. This understanding matters because it can lead to new insights into the initial stages of inflation and the formation of effective homogeneous condensates (astro-ph/0102474).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

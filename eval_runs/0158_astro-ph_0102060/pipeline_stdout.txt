@@ -1,0 +1,457 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how to extend an existing model (Extends) and explicitly seeks possible future research directions (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.69 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  1.31it/s]
+Reading arXiv_src_0101_001.jsonl: 83it [00:00, 130.47it/s]
+Reading arXiv_src_0101_001.jsonl: 145it [00:01, 81.17it/s]
+Reading arXiv_src_0101_001.jsonl: 291it [00:01, 202.49it/s]
+Reading arXiv_src_0101_001.jsonl: 378it [00:02, 276.72it/s]
+Reading arXiv_src_0101_001.jsonl: 457it [00:02, 317.94it/s]
+Reading arXiv_src_0101_001.jsonl: 525it [00:02, 347.08it/s]
+Reading arXiv_src_0101_001.jsonl: 587it [00:02, 392.97it/s]
+Reading arXiv_src_0101_001.jsonl: 685it [00:02, 506.63it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:02, 614.71it/s]
+Reading arXiv_src_0101_001.jsonl: 903it [00:02, 740.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1004it [00:02, 807.67it/s]
+Reading arXiv_src_0101_001.jsonl: 1134it [00:03, 935.59it/s]
+Reading arXiv_src_0101_001.jsonl: 1265it [00:03, 1031.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1377it [00:03, 1044.26it/s]
+Reading arXiv_src_0101_001.jsonl: 1509it [00:03, 1119.66it/s]
+Reading arXiv_src_0101_001.jsonl: 1644it [00:03, 1183.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1766it [00:03, 1180.16it/s]
+Reading arXiv_src_0101_001.jsonl: 1892it [00:03, 1200.13it/s]
+Reading arXiv_src_0101_001.jsonl: 2074it [00:03, 1379.59it/s]
+Reading arXiv_src_0101_001.jsonl: 2228it [00:03, 1422.58it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:03, 595.33it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 130it [00:00, 1297.32it/s]
+Reading arXiv_src_0102_001.jsonl: 269it [00:00, 1347.99it/s]
+Reading arXiv_src_0102_001.jsonl: 404it [00:00, 855.70it/s] 
+Reading arXiv_src_0102_001.jsonl: 505it [00:00, 502.02it/s]
+Reading arXiv_src_0102_001.jsonl: 590it [00:00, 567.33it/s]
+Reading arXiv_src_0102_001.jsonl: 667it [00:01, 593.55it/s]
+Reading arXiv_src_0102_001.jsonl: 780it [00:01, 715.32it/s]
+Reading arXiv_src_0102_001.jsonl: 901it [00:01, 834.60it/s]
+Reading arXiv_src_0102_001.jsonl: 1014it [00:01, 908.47it/s]
+Reading arXiv_src_0102_001.jsonl: 1131it [00:01, 978.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1241it [00:01, 1012.19it/s]
+Reading arXiv_src_0102_001.jsonl: 1384it [00:01, 1129.73it/s]
+Reading arXiv_src_0102_001.jsonl: 1521it [00:01, 1195.27it/s]
+Reading arXiv_src_0102_001.jsonl: 1645it [00:01, 1202.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1798it [00:01, 1297.38it/s]
+Reading arXiv_src_0102_001.jsonl: 1946it [00:02, 1348.75it/s]
+Reading arXiv_src_0102_001.jsonl: 2093it [00:02, 1383.41it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1005.00it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 135it [00:00, 1346.65it/s]
+Reading arXiv_src_0103_001.jsonl: 294it [00:00, 1489.21it/s]
+Reading arXiv_src_0103_001.jsonl: 443it [00:00, 1162.66it/s]
+Reading arXiv_src_0103_001.jsonl: 567it [00:00, 745.26it/s] 
+Reading arXiv_src_0103_001.jsonl: 660it [00:00, 759.71it/s]
+Reading arXiv_src_0103_001.jsonl: 749it [00:00, 791.08it/s]
+Reading arXiv_src_0103_001.jsonl: 857it [00:00, 864.16it/s]
+Reading arXiv_src_0103_001.jsonl: 959it [00:01, 905.03it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 948.59it/s]
+Reading arXiv_src_0103_001.jsonl: 1189it [00:01, 1027.72it/s]
+Reading arXiv_src_0103_001.jsonl: 1296it [00:01, 1028.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1429it [00:01, 1114.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1578it [00:01, 1222.58it/s]
+Reading arXiv_src_0103_001.jsonl: 1708it [00:01, 1241.09it/s]
+Reading arXiv_src_0103_001.jsonl: 1860it [00:01, 1323.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1994it [00:01, 1313.97it/s]
+Reading arXiv_src_0103_001.jsonl: 2142it [00:01, 1361.50it/s]
+Reading arXiv_src_0103_001.jsonl: 2288it [00:02, 1388.73it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1130.41it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 145it [00:00, 1447.68it/s]
+Reading arXiv_src_0104_001.jsonl: 307it [00:00, 1546.52it/s]
+Reading arXiv_src_0104_001.jsonl: 462it [00:00, 1021.63it/s]
+Reading arXiv_src_0104_001.jsonl: 580it [00:00, 546.83it/s] 
+Reading arXiv_src_0104_001.jsonl: 687it [00:00, 640.92it/s]
+Reading arXiv_src_0104_001.jsonl: 779it [00:01, 694.58it/s]
+Reading arXiv_src_0104_001.jsonl: 881it [00:01, 767.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1001it [00:01, 867.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1118it [00:01, 944.09it/s]
+Reading arXiv_src_0104_001.jsonl: 1231it [00:01, 993.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1340it [00:01, 1011.68it/s]
+Reading arXiv_src_0104_001.jsonl: 1472it [00:01, 1098.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1613it [00:01, 1186.09it/s]
+Reading arXiv_src_0104_001.jsonl: 1738it [00:01, 1201.93it/s]
+Reading arXiv_src_0104_001.jsonl: 1889it [00:01, 1290.16it/s]
+Reading arXiv_src_0104_001.jsonl: 2038it [00:02, 1348.30it/s]
+Reading arXiv_src_0104_001.jsonl: 2175it [00:02, 916.35it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 965.22it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the current model of electromagnetic structure black holes be extended to study longer bursts with baryonic matter and what future research directions can be explored based on these findings?
+[debug] classifier labels: ['Extends', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+1     1  0.910509  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+2     2  0.908366  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+3     3  0.844229  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+4     4  0.731487  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+5     5  0.706166  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+6     6  0.674645  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+7     7  0.615446  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+8     8  0.612808  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+9     9  0.585530  ...  2025-09-21T20:58:13.154118  Extends, FutureWork
+
+[10 rows x 12 columns]
+[22:58:18] main | args: Namespace(max_check=20, debug=True)
+[22:58:18] read_last_jsonl | path= classified_outputs.jsonl
+[22:58:18] read_last_jsonl | total_lines= 1
+[22:58:18] main | query='How can the current model of electromagnetic structure black holes be extended to study longer bursts with baryonic matter and what future research directions can be explored based on these findings?' | funcs=['Extends', 'FutureWork']
+[22:58:20] main | core_terms= ['black holes', 'baryonic matter', 'electromagnetic structure']
+[22:58:20] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:58:20] load_topk_jsonl | rows= 20
+[22:58:20] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0103038 title_snip='Unscrambling New Models for Higher-Energy Physics' abs_len= 553
+[22:58:20] main | running function= Extends
+[22:58:20] select | function= Extends | candidates_in= 20
+[22:58:20] select | core_terms= ['black holes', 'baryonic matter', 'electromagnetic structure']
+[22:58:20] select | no cosine prune; kept=20/20
+[22:58:20] select | pool_size= 20 | ranks= [4, 5, 15, 1, 3, 11, 14, 17, 19, 0, 2, 6, 7, 8, 9, 10, 12, 13, 16, 18] | pids= ['astro-ph/0101515', 'astro-ph/0103271', 'hep-th/0101154', 'physics/0101057', 'hep-ph/0102045', 'hep-th/0103086', 'hep-ph/0101112', 'hep-ph/0102259', 'astro-ph/0103028', 'hep-ph/0103038', 'hep-ph/0101210', 'hep-th/0102041', 'astro-ph/0104166', 'hep-ph/0102096', 'nucl-th/0104043', 'hep-ph/0104086', 'hep-ex/0103009', 'hep-ph/0103299', 'nucl-th/0104050', 'astro-ph/0103017']
+[22:58:20] select | verify strict 1/20
+[22:58:20] verify | func= Extends | rank= 4 | pid= astro-ph/0101515 | title_snip='Primordial Black Holes and Hot Matter' | abs_len= 816
+[22:58:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:58:22] select | verify strict 2/20
+[22:58:22] verify | func= Extends | rank= 5 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[22:58:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:25] select | verify strict 3/20
+[22:58:25] verify | func= Extends | rank= 15 | pid= hep-th/0101154 | title_snip='Black Hole Evaporation and Compact Extra Dimensions' | abs_len= 777
+[22:58:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:58:28] select | verify strict 4/20
+[22:58:28] verify | func= Extends | rank= 1 | pid= physics/0101057 | title_snip='Consequences of a Quantized Spacetime Model' | abs_len= 218
+[22:58:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:30] select | verify strict 5/20
+[22:58:30] verify | func= Extends | rank= 3 | pid= hep-ph/0102045 | title_snip='The fate of the B ball' | abs_len= 1292
+[22:58:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:33] select | verify strict 6/20
+[22:58:33] verify | func= Extends | rank= 11 | pid= hep-th/0103086 | title_snip='Electric-Magnetic Duality in Supergravity' | abs_len= 118
+[22:58:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:35] select | verify strict 7/20
+[22:58:35] verify | func= Extends | rank= 14 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[22:58:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:38] select | verify strict 8/20
+[22:58:38] verify | func= Extends | rank= 17 | pid= hep-ph/0102259 | title_snip='Muon anomalous magnetic moment in technicolor models' | abs_len= 700
+[22:58:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:41] select | verify strict 9/20
+[22:58:41] verify | func= Extends | rank= 19 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[22:58:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:43] select | verify strict 10/20
+[22:58:43] verify | func= Extends | rank= 0 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[22:58:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:46] select | verify strict 11/20
+[22:58:46] verify | func= Extends | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[22:58:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:58:48] select | verify strict 12/20
+[22:58:48] verify | func= Extends | rank= 6 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[22:58:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:51] select | verify strict 13/20
+[22:58:51] verify | func= Extends | rank= 7 | pid= astro-ph/0104166 | title_snip='Cosmic Equation of State and Advanced LIGO Type Gravity Wave Experimen…' | abs_len= 1372
+[22:58:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:54] select | verify strict 14/20
+[22:58:54] verify | func= Extends | rank= 8 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[22:58:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:57] select | verify strict 15/20
+[22:58:57] verify | func= Extends | rank= 9 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[22:58:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:58:59] select | verify strict 16/20
+[22:58:59] verify | func= Extends | rank= 10 | pid= hep-ph/0104086 | title_snip='Testing the AMSB Model via $e^+e^- \to \tilde{\chi}^+ \tilde{\chi}^-
+ …' | abs_len= 881
+[22:59:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:02] select | verify strict 17/20
+[22:59:02] verify | func= Extends | rank= 12 | pid= hep-ex/0103009 | title_snip='Search for "large" extra dimensions at the Tevatron' | abs_len= 658
+[22:59:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:04] select | verify strict 18/20
+[22:59:04] verify | func= Extends | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[22:59:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:07] select | verify strict 19/20
+[22:59:07] verify | func= Extends | rank= 16 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[22:59:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:10] select | verify strict 20/20
+[22:59:10] verify | func= Extends | rank= 18 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[22:59:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:12] select | strict pass found 0 winners → trying relaxed
+[22:59:12] select | verify relaxed 1/20
+[22:59:12] verify | func= Extends | rank= 4 | pid= astro-ph/0101515 | title_snip='Primordial Black Holes and Hot Matter' | abs_len= 816
+[22:59:15] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:59:15] select | verify relaxed 2/20
+[22:59:15] verify | func= Extends | rank= 5 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[22:59:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:17] select | verify relaxed 3/20
+[22:59:17] verify | func= Extends | rank= 15 | pid= hep-th/0101154 | title_snip='Black Hole Evaporation and Compact Extra Dimensions' | abs_len= 777
+[22:59:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:59:20] select | verify relaxed 4/20
+[22:59:20] verify | func= Extends | rank= 1 | pid= physics/0101057 | title_snip='Consequences of a Quantized Spacetime Model' | abs_len= 218
+[22:59:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:23] select | verify relaxed 5/20
+[22:59:23] verify | func= Extends | rank= 3 | pid= hep-ph/0102045 | title_snip='The fate of the B ball' | abs_len= 1292
+[22:59:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:25] select | verify relaxed 6/20
+[22:59:25] verify | func= Extends | rank= 11 | pid= hep-th/0103086 | title_snip='Electric-Magnetic Duality in Supergravity' | abs_len= 118
+[22:59:28] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[22:59:28] select | verify relaxed 7/20
+[22:59:28] verify | func= Extends | rank= 14 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[22:59:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:31] select | verify relaxed 8/20
+[22:59:31] verify | func= Extends | rank= 17 | pid= hep-ph/0102259 | title_snip='Muon anomalous magnetic moment in technicolor models' | abs_len= 700
+[22:59:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:33] select | verify relaxed 9/20
+[22:59:33] verify | func= Extends | rank= 19 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[22:59:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:36] select | verify relaxed 10/20
+[22:59:36] verify | func= Extends | rank= 0 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[22:59:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:38] select | verify relaxed 11/20
+[22:59:38] verify | func= Extends | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[22:59:41] verify | result supports= False fit= 0.00 top= 0.80 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:59:41] select | verify relaxed 12/20
+[22:59:41] verify | func= Extends | rank= 6 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[22:59:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:44] select | verify relaxed 13/20
+[22:59:44] verify | func= Extends | rank= 7 | pid= astro-ph/0104166 | title_snip='Cosmic Equation of State and Advanced LIGO Type Gravity Wave Experimen…' | abs_len= 1372
+[22:59:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:47] select | verify relaxed 14/20
+[22:59:47] verify | func= Extends | rank= 8 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[22:59:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:49] select | verify relaxed 15/20
+[22:59:49] verify | func= Extends | rank= 9 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[22:59:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:52] select | verify relaxed 16/20
+[22:59:52] verify | func= Extends | rank= 10 | pid= hep-ph/0104086 | title_snip='Testing the AMSB Model via $e^+e^- \to \tilde{\chi}^+ \tilde{\chi}^-
+ …' | abs_len= 881
+[22:59:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:54] select | verify relaxed 17/20
+[22:59:54] verify | func= Extends | rank= 12 | pid= hep-ex/0103009 | title_snip='Search for "large" extra dimensions at the Tevatron' | abs_len= 658
+[22:59:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:59:57] select | verify relaxed 18/20
+[22:59:57] verify | func= Extends | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:00:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:00] select | verify relaxed 19/20
+[23:00:00] verify | func= Extends | rank= 16 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:00:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:02] select | verify relaxed 20/20
+[23:00:02] verify | func= Extends | rank= 18 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[23:00:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the current model of electromagnetic structure black holes be extended to study longer bursts with baryonic matter and what future research directions can be explored based on these findings?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Extends.
+[23:00:05] main | running function= FutureWork
+[23:00:05] select | function= FutureWork | candidates_in= 20
+[23:00:05] select | core_terms= ['black holes', 'baryonic matter', 'electromagnetic structure']
+[23:00:05] select | no cosine prune; kept=20/20
+[23:00:05] select | pool_size= 20 | ranks= [4, 5, 15, 0, 1, 2, 3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19] | pids= ['astro-ph/0101515', 'astro-ph/0103271', 'hep-th/0101154', 'hep-ph/0103038', 'physics/0101057', 'hep-ph/0101210', 'hep-ph/0102045', 'hep-th/0102041', 'astro-ph/0104166', 'hep-ph/0102096', 'nucl-th/0104043', 'hep-ph/0104086', 'hep-th/0103086', 'hep-ex/0103009', 'hep-ph/0103299', 'hep-ph/0101112', 'nucl-th/0104050', 'hep-ph/0102259', 'astro-ph/0103017', 'astro-ph/0103028']
+[23:00:05] select | verify strict 1/20
+[23:00:05] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101515 | title_snip='Primordial Black Holes and Hot Matter' | abs_len= 816
+[23:00:08] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:00:08] select | verify strict 2/20
+[23:00:08] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[23:00:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:10] select | verify strict 3/20
+[23:00:10] verify | func= FutureWork | rank= 15 | pid= hep-th/0101154 | title_snip='Black Hole Evaporation and Compact Extra Dimensions' | abs_len= 777
+[23:00:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:00:13] select | verify strict 4/20
+[23:00:13] verify | func= FutureWork | rank= 0 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[23:00:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:15] select | verify strict 5/20
+[23:00:15] verify | func= FutureWork | rank= 1 | pid= physics/0101057 | title_snip='Consequences of a Quantized Spacetime Model' | abs_len= 218
+[23:00:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:18] select | verify strict 6/20
+[23:00:18] verify | func= FutureWork | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[23:00:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:00:21] select | verify strict 7/20
+[23:00:21] verify | func= FutureWork | rank= 3 | pid= hep-ph/0102045 | title_snip='The fate of the B ball' | abs_len= 1292
+[23:00:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:23] select | verify strict 8/20
+[23:00:23] verify | func= FutureWork | rank= 6 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[23:00:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:26] select | verify strict 9/20
+[23:00:26] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104166 | title_snip='Cosmic Equation of State and Advanced LIGO Type Gravity Wave Experimen…' | abs_len= 1372
+[23:00:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:29] select | verify strict 10/20
+[23:00:29] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:00:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:31] select | verify strict 11/20
+[23:00:31] verify | func= FutureWork | rank= 9 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[23:00:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:34] select | verify strict 12/20
+[23:00:34] verify | func= FutureWork | rank= 10 | pid= hep-ph/0104086 | title_snip='Testing the AMSB Model via $e^+e^- \to \tilde{\chi}^+ \tilde{\chi}^-
+ …' | abs_len= 881
+[23:00:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:37] select | verify strict 13/20
+[23:00:37] verify | func= FutureWork | rank= 11 | pid= hep-th/0103086 | title_snip='Electric-Magnetic Duality in Supergravity' | abs_len= 118
+[23:00:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:39] select | verify strict 14/20
+[23:00:39] verify | func= FutureWork | rank= 12 | pid= hep-ex/0103009 | title_snip='Search for "large" extra dimensions at the Tevatron' | abs_len= 658
+[23:00:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:42] select | verify strict 15/20
+[23:00:42] verify | func= FutureWork | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:00:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:44] select | verify strict 16/20
+[23:00:44] verify | func= FutureWork | rank= 14 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[23:00:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:47] select | verify strict 17/20
+[23:00:47] verify | func= FutureWork | rank= 16 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:00:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:50] select | verify strict 18/20
+[23:00:50] verify | func= FutureWork | rank= 17 | pid= hep-ph/0102259 | title_snip='Muon anomalous magnetic moment in technicolor models' | abs_len= 700
+[23:00:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:52] select | verify strict 19/20
+[23:00:52] verify | func= FutureWork | rank= 18 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[23:00:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:55] select | verify strict 20/20
+[23:00:55] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[23:00:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:00:57] select | strict pass found 0 winners → trying relaxed
+[23:00:57] select | verify relaxed 1/20
+[23:00:57] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101515 | title_snip='Primordial Black Holes and Hot Matter' | abs_len= 816
+[23:01:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:01:01] select | verify relaxed 2/20
+[23:01:01] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[23:01:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:03] select | verify relaxed 3/20
+[23:01:03] verify | func= FutureWork | rank= 15 | pid= hep-th/0101154 | title_snip='Black Hole Evaporation and Compact Extra Dimensions' | abs_len= 777
+[23:01:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:01:06] select | verify relaxed 4/20
+[23:01:06] verify | func= FutureWork | rank= 0 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[23:01:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:08] select | verify relaxed 5/20
+[23:01:08] verify | func= FutureWork | rank= 1 | pid= physics/0101057 | title_snip='Consequences of a Quantized Spacetime Model' | abs_len= 218
+[23:01:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:11] select | verify relaxed 6/20
+[23:01:11] verify | func= FutureWork | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[23:01:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:01:14] select | verify relaxed 7/20
+[23:01:14] verify | func= FutureWork | rank= 3 | pid= hep-ph/0102045 | title_snip='The fate of the B ball' | abs_len= 1292
+[23:01:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:16] select | verify relaxed 8/20
+[23:01:16] verify | func= FutureWork | rank= 6 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[23:01:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:19] select | verify relaxed 9/20
+[23:01:19] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104166 | title_snip='Cosmic Equation of State and Advanced LIGO Type Gravity Wave Experimen…' | abs_len= 1372
+[23:01:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:21] select | verify relaxed 10/20
+[23:01:21] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[23:01:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:24] select | verify relaxed 11/20
+[23:01:24] verify | func= FutureWork | rank= 9 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[23:01:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:27] select | verify relaxed 12/20
+[23:01:27] verify | func= FutureWork | rank= 10 | pid= hep-ph/0104086 | title_snip='Testing the AMSB Model via $e^+e^- \to \tilde{\chi}^+ \tilde{\chi}^-
+ …' | abs_len= 881
+[23:01:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:29] select | verify relaxed 13/20
+[23:01:29] verify | func= FutureWork | rank= 11 | pid= hep-th/0103086 | title_snip='Electric-Magnetic Duality in Supergravity' | abs_len= 118
+[23:01:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:01:32] select | verify relaxed 14/20
+[23:01:32] verify | func= FutureWork | rank= 12 | pid= hep-ex/0103009 | title_snip='Search for "large" extra dimensions at the Tevatron' | abs_len= 658
+[23:01:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:35] select | verify relaxed 15/20
+[23:01:35] verify | func= FutureWork | rank= 13 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:01:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:37] select | verify relaxed 16/20
+[23:01:37] verify | func= FutureWork | rank= 14 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[23:01:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:40] select | verify relaxed 17/20
+[23:01:40] verify | func= FutureWork | rank= 16 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:01:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:42] select | verify relaxed 18/20
+[23:01:42] verify | func= FutureWork | rank= 17 | pid= hep-ph/0102259 | title_snip='Muon anomalous magnetic moment in technicolor models' | abs_len= 700
+[23:01:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:45] select | verify relaxed 19/20
+[23:01:45] verify | func= FutureWork | rank= 18 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[23:01:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:01:47] select | verify relaxed 20/20
+[23:01:47] verify | func= FutureWork | rank= 19 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[23:01:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the current model of electromagnetic structure black holes be extended to study longer bursts with baryonic matter and what future research directions can be explored based on these findings?
+- WINNER: astro-ph/0101515 | Primordial Black Holes and Hot Matter
+- QUOTE : a great challenge to finally detect them in the new millennium
+- WHY   : sufficient
+- ANSWER: The current model of electromagnetic structure black holes can be extended by studying the interaction between microscopic black holes and surrounding hot matter, potentially leading to a better understanding of longer bursts with baryonic matter. Future research directions include describing the conditions exterior to microscopic black holes and detecting them, which remains an outstanding theoretical and experimental challenge (astro-ph/0101515).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

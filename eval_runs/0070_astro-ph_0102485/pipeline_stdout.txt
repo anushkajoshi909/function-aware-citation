@@ -1,0 +1,327 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query asks how the properties of specific supernova types broaden (extend) our knowledge and how they stack up against other supernova categories (compare)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.37 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 7it [00:00, 69.50it/s]
+Reading arXiv_src_0101_001.jsonl: 139it [00:00, 802.91it/s]
+Reading arXiv_src_0101_001.jsonl: 285it [00:00, 1096.57it/s]
+Reading arXiv_src_0101_001.jsonl: 395it [00:00, 961.49it/s] 
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 700.82it/s]
+Reading arXiv_src_0101_001.jsonl: 574it [00:00, 637.50it/s]
+Reading arXiv_src_0101_001.jsonl: 679it [00:00, 736.79it/s]
+Reading arXiv_src_0101_001.jsonl: 781it [00:01, 807.57it/s]
+Reading arXiv_src_0101_001.jsonl: 893it [00:01, 890.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 922.84it/s]
+Reading arXiv_src_0101_001.jsonl: 1126it [00:01, 1007.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1253it [00:01, 1082.26it/s]
+Reading arXiv_src_0101_001.jsonl: 1365it [00:01, 1091.86it/s]
+Reading arXiv_src_0101_001.jsonl: 1493it [00:01, 1145.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1627it [00:01, 1202.05it/s]
+Reading arXiv_src_0101_001.jsonl: 1752it [00:01, 1196.64it/s]
+Reading arXiv_src_0101_001.jsonl: 1877it [00:01, 1210.69it/s]
+Reading arXiv_src_0101_001.jsonl: 2060it [00:02, 1391.38it/s]
+Reading arXiv_src_0101_001.jsonl: 2213it [00:02, 1430.38it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1053.80it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1318.15it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1354.36it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 852.36it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 513.12it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 553.96it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:01, 611.07it/s]
+Reading arXiv_src_0102_001.jsonl: 789it [00:01, 730.47it/s]
+Reading arXiv_src_0102_001.jsonl: 917it [00:01, 864.24it/s]
+Reading arXiv_src_0102_001.jsonl: 1027it [00:01, 924.40it/s]
+Reading arXiv_src_0102_001.jsonl: 1147it [00:01, 998.13it/s]
+Reading arXiv_src_0102_001.jsonl: 1256it [00:01, 1019.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1401it [00:01, 1140.93it/s]
+Reading arXiv_src_0102_001.jsonl: 1533it [00:01, 1190.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1661it [00:01, 1213.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1809it [00:01, 1288.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1959it [00:02, 1349.77it/s]
+Reading arXiv_src_0102_001.jsonl: 2110it [00:02, 1395.19it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1008.22it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1339.88it/s]
+Reading arXiv_src_0103_001.jsonl: 296it [00:00, 1502.66it/s]
+Reading arXiv_src_0103_001.jsonl: 447it [00:00, 1141.60it/s]
+Reading arXiv_src_0103_001.jsonl: 570it [00:00, 741.13it/s] 
+Reading arXiv_src_0103_001.jsonl: 662it [00:00, 759.82it/s]
+Reading arXiv_src_0103_001.jsonl: 750it [00:00, 786.34it/s]
+Reading arXiv_src_0103_001.jsonl: 857it [00:00, 858.48it/s]
+Reading arXiv_src_0103_001.jsonl: 959it [00:01, 900.45it/s]
+Reading arXiv_src_0103_001.jsonl: 1066it [00:01, 943.03it/s]
+Reading arXiv_src_0103_001.jsonl: 1189it [00:01, 1022.92it/s]
+Reading arXiv_src_0103_001.jsonl: 1296it [00:01, 1024.53it/s]
+Reading arXiv_src_0103_001.jsonl: 1427it [00:01, 1106.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1575it [00:01, 1212.87it/s]
+Reading arXiv_src_0103_001.jsonl: 1708it [00:01, 1246.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1858it [00:01, 1317.08it/s]
+Reading arXiv_src_0103_001.jsonl: 1991it [00:01, 1309.19it/s]
+Reading arXiv_src_0103_001.jsonl: 2138it [00:01, 1354.76it/s]
+Reading arXiv_src_0103_001.jsonl: 2282it [00:02, 1377.88it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1125.87it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 144it [00:00, 1430.87it/s]
+Reading arXiv_src_0104_001.jsonl: 304it [00:00, 1527.69it/s]
+Reading arXiv_src_0104_001.jsonl: 457it [00:00, 1016.30it/s]
+Reading arXiv_src_0104_001.jsonl: 574it [00:00, 549.93it/s] 
+Reading arXiv_src_0104_001.jsonl: 665it [00:00, 613.43it/s]
+Reading arXiv_src_0104_001.jsonl: 761it [00:01, 684.77it/s]
+Reading arXiv_src_0104_001.jsonl: 855it [00:01, 740.65it/s]
+Reading arXiv_src_0104_001.jsonl: 967it [00:01, 831.85it/s]
+Reading arXiv_src_0104_001.jsonl: 1090it [00:01, 933.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1196it [00:01, 967.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1308it [00:01, 999.65it/s]
+Reading arXiv_src_0104_001.jsonl: 1436it [00:01, 1075.72it/s]
+Reading arXiv_src_0104_001.jsonl: 1571it [00:01, 1153.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1695it [00:01, 1164.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1835it [00:01, 1232.88it/s]
+Reading arXiv_src_0104_001.jsonl: 1991it [00:02, 1328.49it/s]
+Reading arXiv_src_0104_001.jsonl: 2126it [00:02, 1023.15it/s]
+Reading arXiv_src_0104_001.jsonl: 2276it [00:02, 1137.69it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 978.94it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How do the properties of SNe II-L and SNe IIn extend our understanding of supernovae and compare to other types of supernovae?
+[debug] classifier labels: ['Extends', 'Compares']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T15:23:01.551603    Extends, Compares
+1     1  0.853363  ...  2025-09-21T15:23:01.551603    Extends, Compares
+2     2  0.540887  ...  2025-09-21T15:23:01.551603    Extends, Compares
+3     3  0.420976  ...  2025-09-21T15:23:01.551603    Extends, Compares
+4     4  0.408520  ...  2025-09-21T15:23:01.551603    Extends, Compares
+5     5  0.387906  ...  2025-09-21T15:23:01.551603    Extends, Compares
+6     6  0.355218  ...  2025-09-21T15:23:01.551603    Extends, Compares
+7     7  0.351032  ...  2025-09-21T15:23:01.551603    Extends, Compares
+8     8  0.342350  ...  2025-09-21T15:23:01.551603    Extends, Compares
+9     9  0.332287  ...  2025-09-21T15:23:01.551603    Extends, Compares
+
+[10 rows x 12 columns]
+[17:23:11] main | args: Namespace(max_check=20, debug=True)
+[17:23:11] read_last_jsonl | path= classified_outputs.jsonl
+[17:23:11] read_last_jsonl | total_lines= 1
+[17:23:11] main | query='How do the properties of SNe II-L and SNe IIn extend our understanding of supernovae and compare to other types of supernovae?' | funcs=['Extends', 'Compares']
+[17:23:14] main | core_terms= ['SNe II-L', 'SNe IIn', 'supernovae', 'explosion properties', 'SN', 'II-L', 'II']
+[17:23:14] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:23:14] load_topk_jsonl | rows= 20
+[17:23:14] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102485 title_snip='Optical Observations of Core-Collapse Supernovae' abs_len= 1583
+[17:23:14] main | running function= Extends
+[17:23:14] select | function= Extends | candidates_in= 20
+[17:23:14] select | core_terms= ['SNe II-L', 'SNe IIn', 'supernovae', 'explosion properties', 'SN', 'II-L', 'II']
+[17:23:14] select | no cosine prune; kept=20/20
+[17:23:14] select | pool_size= 20 | ranks= [0, 1, 19, 3, 13, 5, 2, 8, 9, 11, 15, 18, 12, 16, 17, 4, 6, 7, 10, 14] | pids= ['astro-ph/0102485', 'astro-ph/0101119', 'astro-ph/0104440', 'astro-ph/0104235', 'astro-ph/0104141', 'astro-ph/0104009', 'astro-ph/0104025', 'astro-ph/0103034', 'astro-ph/0103324', 'astro-ph/0102492', 'astro-ph/0101040', 'astro-ph/0102317', 'astro-ph/0103237', 'astro-ph/0101007', 'astro-ph/0104455', 'astro-ph/0104012', 'hep-ph/0103201', 'astro-ph/0103396', 'astro-ph/0101274', 'astro-ph/0101281']
+[17:23:14] select | verify strict 1/20
+[17:23:14] verify | func= Extends | rank= 0 | pid= astro-ph/0102485 | title_snip='Optical Observations of Core-Collapse Supernovae' | abs_len= 1583
+[17:23:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:23:17] select | verify strict 2/20
+[17:23:17] verify | func= Extends | rank= 1 | pid= astro-ph/0101119 | title_snip='Optical Spectroscopy of Type Ib/c Supernovae' | abs_len= 1194
+[17:23:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:20] select | verify strict 3/20
+[17:23:20] verify | func= Extends | rank= 19 | pid= astro-ph/0104440 | title_snip='Seeing double: strong gravitational lensing of high-redshift supernova…' | abs_len= 1277
+[17:23:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:22] select | verify strict 4/20
+[17:23:22] verify | func= Extends | rank= 3 | pid= astro-ph/0104235 | title_snip='The Fading Radio Emission from SN 1961V: Evidence for a Type II Peculi…' | abs_len= 705
+[17:23:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:25] select | verify strict 5/20
+[17:23:25] verify | func= Extends | rank= 13 | pid= astro-ph/0104141 | title_snip='Analyses of Type Ia Supernova Data in Cosmological Models with a Local…' | abs_len= 927
+[17:23:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:28] select | verify strict 6/20
+[17:23:28] verify | func= Extends | rank= 5 | pid= astro-ph/0104009 | title_snip='Supernovae and the Nature of the Dark Energy' | abs_len= 1268
+[17:23:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:30] select | verify strict 7/20
+[17:23:30] verify | func= Extends | rank= 2 | pid= astro-ph/0104025 | title_snip='Aspherical Supernovae: Hydrodynamics & Radiation Transport' | abs_len= 1521
+[17:23:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:23:33] select | verify strict 8/20
+[17:23:33] verify | func= Extends | rank= 8 | pid= astro-ph/0103034 | title_snip='The Peculiar Type Ia Supernova 1999by: Spectroscopy at Early Epochs' | abs_len= 842
+[17:23:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:36] select | verify strict 9/20
+[17:23:36] verify | func= Extends | rank= 9 | pid= astro-ph/0103324 | title_snip='SNO and Supernovae' | abs_len= 543
+[17:23:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:38] select | verify strict 10/20
+[17:23:38] verify | func= Extends | rank= 11 | pid= astro-ph/0102492 | title_snip='Evidence for a Supernova in the Ic Band Light Curve of the Optical
+  T…' | abs_len= 511
+[17:23:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:41] select | verify strict 11/20
+[17:23:41] verify | func= Extends | rank= 15 | pid= astro-ph/0101040 | title_snip='Measuring Time-Dependence of Dark Energy Density from Type Ia Supernov…' | abs_len= 1330
+[17:23:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:43] select | verify strict 12/20
+[17:23:43] verify | func= Extends | rank= 18 | pid= astro-ph/0102317 | title_snip='TeV Neutrinos and GeV Photons from Shock Breakout in Supernovae' | abs_len= 578
+[17:23:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:46] select | verify strict 13/20
+[17:23:46] verify | func= Extends | rank= 12 | pid= astro-ph/0103237 | title_snip='The Late-time Expansion of the Ejecta of SN 1987A' | abs_len= 1444
+[17:23:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:48] select | verify strict 14/20
+[17:23:48] verify | func= Extends | rank= 16 | pid= astro-ph/0101007 | title_snip='Supernova, Hypernova and Gamma Ray Bursts' | abs_len= 1364
+[17:23:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:51] select | verify strict 15/20
+[17:23:51] verify | func= Extends | rank= 17 | pid= astro-ph/0104455 | title_snip='The Farthest Known Supernova: Support for an Accelerating Universe and…' | abs_len= 1806
+[17:23:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:53] select | verify strict 16/20
+[17:23:53] verify | func= Extends | rank= 4 | pid= astro-ph/0104012 | title_snip='The influence of massive stars in the interstellar medium of IC 1613:
+…' | abs_len= 1636
+[17:23:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:56] select | verify strict 17/20
+[17:23:56] verify | func= Extends | rank= 6 | pid= hep-ph/0103201 | title_snip='New Supernova Limit on Large Extra Dimensions' | abs_len= 692
+[17:23:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:23:58] select | verify strict 18/20
+[17:23:58] verify | func= Extends | rank= 7 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[17:24:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:01] select | verify strict 19/20
+[17:24:01] verify | func= Extends | rank= 10 | pid= astro-ph/0101274 | title_snip='A New ASCA and ROSAT Study of the Supernova Remnant: G272.2-3.2' | abs_len= 1152
+[17:24:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:04] select | verify strict 20/20
+[17:24:04] verify | func= Extends | rank= 14 | pid= astro-ph/0101281 | title_snip='The X-Ray Structure of the Supernova Remnant 3C 400.2' | abs_len= 1042
+[17:24:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How do the properties of SNe II-L and SNe IIn extend our understanding of supernovae and compare to other types of supernovae?
+- WINNER: astro-ph/0102485 | Optical Observations of Core-Collapse Supernovae
+- QUOTE : SNe II-L tend to show evidence of late-time interaction
+- WHY   : sufficient
+- ANSWER: The properties of SNe II-L and SNe IIn extend our understanding of supernovae by revealing interactions with circumstellar material and unusual gas densities. These findings build upon prior knowledge of supernovae types, such as SNe Ib and Ic, by highlighting distinct characteristics like narrow emission lines and slowly declining light curves (astro-ph/0102485).
+[17:24:12] main | running function= Compares
+[17:24:12] select | function= Compares | candidates_in= 20
+[17:24:12] select | core_terms= ['SNe II-L', 'SNe IIn', 'supernovae', 'explosion properties', 'SN', 'II-L', 'II']
+[17:24:12] select | no cosine prune; kept=20/20
+[17:24:12] select | pool_size= 20 | ranks= [1, 19, 3, 0, 13, 12, 2, 5, 8, 9, 11, 15, 18, 7, 16, 17, 4, 6, 10, 14] | pids= ['astro-ph/0101119', 'astro-ph/0104440', 'astro-ph/0104235', 'astro-ph/0102485', 'astro-ph/0104141', 'astro-ph/0103237', 'astro-ph/0104025', 'astro-ph/0104009', 'astro-ph/0103034', 'astro-ph/0103324', 'astro-ph/0102492', 'astro-ph/0101040', 'astro-ph/0102317', 'astro-ph/0103396', 'astro-ph/0101007', 'astro-ph/0104455', 'astro-ph/0104012', 'hep-ph/0103201', 'astro-ph/0101274', 'astro-ph/0101281']
+[17:24:12] select | verify strict 1/20
+[17:24:12] verify | func= Compares | rank= 1 | pid= astro-ph/0101119 | title_snip='Optical Spectroscopy of Type Ib/c Supernovae' | abs_len= 1194
+[17:24:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:15] select | verify strict 2/20
+[17:24:15] verify | func= Compares | rank= 19 | pid= astro-ph/0104440 | title_snip='Seeing double: strong gravitational lensing of high-redshift supernova…' | abs_len= 1277
+[17:24:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:17] select | verify strict 3/20
+[17:24:17] verify | func= Compares | rank= 3 | pid= astro-ph/0104235 | title_snip='The Fading Radio Emission from SN 1961V: Evidence for a Type II Peculi…' | abs_len= 705
+[17:24:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[17:24:21] select | verify strict 4/20
+[17:24:21] verify | func= Compares | rank= 0 | pid= astro-ph/0102485 | title_snip='Optical Observations of Core-Collapse Supernovae' | abs_len= 1583
+[17:24:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:24:24] select | verify strict 5/20
+[17:24:24] verify | func= Compares | rank= 13 | pid= astro-ph/0104141 | title_snip='Analyses of Type Ia Supernova Data in Cosmological Models with a Local…' | abs_len= 927
+[17:24:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:26] select | verify strict 6/20
+[17:24:26] verify | func= Compares | rank= 12 | pid= astro-ph/0103237 | title_snip='The Late-time Expansion of the Ejecta of SN 1987A' | abs_len= 1444
+[17:24:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:29] select | verify strict 7/20
+[17:24:29] verify | func= Compares | rank= 2 | pid= astro-ph/0104025 | title_snip='Aspherical Supernovae: Hydrodynamics & Radiation Transport' | abs_len= 1521
+[17:24:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:24:32] select | verify strict 8/20
+[17:24:32] verify | func= Compares | rank= 5 | pid= astro-ph/0104009 | title_snip='Supernovae and the Nature of the Dark Energy' | abs_len= 1268
+[17:24:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:34] select | verify strict 9/20
+[17:24:34] verify | func= Compares | rank= 8 | pid= astro-ph/0103034 | title_snip='The Peculiar Type Ia Supernova 1999by: Spectroscopy at Early Epochs' | abs_len= 842
+[17:24:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:37] select | verify strict 10/20
+[17:24:37] verify | func= Compares | rank= 9 | pid= astro-ph/0103324 | title_snip='SNO and Supernovae' | abs_len= 543
+[17:24:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:40] select | verify strict 11/20
+[17:24:40] verify | func= Compares | rank= 11 | pid= astro-ph/0102492 | title_snip='Evidence for a Supernova in the Ic Band Light Curve of the Optical
+  T…' | abs_len= 511
+[17:24:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:42] select | verify strict 12/20
+[17:24:42] verify | func= Compares | rank= 15 | pid= astro-ph/0101040 | title_snip='Measuring Time-Dependence of Dark Energy Density from Type Ia Supernov…' | abs_len= 1330
+[17:24:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:45] select | verify strict 13/20
+[17:24:45] verify | func= Compares | rank= 18 | pid= astro-ph/0102317 | title_snip='TeV Neutrinos and GeV Photons from Shock Breakout in Supernovae' | abs_len= 578
+[17:24:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:47] select | verify strict 14/20
+[17:24:47] verify | func= Compares | rank= 7 | pid= astro-ph/0103396 | title_snip='A New Model for the Thermal X-ray Composites and the Neutral Pion Deca…' | abs_len= 1165
+[17:24:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:50] select | verify strict 15/20
+[17:24:50] verify | func= Compares | rank= 16 | pid= astro-ph/0101007 | title_snip='Supernova, Hypernova and Gamma Ray Bursts' | abs_len= 1364
+[17:24:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:52] select | verify strict 16/20
+[17:24:52] verify | func= Compares | rank= 17 | pid= astro-ph/0104455 | title_snip='The Farthest Known Supernova: Support for an Accelerating Universe and…' | abs_len= 1806
+[17:24:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:55] select | verify strict 17/20
+[17:24:55] verify | func= Compares | rank= 4 | pid= astro-ph/0104012 | title_snip='The influence of massive stars in the interstellar medium of IC 1613:
+…' | abs_len= 1636
+[17:24:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:24:57] select | verify strict 18/20
+[17:24:57] verify | func= Compares | rank= 6 | pid= hep-ph/0103201 | title_snip='New Supernova Limit on Large Extra Dimensions' | abs_len= 692
+[17:25:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:25:00] select | verify strict 19/20
+[17:25:00] verify | func= Compares | rank= 10 | pid= astro-ph/0101274 | title_snip='A New ASCA and ROSAT Study of the Supernova Remnant: G272.2-3.2' | abs_len= 1152
+[17:25:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:25:03] select | verify strict 20/20
+[17:25:03] verify | func= Compares | rank= 14 | pid= astro-ph/0101281 | title_snip='The X-Ray Structure of the Supernova Remnant 3C 400.2' | abs_len= 1042
+[17:25:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:25:07] arbiter | rejected off-topic winner: astro-ph/0104235
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the properties of SNe II-L and SNe IIn extend our understanding of supernovae and compare to other types of supernovae?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

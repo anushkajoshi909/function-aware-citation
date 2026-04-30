@@ -1,0 +1,333 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Compares"
+  ],
+  "justification": "The query asks why earlier limitations motivated the new work (Motivation) and explicitly requests a comparison with prior expectations (Compares)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.66 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 3it [00:00, 27.77it/s]
+Reading arXiv_src_0101_001.jsonl: 137it [00:00, 771.34it/s]
+Reading arXiv_src_0101_001.jsonl: 285it [00:00, 1083.89it/s]
+Reading arXiv_src_0101_001.jsonl: 396it [00:00, 961.83it/s] 
+Reading arXiv_src_0101_001.jsonl: 495it [00:00, 705.74it/s]
+Reading arXiv_src_0101_001.jsonl: 575it [00:00, 643.57it/s]
+Reading arXiv_src_0101_001.jsonl: 681it [00:00, 743.56it/s]
+Reading arXiv_src_0101_001.jsonl: 782it [00:01, 804.57it/s]
+Reading arXiv_src_0101_001.jsonl: 895it [00:01, 890.10it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 924.46it/s]
+Reading arXiv_src_0101_001.jsonl: 1133it [00:01, 1025.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1265it [00:01, 1103.19it/s]
+Reading arXiv_src_0101_001.jsonl: 1379it [00:01, 1096.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1511it [00:01, 1160.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1651it [00:01, 1228.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1776it [00:01, 1197.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1923it [00:01, 1276.06it/s]
+Reading arXiv_src_0101_001.jsonl: 2099it [00:02, 1415.33it/s]
+Reading arXiv_src_0101_001.jsonl: 2249it [00:02, 1439.43it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1057.77it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 132it [00:00, 1311.19it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1350.83it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 853.14it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 516.59it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 556.93it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:01, 617.82it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 736.98it/s]
+Reading arXiv_src_0102_001.jsonl: 920it [00:01, 873.01it/s]
+Reading arXiv_src_0102_001.jsonl: 1030it [00:01, 931.51it/s]
+Reading arXiv_src_0102_001.jsonl: 1147it [00:01, 994.77it/s]
+Reading arXiv_src_0102_001.jsonl: 1255it [00:01, 1014.37it/s]
+Reading arXiv_src_0102_001.jsonl: 1401it [00:01, 1138.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1532it [00:01, 1187.93it/s]
+Reading arXiv_src_0102_001.jsonl: 1661it [00:01, 1214.40it/s]
+Reading arXiv_src_0102_001.jsonl: 1809it [00:01, 1291.71it/s]
+Reading arXiv_src_0102_001.jsonl: 1961it [00:02, 1358.95it/s]
+Reading arXiv_src_0102_001.jsonl: 2101it [00:02, 1369.86it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1009.21it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1355.98it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1523.83it/s]
+Reading arXiv_src_0103_001.jsonl: 454it [00:00, 1120.89it/s]
+Reading arXiv_src_0103_001.jsonl: 576it [00:00, 738.22it/s] 
+Reading arXiv_src_0103_001.jsonl: 672it [00:00, 786.64it/s]
+Reading arXiv_src_0103_001.jsonl: 765it [00:00, 803.50it/s]
+Reading arXiv_src_0103_001.jsonl: 883it [00:00, 899.32it/s]
+Reading arXiv_src_0103_001.jsonl: 990it [00:01, 944.39it/s]
+Reading arXiv_src_0103_001.jsonl: 1094it [00:01, 969.17it/s]
+Reading arXiv_src_0103_001.jsonl: 1214it [00:01, 1033.60it/s]
+Reading arXiv_src_0103_001.jsonl: 1322it [00:01, 1041.71it/s]
+Reading arXiv_src_0103_001.jsonl: 1465it [00:01, 1153.30it/s]
+Reading arXiv_src_0103_001.jsonl: 1602it [00:01, 1215.40it/s]
+Reading arXiv_src_0103_001.jsonl: 1751it [00:01, 1293.30it/s]
+Reading arXiv_src_0103_001.jsonl: 1892it [00:01, 1326.30it/s]
+Reading arXiv_src_0103_001.jsonl: 2033it [00:01, 1350.59it/s]
+Reading arXiv_src_0103_001.jsonl: 2171it [00:01, 1356.10it/s]
+Reading arXiv_src_0103_001.jsonl: 2325it [00:02, 1410.76it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1141.30it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 1498.88it/s]
+Reading arXiv_src_0104_001.jsonl: 310it [00:00, 1552.55it/s]
+Reading arXiv_src_0104_001.jsonl: 466it [00:00, 998.13it/s] 
+Reading arXiv_src_0104_001.jsonl: 583it [00:00, 550.00it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:00, 645.13it/s]
+Reading arXiv_src_0104_001.jsonl: 787it [00:01, 705.21it/s]
+Reading arXiv_src_0104_001.jsonl: 892it [00:01, 779.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1013it [00:01, 882.95it/s]
+Reading arXiv_src_0104_001.jsonl: 1124it [00:01, 940.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1247it [00:01, 1017.95it/s]
+Reading arXiv_src_0104_001.jsonl: 1358it [00:01, 1017.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1487it [00:01, 1092.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1630it [00:01, 1186.80it/s]
+Reading arXiv_src_0104_001.jsonl: 1761it [00:01, 1221.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1907it [00:01, 1286.04it/s]
+Reading arXiv_src_0104_001.jsonl: 2066it [00:02, 1374.60it/s]
+Reading arXiv_src_0104_001.jsonl: 2206it [00:02, 943.97it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 972.40it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What limitations in previous studies of star formation rates in Lyman break galaxies motivated the current work and how does it compare to previous expectations?
+[debug] classifier labels: ['Motivation', 'Compares']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at  classifier_functions
+0     0  1.000000  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+1     1  0.681368  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+2     2  0.609617  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+3     3  0.548775  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+4     4  0.477190  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+5     5  0.414317  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+6     6  0.387068  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+7     7  0.382461  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+8     8  0.370369  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+9     9  0.368450  ...  2025-09-21T21:48:31.054441  Motivation, Compares
+
+[10 rows x 12 columns]
+[23:48:39] main | args: Namespace(max_check=20, debug=True)
+[23:48:39] read_last_jsonl | path= classified_outputs.jsonl
+[23:48:39] read_last_jsonl | total_lines= 1
+[23:48:39] main | query='What limitations in previous studies of star formation rates in Lyman break galaxies motivated the current work and how does it compare to previous expectations?' | funcs=['Motivation', 'Compares']
+[23:48:41] main | core_terms= ['Lyman break galaxies', 'star formation rates']
+[23:48:41] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:48:41] load_topk_jsonl | rows= 20
+[23:48:41] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101254 title_snip='Deep Observations of Lyman Break Galaxies' abs_len= 480
+[23:48:41] main | running function= Motivation
+[23:48:41] select | function= Motivation | candidates_in= 20
+[23:48:41] select | core_terms= ['Lyman break galaxies', 'star formation rates']
+[23:48:41] select | no cosine prune; kept=20/20
+[23:48:41] select | pool_size= 20 | ranks= [11, 0, 1, 19, 3, 5, 9, 10, 12, 13, 14, 2, 4, 6, 7, 8, 15, 16, 17, 18] | pids= ['astro-ph/0102436', 'astro-ph/0101254', 'astro-ph/0102456', 'astro-ph/0103485', 'astro-ph/0103305', 'astro-ph/0104442', 'hep-ph/0103299', 'astro-ph/0102010', 'astro-ph/0104425', 'astro-ph/0102208', 'astro-ph/0102397', 'astro-ph/0101386', 'astro-ph/0101174', 'astro-ph/0101544', 'astro-ph/0101472', 'hep-ph/0102163', 'hep-ph/0102310', 'astro-ph/0101143', 'astro-ph/0104294', 'astro-ph/0102186']
+[23:48:41] select | verify strict 1/20
+[23:48:41] verify | func= Motivation | rank= 11 | pid= astro-ph/0102436 | title_snip='The Host Haloes of Lyman Break Galaxies and Sub-millimeter Sources' | abs_len= 1580
+[23:48:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:48:44] select | verify strict 2/20
+[23:48:44] verify | func= Motivation | rank= 0 | pid= astro-ph/0101254 | title_snip='Deep Observations of Lyman Break Galaxies' | abs_len= 480
+[23:48:47] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:48:47] select | verify strict 3/20
+[23:48:47] verify | func= Motivation | rank= 1 | pid= astro-ph/0102456 | title_snip='The Rest Frame Optical Spectra of Lyman Break Galaxies: Star Formation…' | abs_len= 1726
+[23:48:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:48:51] select | verify strict 4/20
+[23:48:51] verify | func= Motivation | rank= 19 | pid= astro-ph/0103485 | title_snip='Star formation and chemical evolution of damped Lyman $\alpha$ systems' | abs_len= 1606
+[23:48:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:48:53] select | verify strict 5/20
+[23:48:53] verify | func= Motivation | rank= 3 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[23:48:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:48:56] select | verify strict 6/20
+[23:48:56] verify | func= Motivation | rank= 5 | pid= astro-ph/0104442 | title_snip='The Cosmic Baryon Fraction and the Extragalactic Ionizing Background' | abs_len= 1674
+[23:48:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:48:59] select | verify strict 7/20
+[23:48:59] verify | func= Motivation | rank= 9 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:49:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:01] select | verify strict 8/20
+[23:49:01] verify | func= Motivation | rank= 10 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:49:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:04] select | verify strict 9/20
+[23:49:04] verify | func= Motivation | rank= 12 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[23:49:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[23:49:07] select | verify strict 10/20
+[23:49:07] verify | func= Motivation | rank= 13 | pid= astro-ph/0102208 | title_snip='The Ultraviolet-Far Infrared Energy Budget of the Gravitationally Lens…' | abs_len= 1253
+[23:49:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:49:10] select | verify strict 11/20
+[23:49:10] verify | func= Motivation | rank= 14 | pid= astro-ph/0102397 | title_snip='A Near-Infrared Stellar Census of Blue Compact Dwarf Galaxies: The
+  W…' | abs_len= 1230
+[23:49:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:13] select | verify strict 12/20
+[23:49:13] verify | func= Motivation | rank= 2 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[23:49:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:15] select | verify strict 13/20
+[23:49:15] verify | func= Motivation | rank= 4 | pid= astro-ph/0101174 | title_snip='Extended Lyman Alpha Emission Around Young Quasars: a Constraint on
+  …' | abs_len= 1134
+[23:49:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:18] select | verify strict 14/20
+[23:49:18] verify | func= Motivation | rank= 6 | pid= astro-ph/0101544 | title_snip='Dark energy and the epoch of galaxy formation' | abs_len= 971
+[23:49:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:21] select | verify strict 15/20
+[23:49:21] verify | func= Motivation | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[23:49:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:23] select | verify strict 16/20
+[23:49:23] verify | func= Motivation | rank= 8 | pid= hep-ph/0102163 | title_snip='The b->sgamma rate and Higgs boson limits in the Constrained Minimal
+ …' | abs_len= 1026
+[23:49:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:26] select | verify strict 17/20
+[23:49:26] verify | func= Motivation | rank= 15 | pid= hep-ph/0102310 | title_snip='Implication of $\sin 2\beta$ from global fit and $B\to J/\psi K_S$' | abs_len= 1444
+[23:49:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:28] select | verify strict 18/20
+[23:49:28] verify | func= Motivation | rank= 16 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[23:49:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:31] select | verify strict 19/20
+[23:49:31] verify | func= Motivation | rank= 17 | pid= astro-ph/0104294 | title_snip='The Large Area Lyman Alpha Survey' | abs_len= 1497
+[23:49:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:49:34] select | verify strict 20/20
+[23:49:34] verify | func= Motivation | rank= 18 | pid= astro-ph/0102186 | title_snip='The jet model for Sgr A*: radio and X-ray spectrum' | abs_len= 1257
+[23:49:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in previous studies of star formation rates in Lyman break galaxies motivated the current work and how does it compare to previous expectations?
+- WINNER: astro-ph/0102456 | The Rest Frame Optical Spectra of Lyman Break Galaxies: Star Formation,
+  Extinction, Abundances, and Kinematics
+- QUOTE : Contrary to expectations, the star formation rates
+- WHY   : sufficient
+- ANSWER: Previous studies of star formation rates in Lyman break galaxies were limited by uncertainties in calibrations and potential differential extinction, leading to potentially inaccurate estimates. The current work aims to improve upon these limitations by directly measuring star formation rates from rest-frame optical spectra, finding that they are consistent with rates implied by the stellar continuum at 1500 A (astro-ph/0102456).
+[23:49:41] main | running function= Compares
+[23:49:41] select | function= Compares | candidates_in= 20
+[23:49:41] select | core_terms= ['Lyman break galaxies', 'star formation rates']
+[23:49:41] select | no cosine prune; kept=20/20
+[23:49:41] select | pool_size= 20 | ranks= [11, 1, 0, 19, 10, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18] | pids= ['astro-ph/0102436', 'astro-ph/0102456', 'astro-ph/0101254', 'astro-ph/0103485', 'astro-ph/0102010', 'astro-ph/0104425', 'astro-ph/0102208', 'astro-ph/0101386', 'astro-ph/0103305', 'astro-ph/0101174', 'astro-ph/0104442', 'astro-ph/0101544', 'astro-ph/0101472', 'hep-ph/0102163', 'hep-ph/0103299', 'astro-ph/0102397', 'hep-ph/0102310', 'astro-ph/0101143', 'astro-ph/0104294', 'astro-ph/0102186']
+[23:49:41] select | verify strict 1/20
+[23:49:41] verify | func= Compares | rank= 11 | pid= astro-ph/0102436 | title_snip='The Host Haloes of Lyman Break Galaxies and Sub-millimeter Sources' | abs_len= 1580
+[23:49:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:49:45] select | verify strict 2/20
+[23:49:45] verify | func= Compares | rank= 1 | pid= astro-ph/0102456 | title_snip='The Rest Frame Optical Spectra of Lyman Break Galaxies: Star Formation…' | abs_len= 1726
+[23:49:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:49:48] select | verify strict 3/20
+[23:49:48] verify | func= Compares | rank= 0 | pid= astro-ph/0101254 | title_snip='Deep Observations of Lyman Break Galaxies' | abs_len= 480
+[23:49:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:49:51] select | verify strict 4/20
+[23:49:51] verify | func= Compares | rank= 19 | pid= astro-ph/0103485 | title_snip='Star formation and chemical evolution of damped Lyman $\alpha$ systems' | abs_len= 1606
+[23:49:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:53] select | verify strict 5/20
+[23:49:53] verify | func= Compares | rank= 10 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[23:49:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:49:56] select | verify strict 6/20
+[23:49:56] verify | func= Compares | rank= 12 | pid= astro-ph/0104425 | title_snip='A Comparison of Independent Star Formation Diagnostics for a UV-Select…' | abs_len= 1237
+[23:49:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[23:49:59] select | verify strict 7/20
+[23:49:59] verify | func= Compares | rank= 13 | pid= astro-ph/0102208 | title_snip='The Ultraviolet-Far Infrared Energy Budget of the Gravitationally Lens…' | abs_len= 1253
+[23:50:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:50:02] select | verify strict 8/20
+[23:50:02] verify | func= Compares | rank= 2 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[23:50:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:05] select | verify strict 9/20
+[23:50:05] verify | func= Compares | rank= 3 | pid= astro-ph/0103305 | title_snip='New HST spectra indicate the QSO PG1718+4807 will not give the
+  primo…' | abs_len= 987
+[23:50:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:08] select | verify strict 10/20
+[23:50:08] verify | func= Compares | rank= 4 | pid= astro-ph/0101174 | title_snip='Extended Lyman Alpha Emission Around Young Quasars: a Constraint on
+  …' | abs_len= 1134
+[23:50:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:10] select | verify strict 11/20
+[23:50:10] verify | func= Compares | rank= 5 | pid= astro-ph/0104442 | title_snip='The Cosmic Baryon Fraction and the Extragalactic Ionizing Background' | abs_len= 1674
+[23:50:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:50:14] select | verify strict 12/20
+[23:50:14] verify | func= Compares | rank= 6 | pid= astro-ph/0101544 | title_snip='Dark energy and the epoch of galaxy formation' | abs_len= 971
+[23:50:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:16] select | verify strict 13/20
+[23:50:16] verify | func= Compares | rank= 7 | pid= astro-ph/0101472 | title_snip='Cosmological History of Stars and Metals' | abs_len= 1543
+[23:50:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:19] select | verify strict 14/20
+[23:50:19] verify | func= Compares | rank= 8 | pid= hep-ph/0102163 | title_snip='The b->sgamma rate and Higgs boson limits in the Constrained Minimal
+ …' | abs_len= 1026
+[23:50:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:21] select | verify strict 15/20
+[23:50:21] verify | func= Compares | rank= 9 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:50:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:24] select | verify strict 16/20
+[23:50:24] verify | func= Compares | rank= 14 | pid= astro-ph/0102397 | title_snip='A Near-Infrared Stellar Census of Blue Compact Dwarf Galaxies: The
+  W…' | abs_len= 1230
+[23:50:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:27] select | verify strict 17/20
+[23:50:27] verify | func= Compares | rank= 15 | pid= hep-ph/0102310 | title_snip='Implication of $\sin 2\beta$ from global fit and $B\to J/\psi K_S$' | abs_len= 1444
+[23:50:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:29] select | verify strict 18/20
+[23:50:29] verify | func= Compares | rank= 16 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[23:50:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:32] select | verify strict 19/20
+[23:50:32] verify | func= Compares | rank= 17 | pid= astro-ph/0104294 | title_snip='The Large Area Lyman Alpha Survey' | abs_len= 1497
+[23:50:35] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:50:35] select | verify strict 20/20
+[23:50:35] verify | func= Compares | rank= 18 | pid= astro-ph/0102186 | title_snip='The jet model for Sgr A*: radio and X-ray spectrum' | abs_len= 1257
+[23:50:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:39] arbiter | rejected off-topic winner: astro-ph/0104425
+
+================================================================================
+FUNCTION: Compares
+QUERY   : What limitations in previous studies of star formation rates in Lyman break galaxies motivated the current work and how does it compare to previous expectations?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

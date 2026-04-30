@@ -1,0 +1,473 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the extended Emery model can be applied (Uses) and explicitly frames it as a direction for future research (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.5 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.63it/s]
+Reading arXiv_src_0101_001.jsonl: 30it [00:00, 81.10it/s]
+Reading arXiv_src_0101_001.jsonl: 180it [00:00, 478.76it/s]
+Reading arXiv_src_0101_001.jsonl: 302it [00:00, 688.13it/s]
+Reading arXiv_src_0101_001.jsonl: 397it [00:00, 722.38it/s]
+Reading arXiv_src_0101_001.jsonl: 486it [00:01, 601.47it/s]
+Reading arXiv_src_0101_001.jsonl: 560it [00:01, 554.61it/s]
+Reading arXiv_src_0101_001.jsonl: 664it [00:01, 663.01it/s]
+Reading arXiv_src_0101_001.jsonl: 766it [00:01, 750.22it/s]
+Reading arXiv_src_0101_001.jsonl: 878it [00:01, 846.10it/s]
+Reading arXiv_src_0101_001.jsonl: 983it [00:01, 900.48it/s]
+Reading arXiv_src_0101_001.jsonl: 1084it [00:01, 929.76it/s]
+Reading arXiv_src_0101_001.jsonl: 1217it [00:01, 1042.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1326it [00:01, 1031.25it/s]
+Reading arXiv_src_0101_001.jsonl: 1466it [00:01, 1136.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1590it [00:02, 1164.03it/s]
+Reading arXiv_src_0101_001.jsonl: 1724it [00:02, 1212.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1847it [00:02, 1170.85it/s]
+Reading arXiv_src_0101_001.jsonl: 2023it [00:02, 1336.68it/s]
+Reading arXiv_src_0101_001.jsonl: 2183it [00:02, 1411.11it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 897.58it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1326.06it/s]
+Reading arXiv_src_0102_001.jsonl: 268it [00:00, 1328.85it/s]
+Reading arXiv_src_0102_001.jsonl: 401it [00:00, 854.82it/s] 
+Reading arXiv_src_0102_001.jsonl: 501it [00:00, 512.59it/s]
+Reading arXiv_src_0102_001.jsonl: 585it [00:00, 575.38it/s]
+Reading arXiv_src_0102_001.jsonl: 661it [00:00, 599.75it/s]
+Reading arXiv_src_0102_001.jsonl: 774it [00:01, 719.96it/s]
+Reading arXiv_src_0102_001.jsonl: 901it [00:01, 854.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1014it [00:01, 924.97it/s]
+Reading arXiv_src_0102_001.jsonl: 1129it [00:01, 985.17it/s]
+Reading arXiv_src_0102_001.jsonl: 1239it [00:01, 1015.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1382it [00:01, 1133.27it/s]
+Reading arXiv_src_0102_001.jsonl: 1518it [00:01, 1198.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1642it [00:01, 1192.45it/s]
+Reading arXiv_src_0102_001.jsonl: 1792it [00:01, 1281.51it/s]
+Reading arXiv_src_0102_001.jsonl: 1944it [00:02, 1349.20it/s]
+Reading arXiv_src_0102_001.jsonl: 2088it [00:02, 1372.58it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1011.35it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1328.30it/s]
+Reading arXiv_src_0103_001.jsonl: 297it [00:00, 1499.54it/s]
+Reading arXiv_src_0103_001.jsonl: 447it [00:00, 1147.41it/s]
+Reading arXiv_src_0103_001.jsonl: 570it [00:00, 743.06it/s] 
+Reading arXiv_src_0103_001.jsonl: 662it [00:00, 754.60it/s]
+Reading arXiv_src_0103_001.jsonl: 750it [00:00, 783.20it/s]
+Reading arXiv_src_0103_001.jsonl: 858it [00:00, 856.81it/s]
+Reading arXiv_src_0103_001.jsonl: 961it [00:01, 899.97it/s]
+Reading arXiv_src_0103_001.jsonl: 1068it [00:01, 945.40it/s]
+Reading arXiv_src_0103_001.jsonl: 1190it [00:01, 1021.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1297it [00:01, 1028.76it/s]
+Reading arXiv_src_0103_001.jsonl: 1428it [00:01, 1108.64it/s]
+Reading arXiv_src_0103_001.jsonl: 1576it [00:01, 1216.72it/s]
+Reading arXiv_src_0103_001.jsonl: 1711it [00:01, 1255.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1863it [00:01, 1330.57it/s]
+Reading arXiv_src_0103_001.jsonl: 1998it [00:01, 1321.67it/s]
+Reading arXiv_src_0103_001.jsonl: 2148it [00:01, 1374.07it/s]
+Reading arXiv_src_0103_001.jsonl: 2289it [00:02, 1380.66it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1129.78it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  5.91it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  7.68it/s]
+Reading arXiv_src_0104_001.jsonl: 140it [00:00, 545.26it/s]
+Reading arXiv_src_0104_001.jsonl: 297it [00:00, 912.27it/s]
+Reading arXiv_src_0104_001.jsonl: 404it [00:00, 962.51it/s]
+Reading arXiv_src_0104_001.jsonl: 507it [00:00, 685.45it/s]
+Reading arXiv_src_0104_001.jsonl: 590it [00:01, 464.10it/s]
+Reading arXiv_src_0104_001.jsonl: 696it [00:01, 572.22it/s]
+Reading arXiv_src_0104_001.jsonl: 789it [00:01, 646.03it/s]
+Reading arXiv_src_0104_001.jsonl: 891it [00:01, 731.03it/s]
+Reading arXiv_src_0104_001.jsonl: 1009it [00:01, 840.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 908.49it/s]
+Reading arXiv_src_0104_001.jsonl: 1242it [00:01, 985.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1349it [00:01, 988.72it/s]
+Reading arXiv_src_0104_001.jsonl: 1480it [00:01, 1077.14it/s]
+Reading arXiv_src_0104_001.jsonl: 1619it [00:02, 1162.93it/s]
+Reading arXiv_src_0104_001.jsonl: 1746it [00:02, 1193.10it/s]
+Reading arXiv_src_0104_001.jsonl: 1889it [00:02, 1260.30it/s]
+Reading arXiv_src_0104_001.jsonl: 2035it [00:02, 1317.28it/s]
+Reading arXiv_src_0104_001.jsonl: 2169it [00:02, 954.18it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 862.57it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?
+[debug] classifier labels: ['Uses', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+1     1  0.351213  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+2     2  0.312278  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+3     3  0.254948  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+4     4  0.242974  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+5     5  0.235255  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+6     6  0.200565  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+7     7  0.191791  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+8     8  0.180559  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+9     9  0.166222  ...  2025-09-21T16:45:20.054098     Uses, FutureWork
+
+[10 rows x 12 columns]
+[18:45:29] main | args: Namespace(max_check=20, debug=True)
+[18:45:29] read_last_jsonl | path= classified_outputs.jsonl
+[18:45:29] read_last_jsonl | total_lines= 1
+[18:45:29] main | query='How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?' | funcs=['Uses', 'FutureWork']
+[18:45:33] main | core_terms= ['copper-oxide layered materials', 'extended Emery model', 'copper-oxide']
+[18:45:33] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[18:45:33] load_topk_jsonl | rows= 20
+[18:45:33] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0103057 title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' abs_len= 1444
+[18:45:33] main | running function= Uses
+[18:45:33] select | function= Uses | candidates_in= 20
+[18:45:33] select | core_terms= ['copper-oxide layered materials', 'extended Emery model', 'copper-oxide']
+[18:45:33] select | no cosine prune; kept=20/20
+[18:45:33] select | pool_size= 20 | ranks= [0, 1, 3, 4, 9, 10, 12, 14, 15, 16, 18, 2, 5, 6, 7, 8, 11, 13, 17, 19] | pids= ['cond-mat/0103057', 'cond-mat/0102456', 'cond-mat/0103610', 'cond-mat/0104381', 'cond-mat/0101243', 'cond-mat/0104308', 'cond-mat/0104376', 'cond-mat/0103298', 'hep-lat/0103018', 'cond-mat/0103315', 'cond-mat/0101048', 'cond-mat/0102420', 'cond-mat/0101335', 'cond-mat/0102343', 'cond-mat/0102128', 'cond-mat/0103626', 'cond-mat/0102387', 'cond-mat/0103492', 'cond-mat/0101354', 'cond-mat/0102041']
+[18:45:33] select | verify strict 1/20
+[18:45:33] verify | func= Uses | rank= 0 | pid= cond-mat/0103057 | title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' | abs_len= 1444
+[18:45:36] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:45:36] select | verify strict 2/20
+[18:45:36] verify | func= Uses | rank= 1 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[18:45:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:45:39] select | verify strict 3/20
+[18:45:39] verify | func= Uses | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[18:45:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:42] select | verify strict 4/20
+[18:45:42] verify | func= Uses | rank= 4 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[18:45:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:44] select | verify strict 5/20
+[18:45:44] verify | func= Uses | rank= 9 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[18:45:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:47] select | verify strict 6/20
+[18:45:47] verify | func= Uses | rank= 10 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[18:45:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:49] select | verify strict 7/20
+[18:45:49] verify | func= Uses | rank= 12 | pid= cond-mat/0104376 | title_snip='Topological Reduction of Tight-Binding Models on Complex Networks' | abs_len= 809
+[18:45:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:52] select | verify strict 8/20
+[18:45:52] verify | func= Uses | rank= 14 | pid= cond-mat/0103298 | title_snip='Generalized Drude model: Unification of ballistic and diffusive electr…' | abs_len= 1162
+[18:45:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:55] select | verify strict 9/20
+[18:45:55] verify | func= Uses | rank= 15 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[18:45:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:45:57] select | verify strict 10/20
+[18:45:57] verify | func= Uses | rank= 16 | pid= cond-mat/0103315 | title_snip='Critical behaviour near the metal-insulator transition of a doped Mott…' | abs_len= 670
+[18:46:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:00] select | verify strict 11/20
+[18:46:00] verify | func= Uses | rank= 18 | pid= cond-mat/0101048 | title_snip='Introducing Protein Folding Using Simple Models' | abs_len= 758
+[18:46:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:02] select | verify strict 12/20
+[18:46:02] verify | func= Uses | rank= 2 | pid= cond-mat/0102420 | title_snip='Three-Dimensional Superconductivity in the Infinite-Layer Compound
+  S…' | abs_len= 856
+[18:46:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:05] select | verify strict 13/20
+[18:46:05] verify | func= Uses | rank= 5 | pid= cond-mat/0101335 | title_snip='Orbital Correlations in the Ferromagnetic Half-Metal $CrO_{2}' | abs_len= 621
+[18:46:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:07] select | verify strict 14/20
+[18:46:07] verify | func= Uses | rank= 6 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[18:46:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:46:10] select | verify strict 15/20
+[18:46:10] verify | func= Uses | rank= 7 | pid= cond-mat/0102128 | title_snip='Tight-binding study of interface states in semiconductor heterojunctio…' | abs_len= 877
+[18:46:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:13] select | verify strict 16/20
+[18:46:13] verify | func= Uses | rank= 8 | pid= cond-mat/0103626 | title_snip='A Model for Ferromagnetic Nanograins with Discrete Electronic States' | abs_len= 467
+[18:46:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:15] select | verify strict 17/20
+[18:46:15] verify | func= Uses | rank= 11 | pid= cond-mat/0102387 | title_snip='A Study of the Antiferromagnetic Phase in the Hubbard Model by means o…' | abs_len= 1103
+[18:46:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:18] select | verify strict 18/20
+[18:46:18] verify | func= Uses | rank= 13 | pid= cond-mat/0103492 | title_snip='Nanoscopic stripe-like inhomogeneities and optical conductivity of dop…' | abs_len= 1563
+[18:46:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:46:22] select | verify strict 19/20
+[18:46:22] verify | func= Uses | rank= 17 | pid= cond-mat/0101354 | title_snip='Spin versus Lattice Polaron: Prediction for Electron-Doped CaMnO3' | abs_len= 1097
+[18:46:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:24] select | verify strict 20/20
+[18:46:24] verify | func= Uses | rank= 19 | pid= cond-mat/0102041 | title_snip='Electronic structure and string tension of stripes in high-Tc
+  superc…' | abs_len= 386
+[18:46:27] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[18:46:27] select | strict pass found 0 winners → trying relaxed
+[18:46:27] select | verify relaxed 1/20
+[18:46:27] verify | func= Uses | rank= 0 | pid= cond-mat/0103057 | title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' | abs_len= 1444
+[18:46:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:46:31] select | verify relaxed 2/20
+[18:46:31] verify | func= Uses | rank= 1 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[18:46:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[18:46:34] select | verify relaxed 3/20
+[18:46:34] verify | func= Uses | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[18:46:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:37] select | verify relaxed 4/20
+[18:46:37] verify | func= Uses | rank= 4 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[18:46:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:39] select | verify relaxed 5/20
+[18:46:39] verify | func= Uses | rank= 9 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[18:46:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:42] select | verify relaxed 6/20
+[18:46:42] verify | func= Uses | rank= 10 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[18:46:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:44] select | verify relaxed 7/20
+[18:46:44] verify | func= Uses | rank= 12 | pid= cond-mat/0104376 | title_snip='Topological Reduction of Tight-Binding Models on Complex Networks' | abs_len= 809
+[18:46:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:47] select | verify relaxed 8/20
+[18:46:47] verify | func= Uses | rank= 14 | pid= cond-mat/0103298 | title_snip='Generalized Drude model: Unification of ballistic and diffusive electr…' | abs_len= 1162
+[18:46:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:49] select | verify relaxed 9/20
+[18:46:49] verify | func= Uses | rank= 15 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[18:46:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:52] select | verify relaxed 10/20
+[18:46:52] verify | func= Uses | rank= 16 | pid= cond-mat/0103315 | title_snip='Critical behaviour near the metal-insulator transition of a doped Mott…' | abs_len= 670
+[18:46:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:55] select | verify relaxed 11/20
+[18:46:55] verify | func= Uses | rank= 18 | pid= cond-mat/0101048 | title_snip='Introducing Protein Folding Using Simple Models' | abs_len= 758
+[18:46:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:46:57] select | verify relaxed 12/20
+[18:46:57] verify | func= Uses | rank= 2 | pid= cond-mat/0102420 | title_snip='Three-Dimensional Superconductivity in the Infinite-Layer Compound
+  S…' | abs_len= 856
+[18:47:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:47:00] select | verify relaxed 13/20
+[18:47:00] verify | func= Uses | rank= 5 | pid= cond-mat/0101335 | title_snip='Orbital Correlations in the Ferromagnetic Half-Metal $CrO_{2}' | abs_len= 621
+[18:47:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:03] select | verify relaxed 14/20
+[18:47:03] verify | func= Uses | rank= 6 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[18:47:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:47:06] select | verify relaxed 15/20
+[18:47:06] verify | func= Uses | rank= 7 | pid= cond-mat/0102128 | title_snip='Tight-binding study of interface states in semiconductor heterojunctio…' | abs_len= 877
+[18:47:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:08] select | verify relaxed 16/20
+[18:47:08] verify | func= Uses | rank= 8 | pid= cond-mat/0103626 | title_snip='A Model for Ferromagnetic Nanograins with Discrete Electronic States' | abs_len= 467
+[18:47:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:11] select | verify relaxed 17/20
+[18:47:11] verify | func= Uses | rank= 11 | pid= cond-mat/0102387 | title_snip='A Study of the Antiferromagnetic Phase in the Hubbard Model by means o…' | abs_len= 1103
+[18:47:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:13] select | verify relaxed 18/20
+[18:47:13] verify | func= Uses | rank= 13 | pid= cond-mat/0103492 | title_snip='Nanoscopic stripe-like inhomogeneities and optical conductivity of dop…' | abs_len= 1563
+[18:47:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:47:17] select | verify relaxed 19/20
+[18:47:17] verify | func= Uses | rank= 17 | pid= cond-mat/0101354 | title_snip='Spin versus Lattice Polaron: Prediction for Electron-Doped CaMnO3' | abs_len= 1097
+[18:47:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:20] select | verify relaxed 20/20
+[18:47:20] verify | func= Uses | rank= 19 | pid= cond-mat/0102041 | title_snip='Electronic structure and string tension of stripes in high-Tc
+  superc…' | abs_len= 386
+[18:47:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?
+- WINNER: cond-mat/0103057 | Singular Behavior of the Extended Emery Model for High-Tc
+  Superconductors
+- QUOTE : The three band structure of the extended Emery model for the copper-oxide layered materials
+- WHY   : sufficient
+- ANSWER: Researchers can use the extended Emery model to improve understanding of copper-oxide layered materials by analyzing the three-band structure and its parameters, such as Cu-O site energy splitting and hopping. This model can be applied to fit the Fermi surfaces of high-Tc superconductors, like LSCO, Bi1221, and Y123, to gain insights into their electronic properties (cond-mat/0103057).
+[18:47:29] main | running function= FutureWork
+[18:47:29] select | function= FutureWork | candidates_in= 20
+[18:47:29] select | core_terms= ['copper-oxide layered materials', 'extended Emery model', 'copper-oxide']
+[18:47:29] select | no cosine prune; kept=20/20
+[18:47:29] select | pool_size= 20 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19] | pids= ['cond-mat/0103057', 'cond-mat/0102456', 'cond-mat/0102420', 'cond-mat/0103610', 'cond-mat/0104381', 'cond-mat/0101335', 'cond-mat/0102343', 'cond-mat/0102128', 'cond-mat/0103626', 'cond-mat/0101243', 'cond-mat/0104308', 'cond-mat/0102387', 'cond-mat/0104376', 'cond-mat/0103492', 'cond-mat/0103298', 'hep-lat/0103018', 'cond-mat/0103315', 'cond-mat/0101354', 'cond-mat/0101048', 'cond-mat/0102041']
+[18:47:29] select | verify strict 1/20
+[18:47:29] verify | func= FutureWork | rank= 0 | pid= cond-mat/0103057 | title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' | abs_len= 1444
+[18:47:32] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:47:32] select | verify strict 2/20
+[18:47:32] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[18:47:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:47:35] select | verify strict 3/20
+[18:47:35] verify | func= FutureWork | rank= 2 | pid= cond-mat/0102420 | title_snip='Three-Dimensional Superconductivity in the Infinite-Layer Compound
+  S…' | abs_len= 856
+[18:47:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:38] select | verify strict 4/20
+[18:47:38] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[18:47:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:40] select | verify strict 5/20
+[18:47:40] verify | func= FutureWork | rank= 4 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[18:47:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:43] select | verify strict 6/20
+[18:47:43] verify | func= FutureWork | rank= 5 | pid= cond-mat/0101335 | title_snip='Orbital Correlations in the Ferromagnetic Half-Metal $CrO_{2}' | abs_len= 621
+[18:47:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:45] select | verify strict 7/20
+[18:47:45] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[18:47:48] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:47:48] select | verify strict 8/20
+[18:47:48] verify | func= FutureWork | rank= 7 | pid= cond-mat/0102128 | title_snip='Tight-binding study of interface states in semiconductor heterojunctio…' | abs_len= 877
+[18:47:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:51] select | verify strict 9/20
+[18:47:51] verify | func= FutureWork | rank= 8 | pid= cond-mat/0103626 | title_snip='A Model for Ferromagnetic Nanograins with Discrete Electronic States' | abs_len= 467
+[18:47:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:53] select | verify strict 10/20
+[18:47:53] verify | func= FutureWork | rank= 9 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[18:47:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:56] select | verify strict 11/20
+[18:47:56] verify | func= FutureWork | rank= 10 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[18:47:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:47:59] select | verify strict 12/20
+[18:47:59] verify | func= FutureWork | rank= 11 | pid= cond-mat/0102387 | title_snip='A Study of the Antiferromagnetic Phase in the Hubbard Model by means o…' | abs_len= 1103
+[18:48:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:01] select | verify strict 13/20
+[18:48:01] verify | func= FutureWork | rank= 12 | pid= cond-mat/0104376 | title_snip='Topological Reduction of Tight-Binding Models on Complex Networks' | abs_len= 809
+[18:48:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:04] select | verify strict 14/20
+[18:48:04] verify | func= FutureWork | rank= 13 | pid= cond-mat/0103492 | title_snip='Nanoscopic stripe-like inhomogeneities and optical conductivity of dop…' | abs_len= 1563
+[18:48:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:06] select | verify strict 15/20
+[18:48:06] verify | func= FutureWork | rank= 14 | pid= cond-mat/0103298 | title_snip='Generalized Drude model: Unification of ballistic and diffusive electr…' | abs_len= 1162
+[18:48:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:09] select | verify strict 16/20
+[18:48:09] verify | func= FutureWork | rank= 15 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[18:48:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:12] select | verify strict 17/20
+[18:48:12] verify | func= FutureWork | rank= 16 | pid= cond-mat/0103315 | title_snip='Critical behaviour near the metal-insulator transition of a doped Mott…' | abs_len= 670
+[18:48:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:14] select | verify strict 18/20
+[18:48:14] verify | func= FutureWork | rank= 17 | pid= cond-mat/0101354 | title_snip='Spin versus Lattice Polaron: Prediction for Electron-Doped CaMnO3' | abs_len= 1097
+[18:48:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:17] select | verify strict 19/20
+[18:48:17] verify | func= FutureWork | rank= 18 | pid= cond-mat/0101048 | title_snip='Introducing Protein Folding Using Simple Models' | abs_len= 758
+[18:48:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:19] select | verify strict 20/20
+[18:48:19] verify | func= FutureWork | rank= 19 | pid= cond-mat/0102041 | title_snip='Electronic structure and string tension of stripes in high-Tc
+  superc…' | abs_len= 386
+[18:48:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:22] select | strict pass found 0 winners → trying relaxed
+[18:48:22] select | verify relaxed 1/20
+[18:48:22] verify | func= FutureWork | rank= 0 | pid= cond-mat/0103057 | title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' | abs_len= 1444
+[18:48:25] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:48:25] select | verify relaxed 2/20
+[18:48:25] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[18:48:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:48:28] select | verify relaxed 3/20
+[18:48:28] verify | func= FutureWork | rank= 2 | pid= cond-mat/0102420 | title_snip='Three-Dimensional Superconductivity in the Infinite-Layer Compound
+  S…' | abs_len= 856
+[18:48:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[18:48:31] select | verify relaxed 4/20
+[18:48:31] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[18:48:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:34] select | verify relaxed 5/20
+[18:48:34] verify | func= FutureWork | rank= 4 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[18:48:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:37] select | verify relaxed 6/20
+[18:48:37] verify | func= FutureWork | rank= 5 | pid= cond-mat/0101335 | title_snip='Orbital Correlations in the Ferromagnetic Half-Metal $CrO_{2}' | abs_len= 621
+[18:48:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:39] select | verify relaxed 7/20
+[18:48:39] verify | func= FutureWork | rank= 6 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[18:48:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:48:43] select | verify relaxed 8/20
+[18:48:43] verify | func= FutureWork | rank= 7 | pid= cond-mat/0102128 | title_snip='Tight-binding study of interface states in semiconductor heterojunctio…' | abs_len= 877
+[18:48:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:45] select | verify relaxed 9/20
+[18:48:45] verify | func= FutureWork | rank= 8 | pid= cond-mat/0103626 | title_snip='A Model for Ferromagnetic Nanograins with Discrete Electronic States' | abs_len= 467
+[18:48:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:48] select | verify relaxed 10/20
+[18:48:48] verify | func= FutureWork | rank= 9 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[18:48:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:50] select | verify relaxed 11/20
+[18:48:50] verify | func= FutureWork | rank= 10 | pid= cond-mat/0104308 | title_snip='Itinerant metamagnetism and possible spin transition in LaCoO$_3$ by
+ …' | abs_len= 1745
+[18:48:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:53] select | verify relaxed 12/20
+[18:48:53] verify | func= FutureWork | rank= 11 | pid= cond-mat/0102387 | title_snip='A Study of the Antiferromagnetic Phase in the Hubbard Model by means o…' | abs_len= 1103
+[18:48:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:56] select | verify relaxed 13/20
+[18:48:56] verify | func= FutureWork | rank= 12 | pid= cond-mat/0104376 | title_snip='Topological Reduction of Tight-Binding Models on Complex Networks' | abs_len= 809
+[18:48:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:48:58] select | verify relaxed 14/20
+[18:48:58] verify | func= FutureWork | rank= 13 | pid= cond-mat/0103492 | title_snip='Nanoscopic stripe-like inhomogeneities and optical conductivity of dop…' | abs_len= 1563
+[18:49:02] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:49:02] select | verify relaxed 15/20
+[18:49:02] verify | func= FutureWork | rank= 14 | pid= cond-mat/0103298 | title_snip='Generalized Drude model: Unification of ballistic and diffusive electr…' | abs_len= 1162
+[18:49:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:49:04] select | verify relaxed 16/20
+[18:49:04] verify | func= FutureWork | rank= 15 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[18:49:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:49:07] select | verify relaxed 17/20
+[18:49:07] verify | func= FutureWork | rank= 16 | pid= cond-mat/0103315 | title_snip='Critical behaviour near the metal-insulator transition of a doped Mott…' | abs_len= 670
+[18:49:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:49:09] select | verify relaxed 18/20
+[18:49:09] verify | func= FutureWork | rank= 17 | pid= cond-mat/0101354 | title_snip='Spin versus Lattice Polaron: Prediction for Electron-Doped CaMnO3' | abs_len= 1097
+[18:49:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:49:12] select | verify relaxed 19/20
+[18:49:12] verify | func= FutureWork | rank= 18 | pid= cond-mat/0101048 | title_snip='Introducing Protein Folding Using Simple Models' | abs_len= 758
+[18:49:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[18:49:15] select | verify relaxed 20/20
+[18:49:15] verify | func= FutureWork | rank= 19 | pid= cond-mat/0102041 | title_snip='Electronic structure and string tension of stripes in high-Tc
+  superc…' | abs_len= 386
+[18:49:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

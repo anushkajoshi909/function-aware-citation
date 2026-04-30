@@ -1,0 +1,347 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query requests foundational information about dimensional crossover in Hubbard ladders (Background) and asks what problem or knowledge gap drives the study (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.25 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.99it/s]
+Reading arXiv_src_0101_001.jsonl: 26it [00:00, 76.84it/s]
+Reading arXiv_src_0101_001.jsonl: 167it [00:00, 475.64it/s]
+Reading arXiv_src_0101_001.jsonl: 295it [00:00, 711.61it/s]
+Reading arXiv_src_0101_001.jsonl: 389it [00:00, 765.34it/s]
+Reading arXiv_src_0101_001.jsonl: 481it [00:00, 614.35it/s]
+Reading arXiv_src_0101_001.jsonl: 557it [00:01, 555.93it/s]
+Reading arXiv_src_0101_001.jsonl: 664it [00:01, 667.83it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 754.36it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 843.15it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 918.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1104it [00:01, 960.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1235it [00:01, 1057.43it/s]
+Reading arXiv_src_0101_001.jsonl: 1345it [00:01, 1047.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1481it [00:01, 1135.28it/s]
+Reading arXiv_src_0101_001.jsonl: 1614it [00:02, 1191.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1742it [00:02, 1215.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1865it [00:02, 1181.43it/s]
+Reading arXiv_src_0101_001.jsonl: 2042it [00:02, 1351.47it/s]
+Reading arXiv_src_0101_001.jsonl: 2200it [00:02, 1416.55it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 914.21it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 135it [00:00, 1347.81it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1364.19it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 861.08it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 512.73it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 547.42it/s]
+Reading arXiv_src_0102_001.jsonl: 679it [00:01, 613.90it/s]
+Reading arXiv_src_0102_001.jsonl: 796it [00:01, 740.44it/s]
+Reading arXiv_src_0102_001.jsonl: 931it [00:01, 889.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1039it [00:01, 938.95it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 984.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1270it [00:01, 1040.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1416it [00:01, 1157.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1550it [00:01, 1207.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1684it [00:01, 1245.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1836it [00:01, 1321.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1988it [00:02, 1376.17it/s]
+Reading arXiv_src_0102_001.jsonl: 2140it [00:02, 1417.20it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1018.78it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  4.57it/s]
+Reading arXiv_src_0103_001.jsonl: 25it [00:00, 97.42it/s]
+Reading arXiv_src_0103_001.jsonl: 165it [00:00, 563.36it/s]
+Reading arXiv_src_0103_001.jsonl: 315it [00:00, 878.76it/s]
+Reading arXiv_src_0103_001.jsonl: 421it [00:00, 937.03it/s]
+Reading arXiv_src_0103_001.jsonl: 525it [00:00, 654.00it/s]
+Reading arXiv_src_0103_001.jsonl: 608it [00:01, 638.37it/s]
+Reading arXiv_src_0103_001.jsonl: 713it [00:01, 734.82it/s]
+Reading arXiv_src_0103_001.jsonl: 801it [00:01, 770.67it/s]
+Reading arXiv_src_0103_001.jsonl: 907it [00:01, 845.61it/s]
+Reading arXiv_src_0103_001.jsonl: 1008it [00:01, 890.14it/s]
+Reading arXiv_src_0103_001.jsonl: 1126it [00:01, 970.53it/s]
+Reading arXiv_src_0103_001.jsonl: 1237it [00:01, 1006.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1353it [00:01, 1047.39it/s]
+Reading arXiv_src_0103_001.jsonl: 1499it [00:01, 1167.21it/s]
+Reading arXiv_src_0103_001.jsonl: 1636it [00:01, 1226.79it/s]
+Reading arXiv_src_0103_001.jsonl: 1777it [00:02, 1280.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1924it [00:02, 1331.36it/s]
+Reading arXiv_src_0103_001.jsonl: 2058it [00:02, 1333.10it/s]
+Reading arXiv_src_0103_001.jsonl: 2192it [00:02, 1328.78it/s]
+Reading arXiv_src_0103_001.jsonl: 2348it [00:02, 1390.82it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 987.35it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.64it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  8.24it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 610.10it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 969.32it/s]
+Reading arXiv_src_0104_001.jsonl: 413it [00:00, 982.21it/s]
+Reading arXiv_src_0104_001.jsonl: 516it [00:00, 691.46it/s]
+Reading arXiv_src_0104_001.jsonl: 599it [00:01, 473.29it/s]
+Reading arXiv_src_0104_001.jsonl: 705it [00:01, 581.74it/s]
+Reading arXiv_src_0104_001.jsonl: 794it [00:01, 645.99it/s]
+Reading arXiv_src_0104_001.jsonl: 896it [00:01, 729.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1020it [00:01, 855.05it/s]
+Reading arXiv_src_0104_001.jsonl: 1128it [00:01, 913.49it/s]
+Reading arXiv_src_0104_001.jsonl: 1251it [00:01, 996.90it/s]
+Reading arXiv_src_0104_001.jsonl: 1359it [00:01, 1000.21it/s]
+Reading arXiv_src_0104_001.jsonl: 1486it [00:01, 1075.76it/s]
+Reading arXiv_src_0104_001.jsonl: 1630it [00:02, 1175.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1758it [00:02, 1205.35it/s]
+Reading arXiv_src_0104_001.jsonl: 1903it [00:02, 1276.28it/s]
+Reading arXiv_src_0104_001.jsonl: 2058it [00:02, 1355.18it/s]
+Reading arXiv_src_0104_001.jsonl: 2196it [00:02, 937.37it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 870.66it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What problem or gap in understanding the dimensional crossover in Hubbard ladders motivates the current study, and what background information is necessary to understand this phenomenon?
+[debug] classifier labels: ['Background', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T13:13:55.751004  Background, Motivation
+1     1  0.768546  ...  2025-09-21T13:13:55.751004  Background, Motivation
+2     2  0.452495  ...  2025-09-21T13:13:55.751004  Background, Motivation
+3     3  0.421389  ...  2025-09-21T13:13:55.751004  Background, Motivation
+4     4  0.415085  ...  2025-09-21T13:13:55.751004  Background, Motivation
+5     5  0.353970  ...  2025-09-21T13:13:55.751004  Background, Motivation
+6     6  0.325969  ...  2025-09-21T13:13:55.751004  Background, Motivation
+7     7  0.323189  ...  2025-09-21T13:13:55.751004  Background, Motivation
+8     8  0.309106  ...  2025-09-21T13:13:55.751004  Background, Motivation
+9     9  0.274573  ...  2025-09-21T13:13:55.751004  Background, Motivation
+
+[10 rows x 12 columns]
+[15:14:01] main | args: Namespace(max_check=20, debug=True)
+[15:14:01] read_last_jsonl | path= classified_outputs.jsonl
+[15:14:01] read_last_jsonl | total_lines= 1
+[15:14:01] main | query='What problem or gap in understanding the dimensional crossover in Hubbard ladders motivates the current study, and what background information is necessary to understand this phenomenon?' | funcs=['Background', 'Motivation']
+[15:14:03] main | core_terms= ['Hubbard ladders', 'dimensional crossover']
+[15:14:03] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:14:03] load_topk_jsonl | rows= 20
+[15:14:03] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0103159 title_snip='Dimensional crossover in half-filled and lightly doped N-leg Hubbard
+ …' abs_len= 1721
+[15:14:03] main | running function= Background
+[15:14:03] select | function= Background | candidates_in= 20
+[15:14:03] select | core_terms= ['Hubbard ladders', 'dimensional crossover']
+[15:14:03] select | no cosine prune; kept=20/20
+[15:14:03] select | pool_size= 20 | ranks= [0, 1, 2, 3, 4, 9, 13, 15, 16, 5, 6, 7, 8, 10, 11, 12, 14, 17, 18, 19] | pids= ['cond-mat/0103159', 'cond-mat/0103424', 'cond-mat/0102007', 'cond-mat/0102401', 'cond-mat/0104090', 'cond-mat/0104478', 'cond-mat/0103280', 'cond-mat/0102434', 'cond-mat/0102447', 'cond-mat/0101302', 'cond-mat/0103264', 'cond-mat/0103610', 'cond-mat/0101017', 'hep-th/0102012', 'cond-mat/0102103', 'cond-mat/0102097', 'cond-mat/0101026', 'hep-ph/0103043', 'cond-mat/0102010', 'cond-mat/0102142']
+[15:14:03] select | verify strict 1/20
+[15:14:03] verify | func= Background | rank= 0 | pid= cond-mat/0103159 | title_snip='Dimensional crossover in half-filled and lightly doped N-leg Hubbard
+ …' | abs_len= 1721
+[15:14:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:14:06] select | verify strict 2/20
+[15:14:06] verify | func= Background | rank= 1 | pid= cond-mat/0103424 | title_snip='Antiferromagnetically coupled alternating spin chains' | abs_len= 1080
+[15:14:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[15:14:10] select | verify strict 3/20
+[15:14:10] verify | func= Background | rank= 2 | pid= cond-mat/0102007 | title_snip='Exact diagonalisation study of charge order in the quarter-filled
+  tw…' | abs_len= 1174
+[15:14:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:14:13] select | verify strict 4/20
+[15:14:13] verify | func= Background | rank= 3 | pid= cond-mat/0102401 | title_snip='Gap ratio in anharmonic charge-density-wave systems' | abs_len= 807
+[15:14:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:16] select | verify strict 5/20
+[15:14:16] verify | func= Background | rank= 4 | pid= cond-mat/0104090 | title_snip='Decoupling of the S=1/2 antiferromagnetic zig-zag ladder with anisotro…' | abs_len= 1137
+[15:14:19] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[15:14:19] select | verify strict 6/20
+[15:14:19] verify | func= Background | rank= 9 | pid= cond-mat/0104478 | title_snip='Local Dynamics and Strong Correlation Physics I: 1D and 2D Half-filled…' | abs_len= 1347
+[15:14:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:22] select | verify strict 7/20
+[15:14:22] verify | func= Background | rank= 13 | pid= cond-mat/0103280 | title_snip='Breathers in Josephson junction ladders: resonances and electromagneti…' | abs_len= 818
+[15:14:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:24] select | verify strict 8/20
+[15:14:24] verify | func= Background | rank= 15 | pid= cond-mat/0102434 | title_snip='Charge Density Wave-Assisted Tunneling Between Hall Edge States' | abs_len= 860
+[15:14:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:27] select | verify strict 9/20
+[15:14:27] verify | func= Background | rank= 16 | pid= cond-mat/0102447 | title_snip='Quantum disorder in the two-dimensional pyrochlore Heisenberg
+  antife…' | abs_len= 661
+[15:14:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:29] select | verify strict 10/20
+[15:14:29] verify | func= Background | rank= 5 | pid= cond-mat/0101302 | title_snip='Optical studies of gap, hopping energies and the Anderson-Hubbard
+  pa…' | abs_len= 1095
+[15:14:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:32] select | verify strict 11/20
+[15:14:32] verify | func= Background | rank= 6 | pid= cond-mat/0103264 | title_snip='Competing Spin-Gap Phases in a Frustrated Quantum Spin System in Two
+ …' | abs_len= 726
+[15:14:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:34] select | verify strict 12/20
+[15:14:34] verify | func= Background | rank= 7 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[15:14:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:37] select | verify strict 13/20
+[15:14:37] verify | func= Background | rank= 8 | pid= cond-mat/0101017 | title_snip='Crossover between Thermally Assisted and Pure Quantum Tunneling in
+  M…' | abs_len= 565
+[15:14:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:39] select | verify strict 14/20
+[15:14:39] verify | func= Background | rank= 10 | pid= hep-th/0102012 | title_snip='Boson-Fermion Confusion: The String Path To Supersymmetry' | abs_len= 308
+[15:14:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:42] select | verify strict 15/20
+[15:14:42] verify | func= Background | rank= 11 | pid= cond-mat/0102103 | title_snip='The geometric order of stripes and Luttinger liquids' | abs_len= 1422
+[15:14:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:44] select | verify strict 16/20
+[15:14:44] verify | func= Background | rank= 12 | pid= cond-mat/0102097 | title_snip='Quantum Groups, Strings and HTSC materials' | abs_len= 1551
+[15:14:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:47] select | verify strict 17/20
+[15:14:47] verify | func= Background | rank= 14 | pid= cond-mat/0101026 | title_snip='On the problem of Yb_{4}As_{3}' | abs_len= 795
+[15:14:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:49] select | verify strict 18/20
+[15:14:49] verify | func= Background | rank= 17 | pid= hep-ph/0103043 | title_snip='On High-Energy Behavior of Cross Sections in Theories with Large Extra…' | abs_len= 319
+[15:14:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:52] select | verify strict 19/20
+[15:14:52] verify | func= Background | rank= 18 | pid= cond-mat/0102010 | title_snip='Coulomb Blockade of Tunneling between Disordered Conductors' | abs_len= 496
+[15:14:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:14:54] select | verify strict 20/20
+[15:14:54] verify | func= Background | rank= 19 | pid= cond-mat/0102142 | title_snip='Charge ordering and antiferromagnetic exchange in layered molecular
+  …' | abs_len= 1231
+[15:14:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What problem or gap in understanding the dimensional crossover in Hubbard ladders motivates the current study, and what background information is necessary to understand this phenomenon?
+- WINNER: cond-mat/0103159 | Dimensional crossover in half-filled and lightly doped N-leg Hubbard
+  ladders
+- QUOTE : Dimensional crossover in half-filled and lightly doped N-leg Hubbard ladders
+- WHY   : sufficient
+- ANSWER: The study of dimensional crossover in Hubbard ladders is motivated by a lack of understanding of the transition from 1D to 2D behavior, particularly in half-filled and lightly doped systems (cond-mat/0103159).
+[15:15:03] main | running function= Motivation
+[15:15:03] select | function= Motivation | candidates_in= 20
+[15:15:03] select | core_terms= ['Hubbard ladders', 'dimensional crossover']
+[15:15:03] select | no cosine prune; kept=20/20
+[15:15:03] select | pool_size= 20 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 8, 10, 11, 12, 13, 18, 19] | pids= ['cond-mat/0103159', 'cond-mat/0103424', 'cond-mat/0102007', 'cond-mat/0102401', 'cond-mat/0104090', 'cond-mat/0101302', 'cond-mat/0103264', 'cond-mat/0103610', 'cond-mat/0104478', 'cond-mat/0101026', 'cond-mat/0102434', 'cond-mat/0102447', 'hep-ph/0103043', 'cond-mat/0101017', 'hep-th/0102012', 'cond-mat/0102103', 'cond-mat/0102097', 'cond-mat/0103280', 'cond-mat/0102010', 'cond-mat/0102142']
+[15:15:03] select | verify strict 1/20
+[15:15:03] verify | func= Motivation | rank= 0 | pid= cond-mat/0103159 | title_snip='Dimensional crossover in half-filled and lightly doped N-leg Hubbard
+ …' | abs_len= 1721
+[15:15:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:15:06] select | verify strict 2/20
+[15:15:06] verify | func= Motivation | rank= 1 | pid= cond-mat/0103424 | title_snip='Antiferromagnetically coupled alternating spin chains' | abs_len= 1080
+[15:15:10] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:15:10] select | verify strict 3/20
+[15:15:10] verify | func= Motivation | rank= 2 | pid= cond-mat/0102007 | title_snip='Exact diagonalisation study of charge order in the quarter-filled
+  tw…' | abs_len= 1174
+[15:15:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:15:13] select | verify strict 4/20
+[15:15:13] verify | func= Motivation | rank= 3 | pid= cond-mat/0102401 | title_snip='Gap ratio in anharmonic charge-density-wave systems' | abs_len= 807
+[15:15:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:15] select | verify strict 5/20
+[15:15:15] verify | func= Motivation | rank= 4 | pid= cond-mat/0104090 | title_snip='Decoupling of the S=1/2 antiferromagnetic zig-zag ladder with anisotro…' | abs_len= 1137
+[15:15:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:15:19] select | verify strict 6/20
+[15:15:19] verify | func= Motivation | rank= 5 | pid= cond-mat/0101302 | title_snip='Optical studies of gap, hopping energies and the Anderson-Hubbard
+  pa…' | abs_len= 1095
+[15:15:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:21] select | verify strict 7/20
+[15:15:21] verify | func= Motivation | rank= 6 | pid= cond-mat/0103264 | title_snip='Competing Spin-Gap Phases in a Frustrated Quantum Spin System in Two
+ …' | abs_len= 726
+[15:15:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:24] select | verify strict 8/20
+[15:15:24] verify | func= Motivation | rank= 7 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[15:15:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:26] select | verify strict 9/20
+[15:15:26] verify | func= Motivation | rank= 9 | pid= cond-mat/0104478 | title_snip='Local Dynamics and Strong Correlation Physics I: 1D and 2D Half-filled…' | abs_len= 1347
+[15:15:29] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:15:29] select | verify strict 10/20
+[15:15:29] verify | func= Motivation | rank= 14 | pid= cond-mat/0101026 | title_snip='On the problem of Yb_{4}As_{3}' | abs_len= 795
+[15:15:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:32] select | verify strict 11/20
+[15:15:32] verify | func= Motivation | rank= 15 | pid= cond-mat/0102434 | title_snip='Charge Density Wave-Assisted Tunneling Between Hall Edge States' | abs_len= 860
+[15:15:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:34] select | verify strict 12/20
+[15:15:34] verify | func= Motivation | rank= 16 | pid= cond-mat/0102447 | title_snip='Quantum disorder in the two-dimensional pyrochlore Heisenberg
+  antife…' | abs_len= 661
+[15:15:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:37] select | verify strict 13/20
+[15:15:37] verify | func= Motivation | rank= 17 | pid= hep-ph/0103043 | title_snip='On High-Energy Behavior of Cross Sections in Theories with Large Extra…' | abs_len= 319
+[15:15:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:39] select | verify strict 14/20
+[15:15:39] verify | func= Motivation | rank= 8 | pid= cond-mat/0101017 | title_snip='Crossover between Thermally Assisted and Pure Quantum Tunneling in
+  M…' | abs_len= 565
+[15:15:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:42] select | verify strict 15/20
+[15:15:42] verify | func= Motivation | rank= 10 | pid= hep-th/0102012 | title_snip='Boson-Fermion Confusion: The String Path To Supersymmetry' | abs_len= 308
+[15:15:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:44] select | verify strict 16/20
+[15:15:44] verify | func= Motivation | rank= 11 | pid= cond-mat/0102103 | title_snip='The geometric order of stripes and Luttinger liquids' | abs_len= 1422
+[15:15:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:47] select | verify strict 17/20
+[15:15:47] verify | func= Motivation | rank= 12 | pid= cond-mat/0102097 | title_snip='Quantum Groups, Strings and HTSC materials' | abs_len= 1551
+[15:15:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:49] select | verify strict 18/20
+[15:15:49] verify | func= Motivation | rank= 13 | pid= cond-mat/0103280 | title_snip='Breathers in Josephson junction ladders: resonances and electromagneti…' | abs_len= 818
+[15:15:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:52] select | verify strict 19/20
+[15:15:52] verify | func= Motivation | rank= 18 | pid= cond-mat/0102010 | title_snip='Coulomb Blockade of Tunneling between Disordered Conductors' | abs_len= 496
+[15:15:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:15:54] select | verify strict 20/20
+[15:15:54] verify | func= Motivation | rank= 19 | pid= cond-mat/0102142 | title_snip='Charge ordering and antiferromagnetic exchange in layered molecular
+  …' | abs_len= 1231
+[15:15:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What problem or gap in understanding the dimensional crossover in Hubbard ladders motivates the current study, and what background information is necessary to understand this phenomenon?
+- WINNER: cond-mat/0103159 | Dimensional crossover in half-filled and lightly doped N-leg Hubbard
+  ladders
+- QUOTE : dimensional crossover from 1D to 2D in half-filled and lightly doped
+- WHY   : sufficient
+- ANSWER: The current study is motivated by a lack of understanding of the dimensional crossover in Hubbard ladders, particularly the transition from 1D to 2D behavior in half-filled and lightly doped systems. Background information on the Hubbard model and renormalization group techniques is necessary to understand this phenomenon, which exhibits complex behavior including odd-even effects and phase transitions (cond-mat/0103159).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

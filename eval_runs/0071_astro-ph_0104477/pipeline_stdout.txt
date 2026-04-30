@@ -1,0 +1,339 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Motivation"
+  ],
+  "justification": "The query asks how the new spectroscopic survey builds on prior work (Extends) and why it encourages further study of faint high\u2011redshift galaxies (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.51 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 10it [00:00, 53.63it/s]
+Reading arXiv_src_0101_001.jsonl: 144it [00:00, 606.40it/s]
+Reading arXiv_src_0101_001.jsonl: 291it [00:00, 933.24it/s]
+Reading arXiv_src_0101_001.jsonl: 401it [00:00, 871.75it/s]
+Reading arXiv_src_0101_001.jsonl: 499it [00:00, 665.25it/s]
+Reading arXiv_src_0101_001.jsonl: 578it [00:00, 633.44it/s]
+Reading arXiv_src_0101_001.jsonl: 686it [00:00, 739.68it/s]
+Reading arXiv_src_0101_001.jsonl: 788it [00:01, 811.16it/s]
+Reading arXiv_src_0101_001.jsonl: 902it [00:01, 898.75it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 924.96it/s]
+Reading arXiv_src_0101_001.jsonl: 1132it [00:01, 1027.61it/s]
+Reading arXiv_src_0101_001.jsonl: 1263it [00:01, 1108.21it/s]
+Reading arXiv_src_0101_001.jsonl: 1378it [00:01, 1099.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1511it [00:01, 1164.68it/s]
+Reading arXiv_src_0101_001.jsonl: 1651it [00:01, 1232.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1776it [00:01, 1201.25it/s]
+Reading arXiv_src_0101_001.jsonl: 1924it [00:02, 1281.99it/s]
+Reading arXiv_src_0101_001.jsonl: 2102it [00:02, 1426.09it/s]
+Reading arXiv_src_0101_001.jsonl: 2257it [00:02, 1462.58it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1030.17it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1328.73it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1368.37it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 848.14it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 526.29it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 560.52it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:00, 616.22it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 742.27it/s]
+Reading arXiv_src_0102_001.jsonl: 921it [00:01, 880.80it/s]
+Reading arXiv_src_0102_001.jsonl: 1030it [00:01, 935.14it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1003.77it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1051.61it/s]
+Reading arXiv_src_0102_001.jsonl: 1409it [00:01, 1149.24it/s]
+Reading arXiv_src_0102_001.jsonl: 1540it [00:01, 1190.70it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1229.62it/s]
+Reading arXiv_src_0102_001.jsonl: 1826it [00:01, 1312.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1979it [00:02, 1372.23it/s]
+Reading arXiv_src_0102_001.jsonl: 2129it [00:02, 1407.47it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1021.06it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1371.91it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1534.42it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1120.93it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 725.97it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 790.61it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 822.13it/s]
+Reading arXiv_src_0103_001.jsonl: 886it [00:00, 888.73it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 945.05it/s]
+Reading arXiv_src_0103_001.jsonl: 1107it [00:01, 983.64it/s]
+Reading arXiv_src_0103_001.jsonl: 1228it [00:01, 1045.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1337it [00:01, 1054.14it/s]
+Reading arXiv_src_0103_001.jsonl: 1485it [00:01, 1177.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1619it [00:01, 1223.28it/s]
+Reading arXiv_src_0103_001.jsonl: 1766it [00:01, 1295.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1913it [00:01, 1346.89it/s]
+Reading arXiv_src_0103_001.jsonl: 2050it [00:01, 1353.68it/s]
+Reading arXiv_src_0103_001.jsonl: 2189it [00:01, 1361.41it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1419.23it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1145.39it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  9.12it/s]
+Reading arXiv_src_0104_001.jsonl: 107it [00:00, 603.55it/s]
+Reading arXiv_src_0104_001.jsonl: 262it [00:00, 1026.24it/s]
+Reading arXiv_src_0104_001.jsonl: 394it [00:00, 1137.08it/s]
+Reading arXiv_src_0104_001.jsonl: 510it [00:00, 757.41it/s] 
+Reading arXiv_src_0104_001.jsonl: 601it [00:00, 506.13it/s]
+Reading arXiv_src_0104_001.jsonl: 706it [00:01, 606.94it/s]
+Reading arXiv_src_0104_001.jsonl: 797it [00:01, 670.42it/s]
+Reading arXiv_src_0104_001.jsonl: 899it [00:01, 749.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1027it [00:01, 878.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1137it [00:01, 936.24it/s]
+Reading arXiv_src_0104_001.jsonl: 1264it [00:01, 1023.84it/s]
+Reading arXiv_src_0104_001.jsonl: 1375it [00:01, 1024.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1509it [00:01, 1109.39it/s]
+Reading arXiv_src_0104_001.jsonl: 1647it [00:01, 1177.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1776it [00:01, 1207.60it/s]
+Reading arXiv_src_0104_001.jsonl: 1919it [00:02, 1270.16it/s]
+Reading arXiv_src_0104_001.jsonl: 2073it [00:02, 1348.82it/s]
+Reading arXiv_src_0104_001.jsonl: 2210it [00:02, 942.49it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 919.08it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extend the work of Natarajan et al and motivate further research on the faint end of the luminosity function of high redshift galaxies?
+[debug] classifier labels: ['Extends', 'Motivation']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+1     1  0.526986  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+2     2  0.513194  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+3     3  0.480641  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+4     4  0.469016  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+5     5  0.361103  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+6     6  0.295663  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+7     7  0.277489  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+8     8  0.266835  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+9     9  0.262391  ...  2025-09-21T15:26:17.053738  Extends, Motivation
+
+[10 rows x 12 columns]
+[17:26:23] main | args: Namespace(max_check=20, debug=True)
+[17:26:23] read_last_jsonl | path= classified_outputs.jsonl
+[17:26:23] read_last_jsonl | total_lines= 1
+[17:26:23] main | query='How does the spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extend the work of Natarajan et al and motivate further research on the faint end of the luminosity function of high redshift galaxies?' | funcs=['Extends', 'Motivation']
+[17:26:26] main | core_terms= ['galaxy cluster', 'AC114', 'luminosity function', 'high redshift galaxies', 'lensed galaxies', 'AC']
+[17:26:26] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:26:26] load_topk_jsonl | rows= 20
+[17:26:26] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104477 title_snip='VLT Spectroscopy of Galaxies Lensed by Abell AC114: Implication for th…' abs_len= 1672
+[17:26:26] main | running function= Extends
+[17:26:26] select | function= Extends | candidates_in= 20
+[17:26:26] select | core_terms= ['galaxy cluster', 'AC114', 'luminosity function', 'high redshift galaxies', 'lensed galaxies', 'AC']
+[17:26:26] select | no cosine prune; kept=20/20
+[17:26:26] select | pool_size= 20 | ranks= [0, 9, 11, 2, 14, 18, 4, 1, 3, 5, 6, 7, 8, 12, 13, 15, 16, 17, 10, 19] | pids= ['astro-ph/0104477', 'astro-ph/0103242', 'astro-ph/0103113', 'astro-ph/0104094', 'astro-ph/0103039', 'astro-ph/0103127', 'astro-ph/0103500', 'astro-ph/0102214', 'astro-ph/0103123', 'astro-ph/0102470', 'astro-ph/0102393', 'astro-ph/0102213', 'astro-ph/0101371', 'astro-ph/0102472', 'astro-ph/0101230', 'astro-ph/0104467', 'astro-ph/0101211', 'astro-ph/0101058', 'astro-ph/0104254', 'astro-ph/0103207']
+[17:26:26] select | verify strict 1/20
+[17:26:26] verify | func= Extends | rank= 0 | pid= astro-ph/0104477 | title_snip='VLT Spectroscopy of Galaxies Lensed by Abell AC114: Implication for th…' | abs_len= 1672
+[17:26:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:26:30] select | verify strict 2/20
+[17:26:30] verify | func= Extends | rank= 9 | pid= astro-ph/0103242 | title_snip='The milliJansky 12 micron Population: First Followup' | abs_len= 1755
+[17:26:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:32] select | verify strict 3/20
+[17:26:32] verify | func= Extends | rank= 11 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[17:26:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:35] select | verify strict 4/20
+[17:26:35] verify | func= Extends | rank= 2 | pid= astro-ph/0104094 | title_snip='Discovery of a Galaxy Cluster via Weak Lensing' | abs_len= 876
+[17:26:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:26:38] select | verify strict 5/20
+[17:26:38] verify | func= Extends | rank= 14 | pid= astro-ph/0103039 | title_snip='The Ursa Major Cluster of Galaxies. III. Optical observations of dwarf…' | abs_len= 1821
+[17:26:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:40] select | verify strict 6/20
+[17:26:40] verify | func= Extends | rank= 18 | pid= astro-ph/0103127 | title_snip='Clustering in Deep (Submillimeter) Surveys' | abs_len= 615
+[17:26:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:43] select | verify strict 7/20
+[17:26:43] verify | func= Extends | rank= 4 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[17:26:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:45] select | verify strict 8/20
+[17:26:45] verify | func= Extends | rank= 1 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[17:26:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:48] select | verify strict 9/20
+[17:26:48] verify | func= Extends | rank= 3 | pid= astro-ph/0103123 | title_snip='A wide-field spectroscopic survey of the cluster of galaxies
+  Cl0024+…' | abs_len= 1441
+[17:26:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:50] select | verify strict 10/20
+[17:26:50] verify | func= Extends | rank= 5 | pid= astro-ph/0102470 | title_snip='The redshift-space two-point correlation functions of galaxies and
+  g…' | abs_len= 1525
+[17:26:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:53] select | verify strict 11/20
+[17:26:53] verify | func= Extends | rank= 6 | pid= astro-ph/0102393 | title_snip='On the estimation of galaxy structural parameters: the Sersic Model' | abs_len= 1814
+[17:26:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:55] select | verify strict 12/20
+[17:26:55] verify | func= Extends | rank= 7 | pid= astro-ph/0102213 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1760
+[17:26:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:26:58] select | verify strict 13/20
+[17:26:58] verify | func= Extends | rank= 8 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[17:27:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:00] select | verify strict 14/20
+[17:27:00] verify | func= Extends | rank= 12 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[17:27:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:03] select | verify strict 15/20
+[17:27:03] verify | func= Extends | rank= 13 | pid= astro-ph/0101230 | title_snip='A Survey for Large Separation Lensed FIRST Quasars' | abs_len= 1668
+[17:27:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:05] select | verify strict 16/20
+[17:27:05] verify | func= Extends | rank= 15 | pid= astro-ph/0104467 | title_snip='Modelling The First Probable Two Plane Lens System B2114+022:
+  Reprod…' | abs_len= 1492
+[17:27:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:08] select | verify strict 17/20
+[17:27:08] verify | func= Extends | rank= 16 | pid= astro-ph/0101211 | title_snip='The Scaling of the Redshift Power Spectrum: Observations from the Las
+…' | abs_len= 1416
+[17:27:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:10] select | verify strict 18/20
+[17:27:10] verify | func= Extends | rank= 17 | pid= astro-ph/0101058 | title_snip='Lensing Constraints on the Cores of Massive Dark Matter Halos' | abs_len= 856
+[17:27:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:13] select | verify strict 19/20
+[17:27:13] verify | func= Extends | rank= 10 | pid= astro-ph/0104254 | title_snip='Was SN1997ff at z~1.7 magnified by gravitational lensing?' | abs_len= 1102
+[17:27:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:15] select | verify strict 20/20
+[17:27:15] verify | func= Extends | rank= 19 | pid= astro-ph/0103207 | title_snip='The 2dF gravitational lens survey' | abs_len= 804
+[17:27:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extend the work of Natarajan et al and motivate further research on the faint end of the luminosity function of high redshift galaxies?
+- WINNER: astro-ph/0104477 | VLT Spectroscopy of Galaxies Lensed by Abell AC114: Implication for the
+  Mass Model and the Study of Low-Luminosity Galaxies at High-Redshift
+- QUOTE : galaxies lensed by Abell AC114
+- WHY   : sufficient
+- ANSWER: The spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extends the work of Natarajan et al by confirming predicted lensing redshifts and discovering new multiple-image systems, increasing the sensitivity towards low-luminosity high-redshift objects. This extension improves the accuracy of the mass model and provides a method to probe the faint end of the luminosity function of high-redshift galaxies (astro-ph/0104477).
+[17:27:25] main | running function= Motivation
+[17:27:25] select | function= Motivation | candidates_in= 20
+[17:27:25] select | core_terms= ['galaxy cluster', 'AC114', 'luminosity function', 'high redshift galaxies', 'lensed galaxies', 'AC']
+[17:27:25] select | no cosine prune; kept=20/20
+[17:27:25] select | pool_size= 20 | ranks= [0, 11, 18, 2, 9, 14, 1, 6, 8, 3, 4, 5, 7, 12, 13, 15, 16, 17, 10, 19] | pids= ['astro-ph/0104477', 'astro-ph/0103113', 'astro-ph/0103127', 'astro-ph/0104094', 'astro-ph/0103242', 'astro-ph/0103039', 'astro-ph/0102214', 'astro-ph/0102393', 'astro-ph/0101371', 'astro-ph/0103123', 'astro-ph/0103500', 'astro-ph/0102470', 'astro-ph/0102213', 'astro-ph/0102472', 'astro-ph/0101230', 'astro-ph/0104467', 'astro-ph/0101211', 'astro-ph/0101058', 'astro-ph/0104254', 'astro-ph/0103207']
+[17:27:25] select | verify strict 1/20
+[17:27:25] verify | func= Motivation | rank= 0 | pid= astro-ph/0104477 | title_snip='VLT Spectroscopy of Galaxies Lensed by Abell AC114: Implication for th…' | abs_len= 1672
+[17:27:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:27:29] select | verify strict 2/20
+[17:27:29] verify | func= Motivation | rank= 11 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[17:27:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:31] select | verify strict 3/20
+[17:27:31] verify | func= Motivation | rank= 18 | pid= astro-ph/0103127 | title_snip='Clustering in Deep (Submillimeter) Surveys' | abs_len= 615
+[17:27:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:34] select | verify strict 4/20
+[17:27:34] verify | func= Motivation | rank= 2 | pid= astro-ph/0104094 | title_snip='Discovery of a Galaxy Cluster via Weak Lensing' | abs_len= 876
+[17:27:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:27:37] select | verify strict 5/20
+[17:27:37] verify | func= Motivation | rank= 9 | pid= astro-ph/0103242 | title_snip='The milliJansky 12 micron Population: First Followup' | abs_len= 1755
+[17:27:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:39] select | verify strict 6/20
+[17:27:39] verify | func= Motivation | rank= 14 | pid= astro-ph/0103039 | title_snip='The Ursa Major Cluster of Galaxies. III. Optical observations of dwarf…' | abs_len= 1821
+[17:27:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:42] select | verify strict 7/20
+[17:27:42] verify | func= Motivation | rank= 1 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[17:27:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:44] select | verify strict 8/20
+[17:27:44] verify | func= Motivation | rank= 6 | pid= astro-ph/0102393 | title_snip='On the estimation of galaxy structural parameters: the Sersic Model' | abs_len= 1814
+[17:27:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:47] select | verify strict 9/20
+[17:27:47] verify | func= Motivation | rank= 8 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[17:27:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:49] select | verify strict 10/20
+[17:27:49] verify | func= Motivation | rank= 3 | pid= astro-ph/0103123 | title_snip='A wide-field spectroscopic survey of the cluster of galaxies
+  Cl0024+…' | abs_len= 1441
+[17:27:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:52] select | verify strict 11/20
+[17:27:52] verify | func= Motivation | rank= 4 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[17:27:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:54] select | verify strict 12/20
+[17:27:54] verify | func= Motivation | rank= 5 | pid= astro-ph/0102470 | title_snip='The redshift-space two-point correlation functions of galaxies and
+  g…' | abs_len= 1525
+[17:27:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:57] select | verify strict 13/20
+[17:27:57] verify | func= Motivation | rank= 7 | pid= astro-ph/0102213 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1760
+[17:27:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:27:59] select | verify strict 14/20
+[17:27:59] verify | func= Motivation | rank= 12 | pid= astro-ph/0102472 | title_snip='The Clustering of Hot and Cold IRAS Galaxies: The Redshift Space
+  Cor…' | abs_len= 1373
+[17:28:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:28:02] select | verify strict 15/20
+[17:28:02] verify | func= Motivation | rank= 13 | pid= astro-ph/0101230 | title_snip='A Survey for Large Separation Lensed FIRST Quasars' | abs_len= 1668
+[17:28:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:28:04] select | verify strict 16/20
+[17:28:04] verify | func= Motivation | rank= 15 | pid= astro-ph/0104467 | title_snip='Modelling The First Probable Two Plane Lens System B2114+022:
+  Reprod…' | abs_len= 1492
+[17:28:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:28:07] select | verify strict 17/20
+[17:28:07] verify | func= Motivation | rank= 16 | pid= astro-ph/0101211 | title_snip='The Scaling of the Redshift Power Spectrum: Observations from the Las
+…' | abs_len= 1416
+[17:28:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:28:10] select | verify strict 18/20
+[17:28:10] verify | func= Motivation | rank= 17 | pid= astro-ph/0101058 | title_snip='Lensing Constraints on the Cores of Massive Dark Matter Halos' | abs_len= 856
+[17:28:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:28:12] select | verify strict 19/20
+[17:28:12] verify | func= Motivation | rank= 10 | pid= astro-ph/0104254 | title_snip='Was SN1997ff at z~1.7 magnified by gravitational lensing?' | abs_len= 1102
+[17:28:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:28:15] select | verify strict 20/20
+[17:28:15] verify | func= Motivation | rank= 19 | pid= astro-ph/0103207 | title_snip='The 2dF gravitational lens survey' | abs_len= 804
+[17:28:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extend the work of Natarajan et al and motivate further research on the faint end of the luminosity function of high redshift galaxies?
+- WINNER: astro-ph/0104477 | VLT Spectroscopy of Galaxies Lensed by Abell AC114: Implication for the
+  Mass Model and the Study of Low-Luminosity Galaxies at High-Redshift
+- QUOTE : probe the high redshift Universe and, in particular, its application to an ensemble of massive cluster cores could constraint the faint end of luminosity function of high redshift galaxies
+- WHY   : sufficient
+- ANSWER: The spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extends the work of Natarajan et al by confirming predicted lensing redshifts and discovering new multiple-image systems, which motivates further research on the faint end of the luminosity function of high redshift galaxies. This is important because it allows for a large gain in sensitivity towards low luminosity high-z objects, enabling a better understanding of the high redshift Universe (astro-ph/0104477).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

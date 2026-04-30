@@ -1,0 +1,344 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Uses"
+  ],
+  "justification": "The query asks how the method builds upon (extends) existing calculations and how it is applied (used) to study differential observables."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.86 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 7it [00:00, 36.12it/s]
+Reading arXiv_src_0101_001.jsonl: 143it [00:00, 595.97it/s]
+Reading arXiv_src_0101_001.jsonl: 291it [00:00, 922.94it/s]
+Reading arXiv_src_0101_001.jsonl: 402it [00:00, 862.33it/s]
+Reading arXiv_src_0101_001.jsonl: 500it [00:00, 664.38it/s]
+Reading arXiv_src_0101_001.jsonl: 579it [00:00, 625.74it/s]
+Reading arXiv_src_0101_001.jsonl: 685it [00:01, 727.79it/s]
+Reading arXiv_src_0101_001.jsonl: 786it [00:01, 796.34it/s]
+Reading arXiv_src_0101_001.jsonl: 902it [00:01, 891.92it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 918.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1132it [00:01, 1022.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1263it [00:01, 1103.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1378it [00:01, 1093.65it/s]
+Reading arXiv_src_0101_001.jsonl: 1510it [00:01, 1157.48it/s]
+Reading arXiv_src_0101_001.jsonl: 1649it [00:01, 1223.80it/s]
+Reading arXiv_src_0101_001.jsonl: 1774it [00:01, 1195.19it/s]
+Reading arXiv_src_0101_001.jsonl: 1919it [00:02, 1268.75it/s]
+Reading arXiv_src_0101_001.jsonl: 2098it [00:02, 1419.48it/s]
+Reading arXiv_src_0101_001.jsonl: 2250it [00:02, 1447.82it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 1021.21it/s]
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1327.47it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1366.63it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 830.46it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 519.70it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 554.30it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:01, 611.87it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 739.09it/s]
+Reading arXiv_src_0102_001.jsonl: 922it [00:01, 877.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1033it [00:01, 938.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 998.35it/s]
+Reading arXiv_src_0102_001.jsonl: 1267it [00:01, 1042.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1412it [00:01, 1155.61it/s]
+Reading arXiv_src_0102_001.jsonl: 1542it [00:01, 1196.81it/s]
+Reading arXiv_src_0102_001.jsonl: 1674it [00:01, 1228.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1822it [00:01, 1301.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1975it [00:02, 1368.07it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1400.11it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1015.56it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1370.53it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1529.77it/s]
+Reading arXiv_src_0103_001.jsonl: 456it [00:00, 1118.48it/s]
+Reading arXiv_src_0103_001.jsonl: 578it [00:00, 724.32it/s] 
+Reading arXiv_src_0103_001.jsonl: 676it [00:00, 780.20it/s]
+Reading arXiv_src_0103_001.jsonl: 770it [00:00, 807.73it/s]
+Reading arXiv_src_0103_001.jsonl: 884it [00:00, 891.59it/s]
+Reading arXiv_src_0103_001.jsonl: 994it [00:01, 945.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1101it [00:01, 977.35it/s]
+Reading arXiv_src_0103_001.jsonl: 1222it [00:01, 1040.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1331it [00:01, 1043.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1475it [00:01, 1157.96it/s]
+Reading arXiv_src_0103_001.jsonl: 1610it [00:01, 1212.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1756it [00:01, 1284.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1898it [00:01, 1322.91it/s]
+Reading arXiv_src_0103_001.jsonl: 2036it [00:01, 1339.67it/s]
+Reading arXiv_src_0103_001.jsonl: 2177it [00:01, 1356.44it/s]
+Reading arXiv_src_0103_001.jsonl: 2335it [00:02, 1417.25it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.42it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 1478.71it/s]
+Reading arXiv_src_0104_001.jsonl: 308it [00:00, 1549.22it/s]
+Reading arXiv_src_0104_001.jsonl: 463it [00:00, 1014.02it/s]
+Reading arXiv_src_0104_001.jsonl: 580it [00:00, 550.16it/s] 
+Reading arXiv_src_0104_001.jsonl: 688it [00:00, 645.34it/s]
+Reading arXiv_src_0104_001.jsonl: 780it [00:01, 698.53it/s]
+Reading arXiv_src_0104_001.jsonl: 884it [00:01, 774.25it/s]
+Reading arXiv_src_0104_001.jsonl: 1002it [00:01, 870.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 939.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1245it [00:01, 1015.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1356it [00:01, 1016.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1487it [00:01, 1097.55it/s]
+Reading arXiv_src_0104_001.jsonl: 1633it [00:01, 1199.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1764it [00:01, 1226.74it/s]
+Reading arXiv_src_0104_001.jsonl: 1910it [00:01, 1293.42it/s]
+Reading arXiv_src_0104_001.jsonl: 2067it [00:02, 1374.27it/s]
+Reading arXiv_src_0104_001.jsonl: 2207it [00:02, 987.70it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 981.98it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?
+[debug] classifier labels: ['Extends', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:56:31.156120        Extends, Uses
+1     1  0.439953  ...  2025-09-21T21:56:31.156120        Extends, Uses
+2     2  0.373517  ...  2025-09-21T21:56:31.156120        Extends, Uses
+3     3  0.333202  ...  2025-09-21T21:56:31.156120        Extends, Uses
+4     4  0.263086  ...  2025-09-21T21:56:31.156120        Extends, Uses
+5     5  0.257641  ...  2025-09-21T21:56:31.156120        Extends, Uses
+6     6  0.222356  ...  2025-09-21T21:56:31.156120        Extends, Uses
+7     7  0.211116  ...  2025-09-21T21:56:31.156120        Extends, Uses
+8     8  0.206810  ...  2025-09-21T21:56:31.156120        Extends, Uses
+9     9  0.205805  ...  2025-09-21T21:56:31.156120        Extends, Uses
+
+[10 rows x 12 columns]
+[23:56:40] main | args: Namespace(max_check=20, debug=True)
+[23:56:40] read_last_jsonl | path= classified_outputs.jsonl
+[23:56:40] read_last_jsonl | total_lines= 1
+[23:56:40] main | query='How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?' | funcs=['Extends', 'Uses']
+[23:56:42] main | core_terms= ['nucleus', 'nuclear physics', 'local energy-density functional', 'differential observables', 'energy-density']
+[23:56:42] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:56:42] load_topk_jsonl | rows= 20
+[23:56:42] load_topk_jsonl | first: rank= 0 paper_id= nucl-th/0101012 title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' abs_len= 1196
+[23:56:42] main | running function= Extends
+[23:56:42] select | function= Extends | candidates_in= 20
+[23:56:42] select | core_terms= ['nucleus', 'nuclear physics', 'local energy-density functional', 'differential observables', 'energy-density']
+[23:56:42] select | no cosine prune; kept=20/20
+[23:56:42] select | pool_size= 20 | ranks= [0, 7, 3, 4, 12, 13, 14, 1, 2, 5, 6, 8, 9, 10, 11, 15, 16, 17, 18, 19] | pids= ['nucl-th/0101012', 'nucl-th/0102010', 'nucl-th/0104065', 'cond-mat/0101363', 'cond-mat/0103094', 'hep-ph/0102124', 'astro-ph/0102329', 'physics/0103003', 'nucl-th/0101048', 'nucl-th/0104050', 'cond-mat/0103124', 'cond-mat/0103610', 'nucl-th/0101034', 'cond-mat/0102186', 'nucl-th/0103058', 'cond-mat/0104229', 'hep-ph/0104105', 'nucl-th/0101008', 'nucl-th/0102023', 'cond-mat/0102187']
+[23:56:42] select | verify strict 1/20
+[23:56:42] verify | func= Extends | rank= 0 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[23:56:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:56:45] select | verify strict 2/20
+[23:56:45] verify | func= Extends | rank= 7 | pid= nucl-th/0102010 | title_snip='Testing Dirac-Brueckner models in collective flow of heavy-ion
+  colli…' | abs_len= 1207
+[23:56:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:56:48] select | verify strict 3/20
+[23:56:48] verify | func= Extends | rank= 3 | pid= nucl-th/0104065 | title_snip='Relativistic Hartree-Bogoliubov Approach for Nuclear Matter with
+  Non…' | abs_len= 390
+[23:56:51] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:56:51] select | verify strict 4/20
+[23:56:51] verify | func= Extends | rank= 4 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[23:56:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:56:53] select | verify strict 5/20
+[23:56:53] verify | func= Extends | rank= 12 | pid= cond-mat/0103094 | title_snip='A Rigorous Extension of the Kohn-Sham Equation for Strongly Correlated…' | abs_len= 949
+[23:56:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:56:56] select | verify strict 6/20
+[23:56:56] verify | func= Extends | rank= 13 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[23:56:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:56:59] select | verify strict 7/20
+[23:56:59] verify | func= Extends | rank= 14 | pid= astro-ph/0102329 | title_snip='Generalized Fermi-Dirac Functions and Derivatives: Properties and
+  Ev…' | abs_len= 753
+[23:57:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:01] select | verify strict 8/20
+[23:57:01] verify | func= Extends | rank= 1 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[23:57:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:04] select | verify strict 9/20
+[23:57:04] verify | func= Extends | rank= 2 | pid= nucl-th/0101048 | title_snip='A New Approach to Large-Scale Nuclear Structure Calculations' | abs_len= 628
+[23:57:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:06] select | verify strict 10/20
+[23:57:06] verify | func= Extends | rank= 5 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:57:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:09] select | verify strict 11/20
+[23:57:09] verify | func= Extends | rank= 6 | pid= cond-mat/0103124 | title_snip='Unified theory of quantum many-particle systems' | abs_len= 1125
+[23:57:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:11] select | verify strict 12/20
+[23:57:11] verify | func= Extends | rank= 8 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:57:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:14] select | verify strict 13/20
+[23:57:14] verify | func= Extends | rank= 9 | pid= nucl-th/0101034 | title_snip='Relativistic corrections in (e,e'p) knockout reactions' | abs_len= 777
+[23:57:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:17] select | verify strict 14/20
+[23:57:17] verify | func= Extends | rank= 10 | pid= cond-mat/0102186 | title_snip='Particle density and non-local kinetic energy density functional for
+ …' | abs_len= 659
+[23:57:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:19] select | verify strict 15/20
+[23:57:19] verify | func= Extends | rank= 11 | pid= nucl-th/0103058 | title_snip='Polarization observables in p-d scattering below 30 MeV' | abs_len= 676
+[23:57:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:22] select | verify strict 16/20
+[23:57:22] verify | func= Extends | rank= 15 | pid= cond-mat/0104229 | title_snip='Dynamical local field, compressibility and frequency sum rules for
+  q…' | abs_len= 1031
+[23:57:25] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:57:25] select | verify strict 17/20
+[23:57:25] verify | func= Extends | rank= 16 | pid= hep-ph/0104105 | title_snip='Probing Anomalous Top-Couplings through the Final Lepton Angular and
+ …' | abs_len= 703
+[23:57:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:27] select | verify strict 18/20
+[23:57:27] verify | func= Extends | rank= 17 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[23:57:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:57:30] select | verify strict 19/20
+[23:57:30] verify | func= Extends | rank= 18 | pid= nucl-th/0102023 | title_snip='Nuclear Stopping as A Probe to In-medium Nucleon-nucleon Cross Section…' | abs_len= 710
+[23:57:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:33] select | verify strict 20/20
+[23:57:33] verify | func= Extends | rank= 19 | pid= cond-mat/0102187 | title_snip='Kinetic energy functional for Fermi vapors in spherical harmonic
+  con…' | abs_len= 354
+[23:57:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?
+- WINNER: nucl-th/0101012 | Nuclear isotope shifts within the local energy-density functional
+  approach
+- QUOTE : The method is used to investigate differential observables
+- WHY   : sufficient
+- ANSWER: The local energy-density functional method extends existing nuclear physics calculations, such as conventional mean field Skyrme-HFB and relativistic Hartree-BCS calculations, to investigate differential observables like odd-even mass differences and charge radii with improved treatment of pairing interactions. It builds upon these methods by incorporating a zero-range cutoff density-dependent pairing interaction with a density-gradient term, allowing for a more accurate description of nuclear ground-state properties (nucl-th/0101012).
+[23:57:41] main | running function= Uses
+[23:57:41] select | function= Uses | candidates_in= 20
+[23:57:41] select | core_terms= ['nucleus', 'nuclear physics', 'local energy-density functional', 'differential observables', 'energy-density']
+[23:57:41] select | no cosine prune; kept=20/20
+[23:57:41] select | pool_size= 20 | ranks= [0, 7, 1, 2, 4, 6, 8, 9, 11, 14, 18, 3, 5, 10, 12, 13, 15, 16, 17, 19] | pids= ['nucl-th/0101012', 'nucl-th/0102010', 'physics/0103003', 'nucl-th/0101048', 'cond-mat/0101363', 'cond-mat/0103124', 'cond-mat/0103610', 'nucl-th/0101034', 'nucl-th/0103058', 'astro-ph/0102329', 'nucl-th/0102023', 'nucl-th/0104065', 'nucl-th/0104050', 'cond-mat/0102186', 'cond-mat/0103094', 'hep-ph/0102124', 'cond-mat/0104229', 'hep-ph/0104105', 'nucl-th/0101008', 'cond-mat/0102187']
+[23:57:41] select | verify strict 1/20
+[23:57:41] verify | func= Uses | rank= 0 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[23:57:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:57:44] select | verify strict 2/20
+[23:57:44] verify | func= Uses | rank= 7 | pid= nucl-th/0102010 | title_snip='Testing Dirac-Brueckner models in collective flow of heavy-ion
+  colli…' | abs_len= 1207
+[23:57:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:47] select | verify strict 3/20
+[23:57:47] verify | func= Uses | rank= 1 | pid= physics/0103003 | title_snip='Quantum fluid-dynamics from density functional theory' | abs_len= 837
+[23:57:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:49] select | verify strict 4/20
+[23:57:49] verify | func= Uses | rank= 2 | pid= nucl-th/0101048 | title_snip='A New Approach to Large-Scale Nuclear Structure Calculations' | abs_len= 628
+[23:57:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:52] select | verify strict 5/20
+[23:57:52] verify | func= Uses | rank= 4 | pid= cond-mat/0101363 | title_snip='Comparative study of density functional theories of the
+  exchange-cor…' | abs_len= 1038
+[23:57:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:54] select | verify strict 6/20
+[23:57:54] verify | func= Uses | rank= 6 | pid= cond-mat/0103124 | title_snip='Unified theory of quantum many-particle systems' | abs_len= 1125
+[23:57:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:57:57] select | verify strict 7/20
+[23:57:57] verify | func= Uses | rank= 8 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:58:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:00] select | verify strict 8/20
+[23:58:00] verify | func= Uses | rank= 9 | pid= nucl-th/0101034 | title_snip='Relativistic corrections in (e,e'p) knockout reactions' | abs_len= 777
+[23:58:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:02] select | verify strict 9/20
+[23:58:02] verify | func= Uses | rank= 11 | pid= nucl-th/0103058 | title_snip='Polarization observables in p-d scattering below 30 MeV' | abs_len= 676
+[23:58:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:05] select | verify strict 10/20
+[23:58:05] verify | func= Uses | rank= 14 | pid= astro-ph/0102329 | title_snip='Generalized Fermi-Dirac Functions and Derivatives: Properties and
+  Ev…' | abs_len= 753
+[23:58:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:07] select | verify strict 11/20
+[23:58:07] verify | func= Uses | rank= 18 | pid= nucl-th/0102023 | title_snip='Nuclear Stopping as A Probe to In-medium Nucleon-nucleon Cross Section…' | abs_len= 710
+[23:58:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:10] select | verify strict 12/20
+[23:58:10] verify | func= Uses | rank= 3 | pid= nucl-th/0104065 | title_snip='Relativistic Hartree-Bogoliubov Approach for Nuclear Matter with
+  Non…' | abs_len= 390
+[23:58:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:12] select | verify strict 13/20
+[23:58:12] verify | func= Uses | rank= 5 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[23:58:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:15] select | verify strict 14/20
+[23:58:15] verify | func= Uses | rank= 10 | pid= cond-mat/0102186 | title_snip='Particle density and non-local kinetic energy density functional for
+ …' | abs_len= 659
+[23:58:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:17] select | verify strict 15/20
+[23:58:17] verify | func= Uses | rank= 12 | pid= cond-mat/0103094 | title_snip='A Rigorous Extension of the Kohn-Sham Equation for Strongly Correlated…' | abs_len= 949
+[23:58:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:20] select | verify strict 16/20
+[23:58:20] verify | func= Uses | rank= 13 | pid= hep-ph/0102124 | title_snip='New analytic running coupling in spacelike and timelike regions' | abs_len= 1044
+[23:58:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:23] select | verify strict 17/20
+[23:58:23] verify | func= Uses | rank= 15 | pid= cond-mat/0104229 | title_snip='Dynamical local field, compressibility and frequency sum rules for
+  q…' | abs_len= 1031
+[23:58:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:58:26] select | verify strict 18/20
+[23:58:26] verify | func= Uses | rank= 16 | pid= hep-ph/0104105 | title_snip='Probing Anomalous Top-Couplings through the Final Lepton Angular and
+ …' | abs_len= 703
+[23:58:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:58:28] select | verify strict 19/20
+[23:58:28] verify | func= Uses | rank= 17 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[23:58:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:58:31] select | verify strict 20/20
+[23:58:31] verify | func= Uses | rank= 19 | pid= cond-mat/0102187 | title_snip='Kinetic energy functional for Fermi vapors in spherical harmonic
+  con…' | abs_len= 354
+[23:58:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the local energy-density functional method use and extend existing nuclear physics calculations to investigate differential observables?
+- WINNER: nucl-th/0101012 | Nuclear isotope shifts within the local energy-density functional
+  approach
+- QUOTE : The method is used to investigate differential observables
+- WHY   : sufficient
+- ANSWER: The local energy-density functional method uses the Gor'kov equations and a zero-range cutoff density-dependent pairing interaction to investigate differential observables. It extends existing nuclear physics calculations by comparing its results with conventional mean field Skyrme-HFB and relativistic Hartree-BCS calculations (nucl-th/0101012).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

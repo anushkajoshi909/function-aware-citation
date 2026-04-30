@@ -1,0 +1,343 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Uses"
+  ],
+  "justification": "The query seeks foundational context from the OGLE database (Background) and asks how existing methods are applied to study Fourier parameters (Uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.34 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  2.89it/s]
+Reading arXiv_src_0101_001.jsonl: 32it [00:00, 92.33it/s]
+Reading arXiv_src_0101_001.jsonl: 181it [00:00, 502.37it/s]
+Reading arXiv_src_0101_001.jsonl: 308it [00:00, 728.59it/s]
+Reading arXiv_src_0101_001.jsonl: 405it [00:00, 718.63it/s]
+Reading arXiv_src_0101_001.jsonl: 493it [00:00, 597.77it/s]
+Reading arXiv_src_0101_001.jsonl: 566it [00:01, 562.97it/s]
+Reading arXiv_src_0101_001.jsonl: 672it [00:01, 677.56it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 756.33it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 847.06it/s]
+Reading arXiv_src_0101_001.jsonl: 994it [00:01, 913.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1100it [00:01, 953.28it/s]
+Reading arXiv_src_0101_001.jsonl: 1232it [00:01, 1056.78it/s]
+Reading arXiv_src_0101_001.jsonl: 1342it [00:01, 1047.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1478it [00:01, 1136.30it/s]
+Reading arXiv_src_0101_001.jsonl: 1611it [00:02, 1192.16it/s]
+Reading arXiv_src_0101_001.jsonl: 1738it [00:02, 1214.53it/s]
+Reading arXiv_src_0101_001.jsonl: 1861it [00:02, 1183.87it/s]
+Reading arXiv_src_0101_001.jsonl: 2037it [00:02, 1350.03it/s]
+Reading arXiv_src_0101_001.jsonl: 2190it [00:02, 1399.36it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 910.14it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1324.19it/s]
+Reading arXiv_src_0102_001.jsonl: 273it [00:00, 1362.08it/s]
+Reading arXiv_src_0102_001.jsonl: 410it [00:00, 841.47it/s] 
+Reading arXiv_src_0102_001.jsonl: 511it [00:00, 519.76it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 557.82it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 616.66it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 739.86it/s]
+Reading arXiv_src_0102_001.jsonl: 920it [00:01, 876.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1030it [00:01, 934.37it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1001.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1046.99it/s]
+Reading arXiv_src_0102_001.jsonl: 1413it [00:01, 1159.45it/s]
+Reading arXiv_src_0102_001.jsonl: 1546it [00:01, 1207.21it/s]
+Reading arXiv_src_0102_001.jsonl: 1675it [00:01, 1231.33it/s]
+Reading arXiv_src_0102_001.jsonl: 1826it [00:01, 1311.25it/s]
+Reading arXiv_src_0102_001.jsonl: 1979it [00:02, 1371.85it/s]
+Reading arXiv_src_0102_001.jsonl: 2128it [00:02, 1405.97it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1016.12it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1358.22it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1519.24it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1118.32it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 734.72it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 782.50it/s]
+Reading arXiv_src_0103_001.jsonl: 764it [00:00, 802.94it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 894.47it/s]
+Reading arXiv_src_0103_001.jsonl: 988it [00:01, 938.52it/s]
+Reading arXiv_src_0103_001.jsonl: 1090it [00:01, 960.85it/s]
+Reading arXiv_src_0103_001.jsonl: 1214it [00:01, 1037.28it/s]
+Reading arXiv_src_0103_001.jsonl: 1322it [00:01, 1042.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1464it [00:01, 1150.57it/s]
+Reading arXiv_src_0103_001.jsonl: 1600it [00:01, 1211.08it/s]
+Reading arXiv_src_0103_001.jsonl: 1748it [00:01, 1285.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1888it [00:01, 1318.05it/s]
+Reading arXiv_src_0103_001.jsonl: 2028it [00:01, 1340.79it/s]
+Reading arXiv_src_0103_001.jsonl: 2170it [00:01, 1361.12it/s]
+Reading arXiv_src_0103_001.jsonl: 2322it [00:02, 1408.17it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.22it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.59it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  8.16it/s]
+Reading arXiv_src_0104_001.jsonl: 147it [00:00, 594.50it/s]
+Reading arXiv_src_0104_001.jsonl: 304it [00:00, 951.48it/s]
+Reading arXiv_src_0104_001.jsonl: 407it [00:00, 974.53it/s]
+Reading arXiv_src_0104_001.jsonl: 509it [00:00, 683.61it/s]
+Reading arXiv_src_0104_001.jsonl: 591it [00:01, 456.92it/s]
+Reading arXiv_src_0104_001.jsonl: 696it [00:01, 564.41it/s]
+Reading arXiv_src_0104_001.jsonl: 787it [00:01, 635.51it/s]
+Reading arXiv_src_0104_001.jsonl: 889it [00:01, 721.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1004it [00:01, 825.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1119it [00:01, 907.80it/s]
+Reading arXiv_src_0104_001.jsonl: 1229it [00:01, 957.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1333it [00:01, 969.74it/s]
+Reading arXiv_src_0104_001.jsonl: 1466it [00:01, 1069.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1601it [00:02, 1149.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1721it [00:02, 1164.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1866it [00:02, 1246.65it/s]
+Reading arXiv_src_0104_001.jsonl: 2015it [00:02, 1314.99it/s]
+Reading arXiv_src_0104_001.jsonl: 2148it [00:02, 903.21it/s] 
+Reading arXiv_src_0104_001.jsonl: 2300it [00:02, 1040.40it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 856.19it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the revisitation of the OGLE database provide background information and use previous methods to investigate the properties of Fourier parameters in different types of stars?
+[debug] classifier labels: ['Background', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T18:18:38.957218     Background, Uses
+1     1  0.363191  ...  2025-09-21T18:18:38.957218     Background, Uses
+2     2  0.352280  ...  2025-09-21T18:18:38.957218     Background, Uses
+3     3  0.331390  ...  2025-09-21T18:18:38.957218     Background, Uses
+4     4  0.298211  ...  2025-09-21T18:18:38.957218     Background, Uses
+5     5  0.291432  ...  2025-09-21T18:18:38.957218     Background, Uses
+6     6  0.263002  ...  2025-09-21T18:18:38.957218     Background, Uses
+7     7  0.255432  ...  2025-09-21T18:18:38.957218     Background, Uses
+8     8  0.253751  ...  2025-09-21T18:18:38.957218     Background, Uses
+9     9  0.242123  ...  2025-09-21T18:18:38.957218     Background, Uses
+
+[10 rows x 12 columns]
+[20:18:46] main | args: Namespace(max_check=20, debug=True)
+[20:18:46] read_last_jsonl | path= classified_outputs.jsonl
+[20:18:46] read_last_jsonl | total_lines= 1
+[20:18:46] main | query='How does the revisitation of the OGLE database provide background information and use previous methods to investigate the properties of Fourier parameters in different types of stars?' | funcs=['Background', 'Uses']
+[20:18:48] main | core_terms= ['OGLE database', 'Fourier parameters', 'stars', 'OGLE']
+[20:18:48] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[20:18:48] load_topk_jsonl | rows= 20
+[20:18:48] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103498 title_snip='Fourier decomposition and frequency analysis of the pulsating stars wi…' abs_len= 1154
+[20:18:48] main | running function= Background
+[20:18:48] select | function= Background | candidates_in= 20
+[20:18:48] select | core_terms= ['OGLE database', 'Fourier parameters', 'stars', 'OGLE']
+[20:18:48] select | no cosine prune; kept=20/20
+[20:18:48] select | pool_size= 20 | ranks= [0, 1, 5, 4, 7, 12, 18, 9, 17, 2, 8, 3, 6, 13, 15, 16, 10, 11, 14, 19] | pids= ['astro-ph/0103498', 'astro-ph/0101192', 'astro-ph/0104483', 'astro-ph/0102027', 'astro-ph/0104182', 'astro-ph/0101378', 'astro-ph/0104047', 'astro-ph/0101510', 'astro-ph/0102206', 'astro-ph/0101084', 'astro-ph/0103307', 'astro-ph/0102276', 'astro-ph/0104411', 'astro-ph/0104017', 'astro-ph/0103253', 'astro-ph/0101335', 'astro-ph/0104366', 'astro-ph/0101296', 'astro-ph/0103170', 'astro-ph/0102270']
+[20:18:48] select | verify strict 1/20
+[20:18:48] verify | func= Background | rank= 0 | pid= astro-ph/0103498 | title_snip='Fourier decomposition and frequency analysis of the pulsating stars wi…' | abs_len= 1154
+[20:18:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:18:51] select | verify strict 2/20
+[20:18:51] verify | func= Background | rank= 1 | pid= astro-ph/0101192 | title_snip='Optical studies of two LMC X-ray transients : RX J0544.1-7100 and RX
+ …' | abs_len= 515
+[20:18:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:18:54] select | verify strict 3/20
+[20:18:54] verify | func= Background | rank= 5 | pid= astro-ph/0104483 | title_snip='The photometric-amplitude and mass-ratio distributions of contact bina…' | abs_len= 1555
+[20:18:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:18:57] select | verify strict 4/20
+[20:18:57] verify | func= Background | rank= 4 | pid= astro-ph/0102027 | title_snip='Photometric detection of high proper motions in dense stellar fields
+ …' | abs_len= 674
+[20:19:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:00] select | verify strict 5/20
+[20:19:00] verify | func= Background | rank= 7 | pid= astro-ph/0104182 | title_snip='The Distance to the Magellanic Clouds' | abs_len= 722
+[20:19:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:19:03] select | verify strict 6/20
+[20:19:03] verify | func= Background | rank= 12 | pid= astro-ph/0101378 | title_snip='A database of high and medium-resolution stellar spectra' | abs_len= 1012
+[20:19:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:06] select | verify strict 7/20
+[20:19:06] verify | func= Background | rank= 18 | pid= astro-ph/0104047 | title_snip='The Comptel 1.809 Mev Survey' | abs_len= 884
+[20:19:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:08] select | verify strict 8/20
+[20:19:08] verify | func= Background | rank= 9 | pid= astro-ph/0101510 | title_snip='A Useful Approximation for Computing the Continuum Polarization of Be
+…' | abs_len= 627
+[20:19:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:11] select | verify strict 9/20
+[20:19:11] verify | func= Background | rank= 17 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[20:19:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:13] select | verify strict 10/20
+[20:19:13] verify | func= Background | rank= 2 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[20:19:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:16] select | verify strict 11/20
+[20:19:16] verify | func= Background | rank= 8 | pid= astro-ph/0103307 | title_snip='Early afterglows as probes for the reionization epoch' | abs_len= 692
+[20:19:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:18] select | verify strict 12/20
+[20:19:18] verify | func= Background | rank= 3 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[20:19:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:21] select | verify strict 13/20
+[20:19:21] verify | func= Background | rank= 6 | pid= astro-ph/0104411 | title_snip='Statistical evaluation of the observational information on $\Omega_m$
+…' | abs_len= 852
+[20:19:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:23] select | verify strict 14/20
+[20:19:23] verify | func= Background | rank= 13 | pid= astro-ph/0104017 | title_snip='Reproducing Cosmic Microwave Background anisotropies with mixed
+  isoc…' | abs_len= 421
+[20:19:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:25] select | verify strict 15/20
+[20:19:25] verify | func= Background | rank= 15 | pid= astro-ph/0103253 | title_snip='Towards a resolution of the discrepancy between different estimators o…' | abs_len= 1593
+[20:19:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:28] select | verify strict 16/20
+[20:19:28] verify | func= Background | rank= 16 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[20:19:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:31] select | verify strict 17/20
+[20:19:31] verify | func= Background | rank= 10 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[20:19:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:33] select | verify strict 18/20
+[20:19:33] verify | func= Background | rank= 11 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[20:19:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:36] select | verify strict 19/20
+[20:19:36] verify | func= Background | rank= 14 | pid= astro-ph/0103170 | title_snip='D/H Measurements' | abs_len= 823
+[20:19:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:19:38] select | verify strict 20/20
+[20:19:38] verify | func= Background | rank= 19 | pid= astro-ph/0102270 | title_snip='Radiative transfer in molecular lines' | abs_len= 548
+[20:19:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the revisitation of the OGLE database provide background information and use previous methods to investigate the properties of Fourier parameters in different types of stars?
+- WINNER: astro-ph/0103498 | Fourier decomposition and frequency analysis of the pulsating stars with
+  P<1 d in the OGLE database. I. Monoperiodic Delta Scuti, RRc and RRab
+  variables. Separation criteria and particularities
+- QUOTE : The OGLE database is revisited to investigate
+- WHY   : sufficient
+- ANSWER: The revisitation of the OGLE database allows for a detailed investigation of Fourier parameters in various star types, including Delta Scuti, RRc, and RRab variables (astro-ph/0103498).
+[20:19:46] main | running function= Uses
+[20:19:46] select | function= Uses | candidates_in= 20
+[20:19:46] select | core_terms= ['OGLE database', 'Fourier parameters', 'stars', 'OGLE']
+[20:19:46] select | no cosine prune; kept=20/20
+[20:19:46] select | pool_size= 20 | ranks= [0, 5, 4, 7, 1, 17, 18, 9, 2, 8, 12, 3, 10, 11, 13, 15, 16, 19, 6, 14] | pids= ['astro-ph/0103498', 'astro-ph/0104483', 'astro-ph/0102027', 'astro-ph/0104182', 'astro-ph/0101192', 'astro-ph/0102206', 'astro-ph/0104047', 'astro-ph/0101510', 'astro-ph/0101084', 'astro-ph/0103307', 'astro-ph/0101378', 'astro-ph/0102276', 'astro-ph/0104366', 'astro-ph/0101296', 'astro-ph/0104017', 'astro-ph/0103253', 'astro-ph/0101335', 'astro-ph/0102270', 'astro-ph/0104411', 'astro-ph/0103170']
+[20:19:46] select | verify strict 1/20
+[20:19:46] verify | func= Uses | rank= 0 | pid= astro-ph/0103498 | title_snip='Fourier decomposition and frequency analysis of the pulsating stars wi…' | abs_len= 1154
+[20:19:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:19:50] select | verify strict 2/20
+[20:19:50] verify | func= Uses | rank= 5 | pid= astro-ph/0104483 | title_snip='The photometric-amplitude and mass-ratio distributions of contact bina…' | abs_len= 1555
+[20:19:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:19:53] select | verify strict 3/20
+[20:19:53] verify | func= Uses | rank= 4 | pid= astro-ph/0102027 | title_snip='Photometric detection of high proper motions in dense stellar fields
+ …' | abs_len= 674
+[20:19:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:19:56] select | verify strict 4/20
+[20:19:56] verify | func= Uses | rank= 7 | pid= astro-ph/0104182 | title_snip='The Distance to the Magellanic Clouds' | abs_len= 722
+[20:19:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:19:59] select | verify strict 5/20
+[20:19:59] verify | func= Uses | rank= 1 | pid= astro-ph/0101192 | title_snip='Optical studies of two LMC X-ray transients : RX J0544.1-7100 and RX
+ …' | abs_len= 515
+[20:20:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:20:02] select | verify strict 6/20
+[20:20:02] verify | func= Uses | rank= 17 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[20:20:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:05] select | verify strict 7/20
+[20:20:05] verify | func= Uses | rank= 18 | pid= astro-ph/0104047 | title_snip='The Comptel 1.809 Mev Survey' | abs_len= 884
+[20:20:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:07] select | verify strict 8/20
+[20:20:07] verify | func= Uses | rank= 9 | pid= astro-ph/0101510 | title_snip='A Useful Approximation for Computing the Continuum Polarization of Be
+…' | abs_len= 627
+[20:20:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:10] select | verify strict 9/20
+[20:20:10] verify | func= Uses | rank= 2 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[20:20:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:12] select | verify strict 10/20
+[20:20:12] verify | func= Uses | rank= 8 | pid= astro-ph/0103307 | title_snip='Early afterglows as probes for the reionization epoch' | abs_len= 692
+[20:20:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:15] select | verify strict 11/20
+[20:20:15] verify | func= Uses | rank= 12 | pid= astro-ph/0101378 | title_snip='A database of high and medium-resolution stellar spectra' | abs_len= 1012
+[20:20:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:17] select | verify strict 12/20
+[20:20:17] verify | func= Uses | rank= 3 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[20:20:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:20] select | verify strict 13/20
+[20:20:20] verify | func= Uses | rank= 10 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[20:20:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:22] select | verify strict 14/20
+[20:20:22] verify | func= Uses | rank= 11 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[20:20:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:25] select | verify strict 15/20
+[20:20:25] verify | func= Uses | rank= 13 | pid= astro-ph/0104017 | title_snip='Reproducing Cosmic Microwave Background anisotropies with mixed
+  isoc…' | abs_len= 421
+[20:20:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:27] select | verify strict 16/20
+[20:20:27] verify | func= Uses | rank= 15 | pid= astro-ph/0103253 | title_snip='Towards a resolution of the discrepancy between different estimators o…' | abs_len= 1593
+[20:20:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:30] select | verify strict 17/20
+[20:20:30] verify | func= Uses | rank= 16 | pid= astro-ph/0101335 | title_snip='A Comprehensive Statistical Analysis of the Gas Distribution in
+  Lyma…' | abs_len= 1408
+[20:20:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:32] select | verify strict 18/20
+[20:20:32] verify | func= Uses | rank= 19 | pid= astro-ph/0102270 | title_snip='Radiative transfer in molecular lines' | abs_len= 548
+[20:20:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:35] select | verify strict 19/20
+[20:20:35] verify | func= Uses | rank= 6 | pid= astro-ph/0104411 | title_snip='Statistical evaluation of the observational information on $\Omega_m$
+…' | abs_len= 852
+[20:20:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:37] select | verify strict 20/20
+[20:20:37] verify | func= Uses | rank= 14 | pid= astro-ph/0103170 | title_snip='D/H Measurements' | abs_len= 823
+[20:20:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:20:41] arbiter | rejected off-topic winner: astro-ph/0104182
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the revisitation of the OGLE database provide background information and use previous methods to investigate the properties of Fourier parameters in different types of stars?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

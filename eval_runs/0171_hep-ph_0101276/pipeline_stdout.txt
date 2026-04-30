@@ -1,0 +1,338 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query seeks ways for future experiments to build upon (extend) the existing analysis, explicitly focusing on extending current work and outlining future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 12.45 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:07,  7.57s/it]
+Reading arXiv_src_0101_001.jsonl: 41it [00:07,  7.54it/s]
+Reading arXiv_src_0101_001.jsonl: 191it [00:07, 46.03it/s]
+Reading arXiv_src_0101_001.jsonl: 313it [00:07, 87.56it/s]
+Reading arXiv_src_0101_001.jsonl: 408it [00:08, 126.91it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:08, 164.36it/s]
+Reading arXiv_src_0101_001.jsonl: 567it [00:08, 201.15it/s]
+Reading arXiv_src_0101_001.jsonl: 673it [00:08, 284.82it/s]
+Reading arXiv_src_0101_001.jsonl: 776it [00:08, 375.90it/s]
+Reading arXiv_src_0101_001.jsonl: 888it [00:08, 486.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1002it [00:08, 600.79it/s]
+Reading arXiv_src_0101_001.jsonl: 1110it [00:08, 695.43it/s]
+Reading arXiv_src_0101_001.jsonl: 1241it [00:08, 831.09it/s]
+Reading arXiv_src_0101_001.jsonl: 1352it [00:09, 885.25it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:09, 996.38it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:09, 1086.62it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:09, 1136.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1873it [00:09, 1140.58it/s]
+Reading arXiv_src_0101_001.jsonl: 2056it [00:09, 1331.78it/s]
+Reading arXiv_src_0101_001.jsonl: 2210it [00:09, 1388.81it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:09, 238.05it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1324.06it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1364.55it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 849.59it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 537.64it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 568.54it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:00, 624.45it/s]
+Reading arXiv_src_0102_001.jsonl: 789it [00:01, 745.14it/s]
+Reading arXiv_src_0102_001.jsonl: 918it [00:01, 879.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1030it [00:01, 941.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1006.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1051.73it/s]
+Reading arXiv_src_0102_001.jsonl: 1412it [00:01, 1161.71it/s]
+Reading arXiv_src_0102_001.jsonl: 1544it [00:01, 1206.88it/s]
+Reading arXiv_src_0102_001.jsonl: 1675it [00:01, 1235.02it/s]
+Reading arXiv_src_0102_001.jsonl: 1826it [00:01, 1315.39it/s]
+Reading arXiv_src_0102_001.jsonl: 1977it [00:01, 1371.63it/s]
+Reading arXiv_src_0102_001.jsonl: 2127it [00:02, 1399.89it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1026.54it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  6.35it/s]
+Reading arXiv_src_0103_001.jsonl: 31it [00:00, 145.81it/s]
+Reading arXiv_src_0103_001.jsonl: 171it [00:00, 651.29it/s]
+Reading arXiv_src_0103_001.jsonl: 323it [00:00, 963.34it/s]
+Reading arXiv_src_0103_001.jsonl: 429it [00:00, 993.42it/s]
+Reading arXiv_src_0103_001.jsonl: 534it [00:00, 668.33it/s]
+Reading arXiv_src_0103_001.jsonl: 617it [00:00, 655.13it/s]
+Reading arXiv_src_0103_001.jsonl: 720it [00:01, 730.09it/s]
+Reading arXiv_src_0103_001.jsonl: 814it [00:01, 779.18it/s]
+Reading arXiv_src_0103_001.jsonl: 917it [00:01, 844.86it/s]
+Reading arXiv_src_0103_001.jsonl: 1028it [00:01, 916.02it/s]
+Reading arXiv_src_0103_001.jsonl: 1145it [00:01, 984.72it/s]
+Reading arXiv_src_0103_001.jsonl: 1248it [00:01, 994.36it/s]
+Reading arXiv_src_0103_001.jsonl: 1363it [00:01, 1038.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1517it [00:01, 1181.69it/s]
+Reading arXiv_src_0103_001.jsonl: 1654it [00:01, 1233.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1795it [00:01, 1285.38it/s]
+Reading arXiv_src_0103_001.jsonl: 1933it [00:02, 1313.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2075it [00:02, 1339.97it/s]
+Reading arXiv_src_0103_001.jsonl: 2210it [00:02, 1328.19it/s]
+Reading arXiv_src_0103_001.jsonl: 2366it [00:02, 1396.56it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1013.36it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.20it/s]
+Reading arXiv_src_0104_001.jsonl: 53it [00:00, 247.17it/s]
+Reading arXiv_src_0104_001.jsonl: 206it [00:00, 760.12it/s]
+Reading arXiv_src_0104_001.jsonl: 356it [00:00, 1015.51it/s]
+Reading arXiv_src_0104_001.jsonl: 466it [00:00, 799.02it/s] 
+Reading arXiv_src_0104_001.jsonl: 557it [00:00, 583.76it/s]
+Reading arXiv_src_0104_001.jsonl: 629it [00:01, 511.48it/s]
+Reading arXiv_src_0104_001.jsonl: 726it [00:01, 604.23it/s]
+Reading arXiv_src_0104_001.jsonl: 812it [00:01, 659.32it/s]
+Reading arXiv_src_0104_001.jsonl: 924it [00:01, 770.97it/s]
+Reading arXiv_src_0104_001.jsonl: 1048it [00:01, 888.20it/s]
+Reading arXiv_src_0104_001.jsonl: 1156it [00:01, 931.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1285it [00:01, 1029.82it/s]
+Reading arXiv_src_0104_001.jsonl: 1394it [00:01, 1027.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1532it [00:01, 1126.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1666it [00:02, 1186.67it/s]
+Reading arXiv_src_0104_001.jsonl: 1797it [00:02, 1221.23it/s]
+Reading arXiv_src_0104_001.jsonl: 1943it [00:02, 1291.32it/s]
+Reading arXiv_src_0104_001.jsonl: 2100it [00:02, 1371.22it/s]
+Reading arXiv_src_0104_001.jsonl: 2239it [00:02, 1045.94it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 898.61it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can future experiments extend the current analysis of new-physics effects in the $B	o J/\psi K$ system?
+[debug] classifier labels: ['Extends', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+1     1  0.762138  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+2     2  0.756244  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+3     3  0.414430  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+4     4  0.283331  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+5     5  0.234119  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+6     6  0.216272  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+7     7  0.204432  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+8     8  0.193886  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+9     9  0.176123  ...  2025-09-21T21:39:02.354400  Extends, FutureWork
+
+[10 rows x 12 columns]
+[23:39:09] main | args: Namespace(max_check=20, debug=True)
+[23:39:09] read_last_jsonl | path= classified_outputs.jsonl
+[23:39:09] read_last_jsonl | total_lines= 1
+[23:39:09] main | query='How can future experiments extend the current analysis of new-physics effects in the $B o J/\psi K$ system?' | funcs=['Extends', 'FutureWork']
+[23:39:12] main | core_terms= ['B', 'J/ψ', 'K', 'new-physics effects', 'new-physics']
+[23:39:12] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:39:12] load_topk_jsonl | rows= 20
+[23:39:12] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101276 title_snip='General Analysis of New Physics in $B\to J/\psi K$' abs_len= 1153
+[23:39:12] main | running function= Extends
+[23:39:12] select | function= Extends | candidates_in= 20
+[23:39:12] select | core_terms= ['B', 'J/ψ', 'K', 'new-physics effects', 'new-physics']
+[23:39:12] select | no cosine prune; kept=20/20
+[23:39:12] select | pool_size= 20 | ranks= [0, 2, 10, 12, 17, 1, 3, 5, 6, 7, 8, 9, 11, 13, 14, 15, 16, 18, 4, 19] | pids= ['hep-ph/0101276', 'hep-ph/0103121', 'hep-ph/0104034', 'nucl-th/0103026', 'hep-ph/0103152', 'hep-ph/0103299', 'hep-ph/0102310', 'astro-ph/0104166', 'hep-ph/0101259', 'hep-ph/0103038', 'hep-ph/0102168', 'hep-ph/0101244', 'hep-ph/0101162', 'hep-ph/0103034', 'hep-ph/0104259', 'hep-ph/0103039', 'cond-mat/0103610', 'hep-ph/0101078', 'hep-ex/0104003', 'hep-ph/0102150']
+[23:39:12] select | verify strict 1/20
+[23:39:12] verify | func= Extends | rank= 0 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[23:39:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:39:15] select | verify strict 2/20
+[23:39:15] verify | func= Extends | rank= 2 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[23:39:18] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:39:18] select | verify strict 3/20
+[23:39:18] verify | func= Extends | rank= 10 | pid= hep-ph/0104034 | title_snip='Quark mass effects in B -> Xs gamma' | abs_len= 1202
+[23:39:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:39:21] select | verify strict 4/20
+[23:39:21] verify | func= Extends | rank= 12 | pid= nucl-th/0103026 | title_snip='The effect of gluon depletion on J/psi suppression in pA and AA
+  coll…' | abs_len= 836
+[23:39:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:39:24] select | verify strict 5/20
+[23:39:24] verify | func= Extends | rank= 17 | pid= hep-ph/0103152 | title_snip='$\etap K$ puzzle of B meson decays and new physics effects in the TC2
+…' | abs_len= 698
+[23:39:27] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:39:27] select | verify strict 6/20
+[23:39:27] verify | func= Extends | rank= 1 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:39:30] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:39:30] select | verify strict 7/20
+[23:39:30] verify | func= Extends | rank= 3 | pid= hep-ph/0102310 | title_snip='Implication of $\sin 2\beta$ from global fit and $B\to J/\psi K_S$' | abs_len= 1444
+[23:39:33] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:39:33] select | verify strict 8/20
+[23:39:33] verify | func= Extends | rank= 5 | pid= astro-ph/0104166 | title_snip='Cosmic Equation of State and Advanced LIGO Type Gravity Wave Experimen…' | abs_len= 1372
+[23:39:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:39:36] select | verify strict 9/20
+[23:39:36] verify | func= Extends | rank= 6 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[23:39:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:39:39] select | verify strict 10/20
+[23:39:39] verify | func= Extends | rank= 7 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[23:39:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:39:42] select | verify strict 11/20
+[23:39:42] verify | func= Extends | rank= 8 | pid= hep-ph/0102168 | title_snip='Possible Supersymmetric Effects on Angular Distributions in $B \to K^*…' | abs_len= 526
+[23:39:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:39:45] select | verify strict 12/20
+[23:39:45] verify | func= Extends | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[23:39:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:39:47] select | verify strict 13/20
+[23:39:47] verify | func= Extends | rank= 11 | pid= hep-ph/0101162 | title_snip='Probing for the Charm Content of $B$ and $\Upsilon$ Mesons' | abs_len= 652
+[23:39:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[23:39:50] select | verify strict 14/20
+[23:39:50] verify | func= Extends | rank= 13 | pid= hep-ph/0103034 | title_snip='Model-Independent Analysis of g_\mu-2' | abs_len= 857
+[23:39:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:39:53] select | verify strict 15/20
+[23:39:53] verify | func= Extends | rank= 14 | pid= hep-ph/0104259 | title_snip='A Connection Between The Perturbative QCD Potential and Phenomenologic…' | abs_len= 444
+[23:39:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:39:56] select | verify strict 16/20
+[23:39:56] verify | func= Extends | rank= 15 | pid= hep-ph/0103039 | title_snip='New physics effects to the lepton polarizations in the B -> K l^+ l^-
+…' | abs_len= 749
+[23:39:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[23:39:59] select | verify strict 17/20
+[23:39:59] verify | func= Extends | rank= 16 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:40:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:01] select | verify strict 18/20
+[23:40:01] verify | func= Extends | rank= 18 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[23:40:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:04] select | verify strict 19/20
+[23:40:04] verify | func= Extends | rank= 4 | pid= hep-ex/0104003 | title_snip='On the Particle Data Group evaluation of Psi' and chi_c Branching Rati…' | abs_len= 762
+[23:40:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:07] select | verify strict 20/20
+[23:40:07] verify | func= Extends | rank= 19 | pid= hep-ph/0102150 | title_snip='Semileptonic Decays of $B_c$ Meson to a P-Wave Charmonium State $\chi_…' | abs_len= 766
+[23:40:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can future experiments extend the current analysis of new-physics effects in the $B o J/\psi K$ system?
+- WINNER: hep-ph/0101259 | CP violation, the CKM matrix and New Physics
+- QUOTE : new physics on CP-violating observables
+- WHY   : sufficient
+- ANSWER: Future experiments can extend the current analysis by systematically including new physics in loop-induced processes, potentially improving the accuracy of CP-violating observables. The standard method of assuming the standard model's correctness for tree-level processes can be extended to also validate its loop-induced processes (hep-ph/0101259).
+[23:40:14] main | running function= FutureWork
+[23:40:14] select | function= FutureWork | candidates_in= 20
+[23:40:14] select | core_terms= ['B', 'J/ψ', 'K', 'new-physics effects', 'new-physics']
+[23:40:14] select | no cosine prune; kept=20/20
+[23:40:14] select | pool_size= 20 | ranks= [0, 2, 1, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 4, 19] | pids= ['hep-ph/0101276', 'hep-ph/0103121', 'hep-ph/0103299', 'hep-ph/0102310', 'astro-ph/0104166', 'hep-ph/0101259', 'hep-ph/0103038', 'hep-ph/0102168', 'hep-ph/0101244', 'hep-ph/0104034', 'hep-ph/0101162', 'nucl-th/0103026', 'hep-ph/0103034', 'hep-ph/0104259', 'hep-ph/0103039', 'cond-mat/0103610', 'hep-ph/0103152', 'hep-ph/0101078', 'hep-ex/0104003', 'hep-ph/0102150']
+[23:40:14] select | verify strict 1/20
+[23:40:14] verify | func= FutureWork | rank= 0 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[23:40:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:40:17] select | verify strict 2/20
+[23:40:17] verify | func= FutureWork | rank= 2 | pid= hep-ph/0103121 | title_snip='Exploring New Physics in the $B\to \phi K$ System' | abs_len= 916
+[23:40:20] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:40:20] select | verify strict 3/20
+[23:40:20] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[23:40:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[23:40:23] select | verify strict 4/20
+[23:40:23] verify | func= FutureWork | rank= 3 | pid= hep-ph/0102310 | title_snip='Implication of $\sin 2\beta$ from global fit and $B\to J/\psi K_S$' | abs_len= 1444
+[23:40:26] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:40:26] select | verify strict 5/20
+[23:40:26] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104166 | title_snip='Cosmic Equation of State and Advanced LIGO Type Gravity Wave Experimen…' | abs_len= 1372
+[23:40:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:29] select | verify strict 6/20
+[23:40:29] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[23:40:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:40:32] select | verify strict 7/20
+[23:40:32] verify | func= FutureWork | rank= 7 | pid= hep-ph/0103038 | title_snip='Unscrambling New Models for Higher-Energy Physics' | abs_len= 553
+[23:40:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:40:35] select | verify strict 8/20
+[23:40:35] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102168 | title_snip='Possible Supersymmetric Effects on Angular Distributions in $B \to K^*…' | abs_len= 526
+[23:40:37] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[23:40:37] select | verify strict 9/20
+[23:40:37] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[23:40:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:40] select | verify strict 10/20
+[23:40:40] verify | func= FutureWork | rank= 10 | pid= hep-ph/0104034 | title_snip='Quark mass effects in B -> Xs gamma' | abs_len= 1202
+[23:40:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:43] select | verify strict 11/20
+[23:40:43] verify | func= FutureWork | rank= 11 | pid= hep-ph/0101162 | title_snip='Probing for the Charm Content of $B$ and $\Upsilon$ Mesons' | abs_len= 652
+[23:40:46] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:40:46] select | verify strict 12/20
+[23:40:46] verify | func= FutureWork | rank= 12 | pid= nucl-th/0103026 | title_snip='The effect of gluon depletion on J/psi suppression in pA and AA
+  coll…' | abs_len= 836
+[23:40:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:48] select | verify strict 13/20
+[23:40:48] verify | func= FutureWork | rank= 13 | pid= hep-ph/0103034 | title_snip='Model-Independent Analysis of g_\mu-2' | abs_len= 857
+[23:40:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:51] select | verify strict 14/20
+[23:40:51] verify | func= FutureWork | rank= 14 | pid= hep-ph/0104259 | title_snip='A Connection Between The Perturbative QCD Potential and Phenomenologic…' | abs_len= 444
+[23:40:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:54] select | verify strict 15/20
+[23:40:54] verify | func= FutureWork | rank= 15 | pid= hep-ph/0103039 | title_snip='New physics effects to the lepton polarizations in the B -> K l^+ l^-
+…' | abs_len= 749
+[23:40:57] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:40:57] select | verify strict 16/20
+[23:40:57] verify | func= FutureWork | rank= 16 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[23:40:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:40:59] select | verify strict 17/20
+[23:40:59] verify | func= FutureWork | rank= 17 | pid= hep-ph/0103152 | title_snip='$\etap K$ puzzle of B meson decays and new physics effects in the TC2
+…' | abs_len= 698
+[23:41:03] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:41:03] select | verify strict 18/20
+[23:41:03] verify | func= FutureWork | rank= 18 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[23:41:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:41:05] select | verify strict 19/20
+[23:41:05] verify | func= FutureWork | rank= 4 | pid= hep-ex/0104003 | title_snip='On the Particle Data Group evaluation of Psi' and chi_c Branching Rati…' | abs_len= 762
+[23:41:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:41:08] select | verify strict 20/20
+[23:41:08] verify | func= FutureWork | rank= 19 | pid= hep-ph/0102150 | title_snip='Semileptonic Decays of $B_c$ Meson to a P-Wave Charmonium State $\chi_…' | abs_len= 766
+[23:41:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can future experiments extend the current analysis of new-physics effects in the $B o J/\psi K$ system?
+- WINNER: hep-ph/0101276 | General Analysis of New Physics in $B\to J/\psi K$
+- QUOTE : left for second-generation $B$ experiments
+- WHY   : sufficient
+- ANSWER: Future experiments can extend the current analysis by measuring the remaining two new-physics observables, which are likely to be accessible at second-generation B experiments. Additionally, further studies are needed to establish scenarios where new-physics effects arise at the decay-amplitude level, which could be indicated by a small value of the mixing-induced CP asymmetry (hep-ph/0101276).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

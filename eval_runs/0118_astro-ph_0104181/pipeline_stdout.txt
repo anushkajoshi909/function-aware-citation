@@ -1,0 +1,340 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Uses"
+  ],
+  "justification": "The query seeks foundational information about cosmological homogeneity (Background) and asks how existing results are applied to interpret galaxy distribution (Uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 4.56 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.44it/s]
+Reading arXiv_src_0101_001.jsonl: 30it [00:00, 97.84it/s]
+Reading arXiv_src_0101_001.jsonl: 180it [00:00, 545.29it/s]
+Reading arXiv_src_0101_001.jsonl: 305it [00:00, 765.47it/s]
+Reading arXiv_src_0101_001.jsonl: 402it [00:00, 747.54it/s]
+Reading arXiv_src_0101_001.jsonl: 490it [00:00, 617.98it/s]
+Reading arXiv_src_0101_001.jsonl: 563it [00:01, 563.46it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:01, 676.05it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 758.00it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 848.92it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 924.59it/s]
+Reading arXiv_src_0101_001.jsonl: 1105it [00:01, 967.72it/s]
+Reading arXiv_src_0101_001.jsonl: 1237it [00:01, 1066.57it/s]
+Reading arXiv_src_0101_001.jsonl: 1348it [00:01, 1057.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1482it [00:01, 1137.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1617it [00:01, 1197.56it/s]
+Reading arXiv_src_0101_001.jsonl: 1745it [00:02, 1221.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1869it [00:02, 1188.49it/s]
+Reading arXiv_src_0101_001.jsonl: 2052it [00:02, 1371.79it/s]
+Reading arXiv_src_0101_001.jsonl: 2207it [00:02, 1423.35it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 933.12it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  4.03it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 486.69it/s]
+Reading arXiv_src_0102_001.jsonl: 272it [00:00, 791.25it/s]
+Reading arXiv_src_0102_001.jsonl: 377it [00:00, 707.61it/s]
+Reading arXiv_src_0102_001.jsonl: 465it [00:00, 452.44it/s]
+Reading arXiv_src_0102_001.jsonl: 531it [00:01, 482.93it/s]
+Reading arXiv_src_0102_001.jsonl: 595it [00:01, 513.17it/s]
+Reading arXiv_src_0102_001.jsonl: 682it [00:01, 594.10it/s]
+Reading arXiv_src_0102_001.jsonl: 796it [00:01, 727.95it/s]
+Reading arXiv_src_0102_001.jsonl: 928it [00:01, 881.49it/s]
+Reading arXiv_src_0102_001.jsonl: 1027it [00:01, 910.71it/s]
+Reading arXiv_src_0102_001.jsonl: 1147it [00:01, 990.28it/s]
+Reading arXiv_src_0102_001.jsonl: 1254it [00:01, 1012.55it/s]
+Reading arXiv_src_0102_001.jsonl: 1400it [00:01, 1139.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1531it [00:01, 1188.66it/s]
+Reading arXiv_src_0102_001.jsonl: 1657it [00:02, 1209.31it/s]
+Reading arXiv_src_0102_001.jsonl: 1806it [00:02, 1292.30it/s]
+Reading arXiv_src_0102_001.jsonl: 1954it [00:02, 1345.54it/s]
+Reading arXiv_src_0102_001.jsonl: 2107it [00:02, 1397.68it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 898.18it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  4.24it/s]
+Reading arXiv_src_0103_001.jsonl: 32it [00:00, 119.50it/s]
+Reading arXiv_src_0103_001.jsonl: 176it [00:00, 580.96it/s]
+Reading arXiv_src_0103_001.jsonl: 326it [00:00, 884.41it/s]
+Reading arXiv_src_0103_001.jsonl: 431it [00:00, 901.98it/s]
+Reading arXiv_src_0103_001.jsonl: 532it [00:00, 647.22it/s]
+Reading arXiv_src_0103_001.jsonl: 613it [00:01, 639.57it/s]
+Reading arXiv_src_0103_001.jsonl: 719it [00:01, 738.47it/s]
+Reading arXiv_src_0103_001.jsonl: 804it [00:01, 765.13it/s]
+Reading arXiv_src_0103_001.jsonl: 909it [00:01, 839.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1011it [00:01, 888.17it/s]
+Reading arXiv_src_0103_001.jsonl: 1129it [00:01, 968.62it/s]
+Reading arXiv_src_0103_001.jsonl: 1238it [00:01, 1000.62it/s]
+Reading arXiv_src_0103_001.jsonl: 1353it [00:01, 1042.73it/s]
+Reading arXiv_src_0103_001.jsonl: 1499it [00:01, 1163.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1636it [00:01, 1223.29it/s]
+Reading arXiv_src_0103_001.jsonl: 1777it [00:02, 1277.17it/s]
+Reading arXiv_src_0103_001.jsonl: 1918it [00:02, 1315.52it/s]
+Reading arXiv_src_0103_001.jsonl: 2051it [00:02, 1315.89it/s]
+Reading arXiv_src_0103_001.jsonl: 2189it [00:02, 1329.19it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1393.33it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 980.77it/s] 
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  6.19it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  7.91it/s]
+Reading arXiv_src_0104_001.jsonl: 150it [00:00, 595.35it/s]
+Reading arXiv_src_0104_001.jsonl: 309it [00:00, 954.37it/s]
+Reading arXiv_src_0104_001.jsonl: 413it [00:00, 974.58it/s]
+Reading arXiv_src_0104_001.jsonl: 516it [00:00, 687.91it/s]
+Reading arXiv_src_0104_001.jsonl: 599it [00:01, 472.67it/s]
+Reading arXiv_src_0104_001.jsonl: 704it [00:01, 579.37it/s]
+Reading arXiv_src_0104_001.jsonl: 793it [00:01, 643.29it/s]
+Reading arXiv_src_0104_001.jsonl: 894it [00:01, 726.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1015it [00:01, 845.45it/s]
+Reading arXiv_src_0104_001.jsonl: 1125it [00:01, 910.83it/s]
+Reading arXiv_src_0104_001.jsonl: 1247it [00:01, 994.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1355it [00:01, 995.12it/s]
+Reading arXiv_src_0104_001.jsonl: 1484it [00:01, 1074.48it/s]
+Reading arXiv_src_0104_001.jsonl: 1629it [00:02, 1180.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1756it [00:02, 1206.27it/s]
+Reading arXiv_src_0104_001.jsonl: 1901it [00:02, 1274.48it/s]
+Reading arXiv_src_0104_001.jsonl: 2054it [00:02, 1349.38it/s]
+Reading arXiv_src_0104_001.jsonl: 2191it [00:02, 944.59it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 868.15it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the background of cosmology, specifically the concept of homogeneity, use previous results to inform its understanding of galaxy distribution?
+[debug] classifier labels: ['Background', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T18:25:16.557215     Background, Uses
+1     1  0.739039  ...  2025-09-21T18:25:16.557215     Background, Uses
+2     2  0.721857  ...  2025-09-21T18:25:16.557215     Background, Uses
+3     3  0.581927  ...  2025-09-21T18:25:16.557215     Background, Uses
+4     4  0.537198  ...  2025-09-21T18:25:16.557215     Background, Uses
+5     5  0.505999  ...  2025-09-21T18:25:16.557215     Background, Uses
+6     6  0.497085  ...  2025-09-21T18:25:16.557215     Background, Uses
+7     7  0.424554  ...  2025-09-21T18:25:16.557215     Background, Uses
+8     8  0.399301  ...  2025-09-21T18:25:16.557215     Background, Uses
+9     9  0.377126  ...  2025-09-21T18:25:16.557215     Background, Uses
+
+[10 rows x 12 columns]
+[20:25:22] main | args: Namespace(max_check=20, debug=True)
+[20:25:22] read_last_jsonl | path= classified_outputs.jsonl
+[20:25:22] read_last_jsonl | total_lines= 1
+[20:25:22] main | query='How does the background of cosmology, specifically the concept of homogeneity, use previous results to inform its understanding of galaxy distribution?' | funcs=['Background', 'Uses']
+[20:25:25] main | core_terms= ['galaxy', 'homogeneity', 'cosmology']
+[20:25:25] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[20:25:25] load_topk_jsonl | rows= 20
+[20:25:25] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101143 title_snip='On the trispectrum as a gaussian test for cosmology' abs_len= 1444
+[20:25:25] main | running function= Background
+[20:25:25] select | function= Background | candidates_in= 20
+[20:25:25] select | core_terms= ['galaxy', 'homogeneity', 'cosmology']
+[20:25:25] select | no cosine prune; kept=20/20
+[20:25:25] select | pool_size= 20 | ranks= [6, 2, 0, 3, 9, 10, 4, 5, 7, 11, 13, 14, 17, 15, 19, 1, 8, 12, 16, 18] | pids= ['astro-ph/0102320', 'astro-ph/0104181', 'astro-ph/0101143', 'astro-ph/0104370', 'astro-ph/0102062', 'astro-ph/0103092', 'astro-ph/0101191', 'astro-ph/0101296', 'astro-ph/0103017', 'astro-ph/0104435', 'astro-ph/0102090', 'astro-ph/0101127', 'astro-ph/0102358', 'hep-ph/0101210', 'astro-ph/0104442', 'hep-th/0102187', 'astro-ph/0101084', 'astro-ph/0102032', 'astro-ph/0102180', 'astro-ph/0104247']
+[20:25:25] select | verify strict 1/20
+[20:25:25] verify | func= Background | rank= 6 | pid= astro-ph/0102320 | title_snip='Complexity in Cosmology' | abs_len= 923
+[20:25:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:25:28] select | verify strict 2/20
+[20:25:28] verify | func= Background | rank= 2 | pid= astro-ph/0104181 | title_snip='The Apparent Fractal Conjecture: Scaling Features in Standard
+  Cosmol…' | abs_len= 1809
+[20:25:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:25:31] select | verify strict 3/20
+[20:25:31] verify | func= Background | rank= 0 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[20:25:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:25:35] select | verify strict 4/20
+[20:25:35] verify | func= Background | rank= 3 | pid= astro-ph/0104370 | title_snip='From Fractal Cosmography to Fractal Cosmology' | abs_len= 728
+[20:25:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:25:38] select | verify strict 5/20
+[20:25:38] verify | func= Background | rank= 9 | pid= astro-ph/0102062 | title_snip='Clustering in the Universe: from Highly Nonlinear Structures to
+  Homo…' | abs_len= 1018
+[20:25:41] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:25:41] select | verify strict 6/20
+[20:25:41] verify | func= Background | rank= 10 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[20:25:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:25:44] select | verify strict 7/20
+[20:25:44] verify | func= Background | rank= 4 | pid= astro-ph/0101191 | title_snip='How to Avoid the Ambiguity in Applying the Copernican Principle for
+  …' | abs_len= 654
+[20:25:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:25:47] select | verify strict 8/20
+[20:25:47] verify | func= Background | rank= 5 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[20:25:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:25:50] select | verify strict 9/20
+[20:25:50] verify | func= Background | rank= 7 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[20:25:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:25:54] select | verify strict 10/20
+[20:25:54] verify | func= Background | rank= 11 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[20:25:57] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:25:57] select | verify strict 11/20
+[20:25:57] verify | func= Background | rank= 13 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[20:26:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:26:00] select | verify strict 12/20
+[20:26:00] verify | func= Background | rank= 14 | pid= astro-ph/0101127 | title_snip='The Void Phenomenon' | abs_len= 560
+[20:26:03] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:26:03] select | verify strict 13/20
+[20:26:03] verify | func= Background | rank= 17 | pid= astro-ph/0102358 | title_snip='The cosmological evolution of colour gradients in spheroids' | abs_len= 831
+[20:26:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:26:06] select | verify strict 14/20
+[20:26:06] verify | func= Background | rank= 15 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[20:26:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:26:09] select | verify strict 15/20
+[20:26:09] verify | func= Background | rank= 19 | pid= astro-ph/0104442 | title_snip='The Cosmic Baryon Fraction and the Extragalactic Ionizing Background' | abs_len= 1674
+[20:26:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:26:12] select | verify strict 16/20
+[20:26:12] verify | func= Background | rank= 1 | pid= hep-th/0102187 | title_snip='Anisotropic Born-Infeld Cosmologies' | abs_len= 731
+[20:26:15] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:26:15] select | verify strict 17/20
+[20:26:15] verify | func= Background | rank= 8 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[20:26:18] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:26:18] select | verify strict 18/20
+[20:26:18] verify | func= Background | rank= 12 | pid= astro-ph/0102032 | title_snip='In Support of Inflation' | abs_len= 313
+[20:26:21] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:26:21] select | verify strict 19/20
+[20:26:21] verify | func= Background | rank= 16 | pid= astro-ph/0102180 | title_snip='Evolution of the Luminosity Function and Colors of Galaxies in a
+  Lam…' | abs_len= 1010
+[20:26:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:26:24] select | verify strict 20/20
+[20:26:24] verify | func= Background | rank= 18 | pid= astro-ph/0104247 | title_snip='Cosmological matter perturbations with causal seeds' | abs_len= 704
+[20:26:27] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the background of cosmology, specifically the concept of homogeneity, use previous results to inform its understanding of galaxy distribution?
+- WINNER: astro-ph/0101143 | On the trispectrum as a gaussian test for cosmology
+- QUOTE : cosmology, the power spectrum and biasing, in real space
+- WHY   : sufficient
+- ANSWER: The concept of homogeneity in cosmology informs its understanding of galaxy distribution by assuming an almost-perfect random gaussian field as the initial density field (astro-ph/0101143).
+[20:26:32] main | running function= Uses
+[20:26:32] select | function= Uses | candidates_in= 20
+[20:26:32] select | core_terms= ['galaxy', 'homogeneity', 'cosmology']
+[20:26:32] select | no cosine prune; kept=20/20
+[20:26:32] select | pool_size= 20 | ranks= [6, 2, 0, 10, 3, 9, 5, 7, 13, 4, 11, 14, 17, 18, 1, 8, 12, 15, 16, 19] | pids= ['astro-ph/0102320', 'astro-ph/0104181', 'astro-ph/0101143', 'astro-ph/0103092', 'astro-ph/0104370', 'astro-ph/0102062', 'astro-ph/0101296', 'astro-ph/0103017', 'astro-ph/0102090', 'astro-ph/0101191', 'astro-ph/0104435', 'astro-ph/0101127', 'astro-ph/0102358', 'astro-ph/0104247', 'hep-th/0102187', 'astro-ph/0101084', 'astro-ph/0102032', 'hep-ph/0101210', 'astro-ph/0102180', 'astro-ph/0104442']
+[20:26:32] select | verify strict 1/20
+[20:26:32] verify | func= Uses | rank= 6 | pid= astro-ph/0102320 | title_snip='Complexity in Cosmology' | abs_len= 923
+[20:26:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:26:35] select | verify strict 2/20
+[20:26:35] verify | func= Uses | rank= 2 | pid= astro-ph/0104181 | title_snip='The Apparent Fractal Conjecture: Scaling Features in Standard
+  Cosmol…' | abs_len= 1809
+[20:26:39] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:26:39] select | verify strict 3/20
+[20:26:39] verify | func= Uses | rank= 0 | pid= astro-ph/0101143 | title_snip='On the trispectrum as a gaussian test for cosmology' | abs_len= 1444
+[20:26:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:26:42] select | verify strict 4/20
+[20:26:42] verify | func= Uses | rank= 10 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[20:26:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:26:45] select | verify strict 5/20
+[20:26:45] verify | func= Uses | rank= 3 | pid= astro-ph/0104370 | title_snip='From Fractal Cosmography to Fractal Cosmology' | abs_len= 728
+[20:26:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:26:48] select | verify strict 6/20
+[20:26:48] verify | func= Uses | rank= 9 | pid= astro-ph/0102062 | title_snip='Clustering in the Universe: from Highly Nonlinear Structures to
+  Homo…' | abs_len= 1018
+[20:26:52] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:26:52] select | verify strict 7/20
+[20:26:52] verify | func= Uses | rank= 5 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[20:26:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:26:54] select | verify strict 8/20
+[20:26:54] verify | func= Uses | rank= 7 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[20:26:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:26:58] select | verify strict 9/20
+[20:26:58] verify | func= Uses | rank= 13 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[20:27:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:01] select | verify strict 10/20
+[20:27:01] verify | func= Uses | rank= 4 | pid= astro-ph/0101191 | title_snip='How to Avoid the Ambiguity in Applying the Copernican Principle for
+  …' | abs_len= 654
+[20:27:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:04] select | verify strict 11/20
+[20:27:04] verify | func= Uses | rank= 11 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[20:27:07] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:27:07] select | verify strict 12/20
+[20:27:07] verify | func= Uses | rank= 14 | pid= astro-ph/0101127 | title_snip='The Void Phenomenon' | abs_len= 560
+[20:27:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:27:10] select | verify strict 13/20
+[20:27:10] verify | func= Uses | rank= 17 | pid= astro-ph/0102358 | title_snip='The cosmological evolution of colour gradients in spheroids' | abs_len= 831
+[20:27:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:13] select | verify strict 14/20
+[20:27:13] verify | func= Uses | rank= 18 | pid= astro-ph/0104247 | title_snip='Cosmological matter perturbations with causal seeds' | abs_len= 704
+[20:27:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:16] select | verify strict 15/20
+[20:27:16] verify | func= Uses | rank= 1 | pid= hep-th/0102187 | title_snip='Anisotropic Born-Infeld Cosmologies' | abs_len= 731
+[20:27:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:19] select | verify strict 16/20
+[20:27:19] verify | func= Uses | rank= 8 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[20:27:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:22] select | verify strict 17/20
+[20:27:22] verify | func= Uses | rank= 12 | pid= astro-ph/0102032 | title_snip='In Support of Inflation' | abs_len= 313
+[20:27:25] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:27:25] select | verify strict 18/20
+[20:27:25] verify | func= Uses | rank= 15 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[20:27:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:27:28] select | verify strict 19/20
+[20:27:28] verify | func= Uses | rank= 16 | pid= astro-ph/0102180 | title_snip='Evolution of the Luminosity Function and Colors of Galaxies in a
+  Lam…' | abs_len= 1010
+[20:27:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[20:27:31] select | verify strict 20/20
+[20:27:31] verify | func= Uses | rank= 19 | pid= astro-ph/0104442 | title_snip='The Cosmic Baryon Fraction and the Extragalactic Ionizing Background' | abs_len= 1674
+[20:27:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the background of cosmology, specifically the concept of homogeneity, use previous results to inform its understanding of galaxy distribution?
+- WINNER: astro-ph/0101143 | On the trispectrum as a gaussian test for cosmology
+- QUOTE : galaxy density field
+- WHY   : sufficient
+- ANSWER: The trispectrum of the galaxy density field is used to differentiate between gaussian and non-gaussian models of structure formation. This method builds on previous results by utilizing the statistical properties of the initial density field to inform the understanding of galaxy distribution (astro-ph/0101143).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

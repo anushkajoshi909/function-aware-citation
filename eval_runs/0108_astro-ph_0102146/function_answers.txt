@@ -1,0 +1,2 @@
+Future research directions may involve probing the physical conditions in the inner parsec of accretion disks and investigating the transition between thin and thick disk regions (astro-ph/0102146). [Background]
+Future research directions include comparative studies of M31* and Sgr A* to understand the underlying physical basis for their activity, and multi-wavelength observations to test predicted features in the spectrum of M31* (astro-ph/0101330). [FutureWork]

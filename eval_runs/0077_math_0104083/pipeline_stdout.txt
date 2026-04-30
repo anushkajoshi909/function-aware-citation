@@ -1,0 +1,326 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.12 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.27it/s]
+Reading arXiv_src_0101_001.jsonl: 64it [00:00, 202.70it/s]
+Reading arXiv_src_0101_001.jsonl: 218it [00:00, 618.36it/s]
+Reading arXiv_src_0101_001.jsonl: 319it [00:00, 737.55it/s]
+Reading arXiv_src_0101_001.jsonl: 413it [00:00, 721.12it/s]
+Reading arXiv_src_0101_001.jsonl: 499it [00:00, 605.02it/s]
+Reading arXiv_src_0101_001.jsonl: 571it [00:01, 580.01it/s]
+Reading arXiv_src_0101_001.jsonl: 678it [00:01, 697.36it/s]
+Reading arXiv_src_0101_001.jsonl: 781it [00:01, 781.43it/s]
+Reading arXiv_src_0101_001.jsonl: 896it [00:01, 878.39it/s]
+Reading arXiv_src_0101_001.jsonl: 1003it [00:01, 916.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1129it [00:01, 1012.14it/s]
+Reading arXiv_src_0101_001.jsonl: 1256it [00:01, 1085.01it/s]
+Reading arXiv_src_0101_001.jsonl: 1368it [00:01, 1088.86it/s]
+Reading arXiv_src_0101_001.jsonl: 1496it [00:01, 1143.55it/s]
+Reading arXiv_src_0101_001.jsonl: 1633it [00:01, 1205.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1755it [00:02, 1200.82it/s]
+Reading arXiv_src_0101_001.jsonl: 1881it [00:02, 1215.64it/s]
+Reading arXiv_src_0101_001.jsonl: 2071it [00:02, 1416.85it/s]
+Reading arXiv_src_0101_001.jsonl: 2224it [00:02, 1447.70it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 945.72it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1329.51it/s]
+Reading arXiv_src_0102_001.jsonl: 274it [00:00, 1368.70it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 854.79it/s] 
+Reading arXiv_src_0102_001.jsonl: 513it [00:00, 535.24it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 561.59it/s]
+Reading arXiv_src_0102_001.jsonl: 679it [00:00, 626.53it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 747.75it/s]
+Reading arXiv_src_0102_001.jsonl: 925it [00:01, 887.49it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 939.03it/s]
+Reading arXiv_src_0102_001.jsonl: 1151it [00:01, 1000.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1268it [00:01, 1048.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1413it [00:01, 1161.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1547it [00:01, 1211.13it/s]
+Reading arXiv_src_0102_001.jsonl: 1679it [00:01, 1239.79it/s]
+Reading arXiv_src_0102_001.jsonl: 1829it [00:01, 1314.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1980it [00:01, 1369.65it/s]
+Reading arXiv_src_0102_001.jsonl: 2130it [00:02, 1404.55it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1025.82it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 137it [00:00, 1363.58it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1519.02it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1122.22it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 741.19it/s] 
+Reading arXiv_src_0103_001.jsonl: 670it [00:00, 789.08it/s]
+Reading arXiv_src_0103_001.jsonl: 763it [00:00, 803.78it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 897.97it/s]
+Reading arXiv_src_0103_001.jsonl: 981it [00:01, 917.71it/s]
+Reading arXiv_src_0103_001.jsonl: 1084it [00:01, 948.54it/s]
+Reading arXiv_src_0103_001.jsonl: 1209it [00:01, 1032.39it/s]
+Reading arXiv_src_0103_001.jsonl: 1317it [00:01, 1039.07it/s]
+Reading arXiv_src_0103_001.jsonl: 1457it [00:01, 1143.35it/s]
+Reading arXiv_src_0103_001.jsonl: 1592it [00:01, 1202.04it/s]
+Reading arXiv_src_0103_001.jsonl: 1745it [00:01, 1298.50it/s]
+Reading arXiv_src_0103_001.jsonl: 1880it [00:01, 1313.13it/s]
+Reading arXiv_src_0103_001.jsonl: 2023it [00:01, 1347.31it/s]
+Reading arXiv_src_0103_001.jsonl: 2165it [00:01, 1367.29it/s]
+Reading arXiv_src_0103_001.jsonl: 2312it [00:02, 1395.12it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.52it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 149it [00:00, 1489.02it/s]
+Reading arXiv_src_0104_001.jsonl: 298it [00:00, 762.12it/s] 
+Reading arXiv_src_0104_001.jsonl: 405it [00:00, 854.65it/s]
+Reading arXiv_src_0104_001.jsonl: 506it [00:00, 657.76it/s]
+Reading arXiv_src_0104_001.jsonl: 585it [00:01, 453.41it/s]
+Reading arXiv_src_0104_001.jsonl: 693it [00:01, 567.07it/s]
+Reading arXiv_src_0104_001.jsonl: 786it [00:01, 641.54it/s]
+Reading arXiv_src_0104_001.jsonl: 891it [00:01, 734.05it/s]
+Reading arXiv_src_0104_001.jsonl: 1012it [00:01, 847.78it/s]
+Reading arXiv_src_0104_001.jsonl: 1123it [00:01, 914.93it/s]
+Reading arXiv_src_0104_001.jsonl: 1244it [00:01, 994.00it/s]
+Reading arXiv_src_0104_001.jsonl: 1352it [00:01, 996.83it/s]
+Reading arXiv_src_0104_001.jsonl: 1483it [00:01, 1083.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1623it [00:01, 1172.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1752it [00:02, 1205.28it/s]
+Reading arXiv_src_0104_001.jsonl: 1899it [00:02, 1281.79it/s]
+Reading arXiv_src_0104_001.jsonl: 2055it [00:02, 1362.11it/s]
+Reading arXiv_src_0104_001.jsonl: 2193it [00:02, 929.73it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 904.36it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the relationship between sparsity and statistical independence in the context of stochastic processes compare to existing background knowledge on efficient data representation?
+[debug] classifier labels: ['Background']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T15:47:54.653488           Background
+1     1  0.276264  ...  2025-09-21T15:47:54.653488           Background
+2     2  0.198344  ...  2025-09-21T15:47:54.653488           Background
+3     3  0.182365  ...  2025-09-21T15:47:54.653488           Background
+4     4  0.180643  ...  2025-09-21T15:47:54.653488           Background
+5     5  0.175068  ...  2025-09-21T15:47:54.653488           Background
+6     6  0.135937  ...  2025-09-21T15:47:54.653488           Background
+7     7  0.129902  ...  2025-09-21T15:47:54.653488           Background
+8     8  0.128469  ...  2025-09-21T15:47:54.653488           Background
+9     9  0.124786  ...  2025-09-21T15:47:54.653488           Background
+
+[10 rows x 12 columns]
+[17:48:01] main | args: Namespace(max_check=20, debug=True)
+[17:48:01] read_last_jsonl | path= classified_outputs.jsonl
+[17:48:01] read_last_jsonl | total_lines= 1
+[17:48:01] main | query='How does the relationship between sparsity and statistical independence in the context of stochastic processes compare to existing background knowledge on efficient data representation?' | funcs=['Background']
+[17:48:03] main | core_terms= ['stochastic processes', 'sparsity', 'statistical independence', 'efficient data representation']
+[17:48:03] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:48:03] load_topk_jsonl | rows= 20
+[17:48:03] load_topk_jsonl | first: rank= 0 paper_id= math/0104083 title_snip='Sparsity vs. Statistical Independence in Adaptive Signal
+  Representat…' abs_len= 1388
+[17:48:03] main | running function= Background
+[17:48:03] select | function= Background | candidates_in= 20
+[17:48:03] select | core_terms= ['stochastic processes', 'sparsity', 'statistical independence', 'efficient data representation']
+[17:48:03] select | no cosine prune; kept=20/20
+[17:48:03] select | pool_size= 20 | ranks= [0, 3, 18, 5, 8, 11, 17, 1, 2, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16, 19] | pids= ['math/0104083', 'cond-mat/0103246', 'math/0102222', 'math/0101037', 'cond-mat/0102181', 'hep-ph/0101235', 'cond-mat/0104298', 'quant-ph/0104061', 'physics/0101065', 'nucl-th/0103026', 'math/0103104', 'gr-qc/0101051', 'math/0103033', 'hep-ex/0102005', 'quant-ph/0103161', 'cond-mat/0102301', 'cond-mat/0101161', 'quant-ph/0104055', 'physics/0103076', 'cond-mat/0103467']
+[17:48:03] select | verify strict 1/20
+[17:48:03] verify | func= Background | rank= 0 | pid= math/0104083 | title_snip='Sparsity vs. Statistical Independence in Adaptive Signal
+  Representat…' | abs_len= 1388
+[17:48:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:48:06] select | verify strict 2/20
+[17:48:06] verify | func= Background | rank= 3 | pid= cond-mat/0103246 | title_snip='Signatures of Randomness in Quantum Chaos' | abs_len= 1176
+[17:48:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:08] select | verify strict 3/20
+[17:48:08] verify | func= Background | rank= 18 | pid= math/0102222 | title_snip='Stochastic processes on geometric loop and diffeomorphism groups of re…' | abs_len= 436
+[17:48:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:48:11] select | verify strict 4/20
+[17:48:11] verify | func= Background | rank= 5 | pid= math/0101037 | title_snip='Reconstruction from projections using dynamics: Non-Stochastic Case' | abs_len= 1202
+[17:48:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:13] select | verify strict 5/20
+[17:48:13] verify | func= Background | rank= 8 | pid= cond-mat/0102181 | title_snip='Regularities Unseen, Randomness Observed: Levels of Entropy Convergenc…' | abs_len= 871
+[17:48:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:48:16] select | verify strict 6/20
+[17:48:16] verify | func= Background | rank= 11 | pid= hep-ph/0101235 | title_snip='The Drell-Levy-Yan Relation: ep vs $e^+e^-$ Scattering to
+  $O(\alpha_…' | abs_len= 417
+[17:48:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:19] select | verify strict 7/20
+[17:48:19] verify | func= Background | rank= 17 | pid= cond-mat/0104298 | title_snip='Exact Mean-Field Solutions of the Asymmetric Random Average Process' | abs_len= 1086
+[17:48:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:21] select | verify strict 8/20
+[17:48:21] verify | func= Background | rank= 1 | pid= quant-ph/0104061 | title_snip='Efficient Implementation and the Product State Representation of Numbe…' | abs_len= 928
+[17:48:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:24] select | verify strict 9/20
+[17:48:24] verify | func= Background | rank= 2 | pid= physics/0101065 | title_snip='Relation of uncertainty for time' | abs_len= 567
+[17:48:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:26] select | verify strict 10/20
+[17:48:26] verify | func= Background | rank= 4 | pid= nucl-th/0103026 | title_snip='The effect of gluon depletion on J/psi suppression in pA and AA
+  coll…' | abs_len= 836
+[17:48:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:29] select | verify strict 11/20
+[17:48:29] verify | func= Background | rank= 6 | pid= math/0103104 | title_snip='Detection of spatial pattern through independence of thinned processes' | abs_len= 339
+[17:48:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:48:32] select | verify strict 12/20
+[17:48:32] verify | func= Background | rank= 7 | pid= gr-qc/0101051 | title_snip='Detecting a non-Gaussian stochastic background of gravitational
+  radi…' | abs_len= 392
+[17:48:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:34] select | verify strict 13/20
+[17:48:34] verify | func= Background | rank= 9 | pid= math/0103033 | title_snip='Filtered stochastic calculus' | abs_len= 783
+[17:48:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:37] select | verify strict 14/20
+[17:48:37] verify | func= Background | rank= 10 | pid= hep-ex/0102005 | title_snip='Experimental correlation analysis: foundations and practice' | abs_len= 444
+[17:48:40] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:48:40] select | verify strict 15/20
+[17:48:40] verify | func= Background | rank= 12 | pid= quant-ph/0103161 | title_snip='Quantum measurements, Information, and Dual States Representations' | abs_len= 859
+[17:48:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:42] select | verify strict 16/20
+[17:48:42] verify | func= Background | rank= 13 | pid= cond-mat/0102301 | title_snip='A process-reconstruction analysis of market fluctuations' | abs_len= 600
+[17:48:45] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:48:45] select | verify strict 17/20
+[17:48:45] verify | func= Background | rank= 14 | pid= cond-mat/0101161 | title_snip='Mutual Information of Population Codes and Distance Measures in
+  Prob…' | abs_len= 559
+[17:48:48] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[17:48:48] select | verify strict 18/20
+[17:48:48] verify | func= Background | rank= 15 | pid= quant-ph/0104055 | title_snip='Stochastic Noise as a Source of Decoherence in a Solid State Quantum
+ …' | abs_len= 479
+[17:48:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:51] select | verify strict 19/20
+[17:48:51] verify | func= Background | rank= 16 | pid= physics/0103076 | title_snip='Complexity Through Nonextensivity' | abs_len= 1128
+[17:48:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:53] select | verify strict 20/20
+[17:48:53] verify | func= Background | rank= 19 | pid= cond-mat/0103467 | title_snip='Non Linear Kinetics underlying Generalized Statistics' | abs_len= 1058
+[17:48:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:48:55] select | strict pass found 0 winners → trying relaxed
+[17:48:55] select | verify relaxed 1/20
+[17:48:55] verify | func= Background | rank= 0 | pid= math/0104083 | title_snip='Sparsity vs. Statistical Independence in Adaptive Signal
+  Representat…' | abs_len= 1388
+[17:48:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:48:59] select | verify relaxed 2/20
+[17:48:59] verify | func= Background | rank= 3 | pid= cond-mat/0103246 | title_snip='Signatures of Randomness in Quantum Chaos' | abs_len= 1176
+[17:49:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:01] select | verify relaxed 3/20
+[17:49:01] verify | func= Background | rank= 18 | pid= math/0102222 | title_snip='Stochastic processes on geometric loop and diffeomorphism groups of re…' | abs_len= 436
+[17:49:04] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:04] select | verify relaxed 4/20
+[17:49:04] verify | func= Background | rank= 5 | pid= math/0101037 | title_snip='Reconstruction from projections using dynamics: Non-Stochastic Case' | abs_len= 1202
+[17:49:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:49:07] select | verify relaxed 5/20
+[17:49:07] verify | func= Background | rank= 8 | pid= cond-mat/0102181 | title_snip='Regularities Unseen, Randomness Observed: Levels of Entropy Convergenc…' | abs_len= 871
+[17:49:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[17:49:10] select | verify relaxed 6/20
+[17:49:10] verify | func= Background | rank= 11 | pid= hep-ph/0101235 | title_snip='The Drell-Levy-Yan Relation: ep vs $e^+e^-$ Scattering to
+  $O(\alpha_…' | abs_len= 417
+[17:49:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:49:12] select | verify relaxed 7/20
+[17:49:12] verify | func= Background | rank= 17 | pid= cond-mat/0104298 | title_snip='Exact Mean-Field Solutions of the Asymmetric Random Average Process' | abs_len= 1086
+[17:49:15] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:15] select | verify relaxed 8/20
+[17:49:15] verify | func= Background | rank= 1 | pid= quant-ph/0104061 | title_snip='Efficient Implementation and the Product State Representation of Numbe…' | abs_len= 928
+[17:49:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:49:18] select | verify relaxed 9/20
+[17:49:18] verify | func= Background | rank= 2 | pid= physics/0101065 | title_snip='Relation of uncertainty for time' | abs_len= 567
+[17:49:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:21] select | verify relaxed 10/20
+[17:49:21] verify | func= Background | rank= 4 | pid= nucl-th/0103026 | title_snip='The effect of gluon depletion on J/psi suppression in pA and AA
+  coll…' | abs_len= 836
+[17:49:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:49:23] select | verify relaxed 11/20
+[17:49:23] verify | func= Background | rank= 6 | pid= math/0103104 | title_snip='Detection of spatial pattern through independence of thinned processes' | abs_len= 339
+[17:49:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[17:49:26] select | verify relaxed 12/20
+[17:49:26] verify | func= Background | rank= 7 | pid= gr-qc/0101051 | title_snip='Detecting a non-Gaussian stochastic background of gravitational
+  radi…' | abs_len= 392
+[17:49:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:29] select | verify relaxed 13/20
+[17:49:29] verify | func= Background | rank= 9 | pid= math/0103033 | title_snip='Filtered stochastic calculus' | abs_len= 783
+[17:49:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:32] select | verify relaxed 14/20
+[17:49:32] verify | func= Background | rank= 10 | pid= hep-ex/0102005 | title_snip='Experimental correlation analysis: foundations and practice' | abs_len= 444
+[17:49:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:35] select | verify relaxed 15/20
+[17:49:35] verify | func= Background | rank= 12 | pid= quant-ph/0103161 | title_snip='Quantum measurements, Information, and Dual States Representations' | abs_len= 859
+[17:49:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:49:38] select | verify relaxed 16/20
+[17:49:38] verify | func= Background | rank= 13 | pid= cond-mat/0102301 | title_snip='A process-reconstruction analysis of market fluctuations' | abs_len= 600
+[17:49:41] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[17:49:41] select | verify relaxed 17/20
+[17:49:41] verify | func= Background | rank= 14 | pid= cond-mat/0101161 | title_snip='Mutual Information of Population Codes and Distance Measures in
+  Prob…' | abs_len= 559
+[17:49:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[17:49:44] select | verify relaxed 18/20
+[17:49:44] verify | func= Background | rank= 15 | pid= quant-ph/0104055 | title_snip='Stochastic Noise as a Source of Decoherence in a Solid State Quantum
+ …' | abs_len= 479
+[17:49:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:47] select | verify relaxed 19/20
+[17:49:47] verify | func= Background | rank= 16 | pid= physics/0103076 | title_snip='Complexity Through Nonextensivity' | abs_len= 1128
+[17:49:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:49:50] select | verify relaxed 20/20
+[17:49:50] verify | func= Background | rank= 19 | pid= cond-mat/0103467 | title_snip='Non Linear Kinetics underlying Generalized Statistics' | abs_len= 1058
+[17:49:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the relationship between sparsity and statistical independence in the context of stochastic processes compare to existing background knowledge on efficient data representation?
+- WINNER: math/0104083 | Sparsity vs. Statistical Independence in Adaptive Signal
+  Representations: A Case Study of the Spike Process
+- QUOTE : stochastic process is of tremendous importance
+- WHY   : sufficient
+- ANSWER: The relationship between sparsity and statistical independence in stochastic processes is not well understood, with the two measures of efficiency not always aligning (math/0104083).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

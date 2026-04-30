@@ -1,0 +1,452 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query seeks reasons (motivations) derived from current study limitations and asks for prospective research directions (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 3.08 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.65it/s]
+Reading arXiv_src_0101_001.jsonl: 32it [00:00, 108.33it/s]
+Reading arXiv_src_0101_001.jsonl: 175it [00:00, 541.45it/s]
+Reading arXiv_src_0101_001.jsonl: 303it [00:00, 775.26it/s]
+Reading arXiv_src_0101_001.jsonl: 399it [00:00, 768.22it/s]
+Reading arXiv_src_0101_001.jsonl: 488it [00:00, 627.43it/s]
+Reading arXiv_src_0101_001.jsonl: 562it [00:01, 569.58it/s]
+Reading arXiv_src_0101_001.jsonl: 669it [00:01, 685.29it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 767.43it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 856.24it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 932.89it/s]
+Reading arXiv_src_0101_001.jsonl: 1107it [00:01, 974.72it/s]
+Reading arXiv_src_0101_001.jsonl: 1240it [00:01, 1075.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1352it [00:01, 1066.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1486it [00:01, 1142.26it/s]
+Reading arXiv_src_0101_001.jsonl: 1621it [00:01, 1201.91it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1222.54it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1203.41it/s]
+Reading arXiv_src_0101_001.jsonl: 2057it [00:02, 1385.41it/s]
+Reading arXiv_src_0101_001.jsonl: 2210it [00:02, 1424.74it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 943.65it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 136it [00:00, 1355.94it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1359.06it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 846.59it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 521.32it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 555.76it/s]
+Reading arXiv_src_0102_001.jsonl: 668it [00:01, 598.71it/s]
+Reading arXiv_src_0102_001.jsonl: 782it [00:01, 723.21it/s]
+Reading arXiv_src_0102_001.jsonl: 909it [00:01, 857.19it/s]
+Reading arXiv_src_0102_001.jsonl: 1024it [00:01, 933.23it/s]
+Reading arXiv_src_0102_001.jsonl: 1139it [00:01, 990.81it/s]
+Reading arXiv_src_0102_001.jsonl: 1249it [00:01, 1021.06it/s]
+Reading arXiv_src_0102_001.jsonl: 1393it [00:01, 1139.96it/s]
+Reading arXiv_src_0102_001.jsonl: 1527it [00:01, 1192.62it/s]
+Reading arXiv_src_0102_001.jsonl: 1651it [00:01, 1204.00it/s]
+Reading arXiv_src_0102_001.jsonl: 1803it [00:01, 1296.74it/s]
+Reading arXiv_src_0102_001.jsonl: 1952it [00:02, 1352.65it/s]
+Reading arXiv_src_0102_001.jsonl: 2106it [00:02, 1408.03it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1012.09it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 139it [00:00, 1374.63it/s]
+Reading arXiv_src_0103_001.jsonl: 306it [00:00, 1543.22it/s]
+Reading arXiv_src_0103_001.jsonl: 461it [00:00, 1094.92it/s]
+Reading arXiv_src_0103_001.jsonl: 583it [00:00, 724.03it/s] 
+Reading arXiv_src_0103_001.jsonl: 687it [00:00, 794.06it/s]
+Reading arXiv_src_0103_001.jsonl: 783it [00:00, 829.21it/s]
+Reading arXiv_src_0103_001.jsonl: 889it [00:00, 887.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 946.81it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 1000.20it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1040.63it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1060.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1493it [00:01, 1185.22it/s]
+Reading arXiv_src_0103_001.jsonl: 1629it [00:01, 1235.75it/s]
+Reading arXiv_src_0103_001.jsonl: 1774it [00:01, 1297.20it/s]
+Reading arXiv_src_0103_001.jsonl: 1924it [00:01, 1352.14it/s]
+Reading arXiv_src_0103_001.jsonl: 2068it [00:01, 1378.10it/s]
+Reading arXiv_src_0103_001.jsonl: 2207it [00:01, 1358.26it/s]
+Reading arXiv_src_0103_001.jsonl: 2364it [00:02, 1420.46it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1148.03it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 12.32it/s]
+Reading arXiv_src_0104_001.jsonl: 149it [00:00, 694.63it/s]
+Reading arXiv_src_0104_001.jsonl: 308it [00:00, 1051.03it/s]
+Reading arXiv_src_0104_001.jsonl: 428it [00:00, 964.86it/s] 
+Reading arXiv_src_0104_001.jsonl: 535it [00:00, 702.77it/s]
+Reading arXiv_src_0104_001.jsonl: 620it [00:01, 499.25it/s]
+Reading arXiv_src_0104_001.jsonl: 718it [00:01, 589.39it/s]
+Reading arXiv_src_0104_001.jsonl: 806it [00:01, 647.48it/s]
+Reading arXiv_src_0104_001.jsonl: 913it [00:01, 744.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1036it [00:01, 861.66it/s]
+Reading arXiv_src_0104_001.jsonl: 1150it [00:01, 931.57it/s]
+Reading arXiv_src_0104_001.jsonl: 1272it [00:01, 1007.47it/s]
+Reading arXiv_src_0104_001.jsonl: 1381it [00:01, 1008.16it/s]
+Reading arXiv_src_0104_001.jsonl: 1517it [00:01, 1106.70it/s]
+Reading arXiv_src_0104_001.jsonl: 1650it [00:01, 1169.62it/s]
+Reading arXiv_src_0104_001.jsonl: 1784it [00:02, 1218.33it/s]
+Reading arXiv_src_0104_001.jsonl: 1929it [00:02, 1283.73it/s]
+Reading arXiv_src_0104_001.jsonl: 2089it [00:02, 1375.58it/s]
+Reading arXiv_src_0104_001.jsonl: 2229it [00:02, 945.66it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 902.35it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?
+[debug] classifier labels: ['Motivation', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+1     1  0.770821  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+2     2  0.568833  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+3     3  0.484305  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+4     4  0.483949  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+5     5  0.477903  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+6     6  0.440538  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+7     7  0.437077  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+8     8  0.431365  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+9     9  0.416958  ...  2025-09-21T12:26:48.054413  Motivation, FutureWork
+
+[10 rows x 12 columns]
+[14:26:54] main | args: Namespace(max_check=20, debug=True)
+[14:26:54] read_last_jsonl | path= classified_outputs.jsonl
+[14:26:54] read_last_jsonl | total_lines= 1
+[14:26:54] main | query='What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?' | funcs=['Motivation', 'FutureWork']
+[14:26:57] main | core_terms= ['Tully-Fisher relation', 'dark matter halos', 'galaxy rotation curves', 'Tully-Fisher']
+[14:26:57] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:26:57] load_topk_jsonl | rows= 20
+[14:26:57] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102349 title_snip='Unitarity Bounds and the Cuspy Halo Problem' abs_len= 1207
+[14:26:57] main | running function= Motivation
+[14:26:57] select | function= Motivation | candidates_in= 20
+[14:26:57] select | core_terms= ['Tully-Fisher relation', 'dark matter halos', 'galaxy rotation curves', 'Tully-Fisher']
+[14:26:57] select | no cosine prune; kept=20/20
+[14:26:57] select | pool_size= 20 | ranks= [2, 14, 0, 1, 4, 11, 13, 15, 16, 18, 19, 3, 5, 6, 7, 8, 9, 10, 12, 17] | pids= ['astro-ph/0102025', 'astro-ph/0101058', 'astro-ph/0102349', 'astro-ph/0102389', 'hep-ph/0102006', 'hep-ph/0103288', 'astro-ph/0104069', 'astro-ph/0104435', 'hep-ph/0103095', 'hep-ph/0101312', 'hep-ph/0101015', 'hep-ph/0103349', 'astro-ph/0101528', 'astro-ph/0104217', 'astro-ph/0103470', 'astro-ph/0101210', 'astro-ph/0101413', 'astro-ph/0104454', 'hep-ph/0103320', 'astro-ph/0104037']
+[14:26:57] select | verify strict 1/20
+[14:26:57] verify | func= Motivation | rank= 2 | pid= astro-ph/0102025 | title_snip='Galactosynthesis Predictions at High Redshift' | abs_len= 612
+[14:27:00] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[14:27:00] select | verify strict 2/20
+[14:27:00] verify | func= Motivation | rank= 14 | pid= astro-ph/0101058 | title_snip='Lensing Constraints on the Cores of Massive Dark Matter Halos' | abs_len= 856
+[14:27:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:27:03] select | verify strict 3/20
+[14:27:03] verify | func= Motivation | rank= 0 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[14:27:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:06] select | verify strict 4/20
+[14:27:06] verify | func= Motivation | rank= 1 | pid= astro-ph/0102389 | title_snip='Recent developments in the search for baryonic dark matter' | abs_len= 750
+[14:27:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:08] select | verify strict 5/20
+[14:27:08] verify | func= Motivation | rank= 4 | pid= hep-ph/0102006 | title_snip='Low-energy constraints from unification of matter multiplets' | abs_len= 543
+[14:27:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:11] select | verify strict 6/20
+[14:27:11] verify | func= Motivation | rank= 11 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[14:27:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:13] select | verify strict 7/20
+[14:27:13] verify | func= Motivation | rank= 13 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[14:27:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[14:27:16] select | verify strict 8/20
+[14:27:16] verify | func= Motivation | rank= 15 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[14:27:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[14:27:20] select | verify strict 9/20
+[14:27:20] verify | func= Motivation | rank= 16 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[14:27:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:22] select | verify strict 10/20
+[14:27:22] verify | func= Motivation | rank= 18 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[14:27:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:25] select | verify strict 11/20
+[14:27:25] verify | func= Motivation | rank= 19 | pid= hep-ph/0101015 | title_snip='The Cosmological Constant and the Brane World Scenario' | abs_len= 598
+[14:27:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:27] select | verify strict 12/20
+[14:27:27] verify | func= Motivation | rank= 3 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[14:27:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:30] select | verify strict 13/20
+[14:27:30] verify | func= Motivation | rank= 5 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[14:27:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:32] select | verify strict 14/20
+[14:27:32] verify | func= Motivation | rank= 6 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[14:27:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:35] select | verify strict 15/20
+[14:27:35] verify | func= Motivation | rank= 7 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[14:27:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:37] select | verify strict 16/20
+[14:27:37] verify | func= Motivation | rank= 8 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[14:27:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:40] select | verify strict 17/20
+[14:27:40] verify | func= Motivation | rank= 9 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[14:27:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:43] select | verify strict 18/20
+[14:27:43] verify | func= Motivation | rank= 10 | pid= astro-ph/0104454 | title_snip='Constraints on Cosmological and Biasing models using AGN clustering' | abs_len= 1009
+[14:27:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:45] select | verify strict 19/20
+[14:27:45] verify | func= Motivation | rank= 12 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[14:27:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:48] select | verify strict 20/20
+[14:27:48] verify | func= Motivation | rank= 17 | pid= astro-ph/0104037 | title_snip='Faint End of the Galaxy Luminosity Function: A Chronometer for Structu…' | abs_len= 1418
+[14:27:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:50] select | strict pass found 0 winners → trying relaxed
+[14:27:50] select | verify relaxed 1/20
+[14:27:50] verify | func= Motivation | rank= 2 | pid= astro-ph/0102025 | title_snip='Galactosynthesis Predictions at High Redshift' | abs_len= 612
+[14:27:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:27:54] select | verify relaxed 2/20
+[14:27:54] verify | func= Motivation | rank= 14 | pid= astro-ph/0101058 | title_snip='Lensing Constraints on the Cores of Massive Dark Matter Halos' | abs_len= 856
+[14:27:57] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:27:57] select | verify relaxed 3/20
+[14:27:57] verify | func= Motivation | rank= 0 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[14:27:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:27:59] select | verify relaxed 4/20
+[14:27:59] verify | func= Motivation | rank= 1 | pid= astro-ph/0102389 | title_snip='Recent developments in the search for baryonic dark matter' | abs_len= 750
+[14:28:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:01] select | verify relaxed 5/20
+[14:28:01] verify | func= Motivation | rank= 4 | pid= hep-ph/0102006 | title_snip='Low-energy constraints from unification of matter multiplets' | abs_len= 543
+[14:28:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:04] select | verify relaxed 6/20
+[14:28:04] verify | func= Motivation | rank= 11 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[14:28:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:07] select | verify relaxed 7/20
+[14:28:07] verify | func= Motivation | rank= 13 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[14:28:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:28:10] select | verify relaxed 8/20
+[14:28:10] verify | func= Motivation | rank= 15 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[14:28:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:28:13] select | verify relaxed 9/20
+[14:28:13] verify | func= Motivation | rank= 16 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[14:28:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:15] select | verify relaxed 10/20
+[14:28:15] verify | func= Motivation | rank= 18 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[14:28:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:18] select | verify relaxed 11/20
+[14:28:18] verify | func= Motivation | rank= 19 | pid= hep-ph/0101015 | title_snip='The Cosmological Constant and the Brane World Scenario' | abs_len= 598
+[14:28:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:21] select | verify relaxed 12/20
+[14:28:21] verify | func= Motivation | rank= 3 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[14:28:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:23] select | verify relaxed 13/20
+[14:28:23] verify | func= Motivation | rank= 5 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[14:28:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:28:26] select | verify relaxed 14/20
+[14:28:26] verify | func= Motivation | rank= 6 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[14:28:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:28] select | verify relaxed 15/20
+[14:28:28] verify | func= Motivation | rank= 7 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[14:28:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:31] select | verify relaxed 16/20
+[14:28:31] verify | func= Motivation | rank= 8 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[14:28:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:34] select | verify relaxed 17/20
+[14:28:34] verify | func= Motivation | rank= 9 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[14:28:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:36] select | verify relaxed 18/20
+[14:28:36] verify | func= Motivation | rank= 10 | pid= astro-ph/0104454 | title_snip='Constraints on Cosmological and Biasing models using AGN clustering' | abs_len= 1009
+[14:28:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:39] select | verify relaxed 19/20
+[14:28:39] verify | func= Motivation | rank= 12 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[14:28:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:41] select | verify relaxed 20/20
+[14:28:41] verify | func= Motivation | rank= 17 | pid= astro-ph/0104037 | title_snip='Faint End of the Galaxy Luminosity Function: A Chronometer for Structu…' | abs_len= 1418
+[14:28:45] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?
+- WINNER: astro-ph/0102025 | Galactosynthesis Predictions at High Redshift
+- QUOTE : break parameter degeneracies among galactosynthesis models
+- WHY   : sufficient
+- ANSWER: The limitations of the current study on the Tully-Fisher relation and dark matter halos could motivate future research on galaxy-formation models and the distribution of halo spins. Further investigation into the variation of the Tully-Fisher relation with redshift could also be explored to constrain the redshift distribution of collapsing dark-matter halos and star-formation history (astro-ph/0102025).
+[14:28:50] main | running function= FutureWork
+[14:28:50] select | function= FutureWork | candidates_in= 20
+[14:28:50] select | core_terms= ['Tully-Fisher relation', 'dark matter halos', 'galaxy rotation curves', 'Tully-Fisher']
+[14:28:50] select | no cosine prune; kept=20/20
+[14:28:50] select | pool_size= 20 | ranks= [2, 14, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19] | pids= ['astro-ph/0102025', 'astro-ph/0101058', 'astro-ph/0102349', 'astro-ph/0102389', 'hep-ph/0103349', 'hep-ph/0102006', 'astro-ph/0101528', 'astro-ph/0104217', 'astro-ph/0103470', 'astro-ph/0101210', 'astro-ph/0101413', 'astro-ph/0104454', 'hep-ph/0103288', 'hep-ph/0103320', 'astro-ph/0104069', 'astro-ph/0104435', 'hep-ph/0103095', 'astro-ph/0104037', 'hep-ph/0101312', 'hep-ph/0101015']
+[14:28:50] select | verify strict 1/20
+[14:28:50] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102025 | title_snip='Galactosynthesis Predictions at High Redshift' | abs_len= 612
+[14:28:53] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[14:28:53] select | verify strict 2/20
+[14:28:53] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101058 | title_snip='Lensing Constraints on the Cores of Massive Dark Matter Halos' | abs_len= 856
+[14:28:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:28:56] select | verify strict 3/20
+[14:28:56] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[14:28:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:28:58] select | verify strict 4/20
+[14:28:58] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102389 | title_snip='Recent developments in the search for baryonic dark matter' | abs_len= 750
+[14:29:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:01] select | verify strict 5/20
+[14:29:01] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[14:29:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:03] select | verify strict 6/20
+[14:29:03] verify | func= FutureWork | rank= 4 | pid= hep-ph/0102006 | title_snip='Low-energy constraints from unification of matter multiplets' | abs_len= 543
+[14:29:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:06] select | verify strict 7/20
+[14:29:06] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[14:29:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:08] select | verify strict 8/20
+[14:29:08] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[14:29:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:11] select | verify strict 9/20
+[14:29:11] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[14:29:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:13] select | verify strict 10/20
+[14:29:13] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[14:29:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:16] select | verify strict 11/20
+[14:29:16] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[14:29:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:19] select | verify strict 12/20
+[14:29:19] verify | func= FutureWork | rank= 10 | pid= astro-ph/0104454 | title_snip='Constraints on Cosmological and Biasing models using AGN clustering' | abs_len= 1009
+[14:29:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:21] select | verify strict 13/20
+[14:29:21] verify | func= FutureWork | rank= 11 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[14:29:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:24] select | verify strict 14/20
+[14:29:24] verify | func= FutureWork | rank= 12 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[14:29:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:26] select | verify strict 15/20
+[14:29:26] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[14:29:29] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:29:29] select | verify strict 16/20
+[14:29:29] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[14:29:32] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:29:32] select | verify strict 17/20
+[14:29:32] verify | func= FutureWork | rank= 16 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[14:29:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:35] select | verify strict 18/20
+[14:29:35] verify | func= FutureWork | rank= 17 | pid= astro-ph/0104037 | title_snip='Faint End of the Galaxy Luminosity Function: A Chronometer for Structu…' | abs_len= 1418
+[14:29:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:29:38] select | verify strict 19/20
+[14:29:38] verify | func= FutureWork | rank= 18 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[14:29:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:40] select | verify strict 20/20
+[14:29:40] verify | func= FutureWork | rank= 19 | pid= hep-ph/0101015 | title_snip='The Cosmological Constant and the Brane World Scenario' | abs_len= 598
+[14:29:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:43] select | strict pass found 0 winners → trying relaxed
+[14:29:43] select | verify relaxed 1/20
+[14:29:43] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102025 | title_snip='Galactosynthesis Predictions at High Redshift' | abs_len= 612
+[14:29:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:29:46] select | verify relaxed 2/20
+[14:29:46] verify | func= FutureWork | rank= 14 | pid= astro-ph/0101058 | title_snip='Lensing Constraints on the Cores of Massive Dark Matter Halos' | abs_len= 856
+[14:29:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:29:49] select | verify relaxed 3/20
+[14:29:49] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[14:29:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:29:52] select | verify relaxed 4/20
+[14:29:52] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102389 | title_snip='Recent developments in the search for baryonic dark matter' | abs_len= 750
+[14:29:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:54] select | verify relaxed 5/20
+[14:29:54] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[14:29:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:57] select | verify relaxed 6/20
+[14:29:57] verify | func= FutureWork | rank= 4 | pid= hep-ph/0102006 | title_snip='Low-energy constraints from unification of matter multiplets' | abs_len= 543
+[14:29:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:29:59] select | verify relaxed 7/20
+[14:29:59] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[14:30:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:30:02] select | verify relaxed 8/20
+[14:30:02] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[14:30:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:05] select | verify relaxed 9/20
+[14:30:05] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[14:30:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:07] select | verify relaxed 10/20
+[14:30:07] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[14:30:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:10] select | verify relaxed 11/20
+[14:30:10] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[14:30:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:13] select | verify relaxed 12/20
+[14:30:13] verify | func= FutureWork | rank= 10 | pid= astro-ph/0104454 | title_snip='Constraints on Cosmological and Biasing models using AGN clustering' | abs_len= 1009
+[14:30:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:15] select | verify relaxed 13/20
+[14:30:15] verify | func= FutureWork | rank= 11 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[14:30:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:18] select | verify relaxed 14/20
+[14:30:18] verify | func= FutureWork | rank= 12 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[14:30:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:20] select | verify relaxed 15/20
+[14:30:20] verify | func= FutureWork | rank= 13 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[14:30:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:30:23] select | verify relaxed 16/20
+[14:30:23] verify | func= FutureWork | rank= 15 | pid= astro-ph/0104435 | title_snip='Cosmological Difficulties with Modified Newtonian Dynamics (or: La Fin…' | abs_len= 1849
+[14:30:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:30:26] select | verify relaxed 17/20
+[14:30:26] verify | func= FutureWork | rank= 16 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[14:30:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:29] select | verify relaxed 18/20
+[14:30:29] verify | func= FutureWork | rank= 17 | pid= astro-ph/0104037 | title_snip='Faint End of the Galaxy Luminosity Function: A Chronometer for Structu…' | abs_len= 1418
+[14:30:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:30:31] select | verify relaxed 19/20
+[14:30:31] verify | func= FutureWork | rank= 18 | pid= hep-ph/0101312 | title_snip='Remarks on photon-hadron interactions' | abs_len= 427
+[14:30:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:30:34] select | verify relaxed 20/20
+[14:30:34] verify | func= FutureWork | rank= 19 | pid= hep-ph/0101015 | title_snip='The Cosmological Constant and the Brane World Scenario' | abs_len= 598
+[14:30:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?
+- WINNER: astro-ph/0102025 | Galactosynthesis Predictions at High Redshift
+- QUOTE : to constrain the redshift distribution of collapsing dark-matter halos
+- WHY   : sufficient
+- ANSWER: Future research could investigate the variation of the Tully-Fisher relation with redshift to break parameter degeneracies among galactosynthesis models and constrain dark-matter halo properties. This could involve studying the redshift distribution of collapsing dark-matter halos and the star-formation history and baryon fraction in disk galaxies (astro-ph/0102025).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,335 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Extends"
+  ],
+  "justification": "The query explicitly asks how the new approach compares with prior methods and how it extends them."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 14.41 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.51it/s]
+Reading arXiv_src_0101_001.jsonl: 29it [00:00, 95.51it/s]
+Reading arXiv_src_0101_001.jsonl: 179it [00:00, 547.96it/s]
+Reading arXiv_src_0101_001.jsonl: 304it [00:00, 768.08it/s]
+Reading arXiv_src_0101_001.jsonl: 400it [00:00, 755.52it/s]
+Reading arXiv_src_0101_001.jsonl: 488it [00:00, 623.04it/s]
+Reading arXiv_src_0101_001.jsonl: 562it [00:01, 566.37it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:01, 679.89it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 762.39it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 852.19it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 926.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1105it [00:01, 968.88it/s]
+Reading arXiv_src_0101_001.jsonl: 1235it [00:01, 1062.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1346it [00:01, 1057.88it/s]
+Reading arXiv_src_0101_001.jsonl: 1482it [00:01, 1142.71it/s]
+Reading arXiv_src_0101_001.jsonl: 1615it [00:01, 1196.95it/s]
+Reading arXiv_src_0101_001.jsonl: 1744it [00:02, 1223.29it/s]
+Reading arXiv_src_0101_001.jsonl: 1868it [00:02, 1188.77it/s]
+Reading arXiv_src_0101_001.jsonl: 2047it [00:02, 1362.18it/s]
+Reading arXiv_src_0101_001.jsonl: 2205it [00:02, 1425.33it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 936.11it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1320.02it/s]
+Reading arXiv_src_0102_001.jsonl: 273it [00:00, 1358.66it/s]
+Reading arXiv_src_0102_001.jsonl: 409it [00:00, 846.49it/s] 
+Reading arXiv_src_0102_001.jsonl: 510it [00:00, 519.87it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 557.98it/s]
+Reading arXiv_src_0102_001.jsonl: 675it [00:01, 615.12it/s]
+Reading arXiv_src_0102_001.jsonl: 791it [00:01, 740.72it/s]
+Reading arXiv_src_0102_001.jsonl: 919it [00:01, 874.37it/s]
+Reading arXiv_src_0102_001.jsonl: 1029it [00:01, 932.98it/s]
+Reading arXiv_src_0102_001.jsonl: 1149it [00:01, 1005.13it/s]
+Reading arXiv_src_0102_001.jsonl: 1258it [00:01, 1026.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1404it [00:01, 1149.07it/s]
+Reading arXiv_src_0102_001.jsonl: 1538it [00:01, 1203.09it/s]
+Reading arXiv_src_0102_001.jsonl: 1666it [00:01, 1224.71it/s]
+Reading arXiv_src_0102_001.jsonl: 1815it [00:01, 1300.00it/s]
+Reading arXiv_src_0102_001.jsonl: 1967it [00:02, 1364.85it/s]
+Reading arXiv_src_0102_001.jsonl: 2119it [00:02, 1409.86it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1016.83it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 136it [00:00, 1351.18it/s]
+Reading arXiv_src_0103_001.jsonl: 301it [00:00, 1515.55it/s]
+Reading arXiv_src_0103_001.jsonl: 453it [00:00, 1120.90it/s]
+Reading arXiv_src_0103_001.jsonl: 575it [00:00, 736.76it/s] 
+Reading arXiv_src_0103_001.jsonl: 671it [00:00, 783.76it/s]
+Reading arXiv_src_0103_001.jsonl: 764it [00:00, 803.59it/s]
+Reading arXiv_src_0103_001.jsonl: 882it [00:00, 895.91it/s]
+Reading arXiv_src_0103_001.jsonl: 988it [00:01, 938.53it/s]
+Reading arXiv_src_0103_001.jsonl: 1090it [00:01, 959.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1212it [00:01, 1032.21it/s]
+Reading arXiv_src_0103_001.jsonl: 1320it [00:01, 1043.64it/s]
+Reading arXiv_src_0103_001.jsonl: 1462it [00:01, 1149.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1598it [00:01, 1209.79it/s]
+Reading arXiv_src_0103_001.jsonl: 1745it [00:01, 1285.11it/s]
+Reading arXiv_src_0103_001.jsonl: 1884it [00:01, 1312.57it/s]
+Reading arXiv_src_0103_001.jsonl: 2026it [00:01, 1341.62it/s]
+Reading arXiv_src_0103_001.jsonl: 2169it [00:01, 1364.59it/s]
+Reading arXiv_src_0103_001.jsonl: 2321it [00:02, 1409.89it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.40it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  4.17it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  6.31it/s]
+Reading arXiv_src_0104_001.jsonl: 145it [00:00, 499.31it/s]
+Reading arXiv_src_0104_001.jsonl: 302it [00:00, 853.30it/s]
+Reading arXiv_src_0104_001.jsonl: 406it [00:00, 911.28it/s]
+Reading arXiv_src_0104_001.jsonl: 509it [00:00, 674.79it/s]
+Reading arXiv_src_0104_001.jsonl: 592it [00:01, 459.53it/s]
+Reading arXiv_src_0104_001.jsonl: 699it [00:01, 570.48it/s]
+Reading arXiv_src_0104_001.jsonl: 790it [00:01, 639.61it/s]
+Reading arXiv_src_0104_001.jsonl: 892it [00:01, 722.43it/s]
+Reading arXiv_src_0104_001.jsonl: 1010it [00:01, 833.99it/s]
+Reading arXiv_src_0104_001.jsonl: 1122it [00:01, 903.17it/s]
+Reading arXiv_src_0104_001.jsonl: 1242it [00:01, 981.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1349it [00:01, 985.54it/s]
+Reading arXiv_src_0104_001.jsonl: 1479it [00:02, 1073.17it/s]
+Reading arXiv_src_0104_001.jsonl: 1618it [00:02, 1162.45it/s]
+Reading arXiv_src_0104_001.jsonl: 1744it [00:02, 1190.56it/s]
+Reading arXiv_src_0104_001.jsonl: 1890it [00:02, 1267.96it/s]
+Reading arXiv_src_0104_001.jsonl: 2030it [00:02, 1301.01it/s]
+Reading arXiv_src_0104_001.jsonl: 2162it [00:02, 936.19it/s] 
+Reading arXiv_src_0104_001.jsonl: 2308it [00:02, 1057.36it/s]
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 839.89it/s] 
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?
+[debug] classifier labels: ['Compares', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T18:36:42.451241    Compares, Extends
+1     1  0.711383  ...  2025-09-21T18:36:42.451241    Compares, Extends
+2     2  0.456119  ...  2025-09-21T18:36:42.451241    Compares, Extends
+3     3  0.455301  ...  2025-09-21T18:36:42.451241    Compares, Extends
+4     4  0.377568  ...  2025-09-21T18:36:42.451241    Compares, Extends
+5     5  0.316730  ...  2025-09-21T18:36:42.451241    Compares, Extends
+6     6  0.268806  ...  2025-09-21T18:36:42.451241    Compares, Extends
+7     7  0.243053  ...  2025-09-21T18:36:42.451241    Compares, Extends
+8     8  0.222775  ...  2025-09-21T18:36:42.451241    Compares, Extends
+9     9  0.192182  ...  2025-09-21T18:36:42.451241    Compares, Extends
+
+[10 rows x 12 columns]
+[20:38:27] main | args: Namespace(max_check=20, debug=True)
+[20:38:27] read_last_jsonl | path= classified_outputs.jsonl
+[20:38:27] read_last_jsonl | total_lines= 1
+[20:38:27] main | query='How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?' | funcs=['Compares', 'Extends']
+[20:38:40] main | core_terms= ['X-ray', 'extra-galactic X-ray background', 'surface brightness distribution', 'extra-galactic']
+[20:38:40] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[20:38:40] load_topk_jsonl | rows= 20
+[20:38:40] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101467 title_snip='The X-ray surface brightness distribution from diffuse gas' abs_len= 1509
+[20:38:40] main | running function= Compares
+[20:38:40] select | function= Compares | candidates_in= 20
+[20:38:40] select | core_terms= ['X-ray', 'extra-galactic X-ray background', 'surface brightness distribution', 'extra-galactic']
+[20:38:40] select | no cosine prune; kept=20/20
+[20:38:40] select | pool_size= 20 | ranks= [0, 2, 7, 17, 1, 8, 9, 3, 6, 10, 11, 13, 16, 18, 19, 4, 5, 12, 14, 15] | pids= ['astro-ph/0101467', 'astro-ph/0102297', 'astro-ph/0102165', 'astro-ph/0101203', 'astro-ph/0101466', 'astro-ph/0102206', 'astro-ph/0103439', 'astro-ph/0102214', 'astro-ph/0101313', 'astro-ph/0102053', 'astro-ph/0104304', 'astro-ph/0102213', 'astro-ph/0104286', 'hep-ph/0101078', 'hep-th/0103228', 'astro-ph/0101084', 'astro-ph/0104366', 'hep-ph/0104246', 'astro-ph/0102340', 'astro-ph/0101068']
+[20:38:40] select | verify strict 1/20
+[20:38:40] verify | func= Compares | rank= 0 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[20:38:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:38:43] select | verify strict 2/20
+[20:38:43] verify | func= Compares | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[20:38:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:38:46] select | verify strict 3/20
+[20:38:46] verify | func= Compares | rank= 7 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[20:38:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[20:38:49] select | verify strict 4/20
+[20:38:49] verify | func= Compares | rank= 17 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[20:38:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:38:52] select | verify strict 5/20
+[20:38:52] verify | func= Compares | rank= 1 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[20:38:55] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:38:55] select | verify strict 6/20
+[20:38:55] verify | func= Compares | rank= 8 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[20:38:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:38:58] select | verify strict 7/20
+[20:38:58] verify | func= Compares | rank= 9 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[20:39:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:39:01] select | verify strict 8/20
+[20:39:01] verify | func= Compares | rank= 3 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[20:39:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:04] select | verify strict 9/20
+[20:39:04] verify | func= Compares | rank= 6 | pid= astro-ph/0101313 | title_snip='Measuring the brightness temperature distribution of extragalactic rad…' | abs_len= 1194
+[20:39:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:06] select | verify strict 10/20
+[20:39:06] verify | func= Compares | rank= 10 | pid= astro-ph/0102053 | title_snip='Comparing Optical and Near Infrared Luminosity Functions' | abs_len= 423
+[20:39:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:09] select | verify strict 11/20
+[20:39:09] verify | func= Compares | rank= 11 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[20:39:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:11] select | verify strict 12/20
+[20:39:11] verify | func= Compares | rank= 13 | pid= astro-ph/0102213 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1760
+[20:39:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:14] select | verify strict 13/20
+[20:39:14] verify | func= Compares | rank= 16 | pid= astro-ph/0104286 | title_snip='The Nearby Field Galaxy Survey: a spectrophotometric and photometric
+ …' | abs_len= 1022
+[20:39:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:16] select | verify strict 14/20
+[20:39:16] verify | func= Compares | rank= 18 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[20:39:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:19] select | verify strict 15/20
+[20:39:19] verify | func= Compares | rank= 19 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[20:39:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:22] select | verify strict 16/20
+[20:39:22] verify | func= Compares | rank= 4 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[20:39:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:39:25] select | verify strict 17/20
+[20:39:25] verify | func= Compares | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[20:39:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:27] select | verify strict 18/20
+[20:39:27] verify | func= Compares | rank= 12 | pid= hep-ph/0104246 | title_snip='Extrapolating Structure Functions to Very Small x' | abs_len= 542
+[20:39:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:30] select | verify strict 19/20
+[20:39:30] verify | func= Compares | rank= 14 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[20:39:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:32] select | verify strict 20/20
+[20:39:32] verify | func= Compares | rank= 15 | pid= astro-ph/0101068 | title_snip='Models for Galactic cosmic-ray propagation' | abs_len= 673
+[20:39:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:37] arbiter | rejected off-topic winner: astro-ph/0102165
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+[20:39:37] main | running function= Extends
+[20:39:37] select | function= Extends | candidates_in= 20
+[20:39:37] select | core_terms= ['X-ray', 'extra-galactic X-ray background', 'surface brightness distribution', 'extra-galactic']
+[20:39:37] select | no cosine prune; kept=20/20
+[20:39:37] select | pool_size= 20 | ranks= [0, 2, 1, 7, 8, 9, 17, 5, 6, 11, 12, 14, 16, 3, 4, 10, 13, 15, 18, 19] | pids= ['astro-ph/0101467', 'astro-ph/0102297', 'astro-ph/0101466', 'astro-ph/0102165', 'astro-ph/0102206', 'astro-ph/0103439', 'astro-ph/0101203', 'astro-ph/0104366', 'astro-ph/0101313', 'astro-ph/0104304', 'hep-ph/0104246', 'astro-ph/0102340', 'astro-ph/0104286', 'astro-ph/0102214', 'astro-ph/0101084', 'astro-ph/0102053', 'astro-ph/0102213', 'astro-ph/0101068', 'hep-ph/0101078', 'hep-th/0103228']
+[20:39:37] select | verify strict 1/20
+[20:39:37] verify | func= Extends | rank= 0 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[20:39:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[20:39:40] select | verify strict 2/20
+[20:39:40] verify | func= Extends | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[20:39:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:39:43] select | verify strict 3/20
+[20:39:43] verify | func= Extends | rank= 1 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[20:39:46] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[20:39:46] select | verify strict 4/20
+[20:39:46] verify | func= Extends | rank= 7 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[20:39:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:39:49] select | verify strict 5/20
+[20:39:49] verify | func= Extends | rank= 8 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[20:39:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:39:52] select | verify strict 6/20
+[20:39:52] verify | func= Extends | rank= 9 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[20:39:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[20:39:54] select | verify strict 7/20
+[20:39:54] verify | func= Extends | rank= 17 | pid= astro-ph/0101203 | title_snip='Accretion and emission processes in AGN' | abs_len= 1307
+[20:39:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:39:57] select | verify strict 8/20
+[20:39:57] verify | func= Extends | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[20:40:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:00] select | verify strict 9/20
+[20:40:00] verify | func= Extends | rank= 6 | pid= astro-ph/0101313 | title_snip='Measuring the brightness temperature distribution of extragalactic rad…' | abs_len= 1194
+[20:40:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:02] select | verify strict 10/20
+[20:40:02] verify | func= Extends | rank= 11 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[20:40:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:05] select | verify strict 11/20
+[20:40:05] verify | func= Extends | rank= 12 | pid= hep-ph/0104246 | title_snip='Extrapolating Structure Functions to Very Small x' | abs_len= 542
+[20:40:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:07] select | verify strict 12/20
+[20:40:07] verify | func= Extends | rank= 14 | pid= astro-ph/0102340 | title_snip='Computational Methods for Gravitational Lensing' | abs_len= 770
+[20:40:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:10] select | verify strict 13/20
+[20:40:10] verify | func= Extends | rank= 16 | pid= astro-ph/0104286 | title_snip='The Nearby Field Galaxy Survey: a spectrophotometric and photometric
+ …' | abs_len= 1022
+[20:40:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:12] select | verify strict 14/20
+[20:40:12] verify | func= Extends | rank= 3 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[20:40:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:15] select | verify strict 15/20
+[20:40:15] verify | func= Extends | rank= 4 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[20:40:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[20:40:18] select | verify strict 16/20
+[20:40:18] verify | func= Extends | rank= 10 | pid= astro-ph/0102053 | title_snip='Comparing Optical and Near Infrared Luminosity Functions' | abs_len= 423
+[20:40:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:20] select | verify strict 17/20
+[20:40:20] verify | func= Extends | rank= 13 | pid= astro-ph/0102213 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1760
+[20:40:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:23] select | verify strict 18/20
+[20:40:23] verify | func= Extends | rank= 15 | pid= astro-ph/0101068 | title_snip='Models for Galactic cosmic-ray propagation' | abs_len= 673
+[20:40:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:25] select | verify strict 19/20
+[20:40:25] verify | func= Extends | rank= 18 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[20:40:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[20:40:28] select | verify strict 20/20
+[20:40:28] verify | func= Extends | rank= 19 | pid= hep-th/0103228 | title_snip='New Approach to Quantum Field Theory for Arbitrary Observers in
+  Elec…' | abs_len= 1692
+[20:40:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?
+- WINNER: astro-ph/0101467 | The X-ray surface brightness distribution from diffuse gas
+- QUOTE : predict the X-ray surface brightness distribution
+- WHY   : sufficient
+- ANSWER: The current work extends existing methods for predicting the extra-galactic X-ray background by using simulations to compute the X-ray surface brightness distribution from diffuse gas, providing a more detailed and restrictive lower bound on the predicted level. This approach improves upon prior methods by considering the effects of resolution, simulation volume, and pixel size, and exploring the impact of non-gravitational heating on the predicted background (astro-ph/0101467).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

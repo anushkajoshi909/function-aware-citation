@@ -1,0 +1,2 @@
+Previous studies of star formation rates in Lyman break galaxies were limited by uncertainties in calibrations and potential differential extinction, leading to potentially inaccurate estimates. The current work aims to improve upon these limitations by directly measuring star formation rates from rest-frame optical spectra, finding that they are consistent with rates implied by the stellar continuum at 1500 A (astro-ph/0102456). [Motivation]
+The abstract does not provide information relevant to Compares. [Compares]

@@ -1,0 +1,337 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Extends"
+  ],
+  "justification": "The query asks how the new methodology compares with prior work and how it builds upon (extends) that earlier cataloging effort."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.77 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  5.67it/s]
+Reading arXiv_src_0101_001.jsonl: 32it [00:00, 141.60it/s]
+Reading arXiv_src_0101_001.jsonl: 182it [00:00, 669.12it/s]
+Reading arXiv_src_0101_001.jsonl: 304it [00:00, 862.67it/s]
+Reading arXiv_src_0101_001.jsonl: 399it [00:00, 823.07it/s]
+Reading arXiv_src_0101_001.jsonl: 488it [00:00, 653.23it/s]
+Reading arXiv_src_0101_001.jsonl: 562it [00:00, 586.98it/s]
+Reading arXiv_src_0101_001.jsonl: 668it [00:01, 700.22it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 780.01it/s]
+Reading arXiv_src_0101_001.jsonl: 881it [00:01, 860.73it/s]
+Reading arXiv_src_0101_001.jsonl: 987it [00:01, 914.54it/s]
+Reading arXiv_src_0101_001.jsonl: 1095it [00:01, 960.33it/s]
+Reading arXiv_src_0101_001.jsonl: 1223it [00:01, 1050.35it/s]
+Reading arXiv_src_0101_001.jsonl: 1332it [00:01, 1042.72it/s]
+Reading arXiv_src_0101_001.jsonl: 1473it [00:01, 1147.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1602it [00:01, 1187.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1732it [00:01, 1220.30it/s]
+Reading arXiv_src_0101_001.jsonl: 1856it [00:02, 1184.93it/s]
+Reading arXiv_src_0101_001.jsonl: 2028it [00:02, 1338.89it/s]
+Reading arXiv_src_0101_001.jsonl: 2190it [00:02, 1417.21it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 978.61it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1317.96it/s]
+Reading arXiv_src_0102_001.jsonl: 272it [00:00, 1349.73it/s]
+Reading arXiv_src_0102_001.jsonl: 407it [00:00, 848.22it/s] 
+Reading arXiv_src_0102_001.jsonl: 508it [00:00, 509.18it/s]
+Reading arXiv_src_0102_001.jsonl: 590it [00:00, 568.29it/s]
+Reading arXiv_src_0102_001.jsonl: 666it [00:01, 593.78it/s]
+Reading arXiv_src_0102_001.jsonl: 774it [00:01, 704.20it/s]
+Reading arXiv_src_0102_001.jsonl: 901it [00:01, 841.20it/s]
+Reading arXiv_src_0102_001.jsonl: 1013it [00:01, 913.20it/s]
+Reading arXiv_src_0102_001.jsonl: 1128it [00:01, 974.32it/s]
+Reading arXiv_src_0102_001.jsonl: 1239it [00:01, 1008.16it/s]
+Reading arXiv_src_0102_001.jsonl: 1382it [00:01, 1126.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1519it [00:01, 1190.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1642it [00:01, 1188.08it/s]
+Reading arXiv_src_0102_001.jsonl: 1792it [00:01, 1277.85it/s]
+Reading arXiv_src_0102_001.jsonl: 1944it [00:02, 1347.26it/s]
+Reading arXiv_src_0102_001.jsonl: 2088it [00:02, 1370.86it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1003.58it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 134it [00:00, 1319.27it/s]
+Reading arXiv_src_0103_001.jsonl: 297it [00:00, 1499.55it/s]
+Reading arXiv_src_0103_001.jsonl: 448it [00:00, 1154.13it/s]
+Reading arXiv_src_0103_001.jsonl: 571it [00:00, 749.39it/s] 
+Reading arXiv_src_0103_001.jsonl: 664it [00:00, 770.40it/s]
+Reading arXiv_src_0103_001.jsonl: 753it [00:00, 798.97it/s]
+Reading arXiv_src_0103_001.jsonl: 863it [00:00, 875.26it/s]
+Reading arXiv_src_0103_001.jsonl: 967it [00:01, 918.99it/s]
+Reading arXiv_src_0103_001.jsonl: 1074it [00:01, 960.23it/s]
+Reading arXiv_src_0103_001.jsonl: 1199it [00:01, 1041.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1308it [00:01, 1037.39it/s]
+Reading arXiv_src_0103_001.jsonl: 1444it [00:01, 1129.97it/s]
+Reading arXiv_src_0103_001.jsonl: 1586it [00:01, 1197.57it/s]
+Reading arXiv_src_0103_001.jsonl: 1735it [00:01, 1282.58it/s]
+Reading arXiv_src_0103_001.jsonl: 1876it [00:01, 1319.24it/s]
+Reading arXiv_src_0103_001.jsonl: 2013it [00:01, 1331.39it/s]
+Reading arXiv_src_0103_001.jsonl: 2159it [00:01, 1366.59it/s]
+Reading arXiv_src_0103_001.jsonl: 2307it [00:02, 1398.97it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1138.07it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 11.38it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 660.51it/s]
+Reading arXiv_src_0104_001.jsonl: 305it [00:00, 1013.85it/s]
+Reading arXiv_src_0104_001.jsonl: 424it [00:00, 537.01it/s] 
+Reading arXiv_src_0104_001.jsonl: 508it [00:00, 499.07it/s]
+Reading arXiv_src_0104_001.jsonl: 577it [00:01, 386.48it/s]
+Reading arXiv_src_0104_001.jsonl: 670it [00:01, 476.87it/s]
+Reading arXiv_src_0104_001.jsonl: 763it [00:01, 562.99it/s]
+Reading arXiv_src_0104_001.jsonl: 858it [00:01, 646.16it/s]
+Reading arXiv_src_0104_001.jsonl: 971it [00:01, 759.87it/s]
+Reading arXiv_src_0104_001.jsonl: 1093it [00:01, 874.78it/s]
+Reading arXiv_src_0104_001.jsonl: 1194it [00:01, 910.13it/s]
+Reading arXiv_src_0104_001.jsonl: 1308it [00:01, 959.69it/s]
+Reading arXiv_src_0104_001.jsonl: 1436it [00:02, 1045.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1572it [00:02, 1133.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1695it [00:02, 1151.81it/s]
+Reading arXiv_src_0104_001.jsonl: 1836it [00:02, 1225.93it/s]
+Reading arXiv_src_0104_001.jsonl: 1961it [00:02, 1186.11it/s]
+Reading arXiv_src_0104_001.jsonl: 2115it [00:02, 1283.70it/s]
+Reading arXiv_src_0104_001.jsonl: 2246it [00:02, 899.94it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 804.73it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current study's methodology compare to and extend previous work on compact high-velocity clouds, such as the cataloging by Braun & Burton?
+[debug] classifier labels: ['Compares', 'Extends']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T12:20:43.158357    Compares, Extends
+1     1  0.877668  ...  2025-09-21T12:20:43.158357    Compares, Extends
+2     2  0.727228  ...  2025-09-21T12:20:43.158357    Compares, Extends
+3     3  0.719446  ...  2025-09-21T12:20:43.158357    Compares, Extends
+4     4  0.663737  ...  2025-09-21T12:20:43.158357    Compares, Extends
+5     5  0.499633  ...  2025-09-21T12:20:43.158357    Compares, Extends
+6     6  0.493791  ...  2025-09-21T12:20:43.158357    Compares, Extends
+7     7  0.356332  ...  2025-09-21T12:20:43.158357    Compares, Extends
+8     8  0.355882  ...  2025-09-21T12:20:43.158357    Compares, Extends
+9     9  0.336553  ...  2025-09-21T12:20:43.158357    Compares, Extends
+
+[10 rows x 12 columns]
+[14:20:51] main | args: Namespace(max_check=20, debug=True)
+[14:20:51] read_last_jsonl | path= classified_outputs.jsonl
+[14:20:51] read_last_jsonl | total_lines= 1
+[14:20:51] main | query='How does the current study's methodology compare to and extend previous work on compact high-velocity clouds, such as the cataloging by Braun & Burton?' | funcs=['Compares', 'Extends']
+[14:20:54] main | core_terms= ['compact high-velocity clouds', 'cataloging', 'high-velocity']
+[14:20:54] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:20:54] load_topk_jsonl | rows= 20
+[14:20:54] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101543 title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' abs_len= 1632
+[14:20:54] main | running function= Compares
+[14:20:54] select | function= Compares | candidates_in= 20
+[14:20:54] select | core_terms= ['compact high-velocity clouds', 'cataloging', 'high-velocity']
+[14:20:54] select | no cosine prune; kept=20/20
+[14:20:54] select | pool_size= 20 | ranks= [3, 2, 12, 13, 14, 16, 17, 0, 1, 4, 5, 6, 7, 8, 9, 10, 11, 15, 18, 19] | pids= ['astro-ph/0102085', 'astro-ph/0103119', 'astro-ph/0103113', 'astro-ph/0103423', 'astro-ph/0102148', 'astro-ph/0102273', 'astro-ph/0102011', 'astro-ph/0101543', 'astro-ph/0102276', 'astro-ph/0101112', 'astro-ph/0101252', 'astro-ph/0102086', 'astro-ph/0104366', 'hep-ph/0101163', 'gr-qc/0103088', 'gr-qc/0104063', 'astro-ph/0101090', 'hep-th/0102149', 'astro-ph/0104459', 'astro-ph/0104411']
+[14:20:54] select | verify strict 1/20
+[14:20:54] verify | func= Compares | rank= 3 | pid= astro-ph/0102085 | title_snip='Arecibo imaging of compact high-velocity clouds' | abs_len= 1517
+[14:20:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:20:58] select | verify strict 2/20
+[14:20:58] verify | func= Compares | rank= 2 | pid= astro-ph/0103119 | title_snip='Deep H I observations of the compact high-velocity cloud HVC125+41-207' | abs_len= 1308
+[14:21:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[14:21:02] select | verify strict 3/20
+[14:21:02] verify | func= Compares | rank= 12 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[14:21:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:04] select | verify strict 4/20
+[14:21:04] verify | func= Compares | rank= 13 | pid= astro-ph/0103423 | title_snip='Precipitating Condensation Clouds in Substellar Atmospheres' | abs_len= 843
+[14:21:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:07] select | verify strict 5/20
+[14:21:07] verify | func= Compares | rank= 14 | pid= astro-ph/0102148 | title_snip='HI spectra and column densities toward HVC and IVC probes' | abs_len= 1504
+[14:21:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[14:21:10] select | verify strict 6/20
+[14:21:10] verify | func= Compares | rank= 16 | pid= astro-ph/0102273 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1510
+[14:21:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:12] select | verify strict 7/20
+[14:21:12] verify | func= Compares | rank= 17 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[14:21:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:15] select | verify strict 8/20
+[14:21:15] verify | func= Compares | rank= 0 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[14:21:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:17] select | verify strict 9/20
+[14:21:17] verify | func= Compares | rank= 1 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[14:21:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:20] select | verify strict 10/20
+[14:21:20] verify | func= Compares | rank= 4 | pid= astro-ph/0101112 | title_snip='MAPCUMBA : a fast iterative multi-grid map-making algorithm for CMB
+  …' | abs_len= 941
+[14:21:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:22] select | verify strict 11/20
+[14:21:22] verify | func= Compares | rank= 5 | pid= astro-ph/0101252 | title_snip='A Map-Making Algorithm for the Planck Surveyor' | abs_len= 809
+[14:21:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:25] select | verify strict 12/20
+[14:21:25] verify | func= Compares | rank= 6 | pid= astro-ph/0102086 | title_snip='Simulating galaxy surveys with FIRST (PACS & SPIRE)' | abs_len= 1343
+[14:21:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:27] select | verify strict 13/20
+[14:21:27] verify | func= Compares | rank= 7 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[14:21:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:30] select | verify strict 14/20
+[14:21:30] verify | func= Compares | rank= 8 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[14:21:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:33] select | verify strict 15/20
+[14:21:33] verify | func= Compares | rank= 9 | pid= gr-qc/0103088 | title_snip='Measuring the relativistic perigee advance with Satellite Laser Rangin…' | abs_len= 1271
+[14:21:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:35] select | verify strict 16/20
+[14:21:35] verify | func= Compares | rank= 10 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[14:21:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:38] select | verify strict 17/20
+[14:21:38] verify | func= Compares | rank= 11 | pid= astro-ph/0101090 | title_snip='Microstructure of the Local Interstellar Cloud and the Identification …' | abs_len= 1552
+[14:21:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[14:21:41] select | verify strict 18/20
+[14:21:41] verify | func= Compares | rank= 15 | pid= hep-th/0102149 | title_snip='On the topology and area of higher dimensional black holes' | abs_len= 830
+[14:21:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:43] select | verify strict 19/20
+[14:21:43] verify | func= Compares | rank= 18 | pid= astro-ph/0104459 | title_snip='A High Spatial Resolution Analysis of the MAXIMA-1 Cosmic Microwave
+  …' | abs_len= 918
+[14:21:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:21:46] select | verify strict 20/20
+[14:21:46] verify | func= Compares | rank= 19 | pid= astro-ph/0104411 | title_snip='Statistical evaluation of the observational information on $\Omega_m$
+…' | abs_len= 852
+[14:21:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current study's methodology compare to and extend previous work on compact high-velocity clouds, such as the cataloging by Braun & Burton?
+- WINNER: astro-ph/0102085 | Arecibo imaging of compact high-velocity clouds
+- QUOTE : Ten isolated compact high-velocity clouds (CHVCs) of the type cataloged by Braun & Burton
+- WHY   : sufficient
+- ANSWER: The current study's methodology extends previous work by Braun & Burton through the use of high-resolution filled-aperture and synthesis data from the Arecibo telescope, allowing for more accurate determination of the intrinsic properties of compact high-velocity clouds. This approach is compared to previous cataloging efforts, providing a more detailed understanding of the morphology and properties of these clouds (astro-ph/0102085).
+[14:21:53] main | running function= Extends
+[14:21:53] select | function= Extends | candidates_in= 20
+[14:21:53] select | core_terms= ['compact high-velocity clouds', 'cataloging', 'high-velocity']
+[14:21:53] select | no cosine prune; kept=20/20
+[14:21:53] select | pool_size= 20 | ranks= [3, 2, 0, 4, 7, 9, 10, 12, 18, 1, 5, 6, 8, 11, 13, 14, 15, 16, 17, 19] | pids= ['astro-ph/0102085', 'astro-ph/0103119', 'astro-ph/0101543', 'astro-ph/0101112', 'astro-ph/0104366', 'gr-qc/0103088', 'gr-qc/0104063', 'astro-ph/0103113', 'astro-ph/0104459', 'astro-ph/0102276', 'astro-ph/0101252', 'astro-ph/0102086', 'hep-ph/0101163', 'astro-ph/0101090', 'astro-ph/0103423', 'astro-ph/0102148', 'hep-th/0102149', 'astro-ph/0102273', 'astro-ph/0102011', 'astro-ph/0104411']
+[14:21:53] select | verify strict 1/20
+[14:21:53] verify | func= Extends | rank= 3 | pid= astro-ph/0102085 | title_snip='Arecibo imaging of compact high-velocity clouds' | abs_len= 1517
+[14:21:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:21:57] select | verify strict 2/20
+[14:21:57] verify | func= Extends | rank= 2 | pid= astro-ph/0103119 | title_snip='Deep H I observations of the compact high-velocity cloud HVC125+41-207' | abs_len= 1308
+[14:22:00] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[14:22:00] select | verify strict 3/20
+[14:22:00] verify | func= Extends | rank= 0 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[14:22:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:03] select | verify strict 4/20
+[14:22:03] verify | func= Extends | rank= 4 | pid= astro-ph/0101112 | title_snip='MAPCUMBA : a fast iterative multi-grid map-making algorithm for CMB
+  …' | abs_len= 941
+[14:22:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:05] select | verify strict 5/20
+[14:22:05] verify | func= Extends | rank= 7 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[14:22:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:08] select | verify strict 6/20
+[14:22:08] verify | func= Extends | rank= 9 | pid= gr-qc/0103088 | title_snip='Measuring the relativistic perigee advance with Satellite Laser Rangin…' | abs_len= 1271
+[14:22:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:10] select | verify strict 7/20
+[14:22:10] verify | func= Extends | rank= 10 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[14:22:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:13] select | verify strict 8/20
+[14:22:13] verify | func= Extends | rank= 12 | pid= astro-ph/0103113 | title_snip='The Evolution of the Luminosity Function in Deep Fields: A Comparison
+…' | abs_len= 1083
+[14:22:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:16] select | verify strict 9/20
+[14:22:16] verify | func= Extends | rank= 18 | pid= astro-ph/0104459 | title_snip='A High Spatial Resolution Analysis of the MAXIMA-1 Cosmic Microwave
+  …' | abs_len= 918
+[14:22:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:18] select | verify strict 10/20
+[14:22:18] verify | func= Extends | rank= 1 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[14:22:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:21] select | verify strict 11/20
+[14:22:21] verify | func= Extends | rank= 5 | pid= astro-ph/0101252 | title_snip='A Map-Making Algorithm for the Planck Surveyor' | abs_len= 809
+[14:22:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:23] select | verify strict 12/20
+[14:22:23] verify | func= Extends | rank= 6 | pid= astro-ph/0102086 | title_snip='Simulating galaxy surveys with FIRST (PACS & SPIRE)' | abs_len= 1343
+[14:22:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:26] select | verify strict 13/20
+[14:22:26] verify | func= Extends | rank= 8 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[14:22:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:28] select | verify strict 14/20
+[14:22:28] verify | func= Extends | rank= 11 | pid= astro-ph/0101090 | title_snip='Microstructure of the Local Interstellar Cloud and the Identification …' | abs_len= 1552
+[14:22:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= quote_not_in_abstract cue_hint= False
+[14:22:31] select | verify strict 15/20
+[14:22:31] verify | func= Extends | rank= 13 | pid= astro-ph/0103423 | title_snip='Precipitating Condensation Clouds in Substellar Atmospheres' | abs_len= 843
+[14:22:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:34] select | verify strict 16/20
+[14:22:34] verify | func= Extends | rank= 14 | pid= astro-ph/0102148 | title_snip='HI spectra and column densities toward HVC and IVC probes' | abs_len= 1504
+[14:22:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:22:37] select | verify strict 17/20
+[14:22:37] verify | func= Extends | rank= 15 | pid= hep-th/0102149 | title_snip='On the topology and area of higher dimensional black holes' | abs_len= 830
+[14:22:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:40] select | verify strict 18/20
+[14:22:40] verify | func= Extends | rank= 16 | pid= astro-ph/0102273 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1510
+[14:22:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:42] select | verify strict 19/20
+[14:22:42] verify | func= Extends | rank= 17 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[14:22:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:22:45] select | verify strict 20/20
+[14:22:45] verify | func= Extends | rank= 19 | pid= astro-ph/0104411 | title_snip='Statistical evaluation of the observational information on $\Omega_m$
+…' | abs_len= 852
+[14:22:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current study's methodology compare to and extend previous work on compact high-velocity clouds, such as the cataloging by Braun & Burton?
+- WINNER: astro-ph/0102085 | Arecibo imaging of compact high-velocity clouds
+- QUOTE : Ten isolated compact high-velocity clouds (CHVCs) of the type cataloged by Braun & Burton
+- WHY   : sufficient
+- ANSWER: The current study extends previous cataloging work by Braun & Burton by providing high-resolution imaging of compact high-velocity clouds using the Arecibo telescope, allowing for a more detailed understanding of their morphology and properties. This approach improves upon earlier work by enabling the detection and resolution of halos surrounding the clouds, and by providing estimates of distance and other intrinsic properties (astro-ph/0102085).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

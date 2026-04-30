@@ -1,0 +1,475 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the study's methods can be applied (Uses) and explicitly ties this to guiding future research (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.72 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.24it/s]
+Reading arXiv_src_0101_001.jsonl: 30it [00:00, 111.83it/s]
+Reading arXiv_src_0101_001.jsonl: 180it [00:00, 596.97it/s]
+Reading arXiv_src_0101_001.jsonl: 306it [00:00, 816.45it/s]
+Reading arXiv_src_0101_001.jsonl: 403it [00:00, 791.46it/s]
+Reading arXiv_src_0101_001.jsonl: 492it [00:00, 638.37it/s]
+Reading arXiv_src_0101_001.jsonl: 567it [00:01, 585.72it/s]
+Reading arXiv_src_0101_001.jsonl: 673it [00:01, 695.29it/s]
+Reading arXiv_src_0101_001.jsonl: 776it [00:01, 778.50it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 854.58it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 932.25it/s]
+Reading arXiv_src_0101_001.jsonl: 1107it [00:01, 974.94it/s]
+Reading arXiv_src_0101_001.jsonl: 1240it [00:01, 1075.17it/s]
+Reading arXiv_src_0101_001.jsonl: 1351it [00:01, 1066.45it/s]
+Reading arXiv_src_0101_001.jsonl: 1485it [00:01, 1144.72it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:01, 1202.42it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1222.02it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1202.68it/s]
+Reading arXiv_src_0101_001.jsonl: 2059it [00:02, 1390.25it/s]
+Reading arXiv_src_0101_001.jsonl: 2215it [00:02, 1435.16it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 962.82it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1335.02it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1357.12it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 854.41it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 528.98it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 563.38it/s]
+Reading arXiv_src_0102_001.jsonl: 677it [00:00, 624.34it/s]
+Reading arXiv_src_0102_001.jsonl: 793it [00:01, 748.64it/s]
+Reading arXiv_src_0102_001.jsonl: 924it [00:01, 888.29it/s]
+Reading arXiv_src_0102_001.jsonl: 1035it [00:01, 946.20it/s]
+Reading arXiv_src_0102_001.jsonl: 1153it [00:01, 1009.46it/s]
+Reading arXiv_src_0102_001.jsonl: 1270it [00:01, 1053.53it/s]
+Reading arXiv_src_0102_001.jsonl: 1415it [00:01, 1165.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1548it [00:01, 1212.57it/s]
+Reading arXiv_src_0102_001.jsonl: 1679it [00:01, 1237.84it/s]
+Reading arXiv_src_0102_001.jsonl: 1830it [00:01, 1317.06it/s]
+Reading arXiv_src_0102_001.jsonl: 1981it [00:01, 1372.82it/s]
+Reading arXiv_src_0102_001.jsonl: 2131it [00:02, 1408.85it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1027.02it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1375.12it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1533.36it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1112.56it/s]
+Reading arXiv_src_0103_001.jsonl: 579it [00:00, 722.91it/s] 
+Reading arXiv_src_0103_001.jsonl: 681it [00:00, 789.34it/s]
+Reading arXiv_src_0103_001.jsonl: 776it [00:00, 818.47it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 885.92it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 949.66it/s]
+Reading arXiv_src_0103_001.jsonl: 1106it [00:01, 985.24it/s]
+Reading arXiv_src_0103_001.jsonl: 1226it [00:01, 1045.49it/s]
+Reading arXiv_src_0103_001.jsonl: 1336it [00:01, 1050.34it/s]
+Reading arXiv_src_0103_001.jsonl: 1484it [00:01, 1173.98it/s]
+Reading arXiv_src_0103_001.jsonl: 1619it [00:01, 1223.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1765it [00:01, 1290.83it/s]
+Reading arXiv_src_0103_001.jsonl: 1912it [00:01, 1343.73it/s]
+Reading arXiv_src_0103_001.jsonl: 2050it [00:01, 1351.91it/s]
+Reading arXiv_src_0103_001.jsonl: 2189it [00:01, 1358.20it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1409.23it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1142.44it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  9.09it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00,  9.51it/s]
+Reading arXiv_src_0104_001.jsonl: 147it [00:00, 648.90it/s]
+Reading arXiv_src_0104_001.jsonl: 307it [00:00, 1016.72it/s]
+Reading arXiv_src_0104_001.jsonl: 411it [00:00, 1016.16it/s]
+Reading arXiv_src_0104_001.jsonl: 514it [00:00, 700.02it/s] 
+Reading arXiv_src_0104_001.jsonl: 597it [00:01, 472.46it/s]
+Reading arXiv_src_0104_001.jsonl: 702it [00:01, 579.44it/s]
+Reading arXiv_src_0104_001.jsonl: 792it [00:01, 645.53it/s]
+Reading arXiv_src_0104_001.jsonl: 894it [00:01, 729.28it/s]
+Reading arXiv_src_0104_001.jsonl: 1015it [00:01, 847.58it/s]
+Reading arXiv_src_0104_001.jsonl: 1125it [00:01, 912.21it/s]
+Reading arXiv_src_0104_001.jsonl: 1247it [00:01, 993.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1355it [00:01, 993.85it/s]
+Reading arXiv_src_0104_001.jsonl: 1484it [00:01, 1072.89it/s]
+Reading arXiv_src_0104_001.jsonl: 1629it [00:01, 1179.18it/s]
+Reading arXiv_src_0104_001.jsonl: 1757it [00:02, 1206.64it/s]
+Reading arXiv_src_0104_001.jsonl: 1906it [00:02, 1286.79it/s]
+Reading arXiv_src_0104_001.jsonl: 2064it [00:02, 1371.36it/s]
+Reading arXiv_src_0104_001.jsonl: 2203it [00:02, 983.17it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 890.14it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How can the methods used in this study be applied to future research on parity nonconserving electric dipole transition amplitudes?
+[debug] classifier labels: ['Uses', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+1     1  0.494188  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+2     2  0.454510  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+3     3  0.432278  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+4     4  0.359699  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+5     5  0.339879  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+6     6  0.294213  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+7     7  0.254930  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+8     8  0.252163  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+9     9  0.237243  ...  2025-09-21T11:09:44.957334     Uses, FutureWork
+
+[10 rows x 12 columns]
+[13:09:52] main | args: Namespace(max_check=20, debug=True)
+[13:09:52] read_last_jsonl | path= classified_outputs.jsonl
+[13:09:52] read_last_jsonl | total_lines= 1
+[13:09:52] main | query='How can the methods used in this study be applied to future research on parity nonconserving electric dipole transition amplitudes?' | funcs=['Uses', 'FutureWork']
+[13:09:55] main | core_terms= ['electric dipole', 'parity nonconserving', 'transition amplitudes']
+[13:09:55] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:09:55] load_topk_jsonl | rows= 20
+[13:09:55] load_topk_jsonl | first: rank= 0 paper_id= physics/0101044 title_snip='Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,…' abs_len= 1144
+[13:09:55] main | running function= Uses
+[13:09:55] select | function= Uses | candidates_in= 20
+[13:09:55] select | core_terms= ['electric dipole', 'parity nonconserving', 'transition amplitudes']
+[13:09:55] select | no cosine prune; kept=20/20
+[13:09:55] select | pool_size= 20 | ranks= [0, 7, 4, 12, 1, 2, 8, 11, 15, 16, 18, 3, 5, 6, 9, 10, 13, 14, 17, 19] | pids= ['physics/0101044', 'hep-ph/0101113', 'physics/0101053', 'physics/0102070', 'cond-mat/0103312', 'hep-ph/0101112', 'nucl-th/0103045', 'gr-qc/0102037', 'hep-lat/0101008', 'nucl-th/0104026', 'cond-mat/0101383', 'hep-ph/0103123', 'astro-ph/0104246', 'hep-ph/0101071', 'hep-ph/0104295', 'hep-ph/0102334', 'hep-ph/0101188', 'hep-ph/0102053', 'physics/0104075', 'hep-ph/0104082']
+[13:09:55] select | verify strict 1/20
+[13:09:55] verify | func= Uses | rank= 0 | pid= physics/0101044 | title_snip='Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,…' | abs_len= 1144
+[13:09:59] verify | result supports= False fit= 0.00 top= 1.00 invalid= quote_not_in_abstract cue_hint= False
+[13:09:59] select | verify strict 2/20
+[13:09:59] verify | func= Uses | rank= 7 | pid= hep-ph/0101113 | title_snip='One-loop Neutron Electric Dipole Moment from Supersymmetry without
+  R…' | abs_len= 949
+[13:10:02] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:10:02] select | verify strict 3/20
+[13:10:02] verify | func= Uses | rank= 4 | pid= physics/0101053 | title_snip='High accuracy calculation of 6s -> 7s parity nonconserving amplitude i…' | abs_len= 381
+[13:10:05] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:10:05] select | verify strict 4/20
+[13:10:05] verify | func= Uses | rank= 12 | pid= physics/0102070 | title_snip='High-precision calculations of electric-dipole amplitudes for
+  transi…' | abs_len= 834
+[13:10:08] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:10:08] select | verify strict 5/20
+[13:10:08] verify | func= Uses | rank= 1 | pid= cond-mat/0103312 | title_snip='Fractal to Nonfractal Phase Transition in the Dielectric Breakdown Mod…' | abs_len= 364
+[13:10:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:10] select | verify strict 6/20
+[13:10:10] verify | func= Uses | rank= 2 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:10:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:13] select | verify strict 7/20
+[13:10:13] verify | func= Uses | rank= 8 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[13:10:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:15] select | verify strict 8/20
+[13:10:15] verify | func= Uses | rank= 11 | pid= gr-qc/0102037 | title_snip='Plunge waveforms from inspiralling binary black holes' | abs_len= 596
+[13:10:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:18] select | verify strict 9/20
+[13:10:18] verify | func= Uses | rank= 15 | pid= hep-lat/0101008 | title_snip='Domain Wall Fermion Study of Scaling in Non-perturbative Renormalizati…' | abs_len= 529
+[13:10:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:20] select | verify strict 10/20
+[13:10:20] verify | func= Uses | rank= 16 | pid= nucl-th/0104026 | title_snip='Atomic Parity Nonconservation and Nuclear Anapole Moments' | abs_len= 952
+[13:10:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:10:23] select | verify strict 11/20
+[13:10:23] verify | func= Uses | rank= 18 | pid= cond-mat/0101383 | title_snip='Coupling of Nonlocal Potentials to Electromagnetic Fields' | abs_len= 584
+[13:10:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:26] select | verify strict 12/20
+[13:10:26] verify | func= Uses | rank= 3 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[13:10:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:28] select | verify strict 13/20
+[13:10:28] verify | func= Uses | rank= 5 | pid= astro-ph/0104246 | title_snip='New method of extracting non-Gaussian signals in the CMB' | abs_len= 486
+[13:10:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:31] select | verify strict 14/20
+[13:10:31] verify | func= Uses | rank= 6 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[13:10:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:33] select | verify strict 15/20
+[13:10:33] verify | func= Uses | rank= 9 | pid= hep-ph/0104295 | title_snip='Additional ways to determination of structure of high energy elastic
+ …' | abs_len= 384
+[13:10:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:36] select | verify strict 16/20
+[13:10:36] verify | func= Uses | rank= 10 | pid= hep-ph/0102334 | title_snip='Parity-Violating Electron Scattering and Neucleon Structure' | abs_len= 659
+[13:10:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:10:39] select | verify strict 17/20
+[13:10:39] verify | func= Uses | rank= 13 | pid= hep-ph/0101188 | title_snip='Regularization-independent study of renormalized non-perturbative
+  qu…' | abs_len= 1083
+[13:10:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:41] select | verify strict 18/20
+[13:10:41] verify | func= Uses | rank= 14 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[13:10:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:10:44] select | verify strict 19/20
+[13:10:44] verify | func= Uses | rank= 17 | pid= physics/0104075 | title_snip='Nonperturbative and perturbative treatments of parametric heating in
+ …' | abs_len= 542
+[13:10:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:47] select | verify strict 20/20
+[13:10:47] verify | func= Uses | rank= 19 | pid= hep-ph/0104082 | title_snip='Treatment of the QCD coupling in high energy processes' | abs_len= 493
+[13:10:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:10:49] select | strict pass found 0 winners → trying relaxed
+[13:10:49] select | verify relaxed 1/20
+[13:10:49] verify | func= Uses | rank= 0 | pid= physics/0101044 | title_snip='Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,…' | abs_len= 1144
+[13:10:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:10:53] select | verify relaxed 2/20
+[13:10:53] verify | func= Uses | rank= 7 | pid= hep-ph/0101113 | title_snip='One-loop Neutron Electric Dipole Moment from Supersymmetry without
+  R…' | abs_len= 949
+[13:10:56] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:10:56] select | verify relaxed 3/20
+[13:10:56] verify | func= Uses | rank= 4 | pid= physics/0101053 | title_snip='High accuracy calculation of 6s -> 7s parity nonconserving amplitude i…' | abs_len= 381
+[13:10:59] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:10:59] select | verify relaxed 4/20
+[13:10:59] verify | func= Uses | rank= 12 | pid= physics/0102070 | title_snip='High-precision calculations of electric-dipole amplitudes for
+  transi…' | abs_len= 834
+[13:11:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:11:02] select | verify relaxed 5/20
+[13:11:02] verify | func= Uses | rank= 1 | pid= cond-mat/0103312 | title_snip='Fractal to Nonfractal Phase Transition in the Dielectric Breakdown Mod…' | abs_len= 364
+[13:11:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:05] select | verify relaxed 6/20
+[13:11:05] verify | func= Uses | rank= 2 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:11:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:11:08] select | verify relaxed 7/20
+[13:11:08] verify | func= Uses | rank= 8 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[13:11:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:10] select | verify relaxed 8/20
+[13:11:10] verify | func= Uses | rank= 11 | pid= gr-qc/0102037 | title_snip='Plunge waveforms from inspiralling binary black holes' | abs_len= 596
+[13:11:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:13] select | verify relaxed 9/20
+[13:11:13] verify | func= Uses | rank= 15 | pid= hep-lat/0101008 | title_snip='Domain Wall Fermion Study of Scaling in Non-perturbative Renormalizati…' | abs_len= 529
+[13:11:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:15] select | verify relaxed 10/20
+[13:11:15] verify | func= Uses | rank= 16 | pid= nucl-th/0104026 | title_snip='Atomic Parity Nonconservation and Nuclear Anapole Moments' | abs_len= 952
+[13:11:18] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:11:18] select | verify relaxed 11/20
+[13:11:18] verify | func= Uses | rank= 18 | pid= cond-mat/0101383 | title_snip='Coupling of Nonlocal Potentials to Electromagnetic Fields' | abs_len= 584
+[13:11:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:11:21] select | verify relaxed 12/20
+[13:11:21] verify | func= Uses | rank= 3 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[13:11:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:24] select | verify relaxed 13/20
+[13:11:24] verify | func= Uses | rank= 5 | pid= astro-ph/0104246 | title_snip='New method of extracting non-Gaussian signals in the CMB' | abs_len= 486
+[13:11:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:26] select | verify relaxed 14/20
+[13:11:26] verify | func= Uses | rank= 6 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[13:11:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:29] select | verify relaxed 15/20
+[13:11:29] verify | func= Uses | rank= 9 | pid= hep-ph/0104295 | title_snip='Additional ways to determination of structure of high energy elastic
+ …' | abs_len= 384
+[13:11:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:31] select | verify relaxed 16/20
+[13:11:31] verify | func= Uses | rank= 10 | pid= hep-ph/0102334 | title_snip='Parity-Violating Electron Scattering and Neucleon Structure' | abs_len= 659
+[13:11:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:11:34] select | verify relaxed 17/20
+[13:11:34] verify | func= Uses | rank= 13 | pid= hep-ph/0101188 | title_snip='Regularization-independent study of renormalized non-perturbative
+  qu…' | abs_len= 1083
+[13:11:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:37] select | verify relaxed 18/20
+[13:11:37] verify | func= Uses | rank= 14 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[13:11:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:11:40] select | verify relaxed 19/20
+[13:11:40] verify | func= Uses | rank= 17 | pid= physics/0104075 | title_snip='Nonperturbative and perturbative treatments of parametric heating in
+ …' | abs_len= 542
+[13:11:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:11:42] select | verify relaxed 20/20
+[13:11:42] verify | func= Uses | rank= 19 | pid= hep-ph/0104082 | title_snip='Treatment of the QCD coupling in high energy processes' | abs_len= 493
+[13:11:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How can the methods used in this study be applied to future research on parity nonconserving electric dipole transition amplitudes?
+- WINNER: physics/0101044 | Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,
+  and Ra II
+- QUOTE : We have performed ab initio mixed-states and sum-over-states calculations
+- WHY   : sufficient
+- ANSWER: The methods used in this study, such as ab initio mixed-states and sum-over-states calculations, can be applied to future research on parity nonconserving electric dipole transition amplitudes to calculate these amplitudes to high accuracy. Researchers can utilize a hybrid mixed-states/sum-over-states approach for this purpose, particularly if certain transition amplitudes are measured to high accuracy (physics/0101044).
+[13:11:50] main | running function= FutureWork
+[13:11:50] select | function= FutureWork | candidates_in= 20
+[13:11:50] select | core_terms= ['electric dipole', 'parity nonconserving', 'transition amplitudes']
+[13:11:50] select | no cosine prune; kept=20/20
+[13:11:50] select | pool_size= 20 | ranks= [0, 4, 7, 12, 1, 2, 3, 5, 6, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19] | pids= ['physics/0101044', 'physics/0101053', 'hep-ph/0101113', 'physics/0102070', 'cond-mat/0103312', 'hep-ph/0101112', 'hep-ph/0103123', 'astro-ph/0104246', 'hep-ph/0101071', 'nucl-th/0103045', 'hep-ph/0104295', 'hep-ph/0102334', 'gr-qc/0102037', 'hep-ph/0101188', 'hep-ph/0102053', 'hep-lat/0101008', 'nucl-th/0104026', 'physics/0104075', 'cond-mat/0101383', 'hep-ph/0104082']
+[13:11:50] select | verify strict 1/20
+[13:11:50] verify | func= FutureWork | rank= 0 | pid= physics/0101044 | title_snip='Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,…' | abs_len= 1144
+[13:11:53] verify | result supports= False fit= 0.00 top= 1.00 invalid= quote_not_in_abstract cue_hint= False
+[13:11:53] select | verify strict 2/20
+[13:11:53] verify | func= FutureWork | rank= 4 | pid= physics/0101053 | title_snip='High accuracy calculation of 6s -> 7s parity nonconserving amplitude i…' | abs_len= 381
+[13:11:56] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:11:56] select | verify strict 3/20
+[13:11:56] verify | func= FutureWork | rank= 7 | pid= hep-ph/0101113 | title_snip='One-loop Neutron Electric Dipole Moment from Supersymmetry without
+  R…' | abs_len= 949
+[13:11:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:11:59] select | verify strict 4/20
+[13:11:59] verify | func= FutureWork | rank= 12 | pid= physics/0102070 | title_snip='High-precision calculations of electric-dipole amplitudes for
+  transi…' | abs_len= 834
+[13:12:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:12:02] select | verify strict 5/20
+[13:12:02] verify | func= FutureWork | rank= 1 | pid= cond-mat/0103312 | title_snip='Fractal to Nonfractal Phase Transition in the Dielectric Breakdown Mod…' | abs_len= 364
+[13:12:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:05] select | verify strict 6/20
+[13:12:05] verify | func= FutureWork | rank= 2 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:12:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:12:08] select | verify strict 7/20
+[13:12:08] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[13:12:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:11] select | verify strict 8/20
+[13:12:11] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104246 | title_snip='New method of extracting non-Gaussian signals in the CMB' | abs_len= 486
+[13:12:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:13] select | verify strict 9/20
+[13:12:13] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[13:12:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:16] select | verify strict 10/20
+[13:12:16] verify | func= FutureWork | rank= 8 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[13:12:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:18] select | verify strict 11/20
+[13:12:18] verify | func= FutureWork | rank= 9 | pid= hep-ph/0104295 | title_snip='Additional ways to determination of structure of high energy elastic
+ …' | abs_len= 384
+[13:12:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:21] select | verify strict 12/20
+[13:12:21] verify | func= FutureWork | rank= 10 | pid= hep-ph/0102334 | title_snip='Parity-Violating Electron Scattering and Neucleon Structure' | abs_len= 659
+[13:12:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:12:23] select | verify strict 13/20
+[13:12:23] verify | func= FutureWork | rank= 11 | pid= gr-qc/0102037 | title_snip='Plunge waveforms from inspiralling binary black holes' | abs_len= 596
+[13:12:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:26] select | verify strict 14/20
+[13:12:26] verify | func= FutureWork | rank= 13 | pid= hep-ph/0101188 | title_snip='Regularization-independent study of renormalized non-perturbative
+  qu…' | abs_len= 1083
+[13:12:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:28] select | verify strict 15/20
+[13:12:28] verify | func= FutureWork | rank= 14 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[13:12:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:12:31] select | verify strict 16/20
+[13:12:31] verify | func= FutureWork | rank= 15 | pid= hep-lat/0101008 | title_snip='Domain Wall Fermion Study of Scaling in Non-perturbative Renormalizati…' | abs_len= 529
+[13:12:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:34] select | verify strict 17/20
+[13:12:34] verify | func= FutureWork | rank= 16 | pid= nucl-th/0104026 | title_snip='Atomic Parity Nonconservation and Nuclear Anapole Moments' | abs_len= 952
+[13:12:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:12:37] select | verify strict 18/20
+[13:12:37] verify | func= FutureWork | rank= 17 | pid= physics/0104075 | title_snip='Nonperturbative and perturbative treatments of parametric heating in
+ …' | abs_len= 542
+[13:12:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:39] select | verify strict 19/20
+[13:12:39] verify | func= FutureWork | rank= 18 | pid= cond-mat/0101383 | title_snip='Coupling of Nonlocal Potentials to Electromagnetic Fields' | abs_len= 584
+[13:12:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:42] select | verify strict 20/20
+[13:12:42] verify | func= FutureWork | rank= 19 | pid= hep-ph/0104082 | title_snip='Treatment of the QCD coupling in high energy processes' | abs_len= 493
+[13:12:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:45] select | strict pass found 0 winners → trying relaxed
+[13:12:45] select | verify relaxed 1/20
+[13:12:45] verify | func= FutureWork | rank= 0 | pid= physics/0101044 | title_snip='Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,…' | abs_len= 1144
+[13:12:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:12:48] select | verify relaxed 2/20
+[13:12:48] verify | func= FutureWork | rank= 4 | pid= physics/0101053 | title_snip='High accuracy calculation of 6s -> 7s parity nonconserving amplitude i…' | abs_len= 381
+[13:12:51] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:12:51] select | verify relaxed 3/20
+[13:12:51] verify | func= FutureWork | rank= 7 | pid= hep-ph/0101113 | title_snip='One-loop Neutron Electric Dipole Moment from Supersymmetry without
+  R…' | abs_len= 949
+[13:12:54] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:12:54] select | verify relaxed 4/20
+[13:12:54] verify | func= FutureWork | rank= 12 | pid= physics/0102070 | title_snip='High-precision calculations of electric-dipole amplitudes for
+  transi…' | abs_len= 834
+[13:12:57] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:12:57] select | verify relaxed 5/20
+[13:12:57] verify | func= FutureWork | rank= 1 | pid= cond-mat/0103312 | title_snip='Fractal to Nonfractal Phase Transition in the Dielectric Breakdown Mod…' | abs_len= 364
+[13:12:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:12:59] select | verify relaxed 6/20
+[13:12:59] verify | func= FutureWork | rank= 2 | pid= hep-ph/0101112 | title_snip='Radiative transitions in mesons in a non relativistic quark model' | abs_len= 560
+[13:13:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:13:02] select | verify relaxed 7/20
+[13:13:02] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[13:13:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:05] select | verify relaxed 8/20
+[13:13:05] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104246 | title_snip='New method of extracting non-Gaussian signals in the CMB' | abs_len= 486
+[13:13:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:07] select | verify relaxed 9/20
+[13:13:07] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[13:13:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:10] select | verify relaxed 10/20
+[13:13:10] verify | func= FutureWork | rank= 8 | pid= nucl-th/0103045 | title_snip='Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Ef…' | abs_len= 806
+[13:13:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:12] select | verify relaxed 11/20
+[13:13:12] verify | func= FutureWork | rank= 9 | pid= hep-ph/0104295 | title_snip='Additional ways to determination of structure of high energy elastic
+ …' | abs_len= 384
+[13:13:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:15] select | verify relaxed 12/20
+[13:13:15] verify | func= FutureWork | rank= 10 | pid= hep-ph/0102334 | title_snip='Parity-Violating Electron Scattering and Neucleon Structure' | abs_len= 659
+[13:13:18] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:13:18] select | verify relaxed 13/20
+[13:13:18] verify | func= FutureWork | rank= 11 | pid= gr-qc/0102037 | title_snip='Plunge waveforms from inspiralling binary black holes' | abs_len= 596
+[13:13:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:21] select | verify relaxed 14/20
+[13:13:21] verify | func= FutureWork | rank= 13 | pid= hep-ph/0101188 | title_snip='Regularization-independent study of renormalized non-perturbative
+  qu…' | abs_len= 1083
+[13:13:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:23] select | verify relaxed 15/20
+[13:13:23] verify | func= FutureWork | rank= 14 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[13:13:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:13:26] select | verify relaxed 16/20
+[13:13:26] verify | func= FutureWork | rank= 15 | pid= hep-lat/0101008 | title_snip='Domain Wall Fermion Study of Scaling in Non-perturbative Renormalizati…' | abs_len= 529
+[13:13:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:29] select | verify relaxed 17/20
+[13:13:29] verify | func= FutureWork | rank= 16 | pid= nucl-th/0104026 | title_snip='Atomic Parity Nonconservation and Nuclear Anapole Moments' | abs_len= 952
+[13:13:32] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:13:32] select | verify relaxed 18/20
+[13:13:32] verify | func= FutureWork | rank= 17 | pid= physics/0104075 | title_snip='Nonperturbative and perturbative treatments of parametric heating in
+ …' | abs_len= 542
+[13:13:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:13:34] select | verify relaxed 19/20
+[13:13:34] verify | func= FutureWork | rank= 18 | pid= cond-mat/0101383 | title_snip='Coupling of Nonlocal Potentials to Electromagnetic Fields' | abs_len= 584
+[13:13:37] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:13:37] select | verify relaxed 20/20
+[13:13:37] verify | func= FutureWork | rank= 19 | pid= hep-ph/0104082 | title_snip='Treatment of the QCD coupling in high energy processes' | abs_len= 493
+[13:13:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the methods used in this study be applied to future research on parity nonconserving electric dipole transition amplitudes?
+- WINNER: physics/0101044 | Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,
+  and Ra II
+- QUOTE : can be calculated to high accuracy
+- WHY   : sufficient
+- ANSWER: The methods used in this study can be applied to future research by utilizing a hybrid mixed-states/sum-over-states approach to calculate parity nonconserving electric dipole transition amplitudes with high accuracy, particularly if key transition amplitudes are measured to high accuracy. Future work may focus on measuring these amplitudes to better than 1% accuracy to improve the overall accuracy of the calculations (physics/0101044).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

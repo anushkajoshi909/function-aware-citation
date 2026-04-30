@@ -1,0 +1,341 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Uses"
+  ],
+  "justification": "The query asks how the current work builds upon (extends) Einstein's coefficients and how it utilizes them in deriving Planck's law."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.71 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.46it/s]
+Reading arXiv_src_0101_001.jsonl: 94it [00:00, 309.67it/s]
+Reading arXiv_src_0101_001.jsonl: 242it [00:00, 684.92it/s]
+Reading arXiv_src_0101_001.jsonl: 350it [00:00, 808.23it/s]
+Reading arXiv_src_0101_001.jsonl: 452it [00:00, 667.18it/s]
+Reading arXiv_src_0101_001.jsonl: 536it [00:00, 584.52it/s]
+Reading arXiv_src_0101_001.jsonl: 615it [00:01, 630.84it/s]
+Reading arXiv_src_0101_001.jsonl: 717it [00:01, 726.23it/s]
+Reading arXiv_src_0101_001.jsonl: 823it [00:01, 812.83it/s]
+Reading arXiv_src_0101_001.jsonl: 926it [00:01, 870.90it/s]
+Reading arXiv_src_0101_001.jsonl: 1027it [00:01, 906.69it/s]
+Reading arXiv_src_0101_001.jsonl: 1160it [00:01, 1026.89it/s]
+Reading arXiv_src_0101_001.jsonl: 1292it [00:01, 1110.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1407it [00:01, 1100.46it/s]
+Reading arXiv_src_0101_001.jsonl: 1536it [00:01, 1154.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1670it [00:01, 1205.47it/s]
+Reading arXiv_src_0101_001.jsonl: 1792it [00:02, 1183.74it/s]
+Reading arXiv_src_0101_001.jsonl: 1947it [00:02, 1287.50it/s]
+Reading arXiv_src_0101_001.jsonl: 2121it [00:02, 1419.78it/s]
+Reading arXiv_src_0101_001.jsonl: 2273it [00:02, 1445.64it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 954.38it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1334.51it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1361.91it/s]
+Reading arXiv_src_0102_001.jsonl: 412it [00:00, 859.86it/s] 
+Reading arXiv_src_0102_001.jsonl: 514it [00:00, 535.76it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 566.86it/s]
+Reading arXiv_src_0102_001.jsonl: 678it [00:00, 629.28it/s]
+Reading arXiv_src_0102_001.jsonl: 794it [00:01, 753.24it/s]
+Reading arXiv_src_0102_001.jsonl: 926it [00:01, 895.11it/s]
+Reading arXiv_src_0102_001.jsonl: 1037it [00:01, 951.66it/s]
+Reading arXiv_src_0102_001.jsonl: 1156it [00:01, 1014.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1276it [00:01, 1065.95it/s]
+Reading arXiv_src_0102_001.jsonl: 1415it [00:01, 1157.62it/s]
+Reading arXiv_src_0102_001.jsonl: 1548it [00:01, 1207.52it/s]
+Reading arXiv_src_0102_001.jsonl: 1679it [00:01, 1236.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1831it [00:01, 1318.63it/s]
+Reading arXiv_src_0102_001.jsonl: 1983it [00:01, 1378.15it/s]
+Reading arXiv_src_0102_001.jsonl: 2134it [00:02, 1416.33it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1031.41it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 139it [00:00, 1372.06it/s]
+Reading arXiv_src_0103_001.jsonl: 305it [00:00, 1536.00it/s]
+Reading arXiv_src_0103_001.jsonl: 459it [00:00, 1126.10it/s]
+Reading arXiv_src_0103_001.jsonl: 582it [00:00, 721.52it/s] 
+Reading arXiv_src_0103_001.jsonl: 686it [00:00, 789.89it/s]
+Reading arXiv_src_0103_001.jsonl: 782it [00:00, 823.68it/s]
+Reading arXiv_src_0103_001.jsonl: 887it [00:00, 878.13it/s]
+Reading arXiv_src_0103_001.jsonl: 1001it [00:01, 939.15it/s]
+Reading arXiv_src_0103_001.jsonl: 1116it [00:01, 993.55it/s]
+Reading arXiv_src_0103_001.jsonl: 1232it [00:01, 1038.91it/s]
+Reading arXiv_src_0103_001.jsonl: 1344it [00:01, 1057.02it/s]
+Reading arXiv_src_0103_001.jsonl: 1492it [00:01, 1177.56it/s]
+Reading arXiv_src_0103_001.jsonl: 1627it [00:01, 1227.41it/s]
+Reading arXiv_src_0103_001.jsonl: 1772it [00:01, 1292.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1918it [00:01, 1341.03it/s]
+Reading arXiv_src_0103_001.jsonl: 2054it [00:01, 1346.32it/s]
+Reading arXiv_src_0103_001.jsonl: 2190it [00:01, 1348.66it/s]
+Reading arXiv_src_0103_001.jsonl: 2348it [00:02, 1410.21it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1142.03it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  8.57it/s]
+Reading arXiv_src_0104_001.jsonl: 102it [00:00, 558.80it/s]
+Reading arXiv_src_0104_001.jsonl: 258it [00:00, 993.91it/s]
+Reading arXiv_src_0104_001.jsonl: 393it [00:00, 1129.79it/s]
+Reading arXiv_src_0104_001.jsonl: 509it [00:00, 744.34it/s] 
+Reading arXiv_src_0104_001.jsonl: 600it [00:00, 500.66it/s]
+Reading arXiv_src_0104_001.jsonl: 706it [00:01, 603.57it/s]
+Reading arXiv_src_0104_001.jsonl: 796it [00:01, 664.87it/s]
+Reading arXiv_src_0104_001.jsonl: 898it [00:01, 745.96it/s]
+Reading arXiv_src_0104_001.jsonl: 1024it [00:01, 872.01it/s]
+Reading arXiv_src_0104_001.jsonl: 1134it [00:01, 929.80it/s]
+Reading arXiv_src_0104_001.jsonl: 1261it [00:01, 1021.91it/s]
+Reading arXiv_src_0104_001.jsonl: 1372it [00:01, 1020.53it/s]
+Reading arXiv_src_0104_001.jsonl: 1507it [00:01, 1112.09it/s]
+Reading arXiv_src_0104_001.jsonl: 1645it [00:01, 1188.26it/s]
+Reading arXiv_src_0104_001.jsonl: 1775it [00:02, 1219.75it/s]
+Reading arXiv_src_0104_001.jsonl: 1921it [00:02, 1288.01it/s]
+Reading arXiv_src_0104_001.jsonl: 2079it [00:02, 1372.46it/s]
+Reading arXiv_src_0104_001.jsonl: 2218it [00:02, 973.60it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 920.28it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?
+[debug] classifier labels: ['Extends', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T17:03:51.352336        Extends, Uses
+1     1  0.496186  ...  2025-09-21T17:03:51.352336        Extends, Uses
+2     2  0.421725  ...  2025-09-21T17:03:51.352336        Extends, Uses
+3     3  0.357687  ...  2025-09-21T17:03:51.352336        Extends, Uses
+4     4  0.335095  ...  2025-09-21T17:03:51.352336        Extends, Uses
+5     5  0.329875  ...  2025-09-21T17:03:51.352336        Extends, Uses
+6     6  0.256371  ...  2025-09-21T17:03:51.352336        Extends, Uses
+7     7  0.202828  ...  2025-09-21T17:03:51.352336        Extends, Uses
+8     8  0.186327  ...  2025-09-21T17:03:51.352336        Extends, Uses
+9     9  0.153505  ...  2025-09-21T17:03:51.352336        Extends, Uses
+
+[10 rows x 12 columns]
+[19:03:58] main | args: Namespace(max_check=20, debug=True)
+[19:03:58] read_last_jsonl | path= classified_outputs.jsonl
+[19:03:58] read_last_jsonl | total_lines= 1
+[19:03:58] main | query='How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?' | funcs=['Extends', 'Uses']
+[19:04:00] main | core_terms= ['Einstein', 'Planck', 'spontaneous emission', 'induced emission', 'blackbody radiation law']
+[19:04:00] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[19:04:00] load_topk_jsonl | rows= 20
+[19:04:00] load_topk_jsonl | first: rank= 0 paper_id= physics/0101054 title_snip='De Broglie wave, spontaneous emission and Planck's radiation law
+  acc…' abs_len= 993
+[19:04:00] main | running function= Extends
+[19:04:00] select | function= Extends | candidates_in= 20
+[19:04:00] select | core_terms= ['Einstein', 'Planck', 'spontaneous emission', 'induced emission', 'blackbody radiation law']
+[19:04:00] select | no cosine prune; kept=20/20
+[19:04:00] select | pool_size= 20 | ranks= [0, 1, 6, 16, 2, 11, 3, 4, 5, 7, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19] | pids= ['physics/0101054', 'gr-qc/0101011', 'gr-qc/0104004', 'hep-th/0104093', 'hep-ph/0101210', 'gr-qc/0103017', 'hep-ph/0104231', 'gr-qc/0102003', 'gr-qc/0104083', 'hep-th/0104073', 'gr-qc/0102080', 'hep-th/0102061', 'quant-ph/0102114', 'hep-th/0104022', 'astro-ph/0101247', 'gr-qc/0102067', 'hep-th/0102193', 'hep-th/0102042', 'astro-ph/0102060', 'astro-ph/0103281']
+[19:04:00] select | verify strict 1/20
+[19:04:00] verify | func= Extends | rank= 0 | pid= physics/0101054 | title_snip='De Broglie wave, spontaneous emission and Planck's radiation law
+  acc…' | abs_len= 993
+[19:04:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:04:04] select | verify strict 2/20
+[19:04:04] verify | func= Extends | rank= 1 | pid= gr-qc/0101011 | title_snip='On the derivation of the equations of motion in theories of gravity' | abs_len= 1542
+[19:04:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:06] select | verify strict 3/20
+[19:04:06] verify | func= Extends | rank= 6 | pid= gr-qc/0104004 | title_snip='On the Bergmann Energy-Momentum Complex of a Charged Regular Black Hol…' | abs_len= 325
+[19:04:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:09] select | verify strict 4/20
+[19:04:09] verify | func= Extends | rank= 16 | pid= hep-th/0104093 | title_snip='Non-commutative geometry as a realization of varying speed of light
+  …' | abs_len= 1107
+[19:04:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:12] select | verify strict 5/20
+[19:04:12] verify | func= Extends | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[19:04:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:14] select | verify strict 6/20
+[19:04:14] verify | func= Extends | rank= 11 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[19:04:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:17] select | verify strict 7/20
+[19:04:17] verify | func= Extends | rank= 3 | pid= hep-ph/0104231 | title_snip='On fermionic vacuum energy' | abs_len= 578
+[19:04:20] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:04:20] select | verify strict 8/20
+[19:04:20] verify | func= Extends | rank= 4 | pid= gr-qc/0102003 | title_snip='Time-Variation of the Gravitational Constant and the Machian Solution …' | abs_len= 769
+[19:04:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:22] select | verify strict 9/20
+[19:04:22] verify | func= Extends | rank= 5 | pid= gr-qc/0104083 | title_snip='Post-Newtonian Expansion of Gravitational Radiation' | abs_len= 1005
+[19:04:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:25] select | verify strict 10/20
+[19:04:25] verify | func= Extends | rank= 7 | pid= hep-th/0104073 | title_snip='Pyrotechnic Universe' | abs_len= 1492
+[19:04:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:28] select | verify strict 11/20
+[19:04:28] verify | func= Extends | rank= 8 | pid= gr-qc/0102080 | title_snip='Explicit Derivation of the Fluctuation-Dissipation Relation of the
+  V…' | abs_len= 990
+[19:04:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:30] select | verify strict 12/20
+[19:04:30] verify | func= Extends | rank= 9 | pid= hep-th/0102061 | title_snip='Quantum Mechanics of Charged Black Holes' | abs_len= 690
+[19:04:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:33] select | verify strict 13/20
+[19:04:33] verify | func= Extends | rank= 10 | pid= quant-ph/0102114 | title_snip='A Method for Deriving the Dirac Equation from the Relativistic Newton'…' | abs_len= 548
+[19:04:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:36] select | verify strict 14/20
+[19:04:36] verify | func= Extends | rank= 12 | pid= hep-th/0104022 | title_snip='The structure of radiatively induced Lorentz and CPT violation in QED …' | abs_len= 801
+[19:04:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:38] select | verify strict 15/20
+[19:04:38] verify | func= Extends | rank= 13 | pid= astro-ph/0101247 | title_snip='Numerical Simulations Of Particle Acceleration In Relativistic Shocks
+…' | abs_len= 541
+[19:04:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:41] select | verify strict 16/20
+[19:04:41] verify | func= Extends | rank= 14 | pid= gr-qc/0102067 | title_snip='Evaporation of a two-dimensional charged black hole' | abs_len= 797
+[19:04:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:43] select | verify strict 17/20
+[19:04:43] verify | func= Extends | rank= 15 | pid= hep-th/0102193 | title_snip='The heat kernel coefficients for the dielectric cylinder' | abs_len= 524
+[19:04:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:46] select | verify strict 18/20
+[19:04:46] verify | func= Extends | rank= 17 | pid= hep-th/0102042 | title_snip='CFT and Entropy on the Brane' | abs_len= 689
+[19:04:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:48] select | verify strict 19/20
+[19:04:48] verify | func= Extends | rank= 18 | pid= astro-ph/0102060 | title_snip='The elementary spike produced by a pure $e^+e^-$ pair-electromagnetic
+…' | abs_len= 1493
+[19:04:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:04:51] select | verify strict 20/20
+[19:04:51] verify | func= Extends | rank= 19 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[19:04:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?
+- WINNER: physics/0101054 | De Broglie wave, spontaneous emission and Planck's radiation law
+  according to stochastic electrodynamics
+- QUOTE : Einstein's work, in which the coefficients of spontaneous and induced emission were introduced
+- WHY   : sufficient
+- ANSWER: The current work extends Einstein's introduction of coefficients of spontaneous and induced emission by rederiving Planck's blackbody radiation law within the framework of stochastic electrodynamics, avoiding the assumption of quantum energy discreteness. This approach builds upon Einstein's work by providing a classical physics explanation for the energy discreteness, utilizing the concept of de Broglie waves and zero-point vibrations of the electromagnetic ground field (physics/0101054).
+[19:04:59] main | running function= Uses
+[19:04:59] select | function= Uses | candidates_in= 20
+[19:04:59] select | core_terms= ['Einstein', 'Planck', 'spontaneous emission', 'induced emission', 'blackbody radiation law']
+[19:04:59] select | no cosine prune; kept=20/20
+[19:04:59] select | pool_size= 20 | ranks= [0, 1, 6, 16, 2, 7, 10, 12, 3, 4, 5, 8, 9, 11, 13, 14, 15, 17, 18, 19] | pids= ['physics/0101054', 'gr-qc/0101011', 'gr-qc/0104004', 'hep-th/0104093', 'hep-ph/0101210', 'hep-th/0104073', 'quant-ph/0102114', 'hep-th/0104022', 'hep-ph/0104231', 'gr-qc/0102003', 'gr-qc/0104083', 'gr-qc/0102080', 'hep-th/0102061', 'gr-qc/0103017', 'astro-ph/0101247', 'gr-qc/0102067', 'hep-th/0102193', 'hep-th/0102042', 'astro-ph/0102060', 'astro-ph/0103281']
+[19:04:59] select | verify strict 1/20
+[19:04:59] verify | func= Uses | rank= 0 | pid= physics/0101054 | title_snip='De Broglie wave, spontaneous emission and Planck's radiation law
+  acc…' | abs_len= 993
+[19:05:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[19:05:02] select | verify strict 2/20
+[19:05:02] verify | func= Uses | rank= 1 | pid= gr-qc/0101011 | title_snip='On the derivation of the equations of motion in theories of gravity' | abs_len= 1542
+[19:05:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:05] select | verify strict 3/20
+[19:05:05] verify | func= Uses | rank= 6 | pid= gr-qc/0104004 | title_snip='On the Bergmann Energy-Momentum Complex of a Charged Regular Black Hol…' | abs_len= 325
+[19:05:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:07] select | verify strict 4/20
+[19:05:07] verify | func= Uses | rank= 16 | pid= hep-th/0104093 | title_snip='Non-commutative geometry as a realization of varying speed of light
+  …' | abs_len= 1107
+[19:05:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:10] select | verify strict 5/20
+[19:05:10] verify | func= Uses | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[19:05:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:13] select | verify strict 6/20
+[19:05:13] verify | func= Uses | rank= 7 | pid= hep-th/0104073 | title_snip='Pyrotechnic Universe' | abs_len= 1492
+[19:05:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:15] select | verify strict 7/20
+[19:05:15] verify | func= Uses | rank= 10 | pid= quant-ph/0102114 | title_snip='A Method for Deriving the Dirac Equation from the Relativistic Newton'…' | abs_len= 548
+[19:05:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:17] select | verify strict 8/20
+[19:05:17] verify | func= Uses | rank= 12 | pid= hep-th/0104022 | title_snip='The structure of radiatively induced Lorentz and CPT violation in QED …' | abs_len= 801
+[19:05:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:20] select | verify strict 9/20
+[19:05:20] verify | func= Uses | rank= 3 | pid= hep-ph/0104231 | title_snip='On fermionic vacuum energy' | abs_len= 578
+[19:05:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:05:23] select | verify strict 10/20
+[19:05:23] verify | func= Uses | rank= 4 | pid= gr-qc/0102003 | title_snip='Time-Variation of the Gravitational Constant and the Machian Solution …' | abs_len= 769
+[19:05:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:26] select | verify strict 11/20
+[19:05:26] verify | func= Uses | rank= 5 | pid= gr-qc/0104083 | title_snip='Post-Newtonian Expansion of Gravitational Radiation' | abs_len= 1005
+[19:05:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:28] select | verify strict 12/20
+[19:05:28] verify | func= Uses | rank= 8 | pid= gr-qc/0102080 | title_snip='Explicit Derivation of the Fluctuation-Dissipation Relation of the
+  V…' | abs_len= 990
+[19:05:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:31] select | verify strict 13/20
+[19:05:31] verify | func= Uses | rank= 9 | pid= hep-th/0102061 | title_snip='Quantum Mechanics of Charged Black Holes' | abs_len= 690
+[19:05:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:33] select | verify strict 14/20
+[19:05:33] verify | func= Uses | rank= 11 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[19:05:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:36] select | verify strict 15/20
+[19:05:36] verify | func= Uses | rank= 13 | pid= astro-ph/0101247 | title_snip='Numerical Simulations Of Particle Acceleration In Relativistic Shocks
+…' | abs_len= 541
+[19:05:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:38] select | verify strict 16/20
+[19:05:38] verify | func= Uses | rank= 14 | pid= gr-qc/0102067 | title_snip='Evaporation of a two-dimensional charged black hole' | abs_len= 797
+[19:05:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:41] select | verify strict 17/20
+[19:05:41] verify | func= Uses | rank= 15 | pid= hep-th/0102193 | title_snip='The heat kernel coefficients for the dielectric cylinder' | abs_len= 524
+[19:05:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:43] select | verify strict 18/20
+[19:05:43] verify | func= Uses | rank= 17 | pid= hep-th/0102042 | title_snip='CFT and Entropy on the Brane' | abs_len= 689
+[19:05:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:46] select | verify strict 19/20
+[19:05:46] verify | func= Uses | rank= 18 | pid= astro-ph/0102060 | title_snip='The elementary spike produced by a pure $e^+e^-$ pair-electromagnetic
+…' | abs_len= 1493
+[19:05:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[19:05:48] select | verify strict 20/20
+[19:05:48] verify | func= Uses | rank= 19 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[19:05:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?
+- WINNER: physics/0101054 | De Broglie wave, spontaneous emission and Planck's radiation law
+  according to stochastic electrodynamics
+- QUOTE : Einstein's work, in which the coefficients of spontaneous and induced emission were introduced
+- WHY   : sufficient
+- ANSWER: The current work utilizes Einstein's introduction of coefficients of spontaneous and induced emission to derive Planck's blackbody radiation law from the perspective of stochastic electrodynamics. This approach applies Einstein's coefficients within the framework of classical physics, specifically stochastic electrodynamics, to explain the energy discreteness and derive the Planck formula (physics/0101054).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

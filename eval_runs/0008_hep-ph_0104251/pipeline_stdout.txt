@@ -1,0 +1,336 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query asks how the thesis builds upon (extends) the MSSM and how its outcomes are compared with other theories, focusing on extension and comparative analysis."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 1.94 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  4.69it/s]
+Reading arXiv_src_0101_001.jsonl: 49it [00:00, 194.97it/s]
+Reading arXiv_src_0101_001.jsonl: 203it [00:00, 683.82it/s]
+Reading arXiv_src_0101_001.jsonl: 314it [00:00, 827.18it/s]
+Reading arXiv_src_0101_001.jsonl: 410it [00:00, 764.06it/s]
+Reading arXiv_src_0101_001.jsonl: 496it [00:00, 636.60it/s]
+Reading arXiv_src_0101_001.jsonl: 569it [00:00, 587.87it/s]
+Reading arXiv_src_0101_001.jsonl: 674it [00:01, 698.22it/s]
+Reading arXiv_src_0101_001.jsonl: 777it [00:01, 782.98it/s]
+Reading arXiv_src_0101_001.jsonl: 888it [00:01, 869.91it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 932.52it/s]
+Reading arXiv_src_0101_001.jsonl: 1104it [00:01, 967.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1235it [00:01, 1063.50it/s]
+Reading arXiv_src_0101_001.jsonl: 1345it [00:01, 1056.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1482it [00:01, 1143.60it/s]
+Reading arXiv_src_0101_001.jsonl: 1618it [00:01, 1205.10it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1226.11it/s]
+Reading arXiv_src_0101_001.jsonl: 1874it [00:02, 1197.61it/s]
+Reading arXiv_src_0101_001.jsonl: 2057it [00:02, 1378.39it/s]
+Reading arXiv_src_0101_001.jsonl: 2211it [00:02, 1421.65it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 971.25it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1331.94it/s]
+Reading arXiv_src_0102_001.jsonl: 275it [00:00, 1357.84it/s]
+Reading arXiv_src_0102_001.jsonl: 411it [00:00, 853.12it/s] 
+Reading arXiv_src_0102_001.jsonl: 512it [00:00, 517.98it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 553.81it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 613.71it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 739.67it/s]
+Reading arXiv_src_0102_001.jsonl: 923it [00:01, 880.36it/s]
+Reading arXiv_src_0102_001.jsonl: 1034it [00:01, 939.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1152it [00:01, 1003.89it/s]
+Reading arXiv_src_0102_001.jsonl: 1269it [00:01, 1049.56it/s]
+Reading arXiv_src_0102_001.jsonl: 1414it [00:01, 1163.50it/s]
+Reading arXiv_src_0102_001.jsonl: 1547it [00:01, 1210.86it/s]
+Reading arXiv_src_0102_001.jsonl: 1672it [00:01, 1203.17it/s]
+Reading arXiv_src_0102_001.jsonl: 1818it [00:01, 1274.94it/s]
+Reading arXiv_src_0102_001.jsonl: 1971it [00:02, 1348.47it/s]
+Reading arXiv_src_0102_001.jsonl: 2124it [00:02, 1400.57it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1015.12it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1374.06it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1535.07it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1119.59it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 728.22it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 793.46it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 823.47it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 888.97it/s]
+Reading arXiv_src_0103_001.jsonl: 999it [00:01, 954.35it/s]
+Reading arXiv_src_0103_001.jsonl: 1107it [00:01, 987.32it/s]
+Reading arXiv_src_0103_001.jsonl: 1228it [00:01, 1047.26it/s]
+Reading arXiv_src_0103_001.jsonl: 1338it [00:01, 1055.79it/s]
+Reading arXiv_src_0103_001.jsonl: 1485it [00:01, 1175.45it/s]
+Reading arXiv_src_0103_001.jsonl: 1618it [00:01, 1220.49it/s]
+Reading arXiv_src_0103_001.jsonl: 1763it [00:01, 1287.89it/s]
+Reading arXiv_src_0103_001.jsonl: 1911it [00:01, 1343.21it/s]
+Reading arXiv_src_0103_001.jsonl: 2049it [00:01, 1353.18it/s]
+Reading arXiv_src_0103_001.jsonl: 2188it [00:01, 1361.50it/s]
+Reading arXiv_src_0103_001.jsonl: 2345it [00:02, 1420.63it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1146.40it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 10.68it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 637.77it/s]
+Reading arXiv_src_0104_001.jsonl: 285it [00:00, 916.53it/s]
+Reading arXiv_src_0104_001.jsonl: 401it [00:00, 994.28it/s]
+Reading arXiv_src_0104_001.jsonl: 512it [00:00, 696.03it/s]
+Reading arXiv_src_0104_001.jsonl: 600it [00:01, 477.59it/s]
+Reading arXiv_src_0104_001.jsonl: 704it [00:01, 579.36it/s]
+Reading arXiv_src_0104_001.jsonl: 793it [00:01, 642.43it/s]
+Reading arXiv_src_0104_001.jsonl: 894it [00:01, 724.94it/s]
+Reading arXiv_src_0104_001.jsonl: 1014it [00:01, 841.29it/s]
+Reading arXiv_src_0104_001.jsonl: 1125it [00:01, 909.15it/s]
+Reading arXiv_src_0104_001.jsonl: 1247it [00:01, 991.53it/s]
+Reading arXiv_src_0104_001.jsonl: 1355it [00:01, 991.44it/s]
+Reading arXiv_src_0104_001.jsonl: 1484it [00:01, 1070.51it/s]
+Reading arXiv_src_0104_001.jsonl: 1628it [00:01, 1174.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1756it [00:02, 1204.46it/s]
+Reading arXiv_src_0104_001.jsonl: 1903it [00:02, 1281.44it/s]
+Reading arXiv_src_0104_001.jsonl: 2061it [00:02, 1368.58it/s]
+Reading arXiv_src_0104_001.jsonl: 2200it [00:02, 928.21it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 884.92it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?
+[debug] classifier labels: ['Extends', 'Compares']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T11:38:45.455826    Extends, Compares
+1     1  0.885996  ...  2025-09-21T11:38:45.455826    Extends, Compares
+2     2  0.807799  ...  2025-09-21T11:38:45.455826    Extends, Compares
+3     3  0.804162  ...  2025-09-21T11:38:45.455826    Extends, Compares
+4     4  0.650490  ...  2025-09-21T11:38:45.455826    Extends, Compares
+5     5  0.567832  ...  2025-09-21T11:38:45.455826    Extends, Compares
+6     6  0.387472  ...  2025-09-21T11:38:45.455826    Extends, Compares
+7     7  0.376478  ...  2025-09-21T11:38:45.455826    Extends, Compares
+8     8  0.375706  ...  2025-09-21T11:38:45.455826    Extends, Compares
+9     9  0.362724  ...  2025-09-21T11:38:45.455826    Extends, Compares
+
+[10 rows x 12 columns]
+[13:38:55] main | args: Namespace(max_check=20, debug=True)
+[13:38:55] read_last_jsonl | path= classified_outputs.jsonl
+[13:38:55] read_last_jsonl | total_lines= 1
+[13:38:55] main | query='How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?' | funcs=['Extends', 'Compares']
+[13:38:59] main | core_terms= ['Minimal Supersymmetric Standard Model', 'baryogenesis', 'cosmic rays']
+[13:38:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:38:59] load_topk_jsonl | rows= 20
+[13:38:59] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0104276 title_snip='Some Recent Results from the Generic Supersymmetric Standard Model' abs_len= 571
+[13:38:59] main | running function= Extends
+[13:38:59] select | function= Extends | candidates_in= 20
+[13:38:59] select | core_terms= ['Minimal Supersymmetric Standard Model', 'baryogenesis', 'cosmic rays']
+[13:38:59] select | no cosine prune; kept=20/20
+[13:38:59] select | pool_size= 20 | ranks= [6, 17, 2, 14, 15, 0, 3, 7, 10, 19, 1, 4, 5, 8, 9, 11, 12, 13, 16, 18] | pids= ['hep-ph/0104251', 'hep-ph/0102008', 'hep-ph/0102043', 'hep-ph/0103231', 'hep-ph/0101102', 'hep-ph/0104276', 'hep-ph/0102113', 'hep-ph/0102049', 'hep-ph/0104186', 'physics/0101057', 'hep-ph/0103270', 'hep-ph/0103041', 'hep-ph/0103095', 'hep-ph/0103299', 'hep-ph/0102096', 'hep-ph/0102204', 'hep-th/0102041', 'hep-ph/0104046', 'hep-ph/0101259', 'astro-ph/0103271']
+[13:38:59] select | verify strict 1/20
+[13:38:59] verify | func= Extends | rank= 6 | pid= hep-ph/0104251 | title_snip='Astroparticle physics signals beyond the Standard Model' | abs_len= 1280
+[13:39:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:03] select | verify strict 2/20
+[13:39:03] verify | func= Extends | rank= 17 | pid= hep-ph/0102008 | title_snip='Making Neutrinos Massive with an Axion in Supersymmetry' | abs_len= 519
+[13:39:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[13:39:06] select | verify strict 3/20
+[13:39:06] verify | func= Extends | rank= 2 | pid= hep-ph/0102043 | title_snip='Electroweak Baryogenesis in Supersymmetric Variants' | abs_len= 685
+[13:39:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:39:10] select | verify strict 4/20
+[13:39:10] verify | func= Extends | rank= 14 | pid= hep-ph/0103231 | title_snip='Hybrid Inflation and Baryogenesis at the TeV Scale' | abs_len= 766
+[13:39:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:39:13] select | verify strict 5/20
+[13:39:13] verify | func= Extends | rank= 15 | pid= hep-ph/0101102 | title_snip='Some aspects of baryogenesis and lepton number violation' | abs_len= 341
+[13:39:16] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:39:16] select | verify strict 6/20
+[13:39:16] verify | func= Extends | rank= 0 | pid= hep-ph/0104276 | title_snip='Some Recent Results from the Generic Supersymmetric Standard Model' | abs_len= 571
+[13:39:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:19] select | verify strict 7/20
+[13:39:19] verify | func= Extends | rank= 3 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[13:39:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:22] select | verify strict 8/20
+[13:39:22] verify | func= Extends | rank= 7 | pid= hep-ph/0102049 | title_snip='Cosmological Constraints in SUSY with Yukawa Unification' | abs_len= 667
+[13:39:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:25] select | verify strict 9/20
+[13:39:25] verify | func= Extends | rank= 10 | pid= hep-ph/0104186 | title_snip='Affleck-Dine baryo/leptogenesis with a gauged U(1)(B-L)' | abs_len= 1126
+[13:39:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:28] select | verify strict 10/20
+[13:39:28] verify | func= Extends | rank= 19 | pid= physics/0101057 | title_snip='Consequences of a Quantized Spacetime Model' | abs_len= 218
+[13:39:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:39:31] select | verify strict 11/20
+[13:39:31] verify | func= Extends | rank= 1 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[13:39:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:39:34] select | verify strict 12/20
+[13:39:34] verify | func= Extends | rank= 4 | pid= hep-ph/0103041 | title_snip='Effective Lagrangian for $\bar{s}bg$ and $\bar{s}b\gamma$ Vertices in
+…' | abs_len= 308
+[13:39:37] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:39:37] select | verify strict 13/20
+[13:39:37] verify | func= Extends | rank= 5 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[13:39:40] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:39:40] select | verify strict 14/20
+[13:39:40] verify | func= Extends | rank= 8 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[13:39:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:39:43] select | verify strict 15/20
+[13:39:43] verify | func= Extends | rank= 9 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[13:39:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:39:45] select | verify strict 16/20
+[13:39:45] verify | func= Extends | rank= 11 | pid= hep-ph/0102204 | title_snip='Recent Result from E821 Experiment on Muon g-2 and Unconstrained Minim…' | abs_len= 964
+[13:39:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:39:49] select | verify strict 17/20
+[13:39:49] verify | func= Extends | rank= 12 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[13:39:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:39:51] select | verify strict 18/20
+[13:39:51] verify | func= Extends | rank= 13 | pid= hep-ph/0104046 | title_snip='Gluino Contribution to Radiative B Decays: New Operators, Organization…' | abs_len= 594
+[13:39:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:39:54] select | verify strict 19/20
+[13:39:54] verify | func= Extends | rank= 16 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[13:39:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:39:56] select | verify strict 20/20
+[13:39:56] verify | func= Extends | rank= 18 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[13:39:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?
+- WINNER: hep-ph/0104276 | Some Recent Results from the Generic Supersymmetric Standard Model
+- QUOTE : minimal supersymmetric standard model
+- WHY   : sufficient
+- ANSWER: The thesis extends the Minimal Supersymmetric Standard Model by relaxing the imposed R-parity, allowing for R-parity violating contributions. This extension enables the exploration of new phenomenological features, such as contributions to scalar masses and fermion electric dipole moments, which were not fully considered in the minimal model (hep-ph/0104276).
+[13:40:04] main | running function= Compares
+[13:40:04] select | function= Compares | candidates_in= 20
+[13:40:04] select | core_terms= ['Minimal Supersymmetric Standard Model', 'baryogenesis', 'cosmic rays']
+[13:40:04] select | no cosine prune; kept=20/20
+[13:40:04] select | pool_size= 20 | ranks= [6, 2, 14, 15, 0, 3, 7, 10, 17, 9, 1, 4, 5, 8, 11, 12, 13, 16, 18, 19] | pids= ['hep-ph/0104251', 'hep-ph/0102043', 'hep-ph/0103231', 'hep-ph/0101102', 'hep-ph/0104276', 'hep-ph/0102113', 'hep-ph/0102049', 'hep-ph/0104186', 'hep-ph/0102008', 'hep-ph/0102096', 'hep-ph/0103270', 'hep-ph/0103041', 'hep-ph/0103095', 'hep-ph/0103299', 'hep-ph/0102204', 'hep-th/0102041', 'hep-ph/0104046', 'hep-ph/0101259', 'astro-ph/0103271', 'physics/0101057']
+[13:40:04] select | verify strict 1/20
+[13:40:04] verify | func= Compares | rank= 6 | pid= hep-ph/0104251 | title_snip='Astroparticle physics signals beyond the Standard Model' | abs_len= 1280
+[13:40:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:07] select | verify strict 2/20
+[13:40:07] verify | func= Compares | rank= 2 | pid= hep-ph/0102043 | title_snip='Electroweak Baryogenesis in Supersymmetric Variants' | abs_len= 685
+[13:40:11] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:40:11] select | verify strict 3/20
+[13:40:11] verify | func= Compares | rank= 14 | pid= hep-ph/0103231 | title_snip='Hybrid Inflation and Baryogenesis at the TeV Scale' | abs_len= 766
+[13:40:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:14] select | verify strict 4/20
+[13:40:14] verify | func= Compares | rank= 15 | pid= hep-ph/0101102 | title_snip='Some aspects of baryogenesis and lepton number violation' | abs_len= 341
+[13:40:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:17] select | verify strict 5/20
+[13:40:17] verify | func= Compares | rank= 0 | pid= hep-ph/0104276 | title_snip='Some Recent Results from the Generic Supersymmetric Standard Model' | abs_len= 571
+[13:40:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:20] select | verify strict 6/20
+[13:40:20] verify | func= Compares | rank= 3 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[13:40:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:23] select | verify strict 7/20
+[13:40:23] verify | func= Compares | rank= 7 | pid= hep-ph/0102049 | title_snip='Cosmological Constraints in SUSY with Yukawa Unification' | abs_len= 667
+[13:40:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:26] select | verify strict 8/20
+[13:40:26] verify | func= Compares | rank= 10 | pid= hep-ph/0104186 | title_snip='Affleck-Dine baryo/leptogenesis with a gauged U(1)(B-L)' | abs_len= 1126
+[13:40:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:40:29] select | verify strict 9/20
+[13:40:29] verify | func= Compares | rank= 17 | pid= hep-ph/0102008 | title_snip='Making Neutrinos Massive with an Axion in Supersymmetry' | abs_len= 519
+[13:40:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:33] select | verify strict 10/20
+[13:40:33] verify | func= Compares | rank= 9 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[13:40:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:40:35] select | verify strict 11/20
+[13:40:35] verify | func= Compares | rank= 1 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[13:40:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:38] select | verify strict 12/20
+[13:40:38] verify | func= Compares | rank= 4 | pid= hep-ph/0103041 | title_snip='Effective Lagrangian for $\bar{s}bg$ and $\bar{s}b\gamma$ Vertices in
+…' | abs_len= 308
+[13:40:41] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:40:41] select | verify strict 13/20
+[13:40:41] verify | func= Compares | rank= 5 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[13:40:45] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[13:40:45] select | verify strict 14/20
+[13:40:45] verify | func= Compares | rank= 8 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[13:40:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:40:47] select | verify strict 15/20
+[13:40:47] verify | func= Compares | rank= 11 | pid= hep-ph/0102204 | title_snip='Recent Result from E821 Experiment on Muon g-2 and Unconstrained Minim…' | abs_len= 964
+[13:40:51] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:40:51] select | verify strict 16/20
+[13:40:51] verify | func= Compares | rank= 12 | pid= hep-th/0102041 | title_snip='A model for gauge theories with Higgs fields' | abs_len= 1532
+[13:40:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:40:53] select | verify strict 17/20
+[13:40:53] verify | func= Compares | rank= 13 | pid= hep-ph/0104046 | title_snip='Gluino Contribution to Radiative B Decays: New Operators, Organization…' | abs_len= 594
+[13:40:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:40:56] select | verify strict 18/20
+[13:40:56] verify | func= Compares | rank= 16 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[13:40:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:40:58] select | verify strict 19/20
+[13:40:58] verify | func= Compares | rank= 18 | pid= astro-ph/0103271 | title_snip='Observational Evidence for Two Cosmological Predictions Made by
+  Bit-…' | abs_len= 666
+[13:41:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:41:01] select | verify strict 20/20
+[13:41:01] verify | func= Compares | rank= 19 | pid= physics/0101057 | title_snip='Consequences of a Quantized Spacetime Model' | abs_len= 218
+[13:41:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?
+- WINNER: hep-ph/0104276 | Some Recent Results from the Generic Supersymmetric Standard Model
+- QUOTE : The popular minimal supersymmetric standard model
+- WHY   : sufficient
+- ANSWER: The generic supersymmetric standard model is compared to the minimal supersymmetric standard model, differing in the imposition of R-parity. The comparison highlights distinct phenomenological features, including R-parity violating contributions to scalar masses and fermion electric dipole moments (hep-ph/0104276).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

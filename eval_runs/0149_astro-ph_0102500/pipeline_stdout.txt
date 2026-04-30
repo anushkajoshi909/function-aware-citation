@@ -1,0 +1,344 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Uses"
+  ],
+  "justification": "The query asks why the X\u2011ray source should be studied (Motivation) and which techniques are applied to investigate it (Uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 2.26 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  3.63it/s]
+Reading arXiv_src_0101_001.jsonl: 58it [00:00, 196.65it/s]
+Reading arXiv_src_0101_001.jsonl: 207it [00:00, 618.57it/s]
+Reading arXiv_src_0101_001.jsonl: 315it [00:00, 761.01it/s]
+Reading arXiv_src_0101_001.jsonl: 409it [00:00, 727.80it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 612.80it/s]
+Reading arXiv_src_0101_001.jsonl: 566it [00:01, 563.54it/s]
+Reading arXiv_src_0101_001.jsonl: 669it [00:01, 673.70it/s]
+Reading arXiv_src_0101_001.jsonl: 772it [00:01, 755.28it/s]
+Reading arXiv_src_0101_001.jsonl: 884it [00:01, 841.88it/s]
+Reading arXiv_src_0101_001.jsonl: 998it [00:01, 922.03it/s]
+Reading arXiv_src_0101_001.jsonl: 1108it [00:01, 970.97it/s]
+Reading arXiv_src_0101_001.jsonl: 1242it [00:01, 1073.31it/s]
+Reading arXiv_src_0101_001.jsonl: 1353it [00:01, 1073.71it/s]
+Reading arXiv_src_0101_001.jsonl: 1486it [00:01, 1147.18it/s]
+Reading arXiv_src_0101_001.jsonl: 1620it [00:01, 1201.08it/s]
+Reading arXiv_src_0101_001.jsonl: 1750it [00:02, 1216.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1873it [00:02, 1194.08it/s]
+Reading arXiv_src_0101_001.jsonl: 2051it [00:02, 1364.02it/s]
+Reading arXiv_src_0101_001.jsonl: 2206it [00:02, 1413.14it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 941.21it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 1318.02it/s]
+Reading arXiv_src_0102_001.jsonl: 273it [00:00, 1355.95it/s]
+Reading arXiv_src_0102_001.jsonl: 409it [00:00, 853.73it/s] 
+Reading arXiv_src_0102_001.jsonl: 510it [00:00, 501.24it/s]
+Reading arXiv_src_0102_001.jsonl: 592it [00:00, 542.68it/s]
+Reading arXiv_src_0102_001.jsonl: 676it [00:01, 603.57it/s]
+Reading arXiv_src_0102_001.jsonl: 792it [00:01, 729.39it/s]
+Reading arXiv_src_0102_001.jsonl: 923it [00:01, 870.10it/s]
+Reading arXiv_src_0102_001.jsonl: 1027it [00:01, 911.65it/s]
+Reading arXiv_src_0102_001.jsonl: 1148it [00:01, 989.64it/s]
+Reading arXiv_src_0102_001.jsonl: 1257it [00:01, 1016.67it/s]
+Reading arXiv_src_0102_001.jsonl: 1403it [00:01, 1139.82it/s]
+Reading arXiv_src_0102_001.jsonl: 1538it [00:01, 1198.15it/s]
+Reading arXiv_src_0102_001.jsonl: 1667it [00:01, 1224.66it/s]
+Reading arXiv_src_0102_001.jsonl: 1816it [00:01, 1302.24it/s]
+Reading arXiv_src_0102_001.jsonl: 1967it [00:02, 1362.32it/s]
+Reading arXiv_src_0102_001.jsonl: 2120it [00:02, 1408.43it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 1006.28it/s]
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 138it [00:00, 1372.70it/s]
+Reading arXiv_src_0103_001.jsonl: 303it [00:00, 1530.13it/s]
+Reading arXiv_src_0103_001.jsonl: 457it [00:00, 1122.15it/s]
+Reading arXiv_src_0103_001.jsonl: 580it [00:00, 725.84it/s] 
+Reading arXiv_src_0103_001.jsonl: 682it [00:00, 790.34it/s]
+Reading arXiv_src_0103_001.jsonl: 777it [00:00, 821.18it/s]
+Reading arXiv_src_0103_001.jsonl: 885it [00:00, 886.45it/s]
+Reading arXiv_src_0103_001.jsonl: 998it [00:01, 950.55it/s]
+Reading arXiv_src_0103_001.jsonl: 1104it [00:01, 979.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1224it [00:01, 1038.81it/s]
+Reading arXiv_src_0103_001.jsonl: 1333it [00:01, 1047.92it/s]
+Reading arXiv_src_0103_001.jsonl: 1479it [00:01, 1166.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1613it [00:01, 1217.00it/s]
+Reading arXiv_src_0103_001.jsonl: 1759it [00:01, 1285.16it/s]
+Reading arXiv_src_0103_001.jsonl: 1905it [00:01, 1335.81it/s]
+Reading arXiv_src_0103_001.jsonl: 2045it [00:01, 1353.74it/s]
+Reading arXiv_src_0103_001.jsonl: 2182it [00:01, 1351.19it/s]
+Reading arXiv_src_0103_001.jsonl: 2338it [00:02, 1412.93it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1140.79it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 1it [00:00,  5.31it/s]
+Reading arXiv_src_0104_001.jsonl: 42it [00:00, 179.81it/s]
+Reading arXiv_src_0104_001.jsonl: 196it [00:00, 698.16it/s]
+Reading arXiv_src_0104_001.jsonl: 352it [00:00, 1000.82it/s]
+Reading arXiv_src_0104_001.jsonl: 464it [00:00, 785.21it/s] 
+Reading arXiv_src_0104_001.jsonl: 557it [00:00, 567.28it/s]
+Reading arXiv_src_0104_001.jsonl: 630it [00:01, 500.60it/s]
+Reading arXiv_src_0104_001.jsonl: 723it [00:01, 584.97it/s]
+Reading arXiv_src_0104_001.jsonl: 809it [00:01, 644.09it/s]
+Reading arXiv_src_0104_001.jsonl: 916it [00:01, 741.81it/s]
+Reading arXiv_src_0104_001.jsonl: 1038it [00:01, 862.57it/s]
+Reading arXiv_src_0104_001.jsonl: 1153it [00:01, 938.21it/s]
+Reading arXiv_src_0104_001.jsonl: 1274it [00:01, 1012.45it/s]
+Reading arXiv_src_0104_001.jsonl: 1382it [00:01, 1005.79it/s]
+Reading arXiv_src_0104_001.jsonl: 1520it [00:01, 1110.07it/s]
+Reading arXiv_src_0104_001.jsonl: 1649it [00:02, 1161.32it/s]
+Reading arXiv_src_0104_001.jsonl: 1781it [00:02, 1207.40it/s]
+Reading arXiv_src_0104_001.jsonl: 1924it [00:02, 1267.61it/s]
+Reading arXiv_src_0104_001.jsonl: 2085it [00:02, 1364.23it/s]
+Reading arXiv_src_0104_001.jsonl: 2223it [00:02, 931.69it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 860.84it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What motivates the analysis of the X-ray source and what methods are used to understand its properties?
+[debug] classifier labels: ['Motivation', 'Uses']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at classifier_functions
+0     0  1.000000  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+1     1  0.753910  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+2     2  0.648437  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+3     3  0.568905  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+4     4  0.489017  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+5     5  0.481838  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+6     6  0.480315  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+7     7  0.470757  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+8     8  0.444865  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+9     9  0.429787  ...  2025-09-21T20:24:47.053569     Motivation, Uses
+
+[10 rows x 12 columns]
+[22:24:53] main | args: Namespace(max_check=20, debug=True)
+[22:24:53] read_last_jsonl | path= classified_outputs.jsonl
+[22:24:53] read_last_jsonl | total_lines= 1
+[22:24:53] main | query='What motivates the analysis of the X-ray source and what methods are used to understand its properties?' | funcs=['Motivation', 'Uses']
+[22:24:56] main | core_terms= ['X-ray source', 'spectroscopy', 'imaging', 'X-ray']
+[22:24:56] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:24:56] load_topk_jsonl | rows= 20
+[22:24:56] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103431 title_snip='Properties of Black Holes in Stellar Binary Systems' abs_len= 880
+[22:24:56] main | running function= Motivation
+[22:24:56] select | function= Motivation | candidates_in= 20
+[22:24:56] select | core_terms= ['X-ray source', 'spectroscopy', 'imaging', 'X-ray']
+[22:24:56] select | no cosine prune; kept=20/20
+[22:24:56] select | pool_size= 20 | ranks= [3, 4, 6, 1, 5, 18, 0, 2, 9, 10, 13, 14, 15, 19, 7, 8, 11, 12, 16, 17] | pids= ['astro-ph/0102111', 'astro-ph/0102088', 'astro-ph/0104348', 'astro-ph/0102297', 'astro-ph/0104270', 'astro-ph/0104057', 'astro-ph/0103431', 'astro-ph/0102428', 'astro-ph/0101396', 'nucl-ex/0103011', 'cond-mat/0101230', 'cond-mat/0101142', 'physics/0101059', 'nucl-th/0104067', 'astro-ph/0102495', 'astro-ph/0101084', 'cond-mat/0103138', 'nucl-th/0101012', 'hep-ph/0101071', 'hep-ph/0104295']
+[22:24:56] select | verify strict 1/20
+[22:24:56] verify | func= Motivation | rank= 3 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[22:24:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[22:24:59] select | verify strict 2/20
+[22:24:59] verify | func= Motivation | rank= 4 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[22:25:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:25:02] select | verify strict 3/20
+[22:25:02] verify | func= Motivation | rank= 6 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[22:25:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[22:25:05] select | verify strict 4/20
+[22:25:05] verify | func= Motivation | rank= 1 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[22:25:08] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[22:25:08] select | verify strict 5/20
+[22:25:08] verify | func= Motivation | rank= 5 | pid= astro-ph/0104270 | title_snip='The Enigmatic X-ray Point Sources at the Central Stars of NGC 6543 and…' | abs_len= 850
+[22:25:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:25:12] select | verify strict 6/20
+[22:25:12] verify | func= Motivation | rank= 18 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[22:25:15] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[22:25:15] select | verify strict 7/20
+[22:25:15] verify | func= Motivation | rank= 0 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[22:25:18] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:25:18] select | verify strict 8/20
+[22:25:18] verify | func= Motivation | rank= 2 | pid= astro-ph/0102428 | title_snip='The BeppoSAX High Energy Large Area Survey. IV. On the soft X-ray
+  pr…' | abs_len= 753
+[22:25:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:25:21] select | verify strict 9/20
+[22:25:21] verify | func= Motivation | rank= 9 | pid= astro-ph/0101396 | title_snip='HEXTE Studies of Sco X-1 Spectra: Detections of Hard X-Ray Tails Beyon…' | abs_len= 944
+[22:25:25] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:25:25] select | verify strict 10/20
+[22:25:25] verify | func= Motivation | rank= 10 | pid= nucl-ex/0103011 | title_snip='Model-independent source imaging using two-pion correlations in 2 to 8…' | abs_len= 638
+[22:25:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:27] select | verify strict 11/20
+[22:25:27] verify | func= Motivation | rank= 13 | pid= cond-mat/0101230 | title_snip='X-ray standing wave and reflectometric characterization of multilayer
+…' | abs_len= 1296
+[22:25:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:25:30] select | verify strict 12/20
+[22:25:30] verify | func= Motivation | rank= 14 | pid= cond-mat/0101142 | title_snip='X-ray diffraction and spectroscopic techniques from liquid surfaces an…' | abs_len= 95
+[22:25:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:25:33] select | verify strict 13/20
+[22:25:33] verify | func= Motivation | rank= 15 | pid= physics/0101059 | title_snip='Discovery of a Planar Waveguide for an X-Ray Radiation' | abs_len= 786
+[22:25:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:25:36] select | verify strict 14/20
+[22:25:36] verify | func= Motivation | rank= 19 | pid= nucl-th/0104067 | title_snip='Determination of pi-N scattering lengths from pionic hydrogen and pion…' | abs_len= 945
+[22:25:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:39] select | verify strict 15/20
+[22:25:39] verify | func= Motivation | rank= 7 | pid= astro-ph/0102495 | title_snip='The Gamma-Ray Properties of Unidentified EGRET Sources' | abs_len= 894
+[22:25:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:41] select | verify strict 16/20
+[22:25:41] verify | func= Motivation | rank= 8 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[22:25:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:44] select | verify strict 17/20
+[22:25:44] verify | func= Motivation | rank= 11 | pid= cond-mat/0103138 | title_snip='Coherent description of electrical and thermal impurity-and-phonon
+  l…' | abs_len= 636
+[22:25:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:46] select | verify strict 18/20
+[22:25:46] verify | func= Motivation | rank= 12 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[22:25:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:49] select | verify strict 19/20
+[22:25:49] verify | func= Motivation | rank= 16 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[22:25:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:25:52] select | verify strict 20/20
+[22:25:52] verify | func= Motivation | rank= 17 | pid= hep-ph/0104295 | title_snip='Additional ways to determination of structure of high energy elastic
+ …' | abs_len= 384
+[22:25:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the analysis of the X-ray source and what methods are used to understand its properties?
+- WINNER: astro-ph/0103431 | Properties of Black Holes in Stellar Binary Systems
+- QUOTE : Recent X-ray timing and spectral observations
+- WHY   : sufficient
+- ANSWER: The analysis of the X-ray source is motivated by the need to understand the properties of black holes in stellar binary systems, particularly their mass and spin. Investigating these properties matters because it can provide insights into the physics of accretion flows and energy flow modes (astro-ph/0103431).
+[22:25:58] main | running function= Uses
+[22:25:58] select | function= Uses | candidates_in= 20
+[22:25:58] select | core_terms= ['X-ray source', 'spectroscopy', 'imaging', 'X-ray']
+[22:25:58] select | no cosine prune; kept=20/20
+[22:25:58] select | pool_size= 20 | ranks= [3, 4, 6, 0, 1, 9, 10, 18, 19, 2, 5, 13, 14, 15, 7, 8, 11, 12, 16, 17] | pids= ['astro-ph/0102111', 'astro-ph/0102088', 'astro-ph/0104348', 'astro-ph/0103431', 'astro-ph/0102297', 'astro-ph/0101396', 'nucl-ex/0103011', 'astro-ph/0104057', 'nucl-th/0104067', 'astro-ph/0102428', 'astro-ph/0104270', 'cond-mat/0101230', 'cond-mat/0101142', 'physics/0101059', 'astro-ph/0102495', 'astro-ph/0101084', 'cond-mat/0103138', 'nucl-th/0101012', 'hep-ph/0101071', 'hep-ph/0104295']
+[22:25:58] select | verify strict 1/20
+[22:25:58] verify | func= Uses | rank= 3 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[22:26:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[22:26:02] select | verify strict 2/20
+[22:26:02] verify | func= Uses | rank= 4 | pid= astro-ph/0102088 | title_snip='Spectra and evolution of two X-ray sources in M81' | abs_len= 277
+[22:26:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[22:26:05] select | verify strict 3/20
+[22:26:05] verify | func= Uses | rank= 6 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[22:26:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:26:08] select | verify strict 4/20
+[22:26:08] verify | func= Uses | rank= 0 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[22:26:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:26:11] select | verify strict 5/20
+[22:26:11] verify | func= Uses | rank= 1 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[22:26:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[22:26:14] select | verify strict 6/20
+[22:26:14] verify | func= Uses | rank= 9 | pid= astro-ph/0101396 | title_snip='HEXTE Studies of Sco X-1 Spectra: Detections of Hard X-Ray Tails Beyon…' | abs_len= 944
+[22:26:17] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[22:26:17] select | verify strict 7/20
+[22:26:17] verify | func= Uses | rank= 10 | pid= nucl-ex/0103011 | title_snip='Model-independent source imaging using two-pion correlations in 2 to 8…' | abs_len= 638
+[22:26:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:20] select | verify strict 8/20
+[22:26:20] verify | func= Uses | rank= 18 | pid= astro-ph/0104057 | title_snip='Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+…' | abs_len= 681
+[22:26:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[22:26:23] select | verify strict 9/20
+[22:26:23] verify | func= Uses | rank= 19 | pid= nucl-th/0104067 | title_snip='Determination of pi-N scattering lengths from pionic hydrogen and pion…' | abs_len= 945
+[22:26:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:26] select | verify strict 10/20
+[22:26:26] verify | func= Uses | rank= 2 | pid= astro-ph/0102428 | title_snip='The BeppoSAX High Energy Large Area Survey. IV. On the soft X-ray
+  pr…' | abs_len= 753
+[22:26:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:26:29] select | verify strict 11/20
+[22:26:29] verify | func= Uses | rank= 5 | pid= astro-ph/0104270 | title_snip='The Enigmatic X-ray Point Sources at the Central Stars of NGC 6543 and…' | abs_len= 850
+[22:26:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:26:33] select | verify strict 12/20
+[22:26:33] verify | func= Uses | rank= 13 | pid= cond-mat/0101230 | title_snip='X-ray standing wave and reflectometric characterization of multilayer
+…' | abs_len= 1296
+[22:26:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:26:37] select | verify strict 13/20
+[22:26:37] verify | func= Uses | rank= 14 | pid= cond-mat/0101142 | title_snip='X-ray diffraction and spectroscopic techniques from liquid surfaces an…' | abs_len= 95
+[22:26:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:26:40] select | verify strict 14/20
+[22:26:40] verify | func= Uses | rank= 15 | pid= physics/0101059 | title_snip='Discovery of a Planar Waveguide for an X-Ray Radiation' | abs_len= 786
+[22:26:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:26:43] select | verify strict 15/20
+[22:26:43] verify | func= Uses | rank= 7 | pid= astro-ph/0102495 | title_snip='The Gamma-Ray Properties of Unidentified EGRET Sources' | abs_len= 894
+[22:26:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:45] select | verify strict 16/20
+[22:26:45] verify | func= Uses | rank= 8 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[22:26:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:48] select | verify strict 17/20
+[22:26:48] verify | func= Uses | rank= 11 | pid= cond-mat/0103138 | title_snip='Coherent description of electrical and thermal impurity-and-phonon
+  l…' | abs_len= 636
+[22:26:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:50] select | verify strict 18/20
+[22:26:50] verify | func= Uses | rank= 12 | pid= nucl-th/0101012 | title_snip='Nuclear isotope shifts within the local energy-density functional
+  ap…' | abs_len= 1196
+[22:26:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:53] select | verify strict 19/20
+[22:26:53] verify | func= Uses | rank= 16 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[22:26:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:26:55] select | verify strict 20/20
+[22:26:55] verify | func= Uses | rank= 17 | pid= hep-ph/0104295 | title_snip='Additional ways to determination of structure of high energy elastic
+ …' | abs_len= 384
+[22:26:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : What motivates the analysis of the X-ray source and what methods are used to understand its properties?
+- WINNER: astro-ph/0104057 | Time-Evolution of the Power Spectrum of the Black Hole X-ray Nova XTE
+  J1550-564
+- QUOTE : using X-ray luminosity time series data obtained by the Rossi X-Ray
+- WHY   : sufficient
+- ANSWER: The Rossi X-Ray Timing Explorer satellite is used to obtain X-ray luminosity time series data for analyzing the time evolution of the power spectrum of XTE J1550-564. The authors apply new methods, along with a comparison to the dynamic power spectrum, to understand the time-frequency variations of the X-ray source (astro-ph/0104057).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

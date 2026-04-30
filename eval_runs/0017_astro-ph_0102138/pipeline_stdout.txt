@@ -1,0 +1,337 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query asks what future research directions are motivated by current limitations, linking a motivating factor to prospective work."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+[NbConvertApp] Converting notebook /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb to script
+[NbConvertApp] Writing 24671 bytes to /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py
+Loaded model in 4.24 s
+Warmup ok
+
+Reading arXiv_src_0101_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0101_001.jsonl: 1it [00:00,  5.33it/s]
+Reading arXiv_src_0101_001.jsonl: 31it [00:00, 132.48it/s]
+Reading arXiv_src_0101_001.jsonl: 181it [00:00, 651.03it/s]
+Reading arXiv_src_0101_001.jsonl: 309it [00:00, 871.51it/s]
+Reading arXiv_src_0101_001.jsonl: 407it [00:00, 795.05it/s]
+Reading arXiv_src_0101_001.jsonl: 494it [00:00, 637.74it/s]
+Reading arXiv_src_0101_001.jsonl: 567it [00:00, 587.13it/s]
+Reading arXiv_src_0101_001.jsonl: 673it [00:01, 695.22it/s]
+Reading arXiv_src_0101_001.jsonl: 775it [00:01, 776.22it/s]
+Reading arXiv_src_0101_001.jsonl: 885it [00:01, 861.80it/s]
+Reading arXiv_src_0101_001.jsonl: 997it [00:01, 931.15it/s]
+Reading arXiv_src_0101_001.jsonl: 1105it [00:01, 972.71it/s]
+Reading arXiv_src_0101_001.jsonl: 1235it [00:01, 1065.24it/s]
+Reading arXiv_src_0101_001.jsonl: 1345it [00:01, 1057.73it/s]
+Reading arXiv_src_0101_001.jsonl: 1481it [00:01, 1144.32it/s]
+Reading arXiv_src_0101_001.jsonl: 1612it [00:01, 1191.56it/s]
+Reading arXiv_src_0101_001.jsonl: 1740it [00:01, 1214.83it/s]
+Reading arXiv_src_0101_001.jsonl: 1863it [00:02, 1186.53it/s]
+Reading arXiv_src_0101_001.jsonl: 2038it [00:02, 1348.85it/s]
+Reading arXiv_src_0101_001.jsonl: 2195it [00:02, 1413.47it/s]
+Reading arXiv_src_0101_001.jsonl: 2319it [00:02, 972.52it/s] 
+
+Reading arXiv_src_0102_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0102_001.jsonl: 1it [00:00,  9.42it/s]
+Reading arXiv_src_0102_001.jsonl: 134it [00:00, 761.28it/s]
+Reading arXiv_src_0102_001.jsonl: 271it [00:00, 1032.75it/s]
+Reading arXiv_src_0102_001.jsonl: 376it [00:00, 844.85it/s] 
+Reading arXiv_src_0102_001.jsonl: 466it [00:00, 487.90it/s]
+Reading arXiv_src_0102_001.jsonl: 533it [00:00, 507.53it/s]
+Reading arXiv_src_0102_001.jsonl: 597it [00:01, 534.46it/s]
+Reading arXiv_src_0102_001.jsonl: 682it [00:01, 608.66it/s]
+Reading arXiv_src_0102_001.jsonl: 795it [00:01, 739.48it/s]
+Reading arXiv_src_0102_001.jsonl: 923it [00:01, 881.81it/s]
+Reading arXiv_src_0102_001.jsonl: 1030it [00:01, 933.06it/s]
+Reading arXiv_src_0102_001.jsonl: 1145it [00:01, 992.69it/s]
+Reading arXiv_src_0102_001.jsonl: 1253it [00:01, 1017.44it/s]
+Reading arXiv_src_0102_001.jsonl: 1397it [00:01, 1138.05it/s]
+Reading arXiv_src_0102_001.jsonl: 1527it [00:01, 1182.76it/s]
+Reading arXiv_src_0102_001.jsonl: 1651it [00:01, 1195.92it/s]
+Reading arXiv_src_0102_001.jsonl: 1800it [00:02, 1282.35it/s]
+Reading arXiv_src_0102_001.jsonl: 1946it [00:02, 1332.35it/s]
+Reading arXiv_src_0102_001.jsonl: 2090it [00:02, 1363.51it/s]
+Reading arXiv_src_0102_001.jsonl: 2192it [00:02, 952.49it/s] 
+
+Reading arXiv_src_0103_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0103_001.jsonl: 1it [00:00,  8.20it/s]
+Reading arXiv_src_0103_001.jsonl: 32it [00:00, 169.63it/s]
+Reading arXiv_src_0103_001.jsonl: 172it [00:00, 702.52it/s]
+Reading arXiv_src_0103_001.jsonl: 323it [00:00, 1006.79it/s]
+Reading arXiv_src_0103_001.jsonl: 427it [00:00, 1013.86it/s]
+Reading arXiv_src_0103_001.jsonl: 531it [00:00, 675.11it/s] 
+Reading arXiv_src_0103_001.jsonl: 614it [00:00, 659.07it/s]
+Reading arXiv_src_0103_001.jsonl: 720it [00:01, 737.29it/s]
+Reading arXiv_src_0103_001.jsonl: 813it [00:01, 785.40it/s]
+Reading arXiv_src_0103_001.jsonl: 915it [00:01, 846.64it/s]
+Reading arXiv_src_0103_001.jsonl: 1025it [00:01, 914.47it/s]
+Reading arXiv_src_0103_001.jsonl: 1142it [00:01, 985.51it/s]
+Reading arXiv_src_0103_001.jsonl: 1245it [00:01, 997.68it/s]
+Reading arXiv_src_0103_001.jsonl: 1363it [00:01, 1039.93it/s]
+Reading arXiv_src_0103_001.jsonl: 1517it [00:01, 1182.77it/s]
+Reading arXiv_src_0103_001.jsonl: 1654it [00:01, 1234.90it/s]
+Reading arXiv_src_0103_001.jsonl: 1797it [00:01, 1290.43it/s]
+Reading arXiv_src_0103_001.jsonl: 1934it [00:02, 1312.68it/s]
+Reading arXiv_src_0103_001.jsonl: 2075it [00:02, 1337.01it/s]
+Reading arXiv_src_0103_001.jsonl: 2210it [00:02, 1322.80it/s]
+Reading arXiv_src_0103_001.jsonl: 2363it [00:02, 1383.14it/s]
+Reading arXiv_src_0103_001.jsonl: 2441it [00:02, 1026.47it/s]
+
+Reading arXiv_src_0104_001.jsonl: 0it [00:00, ?it/s]
+Reading arXiv_src_0104_001.jsonl: 2it [00:00, 12.71it/s]
+Reading arXiv_src_0104_001.jsonl: 148it [00:00, 701.00it/s]
+Reading arXiv_src_0104_001.jsonl: 305it [00:00, 1051.60it/s]
+Reading arXiv_src_0104_001.jsonl: 424it [00:00, 997.57it/s] 
+Reading arXiv_src_0104_001.jsonl: 533it [00:00, 699.38it/s]
+Reading arXiv_src_0104_001.jsonl: 619it [00:01, 502.68it/s]
+Reading arXiv_src_0104_001.jsonl: 716it [00:01, 590.36it/s]
+Reading arXiv_src_0104_001.jsonl: 806it [00:01, 648.08it/s]
+Reading arXiv_src_0104_001.jsonl: 912it [00:01, 742.50it/s]
+Reading arXiv_src_0104_001.jsonl: 1036it [00:01, 859.22it/s]
+Reading arXiv_src_0104_001.jsonl: 1149it [00:01, 927.78it/s]
+Reading arXiv_src_0104_001.jsonl: 1269it [00:01, 1000.29it/s]
+Reading arXiv_src_0104_001.jsonl: 1377it [00:01, 1003.02it/s]
+Reading arXiv_src_0104_001.jsonl: 1508it [00:01, 1088.61it/s]
+Reading arXiv_src_0104_001.jsonl: 1644it [00:01, 1164.98it/s]
+Reading arXiv_src_0104_001.jsonl: 1771it [00:02, 1193.09it/s]
+Reading arXiv_src_0104_001.jsonl: 1917it [00:02, 1270.35it/s]
+Reading arXiv_src_0104_001.jsonl: 2069it [00:02, 1343.17it/s]
+Reading arXiv_src_0104_001.jsonl: 2205it [00:02, 933.53it/s] 
+Reading arXiv_src_0104_001.jsonl: 2310it [00:02, 898.62it/s]
+Loaded 9262 unique papers
+           paper_id  ...  year
+0  quant-ph/0101147  ...  2001
+1  quant-ph/0101145  ...  2001
+2  quant-ph/0101144  ...  2001
+
+[3 rows x 4 columns]
+[debug] query: What potential areas of future research could be motivated by the limitations of current cosmological parameter constraints?
+[debug] classifier labels: ['Motivation', 'FutureWork']
+[debug] got 20 candidates
+rows written: 20
+- outputs/topk_candidates_query.jsonl
+- outputs/topk_candidates_query.csv
+   rank     score  ...                retrieved_at    classifier_functions
+0     0  1.000000  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+1     1  0.800470  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+2     2  0.723913  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+3     3  0.624301  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+4     4  0.598940  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+5     5  0.557679  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+6     6  0.545991  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+7     7  0.512313  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+8     8  0.511825  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+9     9  0.495191  ...  2025-09-21T12:07:03.653813  Motivation, FutureWork
+
+[10 rows x 12 columns]
+[14:07:11] main | args: Namespace(max_check=20, debug=True)
+[14:07:11] read_last_jsonl | path= classified_outputs.jsonl
+[14:07:11] read_last_jsonl | total_lines= 1
+[14:07:11] main | query='What potential areas of future research could be motivated by the limitations of current cosmological parameter constraints?' | funcs=['Motivation', 'FutureWork']
+[14:07:13] main | core_terms= ['cosmological parameters', 'constraints', 'cosmology']
+[14:07:13] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:07:13] load_topk_jsonl | rows= 20
+[14:07:13] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0103349 title_snip='Standard Model Parameters and the Cosmological Constant' abs_len= 170
+[14:07:13] main | running function= Motivation
+[14:07:13] select | function= Motivation | candidates_in= 20
+[14:07:13] select | core_terms= ['cosmological parameters', 'constraints', 'cosmology']
+[14:07:13] select | no cosine prune; kept=20/20
+[14:07:13] select | pool_size= 20 | ranks= [8, 6, 9, 7, 19, 2, 5, 15, 17, 11, 3, 13, 14, 16, 18, 1, 10, 12, 0, 4] | pids= ['astro-ph/0103500', 'astro-ph/0104076', 'astro-ph/0103075', 'astro-ph/0104217', 'hep-ph/0102314', 'astro-ph/0102390', 'hep-ph/0103288', 'astro-ph/0102349', 'astro-ph/0104366', 'hep-ph/0102183', 'astro-ph/0104162', 'hep-ph/0103320', 'hep-ph/0101131', 'astro-ph/0103047', 'astro-ph/0101086', 'astro-ph/0101386', 'hep-th/0104023', 'astro-ph/0102339', 'hep-ph/0103349', 'hep-ph/0102057']
+[14:07:13] select | verify strict 1/20
+[14:07:13] verify | func= Motivation | rank= 8 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[14:07:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:07:16] select | verify strict 2/20
+[14:07:16] verify | func= Motivation | rank= 6 | pid= astro-ph/0104076 | title_snip='Constraints on the Cosmic Equation of State using Gravitational Lensin…' | abs_len= 1196
+[14:07:19] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[14:07:19] select | verify strict 3/20
+[14:07:19] verify | func= Motivation | rank= 9 | pid= astro-ph/0103075 | title_snip='Supernova constraints on spatial variations of the vacuum energy densi…' | abs_len= 810
+[14:07:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:07:22] select | verify strict 4/20
+[14:07:22] verify | func= Motivation | rank= 7 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[14:07:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[14:07:26] select | verify strict 5/20
+[14:07:26] verify | func= Motivation | rank= 19 | pid= hep-ph/0102314 | title_snip='Constraints on Inflation Models from Supersymmetry Breakings' | abs_len= 814
+[14:07:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:07:29] select | verify strict 6/20
+[14:07:29] verify | func= Motivation | rank= 2 | pid= astro-ph/0102390 | title_snip='Primordial black holes as a probe of the early universe and a varying
+…' | abs_len= 803
+[14:07:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:07:32] select | verify strict 7/20
+[14:07:32] verify | func= Motivation | rank= 5 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[14:07:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:07:34] select | verify strict 8/20
+[14:07:34] verify | func= Motivation | rank= 15 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[14:07:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:07:38] select | verify strict 9/20
+[14:07:38] verify | func= Motivation | rank= 17 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[14:07:41] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[14:07:41] select | verify strict 10/20
+[14:07:41] verify | func= Motivation | rank= 11 | pid= hep-ph/0102183 | title_snip='Frontiers of Inflationary Cosmology' | abs_len= 540
+[14:07:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= True
+[14:07:44] select | verify strict 11/20
+[14:07:44] verify | func= Motivation | rank= 3 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[14:07:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:07:47] select | verify strict 12/20
+[14:07:47] verify | func= Motivation | rank= 13 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[14:07:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:07:49] select | verify strict 13/20
+[14:07:49] verify | func= Motivation | rank= 14 | pid= hep-ph/0101131 | title_snip='Cosmological Constraints on Large Extra Dimensions' | abs_len= 490
+[14:07:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:07:53] select | verify strict 14/20
+[14:07:53] verify | func= Motivation | rank= 16 | pid= astro-ph/0103047 | title_snip='Constraints on inflation from CMB and Lyman-alpha forest' | abs_len= 884
+[14:07:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:07:56] select | verify strict 15/20
+[14:07:56] verify | func= Motivation | rank= 18 | pid= astro-ph/0101086 | title_snip='Constraints from the damping tail' | abs_len= 827
+[14:07:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[14:07:59] select | verify strict 16/20
+[14:07:59] verify | func= Motivation | rank= 1 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[14:08:02] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[14:08:02] select | verify strict 17/20
+[14:08:02] verify | func= Motivation | rank= 10 | pid= hep-th/0104023 | title_snip='Cosmological Evolution on Self-Tuned Branes and the Cosmological
+  Con…' | abs_len= 769
+[14:08:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= missing_core_in_quote cue_hint= False
+[14:08:05] select | verify strict 18/20
+[14:08:05] verify | func= Motivation | rank= 12 | pid= astro-ph/0102339 | title_snip='Implications of the BOOMERANG and MAXIMA-I results for the Baryon Mass…' | abs_len= 434
+[14:08:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:08:08] select | verify strict 19/20
+[14:08:08] verify | func= Motivation | rank= 0 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[14:08:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:08:11] select | verify strict 20/20
+[14:08:11] verify | func= Motivation | rank= 4 | pid= hep-ph/0102057 | title_snip='Fundamental Constants and Conservation Laws' | abs_len= 539
+[14:08:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research could be motivated by the limitations of current cosmological parameter constraints?
+- WINNER: hep-ph/0103349 | Standard Model Parameters and the Cosmological Constant
+- QUOTE : implications for cosmology and future theory
+- WHY   : sufficient
+- ANSWER: The limitations of current cosmological parameter constraints could motivate future research in areas such as refining standard model couplings and their implications for cosmology. This is important because it could lead to a deeper understanding of the universe and the development of new theories (hep-ph/0103349).
+[14:08:18] main | running function= FutureWork
+[14:08:18] select | function= FutureWork | candidates_in= 20
+[14:08:18] select | core_terms= ['cosmological parameters', 'constraints', 'cosmology']
+[14:08:18] select | no cosine prune; kept=20/20
+[14:08:18] select | pool_size= 20 | ranks= [8, 6, 9, 7, 3, 13, 14, 16, 18, 19, 1, 2, 5, 10, 12, 15, 17, 0, 4, 11] | pids= ['astro-ph/0103500', 'astro-ph/0104076', 'astro-ph/0103075', 'astro-ph/0104217', 'astro-ph/0104162', 'hep-ph/0103320', 'hep-ph/0101131', 'astro-ph/0103047', 'astro-ph/0101086', 'hep-ph/0102314', 'astro-ph/0101386', 'astro-ph/0102390', 'hep-ph/0103288', 'hep-th/0104023', 'astro-ph/0102339', 'astro-ph/0102349', 'astro-ph/0104366', 'hep-ph/0103349', 'hep-ph/0102057', 'hep-ph/0102183']
+[14:08:18] select | verify strict 1/20
+[14:08:18] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103500 | title_snip='Constraining the Cosmological Parameters using Strong Lensing' | abs_len= 1682
+[14:08:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:08:22] select | verify strict 2/20
+[14:08:22] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104076 | title_snip='Constraints on the Cosmic Equation of State using Gravitational Lensin…' | abs_len= 1196
+[14:08:25] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[14:08:25] select | verify strict 3/20
+[14:08:25] verify | func= FutureWork | rank= 9 | pid= astro-ph/0103075 | title_snip='Supernova constraints on spatial variations of the vacuum energy densi…' | abs_len= 810
+[14:08:27] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:08:27] select | verify strict 4/20
+[14:08:27] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[14:08:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:08:31] select | verify strict 5/20
+[14:08:31] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[14:08:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:08:34] select | verify strict 6/20
+[14:08:34] verify | func= FutureWork | rank= 13 | pid= hep-ph/0103320 | title_snip='EDM Constraints in Supersymmetric Theories' | abs_len= 400
+[14:08:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:08:36] select | verify strict 7/20
+[14:08:36] verify | func= FutureWork | rank= 14 | pid= hep-ph/0101131 | title_snip='Cosmological Constraints on Large Extra Dimensions' | abs_len= 490
+[14:08:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[14:08:43] select | verify strict 8/20
+[14:08:43] verify | func= FutureWork | rank= 16 | pid= astro-ph/0103047 | title_snip='Constraints on inflation from CMB and Lyman-alpha forest' | abs_len= 884
+[14:08:46] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:08:46] select | verify strict 9/20
+[14:08:46] verify | func= FutureWork | rank= 18 | pid= astro-ph/0101086 | title_snip='Constraints from the damping tail' | abs_len= 827
+[14:08:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[14:08:49] select | verify strict 10/20
+[14:08:49] verify | func= FutureWork | rank= 19 | pid= hep-ph/0102314 | title_snip='Constraints on Inflation Models from Supersymmetry Breakings' | abs_len= 814
+[14:08:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:08:51] select | verify strict 11/20
+[14:08:51] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101386 | title_snip='How Does CMB + BBN Constrain New Physics?' | abs_len= 1035
+[14:08:55] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:08:55] select | verify strict 12/20
+[14:08:55] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102390 | title_snip='Primordial black holes as a probe of the early universe and a varying
+…' | abs_len= 803
+[14:08:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:08:58] select | verify strict 13/20
+[14:08:58] verify | func= FutureWork | rank= 5 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[14:09:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:09:01] select | verify strict 14/20
+[14:09:01] verify | func= FutureWork | rank= 10 | pid= hep-th/0104023 | title_snip='Cosmological Evolution on Self-Tuned Branes and the Cosmological
+  Con…' | abs_len= 769
+[14:09:04] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:09:04] select | verify strict 15/20
+[14:09:04] verify | func= FutureWork | rank= 12 | pid= astro-ph/0102339 | title_snip='Implications of the BOOMERANG and MAXIMA-I results for the Baryon Mass…' | abs_len= 434
+[14:09:07] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:09:07] select | verify strict 16/20
+[14:09:07] verify | func= FutureWork | rank= 15 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[14:09:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:09:10] select | verify strict 17/20
+[14:09:10] verify | func= FutureWork | rank= 17 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[14:09:13] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[14:09:13] select | verify strict 18/20
+[14:09:13] verify | func= FutureWork | rank= 0 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[14:09:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:09:16] select | verify strict 19/20
+[14:09:16] verify | func= FutureWork | rank= 4 | pid= hep-ph/0102057 | title_snip='Fundamental Constants and Conservation Laws' | abs_len= 539
+[14:09:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:09:19] select | verify strict 20/20
+[14:09:19] verify | func= FutureWork | rank= 11 | pid= hep-ph/0102183 | title_snip='Frontiers of Inflationary Cosmology' | abs_len= 540
+[14:09:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research could be motivated by the limitations of current cosmological parameter constraints?
+- WINNER: hep-ph/0103349 | Standard Model Parameters and the Cosmological Constant
+- QUOTE : implications for cosmology and future theory
+- WHY   : sufficient
+- ANSWER: The limitations of current cosmological parameter constraints could motivate future research in cosmology and theoretical physics, particularly in exploring new relations amongst standard model couplings. Future work may investigate the implications of these relations for cosmology and the development of new theories (hep-ph/0103349).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+-> jupyter nbconvert --to script /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.ipynb  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+🩹 Hardened exported script: Retreival_query_based.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🧩 Patched final-stage script written to: function_based_final_patched.py
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_final_patched.py --debug --max-check 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs
