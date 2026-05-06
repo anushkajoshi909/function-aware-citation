@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how existing applications of Imaging Atmospheric Cerenkov Telescopes are employed and how they guide subsequent research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[17:12:49] main | args: Namespace(max_check=10, debug=True)
+[17:12:49] read_last_jsonl | path= classified_outputs.jsonl
+[17:12:49] read_last_jsonl | total_lines= 1
+[17:12:49] main | query='How do current uses of Imaging Atmospheric Cerenkov Telescopes inform future work in detecting gamma rays from astrophysical objects?' | funcs=['Uses', 'FutureWork']
+[17:12:52] main | core_terms= ['Imaging Atmospheric Cerenkov Telescopes', 'gamma rays', 'astrophysical objects', 'Cerenkov radiation']
+[17:12:52] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:12:52] load_topk_jsonl | rows= 20
+[17:12:52] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101533 title_snip='Imaging Atmospheric Cerenkov Telescopes: Techniques and Results' abs_len= 1072
+[17:12:52] main | running function= Uses
+[17:12:52] select | function= Uses | candidates_in= 20
+[17:12:52] select | core_terms= ['Imaging Atmospheric Cerenkov Telescopes', 'gamma rays', 'astrophysical objects', 'Cerenkov radiation']
+[17:12:52] select | no cosine prune; kept=20/20
+[17:12:52] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101533', 'astro-ph/0102324', 'astro-ph/0101039', 'astro-ph/0101120', 'astro-ph/0103516', 'astro-ph/0101241', 'physics/0104041', 'astro-ph/0104143', 'astro-ph/0101496', 'astro-ph/0102391']
+[17:12:52] select | verify relaxed 1/10
+[17:12:52] verify | func= Uses | rank= 0 | pid= astro-ph/0101533 | title_snip='Imaging Atmospheric Cerenkov Telescopes: Techniques and Results' | abs_len= 1072
+[17:12:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:12:56] select | verify relaxed 2/10
+[17:12:56] verify | func= Uses | rank= 1 | pid= astro-ph/0102324 | title_snip='TeV observations of SNRs and unidentified sources' | abs_len= 409
+[17:13:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:13:00] select | verify relaxed 3/10
+[17:13:00] verify | func= Uses | rank= 2 | pid= astro-ph/0101039 | title_snip='Gamma Ray Pulsars: Observations' | abs_len= 848
+[17:13:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:13:03] select | verify relaxed 4/10
+[17:13:03] verify | func= Uses | rank= 3 | pid= astro-ph/0101120 | title_snip='TeV Gamma-Ray Astronomy in the new Millennium' | abs_len= 928
+[17:13:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:13:06] select | verify relaxed 5/10
+[17:13:06] verify | func= Uses | rank= 4 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[17:13:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:13:09] select | verify relaxed 6/10
+[17:13:09] verify | func= Uses | rank= 5 | pid= astro-ph/0101241 | title_snip='Detection of Earth-like Planets Using Apodized Telescopes' | abs_len= 1109
+[17:13:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:13:12] select | verify relaxed 7/10
+[17:13:12] verify | func= Uses | rank= 6 | pid= physics/0104041 | title_snip='Beam Measurements of a CLOUD (Cosmics Leaving OUtdoor Droplets) Chambe…' | abs_len= 1583
+[17:13:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:13:16] select | verify relaxed 8/10
+[17:13:16] verify | func= Uses | rank= 7 | pid= astro-ph/0104143 | title_snip='Gamma Ray and Hadron generated \v{C}erenkov Photon Spectra at Various
+…' | abs_len= 1639
+[17:13:19] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[17:13:19] select | verify relaxed 9/10
+[17:13:19] verify | func= Uses | rank= 8 | pid= astro-ph/0101496 | title_snip='A first EGRET-UNID-related agenda for the next-generation Cherenkov
+  …' | abs_len= 824
+[17:13:23] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[17:13:23] select | verify relaxed 10/10
+[17:13:23] verify | func= Uses | rank= 9 | pid= astro-ph/0102391 | title_snip='Evidence for TeV gamma ray emission from Cassiopeia A' | abs_len= 740
+[17:13:27] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How do current uses of Imaging Atmospheric Cerenkov Telescopes inform future work in detecting gamma rays from astrophysical objects?
+- WINNER: astro-ph/0101533 | Imaging Atmospheric Cerenkov Telescopes: Techniques and Results
+- QUOTE : Imaging Atmospheric Cerenkov Telescopes
+- WHY   : sufficient
+[17:13:28] main | running function= FutureWork
+[17:13:28] select | function= FutureWork | candidates_in= 20
+[17:13:28] select | core_terms= ['Imaging Atmospheric Cerenkov Telescopes', 'gamma rays', 'astrophysical objects', 'Cerenkov radiation']
+[17:13:28] select | no cosine prune; kept=20/20
+[17:13:28] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101533', 'astro-ph/0102324', 'astro-ph/0101039', 'astro-ph/0101120', 'astro-ph/0103516', 'astro-ph/0101241', 'physics/0104041', 'astro-ph/0104143', 'astro-ph/0101496', 'astro-ph/0102391']
+[17:13:28] select | verify relaxed 1/10
+[17:13:28] verify | func= FutureWork | rank= 0 | pid= astro-ph/0101533 | title_snip='Imaging Atmospheric Cerenkov Telescopes: Techniques and Results' | abs_len= 1072
+[17:13:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:13:32] select | verify relaxed 2/10
+[17:13:32] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102324 | title_snip='TeV observations of SNRs and unidentified sources' | abs_len= 409
+[17:13:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:13:35] select | verify relaxed 3/10
+[17:13:35] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101039 | title_snip='Gamma Ray Pulsars: Observations' | abs_len= 848
+[17:13:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:13:39] select | verify relaxed 4/10
+[17:13:39] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101120 | title_snip='TeV Gamma-Ray Astronomy in the new Millennium' | abs_len= 928
+[17:13:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:13:42] select | verify relaxed 5/10
+[17:13:42] verify | func= FutureWork | rank= 4 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[17:13:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:13:45] select | verify relaxed 6/10
+[17:13:45] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101241 | title_snip='Detection of Earth-like Planets Using Apodized Telescopes' | abs_len= 1109
+[17:13:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:13:48] select | verify relaxed 7/10
+[17:13:48] verify | func= FutureWork | rank= 6 | pid= physics/0104041 | title_snip='Beam Measurements of a CLOUD (Cosmics Leaving OUtdoor Droplets) Chambe…' | abs_len= 1583
+[17:13:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:13:51] select | verify relaxed 8/10
+[17:13:51] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104143 | title_snip='Gamma Ray and Hadron generated \v{C}erenkov Photon Spectra at Various
+…' | abs_len= 1639
+[17:13:54] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[17:13:54] select | verify relaxed 9/10
+[17:13:54] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101496 | title_snip='A first EGRET-UNID-related agenda for the next-generation Cherenkov
+  …' | abs_len= 824
+[17:13:58] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[17:13:58] select | verify relaxed 10/10
+[17:13:58] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102391 | title_snip='Evidence for TeV gamma ray emission from Cassiopeia A' | abs_len= 740
+[17:14:01] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do current uses of Imaging Atmospheric Cerenkov Telescopes inform future work in detecting gamma rays from astrophysical objects?
+- WINNER: astro-ph/0101533 | Imaging Atmospheric Cerenkov Telescopes: Techniques and Results
+- QUOTE : will be the targets of the next generation
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Current uses of Imaging Atmospheric Cerenkov Telescopes, such as detecting gamma rays from the Crab Nebula and Active Galaxies [Uses] (astro-ph/0101533), inform future work in that they will be used to target a variety of astrophysical objects and phenomena, including neutralino annihilation and primordial black hole evaporation [FutureWork] (astro-ph/0101533).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

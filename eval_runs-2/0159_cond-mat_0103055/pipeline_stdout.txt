@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query asks how the current work compares with prior approaches (comparative) and how it employs those methods (usage)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:40:31] main | args: Namespace(max_check=10, debug=True)
+[00:40:31] read_last_jsonl | path= classified_outputs.jsonl
+[00:40:31] read_last_jsonl | total_lines= 1
+[00:40:31] main | query='How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?' | funcs=['Compares', 'Uses']
+[00:40:44] main | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[00:40:44] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:40:44] load_topk_jsonl | rows= 20
+[00:40:44] load_topk_jsonl | first: rank= 0 paper_id= hep-lat/0104001 title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' abs_len= 391
+[00:40:44] main | running function= Compares
+[00:40:44] select | function= Compares | candidates_in= 20
+[00:40:44] select | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[00:40:44] select | no cosine prune; kept=20/20
+[00:40:44] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-lat/0104001', 'cond-mat/0103610', 'hep-lat/0101015', 'cond-mat/0103055', 'hep-lat/0101003', 'cond-mat/0103293', 'hep-ph/0103299', 'hep-lat/0101017', 'nucl-th/0104043', 'hep-ph/0104033']
+[00:40:44] select | verify relaxed 1/10
+[00:40:44] verify | func= Compares | rank= 0 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[00:40:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:40:46] select | verify relaxed 2/10
+[00:40:46] verify | func= Compares | rank= 1 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[00:40:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[00:40:49] select | verify relaxed 3/10
+[00:40:49] verify | func= Compares | rank= 2 | pid= hep-lat/0101015 | title_snip='Schwinger Model with the Overlap-Dirac Operator: exact results versus …' | abs_len= 481
+[00:40:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:40:52] select | verify relaxed 4/10
+[00:40:52] verify | func= Compares | rank= 3 | pid= cond-mat/0103055 | title_snip='Superfluidity of bosons on a deformable lattice' | abs_len= 1505
+[00:40:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:40:55] select | verify relaxed 5/10
+[00:40:55] verify | func= Compares | rank= 4 | pid= hep-lat/0101003 | title_snip='Lattice B-Physics' | abs_len= 597
+[00:40:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:40:57] select | verify relaxed 6/10
+[00:40:57] verify | func= Compares | rank= 5 | pid= cond-mat/0103293 | title_snip='Local quantum coherence and superfluidity' | abs_len= 1066
+[00:41:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:41:01] select | verify relaxed 7/10
+[00:41:01] verify | func= Compares | rank= 6 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[00:41:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:03] select | verify relaxed 8/10
+[00:41:03] verify | func= Compares | rank= 7 | pid= hep-lat/0101017 | title_snip='Abelian chromomagnetic background field at finite temperature on the
+ …' | abs_len= 650
+[00:41:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:06] select | verify relaxed 9/10
+[00:41:06] verify | func= Compares | rank= 8 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[00:41:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:08] select | verify relaxed 10/10
+[00:41:08] verify | func= Compares | rank= 9 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[00:41:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:12] arbiter | rejected off-topic winner: cond-mat/0103610
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Compares.
+[00:41:12] main | running function= Uses
+[00:41:12] select | function= Uses | candidates_in= 20
+[00:41:12] select | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[00:41:12] select | no cosine prune; kept=20/20
+[00:41:12] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-lat/0104001', 'cond-mat/0103610', 'hep-lat/0101015', 'cond-mat/0103055', 'hep-lat/0101003', 'cond-mat/0103293', 'hep-ph/0103299', 'hep-lat/0101017', 'nucl-th/0104043', 'hep-ph/0104033']
+[00:41:12] select | verify relaxed 1/10
+[00:41:12] verify | func= Uses | rank= 0 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[00:41:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:14] select | verify relaxed 2/10
+[00:41:14] verify | func= Uses | rank= 1 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[00:41:17] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:41:17] select | verify relaxed 3/10
+[00:41:17] verify | func= Uses | rank= 2 | pid= hep-lat/0101015 | title_snip='Schwinger Model with the Overlap-Dirac Operator: exact results versus …' | abs_len= 481
+[00:41:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:20] select | verify relaxed 4/10
+[00:41:20] verify | func= Uses | rank= 3 | pid= cond-mat/0103055 | title_snip='Superfluidity of bosons on a deformable lattice' | abs_len= 1505
+[00:41:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:41:23] select | verify relaxed 5/10
+[00:41:23] verify | func= Uses | rank= 4 | pid= hep-lat/0101003 | title_snip='Lattice B-Physics' | abs_len= 597
+[00:41:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:25] select | verify relaxed 6/10
+[00:41:25] verify | func= Uses | rank= 5 | pid= cond-mat/0103293 | title_snip='Local quantum coherence and superfluidity' | abs_len= 1066
+[00:41:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:41:29] select | verify relaxed 7/10
+[00:41:29] verify | func= Uses | rank= 6 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[00:41:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:31] select | verify relaxed 8/10
+[00:41:31] verify | func= Uses | rank= 7 | pid= hep-lat/0101017 | title_snip='Abelian chromomagnetic background field at finite temperature on the
+ …' | abs_len= 650
+[00:41:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:34] select | verify relaxed 9/10
+[00:41:34] verify | func= Uses | rank= 8 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[00:41:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:36] select | verify relaxed 10/10
+[00:41:36] verify | func= Uses | rank= 9 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[00:41:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:41:40] arbiter | rejected off-topic winner: cond-mat/0103610
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Uses.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

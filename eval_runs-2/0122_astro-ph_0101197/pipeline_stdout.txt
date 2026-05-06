@@ -1,0 +1,157 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks for a comparison between a model and observations, and also seeks directions for future research to validate that comparison."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:50:33] main | args: Namespace(max_check=10, debug=True)
+[23:50:33] read_last_jsonl | path= classified_outputs.jsonl
+[23:50:33] read_last_jsonl | total_lines= 1
+[23:50:33] main | query='How does the proposed model of stellar system formation compare to existing observations of halo globular clusters, and what future research could be done to further validate this comparison?' | funcs=['Compares', 'FutureWork']
+[23:50:34] main | core_terms= ['halo globular clusters', 'stellar system', 'stellar system formation']
+[23:50:34] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:50:34] load_topk_jsonl | rows= 20
+[23:50:34] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101197 title_snip='Synchronized Formation of Sub-Galactic Systems at Cosmological
+  Reion…' abs_len= 1806
+[23:50:34] main | running function= Compares
+[23:50:34] select | function= Compares | candidates_in= 20
+[23:50:34] select | core_terms= ['halo globular clusters', 'stellar system', 'stellar system formation']
+[23:50:34] select | no cosine prune; kept=20/20
+[23:50:34] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101197', 'astro-ph/0103256', 'astro-ph/0101535', 'astro-ph/0103021', 'astro-ph/0101081', 'astro-ph/0101210', 'astro-ph/0104139', 'astro-ph/0104069', 'astro-ph/0102039', 'astro-ph/0102165']
+[23:50:34] select | verify relaxed 1/10
+[23:50:34] verify | func= Compares | rank= 0 | pid= astro-ph/0101197 | title_snip='Synchronized Formation of Sub-Galactic Systems at Cosmological
+  Reion…' | abs_len= 1806
+[23:50:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:50:38] select | verify relaxed 2/10
+[23:50:38] verify | func= Compares | rank= 1 | pid= astro-ph/0103256 | title_snip='Cosmological Evolution of Supergiant Star-Forming Clouds' | abs_len= 1393
+[23:50:41] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:50:41] select | verify relaxed 3/10
+[23:50:41] verify | func= Compares | rank= 2 | pid= astro-ph/0101535 | title_snip='Formation of Compact Binaries in Globular Clusters' | abs_len= 1069
+[23:50:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[23:50:44] select | verify relaxed 4/10
+[23:50:44] verify | func= Compares | rank= 3 | pid= astro-ph/0103021 | title_snip='New Insights from HST Studies of Globular Cluster Systems I: Colors,
+ …' | abs_len= 1689
+[23:50:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:50:47] select | verify relaxed 5/10
+[23:50:47] verify | func= Compares | rank= 4 | pid= astro-ph/0101081 | title_snip='Galactic nuclear activity induced by globular cluster merging' | abs_len= 503
+[23:50:50] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[23:50:50] select | verify relaxed 6/10
+[23:50:50] verify | func= Compares | rank= 5 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[23:50:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:50:53] select | verify relaxed 7/10
+[23:50:53] verify | func= Compares | rank= 6 | pid= astro-ph/0104139 | title_snip='Observational tests of the delta_c-M_vir relation in hierarchical
+  cl…' | abs_len= 995
+[23:50:55] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:50:55] select | verify relaxed 8/10
+[23:50:55] verify | func= Compares | rank= 7 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[23:50:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[23:50:58] select | verify relaxed 9/10
+[23:50:58] verify | func= Compares | rank= 8 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[23:51:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:51:01] select | verify relaxed 10/10
+[23:51:01] verify | func= Compares | rank= 9 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:51:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the proposed model of stellar system formation compare to existing observations of halo globular clusters, and what future research could be done to further validate this comparison?
+- WINNER: astro-ph/0101197 | Synchronized Formation of Sub-Galactic Systems at Cosmological
+  Reionization: Origin of Halo Globular Clusters
+- QUOTE : The characteristics of these proposed systems seem to match the observed properties of halo globular clusters
+- WHY   : sufficient
+- ANSWER: The proposed model of stellar system formation is compared to existing observations of halo globular clusters in terms of characteristics such as size, velocity dispersion, and mass. The model's predictions, including the expected number density and mass function of the stellar systems, are found to be consistent with the observed properties of halo globular clusters (astro-ph/0101197).
+[23:51:08] main | running function= FutureWork
+[23:51:08] select | function= FutureWork | candidates_in= 20
+[23:51:08] select | core_terms= ['halo globular clusters', 'stellar system', 'stellar system formation']
+[23:51:08] select | no cosine prune; kept=20/20
+[23:51:08] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101197', 'astro-ph/0103256', 'astro-ph/0101535', 'astro-ph/0103021', 'astro-ph/0101081', 'astro-ph/0101210', 'astro-ph/0104139', 'astro-ph/0104069', 'astro-ph/0102039', 'astro-ph/0102165']
+[23:51:08] select | verify relaxed 1/10
+[23:51:08] verify | func= FutureWork | rank= 0 | pid= astro-ph/0101197 | title_snip='Synchronized Formation of Sub-Galactic Systems at Cosmological
+  Reion…' | abs_len= 1806
+[23:51:10] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[23:51:10] select | verify relaxed 2/10
+[23:51:10] verify | func= FutureWork | rank= 1 | pid= astro-ph/0103256 | title_snip='Cosmological Evolution of Supergiant Star-Forming Clouds' | abs_len= 1393
+[23:51:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[23:51:14] select | verify relaxed 3/10
+[23:51:14] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101535 | title_snip='Formation of Compact Binaries in Globular Clusters' | abs_len= 1069
+[23:51:17] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[23:51:17] select | verify relaxed 4/10
+[23:51:17] verify | func= FutureWork | rank= 3 | pid= astro-ph/0103021 | title_snip='New Insights from HST Studies of Globular Cluster Systems I: Colors,
+ …' | abs_len= 1689
+[23:51:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[23:51:20] select | verify relaxed 5/10
+[23:51:20] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101081 | title_snip='Galactic nuclear activity induced by globular cluster merging' | abs_len= 503
+[23:51:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:51:23] select | verify relaxed 6/10
+[23:51:23] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[23:51:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:51:26] select | verify relaxed 7/10
+[23:51:26] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104139 | title_snip='Observational tests of the delta_c-M_vir relation in hierarchical
+  cl…' | abs_len= 995
+[23:51:28] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:51:28] select | verify relaxed 8/10
+[23:51:28] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[23:51:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[23:51:31] select | verify relaxed 9/10
+[23:51:31] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[23:51:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:51:34] select | verify relaxed 10/10
+[23:51:34] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:51:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the proposed model of stellar system formation compare to existing observations of halo globular clusters, and what future research could be done to further validate this comparison?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

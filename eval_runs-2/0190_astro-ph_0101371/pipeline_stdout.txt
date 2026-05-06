@@ -1,0 +1,155 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks foundational information about the mass function (background) and highlights existing limitations that drive further investigation (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:36:08] main | args: Namespace(max_check=10, debug=True)
+[01:36:08] read_last_jsonl | path= classified_outputs.jsonl
+[01:36:08] read_last_jsonl | total_lines= 1
+[01:36:08] main | query='What limitations in understanding the mass function of open clusters motivate further study and provide background for the current research?' | funcs=['Background', 'Motivation']
+[01:36:09] main | core_terms= ['open clusters', 'mass function']
+[01:36:09] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:36:09] load_topk_jsonl | rows= 20
+[01:36:09] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101371 title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' abs_len= 1423
+[01:36:09] main | running function= Background
+[01:36:09] select | function= Background | candidates_in= 20
+[01:36:09] select | core_terms= ['open clusters', 'mass function']
+[01:36:09] select | no cosine prune; kept=20/20
+[01:36:09] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101371', 'astro-ph/0102010', 'astro-ph/0102430', 'astro-ph/0101431', 'astro-ph/0104313', 'astro-ph/0103082', 'astro-ph/0101564', 'astro-ph/0104163', 'astro-ph/0101139', 'astro-ph/0102363']
+[01:36:09] select | verify relaxed 1/10
+[01:36:09] verify | func= Background | rank= 0 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[01:36:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:36:12] select | verify relaxed 2/10
+[01:36:12] verify | func= Background | rank= 1 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[01:36:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:15] select | verify relaxed 3/10
+[01:36:15] verify | func= Background | rank= 2 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[01:36:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:17] select | verify relaxed 4/10
+[01:36:17] verify | func= Background | rank= 3 | pid= astro-ph/0101431 | title_snip='Infrared constraints on the dark mass concentration observed in the
+  …' | abs_len= 964
+[01:36:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:20] select | verify relaxed 5/10
+[01:36:20] verify | func= Background | rank= 4 | pid= astro-ph/0104313 | title_snip='Cluster correlations in redshift space' | abs_len= 1713
+[01:36:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:22] select | verify relaxed 6/10
+[01:36:22] verify | func= Background | rank= 5 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[01:36:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:25] select | verify relaxed 7/10
+[01:36:25] verify | func= Background | rank= 6 | pid= astro-ph/0101564 | title_snip='The Mass-Temperature Relation of 22 Nearby Clusters' | abs_len= 1302
+[01:36:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:36:27] select | verify relaxed 8/10
+[01:36:27] verify | func= Background | rank= 7 | pid= astro-ph/0104163 | title_snip='The CFHT Open Star Cluster Survey I -- Cluster Selection and Data
+  Re…' | abs_len= 1677
+[01:36:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:36:30] select | verify relaxed 9/10
+[01:36:30] verify | func= Background | rank= 8 | pid= astro-ph/0101139 | title_snip='The Mass and Structure of the Pleiades Star Cluster from 2MASS' | abs_len= 1672
+[01:36:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:36:34] select | verify relaxed 10/10
+[01:36:34] verify | func= Background | rank= 9 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[01:36:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What limitations in understanding the mass function of open clusters motivate further study and provide background for the current research?
+- WINNER: astro-ph/0101371 | Luminosity and mass function of galactic open clusters: I. NGC 4815
+- QUOTE : Below this mass, the MF cannot be considered as representative
+- WHY   : sufficient
+- ANSWER: The mass function of open clusters is not well understood, particularly at lower masses, due to limitations such as strong background irregularities, dynamical evolution, and interaction with the Galactic field (astro-ph/0101371).
+[01:36:41] main | running function= Motivation
+[01:36:41] select | function= Motivation | candidates_in= 20
+[01:36:41] select | core_terms= ['open clusters', 'mass function']
+[01:36:41] select | no cosine prune; kept=20/20
+[01:36:41] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101371', 'astro-ph/0102010', 'astro-ph/0102430', 'astro-ph/0101431', 'astro-ph/0104313', 'astro-ph/0103082', 'astro-ph/0101564', 'astro-ph/0104163', 'astro-ph/0101139', 'astro-ph/0102363']
+[01:36:41] select | verify relaxed 1/10
+[01:36:41] verify | func= Motivation | rank= 0 | pid= astro-ph/0101371 | title_snip='Luminosity and mass function of galactic open clusters: I. NGC 4815' | abs_len= 1423
+[01:36:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:36:44] select | verify relaxed 2/10
+[01:36:44] verify | func= Motivation | rank= 1 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[01:36:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:46] select | verify relaxed 3/10
+[01:36:46] verify | func= Motivation | rank= 2 | pid= astro-ph/0102430 | title_snip='Probing the Evolution of Gas Mass Fraction with Sunyaev-Zel'dovich
+  E…' | abs_len= 1039
+[01:36:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:49] select | verify relaxed 4/10
+[01:36:49] verify | func= Motivation | rank= 3 | pid= astro-ph/0101431 | title_snip='Infrared constraints on the dark mass concentration observed in the
+  …' | abs_len= 964
+[01:36:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:51] select | verify relaxed 5/10
+[01:36:51] verify | func= Motivation | rank= 4 | pid= astro-ph/0104313 | title_snip='Cluster correlations in redshift space' | abs_len= 1713
+[01:36:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:54] select | verify relaxed 6/10
+[01:36:54] verify | func= Motivation | rank= 5 | pid= astro-ph/0103082 | title_snip='Bumpy Power Spectra and Galaxy Clusters' | abs_len= 1826
+[01:36:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:36:56] select | verify relaxed 7/10
+[01:36:56] verify | func= Motivation | rank= 6 | pid= astro-ph/0101564 | title_snip='The Mass-Temperature Relation of 22 Nearby Clusters' | abs_len= 1302
+[01:36:59] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:36:59] select | verify relaxed 8/10
+[01:36:59] verify | func= Motivation | rank= 7 | pid= astro-ph/0104163 | title_snip='The CFHT Open Star Cluster Survey I -- Cluster Selection and Data
+  Re…' | abs_len= 1677
+[01:37:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:37:02] select | verify relaxed 9/10
+[01:37:02] verify | func= Motivation | rank= 8 | pid= astro-ph/0101139 | title_snip='The Mass and Structure of the Pleiades Star Cluster from 2MASS' | abs_len= 1672
+[01:37:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:37:05] select | verify relaxed 10/10
+[01:37:05] verify | func= Motivation | rank= 9 | pid= astro-ph/0102363 | title_snip='INTEGRAL observations of Galaxy Clusters' | abs_len= 1523
+[01:37:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in understanding the mass function of open clusters motivate further study and provide background for the current research?
+- WINNER: astro-ph/0101371 | Luminosity and mass function of galactic open clusters: I. NGC 4815
+- QUOTE : Below this mass, the MF cannot be considered as representative
+- WHY   : sufficient
+- ANSWER: The current understanding of the mass function of open clusters is limited by uncertainties and biases, particularly at lower masses, due to factors such as strong background irregularities, dynamical evolution, and unresolved binaries. This limitation motivates further study to accurately determine the mass function and initial mass function of open clusters (astro-ph/0101371).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

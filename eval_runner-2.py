@@ -12,11 +12,11 @@ from datetime import datetime
 # --- Defaults (tweak if your project lives elsewhere)
 PROJECT_ROOT = Path(__file__).resolve().parent
 PIPELINE_PATH_DEFAULT = PROJECT_ROOT / "run_pipeline-2.py"
-RUNS_DIR_DEFAULT = PROJECT_ROOT / "eval_runs-2"  # where we stash per-example outputs
+RUNS_DIR_DEFAULT = PROJECT_ROOT / "eval_runs_3_Openai"  # where we stash per-example outputs
 
 # --- Filenames your pipeline already produces
 FUNC_RESULTS_JSONL = "RetrievalAugmentedGeneration/outputs/function_selection_results.jsonl"
-FUNC_ANSWERS_TXT   = "RetrievalAugmentedGeneration/outputs/function_answers.txt"
+FUNC_ANSWERS_TXT   = "RetrievalAugmentedGeneration/outputs/function_answer_unified.txt"
 CLASSIFIED_JSONL   = "RetrievalAugmentedGeneration/classified_outputs.jsonl"  # used by pipeline
 
 # --- Ensure retrieval reuses existing index/meta by default ---
@@ -319,7 +319,7 @@ def main():
 
             # 2) copy outputs away before next run overwrites them
             copied1 = copy_if_exists(project_root / FUNC_RESULTS_JSONL, subdir / "function_selection_results.jsonl")
-            copied2 = copy_if_exists(project_root / FUNC_ANSWERS_TXT,   subdir / "function_answers.txt")
+            copied2 = copy_if_exists(project_root / FUNC_ANSWERS_TXT,   subdir / "function_answer_unified.txt")
             copied3 = copy_if_exists(project_root / CLASSIFIED_JSONL,   subdir / "classified_outputs.jsonl")
             if not (copied1 and copied2 and copied3):
                 print("   ⚠️ Missing expected outputs; check pipeline logs (need function_results, answers, and classified).")

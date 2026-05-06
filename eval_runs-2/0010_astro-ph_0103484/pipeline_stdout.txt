@@ -1,0 +1,151 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "FutureWork"
+  ],
+  "justification": "The query asks how the study's methods can be applied (Uses) and explicitly seeks guidance for subsequent investigations (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[21:27:23] main | args: Namespace(max_check=10, debug=True)
+[21:27:23] read_last_jsonl | path= classified_outputs.jsonl
+[21:27:23] read_last_jsonl | total_lines= 1
+[21:27:23] main | query='How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?' | funcs=['Uses', 'FutureWork']
+[21:27:25] main | core_terms= ['starburst galaxies', 'X-ray', 'X-ray luminosity']
+[21:27:25] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:27:25] load_topk_jsonl | rows= 20
+[21:27:25] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103484 title_snip='The Hard X-ray Luminosity of OB Star Populations: Implications for the…' abs_len= 1533
+[21:27:25] main | running function= Uses
+[21:27:25] select | function= Uses | candidates_in= 20
+[21:27:25] select | core_terms= ['starburst galaxies', 'X-ray', 'X-ray luminosity']
+[21:27:25] select | no cosine prune; kept=20/20
+[21:27:25] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103484', 'astro-ph/0101271', 'astro-ph/0102297', 'astro-ph/0102086', 'astro-ph/0101407', 'astro-ph/0104404', 'astro-ph/0101084', 'astro-ph/0104316', 'astro-ph/0101543', 'astro-ph/0101276']
+[21:27:25] select | verify relaxed 1/10
+[21:27:25] verify | func= Uses | rank= 0 | pid= astro-ph/0103484 | title_snip='The Hard X-ray Luminosity of OB Star Populations: Implications for the…' | abs_len= 1533
+[21:27:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:27:27] select | verify relaxed 2/10
+[21:27:27] verify | func= Uses | rank= 1 | pid= astro-ph/0101271 | title_snip='The X-ray Emission in Post-Merger Ellipticals' | abs_len= 909
+[21:27:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:27:30] select | verify relaxed 3/10
+[21:27:30] verify | func= Uses | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[21:27:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:27:33] select | verify relaxed 4/10
+[21:27:33] verify | func= Uses | rank= 3 | pid= astro-ph/0102086 | title_snip='Simulating galaxy surveys with FIRST (PACS & SPIRE)' | abs_len= 1343
+[21:27:36] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[21:27:36] select | verify relaxed 5/10
+[21:27:36] verify | func= Uses | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[21:27:39] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[21:27:39] select | verify relaxed 6/10
+[21:27:39] verify | func= Uses | rank= 5 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[21:27:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:27:41] select | verify relaxed 7/10
+[21:27:41] verify | func= Uses | rank= 6 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[21:27:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:27:44] select | verify relaxed 8/10
+[21:27:44] verify | func= Uses | rank= 7 | pid= astro-ph/0104316 | title_snip='The Obscuring Starburst of NGC 6221 and Implications for the Hard X-ra…' | abs_len= 1178
+[21:27:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:27:47] select | verify relaxed 9/10
+[21:27:47] verify | func= Uses | rank= 8 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[21:27:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:27:50] select | verify relaxed 10/10
+[21:27:50] verify | func= Uses | rank= 9 | pid= astro-ph/0101276 | title_snip='The z=0 Galaxy Luminosity Function: I. Techniques for Identification o…' | abs_len= 850
+[21:27:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?
+- WINNER: astro-ph/0103484 | The Hard X-ray Luminosity of OB Star Populations: Implications for the
+  Contribution of Star Formation to the Cosmic X-ray Background
+- QUOTE : from their OB star populations
+- WHY   : sufficient
+- ANSWER: The methods used in this study, which involve analyzing X-ray luminosity from OB star populations and associated sources, can inform future research on the X-ray luminosity of starburst galaxies by helping to quantify the contribution of star formation to their total X-ray emission. Researchers can apply these methods to assess the fraction of X-ray emission from starburst galaxies that arises from their OB star populations (astro-ph/0103484).
+[21:27:58] main | running function= FutureWork
+[21:27:58] select | function= FutureWork | candidates_in= 20
+[21:27:58] select | core_terms= ['starburst galaxies', 'X-ray', 'X-ray luminosity']
+[21:27:58] select | no cosine prune; kept=20/20
+[21:27:58] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103484', 'astro-ph/0101271', 'astro-ph/0102297', 'astro-ph/0102086', 'astro-ph/0101407', 'astro-ph/0104404', 'astro-ph/0101084', 'astro-ph/0104316', 'astro-ph/0101543', 'astro-ph/0101276']
+[21:27:58] select | verify relaxed 1/10
+[21:27:58] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103484 | title_snip='The Hard X-ray Luminosity of OB Star Populations: Implications for the…' | abs_len= 1533
+[21:28:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:28:01] select | verify relaxed 2/10
+[21:28:01] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101271 | title_snip='The X-ray Emission in Post-Merger Ellipticals' | abs_len= 909
+[21:28:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:28:03] select | verify relaxed 3/10
+[21:28:03] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[21:28:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:28:06] select | verify relaxed 4/10
+[21:28:06] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102086 | title_snip='Simulating galaxy surveys with FIRST (PACS & SPIRE)' | abs_len= 1343
+[21:28:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:28:09] select | verify relaxed 5/10
+[21:28:09] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[21:28:12] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[21:28:12] select | verify relaxed 6/10
+[21:28:12] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[21:28:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:28:15] select | verify relaxed 7/10
+[21:28:15] verify | func= FutureWork | rank= 6 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[21:28:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:28:18] select | verify relaxed 8/10
+[21:28:18] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104316 | title_snip='The Obscuring Starburst of NGC 6221 and Implications for the Hard X-ra…' | abs_len= 1178
+[21:28:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:28:21] select | verify relaxed 9/10
+[21:28:21] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[21:28:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:28:23] select | verify relaxed 10/10
+[21:28:23] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101276 | title_snip='The z=0 Galaxy Luminosity Function: I. Techniques for Identification o…' | abs_len= 850
+[21:28:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the methods used in this study inform future research on the X-ray luminosity of starburst galaxies?
+- WINNER: astro-ph/0103484 | The Hard X-ray Luminosity of OB Star Populations: Implications for the
+  Contribution of Star Formation to the Cosmic X-ray Background
+- QUOTE : its implications for the contribution of starbursts to the cosmic X-ray background
+- WHY   : sufficient
+- ANSWER: The methods used in this study can inform future research on the X-ray luminosity of starburst galaxies by investigating the nature of the additional emission component required to explain the observed hard X-ray emission in some systems. Future work may focus on determining the implications of this additional emission for the contribution of starbursts to the cosmic X-ray background (astro-ph/0103484).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

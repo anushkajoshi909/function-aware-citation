@@ -1,0 +1,2 @@
+The current work builds on a previous theoretical framework for three neutrino mixing in matter, where rigorous analytical solutions were obtained (hep-ph/0104043). [Background]
+The current work is motivated by remaining issues in the standard three-flavor mixing scheme of neutrinos, including the unknown sign of $\Delta m^2_{13}$ and the leptonic CP violating phase. This motivates the development of new methods, such as the supernova method and perturbative frameworks, to study these issues in long-baseline neutrino oscillation experiments (hep-ph/0101231). [Motivation]

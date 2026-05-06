@@ -1,0 +1,2 @@
+The motivation for studying the correlation between radio and gamma-ray luminosities in blazars stems from the need to understand the relationship between superluminal ejections and gamma-ray flares. This understanding is crucial as it can reveal the physical mechanisms underlying these events, such as inverse Compton scattering by relativistic electrons in the jet (astro-ph/0102012). [Motivation]
+The abstract does not provide information relevant to Uses. [Uses]

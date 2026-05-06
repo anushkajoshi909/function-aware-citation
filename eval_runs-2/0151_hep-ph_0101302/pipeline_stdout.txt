@@ -1,0 +1,153 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Motivation"
+  ],
+  "justification": "The query asks how the current work builds on (extends) earlier lattice estimates and also seeks the reasons (motivation) for pursuing higher\u2011order perturbative calculations."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:28:08] main | args: Namespace(max_check=10, debug=True)
+[00:28:08] read_last_jsonl | path= classified_outputs.jsonl
+[00:28:08] read_last_jsonl | total_lines= 1
+[00:28:08] main | query='How does the work extend previous lattice estimates and motivate the need for high-order perturbative calculations in the context of the operator product expansion?' | funcs=['Extends', 'Motivation']
+[00:28:10] main | core_terms= ['lattice', 'operator product expansion', 'perturbative calculations', 'high-order']
+[00:28:10] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:28:10] load_topk_jsonl | rows= 20
+[00:28:10] load_topk_jsonl | first: rank= 0 paper_id= hep-lat/0104007 title_snip='The Calculation of the Perturbative Expansion of Wilson Loops on Latti…' abs_len= 251
+[00:28:10] main | running function= Extends
+[00:28:10] select | function= Extends | candidates_in= 20
+[00:28:10] select | core_terms= ['lattice', 'operator product expansion', 'perturbative calculations', 'high-order']
+[00:28:10] select | no cosine prune; kept=20/20
+[00:28:10] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-lat/0104007', 'hep-lat/0104005', 'hep-lat/0103018', 'hep-ph/0101302', 'hep-ph/0101248', 'hep-ph/0104033', 'hep-ph/0101163', 'hep-ph/0102026', 'hep-ph/0101318', 'hep-ph/0104246']
+[00:28:10] select | verify relaxed 1/10
+[00:28:10] verify | func= Extends | rank= 0 | pid= hep-lat/0104007 | title_snip='The Calculation of the Perturbative Expansion of Wilson Loops on Latti…' | abs_len= 251
+[00:28:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:13] select | verify relaxed 2/10
+[00:28:13] verify | func= Extends | rank= 1 | pid= hep-lat/0104005 | title_snip='Non-Perturbative Renormalization in Lattice Field Theory' | abs_len= 500
+[00:28:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:16] select | verify relaxed 3/10
+[00:28:16] verify | func= Extends | rank= 2 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[00:28:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:28:19] select | verify relaxed 4/10
+[00:28:19] verify | func= Extends | rank= 3 | pid= hep-ph/0101302 | title_snip='Testing Landau gauge OPE on the Lattice with a $<A^2>$ Condensate' | abs_len= 1149
+[00:28:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= True
+[00:28:22] select | verify relaxed 5/10
+[00:28:22] verify | func= Extends | rank= 4 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[00:28:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[00:28:24] select | verify relaxed 6/10
+[00:28:24] verify | func= Extends | rank= 5 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[00:28:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:27] select | verify relaxed 7/10
+[00:28:27] verify | func= Extends | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[00:28:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:28:30] select | verify relaxed 8/10
+[00:28:30] verify | func= Extends | rank= 7 | pid= hep-ph/0102026 | title_snip='An Analysis of the Next-to-Leading Order Corrections to the
+  g_T(=g_1…' | abs_len= 1109
+[00:28:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:28:33] select | verify relaxed 9/10
+[00:28:33] verify | func= Extends | rank= 8 | pid= hep-ph/0101318 | title_snip='Mesons on a transverse lattice' | abs_len= 1033
+[00:28:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:36] select | verify relaxed 10/10
+[00:28:36] verify | func= Extends | rank= 9 | pid= hep-ph/0104246 | title_snip='Extrapolating Structure Functions to Very Small x' | abs_len= 542
+[00:28:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the work extend previous lattice estimates and motivate the need for high-order perturbative calculations in the context of the operator product expansion?
+- WINNER: hep-lat/0104007 | The Calculation of the Perturbative Expansion of Wilson Loops on Lattice
+- QUOTE : overcomes some shortage of some former methods
+- WHY   : sufficient
+- ANSWER: The work extends previous lattice estimates by introducing a new approach to expand gauge-invariant Wilson operators, overcoming limitations of former methods. This approach is more versatile, suitable for expanding any Wilson operators on lattice, potentially improving accuracy and scope (hep-lat/0104007).
+[00:28:42] main | running function= Motivation
+[00:28:42] select | function= Motivation | candidates_in= 20
+[00:28:42] select | core_terms= ['lattice', 'operator product expansion', 'perturbative calculations', 'high-order']
+[00:28:42] select | no cosine prune; kept=20/20
+[00:28:42] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-lat/0104007', 'hep-lat/0104005', 'hep-lat/0103018', 'hep-ph/0101302', 'hep-ph/0101248', 'hep-ph/0104033', 'hep-ph/0101163', 'hep-ph/0102026', 'hep-ph/0101318', 'hep-ph/0104246']
+[00:28:42] select | verify relaxed 1/10
+[00:28:42] verify | func= Motivation | rank= 0 | pid= hep-lat/0104007 | title_snip='The Calculation of the Perturbative Expansion of Wilson Loops on Latti…' | abs_len= 251
+[00:28:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:45] select | verify relaxed 2/10
+[00:28:45] verify | func= Motivation | rank= 1 | pid= hep-lat/0104005 | title_snip='Non-Perturbative Renormalization in Lattice Field Theory' | abs_len= 500
+[00:28:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:48] select | verify relaxed 3/10
+[00:28:48] verify | func= Motivation | rank= 2 | pid= hep-lat/0103018 | title_snip='A New Approach to Construct the Operator on Lattice for the Calculatio…' | abs_len= 670
+[00:28:51] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[00:28:51] select | verify relaxed 4/10
+[00:28:51] verify | func= Motivation | rank= 3 | pid= hep-ph/0101302 | title_snip='Testing Landau gauge OPE on the Lattice with a $<A^2>$ Condensate' | abs_len= 1149
+[00:28:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:55] select | verify relaxed 5/10
+[00:28:55] verify | func= Motivation | rank= 4 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[00:28:58] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[00:28:58] select | verify relaxed 6/10
+[00:28:58] verify | func= Motivation | rank= 5 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[00:29:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:29:01] select | verify relaxed 7/10
+[00:29:01] verify | func= Motivation | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[00:29:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:29:04] select | verify relaxed 8/10
+[00:29:04] verify | func= Motivation | rank= 7 | pid= hep-ph/0102026 | title_snip='An Analysis of the Next-to-Leading Order Corrections to the
+  g_T(=g_1…' | abs_len= 1109
+[00:29:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:29:06] select | verify relaxed 9/10
+[00:29:06] verify | func= Motivation | rank= 8 | pid= hep-ph/0101318 | title_snip='Mesons on a transverse lattice' | abs_len= 1033
+[00:29:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:29:10] select | verify relaxed 10/10
+[00:29:10] verify | func= Motivation | rank= 9 | pid= hep-ph/0104246 | title_snip='Extrapolating Structure Functions to Very Small x' | abs_len= 542
+[00:29:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the work extend previous lattice estimates and motivate the need for high-order perturbative calculations in the context of the operator product expansion?
+- WINNER: hep-lat/0104007 | The Calculation of the Perturbative Expansion of Wilson Loops on Lattice
+- QUOTE : overcomes some shortage of some former methods
+- WHY   : sufficient
+- ANSWER: The work extends previous lattice estimates by introducing a new approach to expand gauge-invariant Wilson operators, addressing shortcomings of former methods. This advancement motivates the need for high-order perturbative calculations to improve the accuracy of operator product expansion (hep-lat/0104007).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,153 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Background"
+  ],
+  "justification": "The query asks to compare the irradiation effects described in the study's background with other models/observations, requiring a comparative function and referencing background information."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:11:31] main | args: Namespace(max_check=10, debug=True)
+[22:11:31] read_last_jsonl | path= classified_outputs.jsonl
+[22:11:31] read_last_jsonl | total_lines= 1
+[22:11:31] main | query='How do the effects of irradiation on planetary atmospheres, as described in the background of this study, compare to other models or observations of similar phenomena?' | funcs=['Compares', 'Background']
+[22:11:33] main | core_terms= ['planetary atmospheres', 'irradiation', 'atmospheric effects']
+[22:11:33] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:11:33] load_topk_jsonl | rows= 20
+[22:11:33] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104262 title_snip='Irradiated Planets' abs_len= 1273
+[22:11:33] main | running function= Compares
+[22:11:33] select | function= Compares | candidates_in= 20
+[22:11:33] select | core_terms= ['planetary atmospheres', 'irradiation', 'atmospheric effects']
+[22:11:33] select | no cosine prune; kept=20/20
+[22:11:33] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104262', 'astro-ph/0101407', 'astro-ph/0104199', 'astro-ph/0103383', 'astro-ph/0104209', 'astro-ph/0104305', 'astro-ph/0104413', 'astro-ph/0103083', 'astro-ph/0101024', 'astro-ph/0101375']
+[22:11:33] select | verify relaxed 1/10
+[22:11:33] verify | func= Compares | rank= 0 | pid= astro-ph/0104262 | title_snip='Irradiated Planets' | abs_len= 1273
+[22:11:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[22:11:36] select | verify relaxed 2/10
+[22:11:36] verify | func= Compares | rank= 1 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[22:11:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:11:38] select | verify relaxed 3/10
+[22:11:38] verify | func= Compares | rank= 2 | pid= astro-ph/0104199 | title_snip='Atmospheres and Spectra of Strongly Magnetized Neutron Stars' | abs_len= 1751
+[22:11:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:11:41] select | verify relaxed 4/10
+[22:11:41] verify | func= Compares | rank= 3 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[22:11:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:11:44] select | verify relaxed 5/10
+[22:11:44] verify | func= Compares | rank= 4 | pid= astro-ph/0104209 | title_snip='Intermittent Jolts of Galactic UV Radiation: Mutagenetic Effects' | abs_len= 1422
+[22:11:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:11:47] select | verify relaxed 6/10
+[22:11:47] verify | func= Compares | rank= 5 | pid= astro-ph/0104305 | title_snip='Simulating Electron Transport and Synchrotron Emission in Radio
+  Gala…' | abs_len= 1433
+[22:11:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:11:50] select | verify relaxed 7/10
+[22:11:50] verify | func= Compares | rank= 6 | pid= astro-ph/0104413 | title_snip='Modelling X-ray variability in the structured atmospheres of hot stars' | abs_len= 676
+[22:11:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:11:52] select | verify relaxed 8/10
+[22:11:52] verify | func= Compares | rank= 7 | pid= astro-ph/0103083 | title_snip='A Simple Model for r-Process Scatter and Halo Evolution' | abs_len= 1288
+[22:11:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:11:55] select | verify relaxed 9/10
+[22:11:55] verify | func= Compares | rank= 8 | pid= astro-ph/0101024 | title_snip='Theory of Extrasolar Giant Planet Transits' | abs_len= 802
+[22:11:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[22:11:58] select | verify relaxed 10/10
+[22:11:58] verify | func= Compares | rank= 9 | pid= astro-ph/0101375 | title_snip='Could We Detect Molecular Oxygen in the Atmosphere of a Transiting
+  E…' | abs_len= 1482
+[22:12:01] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the effects of irradiation on planetary atmospheres, as described in the background of this study, compare to other models or observations of similar phenomena?
+- WINNER: astro-ph/0104262 | Irradiated Planets
+- QUOTE : We compared the effects of the irradiation in two extreme cases
+- WHY   : sufficient
+- ANSWER: The effects of irradiation on planetary atmospheres in this study are compared to models that do not include impinging radiation, showing large errors in thermal and reflected flux. The results are also consistent with recently reported upper limit values for planet-to-star brightness ratios, such as those for tau bootis (astro-ph/0104262).
+[22:12:05] main | running function= Background
+[22:12:05] select | function= Background | candidates_in= 20
+[22:12:05] select | core_terms= ['planetary atmospheres', 'irradiation', 'atmospheric effects']
+[22:12:05] select | no cosine prune; kept=20/20
+[22:12:05] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104262', 'astro-ph/0101407', 'astro-ph/0104199', 'astro-ph/0103383', 'astro-ph/0104209', 'astro-ph/0104305', 'astro-ph/0104413', 'astro-ph/0103083', 'astro-ph/0101024', 'astro-ph/0101375']
+[22:12:05] select | verify relaxed 1/10
+[22:12:05] verify | func= Background | rank= 0 | pid= astro-ph/0104262 | title_snip='Irradiated Planets' | abs_len= 1273
+[22:12:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[22:12:08] select | verify relaxed 2/10
+[22:12:08] verify | func= Background | rank= 1 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[22:12:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:12:11] select | verify relaxed 3/10
+[22:12:11] verify | func= Background | rank= 2 | pid= astro-ph/0104199 | title_snip='Atmospheres and Spectra of Strongly Magnetized Neutron Stars' | abs_len= 1751
+[22:12:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:12:13] select | verify relaxed 4/10
+[22:12:13] verify | func= Background | rank= 3 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[22:12:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:12:16] select | verify relaxed 5/10
+[22:12:16] verify | func= Background | rank= 4 | pid= astro-ph/0104209 | title_snip='Intermittent Jolts of Galactic UV Radiation: Mutagenetic Effects' | abs_len= 1422
+[22:12:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:12:20] select | verify relaxed 6/10
+[22:12:20] verify | func= Background | rank= 5 | pid= astro-ph/0104305 | title_snip='Simulating Electron Transport and Synchrotron Emission in Radio
+  Gala…' | abs_len= 1433
+[22:12:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:12:22] select | verify relaxed 7/10
+[22:12:22] verify | func= Background | rank= 6 | pid= astro-ph/0104413 | title_snip='Modelling X-ray variability in the structured atmospheres of hot stars' | abs_len= 676
+[22:12:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:12:24] select | verify relaxed 8/10
+[22:12:24] verify | func= Background | rank= 7 | pid= astro-ph/0103083 | title_snip='A Simple Model for r-Process Scatter and Halo Evolution' | abs_len= 1288
+[22:12:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:12:27] select | verify relaxed 9/10
+[22:12:27] verify | func= Background | rank= 8 | pid= astro-ph/0101024 | title_snip='Theory of Extrasolar Giant Planet Transits' | abs_len= 802
+[22:12:30] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[22:12:30] select | verify relaxed 10/10
+[22:12:30] verify | func= Background | rank= 9 | pid= astro-ph/0101375 | title_snip='Could We Detect Molecular Oxygen in the Atmosphere of a Transiting
+  E…' | abs_len= 1482
+[22:12:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the effects of irradiation on planetary atmospheres, as described in the background of this study, compare to other models or observations of similar phenomena?
+- WINNER: astro-ph/0104262 | Irradiated Planets
+- QUOTE : We find that large errors in both the thermal and reflected flux
+- WHY   : sufficient
+- ANSWER: The effects of irradiation on planetary atmospheres in this study differ from other models that do not account for impinging radiation in a self-consistent manner, which can result in large errors (astro-ph/0104262).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

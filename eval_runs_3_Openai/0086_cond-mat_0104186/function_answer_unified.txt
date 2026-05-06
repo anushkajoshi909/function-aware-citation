@@ -1,0 +1,1 @@
+The electronic properties of thick metallic silver films deposited on Si(111)-(7x7) substrates at room temperature exhibit a two-domains bulklike Fermi surface [Background] (cond-mat/0104186). The films' Fermi surface topology shows a sixfold symmetry and a three-dimensional character, differing from the expected properties of Ag single crystals [Background] (cond-mat/0104186).

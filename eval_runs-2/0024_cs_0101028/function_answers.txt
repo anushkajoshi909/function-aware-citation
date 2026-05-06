@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Compares. [Compares]
+The proposed hybrid algorithm is compared to existing work in terms of its ability to solve problems efficiently, using competitive ratios to measure its performance (cs/0101028). [Background]

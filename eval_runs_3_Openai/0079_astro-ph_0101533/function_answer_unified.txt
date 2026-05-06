@@ -1,0 +1,1 @@
+Current uses of Imaging Atmospheric Cerenkov Telescopes, such as detecting gamma rays from the Crab Nebula and Active Galaxies [Uses] (astro-ph/0101533), inform future work in that they will be used to target a variety of astrophysical objects and phenomena, including neutralino annihilation and primordial black hole evaporation [FutureWork] (astro-ph/0101533).

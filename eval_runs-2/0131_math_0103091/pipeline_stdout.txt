@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks foundational information on prime numbers (Background) and asks why this knowledge drives current research on Goldbach's Conjecture (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:02:14] main | args: Namespace(max_check=10, debug=True)
+[00:02:14] read_last_jsonl | path= classified_outputs.jsonl
+[00:02:14] read_last_jsonl | total_lines= 1
+[00:02:14] main | query='What background information about prime numbers motivates the current work on Goldbach's Conjecture?' | funcs=['Background', 'Motivation']
+[00:02:16] main | core_terms= ['prime numbers', "Goldbach's Conjecture", 'number theory']
+[00:02:16] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:02:16] load_topk_jsonl | rows= 20
+[00:02:16] load_topk_jsonl | first: rank= 0 paper_id= math/0103091 title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' abs_len= 1234
+[00:02:16] main | running function= Background
+[00:02:16] select | function= Background | candidates_in= 20
+[00:02:16] select | core_terms= ['prime numbers', "Goldbach's Conjecture", 'number theory']
+[00:02:16] select | no cosine prune; kept=20/20
+[00:02:16] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0103091', 'math-ph/0103015', 'math/0102033', 'quant-ph/0103057', 'cs/0104011', 'math/0104148', 'hep-ph/0104135', 'math/0101021', 'math/0103059', 'cond-mat/0102078']
+[00:02:16] select | verify relaxed 1/10
+[00:02:16] verify | func= Background | rank= 0 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[00:02:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:02:19] select | verify relaxed 2/10
+[00:02:19] verify | func= Background | rank= 1 | pid= math-ph/0103015 | title_snip='On the multiplicativity conjecture for quantum channels' | abs_len= 337
+[00:02:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:21] select | verify relaxed 3/10
+[00:02:21] verify | func= Background | rank= 2 | pid= math/0102033 | title_snip='From Jacobians to one-motives: exposition of a conjecture of Deligne' | abs_len= 592
+[00:02:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:23] select | verify relaxed 4/10
+[00:02:23] verify | func= Background | rank= 3 | pid= quant-ph/0103057 | title_snip='The Foundations of Quantum Information and Feasible Experiments' | abs_len= 817
+[00:02:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:26] select | verify relaxed 5/10
+[00:02:26] verify | func= Background | rank= 4 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[00:02:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:28] select | verify relaxed 6/10
+[00:02:28] verify | func= Background | rank= 5 | pid= math/0104148 | title_snip='Asymptotically exact heuristics for (near) primitive roots. II' | abs_len= 523
+[00:02:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:02:31] select | verify relaxed 7/10
+[00:02:31] verify | func= Background | rank= 6 | pid= hep-ph/0104135 | title_snip='On Casimir scaling in QCD' | abs_len= 597
+[00:02:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:34] select | verify relaxed 8/10
+[00:02:34] verify | func= Background | rank= 7 | pid= math/0101021 | title_snip='Correspondence principle for idempotent calculus and some computer
+  a…' | abs_len= 971
+[00:02:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:36] select | verify relaxed 9/10
+[00:02:36] verify | func= Background | rank= 8 | pid= math/0103059 | title_snip='Multiple polylogarithms and mixed Tate motives' | abs_len= 242
+[00:02:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:38] select | verify relaxed 10/10
+[00:02:38] verify | func= Background | rank= 9 | pid= cond-mat/0102078 | title_snip='New correlation duality relations for the planar Potts model' | abs_len= 628
+[00:02:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What background information about prime numbers motivates the current work on Goldbach's Conjecture?
+- WINNER: math/0103091 | Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conjecture
+- QUOTE : infinitely many primes [Euclid]
+- WHY   : sufficient
+- ANSWER: The background information on prime numbers motivating the current work on Goldbach's Conjecture includes the fact that there are infinitely many primes and that all primes between the kth prime and the product of the first k primes have certain properties mod the product of the first k primes (math/0103091) (math/0103091).
+[00:02:45] main | running function= Motivation
+[00:02:45] select | function= Motivation | candidates_in= 20
+[00:02:45] select | core_terms= ['prime numbers', "Goldbach's Conjecture", 'number theory']
+[00:02:45] select | no cosine prune; kept=20/20
+[00:02:45] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0103091', 'math-ph/0103015', 'math/0102033', 'quant-ph/0103057', 'cs/0104011', 'math/0104148', 'hep-ph/0104135', 'math/0101021', 'math/0103059', 'cond-mat/0102078']
+[00:02:45] select | verify relaxed 1/10
+[00:02:45] verify | func= Motivation | rank= 0 | pid= math/0103091 | title_snip='Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conje…' | abs_len= 1234
+[00:02:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:02:48] select | verify relaxed 2/10
+[00:02:48] verify | func= Motivation | rank= 1 | pid= math-ph/0103015 | title_snip='On the multiplicativity conjecture for quantum channels' | abs_len= 337
+[00:02:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:50] select | verify relaxed 3/10
+[00:02:50] verify | func= Motivation | rank= 2 | pid= math/0102033 | title_snip='From Jacobians to one-motives: exposition of a conjecture of Deligne' | abs_len= 592
+[00:02:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:53] select | verify relaxed 4/10
+[00:02:53] verify | func= Motivation | rank= 3 | pid= quant-ph/0103057 | title_snip='The Foundations of Quantum Information and Feasible Experiments' | abs_len= 817
+[00:02:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:55] select | verify relaxed 5/10
+[00:02:55] verify | func= Motivation | rank= 4 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[00:02:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:57] select | verify relaxed 6/10
+[00:02:57] verify | func= Motivation | rank= 5 | pid= math/0104148 | title_snip='Asymptotically exact heuristics for (near) primitive roots. II' | abs_len= 523
+[00:03:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:03:00] select | verify relaxed 7/10
+[00:03:00] verify | func= Motivation | rank= 6 | pid= hep-ph/0104135 | title_snip='On Casimir scaling in QCD' | abs_len= 597
+[00:03:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:03] select | verify relaxed 8/10
+[00:03:03] verify | func= Motivation | rank= 7 | pid= math/0101021 | title_snip='Correspondence principle for idempotent calculus and some computer
+  a…' | abs_len= 971
+[00:03:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:05] select | verify relaxed 9/10
+[00:03:05] verify | func= Motivation | rank= 8 | pid= math/0103059 | title_snip='Multiple polylogarithms and mixed Tate motives' | abs_len= 242
+[00:03:08] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:03:08] select | verify relaxed 10/10
+[00:03:08] verify | func= Motivation | rank= 9 | pid= cond-mat/0102078 | title_snip='New correlation duality relations for the planar Potts model' | abs_len= 628
+[00:03:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What background information about prime numbers motivates the current work on Goldbach's Conjecture?
+- WINNER: math/0103091 | Additive structure of Z(.) mod m_k (squarefree) and Goldbach's
+  Conjecture
+- QUOTE : Failure of Goldbach's Conjecture
+- WHY   : sufficient
+- ANSWER: The current work on Goldbach's Conjecture is motivated by the lack of a proof for the conjecture, which states that every even integer greater than 4 can be expressed as the sum of two odd primes. This problem matters because a failure to prove Goldbach's Conjecture would contradict the proven "Goldbach for Residues" mod m_k (math/0103091).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

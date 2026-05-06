@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand current limitations (background knowledge) and asks why these gaps drive further investigation (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[16:19:02] main | args: Namespace(max_check=10, debug=True)
+[16:19:02] read_last_jsonl | path= classified_outputs.jsonl
+[16:19:02] read_last_jsonl | total_lines= 1
+[16:19:02] main | query='What limitations in current understanding of quantum communication and entanglement motivate further research into their potential to enhance classical communication efficiency?' | funcs=['Background', 'Motivation']
+[16:19:03] main | core_terms= ['quantum communication', 'entanglement', 'classical communication efficiency']
+[16:19:03] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[16:19:03] load_topk_jsonl | rows= 20
+[16:19:03] load_topk_jsonl | first: rank= 0 paper_id= quant-ph/0101005 title_snip='Quantum Communication Complexity (A Survey)' abs_len= 1177
+[16:19:03] main | running function= Background
+[16:19:03] select | function= Background | candidates_in= 20
+[16:19:03] select | core_terms= ['quantum communication', 'entanglement', 'classical communication efficiency']
+[16:19:03] select | no cosine prune; kept=20/20
+[16:19:03] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['quant-ph/0101005', 'quant-ph/0102094', 'quant-ph/0103006', 'quant-ph/0104100', 'quant-ph/0103023', 'quant-ph/0102125', 'quant-ph/0104068', 'quant-ph/0104070', 'quant-ph/0103057', 'quant-ph/0104090']
+[16:19:03] select | verify relaxed 1/10
+[16:19:03] verify | func= Background | rank= 0 | pid= quant-ph/0101005 | title_snip='Quantum Communication Complexity (A Survey)' | abs_len= 1177
+[16:19:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:19:07] select | verify relaxed 2/10
+[16:19:07] verify | func= Background | rank= 1 | pid= quant-ph/0102094 | title_snip='The Role of Relative Entropy in Quantum Information Theory' | abs_len= 1097
+[16:19:10] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[16:19:10] select | verify relaxed 3/10
+[16:19:10] verify | func= Background | rank= 2 | pid= quant-ph/0103006 | title_snip='Quantum enhanced positioning and clock synchronization' | abs_len= 861
+[16:19:14] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:19:14] select | verify relaxed 4/10
+[16:19:14] verify | func= Background | rank= 3 | pid= quant-ph/0104100 | title_snip='Lower bounds in the quantum cell probe model' | abs_len= 1737
+[16:19:17] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:19:17] select | verify relaxed 5/10
+[16:19:17] verify | func= Background | rank= 4 | pid= quant-ph/0103023 | title_snip='Resource reduction via repeaters in entanglement distribution' | abs_len= 429
+[16:19:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:19:21] select | verify relaxed 6/10
+[16:19:21] verify | func= Background | rank= 5 | pid= quant-ph/0102125 | title_snip='The no-signaling condition and quantum dynamics' | abs_len= 623
+[16:19:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[16:19:24] select | verify relaxed 7/10
+[16:19:24] verify | func= Background | rank= 6 | pid= quant-ph/0104068 | title_snip='Optimally Conclusive Discrimination of Non-orthogonal Entangled States…' | abs_len= 719
+[16:19:27] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[16:19:27] select | verify relaxed 8/10
+[16:19:27] verify | func= Background | rank= 7 | pid= quant-ph/0104070 | title_snip='Entanglement of Orbital Angular Momentum States of Photons' | abs_len= 777
+[16:19:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:19:31] select | verify relaxed 9/10
+[16:19:31] verify | func= Background | rank= 8 | pid= quant-ph/0103057 | title_snip='The Foundations of Quantum Information and Feasible Experiments' | abs_len= 817
+[16:19:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:19:33] select | verify relaxed 10/10
+[16:19:33] verify | func= Background | rank= 9 | pid= quant-ph/0104090 | title_snip='Quantum information processing for a coherent superposition state via …' | abs_len= 704
+[16:19:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What limitations in current understanding of quantum communication and entanglement motivate further research into their potential to enhance classical communication efficiency?
+- WINNER: quant-ph/0101005 | Quantum Communication Complexity (A Survey)
+- QUOTE : unless the two parties are entangled
+- WHY   : sufficient
+[16:19:40] main | running function= Motivation
+[16:19:40] select | function= Motivation | candidates_in= 20
+[16:19:40] select | core_terms= ['quantum communication', 'entanglement', 'classical communication efficiency']
+[16:19:40] select | no cosine prune; kept=20/20
+[16:19:40] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['quant-ph/0101005', 'quant-ph/0102094', 'quant-ph/0103006', 'quant-ph/0104100', 'quant-ph/0103023', 'quant-ph/0102125', 'quant-ph/0104068', 'quant-ph/0104070', 'quant-ph/0103057', 'quant-ph/0104090']
+[16:19:40] select | verify relaxed 1/10
+[16:19:40] verify | func= Motivation | rank= 0 | pid= quant-ph/0101005 | title_snip='Quantum Communication Complexity (A Survey)' | abs_len= 1177
+[16:19:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:19:44] select | verify relaxed 2/10
+[16:19:44] verify | func= Motivation | rank= 1 | pid= quant-ph/0102094 | title_snip='The Role of Relative Entropy in Quantum Information Theory' | abs_len= 1097
+[16:19:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[16:19:47] select | verify relaxed 3/10
+[16:19:47] verify | func= Motivation | rank= 2 | pid= quant-ph/0103006 | title_snip='Quantum enhanced positioning and clock synchronization' | abs_len= 861
+[16:19:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[16:19:50] select | verify relaxed 4/10
+[16:19:50] verify | func= Motivation | rank= 3 | pid= quant-ph/0104100 | title_snip='Lower bounds in the quantum cell probe model' | abs_len= 1737
+[16:19:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[16:19:54] select | verify relaxed 5/10
+[16:19:54] verify | func= Motivation | rank= 4 | pid= quant-ph/0103023 | title_snip='Resource reduction via repeaters in entanglement distribution' | abs_len= 429
+[16:19:58] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[16:19:58] select | verify relaxed 6/10
+[16:19:58] verify | func= Motivation | rank= 5 | pid= quant-ph/0102125 | title_snip='The no-signaling condition and quantum dynamics' | abs_len= 623
+[16:20:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[16:20:01] select | verify relaxed 7/10
+[16:20:01] verify | func= Motivation | rank= 6 | pid= quant-ph/0104068 | title_snip='Optimally Conclusive Discrimination of Non-orthogonal Entangled States…' | abs_len= 719
+[16:20:04] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[16:20:04] select | verify relaxed 8/10
+[16:20:04] verify | func= Motivation | rank= 7 | pid= quant-ph/0104070 | title_snip='Entanglement of Orbital Angular Momentum States of Photons' | abs_len= 777
+[16:20:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[16:20:08] select | verify relaxed 9/10
+[16:20:08] verify | func= Motivation | rank= 8 | pid= quant-ph/0103057 | title_snip='The Foundations of Quantum Information and Feasible Experiments' | abs_len= 817
+[16:20:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[16:20:11] select | verify relaxed 10/10
+[16:20:11] verify | func= Motivation | rank= 9 | pid= quant-ph/0104090 | title_snip='Quantum information processing for a coherent superposition state via …' | abs_len= 704
+[16:20:15] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in current understanding of quantum communication and entanglement motivate further research into their potential to enhance classical communication efficiency?
+- WINNER: quant-ph/0104070 | Entanglement of Orbital Angular Momentum States of Photons
+- QUOTE : calls for entanglement in quantum system of higher dimensions
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Current understanding of quantum communication and entanglement has limitations, as Holevo's theorem restricts the amount of classical information that can be communicated through quantum bits unless the parties are entangled [Background] (quant-ph/0101005). The potential of entanglement to enhance classical communication efficiency motivates further research, driven by the possibility of increasing information flux through communication channels using higher-dimensional entanglement [Motivation] (quant-ph/0104070).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

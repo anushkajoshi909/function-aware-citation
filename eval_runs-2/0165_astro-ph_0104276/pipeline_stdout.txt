@@ -1,0 +1,149 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how existing knowledge can be built upon (Extends) and explicitly seeks directions for upcoming investigations (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:03:32] main | args: Namespace(max_check=10, debug=True)
+[01:03:32] read_last_jsonl | path= classified_outputs.jsonl
+[01:03:32] read_last_jsonl | total_lines= 1
+[01:03:32] main | query='How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?' | funcs=['Extends', 'FutureWork']
+[01:03:34] main | core_terms= ['Population III stars', 'initial mass function', 'star formation', 'III']
+[01:03:34] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:03:34] load_topk_jsonl | rows= 20
+[01:03:34] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103382 title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' abs_len= 281
+[01:03:34] main | running function= Extends
+[01:03:34] select | function= Extends | candidates_in= 20
+[01:03:34] select | core_terms= ['Population III stars', 'initial mass function', 'star formation', 'III']
+[01:03:34] select | no cosine prune; kept=20/20
+[01:03:34] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103382', 'astro-ph/0104404', 'astro-ph/0104016', 'astro-ph/0101384', 'astro-ph/0104276', 'astro-ph/0101002', 'astro-ph/0102039', 'astro-ph/0101070', 'astro-ph/0104162', 'astro-ph/0102056']
+[01:03:34] select | verify relaxed 1/10
+[01:03:34] verify | func= Extends | rank= 0 | pid= astro-ph/0103382 | title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' | abs_len= 281
+[01:03:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:03:36] select | verify relaxed 2/10
+[01:03:36] verify | func= Extends | rank= 1 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[01:03:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:39] select | verify relaxed 3/10
+[01:03:39] verify | func= Extends | rank= 2 | pid= astro-ph/0104016 | title_snip='Stellar Populations and Chemical Evolution of Late--Type Dwarf Galaxie…' | abs_len= 484
+[01:03:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:03:42] select | verify relaxed 4/10
+[01:03:42] verify | func= Extends | rank= 3 | pid= astro-ph/0101384 | title_snip='The Initial Mass Function of the Most Massive Starforming Regions' | abs_len= 808
+[01:03:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:44] select | verify relaxed 5/10
+[01:03:44] verify | func= Extends | rank= 4 | pid= astro-ph/0104276 | title_snip='The Implications of the New Z=0 Stellar Models and Yields on the Early…' | abs_len= 1824
+[01:03:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:03:47] select | verify relaxed 6/10
+[01:03:47] verify | func= Extends | rank= 5 | pid= astro-ph/0101002 | title_snip='Population clustering as a signal for deconfinement in accreting compa…' | abs_len= 1007
+[01:03:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:49] select | verify relaxed 7/10
+[01:03:49] verify | func= Extends | rank= 6 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[01:03:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:52] select | verify relaxed 8/10
+[01:03:52] verify | func= Extends | rank= 7 | pid= astro-ph/0101070 | title_snip='On The Cosmic Origins Of Carbon & Nitrogen' | abs_len= 559
+[01:03:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:54] select | verify relaxed 9/10
+[01:03:54] verify | func= Extends | rank= 8 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[01:03:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:03:57] select | verify relaxed 10/10
+[01:03:57] verify | func= Extends | rank= 9 | pid= astro-ph/0102056 | title_snip='Galaxy Formation and Evolution: Recent Progress' | abs_len= 299
+[01:03:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?
+- WINNER: astro-ph/0103382 | Towards Population III: The Collapse and Fragmentation of Primordial Gas
+- QUOTE : Population III'' stars
+- WHY   : sufficient
+- ANSWER: The current understanding of Population III star formation can be extended through numerical simulations that investigate the collapse and fragmentation of primordial gas. These simulations raise new questions and provide a foundation for future research to better constrain the initial mass function of these stars (astro-ph/0103382).
+[01:04:02] main | running function= FutureWork
+[01:04:02] select | function= FutureWork | candidates_in= 20
+[01:04:02] select | core_terms= ['Population III stars', 'initial mass function', 'star formation', 'III']
+[01:04:02] select | no cosine prune; kept=20/20
+[01:04:02] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103382', 'astro-ph/0104404', 'astro-ph/0104016', 'astro-ph/0101384', 'astro-ph/0104276', 'astro-ph/0101002', 'astro-ph/0102039', 'astro-ph/0101070', 'astro-ph/0104162', 'astro-ph/0102056']
+[01:04:02] select | verify relaxed 1/10
+[01:04:02] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103382 | title_snip='Towards Population III: The Collapse and Fragmentation of Primordial G…' | abs_len= 281
+[01:04:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:04:06] select | verify relaxed 2/10
+[01:04:06] verify | func= FutureWork | rank= 1 | pid= astro-ph/0104404 | title_snip='The Formation Timescales of Giant Spheroids' | abs_len= 553
+[01:04:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:08] select | verify relaxed 3/10
+[01:04:08] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104016 | title_snip='Stellar Populations and Chemical Evolution of Late--Type Dwarf Galaxie…' | abs_len= 484
+[01:04:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:10] select | verify relaxed 4/10
+[01:04:10] verify | func= FutureWork | rank= 3 | pid= astro-ph/0101384 | title_snip='The Initial Mass Function of the Most Massive Starforming Regions' | abs_len= 808
+[01:04:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:13] select | verify relaxed 5/10
+[01:04:13] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104276 | title_snip='The Implications of the New Z=0 Stellar Models and Yields on the Early…' | abs_len= 1824
+[01:04:16] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[01:04:16] select | verify relaxed 6/10
+[01:04:16] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101002 | title_snip='Population clustering as a signal for deconfinement in accreting compa…' | abs_len= 1007
+[01:04:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:18] select | verify relaxed 7/10
+[01:04:18] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102039 | title_snip='Modes of Multiple Star Formation' | abs_len= 1560
+[01:04:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:21] select | verify relaxed 8/10
+[01:04:21] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101070 | title_snip='On The Cosmic Origins Of Carbon & Nitrogen' | abs_len= 559
+[01:04:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:23] select | verify relaxed 9/10
+[01:04:23] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[01:04:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:04:26] select | verify relaxed 10/10
+[01:04:26] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102056 | title_snip='Galaxy Formation and Evolution: Recent Progress' | abs_len= 299
+[01:04:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the current understanding of Population III star formation be extended and what future research is needed to better constrain the initial mass function of these stars?
+- WINNER: astro-ph/0103382 | Towards Population III: The Collapse and Fragmentation of Primordial Gas
+- QUOTE : new questions raised as a result of the simulations
+- WHY   : sufficient
+- ANSWER: Further research is needed to better understand Population III star formation, particularly through numerical simulations that can inform the initial mass function of these stars. The abstract suggests that new questions have been raised, implying a need for continued investigation to address them (astro-ph/0103382).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,151 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query seeks reasons that drive further study (Motivation) and explicitly asks how future research could be directed to overcome current model limitations (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:14:20] main | args: Namespace(max_check=10, debug=True)
+[22:14:20] read_last_jsonl | path= classified_outputs.jsonl
+[22:14:20] read_last_jsonl | total_lines= 1
+[22:14:20] main | query='How might future research be motivated to address the limitations of the current one-dimensional model of layered spring magnets?' | funcs=['Motivation', 'FutureWork']
+[22:14:21] main | core_terms= ['layered spring magnets', 'one-dimensional model', 'one-dimensional']
+[22:14:21] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:14:21] load_topk_jsonl | rows= 20
+[22:14:21] load_topk_jsonl | first: rank= 0 paper_id= math/0101077 title_snip='Hysteresis in layered spring magnets' abs_len= 994
+[22:14:21] main | running function= Motivation
+[22:14:21] select | function= Motivation | candidates_in= 20
+[22:14:21] select | core_terms= ['layered spring magnets', 'one-dimensional model', 'one-dimensional']
+[22:14:21] select | no cosine prune; kept=20/20
+[22:14:21] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0101077', 'cond-mat/0103188', 'cond-mat/0102417', 'cond-mat/0103059', 'hep-ph/0101276', 'hep-ph/0101078', 'hep-ph/0103235', 'cond-mat/0101423', 'cond-mat/0103396', 'cond-mat/0103389']
+[22:14:21] select | verify relaxed 1/10
+[22:14:21] verify | func= Motivation | rank= 0 | pid= math/0101077 | title_snip='Hysteresis in layered spring magnets' | abs_len= 994
+[22:14:24] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= True
+[22:14:24] select | verify relaxed 2/10
+[22:14:24] verify | func= Motivation | rank= 1 | pid= cond-mat/0103188 | title_snip='Exact Solutions to Special High Dimensional O(n) Models, Dimensional
+ …' | abs_len= 1226
+[22:14:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[22:14:27] select | verify relaxed 3/10
+[22:14:27] verify | func= Motivation | rank= 2 | pid= cond-mat/0102417 | title_snip='Low-Temperature Properties of Quasi-One-Dimensional Molecule-Based
+  F…' | abs_len= 1099
+[22:14:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[22:14:30] select | verify relaxed 4/10
+[22:14:30] verify | func= Motivation | rank= 3 | pid= cond-mat/0103059 | title_snip='Integrable variant of the one-dimensional Hubbard model' | abs_len= 586
+[22:14:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:14:32] select | verify relaxed 5/10
+[22:14:32] verify | func= Motivation | rank= 4 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[22:14:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:14:35] select | verify relaxed 6/10
+[22:14:35] verify | func= Motivation | rank= 5 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[22:14:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:14:37] select | verify relaxed 7/10
+[22:14:37] verify | func= Motivation | rank= 6 | pid= hep-ph/0103235 | title_snip='Can extra dimensions accessible to the SM explain the recent measureme…' | abs_len= 1344
+[22:14:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:14:40] select | verify relaxed 8/10
+[22:14:40] verify | func= Motivation | rank= 7 | pid= cond-mat/0101423 | title_snip='Magnetic Properties for the One-Dimensional Multicomponent Spin-Gap
+  …' | abs_len= 671
+[22:14:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:14:43] select | verify relaxed 9/10
+[22:14:43] verify | func= Motivation | rank= 8 | pid= cond-mat/0103396 | title_snip='Short-ranged RVB physics, quantum dimer models and Ising gauge theorie…' | abs_len= 1200
+[22:14:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:14:45] select | verify relaxed 10/10
+[22:14:45] verify | func= Motivation | rank= 9 | pid= cond-mat/0103389 | title_snip='Magnetism of correlated systems: beyond LDA' | abs_len= 648
+[22:14:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How might future research be motivated to address the limitations of the current one-dimensional model of layered spring magnets?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to Motivation.
+[22:14:47] main | running function= FutureWork
+[22:14:47] select | function= FutureWork | candidates_in= 20
+[22:14:47] select | core_terms= ['layered spring magnets', 'one-dimensional model', 'one-dimensional']
+[22:14:47] select | no cosine prune; kept=20/20
+[22:14:47] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0101077', 'cond-mat/0103188', 'cond-mat/0102417', 'cond-mat/0103059', 'hep-ph/0101276', 'hep-ph/0101078', 'hep-ph/0103235', 'cond-mat/0101423', 'cond-mat/0103396', 'cond-mat/0103389']
+[22:14:47] select | verify relaxed 1/10
+[22:14:47] verify | func= FutureWork | rank= 0 | pid= math/0101077 | title_snip='Hysteresis in layered spring magnets' | abs_len= 994
+[22:14:51] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[22:14:51] select | verify relaxed 2/10
+[22:14:51] verify | func= FutureWork | rank= 1 | pid= cond-mat/0103188 | title_snip='Exact Solutions to Special High Dimensional O(n) Models, Dimensional
+ …' | abs_len= 1226
+[22:14:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[22:14:53] select | verify relaxed 3/10
+[22:14:53] verify | func= FutureWork | rank= 2 | pid= cond-mat/0102417 | title_snip='Low-Temperature Properties of Quasi-One-Dimensional Molecule-Based
+  F…' | abs_len= 1099
+[22:14:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[22:14:56] select | verify relaxed 4/10
+[22:14:56] verify | func= FutureWork | rank= 3 | pid= cond-mat/0103059 | title_snip='Integrable variant of the one-dimensional Hubbard model' | abs_len= 586
+[22:14:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:14:58] select | verify relaxed 5/10
+[22:14:58] verify | func= FutureWork | rank= 4 | pid= hep-ph/0101276 | title_snip='General Analysis of New Physics in $B\to J/\psi K$' | abs_len= 1153
+[22:15:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:15:01] select | verify relaxed 6/10
+[22:15:01] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[22:15:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:15:03] select | verify relaxed 7/10
+[22:15:03] verify | func= FutureWork | rank= 6 | pid= hep-ph/0103235 | title_snip='Can extra dimensions accessible to the SM explain the recent measureme…' | abs_len= 1344
+[22:15:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:15:06] select | verify relaxed 8/10
+[22:15:06] verify | func= FutureWork | rank= 7 | pid= cond-mat/0101423 | title_snip='Magnetic Properties for the One-Dimensional Multicomponent Spin-Gap
+  …' | abs_len= 671
+[22:15:08] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[22:15:08] select | verify relaxed 9/10
+[22:15:08] verify | func= FutureWork | rank= 8 | pid= cond-mat/0103396 | title_snip='Short-ranged RVB physics, quantum dimer models and Ising gauge theorie…' | abs_len= 1200
+[22:15:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:15:11] select | verify relaxed 10/10
+[22:15:11] verify | func= FutureWork | rank= 9 | pid= cond-mat/0103389 | title_snip='Magnetism of correlated systems: beyond LDA' | abs_len= 648
+[22:15:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How might future research be motivated to address the limitations of the current one-dimensional model of layered spring magnets?
+- No supporting candidate with sufficient evidence.
+- ANSWER: The abstract does not provide information relevant to FutureWork.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

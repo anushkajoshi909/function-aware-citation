@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly asks how the current work can be extended (Extends) and seeks possible future research directions (FutureWork)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:19:49] main | args: Namespace(max_check=10, debug=True)
+[01:19:49] read_last_jsonl | path= classified_outputs.jsonl
+[01:19:49] read_last_jsonl | total_lines= 1
+[01:19:49] main | query='How can the current work on CP-violating phases be extended and what future research directions can be explored based on the findings?' | funcs=['Extends', 'FutureWork']
+[01:19:51] main | core_terms= ['CP-violating phases', 'symmetry breaking', 'phase transitions', 'CP-violating']
+[01:19:51] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:19:51] load_topk_jsonl | rows= 20
+[01:19:51] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101106 title_snip='CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Col…' abs_len= 1397
+[01:19:51] main | running function= Extends
+[01:19:51] select | function= Extends | candidates_in= 20
+[01:19:51] select | core_terms= ['CP-violating phases', 'symmetry breaking', 'phase transitions', 'CP-violating']
+[01:19:51] select | no cosine prune; kept=20/20
+[01:19:51] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101106', 'hep-ph/0103319', 'hep-ph/0102159', 'hep-ph/0104027', 'hep-ph/0103258', 'hep-ph/0101259', 'hep-ph/0102324', 'hep-ph/0101002', 'hep-ph/0104050', 'hep-ph/0103299']
+[01:19:51] select | verify relaxed 1/10
+[01:19:51] verify | func= Extends | rank= 0 | pid= hep-ph/0101106 | title_snip='CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Col…' | abs_len= 1397
+[01:19:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:19:54] select | verify relaxed 2/10
+[01:19:54] verify | func= Extends | rank= 1 | pid= hep-ph/0103319 | title_snip='Determination of the CP Phase $\gamma$ with Possibility of New Physics' | abs_len= 587
+[01:19:57] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:19:57] select | verify relaxed 3/10
+[01:19:57] verify | func= Extends | rank= 2 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[01:20:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[01:20:00] select | verify relaxed 4/10
+[01:20:00] verify | func= Extends | rank= 3 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[01:20:03] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:20:03] select | verify relaxed 5/10
+[01:20:03] verify | func= Extends | rank= 4 | pid= hep-ph/0103258 | title_snip='On the measurement of leptonic CP violation' | abs_len= 847
+[01:20:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:20:07] select | verify relaxed 6/10
+[01:20:07] verify | func= Extends | rank= 5 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[01:20:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:20:10] select | verify relaxed 7/10
+[01:20:10] verify | func= Extends | rank= 6 | pid= hep-ph/0102324 | title_snip='Constraints on Explicit CP Violation from the Brookhaven Muon g-2
+  Ex…' | abs_len= 1096
+[01:20:13] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:20:13] select | verify relaxed 8/10
+[01:20:13] verify | func= Extends | rank= 7 | pid= hep-ph/0101002 | title_snip='CP Violation and Extra Dimensions' | abs_len= 524
+[01:20:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:20:16] select | verify relaxed 9/10
+[01:20:16] verify | func= Extends | rank= 8 | pid= hep-ph/0104050 | title_snip='Recent theoretical developments in CP violation' | abs_len= 392
+[01:20:19] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[01:20:19] select | verify relaxed 10/10
+[01:20:19] verify | func= Extends | rank= 9 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[01:20:22] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the current work on CP-violating phases be extended and what future research directions can be explored based on the findings?
+- WINNER: hep-ph/0101106 | CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Colliders
+- QUOTE : We reexamine large CP-violating phases
+- WHY   : sufficient
+- ANSWER: The current work on CP-violating phases can be extended by exploring the measurement of these phases at a future linear collider, building on prior methods by increasing the precision of phase determination and considering CP-odd kinematical variables. This extension improves the accuracy of phase measurement, such as determining $\phi_1$ to a precision of $\pi/30$, and efficiency in identifying CP violation, albeit with challenges due to small CP asymmetries (hep-ph/0101106).
+[01:20:27] main | running function= FutureWork
+[01:20:27] select | function= FutureWork | candidates_in= 20
+[01:20:27] select | core_terms= ['CP-violating phases', 'symmetry breaking', 'phase transitions', 'CP-violating']
+[01:20:27] select | no cosine prune; kept=20/20
+[01:20:27] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101106', 'hep-ph/0103319', 'hep-ph/0102159', 'hep-ph/0104027', 'hep-ph/0103258', 'hep-ph/0101259', 'hep-ph/0102324', 'hep-ph/0101002', 'hep-ph/0104050', 'hep-ph/0103299']
+[01:20:27] select | verify relaxed 1/10
+[01:20:27] verify | func= FutureWork | rank= 0 | pid= hep-ph/0101106 | title_snip='CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Col…' | abs_len= 1397
+[01:20:30] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:20:30] select | verify relaxed 2/10
+[01:20:30] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103319 | title_snip='Determination of the CP Phase $\gamma$ with Possibility of New Physics' | abs_len= 587
+[01:20:34] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:20:34] select | verify relaxed 3/10
+[01:20:34] verify | func= FutureWork | rank= 2 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[01:20:36] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:20:36] select | verify relaxed 4/10
+[01:20:36] verify | func= FutureWork | rank= 3 | pid= hep-ph/0104027 | title_snip='New physics in CP violation experiments' | abs_len= 1499
+[01:20:40] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[01:20:40] select | verify relaxed 5/10
+[01:20:40] verify | func= FutureWork | rank= 4 | pid= hep-ph/0103258 | title_snip='On the measurement of leptonic CP violation' | abs_len= 847
+[01:20:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:20:43] select | verify relaxed 6/10
+[01:20:43] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101259 | title_snip='CP violation, the CKM matrix and New Physics' | abs_len= 425
+[01:20:46] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:20:46] select | verify relaxed 7/10
+[01:20:46] verify | func= FutureWork | rank= 6 | pid= hep-ph/0102324 | title_snip='Constraints on Explicit CP Violation from the Brookhaven Muon g-2
+  Ex…' | abs_len= 1096
+[01:20:50] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[01:20:50] select | verify relaxed 8/10
+[01:20:50] verify | func= FutureWork | rank= 7 | pid= hep-ph/0101002 | title_snip='CP Violation and Extra Dimensions' | abs_len= 524
+[01:20:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:20:53] select | verify relaxed 9/10
+[01:20:53] verify | func= FutureWork | rank= 8 | pid= hep-ph/0104050 | title_snip='Recent theoretical developments in CP violation' | abs_len= 392
+[01:20:55] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:20:55] select | verify relaxed 10/10
+[01:20:55] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[01:20:58] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the current work on CP-violating phases be extended and what future research directions can be explored based on the findings?
+- WINNER: hep-ph/0101106 | CP-Violating Phases in SUSY, Electric Dipole Moments, and Linear
+  Colliders
+- QUOTE : We then consider the measurement of CP-violating phases at a future linear collider
+- WHY   : sufficient
+- ANSWER: The current work on CP-violating phases can be extended by exploring the measurement of these phases at a future linear collider, where the determination of certain phases and model parameters can be achieved with high precision. Further research directions include constructing CP-odd kinematical variables to unambiguously identify CP violation, despite the challenge of small CP asymmetries (hep-ph/0101106).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

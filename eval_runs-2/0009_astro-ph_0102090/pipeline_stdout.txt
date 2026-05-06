@@ -1,0 +1,155 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query explicitly asks how the new method compares to prior approaches and what data it employs, indicating a comparative inquiry and a focus on the method's usage of data."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[21:26:00] main | args: Namespace(max_check=10, debug=True)
+[21:26:00] read_last_jsonl | path= classified_outputs.jsonl
+[21:26:00] read_last_jsonl | total_lines= 1
+[21:26:00] main | query='How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?' | funcs=['Compares', 'Uses']
+[21:26:01] main | core_terms= ['color-magnitude relation', 'derivation method', 'comparison', 'data', 'color-magnitude']
+[21:26:01] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[21:26:01] load_topk_jsonl | rows= 20
+[21:26:01] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102090 title_snip='Internal color gradients and the color-magnitude relation of early-typ…' abs_len= 1070
+[21:26:01] main | running function= Compares
+[21:26:01] select | function= Compares | candidates_in= 20
+[21:26:01] select | core_terms= ['color-magnitude relation', 'derivation method', 'comparison', 'data', 'color-magnitude']
+[21:26:01] select | no cosine prune; kept=20/20
+[21:26:01] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102090', 'hep-ph/0102103', 'astro-ph/0104084', 'astro-ph/0103188', 'nucl-th/0103002', 'astro-ph/0104366', 'astro-ph/0101463', 'hep-ph/0101071', 'astro-ph/0104427', 'hep-ex/0101044']
+[21:26:01] select | verify relaxed 1/10
+[21:26:01] verify | func= Compares | rank= 0 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[21:26:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:26:05] select | verify relaxed 2/10
+[21:26:05] verify | func= Compares | rank= 1 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[21:26:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:07] select | verify relaxed 3/10
+[21:26:07] verify | func= Compares | rank= 2 | pid= astro-ph/0104084 | title_snip='On the Origin of the Colour-Magnitude Relation in the Virgo Cluster' | abs_len= 1278
+[21:26:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:26:10] select | verify relaxed 4/10
+[21:26:10] verify | func= Compares | rank= 3 | pid= astro-ph/0103188 | title_snip='Empirical relations for cluster RR Lyrae stars revisited' | abs_len= 1352
+[21:26:14] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:26:14] select | verify relaxed 5/10
+[21:26:14] verify | func= Compares | rank= 4 | pid= nucl-th/0103002 | title_snip='Tensor Analyzing Power and Current Conservation in the d+p->3He+g
+  re…' | abs_len= 480
+[21:26:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:16] select | verify relaxed 6/10
+[21:26:16] verify | func= Compares | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[21:26:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:18] select | verify relaxed 7/10
+[21:26:18] verify | func= Compares | rank= 6 | pid= astro-ph/0101463 | title_snip='Color Transformations for the 2MASS Second Incremental Data Release' | abs_len= 552
+[21:26:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:26:22] select | verify relaxed 8/10
+[21:26:22] verify | func= Compares | rank= 7 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[21:26:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:24] select | verify relaxed 9/10
+[21:26:24] verify | func= Compares | rank= 8 | pid= astro-ph/0104427 | title_snip='Near-infrared template spectra of normal galaxies: k-corrections, gala…' | abs_len= 1499
+[21:26:27] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:26:27] select | verify relaxed 10/10
+[21:26:27] verify | func= Compares | rank= 9 | pid= hep-ex/0101044 | title_snip='A Simultaneous Measurement of the QCD Colour Factors and the Strong
+  …' | abs_len= 876
+[21:26:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?
+- WINNER: astro-ph/0102090 | Internal color gradients and the color-magnitude relation of early-type
+  galaxies
+- QUOTE : significantly flatter than those based on fixed-aperture color measurements
+- WHY   : sufficient
+- ANSWER: The current work's method of deriving the color-magnitude relation is compared to previous methods that use fixed apertures, and it uses a sample of 48 giant early-type galaxies in the Coma cluster with CCD observations to achieve this comparison. The new method, based on color measurements within the galaxy's effective radius, is found to produce a significantly flatter relation than those based on fixed-aperture measurements (astro-ph/0102090).
+[21:26:35] main | running function= Uses
+[21:26:35] select | function= Uses | candidates_in= 20
+[21:26:35] select | core_terms= ['color-magnitude relation', 'derivation method', 'comparison', 'data', 'color-magnitude']
+[21:26:35] select | no cosine prune; kept=20/20
+[21:26:35] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102090', 'hep-ph/0102103', 'astro-ph/0104084', 'astro-ph/0103188', 'nucl-th/0103002', 'astro-ph/0104366', 'astro-ph/0101463', 'hep-ph/0101071', 'astro-ph/0104427', 'hep-ex/0101044']
+[21:26:35] select | verify relaxed 1/10
+[21:26:35] verify | func= Uses | rank= 0 | pid= astro-ph/0102090 | title_snip='Internal color gradients and the color-magnitude relation of early-typ…' | abs_len= 1070
+[21:26:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[21:26:38] select | verify relaxed 2/10
+[21:26:38] verify | func= Uses | rank= 1 | pid= hep-ph/0102103 | title_snip='Discriminating Neutrino See-Saw Models' | abs_len= 832
+[21:26:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:41] select | verify relaxed 3/10
+[21:26:41] verify | func= Uses | rank= 2 | pid= astro-ph/0104084 | title_snip='On the Origin of the Colour-Magnitude Relation in the Virgo Cluster' | abs_len= 1278
+[21:26:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[21:26:44] select | verify relaxed 4/10
+[21:26:44] verify | func= Uses | rank= 3 | pid= astro-ph/0103188 | title_snip='Empirical relations for cluster RR Lyrae stars revisited' | abs_len= 1352
+[21:26:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:26:47] select | verify relaxed 5/10
+[21:26:47] verify | func= Uses | rank= 4 | pid= nucl-th/0103002 | title_snip='Tensor Analyzing Power and Current Conservation in the d+p->3He+g
+  re…' | abs_len= 480
+[21:26:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:49] select | verify relaxed 6/10
+[21:26:49] verify | func= Uses | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[21:26:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:52] select | verify relaxed 7/10
+[21:26:52] verify | func= Uses | rank= 6 | pid= astro-ph/0101463 | title_snip='Color Transformations for the 2MASS Second Incremental Data Release' | abs_len= 552
+[21:26:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[21:26:55] select | verify relaxed 8/10
+[21:26:55] verify | func= Uses | rank= 7 | pid= hep-ph/0101071 | title_snip='New approaches to the determination of the total cross section' | abs_len= 612
+[21:26:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[21:26:58] select | verify relaxed 9/10
+[21:26:58] verify | func= Uses | rank= 8 | pid= astro-ph/0104427 | title_snip='Near-infrared template spectra of normal galaxies: k-corrections, gala…' | abs_len= 1499
+[21:27:01] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[21:27:01] select | verify relaxed 10/10
+[21:27:01] verify | func= Uses | rank= 9 | pid= hep-ex/0101044 | title_snip='A Simultaneous Measurement of the QCD Colour Factors and the Strong
+  …' | abs_len= 876
+[21:27:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work's method of deriving the color-magnitude relation compare to previous methods, and what data does it use to achieve this comparison?
+- WINNER: astro-ph/0102090 | Internal color gradients and the color-magnitude relation of early-type
+  galaxies
+- QUOTE : deriving a CM relation which is based on color measurements
+- WHY   : sufficient
+- ANSWER: The current work uses a sample of 48 giant early-type galaxies in the Coma cluster with CCD observations in the U- and V-band to derive the color-magnitude relation. It applies color measurements within an aperture of radius equal to the galaxy effective radius to achieve a comparison with previous methods that used fixed apertures (astro-ph/0102090).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

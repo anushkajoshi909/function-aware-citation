@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly asks for a comparison with prior models and seeks suggested directions for future research based on observed differences."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[17:36:57] main | args: Namespace(max_check=10, debug=True)
+[17:36:57] read_last_jsonl | path= classified_outputs.jsonl
+[17:36:57] read_last_jsonl | total_lines= 1
+[17:36:57] main | query='How does the current work's approach to simulating relativistic jets compare to previous models, and what potential areas of future research are suggested by the differences found?' | funcs=['Compares', 'FutureWork']
+[17:36:59] main | core_terms= ['relativistic jets', 'simulation', 'relativity']
+[17:36:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[17:36:59] load_topk_jsonl | rows= 20
+[17:36:59] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104120 title_snip='Numerical Simulations of Relativistic Shock Acceleration' abs_len= 1002
+[17:36:59] main | running function= Compares
+[17:36:59] select | function= Compares | candidates_in= 20
+[17:36:59] select | core_terms= ['relativistic jets', 'simulation', 'relativity']
+[17:36:59] select | no cosine prune; kept=20/20
+[17:36:59] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104120', 'astro-ph/0103038', 'nucl-th/0101008', 'astro-ph/0104305', 'nucl-th/0104040', 'nucl-th/0101038', 'hep-ph/0101327', 'astro-ph/0102271', 'gr-qc/0103076', 'astro-ph/0103007']
+[17:36:59] select | verify relaxed 1/10
+[17:36:59] verify | func= Compares | rank= 0 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[17:37:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:37:03] select | verify relaxed 2/10
+[17:37:03] verify | func= Compares | rank= 1 | pid= astro-ph/0103038 | title_snip='Light Curves from an Expanding Relativistic Jet' | abs_len= 1185
+[17:37:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:37:07] select | verify relaxed 3/10
+[17:37:07] verify | func= Compares | rank= 2 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[17:37:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:37:11] select | verify relaxed 4/10
+[17:37:11] verify | func= Compares | rank= 3 | pid= astro-ph/0104305 | title_snip='Simulating Electron Transport and Synchrotron Emission in Radio
+  Gala…' | abs_len= 1433
+[17:37:14] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[17:37:14] select | verify relaxed 5/10
+[17:37:14] verify | func= Compares | rank= 4 | pid= nucl-th/0104040 | title_snip='Microscopic Reaction Dynamics at SPS and RHIC' | abs_len= 362
+[17:37:17] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:37:17] select | verify relaxed 6/10
+[17:37:17] verify | func= Compares | rank= 5 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[17:37:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:37:20] select | verify relaxed 7/10
+[17:37:20] verify | func= Compares | rank= 6 | pid= hep-ph/0101327 | title_snip='Relativistic instant-form approach to the structure of two-body
+  comp…' | abs_len= 1242
+[17:37:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:37:23] select | verify relaxed 8/10
+[17:37:23] verify | func= Compares | rank= 7 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[17:37:27] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[17:37:27] select | verify relaxed 9/10
+[17:37:27] verify | func= Compares | rank= 8 | pid= gr-qc/0103076 | title_snip='New Perspectives on the Relativistically Rotating Disk and
+  Non-time-…' | abs_len= 1715
+[17:37:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:37:31] select | verify relaxed 10/10
+[17:37:31] verify | func= Compares | rank= 9 | pid= astro-ph/0103007 | title_snip='Relativistic large scale jets and minimum power requirements' | abs_len= 910
+[17:37:34] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's approach to simulating relativistic jets compare to previous models, and what potential areas of future research are suggested by the differences found?
+- WINNER: astro-ph/0104120 | Numerical Simulations of Relativistic Shock Acceleration
+- QUOTE : Contrary to non-relativistic shocks
+- WHY   : sufficient
+[17:37:35] main | running function= FutureWork
+[17:37:35] select | function= FutureWork | candidates_in= 20
+[17:37:35] select | core_terms= ['relativistic jets', 'simulation', 'relativity']
+[17:37:35] select | no cosine prune; kept=20/20
+[17:37:35] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104120', 'astro-ph/0103038', 'nucl-th/0101008', 'astro-ph/0104305', 'nucl-th/0104040', 'nucl-th/0101038', 'hep-ph/0101327', 'astro-ph/0102271', 'gr-qc/0103076', 'astro-ph/0103007']
+[17:37:35] select | verify relaxed 1/10
+[17:37:35] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104120 | title_snip='Numerical Simulations of Relativistic Shock Acceleration' | abs_len= 1002
+[17:37:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[17:37:39] select | verify relaxed 2/10
+[17:37:39] verify | func= FutureWork | rank= 1 | pid= astro-ph/0103038 | title_snip='Light Curves from an Expanding Relativistic Jet' | abs_len= 1185
+[17:37:43] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[17:37:43] select | verify relaxed 3/10
+[17:37:43] verify | func= FutureWork | rank= 2 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[17:37:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:37:46] select | verify relaxed 4/10
+[17:37:46] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104305 | title_snip='Simulating Electron Transport and Synchrotron Emission in Radio
+  Gala…' | abs_len= 1433
+[17:37:49] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[17:37:49] select | verify relaxed 5/10
+[17:37:49] verify | func= FutureWork | rank= 4 | pid= nucl-th/0104040 | title_snip='Microscopic Reaction Dynamics at SPS and RHIC' | abs_len= 362
+[17:37:53] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[17:37:53] select | verify relaxed 6/10
+[17:37:53] verify | func= FutureWork | rank= 5 | pid= nucl-th/0101038 | title_snip='Relativistic mean field approximation to the analysis of 16O(e,e'p)15N…' | abs_len= 631
+[17:37:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[17:37:56] select | verify relaxed 7/10
+[17:37:56] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101327 | title_snip='Relativistic instant-form approach to the structure of two-body
+  comp…' | abs_len= 1242
+[17:37:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[17:37:59] select | verify relaxed 8/10
+[17:37:59] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102271 | title_snip='Relativistic Blastwaves and Synchrotron Emission' | abs_len= 1224
+[17:38:02] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[17:38:02] select | verify relaxed 9/10
+[17:38:02] verify | func= FutureWork | rank= 8 | pid= gr-qc/0103076 | title_snip='New Perspectives on the Relativistically Rotating Disk and
+  Non-time-…' | abs_len= 1715
+[17:38:05] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[17:38:05] select | verify relaxed 10/10
+[17:38:05] verify | func= FutureWork | rank= 9 | pid= astro-ph/0103007 | title_snip='Relativistic large scale jets and minimum power requirements' | abs_len= 910
+[17:38:09] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the current work's approach to simulating relativistic jets compare to previous models, and what potential areas of future research are suggested by the differences found?
+- WINNER: astro-ph/0104120 | Numerical Simulations of Relativistic Shock Acceleration
+- QUOTE : an interesting possibility of particle acceleration at incompressible flow discontinuities
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work's approach to simulating relativistic jets compares to previous models by highlighting the importance of magnetic field configurations and turbulence spectra in shaping cosmic ray spectra [Compares] (astro-ph/0104120). The differences found suggest potential areas of future research, including the investigation of particle acceleration at shear layers in relativistic jets [FutureWork] (astro-ph/0104120).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

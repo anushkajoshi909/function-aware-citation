@@ -1,0 +1,2 @@
+The abstract does not provide information relevant to Uses. [Uses]
+Future research may apply the developed techniques to explore the role of large tensor representations in generating quark lepton textures and neutrino mass textures. The methods could also be used to further investigate proton decay lifetime enhancements (hep-ph/0103165). [FutureWork]

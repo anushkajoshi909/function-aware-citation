@@ -1,0 +1,2 @@
+The expansion of the Borel transform near the infrared renormalon extends current methods by providing nontrivial constraints on the Borel amplitude, improving the accuracy of the ordinary perturbative expansion. This approach also enhances the efficiency of predicting higher-order coefficients, such as the $O(\alpha_s^4)$ coefficient of the Adler function, by incorporating exact constraints and using conformal transformations and Pade approximants (hep-ph/0101297). [Extends]
+The abstract does not provide information relevant to FutureWork. [FutureWork]

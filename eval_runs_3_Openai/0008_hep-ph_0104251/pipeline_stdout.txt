@@ -1,0 +1,160 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query asks how the thesis builds upon (extends) the MSSM and how its outcomes are compared with other theories, focusing on extension and comparative analysis."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[15:34:57] main | args: Namespace(max_check=10, debug=True)
+[15:34:57] read_last_jsonl | path= classified_outputs.jsonl
+[15:34:57] read_last_jsonl | total_lines= 1
+[15:34:57] main | query='How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?' | funcs=['Extends', 'Compares']
+[15:34:59] main | core_terms= ['Minimal Supersymmetric Standard Model', 'baryogenesis', 'cosmic rays']
+[15:34:59] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:34:59] load_topk_jsonl | rows= 20
+[15:34:59] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0104276 title_snip='Some Recent Results from the Generic Supersymmetric Standard Model' abs_len= 571
+[15:34:59] main | running function= Extends
+[15:34:59] select | function= Extends | candidates_in= 20
+[15:34:59] select | core_terms= ['Minimal Supersymmetric Standard Model', 'baryogenesis', 'cosmic rays']
+[15:34:59] select | no cosine prune; kept=20/20
+[15:34:59] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0104276', 'hep-ph/0103270', 'hep-ph/0102043', 'hep-ph/0102113', 'hep-ph/0103041', 'hep-ph/0103095', 'hep-ph/0104251', 'hep-ph/0102049', 'hep-ph/0103299', 'hep-ph/0102096']
+[15:34:59] select | verify relaxed 1/10
+[15:34:59] verify | func= Extends | rank= 0 | pid= hep-ph/0104276 | title_snip='Some Recent Results from the Generic Supersymmetric Standard Model' | abs_len= 571
+[15:35:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:02] select | verify relaxed 2/10
+[15:35:02] verify | func= Extends | rank= 1 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[15:35:05] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:05] select | verify relaxed 3/10
+[15:35:05] verify | func= Extends | rank= 2 | pid= hep-ph/0102043 | title_snip='Electroweak Baryogenesis in Supersymmetric Variants' | abs_len= 685
+[15:35:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:09] select | verify relaxed 4/10
+[15:35:09] verify | func= Extends | rank= 3 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[15:35:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:13] select | verify relaxed 5/10
+[15:35:13] verify | func= Extends | rank= 4 | pid= hep-ph/0103041 | title_snip='Effective Lagrangian for $\bar{s}bg$ and $\bar{s}b\gamma$ Vertices in
+…' | abs_len= 308
+[15:35:17] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[15:35:17] select | verify relaxed 6/10
+[15:35:17] verify | func= Extends | rank= 5 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[15:35:20] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[15:35:20] select | verify relaxed 7/10
+[15:35:20] verify | func= Extends | rank= 6 | pid= hep-ph/0104251 | title_snip='Astroparticle physics signals beyond the Standard Model' | abs_len= 1280
+[15:35:24] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:24] select | verify relaxed 8/10
+[15:35:24] verify | func= Extends | rank= 7 | pid= hep-ph/0102049 | title_snip='Cosmological Constraints in SUSY with Yukawa Unification' | abs_len= 667
+[15:35:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:28] select | verify relaxed 9/10
+[15:35:28] verify | func= Extends | rank= 8 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[15:35:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:35:31] select | verify relaxed 10/10
+[15:35:31] verify | func= Extends | rank= 9 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[15:35:34] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?
+- WINNER: hep-ph/0104276 | Some Recent Results from the Generic Supersymmetric Standard Model
+- QUOTE : The popular minimal supersymmetric standard model differs
+- WHY   : sufficient
+[15:35:36] main | running function= Compares
+[15:35:36] select | function= Compares | candidates_in= 20
+[15:35:36] select | core_terms= ['Minimal Supersymmetric Standard Model', 'baryogenesis', 'cosmic rays']
+[15:35:36] select | no cosine prune; kept=20/20
+[15:35:36] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0104276', 'hep-ph/0103270', 'hep-ph/0102043', 'hep-ph/0102113', 'hep-ph/0103041', 'hep-ph/0103095', 'hep-ph/0104251', 'hep-ph/0102049', 'hep-ph/0103299', 'hep-ph/0102096']
+[15:35:36] select | verify relaxed 1/10
+[15:35:36] verify | func= Compares | rank= 0 | pid= hep-ph/0104276 | title_snip='Some Recent Results from the Generic Supersymmetric Standard Model' | abs_len= 571
+[15:35:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:39] select | verify relaxed 2/10
+[15:35:39] verify | func= Compares | rank= 1 | pid= hep-ph/0103270 | title_snip='Comment on ``Infrared Fixed Point Structure in Minimal Supersymmetric
+…' | abs_len= 410
+[15:35:43] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:43] select | verify relaxed 3/10
+[15:35:43] verify | func= Compares | rank= 2 | pid= hep-ph/0102043 | title_snip='Electroweak Baryogenesis in Supersymmetric Variants' | abs_len= 685
+[15:35:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:35:47] select | verify relaxed 4/10
+[15:35:47] verify | func= Compares | rank= 3 | pid= hep-ph/0102113 | title_snip='The Generic Supersymmetric Standard Model as the Complete Theory of
+  …' | abs_len= 814
+[15:35:51] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:35:51] select | verify relaxed 5/10
+[15:35:51] verify | func= Compares | rank= 4 | pid= hep-ph/0103041 | title_snip='Effective Lagrangian for $\bar{s}bg$ and $\bar{s}b\gamma$ Vertices in
+…' | abs_len= 308
+[15:35:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:35:54] select | verify relaxed 6/10
+[15:35:54] verify | func= Compares | rank= 5 | pid= hep-ph/0103095 | title_snip='Low-Energy Supersymmetry and its Phenomenology' | abs_len= 410
+[15:35:58] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[15:35:58] select | verify relaxed 7/10
+[15:35:58] verify | func= Compares | rank= 6 | pid= hep-ph/0104251 | title_snip='Astroparticle physics signals beyond the Standard Model' | abs_len= 1280
+[15:36:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:36:02] select | verify relaxed 8/10
+[15:36:02] verify | func= Compares | rank= 7 | pid= hep-ph/0102049 | title_snip='Cosmological Constraints in SUSY with Yukawa Unification' | abs_len= 667
+[15:36:05] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[15:36:05] select | verify relaxed 9/10
+[15:36:05] verify | func= Compares | rank= 8 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[15:36:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:36:09] select | verify relaxed 10/10
+[15:36:09] verify | func= Compares | rank= 9 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[15:36:12] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the thesis extend the Minimal Supersymmetric Standard Model and compare its results with existing theories on baryogenesis and cosmic rays?
+- WINNER: hep-ph/0104276 | Some Recent Results from the Generic Supersymmetric Standard Model
+- QUOTE : The popular minimal supersymmetric standard model differs
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The thesis extends the Minimal Supersymmetric Standard Model by considering a generic supersymmetric standard model without imposed R-parity [Extends] (hep-ph/0104276). It compares its results with existing theories on baryogenesis and cosmic rays by reviewing phenomenological features such as R-parity violating contributions to scalar masses [Compares] (hep-ph/0104276).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

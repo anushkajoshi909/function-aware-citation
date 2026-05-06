@@ -1,0 +1,1 @@
+The background information on GaN/AlGaN quantum wells, including their valence band reordering and excitonic properties [Background] (cond-mat/0101069), motivates the current study as it reveals a complex interplay between strain, barrier heights, and exciton binding energies [Motivation] (cond-mat/0101069).

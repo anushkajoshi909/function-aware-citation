@@ -1,0 +1,1 @@
+The limitation of having only one old orbit solution for UX Ari motivates the current work to improve the orbit using new radial velocities [Motivation] (astro-ph/0102405). This also suggests areas for future research, such as further investigation of the triple system and the physical parameters of the objects [Motivation] (astro-ph/0102405).

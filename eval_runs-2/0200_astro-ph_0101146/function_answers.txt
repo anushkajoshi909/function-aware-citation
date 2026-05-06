@@ -1,0 +1,2 @@
+The discovery of giant micro-pulses and a large amplitude gaussian component in the Vela pulsar's pulse profile motivates further research into the underlying emission mechanisms and periodicity of these features. Understanding these phenomena is crucial for uncovering the unique properties of the Vela pulsar and its emission processes (astro-ph/0101146). [Motivation]
+The abstract does not provide information relevant to FutureWork. [FutureWork]

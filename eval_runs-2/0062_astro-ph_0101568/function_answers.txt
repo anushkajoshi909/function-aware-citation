@@ -1,0 +1,2 @@
+The work on self-gravitating non-relativistic gas at thermal equilibrium motivates further research by addressing the limitations of classical thermodynamics in astrophysical systems, where gravity and openness modify equilibrium structures. This study extends previous research by simulating the consequences of these modifications on structure formation (astro-ph/0101265). [Motivation]
+The abstract does not provide information relevant to Extends. [Extends]

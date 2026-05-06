@@ -1,0 +1,151 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks for a comparison of the current approach with other studies and seeks suggested directions for future research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:22:43] main | args: Namespace(max_check=10, debug=True)
+[01:22:43] read_last_jsonl | path= classified_outputs.jsonl
+[01:22:43] read_last_jsonl | total_lines= 1
+[01:22:43] main | query='How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?' | funcs=['Compares', 'FutureWork']
+[01:22:44] main | core_terms= ['high energy radiation', 'parameter space', 'radiation mechanisms']
+[01:22:44] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:22:44] load_topk_jsonl | rows= 20
+[01:22:44] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101331 title_snip='Cosmic Rays and Particle Physics' abs_len= 774
+[01:22:44] main | running function= Compares
+[01:22:44] select | function= Compares | candidates_in= 20
+[01:22:44] select | core_terms= ['high energy radiation', 'parameter space', 'radiation mechanisms']
+[01:22:44] select | no cosine prune; kept=20/20
+[01:22:44] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101331', 'hep-ph/0104227', 'nucl-th/0101056', 'cond-mat/0104527', 'astro-ph/0103229', 'hep-ph/0102159', 'hep-ph/0101163', 'hep-ph/0102053', 'astro-ph/0102276', 'hep-ph/0101244']
+[01:22:44] select | verify relaxed 1/10
+[01:22:44] verify | func= Compares | rank= 0 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[01:22:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[01:22:47] select | verify relaxed 2/10
+[01:22:47] verify | func= Compares | rank= 1 | pid= hep-ph/0104227 | title_snip='Topics in Lorentz and CPT Violation' | abs_len= 85
+[01:22:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:22:50] select | verify relaxed 3/10
+[01:22:50] verify | func= Compares | rank= 2 | pid= nucl-th/0101056 | title_snip='The nucleon-nucleon interaction' | abs_len= 566
+[01:22:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:22:53] select | verify relaxed 4/10
+[01:22:53] verify | func= Compares | rank= 3 | pid= cond-mat/0104527 | title_snip='Using Entropy-Based Methods to Study General Constrained Parameter
+  O…' | abs_len= 424
+[01:22:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:22:55] select | verify relaxed 5/10
+[01:22:55] verify | func= Compares | rank= 4 | pid= astro-ph/0103229 | title_snip='High Energy Spectral Components in Gamma-Ray Burst Afterglows' | abs_len= 1321
+[01:22:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:22:58] select | verify relaxed 6/10
+[01:22:58] verify | func= Compares | rank= 5 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[01:23:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:23:01] select | verify relaxed 7/10
+[01:23:01] verify | func= Compares | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[01:23:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[01:23:03] select | verify relaxed 8/10
+[01:23:03] verify | func= Compares | rank= 7 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[01:23:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:23:06] select | verify relaxed 9/10
+[01:23:06] verify | func= Compares | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[01:23:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[01:23:09] select | verify relaxed 10/10
+[01:23:09] verify | func= Compares | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[01:23:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?
+- WINNER: astro-ph/0103229 | High Energy Spectral Components in Gamma-Ray Burst Afterglows
+- QUOTE : We investigate two high energy radiation mechanisms
+- WHY   : sufficient
+- ANSWER: The current work's approach to investigating high energy radiation mechanisms is compared to other studies through the development of a simple analytical approach that explores the conditions under which proton synchrotron or electron inverse Compton emission dominates. The identification of different parameter space regions suggests future research directions, such as detecting the inverse Compton component with GLAST or Chandra, which is compared to the detectability of other components in various bands (astro-ph/0103229).
+[01:23:17] main | running function= FutureWork
+[01:23:17] select | function= FutureWork | candidates_in= 20
+[01:23:17] select | core_terms= ['high energy radiation', 'parameter space', 'radiation mechanisms']
+[01:23:17] select | no cosine prune; kept=20/20
+[01:23:17] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101331', 'hep-ph/0104227', 'nucl-th/0101056', 'cond-mat/0104527', 'astro-ph/0103229', 'hep-ph/0102159', 'hep-ph/0101163', 'hep-ph/0102053', 'astro-ph/0102276', 'hep-ph/0101244']
+[01:23:17] select | verify relaxed 1/10
+[01:23:17] verify | func= FutureWork | rank= 0 | pid= astro-ph/0101331 | title_snip='Cosmic Rays and Particle Physics' | abs_len= 774
+[01:23:20] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[01:23:20] select | verify relaxed 2/10
+[01:23:20] verify | func= FutureWork | rank= 1 | pid= hep-ph/0104227 | title_snip='Topics in Lorentz and CPT Violation' | abs_len= 85
+[01:23:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:23:23] select | verify relaxed 3/10
+[01:23:23] verify | func= FutureWork | rank= 2 | pid= nucl-th/0101056 | title_snip='The nucleon-nucleon interaction' | abs_len= 566
+[01:23:26] verify | result supports= False fit= 0.00 top= 0.60 invalid= off_topic_no_core_in_abstract cue_hint= True
+[01:23:26] select | verify relaxed 4/10
+[01:23:26] verify | func= FutureWork | rank= 3 | pid= cond-mat/0104527 | title_snip='Using Entropy-Based Methods to Study General Constrained Parameter
+  O…' | abs_len= 424
+[01:23:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:23:28] select | verify relaxed 5/10
+[01:23:28] verify | func= FutureWork | rank= 4 | pid= astro-ph/0103229 | title_snip='High Energy Spectral Components in Gamma-Ray Burst Afterglows' | abs_len= 1321
+[01:23:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:23:32] select | verify relaxed 6/10
+[01:23:32] verify | func= FutureWork | rank= 5 | pid= hep-ph/0102159 | title_snip='Present and Future CP Measurements' | abs_len= 176
+[01:23:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:23:34] select | verify relaxed 7/10
+[01:23:34] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101163 | title_snip='On particle production for high energy neutrino beams' | abs_len= 1098
+[01:23:37] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[01:23:37] select | verify relaxed 8/10
+[01:23:37] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102053 | title_snip='Nucleon Structure and Parity-Violating Electron Scattering' | abs_len= 296
+[01:23:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:23:40] select | verify relaxed 9/10
+[01:23:40] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[01:23:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[01:23:42] select | verify relaxed 10/10
+[01:23:42] verify | func= FutureWork | rank= 9 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[01:23:45] verify | result supports= False fit= 0.00 top= 0.70 invalid= off_topic_no_core_in_abstract cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the current work's approach to investigating high energy radiation mechanisms compare to other studies, and what future research directions are suggested by the identification of different parameter space regions?
+- WINNER: astro-ph/0103229 | High Energy Spectral Components in Gamma-Ray Burst Afterglows
+- QUOTE : We discuss the prospects and astrophysical implications
+- WHY   : sufficient
+- ANSWER: The current work's approach to investigating high energy radiation mechanisms differs from other studies through its analytical exploration of proton synchrotron and electron inverse Compton emission. Future research directions include directly detecting the inverse Compton and proton high energy components with missions like GLAST and Chandra, particularly in the GeV and X-ray bands (astro-ph/0103229).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

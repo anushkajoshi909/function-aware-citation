@@ -1,0 +1,109 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "The query explicitly asks for foundational details about the PHOBOS detector experiment, focusing on background information rather than motivation or other aspects."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:03:32] main | args: Namespace(max_check=10, debug=True)
+[00:03:32] read_last_jsonl | path= classified_outputs.jsonl
+[00:03:32] read_last_jsonl | total_lines= 1
+[00:03:32] main | query='What background information is provided about the experiment that uses the PHOBOS detector to study Au-Au interactions?' | funcs=['Background']
+[00:03:33] main | core_terms= ['PHOBOS detector', 'Au-Au interactions', 'heavy-ion collisions', 'PHOBOS', 'Au-Au']
+[00:03:33] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:03:33] load_topk_jsonl | rows= 20
+[00:03:33] load_topk_jsonl | first: rank= 0 paper_id= hep-ex/0102012 title_snip='Results from the PHOBOS Experiment on Au+Au Collisions at RHIC' abs_len= 1126
+[00:03:33] main | running function= Background
+[00:03:33] select | function= Background | candidates_in= 20
+[00:03:33] select | core_terms= ['PHOBOS detector', 'Au-Au interactions', 'heavy-ion collisions', 'PHOBOS', 'Au-Au']
+[00:03:33] select | no cosine prune; kept=20/20
+[00:03:33] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0102012', 'nucl-ex/0104012', 'nucl-ex/0103015', 'nucl-th/0101035', 'astro-ph/0102443', 'nucl-ex/0104016', 'astro-ph/0103508', 'astro-ph/0101171', 'hep-ex/0102047', 'astro-ph/0104401']
+[00:03:33] select | verify relaxed 1/10
+[00:03:33] verify | func= Background | rank= 0 | pid= hep-ex/0102012 | title_snip='Results from the PHOBOS Experiment on Au+Au Collisions at RHIC' | abs_len= 1126
+[00:03:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:03:37] select | verify relaxed 2/10
+[00:03:37] verify | func= Background | rank= 1 | pid= nucl-ex/0104012 | title_snip='Laying the groundwork at the AGS: Recent results from experiment E895' | abs_len= 499
+[00:03:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:39] select | verify relaxed 3/10
+[00:03:39] verify | func= Background | rank= 2 | pid= nucl-ex/0103015 | title_snip='Systematic Study of Au-Au Collisions with AGS Experiment E917' | abs_len= 350
+[00:03:42] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[00:03:42] select | verify relaxed 4/10
+[00:03:42] verify | func= Background | rank= 3 | pid= nucl-th/0101035 | title_snip='Mutual heavy ion dissociation in peripheral collisions at
+  ultrarelat…' | abs_len= 1049
+[00:03:45] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[00:03:45] select | verify relaxed 5/10
+[00:03:45] verify | func= Background | rank= 4 | pid= astro-ph/0102443 | title_snip='A Non-Parametric Approach to Infer the Energy Spectrum and the Mass
+  …' | abs_len= 1120
+[00:03:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:47] select | verify relaxed 6/10
+[00:03:47] verify | func= Background | rank= 5 | pid= nucl-ex/0104016 | title_snip='Observation of $Au + Au \to Au + Au + \rho^0$ and $Au + Au \to Au^* +
+…' | abs_len= 426
+[00:03:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:50] select | verify relaxed 7/10
+[00:03:50] verify | func= Background | rank= 6 | pid= astro-ph/0103508 | title_snip='A Doppler-like strong light-matter interaction' | abs_len= 1588
+[00:03:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:53] select | verify relaxed 8/10
+[00:03:53] verify | func= Background | rank= 7 | pid= astro-ph/0101171 | title_snip='Preliminary Results from the Cosmic Background Imager' | abs_len= 513
+[00:03:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:55] select | verify relaxed 9/10
+[00:03:55] verify | func= Background | rank= 8 | pid= hep-ex/0102047 | title_snip='Investigation of Quark-Antiquark Interaction Properties using Leading
+…' | abs_len= 450
+[00:03:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:03:58] select | verify relaxed 10/10
+[00:03:58] verify | func= Background | rank= 9 | pid= astro-ph/0104401 | title_snip='The QSO - Ultraluminous Infrared Galaxies Connection' | abs_len= 1176
+[00:04:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What background information is provided about the experiment that uses the PHOBOS detector to study Au-Au interactions?
+- WINNER: hep-ex/0102012 | Results from the PHOBOS Experiment on Au+Au Collisions at RHIC
+- QUOTE : PHOBOS is one of four experiments studying the Au-Au interactions at RHIC
+- WHY   : sufficient
+- ANSWER: The PHOBOS experiment is one of four experiments studying Au-Au interactions at RHIC, using the PHOBOS detector to collect data on collisions of Au nuclei at center of mass energies of 56 and 130 AGeV (hep-ex/0102012).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

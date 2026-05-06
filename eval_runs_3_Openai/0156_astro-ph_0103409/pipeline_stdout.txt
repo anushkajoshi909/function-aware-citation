@@ -1,0 +1,157 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query explicitly asks how the current work builds upon (extends) prior research and how it compares with those studies."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[18:59:06] main | args: Namespace(max_check=10, debug=True)
+[18:59:06] read_last_jsonl | path= classified_outputs.jsonl
+[18:59:06] read_last_jsonl | total_lines= 1
+[18:59:06] main | query='How does the current work extend and compare with previous studies on the stability of poloidal magnetic fields in accretion discs?' | funcs=['Extends', 'Compares']
+[18:59:09] main | core_terms= ['accretion discs', 'poloidal magnetic fields', 'stability']
+[18:59:09] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[18:59:09] load_topk_jsonl | rows= 20
+[18:59:09] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103409 title_snip='Stability of accretion discs threaded by a strong magnetic field' abs_len= 1614
+[18:59:09] main | running function= Extends
+[18:59:09] select | function= Extends | candidates_in= 20
+[18:59:09] select | core_terms= ['accretion discs', 'poloidal magnetic fields', 'stability']
+[18:59:09] select | no cosine prune; kept=20/20
+[18:59:09] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103409', 'astro-ph/0102045', 'astro-ph/0103230', 'astro-ph/0101470', 'astro-ph/0101293', 'astro-ph/0102178', 'astro-ph/0101237', 'physics/0104072', 'astro-ph/0104130', 'astro-ph/0104385']
+[18:59:09] select | verify relaxed 1/10
+[18:59:09] verify | func= Extends | rank= 0 | pid= astro-ph/0103409 | title_snip='Stability of accretion discs threaded by a strong magnetic field' | abs_len= 1614
+[18:59:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:59:12] select | verify relaxed 2/10
+[18:59:12] verify | func= Extends | rank= 1 | pid= astro-ph/0102045 | title_snip='Magnetohydrodynamic simulations of black hole accretion' | abs_len= 804
+[18:59:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:59:16] select | verify relaxed 3/10
+[18:59:16] verify | func= Extends | rank= 2 | pid= astro-ph/0103230 | title_snip='Stability of Accretion Disks in Presence of Nucleosynthesis' | abs_len= 767
+[18:59:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[18:59:19] select | verify relaxed 4/10
+[18:59:19] verify | func= Extends | rank= 3 | pid= astro-ph/0101470 | title_snip='Global accretion disk simulations of magneto-rotational instability' | abs_len= 1500
+[18:59:24] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:59:24] select | verify relaxed 5/10
+[18:59:24] verify | func= Extends | rank= 4 | pid= astro-ph/0101293 | title_snip='Numerical simulations of the Accretion-Ejection Instability in
+  magne…' | abs_len= 940
+[18:59:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:59:27] select | verify relaxed 6/10
+[18:59:27] verify | func= Extends | rank= 5 | pid= astro-ph/0102178 | title_snip='Magnetic Screening in Accreting Neutron Stars' | abs_len= 1626
+[18:59:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:59:31] select | verify relaxed 7/10
+[18:59:31] verify | func= Extends | rank= 6 | pid= astro-ph/0101237 | title_snip='The Effects of Magnetic Fields on Radiative Cooling Jets' | abs_len= 682
+[18:59:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[18:59:34] select | verify relaxed 8/10
+[18:59:34] verify | func= Extends | rank= 7 | pid= physics/0104072 | title_snip='Axisymmetric equilibria of a gravitating plasma with incompressible
+  …' | abs_len= 1596
+[18:59:37] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[18:59:37] select | verify relaxed 9/10
+[18:59:37] verify | func= Extends | rank= 8 | pid= astro-ph/0104130 | title_snip='Magnetohydrodynamic Simulations of Accretion Disks around a Weakly
+  M…' | abs_len= 1273
+[18:59:40] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[18:59:40] select | verify relaxed 10/10
+[18:59:40] verify | func= Extends | rank= 9 | pid= astro-ph/0104385 | title_snip='Temperature profiles of accretion discs around rapidly rotating strang…' | abs_len= 1393
+[18:59:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work extend and compare with previous studies on the stability of poloidal magnetic fields in accretion discs?
+- WINNER: astro-ph/0103409 | Stability of accretion discs threaded by a strong magnetic field
+- QUOTE : stability of poloidal magnetic fields anchored in a thin accretion disc
+- WHY   : sufficient
+[18:59:45] main | running function= Compares
+[18:59:45] select | function= Compares | candidates_in= 20
+[18:59:45] select | core_terms= ['accretion discs', 'poloidal magnetic fields', 'stability']
+[18:59:45] select | no cosine prune; kept=20/20
+[18:59:45] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103409', 'astro-ph/0102045', 'astro-ph/0103230', 'astro-ph/0101470', 'astro-ph/0101293', 'astro-ph/0102178', 'astro-ph/0101237', 'physics/0104072', 'astro-ph/0104130', 'astro-ph/0104385']
+[18:59:45] select | verify relaxed 1/10
+[18:59:45] verify | func= Compares | rank= 0 | pid= astro-ph/0103409 | title_snip='Stability of accretion discs threaded by a strong magnetic field' | abs_len= 1614
+[18:59:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[18:59:49] select | verify relaxed 2/10
+[18:59:49] verify | func= Compares | rank= 1 | pid= astro-ph/0102045 | title_snip='Magnetohydrodynamic simulations of black hole accretion' | abs_len= 804
+[18:59:52] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:59:52] select | verify relaxed 3/10
+[18:59:52] verify | func= Compares | rank= 2 | pid= astro-ph/0103230 | title_snip='Stability of Accretion Disks in Presence of Nucleosynthesis' | abs_len= 767
+[18:59:56] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[18:59:56] select | verify relaxed 4/10
+[18:59:56] verify | func= Compares | rank= 3 | pid= astro-ph/0101470 | title_snip='Global accretion disk simulations of magneto-rotational instability' | abs_len= 1500
+[18:59:59] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[18:59:59] select | verify relaxed 5/10
+[18:59:59] verify | func= Compares | rank= 4 | pid= astro-ph/0101293 | title_snip='Numerical simulations of the Accretion-Ejection Instability in
+  magne…' | abs_len= 940
+[19:00:02] verify | result supports= False fit= 0.20 top= 0.80 invalid= — cue_hint= False
+[19:00:02] select | verify relaxed 6/10
+[19:00:02] verify | func= Compares | rank= 5 | pid= astro-ph/0102178 | title_snip='Magnetic Screening in Accreting Neutron Stars' | abs_len= 1626
+[19:00:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[19:00:06] select | verify relaxed 7/10
+[19:00:06] verify | func= Compares | rank= 6 | pid= astro-ph/0101237 | title_snip='The Effects of Magnetic Fields on Radiative Cooling Jets' | abs_len= 682
+[19:00:10] verify | result supports= False fit= 0.00 top= 0.70 invalid= off_topic_no_core_in_abstract cue_hint= False
+[19:00:10] select | verify relaxed 8/10
+[19:00:10] verify | func= Compares | rank= 7 | pid= physics/0104072 | title_snip='Axisymmetric equilibria of a gravitating plasma with incompressible
+  …' | abs_len= 1596
+[19:00:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[19:00:14] select | verify relaxed 9/10
+[19:00:14] verify | func= Compares | rank= 8 | pid= astro-ph/0104130 | title_snip='Magnetohydrodynamic Simulations of Accretion Disks around a Weakly
+  M…' | abs_len= 1273
+[19:00:16] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[19:00:16] select | verify relaxed 10/10
+[19:00:16] verify | func= Compares | rank= 9 | pid= astro-ph/0104385 | title_snip='Temperature profiles of accretion discs around rapidly rotating strang…' | abs_len= 1393
+[19:00:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[19:00:22] arbiter | rejected off-topic winner: astro-ph/0104385
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work extend and compare with previous studies on the stability of poloidal magnetic fields in accretion discs?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work extends previous studies on the stability of poloidal magnetic fields in accretion discs by numerically confirming the existence of the interchange instability and finding a global instability that transports angular momentum outward [Extends] (astro-ph/0103409). This instability is likely to be the main angular momentum transport mechanism in discs with a strong poloidal magnetic field, comparing with previous predictions from the shearing sheet model [Extends] (astro-ph/0103409).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

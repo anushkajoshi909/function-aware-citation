@@ -1,0 +1,151 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Extends"
+  ],
+  "justification": "The query asks for foundational context of geometrical stability theory (Background) and how it is broadened to cover non\u2011saturated structures (Extends)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:29:03] main | args: Namespace(max_check=10, debug=True)
+[23:29:03] read_last_jsonl | path= classified_outputs.jsonl
+[23:29:03] read_last_jsonl | total_lines= 1
+[23:29:03] main | query='How does the concept of geometrical stability theory provide background for the study of homogeneous models and extend the theory to non-saturated structures?' | funcs=['Background', 'Extends']
+[23:29:05] main | core_terms= ['geometrical stability theory', 'homogeneous models', 'non-saturated structures', 'non-saturated']
+[23:29:05] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:29:05] load_topk_jsonl | rows= 20
+[23:29:05] load_topk_jsonl | first: rank= 0 paper_id= math/0101036 title_snip='Simple Homogeneous Models' abs_len= 1009
+[23:29:05] main | running function= Background
+[23:29:05] select | function= Background | candidates_in= 20
+[23:29:05] select | core_terms= ['geometrical stability theory', 'homogeneous models', 'non-saturated structures', 'non-saturated']
+[23:29:05] select | no cosine prune; kept=20/20
+[23:29:05] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0101036', 'cond-mat/0103147', 'math/0101207', 'gr-qc/0104069', 'physics/0104066', 'cond-mat/0103432', 'gr-qc/0101068', 'hep-th/0104167', 'hep-th/0102183', 'hep-th/0101216']
+[23:29:05] select | verify relaxed 1/10
+[23:29:05] verify | func= Background | rank= 0 | pid= math/0101036 | title_snip='Simple Homogeneous Models' | abs_len= 1009
+[23:29:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:29:08] select | verify relaxed 2/10
+[23:29:08] verify | func= Background | rank= 1 | pid= cond-mat/0103147 | title_snip='Inherent Structures in models for fragile and strong glass' | abs_len= 553
+[23:29:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:11] select | verify relaxed 3/10
+[23:29:11] verify | func= Background | rank= 2 | pid= math/0101207 | title_snip='From PDE Systems and Metrics to Generalized Field Theories' | abs_len= 578
+[23:29:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:13] select | verify relaxed 4/10
+[23:29:13] verify | func= Background | rank= 3 | pid= gr-qc/0104069 | title_snip='Consistency analysis of Kaluza-Klein geometric sigma models' | abs_len= 1048
+[23:29:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:16] select | verify relaxed 5/10
+[23:29:16] verify | func= Background | rank= 4 | pid= physics/0104066 | title_snip='Wheeler-Feynman Absorber Theory Viewed by Model of Expansive
+  Nondece…' | abs_len= 269
+[23:29:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:18] select | verify relaxed 6/10
+[23:29:18] verify | func= Background | rank= 5 | pid= cond-mat/0103432 | title_snip='Stability of Amorphous Structures with Voids' | abs_len= 825
+[23:29:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:20] select | verify relaxed 7/10
+[23:29:20] verify | func= Background | rank= 6 | pid= gr-qc/0101068 | title_snip='Geometry of Non-expanding Horizons and Their Neighborhoods' | abs_len= 396
+[23:29:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:23] select | verify relaxed 8/10
+[23:29:23] verify | func= Background | rank= 7 | pid= hep-th/0104167 | title_snip='A Note on Unitarity of Non-Relativistic Non-Commutative Theories' | abs_len= 423
+[23:29:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:25] select | verify relaxed 9/10
+[23:29:25] verify | func= Background | rank= 8 | pid= hep-th/0102183 | title_snip='Unitarity, D-brane dynamics and D-brane categories' | abs_len= 362
+[23:29:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:28] select | verify relaxed 10/10
+[23:29:28] verify | func= Background | rank= 9 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[23:29:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the concept of geometrical stability theory provide background for the study of homogeneous models and extend the theory to non-saturated structures?
+- WINNER: math/0101036 | Simple Homogeneous Models
+- QUOTE : Geometrical stability theory is a powerful set of model-theoretic tools
+- WHY   : sufficient
+- ANSWER: Geometrical stability theory provides a foundation for studying homogeneous models by characterizing definable groups in models of a simple first-order theory (math/0101036).
+[23:29:34] main | running function= Extends
+[23:29:34] select | function= Extends | candidates_in= 20
+[23:29:34] select | core_terms= ['geometrical stability theory', 'homogeneous models', 'non-saturated structures', 'non-saturated']
+[23:29:34] select | no cosine prune; kept=20/20
+[23:29:34] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math/0101036', 'cond-mat/0103147', 'math/0101207', 'gr-qc/0104069', 'physics/0104066', 'cond-mat/0103432', 'gr-qc/0101068', 'hep-th/0104167', 'hep-th/0102183', 'hep-th/0101216']
+[23:29:34] select | verify relaxed 1/10
+[23:29:34] verify | func= Extends | rank= 0 | pid= math/0101036 | title_snip='Simple Homogeneous Models' | abs_len= 1009
+[23:29:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:29:37] select | verify relaxed 2/10
+[23:29:37] verify | func= Extends | rank= 1 | pid= cond-mat/0103147 | title_snip='Inherent Structures in models for fragile and strong glass' | abs_len= 553
+[23:29:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:39] select | verify relaxed 3/10
+[23:29:39] verify | func= Extends | rank= 2 | pid= math/0101207 | title_snip='From PDE Systems and Metrics to Generalized Field Theories' | abs_len= 578
+[23:29:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:42] select | verify relaxed 4/10
+[23:29:42] verify | func= Extends | rank= 3 | pid= gr-qc/0104069 | title_snip='Consistency analysis of Kaluza-Klein geometric sigma models' | abs_len= 1048
+[23:29:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:44] select | verify relaxed 5/10
+[23:29:44] verify | func= Extends | rank= 4 | pid= physics/0104066 | title_snip='Wheeler-Feynman Absorber Theory Viewed by Model of Expansive
+  Nondece…' | abs_len= 269
+[23:29:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:47] select | verify relaxed 6/10
+[23:29:47] verify | func= Extends | rank= 5 | pid= cond-mat/0103432 | title_snip='Stability of Amorphous Structures with Voids' | abs_len= 825
+[23:29:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:49] select | verify relaxed 7/10
+[23:29:49] verify | func= Extends | rank= 6 | pid= gr-qc/0101068 | title_snip='Geometry of Non-expanding Horizons and Their Neighborhoods' | abs_len= 396
+[23:29:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:51] select | verify relaxed 8/10
+[23:29:51] verify | func= Extends | rank= 7 | pid= hep-th/0104167 | title_snip='A Note on Unitarity of Non-Relativistic Non-Commutative Theories' | abs_len= 423
+[23:29:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:54] select | verify relaxed 9/10
+[23:29:54] verify | func= Extends | rank= 8 | pid= hep-th/0102183 | title_snip='Unitarity, D-brane dynamics and D-brane categories' | abs_len= 362
+[23:29:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:29:56] select | verify relaxed 10/10
+[23:29:56] verify | func= Extends | rank= 9 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[23:29:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the concept of geometrical stability theory provide background for the study of homogeneous models and extend the theory to non-saturated structures?
+- WINNER: math/0101036 | Simple Homogeneous Models
+- QUOTE : geometrical stability theory for saturated structures
+- WHY   : sufficient
+- ANSWER: The concept of geometrical stability theory is extended to non-saturated structures, specifically homogeneous models, by generalizing the theory to accommodate noncompact Stone topologies. This extension builds upon prior results on saturated models, broadening the scope of geometrical stability theory to include strongly lambda-homogeneous models with symmetric and transitive notions of independence (math/0101036).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

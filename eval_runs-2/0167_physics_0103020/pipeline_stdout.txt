@@ -1,0 +1,153 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Motivation"
+  ],
+  "justification": "The query asks how the new understanding differs from earlier views (comparison) and seeks the problem or limitation that drove the new investigation (motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[01:05:34] main | args: Namespace(max_check=10, debug=True)
+[01:05:34] read_last_jsonl | path= classified_outputs.jsonl
+[01:05:34] read_last_jsonl | total_lines= 1
+[01:05:34] main | query='How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?' | funcs=['Compares', 'Motivation']
+[01:05:36] main | core_terms= ['electron', 'Bernstein-Greene-Kruskal solitary waves', 'Bernstein-Greene-Kruskal']
+[01:05:36] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[01:05:36] load_topk_jsonl | rows= 20
+[01:05:36] load_topk_jsonl | first: rank= 0 paper_id= physics/0103020 title_snip='BGK Electron Solitary Waves Reexamined' abs_len= 1466
+[01:05:36] main | running function= Compares
+[01:05:36] select | function= Compares | candidates_in= 20
+[01:05:36] select | core_terms= ['electron', 'Bernstein-Greene-Kruskal solitary waves', 'Bernstein-Greene-Kruskal']
+[01:05:36] select | no cosine prune; kept=20/20
+[01:05:36] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0103020', 'nucl-th/0101024', 'hep-th/0104167', 'nucl-th/0101008', 'hep-ph/0103323', 'hep-ph/0104065', 'nucl-th/0104050', 'cond-mat/0102189', 'hep-th/0103034', 'hep-ph/0101078']
+[01:05:36] select | verify relaxed 1/10
+[01:05:36] verify | func= Compares | rank= 0 | pid= physics/0103020 | title_snip='BGK Electron Solitary Waves Reexamined' | abs_len= 1466
+[01:05:40] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:05:40] select | verify relaxed 2/10
+[01:05:40] verify | func= Compares | rank= 1 | pid= nucl-th/0101024 | title_snip='Coulomb corrections to $e^+ e^-$ production in ultra-relativistic
+  nu…' | abs_len= 1023
+[01:05:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:42] select | verify relaxed 3/10
+[01:05:42] verify | func= Compares | rank= 2 | pid= hep-th/0104167 | title_snip='A Note on Unitarity of Non-Relativistic Non-Commutative Theories' | abs_len= 423
+[01:05:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:45] select | verify relaxed 4/10
+[01:05:45] verify | func= Compares | rank= 3 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[01:05:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:47] select | verify relaxed 5/10
+[01:05:47] verify | func= Compares | rank= 4 | pid= hep-ph/0103323 | title_snip='Nonlinear and spin effects in two-photon annihilation of a fermion pai…' | abs_len= 1471
+[01:05:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:50] select | verify relaxed 6/10
+[01:05:50] verify | func= Compares | rank= 5 | pid= hep-ph/0104065 | title_snip='Rescattering corrections in elastic scattering' | abs_len= 773
+[01:05:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:52] select | verify relaxed 7/10
+[01:05:52] verify | func= Compares | rank= 6 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[01:05:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:54] select | verify relaxed 8/10
+[01:05:54] verify | func= Compares | rank= 7 | pid= cond-mat/0102189 | title_snip='Breakdown of the Migdal-Eliashberg theory in the strong-coupling
+  adi…' | abs_len= 903
+[01:05:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:05:57] select | verify relaxed 9/10
+[01:05:57] verify | func= Compares | rank= 8 | pid= hep-th/0103034 | title_snip='Gravity as the Spin-2 Quantum Gauge Theory' | abs_len= 1603
+[01:06:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:00] select | verify relaxed 10/10
+[01:06:00] verify | func= Compares | rank= 9 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[01:06:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?
+- WINNER: physics/0103020 | BGK Electron Solitary Waves Reexamined
+- QUOTE : A BGK EH consists of electron density enhancements as well as a density depletion, instead of only the density depletion as previously thought
+- WHY   : sufficient
+- ANSWER: The current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compares to previous thoughts in that it reveals a more complex structure, including both density enhancements and depletions, whereas previous work considered only density depletions. This reexamination was motivated by the limitation of previous work in understanding the physical roles of trapped and passing electrons in these solitary waves (physics/0103020).
+[01:06:07] main | running function= Motivation
+[01:06:07] select | function= Motivation | candidates_in= 20
+[01:06:07] select | core_terms= ['electron', 'Bernstein-Greene-Kruskal solitary waves', 'Bernstein-Greene-Kruskal']
+[01:06:07] select | no cosine prune; kept=20/20
+[01:06:07] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0103020', 'nucl-th/0101024', 'hep-th/0104167', 'nucl-th/0101008', 'hep-ph/0103323', 'hep-ph/0104065', 'nucl-th/0104050', 'cond-mat/0102189', 'hep-th/0103034', 'hep-ph/0101078']
+[01:06:07] select | verify relaxed 1/10
+[01:06:07] verify | func= Motivation | rank= 0 | pid= physics/0103020 | title_snip='BGK Electron Solitary Waves Reexamined' | abs_len= 1466
+[01:06:11] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[01:06:11] select | verify relaxed 2/10
+[01:06:11] verify | func= Motivation | rank= 1 | pid= nucl-th/0101024 | title_snip='Coulomb corrections to $e^+ e^-$ production in ultra-relativistic
+  nu…' | abs_len= 1023
+[01:06:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:13] select | verify relaxed 3/10
+[01:06:13] verify | func= Motivation | rank= 2 | pid= hep-th/0104167 | title_snip='A Note on Unitarity of Non-Relativistic Non-Commutative Theories' | abs_len= 423
+[01:06:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:16] select | verify relaxed 4/10
+[01:06:16] verify | func= Motivation | rank= 3 | pid= nucl-th/0101008 | title_snip='Relativistic and non-relativistic studies of nuclear matter' | abs_len= 1254
+[01:06:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:18] select | verify relaxed 5/10
+[01:06:18] verify | func= Motivation | rank= 4 | pid= hep-ph/0103323 | title_snip='Nonlinear and spin effects in two-photon annihilation of a fermion pai…' | abs_len= 1471
+[01:06:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:21] select | verify relaxed 6/10
+[01:06:21] verify | func= Motivation | rank= 5 | pid= hep-ph/0104065 | title_snip='Rescattering corrections in elastic scattering' | abs_len= 773
+[01:06:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:23] select | verify relaxed 7/10
+[01:06:23] verify | func= Motivation | rank= 6 | pid= nucl-th/0104050 | title_snip='The Local Potential Approximation for the Brueckner G-matrix' | abs_len= 878
+[01:06:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:26] select | verify relaxed 8/10
+[01:06:26] verify | func= Motivation | rank= 7 | pid= cond-mat/0102189 | title_snip='Breakdown of the Migdal-Eliashberg theory in the strong-coupling
+  adi…' | abs_len= 903
+[01:06:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:28] select | verify relaxed 9/10
+[01:06:28] verify | func= Motivation | rank= 8 | pid= hep-th/0103034 | title_snip='Gravity as the Spin-2 Quantum Gauge Theory' | abs_len= 1603
+[01:06:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[01:06:31] select | verify relaxed 10/10
+[01:06:31] verify | func= Motivation | rank= 9 | pid= hep-ph/0101078 | title_snip='Relativistic Many-Body Hamiltonian Approach to Mesons' | abs_len= 1658
+[01:06:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the current work's understanding of electron Bernstein-Greene-Kruskal solitary waves compare to previous thoughts, and what problem or limitation in previous work motivated this reexamination?
+- WINNER: physics/0103020 | BGK Electron Solitary Waves Reexamined
+- QUOTE : A BGK EH consists of electron density enhancements as well as a density depletion, instead of only the density depletion as previously thought
+- WHY   : sufficient
+- ANSWER: Previous work on electron Bernstein-Greene-Kruskal solitary waves was limited by the assumption that they consisted only of a density depletion, and that thermal screening by the ambient plasma was necessary. This reexamination was motivated by the need to resolve these limitations and provide a more accurate understanding of the physical roles of trapped and passing electrons in these waves (physics/0103020).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

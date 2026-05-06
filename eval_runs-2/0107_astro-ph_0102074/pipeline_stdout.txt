@@ -1,0 +1,153 @@
+✅ Available Models:
+1. alias-code
+2. alias-reasoning
+3. alias-image-generation
+4. alias-vision
+5. alias-ha
+6. meta-llama/Llama-3.3-70B-Instruct
+7. meta-llama/Llama-3.1-8B-Instruct
+8. Qwen/Qwen2-VL-7B-Instruct
+9. openGPT-X/Teuken-7B-instruct-research-v0.4
+10. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+11. Qwen/Qwen3-Coder-30B-A3B-Instruct
+12. Qwen/Qwen3-Embedding-4B
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. black-forest-labs/FLUX.1-dev
+15. openai/whisper-large-v3
+16. Kokoro-82M
+17. tts-1-hd
+18. deepseek-ai/DeepSeek-R1
+19. openai/gpt-oss-120b
+20. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Uses"
+  ],
+  "justification": "The query requests fundamental knowledge about gas accretion physics (Background) and asks how that knowledge connects to the modeling techniques employed for accretion rates (Uses)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:31:31] main | args: Namespace(max_check=10, debug=True)
+[23:31:31] read_last_jsonl | path= classified_outputs.jsonl
+[23:31:31] read_last_jsonl | total_lines= 1
+[23:31:31] main | query='How does the physics of gas accretion in young stellar clusters relate to the methods used to model accretion rates?' | funcs=['Background', 'Uses']
+[23:31:33] main | core_terms= ['gas', 'young stellar clusters', 'accretion', 'accretion rates']
+[23:31:33] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:31:33] load_topk_jsonl | rows= 20
+[23:31:33] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102074 title_snip='Competitive accretion in embedded stellar cluster' abs_len= 1042
+[23:31:33] main | running function= Background
+[23:31:33] select | function= Background | candidates_in= 20
+[23:31:33] select | core_terms= ['gas', 'young stellar clusters', 'accretion', 'accretion rates']
+[23:31:33] select | no cosine prune; kept=20/20
+[23:31:33] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102074', 'astro-ph/0102121', 'astro-ph/0101302', 'astro-ph/0103262', 'astro-ph/0101277', 'astro-ph/0102165', 'astro-ph/0101183', 'astro-ph/0101330', 'astro-ph/0102024', 'astro-ph/0102139']
+[23:31:33] select | verify relaxed 1/10
+[23:31:33] verify | func= Background | rank= 0 | pid= astro-ph/0102074 | title_snip='Competitive accretion in embedded stellar cluster' | abs_len= 1042
+[23:31:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:36] select | verify relaxed 2/10
+[23:31:36] verify | func= Background | rank= 1 | pid= astro-ph/0102121 | title_snip='Accretion in stellar clusters and the IMF' | abs_len= 1609
+[23:31:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:39] select | verify relaxed 3/10
+[23:31:39] verify | func= Background | rank= 2 | pid= astro-ph/0101302 | title_snip='The temperature-mass relation in magnetized galaxy clusters' | abs_len= 722
+[23:31:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:31:42] select | verify relaxed 4/10
+[23:31:42] verify | func= Background | rank= 3 | pid= astro-ph/0103262 | title_snip='The SZ Effect as a Probe of Non-Gravitational Entropy in Groups and
+  …' | abs_len= 1264
+[23:31:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:45] select | verify relaxed 5/10
+[23:31:45] verify | func= Background | rank= 4 | pid= astro-ph/0101277 | title_snip='The Formation of Stellar Clusters: Time Varying Protostellar Accretion…' | abs_len= 1150
+[23:31:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:48] select | verify relaxed 6/10
+[23:31:48] verify | func= Background | rank= 5 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:31:51] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:31:51] select | verify relaxed 7/10
+[23:31:51] verify | func= Background | rank= 6 | pid= astro-ph/0101183 | title_snip='Monte Carlo Simulations of Dense Galactic Nuclei' | abs_len= 453
+[23:31:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:31:54] select | verify relaxed 8/10
+[23:31:54] verify | func= Background | rank= 7 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:31:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:31:57] select | verify relaxed 9/10
+[23:31:57] verify | func= Background | rank= 8 | pid= astro-ph/0102024 | title_snip='Impact of Gas Removal on the Evolution of Embedded Clusters' | abs_len= 642
+[23:32:00] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:32:00] select | verify relaxed 10/10
+[23:32:00] verify | func= Background | rank= 9 | pid= astro-ph/0102139 | title_snip='A new Monte Carlo code for star cluster simulations: I. Relaxation' | abs_len= 1307
+[23:32:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the physics of gas accretion in young stellar clusters relate to the methods used to model accretion rates?
+- WINNER: astro-ph/0102074 | Competitive accretion in embedded stellar cluster
+- QUOTE : We investigate the physics of gas accretion in young stellar clusters
+- WHY   : sufficient
+- ANSWER: The physics of gas accretion in young stellar clusters is a dynamic process influenced by the gravitational potential, affecting accretion rates (astro-ph/0102074).
+[23:32:06] main | running function= Uses
+[23:32:06] select | function= Uses | candidates_in= 20
+[23:32:06] select | core_terms= ['gas', 'young stellar clusters', 'accretion', 'accretion rates']
+[23:32:06] select | no cosine prune; kept=20/20
+[23:32:06] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102074', 'astro-ph/0102121', 'astro-ph/0101302', 'astro-ph/0103262', 'astro-ph/0101277', 'astro-ph/0102165', 'astro-ph/0101183', 'astro-ph/0101330', 'astro-ph/0102024', 'astro-ph/0102139']
+[23:32:06] select | verify relaxed 1/10
+[23:32:06] verify | func= Uses | rank= 0 | pid= astro-ph/0102074 | title_snip='Competitive accretion in embedded stellar cluster' | abs_len= 1042
+[23:32:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:32:09] select | verify relaxed 2/10
+[23:32:09] verify | func= Uses | rank= 1 | pid= astro-ph/0102121 | title_snip='Accretion in stellar clusters and the IMF' | abs_len= 1609
+[23:32:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:32:13] select | verify relaxed 3/10
+[23:32:13] verify | func= Uses | rank= 2 | pid= astro-ph/0101302 | title_snip='The temperature-mass relation in magnetized galaxy clusters' | abs_len= 722
+[23:32:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:32:15] select | verify relaxed 4/10
+[23:32:15] verify | func= Uses | rank= 3 | pid= astro-ph/0103262 | title_snip='The SZ Effect as a Probe of Non-Gravitational Entropy in Groups and
+  …' | abs_len= 1264
+[23:32:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:32:19] select | verify relaxed 5/10
+[23:32:19] verify | func= Uses | rank= 4 | pid= astro-ph/0101277 | title_snip='The Formation of Stellar Clusters: Time Varying Protostellar Accretion…' | abs_len= 1150
+[23:32:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:32:22] select | verify relaxed 6/10
+[23:32:22] verify | func= Uses | rank= 5 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[23:32:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[23:32:24] select | verify relaxed 7/10
+[23:32:24] verify | func= Uses | rank= 6 | pid= astro-ph/0101183 | title_snip='Monte Carlo Simulations of Dense Galactic Nuclei' | abs_len= 453
+[23:32:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:32:27] select | verify relaxed 8/10
+[23:32:27] verify | func= Uses | rank= 7 | pid= astro-ph/0101330 | title_snip='Accretion Processes in the Nucleus of M31' | abs_len= 1631
+[23:32:30] verify | result supports= True fit= 0.80 top= 0.70 invalid= — cue_hint= False
+[23:32:30] select | verify relaxed 9/10
+[23:32:30] verify | func= Uses | rank= 8 | pid= astro-ph/0102024 | title_snip='Impact of Gas Removal on the Evolution of Embedded Clusters' | abs_len= 642
+[23:32:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[23:32:33] select | verify relaxed 10/10
+[23:32:33] verify | func= Uses | rank= 9 | pid= astro-ph/0102139 | title_snip='A new Monte Carlo code for star cluster simulations: I. Relaxation' | abs_len= 1307
+[23:32:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the physics of gas accretion in young stellar clusters relate to the methods used to model accretion rates?
+- WINNER: astro-ph/0102024 | Impact of Gas Removal on the Evolution of Embedded Clusters
+- QUOTE : We use these to argue that embedded clusters
+- WHY   : sufficient
+- ANSWER: The authors use N-body calculations and a stellar velocity distribution function to model the evolution of embedded clusters and compute the fraction of stars that remain bound after gas removal. These methods are applied to study the impact of gas removal on cluster evolution and the conditions required for clusters to survive as bound systems (astro-ph/0102024).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Answers-only: outputs/function_answers.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs
