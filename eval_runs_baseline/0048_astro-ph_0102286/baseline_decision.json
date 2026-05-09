@@ -1,0 +1,18 @@
+{
+  "answer": "Future studies can extend current classification schemes by accounting for the newly discovered intermediate class of galaxies, which have central cusp slopes and absolute magnitudes intermediate between those of core and power-law galaxies (astro-ph/0102286).",
+  "predicted_paper_id": "astro-ph/0102286",
+  "explanation": "This paper provides evidence for an 'intermediate' class of galaxies that cannot be classified as either core or power-law galaxies, making it relevant for extending current classification schemes.",
+  "evidence_quote": "evidence for an 'intermediate' class of galaxies",
+  "topk_list": [
+    "astro-ph/0104404",
+    "astro-ph/0102286",
+    "astro-ph/0102056",
+    "astro-ph/0101095",
+    "astro-ph/0103364",
+    "astro-ph/0102086",
+    "astro-ph/0102358",
+    "astro-ph/0101296",
+    "astro-ph/0102176",
+    "astro-ph/0101174"
+  ]
+}

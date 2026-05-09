@@ -1,0 +1,110 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "The query seeks background information to understand the use of the effective action in reproducing known solutions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:56:36] main | args: Namespace(max_check=10, debug=True)
+[11:56:36] read_last_jsonl | path= classified_outputs.jsonl
+[11:56:36] read_last_jsonl | total_lines= 1
+[11:56:36] main | query='How does the general two-dimensional gravity model provide background information for understanding the use of the effective action in reproducing known solutions?' | funcs=['Background']
+[11:56:38] main | core_terms= ['gravity', 'effective action', 'two-dimensional gravity model', 'two-dimensional']
+[11:56:38] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:56:38] load_topk_jsonl | rows= 20
+[11:56:38] load_topk_jsonl | first: rank= 0 paper_id= gr-qc/0101033 title_snip='Effective action for scalar fields in two-dimensional gravity' abs_len= 1023
+[11:56:38] main | running function= Background
+[11:56:38] select | function= Background | candidates_in= 20
+[11:56:38] select | core_terms= ['gravity', 'effective action', 'two-dimensional gravity model', 'two-dimensional']
+[11:56:38] select | no cosine prune; kept=20/20
+[11:56:38] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['gr-qc/0101033', 'hep-th/0104058', 'hep-ph/0103104', 'gr-qc/0103017', 'hep-th/0103072', 'hep-th/0104209', 'hep-ph/0103193', 'cond-mat/0103610', 'hep-ph/0103032', 'hep-th/0101015']
+[11:56:38] select | verify relaxed 1/10
+[11:56:38] verify | func= Background | rank= 0 | pid= gr-qc/0101033 | title_snip='Effective action for scalar fields in two-dimensional gravity' | abs_len= 1023
+[11:56:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:56:41] select | verify relaxed 2/10
+[11:56:41] verify | func= Background | rank= 1 | pid= hep-th/0104058 | title_snip='Effective Lagrangian with valence gluons in extended SU(2) QCD model' | abs_len= 447
+[11:56:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:56:44] select | verify relaxed 3/10
+[11:56:44] verify | func= Background | rank= 2 | pid= hep-ph/0103104 | title_snip='Graviton loops and brane observables' | abs_len= 643
+[11:56:47] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[11:56:47] select | verify relaxed 4/10
+[11:56:47] verify | func= Background | rank= 3 | pid= gr-qc/0103017 | title_snip='Conserved currents for general teleparallel models' | abs_len= 1393
+[11:56:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:56:50] select | verify relaxed 5/10
+[11:56:50] verify | func= Background | rank= 4 | pid= hep-th/0103072 | title_snip='Hadamard States and Two-dimensional Gravity' | abs_len= 489
+[11:56:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:56:53] select | verify relaxed 6/10
+[11:56:53] verify | func= Background | rank= 5 | pid= hep-th/0104209 | title_snip='An action for supergravity interacting with super-p-brane sources' | abs_len= 427
+[11:56:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:56:57] select | verify relaxed 7/10
+[11:56:57] verify | func= Background | rank= 6 | pid= hep-ph/0103193 | title_snip='False vacuum decay: effective one-loop action for pair creation of
+  d…' | abs_len= 729
+[11:57:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:57:00] select | verify relaxed 8/10
+[11:57:00] verify | func= Background | rank= 7 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[11:57:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:57:03] select | verify relaxed 9/10
+[11:57:03] verify | func= Background | rank= 8 | pid= hep-ph/0103032 | title_snip='Saturation and Universality in QCD at small x' | abs_len= 754
+[11:57:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:57:05] select | verify relaxed 10/10
+[11:57:05] verify | func= Background | rank= 9 | pid= hep-th/0101015 | title_snip='Some Computations with Seiberg-Witten Invariant Actions' | abs_len= 279
+[11:57:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the general two-dimensional gravity model provide background information for understanding the use of the effective action in reproducing known solutions?
+- WINNER: gr-qc/0101033 | Effective action for scalar fields in two-dimensional gravity
+- QUOTE : We consider a general two-dimensional gravity model
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The general two-dimensional gravity model provides background information for understanding the use of the effective action [Background] by elucidating the canonical form of the model and reviewing the general solution of the equations of motion in the massless case (gr-qc/0101033). This background information is essential for reproducing known solutions, such as the Fisher and Roberts solutions, using the effective action [Background] (gr-qc/0101033).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

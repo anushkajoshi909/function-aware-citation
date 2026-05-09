@@ -1,0 +1,18 @@
+{
+  "answer": "Current understanding of supernova explosions and their interactions with the circumstellar medium is limited, motivating further research (astro-ph/0103015).",
+  "predicted_paper_id": "astro-ph/0103015",
+  "explanation": "This paper reviews the current picture of supernova explosions and highlights the need for multi-dimensional simulations and a better understanding of neutrino interactions to resolve the problem of state-of-the-art spherical models not yielding explosions.",
+  "evidence_quote": "state-of-the-art spherical models do not yield explosions",
+  "topk_list": [
+    "astro-ph/0103015",
+    "astro-ph/0102212",
+    "hep-ph/0104094",
+    "astro-ph/0101018",
+    "astro-ph/0104156",
+    "astro-ph/0101043",
+    "astro-ph/0102087",
+    "astro-ph/0103075",
+    "astro-ph/0103412",
+    "astro-ph/0103461"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The stability of stationary states in fluid dynamics can be investigated using methods from previous studies on non-linear parabolic equations, such as those found in math-ph/0103026.",
+  "predicted_paper_id": "math-ph/0103026",
+  "explanation": "This paper studies coupled non-linear parabolic equations for a fluid and finds some stationary solutions, making it relevant to the investigation of stability in fluid dynamics.",
+  "evidence_quote": "Stability of a Hot Smoluchowski Fluid",
+  "topk_list": [
+    "math-ph/0103026",
+    "gr-qc/0103060",
+    "physics/0101025",
+    "astro-ph/0102434",
+    "physics/0103003",
+    "nlin/0103053",
+    "nlin/0101012",
+    "astro-ph/0101222",
+    "math-ph/0101029",
+    "hep-ph/0101202"
+  ]
+}

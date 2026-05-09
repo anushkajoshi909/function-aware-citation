@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the limitations of current knowledge and how they motivate further research into the composition and properties of close-in large planets."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:24:47] main | args: Namespace(max_check=10, debug=True)
+[12:24:47] read_last_jsonl | path= classified_outputs.jsonl
+[12:24:47] read_last_jsonl | total_lines= 1
+[12:24:47] main | query='How do the limitations of current understanding of close-in large planets motivate further research into their composition and properties?' | funcs=['Background', 'Motivation']
+[12:24:48] main | core_terms= ['close-in large planets', 'composition', 'properties', 'close-in']
+[12:24:48] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:24:48] load_topk_jsonl | rows= 20
+[12:24:48] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101055 title_snip='Are mirror planets opaque?' abs_len= 1359
+[12:24:48] main | running function= Background
+[12:24:48] select | function= Background | candidates_in= 20
+[12:24:48] select | core_terms= ['close-in large planets', 'composition', 'properties', 'close-in']
+[12:24:48] select | no cosine prune; kept=20/20
+[12:24:48] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101055', 'astro-ph/0103383', 'astro-ph/0101442', 'astro-ph/0101241', 'astro-ph/0103195', 'astro-ph/0103048', 'astro-ph/0104162', 'astro-ph/0103028', 'astro-ph/0102276', 'hep-th/0104131']
+[12:24:48] select | verify relaxed 1/10
+[12:24:48] verify | func= Background | rank= 0 | pid= astro-ph/0101055 | title_snip='Are mirror planets opaque?' | abs_len= 1359
+[12:24:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:24:52] select | verify relaxed 2/10
+[12:24:52] verify | func= Background | rank= 1 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[12:24:55] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[12:24:55] select | verify relaxed 3/10
+[12:24:55] verify | func= Background | rank= 2 | pid= astro-ph/0101442 | title_snip='Hidden BL Lacertae Objects Near and Far' | abs_len= 307
+[12:24:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:24:57] select | verify relaxed 4/10
+[12:24:57] verify | func= Background | rank= 3 | pid= astro-ph/0101241 | title_snip='Detection of Earth-like Planets Using Apodized Telescopes' | abs_len= 1109
+[12:25:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:00] select | verify relaxed 5/10
+[12:25:00] verify | func= Background | rank= 4 | pid= astro-ph/0103195 | title_snip='High Energy Neutrino Astronomy: Towards Kilometer-Scale Detectors' | abs_len= 1586
+[12:25:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:03] select | verify relaxed 6/10
+[12:25:03] verify | func= Background | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[12:25:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:05] select | verify relaxed 7/10
+[12:25:05] verify | func= Background | rank= 6 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[12:25:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:08] select | verify relaxed 8/10
+[12:25:08] verify | func= Background | rank= 7 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[12:25:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:11] select | verify relaxed 9/10
+[12:25:11] verify | func= Background | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[12:25:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:13] select | verify relaxed 10/10
+[12:25:13] verify | func= Background | rank= 9 | pid= hep-th/0104131 | title_snip='Brane Supersymmetry Breaking and the Cosmological Constant: Open
+  Pro…' | abs_len= 676
+[12:25:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the limitations of current understanding of close-in large planets motivate further research into their composition and properties?
+- No supporting candidate with sufficient evidence.
+[12:25:16] main | running function= Motivation
+[12:25:16] select | function= Motivation | candidates_in= 20
+[12:25:16] select | core_terms= ['close-in large planets', 'composition', 'properties', 'close-in']
+[12:25:16] select | no cosine prune; kept=20/20
+[12:25:16] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101055', 'astro-ph/0103383', 'astro-ph/0101442', 'astro-ph/0101241', 'astro-ph/0103195', 'astro-ph/0103048', 'astro-ph/0104162', 'astro-ph/0103028', 'astro-ph/0102276', 'hep-th/0104131']
+[12:25:16] select | verify relaxed 1/10
+[12:25:16] verify | func= Motivation | rank= 0 | pid= astro-ph/0101055 | title_snip='Are mirror planets opaque?' | abs_len= 1359
+[12:25:20] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:25:20] select | verify relaxed 2/10
+[12:25:20] verify | func= Motivation | rank= 1 | pid= astro-ph/0103383 | title_snip='The Theory of Brown Dwarfs and Extrasolar Giant Planets' | abs_len= 1260
+[12:25:23] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[12:25:23] select | verify relaxed 3/10
+[12:25:23] verify | func= Motivation | rank= 2 | pid= astro-ph/0101442 | title_snip='Hidden BL Lacertae Objects Near and Far' | abs_len= 307
+[12:25:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:25] select | verify relaxed 4/10
+[12:25:25] verify | func= Motivation | rank= 3 | pid= astro-ph/0101241 | title_snip='Detection of Earth-like Planets Using Apodized Telescopes' | abs_len= 1109
+[12:25:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:28] select | verify relaxed 5/10
+[12:25:28] verify | func= Motivation | rank= 4 | pid= astro-ph/0103195 | title_snip='High Energy Neutrino Astronomy: Towards Kilometer-Scale Detectors' | abs_len= 1586
+[12:25:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:30] select | verify relaxed 6/10
+[12:25:30] verify | func= Motivation | rank= 5 | pid= astro-ph/0103048 | title_snip='Polarization Insights for Active Galactic Nuclei' | abs_len= 1223
+[12:25:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:33] select | verify relaxed 7/10
+[12:25:33] verify | func= Motivation | rank= 6 | pid= astro-ph/0104162 | title_snip='Early-universe constraints on a Primordial Scaling Field' | abs_len= 1051
+[12:25:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:36] select | verify relaxed 8/10
+[12:25:36] verify | func= Motivation | rank= 7 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[12:25:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:38] select | verify relaxed 9/10
+[12:25:38] verify | func= Motivation | rank= 8 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[12:25:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:25:41] select | verify relaxed 10/10
+[12:25:41] verify | func= Motivation | rank= 9 | pid= hep-th/0104131 | title_snip='Brane Supersymmetry Breaking and the Cosmological Constant: Open
+  Pro…' | abs_len= 676
+[12:25:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How do the limitations of current understanding of close-in large planets motivate further research into their composition and properties?
+- WINNER: astro-ph/0101055 | Are mirror planets opaque?
+- QUOTE : Because ordinary planets are not expected to be able to form this close to ordinary stars
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The limitations of current understanding of close-in large planets, such as their unexpected existence near ordinary stars and unclear composition, motivate further research into their properties [Motivation] (astro-ph/0101055). This motivation stems from the need to explain the formation and characteristics of these planets, which challenges ordinary planet formation theories [Motivation] (astro-ph/0101055).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

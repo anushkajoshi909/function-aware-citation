@@ -1,2 +1,0 @@
-Future studies can extend current classification schemes by accounting for the newly discovered intermediate class of galaxies, which have characteristics that fall between those of core and power-law galaxies. This can be achieved by refining the classification criteria beyond the central cusp slope to better capture the diversity of galaxy morphologies (astro-ph/0102286). [Extends]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

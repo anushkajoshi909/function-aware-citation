@@ -1,0 +1,18 @@
+{
+  "answer": "The physics of gas accretion in young stellar clusters relates to the methods used to model accretion rates through competitive accretion, where stars nearer the centre of the cluster accrete more than others (astro-ph/0102074).",
+  "predicted_paper_id": "astro-ph/0102074",
+  "explanation": "This paper best supports the answer because it investigates the physics of gas accretion in young stellar clusters and discusses how accretion rates are highly non-uniform, depending on the local gas density and the square of the accretion radius.",
+  "evidence_quote": "Competitive accretion in embedded stellar cluster",
+  "topk_list": [
+    "astro-ph/0102074",
+    "astro-ph/0102121",
+    "astro-ph/0101302",
+    "astro-ph/0103262",
+    "astro-ph/0101277",
+    "astro-ph/0102165",
+    "astro-ph/0101183",
+    "astro-ph/0101330",
+    "astro-ph/0102024",
+    "astro-ph/0102139"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The structural analysis of meson loop corrections in HBChPT can be used in future research to determine significant parts of the loop corrections, utilizing the three-flavor-index representation of the effective baryon fields (hep-ph/0104197).",
+  "predicted_paper_id": "hep-ph/0104197",
+  "explanation": "This paper provides a detailed analysis of the structure of meson loop corrections in HBChPT, which can be generalized to other problems in HBChPT.",
+  "evidence_quote": "The structural analysis can be generalized straightforwardly to other problems in HBChPT",
+  "topk_list": [
+    "hep-ph/0104197",
+    "hep-ph/0104047",
+    "hep-ph/0102251",
+    "hep-ph/0103129",
+    "hep-ph/0102318",
+    "hep-ph/0103274",
+    "hep-ph/0104232",
+    "hep-ph/0104120",
+    "hep-ph/0103037",
+    "hep-ph/0102317"
+  ]
+}

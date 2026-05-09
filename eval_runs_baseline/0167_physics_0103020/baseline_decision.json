@@ -1,0 +1,18 @@
+{
+  "answer": "The current work's understanding of electron Bernstein-Greene-Kruskal solitary waves differs from previous thoughts, as it shows that the charge density variation is a net balance of negative charge from trapped electrons and positive charge due to the decrease of the passing electron density (physics/0103020).",
+  "predicted_paper_id": "physics/0103020",
+  "explanation": "This paper reexamines the physical roles of trapped and passing electrons in electron Bernstein-Greene-Kruskal solitary waves, providing a new understanding of the charge density variation.",
+  "evidence_quote": "BGK Electron Solitary Waves Reexamined",
+  "topk_list": [
+    "physics/0103020",
+    "nucl-th/0101024",
+    "hep-th/0104167",
+    "nucl-th/0101008",
+    "hep-ph/0103323",
+    "hep-ph/0104065",
+    "nucl-th/0104050",
+    "cond-mat/0102189",
+    "hep-th/0103034",
+    "hep-ph/0101078"
+  ]
+}

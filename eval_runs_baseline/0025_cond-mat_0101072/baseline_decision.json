@@ -1,0 +1,18 @@
+{
+  "answer": "The method of polarisation conversion of electromagnetic waves in 2D electron systems can be used in future research for polarisation spectroscopy applications by achieving high polarisation conversion efficiency, as shown in cond-mat/0101072.",
+  "predicted_paper_id": "cond-mat/0101072",
+  "explanation": "This paper demonstrates the possibility of total polarisation conversion in 2D electron systems under cyclotron resonance conditions, which can be useful for polarisation spectroscopy applications.",
+  "evidence_quote": "Total Polarisation Conversion",
+  "topk_list": [
+    "cond-mat/0101072",
+    "cond-mat/0101196",
+    "math-ph/0101034",
+    "cond-mat/0103541",
+    "cond-mat/0101249",
+    "cond-mat/0102344",
+    "cond-mat/0102415",
+    "cond-mat/0102057",
+    "physics/0103014",
+    "cond-mat/0104423"
+  ]
+}

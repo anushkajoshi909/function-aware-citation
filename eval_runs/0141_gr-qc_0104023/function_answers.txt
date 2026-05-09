@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Extends. [Extends]
-Future research can extend the current understanding of the Church-Turing Theses by exploring their validity under different background physical theories and investigating the implications of non-Turing computations on the arithmetical and analytical hierarchies of uncomputable functions. This may involve designing new computational models that utilize relativistic phenomena to compute non-recursive functions (gr-qc/0104023). [FutureWork]

@@ -1,0 +1,18 @@
+{
+  "answer": "Future research can extend the current understanding of pion multiplicity in deep-inelastic scattering by investigating the dependencies on Q^2 and x, as observed in hep-ex/0104004.",
+  "predicted_paper_id": "hep-ex/0104004",
+  "explanation": "This paper presents measurements of pion multiplicities in deep-inelastic scattering and discusses the observed dependencies on Q^2 and x, making it a relevant starting point for future research.",
+  "evidence_quote": "For fixed z, the measured multiplicities depend on both the negative squared four momentum transfer Q^2 and the Bjorken variable x",
+  "topk_list": [
+    "hep-ex/0104004",
+    "hep-ph/0102018",
+    "hep-ph/0104177",
+    "hep-ph/0101195",
+    "hep-ph/0103088",
+    "cond-mat/0103431",
+    "nucl-th/0103019",
+    "hep-ph/0102028",
+    "hep-ph/0102313",
+    "hep-ph/0102322"
+  ]
+}

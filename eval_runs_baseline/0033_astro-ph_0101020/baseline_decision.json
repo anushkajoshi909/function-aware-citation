@@ -1,0 +1,18 @@
+{
+  "answer": "The two-fluid model of diffusive shock acceleration provides background information for understanding the production of energetic cosmic rays by analyzing the acceleration of relativistic particles due to repeated scattering across a shock wave (astro-ph/0101020).",
+  "predicted_paper_id": "astro-ph/0101020",
+  "explanation": "This paper derives the exact critical conditions for the two-fluid model, providing a complete analytical classification of the parameter space of shock transitions, which is essential for understanding the production of energetic cosmic rays.",
+  "evidence_quote": "The acceleration of relativistic particles due to repeated scattering across a shock wave",
+  "topk_list": [
+    "astro-ph/0101020",
+    "astro-ph/0104064",
+    "astro-ph/0104120",
+    "astro-ph/0101245",
+    "astro-ph/0101053",
+    "hep-ex/0101049",
+    "astro-ph/0101331",
+    "astro-ph/0101175",
+    "hep-ph/0101184",
+    "astro-ph/0103108"
+  ]
+}

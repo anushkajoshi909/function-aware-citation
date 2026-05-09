@@ -1,0 +1,18 @@
+{
+  "answer": "The PHOBOS experiment provides background information on Au-Au interactions at RHIC, including the initial configuration of the PHOBOS detector and the center of mass energy of 56 and 130 AGeV (hep-ex/0102012).",
+  "predicted_paper_id": "hep-ex/0102012",
+  "explanation": "This paper is the most relevant because it directly mentions the PHOBOS experiment and its study of Au-Au interactions at RHIC.",
+  "evidence_quote": "PHOBOS is one of four experiments studying the Au-Au interactions at RHIC",
+  "topk_list": [
+    "hep-ex/0102012",
+    "nucl-ex/0104012",
+    "nucl-ex/0103015",
+    "nucl-th/0101035",
+    "astro-ph/0102443",
+    "nucl-ex/0104016",
+    "astro-ph/0103508",
+    "astro-ph/0101171",
+    "hep-ex/0102047",
+    "astro-ph/0104401"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous research on fermion-pair and photon-pair production in e+e- collisions by analyzing the full LEP2 data set (hep-ex/0103039).",
+  "predicted_paper_id": "hep-ex/0103039",
+  "explanation": "This paper presents preliminary results for fermion-pair and photon-pair production in e+e- collisions on the full LEP2 data set, making it the most relevant to the question.",
+  "evidence_quote": "fermion-pair and photon-pair production",
+  "topk_list": [
+    "hep-ex/0103039",
+    "nucl-th/0103022",
+    "nucl-th/0103023",
+    "nucl-th/0101024",
+    "hep-ph/0103299",
+    "hep-ph/0104165",
+    "hep-ph/0101208",
+    "hep-ex/0104024",
+    "hep-ph/0102116",
+    "hep-ph/0103309"
+  ]
+}

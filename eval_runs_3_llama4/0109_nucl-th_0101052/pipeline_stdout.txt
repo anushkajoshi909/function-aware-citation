@@ -1,0 +1,160 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Uses"
+  ],
+  "justification": "The query makes a comparative inquiry about the usage of chiral perturbation theory in the current work and its relation to previous analyses."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:43:52] main | args: Namespace(max_check=10, debug=True)
+[13:43:52] read_last_jsonl | path= classified_outputs.jsonl
+[13:43:52] read_last_jsonl | total_lines= 1
+[13:43:52] main | query='How does the current work use and compare chiral perturbation theory to previous analyses of the strong NN-force?' | funcs=['Compares', 'Uses']
+[13:43:54] main | core_terms= ['NN-force', 'chiral perturbation theory']
+[13:43:54] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:43:54] load_topk_jsonl | rows= 20
+[13:43:54] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0101030 title_snip='Complete analysis of pion-nucleon scattering in chiral perturbation
+  …' abs_len= 880
+[13:43:54] main | running function= Compares
+[13:43:54] select | function= Compares | candidates_in= 20
+[13:43:54] select | core_terms= ['NN-force', 'chiral perturbation theory']
+[13:43:54] select | no cosine prune; kept=20/20
+[13:43:54] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101030', 'nucl-th/0104030', 'hep-ph/0102287', 'nucl-th/0103020', 'nucl-th/0101052', 'nucl-th/0101032', 'nucl-th/0103002', 'nucl-th/0104043', 'hep-ph/0103123', 'hep-ph/0101110']
+[13:43:54] select | verify relaxed 1/10
+[13:43:54] verify | func= Compares | rank= 0 | pid= hep-ph/0101030 | title_snip='Complete analysis of pion-nucleon scattering in chiral perturbation
+  …' | abs_len= 880
+[13:43:57] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[13:43:57] select | verify relaxed 2/10
+[13:43:57] verify | func= Compares | rank= 1 | pid= nucl-th/0104030 | title_snip='Towards a Perturbative Theory of Nuclear Forces' | abs_len= 368
+[13:44:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:44:01] select | verify relaxed 3/10
+[13:44:01] verify | func= Compares | rank= 2 | pid= hep-ph/0102287 | title_snip='Dispersion relations and soft pion theorems for K -> pi pi' | abs_len= 663
+[13:44:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:44:04] select | verify relaxed 4/10
+[13:44:04] verify | func= Compares | rank= 3 | pid= nucl-th/0103020 | title_snip='Elastic electron-deuteron scattering in chiral effective field theory' | abs_len= 898
+[13:44:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:44:07] select | verify relaxed 5/10
+[13:44:07] verify | func= Compares | rank= 4 | pid= nucl-th/0101052 | title_snip='Chiral 3$\pi$-exchange NN-potentials: Results for dominant
+  next-to-l…' | abs_len= 1292
+[13:44:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:10] select | verify relaxed 6/10
+[13:44:10] verify | func= Compares | rank= 5 | pid= nucl-th/0101032 | title_snip='Chiral unitary theory: application to nuclear problems' | abs_len= 468
+[13:44:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:44:13] select | verify relaxed 7/10
+[13:44:13] verify | func= Compares | rank= 6 | pid= nucl-th/0103002 | title_snip='Tensor Analyzing Power and Current Conservation in the d+p->3He+g
+  re…' | abs_len= 480
+[13:44:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:16] select | verify relaxed 8/10
+[13:44:16] verify | func= Compares | rank= 7 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[13:44:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:44:19] select | verify relaxed 9/10
+[13:44:19] verify | func= Compares | rank= 8 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[13:44:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:22] select | verify relaxed 10/10
+[13:44:22] verify | func= Compares | rank= 9 | pid= hep-ph/0101110 | title_snip='Current quark mass effects on chiral phase transition of QCD in the
+  …' | abs_len= 1153
+[13:44:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work use and compare chiral perturbation theory to previous analyses of the strong NN-force?
+- No supporting candidate with sufficient evidence.
+[13:44:24] main | running function= Uses
+[13:44:24] select | function= Uses | candidates_in= 20
+[13:44:24] select | core_terms= ['NN-force', 'chiral perturbation theory']
+[13:44:24] select | no cosine prune; kept=20/20
+[13:44:24] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0101030', 'nucl-th/0104030', 'hep-ph/0102287', 'nucl-th/0103020', 'nucl-th/0101052', 'nucl-th/0101032', 'nucl-th/0103002', 'nucl-th/0104043', 'hep-ph/0103123', 'hep-ph/0101110']
+[13:44:24] select | verify relaxed 1/10
+[13:44:24] verify | func= Uses | rank= 0 | pid= hep-ph/0101030 | title_snip='Complete analysis of pion-nucleon scattering in chiral perturbation
+  …' | abs_len= 880
+[13:44:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:44:28] select | verify relaxed 2/10
+[13:44:28] verify | func= Uses | rank= 1 | pid= nucl-th/0104030 | title_snip='Towards a Perturbative Theory of Nuclear Forces' | abs_len= 368
+[13:44:31] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:44:31] select | verify relaxed 3/10
+[13:44:31] verify | func= Uses | rank= 2 | pid= hep-ph/0102287 | title_snip='Dispersion relations and soft pion theorems for K -> pi pi' | abs_len= 663
+[13:44:34] verify | result supports= True fit= 0.80 top= 0.60 invalid= — cue_hint= False
+[13:44:34] select | verify relaxed 4/10
+[13:44:34] verify | func= Uses | rank= 3 | pid= nucl-th/0103020 | title_snip='Elastic electron-deuteron scattering in chiral effective field theory' | abs_len= 898
+[13:44:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:44:38] select | verify relaxed 5/10
+[13:44:38] verify | func= Uses | rank= 4 | pid= nucl-th/0101052 | title_snip='Chiral 3$\pi$-exchange NN-potentials: Results for dominant
+  next-to-l…' | abs_len= 1292
+[13:44:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:44:41] select | verify relaxed 6/10
+[13:44:41] verify | func= Uses | rank= 5 | pid= nucl-th/0101032 | title_snip='Chiral unitary theory: application to nuclear problems' | abs_len= 468
+[13:44:44] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[13:44:44] select | verify relaxed 7/10
+[13:44:44] verify | func= Uses | rank= 6 | pid= nucl-th/0103002 | title_snip='Tensor Analyzing Power and Current Conservation in the d+p->3He+g
+  re…' | abs_len= 480
+[13:44:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:47] select | verify relaxed 8/10
+[13:44:47] verify | func= Uses | rank= 7 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[13:44:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= True
+[13:44:50] select | verify relaxed 9/10
+[13:44:50] verify | func= Uses | rank= 8 | pid= hep-ph/0103123 | title_snip='Non-singlet structure functions beyond the next-to-next-to leading ord…' | abs_len= 985
+[13:44:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:44:53] select | verify relaxed 10/10
+[13:44:53] verify | func= Uses | rank= 9 | pid= hep-ph/0101110 | title_snip='Current quark mass effects on chiral phase transition of QCD in the
+  …' | abs_len= 1153
+[13:44:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work use and compare chiral perturbation theory to previous analyses of the strong NN-force?
+- WINNER: hep-ph/0101030 | Complete analysis of pion-nucleon scattering in chiral perturbation
+  theory to third order
+- QUOTE : pion-nucleon scattering in heavy-baryon chiral perturbation theory
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work uses chiral perturbation theory to analyze pion-nucleon scattering [Uses] and compares its results to previous phase shift analyses, finding sizeable differences for the S-waves of the elastic channels (hep-ph/0101030). This comparison allows for a more precise description of the strong interaction and the isolation of its effects [Uses] (hep-ph/0101030).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

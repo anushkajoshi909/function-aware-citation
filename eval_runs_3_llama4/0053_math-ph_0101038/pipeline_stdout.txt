@@ -1,0 +1,153 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query seeks to extend an existing equation and explicitly frames it as a means to guide future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:29:50] main | args: Namespace(max_check=10, debug=True)
+[12:29:50] read_last_jsonl | path= classified_outputs.jsonl
+[12:29:50] read_last_jsonl | total_lines= 1
+[12:29:50] main | query='How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?' | funcs=['Extends', 'FutureWork']
+[12:29:52] main | core_terms= ['lattice systems', 'discrete nonlinear Schrödinger equation', 'chaotic spatial structures', 'quantum lattice', 'classical lattice']
+[12:29:52] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:29:52] load_topk_jsonl | rows= 20
+[12:29:52] load_topk_jsonl | first: rank= 0 paper_id= math-ph/0101038 title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' abs_len= 1590
+[12:29:52] main | running function= Extends
+[12:29:52] select | function= Extends | candidates_in= 20
+[12:29:52] select | core_terms= ['lattice systems', 'discrete nonlinear Schrödinger equation', 'chaotic spatial structures', 'quantum lattice', 'classical lattice']
+[12:29:52] select | no cosine prune; kept=20/20
+[12:29:52] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math-ph/0101038', 'cond-mat/0102291', 'nlin/0103013', 'hep-ph/0101202', 'cond-mat/0103368', 'cond-mat/0101378', 'nlin/0104054', 'hep-th/0104225', 'physics/0101104', 'cond-mat/0102135']
+[12:29:52] select | verify relaxed 1/10
+[12:29:52] verify | func= Extends | rank= 0 | pid= math-ph/0101038 | title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' | abs_len= 1590
+[12:29:56] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[12:29:56] select | verify relaxed 2/10
+[12:29:56] verify | func= Extends | rank= 1 | pid= cond-mat/0102291 | title_snip='Tunable tunneling: An application of stationary states of Bose-Einstei…' | abs_len= 1136
+[12:29:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:29:58] select | verify relaxed 3/10
+[12:29:58] verify | func= Extends | rank= 2 | pid= nlin/0103013 | title_snip='Discrete breathers in dissipative lattices' | abs_len= 1286
+[12:30:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:30:02] select | verify relaxed 4/10
+[12:30:02] verify | func= Extends | rank= 3 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[12:30:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:04] select | verify relaxed 5/10
+[12:30:04] verify | func= Extends | rank= 4 | pid= cond-mat/0103368 | title_snip='Discrete Solitons and Breathers with Dilute Bose-Einstein Condensates' | abs_len= 525
+[12:30:08] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[12:30:08] select | verify relaxed 6/10
+[12:30:08] verify | func= Extends | rank= 5 | pid= cond-mat/0101378 | title_snip='Nonlinear reactive systems viewed as Boolean dynamical systems' | abs_len= 826
+[12:30:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:11] select | verify relaxed 7/10
+[12:30:11] verify | func= Extends | rank= 6 | pid= nlin/0104054 | title_snip='Critical Localization and Strange Nonchaotic Dynamics: The Fibonacci
+ …' | abs_len= 716
+[12:30:14] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[12:30:14] select | verify relaxed 8/10
+[12:30:14] verify | func= Extends | rank= 7 | pid= hep-th/0104225 | title_snip='Kink Dynamics in a Topological Phi^4 Lattice' | abs_len= 1217
+[12:30:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:17] select | verify relaxed 9/10
+[12:30:17] verify | func= Extends | rank= 8 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[12:30:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:19] select | verify relaxed 10/10
+[12:30:19] verify | func= Extends | rank= 9 | pid= cond-mat/0102135 | title_snip='Decoherence as Decay of the Loschmidt Echo in a Lorentz Gas' | abs_len= 1225
+[12:30:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?
+- No supporting candidate with sufficient evidence.
+[12:30:22] main | running function= FutureWork
+[12:30:22] select | function= FutureWork | candidates_in= 20
+[12:30:22] select | core_terms= ['lattice systems', 'discrete nonlinear Schrödinger equation', 'chaotic spatial structures', 'quantum lattice', 'classical lattice']
+[12:30:22] select | no cosine prune; kept=20/20
+[12:30:22] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['math-ph/0101038', 'cond-mat/0102291', 'nlin/0103013', 'hep-ph/0101202', 'cond-mat/0103368', 'cond-mat/0101378', 'nlin/0104054', 'hep-th/0104225', 'physics/0101104', 'cond-mat/0102135']
+[12:30:22] select | verify relaxed 1/10
+[12:30:22] verify | func= FutureWork | rank= 0 | pid= math-ph/0101038 | title_snip='Fractal and chaotic solutions of the discrete nonlinear Schr\"odinger
+…' | abs_len= 1590
+[12:30:25] verify | result supports= False fit= 0.60 top= 0.90 invalid= — cue_hint= False
+[12:30:25] select | verify relaxed 2/10
+[12:30:25] verify | func= FutureWork | rank= 1 | pid= cond-mat/0102291 | title_snip='Tunable tunneling: An application of stationary states of Bose-Einstei…' | abs_len= 1136
+[12:30:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:28] select | verify relaxed 3/10
+[12:30:28] verify | func= FutureWork | rank= 2 | pid= nlin/0103013 | title_snip='Discrete breathers in dissipative lattices' | abs_len= 1286
+[12:30:31] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:30:31] select | verify relaxed 4/10
+[12:30:31] verify | func= FutureWork | rank= 3 | pid= hep-ph/0101202 | title_snip='Aspects of Non-Equilibrium Dynamics in Quantum Field Theory' | abs_len= 1716
+[12:30:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:34] select | verify relaxed 5/10
+[12:30:34] verify | func= FutureWork | rank= 4 | pid= cond-mat/0103368 | title_snip='Discrete Solitons and Breathers with Dilute Bose-Einstein Condensates' | abs_len= 525
+[12:30:38] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[12:30:38] select | verify relaxed 6/10
+[12:30:38] verify | func= FutureWork | rank= 5 | pid= cond-mat/0101378 | title_snip='Nonlinear reactive systems viewed as Boolean dynamical systems' | abs_len= 826
+[12:30:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:40] select | verify relaxed 7/10
+[12:30:40] verify | func= FutureWork | rank= 6 | pid= nlin/0104054 | title_snip='Critical Localization and Strange Nonchaotic Dynamics: The Fibonacci
+ …' | abs_len= 716
+[12:30:44] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[12:30:44] select | verify relaxed 8/10
+[12:30:44] verify | func= FutureWork | rank= 7 | pid= hep-th/0104225 | title_snip='Kink Dynamics in a Topological Phi^4 Lattice' | abs_len= 1217
+[12:30:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[12:30:46] select | verify relaxed 9/10
+[12:30:46] verify | func= FutureWork | rank= 8 | pid= physics/0101104 | title_snip='On p-adic Stochastic Dynamics, Supersymmetry and the Riemann Conjectur…' | abs_len= 1256
+[12:30:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:30:49] select | verify relaxed 10/10
+[12:30:49] verify | func= FutureWork | rank= 9 | pid= cond-mat/0102135 | title_snip='Decoherence as Decay of the Loschmidt Echo in a Lorentz Gas' | abs_len= 1225
+[12:30:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the discrete nonlinear Schrödinger equation be extended to explore future research directions in understanding chaotic spatial structures in quantum and classical lattice systems?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

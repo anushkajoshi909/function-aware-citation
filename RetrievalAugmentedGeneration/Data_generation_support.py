@@ -26,7 +26,7 @@ jsonl_files = [
     "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/Corpus/processed_unarxive_extended_data/unarXive_01981221/01/arXiv_src_0104_001.jsonl",
 ]
 
-OUTPUT_PATH = "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict1.jsonl"  # Update to real path
+OUTPUT_PATH = "/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/synthetic_dataset_strict2.jsonl"  # Update to real path
 
 # ---------- Abstract quality thresholds (multi-signal) ----------
 MIN_ABS_CHARS = 600        # tighten/loosen as needed

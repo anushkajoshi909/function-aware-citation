@@ -1,0 +1,1 @@
+Future research can extend the current understanding of pion multiplicity in deep-inelastic scattering by investigating the dependencies on Q^2 and x [Motivation] (hep-ex/0104004). This can be achieved by analyzing the measured multiplicities, which depend on both Q^2 and x, and comparing them to the expected behavior based on NLO-QCD evolution [Motivation] (hep-ex/0104004).

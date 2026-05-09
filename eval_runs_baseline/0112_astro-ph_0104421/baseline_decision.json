@@ -1,0 +1,18 @@
+{
+  "answer": "The study of the 5 Hz quasi-periodic oscillation in GRS 1739-278 extends our understanding of low-frequency QPOs and motivates further research on their properties in black-hole candidates (astro-ph/0104421).",
+  "predicted_paper_id": "astro-ph/0104421",
+  "explanation": "This paper presents a detailed study of the 5 Hz QPO in GRS 1739-278, providing insights into the properties of low-frequency QPOs in black-hole candidates.",
+  "evidence_quote": "5 Hz quasi-periodic oscillation",
+  "topk_list": [
+    "astro-ph/0104421",
+    "astro-ph/0104019",
+    "gr-qc/0103054",
+    "astro-ph/0104008",
+    "astro-ph/0104487",
+    "astro-ph/0104323",
+    "astro-ph/0101048",
+    "astro-ph/0103431",
+    "hep-th/0104065",
+    "astro-ph/0102233"
+  ]
+}

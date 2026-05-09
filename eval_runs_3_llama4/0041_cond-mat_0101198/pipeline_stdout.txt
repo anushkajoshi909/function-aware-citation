@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Compares"
+  ],
+  "justification": "The query inquires about an extension of an algorithm and its relation to a theoretical prediction, implying a comparison of the extended algorithm's capabilities or results with the power laws predicted by Fisher and Nakanishi."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:14:33] main | args: Namespace(max_check=10, debug=True)
+[12:14:33] read_last_jsonl | path= classified_outputs.jsonl
+[12:14:33] read_last_jsonl | total_lines= 1
+[12:14:33] main | query='How does the extension of the Swendsen-Wang cluster algorithm to include surface fields relate to the use of power laws predicted by Fisher and Nakanishi?' | funcs=['Extends', 'Compares']
+[12:14:35] main | core_terms= ['Swendsen-Wang cluster algorithm', 'Fisher', 'Nakanishi', 'surface fields', 'power laws', 'Swendsen-Wang']
+[12:14:35] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:14:35] load_topk_jsonl | rows= 20
+[12:14:35] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0101198 title_snip='A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Ca…' abs_len= 1221
+[12:14:35] main | running function= Extends
+[12:14:35] select | function= Extends | candidates_in= 20
+[12:14:35] select | core_terms= ['Swendsen-Wang cluster algorithm', 'Fisher', 'Nakanishi', 'surface fields', 'power laws', 'Swendsen-Wang']
+[12:14:35] select | no cosine prune; kept=20/20
+[12:14:35] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0101198', 'cond-mat/0102131', 'astro-ph/0103378', 'hep-th/0102107', 'cond-mat/0102521', 'hep-th/0104248', 'cond-mat/0102423', 'cond-mat/0101005', 'hep-ph/0101248', 'cond-mat/0103417']
+[12:14:35] select | verify relaxed 1/10
+[12:14:35] verify | func= Extends | rank= 0 | pid= cond-mat/0101198 | title_snip='A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Ca…' | abs_len= 1221
+[12:14:38] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= False
+[12:14:38] select | verify relaxed 2/10
+[12:14:38] verify | func= Extends | rank= 1 | pid= cond-mat/0102131 | title_snip='Dynamic surface scaling behavior of isotropic Heisenberg ferromagnets' | abs_len= 882
+[12:14:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[12:14:41] select | verify relaxed 3/10
+[12:14:41] verify | func= Extends | rank= 2 | pid= astro-ph/0103378 | title_snip='The Power Spectrum of Flux Limited X-Ray Galaxy Cluster Surveys' | abs_len= 1214
+[12:14:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:44] select | verify relaxed 4/10
+[12:14:44] verify | func= Extends | rank= 3 | pid= hep-th/0102107 | title_snip='Group-Variation Equations for the Coefficients in the 1/N Expansions o…' | abs_len= 1733
+[12:14:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:46] select | verify relaxed 5/10
+[12:14:46] verify | func= Extends | rank= 4 | pid= cond-mat/0102521 | title_snip='Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving…' | abs_len= 1424
+[12:14:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:49] select | verify relaxed 6/10
+[12:14:49] verify | func= Extends | rank= 5 | pid= hep-th/0104248 | title_snip='A Brief Summary of the Group-Variation Equations' | abs_len= 579
+[12:14:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:51] select | verify relaxed 7/10
+[12:14:51] verify | func= Extends | rank= 6 | pid= cond-mat/0102423 | title_snip='Power Laws of Wealth, Market Order Volumes and Market Returns' | abs_len= 1396
+[12:14:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:54] select | verify relaxed 8/10
+[12:14:54] verify | func= Extends | rank= 7 | pid= cond-mat/0101005 | title_snip='Weak and strong dynamic scaling in a one-dimensional driven
+  coupled-…' | abs_len= 1152
+[12:14:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:56] select | verify relaxed 9/10
+[12:14:56] verify | func= Extends | rank= 8 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[12:14:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:14:59] select | verify relaxed 10/10
+[12:14:59] verify | func= Extends | rank= 9 | pid= cond-mat/0103417 | title_snip='Pulling strings at finite temperature: Another force-extension formula…' | abs_len= 802
+[12:15:01] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the extension of the Swendsen-Wang cluster algorithm to include surface fields relate to the use of power laws predicted by Fisher and Nakanishi?
+- WINNER: cond-mat/0101198 | A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Capillary Condensation Critical Point
+- QUOTE : Extending the Swendsen-Wang cluster algorithm to include both bulk
+- WHY   : sufficient
+[12:15:02] main | running function= Compares
+[12:15:02] select | function= Compares | candidates_in= 20
+[12:15:02] select | core_terms= ['Swendsen-Wang cluster algorithm', 'Fisher', 'Nakanishi', 'surface fields', 'power laws', 'Swendsen-Wang']
+[12:15:02] select | no cosine prune; kept=20/20
+[12:15:02] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0101198', 'cond-mat/0102131', 'astro-ph/0103378', 'hep-th/0102107', 'cond-mat/0102521', 'hep-th/0104248', 'cond-mat/0102423', 'cond-mat/0101005', 'hep-ph/0101248', 'cond-mat/0103417']
+[12:15:02] select | verify relaxed 1/10
+[12:15:02] verify | func= Compares | rank= 0 | pid= cond-mat/0101198 | title_snip='A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Ca…' | abs_len= 1221
+[12:15:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:15:06] select | verify relaxed 2/10
+[12:15:06] verify | func= Compares | rank= 1 | pid= cond-mat/0102131 | title_snip='Dynamic surface scaling behavior of isotropic Heisenberg ferromagnets' | abs_len= 882
+[12:15:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[12:15:09] select | verify relaxed 3/10
+[12:15:09] verify | func= Compares | rank= 2 | pid= astro-ph/0103378 | title_snip='The Power Spectrum of Flux Limited X-Ray Galaxy Cluster Surveys' | abs_len= 1214
+[12:15:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:11] select | verify relaxed 4/10
+[12:15:11] verify | func= Compares | rank= 3 | pid= hep-th/0102107 | title_snip='Group-Variation Equations for the Coefficients in the 1/N Expansions o…' | abs_len= 1733
+[12:15:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:14] select | verify relaxed 5/10
+[12:15:14] verify | func= Compares | rank= 4 | pid= cond-mat/0102521 | title_snip='Fluctuation-Dominated Phase Ordering Driven by Stochastically Evolving…' | abs_len= 1424
+[12:15:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:16] select | verify relaxed 6/10
+[12:15:16] verify | func= Compares | rank= 5 | pid= hep-th/0104248 | title_snip='A Brief Summary of the Group-Variation Equations' | abs_len= 579
+[12:15:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:19] select | verify relaxed 7/10
+[12:15:19] verify | func= Compares | rank= 6 | pid= cond-mat/0102423 | title_snip='Power Laws of Wealth, Market Order Volumes and Market Returns' | abs_len= 1396
+[12:15:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:21] select | verify relaxed 8/10
+[12:15:21] verify | func= Compares | rank= 7 | pid= cond-mat/0101005 | title_snip='Weak and strong dynamic scaling in a one-dimensional driven
+  coupled-…' | abs_len= 1152
+[12:15:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:24] select | verify relaxed 9/10
+[12:15:24] verify | func= Compares | rank= 8 | pid= hep-ph/0101248 | title_snip='Conformal Expansions: A Template for QCD Predictions' | abs_len= 503
+[12:15:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:15:26] select | verify relaxed 10/10
+[12:15:26] verify | func= Compares | rank= 9 | pid= cond-mat/0103417 | title_snip='Pulling strings at finite temperature: Another force-extension formula…' | abs_len= 802
+[12:15:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the extension of the Swendsen-Wang cluster algorithm to include surface fields relate to the use of power laws predicted by Fisher and Nakanishi?
+- WINNER: cond-mat/0101198 | A Monte Carlo Test of the Fisher-Nakanishi-Scaling Theory for the
+  Capillary Condensation Critical Point
+- QUOTE : consistent with the power laws predicted by Fisher and Nakanishi
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The extension of the Swendsen-Wang cluster algorithm to include surface fields [Extends] allows for a study of the capillary condensation critical point, which compares [Compares] favorably with the power laws predicted by Fisher and Nakanishi (cond-mat/0101198). The results of this study are consistent with these power laws, demonstrating the validity of the Fisher-Nakanishi scaling theory (cond-mat/0101198).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

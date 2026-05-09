@@ -1,0 +1,18 @@
+{
+  "answer": "The current work on CP-violating phases can be extended by exploring new physics beyond the Standard Model, such as supersymmetric extensions, which can provide new sources of CP violation (hep-ph/0104027).",
+  "predicted_paper_id": "hep-ph/0104027",
+  "explanation": "This paper discusses the potential of CP violation as a probe for supersymmetric extensions of the Standard Model, making it a relevant choice for exploring new physics beyond the Standard Model.",
+  "evidence_quote": "New physics in CP violation experiments",
+  "topk_list": [
+    "hep-ph/0101106",
+    "hep-ph/0103319",
+    "hep-ph/0102159",
+    "hep-ph/0104027",
+    "hep-ph/0103258",
+    "hep-ph/0101259",
+    "hep-ph/0102324",
+    "hep-ph/0101002",
+    "hep-ph/0104050",
+    "hep-ph/0103299"
+  ]
+}

@@ -12,12 +12,18 @@ from datetime import datetime
 # --- Defaults (tweak if your project lives elsewhere)
 PROJECT_ROOT = Path(__file__).resolve().parent
 PIPELINE_PATH_DEFAULT = PROJECT_ROOT / "run_pipeline.py"
-RUNS_DIR_DEFAULT = PROJECT_ROOT / "eval_runs"  # where we stash per-example outputs
+RUNS_DIR_DEFAULT = PROJECT_ROOT / "eval_runs_3_deepseek"  # where we stash per-example outputs
 
 # --- Filenames your pipeline already produces
 FUNC_RESULTS_JSONL = "RetrievalAugmentedGeneration/outputs/function_selection_results.jsonl"
-FUNC_ANSWERS_TXT   = "RetrievalAugmentedGeneration/outputs/function_answers.txt"
+FUNC_ANSWERS_TXT   = "RetrievalAugmentedGeneration/outputs/function_answer_unified.txt"
 CLASSIFIED_JSONL   = "RetrievalAugmentedGeneration/classified_outputs.jsonl"  # used by pipeline
+
+# --- Ensure retrieval reuses existing index/meta by default ---
+os.environ.setdefault("SKIP_REINDEX", "1")
+# Paths to existing index + meta (adjust if yours live elsewhere)
+os.environ.setdefault("INDEX_PATH", str("/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss"))
+os.environ.setdefault("META_PATH",  str("/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet"))
 
 # --------------------------
 # Helpers
@@ -222,7 +228,7 @@ def aggregate_metrics(per_example_rows):
     f1 = (2*prec*rec / (prec + rec)) if (prec + rec) else 0.0
 
     # paper metrics
-    paper_at1 = (paper_hits / paper_total) if paper_total else 0.0
+    paper_recall = (paper_hits / paper_total) if paper_total else 0.0
     hit_any = (hit_any_cnt / hit_any_total) if hit_any_total else 0.0
 
     # function membership accuracy
@@ -235,7 +241,7 @@ def aggregate_metrics(per_example_rows):
         "support_precision": prec,
         "support_recall": rec,
         "support_f1": f1,
-        "paper_at1_accuracy": paper_at1,
+        "paper_recall@1": paper_recall,
         "retrieval_hit_any": hit_any,
         "function_membership_accuracy": func_membership_acc,
     }
@@ -249,11 +255,13 @@ def run_pipeline_once(pipeline_path: Path, model_index: int, question: str, cwd:
       line 1: model index
       line 2: question
     """
+    env = {**os.environ}  # carry SKIP_REINDEX/INDEX_PATH/META_PATH through
     p = subprocess.run(
         [sys.executable, str(pipeline_path)],
         input=f"{model_index}\n{question}\n",
         text=True,
         cwd=str(cwd),
+        env=env,
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         check=False,
@@ -311,7 +319,7 @@ def main():
 
             # 2) copy outputs away before next run overwrites them
             copied1 = copy_if_exists(project_root / FUNC_RESULTS_JSONL, subdir / "function_selection_results.jsonl")
-            copied2 = copy_if_exists(project_root / FUNC_ANSWERS_TXT,   subdir / "function_answers.txt")
+            copied2 = copy_if_exists(project_root / FUNC_ANSWERS_TXT,   subdir / "function_answer_unified.txt")
             copied3 = copy_if_exists(project_root / CLASSIFIED_JSONL,   subdir / "classified_outputs.jsonl")
             if not (copied1 and copied2 and copied3):
                 print("   ⚠️ Missing expected outputs; check pipeline logs (need function_results, answers, and classified).")

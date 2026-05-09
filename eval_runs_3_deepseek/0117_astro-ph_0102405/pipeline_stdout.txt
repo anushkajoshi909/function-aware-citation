@@ -1,0 +1,153 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly asks how a limitation (old orbit solution) drives current research (motivation) and points to future directions (future work)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:11:30] main | args: Namespace(max_check=10, debug=True)
+[14:11:30] read_last_jsonl | path= classified_outputs.jsonl
+[14:11:30] read_last_jsonl | total_lines= 1
+[14:11:30] main | query='How does the limitation of having only one old orbit solution for UX Ari motivate the current work and suggest areas for future research?' | funcs=['Motivation', 'FutureWork']
+[14:11:31] main | core_terms= ['UX Ari', 'orbit solution', 'UX']
+[14:11:31] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:11:31] load_topk_jsonl | rows= 20
+[14:11:31] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102405 title_snip='The radial velocities of the RS CVn star UX Ari. A triple system with …' abs_len= 1039
+[14:11:31] main | running function= Motivation
+[14:11:31] select | function= Motivation | candidates_in= 20
+[14:11:31] select | core_terms= ['UX Ari', 'orbit solution', 'UX']
+[14:11:31] select | no cosine prune; kept=20/20
+[14:11:31] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102405', 'gr-qc/0104063', 'gr-qc/0104042', 'hep-ph/0102096', 'hep-ph/0101147', 'cond-mat/0103610', 'astro-ph/0102126', 'hep-ph/0104186', 'quant-ph/0104100', 'gr-qc/0104029']
+[14:11:31] select | verify relaxed 1/10
+[14:11:31] verify | func= Motivation | rank= 0 | pid= astro-ph/0102405 | title_snip='The radial velocities of the RS CVn star UX Ari. A triple system with …' | abs_len= 1039
+[14:11:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:11:34] select | verify relaxed 2/10
+[14:11:34] verify | func= Motivation | rank= 1 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[14:11:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:37] select | verify relaxed 3/10
+[14:11:37] verify | func= Motivation | rank= 2 | pid= gr-qc/0104042 | title_snip='LIGO's "Science Reach"' | abs_len= 803
+[14:11:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:39] select | verify relaxed 4/10
+[14:11:39] verify | func= Motivation | rank= 3 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[14:11:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:42] select | verify relaxed 5/10
+[14:11:42] verify | func= Motivation | rank= 4 | pid= hep-ph/0101147 | title_snip='Progress on two-loop non-propagator integrals' | abs_len= 474
+[14:11:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:44] select | verify relaxed 6/10
+[14:11:44] verify | func= Motivation | rank= 5 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[14:11:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:47] select | verify relaxed 7/10
+[14:11:47] verify | func= Motivation | rank= 6 | pid= astro-ph/0102126 | title_snip='Astronomical engineering: a strategy for modifying planetary orbits' | abs_len= 1431
+[14:11:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:50] select | verify relaxed 8/10
+[14:11:50] verify | func= Motivation | rank= 7 | pid= hep-ph/0104186 | title_snip='Affleck-Dine baryo/leptogenesis with a gauged U(1)(B-L)' | abs_len= 1126
+[14:11:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:52] select | verify relaxed 9/10
+[14:11:52] verify | func= Motivation | rank= 8 | pid= quant-ph/0104100 | title_snip='Lower bounds in the quantum cell probe model' | abs_len= 1737
+[14:11:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:11:55] select | verify relaxed 10/10
+[14:11:55] verify | func= Motivation | rank= 9 | pid= gr-qc/0104029 | title_snip='An alternative to Minkowski space-time' | abs_len= 1230
+[14:11:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the limitation of having only one old orbit solution for UX Ari motivate the current work and suggest areas for future research?
+- WINNER: astro-ph/0102405 | The radial velocities of the RS CVn star UX Ari. A triple system with a
+  binary on the same line of sight
+- QUOTE : only one, quite old orbit solution
+- WHY   : sufficient
+[14:11:59] main | running function= FutureWork
+[14:11:59] select | function= FutureWork | candidates_in= 20
+[14:11:59] select | core_terms= ['UX Ari', 'orbit solution', 'UX']
+[14:11:59] select | no cosine prune; kept=20/20
+[14:11:59] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102405', 'gr-qc/0104063', 'gr-qc/0104042', 'hep-ph/0102096', 'hep-ph/0101147', 'cond-mat/0103610', 'astro-ph/0102126', 'hep-ph/0104186', 'quant-ph/0104100', 'gr-qc/0104029']
+[14:11:59] select | verify relaxed 1/10
+[14:11:59] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102405 | title_snip='The radial velocities of the RS CVn star UX Ari. A triple system with …' | abs_len= 1039
+[14:12:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:12:02] select | verify relaxed 2/10
+[14:12:02] verify | func= FutureWork | rank= 1 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[14:12:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:04] select | verify relaxed 3/10
+[14:12:04] verify | func= FutureWork | rank= 2 | pid= gr-qc/0104042 | title_snip='LIGO's "Science Reach"' | abs_len= 803
+[14:12:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:07] select | verify relaxed 4/10
+[14:12:07] verify | func= FutureWork | rank= 3 | pid= hep-ph/0102096 | title_snip='$\mu$-term due to the non-universal supersymmetry breaking and the Hig…' | abs_len= 995
+[14:12:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:09] select | verify relaxed 5/10
+[14:12:09] verify | func= FutureWork | rank= 4 | pid= hep-ph/0101147 | title_snip='Progress on two-loop non-propagator integrals' | abs_len= 474
+[14:12:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:12] select | verify relaxed 6/10
+[14:12:12] verify | func= FutureWork | rank= 5 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[14:12:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:15] select | verify relaxed 7/10
+[14:12:15] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102126 | title_snip='Astronomical engineering: a strategy for modifying planetary orbits' | abs_len= 1431
+[14:12:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:17] select | verify relaxed 8/10
+[14:12:17] verify | func= FutureWork | rank= 7 | pid= hep-ph/0104186 | title_snip='Affleck-Dine baryo/leptogenesis with a gauged U(1)(B-L)' | abs_len= 1126
+[14:12:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:20] select | verify relaxed 9/10
+[14:12:20] verify | func= FutureWork | rank= 8 | pid= quant-ph/0104100 | title_snip='Lower bounds in the quantum cell probe model' | abs_len= 1737
+[14:12:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:22] select | verify relaxed 10/10
+[14:12:22] verify | func= FutureWork | rank= 9 | pid= gr-qc/0104029 | title_snip='An alternative to Minkowski space-time' | abs_len= 1230
+[14:12:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the limitation of having only one old orbit solution for UX Ari motivate the current work and suggest areas for future research?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The limitation of having only one old orbit solution for UX Ari motivates the current work to improve the orbit using new radial velocities [Motivation] (astro-ph/0102405). This also suggests areas for future research, such as further investigating the triple system and the physical parameters of the objects [Motivation] (astro-ph/0102405).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

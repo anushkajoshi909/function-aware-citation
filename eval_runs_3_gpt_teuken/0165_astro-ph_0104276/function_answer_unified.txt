@@ -1,0 +1,1 @@
+The current understanding of Population III star formation is based on numerical simulations that model the collapse and fragmentation of primordial gas [Background] (astro-ph/0103382). Further research is motivated by the need to better constrain the initial mass function of these stars, driven by new questions raised by recent simulations [Motivation] (astro-ph/0103382).

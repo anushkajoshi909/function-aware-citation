@@ -1,0 +1,18 @@
+{
+  "answer": "The observed radial velocity of the Local Interstellar Cloud is lower than predicted, which may indicate compression or deceleration at its leading edge, motivating the proposal of an extension of the Hyades Cloud boundary (astro-ph/0101090).",
+  "predicted_paper_id": "astro-ph/0101090",
+  "explanation": "This paper directly addresses the observed radial velocity of the Local Interstellar Cloud and its comparison to previous predictions, as well as the proposal for extending the Hyades Cloud boundary based on observations and previous studies.",
+  "evidence_quote": "v(predicted LIC) - v(observed LIC) = 2.9 +/- 0.7 km/s",
+  "topk_list": [
+    "astro-ph/0101090",
+    "astro-ph/0103038",
+    "astro-ph/0102243",
+    "astro-ph/0101116",
+    "astro-ph/0103205",
+    "astro-ph/0102477",
+    "astro-ph/0102220",
+    "astro-ph/0101543",
+    "astro-ph/0102352",
+    "astro-ph/0103313"
+  ]
+}

@@ -1,0 +1,1 @@
+The current work extends existing models by analyzing the nonminimal supersymmetric standard model with baryon and lepton number violation [Extends] (hep-ph/0103005), and uses existing methods to study the renormalization group evolution and infrared stable fixed points of the Yukawa couplings and soft supersymmetry breaking trilinear couplings [Uses] (hep-ph/0103005).

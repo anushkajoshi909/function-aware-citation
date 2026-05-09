@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous research on quantum field theories by providing a new approach to fermionic QFT in electromagnetic backgrounds, as seen in hep-th/0103228.",
+  "predicted_paper_id": "hep-th/0103228",
+  "explanation": "This paper presents a reformulation of fermionic QFT in electromagnetic backgrounds, which uses methods analogous to those of conventional multiparticle quantum mechanics, thus extending previous research in the field.",
+  "evidence_quote": "A reformulation of fermionic QFT",
+  "topk_list": [
+    "hep-th/0103228",
+    "hep-ph/0103299",
+    "hep-th/0102041",
+    "physics/0101039",
+    "hep-th/0101174",
+    "hep-ph/0102096",
+    "physics/0101057",
+    "astro-ph/0104162",
+    "hep-ph/0102014",
+    "hep-ph/0103146"
+  ]
+}

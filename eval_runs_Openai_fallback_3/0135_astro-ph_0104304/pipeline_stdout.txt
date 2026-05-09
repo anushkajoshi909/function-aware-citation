@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query asks for a comparative analysis of two modeling approaches and explicitly seeks how that comparison should guide subsequent research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:01:54] main | args: Namespace(max_check=10, debug=True)
+[00:01:54] read_last_jsonl | path= classified_outputs.jsonl
+[00:01:54] read_last_jsonl | total_lines= 1
+[00:01:54] main | query='How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?' | funcs=['Compares', 'FutureWork']
+[00:01:57] main | core_terms= ['galaxies', 'NGC 4449', 'DDO 125', 'N-body models', 'N-body simulations', 'interaction scenario', 'N-body', 'self-consistent', 'NGC', 'DDO']
+[00:01:57] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:01:57] load_topk_jsonl | rows= 20
+[00:01:57] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104304 title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' abs_len= 1670
+[00:01:57] main | running function= Compares
+[00:01:57] select | function= Compares | candidates_in= 20
+[00:01:57] select | core_terms= ['galaxies', 'NGC 4449', 'DDO 125', 'N-body models', 'N-body simulations', 'interaction scenario', 'N-body', 'self-consistent', 'NGC', 'DDO']
+[00:01:57] select | no cosine prune; kept=20/20
+[00:01:57] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104304', 'astro-ph/0101265', 'astro-ph/0101296', 'astro-ph/0104465', 'astro-ph/0102011', 'astro-ph/0103092', 'astro-ph/0104069', 'astro-ph/0103410', 'astro-ph/0101490', 'hep-ph/0103249']
+[00:01:57] select | verify relaxed 1/10
+[00:01:57] verify | func= Compares | rank= 0 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[00:02:01] verify | result supports= True fit= 0.90 top= 0.95 invalid= — cue_hint= True
+[00:02:01] select | verify relaxed 2/10
+[00:02:01] verify | func= Compares | rank= 1 | pid= astro-ph/0101265 | title_snip='N-Body Simulations of Open, Self-Gravitating Systems' | abs_len= 792
+[00:02:04] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:04] select | verify relaxed 3/10
+[00:02:04] verify | func= Compares | rank= 2 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[00:02:07] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:07] select | verify relaxed 4/10
+[00:02:07] verify | func= Compares | rank= 3 | pid= astro-ph/0104465 | title_snip='Luminous and Dark Matter in the Milky Way' | abs_len= 1523
+[00:02:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:10] select | verify relaxed 5/10
+[00:02:10] verify | func= Compares | rank= 4 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[00:02:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:12] select | verify relaxed 6/10
+[00:02:12] verify | func= Compares | rank= 5 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[00:02:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:16] select | verify relaxed 7/10
+[00:02:16] verify | func= Compares | rank= 6 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[00:02:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:19] select | verify relaxed 8/10
+[00:02:19] verify | func= Compares | rank= 7 | pid= astro-ph/0103410 | title_snip='Collisional dynamics around binary black holes in galactic centers' | abs_len= 1046
+[00:02:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:21] select | verify relaxed 9/10
+[00:02:21] verify | func= Compares | rank= 8 | pid= astro-ph/0101490 | title_snip='Comparison between Disk-like Objects Formed in Hierarchical
+  Hydrodyn…' | abs_len= 457
+[00:02:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:24] select | verify relaxed 10/10
+[00:02:24] verify | func= Compares | rank= 9 | pid= hep-ph/0103249 | title_snip='Non-Newtonian gravity confronting models with large extra dimensions' | abs_len= 287
+[00:02:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?
+- WINNER: astro-ph/0104304 | Multi-method-modeling of interacting galaxies. I. A unique scenario for
+  NGC 4449?
+- QUOTE : In the third step the results of the restricted N-body models are compared with self-consistent N-body simulations
+- WHY   : sufficient
+[00:02:28] main | running function= FutureWork
+[00:02:28] select | function= FutureWork | candidates_in= 20
+[00:02:28] select | core_terms= ['galaxies', 'NGC 4449', 'DDO 125', 'N-body models', 'N-body simulations', 'interaction scenario', 'N-body', 'self-consistent', 'NGC', 'DDO']
+[00:02:28] select | no cosine prune; kept=20/20
+[00:02:28] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104304', 'astro-ph/0101265', 'astro-ph/0101296', 'astro-ph/0104465', 'astro-ph/0102011', 'astro-ph/0103092', 'astro-ph/0104069', 'astro-ph/0103410', 'astro-ph/0101490', 'hep-ph/0103249']
+[00:02:28] select | verify relaxed 1/10
+[00:02:28] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104304 | title_snip='Multi-method-modeling of interacting galaxies. I. A unique scenario fo…' | abs_len= 1670
+[00:02:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:02:31] select | verify relaxed 2/10
+[00:02:31] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101265 | title_snip='N-Body Simulations of Open, Self-Gravitating Systems' | abs_len= 792
+[00:02:35] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:35] select | verify relaxed 3/10
+[00:02:35] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101296 | title_snip='Evolution of galaxies due to self-excitation' | abs_len= 1269
+[00:02:38] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:38] select | verify relaxed 4/10
+[00:02:38] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104465 | title_snip='Luminous and Dark Matter in the Milky Way' | abs_len= 1523
+[00:02:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:40] select | verify relaxed 5/10
+[00:02:40] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102011 | title_snip='Disc-like Objects in Hierarchical Hydrodynamical Simulations: Comparis…' | abs_len= 1051
+[00:02:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:43] select | verify relaxed 6/10
+[00:02:43] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[00:02:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:46] select | verify relaxed 7/10
+[00:02:46] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104069 | title_snip='The Equilibrium Structure of Cosmological Halos' | abs_len= 1238
+[00:02:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[00:02:49] select | verify relaxed 8/10
+[00:02:49] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103410 | title_snip='Collisional dynamics around binary black holes in galactic centers' | abs_len= 1046
+[00:02:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[00:02:51] select | verify relaxed 9/10
+[00:02:51] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101490 | title_snip='Comparison between Disk-like Objects Formed in Hierarchical
+  Hydrodyn…' | abs_len= 457
+[00:02:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:02:54] select | verify relaxed 10/10
+[00:02:54] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103249 | title_snip='Non-Newtonian gravity confronting models with large extra dimensions' | abs_len= 287
+[00:02:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the comparison of restricted N-body models with self-consistent N-body simulations inform future research on the interaction scenario between galaxies like NGC 4449 and DDO 125?
+- WINNER: astro-ph/0104304 | Multi-method-modeling of interacting galaxies. I. A unique scenario for
+  NGC 4449?
+- QUOTE : In a series of simulations, we demonstrate that the observed features
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The comparison of restricted N-body models with self-consistent N-body simulations [Compares] informs future research on the interaction scenario between galaxies like NGC 4449 and DDO 125 by demonstrating the applicability of simple restricted N-body calculations, which will guide future studies [FutureWork] (astro-ph/0104304).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

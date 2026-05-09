@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the astrophysical processes behind the r-process element abundances and suggests future research avenues."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:52:09] main | args: Namespace(max_check=10, debug=True)
+[14:52:09] read_last_jsonl | path= classified_outputs.jsonl
+[14:52:09] read_last_jsonl | total_lines= 1
+[14:52:09] main | query='How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?' | funcs=['Background', 'Motivation']
+[14:52:11] main | core_terms= ['r-process', 'element abundances', 'astrophysical processes']
+[14:52:11] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:52:11] load_topk_jsonl | rows= 20
+[14:52:11] load_topk_jsonl | first: rank= 0 paper_id= nucl-th/0103049 title_snip='Changes in r-process abundances at late times' abs_len= 661
+[14:52:11] main | running function= Background
+[14:52:11] select | function= Background | candidates_in= 20
+[14:52:11] select | core_terms= ['r-process', 'element abundances', 'astrophysical processes']
+[14:52:11] select | no cosine prune; kept=20/20
+[14:52:11] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['nucl-th/0103049', 'astro-ph/0103083', 'astro-ph/0101440', 'astro-ph/0104187', 'astro-ph/0101407', 'astro-ph/0103072', 'astro-ph/0104189', 'astro-ph/0104392', 'nucl-ex/0104021', 'hep-ph/0104234']
+[14:52:11] select | verify relaxed 1/10
+[14:52:11] verify | func= Background | rank= 0 | pid= nucl-th/0103049 | title_snip='Changes in r-process abundances at late times' | abs_len= 661
+[14:52:14] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:52:14] select | verify relaxed 2/10
+[14:52:14] verify | func= Background | rank= 1 | pid= astro-ph/0103083 | title_snip='A Simple Model for r-Process Scatter and Halo Evolution' | abs_len= 1288
+[14:52:18] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[14:52:18] select | verify relaxed 3/10
+[14:52:18] verify | func= Background | rank= 2 | pid= astro-ph/0101440 | title_snip='Halo Star Abundances and r-Process Synthesis' | abs_len= 197
+[14:52:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:52:21] select | verify relaxed 4/10
+[14:52:21] verify | func= Background | rank= 3 | pid= astro-ph/0104187 | title_snip='Diverse Supernova Sources for the r-Process and Abundances in Metal-Po…' | abs_len= 872
+[14:52:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:52:25] select | verify relaxed 5/10
+[14:52:25] verify | func= Background | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[14:52:28] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:52:28] select | verify relaxed 6/10
+[14:52:28] verify | func= Background | rank= 5 | pid= astro-ph/0103072 | title_snip='A Mapping Survey of the 12CO and 13CO Emission in Galaxies' | abs_len= 1548
+[14:52:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:52:31] select | verify relaxed 7/10
+[14:52:31] verify | func= Background | rank= 6 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[14:52:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:52:34] select | verify relaxed 8/10
+[14:52:34] verify | func= Background | rank= 7 | pid= astro-ph/0104392 | title_snip='Systematic Uncertainties in the Determination of the Primordial 4He
+  …' | abs_len= 1524
+[14:52:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:52:36] select | verify relaxed 9/10
+[14:52:36] verify | func= Background | rank= 8 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[14:52:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:52:39] select | verify relaxed 10/10
+[14:52:39] verify | func= Background | rank= 9 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[14:52:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?
+- WINNER: astro-ph/0101440 | Halo Star Abundances and r-Process Synthesis
+- QUOTE : heavy element abundances in low metallicity stars
+- WHY   : sufficient
+[14:52:43] main | running function= Motivation
+[14:52:43] select | function= Motivation | candidates_in= 20
+[14:52:43] select | core_terms= ['r-process', 'element abundances', 'astrophysical processes']
+[14:52:43] select | no cosine prune; kept=20/20
+[14:52:43] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['nucl-th/0103049', 'astro-ph/0103083', 'astro-ph/0101440', 'astro-ph/0104187', 'astro-ph/0101407', 'astro-ph/0103072', 'astro-ph/0104189', 'astro-ph/0104392', 'nucl-ex/0104021', 'hep-ph/0104234']
+[14:52:43] select | verify relaxed 1/10
+[14:52:43] verify | func= Motivation | rank= 0 | pid= nucl-th/0103049 | title_snip='Changes in r-process abundances at late times' | abs_len= 661
+[14:52:47] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:52:47] select | verify relaxed 2/10
+[14:52:47] verify | func= Motivation | rank= 1 | pid= astro-ph/0103083 | title_snip='A Simple Model for r-Process Scatter and Halo Evolution' | abs_len= 1288
+[14:52:50] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:52:50] select | verify relaxed 3/10
+[14:52:50] verify | func= Motivation | rank= 2 | pid= astro-ph/0101440 | title_snip='Halo Star Abundances and r-Process Synthesis' | abs_len= 197
+[14:52:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:52:53] select | verify relaxed 4/10
+[14:52:53] verify | func= Motivation | rank= 3 | pid= astro-ph/0104187 | title_snip='Diverse Supernova Sources for the r-Process and Abundances in Metal-Po…' | abs_len= 872
+[14:52:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:52:57] select | verify relaxed 5/10
+[14:52:57] verify | func= Motivation | rank= 4 | pid= astro-ph/0101407 | title_snip='Chemical Evolution and Starbursts' | abs_len= 629
+[14:53:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:53:00] select | verify relaxed 6/10
+[14:53:00] verify | func= Motivation | rank= 5 | pid= astro-ph/0103072 | title_snip='A Mapping Survey of the 12CO and 13CO Emission in Galaxies' | abs_len= 1548
+[14:53:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:02] select | verify relaxed 7/10
+[14:53:02] verify | func= Motivation | rank= 6 | pid= astro-ph/0104189 | title_snip='Scintillation as a Probe of the Intergalactic Medium' | abs_len= 810
+[14:53:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:05] select | verify relaxed 8/10
+[14:53:05] verify | func= Motivation | rank= 7 | pid= astro-ph/0104392 | title_snip='Systematic Uncertainties in the Determination of the Primordial 4He
+  …' | abs_len= 1524
+[14:53:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:08] select | verify relaxed 9/10
+[14:53:08] verify | func= Motivation | rank= 8 | pid= nucl-ex/0104021 | title_snip='Hadron freeze-out conditions in high energy nuclear collisions' | abs_len= 670
+[14:53:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:10] select | verify relaxed 10/10
+[14:53:10] verify | func= Motivation | rank= 9 | pid= hep-ph/0104234 | title_snip='A proposal on the possibility of detecting D-particles' | abs_len= 1182
+[14:53:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How do the observed variations in r-process element abundances inform our understanding of the background astrophysical processes and suggest avenues for future research?
+- WINNER: astro-ph/0103083 | A Simple Model for r-Process Scatter and Halo Evolution
+- QUOTE : striking and unexpected behavior
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The observed variations in r-process element abundances provide insight into the background astrophysical processes [Background] (astro-ph/0101440), and the significant scatter in r/Fe ratios across stars with similar metallicity motivates further research into the nucleosynthesis events that contribute to a star's composition [Motivation] (astro-ph/0103083).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

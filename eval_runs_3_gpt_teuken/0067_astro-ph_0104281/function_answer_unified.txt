@@ -1,0 +1,1 @@
+The X-ray spectrum of NGC 4151, being one of the flattest known for Seyfert galaxies [Background] (astro-ph/0104281), motivates the development of a two-phase model [Motivation] (astro-ph/0104281). This model is further supported by the expectation that such flat X-ray spectra favor the presence of two gas phases in pressure equilibrium [Motivation] (astro-ph/0104281).

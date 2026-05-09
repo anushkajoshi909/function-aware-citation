@@ -1,0 +1,18 @@
+{
+  "answer": "The thesis extends the Minimal Supersymmetric Standard Model and compares its results with existing theories on baryogenesis and cosmic rays (hep-ph/0104251).",
+  "predicted_paper_id": "hep-ph/0104251",
+  "explanation": "This paper discusses baryogenesis in the Minimal Supersymmetric Standard Model and analyzes cosmic rays, making it the most relevant to the question.",
+  "evidence_quote": "baryogenesis in the Minimal Supersymmetric Standard Model",
+  "topk_list": [
+    "hep-ph/0104276",
+    "hep-ph/0103270",
+    "hep-ph/0102043",
+    "hep-ph/0102113",
+    "hep-ph/0103041",
+    "hep-ph/0103095",
+    "hep-ph/0104251",
+    "hep-ph/0102049",
+    "hep-ph/0103299",
+    "hep-ph/0102096"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "Future research on UHE neutrino scattering onto relic cosmic neutrinos may be motivated by the potential to overcome the GZK cut-off and uncover new information about neutrino masses and relic densities (astro-ph/0102426).",
+  "predicted_paper_id": "astro-ph/0102426",
+  "explanation": "This paper discusses the possibility of using UHE neutrino scattering onto relic cosmic neutrinos to overcome the GZK cut-off and gain insight into neutrino masses and relic densities.",
+  "evidence_quote": "overcome GZK cut-off",
+  "topk_list": [
+    "astro-ph/0102426",
+    "hep-ph/0104234",
+    "astro-ph/0103300",
+    "hep-ph/0101210",
+    "hep-ph/0104200",
+    "hep-ph/0101091",
+    "hep-ph/0101328",
+    "hep-ph/0103288",
+    "hep-ph/0103065",
+    "gr-qc/0103035"
+  ]
+}

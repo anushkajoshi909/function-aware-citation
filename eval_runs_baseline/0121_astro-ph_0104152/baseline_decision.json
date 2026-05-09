@@ -1,0 +1,18 @@
+{
+  "answer": "The dynamic and adaptive method for domain decomposition in the parallel tree-code achieves low computational costs due to its hierarchical data arrangement and 'on the fly' domain decomposition (astro-ph/0104152).",
+  "predicted_paper_id": "astro-ph/0104152",
+  "explanation": "This paper best supports the answer because it specifically describes the dynamic and adaptive method for domain decomposition in the parallel tree-code and its impact on computational costs.",
+  "evidence_quote": "dynamic and adaptive method for the domain decomposition",
+  "topk_list": [
+    "astro-ph/0104152",
+    "astro-ph/0101447",
+    "astro-ph/0101148",
+    "astro-ph/0104258",
+    "astro-ph/0103503",
+    "astro-ph/0102068",
+    "astro-ph/0103001",
+    "cond-mat/0103263",
+    "cs/0103001",
+    "astro-ph/0103301"
+  ]
+}

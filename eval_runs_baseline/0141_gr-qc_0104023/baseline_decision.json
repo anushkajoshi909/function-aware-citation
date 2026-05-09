@@ -1,0 +1,18 @@
+{
+  "answer": "Future research can extend the current understanding of the Church-Turing Theses by investigating non-Turing computations via Malament-Hogarth space-times (gr-qc/0104023).",
+  "predicted_paper_id": "gr-qc/0104023",
+  "explanation": "This paper directly addresses the Church-Turing Theses in the context of general relativity theory, providing a foundation for future research.",
+  "evidence_quote": "Non-Turing computations via Malament-Hogarth space-times",
+  "topk_list": [
+    "gr-qc/0104023",
+    "physics/0101057",
+    "hep-ph/0101244",
+    "hep-ph/0102096",
+    "hep-ph/0103038",
+    "hep-th/0102147",
+    "astro-ph/0101455",
+    "hep-ph/0102249",
+    "hep-ph/0103333",
+    "hep-ph/0103349"
+  ]
+}

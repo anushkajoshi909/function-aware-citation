@@ -1,0 +1,18 @@
+{
+  "answer": "The re-examination of global axisymmetric stability in the context of magnetorotational instabilities is motivated by the need to understand the conditions under which MRI can occur in hydrodynamically stable flows, as discussed in astro-ph/0104206.",
+  "predicted_paper_id": "astro-ph/0104206",
+  "explanation": "This paper provides a detailed analysis of the global axisymmetric stability of viscous, resistive, magnetized Couette flow, which is relevant to the study of MRI in astrophysical contexts.",
+  "evidence_quote": "Global axisymmetric stability of viscous, resistive, magnetized Couette flow is re-examined",
+  "topk_list": [
+    "astro-ph/0103226",
+    "astro-ph/0104206",
+    "gr-qc/0103060",
+    "astro-ph/0101161",
+    "astro-ph/0104411",
+    "gr-qc/0102076",
+    "cond-mat/0103489",
+    "astro-ph/0102415",
+    "astro-ph/0104302",
+    "astro-ph/0101009"
+  ]
+}

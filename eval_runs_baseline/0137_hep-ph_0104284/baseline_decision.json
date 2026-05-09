@@ -1,0 +1,18 @@
+{
+  "answer": "The calculation of Higgs-boson contributions to rare B decays is motivated by the need to understand the underlying QCD dynamics and to provide a precise prediction of the decay rates, as discussed in the context of perturbative QCD calculations (hep-ph/0101045).",
+  "predicted_paper_id": "hep-ph/0101045",
+  "explanation": "This paper provides a detailed discussion of the perturbative QCD calculations of exclusive rare weak B meson decays, which is relevant to the calculation of Higgs-boson contributions to rare B decays.",
+  "evidence_quote": "perturbative QCD calculations of certain exclusive rare weak $B$ meson decays",
+  "topk_list": [
+    "hep-ph/0104230",
+    "hep-ph/0104153",
+    "hep-ph/0102012",
+    "hep-ph/0101045",
+    "astro-ph/0103411",
+    "hep-ex/0101055",
+    "hep-ph/0103007",
+    "hep-ph/0101169",
+    "hep-ph/0102013",
+    "hep-ph/0101301"
+  ]
+}

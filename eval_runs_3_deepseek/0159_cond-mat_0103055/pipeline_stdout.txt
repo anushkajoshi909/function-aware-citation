@@ -1,0 +1,116 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "Fallback: classifier did not return a valid object."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:52:55] main | args: Namespace(max_check=10, debug=True)
+[14:52:55] read_last_jsonl | path= classified_outputs.jsonl
+[14:52:55] read_last_jsonl | total_lines= 1
+[14:52:55] main | query='How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?' | funcs=['Background']
+[14:52:56] main | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[14:52:56] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:52:56] load_topk_jsonl | rows= 20
+[14:52:56] load_topk_jsonl | first: rank= 0 paper_id= hep-lat/0104001 title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' abs_len= 391
+[14:52:56] main | running function= Background
+[14:52:56] select | function= Background | candidates_in= 20
+[14:52:56] select | core_terms= ['bosons', 'lattice', 'superfluid properties']
+[14:52:56] select | no cosine prune; kept=20/20
+[14:52:56] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-lat/0104001', 'cond-mat/0103610', 'hep-lat/0101015', 'cond-mat/0103055', 'hep-lat/0101003', 'cond-mat/0103293', 'hep-ph/0103299', 'hep-lat/0101017', 'nucl-th/0104043', 'hep-ph/0104033']
+[14:52:56] select | verify relaxed 1/10
+[14:52:56] verify | func= Background | rank= 0 | pid= hep-lat/0104001 | title_snip='A new method to study lattice QCD at finite temperature and chemical
+ …' | abs_len= 391
+[14:52:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:52:59] select | verify relaxed 2/10
+[14:52:59] verify | func= Background | rank= 1 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[14:53:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:53:02] select | verify relaxed 3/10
+[14:53:02] verify | func= Background | rank= 2 | pid= hep-lat/0101015 | title_snip='Schwinger Model with the Overlap-Dirac Operator: exact results versus …' | abs_len= 481
+[14:53:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:05] select | verify relaxed 4/10
+[14:53:05] verify | func= Background | rank= 3 | pid= cond-mat/0103055 | title_snip='Superfluidity of bosons on a deformable lattice' | abs_len= 1505
+[14:53:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:53:08] select | verify relaxed 5/10
+[14:53:08] verify | func= Background | rank= 4 | pid= hep-lat/0101003 | title_snip='Lattice B-Physics' | abs_len= 597
+[14:53:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:11] select | verify relaxed 6/10
+[14:53:11] verify | func= Background | rank= 5 | pid= cond-mat/0103293 | title_snip='Local quantum coherence and superfluidity' | abs_len= 1066
+[14:53:14] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:53:14] select | verify relaxed 7/10
+[14:53:14] verify | func= Background | rank= 6 | pid= hep-ph/0103299 | title_snip='Constraining Models of New Physics in Light of Recent Experimental
+  R…' | abs_len= 780
+[14:53:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:17] select | verify relaxed 8/10
+[14:53:17] verify | func= Background | rank= 7 | pid= hep-lat/0101017 | title_snip='Abelian chromomagnetic background field at finite temperature on the
+ …' | abs_len= 650
+[14:53:19] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:53:19] select | verify relaxed 9/10
+[14:53:19] verify | func= Background | rank= 8 | pid= nucl-th/0104043 | title_snip='A New Slant on Hadron Structure' | abs_len= 689
+[14:53:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:22] select | verify relaxed 10/10
+[14:53:22] verify | func= Background | rank= 9 | pid= hep-ph/0104033 | title_snip='The thermodynamics of the quark-gluon plasma: Self-consistent
+  resumm…' | abs_len= 607
+[14:53:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:53:26] arbiter | rejected off-topic winner: cond-mat/0103610
+[14:53:27] arbiter | accepted fallback: cond-mat/0103055
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current work compare to and utilize existing methods for studying superfluid properties of bosons on a lattice?
+- WINNER: cond-mat/0103055 | Superfluidity of bosons on a deformable lattice
+- QUOTE : superfluid properties of a system of interacting bosons on a lattice
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work builds upon existing methods for studying superfluid properties of bosons on a lattice, extending the Beliaev-Popov formalism to account for a deformable lattice [Background] (cond-mat/0103055). It utilizes this extended framework to examine the effects of phonon-mediated interactions on the superfluid state, demonstrating the robustness of superfluidity in the presence of lattice deformations [Background] (cond-mat/0103055).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

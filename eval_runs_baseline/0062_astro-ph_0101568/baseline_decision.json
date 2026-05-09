@@ -1,0 +1,18 @@
+{
+  "answer": "The work on the self-gravitating non-relativistic gas at thermal equilibrium motivates and extends previous research by providing a complete picture of the system's thermodynamic limit and phase diagram (astro-ph/0101568).",
+  "predicted_paper_id": "astro-ph/0101568",
+  "explanation": "This paper provides a comprehensive study of the self-gravitating non-relativistic gas at thermal equilibrium, including Monte Carlo simulations, analytic mean field methods, and low density expansions.",
+  "evidence_quote": "selfgravitating non-relativistic gas at thermal equilibrium",
+  "topk_list": [
+    "hep-ph/0101202",
+    "gr-qc/0101106",
+    "cond-mat/0103610",
+    "hep-ph/0101078",
+    "quant-ph/0101130",
+    "astro-ph/0101568",
+    "astro-ph/0101265",
+    "nucl-th/0101008",
+    "cond-mat/0102056",
+    "hep-th/0103034"
+  ]
+}

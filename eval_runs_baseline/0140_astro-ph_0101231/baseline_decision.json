@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends our understanding of cosmic ray propagation by providing new constraints on propagation parameters, which is crucial for interpreting high-precision measurements of cosmic ray nuclei fluxes (astro-ph/0101231).",
+  "predicted_paper_id": "astro-ph/0101231",
+  "explanation": "This paper provides new constraints on diffusion parameters using cosmic ray nuclei data, which is essential for understanding cosmic ray propagation and interpreting future high-precision measurements.",
+  "evidence_quote": "Cosmic ray nuclei fluxes are expected to be measured with high precision",
+  "topk_list": [
+    "astro-ph/0102077",
+    "hep-ex/0101049",
+    "astro-ph/0103043",
+    "hep-ph/0104234",
+    "astro-ph/0101175",
+    "astro-ph/0101216",
+    "astro-ph/0101331",
+    "astro-ph/0101231",
+    "astro-ph/0103150",
+    "hep-ph/0103322"
+  ]
+}

@@ -1,0 +1,1 @@
+The identification of Hilbert's error motivates a deeper understanding of black holes by revealing the flaws in his derivation [Motivation] (gr-qc/0102055). This understanding extends the knowledge of black holes in the context of Schwarzschild's result, as Hilbert's error leads to an analytically extendible space-time containing a black hole [Extends] (gr-qc/0102055).

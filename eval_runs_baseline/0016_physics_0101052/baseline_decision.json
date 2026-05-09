@@ -1,0 +1,18 @@
+{
+  "answer": "The understanding of X-ray photon interactions with pixels provides background for determining the X-ray landing position, and methods such as analyzing split events are used to achieve subpixel resolution (physics/0101052).",
+  "predicted_paper_id": "physics/0101052",
+  "explanation": "This paper directly addresses the topic of subpixel resolution of X-ray charge-coupled devices based on charge cloud shape, making it the most relevant to the question.",
+  "evidence_quote": "determine the X-ray landing position with subpixel resolution",
+  "topk_list": [
+    "physics/0101052",
+    "astro-ph/0101467",
+    "astro-ph/0101557",
+    "cond-mat/0101142",
+    "quant-ph/0101122",
+    "hep-ph/0101084",
+    "hep-ph/0102105",
+    "astro-ph/0101466",
+    "astro-ph/0103439",
+    "astro-ph/0103048"
+  ]
+}

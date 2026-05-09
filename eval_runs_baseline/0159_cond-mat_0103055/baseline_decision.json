@@ -1,0 +1,18 @@
+{
+  "answer": "The current work utilizes existing methods for studying superfluid properties of bosons on a lattice, such as the Beliaev-Popov formalism, as seen in cond-mat/0103055.",
+  "predicted_paper_id": "cond-mat/0103055",
+  "explanation": "This paper extends the Beliaev-Popov formalism to study superfluid properties of bosons on a deformable lattice, making it relevant to the current work.",
+  "evidence_quote": "extension of the Beliaev - Popov formalism",
+  "topk_list": [
+    "hep-lat/0104001",
+    "cond-mat/0103610",
+    "hep-lat/0101015",
+    "cond-mat/0103055",
+    "hep-lat/0101003",
+    "cond-mat/0103293",
+    "hep-ph/0103299",
+    "hep-lat/0101017",
+    "nucl-th/0104043",
+    "hep-ph/0104033"
+  ]
+}

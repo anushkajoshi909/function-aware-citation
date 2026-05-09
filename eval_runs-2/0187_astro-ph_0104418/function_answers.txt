@@ -1,1 +1,0 @@
-The methods used in current redshift surveys have improved significantly over previous ones, with some surveys being up to an order of magnitude larger (astro-ph/0104418). [Background]

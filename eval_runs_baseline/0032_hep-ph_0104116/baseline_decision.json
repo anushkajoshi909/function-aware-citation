@@ -1,0 +1,18 @@
+{
+  "answer": "The 2-3 symmetry motivates and extends our understanding of neutrino mass matrix and its predictions, such as maximum mixing in atmospheric neutrino oscillation (hep-ph/0104116).",
+  "predicted_paper_id": "hep-ph/0104116",
+  "explanation": "This paper directly discusses the 2-3 symmetry and its implications for neutrino mass matrix and oscillations, making it the most relevant to the question.",
+  "evidence_quote": "2-3 symmetry",
+  "topk_list": [
+    "hep-ph/0104116",
+    "hep-ph/0103244",
+    "hep-ph/0102255",
+    "hep-ph/0103278",
+    "hep-ph/0103195",
+    "hep-ph/0103126",
+    "hep-ph/0103281",
+    "hep-ph/0101181",
+    "hep-ph/0102060",
+    "hep-ph/0101231"
+  ]
+}

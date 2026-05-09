@@ -1,0 +1,18 @@
+{
+  "answer": "The study's findings on the coexistence of two scaling regimes in shear dominated flows are consistent with previous work, as seen in the analysis of double scaling and intermittency (nlin/0104042).",
+  "predicted_paper_id": "nlin/0104042",
+  "explanation": "This paper provides evidence of the coexistence of the two regimes and supports the conjecture that the statistical properties of the dissipation field are practically insensible to the mean shear.",
+  "evidence_quote": "coexistence of the two regimes",
+  "topk_list": [
+    "nlin/0104042",
+    "nlin/0102015",
+    "nlin/0101050",
+    "nlin/0104056",
+    "astro-ph/0101397",
+    "physics/0101037",
+    "nlin/0102023",
+    "nlin/0103017",
+    "cond-mat/0101474",
+    "cond-mat/0102302"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "Future research might extend the current understanding of wind-driven instability in accretion disks by investigating the effects of hydrodynamical winds on the disk structure and stability, as seen in astro-ph/0102119.",
+  "predicted_paper_id": "astro-ph/0102119",
+  "explanation": "This paper studies the influence of hydrodynamical winds on hot accretion disk solutions and finds that the presence of a wind can lead to a new type of instability called 'wind driven instability'.",
+  "evidence_quote": "wind driven insbility",
+  "topk_list": [
+    "astro-ph/0102119",
+    "astro-ph/0101293",
+    "astro-ph/0103230",
+    "astro-ph/0103274",
+    "astro-ph/0103409",
+    "astro-ph/0101501",
+    "astro-ph/0102045",
+    "astro-ph/0102478",
+    "astro-ph/0101253",
+    "astro-ph/0101470"
+  ]
+}

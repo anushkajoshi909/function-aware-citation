@@ -1,2 +1,0 @@
-The calculation of Higgs-boson contributions to rare B decays is motivated by the goal of improving knowledge of CP violation in the B system (hep-ex/0101055). [Background]
-The calculation of Higgs-boson contributions to rare B decays is motivated by the goal of improving our knowledge of CP violation in the B system. Understanding the Higgs search and B physics at the Tevatron, particularly in the context of Run II, is necessary to appreciate this calculation (hep-ex/0101055). [Motivation]

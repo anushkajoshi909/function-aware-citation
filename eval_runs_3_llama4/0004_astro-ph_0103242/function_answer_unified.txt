@@ -1,0 +1,1 @@
+The findings of this study compare to previous work by highlighting related results that were previously overlooked [Compares] (quant-ph/0102110). This comparison suggests future research directions that build upon the existing knowledge in nonlinear quantum evolution [Compares] (quant-ph/0102110).

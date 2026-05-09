@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query explicitly asks how a study extends existing theoretical understanding (5-d Randall-Sundrum model) and identifies directions for future research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[15:17:44] main | args: Namespace(max_check=10, debug=True)
+[15:17:44] read_last_jsonl | path= classified_outputs.jsonl
+[15:17:44] read_last_jsonl | total_lines= 1
+[15:17:44] main | query='How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?' | funcs=['Extends', 'FutureWork']
+[15:17:47] main | core_terms= ['KK graviton', 'Graviton Factory', 'Randall-Sundrum model', 'self-interactions', '5-d', 'KK', 'Randall-Sundrum']
+[15:17:47] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:17:47] load_topk_jsonl | rows= 20
+[15:17:47] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0104199 title_snip='Bulk Physics at a Graviton Factory' abs_len= 1379
+[15:17:47] main | running function= Extends
+[15:17:47] select | function= Extends | candidates_in= 20
+[15:17:47] select | core_terms= ['KK graviton', 'Graviton Factory', 'Randall-Sundrum model', 'self-interactions', '5-d', 'KK', 'Randall-Sundrum']
+[15:17:47] select | no cosine prune; kept=20/20
+[15:17:47] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0104199', 'hep-ph/0103055', 'hep-th/0101214', 'hep-ph/0103308', 'hep-th/0102144', 'hep-ph/0103127', 'hep-ph/0103214', 'hep-ph/0102182', 'hep-ph/0104002', 'hep-th/0102145']
+[15:17:47] select | verify relaxed 1/10
+[15:17:47] verify | func= Extends | rank= 0 | pid= hep-ph/0104199 | title_snip='Bulk Physics at a Graviton Factory' | abs_len= 1379
+[15:17:50] verify | result supports= True fit= 0.90 top= 0.90 invalid= — cue_hint= False
+[15:17:50] select | verify relaxed 2/10
+[15:17:50] verify | func= Extends | rank= 1 | pid= hep-ph/0103055 | title_snip='Constraining the Randall-Sundrum Model Using Diphoton Production at
+  …' | abs_len= 521
+[15:17:54] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:17:54] select | verify relaxed 3/10
+[15:17:54] verify | func= Extends | rank= 2 | pid= hep-th/0101214 | title_snip='Brane-worlds in 5d supergravity' | abs_len= 192
+[15:17:57] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:17:57] select | verify relaxed 4/10
+[15:17:57] verify | func= Extends | rank= 3 | pid= hep-ph/0103308 | title_snip='Z boson pair production at LHC in a stabilized Randall-Sundrum scenari…' | abs_len= 990
+[15:18:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:00] select | verify relaxed 5/10
+[15:18:00] verify | func= Extends | rank= 4 | pid= hep-th/0102144 | title_snip='Dynamical Instabilities of the Randall-Sundrum Model' | abs_len= 587
+[15:18:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:04] select | verify relaxed 6/10
+[15:18:04] verify | func= Extends | rank= 5 | pid= hep-ph/0103127 | title_snip='Muon Anomalous Magnetic Moment (g-2)_mu and the Randall-Sundrum Model' | abs_len= 618
+[15:18:07] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:07] select | verify relaxed 7/10
+[15:18:07] verify | func= Extends | rank= 6 | pid= hep-ph/0103214 | title_snip='Randall-Sundrum II Cosmology, AdS/CFT, and the Bulk Black Hole' | abs_len= 1468
+[15:18:11] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:18:11] select | verify relaxed 8/10
+[15:18:11] verify | func= Extends | rank= 7 | pid= hep-ph/0102182 | title_snip='Cosmology of Randall-Sundrum models' | abs_len= 374
+[15:18:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:18:14] select | verify relaxed 9/10
+[15:18:14] verify | func= Extends | rank= 8 | pid= hep-ph/0104002 | title_snip='Dynamical Fermion Masses Under the Influence of Kaluza-Klein Fermions …' | abs_len= 391
+[15:18:18] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:18] select | verify relaxed 10/10
+[15:18:18] verify | func= Extends | rank= 9 | pid= hep-th/0102145 | title_snip='Four-Dimensional Supergravities from Five-Dimensional Brane Worlds' | abs_len= 718
+[15:18:22] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?
+- WINNER: hep-ph/0104199 | Bulk Physics at a Graviton Factory
+- QUOTE : Measuring the self-interactions of these KK gravitons
+- WHY   : sufficient
+[15:18:23] main | running function= FutureWork
+[15:18:23] select | function= FutureWork | candidates_in= 20
+[15:18:23] select | core_terms= ['KK graviton', 'Graviton Factory', 'Randall-Sundrum model', 'self-interactions', '5-d', 'KK', 'Randall-Sundrum']
+[15:18:23] select | no cosine prune; kept=20/20
+[15:18:23] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0104199', 'hep-ph/0103055', 'hep-th/0101214', 'hep-ph/0103308', 'hep-th/0102144', 'hep-ph/0103127', 'hep-ph/0103214', 'hep-ph/0102182', 'hep-ph/0104002', 'hep-th/0102145']
+[15:18:23] select | verify relaxed 1/10
+[15:18:23] verify | func= FutureWork | rank= 0 | pid= hep-ph/0104199 | title_snip='Bulk Physics at a Graviton Factory' | abs_len= 1379
+[15:18:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:18:26] select | verify relaxed 2/10
+[15:18:26] verify | func= FutureWork | rank= 1 | pid= hep-ph/0103055 | title_snip='Constraining the Randall-Sundrum Model Using Diphoton Production at
+  …' | abs_len= 521
+[15:18:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:30] select | verify relaxed 3/10
+[15:18:30] verify | func= FutureWork | rank= 2 | pid= hep-th/0101214 | title_snip='Brane-worlds in 5d supergravity' | abs_len= 192
+[15:18:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:33] select | verify relaxed 4/10
+[15:18:33] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103308 | title_snip='Z boson pair production at LHC in a stabilized Randall-Sundrum scenari…' | abs_len= 990
+[15:18:36] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:18:36] select | verify relaxed 5/10
+[15:18:36] verify | func= FutureWork | rank= 4 | pid= hep-th/0102144 | title_snip='Dynamical Instabilities of the Randall-Sundrum Model' | abs_len= 587
+[15:18:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:40] select | verify relaxed 6/10
+[15:18:40] verify | func= FutureWork | rank= 5 | pid= hep-ph/0103127 | title_snip='Muon Anomalous Magnetic Moment (g-2)_mu and the Randall-Sundrum Model' | abs_len= 618
+[15:18:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[15:18:43] select | verify relaxed 7/10
+[15:18:43] verify | func= FutureWork | rank= 6 | pid= hep-ph/0103214 | title_snip='Randall-Sundrum II Cosmology, AdS/CFT, and the Bulk Black Hole' | abs_len= 1468
+[15:18:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:18:46] select | verify relaxed 8/10
+[15:18:46] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102182 | title_snip='Cosmology of Randall-Sundrum models' | abs_len= 374
+[15:18:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:18:50] select | verify relaxed 9/10
+[15:18:50] verify | func= FutureWork | rank= 8 | pid= hep-ph/0104002 | title_snip='Dynamical Fermion Masses Under the Influence of Kaluza-Klein Fermions …' | abs_len= 391
+[15:18:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:18:53] select | verify relaxed 10/10
+[15:18:53] verify | func= FutureWork | rank= 9 | pid= hep-th/0102145 | title_snip='Four-Dimensional Supergravities from Five-Dimensional Brane Worlds' | abs_len= 718
+[15:18:56] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can the study of KK graviton self-interactions at a future Graviton Factory extend our understanding of the 5-d Randall-Sundrum model and suggest areas for future research?
+- WINNER: hep-ph/0104199 | Bulk Physics at a Graviton Factory
+- QUOTE : Measuring the self-interactions of these KK gravitons
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The study of KK graviton self-interactions at a future Graviton Factory extends our understanding of the 5-d Randall-Sundrum model by probing the accuracy of the 5-d Einstein gravity picture [Extends] (hep-ph/0104199). This research also suggests areas for future work, such as measuring the decays of heavier states to lighter ones and studying the sensitivity to higher derivative operators [FutureWork] (hep-ph/0104199).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

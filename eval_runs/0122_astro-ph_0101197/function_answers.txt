@@ -1,2 +1,0 @@
-The proposed model of stellar system formation is compared to existing observations of halo globular clusters in terms of characteristics such as size, velocity dispersion, and mass. The model's predictions, including the expected number density and mass function of the stellar systems, are found to be consistent with the observed properties of halo globular clusters (astro-ph/0101197). [Compares]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

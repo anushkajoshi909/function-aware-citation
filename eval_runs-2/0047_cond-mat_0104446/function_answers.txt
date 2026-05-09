@@ -1,2 +1,0 @@
-The limited understanding of the magnetic structure of CeRhIn$_{5}$ and Ce$_{2}$RhIn$_{8}$, particularly the anisotropic spin-density wave and simple antiferromagnetic magnon behaviors, motivates further research into their field-dependent heat capacity. Further work could explore the implications of these behaviors, which may shed light on the dimensional nature of their magnetic structures (cond-mat/0104446). [Motivation]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

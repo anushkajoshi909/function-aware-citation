@@ -1,0 +1,18 @@
+{
+  "answer": "The development of lossy data compression algorithms relates to previous work by utilizing the Asymptotic Equipartition Property (AEP) and building upon the work of Wyner and Ziv in 1989 (math/0103007).",
+  "predicted_paper_id": "math/0103007",
+  "explanation": "This paper provides a development of parts of rate-distortion theory and pattern-matching algorithms for lossy data compression, closely paralleling the corresponding development in lossless compression.",
+  "evidence_quote": "a lossy version of the Asymptotic Equipartition Property",
+  "topk_list": [
+    "math/0103007",
+    "physics/0104020",
+    "cond-mat/0101105",
+    "math/0103170",
+    "gr-qc/0104063",
+    "physics/0102066",
+    "quant-ph/0102110",
+    "cond-mat/0103455",
+    "physics/0101058",
+    "astro-ph/0103411"
+  ]
+}

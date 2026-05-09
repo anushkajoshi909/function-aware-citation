@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Uses",
+    "Compares"
+  ],
+  "justification": "The query asks how the current work utilizes prior research (Uses) and how it stands relative to those studies (Compares)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[00:27:18] main | args: Namespace(max_check=10, debug=True)
+[00:27:18] read_last_jsonl | path= classified_outputs.jsonl
+[00:27:18] read_last_jsonl | total_lines= 1
+[00:27:18] main | query='How does the current work use and compare with previous studies of circumstellar disks around classical T Tauri stars?' | funcs=['Uses', 'Compares']
+[00:27:20] main | core_terms= ['classical T Tauri stars', 'circumstellar disks', 'previous studies']
+[00:27:20] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[00:27:20] load_topk_jsonl | rows= 20
+[00:27:20] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103458 title_snip='Near-infrared coronagraphic imaging of the circumstellar disk around T…' abs_len= 1107
+[00:27:20] main | running function= Uses
+[00:27:20] select | function= Uses | candidates_in= 20
+[00:27:20] select | core_terms= ['classical T Tauri stars', 'circumstellar disks', 'previous studies']
+[00:27:20] select | no cosine prune; kept=20/20
+[00:27:20] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103458', 'astro-ph/0103174', 'astro-ph/0103461', 'astro-ph/0104158', 'astro-ph/0104318', 'astro-ph/0101309', 'astro-ph/0104066', 'astro-ph/0103311', 'astro-ph/0103098', 'astro-ph/0104274']
+[00:27:20] select | verify relaxed 1/10
+[00:27:20] verify | func= Uses | rank= 0 | pid= astro-ph/0103458 | title_snip='Near-infrared coronagraphic imaging of the circumstellar disk around T…' | abs_len= 1107
+[00:27:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:27:23] select | verify relaxed 2/10
+[00:27:23] verify | func= Uses | rank= 1 | pid= astro-ph/0103174 | title_snip='Atomic T Tauri disk winds heated by ambipolar diffusion' | abs_len= 1124
+[00:27:26] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:27:26] select | verify relaxed 3/10
+[00:27:26] verify | func= Uses | rank= 2 | pid= astro-ph/0103461 | title_snip='Observations of Circumstellar Disks' | abs_len= 1289
+[00:27:29] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[00:27:29] select | verify relaxed 4/10
+[00:27:29] verify | func= Uses | rank= 3 | pid= astro-ph/0104158 | title_snip='Dust to Dust: Evidence for Planet Formation?' | abs_len= 1120
+[00:27:32] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:27:32] select | verify relaxed 5/10
+[00:27:32] verify | func= Uses | rank= 4 | pid= astro-ph/0104318 | title_snip='Coronal structure geometries on pre-main sequence stars' | abs_len= 1473
+[00:27:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:27:35] select | verify relaxed 6/10
+[00:27:35] verify | func= Uses | rank= 5 | pid= astro-ph/0101309 | title_snip='A Three Micron Survey of the Chamaeleon I Dark Cloud' | abs_len= 739
+[00:27:38] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:27:38] select | verify relaxed 7/10
+[00:27:38] verify | func= Uses | rank= 6 | pid= astro-ph/0104066 | title_snip='High-resolution Near-Infrared Images and Models of the Circumstellar
+ …' | abs_len= 1144
+[00:27:42] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:27:42] select | verify relaxed 8/10
+[00:27:42] verify | func= Uses | rank= 7 | pid= astro-ph/0103311 | title_snip='Circumstellar structure of RU Lupi down to au scales' | abs_len= 1189
+[00:27:45] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:27:45] select | verify relaxed 9/10
+[00:27:45] verify | func= Uses | rank= 8 | pid= astro-ph/0103098 | title_snip='Observational Constraints on the Formation and Evolution of Binary Sta…' | abs_len= 1734
+[00:27:49] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:27:49] select | verify relaxed 10/10
+[00:27:49] verify | func= Uses | rank= 9 | pid= astro-ph/0104274 | title_snip='HST/NICMOS detection of a partially embedded, intermediate-mass
+  pre-…' | abs_len= 1113
+[00:27:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work use and compare with previous studies of circumstellar disks around classical T Tauri stars?
+- WINNER: astro-ph/0103458 | Near-infrared coronagraphic imaging of the circumstellar disk around TW
+  Hydrae
+- QUOTE : disks around classical T Tauri stars
+- WHY   : sufficient
+[00:27:53] main | running function= Compares
+[00:27:53] select | function= Compares | candidates_in= 20
+[00:27:53] select | core_terms= ['classical T Tauri stars', 'circumstellar disks', 'previous studies']
+[00:27:53] select | no cosine prune; kept=20/20
+[00:27:53] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103458', 'astro-ph/0103174', 'astro-ph/0103461', 'astro-ph/0104158', 'astro-ph/0104318', 'astro-ph/0101309', 'astro-ph/0104066', 'astro-ph/0103311', 'astro-ph/0103098', 'astro-ph/0104274']
+[00:27:53] select | verify relaxed 1/10
+[00:27:53] verify | func= Compares | rank= 0 | pid= astro-ph/0103458 | title_snip='Near-infrared coronagraphic imaging of the circumstellar disk around T…' | abs_len= 1107
+[00:27:57] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:27:57] select | verify relaxed 2/10
+[00:27:57] verify | func= Compares | rank= 1 | pid= astro-ph/0103174 | title_snip='Atomic T Tauri disk winds heated by ambipolar diffusion' | abs_len= 1124
+[00:28:00] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:28:00] select | verify relaxed 3/10
+[00:28:00] verify | func= Compares | rank= 2 | pid= astro-ph/0103461 | title_snip='Observations of Circumstellar Disks' | abs_len= 1289
+[00:28:02] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[00:28:02] select | verify relaxed 4/10
+[00:28:02] verify | func= Compares | rank= 3 | pid= astro-ph/0104158 | title_snip='Dust to Dust: Evidence for Planet Formation?' | abs_len= 1120
+[00:28:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:28:06] select | verify relaxed 5/10
+[00:28:06] verify | func= Compares | rank= 4 | pid= astro-ph/0104318 | title_snip='Coronal structure geometries on pre-main sequence stars' | abs_len= 1473
+[00:28:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[00:28:09] select | verify relaxed 6/10
+[00:28:09] verify | func= Compares | rank= 5 | pid= astro-ph/0101309 | title_snip='A Three Micron Survey of the Chamaeleon I Dark Cloud' | abs_len= 739
+[00:28:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[00:28:12] select | verify relaxed 7/10
+[00:28:12] verify | func= Compares | rank= 6 | pid= astro-ph/0104066 | title_snip='High-resolution Near-Infrared Images and Models of the Circumstellar
+ …' | abs_len= 1144
+[00:28:16] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:28:16] select | verify relaxed 8/10
+[00:28:16] verify | func= Compares | rank= 7 | pid= astro-ph/0103311 | title_snip='Circumstellar structure of RU Lupi down to au scales' | abs_len= 1189
+[00:28:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[00:28:19] select | verify relaxed 9/10
+[00:28:19] verify | func= Compares | rank= 8 | pid= astro-ph/0103098 | title_snip='Observational Constraints on the Formation and Evolution of Binary Sta…' | abs_len= 1734
+[00:28:23] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[00:28:23] select | verify relaxed 10/10
+[00:28:23] verify | func= Compares | rank= 9 | pid= astro-ph/0104274 | title_snip='HST/NICMOS detection of a partially embedded, intermediate-mass
+  pre-…' | abs_len= 1113
+[00:28:26] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work use and compare with previous studies of circumstellar disks around classical T Tauri stars?
+- WINNER: astro-ph/0103458 | Near-infrared coronagraphic imaging of the circumstellar disk around TW
+  Hydrae
+- QUOTE : similar to those of disks around classical T Tauri stars
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work uses near-infrared coronagraphic imaging to study the circumstellar disk around TW Hydrae [Uses] (astro-ph/0103458). It compares the derived disk properties to those of disks around classical T Tauri stars in more distant molecular clouds, finding similar characteristics [Compares] (astro-ph/0103458).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

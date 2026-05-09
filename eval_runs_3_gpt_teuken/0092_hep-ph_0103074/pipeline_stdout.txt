@@ -1,0 +1,157 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the relationship between current neutrino mass scenarios and the motivation for extending experiments like GENIUS to probe beyond the Standard Model. It asks for both background information and motivation, which are relevant to the topic."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:13:40] main | args: Namespace(max_check=10, debug=True)
+[13:13:40] read_last_jsonl | path= classified_outputs.jsonl
+[13:13:40] read_last_jsonl | total_lines= 1
+[13:13:40] main | query='How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?' | funcs=['Background', 'Motivation']
+[13:13:42] main | core_terms= ['neutrino', 'GENIUS', 'Standard Model', 'neutrino mass']
+[13:13:42] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:13:42] load_topk_jsonl | rows= 20
+[13:13:42] load_topk_jsonl | first: rank= 0 paper_id= hep-ph/0102319 title_snip='New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark…' abs_len= 1296
+[13:13:42] main | running function= Background
+[13:13:42] select | function= Background | candidates_in= 20
+[13:13:42] select | core_terms= ['neutrino', 'GENIUS', 'Standard Model', 'neutrino mass']
+[13:13:42] select | no cosine prune; kept=20/20
+[13:13:42] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0102319', 'hep-ph/0103074', 'hep-ph/0104028', 'hep-ph/0102276', 'hep-ph/0102255', 'hep-ph/0101148', 'hep-ph/0102085', 'hep-ph/0102277', 'hep-ph/0101244', 'hep-ph/0103017']
+[13:13:42] select | verify relaxed 1/10
+[13:13:42] verify | func= Background | rank= 0 | pid= hep-ph/0102319 | title_snip='New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark…' | abs_len= 1296
+[13:13:46] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:13:46] select | verify relaxed 2/10
+[13:13:46] verify | func= Background | rank= 1 | pid= hep-ph/0103074 | title_snip='Information about the neutrino mass matrix from Double Beta Decay' | abs_len= 1064
+[13:13:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:13:49] select | verify relaxed 3/10
+[13:13:49] verify | func= Background | rank= 2 | pid= hep-ph/0104028 | title_snip='New Underground Neutrino Observatory - GENIUS- in the New Millenium :
+…' | abs_len= 1275
+[13:13:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:13:53] select | verify relaxed 4/10
+[13:13:53] verify | func= Background | rank= 3 | pid= hep-ph/0102276 | title_snip='Neutrino Mass from Laboratory: Contribution of Double Beta Decay to th…' | abs_len= 969
+[13:13:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:13:56] select | verify relaxed 5/10
+[13:13:56] verify | func= Background | rank= 4 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[13:13:59] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:13:59] select | verify relaxed 6/10
+[13:13:59] verify | func= Background | rank= 5 | pid= hep-ph/0101148 | title_snip='Degenerate and Other Neutrino Mass Scenarios and Dark Matter' | abs_len= 1015
+[13:14:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:03] select | verify relaxed 7/10
+[13:14:03] verify | func= Background | rank= 6 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[13:14:06] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:14:06] select | verify relaxed 8/10
+[13:14:06] verify | func= Background | rank= 7 | pid= hep-ph/0102277 | title_snip='GENIUS - A New Facility of Non-Accelerator Particle Physics' | abs_len= 1051
+[13:14:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:09] select | verify relaxed 9/10
+[13:14:09] verify | func= Background | rank= 8 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[13:14:13] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:13] select | verify relaxed 10/10
+[13:14:13] verify | func= Background | rank= 9 | pid= hep-ph/0103017 | title_snip='Generalized Bounds on Majoron-neutrino couplings' | abs_len= 701
+[13:14:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?
+- WINNER: hep-ph/0102319 | New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark
+  Matter, Solar Neutrinos
+- QUOTE : to solve the question of the neutrino mass matrix
+- WHY   : sufficient
+[13:14:18] main | running function= Motivation
+[13:14:18] select | function= Motivation | candidates_in= 20
+[13:14:18] select | core_terms= ['neutrino', 'GENIUS', 'Standard Model', 'neutrino mass']
+[13:14:18] select | no cosine prune; kept=20/20
+[13:14:18] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ph/0102319', 'hep-ph/0103074', 'hep-ph/0104028', 'hep-ph/0102276', 'hep-ph/0102255', 'hep-ph/0101148', 'hep-ph/0102085', 'hep-ph/0102277', 'hep-ph/0101244', 'hep-ph/0103017']
+[13:14:18] select | verify relaxed 1/10
+[13:14:18] verify | func= Motivation | rank= 0 | pid= hep-ph/0102319 | title_snip='New Physics in the New Millennium with GENIUS: Double Beta Decay, Dark…' | abs_len= 1296
+[13:14:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:21] select | verify relaxed 2/10
+[13:14:21] verify | func= Motivation | rank= 1 | pid= hep-ph/0103074 | title_snip='Information about the neutrino mass matrix from Double Beta Decay' | abs_len= 1064
+[13:14:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:25] select | verify relaxed 3/10
+[13:14:25] verify | func= Motivation | rank= 2 | pid= hep-ph/0104028 | title_snip='New Underground Neutrino Observatory - GENIUS- in the New Millenium :
+…' | abs_len= 1275
+[13:14:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:28] select | verify relaxed 4/10
+[13:14:28] verify | func= Motivation | rank= 3 | pid= hep-ph/0102276 | title_snip='Neutrino Mass from Laboratory: Contribution of Double Beta Decay to th…' | abs_len= 969
+[13:14:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:32] select | verify relaxed 5/10
+[13:14:32] verify | func= Motivation | rank= 4 | pid= hep-ph/0102255 | title_snip='Neutrino Mass, Muon Anomalous Magnetic Moment, and Lepton Flavor
+  Non…' | abs_len= 746
+[13:14:35] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:35] select | verify relaxed 6/10
+[13:14:35] verify | func= Motivation | rank= 5 | pid= hep-ph/0101148 | title_snip='Degenerate and Other Neutrino Mass Scenarios and Dark Matter' | abs_len= 1015
+[13:14:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:14:39] select | verify relaxed 7/10
+[13:14:39] verify | func= Motivation | rank= 6 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[13:14:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:14:42] select | verify relaxed 8/10
+[13:14:42] verify | func= Motivation | rank= 7 | pid= hep-ph/0102277 | title_snip='GENIUS - A New Facility of Non-Accelerator Particle Physics' | abs_len= 1051
+[13:14:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:45] select | verify relaxed 9/10
+[13:14:45] verify | func= Motivation | rank= 8 | pid= hep-ph/0101244 | title_snip='Neutrino Oscillation Workshop 2000: Conference Summary' | abs_len= 609
+[13:14:48] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:14:48] select | verify relaxed 10/10
+[13:14:48] verify | func= Motivation | rank= 9 | pid= hep-ph/0103017 | title_snip='Generalized Bounds on Majoron-neutrino couplings' | abs_len= 701
+[13:14:51] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the current understanding of neutrino mass scenarios relate to the extension of experiments like GENIUS to probe beyond Standard Model physics?
+- WINNER: hep-ph/0101148 | Degenerate and Other Neutrino Mass Scenarios and Dark Matter
+- QUOTE : motivated neutrino mass spectrum
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current understanding of neutrino mass scenarios is based on experiments like the Heidelberg-Moscow experiment, which already excludes degenerate neutrino mass scenarios [Background] (hep-ph/0102319). The extension of experiments like GENIUS is motivated by the need to probe beyond Standard Model physics and test almost all neutrino mass scenarios, including degenerate and non-degenerate scenarios [Motivation] (hep-ph/0101148).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

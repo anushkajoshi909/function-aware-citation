@@ -1,0 +1,1 @@
+The study of the coupled evolution of a two giant planet system is motivated by the potential for resonance trapping and outwards migration [Motivation] (astro-ph/0101332). This process compares to the one planet case in that the two planet system's migration is favored by a factor of ~10 due to the increased torque from the inner planet [Compares] (astro-ph/0101332).

@@ -1,0 +1,1 @@
+The axino's properties, such as its mass being generically smaller than the supersymmetry breaking scale, make it a candidate for cold dark matter [Background] (hep-ph/0102325). Its mass range of tens of MeV to several GeV corresponds to cold axino relics if the reheating temperature is less than about 5 \times 10^4 GeV [Background] (hep-ph/0102325).

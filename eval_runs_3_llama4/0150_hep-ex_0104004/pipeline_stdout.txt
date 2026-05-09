@@ -1,0 +1,152 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "FutureWork",
+    "Extends"
+  ],
+  "justification": "The query explicitly asks about future research directions and how they can build upon current understanding."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:38:22] main | args: Namespace(max_check=10, debug=True)
+[14:38:22] read_last_jsonl | path= classified_outputs.jsonl
+[14:38:22] read_last_jsonl | total_lines= 1
+[14:38:22] main | query='How can future research extend the current understanding of pion multiplicity in deep-inelastic scattering, particularly in relation to the observed dependencies on Q^2 and x?' | funcs=['FutureWork', 'Extends']
+[14:38:24] main | core_terms= ['pion', 'deep-inelastic scattering', 'Q^2', 'x', 'pion multiplicity', 'deep-inelastic']
+[14:38:24] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:38:24] load_topk_jsonl | rows= 20
+[14:38:24] load_topk_jsonl | first: rank= 0 paper_id= hep-ex/0104004 title_snip='Multiplicity of Charged and Neutral Pions in Deep-Inelastic Scattering…' abs_len= 960
+[14:38:24] main | running function= FutureWork
+[14:38:24] select | function= FutureWork | candidates_in= 20
+[14:38:24] select | core_terms= ['pion', 'deep-inelastic scattering', 'Q^2', 'x', 'pion multiplicity', 'deep-inelastic']
+[14:38:24] select | no cosine prune; kept=20/20
+[14:38:24] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0104004', 'hep-ph/0102018', 'hep-ph/0104177', 'hep-ph/0101195', 'hep-ph/0103088', 'cond-mat/0103431', 'nucl-th/0103019', 'hep-ph/0102028', 'hep-ph/0102313', 'hep-ph/0102322']
+[14:38:24] select | verify relaxed 1/10
+[14:38:24] verify | func= FutureWork | rank= 0 | pid= hep-ex/0104004 | title_snip='Multiplicity of Charged and Neutral Pions in Deep-Inelastic Scattering…' | abs_len= 960
+[14:38:27] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:38:27] select | verify relaxed 2/10
+[14:38:27] verify | func= FutureWork | rank= 1 | pid= hep-ph/0102018 | title_snip='Introduction to low x physics and diffraction' | abs_len= 418
+[14:38:30] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[14:38:30] select | verify relaxed 3/10
+[14:38:30] verify | func= FutureWork | rank= 2 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[14:38:33] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:38:33] select | verify relaxed 4/10
+[14:38:33] verify | func= FutureWork | rank= 3 | pid= hep-ph/0101195 | title_snip='Deep Inelastic Scattering of Leptons and Hadrons in the QCD Parton Mod…' | abs_len= 601
+[14:38:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:38:36] select | verify relaxed 5/10
+[14:38:36] verify | func= FutureWork | rank= 4 | pid= hep-ph/0103088 | title_snip='\pi\pi scattering' | abs_len= 1133
+[14:38:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:38:38] select | verify relaxed 6/10
+[14:38:38] verify | func= FutureWork | rank= 5 | pid= cond-mat/0103431 | title_snip='Two-Band-Type Superconducting Instability in MgB2' | abs_len= 1160
+[14:38:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:38:41] select | verify relaxed 7/10
+[14:38:41] verify | func= FutureWork | rank= 6 | pid= nucl-th/0103019 | title_snip='Quenching of resonance production in heavy-ion collisions at 1-2 A GeV' | abs_len= 575
+[14:38:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:38:44] select | verify relaxed 8/10
+[14:38:44] verify | func= FutureWork | rank= 7 | pid= hep-ph/0102028 | title_snip='Extrapolation of K to \pi\pi decay amplitude' | abs_len= 892
+[14:38:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:38:47] select | verify relaxed 9/10
+[14:38:47] verify | func= FutureWork | rank= 8 | pid= hep-ph/0102313 | title_snip='Evolution equation for the structure function g_2(x,Q^2)' | abs_len= 774
+[14:38:50] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:38:50] select | verify relaxed 10/10
+[14:38:50] verify | func= FutureWork | rank= 9 | pid= hep-ph/0102322 | title_snip='Off-shell unitarity and geometrical effects in deep-inelastic scatteri…' | abs_len= 825
+[14:38:53] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[14:38:54] arbiter | rejected off-topic winner: hep-ph/0101195
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can future research extend the current understanding of pion multiplicity in deep-inelastic scattering, particularly in relation to the observed dependencies on Q^2 and x?
+- No supporting candidate with sufficient evidence.
+[14:38:54] main | running function= Extends
+[14:38:54] select | function= Extends | candidates_in= 20
+[14:38:54] select | core_terms= ['pion', 'deep-inelastic scattering', 'Q^2', 'x', 'pion multiplicity', 'deep-inelastic']
+[14:38:54] select | no cosine prune; kept=20/20
+[14:38:54] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0104004', 'hep-ph/0102018', 'hep-ph/0104177', 'hep-ph/0101195', 'hep-ph/0103088', 'cond-mat/0103431', 'nucl-th/0103019', 'hep-ph/0102028', 'hep-ph/0102313', 'hep-ph/0102322']
+[14:38:54] select | verify relaxed 1/10
+[14:38:54] verify | func= Extends | rank= 0 | pid= hep-ex/0104004 | title_snip='Multiplicity of Charged and Neutral Pions in Deep-Inelastic Scattering…' | abs_len= 960
+[14:38:58] verify | result supports= False fit= 0.60 top= 0.90 invalid= — cue_hint= False
+[14:38:58] select | verify relaxed 2/10
+[14:38:58] verify | func= Extends | rank= 1 | pid= hep-ph/0102018 | title_snip='Introduction to low x physics and diffraction' | abs_len= 418
+[14:39:01] verify | result supports= False fit= 0.20 top= 0.60 invalid= — cue_hint= False
+[14:39:01] select | verify relaxed 3/10
+[14:39:01] verify | func= Extends | rank= 2 | pid= hep-ph/0104177 | title_snip='Probing QCD-instanton induced effects in deep inelastic scattering at
+…' | abs_len= 449
+[14:39:04] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:39:04] select | verify relaxed 4/10
+[14:39:04] verify | func= Extends | rank= 3 | pid= hep-ph/0101195 | title_snip='Deep Inelastic Scattering of Leptons and Hadrons in the QCD Parton Mod…' | abs_len= 601
+[14:39:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:39:07] select | verify relaxed 5/10
+[14:39:07] verify | func= Extends | rank= 4 | pid= hep-ph/0103088 | title_snip='\pi\pi scattering' | abs_len= 1133
+[14:39:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:39:09] select | verify relaxed 6/10
+[14:39:09] verify | func= Extends | rank= 5 | pid= cond-mat/0103431 | title_snip='Two-Band-Type Superconducting Instability in MgB2' | abs_len= 1160
+[14:39:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:39:12] select | verify relaxed 7/10
+[14:39:12] verify | func= Extends | rank= 6 | pid= nucl-th/0103019 | title_snip='Quenching of resonance production in heavy-ion collisions at 1-2 A GeV' | abs_len= 575
+[14:39:15] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:39:15] select | verify relaxed 8/10
+[14:39:15] verify | func= Extends | rank= 7 | pid= hep-ph/0102028 | title_snip='Extrapolation of K to \pi\pi decay amplitude' | abs_len= 892
+[14:39:18] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:39:18] select | verify relaxed 9/10
+[14:39:18] verify | func= Extends | rank= 8 | pid= hep-ph/0102313 | title_snip='Evolution equation for the structure function g_2(x,Q^2)' | abs_len= 774
+[14:39:21] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:39:21] select | verify relaxed 10/10
+[14:39:21] verify | func= Extends | rank= 9 | pid= hep-ph/0102322 | title_snip='Off-shell unitarity and geometrical effects in deep-inelastic scatteri…' | abs_len= 825
+[14:39:24] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[14:39:25] arbiter | rejected off-topic winner: hep-ph/0101195
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can future research extend the current understanding of pion multiplicity in deep-inelastic scattering, particularly in relation to the observed dependencies on Q^2 and x?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

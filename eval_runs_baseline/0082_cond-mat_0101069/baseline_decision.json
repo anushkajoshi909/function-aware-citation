@@ -1,0 +1,18 @@
+{
+  "answer": "The current study on valence band ordering and excitonic properties of GaN/AlGaN quantum wells is motivated by the observed re-ordered valence band in these structures (cond-mat/0101069).",
+  "predicted_paper_id": "cond-mat/0101069",
+  "explanation": "This paper provides evidence of valence band reordering in GaN/AlGaN quantum wells, which is relevant to the current study on their valence band ordering and excitonic properties.",
+  "evidence_quote": "re-ordered valence band",
+  "topk_list": [
+    "cond-mat/0101069",
+    "cond-mat/0101459",
+    "cond-mat/0102506",
+    "cond-mat/0103461",
+    "cond-mat/0102343",
+    "cond-mat/0104316",
+    "cond-mat/0103469",
+    "quant-ph/0103164",
+    "cond-mat/0103351",
+    "cond-mat/0101105"
+  ]
+}

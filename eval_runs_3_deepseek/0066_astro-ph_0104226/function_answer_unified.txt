@@ -1,0 +1,1 @@
+The current study's use of a 2-D hydro code allows for a detailed examination of the thermonuclear explosion of white dwarfs, providing insights into the mixing and ignition process [Uses] (astro-ph/0104226). This approach enables a better understanding of the explosive nuclear burning and flame propagation in a partially C-depleted environment [Uses] (astro-ph/0104226).

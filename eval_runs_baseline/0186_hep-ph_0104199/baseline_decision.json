@@ -1,0 +1,18 @@
+{
+  "answer": "The study of KK graviton self-interactions at a future Graviton Factory can extend our understanding of the 5-d Randall-Sundrum model by probing the accuracy of the 5-d Einstein gravity picture and yielding indirect information on the self-coupling of the 4-d graviton (hep-ph/0104199).",
+  "predicted_paper_id": "hep-ph/0104199",
+  "explanation": "This paper discusses the production and self-interactions of KK gravitons at a future Graviton Factory, which can provide insights into the 5-d Randall-Sundrum model.",
+  "evidence_quote": "measuring the self-interactions of these KK gravitons",
+  "topk_list": [
+    "hep-ph/0104199",
+    "hep-ph/0103055",
+    "hep-th/0101214",
+    "hep-ph/0103308",
+    "hep-th/0102144",
+    "hep-ph/0103127",
+    "hep-ph/0103214",
+    "hep-ph/0102182",
+    "hep-ph/0104002",
+    "hep-th/0102145"
+  ]
+}

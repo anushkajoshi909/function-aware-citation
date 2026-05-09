@@ -1,0 +1,18 @@
+{
+  "answer": "The results of this study on radiative shock waves compare to other works in terms of shock wave structure and radiation flux, with future research directions suggested by the findings (astro-ph/0103108).",
+  "predicted_paper_id": "astro-ph/0103108",
+  "explanation": "This paper best supports the answer because it discusses the structure of radiative shock waves and the radiation mechanism, providing a detailed analysis of the shock wave properties and the effects of radiative cooling.",
+  "evidence_quote": "radiative hydromagnetic shocks",
+  "topk_list": [
+    "astro-ph/0103108",
+    "astro-ph/0101291",
+    "astro-ph/0101165",
+    "astro-ph/0101175",
+    "astro-ph/0102091",
+    "astro-ph/0104120",
+    "astro-ph/0102434",
+    "astro-ph/0102276",
+    "astro-ph/0103424",
+    "hep-ph/0101112"
+  ]
+}

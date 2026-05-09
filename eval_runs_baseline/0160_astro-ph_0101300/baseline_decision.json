@@ -1,0 +1,18 @@
+{
+  "answer": "The study of EUV emission in the Fornax cluster provides background information and extends our understanding of cluster gas and radio sources by examining large-scale diffuse EUV emission (astro-ph/0101300).",
+  "predicted_paper_id": "astro-ph/0101300",
+  "explanation": "This paper presents studies of the Extreme Ultraviolet emission in the Fornax cluster of galaxies, which is a relatively nearby well-studied cluster with X-ray emitting cluster gas and a very large radio source.",
+  "evidence_quote": "Extreme Ultraviolet Emission in the Fornax Cluster",
+  "topk_list": [
+    "astro-ph/0101300",
+    "astro-ph/0104422",
+    "astro-ph/0102363",
+    "astro-ph/0104189",
+    "astro-ph/0104234",
+    "astro-ph/0103109",
+    "astro-ph/0102010",
+    "astro-ph/0101152",
+    "astro-ph/0103501",
+    "astro-ph/0102165"
+  ]
+}

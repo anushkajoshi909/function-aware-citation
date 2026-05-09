@@ -1,0 +1,18 @@
+{
+  "answer": "The study of NGC 3065 is motivated by its X-ray properties and its classification as a LINER with broad, variable Balmer lines, as discussed in astro-ph/0101050.",
+  "predicted_paper_id": "astro-ph/0101050",
+  "explanation": "This paper provides background information on NGC 3065, including its X-ray properties and its classification as a LINER with broad, variable Balmer lines, making it the most relevant to the question.",
+  "evidence_quote": "Motivated by the X-ray properties of the galaxy NGC 3065",
+  "topk_list": [
+    "astro-ph/0101050",
+    "astro-ph/0104151",
+    "astro-ph/0102460",
+    "astro-ph/0103351",
+    "astro-ph/0103368",
+    "astro-ph/0101117",
+    "astro-ph/0103303",
+    "astro-ph/0102228",
+    "astro-ph/0104300",
+    "astro-ph/0104453"
+  ]
+}

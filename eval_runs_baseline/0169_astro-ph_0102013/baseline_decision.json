@@ -1,0 +1,18 @@
+{
+  "answer": "Future studies of microlensing events can build on our current understanding of the optical depth and time-scale distribution of these events in the context of the Sagittarius dwarf galaxy by analyzing the fraction of events involving a source in Sgr and the contribution of the MW/Sgr events (astro-ph/0102013).",
+  "predicted_paper_id": "astro-ph/0102013",
+  "explanation": "This paper provides an estimate of the optical depth, time-scale distribution, and fraction of microlensing events originating from sources in the Sagittarius dwarf galaxy, which is relevant to building on our current understanding of these events.",
+  "evidence_quote": "We estimate the optical depth, time-scale distribution",
+  "topk_list": [
+    "astro-ph/0102013",
+    "astro-ph/0103516",
+    "astro-ph/0104314",
+    "gr-qc/0104076",
+    "astro-ph/0102481",
+    "astro-ph/0102242",
+    "astro-ph/0102181",
+    "astro-ph/0102080",
+    "astro-ph/0101092",
+    "astro-ph/0104176"
+  ]
+}

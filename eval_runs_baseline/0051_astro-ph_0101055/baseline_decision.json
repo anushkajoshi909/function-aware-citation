@@ -1,0 +1,18 @@
+{
+  "answer": "The limitations of current understanding of close-in large planets motivate further research into their composition and properties, as seen in the study of their accretion and opacity (astro-ph/0101055).",
+  "predicted_paper_id": "astro-ph/0101055",
+  "explanation": "This paper explores the properties of close-in large planets, including their accretion and opacity, which is relevant to understanding their composition and properties.",
+  "evidence_quote": "close-in large planets",
+  "topk_list": [
+    "astro-ph/0101055",
+    "astro-ph/0103383",
+    "astro-ph/0101442",
+    "astro-ph/0101241",
+    "astro-ph/0103195",
+    "astro-ph/0103048",
+    "astro-ph/0104162",
+    "astro-ph/0103028",
+    "astro-ph/0102276",
+    "hep-th/0104131"
+  ]
+}

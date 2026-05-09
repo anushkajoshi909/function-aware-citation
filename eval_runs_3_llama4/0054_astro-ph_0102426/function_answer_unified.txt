@@ -1,0 +1,1 @@
+Future research on UHE neutrino scattering onto relic cosmic neutrinos may be motivated by the potential to overcome the GZK cut-off and uncover new information about neutrino masses and relic densities [Motivation] (astro-ph/0102426), and such research could lead to new discoveries about neutrino properties and relic densities in the future [FutureWork] (astro-ph/0102426).

@@ -1,0 +1,18 @@
+{
+  "answer": "The study of the coupled evolution of a two giant planet system is motivated by the need to understand the migration of planets in protoplanetary disks, which can lead to outwards migration in certain cases (astro-ph/0101332).",
+  "predicted_paper_id": "astro-ph/0101332",
+  "explanation": "This paper presents new results related to the coupled evolution of a two giant planet system embedded in a protoplanetary disk, which is relevant to the question of planet migration.",
+  "evidence_quote": "coupled evolution of a two giant planet system",
+  "topk_list": [
+    "astro-ph/0101332",
+    "astro-ph/0104432",
+    "astro-ph/0102244",
+    "astro-ph/0102126",
+    "astro-ph/0103383",
+    "astro-ph/0101024",
+    "astro-ph/0103327",
+    "astro-ph/0104475",
+    "astro-ph/0102198",
+    "astro-ph/0103092"
+  ]
+}

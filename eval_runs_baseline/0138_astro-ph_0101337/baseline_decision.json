@@ -1,0 +1,18 @@
+{
+  "answer": "The current work is motivated by the need to understand state transitions in black-hole candidates like GRO J1655-40, which requires background information on optical emission lines and accretion flows (astro-ph/0101305).",
+  "predicted_paper_id": "astro-ph/0101305",
+  "explanation": "This paper is relevant because it discusses optical spectroscopic studies of emission lines in black-hole candidates and identifies state transitions in GRO J1655-40.",
+  "evidence_quote": "Optical spectroscopic studies of emission lines",
+  "topk_list": [
+    "gr-qc/0103075",
+    "astro-ph/0101305",
+    "hep-ph/0101210",
+    "astro-ph/0101337",
+    "astro-ph/0103304",
+    "astro-ph/0101352",
+    "gr-qc/0102009",
+    "astro-ph/0102390",
+    "astro-ph/0101022",
+    "astro-ph/0104073"
+  ]
+}

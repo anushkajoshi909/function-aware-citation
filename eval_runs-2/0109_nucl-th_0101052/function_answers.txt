@@ -1,2 +1,0 @@
-The authors use heavy-baryon chiral perturbation theory to analyze pion-nucleon scattering, allowing for a consistent description of strong and electromagnetic effects. This method is applied to isolate the strong part of the interaction and compare the results with previous phase shift analyses, revealing sizeable differences in the S-waves of elastic channels (hep-ph/0101030). [Uses]
-The abstract does not provide information relevant to Compares. [Compares]

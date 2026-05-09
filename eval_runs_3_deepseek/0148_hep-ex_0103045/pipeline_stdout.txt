@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "FutureWork",
+    "Motivation"
+  ],
+  "justification": "The query explicitly asks about future research directions ('potential areas of future research') and links them to motivations derived from specific experimental measurements."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:42:24] main | args: Namespace(max_check=10, debug=True)
+[14:42:24] read_last_jsonl | path= classified_outputs.jsonl
+[14:42:24] read_last_jsonl | total_lines= 1
+[14:42:24] main | query='What potential areas of future research could be motivated by the measurements of tau lepton polarization and forward-backward polarization asymmetry near the Z resonance?' | funcs=['FutureWork', 'Motivation']
+[14:42:26] main | core_terms= ['tau lepton', 'Z resonance', 'polarization', 'forward-backward asymmetry', 'forward-backward']
+[14:42:26] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:42:26] load_topk_jsonl | rows= 20
+[14:42:26] load_topk_jsonl | first: rank= 0 paper_id= hep-ex/0103045 title_snip='Precision Neutral Current Asymmetry Parameter Measurements from the Ta…' abs_len= 1416
+[14:42:26] main | running function= FutureWork
+[14:42:26] select | function= FutureWork | candidates_in= 20
+[14:42:26] select | core_terms= ['tau lepton', 'Z resonance', 'polarization', 'forward-backward asymmetry', 'forward-backward']
+[14:42:26] select | no cosine prune; kept=20/20
+[14:42:26] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0103045', 'hep-ex/0103048', 'hep-ex/0104038', 'hep-ex/0102037', 'hep-ph/0103116', 'hep-ph/0101057', 'hep-ph/0101201', 'hep-ph/0103039', 'hep-ex/0101047', 'hep-ph/0103197']
+[14:42:26] select | verify relaxed 1/10
+[14:42:26] verify | func= FutureWork | rank= 0 | pid= hep-ex/0103045 | title_snip='Precision Neutral Current Asymmetry Parameter Measurements from the Ta…' | abs_len= 1416
+[14:42:29] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:42:29] select | verify relaxed 2/10
+[14:42:29] verify | func= FutureWork | rank= 1 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[14:42:32] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:42:32] select | verify relaxed 3/10
+[14:42:32] verify | func= FutureWork | rank= 2 | pid= hep-ex/0104038 | title_snip='Measurement of the Tau Polarisation at LEP' | abs_len= 584
+[14:42:36] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[14:42:36] select | verify relaxed 4/10
+[14:42:36] verify | func= FutureWork | rank= 3 | pid= hep-ex/0102037 | title_snip='Double-Spin Asymmetry in the Cross Section for Exclusive rho^0
+  Produ…' | abs_len= 784
+[14:42:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:42:38] select | verify relaxed 5/10
+[14:42:38] verify | func= FutureWork | rank= 4 | pid= hep-ph/0103116 | title_snip='Tau Polarizations in the Three-body Slepton Decays with Stau as the NL…' | abs_len= 523
+[14:42:41] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:42:41] select | verify relaxed 6/10
+[14:42:41] verify | func= FutureWork | rank= 5 | pid= hep-ph/0101057 | title_snip='Old and new parton distribution and fragmentation functions' | abs_len= 427
+[14:42:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:42:43] select | verify relaxed 7/10
+[14:42:43] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101201 | title_snip='Lepton Asymmetries in Heavy Baryon Decays of $\Lambda_b\to\Lambda
+  l^…' | abs_len= 662
+[14:42:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:42:46] select | verify relaxed 8/10
+[14:42:46] verify | func= FutureWork | rank= 7 | pid= hep-ph/0103039 | title_snip='New physics effects to the lepton polarizations in the B -> K l^+ l^-
+…' | abs_len= 749
+[14:42:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:42:49] select | verify relaxed 9/10
+[14:42:49] verify | func= FutureWork | rank= 8 | pid= hep-ex/0101047 | title_snip='Polarization and Spin Alignment in Multihadronic Z0 Decays' | abs_len= 1178
+[14:42:51] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:42:51] select | verify relaxed 10/10
+[14:42:51] verify | func= FutureWork | rank= 9 | pid= hep-ph/0103197 | title_snip='CP Asymmetry Measurements in psi K0 and the CKM Paradigm' | abs_len= 1087
+[14:42:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research could be motivated by the measurements of tau lepton polarization and forward-backward polarization asymmetry near the Z resonance?
+- No supporting candidate with sufficient evidence.
+[14:42:54] main | running function= Motivation
+[14:42:54] select | function= Motivation | candidates_in= 20
+[14:42:54] select | core_terms= ['tau lepton', 'Z resonance', 'polarization', 'forward-backward asymmetry', 'forward-backward']
+[14:42:54] select | no cosine prune; kept=20/20
+[14:42:54] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0103045', 'hep-ex/0103048', 'hep-ex/0104038', 'hep-ex/0102037', 'hep-ph/0103116', 'hep-ph/0101057', 'hep-ph/0101201', 'hep-ph/0103039', 'hep-ex/0101047', 'hep-ph/0103197']
+[14:42:54] select | verify relaxed 1/10
+[14:42:54] verify | func= Motivation | rank= 0 | pid= hep-ex/0103045 | title_snip='Precision Neutral Current Asymmetry Parameter Measurements from the Ta…' | abs_len= 1416
+[14:42:57] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:42:57] select | verify relaxed 2/10
+[14:42:57] verify | func= Motivation | rank= 1 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[14:43:00] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:43:00] select | verify relaxed 3/10
+[14:43:00] verify | func= Motivation | rank= 2 | pid= hep-ex/0104038 | title_snip='Measurement of the Tau Polarisation at LEP' | abs_len= 584
+[14:43:03] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[14:43:03] select | verify relaxed 4/10
+[14:43:03] verify | func= Motivation | rank= 3 | pid= hep-ex/0102037 | title_snip='Double-Spin Asymmetry in the Cross Section for Exclusive rho^0
+  Produ…' | abs_len= 784
+[14:43:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:43:06] select | verify relaxed 5/10
+[14:43:06] verify | func= Motivation | rank= 4 | pid= hep-ph/0103116 | title_snip='Tau Polarizations in the Three-body Slepton Decays with Stau as the NL…' | abs_len= 523
+[14:43:09] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:43:09] select | verify relaxed 6/10
+[14:43:09] verify | func= Motivation | rank= 5 | pid= hep-ph/0101057 | title_snip='Old and new parton distribution and fragmentation functions' | abs_len= 427
+[14:43:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:43:11] select | verify relaxed 7/10
+[14:43:11] verify | func= Motivation | rank= 6 | pid= hep-ph/0101201 | title_snip='Lepton Asymmetries in Heavy Baryon Decays of $\Lambda_b\to\Lambda
+  l^…' | abs_len= 662
+[14:43:14] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:43:14] select | verify relaxed 8/10
+[14:43:14] verify | func= Motivation | rank= 7 | pid= hep-ph/0103039 | title_snip='New physics effects to the lepton polarizations in the B -> K l^+ l^-
+…' | abs_len= 749
+[14:43:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:43:17] select | verify relaxed 9/10
+[14:43:17] verify | func= Motivation | rank= 8 | pid= hep-ex/0101047 | title_snip='Polarization and Spin Alignment in Multihadronic Z0 Decays' | abs_len= 1178
+[14:43:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:43:20] select | verify relaxed 10/10
+[14:43:20] verify | func= Motivation | rank= 9 | pid= hep-ph/0103197 | title_snip='CP Asymmetry Measurements in psi K0 and the CKM Paradigm' | abs_len= 1087
+[14:43:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research could be motivated by the measurements of tau lepton polarization and forward-backward polarization asymmetry near the Z resonance?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends existing theories on massless fields and helicity representations by considering the covariant, spinor sets of relativistic wave equations for a massless field, as seen in hep-th/0101190.",
+  "predicted_paper_id": "hep-th/0101190",
+  "explanation": "This paper provides a universal description of the states with integer and half-integer helicity, and also discusses the infinite-dimensional representations corresponding to massless states with fractional helicity.",
+  "evidence_quote": "massless field on the basis of the two copies of the R-deformed Heisenberg algebra",
+  "topk_list": [
+    "hep-th/0101216",
+    "hep-th/0102041",
+    "hep-th/0103228",
+    "hep-th/0101190",
+    "hep-th/0103209",
+    "hep-ph/0104197",
+    "hep-ph/0102103",
+    "hep-ph/0103299",
+    "physics/0101039",
+    "nucl-th/0101009"
+  ]
+}

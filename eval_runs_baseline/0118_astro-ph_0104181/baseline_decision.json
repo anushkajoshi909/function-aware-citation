@@ -1,0 +1,18 @@
+{
+  "answer": "The concept of homogeneity in cosmology uses previous results to inform its understanding of galaxy distribution, as seen in the analysis of scaling features in standard cosmologies (astro-ph/0104181).",
+  "predicted_paper_id": "astro-ph/0104181",
+  "explanation": "This paper presents an analysis of the smoothness problem in cosmology and conjectures that the large-scale distribution of galaxies follows a fractal pattern in perturbed standard cosmologies.",
+  "evidence_quote": "the large-scale distribution of galaxies is homogeneous",
+  "topk_list": [
+    "astro-ph/0101143",
+    "hep-th/0102187",
+    "astro-ph/0104181",
+    "astro-ph/0104370",
+    "astro-ph/0101191",
+    "astro-ph/0101296",
+    "astro-ph/0102320",
+    "astro-ph/0103017",
+    "astro-ph/0101084",
+    "astro-ph/0102062"
+  ]
+}

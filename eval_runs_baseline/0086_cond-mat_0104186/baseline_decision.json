@@ -1,0 +1,18 @@
+{
+  "answer": "The electronic properties of thick metallic silver films deposited on Si(111)-(7x7) substrates at room temperature exhibit a sixfold symmetry instead of the expected threefold symmetry, as seen in cond-mat/0104186.",
+  "predicted_paper_id": "cond-mat/0104186",
+  "explanation": "This paper directly studies the electronic properties of silver films on Si(111)-(7x7) substrates, making it the most relevant to the question.",
+  "evidence_quote": "Thick metallic silver films have been deposited onto Si(111)-(7x7) substrates",
+  "topk_list": [
+    "cond-mat/0104189",
+    "cond-mat/0104186",
+    "cond-mat/0101280",
+    "cond-mat/0104003",
+    "cond-mat/0101138",
+    "cond-mat/0103258",
+    "cond-mat/0103180",
+    "cond-mat/0104504",
+    "cond-mat/0102367",
+    "cond-mat/0101137"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The concept of discrete scalar fields utilizes existing theories such as MOND and Tsallis statistics, as seen in the discussion of a critical point that may put Milgrom's MOND on a more solid physical basis (hep-th/0103218).",
+  "predicted_paper_id": "hep-th/0103218",
+  "explanation": "This paper discusses the physical meaning and properties of discrete scalar fields, including their relation to general relativity and the introduction of an effective-acceleration scale that may support MOND, as well as contact with Tsallis generalized statistics.",
+  "evidence_quote": "the introduction of an effective-acceleration scale which may put Milgrom's MOND",
+  "topk_list": [
+    "hep-th/0103218",
+    "math/0101207",
+    "hep-ph/0101242",
+    "gr-qc/0103048",
+    "hep-th/0101216",
+    "hep-ph/0104273",
+    "hep-th/0102127",
+    "hep-th/0104108",
+    "cond-mat/0102162",
+    "gr-qc/0101033"
+  ]
+}

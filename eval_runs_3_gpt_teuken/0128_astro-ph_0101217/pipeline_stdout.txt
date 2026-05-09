@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query introduces a problem and its background, and asks about motivations for developing new methods and future work to improve accuracy."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:01:34] main | args: Namespace(max_check=10, debug=True)
+[14:01:34] read_last_jsonl | path= classified_outputs.jsonl
+[14:01:34] read_last_jsonl | total_lines= 1
+[14:01:34] main | query='How does the problem of source crowding in astrometric measurements motivate the development of new methods, and what future work can be done to further improve the accuracy of these measurements?' | funcs=['Background', 'Motivation']
+[14:01:36] main | core_terms= ['source', 'astrometric measurements', 'source crowding', 'accuracy']
+[14:01:36] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:01:36] load_topk_jsonl | rows= 20
+[14:01:36] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101217 title_snip='Astrometric imaging of crowded stellar fields with only two SIM
+  poin…' abs_len= 1196
+[14:01:36] main | running function= Background
+[14:01:36] select | function= Background | candidates_in= 20
+[14:01:36] select | core_terms= ['source', 'astrometric measurements', 'source crowding', 'accuracy']
+[14:01:36] select | no cosine prune; kept=20/20
+[14:01:36] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101217', 'astro-ph/0102297', 'astro-ph/0104182', 'astro-ph/0104266', 'astro-ph/0101105', 'astro-ph/0102392', 'astro-ph/0103028', 'astro-ph/0102497', 'astro-ph/0103017', 'astro-ph/0102077']
+[14:01:36] select | verify relaxed 1/10
+[14:01:36] verify | func= Background | rank= 0 | pid= astro-ph/0101217 | title_snip='Astrometric imaging of crowded stellar fields with only two SIM
+  poin…' | abs_len= 1196
+[14:01:39] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:01:39] select | verify relaxed 2/10
+[14:01:39] verify | func= Background | rank= 1 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[14:01:42] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:01:42] select | verify relaxed 3/10
+[14:01:42] verify | func= Background | rank= 2 | pid= astro-ph/0104182 | title_snip='The Distance to the Magellanic Clouds' | abs_len= 722
+[14:01:45] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:01:45] select | verify relaxed 4/10
+[14:01:45] verify | func= Background | rank= 3 | pid= astro-ph/0104266 | title_snip='Estimating Stochastic Gravitational Wave Backgrounds with Sagnac
+  Cal…' | abs_len= 1328
+[14:01:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:01:47] select | verify relaxed 5/10
+[14:01:47] verify | func= Background | rank= 4 | pid= astro-ph/0101105 | title_snip='Far-Infrared Source Counts and the Diffuse Infrared Background' | abs_len= 449
+[14:01:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:01:49] select | verify relaxed 6/10
+[14:01:49] verify | func= Background | rank= 5 | pid= astro-ph/0102392 | title_snip='When Photoionization Is Not Enough' | abs_len= 647
+[14:01:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:01:52] select | verify relaxed 7/10
+[14:01:52] verify | func= Background | rank= 6 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[14:01:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:01:54] select | verify relaxed 8/10
+[14:01:54] verify | func= Background | rank= 7 | pid= astro-ph/0102497 | title_snip='The radio source counts at 15 GHz and their implications for cm-wave C…' | abs_len= 973
+[14:01:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:01:57] select | verify relaxed 9/10
+[14:01:57] verify | func= Background | rank= 8 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[14:01:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:01:59] select | verify relaxed 10/10
+[14:01:59] verify | func= Background | rank= 9 | pid= astro-ph/0102077 | title_snip='The Origin of the Highest Energy Cosmic Rays' | abs_len= 966
+[14:02:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the problem of source crowding in astrometric measurements motivate the development of new methods, and what future work can be done to further improve the accuracy of these measurements?
+- WINNER: astro-ph/0101217 | Astrometric imaging of crowded stellar fields with only two SIM
+  pointings
+- QUOTE : source crowding can induce significant positional errors
+- WHY   : sufficient
+[14:02:03] main | running function= Motivation
+[14:02:03] select | function= Motivation | candidates_in= 20
+[14:02:03] select | core_terms= ['source', 'astrometric measurements', 'source crowding', 'accuracy']
+[14:02:03] select | no cosine prune; kept=20/20
+[14:02:03] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101217', 'astro-ph/0102297', 'astro-ph/0104182', 'astro-ph/0104266', 'astro-ph/0101105', 'astro-ph/0102392', 'astro-ph/0103028', 'astro-ph/0102497', 'astro-ph/0103017', 'astro-ph/0102077']
+[14:02:03] select | verify relaxed 1/10
+[14:02:03] verify | func= Motivation | rank= 0 | pid= astro-ph/0101217 | title_snip='Astrometric imaging of crowded stellar fields with only two SIM
+  poin…' | abs_len= 1196
+[14:02:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:02:06] select | verify relaxed 2/10
+[14:02:06] verify | func= Motivation | rank= 1 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[14:02:09] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:02:09] select | verify relaxed 3/10
+[14:02:09] verify | func= Motivation | rank= 2 | pid= astro-ph/0104182 | title_snip='The Distance to the Magellanic Clouds' | abs_len= 722
+[14:02:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= True
+[14:02:12] select | verify relaxed 4/10
+[14:02:12] verify | func= Motivation | rank= 3 | pid= astro-ph/0104266 | title_snip='Estimating Stochastic Gravitational Wave Backgrounds with Sagnac
+  Cal…' | abs_len= 1328
+[14:02:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:15] select | verify relaxed 5/10
+[14:02:15] verify | func= Motivation | rank= 4 | pid= astro-ph/0101105 | title_snip='Far-Infrared Source Counts and the Diffuse Infrared Background' | abs_len= 449
+[14:02:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:02:18] select | verify relaxed 6/10
+[14:02:18] verify | func= Motivation | rank= 5 | pid= astro-ph/0102392 | title_snip='When Photoionization Is Not Enough' | abs_len= 647
+[14:02:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:20] select | verify relaxed 7/10
+[14:02:20] verify | func= Motivation | rank= 6 | pid= astro-ph/0103028 | title_snip='Evidence For and Against Collimation of Gamma Ray Bursts' | abs_len= 856
+[14:02:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:22] select | verify relaxed 8/10
+[14:02:22] verify | func= Motivation | rank= 7 | pid= astro-ph/0102497 | title_snip='The radio source counts at 15 GHz and their implications for cm-wave C…' | abs_len= 973
+[14:02:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:02:26] select | verify relaxed 9/10
+[14:02:26] verify | func= Motivation | rank= 8 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[14:02:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:02:28] select | verify relaxed 10/10
+[14:02:28] verify | func= Motivation | rank= 9 | pid= astro-ph/0102077 | title_snip='The Origin of the Highest Energy Cosmic Rays' | abs_len= 966
+[14:02:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the problem of source crowding in astrometric measurements motivate the development of new methods, and what future work can be done to further improve the accuracy of these measurements?
+- WINNER: astro-ph/0101217 | Astrometric imaging of crowded stellar fields with only two SIM
+  pointings
+- QUOTE : source crowding can induce significant positional errors
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The problem of source crowding in astrometric measurements [Background] (astro-ph/0101217) motivates the development of new methods to reduce positional errors, as crowding can induce significant errors even for bright targets [Motivation] (astro-ph/0101217). Future work can focus on improving the accuracy of these measurements by utilizing spectral decomposition of fringe patterns and synthesis imaging with limited baseline orientations (astro-ph/0101217).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

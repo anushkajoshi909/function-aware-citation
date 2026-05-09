@@ -1,0 +1,18 @@
+{
+  "answer": "Molecular dynamics simulations of polyelectrolytes provide background information and use specific methods to understand their behavior in aqueous solutions, as seen in the study of hydration of polyelectrolytes (cond-mat/0101115).",
+  "predicted_paper_id": "cond-mat/0101115",
+  "explanation": "This paper is relevant because it presents molecular dynamics simulations of polyelectrolytes in aqueous solutions, taking into account water and counterions explicitly.",
+  "evidence_quote": "Molecular dynamics simulations of diluted aqueous solutions",
+  "topk_list": [
+    "cond-mat/0101115",
+    "cond-mat/0101279",
+    "cond-mat/0104002",
+    "cond-mat/0104204",
+    "cond-mat/0101314",
+    "cond-mat/0102121",
+    "cond-mat/0103207",
+    "cond-mat/0103592",
+    "cond-mat/0104268",
+    "cond-mat/0103610"
+  ]
+}

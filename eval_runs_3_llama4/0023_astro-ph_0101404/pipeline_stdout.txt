@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query highlights limitations that motivate further research and explicitly asks about potential future research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:50:02] main | args: Namespace(max_check=10, debug=True)
+[11:50:02] read_last_jsonl | path= classified_outputs.jsonl
+[11:50:02] read_last_jsonl | total_lines= 1
+[11:50:02] main | query='What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?' | funcs=['Motivation', 'FutureWork']
+[11:50:04] main | core_terms= ['Tully-Fisher relation', 'dark matter halos', 'galaxy rotation curves', 'cosmological simulations', 'Tully-Fisher']
+[11:50:04] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:50:04] load_topk_jsonl | rows= 20
+[11:50:04] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102349 title_snip='Unitarity Bounds and the Cuspy Halo Problem' abs_len= 1207
+[11:50:04] main | running function= Motivation
+[11:50:04] select | function= Motivation | candidates_in= 20
+[11:50:04] select | core_terms= ['Tully-Fisher relation', 'dark matter halos', 'galaxy rotation curves', 'cosmological simulations', 'Tully-Fisher']
+[11:50:04] select | no cosine prune; kept=20/20
+[11:50:04] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102349', 'astro-ph/0102389', 'astro-ph/0102025', 'hep-ph/0103349', 'hep-ph/0102006', 'astro-ph/0101528', 'astro-ph/0104217', 'astro-ph/0103470', 'astro-ph/0101210', 'astro-ph/0101413']
+[11:50:04] select | verify relaxed 1/10
+[11:50:04] verify | func= Motivation | rank= 0 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[11:50:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:06] select | verify relaxed 2/10
+[11:50:06] verify | func= Motivation | rank= 1 | pid= astro-ph/0102389 | title_snip='Recent developments in the search for baryonic dark matter' | abs_len= 750
+[11:50:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:09] select | verify relaxed 3/10
+[11:50:09] verify | func= Motivation | rank= 2 | pid= astro-ph/0102025 | title_snip='Galactosynthesis Predictions at High Redshift' | abs_len= 612
+[11:50:12] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:50:12] select | verify relaxed 4/10
+[11:50:12] verify | func= Motivation | rank= 3 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[11:50:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:15] select | verify relaxed 5/10
+[11:50:15] verify | func= Motivation | rank= 4 | pid= hep-ph/0102006 | title_snip='Low-energy constraints from unification of matter multiplets' | abs_len= 543
+[11:50:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:17] select | verify relaxed 6/10
+[11:50:17] verify | func= Motivation | rank= 5 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[11:50:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:50:20] select | verify relaxed 7/10
+[11:50:20] verify | func= Motivation | rank= 6 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[11:50:23] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:50:23] select | verify relaxed 8/10
+[11:50:23] verify | func= Motivation | rank= 7 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[11:50:26] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:26] select | verify relaxed 9/10
+[11:50:26] verify | func= Motivation | rank= 8 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[11:50:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:28] select | verify relaxed 10/10
+[11:50:28] verify | func= Motivation | rank= 9 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[11:50:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?
+- WINNER: astro-ph/0102025 | Galactosynthesis Predictions at High Redshift
+- QUOTE : break parameter degeneracies among galactosynthesis models
+- WHY   : sufficient
+[11:50:32] main | running function= FutureWork
+[11:50:32] select | function= FutureWork | candidates_in= 20
+[11:50:32] select | core_terms= ['Tully-Fisher relation', 'dark matter halos', 'galaxy rotation curves', 'cosmological simulations', 'Tully-Fisher']
+[11:50:32] select | no cosine prune; kept=20/20
+[11:50:32] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102349', 'astro-ph/0102389', 'astro-ph/0102025', 'hep-ph/0103349', 'hep-ph/0102006', 'astro-ph/0101528', 'astro-ph/0104217', 'astro-ph/0103470', 'astro-ph/0101210', 'astro-ph/0101413']
+[11:50:32] select | verify relaxed 1/10
+[11:50:32] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102349 | title_snip='Unitarity Bounds and the Cuspy Halo Problem' | abs_len= 1207
+[11:50:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:35] select | verify relaxed 2/10
+[11:50:35] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102389 | title_snip='Recent developments in the search for baryonic dark matter' | abs_len= 750
+[11:50:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:37] select | verify relaxed 3/10
+[11:50:37] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102025 | title_snip='Galactosynthesis Predictions at High Redshift' | abs_len= 612
+[11:50:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:50:41] select | verify relaxed 4/10
+[11:50:41] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103349 | title_snip='Standard Model Parameters and the Cosmological Constant' | abs_len= 170
+[11:50:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:43] select | verify relaxed 5/10
+[11:50:43] verify | func= FutureWork | rank= 4 | pid= hep-ph/0102006 | title_snip='Low-energy constraints from unification of matter multiplets' | abs_len= 543
+[11:50:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:46] select | verify relaxed 6/10
+[11:50:46] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101528 | title_snip='Constraints on the warm dark matter model from gravitational lensing' | abs_len= 1068
+[11:50:49] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:50:49] select | verify relaxed 7/10
+[11:50:49] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104217 | title_snip='A joint fit to the cosmological Model and the T-M and L_x-T relations
+…' | abs_len= 499
+[11:50:53] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:50:53] select | verify relaxed 8/10
+[11:50:53] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103470 | title_snip='Constraints on high energy phenomena from low energy nuclear physics' | abs_len= 440
+[11:50:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:55] select | verify relaxed 9/10
+[11:50:55] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101210 | title_snip='A new test for the stable clustering hypothesis' | abs_len= 1194
+[11:50:58] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:50:58] select | verify relaxed 10/10
+[11:50:58] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101413 | title_snip='CMB Constraints on a Baryonic Dark Matter-Dominated Universe' | abs_len= 1179
+[11:51:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research could be motivated by the limitations of the current study on the Tully-Fisher relation and dark matter halos?
+- WINNER: astro-ph/0102025 | Galactosynthesis Predictions at High Redshift
+- QUOTE : to constrain the redshift distribution of collapsing dark-matter halos
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The limitations of the current study on the Tully-Fisher relation and dark matter halos motivate further research [Motivation] into the variation of the Tully-Fisher relation with redshift, which could be used to constrain galaxy-formation models (astro-ph/0102025). Future work could focus on breaking parameter degeneracies among galactosynthesis models and constraining the redshift distribution of collapsing dark-matter halos [FutureWork] (astro-ph/0102025).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

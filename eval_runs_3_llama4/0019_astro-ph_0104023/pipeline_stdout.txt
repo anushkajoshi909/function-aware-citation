@@ -1,0 +1,161 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "FutureWork"
+  ],
+  "justification": "The query asks how future studies can build upon current work and explicitly frames it as guidance for subsequent research directions."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:44:42] main | args: Namespace(max_check=10, debug=True)
+[11:44:42] read_last_jsonl | path= classified_outputs.jsonl
+[11:44:42] read_last_jsonl | total_lines= 1
+[11:44:42] main | query='How can future studies extend the current work's method of analyzing galaxy correlation functions to better understand the implications of the measured pairwise peculiar velocity dispersion on galaxy biasing?' | funcs=['Extends', 'FutureWork']
+[11:44:44] main | core_terms= ['galaxy', 'galaxy correlation functions', 'pairwise peculiar velocity dispersion', 'galaxy biasing']
+[11:44:44] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:44:44] load_topk_jsonl | rows= 20
+[11:44:44] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104023 title_snip='Spatial correlation functions and the pairwise peculiar velocity
+  dis…' abs_len= 1631
+[11:44:44] main | running function= Extends
+[11:44:44] select | function= Extends | candidates_in= 20
+[11:44:44] select | core_terms= ['galaxy', 'galaxy correlation functions', 'pairwise peculiar velocity dispersion', 'galaxy biasing']
+[11:44:44] select | no cosine prune; kept=20/20
+[11:44:44] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104023', 'astro-ph/0101543', 'astro-ph/0102372', 'astro-ph/0103017', 'astro-ph/0103040', 'astro-ph/0103281', 'astro-ph/0104417', 'astro-ph/0102276', 'astro-ph/0103092', 'astro-ph/0101499']
+[11:44:44] select | verify relaxed 1/10
+[11:44:44] verify | func= Extends | rank= 0 | pid= astro-ph/0104023 | title_snip='Spatial correlation functions and the pairwise peculiar velocity
+  dis…' | abs_len= 1631
+[11:44:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:44:47] select | verify relaxed 2/10
+[11:44:47] verify | func= Extends | rank= 1 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[11:44:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:44:50] select | verify relaxed 3/10
+[11:44:50] verify | func= Extends | rank= 2 | pid= astro-ph/0102372 | title_snip='Redshift-Space Distortions of Group and Galaxy Correlations' | abs_len= 753
+[11:44:53] verify | result supports= False fit= 0.00 top= 0.80 invalid= quote_not_in_abstract cue_hint= False
+[11:44:53] select | verify relaxed 4/10
+[11:44:53] verify | func= Extends | rank= 3 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[11:44:56] verify | result supports= False fit= 0.00 top= 0.60 invalid= — cue_hint= False
+[11:44:56] select | verify relaxed 5/10
+[11:44:56] verify | func= Extends | rank= 4 | pid= astro-ph/0103040 | title_snip='The Galaxy and Mass N-Point Correlation Functions: a Blast from the Pa…' | abs_len= 425
+[11:45:00] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:45:00] select | verify relaxed 6/10
+[11:45:00] verify | func= Extends | rank= 5 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[11:45:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:45:02] select | verify relaxed 7/10
+[11:45:02] verify | func= Extends | rank= 6 | pid= astro-ph/0104417 | title_snip='The pair-wise velocity dispersion of galaxies: effects of non radial
+ …' | abs_len= 1766
+[11:45:06] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[11:45:06] select | verify relaxed 8/10
+[11:45:06] verify | func= Extends | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[11:45:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:45:08] select | verify relaxed 9/10
+[11:45:08] verify | func= Extends | rank= 8 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[11:45:11] verify | result supports= False fit= 0.00 top= 0.60 invalid= quote_not_in_abstract cue_hint= False
+[11:45:11] select | verify relaxed 10/10
+[11:45:11] verify | func= Extends | rank= 9 | pid= astro-ph/0101499 | title_snip='Nonlinear Peculiar-Velocity Analysis and PCA' | abs_len= 1302
+[11:45:15] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How can future studies extend the current work's method of analyzing galaxy correlation functions to better understand the implications of the measured pairwise peculiar velocity dispersion on galaxy biasing?
+- WINNER: astro-ph/0104023 | Spatial correlation functions and the pairwise peculiar velocity
+  dispersion of galaxies in the PSCz survey: implications for the galaxy
+  biasing in cold dark matter models
+- QUOTE : implications for the galaxy biasing in cold dark matter models
+- WHY   : sufficient
+[11:45:16] main | running function= FutureWork
+[11:45:16] select | function= FutureWork | candidates_in= 20
+[11:45:16] select | core_terms= ['galaxy', 'galaxy correlation functions', 'pairwise peculiar velocity dispersion', 'galaxy biasing']
+[11:45:16] select | no cosine prune; kept=20/20
+[11:45:16] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104023', 'astro-ph/0101543', 'astro-ph/0102372', 'astro-ph/0103017', 'astro-ph/0103040', 'astro-ph/0103281', 'astro-ph/0104417', 'astro-ph/0102276', 'astro-ph/0103092', 'astro-ph/0101499']
+[11:45:16] select | verify relaxed 1/10
+[11:45:16] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104023 | title_snip='Spatial correlation functions and the pairwise peculiar velocity
+  dis…' | abs_len= 1631
+[11:45:18] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[11:45:18] select | verify relaxed 2/10
+[11:45:18] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101543 | title_snip='Interpreting Debris from Satellite Disruption In External Galaxies' | abs_len= 1632
+[11:45:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[11:45:21] select | verify relaxed 3/10
+[11:45:21] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102372 | title_snip='Redshift-Space Distortions of Group and Galaxy Correlations' | abs_len= 753
+[11:45:24] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[11:45:24] select | verify relaxed 4/10
+[11:45:24] verify | func= FutureWork | rank= 3 | pid= astro-ph/0103017 | title_snip='Large-Scale Structure, Theory and Statistics' | abs_len= 1145
+[11:45:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:45:28] select | verify relaxed 5/10
+[11:45:28] verify | func= FutureWork | rank= 4 | pid= astro-ph/0103040 | title_snip='The Galaxy and Mass N-Point Correlation Functions: a Blast from the Pa…' | abs_len= 425
+[11:45:31] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[11:45:31] select | verify relaxed 6/10
+[11:45:31] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[11:45:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:45:33] select | verify relaxed 7/10
+[11:45:33] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104417 | title_snip='The pair-wise velocity dispersion of galaxies: effects of non radial
+ …' | abs_len= 1766
+[11:45:36] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[11:45:36] select | verify relaxed 8/10
+[11:45:36] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102276 | title_snip='The Pearson-Readhead Survey of Compact Extragalactic Radio Sources Fro…' | abs_len= 1783
+[11:45:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:45:39] select | verify relaxed 9/10
+[11:45:39] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103092 | title_snip='The evolution of the galaxy distribution' | abs_len= 1552
+[11:45:41] verify | result supports= False fit= 0.00 top= 0.60 invalid= no_quote cue_hint= False
+[11:45:41] select | verify relaxed 10/10
+[11:45:41] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101499 | title_snip='Nonlinear Peculiar-Velocity Analysis and PCA' | abs_len= 1302
+[11:45:44] verify | result supports= False fit= 0.00 top= 0.60 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How can future studies extend the current work's method of analyzing galaxy correlation functions to better understand the implications of the measured pairwise peculiar velocity dispersion on galaxy biasing?
+- WINNER: astro-ph/0103017 | Large-Scale Structure, Theory and Statistics
+- QUOTE : For the foreseeable future, therefore, this field will be led by observational developments
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Future studies can extend the current work's method of analyzing galaxy correlation functions to better understand the implications of the measured pairwise peculiar velocity dispersion on galaxy biasing by applying the method developed in the PSCz survey to other datasets, such as the LCRS, and exploring different biasing models [Extends] (astro-ph/0104023). This can be further developed in the future by testing the standard assumption of Gaussian random field primordial density fluctuations using measurements of galaxy clustering and the cosmic microwave background [FutureWork] (astro-ph/0103017).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

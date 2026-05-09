@@ -1,0 +1,1 @@
+The new self-interaction correction method extends existing density functional theory methods by providing a novel approach that is totally free from self interaction [Extends] (cond-mat/0103324). It uses density functional theory, including the local density approximation and atomic Hartree-Fock calculations, to compare and validate its results [Uses] (cond-mat/0103324).

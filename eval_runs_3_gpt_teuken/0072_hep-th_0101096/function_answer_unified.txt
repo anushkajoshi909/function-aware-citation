@@ -1,0 +1,1 @@
+The current work builds on previous research by comparing the supersymmetry of different deformed D2-brane solutions [Background] (hep-th/0101096). It utilizes a method from a previous study to examine the supersymmetry of these solutions, which preserve 1/16 of the maximal supersymmetry [Background] (hep-th/0101096).

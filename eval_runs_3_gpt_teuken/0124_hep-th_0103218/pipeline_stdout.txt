@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand the relationship between the concept of discrete scalar fields and existing theories such as MOND and Tsallis statistics. It introduces the topic and asks for background knowledge and motivation for exploring this area further."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:50:56] main | args: Namespace(max_check=10, debug=True)
+[13:50:56] read_last_jsonl | path= classified_outputs.jsonl
+[13:50:56] read_last_jsonl | total_lines= 1
+[13:50:56] main | query='How does the concept of discrete scalar fields compare to and utilize existing theories such as MOND and Tsallis statistics?' | funcs=['Background', 'Motivation']
+[13:50:58] main | core_terms= ['MOND', 'Tsallis statistics', 'discrete scalar fields']
+[13:50:58] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:50:58] load_topk_jsonl | rows= 20
+[13:50:58] load_topk_jsonl | first: rank= 0 paper_id= hep-th/0103218 title_snip='Discrete fields, general relativity, other possible implications and
+ …' abs_len= 1650
+[13:50:58] main | running function= Background
+[13:50:58] select | function= Background | candidates_in= 20
+[13:50:58] select | core_terms= ['MOND', 'Tsallis statistics', 'discrete scalar fields']
+[13:50:58] select | no cosine prune; kept=20/20
+[13:50:58] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0103218', 'math/0101207', 'hep-ph/0101242', 'gr-qc/0103048', 'hep-th/0101216', 'hep-ph/0104273', 'hep-th/0102127', 'hep-th/0104108', 'cond-mat/0102162', 'gr-qc/0101033']
+[13:50:58] select | verify relaxed 1/10
+[13:50:58] verify | func= Background | rank= 0 | pid= hep-th/0103218 | title_snip='Discrete fields, general relativity, other possible implications and
+ …' | abs_len= 1650
+[13:51:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:01] select | verify relaxed 2/10
+[13:51:01] verify | func= Background | rank= 1 | pid= math/0101207 | title_snip='From PDE Systems and Metrics to Generalized Field Theories' | abs_len= 578
+[13:51:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:04] select | verify relaxed 3/10
+[13:51:04] verify | func= Background | rank= 2 | pid= hep-ph/0101242 | title_snip='Some Phenomenological Aspects of the (n + m + 1) dimensional Brane Wor…' | abs_len= 886
+[13:51:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:06] select | verify relaxed 4/10
+[13:51:06] verify | func= Background | rank= 3 | pid= gr-qc/0103048 | title_snip='Generalized Hamiltonian Dynamics of Friedmann Cosmology with Scalar an…' | abs_len= 1024
+[13:51:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:09] select | verify relaxed 5/10
+[13:51:09] verify | func= Background | rank= 4 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[13:51:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:11] select | verify relaxed 6/10
+[13:51:11] verify | func= Background | rank= 5 | pid= hep-ph/0104273 | title_snip='Geometry of Large Extra Dimensions versus Graviton Emission' | abs_len= 707
+[13:51:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:14] select | verify relaxed 7/10
+[13:51:14] verify | func= Background | rank= 6 | pid= hep-th/0102127 | title_snip='Core structure and exactly solvable models in dilaton gravity coupled …' | abs_len= 1005
+[13:51:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:16] select | verify relaxed 8/10
+[13:51:16] verify | func= Background | rank= 7 | pid= hep-th/0104108 | title_snip='Discrete Kaluza-Klein from scalar fluctuations in noncommutative
+  geo…' | abs_len= 733
+[13:51:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:19] select | verify relaxed 9/10
+[13:51:19] verify | func= Background | rank= 8 | pid= cond-mat/0102162 | title_snip='Aspects of Discrete Breathers and New Directions' | abs_len= 841
+[13:51:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:21] select | verify relaxed 10/10
+[13:51:21] verify | func= Background | rank= 9 | pid= gr-qc/0101033 | title_snip='Effective action for scalar fields in two-dimensional gravity' | abs_len= 1023
+[13:51:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the concept of discrete scalar fields compare to and utilize existing theories such as MOND and Tsallis statistics?
+- WINNER: hep-th/0103218 | Discrete fields, general relativity, other possible implications and
+  experimental evidences
+- QUOTE : introduction of an effective-acceleration scale which may put Milgrom's MOND
+- WHY   : sufficient
+[13:51:25] main | running function= Motivation
+[13:51:25] select | function= Motivation | candidates_in= 20
+[13:51:25] select | core_terms= ['MOND', 'Tsallis statistics', 'discrete scalar fields']
+[13:51:25] select | no cosine prune; kept=20/20
+[13:51:25] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-th/0103218', 'math/0101207', 'hep-ph/0101242', 'gr-qc/0103048', 'hep-th/0101216', 'hep-ph/0104273', 'hep-th/0102127', 'hep-th/0104108', 'cond-mat/0102162', 'gr-qc/0101033']
+[13:51:25] select | verify relaxed 1/10
+[13:51:25] verify | func= Motivation | rank= 0 | pid= hep-th/0103218 | title_snip='Discrete fields, general relativity, other possible implications and
+ …' | abs_len= 1650
+[13:51:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:51:28] select | verify relaxed 2/10
+[13:51:28] verify | func= Motivation | rank= 1 | pid= math/0101207 | title_snip='From PDE Systems and Metrics to Generalized Field Theories' | abs_len= 578
+[13:51:30] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:30] select | verify relaxed 3/10
+[13:51:30] verify | func= Motivation | rank= 2 | pid= hep-ph/0101242 | title_snip='Some Phenomenological Aspects of the (n + m + 1) dimensional Brane Wor…' | abs_len= 886
+[13:51:33] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:33] select | verify relaxed 4/10
+[13:51:33] verify | func= Motivation | rank= 3 | pid= gr-qc/0103048 | title_snip='Generalized Hamiltonian Dynamics of Friedmann Cosmology with Scalar an…' | abs_len= 1024
+[13:51:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:35] select | verify relaxed 5/10
+[13:51:35] verify | func= Motivation | rank= 4 | pid= hep-th/0101216 | title_snip='Discrete Noncommutative Gauge Theory' | abs_len= 998
+[13:51:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:38] select | verify relaxed 6/10
+[13:51:38] verify | func= Motivation | rank= 5 | pid= hep-ph/0104273 | title_snip='Geometry of Large Extra Dimensions versus Graviton Emission' | abs_len= 707
+[13:51:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:40] select | verify relaxed 7/10
+[13:51:40] verify | func= Motivation | rank= 6 | pid= hep-th/0102127 | title_snip='Core structure and exactly solvable models in dilaton gravity coupled …' | abs_len= 1005
+[13:51:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:43] select | verify relaxed 8/10
+[13:51:43] verify | func= Motivation | rank= 7 | pid= hep-th/0104108 | title_snip='Discrete Kaluza-Klein from scalar fluctuations in noncommutative
+  geo…' | abs_len= 733
+[13:51:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:45] select | verify relaxed 9/10
+[13:51:45] verify | func= Motivation | rank= 8 | pid= cond-mat/0102162 | title_snip='Aspects of Discrete Breathers and New Directions' | abs_len= 841
+[13:51:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:51:48] select | verify relaxed 10/10
+[13:51:48] verify | func= Motivation | rank= 9 | pid= gr-qc/0101033 | title_snip='Effective action for scalar fields in two-dimensional gravity' | abs_len= 1023
+[13:51:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How does the concept of discrete scalar fields compare to and utilize existing theories such as MOND and Tsallis statistics?
+- WINNER: hep-th/0103218 | Discrete fields, general relativity, other possible implications and
+  experimental evidences
+- QUOTE : may put Milgrom's MOND on a more solid physical basis
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The concept of discrete scalar fields builds upon existing theories such as MOND and Tsallis statistics by providing a potential physical basis for MOND through the introduction of an effective-acceleration scale and utilizing Tsallis statistics as a proper framework for discrete-interaction systems [Background] (hep-th/0103218). This comparison is motivated by the possibility of discrete-field manifestations being observed in phenomena such as flat rotation curves of galaxies, which may validate the use of discrete scalar fields in understanding these observations [Motivation] (hep-th/0103218).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

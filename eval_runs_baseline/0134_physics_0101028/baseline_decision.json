@@ -1,0 +1,18 @@
+{
+  "answer": "The development of the coupled microwave-cavity system provides background for future improvements in axion detection by enhancing the sensitivity of axion searches (physics/0101028).",
+  "predicted_paper_id": "physics/0101028",
+  "explanation": "This paper presents a coupled microwave-cavity system for axion detection, which has the potential for future improvements in sensitivity and detection capabilities.",
+  "evidence_quote": "coupled microwave-cavity system",
+  "topk_list": [
+    "physics/0101028",
+    "hep-ph/0101200",
+    "gr-qc/0103006",
+    "astro-ph/0103478",
+    "astro-ph/0102078",
+    "astro-ph/0104200",
+    "hep-ex/0101037",
+    "hep-ex/0104035",
+    "cond-mat/0103422",
+    "astro-ph/0103281"
+  ]
+}

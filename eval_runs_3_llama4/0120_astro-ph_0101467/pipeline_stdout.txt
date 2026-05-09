@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "Extends"
+  ],
+  "justification": "The query makes a comparative inquiry and asks how the current work builds upon existing methods."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:58:29] main | args: Namespace(max_check=10, debug=True)
+[13:58:29] read_last_jsonl | path= classified_outputs.jsonl
+[13:58:29] read_last_jsonl | total_lines= 1
+[13:58:29] main | query='How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?' | funcs=['Compares', 'Extends']
+[13:58:31] main | core_terms= ['X-ray', 'extra-galactic X-ray background', 'surface brightness distribution', 'extra-galactic']
+[13:58:31] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:58:31] load_topk_jsonl | rows= 20
+[13:58:31] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101467 title_snip='The X-ray surface brightness distribution from diffuse gas' abs_len= 1509
+[13:58:31] main | running function= Compares
+[13:58:31] select | function= Compares | candidates_in= 20
+[13:58:31] select | core_terms= ['X-ray', 'extra-galactic X-ray background', 'surface brightness distribution', 'extra-galactic']
+[13:58:31] select | no cosine prune; kept=20/20
+[13:58:31] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101467', 'astro-ph/0101466', 'astro-ph/0102297', 'astro-ph/0102214', 'astro-ph/0101084', 'astro-ph/0104366', 'astro-ph/0101313', 'astro-ph/0102165', 'astro-ph/0102206', 'astro-ph/0103439']
+[13:58:31] select | verify relaxed 1/10
+[13:58:31] verify | func= Compares | rank= 0 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[13:58:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:58:34] select | verify relaxed 2/10
+[13:58:34] verify | func= Compares | rank= 1 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[13:58:38] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:58:38] select | verify relaxed 3/10
+[13:58:38] verify | func= Compares | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[13:58:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:58:41] select | verify relaxed 4/10
+[13:58:41] verify | func= Compares | rank= 3 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[13:58:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:58:43] select | verify relaxed 5/10
+[13:58:43] verify | func= Compares | rank= 4 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[13:58:46] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:58:46] select | verify relaxed 6/10
+[13:58:46] verify | func= Compares | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[13:58:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:58:48] select | verify relaxed 7/10
+[13:58:48] verify | func= Compares | rank= 6 | pid= astro-ph/0101313 | title_snip='Measuring the brightness temperature distribution of extragalactic rad…' | abs_len= 1194
+[13:58:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:58:51] select | verify relaxed 8/10
+[13:58:51] verify | func= Compares | rank= 7 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[13:58:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:58:55] select | verify relaxed 9/10
+[13:58:55] verify | func= Compares | rank= 8 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[13:58:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:58:58] select | verify relaxed 10/10
+[13:58:58] verify | func= Compares | rank= 9 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[13:59:01] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:59:02] arbiter | rejected off-topic winner: astro-ph/0102165
+[13:59:03] arbiter | accepted fallback: astro-ph/0101467
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?
+- WINNER: astro-ph/0101467 | The X-ray surface brightness distribution from diffuse gas
+- QUOTE : Although this means that we can compute only lower bounds
+- WHY   : sufficient
+[13:59:03] main | running function= Extends
+[13:59:03] select | function= Extends | candidates_in= 20
+[13:59:03] select | core_terms= ['X-ray', 'extra-galactic X-ray background', 'surface brightness distribution', 'extra-galactic']
+[13:59:03] select | no cosine prune; kept=20/20
+[13:59:03] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101467', 'astro-ph/0101466', 'astro-ph/0102297', 'astro-ph/0102214', 'astro-ph/0101084', 'astro-ph/0104366', 'astro-ph/0101313', 'astro-ph/0102165', 'astro-ph/0102206', 'astro-ph/0103439']
+[13:59:03] select | verify relaxed 1/10
+[13:59:03] verify | func= Extends | rank= 0 | pid= astro-ph/0101467 | title_snip='The X-ray surface brightness distribution from diffuse gas' | abs_len= 1509
+[13:59:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:59:07] select | verify relaxed 2/10
+[13:59:07] verify | func= Extends | rank= 1 | pid= astro-ph/0101466 | title_snip='On the Distribution of X-ray Surface Brightness from Diffuse Gas' | abs_len= 1212
+[13:59:10] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:59:10] select | verify relaxed 3/10
+[13:59:10] verify | func= Extends | rank= 2 | pid= astro-ph/0102297 | title_snip='Comparison of source detection procedures for XMM-Newton images' | abs_len= 1589
+[13:59:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:59:13] select | verify relaxed 4/10
+[13:59:13] verify | func= Extends | rank= 3 | pid= astro-ph/0102214 | title_snip='The Tolman Surface Brightness Test for the Reality of the Expansion. I…' | abs_len= 1793
+[13:59:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:59:15] select | verify relaxed 5/10
+[13:59:15] verify | func= Extends | rank= 4 | pid= astro-ph/0101084 | title_snip='Global Evolution Models and the Extragalactic Background Light' | abs_len= 709
+[13:59:18] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:59:18] select | verify relaxed 6/10
+[13:59:18] verify | func= Extends | rank= 5 | pid= astro-ph/0104366 | title_snip='Concerning Parameter Estimation Using the Cosmic Microwave Background' | abs_len= 1521
+[13:59:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:59:21] select | verify relaxed 7/10
+[13:59:21] verify | func= Extends | rank= 6 | pid= astro-ph/0101313 | title_snip='Measuring the brightness temperature distribution of extragalactic rad…' | abs_len= 1194
+[13:59:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:59:23] select | verify relaxed 8/10
+[13:59:23] verify | func= Extends | rank= 7 | pid= astro-ph/0102165 | title_snip='Cluster physics from joint weak gravitational lensing and
+  Sunyaev-Ze…' | abs_len= 1276
+[13:59:27] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:59:27] select | verify relaxed 9/10
+[13:59:27] verify | func= Extends | rank= 8 | pid= astro-ph/0102206 | title_snip='On the Contribution of Unresolved Galactic Stars to the Diffuse Soft
+ …' | abs_len= 740
+[13:59:30] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:59:30] select | verify relaxed 10/10
+[13:59:30] verify | func= Extends | rank= 9 | pid= astro-ph/0103439 | title_snip='Deep Sky Objects and the X-ray Background' | abs_len= 461
+[13:59:34] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work's approach to simulating X-ray surface brightness distribution compare to and extend existing methods for predicting the extra-galactic X-ray background?
+- WINNER: astro-ph/0101467 | The X-ray surface brightness distribution from diffuse gas
+- QUOTE : We use simulations to predict the X-ray surface brightness distribution
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work's approach to simulating X-ray surface brightness distribution compares to existing methods by predicting the distribution from diffuse gas and examining numerical issues such as resolution [Compares] (astro-ph/0101467). It extends existing methods by exploring the effect of non-gravitational heating on the distribution and using the characteristic shape of surface brightness as a probe of energy injection [Extends] (astro-ph/0101467).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

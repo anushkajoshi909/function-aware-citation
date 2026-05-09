@@ -1,0 +1,18 @@
+{
+  "answer": "The current work uses a specific method to compare the performance of different models for X-ray burst oscillations, as seen in astro-ph/0101160.",
+  "predicted_paper_id": "astro-ph/0101160",
+  "explanation": "This paper discusses the analysis of X-ray burst oscillations and their relation to neutron star spins, making it relevant to the comparison of different models for X-ray burst oscillations.",
+  "evidence_quote": "X-ray brightness oscillations",
+  "topk_list": [
+    "astro-ph/0102297",
+    "astro-ph/0102271",
+    "astro-ph/0101160",
+    "astro-ph/0103431",
+    "astro-ph/0101291",
+    "astro-ph/0104323",
+    "astro-ph/0104413",
+    "astro-ph/0104120",
+    "hep-ph/0102103",
+    "astro-ph/0104285"
+  ]
+}

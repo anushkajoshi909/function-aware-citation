@@ -1,1 +1,0 @@
-Extensions of the standard model, such as supersymmetric extensions, incorporate new physics beyond the electroweak standard model by influencing CP-violating observables through loop corrections (hep-ph/0101259). [Background]

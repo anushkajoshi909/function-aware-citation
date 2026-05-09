@@ -1,0 +1,160 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "FutureWork",
+    "Motivation"
+  ],
+  "justification": "The query explicitly asks about future research directions ('potential areas of future research') and links them to challenges/implications that drive this inquiry ('motivated by experimental challenges')."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:19:58] main | args: Namespace(max_check=10, debug=True)
+[12:19:58] read_last_jsonl | path= classified_outputs.jsonl
+[12:19:58] read_last_jsonl | total_lines= 1
+[12:19:58] main | query='What potential areas of future research are motivated by the experimental challenges and physics implications of measuring muon polarization in kaon decay processes?' | funcs=['FutureWork', 'Motivation']
+[12:20:00] main | core_terms= ['kaon', 'muon', 'polarization', 'decay process']
+[12:20:00] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:20:00] load_topk_jsonl | rows= 20
+[12:20:00] load_topk_jsonl | first: rank= 0 paper_id= hep-ex/0101003 title_snip='Tests of the Standard Model Using Muon Polarization Asymmetries in Kao…' abs_len= 1318
+[12:20:00] main | running function= FutureWork
+[12:20:00] select | function= FutureWork | candidates_in= 20
+[12:20:00] select | core_terms= ['kaon', 'muon', 'polarization', 'decay process']
+[12:20:00] select | no cosine prune; kept=20/20
+[12:20:00] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0101003', 'hep-ex/0103007', 'hep-ph/0104304', 'hep-ph/0103064', 'hep-ph/0103288', 'hep-ph/0102085', 'hep-ph/0101122', 'hep-ex/0101017', 'hep-ph/0103039', 'hep-ph/0102147']
+[12:20:00] select | verify relaxed 1/10
+[12:20:00] verify | func= FutureWork | rank= 0 | pid= hep-ex/0101003 | title_snip='Tests of the Standard Model Using Muon Polarization Asymmetries in Kao…' | abs_len= 1318
+[12:20:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:20:03] select | verify relaxed 2/10
+[12:20:03] verify | func= FutureWork | rank= 1 | pid= hep-ex/0103007 | title_snip='Search for T-violation in K^+ --> pi^0 mu^+ nu and K^+ --> mu^+ nu gam…' | abs_len= 253
+[12:20:06] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:20:06] select | verify relaxed 3/10
+[12:20:06] verify | func= FutureWork | rank= 2 | pid= hep-ph/0104304 | title_snip='Hadronic Contributions to the Photon Vacuum Polarization and their Rol…' | abs_len= 440
+[12:20:10] verify | result supports= True fit= 0.60 top= 0.80 invalid= — cue_hint= False
+[12:20:10] select | verify relaxed 4/10
+[12:20:10] verify | func= FutureWork | rank= 3 | pid= hep-ph/0103064 | title_snip='Implications of the muon anomalous magnetic moment and Higgs-mediated
+…' | abs_len= 610
+[12:20:12] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[12:20:12] select | verify relaxed 5/10
+[12:20:12] verify | func= FutureWork | rank= 4 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[12:20:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:20:15] select | verify relaxed 6/10
+[12:20:15] verify | func= FutureWork | rank= 5 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[12:20:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:20:17] select | verify relaxed 7/10
+[12:20:17] verify | func= FutureWork | rank= 6 | pid= hep-ph/0101122 | title_snip='Theoretical Overview: Motivations for Lepton Flavor Violation' | abs_len= 450
+[12:20:20] verify | result supports= False fit= 0.00 top= 0.60 invalid= off_topic_no_core_in_abstract cue_hint= False
+[12:20:20] select | verify relaxed 8/10
+[12:20:20] verify | func= FutureWork | rank= 7 | pid= hep-ex/0101017 | title_snip='The MECO experiment: A search for lepton flavor violation in muonic
+  …' | abs_len= 524
+[12:20:23] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:20:23] select | verify relaxed 9/10
+[12:20:23] verify | func= FutureWork | rank= 8 | pid= hep-ph/0103039 | title_snip='New physics effects to the lepton polarizations in the B -> K l^+ l^-
+…' | abs_len= 749
+[12:20:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[12:20:26] select | verify relaxed 10/10
+[12:20:26] verify | func= FutureWork | rank= 9 | pid= hep-ph/0102147 | title_snip='Implications of muon anomalous magnetic moment for supersymmetric dark…' | abs_len= 704
+[12:20:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What potential areas of future research are motivated by the experimental challenges and physics implications of measuring muon polarization in kaon decay processes?
+- WINNER: hep-ex/0101003 | Tests of the Standard Model Using Muon Polarization Asymmetries in Kaon
+  Decays
+- QUOTE : A detailed examination of muon polarization
+- WHY   : sufficient
+[12:20:29] main | running function= Motivation
+[12:20:29] select | function= Motivation | candidates_in= 20
+[12:20:29] select | core_terms= ['kaon', 'muon', 'polarization', 'decay process']
+[12:20:29] select | no cosine prune; kept=20/20
+[12:20:29] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['hep-ex/0101003', 'hep-ex/0103007', 'hep-ph/0104304', 'hep-ph/0103064', 'hep-ph/0103288', 'hep-ph/0102085', 'hep-ph/0101122', 'hep-ex/0101017', 'hep-ph/0103039', 'hep-ph/0102147']
+[12:20:29] select | verify relaxed 1/10
+[12:20:29] verify | func= Motivation | rank= 0 | pid= hep-ex/0101003 | title_snip='Tests of the Standard Model Using Muon Polarization Asymmetries in Kao…' | abs_len= 1318
+[12:20:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:20:33] select | verify relaxed 2/10
+[12:20:33] verify | func= Motivation | rank= 1 | pid= hep-ex/0103007 | title_snip='Search for T-violation in K^+ --> pi^0 mu^+ nu and K^+ --> mu^+ nu gam…' | abs_len= 253
+[12:20:36] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:20:36] select | verify relaxed 3/10
+[12:20:36] verify | func= Motivation | rank= 2 | pid= hep-ph/0104304 | title_snip='Hadronic Contributions to the Photon Vacuum Polarization and their Rol…' | abs_len= 440
+[12:20:39] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:20:39] select | verify relaxed 4/10
+[12:20:39] verify | func= Motivation | rank= 3 | pid= hep-ph/0103064 | title_snip='Implications of the muon anomalous magnetic moment and Higgs-mediated
+…' | abs_len= 610
+[12:20:42] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:20:42] select | verify relaxed 5/10
+[12:20:42] verify | func= Motivation | rank= 4 | pid= hep-ph/0103288 | title_snip='Astroparticle Aspects of Supersymmetry' | abs_len= 702
+[12:20:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:20:45] select | verify relaxed 6/10
+[12:20:45] verify | func= Motivation | rank= 5 | pid= hep-ph/0102085 | title_snip='Physics Implications of Precision Electroweak Experiments' | abs_len= 194
+[12:20:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:20:47] select | verify relaxed 7/10
+[12:20:47] verify | func= Motivation | rank= 6 | pid= hep-ph/0101122 | title_snip='Theoretical Overview: Motivations for Lepton Flavor Violation' | abs_len= 450
+[12:20:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[12:20:50] select | verify relaxed 8/10
+[12:20:50] verify | func= Motivation | rank= 7 | pid= hep-ex/0101017 | title_snip='The MECO experiment: A search for lepton flavor violation in muonic
+  …' | abs_len= 524
+[12:20:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:20:53] select | verify relaxed 9/10
+[12:20:53] verify | func= Motivation | rank= 8 | pid= hep-ph/0103039 | title_snip='New physics effects to the lepton polarizations in the B -> K l^+ l^-
+…' | abs_len= 749
+[12:20:56] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:20:56] select | verify relaxed 10/10
+[12:20:56] verify | func= Motivation | rank= 9 | pid= hep-ph/0102147 | title_snip='Implications of muon anomalous magnetic moment for supersymmetric dark…' | abs_len= 704
+[12:20:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What potential areas of future research are motivated by the experimental challenges and physics implications of measuring muon polarization in kaon decay processes?
+- WINNER: hep-ex/0101003 | Tests of the Standard Model Using Muon Polarization Asymmetries in Kaon
+  Decays
+- QUOTE : New sources of physics, involving non-standard CP violation, could produce effects observable in these measurements
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Measuring muon polarization in kaon decay processes motivates future research [Motivation] due to its potential to provide valuable information on CP violation and new physics, and several areas of future work [FutureWork] are possible, including detailed examinations of muon polarization in various kaon decays (hep-ex/0101003).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

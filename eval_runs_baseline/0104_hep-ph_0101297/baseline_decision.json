@@ -1,0 +1,18 @@
+{
+  "answer": "The expansion of the Borel transform of a QCD amplitude near the infrared renormalon can be used to improve the accuracy of perturbative expansions, as seen in the analysis of the Adler function (hep-ph/0101297).",
+  "predicted_paper_id": "hep-ph/0101297",
+  "explanation": "This paper demonstrates how the expansion of the Borel transform near the infrared renormalon can be used to constrain the Borel amplitude and improve the accuracy of perturbative expansions.",
+  "evidence_quote": "Borel transform of a QCD amplitude near the infrared renormalon",
+  "topk_list": [
+    "hep-ph/0101297",
+    "hep-ph/0101248",
+    "hep-ph/0101227",
+    "hep-ph/0103191",
+    "hep-ph/0104048",
+    "hep-ph/0104177",
+    "hep-ph/0103237",
+    "hep-ph/0104142",
+    "hep-ph/0102223",
+    "hep-ph/0104290"
+  ]
+}

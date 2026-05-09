@@ -1,0 +1,18 @@
+{
+  "answer": "The background information on skutterudite compounds informs the use of photoemission spectroscopy in this study by providing insight into the electronic structure of these compounds (cond-mat/0103342).",
+  "predicted_paper_id": "cond-mat/0103342",
+  "explanation": "This paper studies the electronic structure of skutterudite compounds using photoemission spectroscopy, making it directly relevant to the question.",
+  "evidence_quote": "Photoemission study of the skutterudite compounds",
+  "topk_list": [
+    "cond-mat/0103342",
+    "cond-mat/0103500",
+    "cond-mat/0102323",
+    "cond-mat/0102443",
+    "cond-mat/0103079",
+    "cond-mat/0101105",
+    "hep-ph/0102288",
+    "cond-mat/0102376",
+    "cond-mat/0104489",
+    "astro-ph/0101153"
+  ]
+}

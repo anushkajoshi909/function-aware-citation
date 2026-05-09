@@ -1,0 +1,1 @@
+Future research could explore the variation of the Tully-Fisher relation with redshift to break parameter degeneracies among galactosynthesis models [FutureWork] (astro-ph/0102025), which is motivated by the potential to constrain the redshift distribution of collapsing dark-matter halos and star-formation history [Motivation] (astro-ph/0102025).

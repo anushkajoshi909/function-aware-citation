@@ -1,0 +1,18 @@
+{
+  "answer": "Future research could investigate the Tully-Fisher relation at high redshift to constrain galaxy-formation models and dark matter halos (astro-ph/0102025).",
+  "predicted_paper_id": "astro-ph/0102025",
+  "explanation": "This paper discusses the Tully-Fisher relation and its variation with redshift, making it a relevant starting point for future research on the limitations of current studies.",
+  "evidence_quote": "Tully-Fisher",
+  "topk_list": [
+    "astro-ph/0102349",
+    "astro-ph/0102389",
+    "astro-ph/0102025",
+    "hep-ph/0103349",
+    "hep-ph/0102006",
+    "astro-ph/0101528",
+    "astro-ph/0104217",
+    "astro-ph/0103470",
+    "astro-ph/0101210",
+    "astro-ph/0101413"
+  ]
+}

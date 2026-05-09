@@ -1,0 +1,18 @@
+{
+  "answer": "The mass function of open clusters is not well understood, particularly at lower masses, due to various limitations such as strong irregularities in the stellar background and probable internal dynamical evolution of the cluster (astro-ph/0101371).",
+  "predicted_paper_id": "astro-ph/0101371",
+  "explanation": "This paper discusses the limitations in understanding the mass function of open clusters, including the effects of strong irregularities in the stellar background and probable internal dynamical evolution of the cluster, making it a relevant choice to support the answer.",
+  "evidence_quote": "Below this mass, the MF cannot be considered as representative of the cluster IMF",
+  "topk_list": [
+    "astro-ph/0101371",
+    "astro-ph/0102010",
+    "astro-ph/0102430",
+    "astro-ph/0101431",
+    "astro-ph/0104313",
+    "astro-ph/0103082",
+    "astro-ph/0101564",
+    "astro-ph/0104163",
+    "astro-ph/0101139",
+    "astro-ph/0102363"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114 extends the work of Natarajan et al and motivates further research on the faint end of the luminosity function of high redshift galaxies (astro-ph/0104477).",
+  "predicted_paper_id": "astro-ph/0104477",
+  "explanation": "This paper presents the first results of a spectroscopic survey of faint lensed galaxies in the core of the galaxy cluster AC114, which is relevant to the work of Natarajan et al and the study of high redshift galaxies.",
+  "evidence_quote": "galaxies in the core of the galaxy cluster AC114",
+  "topk_list": [
+    "astro-ph/0104477",
+    "astro-ph/0102214",
+    "astro-ph/0104094",
+    "astro-ph/0103123",
+    "astro-ph/0103500",
+    "astro-ph/0102470",
+    "astro-ph/0102393",
+    "astro-ph/0102213",
+    "astro-ph/0101371",
+    "astro-ph/0103242"
+  ]
+}

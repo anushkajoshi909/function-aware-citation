@@ -1,2 +1,0 @@
-The physics of gas accretion in young stellar clusters involves competitive accretion, where stars near the cluster center accrete more due to higher gas densities (astro-ph/0102074). [Background]
-Researchers use the tidal-lobe radius to model accretion rates in gas-dominated clusters, where stellar and gas velocities are comparable. In contrast, the Bondi-Hoyle accretion radius is used when stars dominate the potential and are virialised, providing a better fit to the accretion rates in such systems (astro-ph/0102074). [Uses]

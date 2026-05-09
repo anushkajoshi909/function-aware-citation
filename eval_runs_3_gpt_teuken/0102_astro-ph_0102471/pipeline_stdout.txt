@@ -1,0 +1,158 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query introduces a background concept and highlights a motivation for future research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:25:14] main | args: Namespace(max_check=10, debug=True)
+[13:25:14] read_last_jsonl | path= classified_outputs.jsonl
+[13:25:14] read_last_jsonl | total_lines= 1
+[13:25:14] main | query='What limitations in identifying gamma-ray sources motivate further research and suggest potential areas for future work?' | funcs=['Background', 'Motivation']
+[13:25:16] main | core_terms= ['gamma-ray sources', 'source identification', 'gamma-ray astronomy', 'gamma-ray']
+[13:25:16] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:25:16] load_topk_jsonl | rows= 20
+[13:25:16] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104348 title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' abs_len= 612
+[13:25:16] main | running function= Background
+[13:25:16] select | function= Background | candidates_in= 20
+[13:25:16] select | core_terms= ['gamma-ray sources', 'source identification', 'gamma-ray astronomy', 'gamma-ray']
+[13:25:16] select | no cosine prune; kept=20/20
+[13:25:16] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104348', 'astro-ph/0101120', 'astro-ph/0104343', 'astro-ph/0102324', 'astro-ph/0101039', 'astro-ph/0104165', 'astro-ph/0101175', 'astro-ph/0104288', 'astro-ph/0102077', 'astro-ph/0102495']
+[13:25:16] select | verify relaxed 1/10
+[13:25:16] verify | func= Background | rank= 0 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[13:25:19] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:19] select | verify relaxed 2/10
+[13:25:19] verify | func= Background | rank= 1 | pid= astro-ph/0101120 | title_snip='TeV Gamma-Ray Astronomy in the new Millennium' | abs_len= 928
+[13:25:22] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:22] select | verify relaxed 3/10
+[13:25:22] verify | func= Background | rank= 2 | pid= astro-ph/0104343 | title_snip='A Study of the Unidentified Gamma-Ray Source 3EG J1828+0142' | abs_len= 1157
+[13:25:25] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:25] select | verify relaxed 4/10
+[13:25:25] verify | func= Background | rank= 3 | pid= astro-ph/0102324 | title_snip='TeV observations of SNRs and unidentified sources' | abs_len= 409
+[13:25:28] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:25:28] select | verify relaxed 5/10
+[13:25:28] verify | func= Background | rank= 4 | pid= astro-ph/0101039 | title_snip='Gamma Ray Pulsars: Observations' | abs_len= 848
+[13:25:31] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:31] select | verify relaxed 6/10
+[13:25:31] verify | func= Background | rank= 5 | pid= astro-ph/0104165 | title_snip='Bounds on the neutrino flux from cosmic sources of relativistic
+  part…' | abs_len= 948
+[13:25:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:25:34] select | verify relaxed 7/10
+[13:25:34] verify | func= Background | rank= 6 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[13:25:37] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:37] select | verify relaxed 8/10
+[13:25:37] verify | func= Background | rank= 7 | pid= astro-ph/0104288 | title_snip='SS-433/W50 at TeV Energies' | abs_len= 702
+[13:25:40] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:25:40] select | verify relaxed 9/10
+[13:25:40] verify | func= Background | rank= 8 | pid= astro-ph/0102077 | title_snip='The Origin of the Highest Energy Cosmic Rays' | abs_len= 966
+[13:25:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:42] select | verify relaxed 10/10
+[13:25:42] verify | func= Background | rank= 9 | pid= astro-ph/0102495 | title_snip='The Gamma-Ray Properties of Unidentified EGRET Sources' | abs_len= 894
+[13:25:45] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What limitations in identifying gamma-ray sources motivate further research and suggest potential areas for future work?
+- WINNER: astro-ph/0104348 | Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Remnants
+- QUOTE : unidentified gamma-ray sources
+- WHY   : sufficient
+[13:25:46] main | running function= Motivation
+[13:25:46] select | function= Motivation | candidates_in= 20
+[13:25:46] select | core_terms= ['gamma-ray sources', 'source identification', 'gamma-ray astronomy', 'gamma-ray']
+[13:25:46] select | no cosine prune; kept=20/20
+[13:25:47] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104348', 'astro-ph/0101120', 'astro-ph/0104343', 'astro-ph/0102324', 'astro-ph/0101039', 'astro-ph/0104165', 'astro-ph/0101175', 'astro-ph/0104288', 'astro-ph/0102077', 'astro-ph/0102495']
+[13:25:47] select | verify relaxed 1/10
+[13:25:47] verify | func= Motivation | rank= 0 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[13:25:49] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:49] select | verify relaxed 2/10
+[13:25:49] verify | func= Motivation | rank= 1 | pid= astro-ph/0101120 | title_snip='TeV Gamma-Ray Astronomy in the new Millennium' | abs_len= 928
+[13:25:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:53] select | verify relaxed 3/10
+[13:25:53] verify | func= Motivation | rank= 2 | pid= astro-ph/0104343 | title_snip='A Study of the Unidentified Gamma-Ray Source 3EG J1828+0142' | abs_len= 1157
+[13:25:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:56] select | verify relaxed 4/10
+[13:25:56] verify | func= Motivation | rank= 3 | pid= astro-ph/0102324 | title_snip='TeV observations of SNRs and unidentified sources' | abs_len= 409
+[13:25:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:25:59] select | verify relaxed 5/10
+[13:25:59] verify | func= Motivation | rank= 4 | pid= astro-ph/0101039 | title_snip='Gamma Ray Pulsars: Observations' | abs_len= 848
+[13:26:02] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:26:02] select | verify relaxed 6/10
+[13:26:02] verify | func= Motivation | rank= 5 | pid= astro-ph/0104165 | title_snip='Bounds on the neutrino flux from cosmic sources of relativistic
+  part…' | abs_len= 948
+[13:26:04] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[13:26:04] select | verify relaxed 7/10
+[13:26:04] verify | func= Motivation | rank= 6 | pid= astro-ph/0101175 | title_snip='Shock Acceleration of Cosmic Rays - a critical review' | abs_len= 799
+[13:26:08] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:26:08] select | verify relaxed 8/10
+[13:26:08] verify | func= Motivation | rank= 7 | pid= astro-ph/0104288 | title_snip='SS-433/W50 at TeV Energies' | abs_len= 702
+[13:26:11] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:26:11] select | verify relaxed 9/10
+[13:26:11] verify | func= Motivation | rank= 8 | pid= astro-ph/0102077 | title_snip='The Origin of the Highest Energy Cosmic Rays' | abs_len= 966
+[13:26:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:13] select | verify relaxed 10/10
+[13:26:13] verify | func= Motivation | rank= 9 | pid= astro-ph/0102495 | title_snip='The Gamma-Ray Properties of Unidentified EGRET Sources' | abs_len= 894
+[13:26:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What limitations in identifying gamma-ray sources motivate further research and suggest potential areas for future work?
+- WINNER: astro-ph/0101175 | Shock Acceleration of Cosmic Rays - a critical review
+- QUOTE : Motivated by recent unsuccessful efforts to detect the predicted flux of TeV gamma-rays
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The inability to detect predicted TeV gamma-ray flux from supernova remnants [Background] (astro-ph/0101175) motivates further research due to limitations in understanding the acceleration of cosmic rays and the resulting gamma-ray emission [Motivation] (astro-ph/0101175). This suggests potential areas for future work in developing more realistic analytical models to obtain reliable predictions [Motivation] (astro-ph/0101175).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

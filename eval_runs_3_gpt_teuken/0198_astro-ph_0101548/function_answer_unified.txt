@@ -1,0 +1,1 @@
+The study of gas-phase abundances in the Magellanic Bridge is motivated by its similarity to Galactic halo clouds despite lower metallicity [Motivation] (astro-ph/0101548), and it provides background information on the interstellar medium in this region, including the relative gas-phase abundances of various elements [Background] (astro-ph/0101548).

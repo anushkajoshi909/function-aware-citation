@@ -1,0 +1,18 @@
+{
+  "answer": "",
+  "predicted_paper_id": "",
+  "explanation": "",
+  "evidence_quote": "",
+  "topk_list": [
+    "hep-ph/0101276",
+    "hep-ph/0103299",
+    "hep-ph/0103121",
+    "hep-ph/0102310",
+    "hep-ex/0104003",
+    "astro-ph/0104166",
+    "hep-ph/0101259",
+    "hep-ph/0103038",
+    "hep-ph/0102168",
+    "hep-ph/0101244"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous research on the magnetic state of doped SrB$_{6}$ by investigating the electronic structure and magnetism in slightly doped SrB$_{6}$ (cond-mat/0103180).",
+  "predicted_paper_id": "cond-mat/0103180",
+  "explanation": "This paper is relevant because it studies the electronic structure and magnetism in slightly doped SrB$_{6}$, which is directly related to the question about the magnetic state of doped SrB$_{6}$.",
+  "evidence_quote": "Electronic structure and magnetism in slightly doped SrB_6",
+  "topk_list": [
+    "cond-mat/0103180",
+    "cond-mat/0103189",
+    "cond-mat/0102048",
+    "cond-mat/0102421",
+    "cond-mat/0101138",
+    "cond-mat/0104308",
+    "cond-mat/0103418",
+    "cond-mat/0102024",
+    "cond-mat/0104498",
+    "hep-ph/0104253"
+  ]
+}

@@ -1,0 +1,150 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query references current understanding as a foundation and explicitly asks about building on it for future studies."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[15:03:36] main | args: Namespace(max_check=10, debug=True)
+[15:03:36] read_last_jsonl | path= classified_outputs.jsonl
+[15:03:36] read_last_jsonl | total_lines= 1
+[15:03:36] main | query='How might future studies of microlensing events build on our current understanding of the optical depth and time-scale distribution of these events in the context of the Sagittarius dwarf galaxy?' | funcs=['Background', 'FutureWork']
+[15:03:38] main | core_terms= ['Sagittarius dwarf galaxy', 'microlensing events', 'optical depth', 'time-scale distribution', 'time-scale']
+[15:03:38] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:03:38] load_topk_jsonl | rows= 20
+[15:03:38] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0102013 title_snip='The Sagittarius dwarf galaxy as a microlensing target' abs_len= 1133
+[15:03:38] main | running function= Background
+[15:03:38] select | function= Background | candidates_in= 20
+[15:03:38] select | core_terms= ['Sagittarius dwarf galaxy', 'microlensing events', 'optical depth', 'time-scale distribution', 'time-scale']
+[15:03:38] select | no cosine prune; kept=20/20
+[15:03:38] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102013', 'astro-ph/0103516', 'astro-ph/0104314', 'gr-qc/0104076', 'astro-ph/0102481', 'astro-ph/0102242', 'astro-ph/0102181', 'astro-ph/0102080', 'astro-ph/0101092', 'astro-ph/0104176']
+[15:03:38] select | verify relaxed 1/10
+[15:03:38] verify | func= Background | rank= 0 | pid= astro-ph/0102013 | title_snip='The Sagittarius dwarf galaxy as a microlensing target' | abs_len= 1133
+[15:03:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:03:41] select | verify relaxed 2/10
+[15:03:41] verify | func= Background | rank= 1 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[15:03:44] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:03:44] select | verify relaxed 3/10
+[15:03:44] verify | func= Background | rank= 2 | pid= astro-ph/0104314 | title_snip='An inner ring and the micro lensing toward the Bulge' | abs_len= 1183
+[15:03:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:03:46] select | verify relaxed 4/10
+[15:03:46] verify | func= Background | rank= 3 | pid= gr-qc/0104076 | title_snip='Chromaticity effects in microlensing by wormholes' | abs_len= 368
+[15:03:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:03:49] select | verify relaxed 5/10
+[15:03:49] verify | func= Background | rank= 4 | pid= astro-ph/0102481 | title_snip='Microlensing by Stellar Black Holes Around Sgr A*' | abs_len= 1136
+[15:03:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:03:52] select | verify relaxed 6/10
+[15:03:52] verify | func= Background | rank= 5 | pid= astro-ph/0102242 | title_snip='Detecting Galactic MACHOs with VERA through Astrometric Microlensing o…' | abs_len= 1755
+[15:03:54] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[15:03:54] select | verify relaxed 7/10
+[15:03:54] verify | func= Background | rank= 6 | pid= astro-ph/0102181 | title_snip='Real-Time Difference Imaging Analysis of MOA Galactic Bulge Observatio…' | abs_len= 979
+[15:03:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:03:57] select | verify relaxed 8/10
+[15:03:57] verify | func= Background | rank= 7 | pid= astro-ph/0102080 | title_snip='A Short Timescale Candidate Microlensing Event in the POINT-AGAPE Pixe…' | abs_len= 1017
+[15:03:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:03:59] select | verify relaxed 9/10
+[15:03:59] verify | func= Background | rank= 8 | pid= astro-ph/0101092 | title_snip='Studying the Galactic Bulge Through Spectroscopy of Microlensed Source…' | abs_len= 1127
+[15:04:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:04:02] select | verify relaxed 10/10
+[15:04:02] verify | func= Background | rank= 9 | pid= astro-ph/0104176 | title_snip='Predicting the Second Caustic Crossing in Binary Microlensing Events' | abs_len= 746
+[15:04:04] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How might future studies of microlensing events build on our current understanding of the optical depth and time-scale distribution of these events in the context of the Sagittarius dwarf galaxy?
+- WINNER: astro-ph/0102013 | The Sagittarius dwarf galaxy as a microlensing target
+- QUOTE : We estimate the optical depth, time-scale distribution
+- WHY   : sufficient
+[15:04:05] main | running function= FutureWork
+[15:04:05] select | function= FutureWork | candidates_in= 20
+[15:04:05] select | core_terms= ['Sagittarius dwarf galaxy', 'microlensing events', 'optical depth', 'time-scale distribution', 'time-scale']
+[15:04:05] select | no cosine prune; kept=20/20
+[15:04:05] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0102013', 'astro-ph/0103516', 'astro-ph/0104314', 'gr-qc/0104076', 'astro-ph/0102481', 'astro-ph/0102242', 'astro-ph/0102181', 'astro-ph/0102080', 'astro-ph/0101092', 'astro-ph/0104176']
+[15:04:05] select | verify relaxed 1/10
+[15:04:05] verify | func= FutureWork | rank= 0 | pid= astro-ph/0102013 | title_snip='The Sagittarius dwarf galaxy as a microlensing target' | abs_len= 1133
+[15:04:08] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[15:04:08] select | verify relaxed 2/10
+[15:04:08] verify | func= FutureWork | rank= 1 | pid= astro-ph/0103516 | title_snip='Applications of Microlensing to Stellar Astrophysics' | abs_len= 1616
+[15:04:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:04:10] select | verify relaxed 3/10
+[15:04:10] verify | func= FutureWork | rank= 2 | pid= astro-ph/0104314 | title_snip='An inner ring and the micro lensing toward the Bulge' | abs_len= 1183
+[15:04:13] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:04:13] select | verify relaxed 4/10
+[15:04:13] verify | func= FutureWork | rank= 3 | pid= gr-qc/0104076 | title_snip='Chromaticity effects in microlensing by wormholes' | abs_len= 368
+[15:04:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:04:16] select | verify relaxed 5/10
+[15:04:16] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102481 | title_snip='Microlensing by Stellar Black Holes Around Sgr A*' | abs_len= 1136
+[15:04:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:04:19] select | verify relaxed 6/10
+[15:04:19] verify | func= FutureWork | rank= 5 | pid= astro-ph/0102242 | title_snip='Detecting Galactic MACHOs with VERA through Astrometric Microlensing o…' | abs_len= 1755
+[15:04:21] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[15:04:21] select | verify relaxed 7/10
+[15:04:21] verify | func= FutureWork | rank= 6 | pid= astro-ph/0102181 | title_snip='Real-Time Difference Imaging Analysis of MOA Galactic Bulge Observatio…' | abs_len= 979
+[15:04:25] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:04:25] select | verify relaxed 8/10
+[15:04:25] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102080 | title_snip='A Short Timescale Candidate Microlensing Event in the POINT-AGAPE Pixe…' | abs_len= 1017
+[15:04:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:04:27] select | verify relaxed 9/10
+[15:04:27] verify | func= FutureWork | rank= 8 | pid= astro-ph/0101092 | title_snip='Studying the Galactic Bulge Through Spectroscopy of Microlensed Source…' | abs_len= 1127
+[15:04:30] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[15:04:30] select | verify relaxed 10/10
+[15:04:30] verify | func= FutureWork | rank= 9 | pid= astro-ph/0104176 | title_snip='Predicting the Second Caustic Crossing in Binary Microlensing Events' | abs_len= 746
+[15:04:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How might future studies of microlensing events build on our current understanding of the optical depth and time-scale distribution of these events in the context of the Sagittarius dwarf galaxy?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Future studies of microlensing events can build on our current understanding of the optical depth and time-scale distribution in the context of the Sagittarius dwarf galaxy by accounting for the contribution of Milky Way/Sagittarius events, which increases towards higher latitudes [Background] (astro-ph/0102013). These studies may also utilize systematic spectroscopic measurements to detect and characterize microlensing events involving sources in the Sagittarius dwarf galaxy [Background] (astro-ph/0102013).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

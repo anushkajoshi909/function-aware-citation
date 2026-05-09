@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "Background"
+  ],
+  "justification": "The query seeks to understand the driving forces behind the DIRECT project and the foundational context required to comprehend its objectives and approaches."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:40:30] main | args: Namespace(max_check=10, debug=True)
+[12:40:30] read_last_jsonl | path= classified_outputs.jsonl
+[12:40:30] read_last_jsonl | total_lines= 1
+[12:40:30] main | query='What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?' | funcs=['Motivation', 'Background']
+[12:40:32] main | core_terms= ['DIRECT project', 'dark matter', 'direct detection', 'DIRECT']
+[12:40:32] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:40:32] load_topk_jsonl | rows= 20
+[12:40:32] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103441 title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' abs_len= 550
+[12:40:32] main | running function= Motivation
+[12:40:32] select | function= Motivation | candidates_in= 20
+[12:40:32] select | core_terms= ['DIRECT project', 'dark matter', 'direct detection', 'DIRECT']
+[12:40:32] select | no cosine prune; kept=20/20
+[12:40:32] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103441', 'gr-qc/0102009', 'astro-ph/0104258', 'math/0104020', 'hep-ph/0102051', 'hep-ph/0101182', 'cs/0104011', 'astro-ph/0102274', 'gr-qc/0103075', 'gr-qc/0102051']
+[12:40:32] select | verify relaxed 1/10
+[12:40:32] verify | func= Motivation | rank= 0 | pid= astro-ph/0103441 | title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' | abs_len= 550
+[12:40:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:40:35] select | verify relaxed 2/10
+[12:40:35] verify | func= Motivation | rank= 1 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[12:40:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:38] select | verify relaxed 3/10
+[12:40:38] verify | func= Motivation | rank= 2 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[12:40:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:40] select | verify relaxed 4/10
+[12:40:40] verify | func= Motivation | rank= 3 | pid= math/0104020 | title_snip='Self-scaled barriers for irreducible symmetric cones' | abs_len= 871
+[12:40:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:43] select | verify relaxed 5/10
+[12:40:43] verify | func= Motivation | rank= 4 | pid= hep-ph/0102051 | title_snip='Hadronic Light-Front Wavefunctions and QCD Phenomenology' | abs_len= 1463
+[12:40:46] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:46] select | verify relaxed 6/10
+[12:40:46] verify | func= Motivation | rank= 5 | pid= hep-ph/0101182 | title_snip='Wavelets and their use' | abs_len= 1279
+[12:40:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:49] select | verify relaxed 7/10
+[12:40:49] verify | func= Motivation | rank= 6 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[12:40:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:51] select | verify relaxed 8/10
+[12:40:51] verify | func= Motivation | rank= 7 | pid= astro-ph/0102274 | title_snip='DIRECT Distances to Nearby Galaxies Using Detached Eclipsing Binaries
+…' | abs_len= 1592
+[12:40:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:54] select | verify relaxed 9/10
+[12:40:54] verify | func= Motivation | rank= 8 | pid= gr-qc/0103075 | title_snip='Space missions to detect the cosmic gravitational-wave background' | abs_len= 968
+[12:40:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:40:57] select | verify relaxed 10/10
+[12:40:57] verify | func= Motivation | rank= 9 | pid= gr-qc/0102051 | title_snip='2d manifold-independent spinfoam theory' | abs_len= 1092
+[12:40:59] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?
+- No supporting candidate with sufficient evidence.
+[12:40:59] main | running function= Background
+[12:40:59] select | function= Background | candidates_in= 20
+[12:40:59] select | core_terms= ['DIRECT project', 'dark matter', 'direct detection', 'DIRECT']
+[12:40:59] select | no cosine prune; kept=20/20
+[12:40:59] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103441', 'gr-qc/0102009', 'astro-ph/0104258', 'math/0104020', 'hep-ph/0102051', 'hep-ph/0101182', 'cs/0104011', 'astro-ph/0102274', 'gr-qc/0103075', 'gr-qc/0102051']
+[12:40:59] select | verify relaxed 1/10
+[12:40:59] verify | func= Background | rank= 0 | pid= astro-ph/0103441 | title_snip='The DIRECT project: Catalogs of stellar objects in nearby galaxies. II…' | abs_len= 550
+[12:41:03] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:41:03] select | verify relaxed 2/10
+[12:41:03] verify | func= Background | rank= 1 | pid= gr-qc/0102009 | title_snip='Subtle is the Gravity' | abs_len= 382
+[12:41:06] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:06] select | verify relaxed 3/10
+[12:41:06] verify | func= Background | rank= 2 | pid= astro-ph/0104258 | title_snip='Parallel Implementation of the PHOENIX Generalized Stellar Atmosphere
+…' | abs_len= 497
+[12:41:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:08] select | verify relaxed 4/10
+[12:41:08] verify | func= Background | rank= 3 | pid= math/0104020 | title_snip='Self-scaled barriers for irreducible symmetric cones' | abs_len= 871
+[12:41:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:11] select | verify relaxed 5/10
+[12:41:11] verify | func= Background | rank= 4 | pid= hep-ph/0102051 | title_snip='Hadronic Light-Front Wavefunctions and QCD Phenomenology' | abs_len= 1463
+[12:41:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:14] select | verify relaxed 6/10
+[12:41:14] verify | func= Background | rank= 5 | pid= hep-ph/0101182 | title_snip='Wavelets and their use' | abs_len= 1279
+[12:41:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:16] select | verify relaxed 7/10
+[12:41:16] verify | func= Background | rank= 6 | pid= cs/0104011 | title_snip='Potholes on the Royal Road' | abs_len= 887
+[12:41:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:19] select | verify relaxed 8/10
+[12:41:19] verify | func= Background | rank= 7 | pid= astro-ph/0102274 | title_snip='DIRECT Distances to Nearby Galaxies Using Detached Eclipsing Binaries
+…' | abs_len= 1592
+[12:41:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:41:23] select | verify relaxed 9/10
+[12:41:23] verify | func= Background | rank= 8 | pid= gr-qc/0103075 | title_snip='Space missions to detect the cosmic gravitational-wave background' | abs_len= 968
+[12:41:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:25] select | verify relaxed 10/10
+[12:41:25] verify | func= Background | rank= 9 | pid= gr-qc/0102051 | title_snip='2d manifold-independent spinfoam theory' | abs_len= 1092
+[12:41:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:41:29] arbiter | rejected off-topic winner: astro-ph/0103441
+[12:41:30] arbiter | rejected fallback: astro-ph/0102274
+
+================================================================================
+FUNCTION: Background
+QUERY   : What motivates the DIRECT project and provides the necessary background for understanding its goals and methods?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

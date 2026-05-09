@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Motivation. [Motivation]
-Future research may investigate improving lens modelling to account for effects such as external shear and aligned discs in multiple lens systems. Statistical lensing studies using large samples of multiple lens systems could also provide new constraints on lens models and cosmology (astro-ph/0103093). [FutureWork]

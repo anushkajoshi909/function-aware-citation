@@ -1,0 +1,18 @@
+{
+  "answer": "VLBI can image large fields-of-view with sub-mJy detection limits, providing background for extending our understanding of cosmologically distant sources (astro-ph/0102037).",
+  "predicted_paper_id": "astro-ph/0102037",
+  "explanation": "This paper discusses the capability of VLBI to image large fields-of-view with sub-mJy detection limits, which is relevant to understanding cosmologically distant sources.",
+  "evidence_quote": "VLBI now has the capability of imaging relatively large fields-of-view",
+  "topk_list": [
+    "astro-ph/0102273",
+    "astro-ph/0101313",
+    "astro-ph/0102037",
+    "astro-ph/0101096",
+    "astro-ph/0102276",
+    "astro-ph/0102242",
+    "astro-ph/0101086",
+    "astro-ph/0101433",
+    "astro-ph/0101491",
+    "astro-ph/0104309"
+  ]
+}

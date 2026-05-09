@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Compares. [Compares]
-The researchers use a 2-D hydro code to study the thermonuclear explosion of white dwarfs, allowing them to investigate multi-dimensional effects during the final hours prior to the explosion. This approach enables a detailed examination of mixing and the ignition process, providing new insights into the explosive nuclear burning and flame propagation (astro-ph/0104226). [Uses]

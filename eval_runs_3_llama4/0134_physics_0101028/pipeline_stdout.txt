@@ -1,0 +1,165 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "FutureWork"
+  ],
+  "justification": "The query requests foundational knowledge and relates it to directions for subsequent improvements."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:16:54] main | args: Namespace(max_check=10, debug=True)
+[14:16:54] read_last_jsonl | path= classified_outputs.jsonl
+[14:16:54] read_last_jsonl | total_lines= 1
+[14:16:54] main | query='How does the development of the coupled microwave-cavity system provide background for future improvements in axion detection?' | funcs=['Background', 'FutureWork']
+[14:16:55] main | core_terms= ['axion', 'microwave-cavity system', 'microwave-cavity']
+[14:16:55] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:16:55] load_topk_jsonl | rows= 20
+[14:16:55] load_topk_jsonl | first: rank= 0 paper_id= physics/0101028 title_snip='A coupled microwave-cavity system in the Rydberg-atom cavity detector
+…' abs_len= 1588
+[14:16:55] main | running function= Background
+[14:16:55] select | function= Background | candidates_in= 20
+[14:16:55] select | core_terms= ['axion', 'microwave-cavity system', 'microwave-cavity']
+[14:16:55] select | no cosine prune; kept=20/20
+[14:16:55] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0101028', 'hep-ph/0101200', 'gr-qc/0103006', 'astro-ph/0103478', 'astro-ph/0102078', 'astro-ph/0104200', 'hep-ex/0101037', 'hep-ex/0104035', 'cond-mat/0103422', 'astro-ph/0103281']
+[14:16:55] select | verify relaxed 1/10
+[14:16:55] verify | func= Background | rank= 0 | pid= physics/0101028 | title_snip='A coupled microwave-cavity system in the Rydberg-atom cavity detector
+…' | abs_len= 1588
+[14:16:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:16:58] select | verify relaxed 2/10
+[14:16:58] verify | func= Background | rank= 1 | pid= hep-ph/0101200 | title_snip='The Rydberg-Atom-Cavity Axion Search' | abs_len= 695
+[14:17:01] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:17:01] select | verify relaxed 3/10
+[14:17:01] verify | func= Background | rank= 2 | pid= gr-qc/0103006 | title_snip='A detector of small harmonic displacements based on two coupled
+  micr…' | abs_len= 1240
+[14:17:05] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:17:05] select | verify relaxed 4/10
+[14:17:05] verify | func= Background | rank= 3 | pid= astro-ph/0103478 | title_snip='Determining cosmic microwave background structure from its peak
+  dist…' | abs_len= 1364
+[14:17:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:17:07] select | verify relaxed 5/10
+[14:17:07] verify | func= Background | rank= 4 | pid= astro-ph/0102078 | title_snip='A Next Generation High-speed Data Acquisition System for Multi-channel…' | abs_len= 945
+[14:17:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:17:10] select | verify relaxed 6/10
+[14:17:10] verify | func= Background | rank= 5 | pid= astro-ph/0104200 | title_snip='Experimental Constraints on the Axion Dark Matter Halo Density' | abs_len= 597
+[14:17:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:17:13] select | verify relaxed 7/10
+[14:17:13] verify | func= Background | rank= 6 | pid= hep-ex/0101037 | title_snip='Particle Dark Matter and Solar Axion Searches with a small germanium
+ …' | abs_len= 774
+[14:17:16] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:17:16] select | verify relaxed 8/10
+[14:17:16] verify | func= Background | rank= 7 | pid= hep-ex/0104035 | title_snip='Search for solar axions using Li-7' | abs_len= 672
+[14:17:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:17:19] select | verify relaxed 9/10
+[14:17:19] verify | func= Background | rank= 8 | pid= cond-mat/0103422 | title_snip='Microwave properties of superconducting $MgB_{2}$' | abs_len= 531
+[14:17:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:17:21] select | verify relaxed 10/10
+[14:17:21] verify | func= Background | rank= 9 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[14:17:24] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the development of the coupled microwave-cavity system provide background for future improvements in axion detection?
+- WINNER: physics/0101028 | A coupled microwave-cavity system in the Rydberg-atom cavity detector
+  for dark matter axions
+- QUOTE : A coupled microwave-cavity system
+- WHY   : sufficient
+[14:17:25] main | running function= FutureWork
+[14:17:25] select | function= FutureWork | candidates_in= 20
+[14:17:25] select | core_terms= ['axion', 'microwave-cavity system', 'microwave-cavity']
+[14:17:25] select | no cosine prune; kept=20/20
+[14:17:25] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0101028', 'hep-ph/0101200', 'gr-qc/0103006', 'astro-ph/0103478', 'astro-ph/0102078', 'astro-ph/0104200', 'hep-ex/0101037', 'hep-ex/0104035', 'cond-mat/0103422', 'astro-ph/0103281']
+[14:17:25] select | verify relaxed 1/10
+[14:17:25] verify | func= FutureWork | rank= 0 | pid= physics/0101028 | title_snip='A coupled microwave-cavity system in the Rydberg-atom cavity detector
+…' | abs_len= 1588
+[14:17:28] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[14:17:28] select | verify relaxed 2/10
+[14:17:28] verify | func= FutureWork | rank= 1 | pid= hep-ph/0101200 | title_snip='The Rydberg-Atom-Cavity Axion Search' | abs_len= 695
+[14:17:31] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:17:31] select | verify relaxed 3/10
+[14:17:31] verify | func= FutureWork | rank= 2 | pid= gr-qc/0103006 | title_snip='A detector of small harmonic displacements based on two coupled
+  micr…' | abs_len= 1240
+[14:17:34] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:17:34] select | verify relaxed 4/10
+[14:17:34] verify | func= FutureWork | rank= 3 | pid= astro-ph/0103478 | title_snip='Determining cosmic microwave background structure from its peak
+  dist…' | abs_len= 1364
+[14:17:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:17:37] select | verify relaxed 5/10
+[14:17:37] verify | func= FutureWork | rank= 4 | pid= astro-ph/0102078 | title_snip='A Next Generation High-speed Data Acquisition System for Multi-channel…' | abs_len= 945
+[14:17:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:17:39] select | verify relaxed 6/10
+[14:17:39] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104200 | title_snip='Experimental Constraints on the Axion Dark Matter Halo Density' | abs_len= 597
+[14:17:43] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:17:43] select | verify relaxed 7/10
+[14:17:43] verify | func= FutureWork | rank= 6 | pid= hep-ex/0101037 | title_snip='Particle Dark Matter and Solar Axion Searches with a small germanium
+ …' | abs_len= 774
+[14:17:45] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:17:45] select | verify relaxed 8/10
+[14:17:45] verify | func= FutureWork | rank= 7 | pid= hep-ex/0104035 | title_snip='Search for solar axions using Li-7' | abs_len= 672
+[14:17:49] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[14:17:49] select | verify relaxed 9/10
+[14:17:49] verify | func= FutureWork | rank= 8 | pid= cond-mat/0103422 | title_snip='Microwave properties of superconducting $MgB_{2}$' | abs_len= 531
+[14:17:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:17:51] select | verify relaxed 10/10
+[14:17:51] verify | func= FutureWork | rank= 9 | pid= astro-ph/0103281 | title_snip='Fluctuations in the Cosmic Microwave Background II: $C_\ell$ at Large
+…' | abs_len= 1177
+[14:17:54] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How does the development of the coupled microwave-cavity system provide background for future improvements in axion detection?
+- WINNER: physics/0101028 | A coupled microwave-cavity system in the Rydberg-atom cavity detector
+  for dark matter axions
+- QUOTE : with possible future improvements
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The development of the coupled microwave-cavity system provides background for axion detection by utilizing a conversion cavity to convert axions into photons and a detection cavity to detect these photons [Background] (physics/0101028). This setup enables future improvements in axion detection, with characteristics and performance discussed alongside possible future enhancements [FutureWork] (physics/0101028).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

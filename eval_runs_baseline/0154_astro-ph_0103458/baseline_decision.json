@@ -1,0 +1,18 @@
+{
+  "answer": "The current work uses and compares with previous studies of circumstellar disks around classical T Tauri stars, such as the study of TW Hydrae (astro-ph/0103458).",
+  "predicted_paper_id": "astro-ph/0103458",
+  "explanation": "This paper is relevant because it presents a study of the circumstellar disk around TW Hydrae, a classical T Tauri star, and derives properties of the disk using a simple model of emission from an optically thick, flat disk.",
+  "evidence_quote": "circumstellar disk around the nearby classical T Tauri star TW Hydrae",
+  "topk_list": [
+    "astro-ph/0103458",
+    "astro-ph/0103174",
+    "astro-ph/0103461",
+    "astro-ph/0104158",
+    "astro-ph/0104318",
+    "astro-ph/0101309",
+    "astro-ph/0104066",
+    "astro-ph/0103311",
+    "astro-ph/0103098",
+    "astro-ph/0104274"
+  ]
+}

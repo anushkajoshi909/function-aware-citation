@@ -1,0 +1,18 @@
+{
+  "answer": "The current study's use of a 2-D hydro code is compared to other approaches in understanding the thermonuclear explosion of white dwarfs, utilizing an implicit 2-D hydro code to study multi-dimensional effects during the final hours prior to the thermonuclear runaway (astro-ph/0104226).",
+  "predicted_paper_id": "astro-ph/0104226",
+  "explanation": "This paper is relevant because it presents a study of multi-dimensional effects during the final hours prior to the thermonuclear runaway in Type Ia Supernovae, which are thought to be thermonuclear explosions of massive white dwarfs.",
+  "evidence_quote": "utilize an implicit, 2-D hydro code",
+  "topk_list": [
+    "astro-ph/0104226",
+    "astro-ph/0104267",
+    "astro-ph/0103315",
+    "astro-ph/0102271",
+    "astro-ph/0102182",
+    "nucl-th/0102056",
+    "astro-ph/0102145",
+    "hep-ph/0104290",
+    "astro-ph/0101400",
+    "astro-ph/0101258"
+  ]
+}

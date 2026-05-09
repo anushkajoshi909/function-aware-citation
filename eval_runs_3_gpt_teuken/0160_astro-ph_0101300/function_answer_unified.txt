@@ -1,0 +1,1 @@
+The study of EUV emission in the Fornax cluster provides background information on the cluster's X-ray emitting gas and radio sources [Background] (astro-ph/0101300). It extends our understanding of cluster gas by revealing that the large-scale diffuse EUV emission is due to the low energy tail of the X-ray emitting gas [Extends] (astro-ph/0101300).

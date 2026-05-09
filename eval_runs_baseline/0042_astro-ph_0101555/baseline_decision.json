@@ -1,0 +1,18 @@
+{
+  "answer": "The empirical infrared galaxy number count model of Takeuchi et al. (2001) is used to evaluate the contribution of star forming galaxies to the faint radio galaxies, and the model counts are compared to the observed 1.4, 5, and 8-GHz source counts (astro-ph/0101555).",
+  "predicted_paper_id": "astro-ph/0101555",
+  "explanation": "This paper is relevant because it uses the empirical infrared galaxy number count model of Takeuchi et al. (2001) to evaluate the contribution of star forming galaxies to the faint radio galaxies, and compares the model counts to the observed source counts.",
+  "evidence_quote": "using the empirical infrared galaxy number count model of Takeuchi et al. (2001)",
+  "topk_list": [
+    "astro-ph/0101555",
+    "astro-ph/0103078",
+    "astro-ph/0101158",
+    "astro-ph/0102206",
+    "astro-ph/0101095",
+    "astro-ph/0104310",
+    "astro-ph/0102297",
+    "astro-ph/0104425",
+    "astro-ph/0101445",
+    "astro-ph/0102276"
+  ]
+}

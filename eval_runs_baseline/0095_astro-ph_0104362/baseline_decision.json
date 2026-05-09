@@ -1,0 +1,18 @@
+{
+  "answer": "The limitations in understanding gamma-ray bursts motivate further analysis and comparison of their energetic properties, such as the uncertainty in their energy requirements and event rates (astro-ph/0103028).",
+  "predicted_paper_id": "astro-ph/0103028",
+  "explanation": "This paper discusses the dominant uncertainty in gamma ray bursts' energy requirements and event rates, which is the degree to which they are collimated, making it the most relevant to the question.",
+  "evidence_quote": "the dominant uncertainty in their energy requirements and event rates",
+  "topk_list": [
+    "astro-ph/0103028",
+    "astro-ph/0101147",
+    "astro-ph/0101462",
+    "astro-ph/0102282",
+    "astro-ph/0104208",
+    "astro-ph/0103186",
+    "astro-ph/0101175",
+    "astro-ph/0104232",
+    "astro-ph/0103384",
+    "astro-ph/0102122"
+  ]
+}

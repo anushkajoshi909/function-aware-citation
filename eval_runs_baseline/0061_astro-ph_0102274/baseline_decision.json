@@ -1,0 +1,18 @@
+{
+  "answer": "The DIRECT project is motivated by the need to obtain direct distances to nearby galaxies, such as M31 and M33, using detached eclipsing binaries and Cepheids (astro-ph/0102274).",
+  "predicted_paper_id": "astro-ph/0102274",
+  "explanation": "This paper provides the necessary background for understanding the goals and methods of the DIRECT project, which aims to obtain direct distances to nearby galaxies.",
+  "evidence_quote": "DIRECT is a project to obtain directly the distances to two Local Group galaxies",
+  "topk_list": [
+    "astro-ph/0103441",
+    "gr-qc/0102009",
+    "astro-ph/0104258",
+    "math/0104020",
+    "hep-ph/0102051",
+    "hep-ph/0101182",
+    "cs/0104011",
+    "astro-ph/0102274",
+    "gr-qc/0103075",
+    "gr-qc/0102051"
+  ]
+}

@@ -1,0 +1,159 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Extends",
+    "Uses"
+  ],
+  "justification": "The query asks how the current work builds upon (extends) Einstein's coefficients and how it employs (uses) them in deriving Planck's law."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[23:08:52] main | args: Namespace(max_check=10, debug=True)
+[23:08:52] read_last_jsonl | path= classified_outputs.jsonl
+[23:08:52] read_last_jsonl | total_lines= 1
+[23:08:52] main | query='How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?' | funcs=['Extends', 'Uses']
+[23:08:54] main | core_terms= ['Einstein', 'Planck', 'spontaneous emission', 'induced emission', 'blackbody radiation law']
+[23:08:54] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[23:08:54] load_topk_jsonl | rows= 20
+[23:08:54] load_topk_jsonl | first: rank= 0 paper_id= physics/0101054 title_snip='De Broglie wave, spontaneous emission and Planck's radiation law
+  acc…' abs_len= 993
+[23:08:54] main | running function= Extends
+[23:08:54] select | function= Extends | candidates_in= 20
+[23:08:54] select | core_terms= ['Einstein', 'Planck', 'spontaneous emission', 'induced emission', 'blackbody radiation law']
+[23:08:54] select | no cosine prune; kept=20/20
+[23:08:54] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0101054', 'gr-qc/0101011', 'hep-ph/0101210', 'hep-ph/0104231', 'gr-qc/0102003', 'gr-qc/0104083', 'gr-qc/0104004', 'hep-th/0104073', 'gr-qc/0102080', 'hep-th/0102061']
+[23:08:54] select | verify relaxed 1/10
+[23:08:54] verify | func= Extends | rank= 0 | pid= physics/0101054 | title_snip='De Broglie wave, spontaneous emission and Planck's radiation law
+  acc…' | abs_len= 993
+[23:08:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:08:58] select | verify relaxed 2/10
+[23:08:58] verify | func= Extends | rank= 1 | pid= gr-qc/0101011 | title_snip='On the derivation of the equations of motion in theories of gravity' | abs_len= 1542
+[23:09:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:00] select | verify relaxed 3/10
+[23:09:00] verify | func= Extends | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[23:09:03] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:03] select | verify relaxed 4/10
+[23:09:03] verify | func= Extends | rank= 3 | pid= hep-ph/0104231 | title_snip='On fermionic vacuum energy' | abs_len= 578
+[23:09:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:09:06] select | verify relaxed 5/10
+[23:09:06] verify | func= Extends | rank= 4 | pid= gr-qc/0102003 | title_snip='Time-Variation of the Gravitational Constant and the Machian Solution …' | abs_len= 769
+[23:09:08] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:08] select | verify relaxed 6/10
+[23:09:08] verify | func= Extends | rank= 5 | pid= gr-qc/0104083 | title_snip='Post-Newtonian Expansion of Gravitational Radiation' | abs_len= 1005
+[23:09:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:11] select | verify relaxed 7/10
+[23:09:11] verify | func= Extends | rank= 6 | pid= gr-qc/0104004 | title_snip='On the Bergmann Energy-Momentum Complex of a Charged Regular Black Hol…' | abs_len= 325
+[23:09:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:14] select | verify relaxed 8/10
+[23:09:14] verify | func= Extends | rank= 7 | pid= hep-th/0104073 | title_snip='Pyrotechnic Universe' | abs_len= 1492
+[23:09:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:16] select | verify relaxed 9/10
+[23:09:16] verify | func= Extends | rank= 8 | pid= gr-qc/0102080 | title_snip='Explicit Derivation of the Fluctuation-Dissipation Relation of the
+  V…' | abs_len= 990
+[23:09:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:19] select | verify relaxed 10/10
+[23:09:19] verify | func= Extends | rank= 9 | pid= hep-th/0102061 | title_snip='Quantum Mechanics of Charged Black Holes' | abs_len= 690
+[23:09:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Extends
+QUERY   : How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?
+- WINNER: physics/0101054 | De Broglie wave, spontaneous emission and Planck's radiation law
+  according to stochastic electrodynamics
+- QUOTE : Einstein's work, in which the coefficients of spontaneous and induced emission were introduced
+- WHY   : sufficient
+[23:09:22] main | running function= Uses
+[23:09:22] select | function= Uses | candidates_in= 20
+[23:09:22] select | core_terms= ['Einstein', 'Planck', 'spontaneous emission', 'induced emission', 'blackbody radiation law']
+[23:09:22] select | no cosine prune; kept=20/20
+[23:09:22] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['physics/0101054', 'gr-qc/0101011', 'hep-ph/0101210', 'hep-ph/0104231', 'gr-qc/0102003', 'gr-qc/0104083', 'gr-qc/0104004', 'hep-th/0104073', 'gr-qc/0102080', 'hep-th/0102061']
+[23:09:22] select | verify relaxed 1/10
+[23:09:22] verify | func= Uses | rank= 0 | pid= physics/0101054 | title_snip='De Broglie wave, spontaneous emission and Planck's radiation law
+  acc…' | abs_len= 993
+[23:09:26] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[23:09:26] select | verify relaxed 2/10
+[23:09:26] verify | func= Uses | rank= 1 | pid= gr-qc/0101011 | title_snip='On the derivation of the equations of motion in theories of gravity' | abs_len= 1542
+[23:09:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:29] select | verify relaxed 3/10
+[23:09:29] verify | func= Uses | rank= 2 | pid= hep-ph/0101210 | title_snip='Relic Dark energy from Trans-Planckian Regime' | abs_len= 1104
+[23:09:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:31] select | verify relaxed 4/10
+[23:09:31] verify | func= Uses | rank= 3 | pid= hep-ph/0104231 | title_snip='On fermionic vacuum energy' | abs_len= 578
+[23:09:34] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[23:09:34] select | verify relaxed 5/10
+[23:09:34] verify | func= Uses | rank= 4 | pid= gr-qc/0102003 | title_snip='Time-Variation of the Gravitational Constant and the Machian Solution …' | abs_len= 769
+[23:09:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:37] select | verify relaxed 6/10
+[23:09:37] verify | func= Uses | rank= 5 | pid= gr-qc/0104083 | title_snip='Post-Newtonian Expansion of Gravitational Radiation' | abs_len= 1005
+[23:09:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:39] select | verify relaxed 7/10
+[23:09:39] verify | func= Uses | rank= 6 | pid= gr-qc/0104004 | title_snip='On the Bergmann Energy-Momentum Complex of a Charged Regular Black Hol…' | abs_len= 325
+[23:09:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:42] select | verify relaxed 8/10
+[23:09:42] verify | func= Uses | rank= 7 | pid= hep-th/0104073 | title_snip='Pyrotechnic Universe' | abs_len= 1492
+[23:09:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:45] select | verify relaxed 9/10
+[23:09:45] verify | func= Uses | rank= 8 | pid= gr-qc/0102080 | title_snip='Explicit Derivation of the Fluctuation-Dissipation Relation of the
+  V…' | abs_len= 990
+[23:09:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[23:09:47] select | verify relaxed 10/10
+[23:09:47] verify | func= Uses | rank= 9 | pid= hep-th/0102061 | title_snip='Quantum Mechanics of Charged Black Holes' | abs_len= 690
+[23:09:50] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the current work build upon and utilize Einstein's introduction of coefficients of spontaneous and induced emission in the derivation of Planck's blackbody radiation law?
+- WINNER: physics/0101054 | De Broglie wave, spontaneous emission and Planck's radiation law
+  according to stochastic electrodynamics
+- QUOTE : Einstein's work, in which the coefficients of spontaneous and induced emission were introduced
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work extends Einstein's introduction of coefficients of spontaneous and induced emission by reexamining it from the viewpoint of stochastic electrodynamics and deriving the Planck formula [Extends] (physics/0101054). It uses Einstein's work as a foundation to explain the energy discreteness in stochastic electrodynamics, ultimately leading to the derivation of the Planck formula [Uses] (physics/0101054).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

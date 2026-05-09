@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: deepseek-ai/DeepSeek-R1
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "FutureWork",
+    "Motivation"
+  ],
+  "justification": "The query explicitly asks how existing methods might guide future research (FutureWork) and implies a rationale for applying these methods to new domains (Motivation)."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:25:28] main | args: Namespace(max_check=10, debug=True)
+[13:25:28] read_last_jsonl | path= classified_outputs.jsonl
+[13:25:28] read_last_jsonl | total_lines= 1
+[13:25:28] main | query='How might the methods used to analyze the absorption feature in GRB 990705 inform future research on the properties of supernova remnants and their impact on afterglow generation?' | funcs=['FutureWork', 'Motivation']
+[13:25:30] main | core_terms= ['GRB 990705', 'supernova remnants', 'absorption feature', 'afterglow generation', 'GRB']
+[13:25:30] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:25:30] load_topk_jsonl | rows= 20
+[13:25:30] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104062 title_snip='On the absorption feature in the prompt X-ray spectrum of GRB 990705' abs_len= 1181
+[13:25:30] main | running function= FutureWork
+[13:25:30] select | function= FutureWork | candidates_in= 20
+[13:25:30] select | core_terms= ['GRB 990705', 'supernova remnants', 'absorption feature', 'afterglow generation', 'GRB']
+[13:25:30] select | no cosine prune; kept=20/20
+[13:25:30] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104062', 'astro-ph/0101234', 'astro-ph/0101274', 'astro-ph/0104485', 'astro-ph/0104348', 'astro-ph/0104174', 'astro-ph/0104471', 'astro-ph/0101425', 'astro-ph/0102129', 'astro-ph/0101198']
+[13:25:30] select | verify relaxed 1/10
+[13:25:30] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104062 | title_snip='On the absorption feature in the prompt X-ray spectrum of GRB 990705' | abs_len= 1181
+[13:25:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:33] select | verify relaxed 2/10
+[13:25:33] verify | func= FutureWork | rank= 1 | pid= astro-ph/0101234 | title_snip='Chromatic Signatures in the Microlensing of GRB Afterglows' | abs_len= 839
+[13:25:37] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:25:37] select | verify relaxed 3/10
+[13:25:37] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101274 | title_snip='A New ASCA and ROSAT Study of the Supernova Remnant: G272.2-3.2' | abs_len= 1152
+[13:25:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:25:40] select | verify relaxed 4/10
+[13:25:40] verify | func= FutureWork | rank= 3 | pid= astro-ph/0104485 | title_snip='Specifying the Environments around GRB, Explaining the Fe line in the
+…' | abs_len= 1766
+[13:25:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:25:43] select | verify relaxed 5/10
+[13:25:43] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[13:25:46] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:25:46] select | verify relaxed 6/10
+[13:25:46] verify | func= FutureWork | rank= 5 | pid= astro-ph/0104174 | title_snip='The Jet and the Supernova in GRB990712' | abs_len= 400
+[13:25:49] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:25:49] select | verify relaxed 7/10
+[13:25:49] verify | func= FutureWork | rank= 6 | pid= astro-ph/0104471 | title_snip='Gamma-ray Burst Remnants: How can we find them?' | abs_len= 940
+[13:25:53] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:25:53] select | verify relaxed 8/10
+[13:25:53] verify | func= FutureWork | rank= 7 | pid= astro-ph/0101425 | title_snip='Detection of the optical afterglow of GRB 000630: Implications for dar…' | abs_len= 1242
+[13:25:57] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:25:57] select | verify relaxed 9/10
+[13:25:57] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102129 | title_snip='X-ray Observations of Young Supernova Remnants' | abs_len= 499
+[13:26:00] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:26:00] select | verify relaxed 10/10
+[13:26:00] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101198 | title_snip='The supernova remnants G67.7+1.8, G31.5-0.6 and G49.2-0.7' | abs_len= 580
+[13:26:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How might the methods used to analyze the absorption feature in GRB 990705 inform future research on the properties of supernova remnants and their impact on afterglow generation?
+- WINNER: astro-ph/0104062 | On the absorption feature in the prompt X-ray spectrum of GRB 990705
+- QUOTE : affect the generation of afterglows
+- WHY   : sufficient
+[13:26:03] main | running function= Motivation
+[13:26:03] select | function= Motivation | candidates_in= 20
+[13:26:03] select | core_terms= ['GRB 990705', 'supernova remnants', 'absorption feature', 'afterglow generation', 'GRB']
+[13:26:03] select | no cosine prune; kept=20/20
+[13:26:03] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104062', 'astro-ph/0101234', 'astro-ph/0101274', 'astro-ph/0104485', 'astro-ph/0104348', 'astro-ph/0104174', 'astro-ph/0104471', 'astro-ph/0101425', 'astro-ph/0102129', 'astro-ph/0101198']
+[13:26:03] select | verify relaxed 1/10
+[13:26:03] verify | func= Motivation | rank= 0 | pid= astro-ph/0104062 | title_snip='On the absorption feature in the prompt X-ray spectrum of GRB 990705' | abs_len= 1181
+[13:26:07] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:26:07] select | verify relaxed 2/10
+[13:26:07] verify | func= Motivation | rank= 1 | pid= astro-ph/0101234 | title_snip='Chromatic Signatures in the Microlensing of GRB Afterglows' | abs_len= 839
+[13:26:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:26:10] select | verify relaxed 3/10
+[13:26:10] verify | func= Motivation | rank= 2 | pid= astro-ph/0101274 | title_snip='A New ASCA and ROSAT Study of the Supernova Remnant: G272.2-3.2' | abs_len= 1152
+[13:26:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:12] select | verify relaxed 4/10
+[13:26:12] verify | func= Motivation | rank= 3 | pid= astro-ph/0104485 | title_snip='Specifying the Environments around GRB, Explaining the Fe line in the
+…' | abs_len= 1766
+[13:26:16] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= True
+[13:26:16] select | verify relaxed 5/10
+[13:26:16] verify | func= Motivation | rank= 4 | pid= astro-ph/0104348 | title_snip='Guiding the Way to Gamma-Ray Sources: X-ray Studies of Supernova
+  Rem…' | abs_len= 612
+[13:26:19] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:26:19] select | verify relaxed 6/10
+[13:26:19] verify | func= Motivation | rank= 5 | pid= astro-ph/0104174 | title_snip='The Jet and the Supernova in GRB990712' | abs_len= 400
+[13:26:22] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:26:22] select | verify relaxed 7/10
+[13:26:22] verify | func= Motivation | rank= 6 | pid= astro-ph/0104471 | title_snip='Gamma-ray Burst Remnants: How can we find them?' | abs_len= 940
+[13:26:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:26:26] select | verify relaxed 8/10
+[13:26:26] verify | func= Motivation | rank= 7 | pid= astro-ph/0101425 | title_snip='Detection of the optical afterglow of GRB 000630: Implications for dar…' | abs_len= 1242
+[13:26:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:26:29] select | verify relaxed 9/10
+[13:26:29] verify | func= Motivation | rank= 8 | pid= astro-ph/0102129 | title_snip='X-ray Observations of Young Supernova Remnants' | abs_len= 499
+[13:26:34] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:26:34] select | verify relaxed 10/10
+[13:26:34] verify | func= Motivation | rank= 9 | pid= astro-ph/0101198 | title_snip='The supernova remnants G67.7+1.8, G31.5-0.6 and G49.2-0.7' | abs_len= 580
+[13:26:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How might the methods used to analyze the absorption feature in GRB 990705 inform future research on the properties of supernova remnants and their impact on afterglow generation?
+- WINNER: astro-ph/0104062 | On the absorption feature in the prompt X-ray spectrum of GRB 990705
+- QUOTE : challenge any model in which the burst explodes
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The methods used to analyze the absorption feature in GRB 990705 will inform future research on supernova remnants and their impact on afterglow generation [FutureWork] (astro-ph/0104062), driven by the need to understand the physical conditions and geometry of the absorbing material [Motivation] (astro-ph/0104062).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

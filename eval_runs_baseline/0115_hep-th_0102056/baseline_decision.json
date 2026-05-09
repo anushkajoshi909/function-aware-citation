@@ -1,0 +1,18 @@
+{
+  "answer": "The current work utilizes existing theories such as noncommutative Yang-Mills and noncommutative open string theories, which are discussed in hep-th/0101045.",
+  "predicted_paper_id": "hep-th/0101045",
+  "explanation": "This paper reviews non-critical open string theories and their dualities, providing a foundation for understanding noncommutative open string theories.",
+  "evidence_quote": "noncommutative open string theories",
+  "topk_list": [
+    "hep-th/0101045",
+    "hep-th/0104168",
+    "hep-th/0101039",
+    "hep-th/0103188",
+    "hep-th/0103209",
+    "physics/0102078",
+    "hep-th/0101216",
+    "hep-th/0103168",
+    "hep-th/0104032",
+    "hep-th/0102056"
+  ]
+}

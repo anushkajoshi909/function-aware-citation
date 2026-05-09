@@ -1,0 +1,18 @@
+{
+  "answer": "The proposed model of stellar system formation compares well to existing observations of halo globular clusters, with predicted characteristics matching observed properties, such as size, velocity dispersion, and mass (astro-ph/0101197).",
+  "predicted_paper_id": "astro-ph/0101197",
+  "explanation": "This paper presents a model of stellar system formation that matches the observed properties of halo globular clusters, including size, velocity dispersion, and mass, making it a strong candidate to support the answer.",
+  "evidence_quote": "The characteristics of these proposed systems seem to match the observed properties of halo globular clusters",
+  "topk_list": [
+    "astro-ph/0101197",
+    "astro-ph/0103256",
+    "astro-ph/0101535",
+    "astro-ph/0103021",
+    "astro-ph/0101081",
+    "astro-ph/0101210",
+    "astro-ph/0104139",
+    "astro-ph/0104069",
+    "astro-ph/0102039",
+    "astro-ph/0102165"
+  ]
+}

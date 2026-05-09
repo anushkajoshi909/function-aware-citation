@@ -1,0 +1,18 @@
+{
+  "answer": "The proposed unification model based on a semi-simple group compares favorably to conventional supersymmetric grand unified theories in terms of motivation for solving the problems of large mass splitting and proton lifetime, as seen in the context of supersymmetric brane world (hep-ph/0103251).",
+  "predicted_paper_id": "hep-ph/0103251",
+  "explanation": "This paper proposes a unification model based on a semi-simple group SU(5)_{GUT} \times U(3)_H to solve the problems of large mass splitting and proton lifetime, providing a natural explanation for the mysterious features in the original model by embedding it into the brane world.",
+  "evidence_quote": "solve both of the problems simultaneously",
+  "topk_list": [
+    "hep-ph/0103251",
+    "hep-ph/0104200",
+    "hep-ph/0102096",
+    "hep-ph/0102156",
+    "hep-th/0102041",
+    "hep-ph/0102301",
+    "hep-th/0101186",
+    "hep-ph/0103058",
+    "hep-ph/0104211",
+    "hep-ph/0102163"
+  ]
+}

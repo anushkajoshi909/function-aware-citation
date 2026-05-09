@@ -1,0 +1,154 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Compares",
+    "FutureWork"
+  ],
+  "justification": "The query makes a comparative inquiry with existing works and explicitly asks for suggested directions for future research."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[14:11:52] main | args: Namespace(max_check=10, debug=True)
+[14:11:52] read_last_jsonl | path= classified_outputs.jsonl
+[14:11:52] read_last_jsonl | total_lines= 1
+[14:11:52] main | query='How do the findings of this study on the W31 cluster compare to other works and what future research directions do they suggest?' | funcs=['Compares', 'FutureWork']
+[14:11:54] main | core_terms= ['W31 cluster', 'star formation', 'cluster evolution']
+[14:11:54] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[14:11:54] load_topk_jsonl | rows= 20
+[14:11:54] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0103037 title_snip='The Stellar Content of Obscured Galactic Giant H II Regions III.: W31' abs_len= 1238
+[14:11:54] main | running function= Compares
+[14:11:54] select | function= Compares | candidates_in= 20
+[14:11:54] select | core_terms= ['W31 cluster', 'star formation', 'cluster evolution']
+[14:11:54] select | no cosine prune; kept=20/20
+[14:11:54] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103037', 'astro-ph/0103021', 'astro-ph/0103049', 'astro-ph/0102010', 'physics/0101072', 'hep-ex/0103048', 'hep-ex/0103031', 'astro-ph/0103315', 'astro-ph/0103490', 'astro-ph/0101418']
+[14:11:54] select | verify relaxed 1/10
+[14:11:54] verify | func= Compares | rank= 0 | pid= astro-ph/0103037 | title_snip='The Stellar Content of Obscured Galactic Giant H II Regions III.: W31' | abs_len= 1238
+[14:11:57] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[14:11:57] select | verify relaxed 2/10
+[14:11:57] verify | func= Compares | rank= 1 | pid= astro-ph/0103021 | title_snip='New Insights from HST Studies of Globular Cluster Systems I: Colors,
+ …' | abs_len= 1689
+[14:12:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:00] select | verify relaxed 3/10
+[14:12:00] verify | func= Compares | rank= 2 | pid= astro-ph/0103049 | title_snip='Clusters in the Precision Cosmology Era' | abs_len= 849
+[14:12:02] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:12:02] select | verify relaxed 4/10
+[14:12:02] verify | func= Compares | rank= 3 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[14:12:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:05] select | verify relaxed 5/10
+[14:12:05] verify | func= Compares | rank= 4 | pid= physics/0101072 | title_snip='Assessment of W1 and W2 theories for the computation of electron
+  aff…' | abs_len= 1471
+[14:12:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:07] select | verify relaxed 6/10
+[14:12:07] verify | func= Compares | rank= 5 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[14:12:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:10] select | verify relaxed 7/10
+[14:12:10] verify | func= Compares | rank= 6 | pid= hep-ex/0103031 | title_snip='Charged and Identified Particles in the Hadronic Decay of W Bosons and…' | abs_len= 730
+[14:12:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:13] select | verify relaxed 8/10
+[14:12:13] verify | func= Compares | rank= 7 | pid= astro-ph/0103315 | title_snip='On the White Dwarf distances to Galactic Globular Clusters' | abs_len= 1275
+[14:12:15] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:15] select | verify relaxed 9/10
+[14:12:15] verify | func= Compares | rank= 8 | pid= astro-ph/0103490 | title_snip='Ages and metallicities of five intermediate-age star clusters projecte…' | abs_len= 981
+[14:12:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:17] select | verify relaxed 10/10
+[14:12:17] verify | func= Compares | rank= 9 | pid= astro-ph/0101418 | title_snip='A Comparison of Radio and X-Ray Morphologies of Four Clusters of
+  Gal…' | abs_len= 734
+[14:12:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Compares
+QUERY   : How do the findings of this study on the W31 cluster compare to other works and what future research directions do they suggest?
+- No supporting candidate with sufficient evidence.
+[14:12:20] main | running function= FutureWork
+[14:12:20] select | function= FutureWork | candidates_in= 20
+[14:12:20] select | core_terms= ['W31 cluster', 'star formation', 'cluster evolution']
+[14:12:20] select | no cosine prune; kept=20/20
+[14:12:20] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0103037', 'astro-ph/0103021', 'astro-ph/0103049', 'astro-ph/0102010', 'physics/0101072', 'hep-ex/0103048', 'hep-ex/0103031', 'astro-ph/0103315', 'astro-ph/0103490', 'astro-ph/0101418']
+[14:12:20] select | verify relaxed 1/10
+[14:12:20] verify | func= FutureWork | rank= 0 | pid= astro-ph/0103037 | title_snip='The Stellar Content of Obscured Galactic Giant H II Regions III.: W31' | abs_len= 1238
+[14:12:23] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[14:12:23] select | verify relaxed 2/10
+[14:12:23] verify | func= FutureWork | rank= 1 | pid= astro-ph/0103021 | title_snip='New Insights from HST Studies of Globular Cluster Systems I: Colors,
+ …' | abs_len= 1689
+[14:12:26] verify | result supports= False fit= 0.00 top= 0.60 invalid= off_topic_no_core_in_abstract cue_hint= False
+[14:12:26] select | verify relaxed 3/10
+[14:12:26] verify | func= FutureWork | rank= 2 | pid= astro-ph/0103049 | title_snip='Clusters in the Precision Cosmology Era' | abs_len= 849
+[14:12:29] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[14:12:29] select | verify relaxed 4/10
+[14:12:29] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102010 | title_snip='New Light on the Baryon Fraction in Galaxy Clusters' | abs_len= 1661
+[14:12:31] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:31] select | verify relaxed 5/10
+[14:12:31] verify | func= FutureWork | rank= 4 | pid= physics/0101072 | title_snip='Assessment of W1 and W2 theories for the computation of electron
+  aff…' | abs_len= 1471
+[14:12:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:34] select | verify relaxed 6/10
+[14:12:34] verify | func= FutureWork | rank= 5 | pid= hep-ex/0103048 | title_snip='A Combination of Preliminary Electroweak Measurements and Constraints …' | abs_len= 1108
+[14:12:36] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:36] select | verify relaxed 7/10
+[14:12:36] verify | func= FutureWork | rank= 6 | pid= hep-ex/0103031 | title_snip='Charged and Identified Particles in the Hadronic Decay of W Bosons and…' | abs_len= 730
+[14:12:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:39] select | verify relaxed 8/10
+[14:12:39] verify | func= FutureWork | rank= 7 | pid= astro-ph/0103315 | title_snip='On the White Dwarf distances to Galactic Globular Clusters' | abs_len= 1275
+[14:12:42] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[14:12:42] select | verify relaxed 9/10
+[14:12:42] verify | func= FutureWork | rank= 8 | pid= astro-ph/0103490 | title_snip='Ages and metallicities of five intermediate-age star clusters projecte…' | abs_len= 981
+[14:12:44] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[14:12:44] select | verify relaxed 10/10
+[14:12:44] verify | func= FutureWork | rank= 9 | pid= astro-ph/0101418 | title_snip='A Comparison of Radio and X-Ray Morphologies of Four Clusters of
+  Gal…' | abs_len= 734
+[14:12:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : How do the findings of this study on the W31 cluster compare to other works and what future research directions do they suggest?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+No sufficient evidence to answer coherently across the requested functions.
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

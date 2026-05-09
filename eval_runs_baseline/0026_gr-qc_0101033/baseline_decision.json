@@ -1,0 +1,18 @@
+{
+  "answer": "The general two-dimensional gravity model provides background information for understanding the use of the effective action in reproducing known solutions, such as the Fisher and Roberts solutions (gr-qc/0101033).",
+  "predicted_paper_id": "gr-qc/0101033",
+  "explanation": "This paper discusses the effective action for scalar fields in two-dimensional gravity and how it can be used to reproduce known solutions.",
+  "evidence_quote": "effective action for a scalar field",
+  "topk_list": [
+    "gr-qc/0101033",
+    "hep-th/0104058",
+    "hep-ph/0103104",
+    "gr-qc/0103017",
+    "hep-th/0103072",
+    "hep-th/0104209",
+    "hep-ph/0103193",
+    "cond-mat/0103610",
+    "hep-ph/0103032",
+    "hep-th/0101015"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The Migdal-Eliashberg theory has limitations that suggest a need for future work in generalizing the theory of superconductivity, as seen in the breakdown of the theory in certain regimes (cond-mat/0104457).",
+  "predicted_paper_id": "cond-mat/0104457",
+  "explanation": "This paper shows that the Migdal-Eliashberg theory is incompatible with experimental data for Rb$_3$C$_{60}$, indicating a need for generalization.",
+  "evidence_quote": "breakdown of the Migdal-Eliashberg theory",
+  "topk_list": [
+    "cond-mat/0104457",
+    "cond-mat/0102189",
+    "cond-mat/0101258",
+    "cond-mat/0103518",
+    "cond-mat/0104502",
+    "cond-mat/0102456",
+    "cond-mat/0102111",
+    "cond-mat/0101080",
+    "cond-mat/0102136",
+    "cond-mat/0104519"
+  ]
+}

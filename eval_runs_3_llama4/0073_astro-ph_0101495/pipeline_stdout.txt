@@ -1,0 +1,165 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query highlights drivers behind future research and explicitly asks for directions in subsequent studies."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[12:56:18] main | args: Namespace(max_check=10, debug=True)
+[12:56:18] read_last_jsonl | path= classified_outputs.jsonl
+[12:56:18] read_last_jsonl | total_lines= 1
+[12:56:18] main | query='What future research directions are motivated by the differences in quasiperiodic oscillations between neutron star and black hole systems?' | funcs=['Motivation', 'FutureWork']
+[12:56:19] main | core_terms= ['neutron star', 'black hole', 'quasiperiodic oscillations']
+[12:56:19] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[12:56:19] load_topk_jsonl | rows= 20
+[12:56:19] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0104008 title_snip='Testing the transition layer model of quasi-periodic oscillations in
+ …' abs_len= 1628
+[12:56:19] main | running function= Motivation
+[12:56:19] select | function= Motivation | candidates_in= 20
+[12:56:19] select | core_terms= ['neutron star', 'black hole', 'quasiperiodic oscillations']
+[12:56:19] select | no cosine prune; kept=20/20
+[12:56:19] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104008', 'gr-qc/0103054', 'astro-ph/0101495', 'astro-ph/0103431', 'astro-ph/0101357', 'astro-ph/0101132', 'gr-qc/0103041', 'astro-ph/0102233', 'astro-ph/0104323', 'gr-qc/0104063']
+[12:56:19] select | verify relaxed 1/10
+[12:56:19] verify | func= Motivation | rank= 0 | pid= astro-ph/0104008 | title_snip='Testing the transition layer model of quasi-periodic oscillations in
+ …' | abs_len= 1628
+[12:56:23] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:56:23] select | verify relaxed 2/10
+[12:56:23] verify | func= Motivation | rank= 1 | pid= gr-qc/0103054 | title_snip='Late-time dynamics of rapidly rotating black holes' | abs_len= 1519
+[12:56:26] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:56:26] select | verify relaxed 3/10
+[12:56:26] verify | func= Motivation | rank= 2 | pid= astro-ph/0101495 | title_snip='X-Ray Observations of Low-Mass X-Ray Binaries: Accretion Instabilities…' | abs_len= 1280
+[12:56:29] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:56:29] select | verify relaxed 4/10
+[12:56:29] verify | func= Motivation | rank= 3 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[12:56:32] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:56:32] select | verify relaxed 5/10
+[12:56:32] verify | func= Motivation | rank= 4 | pid= astro-ph/0101357 | title_snip='Detectable Signals from Mergers of Compact Stars' | abs_len= 550
+[12:56:35] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:56:35] select | verify relaxed 6/10
+[12:56:35] verify | func= Motivation | rank= 5 | pid= astro-ph/0101132 | title_snip='Simulations of black hole-neutron star binary coalescence' | abs_len= 1410
+[12:56:38] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[12:56:38] select | verify relaxed 7/10
+[12:56:38] verify | func= Motivation | rank= 6 | pid= gr-qc/0103041 | title_snip='Quasiequilibrium sequences of synchronized and irrotational binary
+  n…' | abs_len= 927
+[12:56:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:56:40] select | verify relaxed 8/10
+[12:56:40] verify | func= Motivation | rank= 7 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[12:56:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:56:44] select | verify relaxed 9/10
+[12:56:44] verify | func= Motivation | rank= 8 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[12:56:47] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[12:56:47] select | verify relaxed 10/10
+[12:56:47] verify | func= Motivation | rank= 9 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[12:56:50] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What future research directions are motivated by the differences in quasiperiodic oscillations between neutron star and black hole systems?
+- WINNER: astro-ph/0104008 | Testing the transition layer model of quasi-periodic oscillations in
+  neutron star X-ray binarie
+- QUOTE : Finally, we suggest that the similar transition layer oscillations may be also responsible
+- WHY   : sufficient
+[12:56:52] main | running function= FutureWork
+[12:56:52] select | function= FutureWork | candidates_in= 20
+[12:56:52] select | core_terms= ['neutron star', 'black hole', 'quasiperiodic oscillations']
+[12:56:52] select | no cosine prune; kept=20/20
+[12:56:52] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0104008', 'gr-qc/0103054', 'astro-ph/0101495', 'astro-ph/0103431', 'astro-ph/0101357', 'astro-ph/0101132', 'gr-qc/0103041', 'astro-ph/0102233', 'astro-ph/0104323', 'gr-qc/0104063']
+[12:56:52] select | verify relaxed 1/10
+[12:56:52] verify | func= FutureWork | rank= 0 | pid= astro-ph/0104008 | title_snip='Testing the transition layer model of quasi-periodic oscillations in
+ …' | abs_len= 1628
+[12:56:55] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[12:56:55] select | verify relaxed 2/10
+[12:56:55] verify | func= FutureWork | rank= 1 | pid= gr-qc/0103054 | title_snip='Late-time dynamics of rapidly rotating black holes' | abs_len= 1519
+[12:56:58] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[12:56:58] select | verify relaxed 3/10
+[12:56:58] verify | func= FutureWork | rank= 2 | pid= astro-ph/0101495 | title_snip='X-Ray Observations of Low-Mass X-Ray Binaries: Accretion Instabilities…' | abs_len= 1280
+[12:57:01] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[12:57:01] select | verify relaxed 4/10
+[12:57:01] verify | func= FutureWork | rank= 3 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[12:57:03] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[12:57:03] select | verify relaxed 5/10
+[12:57:03] verify | func= FutureWork | rank= 4 | pid= astro-ph/0101357 | title_snip='Detectable Signals from Mergers of Compact Stars' | abs_len= 550
+[12:57:06] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[12:57:06] select | verify relaxed 6/10
+[12:57:06] verify | func= FutureWork | rank= 5 | pid= astro-ph/0101132 | title_snip='Simulations of black hole-neutron star binary coalescence' | abs_len= 1410
+[12:57:09] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[12:57:09] select | verify relaxed 7/10
+[12:57:09] verify | func= FutureWork | rank= 6 | pid= gr-qc/0103041 | title_snip='Quasiequilibrium sequences of synchronized and irrotational binary
+  n…' | abs_len= 927
+[12:57:11] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[12:57:11] select | verify relaxed 8/10
+[12:57:11] verify | func= FutureWork | rank= 7 | pid= astro-ph/0102233 | title_snip='Discovery of Coupling between Periodic and Aperiodic Variability and
+ …' | abs_len= 1753
+[12:57:14] verify | result supports= False fit= 0.00 top= 0.50 invalid= no_quote cue_hint= False
+[12:57:14] select | verify relaxed 9/10
+[12:57:14] verify | func= FutureWork | rank= 8 | pid= astro-ph/0104323 | title_snip='RXTE observations of the neutron star low-mass X-ray binary GX 17+2:
+ …' | abs_len= 1324
+[12:57:17] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[12:57:17] select | verify relaxed 10/10
+[12:57:17] verify | func= FutureWork | rank= 9 | pid= gr-qc/0104063 | title_snip='The Lazarus project: A pragmatic approach to binary black hole
+  evolu…' | abs_len= 1769
+[12:57:20] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What future research directions are motivated by the differences in quasiperiodic oscillations between neutron star and black hole systems?
+- WINNER: astro-ph/0104008 | Testing the transition layer model of quasi-periodic oscillations in
+  neutron star X-ray binarie
+- QUOTE : Finally, we suggest that the similar transition layer oscillations may be also responsible
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The differences in quasiperiodic oscillations between neutron star and black hole systems motivate further research [Motivation] (astro-ph/0104008). Future work may investigate the application of the transition layer model to black hole candidates and accretion-powered millisecond X-ray pulsars [FutureWork] (astro-ph/0104008).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

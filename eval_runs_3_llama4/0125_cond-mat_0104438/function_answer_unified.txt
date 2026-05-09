@@ -1,0 +1,1 @@
+The current work uses Ewald's method for calculating the energy of Wigner crystals [Uses] (cond-mat/0104438). It extends this method by generalizing it to calculate the anisotropic interaction between electrons in a Wigner crystal, taking into account the piezoelectric correction to the electrostatic interaction [Extends] (cond-mat/0104438).

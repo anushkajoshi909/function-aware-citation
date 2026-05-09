@@ -1,2 +1,0 @@
-The abstract does not provide information relevant to Extends. [Extends]
-The current model of electromagnetic structure black holes can be extended by studying the interaction between microscopic black holes and surrounding hot matter, potentially leading to a better understanding of longer bursts with baryonic matter. Future research directions include describing the conditions exterior to microscopic black holes and detecting them, which remains an outstanding theoretical and experimental challenge (astro-ph/0101515). [FutureWork]

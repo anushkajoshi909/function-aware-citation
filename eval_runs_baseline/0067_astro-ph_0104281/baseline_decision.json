@@ -1,0 +1,18 @@
+{
+  "answer": "The X-ray spectrum of NGC 4151 motivates the development of a two-phase model, as its flat X-ray spectrum is among the flattest known for Seyferts, with Gamma_x = -1.5, indicating a two-phase equilibrium (astro-ph/0104281).",
+  "predicted_paper_id": "astro-ph/0104281",
+  "explanation": "This paper presents a two-phase model for the Narrow Line Region of NGC 4151, motivated by the flat X-ray spectrum and recent Chandra detection of an X-ray narrow-line region.",
+  "evidence_quote": "X-ray spectrum of NGC 4151 is among the flattest known for Seyferts",
+  "topk_list": [
+    "astro-ph/0104281",
+    "astro-ph/0101066",
+    "astro-ph/0104204",
+    "astro-ph/0101221",
+    "astro-ph/0104061",
+    "astro-ph/0104125",
+    "astro-ph/0101079",
+    "astro-ph/0101037",
+    "astro-ph/0101184",
+    "astro-ph/0102404"
+  ]
+}

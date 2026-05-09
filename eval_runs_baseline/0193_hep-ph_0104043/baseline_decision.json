@@ -1,0 +1,18 @@
+{
+  "answer": "The current work uses previous research to motivate the development of a new approximate method for studying three flavor neutrino oscillations in matter, building on the framework of three neutrino mixing in matter (hep-ph/0104043).",
+  "predicted_paper_id": "hep-ph/0104043",
+  "explanation": "This paper provides a new theoretical framework for discussing three neutrino mixing in matter and develops an approximate method for studying three flavor neutrino oscillations in matter.",
+  "evidence_quote": "three neutrino mixing in matter",
+  "topk_list": [
+    "hep-ph/0104043",
+    "hep-ph/0101231",
+    "hep-ph/0101244",
+    "hep-ph/0101122",
+    "hep-lat/0104001",
+    "hep-ph/0103252",
+    "hep-ph/0103300",
+    "hep-ph/0102063",
+    "hep-ph/0103123",
+    "hep-ph/0102103"
+  ]
+}

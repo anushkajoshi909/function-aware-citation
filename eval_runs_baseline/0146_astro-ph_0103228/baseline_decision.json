@@ -1,0 +1,18 @@
+{
+  "answer": "The current work extends previous studies on high-redshift quasars by increasing the number of discovered objects and improving our understanding of their properties (astro-ph/0101270).",
+  "predicted_paper_id": "astro-ph/0101270",
+  "explanation": "This paper presents a search for near-infrared counterparts to quasars, detecting 2277 counterparts and providing insights into the properties of radio-loud and radio-quiet quasars.",
+  "evidence_quote": "detected counterparts within 4 arcsec for 2277",
+  "topk_list": [
+    "astro-ph/0101040",
+    "astro-ph/0102276",
+    "hep-th/0103189",
+    "astro-ph/0104166",
+    "astro-ph/0101270",
+    "astro-ph/0101544",
+    "hep-ph/0101208",
+    "astro-ph/0101230",
+    "astro-ph/0103305",
+    "astro-ph/0103175"
+  ]
+}

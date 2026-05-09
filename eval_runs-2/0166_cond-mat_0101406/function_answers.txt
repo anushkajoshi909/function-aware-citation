@@ -1,1 +1,0 @@
-The current work's use of the Martin-Siggia-Rose formalism allows for a non-perturbative solution of the random heteropolymer model, which is distinct from other approaches (cond-mat/0101406). [Background]

@@ -1,0 +1,160 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Motivation"
+  ],
+  "justification": "The query seeks to understand how future research can use the extended Emery model to improve the understanding of copper-oxide layered materials. The background and motivation are important aspects of this query."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[13:08:51] main | args: Namespace(max_check=10, debug=True)
+[13:08:51] read_last_jsonl | path= classified_outputs.jsonl
+[13:08:51] read_last_jsonl | total_lines= 1
+[13:08:51] main | query='How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?' | funcs=['Background', 'Motivation']
+[13:08:52] main | core_terms= ['copper-oxide layered materials', 'extended Emery model', 'copper-oxide']
+[13:08:52] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[13:08:52] load_topk_jsonl | rows= 20
+[13:08:52] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0103057 title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' abs_len= 1444
+[13:08:52] main | running function= Background
+[13:08:52] select | function= Background | candidates_in= 20
+[13:08:52] select | core_terms= ['copper-oxide layered materials', 'extended Emery model', 'copper-oxide']
+[13:08:52] select | no cosine prune; kept=20/20
+[13:08:52] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0103057', 'cond-mat/0102456', 'cond-mat/0102420', 'cond-mat/0103610', 'cond-mat/0104381', 'cond-mat/0101335', 'cond-mat/0102343', 'cond-mat/0102128', 'cond-mat/0103626', 'cond-mat/0101243']
+[13:08:52] select | verify relaxed 1/10
+[13:08:52] verify | func= Background | rank= 0 | pid= cond-mat/0103057 | title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' | abs_len= 1444
+[13:08:56] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[13:08:56] select | verify relaxed 2/10
+[13:08:56] verify | func= Background | rank= 1 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[13:08:59] verify | result supports= False fit= 0.00 top= 0.50 invalid= quote_not_in_abstract cue_hint= False
+[13:08:59] select | verify relaxed 3/10
+[13:08:59] verify | func= Background | rank= 2 | pid= cond-mat/0102420 | title_snip='Three-Dimensional Superconductivity in the Infinite-Layer Compound
+  S…' | abs_len= 856
+[13:09:02] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:09:02] select | verify relaxed 4/10
+[13:09:02] verify | func= Background | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[13:09:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:05] select | verify relaxed 5/10
+[13:09:05] verify | func= Background | rank= 4 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[13:09:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:07] select | verify relaxed 6/10
+[13:09:07] verify | func= Background | rank= 5 | pid= cond-mat/0101335 | title_snip='Orbital Correlations in the Ferromagnetic Half-Metal $CrO_{2}' | abs_len= 621
+[13:09:10] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:10] select | verify relaxed 7/10
+[13:09:10] verify | func= Background | rank= 6 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[13:09:13] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:09:13] select | verify relaxed 8/10
+[13:09:13] verify | func= Background | rank= 7 | pid= cond-mat/0102128 | title_snip='Tight-binding study of interface states in semiconductor heterojunctio…' | abs_len= 877
+[13:09:16] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:16] select | verify relaxed 9/10
+[13:09:16] verify | func= Background | rank= 8 | pid= cond-mat/0103626 | title_snip='A Model for Ferromagnetic Nanograins with Discrete Electronic States' | abs_len= 467
+[13:09:19] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:19] select | verify relaxed 10/10
+[13:09:19] verify | func= Background | rank= 9 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[13:09:21] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?
+- WINNER: cond-mat/0103057 | Singular Behavior of the Extended Emery Model for High-Tc
+  Superconductors
+- QUOTE : copper-oxide layered materials
+- WHY   : sufficient
+[13:09:23] main | running function= Motivation
+[13:09:23] select | function= Motivation | candidates_in= 20
+[13:09:23] select | core_terms= ['copper-oxide layered materials', 'extended Emery model', 'copper-oxide']
+[13:09:23] select | no cosine prune; kept=20/20
+[13:09:23] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0103057', 'cond-mat/0102456', 'cond-mat/0102420', 'cond-mat/0103610', 'cond-mat/0104381', 'cond-mat/0101335', 'cond-mat/0102343', 'cond-mat/0102128', 'cond-mat/0103626', 'cond-mat/0101243']
+[13:09:23] select | verify relaxed 1/10
+[13:09:23] verify | func= Motivation | rank= 0 | pid= cond-mat/0103057 | title_snip='Singular Behavior of the Extended Emery Model for High-Tc
+  Supercondu…' | abs_len= 1444
+[13:09:26] verify | result supports= False fit= 0.00 top= 0.80 invalid= — cue_hint= False
+[13:09:26] select | verify relaxed 2/10
+[13:09:26] verify | func= Motivation | rank= 1 | pid= cond-mat/0102456 | title_snip='Quantum Group based Modeling for the description of high temperature
+ …' | abs_len= 1009
+[13:09:29] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= True
+[13:09:29] select | verify relaxed 3/10
+[13:09:29] verify | func= Motivation | rank= 2 | pid= cond-mat/0102420 | title_snip='Three-Dimensional Superconductivity in the Infinite-Layer Compound
+  S…' | abs_len= 856
+[13:09:33] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[13:09:33] select | verify relaxed 4/10
+[13:09:33] verify | func= Motivation | rank= 3 | pid= cond-mat/0103610 | title_snip='The 2-site Hubbard and t-J models' | abs_len= 1472
+[13:09:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:35] select | verify relaxed 5/10
+[13:09:35] verify | func= Motivation | rank= 4 | pid= cond-mat/0104381 | title_snip='A Multiscale Approach for Modeling Crystalline Solids' | abs_len= 1376
+[13:09:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:38] select | verify relaxed 6/10
+[13:09:38] verify | func= Motivation | rank= 5 | pid= cond-mat/0101335 | title_snip='Orbital Correlations in the Ferromagnetic Half-Metal $CrO_{2}' | abs_len= 621
+[13:09:41] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:41] select | verify relaxed 7/10
+[13:09:41] verify | func= Motivation | rank= 6 | pid= cond-mat/0102343 | title_snip='Spinwaves and large electron-phonon coupling near the metal-insulator
+…' | abs_len= 823
+[13:09:44] verify | result supports= False fit= 0.00 top= 0.50 invalid= — cue_hint= False
+[13:09:44] select | verify relaxed 8/10
+[13:09:44] verify | func= Motivation | rank= 7 | pid= cond-mat/0102128 | title_snip='Tight-binding study of interface states in semiconductor heterojunctio…' | abs_len= 877
+[13:09:47] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:47] select | verify relaxed 9/10
+[13:09:47] verify | func= Motivation | rank= 8 | pid= cond-mat/0103626 | title_snip='A Model for Ferromagnetic Nanograins with Discrete Electronic States' | abs_len= 467
+[13:09:49] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[13:09:49] select | verify relaxed 10/10
+[13:09:49] verify | func= Motivation | rank= 9 | pid= cond-mat/0101243 | title_snip='Electron-boson effects in the infrared properties of metals' | abs_len= 1233
+[13:09:52] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : How can future research use the extended Emery model to improve the understanding of copper-oxide layered materials?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+Future research can utilize the extended Emery model to improve understanding of copper-oxide layered materials by analyzing the three-band structure and its parameters, such as Cu-O site energy splitting and O-O second neighbor hopping [Background] (cond-mat/0103057). This analysis can help relate band touching and van Hove singularities to the appearance of superconducting properties [Background] (cond-mat/0103057).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

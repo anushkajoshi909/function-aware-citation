@@ -1,0 +1,1 @@
+The current work extends previous research on magnetospheric accretion by considering non-axisymmetric accretion models [Extends] (astro-ph/0102137), and uses the framework of magnetospheric accretion to interpret the observed features of RW Aur A, such as periodic modulations in spectral features and veiling [Uses] (astro-ph/0102137).

@@ -1,0 +1,18 @@
+{
+  "answer": "The method of multi-lens ray-tracing will be used to improve our understanding of strong gravitational lensing by multiple objects, allowing for the estimation of the likelihood for gravitational lensing by two lenses at different redshifts (astro-ph/0103093).",
+  "predicted_paper_id": "astro-ph/0103093",
+  "explanation": "This paper discusses the use of multi-lens ray-tracing to estimate the likelihood for gravitational lensing by two lenses at different redshifts, making it relevant to the question.",
+  "evidence_quote": "Using multi-lens ray-tracing",
+  "topk_list": [
+    "astro-ph/0103093",
+    "astro-ph/0102340",
+    "astro-ph/0104253",
+    "astro-ph/0104440",
+    "astro-ph/0103208",
+    "physics/0104004",
+    "gr-qc/0104083",
+    "astro-ph/0103516",
+    "astro-ph/0102341",
+    "astro-ph/0103500"
+  ]
+}

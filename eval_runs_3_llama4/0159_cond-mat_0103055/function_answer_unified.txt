@@ -1,0 +1,1 @@
+The current work compares to existing methods by extending the Beliaev-Popov formalism for a weakly interacting Bose gas on a rigid lattice to a deformable lattice [Compares] (cond-mat/0103055). It utilizes the Einstein phonon model to study superfluid properties of bosons on a lattice, which is an extension of the existing formalism [Uses] (cond-mat/0103055).

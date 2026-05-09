@@ -1,1 +1,0 @@
-The development of lossy data compression algorithms in the paper builds upon previous work, particularly the lossless compression treatment by Wyner and Ziv in 1989, and utilizes methods such as the Asymptotic Equipartition Property and large deviations (math/0103007). [Background]

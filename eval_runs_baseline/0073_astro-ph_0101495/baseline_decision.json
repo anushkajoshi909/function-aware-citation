@@ -1,0 +1,18 @@
+{
+  "answer": "Future research directions are motivated by the differences in quasiperiodic oscillations between neutron star and black hole systems, such as two oscillation frequencies versus one (astro-ph/0101495).",
+  "predicted_paper_id": "astro-ph/0101495",
+  "explanation": "This paper discusses the differences in quasiperiodic oscillations between neutron star and black hole systems, making it relevant to future research directions.",
+  "evidence_quote": "two oscillation frequencies versus one",
+  "topk_list": [
+    "astro-ph/0104008",
+    "gr-qc/0103054",
+    "astro-ph/0101495",
+    "astro-ph/0103431",
+    "astro-ph/0101357",
+    "astro-ph/0101132",
+    "gr-qc/0103041",
+    "astro-ph/0102233",
+    "astro-ph/0104323",
+    "gr-qc/0104063"
+  ]
+}

@@ -1,0 +1,156 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openai/gpt-oss-120b
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Motivation",
+    "FutureWork"
+  ],
+  "justification": "The query seeks future research directions that are driven by (motivated by) the observed variability and spectral characteristics, linking motivation to future work."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[22:49:16] main | args: Namespace(max_check=10, debug=True)
+[22:49:16] read_last_jsonl | path= classified_outputs.jsonl
+[22:49:16] read_last_jsonl | total_lines= 1
+[22:49:16] main | query='What future research could be motivated by the observed variability and spectral characteristics of the X-ray sources in M33?' | funcs=['Motivation', 'FutureWork']
+[22:49:18] main | core_terms= ['M33', 'X-ray sources', 'variability', 'spectral characteristics', 'X-ray']
+[22:49:18] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[22:49:18] load_topk_jsonl | rows= 20
+[22:49:18] load_topk_jsonl | first: rank= 0 paper_id= astro-ph/0101057 title_snip='BeppoSAX spectroscopy of the luminous X-ray sources in M33' abs_len= 1290
+[22:49:18] main | running function= Motivation
+[22:49:18] select | function= Motivation | candidates_in= 20
+[22:49:18] select | core_terms= ['M33', 'X-ray sources', 'variability', 'spectral characteristics', 'X-ray']
+[22:49:18] select | no cosine prune; kept=20/20
+[22:49:18] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101057', 'astro-ph/0102065', 'astro-ph/0102441', 'astro-ph/0102111', 'astro-ph/0104481', 'astro-ph/0103367', 'astro-ph/0103431', 'astro-ph/0104343', 'astro-ph/0102227', 'astro-ph/0102408']
+[22:49:18] select | verify relaxed 1/10
+[22:49:18] verify | func= Motivation | rank= 0 | pid= astro-ph/0101057 | title_snip='BeppoSAX spectroscopy of the luminous X-ray sources in M33' | abs_len= 1290
+[22:49:21] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[22:49:21] select | verify relaxed 2/10
+[22:49:21] verify | func= Motivation | rank= 1 | pid= astro-ph/0102065 | title_snip='Spectral variability of Ultra Luminous Compact X-ray Sources in Nearby…' | abs_len= 1440
+[22:49:24] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:49:24] select | verify relaxed 3/10
+[22:49:24] verify | func= Motivation | rank= 2 | pid= astro-ph/0102441 | title_snip='Optical identification of supersoft X-ray sources in M31' | abs_len= 445
+[22:49:27] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:27] select | verify relaxed 4/10
+[22:49:27] verify | func= Motivation | rank= 3 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[22:49:29] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:29] select | verify relaxed 5/10
+[22:49:29] verify | func= Motivation | rank= 4 | pid= astro-ph/0104481 | title_snip='Different Types of X-ray Variability Observed in Micro-Quasar GRS
+  19…' | abs_len= 1168
+[22:49:32] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:32] select | verify relaxed 6/10
+[22:49:32] verify | func= Motivation | rank= 5 | pid= astro-ph/0103367 | title_snip='The flux-dependent amplitude of broadband noise variability in X-ray
+ …' | abs_len= 1791
+[22:49:34] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:34] select | verify relaxed 7/10
+[22:49:34] verify | func= Motivation | rank= 6 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[22:49:37] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:37] select | verify relaxed 8/10
+[22:49:37] verify | func= Motivation | rank= 7 | pid= astro-ph/0104343 | title_snip='A Study of the Unidentified Gamma-Ray Source 3EG J1828+0142' | abs_len= 1157
+[22:49:39] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:39] select | verify relaxed 9/10
+[22:49:39] verify | func= Motivation | rank= 8 | pid= astro-ph/0102227 | title_snip='Testing a model of variability of X-ray reprocessing features in Activ…' | abs_len= 1157
+[22:49:43] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:49:43] select | verify relaxed 10/10
+[22:49:43] verify | func= Motivation | rank= 9 | pid= astro-ph/0102408 | title_snip='Reconsidering the Identification of M101 Hypernova Remnant Candidates' | abs_len= 1611
+[22:49:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Motivation
+QUERY   : What future research could be motivated by the observed variability and spectral characteristics of the X-ray sources in M33?
+- WINNER: astro-ph/0101057 | BeppoSAX spectroscopy of the luminous X-ray sources in M33
+- QUOTE : The nearby galaxy M33 was observed
+- WHY   : sufficient
+[22:49:47] main | running function= FutureWork
+[22:49:47] select | function= FutureWork | candidates_in= 20
+[22:49:47] select | core_terms= ['M33', 'X-ray sources', 'variability', 'spectral characteristics', 'X-ray']
+[22:49:47] select | no cosine prune; kept=20/20
+[22:49:47] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['astro-ph/0101057', 'astro-ph/0102065', 'astro-ph/0102441', 'astro-ph/0102111', 'astro-ph/0104481', 'astro-ph/0103367', 'astro-ph/0103431', 'astro-ph/0104343', 'astro-ph/0102227', 'astro-ph/0102408']
+[22:49:47] select | verify relaxed 1/10
+[22:49:47] verify | func= FutureWork | rank= 0 | pid= astro-ph/0101057 | title_snip='BeppoSAX spectroscopy of the luminous X-ray sources in M33' | abs_len= 1290
+[22:49:49] verify | result supports= False fit= 0.00 top= 0.80 invalid= no_quote cue_hint= False
+[22:49:49] select | verify relaxed 2/10
+[22:49:49] verify | func= FutureWork | rank= 1 | pid= astro-ph/0102065 | title_snip='Spectral variability of Ultra Luminous Compact X-ray Sources in Nearby…' | abs_len= 1440
+[22:49:52] verify | result supports= False fit= 0.00 top= 0.20 invalid= no_quote cue_hint= False
+[22:49:52] select | verify relaxed 3/10
+[22:49:52] verify | func= FutureWork | rank= 2 | pid= astro-ph/0102441 | title_snip='Optical identification of supersoft X-ray sources in M31' | abs_len= 445
+[22:49:55] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:55] select | verify relaxed 4/10
+[22:49:55] verify | func= FutureWork | rank= 3 | pid= astro-ph/0102111 | title_snip='Spectral and temporal properties of X-ray emission from the
+  ultra-lu…' | abs_len= 494
+[22:49:57] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:49:57] select | verify relaxed 5/10
+[22:49:57] verify | func= FutureWork | rank= 4 | pid= astro-ph/0104481 | title_snip='Different Types of X-ray Variability Observed in Micro-Quasar GRS
+  19…' | abs_len= 1168
+[22:50:00] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:50:00] select | verify relaxed 6/10
+[22:50:00] verify | func= FutureWork | rank= 5 | pid= astro-ph/0103367 | title_snip='The flux-dependent amplitude of broadband noise variability in X-ray
+ …' | abs_len= 1791
+[22:50:02] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:50:02] select | verify relaxed 7/10
+[22:50:02] verify | func= FutureWork | rank= 6 | pid= astro-ph/0103431 | title_snip='Properties of Black Holes in Stellar Binary Systems' | abs_len= 880
+[22:50:05] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:50:05] select | verify relaxed 8/10
+[22:50:05] verify | func= FutureWork | rank= 7 | pid= astro-ph/0104343 | title_snip='A Study of the Unidentified Gamma-Ray Source 3EG J1828+0142' | abs_len= 1157
+[22:50:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[22:50:07] select | verify relaxed 9/10
+[22:50:07] verify | func= FutureWork | rank= 8 | pid= astro-ph/0102227 | title_snip='Testing a model of variability of X-ray reprocessing features in Activ…' | abs_len= 1157
+[22:50:10] verify | result supports= False fit= 0.00 top= 0.20 invalid= — cue_hint= False
+[22:50:10] select | verify relaxed 10/10
+[22:50:10] verify | func= FutureWork | rank= 9 | pid= astro-ph/0102408 | title_snip='Reconsidering the Identification of M101 Hypernova Remnant Candidates' | abs_len= 1611
+[22:50:13] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: FutureWork
+QUERY   : What future research could be motivated by the observed variability and spectral characteristics of the X-ray sources in M33?
+- No supporting candidate with sufficient evidence.
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The observed variability and spectral characteristics of the X-ray sources in M33 could motivate future research to further investigate the nature of these sources, particularly the possibility of black hole accretion in binary systems [Motivation] (astro-ph/0101057). This research could also explore the implications of the varied intensity and spectral shapes of the X-ray sources, such as M33 X-8 and X-6, on our understanding of their behavior and properties [Motivation] (astro-ph/0101057).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

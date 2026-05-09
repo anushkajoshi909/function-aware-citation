@@ -1,0 +1,18 @@
+{
+  "answer": "The study of R Coronae Borealis stars in the Large Magellanic Cloud is motivated by the discovery of new RCB stars using the MACHO project photometry database (astro-ph/0102262).",
+  "predicted_paper_id": "astro-ph/0102262",
+  "explanation": "This paper reports the discovery of eight new R Coronae Borealis stars in the Large Magellanic Cloud using the MACHO project photometry database, making it the most relevant to the question.",
+  "evidence_quote": "We report the discovery of eight new R Coronae Borealis",
+  "topk_list": [
+    "astro-ph/0102262",
+    "astro-ph/0102369",
+    "astro-ph/0102242",
+    "astro-ph/0104163",
+    "astro-ph/0104098",
+    "astro-ph/0103516",
+    "astro-ph/0103400",
+    "astro-ph/0102494",
+    "astro-ph/0102472",
+    "astro-ph/0102442"
+  ]
+}

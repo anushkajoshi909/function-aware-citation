@@ -1,0 +1,1 @@
+Beamed Magnetar Flares have detection rates and characteristics that compare to other gamma-ray bursts, potentially accounting for short, hard Class II gamma-ray bursts [Compares] (astro-ph/0103235). Future research could explore this relationship by investigating the positional coincidences of beamed MFs with nearby galaxies and galaxy clusters [FutureWork] (astro-ph/0103235).

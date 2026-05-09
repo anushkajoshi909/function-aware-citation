@@ -1,0 +1,18 @@
+{
+  "answer": "The comparison between big bang nucleosynthesis and cosmic microwave background observations relates to the background understanding of the universe's baryon abundance, as seen in the potential conflict between BBN and CMB (astro-ph/0102152).",
+  "predicted_paper_id": "astro-ph/0102152",
+  "explanation": "This paper discusses the potential conflict between big bang nucleosynthesis and cosmic microwave background observations, which is relevant to understanding the universe's baryon abundance.",
+  "evidence_quote": "CMB observations may not be in perfect agreement with those from big bang nucleosynthesis",
+  "topk_list": [
+    "astro-ph/0103411",
+    "astro-ph/0102152",
+    "astro-ph/0102032",
+    "astro-ph/0102172",
+    "astro-ph/0101236",
+    "hep-ph/0101343",
+    "astro-ph/0103505",
+    "astro-ph/0101292",
+    "astro-ph/0103281",
+    "astro-ph/0102402"
+  ]
+}

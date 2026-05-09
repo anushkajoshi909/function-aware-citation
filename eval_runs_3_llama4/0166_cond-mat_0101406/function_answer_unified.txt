@@ -1,0 +1,1 @@
+The current work's use of the Martin-Siggia-Rose formalism allows for a non-perturbative solution to the random heteropolymer model [Uses] (cond-mat/0101406). This approach enables the derivation of equations of motion for correlation and response functions, leading to a dynamical phase diagram with distinct phases [Uses] (cond-mat/0101406).

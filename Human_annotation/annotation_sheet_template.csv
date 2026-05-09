@@ -1,0 +1,2 @@
+uid,paper_id,question,pipeline_pred_function,pipeline_pred_supported,top1_winner_pid,retrieved_snippet,ann_function,ann_supported,evidence_span,notes
+paperX#1,paperX,Example question here…,Background,TRUE,paperX,(paste the model's retrieved snippet here),,,,

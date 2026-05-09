@@ -1,0 +1,1 @@
+The relationship between sparsity and statistical independence in stochastic processes is not well understood [Background] (math/0104083). Existing knowledge on efficient data representation is extended by studying the spike process, which reveals that the best basis for sparsity and statistical independence can differ [Extends] (math/0104083).

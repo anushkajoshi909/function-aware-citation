@@ -1,0 +1,18 @@
+{
+  "answer": "The current work's method of deriving the color-magnitude relation is compared to previous methods using data from the Coma cluster, which achieves this comparison by deriving a CM relation based on color measurements within the effective radius (astro-ph/0102090).",
+  "predicted_paper_id": "astro-ph/0102090",
+  "explanation": "This paper is relevant because it discusses the derivation of the color-magnitude relation using a sample of giant early-type galaxies in the Coma cluster, which is similar to the context of the current work.",
+  "evidence_quote": "color-magnitude relation of early-type galaxies",
+  "topk_list": [
+    "astro-ph/0102090",
+    "hep-ph/0102103",
+    "astro-ph/0104084",
+    "astro-ph/0103188",
+    "nucl-th/0103002",
+    "astro-ph/0104366",
+    "astro-ph/0101463",
+    "hep-ph/0101071",
+    "astro-ph/0104427",
+    "hep-ex/0101044"
+  ]
+}

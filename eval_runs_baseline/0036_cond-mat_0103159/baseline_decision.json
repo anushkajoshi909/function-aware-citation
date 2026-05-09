@@ -1,0 +1,18 @@
+{
+  "answer": "The problem or gap in understanding the dimensional crossover in Hubbard ladders motivates the current study, which requires background information on the half-filled and lightly doped N-leg Hubbard ladders (cond-mat/0103159).",
+  "predicted_paper_id": "cond-mat/0103159",
+  "explanation": "This paper is relevant because it studies the dimensional crossover from 1D to 2D in half-filled and lightly doped Hubbard ladders, providing necessary background information on the phenomenon.",
+  "evidence_quote": "Dimensional crossover in half-filled and lightly doped N-leg Hubbard ladders",
+  "topk_list": [
+    "cond-mat/0103159",
+    "cond-mat/0103424",
+    "cond-mat/0102007",
+    "cond-mat/0102401",
+    "cond-mat/0104090",
+    "cond-mat/0101302",
+    "cond-mat/0103264",
+    "cond-mat/0103610",
+    "cond-mat/0101017",
+    "cond-mat/0104478"
+  ]
+}

@@ -1,0 +1,165 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background",
+    "Uses"
+  ],
+  "justification": "The query requests foundational knowledge about skutterudite compounds and how it relates to the application of photoemission spectroscopy."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[11:57:59] main | args: Namespace(max_check=10, debug=True)
+[11:57:59] read_last_jsonl | path= classified_outputs.jsonl
+[11:57:59] read_last_jsonl | total_lines= 1
+[11:57:59] main | query='How does the background information on skutterudite compounds inform the use of photoemission spectroscopy in this study?' | funcs=['Background', 'Uses']
+[11:58:01] main | core_terms= ['skutterudite compounds', 'photoemission spectroscopy']
+[11:58:01] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[11:58:01] load_topk_jsonl | rows= 20
+[11:58:01] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0103342 title_snip='Photoemission study of the skutterudite compounds
+  Co(Sb$_{1-x}$Te$_{…' abs_len= 955
+[11:58:01] main | running function= Background
+[11:58:01] select | function= Background | candidates_in= 20
+[11:58:01] select | core_terms= ['skutterudite compounds', 'photoemission spectroscopy']
+[11:58:01] select | no cosine prune; kept=20/20
+[11:58:01] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0103342', 'cond-mat/0103500', 'cond-mat/0102323', 'cond-mat/0102443', 'cond-mat/0103079', 'cond-mat/0101105', 'hep-ph/0102288', 'cond-mat/0102376', 'cond-mat/0104489', 'astro-ph/0101153']
+[11:58:01] select | verify relaxed 1/10
+[11:58:01] verify | func= Background | rank= 0 | pid= cond-mat/0103342 | title_snip='Photoemission study of the skutterudite compounds
+  Co(Sb$_{1-x}$Te$_{…' | abs_len= 955
+[11:58:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:58:04] select | verify relaxed 2/10
+[11:58:04] verify | func= Background | rank= 1 | pid= cond-mat/0103500 | title_snip='Photovoltage Effects in Photoemission from Thin GaAs Layers' | abs_len= 753
+[11:58:07] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:07] select | verify relaxed 3/10
+[11:58:07] verify | func= Background | rank= 2 | pid= cond-mat/0102323 | title_snip='Estimation of matrix element effects and determination of the Fermi
+  …' | abs_len= 743
+[11:58:09] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:09] select | verify relaxed 4/10
+[11:58:09] verify | func= Background | rank= 3 | pid= cond-mat/0102443 | title_snip='Photoemission from Ordered Stripe Phases' | abs_len= 544
+[11:58:12] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:12] select | verify relaxed 5/10
+[11:58:12] verify | func= Background | rank= 4 | pid= cond-mat/0103079 | title_snip='High-Resolution Photoemission Study of MgB2' | abs_len= 544
+[11:58:14] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:14] select | verify relaxed 6/10
+[11:58:14] verify | func= Background | rank= 5 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[11:58:17] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:17] select | verify relaxed 7/10
+[11:58:17] verify | func= Background | rank= 6 | pid= hep-ph/0102288 | title_snip='Solar neutrino event spectra: Tuning SNO to equalize Super-Kamiokande' | abs_len= 1536
+[11:58:20] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:20] select | verify relaxed 8/10
+[11:58:20] verify | func= Background | rank= 7 | pid= cond-mat/0102376 | title_snip='Coordination and chemical effects on the structural, electronic and
+  …' | abs_len= 935
+[11:58:22] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:22] select | verify relaxed 9/10
+[11:58:22] verify | func= Background | rank= 8 | pid= cond-mat/0104489 | title_snip='Direct evidence for a multiple superconducting gap in MgB2 from
+  high…' | abs_len= 567
+[11:58:25] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:25] select | verify relaxed 10/10
+[11:58:25] verify | func= Background | rank= 9 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[11:58:28] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : How does the background information on skutterudite compounds inform the use of photoemission spectroscopy in this study?
+- WINNER: cond-mat/0103342 | Photoemission study of the skutterudite compounds
+  Co(Sb$_{1-x}$Te$_{x}$)$_3$ and RhSb$_3$
+- QUOTE : We have studied the electronic structure of the skutterudite compounds
+- WHY   : sufficient
+[11:58:29] main | running function= Uses
+[11:58:29] select | function= Uses | candidates_in= 20
+[11:58:29] select | core_terms= ['skutterudite compounds', 'photoemission spectroscopy']
+[11:58:29] select | no cosine prune; kept=20/20
+[11:58:29] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0103342', 'cond-mat/0103500', 'cond-mat/0102323', 'cond-mat/0102443', 'cond-mat/0103079', 'cond-mat/0101105', 'hep-ph/0102288', 'cond-mat/0102376', 'cond-mat/0104489', 'astro-ph/0101153']
+[11:58:29] select | verify relaxed 1/10
+[11:58:29] verify | func= Uses | rank= 0 | pid= cond-mat/0103342 | title_snip='Photoemission study of the skutterudite compounds
+  Co(Sb$_{1-x}$Te$_{…' | abs_len= 955
+[11:58:32] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[11:58:32] select | verify relaxed 2/10
+[11:58:32] verify | func= Uses | rank= 1 | pid= cond-mat/0103500 | title_snip='Photovoltage Effects in Photoemission from Thin GaAs Layers' | abs_len= 753
+[11:58:35] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:35] select | verify relaxed 3/10
+[11:58:35] verify | func= Uses | rank= 2 | pid= cond-mat/0102323 | title_snip='Estimation of matrix element effects and determination of the Fermi
+  …' | abs_len= 743
+[11:58:38] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:38] select | verify relaxed 4/10
+[11:58:38] verify | func= Uses | rank= 3 | pid= cond-mat/0102443 | title_snip='Photoemission from Ordered Stripe Phases' | abs_len= 544
+[11:58:40] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:40] select | verify relaxed 5/10
+[11:58:40] verify | func= Uses | rank= 4 | pid= cond-mat/0103079 | title_snip='High-Resolution Photoemission Study of MgB2' | abs_len= 544
+[11:58:43] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:43] select | verify relaxed 6/10
+[11:58:43] verify | func= Uses | rank= 5 | pid= cond-mat/0101105 | title_snip='External losses in photoemission from strongly correlated quasi
+  two-…' | abs_len= 1498
+[11:58:45] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:45] select | verify relaxed 7/10
+[11:58:45] verify | func= Uses | rank= 6 | pid= hep-ph/0102288 | title_snip='Solar neutrino event spectra: Tuning SNO to equalize Super-Kamiokande' | abs_len= 1536
+[11:58:48] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:48] select | verify relaxed 8/10
+[11:58:48] verify | func= Uses | rank= 7 | pid= cond-mat/0102376 | title_snip='Coordination and chemical effects on the structural, electronic and
+  …' | abs_len= 935
+[11:58:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:51] select | verify relaxed 9/10
+[11:58:51] verify | func= Uses | rank= 8 | pid= cond-mat/0104489 | title_snip='Direct evidence for a multiple superconducting gap in MgB2 from
+  high…' | abs_len= 567
+[11:58:53] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[11:58:53] select | verify relaxed 10/10
+[11:58:53] verify | func= Uses | rank= 9 | pid= astro-ph/0101153 | title_snip='Near-infrared Integral Field Spectroscopy and Mid-infrared Spectroscop…' | abs_len= 1696
+[11:58:56] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+
+================================================================================
+FUNCTION: Uses
+QUERY   : How does the background information on skutterudite compounds inform the use of photoemission spectroscopy in this study?
+- WINNER: cond-mat/0103342 | Photoemission study of the skutterudite compounds
+  Co(Sb$_{1-x}$Te$_{x}$)$_3$ and RhSb$_3$
+- QUOTE : We have studied the electronic structure of the skutterudite compounds
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The background information on skutterudite compounds provides context for understanding their electronic structure, which is dominated by Sb 5p states near the Fermi level [Background] (cond-mat/0103342). This understanding informs the use of photoemission spectroscopy to study the compounds, allowing for the estimation of the band gap and investigation of electron correlations [Uses] (cond-mat/0103342).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

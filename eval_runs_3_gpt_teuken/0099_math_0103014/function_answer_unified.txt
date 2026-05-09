@@ -1,0 +1,1 @@
+The analysis of the cyclic group of units in Z_k provides a foundation for exploring new areas of future research in residue arithmetic [Background] (math/0103083), and the discovery of triplet structures and symmetries in arithmetic mod p^k motivates further investigation into the properties of residue arithmetic [Motivation] (math/0103014).

@@ -1,2 +1,0 @@
-The limitations of current methods for solving high-dimensional Ising models motivate future research into alternative approaches, such as dimensional reductions and bosonization. This is important because high-dimensional problems lack a "phase interference" effect, which plays a crucial role in understanding these complex systems (hep-th/0104214). [Motivation]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

@@ -1,0 +1,1 @@
+The structural analysis of meson loop corrections in HBChPT provides a method to determine significant loop corrections [Background] (hep-ph/0104197). It utilizes a decomposition of corrections in terms of effective one-, two-, and three-quark operators and can be generalized to other problems in HBChPT [Background] (hep-ph/0104197).

@@ -1,0 +1,18 @@
+{
+  "answer": "The study of the exclusive decay of heavy quarkonium is motivated by the desire to understand how gluons are converted into pions and to provide information about s-wave \u03c0\u03c0 scattering (hep-ph/0103225).",
+  "predicted_paper_id": "hep-ph/0103225",
+  "explanation": "This paper directly addresses the exclusive decay of heavy quarkonium into a photon and two pions, providing insight into the conversion of gluons into pions and s-wave \u03c0\u03c0 scattering.",
+  "evidence_quote": "how gluons are converted into the two pions",
+  "topk_list": [
+    "hep-ph/0103225",
+    "hep-ph/0101301",
+    "hep-ph/0101190",
+    "hep-ph/0104153",
+    "hep-ph/0102013",
+    "hep-ph/0103236",
+    "hep-ph/0103133",
+    "hep-ex/0102047",
+    "hep-ph/0103305",
+    "hep-ph/0104264"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "The methods used to detect wind-blown bubbles compare to the expected outcomes based on model predictions, showing a large discrepancy between the stellar wind luminosity derived from bubble observations and models (astro-ph/0104420).",
+  "predicted_paper_id": "astro-ph/0104420",
+  "explanation": "This paper directly addresses the comparison between observed wind-blown bubbles and model predictions, highlighting a significant discrepancy in stellar wind luminosity.",
+  "evidence_quote": "Comparisons between the observed bubble dynamics and model predictions show a large discrepancy",
+  "topk_list": [
+    "astro-ph/0103096",
+    "hep-ex/0101022",
+    "hep-ph/0103016",
+    "cond-mat/0102274",
+    "astro-ph/0104420",
+    "astro-ph/0104176",
+    "hep-ph/0104053",
+    "hep-ph/0104066",
+    "gr-qc/0102090",
+    "hep-ph/0102104"
+  ]
+}

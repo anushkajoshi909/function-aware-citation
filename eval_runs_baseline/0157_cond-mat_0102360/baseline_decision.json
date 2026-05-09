@@ -1,0 +1,18 @@
+{
+  "answer": "The extension of the semiclassical model of the collective atomic recoil laser was motivated by the need to include quantum mechanical effects, as described in cond-mat/0102360.",
+  "predicted_paper_id": "cond-mat/0102360",
+  "explanation": "This paper extends the semiclassical model to include the quantum mechanical description of the center-of-mass motion of the atoms in a Bose-Einstein condensate, which is a key limitation of previous work.",
+  "evidence_quote": "We extend the semiclassical model",
+  "topk_list": [
+    "cond-mat/0102360",
+    "nlin/0104041",
+    "hep-ph/0101297",
+    "hep-th/0103228",
+    "hep-ph/0102144",
+    "hep-ph/0103129",
+    "nlin/0101055",
+    "astro-ph/0101222",
+    "hep-ph/0101318",
+    "nlin/0101007"
+  ]
+}

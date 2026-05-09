@@ -1,0 +1,18 @@
+{
+  "answer": "The development of preferred-frame theory is motivated by the need to account for special relativity and reduce to it if the gravitation field cancels, as seen in gr-qc/0103025.",
+  "predicted_paper_id": "gr-qc/0103025",
+  "explanation": "This paper provides a clear motivation for the development of preferred-frame theory, based on an interpretation of gravity as a pressure force and the need to extend special-relativistic form of Newton's second law.",
+  "evidence_quote": "accounts for special relativity",
+  "topk_list": [
+    "gr-qc/0103025",
+    "gr-qc/0101099",
+    "gr-qc/0103076",
+    "hep-th/0103180",
+    "gr-qc/0102009",
+    "astro-ph/0102423",
+    "astro-ph/0102109",
+    "hep-th/0102186",
+    "hep-th/0103156",
+    "gr-qc/0101093"
+  ]
+}

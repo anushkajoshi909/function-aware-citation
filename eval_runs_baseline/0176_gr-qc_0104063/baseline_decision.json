@@ -1,0 +1,18 @@
+{
+  "answer": "Previous methods for simulating binary black hole systems had limitations in terms of accuracy and applicability, which motivated the development of new techniques, such as the Lazarus project (gr-qc/0104063).",
+  "predicted_paper_id": "gr-qc/0104063",
+  "explanation": "The Lazarus project presents a method to combine 3D numerical simulations and a single black hole close-limit approximation, making it possible to compute complete waveforms for binary black hole systems.",
+  "evidence_quote": "binary black hole evolutions",
+  "topk_list": [
+    "gr-qc/0104063",
+    "astro-ph/0103431",
+    "astro-ph/0104182",
+    "math/0102094",
+    "astro-ph/0102340",
+    "gr-qc/0103099",
+    "gr-qc/0103011",
+    "gr-qc/0101063",
+    "gr-qc/0104079",
+    "gr-qc/0102085"
+  ]
+}

@@ -1,0 +1,1 @@
+The current work's approach to simulating X-ray surface brightness distribution builds upon existing methods by using simulations to predict the distribution from diffuse gas [Background] (astro-ph/0101467). It extends these methods by examining numerical issues and exploring the effects of non-gravitational heating on the predicted background [Extends] (astro-ph/0101467).

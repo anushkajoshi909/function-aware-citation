@@ -1,0 +1,111 @@
+✅ Available Models:
+1. alias-reasoning
+2. alias-ha
+3. meta-llama/Llama-3.3-70B-Instruct
+4. meta-llama/Llama-3.1-8B-Instruct
+5. Qwen/Qwen2-VL-7B-Instruct
+6. alias-vision
+7. openGPT-X/Teuken-7B-instruct-research-v0.4
+8. deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+9. Qwen/Qwen3-Coder-30B-A3B-Instruct
+10. alias-code
+11. Qwen/Qwen3-Embedding-4B
+12. BAAI/bge-reranker-v2-m3
+13. stabilityai/stable-diffusion-3.5-large-turbo
+14. alias-image-generation
+15. black-forest-labs/FLUX.1-dev
+16. openai/whisper-large-v3
+17. Kokoro-82M
+18. tts-1-hd
+19. deepseek-ai/DeepSeek-R1
+20. openai/gpt-oss-120b
+21. meta-llama/Llama-4-Scout-17B-16E-Instruct
+
+👉 Select a model number (default = 1): 
+✅ Using model: openGPT-X/Teuken-7B-instruct-research-v0.4
+
+🔍 Enter a scientific query or topic: 
+🔎 Citation Function Classification:
+{
+  "citation_functions": [
+    "Background"
+  ],
+  "justification": "The query seeks information about the background and motivation behind a specific method used in a study."
+}
+
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (handled in a separate file).
+⚡ SKIP_REINDEX=1 — using existing FAISS index + meta; not scanning raw JSONL shards.
+✅ Top-k candidates (FAISS): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+[15:10:28] main | args: Namespace(max_check=10, debug=True)
+[15:10:28] read_last_jsonl | path= classified_outputs.jsonl
+[15:10:28] read_last_jsonl | total_lines= 1
+[15:10:28] main | query='What method does the current work use to investigate the microstructure of the MgB2 superconductor and what problem does it aim to solve by doing so?' | funcs=['Background']
+[15:10:29] main | core_terms= ['MgB2', 'superconductor', 'microstructure']
+[15:10:29] load_topk_jsonl | path= /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl
+[15:10:29] load_topk_jsonl | rows= 20
+[15:10:29] load_topk_jsonl | first: rank= 0 paper_id= cond-mat/0102312 title_snip='Scanning Tunneling Spectroscopy in MgB2' abs_len= 664
+[15:10:29] main | running function= Background
+[15:10:29] select | function= Background | candidates_in= 20
+[15:10:29] select | core_terms= ['MgB2', 'superconductor', 'microstructure']
+[15:10:29] select | no cosine prune; kept=20/20
+[15:10:29] select | pool_size= 10 | ranks= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] | pids= ['cond-mat/0102312', 'cond-mat/0103390', 'cond-mat/0102507', 'cond-mat/0103157', 'cond-mat/0102498', 'cond-mat/0103431', 'cond-mat/0103006', 'cond-mat/0103154', 'cond-mat/0102289', 'cond-mat/0102242']
+[15:10:29] select | verify relaxed 1/10
+[15:10:29] verify | func= Background | rank= 0 | pid= cond-mat/0102312 | title_snip='Scanning Tunneling Spectroscopy in MgB2' | abs_len= 664
+[15:10:33] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:10:33] select | verify relaxed 2/10
+[15:10:33] verify | func= Background | rank= 1 | pid= cond-mat/0103390 | title_snip='Synthesis and Processing of $MgB_2$ powders and wires' | abs_len= 825
+[15:10:37] verify | result supports= False fit= 0.00 top= 0.90 invalid= off_topic_no_core_in_abstract cue_hint= False
+[15:10:37] select | verify relaxed 3/10
+[15:10:37] verify | func= Background | rank= 2 | pid= cond-mat/0102507 | title_snip='Compressibility of the MgB2 Superconductor' | abs_len= 966
+[15:10:41] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:10:41] select | verify relaxed 4/10
+[15:10:41] verify | func= Background | rank= 3 | pid= cond-mat/0103157 | title_snip='Electronic structure of superconducting MgB2 and related binary and
+  …' | abs_len= 1015
+[15:10:44] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:10:44] select | verify relaxed 5/10
+[15:10:44] verify | func= Background | rank= 4 | pid= cond-mat/0102498 | title_snip='Microstructure of the highly dense MgB2 Superconductor by transmission…' | abs_len= 1004
+[15:10:47] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:10:47] select | verify relaxed 6/10
+[15:10:47] verify | func= Background | rank= 5 | pid= cond-mat/0103431 | title_snip='Two-Band-Type Superconducting Instability in MgB2' | abs_len= 1160
+[15:10:51] verify | result supports= False fit= 0.00 top= 0.00 invalid= no_quote cue_hint= False
+[15:10:51] select | verify relaxed 7/10
+[15:10:51] verify | func= Background | rank= 6 | pid= cond-mat/0103006 | title_snip='Superconductivity Driven by the Interband Coulomb Interaction and
+  Im…' | abs_len= 1033
+[15:10:54] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:10:54] select | verify relaxed 8/10
+[15:10:54] verify | func= Background | rank= 7 | pid= cond-mat/0103154 | title_snip='The upper critical field problem in MgB2' | abs_len= 667
+[15:10:58] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+[15:10:58] select | verify relaxed 9/10
+[15:10:58] verify | func= Background | rank= 8 | pid= cond-mat/0102289 | title_snip='Superconductivity in Dense $MgB_2$ Wires' | abs_len= 897
+[15:11:01] verify | result supports= False fit= 0.00 top= 0.90 invalid= quote_not_in_abstract cue_hint= False
+[15:11:01] select | verify relaxed 10/10
+[15:11:01] verify | func= Background | rank= 9 | pid= cond-mat/0102242 | title_snip='Tunneling spectroscopy in small grains of superconducting MgB2' | abs_len= 430
+[15:11:04] verify | result supports= True fit= 0.80 top= 0.90 invalid= — cue_hint= False
+
+================================================================================
+FUNCTION: Background
+QUERY   : What method does the current work use to investigate the microstructure of the MgB2 superconductor and what problem does it aim to solve by doing so?
+- WINNER: cond-mat/0102312 | Scanning Tunneling Spectroscopy in MgB2
+- QUOTE : superconducting MgB2 with a critical temperature of 39K
+- WHY   : sufficient
+
+================================================================================
+UNIFIED ANSWER (1–2 sentences, tagged):
+The current work uses scanning tunneling microscopy to investigate the microstructure of the MgB2 superconductor [Background] (cond-mat/0102312). It aims to solve the problem of understanding the superconducting properties of MgB2 by analyzing its conductance spectra, which is essential for determining the superconducting gap and its temperature dependence [Background] (cond-mat/0102312).
+
+📄 Saved: outputs/function_selection_results.json
+📄 Saved: outputs/function_selection_results.jsonl
+📝 Unified answer: outputs/function_answer_unified.txt
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classifying_question.py  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Saved to classified_outputs.jsonl
+🔧 Ready for retrieval module (.py).
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/Retreival_query_based.py --skip-reindex --index /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/index.faiss --meta /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/e5_index_subset_1/meta.parquet --topk 20  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+✅ Top-k candidates: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+🔗 Symlinked: /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/outputs/topk_candidates_query.jsonl -> /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+-> /home/anpa439f/anaconda3/envs/myenv/bin/python3 /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/function_based_answer-2_copy.py --debug --max-check 10  (cwd=/data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration)
+
+🎉 Pipeline complete.
+  • Classified file : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/classified_outputs.jsonl
+  • TopK (canonical): /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs/topk_candidates_query.jsonl
+  • Final outputs   : /data/horse/ws/anpa439f-Function_Retrieval_Citation/Research_Project/RetrievalAugmentedGeneration/outputs

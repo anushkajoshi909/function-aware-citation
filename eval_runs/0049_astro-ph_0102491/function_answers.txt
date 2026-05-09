@@ -1,2 +1,0 @@
-The current understanding of metal absorption systems can be improved by exploring the variations in metallicities and ionisation states within individual systems, as seen in the HDF-South quasar J2233-606. This analysis highlights the need for further research into the origins of these systems, particularly the role of local ionising sources and galactic halos in shaping their properties (astro-ph/0102491). [Motivation]
-The abstract does not provide information relevant to FutureWork. [FutureWork]

@@ -1,0 +1,18 @@
+{
+  "answer": "The methods used in this study can inform future research on the X-ray luminosity of starburst galaxies by analyzing the contribution of OB star populations to the total X-ray emission, as seen in astro-ph/0103484.",
+  "predicted_paper_id": "astro-ph/0103484",
+  "explanation": "This paper presents an empirical analysis of the integrated X-ray luminosity arising from populations of OB stars, which is relevant to understanding the X-ray luminosity of starburst galaxies.",
+  "evidence_quote": "X-ray luminosity of OB star populations",
+  "topk_list": [
+    "astro-ph/0103484",
+    "astro-ph/0101271",
+    "astro-ph/0102297",
+    "astro-ph/0102086",
+    "astro-ph/0101407",
+    "astro-ph/0104404",
+    "astro-ph/0101084",
+    "astro-ph/0104316",
+    "astro-ph/0101543",
+    "astro-ph/0101276"
+  ]
+}

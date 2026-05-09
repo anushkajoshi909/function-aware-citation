@@ -1,0 +1,1 @@
+The study's findings build upon previous work in nonlinear quantum evolution, providing a foundation for comparison and further research [Background] (quant-ph/0102110). The discovery of related results that had escaped scrutiny motivates future investigations into the topic, suggesting new research directions [Motivation] (quant-ph/0102110).
