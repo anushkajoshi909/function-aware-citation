@@ -1,257 +1,354 @@
 rank,score,paper_id,title,abstract,abstract_full,authors,year,retrieved_at,classifier_functions
-0,0.8901641964912415,astro-ph/0101146,High time-resolution observations of the Vela pulsar,"We present high time resolution observations of single pulses from the Vela
-pulsar (PSR B0833-45) made with a baseband recording system at observing
-frequencies of 660 and 1413 MHz. We have discovered two startling features in
-the 1413 MHz single pulse data. The first is the presence of giant micro-pulses
-which are confined to the leading edge of the pulse profile. One of these
-pulses has a peak flux density in excess of 2500 Jy, more than 40 times the
-integrated pulse peak. The second new result is the presence of a large
-amplitude gaussian component on the trailing edge of the pulse profile. This
-component can exceed the main pulse in intensity but is switched on only
-relatively rarely. Fluctutation spectra reveal a possible periodicity in this
-feature of 140 pulse periods. Unlike the rest of the profile, this component
-has low net polarization and emits predominantly in the orthogonal mode. This
-feature appears to be unique to the Vela pulsar. We have also detected
-microstructure in the Vela pulsar for the first time. These same features are
-present in the 660 MHz data. We suggest that the full width of the Vela pulse
-profile might be as large as 10 ms but that the conal edges emit only rarely.","We present high time resolution observations of single pulses from the Vela
-pulsar (PSR B0833-45) made with a baseband recording system at observing
-frequencies of 660 and 1413 MHz. We have discovered two startling features in
-the 1413 MHz single pulse data. The first is the presence of giant micro-pulses
-which are confined to the leading edge of the pulse profile. One of these
-pulses has a peak flux density in excess of 2500 Jy, more than 40 times the
-integrated pulse peak. The second new result is the presence of a large
-amplitude gaussian component on the trailing edge of the pulse profile. This
-component can exceed the main pulse in intensity but is switched on only
-relatively rarely. Fluctutation spectra reveal a possible periodicity in this
-feature of 140 pulse periods. Unlike the rest of the profile, this component
-has low net polarization and emits predominantly in the orthogonal mode. This
-feature appears to be unique to the Vela pulsar. We have also detected
-microstructure in the Vela pulsar for the first time. These same features are
-present in the 660 MHz data. We suggest that the full width of the Vela pulse
-profile might be as large as 10 ms but that the conal edges emit only rarely.","Simon Johnston, Willem van Straten, Michael Kramer, Matthew Bailes",2001,2025-10-26T17:21:06,
-1,0.838408350944519,astro-ph/0101039,Gamma Ray Pulsars: Observations,"High-energy gamma rays are a valuable tool for studying particle acceleration
-and radiation in the magnetospheres of energetic pulsars. The six or more
-pulsars seen by CGRO/EGRET show that: the light curves usually have double-peak
-structures (suggesting a broad cone of emission); gamma rays are frequently the
-dominant component of the radiated power; and all the spectra show evidence of
-a high-energy turnover. Unless a new pulsed component appears at higher
-energies, progress in gamma-ray pulsar studies will be greatest in the 1-20 GeV
-range. Ground-based telescopes whose energy ranges extend downward toward 10
-GeV should make important measurements of the spectral cutoffs. The Gamma-ray
-Large Area Space Telescope (GLAST), now in planning for a launch in 2005, will
-provide a major advance in sensitivity, energy range, and sky coverage.","High-energy gamma rays are a valuable tool for studying particle acceleration
-and radiation in the magnetospheres of energetic pulsars. The six or more
-pulsars seen by CGRO/EGRET show that: the light curves usually have double-peak
-structures (suggesting a broad cone of emission); gamma rays are frequently the
-dominant component of the radiated power; and all the spectra show evidence of
-a high-energy turnover. Unless a new pulsed component appears at higher
-energies, progress in gamma-ray pulsar studies will be greatest in the 1-20 GeV
-range. Ground-based telescopes whose energy ranges extend downward toward 10
-GeV should make important measurements of the spectral cutoffs. The Gamma-ray
-Large Area Space Telescope (GLAST), now in planning for a launch in 2005, will
-provide a major advance in sensitivity, energy range, and sky coverage.",David J. Thompson,2001,2025-10-26T17:21:06,
-2,0.831536591053009,astro-ph/0103155,"The new sample of Giant radio sources: I. Radio imaging, optical
-  identification and spectroscopy of selected candidates","A new sample of very large angular size radio sources has been selected from
-the 1.4 GHz VLA surveys: FIRST and NVSS. This sample will be very useful for an
-observational constraint on the time evolution of double radio sources,
-especially their size, predicted by numerous analytical models of such
-evolution (cf. Introduction). In this paper we present radio and optical data
-for a large fraction of the sample sources. They are: high-frequency VLA maps
-with very weak radio cores detected, deep optical images showing the identified
-faint host galaxies not visible on the DSS images, and optical spectra of the
-identified galaxies brighter than about R ~ 18.5 mag taken with the McDonald
-Observatory 2.1m telescope. For 15 galaxies (of which 4 do not belong to the
-complete sample) the redshift has been determined. In the result, 44 per cent
-of galaxies in the complete sample have redshift data (with one exception all
-redshifts are less than 0.33), of which 70 per cent have a linear size
-exceeding 1 Mpc. The photometric redshift estimates for other 11 galaxies with
-19 mag<R<21.7 mag (0.3<z<0.5) predict their sizes much over 1 Mpc.","A new sample of very large angular size radio sources has been selected from
-the 1.4 GHz VLA surveys: FIRST and NVSS. This sample will be very useful for an
-observational constraint on the time evolution of double radio sources,
-especially their size, predicted by numerous analytical models of such
-evolution (cf. Introduction). In this paper we present radio and optical data
-for a large fraction of the sample sources. They are: high-frequency VLA maps
-with very weak radio cores detected, deep optical images showing the identified
-faint host galaxies not visible on the DSS images, and optical spectra of the
-identified galaxies brighter than about R ~ 18.5 mag taken with the McDonald
-Observatory 2.1m telescope. For 15 galaxies (of which 4 do not belong to the
-complete sample) the redshift has been determined. In the result, 44 per cent
-of galaxies in the complete sample have redshift data (with one exception all
-redshifts are less than 0.33), of which 70 per cent have a linear size
-exceeding 1 Mpc. The photometric redshift estimates for other 11 galaxies with
-19 mag<R<21.7 mag (0.3<z<0.5) predict their sizes much over 1 Mpc.","J. Machalski, M. Jamrozy, S. Zola",2001,2025-10-26T17:21:06,
-3,0.8307520151138306,astro-ph/0102026,Recycled Pulsars Discovered at High Radio Frequency,"We present the timing parameters of nine pulsars discovered in a survey of
-intermediate Galactic latitudes at 1400 MHz with the Parkes radio telescope.
-Eight of these pulsars possess small pulse periods and period derivatives
-thought to be indicative of ``recycling''. Six of the pulsars are in circular
-binary systems, including two with relatively massive white dwarf companions.
-We discuss the implications of these new systems for theories of binary
-formation and evolution. One long-period pulsar (J1410-7404) has a moderately
-weak magnetic field and an exceedingly narrow average pulse profile, similar to
-other recycled pulsars.","We present the timing parameters of nine pulsars discovered in a survey of
-intermediate Galactic latitudes at 1400 MHz with the Parkes radio telescope.
-Eight of these pulsars possess small pulse periods and period derivatives
-thought to be indicative of ``recycling''. Six of the pulsars are in circular
-binary systems, including two with relatively massive white dwarf companions.
-We discuss the implications of these new systems for theories of binary
-formation and evolution. One long-period pulsar (J1410-7404) has a moderately
-weak magnetic field and an exceedingly narrow average pulse profile, similar to
-other recycled pulsars.","R. T. Edwards, M. Bailes",2001,2025-10-26T17:21:06,
-4,0.8305156230926514,astro-ph/0104476,"Detection of Pulsed X-ray Emission from The Fastest Millisecond Pulsar
-  PSR B1937+21 with ASCA","We have detected pulsed X-ray emission from the fastest millisecond pulsar
-known, PSR B1937+21 (P=1.558 msec), with ASCA. The pulsar is detected as a
-point source above $\sim 1.7$ keV, with no indication of nebulosity. The source
-flux in the 2--10 keV band is found to be $f = (3.7\pm 0.6) \times 10^{-13}$
-erg s$^{-1}$ cm$^{-2}$, which implies an isotropic luminosity of $L_{\rm x} = 4
-\pi D^2 f \sim (5.7\pm 1.0) \times 10^{32} ~(D/3.6 {\rm kpc})^2$ erg s$^{-1}$,
-where D is the distance, and an X-ray efficiency of $\sim 5 \times 10^{-4}$
-relative to the spin-down power of the pulsar.
-  The pulsation is found at the period predicted by the radio ephemeris with a
-very narrow primary peak, the width of which is about 1/16 phase ($\sim 100
-\mu$s), near the time resolution limit ($61 \mu$s) of the observation. The
-instantaneous flux in the primary peak (1/16 phase interval) is found to be
-($4.0\pm 0.8) \times 10^{-12}$ erg s$^{-1}$ cm$^{-2}$. Although there is an
-indication for the secondary peak, we consider its statistical significance too
-low to claim a definite detection.
-  The narrow pulse profile and the detection in the 2--10 keV band imply that
-the X-ray emission is caused by the magnetospheric particle acceleration.
-Comparison of X-ray and radio arrival times of pulses indicates, within the
-timing errors, that the X-ray pulse is coincident with the radio interpulse.","We have detected pulsed X-ray emission from the fastest millisecond pulsar
-known, PSR B1937+21 (P=1.558 msec), with ASCA. The pulsar is detected as a
-point source above $\sim 1.7$ keV, with no indication of nebulosity. The source
-flux in the 2--10 keV band is found to be $f = (3.7\pm 0.6) \times 10^{-13}$
-erg s$^{-1}$ cm$^{-2}$, which implies an isotropic luminosity of $L_{\rm x} = 4
-\pi D^2 f \sim (5.7\pm 1.0) \times 10^{32} ~(D/3.6 {\rm kpc})^2$ erg s$^{-1}$,
-where D is the distance, and an X-ray efficiency of $\sim 5 \times 10^{-4}$
-relative to the spin-down power of the pulsar.
-  The pulsation is found at the period predicted by the radio ephemeris with a
-very narrow primary peak, the width of which is about 1/16 phase ($\sim 100
-\mu$s), near the time resolution limit ($61 \mu$s) of the observation. The
-instantaneous flux in the primary peak (1/16 phase interval) is found to be
-($4.0\pm 0.8) \times 10^{-12}$ erg s$^{-1}$ cm$^{-2}$. Although there is an
-indication for the secondary peak, we consider its statistical significance too
-low to claim a definite detection.
-  The narrow pulse profile and the detection in the 2--10 keV band imply that
-the X-ray emission is caused by the magnetospheric particle acceleration.
-Comparison of X-ray and radio arrival times of pulses indicates, within the
-timing errors, that the X-ray pulse is coincident with the radio interpulse.",M. Takahashi,2001,2025-10-26T17:21:06,
-5,0.8299362063407898,hep-ph/0104220,"Prospects of Very Long Base-Line Neutrino Oscillation Experiments with
-  the JAERI-KEK High Intensity Proton Accelerator","In this paper, we discuss physics potential of the Very Long Base-Line (VLBL)
-Neutrino-Oscillation Experiments with the High Intensity Proton Accelerator
-(HIPA), which is planned to be built by 2006 in Tokaimura, Japan.
-  We propose to use conventional narrow-band \nu_\mu beams (NBB) from HIPA for
-observing the \nu_\mu \to \nu_e transition probability and the \nu_\mu survival
-probability.
-  The pulsed NBB allows us to obtain useful information through counting
-experiments at a huge water-Cherenkov detector which may be placed in our
-neighbor countries.
-  We study sensitivity of such an experiment to the neutrino mass hierarchy,
-the mass-squared differences, the mixing angles and the CP phase of the 3\times
-3 lepton flavor mixing matrix (MNS matrix).
-  The CP phase can be measured with a 100kt detector if both the mass-squared
-difference and U_{e3} elements of the MNS matrix are sufficiently large.","In this paper, we discuss physics potential of the Very Long Base-Line (VLBL)
-Neutrino-Oscillation Experiments with the High Intensity Proton Accelerator
-(HIPA), which is planned to be built by 2006 in Tokaimura, Japan.
-  We propose to use conventional narrow-band \nu_\mu beams (NBB) from HIPA for
-observing the \nu_\mu \to \nu_e transition probability and the \nu_\mu survival
-probability.
-  The pulsed NBB allows us to obtain useful information through counting
-experiments at a huge water-Cherenkov detector which may be placed in our
-neighbor countries.
-  We study sensitivity of such an experiment to the neutrino mass hierarchy,
-the mass-squared differences, the mixing angles and the CP phase of the 3\times
-3 lepton flavor mixing matrix (MNS matrix).
-  The CP phase can be measured with a 100kt detector if both the mass-squared
-difference and U_{e3} elements of the MNS matrix are sufficiently large.","M. Aoki, K. Hagiwara, Y. Hayato, T. Kobayashi, T. Nakaya, K. Nishikawa, N. Okamura",2001,2025-10-26T17:21:06,
-6,0.8287545442581177,gr-qc/0103035,Detecting a relic background of scalar waves with LIGO,"We discuss the possible detection of a stochastic background of massive,
-non-relativistic scalar particles, through the cross correlation of the two
-LIGO interferometers in the initial, enhanced and advanced configuration. If
-the frequency corresponding to the mass of the scalar field lies in the
-detector sensitivity band, and the non-relativistic branch of the spectrum
-gives a significant contribution to energy density required to close the
-Universe, we find that the scalar background can induce a non-negligible
-signal, in competition with a possible signal produced by a stochastic
-background of gravitational radiation.","We discuss the possible detection of a stochastic background of massive,
-non-relativistic scalar particles, through the cross correlation of the two
-LIGO interferometers in the initial, enhanced and advanced configuration. If
-the frequency corresponding to the mass of the scalar field lies in the
-detector sensitivity band, and the non-relativistic branch of the spectrum
-gives a significant contribution to energy density required to close the
-Universe, we find that the scalar background can induce a non-negligible
-signal, in competition with a possible signal produced by a stochastic
-background of gravitational radiation.","M. Gasperini, C. Ungarelli",2001,2025-10-26T17:21:06,
-7,0.8285601139068604,astro-ph/0102255,"Gamma-Ray Bursts: Afterglow Implications, Progenitor Clues and Prospects","Gamma-ray bursts (GRB) are sudden, intense flashes of gamma-rays which, for a
-few blinding seconds, light up in an otherwise fairly dark gamma-ray sky. They
-are detected at the rate of about once a day, and while they are on, they
-outshine every other gamma-ray source in the sky, including the sun. Major
-advances have been made in the last three or four years, including the
-discovery of slowly fading x-ray, optical and radio afterglows of GRBs, the
-identification of host galaxies at cosmological distances, and finding evidence
-for many of them being associated with star forming regions and possibly
-supernovae. Progress has been made in understanding how the GRB and afterglow
-radiation arises in terms of a relativistic fireball shock model. These
-advances have opened new vistas and questions on the nature of the central
-engine, the identity of their progenitors, the effects of the environment, and
-their possible gravitational wave, cosmic ray and neutrino luminosity. The
-debates on these issues indicate that GRB remain among the most mysterious
-puzzles in astrophysics.","Gamma-ray bursts (GRB) are sudden, intense flashes of gamma-rays which, for a
-few blinding seconds, light up in an otherwise fairly dark gamma-ray sky. They
-are detected at the rate of about once a day, and while they are on, they
-outshine every other gamma-ray source in the sky, including the sun. Major
-advances have been made in the last three or four years, including the
-discovery of slowly fading x-ray, optical and radio afterglows of GRBs, the
-identification of host galaxies at cosmological distances, and finding evidence
-for many of them being associated with star forming regions and possibly
-supernovae. Progress has been made in understanding how the GRB and afterglow
-radiation arises in terms of a relativistic fireball shock model. These
-advances have opened new vistas and questions on the nature of the central
-engine, the identity of their progenitors, the effects of the environment, and
-their possible gravitational wave, cosmic ray and neutrino luminosity. The
-debates on these issues indicate that GRB remain among the most mysterious
-puzzles in astrophysics.",P. Meszaros,2001,2025-10-26T17:21:06,
-8,0.8282403945922852,hep-ph/0103053,"Direct Signals for Large Extra Dimensions in the Production of Fermion
-  Pairs at Linear Colliders","We analyze the potentiality of the new generation of $e^+e^-$ linear
-colliders to search for large extra dimensions via the production of fermion
-pairs in association with Kaluza-Klein gravitons (G), i.e. $e^+e^- \leftarrow
-f\bar{f}G$. This process leads to a final state exhibiting a significant amount
-of missing energy in addition to acoplanar lepton or jet pairs. We study in
-detail this reaction using full tree level contibutions due to the graviton
-emission and the standard model backgrounds. After choosing the cuts to enhance
-the signal, we show that a linear collider with a center-of-mass energy of 500
-GeV will be able to probe quantum gravity scales from 0.96(0.86) up to 4.1(3.3)
-TeV at 2(5)$\sigma$ level, depending on the number of extra dimensions.","We analyze the potentiality of the new generation of $e^+e^-$ linear
-colliders to search for large extra dimensions via the production of fermion
-pairs in association with Kaluza-Klein gravitons (G), i.e. $e^+e^- \leftarrow
-f\bar{f}G$. This process leads to a final state exhibiting a significant amount
-of missing energy in addition to acoplanar lepton or jet pairs. We study in
-detail this reaction using full tree level contibutions due to the graviton
-emission and the standard model backgrounds. After choosing the cuts to enhance
-the signal, we show that a linear collider with a center-of-mass energy of 500
-GeV will be able to probe quantum gravity scales from 0.96(0.86) up to 4.1(3.3)
-TeV at 2(5)$\sigma$ level, depending on the number of extra dimensions.","O. J. P. Eboli, M. B. Magro, P. Mathews, P. G. Mercadante",2001,2025-10-26T17:21:06,
-9,0.8269297480583191,astro-ph/0101022,Possible Strong Gravitational Wave Sources for the LISA Antenna,"Recently Fuller & Shi proposed that the gravitational collapse of
-supermassive objects ($M \gtrsim 10^4M_\odot$) could be a cosmological source
-of $\gamma$-ray bursts (GRBs). The major advantage of their model is that
-supermassive object collapses are far more energetic than solar mass-scale
-compact mergers. Also, in their proposal the seeds of supermassive black holes
-(SMBHs) thus formed could give rise to the SMBHs observed at the center of many
-galaxies. We argue here that, besides the generation of GRBs, there could well
-occur a strong generation of gravitational waves (GWs) during the formation of
-SMBHs. As a result, the rate of such GW bursts could be as high as the rate of
-GRBs in the model by Fuller & Shi. In this case, the detection of GRBs and
-bursts of GWs should occur with a small time difference. We also argue that the
-GWs produced by the SMBHs studied here could be detected when the Laser
-Interferometric Space Antenna (LISA) becomes operative.","Recently Fuller & Shi proposed that the gravitational collapse of
-supermassive objects ($M \gtrsim 10^4M_\odot$) could be a cosmological source
-of $\gamma$-ray bursts (GRBs). The major advantage of their model is that
-supermassive object collapses are far more energetic than solar mass-scale
-compact mergers. Also, in their proposal the seeds of supermassive black holes
-(SMBHs) thus formed could give rise to the SMBHs observed at the center of many
-galaxies. We argue here that, besides the generation of GRBs, there could well
-occur a strong generation of gravitational waves (GWs) during the formation of
-SMBHs. As a result, the rate of such GW bursts could be as high as the rate of
-GRBs in the model by Fuller & Shi. In this case, the detection of GRBs and
-bursts of GWs should occur with a small time difference. We also argue that the
-GWs produced by the SMBHs studied here could be detected when the Laser
-Interferometric Space Antenna (LISA) becomes operative.","J. C. N. de Araujo, O. D. Miranda, O. D. Aguiar",2001,2025-10-26T17:21:06,
+0,0.8799958229064941,physics/0101044,"Calculations of parity nonconserving s-d transitions in Cs, Fr, Ba II,
+  and Ra II","We have performed ab initio mixed-states and sum-over-states calculations of
+parity nonconserving (PNC) electric dipole (E1) transition amplitudes between
+s-d electron states of Cs, Fr, Ba II, and Ra II. For the lower states of these
+atoms we have also calculated energies, E1 transition amplitudes, and
+lifetimes. We have shown that PNC E1 transition amplitudes between s-d states
+can be calculated to high accuracy. Contrary to the Cs 6s-7s transition, in
+these transitions there are no strong cancelations between different terms in
+the sum-over-states approach. In fact, there is one dominating term which
+deviates from the sum by less than 20%. This term corresponds to an s-p_{1/2}
+weak matrix element, which can be calculated to better than 1%, and a
+p_{1/2}-d_{3/2} E1 transition amplitude, which can be measured. Also, the s-d
+amplitudes are about four times larger than the corresponding s-s transitions.
+We have shown that by using a hybrid mixed-states/sum-over-states approach the
+accuracy of the calculations of PNC s-d amplitudes could compete with that of
+Cs 6s-7s if p_{1/2}-d_{3/2} E1 amplitudes are measured to high accuracy.","We have performed ab initio mixed-states and sum-over-states calculations of
+parity nonconserving (PNC) electric dipole (E1) transition amplitudes between
+s-d electron states of Cs, Fr, Ba II, and Ra II. For the lower states of these
+atoms we have also calculated energies, E1 transition amplitudes, and
+lifetimes. We have shown that PNC E1 transition amplitudes between s-d states
+can be calculated to high accuracy. Contrary to the Cs 6s-7s transition, in
+these transitions there are no strong cancelations between different terms in
+the sum-over-states approach. In fact, there is one dominating term which
+deviates from the sum by less than 20%. This term corresponds to an s-p_{1/2}
+weak matrix element, which can be calculated to better than 1%, and a
+p_{1/2}-d_{3/2} E1 transition amplitude, which can be measured. Also, the s-d
+amplitudes are about four times larger than the corresponding s-s transitions.
+We have shown that by using a hybrid mixed-states/sum-over-states approach the
+accuracy of the calculations of PNC s-d amplitudes could compete with that of
+Cs 6s-7s if p_{1/2}-d_{3/2} E1 amplitudes are measured to high accuracy.","V. A. Dzuba, V. V. Flambaum, J. S. M. Ginges",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+1,0.8614864349365234,cond-mat/0103312,Fractal to Nonfractal Phase Transition in the Dielectric Breakdown Model,"A fast method is presented for simulating the dielectric-breakdown model
+using iterated conformal mappings. Numerical results for the dimension and for
+corrections to scaling are in good agreement with the recent RG prediction of
+an upper critical $\eta_c=4$, at which a transition occurs between branching
+fractal clusters and one-dimensional nonfractal clusters.","A fast method is presented for simulating the dielectric-breakdown model
+using iterated conformal mappings. Numerical results for the dimension and for
+corrections to scaling are in good agreement with the recent RG prediction of
+an upper critical $\eta_c=4$, at which a transition occurs between branching
+fractal clusters and one-dimensional nonfractal clusters.",M. B. Hastings,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+2,0.8600344657897949,hep-ph/0101112,Radiative transitions in mesons in a non relativistic quark model,"In the framework of the non relativistic quark model, an exhaustive study of
+radiative transitions in mesons is performed. The emphasis is put on several
+points. Some traditional approximations (long wave length limit, non
+relativistic phase space, dipole approximation for E1 transitions, gaussian
+wave functions) are analyzed in detail and their effects commented. A complete
+treatment using three different types of realistic quark-antiquark potential is
+made. The overall agreement with experimental data is quite good, but some
+improvements are suggested.","In the framework of the non relativistic quark model, an exhaustive study of
+radiative transitions in mesons is performed. The emphasis is put on several
+points. Some traditional approximations (long wave length limit, non
+relativistic phase space, dipole approximation for E1 transitions, gaussian
+wave functions) are analyzed in detail and their effects commented. A complete
+treatment using three different types of realistic quark-antiquark potential is
+made. The overall agreement with experimental data is quite good, but some
+improvements are suggested.","R. Bonnaz, B. Silvestre-Brac, C. Gignoux",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+3,0.8592209219932556,hep-ph/0103123,Non-singlet structure functions beyond the next-to-next-to leading order,"We study the evolution of the flavour non-singlet deep-inelastic structure
+functions F_{2,NS} and F_3 at the next-to-next-to-next-to-leading order (N^3LO)
+of massless perturbative QCD. The present information on the corresponding
+three-loop coefficient functions is used to derive approximate expressions of
+these quantities which prove completely sufficient for values x > 10^{-2} of
+the Bjorken variable. The inclusion of the N^3LO corrections reduces the
+theoretical uncertainty of alpha_s determinations from non-singlet scaling
+violations arising from the truncation of the perturbation series to less than
+1%. We also study the predictions of the soft-gluon resummation, of
+renormalization-scheme optimizations by the principle of minimal sensitivity
+(PMS) and the effective charge (ECH) method, and of the Pade' summation for the
+structure-function evolution kernels. The PMS, ECH and Pade' approaches are
+found to facilitate a reliable estimate of the corrections beyond N^3LO.","We study the evolution of the flavour non-singlet deep-inelastic structure
+functions F_{2,NS} and F_3 at the next-to-next-to-next-to-leading order (N^3LO)
+of massless perturbative QCD. The present information on the corresponding
+three-loop coefficient functions is used to derive approximate expressions of
+these quantities which prove completely sufficient for values x > 10^{-2} of
+the Bjorken variable. The inclusion of the N^3LO corrections reduces the
+theoretical uncertainty of alpha_s determinations from non-singlet scaling
+violations arising from the truncation of the perturbation series to less than
+1%. We also study the predictions of the soft-gluon resummation, of
+renormalization-scheme optimizations by the principle of minimal sensitivity
+(PMS) and the effective charge (ECH) method, and of the Pade' summation for the
+structure-function evolution kernels. The PMS, ECH and Pade' approaches are
+found to facilitate a reliable estimate of the corrections beyond N^3LO.","W. L. van Neerven, A. Vogt",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+4,0.856564998626709,physics/0101053,"High accuracy calculation of 6s -> 7s parity nonconserving amplitude in
+  Cs","We calculated the parity nonconserving (PNC) 6s -> 7s amplitude in Cs. In the
+Dirac-Coulomb approximation our result is in a good agreement with other
+calculations. Breit corrections to the PNC amplitude and to the Stark-induced
+amplitude $\beta$ are found to be -0.4% and -1% respectively. The weak charge
+of $^{133}$Cs is $Q_W=-72.5 \pm 0.7$ in agreement with the standard model.","We calculated the parity nonconserving (PNC) 6s -> 7s amplitude in Cs. In the
+Dirac-Coulomb approximation our result is in a good agreement with other
+calculations. Breit corrections to the PNC amplitude and to the Stark-induced
+amplitude $\beta$ are found to be -0.4% and -1% respectively. The weak charge
+of $^{133}$Cs is $Q_W=-72.5 \pm 0.7$ in agreement with the standard model.","M. G. Kozlov, S. G. Porsev, I. I. Tupitsyn",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+5,0.855839729309082,astro-ph/0104246,New method of extracting non-Gaussian signals in the CMB,"Searching for and charactering the non-Gaussianity (NG) of a given field has
+been a vital task in many fields of science, because we expect the consequences
+of different physical processes to carry different statistical properties. Here
+we propose a new general method of extracting non-Gaussian features in a given
+field, and then use simulated cosmic microwave background (CMB) as an example
+to demonstrate its power. In particular, we show its capability of detecting
+cosmic strings.","Searching for and charactering the non-Gaussianity (NG) of a given field has
+been a vital task in many fields of science, because we expect the consequences
+of different physical processes to carry different statistical properties. Here
+we propose a new general method of extracting non-Gaussian features in a given
+field, and then use simulated cosmic microwave background (CMB) as an example
+to demonstrate its power. In particular, we show its capability of detecting
+cosmic strings.",Jiun-Huei Proty Wu,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+6,0.8541686534881592,hep-ph/0101071,New approaches to the determination of the total cross section,"New methods have been developed for extracting the parameters of diffraction
+scattering amplitude, $\sigma_{tot}$ and $\rho=Re F_N/Im F_N$, from
+experimental data. The latter determines these parameters with less errors and
+without the knowledge of the normalization coefficient. The impact of
+additional information from the measurement of the spin-dependence cross
+section on the determination of the basic characteristic of elastic scattering
+amplitude is examined. The new form of the connection between some
+characteristics of the analyzing power and magnitude of the $pp-$ total cross
+section is presented.","New methods have been developed for extracting the parameters of diffraction
+scattering amplitude, $\sigma_{tot}$ and $\rho=Re F_N/Im F_N$, from
+experimental data. The latter determines these parameters with less errors and
+without the knowledge of the normalization coefficient. The impact of
+additional information from the measurement of the spin-dependence cross
+section on the determination of the basic characteristic of elastic scattering
+amplitude is examined. The new form of the connection between some
+characteristics of the analyzing power and magnitude of the $pp-$ total cross
+section is presented.",O. V. Selyugin,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+7,0.8527311682701111,hep-ph/0101113,"One-loop Neutron Electric Dipole Moment from Supersymmetry without
+  R-parity","We present a detailed analysis together with exact numerical calculations on
+one-loop contributions to neutron electric dipole moment from supersymmetry
+without R-parity, focusing on the gluino, chargino, and neutralino
+contributions. Apart from the neglected family mixing among quarks, complete
+formulae are given for the various contributions, through the quark dipole
+operators, to which the present study is restricted. We discuss the structure
+and main features of the R-parity violating contributions and the interplay
+between the R-parity conserving and violating parameters. In particular, the
+parameter combination $\mu_i^*\lambda^{\prime}_{i11}$, under the optimal
+parametrization adopted, is shown to be solely responsible for the R-parity
+violating contributions in the supersymmetric loop diagrams. While
+$\mu_i^*\lambda^{\prime}_{i11}$ could bear a complex phase, the latter is not
+necessary to have a R-parity violating contribution.","We present a detailed analysis together with exact numerical calculations on
+one-loop contributions to neutron electric dipole moment from supersymmetry
+without R-parity, focusing on the gluino, chargino, and neutralino
+contributions. Apart from the neglected family mixing among quarks, complete
+formulae are given for the various contributions, through the quark dipole
+operators, to which the present study is restricted. We discuss the structure
+and main features of the R-parity violating contributions and the interplay
+between the R-parity conserving and violating parameters. In particular, the
+parameter combination $\mu_i^*\lambda^{\prime}_{i11}$, under the optimal
+parametrization adopted, is shown to be solely responsible for the R-parity
+violating contributions in the supersymmetric loop diagrams. While
+$\mu_i^*\lambda^{\prime}_{i11}$ could bear a complex phase, the latter is not
+necessary to have a R-parity violating contribution.","Y. -Y. Keum, Otto C. W. Kong",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+8,0.8526298999786377,nucl-th/0103045,"Coulomb Distortion in Quasielastic $(e,e')$ Scattering on Nuclei:
+  Effective Momentum Approximation and Beyond","The role of the effective momentum approximation to disentangle Coulomb
+distortion effects in quasielastic $(e,e')$ reactions is investigated. The
+separation of the cross section in longitudinal and transverse components is
+discussed including higher order DWBA corrections due to the focusing of the
+electron waves.The experimental studies performed, in the last few years,
+making use of different approximate treatments are shown to be sometime
+inconsistent. As a consequence some of the longitudinal and transverse
+responses, extracted from the inclusive cross sections cannot be considered
+reliable. A separation procedure based on the effective momentum approximation
+is discussed in connection with the recent experimental data on
+electron/positron quasielastic scattering on $^{12}$C and $^{208}$Pb.","The role of the effective momentum approximation to disentangle Coulomb
+distortion effects in quasielastic $(e,e')$ reactions is investigated. The
+separation of the cross section in longitudinal and transverse components is
+discussed including higher order DWBA corrections due to the focusing of the
+electron waves.The experimental studies performed, in the last few years,
+making use of different approximate treatments are shown to be sometime
+inconsistent. As a consequence some of the longitudinal and transverse
+responses, extracted from the inclusive cross sections cannot be considered
+reliable. A separation procedure based on the effective momentum approximation
+is discussed in connection with the recent experimental data on
+electron/positron quasielastic scattering on $^{12}$C and $^{208}$Pb.",Marco Traini,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+9,0.8520839214324951,hep-ph/0104295,"Additional ways to determination of structure of high energy elastic
+  scattering amplitude","Several methods of extracting the magnitude of the real parts of the elastic
+hadron scattering amplitude - from the experimental data are presented. These
+methods allows us to obtain the real parts at one definite point of the
+transfer momentum and with a high accuracy without knowledge of the precise
+values of the normalization coefficient and with minimum theoretical
+assumptions.","Several methods of extracting the magnitude of the real parts of the elastic
+hadron scattering amplitude - from the experimental data are presented. These
+methods allows us to obtain the real parts at one definite point of the
+transfer momentum and with a high accuracy without knowledge of the precise
+values of the normalization coefficient and with minimum theoretical
+assumptions.",O. V. Selyugin,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+10,0.8517099618911743,hep-ph/0102334,Parity-Violating Electron Scattering and Neucleon Structure,"The measurement of parity violation in the helicity dependence of
+electron-nucleon scattering provides unique information about the basic quark
+structure of the nucleons. In this review, the general formalism of
+parity-violating electron scattering is presented, with emphasis on elastic
+electron-nucleon scattering. The physics issues addressed by such experiments
+is discussed, and the major goals of the presently envisioned experimental
+program are identified. %General aspects of the experimental technique are
+reviewed and A summary of results from a recent series of experiments is
+presented and the future prospects of this program are also discussed.","The measurement of parity violation in the helicity dependence of
+electron-nucleon scattering provides unique information about the basic quark
+structure of the nucleons. In this review, the general formalism of
+parity-violating electron scattering is presented, with emphasis on elastic
+electron-nucleon scattering. The physics issues addressed by such experiments
+is discussed, and the major goals of the presently envisioned experimental
+program are identified. %General aspects of the experimental technique are
+reviewed and A summary of results from a recent series of experiments is
+presented and the future prospects of this program are also discussed.","D. H. Beck, R. D. McKeown",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+11,0.8513232469558716,gr-qc/0102037,Plunge waveforms from inspiralling binary black holes,"We study the coalescence of non-spinning binary black holes from near the
+innermost stable circular orbit down to the final single rotating black hole.
+We use a technique that combines the full numerical approach to solve Einstein
+equations, applied in the truly non-linear regime, and linearized perturbation
+theory around the final distorted single black hole at later times. We compute
+the plunge waveforms which present a non negligible signal lasting for $t\sim
+100M$ showing early non-linear ringing, and we obtain estimates for the total
+gravitational energy and angular momentum radiated.","We study the coalescence of non-spinning binary black holes from near the
+innermost stable circular orbit down to the final single rotating black hole.
+We use a technique that combines the full numerical approach to solve Einstein
+equations, applied in the truly non-linear regime, and linearized perturbation
+theory around the final distorted single black hole at later times. We compute
+the plunge waveforms which present a non negligible signal lasting for $t\sim
+100M$ showing early non-linear ringing, and we obtain estimates for the total
+gravitational energy and angular momentum radiated.","J. Baker, B. Bruegmann, M. Campanelli, C. O. Lousto, R. Takahashi",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+12,0.850354790687561,physics/0102070,"High-precision calculations of electric-dipole amplitudes for
+  transitions between low-lying levels of Mg, Ca, and Sr","To support efforts on cooling and trapping of alkaline-earth atoms and
+designs of atomic clocks, we performed ab initio relativistic many-body
+calculations of electric-dipole transition amplitudes between low-lying states
+of Mg, Ca, and Sr. In particular, we report amplitudes for ^1P_1 --> ^1S_0,
+^3S_1, ^1D_2$, for ^3P_1 --> ^1S_0, ^1D_2, and for ^3P_2 --> ^1D_2 transitions.
+For Ca, the reduced matrix element <4s4p, ^1P_1 ||D|| 4s^2, ^1S_0> is in a good
+agreement with a high-precision experimental value deduced from
+photoassociation spectroscopy [Zinner et al., Phys.Rev.Lett., v.85, 2292
+(2000)]. An estimated uncertainty of the calculated lifetime of the (3s3p
+^1P_1) state of Mg is a factor of three smaller than that of the most accurate
+experiment. Calculated binding energies reproduce experimental values within
+0.1-0.2%.","To support efforts on cooling and trapping of alkaline-earth atoms and
+designs of atomic clocks, we performed ab initio relativistic many-body
+calculations of electric-dipole transition amplitudes between low-lying states
+of Mg, Ca, and Sr. In particular, we report amplitudes for ^1P_1 --> ^1S_0,
+^3S_1, ^1D_2$, for ^3P_1 --> ^1S_0, ^1D_2, and for ^3P_2 --> ^1D_2 transitions.
+For Ca, the reduced matrix element <4s4p, ^1P_1 ||D|| 4s^2, ^1S_0> is in a good
+agreement with a high-precision experimental value deduced from
+photoassociation spectroscopy [Zinner et al., Phys.Rev.Lett., v.85, 2292
+(2000)]. An estimated uncertainty of the calculated lifetime of the (3s3p
+^1P_1) state of Mg is a factor of three smaller than that of the most accurate
+experiment. Calculated binding energies reproduce experimental values within
+0.1-0.2%.","S. G. Porsev, M. G. Kozlov, Yu. G. Rakhlina, A. Derevianko",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+13,0.8497387170791626,hep-ph/0101188,"Regularization-independent study of renormalized non-perturbative
+  quenched QED","A recently proposed regularization-independent method is used for the first
+time to solve the renormalized fermion Schwinger-Dyson equation numerically in
+quenched QED$_4$. The Curtis-Pennington vertex is used to illustrate the
+technique and to facilitate comparison with previous calculations which used
+the alternative regularization schemes of modified ultraviolet cut-off and
+dimensional regularization. Our new results are in excellent numerical
+agreement with these, and so we can now conclude with confidence that there is
+no residual regularization dependence in these results. Moreover, from a
+computational point of view the regularization independent method has enormous
+advantages, since all integrals are absolutely convergent by construction, and
+so do not mix small and arbitrarily large momentum scales. We analytically
+predict power law behaviour in the asymptotic region, which is confirmed
+numerically with high precision. The successful demonstration of this efficient
+new technique opens the way for studies of unquenched QED to be undertaken in
+the near future.","A recently proposed regularization-independent method is used for the first
+time to solve the renormalized fermion Schwinger-Dyson equation numerically in
+quenched QED$_4$. The Curtis-Pennington vertex is used to illustrate the
+technique and to facilitate comparison with previous calculations which used
+the alternative regularization schemes of modified ultraviolet cut-off and
+dimensional regularization. Our new results are in excellent numerical
+agreement with these, and so we can now conclude with confidence that there is
+no residual regularization dependence in these results. Moreover, from a
+computational point of view the regularization independent method has enormous
+advantages, since all integrals are absolutely convergent by construction, and
+so do not mix small and arbitrarily large momentum scales. We analytically
+predict power law behaviour in the asymptotic region, which is confirmed
+numerically with high precision. The successful demonstration of this efficient
+new technique opens the way for studies of unquenched QED to be undertaken in
+the near future.","A. Kizilersu, T. Sizer, A. G. Williams",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+14,0.8495103120803833,hep-ph/0102053,Nucleon Structure and Parity-Violating Electron Scattering,"We review the area of strange quark contributions to nucleon structure. In
+particular, we focus on current models of strange quark vector currents in the
+nucleon and the associated parity-violating elastic electron scattering
+experiments from which vector- and axial-vector currents are extracted","We review the area of strange quark contributions to nucleon structure. In
+particular, we focus on current models of strange quark vector currents in the
+nucleon and the associated parity-violating elastic electron scattering
+experiments from which vector- and axial-vector currents are extracted","D. H. Beck, B. R. Holstein",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+15,0.8493176698684692,hep-lat/0101008,"Domain Wall Fermion Study of Scaling in Non-perturbative Renormalization
+  of Quark Bilinears and $B_K$","We compute non--perturbatively the renormalization coefficients of scalar and
+pseudoscalar operators, local vector and axial currents, conserved vector and
+axial currents, and $O_{LL}^{\Delta S=2}$ over a wide range of energy scales
+using a scaling technique that connects the results of simulations at different
+values of coupling $\beta$. We use the domain wall fermion formulation in the
+quenched approximation at a series of three values of $\beta, 6.0, 6.45, 7.05$
+corresponding to lattice spacing scaling by factors of two.","We compute non--perturbatively the renormalization coefficients of scalar and
+pseudoscalar operators, local vector and axial currents, conserved vector and
+axial currents, and $O_{LL}^{\Delta S=2}$ over a wide range of energy scales
+using a scaling technique that connects the results of simulations at different
+values of coupling $\beta$. We use the domain wall fermion formulation in the
+quenched approximation at a series of three values of $\beta, 6.0, 6.45, 7.05$
+corresponding to lattice spacing scaling by factors of two.",Yuriy Zhestkov,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+16,0.8491660952568054,nucl-th/0104026,Atomic Parity Nonconservation and Nuclear Anapole Moments,"Anapole moments are parity-odd, time-reversal-even moments of the E1
+projection of the electromagnetic current. Although it was recognized, soon
+after the discovery of parity violation in the weak interaction, that
+elementary particles and composite systems like nuclei must have anapole
+moments, it proved difficult to isolate this weak radiative correction. The
+first successful measurement, an extraction of the nuclear anapole moment of
+133Cs from the hyperfine dependence of the atomic parity violation, was
+obtained only recently. An important anapole moment bound in Tl also exists. We
+discuss these measurements and their significance as tests of the hadronic weak
+interaction, focusing on the mechanisms that operate within the nucleus to
+generate the anapole moment. The atomic results place new constraints on weak
+meson-nucleon couplings, ones we compare to existing bounds from a variety of
+p-p and nuclear tests of parity nonconservation.","Anapole moments are parity-odd, time-reversal-even moments of the E1
+projection of the electromagnetic current. Although it was recognized, soon
+after the discovery of parity violation in the weak interaction, that
+elementary particles and composite systems like nuclei must have anapole
+moments, it proved difficult to isolate this weak radiative correction. The
+first successful measurement, an extraction of the nuclear anapole moment of
+133Cs from the hyperfine dependence of the atomic parity violation, was
+obtained only recently. An important anapole moment bound in Tl also exists. We
+discuss these measurements and their significance as tests of the hadronic weak
+interaction, focusing on the mechanisms that operate within the nucleus to
+generate the anapole moment. The atomic results place new constraints on weak
+meson-nucleon couplings, ones we compare to existing bounds from a variety of
+p-p and nuclear tests of parity nonconservation.","W. C. Haxton, C. E. Wieman",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+17,0.8489458560943604,physics/0104075,"Nonperturbative and perturbative treatments of parametric heating in
+  atom traps","We study the quantum description of parametric heating in harmonic potentials
+both nonperturbatively and perturbatively, having in mind atom traps. The first
+approach establishes an explicit connection between classical and quantum
+descriptions; it also gives analytic expressions for properties such as the
+width of fractional frequency parametric resonances. The second approach gives
+an alternative insight into the problem and can be directly extended to take
+into account nonlinear effects. This is specially important for shallow traps.","We study the quantum description of parametric heating in harmonic potentials
+both nonperturbatively and perturbatively, having in mind atom traps. The first
+approach establishes an explicit connection between classical and quantum
+descriptions; it also gives analytic expressions for properties such as the
+width of fractional frequency parametric resonances. The second approach gives
+an alternative insight into the problem and can be directly extended to take
+into account nonlinear effects. This is specially important for shallow traps.",R. Jauregui,2001,2025-11-04T15:40:01,"Uses, FutureWork"
+18,0.8481622934341431,cond-mat/0101383,Coupling of Nonlocal Potentials to Electromagnetic Fields,"Nonlocal Hamiltonians are used widely in first-principles quantum
+calculations; the nonlocality stems from eliminating undesired degrees of
+freedom, e.g. core electrons. To date, attempts to couple nonlocal systems to
+external electromagnetic (EM) fields have been heuristic or limited to weak or
+long wavelength fields. Using Feynman path integrals, we derive an exact,
+closed-form coupling of arbitrary EM fields to nonlocal systems. Our results
+justify and clarify the couplings used to date and are essential for systematic
+computation of linear and especially nonlinear response.","Nonlocal Hamiltonians are used widely in first-principles quantum
+calculations; the nonlocality stems from eliminating undesired degrees of
+freedom, e.g. core electrons. To date, attempts to couple nonlocal systems to
+external electromagnetic (EM) fields have been heuristic or limited to weak or
+long wavelength fields. Using Feynman path integrals, we derive an exact,
+closed-form coupling of arbitrary EM fields to nonlocal systems. Our results
+justify and clarify the couplings used to date and are essential for systematic
+computation of linear and especially nonlinear response.","Sohrab Ismail-Beigi, Eric K. Chang, Steven G. Louie",2001,2025-11-04T15:40:01,"Uses, FutureWork"
+19,0.8477774858474731,hep-ph/0104082,Treatment of the QCD coupling in high energy processes,"The treatment of the running QCD coupling in evolution equations is
+discussed. It is shown that the use of the virtuality of ladder (vertical)
+partons as the scale for QCD coupling in every rung of ladder graphs is an
+approximation that holds for DIS at large x only. On the contrary, in the small
+x region the coupling depends on the virtuality of s -channel (horizontal)
+gluons. This observation leads to different results for the Regge-like
+processes and DIS structure functions at small x.","The treatment of the running QCD coupling in evolution equations is
+discussed. It is shown that the use of the virtuality of ladder (vertical)
+partons as the scale for QCD coupling in every rung of ladder graphs is an
+approximation that holds for DIS at large x only. On the contrary, in the small
+x region the coupling depends on the virtuality of s -channel (horizontal)
+gluons. This observation leads to different results for the Regge-like
+processes and DIS structure functions at small x.","B. I. Ermolaev, M. Greco, S. I. Troyan",2001,2025-11-04T15:40:01,"Uses, FutureWork"
