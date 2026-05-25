@@ -1,1 +1,0 @@
-The empirical infrared galaxy number count model of Takeuchi et al. (2001) is used [Uses] to calculate source counts from 350 um to 3 mm, and its results are compared [Compares] to the observed 1.4, 5, and 8-GHz source counts to evaluate the contribution of star forming galaxies to the faint radio galaxies (astro-ph/0101555).

@@ -1,1 +1,0 @@
-The Migdal-Eliashberg theory is incompatible with experimental data of Rb$_3$C$_{60}$, requiring extremely large couplings that violate Migdal's theorem [Background] (cond-mat/0104457). This incompatibility suggests a need to generalize the theory of superconductivity in the nonadiabatic regime [FutureWork] (cond-mat/0104457).

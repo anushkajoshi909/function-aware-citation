@@ -1,1 +1,0 @@
-Future experiments can extend the current analysis of new-physics effects in the $B\to J/\psi K$ system [Extends] (hep-ph/0101276) by exploring the impact of physics beyond the Standard Model, and further work is needed to establish scenarios where new-physics effects arise at the $B\to J/\psi K$ decay-amplitude level [FutureWork] (hep-ph/0101276).

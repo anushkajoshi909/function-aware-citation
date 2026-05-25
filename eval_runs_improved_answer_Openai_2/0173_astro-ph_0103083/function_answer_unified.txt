@@ -1,1 +1,0 @@
-The observed variations in r-process element abundances provide insight into the background astrophysical processes that governed nucleosynthesis and early Galactic chemical evolution [Background] (astro-ph/0101440). These findings also suggest avenues for future research, exploring implications for nucleosynthesis and chemical evolution [FutureWork] (astro-ph/0101440).

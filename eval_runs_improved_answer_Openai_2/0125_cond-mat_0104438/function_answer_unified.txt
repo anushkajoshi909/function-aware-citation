@@ -1,1 +1,0 @@
-The current work extends existing methods for calculating the energy of Wigner crystals by generalizing Ewald's method to account for anisotropic interactions between electrons [Extends] (cond-mat/0104438). It uses this generalized method to calculate the energy of bilayer Wigner crystals as a function of their orientation and distance between layers [Uses] (cond-mat/0104438).

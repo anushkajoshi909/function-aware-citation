@@ -1,1 +1,0 @@
-The limitations in identifying gamma-ray sources, such as unsuccessful efforts to detect predicted fluxes from supernova remnants, motivate further research [Motivation] (astro-ph/0101175). This suggests potential areas for future work, including X-ray studies of supernova remnants to identify properties leading to gamma-ray emission [FutureWork] (astro-ph/0104348).

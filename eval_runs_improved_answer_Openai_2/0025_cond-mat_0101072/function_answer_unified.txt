@@ -1,1 +1,0 @@
-The method of polarisation conversion of electromagnetic waves in 2D electron systems can be used for polarisation spectroscopy applications [Uses] (cond-mat/0101072). This phenomenon may be further explored in future research for polarisation spectroscopy of 2D electron systems [FutureWork] (cond-mat/0101072).

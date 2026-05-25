@@ -1,1 +1,0 @@
-The limitations of current cosmological parameter constraints could motivate research into simple functional relations amongst standard model couplings, including gravitational ones [Motivation] (hep-ph/0103349). This could lead to future work exploring possible implications for cosmology and future theory [FutureWork] (hep-ph/0103349).
