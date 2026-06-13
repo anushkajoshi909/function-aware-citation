@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# function_based_answer-2.py — function-aware selection with abstract-only synthesis
+# function_based_answer.py — function-aware selection with abstract-only synthesis
 # Outputs:
 #  - outputs/function_selection_results.json
 #  - outputs/function_selection_results.jsonl
@@ -199,7 +199,8 @@ CITATION_FUNCTION_DESCRIPTIONS = """Possible citation functions:
 - FutureWork: Outlines work that is planned but not yet done.
 """
 
-# ========= Prompts (Template-based) =========
+# ========= Prompts (Template-based) ========= 
+# We set the flag to false because this prompt was really strict.
 FUNC_EVAL_PROMPT_TPL = Template("""You are a scientific function checker.
 
 Task: Decide if the PAPER's TITLE/ABSTRACT contain enough information to answer the QUERY **for the given FUNCTION**.
@@ -263,6 +264,7 @@ ABSTRACT: $ABSTRACT
 """)
 
 # ---- Unified answer template for all functions ----
+# This prompt was later discarded as its not generating answers like ti should.
 ANSWER_TPL = Template("""Answer the user's QUERY using ONLY the PAPER TITLE/ABSTRACT below.
 Write 1–2 concise sentences that satisfy the FUNCTION.
 - No invented facts. Do not quote verbatim; paraphrase.
