@@ -264,7 +264,7 @@ ABSTRACT: $ABSTRACT
 """)
 
 # ---- Unified answer template for all functions ----
-# This prompt was later discarded as its not generating answers like ti should.
+# This prompt was later discarded as its not generating answers like it should.
 ANSWER_TPL = Template("""Answer the user's QUERY using ONLY the PAPER TITLE/ABSTRACT below.
 Write 1–2 concise sentences that satisfy the FUNCTION.
 - No invented facts. Do not quote verbatim; paraphrase.
